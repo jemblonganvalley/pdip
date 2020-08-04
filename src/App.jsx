@@ -7,6 +7,8 @@ import PartaiPage from './components/pages/partai/PartaiPage';
 import MultimediaPage from './components/pages/multimedia/MultimediaPage';
 import BkbbPage from './components/pages/bkbb/BkbbPage'
 import KetuaUmum from './components/pages/KetuaUmum/KetuaUmum';
+import BeritaPage from './components/pages/berita/BeritaPage';
+import InformasiPage from './components/pages/informasi/InformasiPage';
 
 function App() {
   return (
@@ -15,6 +17,17 @@ function App() {
       <div className="App">
 
         <Switch>
+            <Route path="/informasi">
+                <InformasiPage/>
+              </Route>
+
+              <Route path="/berita">
+                <BeritaPage/>
+              </Route>
+
+              <Route path="/multimedia">
+                <MultimediaPage/>
+              </Route>
 
           <Route path="/multimedia">
             <MultimediaPage />

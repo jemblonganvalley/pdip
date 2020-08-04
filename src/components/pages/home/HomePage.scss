@@ -1,12 +1,49 @@
+$table : 1261px;
+
+$responsiveSatu : 1085px;
+$responsiveDua : 1000px;
+$responsiveTiga : 991px;
+$responsiveEmpat : 719px;
+
+@mixin responSatu {
+    @media (max-width : #{$responsiveSatu}) {
+        @content;
+    }
+}
+@mixin responDua {
+    @media (max-width : #{$responsiveDua}) {
+        @content;
+    }
+}
+@mixin responTiga {
+    @media (max-width : #{$responsiveTiga}) {
+        @content;
+    }
+}
+@mixin responEmpat {
+    @media (max-width : #{$responsiveEmpat}) {
+        @content;
+    }
+}
+
 
 .homePageTwo {
     width: 100vw;
     padding: 20px 10%;
 
+    @include responSatu() {
+        padding: 20px 13%;
+    }
+
         .customRow {
             height: 20vh;
             background-color: #2d3436;
             width: 100%;
+
+            @include responSatu() {
+                height: 18vh;
+            }
+        
             
             .custom {
                 display: flex;
@@ -15,6 +52,11 @@
 
                 img {
                     margin: 0 10px;
+                    @include responSatu() {
+                        width: 40px;
+                        height: 40px;
+                    }
+                
 
                 }
 
@@ -25,6 +67,10 @@
                     margin: 0 10px;
                     line-height: 1.3;
                     letter-spacing: 1px;
+
+                    @include responSatu() {
+                        font-size: 10pt;
+                    }
                 }
 
                 .customBorder {
@@ -34,6 +80,11 @@
                     width: 100%;
                     height: 90%;
                     border-right: 1px solid white;
+
+                    @include responSatu() {
+                        // font-size: 10pt;
+                        height: 60%;
+                    }
             }
             .calendar {
                 border: none;
@@ -55,6 +106,9 @@
             text-align: center;
             // height: 10vh;
             margin-top: 30px;
+            @include responSatu() {
+                margin-top: 3rem;
+            }
             small {
                 cursor: pointer;
                 color: #d80010;
@@ -64,6 +118,10 @@
                 font-weight: bold;
                 font-size: 10pt;
                 border-bottom: 5.5px solid #d80010;
+
+                @include responSatu() {
+                    font-size: 8pt;
+                }
                 
             }
         }
@@ -81,6 +139,10 @@
             p {
                 font-size: 14pt;
                 letter-spacing: 1px;
+
+                @include responSatu() {
+                    font-size: 10pt;
+                }
             }
         }
 
@@ -89,9 +151,13 @@
             background: url(../../../img/image-1.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            background-position-y: -200px;
+            background-position-y: -150px;
             margin-top: 20px;
             height: 40vh;
+            @include responSatu() {
+                height: 30vh;
+                margin-top: 2.5rem;
+            }
 
             .textYoutube {
                 width: 100%;
@@ -130,10 +196,21 @@
                                 height: 50px;
                                 width: 50px;
 
+                                @include responSatu() {
+                                    height: 35px;
+                                    width: 35px;
+                                }
+
                                 i {
                                     font-size: 20pt;
                                     margin-left: 5px;
                                     margin-top: 5px;
+
+                                    @include responSatu() {
+                                        font-size: 10pt;
+                                        margin-left: 3px;
+                                        margin-top: 7px;
+                                    }
                                 }
                             }
                         }
@@ -151,6 +228,17 @@
                         // border: 1px solid pink;
                         color: #ffffff;
                         margin-left: 20px;
+
+                        .videoTerbaru {
+                            @include responSatu() {
+                                font-size: 13pt;
+                            }
+                        }
+                        .siaranHut {
+                            @include responSatu() {
+                                font-size: 10pt;
+                            }
+                        }
                     }
                 }
             }
@@ -166,6 +254,10 @@
 
             // border: 1px solid pink;
             margin-top: 15px;
+
+            @include responSatu() {
+                margin-top: 25px;
+            }
 
             .col {
                 // border: 1px solid green;
@@ -226,6 +318,10 @@
                         font-size: 8pt;
                         color: #d80010;
 
+                        @include responSatu() {
+                            font-size: 6pt;
+                        }
+
                         &:hover {
                             
                             color: #ffffff;
@@ -234,6 +330,9 @@
 
                     h5 {
                         margin: 10px;
+                        @include responSatu() {
+                            font-size: 12pt;
+                        }
                     }
                 }
             }
@@ -250,6 +349,10 @@
         font-weight: 500;
         color: #d80010;
         transition: .5s;
+
+        @include responSatu() {
+            font-size: 6pt;
+        }
 
         &:hover {
             background: #d80010;
@@ -283,6 +386,8 @@
                 font-weight: bold;
                 font-size: 8pt;
                 border-bottom: 5.5px solid #d80010;
+
+                
             }
         }
 
@@ -300,6 +405,10 @@
             p {
                 font-size: 14pt;
                 letter-spacing: 1px;
+
+                @include responSatu() {
+                    font-size: 10pt;
+                }
             }
         }
 
@@ -367,15 +476,27 @@
                     h5 {
                         font-weight: 400;
                         font-size: 10pt;
+
+                        @include responSatu() {
+                            font-size: 8pt;
+                        }
                     }
 
                     h3 {
                         font-size: 15pt;
                         font-weight: 300;
+
+                        @include responSatu() {
+                            font-size: 12pt;
+                        }
                     }
 
                     p {
                         font-size: 8pt;
+
+                        @include responSatu() {
+                            font-size: 6pt;
+                        }
                     }
                 }
             }
@@ -391,7 +512,7 @@
     align-items: center;
     flex-direction: row;
     margin-top: 4.5rem;
-    padding: 15px 10%;
+    padding: 20px 15%;
 
     .col {
         //  border: 1px solid green;
@@ -442,10 +563,24 @@
              small {
                  font-size: 7pt;
                  color: #d80010;
+
+                 @include responSatu() {
+                    font-size: 5pt;
+                }
+             }
+
+             .kolsHome {
+
+                 @include responSatu() {
+                    font-size: 10pt;
+                }
              }
 
              p {
                  font-size: 8pt;
+                 @include responSatu() {
+                    font-size: 6pt;
+                }
              }
          }
     }
@@ -472,6 +607,10 @@
         color: #d80010;
         transition: .5s;
 
+        @include responSatu() {
+            font-size: 6pt;
+        }
+
         &:hover {
             background: #d80010;
             color: #ffffff;
@@ -490,7 +629,7 @@
     align-items: center;
 
     .col {
-        width: 100%;
+        // width: 100%;
         // border: 1px solid blue;
         height: 100%;
         
@@ -508,13 +647,18 @@
             h2 {
                 font-weight: 800;
                 color: #ffffff;
-                width: 20rem;
+                // width: 20rem;
                 margin-right: 5rem;
                 font-size: 26pt;
                 text-align: end;
                 line-height: 1.3;
                 letter-spacing: 1.5px;
                 // border: 1px solid green;
+
+                @include responSatu() {
+                    font-size: 17pt;
+                    width: 20rem;
+                }
 
             }
 
@@ -526,6 +670,10 @@
                 flex-direction: column;
                 // border: 1px solid blue;
                 margin: 0 4.5rem;
+
+                @include responSatu() {
+                    width: 60%;
+                }
 
                 .form-control:focus {
                     box-shadow: 0 0 0 0.2rem rgba(216, 0, 16, .25);
@@ -604,7 +752,7 @@
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-            width: 50%;
+            // width: 50%;
 
             // border: 1px solid rgb(20, 220, 187);
 
@@ -617,12 +765,22 @@
                 align-items: center;
                 // border: 1px solid blue;
 
+                @include responSatu() {
+                    padding: 2rem;
+                }
+
                 h2 {
                     // width: 1rem;
                     // font-size: 15pt;
                     color: #ffffff;
                     margin-left: 2rem;
                     line-height: 1;
+
+                    @include responSatu() {
+                        font-size: 15pt;
+                    }
+
+                    
                 }
             }
             .content1 {
@@ -637,6 +795,10 @@
                     letter-spacing: 1px;
                     text-transform: uppercase;
                     font-size: 13pt;
+
+                    @include responSatu() {
+                        font-size: 10pt;
+                    }
                 }
             }
             .content2 {
@@ -651,6 +813,9 @@
                     letter-spacing: 1px;
                     text-transform: uppercase;
                     font-size: 13pt;
+                    @include responSatu() {
+                        font-size: 10pt;
+                    }
                 }
             }
             .content3 {
@@ -665,6 +830,9 @@
                     letter-spacing: 1px;
                     text-transform: uppercase;
                     font-size: 13pt;
+                    @include responSatu() {
+                        font-size: 10pt;
+                    }
                 }
             }
             .content4 {
@@ -679,6 +847,9 @@
                     letter-spacing: 1px;
                     text-transform: uppercase;
                     font-size: 13pt;
+                    @include responSatu() {
+                        font-size: 10pt;
+                    }
                 }
             }
         }
@@ -738,11 +909,17 @@
                 h5 {
                     font-size: 15pt;
                     letter-spacing: 0.5px;
+                    @include responSatu() {
+                        font-size: 12pt;
+                    }
                 }
                 small {
                     font-size: 7pt;
                     padding: 10px;
                     font-weight: 300;
+                    @include responSatu() {
+                        font-size: 5pt;
+                    }
                 }
 
                 form {
@@ -757,6 +934,11 @@
                         // bottom: 100rem;
                         font-size: 11pt;
                         color: #cfcfcf;
+                        @include responSatu() {
+                            font-size: 8pt;
+                            left: .6rem;
+                            top: 1rem;
+                        }
                     }
     
                     input {
@@ -782,6 +964,9 @@
                     background: none;
                     border: 1px solid #2d3436;
                     transition: .5s;
+                    @include responSatu() {
+                        height: 2rem;
+                    }
 
                     &:hover {
                         background: #2d3436;
@@ -791,11 +976,17 @@
                     i {
                         font-size: 10pt;
                         margin-right: .3rem;
+                        @include responSatu() {
+                            font-size: 8pt;
+                        }
                     }
 
                     span {
                         font-size: 8pt;
                         font-weight: 700;
+                        @include responSatu() {
+                            font-size: 7pt;
+                        }
                     }
                 }
             }

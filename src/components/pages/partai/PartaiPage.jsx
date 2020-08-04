@@ -11,7 +11,12 @@ import pdiLogo from '../../../img/pdibanteng.png'
 
 const PartaiPage = ()=>{
     return (
+    
+    // START PARTAI
+    
         <div className="wrapperPartai">
+
+            {/* HEADERS */}
             <div className="headers">
                 <div className="backgrounds">
                     <div className="textBackgroundPartai">
@@ -19,11 +24,17 @@ const PartaiPage = ()=>{
                     </div>
                 </div>
             </div>
+            {/* END */}
+
+            {/* LINK PARTAI */}
             <div className="linkedPartai">
                 <i class="fa fa-home">
                     <span>Home / Partai /</span>
                 </i>
             </div>
+            {/* END */}
+
+            {/* CONTAINER SATU */}
             <div className="containerSatu">
                 <div className="contentSatu">
                     <div className="col col-lg-4">
@@ -91,9 +102,13 @@ const PartaiPage = ()=>{
 
                 </div>
             </div>
+            {/* END */}
 
+            {/* CONTAINER DUA */}
             <div className="containerDua">
                 <div className="contentDua">
+
+                    {/* MUSIC */}
                     <div className="col col-md-8 musicPlayer">
                         <div className="wrapperContentMusic">
                         <div className="contentMusic">
@@ -162,6 +177,9 @@ const PartaiPage = ()=>{
                         </div>
                             
                     </div>
+                    {/* END */}
+
+                    {/* PLAYLIST */}
                     <div className="col col-md-4 musicList">
                         <div className="headersList">
                             <img src={laguPerjuangan} alt="" width="60" />
@@ -184,9 +202,13 @@ const PartaiPage = ()=>{
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
                         </div>
                     </div>
+                    {/* END */}
+
                 </div>
             </div>
+            {/* END */}
 
+            {/* CONTAINER TIGA */}
             <div className="containerTiga">
                 <div className="col-lg-3">
                         <img src={pdiLogo} alt="" width="180" />
@@ -202,11 +224,15 @@ const PartaiPage = ()=>{
                     </ul>
                 </div>
             </div>
+            {/* END */}
 
+                {/* BUTTON UNDUH */}
                 <div className="btnUnduh">
                     <button className="btn"><span>unduh lambang</span></button>
                 </div>
+                {/* END */}
 
+                {/* PENGURUS */}
                 <div className="pengurusPage">
                     <div className="textPengurus">
                         <small>Pengurus</small>
@@ -215,19 +241,25 @@ const PartaiPage = ()=>{
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
                     </div>
                 </div>
+                {/* END */}
 
+                {/* PHOTO PENGURUS */}
                 <div className="photoPengurus">
                     <h2>Struktur Pengurus Dewan Pimpinan Pusat<br/>PDI Perjuangan</h2>
                     <button className="btn"><span>lihat</span></button>
                 </div>
+                {/* END */}
 
+                {/* MAPS */}
                 <div className="maps">
                     <h5>dewan pimpinan daerah pdi perjuangan</h5>
                     <div className="imageMaps">
 
                     </div>
                 </div>
+                {/* END */}
 
+                {/* ANGGOTA LEGISLATIF */}
                 <div className="anggotaLegislatif">
                     <h1>Anggota Legislatif</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia a voluptatem mollitia dolorum ea architecto, aliquid quidem fugit accusamus saepe ab repudiandae eos ipsum! Quaerat omnis dolores quidem reiciendis distinctio.</p>
@@ -237,6 +269,8 @@ const PartaiPage = ()=>{
                         <button className="btn"><span>DPRD Kabupaten Kota</span></button>
                     </div>
                 </div>
+                {/* END */}
+                
                 <div className="backgroundRed"></div>
         </div>
     )

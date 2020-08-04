@@ -2,9 +2,12 @@ $secondary : #f3f3f3;
 $padding : 20px 15%;
 $color : #c70000;
 
+    //START CSS
+
 .wrapperPartai {
     width: 100%;
 
+    // START HEADERS
     .headers {
         background: url(../../../img/kampanye.jpg);
         background-size: cover;
@@ -27,6 +30,9 @@ $color : #c70000;
             }
         }
     }
+    // END HEADERS
+
+    // START LINK PARTAI
     .linkedPartai {
         display: flex;
         align-items: center;
@@ -42,7 +48,9 @@ $color : #c70000;
             }
         }
     }
+    // END LINK PARTAI
 
+    // START CONTAINER SATU
     .containerSatu {
         padding: 20px 15%;
         display: flex;
@@ -154,9 +162,8 @@ $color : #c70000;
                 }
             }
         }
-        
-        
     }
+    // END CONTAINER SATU
 
     .containerDua {
         padding: 20px 15%;

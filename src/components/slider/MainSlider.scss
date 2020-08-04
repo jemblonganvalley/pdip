@@ -1,9 +1,55 @@
+$responsiveSatu : 1085px;
+$responsiveDua : 1000px;
+$responsiveTiga : 991px;
+$responsiveEmpat : 719px;
+
+@mixin responSatu {
+    @media (max-width : #{$responsiveSatu}) {
+        @content;
+    }
+}
+@mixin responDua {
+    @media (max-width : #{$responsiveDua}) {
+        @content;
+    }
+}
+@mixin responTiga {
+    @media (max-width : #{$responsiveTiga}) {
+        @content;
+    }
+}
+@mixin responEmpat {
+    @media (max-width : #{$responsiveEmpat}) {
+        @content;
+    }
+}
+
+
 .image1 {
     height: 100vh;
     width: 100%;
     background-image: url(../../img/slider.jpg);
     background-size: cover;
     // background-color: crimson;
+    @include responSatu() {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    @include responDua() {
+        background-size: contain;
+        height: 94.5vh;
+        background-repeat: no-repeat;
+    }
+    @include responTiga() {
+        background-size: contain;
+        height: 94vh;
+        background-repeat: no-repeat;
+    }
+    @include responTiga() {
+        background-size: contain;
+        height: 68vh;
+        background-repeat: no-repeat;
+    }
 
     .text1 {
         height: 100%;
@@ -17,6 +63,38 @@
         opacity: 0.8;
         background-repeat: no-repeat;
         
+        @include responSatu() {
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+        @include responDua() {
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @include responTiga() {
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+        @include responEmpat() {
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0
+        }
+    
+        
         h1 {
             position: absolute;
             bottom: 45%;
@@ -24,13 +102,38 @@
             text-transform: uppercase;
             width: 25%;
         // border: 1px solid green;
+            @include responSatu() {
+                font-size: 20pt;
+                bottom: 55%;
+            }
+            @include responDua() {
+                font-size: 17pt;
+            }
+            @include responTiga() {
+                left: 10%;
+                font-size: 15pt;
+            }
+            @include responEmpat() {
+                font-size: 10pt;
+            }
 
         }
         p {
             width: 25%;
             position: absolute;
             bottom: 30%;
-            font-size: 12px;
+            font-size: 10pt;
+
+            @include responDua() {
+                font-size: 8pt;
+            }
+            @include responTiga() {
+                left: 10%;
+                font-size: 8pt;
+            }
+            @include responEmpat() {
+                font-size: 6pt;
+            }
         }
         
     }
@@ -41,6 +144,25 @@
     width: 100%;
     background-image: url(../../img/slider2.jpg);
     background-size: cover;
+
+    @include responSatu() {
+        background-size: contain;
+    }
+    @include responDua() {
+        background-size: contain;
+        height: 94.5vh;
+        background-repeat: no-repeat;
+    }
+    @include responTiga() {
+        background-size: contain;
+        height: 94vh;
+        background-repeat: no-repeat;
+    }
+    @include responTiga() {
+        background-size: contain;
+        height: 68vh;
+        background-repeat: no-repeat;
+    }
 
     .text2 {
         height: 100%;
@@ -54,6 +176,34 @@
         opacity: 0.8;
         background-repeat: no-repeat;
 
+        @include responSatu() {
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+        @include responDua() {
+            background-size: contain;
+            
+        }
+        @include responTiga() {
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+        @include responEmpat() {
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0
+        }
+
         h1 {
             position: absolute;
             bottom: 45%;
@@ -61,19 +211,44 @@
             text-transform: uppercase;
             width: 25%;
         // border: 1px solid green;
+            @include responSatu() {
+                font-size: 20pt;
+                bottom: 55%;
+            }
+            @include responDua() {
+                font-size: 17pt;
+            }
+            @include responTiga() {
+                left: 10%;
+                font-size: 15pt;
+            }
+            @include responEmpat() {
+                font-size: 10pt;
+            }
+
 
         }
         p {
             width: 25%;
             position: absolute;
             bottom: 30%;
-            font-size: 12px;
+            font-size: 10pt;
+            @include responDua() {
+                font-size: 8pt;
+            }
+            @include responTiga() {
+                left: 10%;
+                font-size: 8pt;
+            }
+            @include responEmpat() {
+                font-size: 6pt;
+            }
         }
     }
 }
 
 .carousel {
-    width: 100vw;
+    width: 100%;
 
     .carousel-inner {
         background-color: red;
@@ -118,9 +293,24 @@
         // bottom: 8%;
         bottom: 8%;
         left: 10%;
-        z-index: 2000;
+        z-index: 10;
         // border: 1px solid blue;
         transition: .3s;
+        @include responSatu() {
+            width: 30px;
+            height: 30px;
+            bottom: 10%;
+        }
+        @include responDua() {
+            width: 25px;
+            height: 25px;
+            bottom: 11%;
+        }
+        @include responEmpat() {
+            width: 18px;
+            height: 18px;
+            bottom: 13%;
+        }
 
         &:hover {
             background-color: #ffffff;
@@ -128,7 +318,9 @@
         }
         i {
             font-size: 10px;
-            
+            @include responEmpat() {
+                font-size: 6pt;
+            }
             
         }
 }
@@ -145,6 +337,9 @@
 
     span {
         font-size: 13px;
+        @include responEmpat() {
+            font-size: 8pt;
+        }
     }
 
     i {
@@ -152,6 +347,7 @@
         height: 15px;
         width: 10px;
         // border: 1px solid blue;
+
     }
 }
 
