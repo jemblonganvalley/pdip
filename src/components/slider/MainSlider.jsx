@@ -26,7 +26,7 @@ const MainSlider = ()=> {
                     <div className="carousel-item">
                         <div className="row image2">
                             <div className="col col-lg-6 mr-auto text2">
-                                <h1>halo</h1>
+                                <h1>Lorem ipsum dolor sit amet consectetur</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non suscipit exercitationem enim nesciunt, esse, hic accusantium in blanditiis repellat at aperiam magni ab? Ullam sequi possimus mollitia, maiores assumenda facilis!</p>
                             </div>
                         </div>
