@@ -52,9 +52,9 @@ const HomePage = ()=> {
                                     </li>
                                 </ul>
                                 <div className="textInfoYT">
-                                    <h3>Video Terbaru</h3>
+                                    <h3 className="videoTerbaru">Video Terbaru</h3>
                                     <br/>
-                                    <h6>Siaran langsung HUT ke-47 PDI Perjuangan Kemayoran Jakarta. 10 Januari 2020</h6>
+                                    <h6 className="siaranHut">Siaran langsung HUT ke-47 PDI Perjuangan Kemayoran Jakarta. 10 Januari 2020</h6>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +154,7 @@ const HomePage = ()=> {
                     <div className="imageContent imageOne"></div>
                     <div className="textCard">
                     <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                    <h5 className="kolsHome">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
                     </div>
 
@@ -164,7 +164,7 @@ const HomePage = ()=> {
                     <div className="imageContent imageTwo"></div>
                     <div className="textCard">
                     <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                    <h5 className="kolsHome">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
                     </div>
 
@@ -173,7 +173,7 @@ const HomePage = ()=> {
                 <div className="imageContent imageThree"></div>
                     <div className="textCard">
                     <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                    <h5 className="kolsHome">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
                     </div>
                 </div>
@@ -203,7 +203,7 @@ const HomePage = ()=> {
                     <div className="laguWrapper">
                         <div className="laguIcon">
                             <img src={Lagu} alt="" width="80" />
-                            <h2>Lagu Perjuangan PDI Perjuangan</h2>
+                            <h2 className="perjuanganText">Lagu Perjuangan PDI Perjuangan</h2>
                         </div>
                         <div className="content1">
                                 <h5>mars pdi perjuangan</h5>

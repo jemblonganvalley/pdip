@@ -62,7 +62,7 @@ const MultimediaPage = ()=> {
             </div>
 
             <div className="cardMediaDua">
-                <div className="col-md-4 cols1 kols">
+                <div className="col-lg-4 cols1 kols">
                     <div className="cardMBody">
                         <div className="cardMBImg"></div>
                         <div className="cardTextWrapper">
@@ -71,7 +71,7 @@ const MultimediaPage = ()=> {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-8 cols2 kols">
+                <div className="col-lg-8 cols2 kols">
                     <div className="cardMBody2">
                         <div className="cardMBImg2">
                             <div className="iconPlayMedia">
@@ -86,6 +86,49 @@ const MultimediaPage = ()=> {
                             </div>
                     </div>
                 </div>
+            </div>
+
+            
+
+            <div className="videoBaruPage">
+                <div className="textVideoBaru">
+                    <small className="videoBaru">video terbaru</small>
+                </div>
+                <div className="cardVideoBaru">
+                            <div className="col col-lg-4">
+                                <div className="imageCard">
+                                <div className="VBMusic">
+                                <i class="fa fa-play"></i>
+                                </div>
+                                </div>
+                                <div className="text">
+                                    <small>Admin PDI PERJUANGAN | 1 Januari 2019</small>
+                                    <h5>Lorem, ipsum dolor sit amet consectetur</h5>
+                                </div>
+                            </div>
+                            <div className="col col-lg-4">
+                            <div className="imageCard two">
+                                <div className="VBMusic">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                                <div className="text">
+                                    <small>Admin PDI PERJUANGAN | 1 Januari 2019</small>
+                                    <h5>Lorem, ipsum dolor sit amet consectetur</h5>
+                                </div>
+                            </div>
+                            <div className="col col-lg-4">
+                            <div className="imageCard three">
+                                <div className="VBMusic">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                                <div className="text">
+                                    <small>Admin PDI PERJUANGAN | 1 Januari 2019</small>
+                                    <h5>Lorem, ipsum dolor sit amet consectetur</h5>
+                                </div>
+                            </div>
+                    </div>
             </div>
         </div>
     )
