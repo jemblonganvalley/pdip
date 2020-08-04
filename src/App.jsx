@@ -6,12 +6,13 @@ import MainFooter from './components/footer/MainFooter';
 import PartaiPage from './components/pages/partai/PartaiPage';
 import MultimediaPage from './components/pages/multimedia/MultimediaPage';
 
+
 function App() {
   return (
     <Router>
         <MainNavbar/>
       <div className="App">
-        
+
             <Switch>
 
               <Route path="/multimedia">
@@ -22,6 +23,7 @@ function App() {
               </Route>
 
               <Route path="/bungkarno">
+
               </Route>
 
               <Route path="/partai">
@@ -31,6 +33,7 @@ function App() {
               <Route path="/">
                 <HomePage/>
               </Route>
+              
             </Switch>
       </div>
         <MainFooter/>
