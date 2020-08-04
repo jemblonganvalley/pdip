@@ -6,9 +6,10 @@ import MainFooter from './components/footer/MainFooter';
 import PartaiPage from './components/pages/partai/PartaiPage';
 import MultimediaPage from './components/pages/multimedia/MultimediaPage';
 import BkbbPage from './components/pages/bkbb/BkbbPage'
-import KetuaUmum from './components/pages/KetuaUmum/KetuaUmum';
 import BeritaPage from './components/pages/berita/BeritaPage';
 import InformasiPage from './components/pages/informasi/InformasiPage';
+import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
+import PemiluPage from './components/pages/Pemilu/PemiluPage';
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
       <div className="App">
 
         <Switch>
+          <Route path="/pemilu">
+            <PemiluPage />
+          </Route>
+
           <Route path="/informasi">
             <InformasiPage />
           </Route>
@@ -34,6 +39,7 @@ function App() {
           </Route>
 
           <Route path="/ketuaumum">
+            <KetuaUmumPage />
           </Route>
 
           <Route path="/bungkarno">
