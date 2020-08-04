@@ -1,0 +1,1080 @@
+.wrapperKetuaUmum {
+  width: 100%;
+}
+
+.wrapperKetuaUmum .headers {
+  background: url(../../../img/kampanye.jpg);
+  background-size: cover;
+  height: 25vh;
+  background-position: center;
+}
+
+.wrapperKetuaUmum .headers .backgrounds {
+  background-color: rgba(255, 0, 8, 0.8);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.wrapperKetuaUmum .headers .backgrounds .textBackgroundBerita {
+  width: 30%;
+  height: 50%;
+  margin-left: 5rem;
+}
+
+.wrapperKetuaUmum .linkedBerita {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  margin-top: 20px;
+  padding: 10px 10%;
+}
+
+.wrapperKetuaUmum .linkedBerita i span {
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 8pt;
+}
+
+.wrapperKetuaUmum .container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col1-container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  background: #555;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col1-container-1 .cont-img-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col1-container-1 .cont-img-col1 .col1-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #fff;
+}
+
+.wrapperKetuaUmum .container-1 .col1-container-1 .cont-img-col1 .col1-img .box-txt-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col1-container-1 .cont-img-col1 .col1-img .box-txt-title h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+  color: #fff;
+  padding: 25% 20% 20% 10%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col1-container-1 .cont-img-col1 .col2-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30%;
+  width: 100%;
+  background-color: rgba(255, 0, 8, 0.8);
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col1-container-1 .cont-img-col1 .col2-img .garis-strip-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 2.5px;
+  width: 230px;
+  background: #fff;
+  border-radius: 2px;
+  margin: -2px 0 0 65px;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col1-container-1 .cont-img-col1 .col2-img .box-txt-desk-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 20px 65px 0 65px;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col1-container-1 .cont-img-col1 .col2-img .box-txt-desk-col2 .txt-admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col1-container-1 .cont-img-col1 .col2-img .box-txt-desk-col2 .txt-desk-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  background: #f3f3f3;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row1-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 25%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row1-col2 .box-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 30%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row1-col2 .box-img .img-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row1-col2 .txt-img1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row1-col2 .txt-img1 .txt-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 1px 0 0 0;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row2-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 25%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row2-col2 .box-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 30%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row2-col2 .box-img .img-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row2-col2 .txt-img2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row2-col2 .txt-img2 .txt-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 1px 0 0 0;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row3-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 25%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row3-col2 .box-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 30%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row3-col2 .box-img .img-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row3-col2 .txt-img3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row3-col2 .txt-img3 .txt-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 1px 0 0 0;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row4-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 25%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row4-col2 .box-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 30%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row4-col2 .box-img .img-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row4-col2 .txt-img4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col2-container-1 .row4-col2 .txt-img4 .txt-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 1px 0 0 0;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 {
+  width: 100%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0;
+  padding: 10px 0 0 0%;
+}
+
+.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent {
+  height: 100%;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin: 0 10px;
+  background: #ffffff;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 0px;
+}
+
+.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent:hover {
+  background: #d80010;
+}
+
+.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .imageContent {
+  width: 100%;
+  height: 30vh;
+  background: url(../../../img/megawati5.jpg);
+  background-size: cover;
+}
+
+.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .imageTwo {
+  width: 100%;
+  height: 30vh;
+  background: url(../../../img/megawati6.jpg);
+  background-size: cover;
+}
+
+.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .imageThree {
+  width: 100%;
+  height: 30vh;
+  background: url(../../../img/megawati7.jpg);
+  background-size: cover;
+}
+
+.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .textCard {
+  width: 100%;
+  padding: 5px 20px;
+}
+
+.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .textCard small {
+  font-size: 7pt;
+  color: #d80010;
+}
+
+.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .textCard p {
+  font-size: 8pt;
+}
+
+.wrapperKetuaUmum .container-1 .col4-container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 20vh;
+  width: 100%;
+  background: #f3f3f3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col4-container-1 .col-title-berita-foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col4-container-1 .col-title-berita-foto .txt-berita-foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  color: #d80010;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col4-container-1 .col-garis-lurus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0 0 0;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col4-container-1 .col-garis-lurus .garis-merah {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 4px;
+  width: 100px;
+  background: #d80010;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 65vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 .row1-col5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: relative;
+  height: 100%;
+  width: 30%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 .row1-col5 .img-row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #555;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 .row1-col5 .box-jdl-row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30%;
+  width: 100%;
+  background: #d80010;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 .row1-col5 .box-jdl-row1 h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  color: #fff;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 .row2-col5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 70%;
+  margin: 0 0 0 20px;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 .row2-col5 .col1-row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 .row2-col5 .col1-row2 .img-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: #555;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 .row2-col5 .col2-row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30%;
+  width: 100%;
+  background: #fff;
+  padding: 20px 35px 5px 35px;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 .row2-col5 .col2-row2 .txt-jdl-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  text-align: start;
+  margin: 0 0 5px 0;
+  padding: 0 0 2px 0;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 .row2-col5 .col2-row2 .txt-desk-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  color: #000;
+  text-align: start;
+  padding: 0 0 10px 0;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 45vh;
+  width: 100%;
+  background: #555;
+  margin: 50px 0 0px 0;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-2 .col1-container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  height: 70%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-2 .col1-container-2 .txt-title-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-2 .col2-container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-2 .col2-container-2 .btn-lihat-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35px;
+  width: 120px;
+  background: #fff;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  font-size: 12px;
+  font-weight: 500;
+  color: #d80010;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.wrapperKetuaUmum .container-2 .col2-container-2 .btn-lihat-col2:hover {
+  background: #d80010;
+  color: #fff;
+}
+
+.wrapperKetuaUmum .container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding: 0 10% 50px 10%;
+}
+
+.wrapperKetuaUmum .container-3 .col1-container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 20vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-3 .col1-container-3 .box-jdl-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  height: 60%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-3 .col1-container-3 .box-jdl-col1 .txt-jdl-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  color: #d80010;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-3 .col1-container-3 .box-garis-lurus-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0 0 0;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-3 .col1-container-3 .box-garis-lurus-col1 .garis-merah {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 4px;
+  width: 120px;
+  background: #d80010;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 {
+  width: 100%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0;
+  padding: 10px 0%;
+}
+
+.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent {
+  height: 100%;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin: 0 10px;
+  background: #ffffff;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 10px;
+}
+
+.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent:hover {
+  background: #d80010;
+}
+
+.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent .imageContent {
+  width: 100%;
+  height: 30vh;
+  background: url(../../../img/megawati5.jpg);
+  background-size: cover;
+  border-top-right-radius: 10px;
+}
+
+.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent .imageTwo {
+  width: 100%;
+  height: 30vh;
+  background: url(../../../img/megawati6.jpg);
+  background-size: cover;
+}
+
+.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent .imageThree {
+  width: 100%;
+  height: 30vh;
+  background: url(../../../img/megawati7.jpg);
+  background-size: cover;
+}
+
+.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent .textCard {
+  width: 100%;
+  padding: 5px 20px;
+}
+
+.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent .textCard small {
+  font-size: 7pt;
+  color: #d80010;
+}
+
+.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent .textCard p {
+  font-size: 8pt;
+}
+
+.wrapperKetuaUmum .container-3 .col3-container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 20vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-3 .col3-container-3 .box-jdl-col3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  height: 60%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-3 .col3-container-3 .box-jdl-col3 .txt-jdl-col3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  color: #d80010;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-3 .col3-container-3 .box-garis-lurus-col3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0 0 0;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-3 .col3-container-3 .box-garis-lurus-col3 .garis-merah {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 4px;
+  width: 130px;
+  background: #d80010;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 {
+  width: 100%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0;
+  padding: 10px 0%;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent {
+  height: 100%;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin: 0 10px;
+  background: #ffffff;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 10px;
+}
+
+.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent:hover {
+  background: #d80010;
+  border-top-right-radius: 10px;
+}
+
+.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent .imageContent {
+  width: 100%;
+  height: 30vh;
+  background: url(../../../img/megawati5.jpg);
+  background-size: cover;
+  border-top-right-radius: 10px;
+}
+
+.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent .imageTwo {
+  width: 100%;
+  height: 30vh;
+  background: url(../../../img/megawati6.jpg);
+  background-size: cover;
+}
+
+.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent .imageThree {
+  width: 100%;
+  height: 30vh;
+  background: url(../../../img/megawati7.jpg);
+  background-size: cover;
+}
+
+.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent .textCard {
+  width: 100%;
+  padding: 5px 20px;
+}
+
+.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent .textCard small {
+  font-size: 7pt;
+  color: #d80010;
+}
+
+.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent .textCard p {
+  font-size: 8pt;
+}
+/*# sourceMappingURL=KetuaUmum.css.map */

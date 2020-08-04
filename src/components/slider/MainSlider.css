@@ -1,0 +1,155 @@
+.image1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../img/slider.jpg);
+  background-size: cover;
+}
+
+.image1 .text1 {
+  height: 100%;
+  padding-left: 15%;
+  padding-top: 10%;
+  color: #ffffff;
+  text-align: left;
+  background: url(../../img/bg_text.svg);
+  background-size: cover;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+}
+
+.image1 .text1 h1 {
+  position: absolute;
+  bottom: 45%;
+  text-transform: uppercase;
+  width: 25%;
+}
+
+.image1 .text1 p {
+  width: 25%;
+  position: absolute;
+  bottom: 30%;
+  font-size: 12px;
+}
+
+.image2 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../img/slider2.jpg);
+  background-size: cover;
+}
+
+.image2 .text2 {
+  height: 100%;
+  padding-left: 15%;
+  padding-top: 10%;
+  color: #ffffff;
+  text-align: left;
+  background: url(../../img/bg_text.svg);
+  background-size: cover;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+}
+
+.image2 .text2 h1 {
+  position: absolute;
+  bottom: 45%;
+  text-transform: uppercase;
+  width: 25%;
+}
+
+.image2 .text2 p {
+  width: 25%;
+  position: absolute;
+  bottom: 30%;
+  font-size: 12px;
+}
+
+.carousel {
+  width: 100vw;
+}
+
+.carousel .carousel-inner {
+  background-color: red;
+}
+
+.carousel .carousel-inner .carousel-item {
+  width: 105%;
+}
+
+.carousel .carousel-indicators {
+  right: auto;
+  bottom: 5%;
+  margin-bottom: 30px;
+}
+
+.carousel .carousel-indicators .active {
+  opacity: 1;
+}
+
+.carousel .carousel-indicators small {
+  cursor: pointer;
+  margin: 0 10px;
+  opacity: 0.5;
+  color: #ffffff;
+  -webkit-transition: opacity .6s ease;
+  transition: opacity .6s ease;
+}
+
+.carousel button {
+  border: none;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  background: none;
+  border: 1px solid #ffffff;
+  height: 40px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 8%;
+  left: 10%;
+  z-index: 2000;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.carousel button:hover {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.carousel button i {
+  font-size: 10px;
+}
+
+.prev-text {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: none;
+  line-height: .7;
+}
+
+.prev-text span {
+  font-size: 13px;
+}
+
+.prev-text i {
+  font-size: 15px;
+  height: 15px;
+  width: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+  text-decoration: none;
+}
+/*# sourceMappingURL=MainSlider.css.map */
