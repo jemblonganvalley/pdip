@@ -5,7 +5,7 @@ import HomePage from './components/pages/home/HomePage';
 import MainFooter from './components/footer/MainFooter';
 import PartaiPage from './components/pages/partai/PartaiPage';
 import MultimediaPage from './components/pages/multimedia/MultimediaPage';
-
+import BkbbPage from './components/pages/bkbb/BkbbPage'
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
               </Route>
 
               <Route path="/bungkarno">
-
+                <BkbbPage />
               </Route>
 
               <Route path="/partai">
