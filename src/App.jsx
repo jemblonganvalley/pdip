@@ -17,17 +17,17 @@ function App() {
       <div className="App">
 
         <Switch>
-            <Route path="/informasi">
-                <InformasiPage/>
-              </Route>
+          <Route path="/informasi">
+            <InformasiPage />
+          </Route>
 
-              <Route path="/berita">
-                <BeritaPage/>
-              </Route>
+          <Route path="/berita">
+            <BeritaPage />
+          </Route>
 
-              <Route path="/multimedia">
-                <MultimediaPage/>
-              </Route>
+          <Route path="/multimedia">
+            <MultimediaPage />
+          </Route>
 
           <Route path="/multimedia">
             <MultimediaPage />
