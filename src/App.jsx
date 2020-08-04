@@ -4,6 +4,7 @@ import MainNavbar from './components/navbar/MainNavbar';
 import HomePage from './components/pages/home/HomePage';
 import MainFooter from './components/footer/MainFooter';
 import PartaiPage from './components/pages/partai/PartaiPage';
+import MultimediaPage from './components/pages/multimedia/MultimediaPage';
 
 function App() {
   return (
@@ -12,6 +13,17 @@ function App() {
       <div className="App">
         
             <Switch>
+
+              <Route path="/multimedia">
+                <MultimediaPage/>
+              </Route>
+
+              <Route path="/ketuaumum">
+              </Route>
+
+              <Route path="/bungkarno">
+              </Route>
+
               <Route path="/partai">
                 <PartaiPage/>
               </Route>

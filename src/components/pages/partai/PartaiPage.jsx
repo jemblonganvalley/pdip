@@ -7,6 +7,7 @@ import pdiBook3 from '../../../img/pdibook3.png'
 import laguPerjuangan from '../../../img/lagu.png'
 import Partitur from '../../../img/partitur.png'
 import MinusOn from '../../../img/minusone.png'
+import pdiLogo from '../../../img/pdibanteng.png'
 
 const PartaiPage = ()=>{
     return (
@@ -137,16 +138,106 @@ const PartaiPage = ()=>{
                                     <h4>Mars Partai Demokrasi Indonesia Perjuangan</h4>
                                         <i class="fa fa-heart"></i>
                                 </div>
-                                <div className="col-sm-4 pdiSoundBar"></div>
-                                <div className="col-sm-4 pdiIcons"></div>
+                                <div className="col-sm-4 pdiSoundBar">
+
+                                </div>
+                                <div className="col-sm-4 pdiIcons">
+                                    <i class="fa fa-play">
+                                        <span>0</span>
+                                    </i>
+                                    <i class="fa fa-heart">
+                                        <span>0</span>
+                                    </i>
+                                    <i class="fa fa-comment">
+                                        <span>0</span>
+                                    </i>
+                                    <div className="duration">
+                                        <span className="durations">
+                                            0.00 / 0.00
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         </div>
                             
                     </div>
-                    <div className="col col-md-4"></div>
+                    <div className="col col-md-4 musicList">
+                        <div className="headersList">
+                            <img src={laguPerjuangan} alt="" width="60" />
+                            <h4>Lagu Perjuangan<br/>PDI Perjuangan</h4>
+                        </div>
+                        <div className="listSatu">
+                            <h5>Mars PDI Perjuangan</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                        </div>
+                        <div className="listDua">
+                            <h5>Hymne PDI Perjuangan</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                        </div>
+                        <div className="listTiga">
+                            <h5>Hymne PDI Perjuangan</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                        </div>
+                        <div className="listEmpat">
+                            <h5>Hymne PDI Perjuangan</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div className="containerTiga">
+                <div className="col-lg-3">
+                        <img src={pdiLogo} alt="" width="180" />
+                </div>
+                <div className="col-lg-9 textBanteng">
+                    <h1>Lambang PDI Perjuangan</h1>
+                    <ul>
+                        <li>Lambang PDI Perjuangan berupa gambar banteng hitam bermoncong putih dengan latar merah di dalam lingkaran bergaris hitam dan putih.</li>
+                        <li>Warna dasar merah melambangkan berani mengambil resiko dalam memperjuangkan keadilan dan kebenaran untuk rakyat.</li>
+                        <li>Mata merah dengan pandangan tajam melambangkan selalu waspada terhadap ancaman dalam berjuang.</li>
+                        <li>Moncong putih melambangkan dapat dipercaya dan berkomitmen dalam memperjuangkan keadilan dan kebenaran</li>
+                        <li>Lingkaran melambangkan tekad yang bulat dan perjuangan yang terus-menerus tanpa terputus</li>
+                    </ul>
+                </div>
+            </div>
+
+                <div className="btnUnduh">
+                    <button className="btn"><span>unduh lambang</span></button>
+                </div>
+
+                <div className="pengurusPage">
+                    <div className="textPengurus">
+                        <small>Pengurus</small>
+                    </div>
+                    <div className="paragrapPengurus">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
+                    </div>
+                </div>
+
+                <div className="photoPengurus">
+                    <h2>Struktur Pengurus Dewan Pimpinan Pusat<br/>PDI Perjuangan</h2>
+                    <button className="btn"><span>lihat</span></button>
+                </div>
+
+                <div className="maps">
+                    <h5>dewan pimpinan daerah pdi perjuangan</h5>
+                    <div className="imageMaps">
+
+                    </div>
+                </div>
+
+                <div className="anggotaLegislatif">
+                    <h1>Anggota Legislatif</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia a voluptatem mollitia dolorum ea architecto, aliquid quidem fugit accusamus saepe ab repudiandae eos ipsum! Quaerat omnis dolores quidem reiciendis distinctio.</p>
+                    <div className="btnGroup">
+                        <button className="btn"><span>DPR RI</span></button>
+                        <button className="btn"><span>DPRD Provinsi</span></button>
+                        <button className="btn"><span>DPRD Kabupaten Kota</span></button>
+                    </div>
+                </div>
+                <div className="backgroundRed"></div>
         </div>
     )
 }
