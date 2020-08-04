@@ -1,0 +1,866 @@
+$secondary : #f3f3f3;
+
+.wrapperKetuaUmum {
+    width: 100%;
+
+    .headers {
+        background: url(../../../img/kampanye.jpg);
+        background-size: cover;
+        height: 25vh;
+        background-position: center;
+
+        .backgrounds {
+            background-color: rgba(255, 0, 8, 0.8);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            color: #ffffff;
+
+            .textBackgroundBerita {
+                width: 30%;
+                height: 50%;
+                margin-left: 5rem;
+            }
+        }
+    }
+    .linkedBerita {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        margin-top: 20px;
+        padding: 10px 10%;
+        i {
+            span {
+                margin-left: 5px;
+                font-style: italic;
+                font-size: 8pt;
+            }
+        }
+    }
+
+    // Container1
+    .container-1{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 0 10%;
+        overflow: hidden;
+
+        // Column1
+        .col1-container-1{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+            background: #555;
+            overflow: hidden;
+
+            .cont-img-col1{
+                display: flex;
+                flex-direction: column;
+                height: 80vh;
+                width: 100%;
+                overflow: hidden;
+
+                .col1-img{
+                    display: flex;
+                    height: 70%;
+                    width: 100%;
+                    overflow: hidden;
+                    border-bottom: 1px solid #fff;
+
+                    .box-txt-title{
+                        display: flex;
+                        height: 100%;
+                        width: auto;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+
+                        h1{
+                            display: flex;
+                            font-size: 30px;
+                            color: #fff;
+                            padding: 25% 20% 20% 10%;
+                            overflow: hidden;
+                        }
+                    }  
+                }
+
+                .col2-img{
+                    display: flex;
+                    flex-direction: column;
+                    height: 30%;
+                    width: 100%;
+                    background-color: rgba(255, 0, 8, 0.8);
+                    overflow: hidden;
+
+                    .garis-strip-col2{
+                        display: flex;
+                        position: absolute;
+                        height: 2.5px;
+                        width: 230px;
+                        background: #fff;
+                        border-radius: 2px;
+                        margin: -2px 0 0 65px;
+                        overflow: hidden;
+                    }
+
+                    .box-txt-desk-col2{
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        width: 100%;
+                        padding: 20px 65px 0 65px;
+                        overflow: hidden;
+
+                        .txt-admin{
+                            display: flex;
+                            font-size: 12px;
+                            color: #fff;
+                            overflow: hidden;
+                        }
+
+                        .txt-desk-col2{
+                            display: flex;
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: #fff;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+        // END Column1
+
+        // Column2
+        .col2-container-1{
+            display: flex;
+            height: 10vh;
+            width: 100%;
+            background: #f3f3f3;
+            overflow: hidden;
+
+            // Row1
+            .row1-col2{
+                display: flex;
+                height: 100%;
+                width: 25%;
+                overflow: hidden;
+
+                .box-img{
+                    display: flex;
+                    height: 100%;
+                    width: 30%;
+                    overflow: hidden;
+
+                    .img-1{
+                        display: flex;
+                        height: 100%;
+                        width: 100%;
+                        background-size: cover;
+                        overflow: hidden;
+                    }
+                }
+
+                .txt-img1{
+                    display: flex;
+                    height: 100%;
+                    width: 70%;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    overflow: hidden;
+
+                    .txt-1{
+                        display: flex;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #333;
+                        margin: 1px 0 0 0;
+                        overflow: hidden;
+                    }
+                }
+            }
+            // END Row1
+
+             // Row2
+             .row2-col2{
+                display: flex;
+                height: 100%;
+                width: 25%;
+                overflow: hidden;
+
+                .box-img{
+                    display: flex;
+                    height: 100%;
+                    width: 30%;
+                    overflow: hidden;
+
+                    .img-2{
+                        display: flex;
+                        height: 100%;
+                        width: 100%;
+                        background-size: cover;
+                        overflow: hidden;
+                    }
+                }
+
+                .txt-img2{
+                    display: flex;
+                    height: 100%;
+                    width: 70%;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    overflow: hidden;
+
+                    .txt-2{
+                        display: flex;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #333;
+                        margin: 1px 0 0 0;
+                        overflow: hidden;
+                    }
+                }
+            }
+            // END Row2
+
+            // Row3
+            .row3-col2{
+                display: flex;
+                height: 100%;
+                width: 25%;
+                overflow: hidden;
+
+                .box-img{
+                    display: flex;
+                    height: 100%;
+                    width: 30%;
+                    overflow: hidden;
+
+                    .img-3{
+                        display: flex;
+                        height: 100%;
+                        width: 100%;
+                        background-size: cover;
+                        overflow: hidden;
+                    }
+                }
+
+                .txt-img3{
+                    display: flex;
+                    height: 100%;
+                    width: 70%;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    overflow: hidden;
+
+                    .txt-3{
+                        display: flex;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #333;
+                        margin: 1px 0 0 0;
+                        overflow: hidden;
+                    }
+                }
+            }
+            // END Row3
+
+            // Row4
+            .row4-col2{
+                display: flex;
+                height: 100%;
+                width: 25%;
+                overflow: hidden;
+
+                .box-img{
+                    display: flex;
+                    height: 100%;
+                    width: 30%;
+                    overflow: hidden;
+
+                    .img-4{
+                        display: flex;
+                        height: 100%;
+                        width: 100%;
+                        background-size: cover;
+                        overflow: hidden;
+                    }
+                }
+
+                .txt-img4{
+                    display: flex;
+                    height: 100%;
+                    width: 70%;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    overflow: hidden;
+
+                    .txt-4{
+                        display: flex;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #333;
+                        margin: 1px 0 0 0;
+                        overflow: hidden;
+                    }
+                }
+            }
+            // END Row4
+        }
+        // END Column2
+
+        // Column3
+        .col3-cardContent-container-1 {
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 0;
+            padding: 10px 0 0 0%;
+        
+            .col-cardContent {
+                //  border: 1px solid green;
+                 height: 100%;
+                 width: 100%;
+                 flex: auto;
+                 margin: 0 10px;
+                 background: #ffffff;
+                 transition: .5s;
+                 border-radius: 0px;
+
+                 &:hover{
+                     background: #d80010;
+                 }
+        
+                 .imageContent {
+                     width: 100%;
+                     height: 30vh;
+        
+                     background: url(../../../img/megawati5.jpg);
+                     background-size: cover;
+                 }
+        
+                 .imageTwo {
+                    width: 100%;
+                    height: 30vh;
+        
+                    background: url(../../../img/megawati6.jpg);
+                    background-size: cover;
+                 }
+        
+                 .imageThree {
+                    width: 100%;
+                    height: 30vh;
+        
+                    background: url(../../../img/megawati7.jpg);
+                    background-size: cover;
+                 }
+        
+                 .textCard {
+                     width: 100%;
+                    //  height: 100%;
+                     padding: 5px 20px;
+        
+                    //  border:  1px solid blue;
+        
+                     small {
+                         font-size: 7pt;
+                         color: #d80010;
+                     }
+        
+                     p {
+                         font-size: 8pt;
+                     }
+                 }
+            }
+        }
+        // END Column3
+
+        // Column4
+        .col4-container-1{
+            display: flex;
+            flex-direction: column;
+            height: 20vh;
+            width: 100%;
+            background: #f3f3f3;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            .col-title-berita-foto{
+                display: flex;
+                height: auto;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+                .txt-berita-foto{
+                    display: flex;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #d80010;
+                    margin: 1px;
+                    overflow: hidden;
+                }
+            }
+
+            .col-garis-lurus{
+                display: flex;
+                height: 1px;
+                width: 100%;
+                background: #ccc;
+                justify-content: center;
+                align-items: center;
+                margin: 5px 0 0 0;
+                overflow: hidden;
+                
+                .garis-merah{
+                    display: flex;
+                    position: absolute;
+                    height: 4px;
+                    width: 100px;
+                    background: #d80010;
+                    overflow: hidden;
+                }
+            }
+        }
+        // END Column4
+
+        // Column5
+        .col5-container-1{
+            display: flex;
+            height: 65vh;
+            width: 100%;
+            overflow: hidden;
+
+            // Row1
+            .row1-col5{
+                display: flex;
+                flex-direction: column-reverse;
+                position: relative;
+                height: 100%;
+                width: 30%;
+                overflow: hidden;
+
+                .img-row1{
+                    display: flex;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: #555;
+                    overflow: hidden;
+                    z-index: -1;
+                }
+
+                .box-jdl-row1{
+                    display: flex;
+                    height: 30%;
+                    width: 100%;
+                    background: #d80010;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+
+                    h1{
+                        display: flex;
+                        font-size: 20px;
+                        color: #fff;
+                        padding: 20px;
+                        overflow: hidden;
+                    }
+                }
+            }
+            // END Row1
+
+            // Row2
+            .row2-col5{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 70%;
+                margin: 0 0 0 20px;
+                overflow: hidden;
+
+                // Column1
+                .col1-row2{
+                    display: flex;
+                    height: 70%;
+                    width: 100%;
+                    overflow: hidden;
+
+                    .img-col1{
+                        display: flex;
+                        height: 100%;
+                        width: 100%;
+                        background: #555;
+                        background-size: cover;
+                        overflow: hidden;
+                    }
+                }
+                // END Column1
+
+                // Column2
+                .col2-row2{
+                    display: flex;
+                    flex-direction: column;
+                    height: 30%;
+                    width: 100%;
+                    background: #fff;
+                    padding: 20px 35px 5px 35px;
+                    overflow: hidden;
+
+                    .txt-jdl-col2{
+                        display: flex;
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #000;
+                        text-align: start;
+                        margin: 0 0 5px 0;
+                        padding: 0 0 2px 0;
+                        overflow: hidden;
+                    }
+
+                    .txt-desk-col2{
+                        display: flex;
+                        font-size: 12px;
+                        color: #000;
+                        text-align: start;
+                        padding: 0 0 10px 0;
+                        overflow: hidden;
+                    }
+                }
+                // END Column2
+            }
+            // END Row2
+        }
+        // END Column5
+    }
+    // END Container1
+
+    // Container2
+    .container-2{
+        display: flex;
+        flex-direction: column;
+        height: 45vh;
+        width: 100%;
+        background: #555;
+        margin: 50px 0 0px 0;
+        overflow: hidden;
+
+        // Column1
+        .col1-container-2{
+            display: flex;
+            flex-direction: column-reverse;
+            height: 70%;
+            width: 100%;
+            align-items: center;
+            overflow: hidden;
+
+            .txt-title-col1{
+                display: flex;
+                font-size: 25px;
+                color: #fff;
+                text-align: center;
+                overflow: hidden;
+            }
+        }
+        // END Column1
+
+        // Column2
+        .col2-container-2{
+            display: flex;
+            height: 30%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            .btn-lihat-col2{
+                display: flex;
+                height: 35px;
+                width: 120px;
+                background: #fff;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+                overflow: hidden;
+                // For Font Button
+                font-size: 12px;
+                font-weight: 500;
+                color: #d80010;
+                justify-content: center;
+                align-items: center;
+                transition: .5s;
+
+                &:hover{
+                    background: #d80010;
+                    color: #fff;
+                }
+            }
+        }
+        // END Column2
+    }
+    // END Container2
+
+    // Container3
+    .container-3{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 0 10% 50px 10%;
+
+        // Column1
+        .col1-container-3{
+            display: flex;
+            flex-direction: column;
+            height: 20vh;
+            width: 100%;
+            overflow: hidden;
+
+            .box-jdl-col1{
+                display: flex;
+                flex-direction: column-reverse;
+                height: 60%;
+                width: 100%;
+                align-items: center;
+                overflow: hidden;
+
+                .txt-jdl-col1{
+                    display: flex;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #d80010;
+                    margin: 1px;
+                    overflow: hidden;
+                }
+            }
+
+            .box-garis-lurus-col1{
+                display: flex;
+                height: 1px;
+                width: 100%;
+                background: #ccc;
+                justify-content: center;
+                align-items: center;
+                margin: 5px 0 0 0;
+                overflow: hidden;
+
+                .garis-merah{
+                    display: flex;
+                    position: absolute;
+                    height: 4px;
+                    width: 120px;
+                    background: #d80010;
+                    overflow: hidden;
+                }
+            }
+        }
+        // END Column1
+
+        // Column2
+        .col2-cardContent-container-3 {
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 0;
+            padding: 10px 0%;
+        
+            .col-cardContent {
+                //  border: 1px solid green;
+                 height: 100%;
+                 width: 100%;
+                 flex: auto;
+                 margin: 0 10px;
+                 background: #ffffff;
+                 transition: .5s;
+                 border-radius: 10px;
+
+                 &:hover{
+                     background: #d80010;
+                 }
+        
+                 .imageContent {
+                     width: 100%;
+                     height: 30vh;
+        
+                     background: url(../../../img/megawati5.jpg);
+                     background-size: cover;
+                     border-top-right-radius: 10px;
+                 }
+        
+                 .imageTwo {
+                    width: 100%;
+                    height: 30vh;
+        
+                    background: url(../../../img/megawati6.jpg);
+                    background-size: cover;
+                 }
+        
+                 .imageThree {
+                    width: 100%;
+                    height: 30vh;
+        
+                    background: url(../../../img/megawati7.jpg);
+                    background-size: cover;
+                 }
+        
+                 .textCard {
+                     width: 100%;
+                    //  height: 100%;
+                     padding: 5px 20px;
+        
+                    //  border:  1px solid blue;
+        
+                     small {
+                         font-size: 7pt;
+                         color: #d80010;
+                     }
+        
+                     p {
+                         font-size: 8pt;
+                     }
+                 }
+            }
+        }
+        // END Column2
+
+        // Column3
+        .col3-container-3{
+            display: flex;
+            flex-direction: column;
+            height: 20vh;
+            width: 100%;
+            overflow: hidden;
+
+            .box-jdl-col3{
+                display: flex;
+                flex-direction: column-reverse;
+                height: 60%;
+                width: 100%;
+                align-items: center;
+                overflow: hidden;
+
+                .txt-jdl-col3{
+                    display: flex;
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #d80010;
+                    margin: 1px;
+                    overflow: hidden;
+                }
+            }
+
+            .box-garis-lurus-col3{
+                display: flex;
+                height: 1px;
+                width: 100%;
+                background: #ccc;
+                justify-content: center;
+                align-items: center;
+                margin: 5px 0 0 0;
+                overflow: hidden;
+
+                .garis-merah{
+                    display: flex;
+                    position: absolute;
+                    height: 4px;
+                    width: 130px;
+                    background: #d80010;
+                    overflow: hidden;
+                }
+            }
+        }
+        // END Column3
+
+        // Column4
+        .col4-cardContent-container-3 {
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin-top: 0;
+            padding: 10px 0%;
+            overflow: hidden;
+        
+            .col-cardContent {
+                //  border: 1px solid green;
+                 height: 100%;
+                 width: 100%;
+                 flex: auto;
+                 margin: 0 10px;
+                 background: #ffffff;
+                 transition: .5s;
+                 border-radius: 10px;
+
+                 &:hover{
+                     background: #d80010;
+                     border-top-right-radius: 10px;
+                 }
+        
+                 .imageContent {
+                     width: 100%;
+                     height: 30vh;
+        
+                     background: url(../../../img/megawati5.jpg);
+                     background-size: cover;
+                     border-top-right-radius: 10px;
+                 }
+        
+                 .imageTwo {
+                    width: 100%;
+                    height: 30vh;
+        
+                    background: url(../../../img/megawati6.jpg);
+                    background-size: cover;
+                 }
+        
+                 .imageThree {
+                    width: 100%;
+                    height: 30vh;
+        
+                    background: url(../../../img/megawati7.jpg);
+                    background-size: cover;
+                 }
+        
+                 .textCard {
+                     width: 100%;
+                    //  height: 100%;
+                     padding: 5px 20px;
+        
+                    //  border:  1px solid blue;
+        
+                     small {
+                         font-size: 7pt;
+                         color: #d80010;
+                     }
+        
+                     p {
+                         font-size: 8pt;
+                     }
+                 }
+            }
+        }
+        // END Column4
+    }
+    // END Container3
+}
