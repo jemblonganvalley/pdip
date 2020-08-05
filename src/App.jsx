@@ -13,6 +13,8 @@ import { useEffect } from 'react';
 import BeritaPage from './components/pages/berita/BeritaPage';
 import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
 
+import StrukturPage from './components/pages/struktur/StrukturPage';
+// import StrukturPage from './components/pages/partai/struktur/StrukturPage';
 
 function App() {
 
@@ -41,6 +43,11 @@ function App() {
       <div className="App">
 
         <Switch>
+
+          <Route path="/struktur">
+            <StrukturPage/>
+          </Route>
+
           <Route path="/pemilu">
             <PemiluPage />
           </Route>
@@ -70,7 +77,7 @@ function App() {
           </Route>
 
           <Route path="/partai">
-            <PartaiPage />
+            <PartaiPage/>
           </Route>
 
           <Route path="/">

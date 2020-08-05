@@ -4,7 +4,7 @@ import backgroundHead from '../../../img/kampanye.jpg'
 import pdiBook1 from '../../../img/pdibook1.png'
 import pdiBook2 from '../../../img/pdibook2.png'
 import pdiBook3 from '../../../img/pdibook3.png'
-
+import {Link} from 'react-router-dom'
 
 
 import pdiLogo from '../../../img/pdibanteng.png'
@@ -146,7 +146,8 @@ const PartaiPage = ()=>{
                 {/* PHOTO PENGURUS */}
                 <div className="photoPengurus">
                     <h2>Struktur Pengurus Dewan Pimpinan Pusat<br/>PDI Perjuangan</h2>
-                    <button className="btn"><span>lihat</span></button>
+                    <Link className="btn" to="/struktur"><span>lihat</span></Link>
+                    
                 </div>
                 {/* END */}
 
