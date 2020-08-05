@@ -10,11 +10,31 @@ import BeritaPage from './components/pages/berita/BeritaPage';
 import InformasiPage from './components/pages/informasi/InformasiPage';
 import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
 import PemiluPage from './components/pages/Pemilu/PemiluPage';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 function App() {
+
+  let [hide, setHide] = useState(true) 
+
+  useEffect(()=>{
+    var prevScrollpos = window.pageYOffset;
+    window.addEventListener('scroll', function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        setHide(true)
+      } else {
+        setHide(false)
+      }
+      prevScrollpos = currentScrollPos;
+    })
+  },[hide])
+
   return (
     <Router>
-      <MainNavbar />
+    
+      <MainNavbar hide={hide}/>
+
       <div className="App">
 
         <Switch>
