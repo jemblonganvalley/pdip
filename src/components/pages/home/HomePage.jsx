@@ -6,6 +6,8 @@ import Informasi from '../../../img/informasii-01.png'
 import Rekening from '../../../img/rekening.png'
 import Calendar from '../../../img/calendarr.png'
 import Lagu from '../../../img/laguperjuangan.png'
+import MusicPdi from '../../musicpdi/MusicPdi'
+import CardMaps from '../../cardmaps/CardMaps'
 
 
 const HomePage = ()=> {
@@ -183,66 +185,9 @@ const HomePage = ()=> {
                 <button className="btn btn2">lihat semua</button>
             </div>
 
-            <div className="pendaftaran">
-                <div className="col col-lg-6 colOne">
-                    <div className="content">
-                        <h2>Pendaftaran Kader PDI Perjuangan</h2>
-                        <form>
-                            <input type="name" placeholder="Name" className="name form-control" />
-                            <div className="rowCustoms">
-                                <input type="tel" placeholder="Phone Number" className="tel form-control" />
-                                <input type="email" placeholder="Email" className="email form-control" />
-                            </div>
-                        </form>
-                        <button className="btn">
-                            daftar
-                        </button>
-                    </div>
-                </div>
-                <div className="col col-lg-6 colTwo">
-                    <div className="laguWrapper">
-                        <div className="laguIcon">
-                            <img src={Lagu} alt="" width="80" />
-                            <h2 className="perjuanganText">Lagu Perjuangan PDI Perjuangan</h2>
-                        </div>
-                        <div className="content1">
-                                <h5>mars pdi perjuangan</h5>
-                        </div>
-                        <div className="content2">
-                                <h5>hymne pdi perjuangan</h5>
-                        </div>
-                        <div className="content3">
-                                <h5>one for all, all for one</h5>
-                        </div>
-                        <div className="content4">
-                                <h5>solid bergerak serentak</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <MusicPdi/>
+            <CardMaps/>
 
-            <div className="pageBerita">
-                <div className="wrapperBerita">
-                    <div className="col-lg-6 carousels">
-                        
-
-                    </div>
-                    <div className="col-lg-6 ikutiBerita">
-                        <div className="wrapper">
-                            <h5>Ikuti Berita Terbaru</h5>
-                            <small>Get in touch with fresh news from our company and share it</small>
-                            <form className="form-control" >
-                                <i class="fa fa-envelope-o"></i>
-                                <input type="email" placeholder="masukan email anda disini" />
-                            </form>
-                            <button>
-                                <i class="fa fa-check" aria-hidden="true"></i>
-                                <span>Subscribe</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div className="backgroundRed"></div>
         </div>
 

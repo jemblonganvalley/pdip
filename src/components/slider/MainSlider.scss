@@ -1,25 +1,7 @@
-$responsiveSatu : 1085px;
-$responsiveDua : 1000px;
-$responsiveTiga : 991px;
-$responsiveEmpat : 719px;
+$phoneSatu : 600px;
 
-@mixin responSatu {
-    @media (max-width : #{$responsiveSatu}) {
-        @content;
-    }
-}
-@mixin responDua {
-    @media (max-width : #{$responsiveDua}) {
-        @content;
-    }
-}
-@mixin responTiga {
-    @media (max-width : #{$responsiveTiga}) {
-        @content;
-    }
-}
-@mixin responEmpat {
-    @media (max-width : #{$responsiveEmpat}) {
+@mixin phoneSatu {
+    @media (max-width : #{$phoneSatu}) {
         @content;
     }
 }
@@ -30,26 +12,13 @@ $responsiveEmpat : 719px;
     width: 100%;
     background-image: url(../../img/slider.jpg);
     background-size: cover;
-    // background-color: crimson;
-    @include responSatu() {
-        background-size: contain;
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
+
+    @include phoneSatu() {
+        
+        height: 29.5vh;
     }
-    @include responDua() {
-        background-size: contain;
-        height: 94.5vh;
-        background-repeat: no-repeat;
-    }
-    @include responTiga() {
-        background-size: contain;
-        height: 94vh;
-        background-repeat: no-repeat;
-    }
-    @include responTiga() {
-        background-size: contain;
-        height: 68vh;
-        background-repeat: no-repeat;
-    }
+    
 
     .text1 {
         height: 100%;
@@ -62,36 +31,22 @@ $responsiveEmpat : 719px;
         background-size: cover;
         opacity: 0.8;
         background-repeat: no-repeat;
-        
-        @include responSatu() {
-            background-size: contain;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
+        @include phoneSatu() {
+            background: none;
+            height: 10vh;
             padding: 0;
-        }
-        @include responDua() {
-            background-size: contain;
-            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 0;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            background-color: rgba(185, 2, 2, 0.7);
+
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        @include responTiga() {
-            background-size: contain;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-        }
-        @include responEmpat() {
-            background-size: contain;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0
+            flex-direction: row;
+            padding: 1rem;
         }
     
         
@@ -102,20 +57,13 @@ $responsiveEmpat : 719px;
             text-transform: uppercase;
             width: 25%;
         // border: 1px solid green;
-            @include responSatu() {
-                font-size: 20pt;
-                bottom: 55%;
-            }
-            @include responDua() {
-                font-size: 17pt;
-            }
-            @include responTiga() {
-                left: 10%;
-                font-size: 15pt;
-            }
-            @include responEmpat() {
-                font-size: 10pt;
-            }
+
+        @include phoneSatu() {
+            position: initial;
+            font-size: 7pt;
+            width: 50%;
+        }
+            
 
         }
         p {
@@ -124,15 +72,11 @@ $responsiveEmpat : 719px;
             bottom: 30%;
             font-size: 10pt;
 
-            @include responDua() {
-                font-size: 8pt;
-            }
-            @include responTiga() {
-                left: 10%;
-                font-size: 8pt;
-            }
-            @include responEmpat() {
-                font-size: 6pt;
+            @include phoneSatu() {
+                position: initial;
+                font-size: 5pt;
+                width: 50%;
+                // bottom: 0;s
             }
         }
         
@@ -145,24 +89,7 @@ $responsiveEmpat : 719px;
     background-image: url(../../img/slider2.jpg);
     background-size: cover;
 
-    @include responSatu() {
-        background-size: contain;
-    }
-    @include responDua() {
-        background-size: contain;
-        height: 94.5vh;
-        background-repeat: no-repeat;
-    }
-    @include responTiga() {
-        background-size: contain;
-        height: 94vh;
-        background-repeat: no-repeat;
-    }
-    @include responTiga() {
-        background-size: contain;
-        height: 68vh;
-        background-repeat: no-repeat;
-    }
+    
 
     .text2 {
         height: 100%;
@@ -176,33 +103,7 @@ $responsiveEmpat : 719px;
         opacity: 0.8;
         background-repeat: no-repeat;
 
-        @include responSatu() {
-            background-size: contain;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-        }
-        @include responDua() {
-            background-size: contain;
-            
-        }
-        @include responTiga() {
-            background-size: contain;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-        }
-        @include responEmpat() {
-            background-size: contain;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0
-        }
+        
 
         h1 {
             position: absolute;
@@ -211,20 +112,7 @@ $responsiveEmpat : 719px;
             text-transform: uppercase;
             width: 25%;
         // border: 1px solid green;
-            @include responSatu() {
-                font-size: 20pt;
-                bottom: 55%;
-            }
-            @include responDua() {
-                font-size: 17pt;
-            }
-            @include responTiga() {
-                left: 10%;
-                font-size: 15pt;
-            }
-            @include responEmpat() {
-                font-size: 10pt;
-            }
+            
 
 
         }
@@ -233,16 +121,7 @@ $responsiveEmpat : 719px;
             position: absolute;
             bottom: 30%;
             font-size: 10pt;
-            @include responDua() {
-                font-size: 8pt;
-            }
-            @include responTiga() {
-                left: 10%;
-                font-size: 8pt;
-            }
-            @include responEmpat() {
-                font-size: 6pt;
-            }
+            
         }
     }
 }
@@ -261,8 +140,14 @@ $responsiveEmpat : 719px;
         right: auto;
         bottom: 5%;
         margin-bottom: 30px;
-
-        
+        @include phoneSatu() {
+            bottom: 23%;
+        }
+        .indikator {
+            @include phoneSatu() {
+                font-size: 8pt;
+            }
+        }
 
         .active {
             opacity: 1;
@@ -274,6 +159,8 @@ $responsiveEmpat : 719px;
             opacity: 0.5;
             color: #ffffff;
             transition: opacity .6s ease;
+
+            
         }
     }
 
@@ -296,21 +183,14 @@ $responsiveEmpat : 719px;
         z-index: 10;
         // border: 1px solid blue;
         transition: .3s;
-        @include responSatu() {
-            width: 30px;
-            height: 30px;
-            bottom: 10%;
+
+        @include phoneSatu() {
+            width: 15px;
+            height: 15px;
+            bottom: 37%;
+            text-align: center;
         }
-        @include responDua() {
-            width: 25px;
-            height: 25px;
-            bottom: 11%;
-        }
-        @include responEmpat() {
-            width: 18px;
-            height: 18px;
-            bottom: 13%;
-        }
+        
 
         &:hover {
             background-color: #ffffff;
@@ -318,8 +198,8 @@ $responsiveEmpat : 719px;
         }
         i {
             font-size: 10px;
-            @include responEmpat() {
-                font-size: 6pt;
+            @include phoneSatu() {
+                font-size: 4pt;
             }
             
         }
@@ -337,9 +217,7 @@ $responsiveEmpat : 719px;
 
     span {
         font-size: 13px;
-        @include responEmpat() {
-            font-size: 8pt;
-        }
+        
     }
 
     i {

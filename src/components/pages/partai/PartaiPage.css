@@ -229,12 +229,7 @@
   border: 1px solid brown;
 }
 
-.wrapperPartai .containerDua .contentDua .musicPlayer {
-  background: url(../../../img/megawati10.png);
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-}
+
 
 .wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic {
   width: 100%;
