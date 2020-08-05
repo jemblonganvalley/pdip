@@ -3,14 +3,18 @@ import logo from '../../img/pdiperjuangan02.svg'
 import './MainNavbar.scss'
 import {NavLink} from 'react-router-dom'
 
-const MainNavbar = ()=> {
+const MainNavbar = ({hide})=> {
     return (
       // START NAVBAR
 
-        <nav className="navbar navbar-expand-lg sticky-top">
+        <nav className="navbar navbar-expand-lg sticky-top" style={{
+          transform : hide ? 'translateY(0)' : 'translateY(-18vh)',
+          transitionDelay : '.1s',
+          transitionDuration : '.5s',
+        }}>
             <div className="container-fluid">
               <NavLink className="navbar-brand" to="/">
-                <img src={logo} alt="" width="50" height="50" className="d-inline-block align-center active" loading="lazy" />
+                <img src={logo} alt="" width="60"  className="d-inline-block align-center active" loading="lazy" />
               </NavLink>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                 <i class="fa fa-bars" aria-hidden="true"></i>

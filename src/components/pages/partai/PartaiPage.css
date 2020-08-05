@@ -242,7 +242,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
 }
 
 .wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic {

@@ -6,15 +6,36 @@ import MainFooter from './components/footer/MainFooter';
 import PartaiPage from './components/pages/partai/PartaiPage';
 import MultimediaPage from './components/pages/multimedia/MultimediaPage';
 import BkbbPage from './components/pages/bkbb/BkbbPage'
-import BeritaPage from './components/pages/berita/BeritaPage';
 import InformasiPage from './components/pages/informasi/InformasiPage';
-import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
 import PemiluPage from './components/pages/Pemilu/PemiluPage';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import BeritaPage from './components/pages/berita/BeritaPage';
+import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
+
 
 function App() {
+
+  let [hide, setHide] = useState(true)
+
+  useEffect(() => {
+    var prevScrollpos = window.pageYOffset;
+    window.addEventListener('scroll', function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        setHide(true)
+      } else {
+        setHide(false)
+      }
+      prevScrollpos = currentScrollPos;
+    })
+  }, [hide])
+
   return (
     <Router>
-      <MainNavbar />
+
+      <MainNavbar hide={hide} />
+
       <div className="App">
 
         <Switch>

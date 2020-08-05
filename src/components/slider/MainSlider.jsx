@@ -7,8 +7,8 @@ const MainSlider = ()=> {
                     
                 <div className="carousel-indicators">
                     
-                    <small data-target="#carouselExampleIndicators" data-slide-to={0} className="active" >01</small>
-                    <small data-target="#carouselExampleIndicators" data-slide-to={1}>02</small>
+                    <small data-target="#carouselExampleIndicators" data-slide-to={0} className="active indikator" >01</small>
+                    <small data-target="#carouselExampleIndicators" data-slide-to={1} className="indikator">02</small>
                 </div>
                     <button data-target="#carouselExampleIndicators" data-slide="next" >
                             <i className="fa fa-arrow-right"></i>
