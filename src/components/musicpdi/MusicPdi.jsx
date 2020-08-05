@@ -6,14 +6,14 @@ import './MusicPdi.scss'
 
 const MusicPdi = ()=> {
     return (
-        <div className="musiPdi">
+        <div className="musicPdi">
             {/* CONTAINER DUA */}
             <div className="containerDua">
                 <div className="contentDua">
 
                     {/* MUSIC */}
                     <div className="col col-md-8 musicPlayer">
-                        <div className="wrapperContentMusic">
+                        <div className="wrapperContentMusicHome">
                         <div className="contentMusic">
                             <div className="col-sm-4">
                                 <div className="plyr">

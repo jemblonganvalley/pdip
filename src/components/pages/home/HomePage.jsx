@@ -179,6 +179,38 @@ const HomePage = ()=> {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
                     </div>
                 </div>
+                
+            </div>
+
+            <div className="cardContent2">
+                <div className="col col-lg-4 colOne">
+                    <div className="imageContent imageOne"></div>
+                    <div className="textCard">
+                    <small>Admin PDI Perjuangan | 1 Januari 2019</small>
+                    <h5 className="kolsHome">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
+                    </div>
+
+                </div>
+                <div className="col col-lg-4 two">
+
+                    <div className="imageContent imageTwo"></div>
+                    <div className="textCard">
+                    <small>Admin PDI Perjuangan | 1 Januari 2019</small>
+                    <h5 className="kolsHome">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
+                    </div>
+
+                </div>
+                <div className="col col-lg-4 three">
+                <div className="imageContent imageThree"></div>
+                    <div className="textCard">
+                    <small>Admin PDI Perjuangan | 1 Januari 2019</small>
+                    <h5 className="kolsHome">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
+                    </div>
+                </div>
+                
             </div>
 
             <div className="btnSize">
