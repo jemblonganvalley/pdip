@@ -10,6 +10,8 @@ import BeritaPage from './components/pages/berita/BeritaPage';
 import InformasiPage from './components/pages/informasi/InformasiPage';
 import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
 import PemiluPage from './components/pages/Pemilu/PemiluPage';
+import StrukturPage from './components/pages/struktur/StrukturPage';
+// import StrukturPage from './components/pages/partai/struktur/StrukturPage';
 
 function App() {
   return (
@@ -18,6 +20,11 @@ function App() {
       <div className="App">
 
         <Switch>
+
+          <Route path="/struktur">
+            <StrukturPage/>
+          </Route>
+
           <Route path="/pemilu">
             <PemiluPage />
           </Route>
@@ -47,7 +54,7 @@ function App() {
           </Route>
 
           <Route path="/partai">
-            <PartaiPage />
+            <PartaiPage/>
           </Route>
 
           <Route path="/">

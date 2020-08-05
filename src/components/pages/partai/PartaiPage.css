@@ -41,7 +41,7 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 20px 15%;
+  padding: 20px 8%;
 }
 
 .wrapperPartai .linkedPartai i span {
@@ -349,7 +349,7 @@
   font-weight: bold;
 }
 
-.wrapperPartai .photoPengurus button {
+.wrapperPartai .photoPengurus .btn {
   color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 25px;
@@ -360,13 +360,13 @@
   margin-top: 1.5rem;
 }
 
-.wrapperPartai .photoPengurus button:hover {
+.wrapperPartai .photoPengurus .btn:hover {
   background: #ffffff;
   color: #c70000;
 }
 
 .wrapperPartai .maps {
-  padding: 20px 15%;
+  padding: 20px 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,7 +396,7 @@
 }
 
 .wrapperPartai .anggotaLegislatif {
-  padding: 20px 15%;
+  padding: 20px 8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
