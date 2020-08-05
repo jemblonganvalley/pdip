@@ -1,5 +1,6 @@
 import React from 'react'
 import './StrukturPage.scss'
+import StrukturPaginate from '../../pagination/StrukturPaginate'
 
 const StrukturPage = ()=> {
     return (
@@ -29,8 +30,16 @@ const StrukturPage = ()=> {
                 <div className="strukturTextHead">
                     <h2>Struktur Pengurus Dewan Pimpinan Pusat<br/>PDI Perjuangan</h2>
                 </div>
+
+                <div className="pengurusList">
+                    <div className="listPengurus">
+                        <StrukturPaginate/>
+                    </div>
+                </div>
             </div>
-                {/* END */}
+            {/* END */}
+            
+
         </div>
     )
 }
