@@ -8,6 +8,7 @@ import IconHartaSatu from '../../../img/lh.png'
 import IconHartaDua from '../../../img/income.png'
 import ConsentWhite from '../../../img/consentwhite.png'
 import Consentblack from '../../../img/consentblack.png'
+import CardMaps from '../../cardmaps/CardMaps'
 
 const InformasiPage = ()=> {
     return (
@@ -38,7 +39,7 @@ const InformasiPage = ()=> {
                 <div className="paragrapProfil">
                     <div className="paragrapKiri">
                         <h5 className="merdeka">Merdeka !!</h5>
-                        <h4 className="solid">" Solid Bergerak unutk Indonesia Raya "</h4>
+                        <h4 className="solid">" Solid Bergerak untuk Indonesia Raya "</h4>
                         <p className="textParagrap">Salah satu elemen penting dalam mewujudkan penyelenggaraan Partai pelopor yang ideologis dan modern adalah terpenuhinya hak publik untuk memperoleh informasi sesuai dengan peraturan perundang-undangan yang berlaku. Hak masyarakat untuk memperoleh Informasi menjadi sangat penting karena semakin terbuka sistem Penyelenggaraan Pengelolaan Partai kepada publik, maka program partai terutama dalam hal pendidikan politik bagi masyarakat dalam kehidupan berbangsa dan bernegara semakin dapat diwujudkan dan dipertanggungjawabkan. Hak setiap orang untuk memperoleh Informasi juga relevan untuk meningkatkan kualitas pelibatan masyarakat dalam proses pengambilan keputusan publik. Partisipasi atau pelibatan masyarakat tidak banyak berarti tanpa jaminan keterbukaan Informasi Publik.
                         <br/><br/>
                         Berdasarkan Undang-undang UU No.14 Tahun 2008 tentang Keterbukaan Informasi Publik sebagai landasan hukum yang mengatur berkaitan baik mengenai hak dan kewajiban setiap orang untuk memperoleh Informasi, maupun hak dan kewajiban Badan Publik untuk menyediakan dan melayani permintaan Informasi dan dokumentasi yang menjadi kewenangannya. Sebagai Partai Politik, PDI Perjuangan berkomitmen untuk membuka akses atas Informasi Publik tersebut terbuka untuk masyarakat luas.</p>
@@ -79,7 +80,7 @@ const InformasiPage = ()=> {
                 {/* YOUTUBE PPDI */}
                 <div className="ytProfil">
                     <div className="ytIframe">
-                    <iframe src="https://www.youtube.com/watch?v=V4pM1xY9ntY" frameborder="0" className="iframeProfil" allowFullScreen></iframe>
+                    <iframe  src="https://www.youtube.com/embed/V4pM1xY9ntY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="iframeProfil" ></iframe>
                     </div>
                 </div>
                 {/* END */}
@@ -163,7 +164,7 @@ const InformasiPage = ()=> {
             </div>
             {/* END */}
 
-            
+            <CardMaps/>
 
 
         </div>
