@@ -1,0 +1,29 @@
+.circleCard {
+    width: 20vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border: 1px solid blue;
+
+    .imageCircle {
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 50%;
+    }
+
+    .jabatan {
+        margin-top: 5px;
+        font-size: 7pt;
+        color: #d80010;
+        font-weight: bold;
+    }
+    .nama {
+        width: 50%;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: .5rem;
+    }
+}
