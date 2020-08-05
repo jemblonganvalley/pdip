@@ -3,10 +3,22 @@
   padding: 20px 10%;
 }
 
+@media (max-width: 1085px) {
+  .homePageTwo {
+    padding: 20px 13%;
+  }
+}
+
 .homePageTwo .customRow {
   height: 20vh;
   background-color: #2d3436;
   width: 100%;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .customRow {
+    height: 18vh;
+  }
 }
 
 .homePageTwo .customRow .custom {
@@ -25,6 +37,13 @@
   margin: 0 10px;
 }
 
+@media (max-width: 1085px) {
+  .homePageTwo .customRow .custom img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .homePageTwo .customRow .custom h3 {
   text-transform: uppercase;
   font-size: 13pt;
@@ -32,6 +51,12 @@
   margin: 0 10px;
   line-height: 1.3;
   letter-spacing: 1px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .customRow .custom h3 {
+    font-size: 10pt;
+  }
 }
 
 .homePageTwo .customRow .custom .customBorder {
@@ -47,6 +72,12 @@
   width: 100%;
   height: 90%;
   border-right: 1px solid white;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .customRow .custom .customBorder {
+    height: 60%;
+  }
 }
 
 .homePageTwo .customRow .custom .calendar {
@@ -77,6 +108,12 @@
   margin-top: 30px;
 }
 
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .textVideo {
+    margin-top: 3rem;
+  }
+}
+
 .homePageTwo .videoPage .textVideo small {
   cursor: pointer;
   color: #d80010;
@@ -85,6 +122,12 @@
   font-weight: bold;
   font-size: 10pt;
   border-bottom: 5.5px solid #d80010;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .textVideo small {
+    font-size: 8pt;
+  }
 }
 
 .homePageTwo .videoPage .paragrapVideo {
@@ -109,14 +152,27 @@
   letter-spacing: 1px;
 }
 
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .paragrapVideo p {
+    font-size: 10pt;
+  }
+}
+
 .homePageTwo .videoPage .bannerYoutube {
   width: 100%;
   background: url(../../../img/image-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -200px;
+  background-position-y: -150px;
   margin-top: 20px;
   height: 40vh;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .bannerYoutube {
+    height: 30vh;
+    margin-top: 2.5rem;
+  }
 }
 
 .homePageTwo .videoPage .bannerYoutube .textYoutube {
@@ -168,10 +224,25 @@
   width: 50px;
 }
 
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText ul li a {
+    height: 35px;
+    width: 35px;
+  }
+}
+
 .homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText ul li a i {
   font-size: 20pt;
   margin-left: 5px;
   margin-top: 5px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText ul li a i {
+    font-size: 10pt;
+    margin-left: 3px;
+    margin-top: 7px;
+  }
 }
 
 .homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText .textInfoYT {
@@ -194,6 +265,18 @@
   margin-left: 20px;
 }
 
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText .textInfoYT .videoTerbaru {
+    font-size: 13pt;
+  }
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText .textInfoYT .siaranHut {
+    font-size: 10pt;
+  }
+}
+
 .homePageTwo .videoPage .cardContainer {
   width: 100%;
   height: 50vh;
@@ -211,6 +294,12 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 15px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .cardContainer {
+    margin-top: 25px;
+  }
 }
 
 .homePageTwo .videoPage .cardContainer .col {
@@ -278,12 +367,24 @@
   color: #d80010;
 }
 
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .cardContainer .col .text small {
+    font-size: 6pt;
+  }
+}
+
 .homePageTwo .videoPage .cardContainer .col .text small:hover {
   color: #ffffff;
 }
 
 .homePageTwo .videoPage .cardContainer .col .text h5 {
   margin: 10px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .cardContainer .col .text h5 {
+    font-size: 12pt;
+  }
 }
 
 .homePageTwo button {
@@ -296,6 +397,12 @@
   color: #d80010;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo button {
+    font-size: 6pt;
+  }
 }
 
 .homePageTwo button:hover {
@@ -357,6 +464,12 @@
 .homePageTwo .beritaPage .paragrapBerita p {
   font-size: 14pt;
   letter-spacing: 1px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .beritaPage .paragrapBerita p {
+    font-size: 10pt;
+  }
 }
 
 .ketuaUmum {
@@ -430,13 +543,31 @@
   font-size: 10pt;
 }
 
+@media (max-width: 1085px) {
+  .ketuaUmum .carousels .carousel .carousel-inner .carousel-item h5 {
+    font-size: 8pt;
+  }
+}
+
 .ketuaUmum .carousels .carousel .carousel-inner .carousel-item h3 {
   font-size: 15pt;
   font-weight: 300;
 }
 
+@media (max-width: 1085px) {
+  .ketuaUmum .carousels .carousel .carousel-inner .carousel-item h3 {
+    font-size: 12pt;
+  }
+}
+
 .ketuaUmum .carousels .carousel .carousel-inner .carousel-item p {
   font-size: 8pt;
+}
+
+@media (max-width: 1085px) {
+  .ketuaUmum .carousels .carousel .carousel-inner .carousel-item p {
+    font-size: 6pt;
+  }
 }
 
 .cardContent {
@@ -456,7 +587,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 4.5rem;
-  padding: 15px 10%;
+  padding: 20px 15%;
 }
 
 .cardContent .col {
@@ -508,8 +639,26 @@
   color: #d80010;
 }
 
+@media (max-width: 1085px) {
+  .cardContent .col .textCard small {
+    font-size: 5pt;
+  }
+}
+
+@media (max-width: 1085px) {
+  .cardContent .col .textCard .kolsHome {
+    font-size: 10pt;
+  }
+}
+
 .cardContent .col .textCard p {
   font-size: 8pt;
+}
+
+@media (max-width: 1085px) {
+  .cardContent .col .textCard p {
+    font-size: 6pt;
+  }
 }
 
 .btnSize {
@@ -536,6 +685,12 @@
   transition: .5s;
 }
 
+@media (max-width: 1085px) {
+  .btnSize .btn2 {
+    font-size: 6pt;
+  }
+}
+
 .btnSize .btn2:hover {
   background: #d80010;
   color: #ffffff;
@@ -557,7 +712,6 @@
 }
 
 .pendaftaran .col {
-  width: 100%;
   height: 100%;
 }
 
@@ -583,12 +737,18 @@
 .pendaftaran .col .content h2 {
   font-weight: 800;
   color: #ffffff;
-  width: 20rem;
   margin-right: 5rem;
   font-size: 26pt;
   text-align: end;
   line-height: 1.3;
   letter-spacing: 1.5px;
+}
+
+@media (max-width: 1085px) {
+  .pendaftaran .col .content h2 {
+    font-size: 17pt;
+    width: 20rem;
+  }
 }
 
 .pendaftaran .col .content form {
@@ -607,6 +767,12 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 4.5rem;
+}
+
+@media (max-width: 1085px) {
+  .pendaftaran .col .content form {
+    width: 60%;
+  }
 }
 
 .pendaftaran .col .content form .form-control:focus {
@@ -718,7 +884,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
 }
 
 .pendaftaran .colTwo .laguWrapper .laguIcon {
@@ -739,10 +904,22 @@
           align-items: center;
 }
 
+@media (max-width: 1085px) {
+  .pendaftaran .colTwo .laguWrapper .laguIcon {
+    padding: 2rem;
+  }
+}
+
 .pendaftaran .colTwo .laguWrapper .laguIcon h2 {
   color: #ffffff;
   margin-left: 2rem;
   line-height: 1;
+}
+
+@media (max-width: 1085px) {
+  .pendaftaran .colTwo .laguWrapper .laguIcon h2 {
+    font-size: 15pt;
+  }
 }
 
 .pendaftaran .colTwo .laguWrapper .content1 {
@@ -760,6 +937,12 @@
   font-size: 13pt;
 }
 
+@media (max-width: 1085px) {
+  .pendaftaran .colTwo .laguWrapper .content1 h5 {
+    font-size: 10pt;
+  }
+}
+
 .pendaftaran .colTwo .laguWrapper .content2 {
   width: 70%;
   height: 2rem;
@@ -773,6 +956,12 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 13pt;
+}
+
+@media (max-width: 1085px) {
+  .pendaftaran .colTwo .laguWrapper .content2 h5 {
+    font-size: 10pt;
+  }
 }
 
 .pendaftaran .colTwo .laguWrapper .content3 {
@@ -790,6 +979,12 @@
   font-size: 13pt;
 }
 
+@media (max-width: 1085px) {
+  .pendaftaran .colTwo .laguWrapper .content3 h5 {
+    font-size: 10pt;
+  }
+}
+
 .pendaftaran .colTwo .laguWrapper .content4 {
   width: 70%;
   height: 2rem;
@@ -803,6 +998,12 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 13pt;
+}
+
+@media (max-width: 1085px) {
+  .pendaftaran .colTwo .laguWrapper .content4 h5 {
+    font-size: 10pt;
+  }
 }
 
 .pageBerita {
@@ -892,10 +1093,22 @@
   letter-spacing: 0.5px;
 }
 
+@media (max-width: 1085px) {
+  .pageBerita .wrapperBerita .ikutiBerita .wrapper h5 {
+    font-size: 12pt;
+  }
+}
+
 .pageBerita .wrapperBerita .ikutiBerita .wrapper small {
   font-size: 7pt;
   padding: 10px;
   font-weight: 300;
+}
+
+@media (max-width: 1085px) {
+  .pageBerita .wrapperBerita .ikutiBerita .wrapper small {
+    font-size: 5pt;
+  }
 }
 
 .pageBerita .wrapperBerita .ikutiBerita .wrapper form {
@@ -909,6 +1122,14 @@
   top: .8rem;
   font-size: 11pt;
   color: #cfcfcf;
+}
+
+@media (max-width: 1085px) {
+  .pageBerita .wrapperBerita .ikutiBerita .wrapper form i {
+    font-size: 8pt;
+    left: .6rem;
+    top: 1rem;
+  }
 }
 
 .pageBerita .wrapperBerita .ikutiBerita .wrapper form input {
@@ -957,6 +1178,12 @@
   transition: .5s;
 }
 
+@media (max-width: 1085px) {
+  .pageBerita .wrapperBerita .ikutiBerita .wrapper button {
+    height: 2rem;
+  }
+}
+
 .pageBerita .wrapperBerita .ikutiBerita .wrapper button:hover {
   background: #2d3436;
   color: #ffffff;
@@ -967,9 +1194,21 @@
   margin-right: .3rem;
 }
 
+@media (max-width: 1085px) {
+  .pageBerita .wrapperBerita .ikutiBerita .wrapper button i {
+    font-size: 8pt;
+  }
+}
+
 .pageBerita .wrapperBerita .ikutiBerita .wrapper button span {
   font-size: 8pt;
   font-weight: 700;
+}
+
+@media (max-width: 1085px) {
+  .pageBerita .wrapperBerita .ikutiBerita .wrapper button span {
+    font-size: 7pt;
+  }
 }
 
 .backgroundRed {

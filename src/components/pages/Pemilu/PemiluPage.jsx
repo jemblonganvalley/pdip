@@ -2,10 +2,6 @@
 import React from 'react'
 // END Import to React
 
-import pemilu3 from '../../../img/pemilu3.jpg'
-import pemilu5 from '../../../img/pemilu5.jpg'
-import pemilu7 from '../../../img/pemilu7.jpg'
-
 // Import to CSS
 import './PemiluPage.css'
 // END Import to CSS
@@ -410,7 +406,6 @@ const PemiluPage = () => {
                         {/* Row1 */}
                         <div className="row1-col2">
                             <div className="col1-row1">
-                                <img src={pemilu3} alt="" />
                             </div>
                             <div className="col2-row1">
                                 <p className="txt-title">
@@ -426,7 +421,6 @@ const PemiluPage = () => {
                         {/* Row2 */}
                         <div className="row2-col2">
                             <div className="col1-row2">
-                                <img src={pemilu7} alt="" />
                             </div>
                             <div className="col2-row2">
                                 <p className="txt-title">
@@ -445,7 +439,6 @@ const PemiluPage = () => {
 
                 {/* Container2 */}
                 <div className="container-2">
-                    <img src={pemilu5} alt="" />
                     <div className="jdl-col1">
                         <div className="box-txt-jdl">
                             <p className="txt-jdl">

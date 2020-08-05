@@ -15,13 +15,13 @@ const KetuaUmumPage = () => {
                 <div className="headers">
                     <div className="backgrounds">
                         <div className="textBackgroundBerita">
-                            <h2>Solid Bergerak Untuk<br />Indonesia Raya </h2>
+
                         </div>
                     </div>
                 </div>
                 <div className="linkedBerita">
                     <i class="fa fa-home">
-                        <span>Home / Ketua Umum /</span>
+                        <span>Home / Ketua Umum</span>
                     </i>
                 </div>
                 {/* Container1 */}
@@ -57,7 +57,7 @@ const KetuaUmumPage = () => {
                         {/* Row1 */}
                         <div className="row1-col2">
                             <div className="box-img">
-                                <img src="" alt="" className="img-1" />
+
                             </div>
                             <div className="txt-img1">
                                 <p className="txt-1">
@@ -69,7 +69,7 @@ const KetuaUmumPage = () => {
                         {/* Row2 */}
                         <div className="row2-col2">
                             <div className="box-img">
-                                <img src="" alt="" className="img-2" />
+
                             </div>
                             <div className="txt-img2">
                                 <p className="txt-2">
@@ -81,7 +81,7 @@ const KetuaUmumPage = () => {
                         {/* Row3 */}
                         <div className="row3-col2">
                             <div className="box-img">
-                                <img src="" alt="" className="img-3" />
+
                             </div>
                             <div className="txt-img3">
                                 <p className="txt-3">
@@ -93,7 +93,7 @@ const KetuaUmumPage = () => {
                         {/* Row4 */}
                         <div className="row4-col2">
                             <div className="box-img">
-                                <img src="" alt="" className="img-4" />
+
                             </div>
                             <div className="txt-img4">
                                 <p className="txt-4">
@@ -156,7 +156,9 @@ const KetuaUmumPage = () => {
                     <div className="col5-container-1">
                         {/* Row1 */}
                         <div className="row1-col5">
-                            <img src="" alt="" className="img-row1" />
+                            <div className="box-img">
+
+                            </div>
                             <div className="box-jdl-row1">
                                 <h1>KONGRES Ke- 5 PDI Perjuangan "Solid Bergerak Untuk Indonesia Raya" Bali</h1>
                             </div>
@@ -166,7 +168,7 @@ const KetuaUmumPage = () => {
                         <div className="row2-col5">
                             {/* Column1 */}
                             <div className="col1-row2">
-                                <img src="" alt="" className="img-col1" />
+
                             </div>
                             {/* END Column1 */}
                             {/* Column2 */}

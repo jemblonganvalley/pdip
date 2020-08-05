@@ -1,0 +1,576 @@
+.wrapperMultimedia {
+  width: 100%;
+}
+
+.wrapperMultimedia .headerMedia {
+  background: url(../../../img/mediabanner.png);
+  background-size: cover;
+  height: 25vh;
+  background-position: bottom;
+}
+
+.wrapperMultimedia .headerMedia .textBannerMedia {
+  width: 30%;
+  height: 50%;
+  margin-left: 13rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.wrapperMultimedia .headerMedia .textBannerMedia h2 {
+  position: absolute;
+  bottom: -70%;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+}
+
+.wrapperMultimedia .linkedMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  margin-top: 20px;
+  padding: 20px 15%;
+}
+
+.wrapperMultimedia .linkedMedia i span {
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 8pt;
+}
+
+.wrapperMultimedia .pidatoKU {
+  padding: 20px 15%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+}
+
+.wrapperMultimedia .pidatoKU .col-lg-9 {
+  height: 100%;
+}
+
+.wrapperMultimedia .pidatoKU .col-lg-9 iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapperMultimedia .pidatoKU .col-lg-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2rem;
+  position: relative;
+}
+
+.wrapperMultimedia .pidatoKU .col-lg-3 small {
+  font-size: 8pt;
+  color: #c70000;
+}
+
+.wrapperMultimedia .pidatoKU .col-lg-3 span {
+  margin-top: 1rem;
+  font-size: 15pt;
+  font-weight: 700;
+  width: 30vw;
+}
+
+.wrapperMultimedia .pidatoKU .col-lg-3 p {
+  margin-top: 3rem;
+  font-size: 8pt;
+}
+
+.wrapperMultimedia .pidatoKU .col-lg-3 .socialMedia {
+  margin-top: 8.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapperMultimedia .pidatoKU .col-lg-3 .socialMedia small {
+  color: #000000;
+  margin-right: 10px;
+}
+
+.wrapperMultimedia .pidatoKU .col-lg-3 .socialMedia i {
+  margin: 0 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperMultimedia .pidatoKU .col-lg-3 .socialMedia i:hover {
+  color: #c70000;
+  cursor: pointer;
+}
+
+.wrapperMultimedia .cardMedia {
+  width: 100%;
+  padding: 20px 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperMultimedia .cardMedia .imgCards {
+  margin-right: 1rem;
+}
+
+.wrapperMultimedia .cardMedia .siaranLangsung {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperMultimedia .cardMedia .siaranLangsung .smallCard {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 7pt;
+}
+
+.wrapperMultimedia .cardMedia .videoDokumentasi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperMultimedia .cardMedia .videoDokumentasi .smallCard {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 7pt;
+}
+
+.wrapperMultimedia .cardMedia .videoInteraktif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperMultimedia .cardMedia .videoInteraktif .smallCard {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 7pt;
+}
+
+.wrapperMultimedia .cardMedia .siaranPers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperMultimedia .cardMedia .siaranPers .smallCard {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 7pt;
+}
+
+.wrapperMultimedia .cardMedia .mediaCard {
+  margin: 10px 5%;
+}
+
+.wrapperMultimedia .panggung {
+  width: 100%;
+  background-image: url(../../../img/panggung.png);
+  background-size: cover;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperMultimedia .panggung .textPanggung {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperMultimedia .panggung .textPanggung .panggungH1 {
+  margin-top: 2rem;
+}
+
+.wrapperMultimedia .panggung .textPanggung .btnPanggung {
+  border-radius: 25px;
+  color: #ffffff;
+  border: 1px solid #c70000;
+  width: 10vw;
+  font-size: 9pt;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-top: 3rem;
+}
+
+.wrapperMultimedia .panggung .textPanggung .btnPanggung:hover {
+  background-color: #c70000;
+}
+
+.wrapperMultimedia .cardMediaDua {
+  padding: 20px 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapperMultimedia .cardMediaDua .kols {
+  margin: 10px;
+}
+
+.wrapperMultimedia .cardMediaDua .cols1 .cardMBody {
+  width: 100%;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperMultimedia .cardMediaDua .cols1 .cardMBody .cardMBImg {
+  width: 100%;
+  height: 45vh;
+  background: url(../../../img/ig-perempuan.png);
+  background-size: cover;
+}
+
+.wrapperMultimedia .cardMediaDua .cols1 .cardMBody .cardTextWrapper {
+  padding: 5px 20px;
+}
+
+.wrapperMultimedia .cardMediaDua .cols1 .cardMBody .cardTextWrapper .cardSmall {
+  font-size: 8pt;
+  padding: 10px;
+  color: #c70000;
+}
+
+.wrapperMultimedia .cardMediaDua .cols1 .cardMBody .cardTextWrapper .cardH4 {
+  padding: 0 10px;
+}
+
+.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 {
+  width: 100%;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 .cardMBImg2 {
+  width: 100%;
+  height: 45vh;
+  background: url(../../../img/megawati12.png);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 .cardMBImg2 .iconPlayMedia {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 10pt;
+  -webkit-transition: .1s;
+  transition: .1s;
+  color: #ffffff;
+}
+
+.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 .cardMBImg2 .iconPlayMedia:hover {
+  width: 45px;
+  height: 45px;
+  background: #ffffff;
+  color: #2d3436;
+}
+
+.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 .cardTextWrapper2 {
+  padding: 5px 20px;
+}
+
+.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 .cardTextWrapper2 .cardSmall2 {
+  font-size: 8pt;
+  padding: 10px;
+  color: #c70000;
+}
+
+.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 .cardTextWrapper2 .cardH42 {
+  padding: 0 10px;
+}
+
+.wrapperMultimedia .videoBaruPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 15%;
+  width: 100%;
+}
+
+.wrapperMultimedia .videoBaruPage .textVideoBaru {
+  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wrapperMultimedia .videoBaruPage .textVideoBaru .videoBaru {
+  cursor: pointer;
+  color: #d80010;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 8pt;
+  border-bottom: 5.5px solid #d80010;
+}
+
+.wrapperMultimedia .videoBaruPage .cardVideoBaru {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 30px;
+}
+
+.wrapperMultimedia .videoBaruPage .cardVideoBaru .col {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin: 0 10px;
+  background: #ffffff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.wrapperMultimedia .videoBaruPage .cardVideoBaru .col:hover {
+  -webkit-box-shadow: 4px 17px 40px -30px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 17px 40px -30px rgba(0, 0, 0, 0.75);
+  background: #d80010;
+  color: #ffffff;
+}
+
+.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .imageCard {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../../../img/megawati1.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .imageCard .VBMusic {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 10pt;
+}
+
+.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .imageCard .VBMusic:hover {
+  background: #ffffff;
+  color: #c70000;
+}
+
+.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .two {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../../../img/megawati2.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .three {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../../../img/megawati3.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .text {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 19vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .text small {
+  margin: 10px;
+  font-size: 8pt;
+  color: #d80010;
+}
+
+.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .text small:hover {
+  color: #ffffff;
+}
+
+.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .text h5 {
+  margin: 10px;
+}
+/*# sourceMappingURL=MultimediaPage.css.map */
