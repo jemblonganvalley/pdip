@@ -90,13 +90,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 45vh;
+  height: 50%;
   width: 100%;
   background-image: url(../../../img/pemilu.jpeg);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 0 35px 0;
+  margin: 0 0px 20px 0px;
   overflow: hidden;
 }
 
@@ -104,11 +103,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 45vh;
+  height: 50%;
   width: 100%;
   background-image: url(../../../img/pemilu2.jpg);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
 }
@@ -1411,6 +1409,10 @@
   display: flex;
   height: 100%;
   width: 30%;
+  background-image: url(../../../img/pemilu12.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
@@ -1488,7 +1490,10 @@
   position: relative;
   height: 100%;
   width: 30%;
-  padding: 1px 1px 1px 1px;
+  background-image: url(../../../img/pemilu9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -1558,9 +1563,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  height: 45vh;
+  height: 60vh;
   width: 100%;
-  background: #fff;
+  background-image: url(../../../img/pemilu5.jpg);
+  background-position: center;
+  background-size: cover;
   margin: 20px 0 20px 0;
   overflow: hidden;
 }

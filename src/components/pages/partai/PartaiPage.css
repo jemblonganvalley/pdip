@@ -25,7 +25,7 @@
 .wrapperPartai .headers .backgrounds .textBackgroundPartai {
   width: 30%;
   height: 50%;
-  margin-left: 5rem;
+  margin-left: 13rem;
 }
 
 .wrapperPartai .linkedPartai {
@@ -41,7 +41,7 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 10px 10%;
+  padding: 20px 15%;
 }
 
 .wrapperPartai .linkedPartai i span {
@@ -225,11 +225,12 @@
   display: flex;
 }
 
-.wrapperPartai .containerDua .contentDua .col {
-  border: 1px solid brown;
+.wrapperPartai .containerDua .contentDua .musicPlayer {
+  background: url(../../../img/megawati10.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
-
-
 
 .wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic {
   width: 100%;
@@ -421,7 +422,7 @@
 }
 
 .wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .mulai {
-  height: 15vh;
+  height: 16.5vh;
   background: #ff0008cc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -461,7 +462,6 @@
 }
 
 .wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm {
-  border: 1px solid blue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,5 +495,489 @@
   right: 0;
   color: #ff0008cc;
   text-align: right;
+}
+
+.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm .pdiSoundBar {
+  background: #ff0008cc;
+  height: 2rem;
+}
+
+.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm .pdiIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  position: relative;
+  font-size: 8pt;
+  margin-top: 10px;
+  padding: 1px;
+  color: #e0e0e0;
+}
+
+.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm .pdiIcons i {
+  margin: 0 10px;
+}
+
+.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm .pdiIcons span {
+  margin-left: 5px;
+}
+
+.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm .pdiIcons .duration {
+  font-size: 8pt;
+  position: absolute;
+  right: 0;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffffff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .headersList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px;
+  color: #9e0000;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .headersList img {
+  margin-right: 10px;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .headersList h4 {
+  font-size: 14pt;
+  font-weight: 700;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listSatu {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #c70000;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listSatu:hover {
+  background: #a80101;
+  color: #ffffff;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listSatu h5 {
+  font-size: 11pt;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listSatu h5:nth-child(0) {
+  color: #9e0000;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listSatu p {
+  margin-top: 5px;
+  font-size: 8pt;
+  letter-spacing: .8px;
+  font-weight: 300;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listDua {
+  color: #c70000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listDua:hover {
+  background: #a80101;
+  color: #ffffff;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listDua h5 {
+  font-size: 11pt;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listDua h5:nth-child(0) {
+  color: #9e0000;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listDua p {
+  margin-top: 5px;
+  font-size: 8pt;
+  letter-spacing: .8px;
+  font-weight: 300;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listTiga {
+  color: #c70000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listTiga:hover {
+  background: #a80101;
+  color: #ffffff;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listTiga h5 {
+  font-size: 11pt;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listTiga h5:nth-child(0) {
+  color: #9e0000;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listTiga p {
+  margin-top: 5px;
+  font-size: 8pt;
+  letter-spacing: .8px;
+  font-weight: 300;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listEmpat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #c70000;
+  cursor: pointer;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listEmpat:hover {
+  background: #a80101;
+  color: #ffffff;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listEmpat h5 {
+  font-size: 11pt;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listEmpat h5:nth-child(0) {
+  color: #9e0000;
+}
+
+.wrapperPartai .containerDua .contentDua .musicList .listEmpat p {
+  margin-top: 5px;
+  font-size: 8pt;
+  letter-spacing: .8px;
+  font-weight: 300;
+}
+
+.wrapperPartai .containerTiga {
+  padding: 20px 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+.wrapperPartai .containerTiga .textBanteng {
+  margin-left: 2rem;
+}
+
+.wrapperPartai .containerTiga .textBanteng h1 {
+  font-size: 30pt;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.wrapperPartai .containerTiga .textBanteng ul {
+  font-size: 10pt;
+}
+
+.wrapperPartai .btnUnduh {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.wrapperPartai .btnUnduh button {
+  border-radius: 15px;
+  border: 1px solid #c70000;
+  text-transform: uppercase;
+  color: #c70000;
+  -webkit-transition: .3s;
+  transition: .3s;
+  letter-spacing: 1.5px;
+}
+
+.wrapperPartai .btnUnduh button:hover {
+  background-color: #c70000;
+  color: #ffffff;
+}
+
+.wrapperPartai .btnUnduh button span {
+  font-size: 7pt;
+}
+
+.wrapperPartai .pengurusPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 15%;
+}
+
+.wrapperPartai .pengurusPage .textPengurus {
+  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wrapperPartai .pengurusPage .textPengurus small {
+  cursor: pointer;
+  color: #d80010;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 8pt;
+  border-bottom: 5.5px solid #d80010;
+}
+
+.wrapperPartai .pengurusPage .paragrapPengurus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.wrapperPartai .pengurusPage .paragrapPengurus p {
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
+
+.wrapperPartai .photoPengurus {
+  width: 100%;
+  background: url(../../../img/pengurus.png);
+  background-size: cover;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.wrapperPartai .photoPengurus h2 {
+  margin-top: 6rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.wrapperPartai .photoPengurus button {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  width: 10vw;
+  font-size: 7pt;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.wrapperPartai .photoPengurus button:hover {
+  background: #ffffff;
+  color: #c70000;
+}
+
+.wrapperPartai .maps {
+  padding: 20px 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperPartai .maps h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.wrapperPartai .maps .imageMaps {
+  background: url(../../../img/maps.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 56vh;
+}
+
+.wrapperPartai .anggotaLegislatif {
+  padding: 20px 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.wrapperPartai .anggotaLegislatif h1 {
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+
+.wrapperPartai .anggotaLegislatif p {
+  margin-top: 2.5rem;
+}
+
+.wrapperPartai .anggotaLegislatif .btnGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px 0;
+}
+
+.wrapperPartai .anggotaLegislatif .btnGroup button {
+  border-radius: 25px;
+  border: 1px solid #c70000;
+  margin: 0 10px;
+  color: #c70000;
+}
+
+.wrapperPartai .anggotaLegislatif .btnGroup button:hover {
+  background-color: #c70000;
+  color: #f3f3f3;
+}
+
+.wrapperPartai .anggotaLegislatif .btnGroup button span {
+  font-size: 8pt;
 }
 /*# sourceMappingURL=PartaiPage.css.map */
