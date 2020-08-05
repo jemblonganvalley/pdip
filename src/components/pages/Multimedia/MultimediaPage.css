@@ -38,7 +38,7 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 20px 15%;
+  padding: 10px 10%;
 }
 
 .wrapperMultimedia .linkedMedia i span {
@@ -48,7 +48,7 @@
 }
 
 .wrapperMultimedia .pidatoKU {
-  padding: 20px 15%;
+  padding: 10px 10%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,7 +129,7 @@
 
 .wrapperMultimedia .cardMedia {
   width: 100%;
-  padding: 20px 15%;
+  padding: 10px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,7 +276,7 @@
 }
 
 .wrapperMultimedia .cardMediaDua {
-  padding: 20px 15%;
+  padding: 10px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,7 +433,7 @@
 
 .wrapperMultimedia .videoBaruPage .cardVideoBaru {
   width: 100%;
-  height: 50vh;
+  min-width: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,129 +448,5 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 30px;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col {
-  height: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  margin: 0 10px;
-  background: #ffffff;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col:hover {
-  -webkit-box-shadow: 4px 17px 40px -30px rgba(0, 0, 0, 0.75);
-          box-shadow: 4px 17px 40px -30px rgba(0, 0, 0, 0.75);
-  background: #d80010;
-  color: #ffffff;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .imageCard {
-  width: 100%;
-  height: 30vh;
-  background-image: url(../../../img/megawati1.jpg);
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .imageCard .VBMusic {
-  width: 35px;
-  height: 35px;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  color: #ffffff;
-  font-size: 10pt;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .imageCard .VBMusic:hover {
-  background: #ffffff;
-  color: #c70000;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .two {
-  width: 100%;
-  height: 30vh;
-  background-image: url(../../../img/megawati2.jpg);
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .three {
-  width: 100%;
-  height: 30vh;
-  background-image: url(../../../img/megawati3.jpg);
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .text {
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 19vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .text small {
-  margin: 10px;
-  font-size: 8pt;
-  color: #d80010;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .text small:hover {
-  color: #ffffff;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .text h5 {
-  margin: 10px;
 }
 /*# sourceMappingURL=MultimediaPage.css.map */

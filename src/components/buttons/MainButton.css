@@ -1,0 +1,22 @@
+.btn2 {
+  border-radius: 25px;
+  border: 1px solid #d80010;
+  text-transform: uppercase;
+  font-size: 7pt;
+  font-weight: 500;
+  color: #d80010;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (max-width: 1085px) {
+  .btn2 {
+    font-size: 6pt;
+  }
+}
+
+.btn2:hover {
+  background: #d80010;
+  color: #ffffff;
+}
+/*# sourceMappingURL=MainButton.css.map */

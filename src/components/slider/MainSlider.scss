@@ -16,7 +16,7 @@ $phoneSatu : 600px;
 
     @include phoneSatu() {
         
-        height: 29.5vh;
+        height: 50vh;
     }
     
 
@@ -34,18 +34,21 @@ $phoneSatu : 600px;
 
         @include phoneSatu() {
             background: none;
-            height: 10vh;
+            height: 20vh;
             padding: 0;
             position: absolute;
             bottom: 0;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
+            // left: 0;
+            width: 100%;
+            // border-top-left-radius: 25px;
+            // border-top-right-radius: 25px;
+            box-shadow: 0px -1px 10px -2px rgba(0,0,0,0.75);
             background-color: rgba(185, 2, 2, 0.7);
 
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: row;
+            flex-direction: column;
             padding: 1rem;
         }
     
@@ -59,8 +62,9 @@ $phoneSatu : 600px;
         // border: 1px solid green;
 
         @include phoneSatu() {
-            position: initial;
-            font-size: 7pt;
+            // position: initial;
+            text-align: center;
+            font-size: 10pt;
             width: 50%;
         }
             
@@ -73,10 +77,11 @@ $phoneSatu : 600px;
             font-size: 10pt;
 
             @include phoneSatu() {
-                position: initial;
+                // position: initial;
+                text-align: center;
                 font-size: 5pt;
-                width: 50%;
-                // bottom: 0;s
+                width: 80%;
+                bottom: 10%;
             }
         }
         
@@ -89,7 +94,9 @@ $phoneSatu : 600px;
     background-image: url(../../img/slider2.jpg);
     background-size: cover;
 
-    
+    @include phoneSatu() {
+        height: 50vh;
+    }
 
     .text2 {
         height: 100%;
@@ -103,7 +110,25 @@ $phoneSatu : 600px;
         opacity: 0.8;
         background-repeat: no-repeat;
 
-        
+        @include phoneSatu() {
+            background: none;
+            height: 20vh;
+            padding: 0;
+            position: absolute;
+            bottom: 0;
+            // left: 0;
+            width: 100%;
+            // border-top-left-radius: 25px;
+            // border-top-right-radius: 25px;
+            box-shadow: 0px -1px 10px -2px rgba(0,0,0,0.75);
+            background-color: rgba(185, 2, 2, 0.7);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+        }
 
         h1 {
             position: absolute;
@@ -113,7 +138,12 @@ $phoneSatu : 600px;
             width: 25%;
         // border: 1px solid green;
             
-
+        @include phoneSatu() {
+            // position: initial;
+            text-align: center;
+            font-size: 10pt;
+            width: 50%;
+        }
 
         }
         p {
@@ -122,6 +152,13 @@ $phoneSatu : 600px;
             bottom: 30%;
             font-size: 10pt;
             
+            @include phoneSatu() {
+                // position: initial;
+                text-align: center;
+                font-size: 5pt;
+                width: 80%;
+                bottom: 10%;
+            }
         }
     }
 }
@@ -141,11 +178,18 @@ $phoneSatu : 600px;
         bottom: 5%;
         margin-bottom: 30px;
         @include phoneSatu() {
-            bottom: 23%;
+            bottom: 40%;
+            // display: inline-block;
+            // left: 25%;
+            // margin: 0;
+            margin-bottom: .5rem;
+            left: 29%;
+            
         }
         .indikator {
             @include phoneSatu() {
                 font-size: 8pt;
+                
             }
         }
 
@@ -160,6 +204,9 @@ $phoneSatu : 600px;
             color: #ffffff;
             transition: opacity .6s ease;
 
+            @include phoneSatu() {
+                margin: 0 5px;
+            }
             
         }
     }
@@ -185,10 +232,7 @@ $phoneSatu : 600px;
         transition: .3s;
 
         @include phoneSatu() {
-            width: 15px;
-            height: 15px;
-            bottom: 37%;
-            text-align: center;
+            left: 9999px;
         }
         
 
@@ -218,6 +262,10 @@ $phoneSatu : 600px;
     span {
         font-size: 13px;
         
+        @include phoneSatu() {
+            font-size: 7pt;
+            display: block;
+        }
     }
 
     i {
@@ -225,7 +273,10 @@ $phoneSatu : 600px;
         height: 15px;
         width: 10px;
         // border: 1px solid blue;
+        @include phoneSatu() {
 
+            display: none;
+        }
     }
 }
 
