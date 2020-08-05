@@ -3,6 +3,13 @@
   width: 100%;
   background-image: url(../../img/slider.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+  .image1 {
+    height: 50vh;
+  }
 }
 
 .image1 .text1 {
@@ -17,6 +24,34 @@
   background-repeat: no-repeat;
 }
 
+@media (max-width: 600px) {
+  .image1 .text1 {
+    background: none;
+    height: 20vh;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    -webkit-box-shadow: 0px -1px 10px -2px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px -1px 10px -2px rgba(0, 0, 0, 0.75);
+    background-color: rgba(185, 2, 2, 0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+}
+
 .image1 .text1 h1 {
   position: absolute;
   bottom: 45%;
@@ -24,11 +59,28 @@
   width: 25%;
 }
 
+@media (max-width: 600px) {
+  .image1 .text1 h1 {
+    text-align: center;
+    font-size: 10pt;
+    width: 50%;
+  }
+}
+
 .image1 .text1 p {
   width: 25%;
   position: absolute;
   bottom: 30%;
-  font-size: 12px;
+  font-size: 10pt;
+}
+
+@media (max-width: 600px) {
+  .image1 .text1 p {
+    text-align: center;
+    font-size: 5pt;
+    width: 80%;
+    bottom: 10%;
+  }
 }
 
 .image2 {
@@ -36,6 +88,12 @@
   width: 100%;
   background-image: url(../../img/slider2.jpg);
   background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .image2 {
+    height: 50vh;
+  }
 }
 
 .image2 .text2 {
@@ -50,6 +108,34 @@
   background-repeat: no-repeat;
 }
 
+@media (max-width: 600px) {
+  .image2 .text2 {
+    background: none;
+    height: 20vh;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    -webkit-box-shadow: 0px -1px 10px -2px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px -1px 10px -2px rgba(0, 0, 0, 0.75);
+    background-color: rgba(185, 2, 2, 0.7);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+}
+
 .image2 .text2 h1 {
   position: absolute;
   bottom: 45%;
@@ -57,15 +143,32 @@
   width: 25%;
 }
 
+@media (max-width: 600px) {
+  .image2 .text2 h1 {
+    text-align: center;
+    font-size: 10pt;
+    width: 50%;
+  }
+}
+
 .image2 .text2 p {
   width: 25%;
   position: absolute;
   bottom: 30%;
-  font-size: 12px;
+  font-size: 10pt;
+}
+
+@media (max-width: 600px) {
+  .image2 .text2 p {
+    text-align: center;
+    font-size: 5pt;
+    width: 80%;
+    bottom: 10%;
+  }
 }
 
 .carousel {
-  width: 100vw;
+  width: 100%;
 }
 
 .carousel .carousel-inner {
@@ -82,6 +185,20 @@
   margin-bottom: 30px;
 }
 
+@media (max-width: 600px) {
+  .carousel .carousel-indicators {
+    bottom: 40%;
+    margin-bottom: .5rem;
+    left: 29%;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel .carousel-indicators .indikator {
+    font-size: 8pt;
+  }
+}
+
 .carousel .carousel-indicators .active {
   opacity: 1;
 }
@@ -93,6 +210,12 @@
   color: #ffffff;
   -webkit-transition: opacity .6s ease;
   transition: opacity .6s ease;
+}
+
+@media (max-width: 600px) {
+  .carousel .carousel-indicators small {
+    margin: 0 5px;
+  }
 }
 
 .carousel button {
@@ -115,9 +238,15 @@
   position: absolute;
   bottom: 8%;
   left: 10%;
-  z-index: 2000;
+  z-index: 10;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+@media (max-width: 600px) {
+  .carousel button {
+    left: 9999px;
+  }
 }
 
 .carousel button:hover {
@@ -127,6 +256,12 @@
 
 .carousel button i {
   font-size: 10px;
+}
+
+@media (max-width: 600px) {
+  .carousel button i {
+    font-size: 4pt;
+  }
 }
 
 .prev-text {
@@ -141,10 +276,23 @@
   font-size: 13px;
 }
 
+@media (max-width: 600px) {
+  .prev-text span {
+    font-size: 7pt;
+    display: block;
+  }
+}
+
 .prev-text i {
   font-size: 15px;
   height: 15px;
   width: 10px;
+}
+
+@media (max-width: 600px) {
+  .prev-text i {
+    display: none;
+  }
 }
 
 .carousel-control-prev,

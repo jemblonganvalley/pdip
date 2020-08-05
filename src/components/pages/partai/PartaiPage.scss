@@ -343,21 +343,7 @@ $color : #c70000;
             flex-direction: row;
             margin: 10px 0;
 
-            button {
-                border-radius: 25px;
-                border: 1px solid #c70000;
-                margin: 0 10px;
-                color: #c70000;
-
-                &:hover {
-                    background-color: #c70000;
-                    color: #f3f3f3;
-                }
-
-                span {
-                    font-size: 8pt;
-                }
-            }
+            
         }
     }
 }

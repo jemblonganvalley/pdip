@@ -1,0 +1,49 @@
+$table : 1261px;
+
+$responsiveSatu : 1085px;
+$responsiveDua : 1000px;
+$responsiveTiga : 728px;
+$responsiveEmpat : 500px;
+
+@mixin responSatu {
+    @media (max-width : #{$responsiveSatu}) {
+        @content;
+    }
+}
+@mixin responDua {
+    @media (max-width : #{$responsiveDua}) {
+        @content;
+    }
+}
+@mixin responTiga {
+    @media (max-width : #{$responsiveTiga}) {
+        @content;
+    }
+}
+@mixin responEmpat {
+    @media (max-width : #{$responsiveEmpat}) {
+        @content;
+    }
+}
+
+
+.btn2 {
+    border-radius: 25px;
+    // background-color: #d80010;
+    border: 1px solid #d80010;
+    text-transform: uppercase;
+    // margin-top: 20px;
+    font-size: 7pt;
+    font-weight: 500;
+    color: #d80010;
+    transition: .5s;
+
+    @include responSatu() {
+        font-size: 6pt;
+    }
+
+    &:hover {
+        background: #d80010;
+        color: #ffffff;
+    }
+}

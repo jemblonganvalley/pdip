@@ -6,6 +6,9 @@ import pemilu3 from '../../../img/pemilu3.jpg'
 import pemilu5 from '../../../img/pemilu5.jpg'
 import pemilu7 from '../../../img/pemilu7.jpg'
 
+import IconHartaSatu from '../../../img/lh.png'
+import IconHartaDua from '../../../img/income.png'
+
 // Import to CSS
 import './PemiluPage.css'
 // END Import to CSS
@@ -410,7 +413,7 @@ const PemiluPage = () => {
                         {/* Row1 */}
                         <div className="row1-col2">
                             <div className="col1-row1">
-                                <img src={pemilu3} alt="" />
+                                <img src={IconHartaSatu} alt=""  />
                             </div>
                             <div className="col2-row1">
                                 <p className="txt-title">
@@ -426,7 +429,7 @@ const PemiluPage = () => {
                         {/* Row2 */}
                         <div className="row2-col2">
                             <div className="col1-row2">
-                                <img src={pemilu7} alt="" />
+                            <img src={IconHartaDua} alt=""  />
                             </div>
                             <div className="col2-row2">
                                 <p className="txt-title">

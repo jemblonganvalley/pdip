@@ -25,7 +25,7 @@
 .wrapperPartai .headers .backgrounds .textBackgroundPartai {
   width: 30%;
   height: 50%;
-  margin-left: 5rem;
+  margin-left: 13rem;
 }
 
 .wrapperPartai .linkedPartai {
@@ -41,7 +41,7 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 10px 10%;
+  padding: 20px 15%;
 }
 
 .wrapperPartai .linkedPartai i span {
@@ -204,7 +204,7 @@
   line-height: 1.5;
 }
 
-.wrapperPartai .containerDua {
+.wrapperPartai .containerTiga {
   padding: 20px 15%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,198 +215,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 3rem;
 }
 
-.wrapperPartai .containerDua .contentDua {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.wrapperPartai .containerDua .contentDua .col {
-  border: 1px solid brown;
-}
-
-
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.5rem 7%;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .plyr {
-  width: 100%;
-  height: 6.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: url(../../../img/megawati10.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr:hover {
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr .iconMusic {
-  width: 40px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #ffffff;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  font-size: 14pt;
-  -webkit-transition: .1s;
-  transition: .1s;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr .iconMusic:hover {
-  width: 45px;
-  height: 45px;
-  font-size: 16pt;
-  background: #2d3436;
-  color: #ffffff;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr .iconMusic i {
-  margin-left: 2px;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .partitur {
-  margin-top: 3.5rem;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .partitur img {
-  cursor: pointer;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .minusOn {
-  margin-top: 2.5rem;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .minusOn img {
-  cursor: pointer;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-8 {
+.wrapperPartai .containerTiga .textBanteng {
   margin-left: 2rem;
 }
 
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.wrapperPartai .containerTiga .textBanteng h1 {
+  font-size: 30pt;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-weight: bold;
 }
 
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik small {
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 9pt;
-  letter-spacing: .8;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik .judulLagu {
-  font-size: 15pt;
-  text-transform: uppercase;
-  color: #ffffff;
-  letter-spacing: .8px;
-  font-weight: 300;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik .lirik {
-  color: #ffffff;
-  text-transform: uppercase;
+.wrapperPartai .containerTiga .textBanteng ul {
   font-size: 10pt;
-  font-weight: 700;
-  margin-top: 1rem;
 }
 
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik p {
-  font-size: 8pt;
-  letter-spacing: .8px;
-  margin-top: 1rem;
-  color: #ffffff;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic {
+.wrapperPartai .btnUnduh {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -417,51 +244,89 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2.5rem 7%;
+  padding: 20px;
 }
 
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .mulai {
-  height: 15vh;
-  background: #ff0008cc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .mulai .mulaiIcon {
-  width: 30px;
-  height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  color: #ffffff;
+.wrapperPartai .btnUnduh button {
+  border-radius: 15px;
+  border: 1px solid #c70000;
+  text-transform: uppercase;
+  color: #c70000;
   -webkit-transition: .3s;
   transition: .3s;
+  letter-spacing: 1.5px;
+}
+
+.wrapperPartai .btnUnduh button:hover {
+  background-color: #c70000;
+  color: #ffffff;
+}
+
+.wrapperPartai .btnUnduh button span {
+  font-size: 7pt;
+}
+
+.wrapperPartai .pengurusPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 15%;
+}
+
+.wrapperPartai .pengurusPage .textPengurus {
+  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wrapperPartai .pengurusPage .textPengurus small {
   cursor: pointer;
-  font-size: 10pt;
+  color: #d80010;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 8pt;
+  border-bottom: 5.5px solid #d80010;
 }
 
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .mulai .mulaiIcon:hover {
-  background: #ffffff;
-  color: #2d3436;
+.wrapperPartai .pengurusPage .paragrapPengurus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
 }
 
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm {
-  border: 1px solid blue;
+.wrapperPartai .pengurusPage .paragrapPengurus p {
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
+
+.wrapperPartai .photoPengurus {
+  width: 100%;
+  background: url(../../../img/pengurus.png);
+  background-size: cover;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,31 +334,109 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #ffffff;
-  padding: 10px 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
 }
 
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm .pdiJudul {
+.wrapperPartai .photoPengurus h2 {
+  margin-top: 6rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.wrapperPartai .photoPengurus button {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  width: 10vw;
+  font-size: 7pt;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.wrapperPartai .photoPengurus button:hover {
+  background: #ffffff;
+  color: #c70000;
+}
+
+.wrapperPartai .maps {
+  padding: 20px 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperPartai .maps h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.wrapperPartai .maps .imageMaps {
+  background: url(../../../img/maps.jpg);
+  background-size: cover;
   width: 100%;
+  height: 56vh;
+}
+
+.wrapperPartai .anggotaLegislatif {
+  padding: 20px 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.wrapperPartai .anggotaLegislatif h1 {
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+
+.wrapperPartai .anggotaLegislatif p {
+  margin-top: 2.5rem;
+}
+
+.wrapperPartai .anggotaLegislatif .btnGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: relative;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm .pdiJudul h4 {
-  color: #2d3436;
-  font-size: 12pt;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm .pdiJudul i {
-  position: absolute;
-  right: 0;
-  color: #ff0008cc;
-  text-align: right;
+  margin: 10px 0;
 }
 /*# sourceMappingURL=PartaiPage.css.map */

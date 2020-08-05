@@ -8,6 +8,14 @@ import Calendar from '../../../img/calendarr.png'
 import Lagu from '../../../img/laguperjuangan.png'
 import MusicPdi from '../../musicpdi/MusicPdi'
 import CardMaps from '../../cardmaps/CardMaps'
+import Cards from '../../cards/MainCards'
+import megawati1 from '../../../img/megawati1.jpg'
+import megawati2 from '../../../img/megawati2.jpg'
+import megawati3 from '../../../img/megawati3.jpg'
+import megawati5 from '../../../img/megawati5.jpg'
+import megawati6 from '../../../img/megawati6.jpg'
+import megawati7 from '../../../img/megawati7.jpg'
+import MainButton from '../../buttons/MainButton'
 
 
 const HomePage = ()=> {
@@ -18,7 +26,7 @@ const HomePage = ()=> {
         <div classname="homepage">
             <MainSlider/>
             <div className="homePageTwo">
-                <div className="row customRow">
+                <div className="customRow">
                     <div className="col col-lg-4 custom ">
                         <div className="customBorder">
                             <img src={Informasi} alt="" width="50" height="50" />
@@ -63,29 +71,22 @@ const HomePage = ()=> {
                     </div>
 
                     <div className="cardContainer">
-                            <div className="col col-lg-4">
-                                <div className="imageCard"></div>
-                                <div className="text">
-                                    <small>Admin PDI PERJUANGAN | 1 Januari 2019</small>
-                                    <h5>Lorem, ipsum dolor sit amet consectetur</h5>
-                                </div>
-                            </div>
-                            <div className="col col-lg-4">
-                            <div className="imageCard two"></div>
-                                <div className="text">
-                                    <small>Admin PDI PERJUANGAN | 1 Januari 2019</small>
-                                    <h5>Lorem, ipsum dolor sit amet consectetur</h5>
-                                </div>
-                            </div>
-                            <div className="col col-lg-4">
-                            <div className="imageCard three"></div>
-                                <div className="text">
-                                    <small>Admin PDI PERJUANGAN | 1 Januari 2019</small>
-                                    <h5>Lorem, ipsum dolor sit amet consectetur</h5>
-                                </div>
-                            </div>
+                        <Cards imageCard={megawati1}
+                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                                borderRadius="10px" />
+                        <Cards imageCard={megawati2}
+                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                                borderRadius="10px" />
+                        <Cards imageCard={megawati3}
+                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                                borderRadius="10px" />
                     </div>
-                            <button className="btn">lihat semua</button>
+                    
+
+                    <MainButton name="lihat semua" />
                 </div>
 
                 <div className="beritaPage">
@@ -152,37 +153,39 @@ const HomePage = ()=> {
             </div>
 
             <div className="cardContent">
-                <div className="col col-lg-4 colOne">
-                    <div className="imageContent imageOne"></div>
-                    <div className="textCard">
-                    <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                    <h5 className="kolsHome">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                    </div>
-
-                </div>
-                <div className="col col-lg-4 two">
-
-                    <div className="imageContent imageTwo"></div>
-                    <div className="textCard">
-                    <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                    <h5 className="kolsHome">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                    </div>
-
-                </div>
-                <div className="col col-lg-4 three">
-                <div className="imageContent imageThree"></div>
-                    <div className="textCard">
-                    <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                    <h5 className="kolsHome">Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                    </div>
-                </div>
+                <Cards imageCard={megawati5} 
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                        borderRadius="10px" />
+                <Cards imageCard={megawati6} 
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                        borderRadius="10px" />
+                <Cards imageCard={megawati7} 
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                        borderRadius="10px" />
+            </div>
+            <div className="cardContent">
+                <Cards imageCard={megawati5} 
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?" />
+                <Cards imageCard={megawati5} 
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?" />
+                <Cards imageCard={megawati5} 
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?" />
             </div>
 
             <div className="btnSize">
-                <button className="btn btn2">lihat semua</button>
+                <MainButton name="lihat semua" />
             </div>
 
             <MusicPdi/>

@@ -4,6 +4,10 @@ import SL from '../../../img/newspaper.png'
 import VD from '../../../img/fake-news.png'
 import VI from '../../../img/camera.png'
 import SP from '../../../img/notebook.png'
+import Cards from '../../cards/MainCards'
+import megawati1 from '../../../img/megawati1.jpg'
+import megawati2 from '../../../img/megawati2.jpg'
+import megawati3 from '../../../img/megawati3.jpg'
 
 const MultimediaPage = ()=> {
     return (
@@ -95,40 +99,25 @@ const MultimediaPage = ()=> {
                     <small className="videoBaru">video terbaru</small>
                 </div>
                 <div className="cardVideoBaru">
-                            <div className="col col-lg-4">
-                                <div className="imageCard">
-                                <div className="VBMusic">
-                                <i class="fa fa-play"></i>
-                                </div>
-                                </div>
-                                <div className="text">
-                                    <small>Admin PDI PERJUANGAN | 1 Januari 2019</small>
-                                    <h5>Lorem, ipsum dolor sit amet consectetur</h5>
-                                </div>
-                            </div>
-                            <div className="col col-lg-4">
-                            <div className="imageCard two">
-                                <div className="VBMusic">
-                                    <i class="fa fa-play"></i>
-                                </div>
-                            </div>
-                                <div className="text">
-                                    <small>Admin PDI PERJUANGAN | 1 Januari 2019</small>
-                                    <h5>Lorem, ipsum dolor sit amet consectetur</h5>
-                                </div>
-                            </div>
-                            <div className="col col-lg-4">
-                            <div className="imageCard three">
-                                <div className="VBMusic">
-                                    <i class="fa fa-play"></i>
-                                </div>
-                            </div>
-                                <div className="text">
-                                    <small>Admin PDI PERJUANGAN | 1 Januari 2019</small>
-                                    <h5>Lorem, ipsum dolor sit amet consectetur</h5>
-                                </div>
-                            </div>
-                    </div>
+                <Cards imageCard={megawati1}
+                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                                borderRadius="10px"
+                                icons="fa fa-play"
+                                classIcon="VBMusic"  />
+                <Cards imageCard={megawati2}
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                        borderRadius="10px"
+                        icons="fa fa-play"
+                        classIcon="VBMusic"  />
+                <Cards imageCard={megawati3}
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                        borderRadius="10px"
+                        icons="fa fa-play"
+                        classIcon="VBMusic" />
+                </div>
             </div>
         </div>
     )

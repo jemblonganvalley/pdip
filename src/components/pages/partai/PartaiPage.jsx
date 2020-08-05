@@ -9,6 +9,7 @@ import pdiBook3 from '../../../img/pdibook3.png'
 
 import pdiLogo from '../../../img/pdibanteng.png'
 import MusicPdi from '../../musicpdi/MusicPdi'
+import MainButton from '../../buttons/MainButton'
 
 const PartaiPage = ()=>{
     return (
@@ -163,9 +164,9 @@ const PartaiPage = ()=>{
                     <h1>Anggota Legislatif</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia a voluptatem mollitia dolorum ea architecto, aliquid quidem fugit accusamus saepe ab repudiandae eos ipsum! Quaerat omnis dolores quidem reiciendis distinctio.</p>
                     <div className="btnGroup">
-                        <button className="btn"><span>DPR RI</span></button>
-                        <button className="btn"><span>DPRD Provinsi</span></button>
-                        <button className="btn"><span>DPRD Kabupaten Kota</span></button>
+                        <MainButton name="DPR RI" margin="0 10px" />
+                        <MainButton name="DPRD Provinsi" margin="0 10px" />
+                        <MainButton name="DPRD Kabupaten Kota" margin="0 10px" />
                     </div>
                 </div>
                 {/* END */}

@@ -1,0 +1,478 @@
+.wrapperInformasi {
+  width: 100%;
+}
+
+.wrapperInformasi .headInformasi {
+  background: url(../../../img/mask.png);
+  background-size: cover;
+  height: 25vh;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperInformasi .headInformasi .textHeadInformasi {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10%;
+  color: #ffffff;
+}
+
+.wrapperInformasi .headInformasi .textHeadInformasi h2 {
+  text-transform: uppercase;
+  font-family: 'Roboto';
+}
+
+.wrapperInformasi .headInformasi .textHeadInformasi h2 .pdip {
+  font-weight: 300;
+}
+
+.wrapperInformasi .linkedInformasi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  margin-top: 20px;
+  padding: 10px 10%;
+}
+
+.wrapperInformasi .linkedInformasi i span {
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 8pt;
+}
+
+.wrapperInformasi .profilContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 10%;
+}
+
+.wrapperInformasi .profilContainer .textProfil {
+  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+  width: 100%;
+  text-align: center;
+}
+
+.wrapperInformasi .profilContainer .textProfil .profil {
+  cursor: pointer;
+  color: #d80010;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10pt;
+  border-bottom: 5.5px solid #d80010;
+}
+
+.wrapperInformasi .profilContainer .paragrapProfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.wrapperInformasi .profilContainer .paragrapProfil .paragrapKiri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto';
+}
+
+.wrapperInformasi .profilContainer .paragrapProfil .paragrapKiri .merdeka {
+  font-style: italic;
+}
+
+.wrapperInformasi .profilContainer .paragrapProfil .paragrapKiri .solid {
+  font-style: italic;
+}
+
+.wrapperInformasi .profilContainer .paragrapProfil .paragrapKiri .textParagrap {
+  font-size: 10pt;
+  width: 50vw;
+}
+
+.wrapperInformasi .profilContainer .paragrapKanan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+}
+
+.wrapperInformasi .profilContainer .paragrapKanan .backgroundPK {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  width: 25vw;
+  right: 0;
+  height: 45vh;
+  background: url(../../../img/illustrator.png);
+  background-size: cover;
+  color: #ffffff;
+  font-family: 'Roboto';
+}
+
+.wrapperInformasi .profilContainer .paragrapKanan .backgroundPK .textParagrapKanan {
+  margin-top: 1rem;
+  font-size: 10pt;
+}
+
+.wrapperInformasi .profilContainer .divider {
+  margin-top: 1rem;
+  border: 1px solid #000000;
+  height: 1px;
+  width: 100%;
+}
+
+.wrapperInformasi .profilContainer .cardIconProfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.wrapperInformasi .profilContainer .cardIconProfil .cardProfile {
+  margin: 0 1rem;
+}
+
+.wrapperInformasi .profilContainer .cardIconProfil .cardProfile .textCardProfil {
+  line-height: 1;
+  margin-left: 1rem;
+  font-size: 9pt;
+  text-transform: uppercase;
+}
+
+.wrapperInformasi .profilContainer .cardIconProfil .cardProfileSatu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+}
+
+.wrapperInformasi .profilContainer .cardIconProfil .cardProfileDua {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+}
+
+.wrapperInformasi .profilContainer .cardIconProfil .cardProfileTiga {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+}
+
+.wrapperInformasi .profilContainer .cardIconProfil .cardProfileEmpat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+}
+
+.wrapperInformasi .profilContainer .ytProfil {
+  margin-top: 2rem;
+  padding: 10px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.wrapperInformasi .profilContainer .ytProfil .ytIframe {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+
+.wrapperInformasi .profilContainer .ytProfil .ytIframe .iframeProfil {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.wrapperInformasi .profilContainer .containerLaporan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.wrapperInformasi .profilContainer .containerLaporan .cardLaporan {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1rem 1rem;
+  background: #e50209;
+}
+
+.wrapperInformasi .profilContainer .containerLaporan .cardLaporan .imageHarta {
+  margin: 1rem;
+}
+
+.wrapperInformasi .profilContainer .containerLaporan .cardLaporan .textHarta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  margin: 0 1rem;
+}
+
+.wrapperInformasi .profilContainer .containerLaporan .cardLaporan .textHarta .h5Harta {
+  text-transform: uppercase;
+}
+
+.wrapperInformasi .profilContainer .containerLaporan .cardLaporan .textHarta .paragrapHarta {
+  font-size: 8pt;
+}
+
+.wrapperInformasi .tataCaraContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 10%;
+}
+
+.wrapperInformasi .tataCaraContainer .textTataCara {
+  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wrapperInformasi .tataCaraContainer .textTataCara .tataCara {
+  cursor: pointer;
+  color: #d80010;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10pt;
+  border-bottom: 5.5px solid #d80010;
+}
+
+.wrapperInformasi .sliderTataCara {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.wrapperInformasi .sliderTataCara .carousel-item .imageTC {
+  width: 100%;
+  display: block;
+  height: 60vh;
+  background: url(../../../img/illustrator2.png);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.wrapperInformasi .sliderTataCara .carousel-item .imageTC .pCarousel {
+  position: absolute;
+  width: 30%;
+  bottom: 40%;
+  right: 15%;
+  font-weight: 700;
+}
+
+.wrapperInformasi .sliderTataCara .carousel-item .imageTC .kunjungi {
+  color: black;
+  width: 10vw;
+  border-radius: 25px;
+  position: absolute;
+  left: 60%;
+  bottom: 20%;
+  color: #d80010;
+  border: 1px solid #d80010;
+  font-size: 7pt;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperInformasi .sliderTataCara .carousel-item .imageTC .kunjungi:hover {
+  background: #d80010;
+  color: #ffffff;
+}
+
+.wrapperInformasi .sliderTataCara .carousel-control-next-icon {
+  background: url(../../../img/right.png);
+  background-size: cover;
+}
+
+.wrapperInformasi .sliderTataCara .carousel-control-prev-icon {
+  background: url(../../../img/left.png);
+  background-size: cover;
+}
+
+.wrapperInformasi .sliderTataCara .carousel-control-next-icon,
+.wrapperInformasi .sliderTataCara .carousel-control-prev-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.wrapperInformasi .infoDua {
+  padding: 0 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperInformasi .infoDua .kolomFormulir {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25vh;
+}
+
+.wrapperInformasi .infoDua .kolomFormulir .textFormulir {
+  margin-left: 1rem;
+  font-family: 'Roboto';
+}
+
+.wrapperInformasi .infoDua .kolomFormulirSatu {
+  background: #d80010;
+  color: #ffffff;
+}
+
+.wrapperInformasi .infoDua .kolomFormulirDua {
+  background: #ffffff;
+}
+/*# sourceMappingURL=InformasiPage.css.map */
