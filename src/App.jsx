@@ -4,7 +4,7 @@ import MainNavbar from './components/navbar/MainNavbar';
 import HomePage from './components/pages/home/HomePage';
 import MainFooter from './components/footer/MainFooter';
 import PartaiPage from './components/pages/partai/PartaiPage';
-import MultimediaPage from './components/pages/multimedia/MultimediaPage';
+import MultimediaPage from './components/pages/Multimedia/MultimediaPage';
 import BkbbPage from './components/pages/bkbb/BkbbPage'
 import InformasiPage from './components/pages/informasi/InformasiPage';
 import PemiluPage from './components/pages/Pemilu/PemiluPage';
@@ -12,7 +12,6 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import BeritaPage from './components/pages/berita/BeritaPage';
 import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
-
 import StrukturPage from './components/pages/struktur/StrukturPage';
 // import StrukturPage from './components/pages/partai/struktur/StrukturPage';
 
@@ -58,10 +57,6 @@ function App() {
 
           <Route path="/berita">
             <BeritaPage />
-          </Route>
-
-          <Route path="/multimedia">
-            <MultimediaPage />
           </Route>
 
           <Route path="/multimedia">
