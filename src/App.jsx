@@ -16,10 +16,9 @@ import StrukturPage from './components/pages/struktur/StrukturPage';
 import DetailPengurus from './components/pages/detailpengurus/DetailPengurus';
 import Dpd from './components/dpd/Dpd';
 import VideoMedia from './components/pages/videomedia/VideoMedia';
-// import StrukturPage from './components/pages/partai/struktur/StrukturPage';
 import Page1 from './components/pages/berita/page1/Page1';
 import Page2 from './components/pages/berita/page2/Page2';
-
+import MateriPokok from './components/pages/materipokok/MateriPokok';
 
 function App() {
 
@@ -48,6 +47,10 @@ function App() {
       <div className="App">
 
         <Switch>
+
+          <Route path="/materipokok">
+            <MateriPokok/>
+          </Route>
 
           <Route path="/videomedia">
             <VideoMedia/>

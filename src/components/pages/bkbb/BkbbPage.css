@@ -339,4 +339,122 @@
   font-size: 10px;
   line-height: 1.5;
 }
+
+.wrapperPartai .wrapper3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperPartai .wrapper3 .bkbbText {
+  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wrapperPartai .wrapper3 .bkbbText small {
+  cursor: pointer;
+  color: #d80010;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 8pt;
+  border-bottom: 5.5px solid #d80010;
+}
+
+.wrapperPartai .wrapperCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px 10%;
+}
+
+.wrapperPartai .wrapperCard .cardKolum {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapperPartai .btnLihatSemua {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 20px 10%;
+}
+
+.wrapperPartai .bannerBkbb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  background: url(../../../img/kids.png);
+  background-size: cover;
+  color: #ffff;
+}
+
+.wrapperPartai .bannerBkbb .custom {
+  margin: 1rem;
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.wrapperPartai .bannerBkbb small {
+  margin: 1rem;
+  font-size: 8pt;
+  font-style: italic;
+}
+
+.wrapperPartai .wrapperQuotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding: 20px 10%;
+}
+
+.wrapperPartai .wrapperQuotes img {
+  margin: 1rem;
+}
 /*# sourceMappingURL=BkbbPage.css.map */
