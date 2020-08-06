@@ -140,7 +140,8 @@ const BkbbPage = ()=>{
 
             <div className="btnLihatSemua">
                 <MainButton name="lihat semua"
-                            margin="1rem 0"/>
+                            margin="1rem 0"
+                            pages="/materipokok" />
             </div>
 
             <div className="bannerBkbb">

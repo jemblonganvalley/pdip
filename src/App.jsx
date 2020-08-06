@@ -14,6 +14,7 @@ import StrukturPage from './components/pages/struktur/StrukturPage';
 import DetailPengurus from './components/pages/detailpengurus/DetailPengurus';
 import Dpd from './components/dpd/Dpd';
 import VideoMedia from './components/pages/videomedia/VideoMedia';
+import MateriPokok from './components/pages/materipokok/MateriPokok';
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
       <div className="App">
 
         <Switch>
+
+          <Route path="/materipokok">
+            <MateriPokok/>
+          </Route>
 
           <Route path="/videomedia">
             <VideoMedia/>
