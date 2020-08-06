@@ -11,6 +11,7 @@ import InformasiPage from './components/pages/informasi/InformasiPage';
 import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
 import PemiluPage from './components/pages/Pemilu/PemiluPage';
 import StrukturPage from './components/pages/struktur/StrukturPage';
+import DetailPengurus from './components/pages/detailpengurus/DetailPengurus';
 // import StrukturPage from './components/pages/partai/struktur/StrukturPage';
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
       <div className="App">
 
         <Switch>
+
+        <Route path="/detailpengurus">
+            <DetailPengurus/>
+          </Route>
 
           <Route path="/struktur">
             <StrukturPage/>

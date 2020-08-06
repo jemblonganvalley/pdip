@@ -42,4 +42,119 @@ $padding : 20px 8%;
         }
         }
 // END LINK PARTAI
+
+        .pengurus {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 8%;
+
+            .textPengurus {
+                border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+                // background-color: #2d3436;
+                width: 100%;
+                text-align: center;
+                // height: 10vh;
+                margin-top: 30px;
+            small {
+                cursor: pointer;
+                color: #d80010;
+                // width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 8pt;
+                border-bottom: 5.5px solid #d80010;
+            }
+        }
+        .bidangTextHead {
+            margin: 2rem 0;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+        }
+        .profilPengurus {
+            display: flex;
+            // flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            padding: $padding;
+            // border: 1px solid blue;
+            
+            .kolum1 {
+                // border: 1px solid crimson;
+                width: 30vw;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .textProfil {
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                    // height: 100%;
+
+                    // border: 1px solid green;
+
+                    .profilText {
+                        margin: 10px;
+
+                        small {
+                            color: #d80010;
+                            font-size: 8pt;
+                        }
+                        .namaProfil {
+                            text-transform: uppercase;
+                        }
+                        h6 {
+                        font-weight: bold;
+
+                        }
+                    }
+                }
+            }
+            .kolum2 {
+                display: flex;
+                // justify-content: center;
+                // align-items: center;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                // border: 1px solid blue;
+
+                .descProfil {
+                    display: flex;
+                    flex-direction: column;
+
+                    .biografi {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        margin-top: 1.5rem;
+                    }
+
+                    p {
+                        margin-top: 1rem;
+                        font-size: 10pt;
+                    }
+                    
+                    .descBidang {
+                        font-weight: bold;
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+        }
+        .borderBottom {
+            width: 10%;
+            height: 5px;
+            background-color: #d80010;
+            position: absolute;
+            // top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }

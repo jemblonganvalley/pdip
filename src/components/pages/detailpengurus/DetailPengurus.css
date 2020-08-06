@@ -45,4 +45,148 @@
   font-style: italic;
   font-size: 8pt;
 }
+
+.wrapperDetail .pengurus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 8%;
+}
+
+.wrapperDetail .pengurus .textPengurus {
+  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wrapperDetail .pengurus .textPengurus small {
+  cursor: pointer;
+  color: #d80010;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 8pt;
+  border-bottom: 5.5px solid #d80010;
+}
+
+.wrapperDetail .pengurus .bidangTextHead {
+  margin: 2rem 0;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+.wrapperDetail .pengurus .profilPengurus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding: 20px 8%;
+}
+
+.wrapperDetail .pengurus .profilPengurus .kolum1 {
+  width: 30vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+.wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil .profilText {
+  margin: 10px;
+}
+
+.wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil .profilText small {
+  color: #d80010;
+  font-size: 8pt;
+}
+
+.wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil .profilText .namaProfil {
+  text-transform: uppercase;
+}
+
+.wrapperDetail .pengurus .profilPengurus .kolum1 .textProfil .profilText h6 {
+  font-weight: bold;
+}
+
+.wrapperDetail .pengurus .profilPengurus .kolum2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapperDetail .pengurus .profilPengurus .kolum2 .descProfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperDetail .pengurus .profilPengurus .kolum2 .descProfil .biografi {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.wrapperDetail .pengurus .profilPengurus .kolum2 .descProfil p {
+  margin-top: 1rem;
+  font-size: 10pt;
+}
+
+.wrapperDetail .pengurus .profilPengurus .kolum2 .descProfil .descBidang {
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.wrapperDetail .pengurus .borderBottom {
+  width: 10%;
+  height: 5px;
+  background-color: #d80010;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 /*# sourceMappingURL=DetailPengurus.css.map */
