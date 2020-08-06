@@ -67,7 +67,7 @@ function App() {
           
           <Route path='/page2'>
             <Page2 />
-          </>
+          </Route>
 
           <Route path='/page1'>
             <Page1 />
