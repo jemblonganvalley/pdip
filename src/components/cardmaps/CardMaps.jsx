@@ -7,6 +7,7 @@ const CardMaps = ()=> {
             <div className="pageBerita">
                 <div className="wrapperBerita">
                     <div className="col-lg-8 berita carousels">
+                        <div className="backImage"></div>
                     </div>
                     <div className="col-lg-4 berita ikutiBerita">
                         <div className="wrapper">

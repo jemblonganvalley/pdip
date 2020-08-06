@@ -48,7 +48,17 @@ $responsiveEmpat : 719px;
 
         .berita {
             height: 100%;
+            // border: 1px solid blue;
+
+            .backImage {
+                background: url(../../img/mapz.png);
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+            }
         }
+
+        
 
         .ikutiBerita {
             background-color: #d80010;

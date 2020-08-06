@@ -262,7 +262,16 @@
   color: #ffffff;
 }
 
-.wrapperPartai .btnUnduh button span {
+.wrapperPartai .btnUnduh button a {
+  text-decoration: none;
+  color: #c70000;
+}
+
+.wrapperPartai .btnUnduh button a:hover {
+  color: #ffffff;
+}
+
+.wrapperPartai .btnUnduh button a span {
   font-size: 7pt;
 }
 

@@ -86,7 +86,8 @@ const HomePage = ()=> {
                     </div>
                     
 
-                    <MainButton name="lihat semua" />
+                    <MainButton name="lihat semua"
+                                margin="1rem 0" />
                 </div>
 
                 <div className="beritaPage">

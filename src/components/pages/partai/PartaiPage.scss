@@ -213,9 +213,19 @@ $color : #c70000;
                 color : #ffffff;
 
             }
-            span {
-                font-size: 7pt;
-                
+            a {
+                text-decoration: none;
+                color: #c70000;
+                &:hover {
+                    // background-color: #c70000;
+                    color : #ffffff;
+    
+                }
+
+                span {
+                    font-size: 7pt;
+                    
+                }
             }
         }
     }
