@@ -13,6 +13,7 @@ import PemiluPage from './components/pages/Pemilu/PemiluPage';
 import StrukturPage from './components/pages/struktur/StrukturPage';
 import DetailPengurus from './components/pages/detailpengurus/DetailPengurus';
 import Dpd from './components/dpd/Dpd';
+import VideoMedia from './components/pages/videomedia/VideoMedia';
 // import StrukturPage from './components/pages/partai/struktur/StrukturPage';
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
       <div className="App">
 
         <Switch>
+
+          <Route path="/videomedia">
+            <VideoMedia/>
+          </Route>
 
           <Route path="/dpd">
             <Dpd/>

@@ -1,0 +1,147 @@
+.wrapperVideo {
+  width: 100%;
+  padding: 10px 10%;
+}
+
+.wrapperVideo .linkedVideo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  margin-top: 20px;
+}
+
+.wrapperVideo .linkedVideo i span {
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 8pt;
+}
+
+.wrapperVideo .wrapperPlayVid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 65vh;
+  margin-top: 1.5rem;
+}
+
+.wrapperVideo .wrapperPlayVid .kolumVideo {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.wrapperVideo .wrapperPlayVid .kolumVideo iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapperVideo .wrapperPlayVid .descVideo {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.wrapperVideo .wrapperPlayVid .descVideo .textTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 9pt;
+  position: relative;
+}
+
+.wrapperVideo .wrapperPlayVid .descVideo .textTop small {
+  color: #d80010;
+}
+
+.wrapperVideo .wrapperPlayVid .descVideo .textTop .countLove {
+  position: absolute;
+  right: 0;
+}
+
+.wrapperVideo .wrapperPlayVid .descVideo .textTop .countLove i {
+  margin-right: .5rem;
+  color: #d80010;
+}
+
+.wrapperVideo .wrapperPlayVid .descVideo .textTop .countLove small {
+  color: #818181;
+}
+
+.wrapperVideo .wrapperPlayVid .descVideo .headline {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.wrapperVideo .wrapperPlayVid .descVideo p {
+  font-size: 10pt;
+}
+
+.wrapperVideo .wrapperPlayVid .descVideo .descline {
+  margin-top: 1rem;
+}
+
+.wrapperVideo .wrapperPlayVid .descVideo .share {
+  font-size: 10pt;
+  position: absolute;
+  bottom: 0;
+}
+
+.wrapperVideo .wrapperPlayVid .descVideo .share .marginShare {
+  margin: 0 .8rem;
+}
+
+.wrapperVideo .wrapperPlayVid .descVideo .share i {
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperVideo .wrapperPlayVid .descVideo .share i:hover {
+  color: #d80010;
+}
+
+.wrapperVideo .dividerVideo {
+  margin-top: 3.5rem;
+  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+  width: 100%;
+  text-align: center;
+}
+
+.wrapperVideo .dividerVideo .borderVideo {
+  width: 5%;
+  height: 5px;
+  background-color: #d80010;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=VideoMedia.css.map */
