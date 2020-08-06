@@ -79,14 +79,19 @@ $padding : 20px 8%;
         }
 
         .pengurusList {
-            width: 100%;
-            height: 100vh;
-            border: 1px solid crimson;
+            // width: 100%;
+            max-width: 100%;
+            // height: 120vh;
+            // border: 1px solid crimson;
             padding: 10px 3%;
 
             .listPengurus {
-                border: 1px solid blue;
+                // border: 1px solid rgb(0, 204, 255);
                 height: 100%;
+                width: 100%;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
             }
         }
 }
