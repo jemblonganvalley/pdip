@@ -4,7 +4,7 @@ import MainNavbar from './components/navbar/MainNavbar';
 import HomePage from './components/pages/home/HomePage';
 import MainFooter from './components/footer/MainFooter';
 import PartaiPage from './components/pages/partai/PartaiPage';
-import MultimediaPage from './components/pages/Multimedia/MultimediaPage';
+import MultimediaPage from './components/pages/multimedia/MultimediaPage';
 import BkbbPage from './components/pages/bkbb/BkbbPage'
 import InformasiPage from './components/pages/informasi/InformasiPage';
 import PemiluPage from './components/pages/Pemilu/PemiluPage';
