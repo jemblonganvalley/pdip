@@ -1,0 +1,601 @@
+.homePageTwo {
+  width: 100vw;
+  padding: 20px 15%;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo {
+    padding: 20px 13%;
+  }
+}
+
+@media (max-width: 600px) {
+  .homePageTwo {
+    padding: 20px 15%;
+  }
+}
+
+.homePageTwo .customRow {
+  height: 20vh;
+  background-color: #2d3436;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .customRow {
+    height: 18vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .homePageTwo .customRow {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.homePageTwo .customRow .custom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 600px) {
+  .homePageTwo .customRow .custom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2rem;
+    text-align: center;
+  }
+}
+
+.homePageTwo .customRow .custom img {
+  margin: 0 10px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .customRow .custom img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .homePageTwo .customRow .custom img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.homePageTwo .customRow .custom h3 {
+  text-transform: uppercase;
+  font-size: 13pt;
+  color: #ffffff;
+  margin: 0 10px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .customRow .custom h3 {
+    font-size: 10pt;
+  }
+}
+
+@media (max-width: 600px) {
+  .homePageTwo .customRow .custom h3 {
+    margin-top: 1rem;
+    font-size: 8pt;
+  }
+}
+
+.homePageTwo .customRow .custom .customBorder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 15vh;
+  border-right: 1px solid white;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .customRow .custom .customBorder {
+    height: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .homePageTwo .customRow .custom .customBorder {
+    border: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.homePageTwo .customRow .custom .calendar {
+  border: none;
+}
+
+.homePageTwo .videoPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.homePageTwo .videoPage .textVideo {
+  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .textVideo {
+    margin-top: 3rem;
+  }
+}
+
+.homePageTwo .videoPage .textVideo small {
+  cursor: pointer;
+  color: #d80010;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10pt;
+  border-bottom: 5.5px solid #d80010;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .textVideo small {
+    font-size: 8pt;
+  }
+}
+
+.homePageTwo .videoPage .paragrapVideo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.homePageTwo .videoPage .paragrapVideo p {
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .paragrapVideo p {
+    font-size: 10pt;
+  }
+}
+
+.homePageTwo .videoPage .bannerYoutube {
+  width: 100%;
+  background: url(../../../img/image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -150px;
+  margin-top: 20px;
+  height: 40vh;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .bannerYoutube {
+    height: 30vh;
+    margin-top: 2.5rem;
+  }
+}
+
+.homePageTwo .videoPage .bannerYoutube .textYoutube {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 90%;
+}
+
+.homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText ul {
+  list-style: none;
+}
+
+.homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText ul li {
+  display: inline-block;
+  background-color: #d80010;
+  border-radius: 50%;
+}
+
+.homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText ul li a {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+.homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText ul li a i {
+  font-size: 20pt;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText ul li a i {
+    font-size: 10pt;
+    margin-left: 3px;
+    margin-top: 7px;
+  }
+}
+
+.homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText .textInfoYT {
+  width: 60%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText .textInfoYT .videoTerbaru {
+    font-size: 13pt;
+  }
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .videoPage .bannerYoutube .textYoutube .wrapperText .textInfoYT .siaranHut {
+    font-size: 10pt;
+  }
+}
+
+.homePageTwo button {
+  border-radius: 25px;
+  border: 1px solid #d80010;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 7pt;
+  font-weight: 500;
+  color: #d80010;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo button {
+    font-size: 6pt;
+  }
+}
+
+.homePageTwo button:hover {
+  background: #d80010;
+  color: #ffffff;
+}
+
+.homePageTwo .beritaPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.homePageTwo .beritaPage .textBerita {
+  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.homePageTwo .beritaPage .textBerita small {
+  cursor: pointer;
+  color: #d80010;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 8pt;
+  border-bottom: 5.5px solid #d80010;
+}
+
+.homePageTwo .beritaPage .paragrapBerita {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.homePageTwo .beritaPage .paragrapBerita p {
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .beritaPage .paragrapBerita p {
+    font-size: 10pt;
+  }
+}
+
+.homePageTwo .cardContainer {
+  width: 100%;
+  height: auto;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+@media (max-width: 1085px) {
+  .homePageTwo .cardContainer {
+    margin-top: 25px;
+  }
+}
+
+.ketuaUmum {
+  width: 100%;
+  height: 60vh;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ketuaUmum .row > * {
+  padding-right: 0;
+}
+
+.ketuaUmum .rowCustom {
+  width: 100%;
+  height: 100%;
+}
+
+.ketuaUmum .banner {
+  background: url(../../../img/megawati4.jpg);
+  background-size: cover;
+}
+
+.ketuaUmum .carousels .carousel {
+  width: 100%;
+  height: 100%;
+  background: #d80010;
+}
+
+.ketuaUmum .carousels .carousel .carousel-indicators {
+  right: 0;
+}
+
+.ketuaUmum .carousels .carousel .carousel-indicators li {
+  border: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.ketuaUmum .carousels .carousel .carousel-inner {
+  height: 100%;
+  background: #d80010;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.ketuaUmum .carousels .carousel .carousel-inner .carousel-item {
+  text-align: center;
+}
+
+.ketuaUmum .carousels .carousel .carousel-inner .carousel-item h5 {
+  font-weight: 400;
+  font-size: 10pt;
+}
+
+@media (max-width: 1085px) {
+  .ketuaUmum .carousels .carousel .carousel-inner .carousel-item h5 {
+    font-size: 8pt;
+  }
+}
+
+.ketuaUmum .carousels .carousel .carousel-inner .carousel-item h3 {
+  font-size: 15pt;
+  font-weight: 300;
+}
+
+@media (max-width: 1085px) {
+  .ketuaUmum .carousels .carousel .carousel-inner .carousel-item h3 {
+    font-size: 12pt;
+  }
+}
+
+.ketuaUmum .carousels .carousel .carousel-inner .carousel-item p {
+  font-size: 8pt;
+}
+
+@media (max-width: 1085px) {
+  .ketuaUmum .carousels .carousel .carousel-inner .carousel-item p {
+    font-size: 6pt;
+  }
+}
+
+.cardContent {
+  width: 100%;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 15px;
+  padding: 20px 15%;
+}
+
+.btnSize {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.backgroundRed {
+  background: url(../../../img/pattern-02.svg);
+  margin-top: 20px;
+  width: 100%;
+  height: 40vh;
+}
+/*# sourceMappingURL=HomePage.css.map */
