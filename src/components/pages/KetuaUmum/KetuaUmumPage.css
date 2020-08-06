@@ -418,9 +418,15 @@
           flex: auto;
   margin: 0 10px;
   background: #ffffff;
+  cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
   border-radius: 0px;
+}
+
+.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent:hover {
+  background: #d80010;
+  color: #fff;
 }
 
 .wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .imageContent {
@@ -620,6 +626,7 @@
           flex: auto;
   margin: 0 10px;
   background: #ffffff;
+  cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
   border-radius: 10px;
@@ -627,6 +634,7 @@
 
 .wrapperKetuaUmum .container-1 .col6-cardContent-container-1 .col-cardContent:hover {
   background: #d80010;
+  color: #fff;
 }
 
 .wrapperKetuaUmum .container-1 .col6-cardContent-container-1 .col-cardContent .imageContent {

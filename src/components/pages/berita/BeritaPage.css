@@ -418,9 +418,17 @@
           flex: auto;
   margin: 0 10px;
   background: #ffffff;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
   border-radius: 0px;
+}
+
+.wrapperBerita .container-1 .col3-cardContent-container-1 .col-cardContent:hover {
+  background: #d80010;
+  color: #fff;
 }
 
 .wrapperBerita .container-1 .col3-cardContent-container-1 .col-cardContent .imageContent {
@@ -863,6 +871,7 @@
 
 .wrapperBerita .container-3 .col2-cardContent-container-3 .col-cardContent:hover {
   background: #d80010;
+  color: #fff;
 }
 
 .wrapperBerita .container-3 .col2-cardContent-container-3 .col-cardContent .imageContent {
@@ -1010,6 +1019,7 @@
 
 .wrapperBerita .container-3 .col4-cardContent-container-3 .col-cardContent:hover {
   background: #d80010;
+  color: #fff;
   border-top-right-radius: 10px;
 }
 

@@ -595,6 +595,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+<<<<<<< HEAD
+=======
+  margin-top: 40px;
+>>>>>>> ridwan
   padding: 20px 15%;
 }
 
@@ -669,6 +673,99 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+.cardContent2 {
+  width: 100%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px 15%;
+}
+
+.cardContent2 .col {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin: 0 10px;
+  background: #ffffff;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 10px;
+}
+
+.cardContent2 .col .imageContent {
+  width: 100%;
+  height: 30vh;
+  background: url(../../../img/megawati5.jpg);
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cardContent2 .col .imageTwo {
+  width: 100%;
+  height: 30vh;
+  background: url(../../../img/megawati6.jpg);
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cardContent2 .col .imageThree {
+  width: 100%;
+  height: 30vh;
+  background: url(../../../img/megawati7.jpg);
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cardContent2 .col .textCard {
+  width: 100%;
+  padding: 5px 20px;
+}
+
+.cardContent2 .col .textCard small {
+  font-size: 7pt;
+  color: #d80010;
+}
+
+@media (max-width: 1085px) {
+  .cardContent2 .col .textCard small {
+    font-size: 5pt;
+  }
+}
+
+@media (max-width: 1085px) {
+  .cardContent2 .col .textCard .kolsHome {
+    font-size: 10pt;
+  }
+}
+
+.cardContent2 .col .textCard p {
+  font-size: 8pt;
+}
+
+@media (max-width: 1085px) {
+  .cardContent2 .col .textCard p {
+    font-size: 6pt;
+  }
+}
+
+>>>>>>> ridwan
 .btnSize {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -682,6 +779,31 @@
           align-items: center;
 }
 
+<<<<<<< HEAD
+=======
+.btnSize .btn2 {
+  border-radius: 25px;
+  border: 1px solid #d80010;
+  text-transform: uppercase;
+  font-size: 7pt;
+  font-weight: 500;
+  color: #d80010;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media (max-width: 1085px) {
+  .btnSize .btn2 {
+    font-size: 6pt;
+  }
+}
+
+.btnSize .btn2:hover {
+  background: #d80010;
+  color: #ffffff;
+}
+
+>>>>>>> ridwan
 .backgroundRed {
   background: url(../../../img/pattern-02.svg);
   margin-top: 20px;

@@ -17,6 +17,9 @@ import DetailPengurus from './components/pages/detailpengurus/DetailPengurus';
 import Dpd from './components/dpd/Dpd';
 import VideoMedia from './components/pages/videomedia/VideoMedia';
 // import StrukturPage from './components/pages/partai/struktur/StrukturPage';
+import Page1 from './components/pages/berita/page1/Page1';
+import Page2 from './components/pages/berita/page2/Page2';
+
 
 function App() {
 
@@ -60,6 +63,14 @@ function App() {
 
           <Route path="/struktur">
             <StrukturPage/>
+          </Route>
+          
+          <Route path='/page2'>
+            <Page2 />
+          </>
+
+          <Route path='/page1'>
+            <Page1 />
           </Route>
 
           <Route path="/pemilu">
