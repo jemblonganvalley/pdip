@@ -1,11 +1,12 @@
 import React from 'react'
 import './MainButton.scss'
+import {Link} from 'react-router-dom'
 
-const MainButton = ({name, margin})=> {
+const MainButton = ({name, margin, pages})=> {
     return (
-        <button className="btn btn2" style={{
+        <Link className="btn btn2" style={{
             margin : margin
-        }}>{name}</button>
+        }} to={pages} >{name}</Link>
     )
 }
 

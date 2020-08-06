@@ -13,6 +13,9 @@ import { useEffect } from 'react';
 import BeritaPage from './components/pages/berita/BeritaPage';
 import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
 import StrukturPage from './components/pages/struktur/StrukturPage';
+import DetailPengurus from './components/pages/detailpengurus/DetailPengurus';
+import Dpd from './components/dpd/Dpd';
+import VideoMedia from './components/pages/videomedia/VideoMedia';
 // import StrukturPage from './components/pages/partai/struktur/StrukturPage';
 
 function App() {
@@ -42,6 +45,18 @@ function App() {
       <div className="App">
 
         <Switch>
+
+          <Route path="/videomedia">
+            <VideoMedia/>
+          </Route>
+
+          <Route path="/dpd">
+            <Dpd/>
+          </Route>
+
+          <Route path="/detailpengurus">
+            <DetailPengurus/>
+          </Route>
 
           <Route path="/struktur">
             <StrukturPage/>

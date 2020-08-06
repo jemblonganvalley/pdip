@@ -104,19 +104,22 @@ const MultimediaPage = ()=> {
                                 TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                                 borderRadius="10px"
                                 icons="fa fa-play"
-                                classIcon="VBMusic"  />
+                                classIcon="VBMusic"
+                                href="/videomedia"  />
                 <Cards imageCard={megawati2}
                         textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                         TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                         borderRadius="10px"
                         icons="fa fa-play"
-                        classIcon="VBMusic"  />
+                        classIcon="VBMusic"
+                        href="/videomedia"  />
                 <Cards imageCard={megawati3}
                         textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                         TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                         borderRadius="10px"
                         icons="fa fa-play"
-                        classIcon="VBMusic" />
+                        classIcon="VBMusic"
+                        href="/videomedia" />
                 </div>
             </div>
         </div>

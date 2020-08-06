@@ -128,7 +128,7 @@ const PartaiPage = ()=>{
 
                 {/* BUTTON UNDUH */}
                 <div className="btnUnduh">
-                    <button className="btn"><span>unduh lambang</span></button>
+                    <button className="btn"><a href={pdiLogo} download="pdilogo"><span>unduh lambang</span></a></button>
                 </div>
                 {/* END */}
 
@@ -165,7 +165,7 @@ const PartaiPage = ()=>{
                     <h1>Anggota Legislatif</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia a voluptatem mollitia dolorum ea architecto, aliquid quidem fugit accusamus saepe ab repudiandae eos ipsum! Quaerat omnis dolores quidem reiciendis distinctio.</p>
                     <div className="btnGroup">
-                        <MainButton name="DPR RI" margin="0 10px" />
+                        <MainButton name="DPR RI" margin="0 10px" pages="/dpd" />
                         <MainButton name="DPRD Provinsi" margin="0 10px" />
                         <MainButton name="DPRD Kabupaten Kota" margin="0 10px" />
                     </div>

@@ -85,7 +85,10 @@ const HomePage = ()=> {
                                 </div>
                             </div>
                     </div>
-                            <button className="btn">lihat semua</button>
+                    
+
+                    <MainButton name="lihat semua"
+                                margin="1rem 0" />
                 </div>
 
                 <div className="beritaPage">
