@@ -278,4 +278,92 @@ $secondary : #f3f3f3;
             }
         }
     }
+
+    .wrapper3 {
+        display: flex;
+        width: 100%;
+        padding: 20px 10%;
+        flex-direction: column;
+
+        .bkbbText {
+            border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+            width: 100%;
+            text-align: center;
+            // height: 10vh;
+            margin-top: 30px;
+            
+            small {
+                cursor: pointer;
+                color: #d80010;
+                // width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 8pt;
+                border-bottom: 5.5px solid #d80010;
+            }
+        }
+    }
+    .wrapperCard {
+        display: flex;
+        // flex-direction: row;
+        width: 100%;
+        // border: 1px solid blue;
+        padding: 20px 10%;
+
+        .cardKolum {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            
+        }
+    }
+    .btnLihatSemua {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px 10%;
+    }
+
+    .bannerBkbb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 70vh;
+
+        background: url(../../../img/kids.png);
+        background-size: cover;
+        
+        color: #ffff;
+        // font-family: 'Josefin Sans';
+
+        .custom {
+            margin: 1rem;
+            text-align: center;
+            font-family: 'Roboto';
+            font-weight: bold;
+        }
+        small {
+            margin: 1rem;
+            font-size: 8pt;
+            font-style: italic;
+        }
+    }
+
+    .wrapperQuotes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        padding: 20px 10%;
+
+        img {
+            margin: 1rem;
+        }
+    }
 }

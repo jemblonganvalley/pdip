@@ -14,7 +14,6 @@ import StrukturPage from './components/pages/struktur/StrukturPage';
 import DetailPengurus from './components/pages/detailpengurus/DetailPengurus';
 import Dpd from './components/dpd/Dpd';
 import VideoMedia from './components/pages/videomedia/VideoMedia';
-// import StrukturPage from './components/pages/partai/struktur/StrukturPage';
 
 function App() {
   return (

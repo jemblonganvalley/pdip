@@ -2,7 +2,7 @@ import React from 'react'
 import './MainCards.scss'
 import {Link} from 'react-router-dom'
 
-const Cards = ({imageCard, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight})=> {
+const Cards = ({imageCard, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight, paragrapSize})=> {
     return (
      
                 <div className="col col-lg-3 cardCustom" style={{
@@ -22,7 +22,9 @@ const Cards = ({imageCard, textSmall, TextH5, borderRadius, paragrap, icons, cla
                         fontSize : h5Font,
                         fontWeight : h5Weight
                     }}>{TextH5}</h5>
-                    <p className="paragrap">{paragrap}</p>
+                    <p className="paragrap" style={{
+                        fontSize : paragrapSize
+                    }}>{paragrap}</p>
                     </div>
                 </div>
                 
