@@ -12,6 +12,8 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import BeritaPage from './components/pages/berita/BeritaPage';
 import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
+import Page1 from './components/pages/berita/page1/Page1';
+import Page2 from './components/pages/berita/page2/Page2';
 
 
 function App() {
@@ -39,6 +41,14 @@ function App() {
       <div className="App">
 
         <Switch>
+          <Route path='/page2'>
+            <Page2 />
+          </Route>
+
+          <Route path='/page1'>
+            <Page1 />
+          </Route>
+
           <Route path="/pemilu">
             <PemiluPage />
           </Route>

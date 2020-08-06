@@ -326,8 +326,16 @@ $secondary : #f3f3f3;
                  flex: auto;
                  margin: 0 10px;
                  background: #ffffff;
+                 color: #000;
+                 text-decoration: none;
+                 cursor: pointer;
                  transition: .5s;
                  border-radius: 0px;
+
+                 &:hover{
+                     background: #d80010;
+                     color: #fff;
+                 }
         
                  .imageContent {
                      width: 100%;
@@ -677,6 +685,7 @@ $secondary : #f3f3f3;
 
                  &:hover{
                      background: #d80010;
+                     color: #fff;
                  }
         
                  .imageContent {
@@ -801,6 +810,7 @@ $secondary : #f3f3f3;
 
                  &:hover{
                      background: #d80010;
+                     color: #fff;
                      border-top-right-radius: 10px;
                  }
         

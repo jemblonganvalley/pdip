@@ -4,6 +4,7 @@ import React from 'react'
 
 // Import to CSS
 import './BeritaPage.css'
+import { Link } from 'react-router-dom'
 // END Import to CSS
 
 // Create Component
@@ -108,24 +109,23 @@ const BeritaPage = () => {
 
                     {/* Column3 */}
                     <div className="col3-cardContent-container-1">
-                        <div className="col-cardContent">
+                        <Link to='/page1' className="col-cardContent card1">
                             <div className="imageContent imageOne"></div>
                             <div className="textCard">
                                 <small>Admin PDI Perjuangan | 1 Januari 2019</small>
                                 <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
                             </div>
+                        </Link>
 
-                        </div>
-                        <div className="col-cardContent">
+                        <Link to='/page2' className="col-cardContent">
                             <div className="imageContent imageTwo"></div>
                             <div className="textCard">
                                 <small>Admin PDI Perjuangan | 1 Januari 2019</small>
                                 <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
                             </div>
-
-                        </div>
+                        </Link>
                         <div className="col-cardContent">
                             <div className="imageContent imageThree"></div>
                             <div className="textCard">

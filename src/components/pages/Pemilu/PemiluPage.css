@@ -1578,7 +1578,7 @@
   display: flex;
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 150%;
   background-position: center;
   background-size: cover;
   overflow: hidden;
