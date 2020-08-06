@@ -1,0 +1,45 @@
+$padding : 20px 8%;
+
+.wrapperDetail {
+    // START HEADERS
+    .detailHead {
+        background: url(../../../img/kampanye.jpg);
+        background-size: cover;
+        height: 25vh;
+        background-position: center;
+        
+        .backHead {
+            background-color: rgba(255, 0, 8, 0.8);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        
+            .textBackHead {
+                width: 30%;
+                height: 50%;
+                margin-left: 13rem;
+            }
+        }
+        }
+        // END HEADERS
+        // START LINK PARTAI
+        .linkedDetail {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        margin-top: 20px;
+        padding: $padding;
+        i {
+            span {
+                margin-left: 5px;
+                font-style: italic;
+                font-size: 8pt;
+            }
+        }
+        }
+// END LINK PARTAI
+}

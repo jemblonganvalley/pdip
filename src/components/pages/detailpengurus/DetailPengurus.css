@@ -1,0 +1,48 @@
+.wrapperDetail .detailHead {
+  background: url(../../../img/kampanye.jpg);
+  background-size: cover;
+  height: 25vh;
+  background-position: center;
+}
+
+.wrapperDetail .detailHead .backHead {
+  background-color: rgba(255, 0, 8, 0.8);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.wrapperDetail .detailHead .backHead .textBackHead {
+  width: 30%;
+  height: 50%;
+  margin-left: 13rem;
+}
+
+.wrapperDetail .linkedDetail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  margin-top: 20px;
+  padding: 20px 8%;
+}
+
+.wrapperDetail .linkedDetail i span {
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 8pt;
+}
+/*# sourceMappingURL=DetailPengurus.css.map */

@@ -1,6 +1,6 @@
 .circleCard {
-  width: 20vw;
-  height: 35vh;
+  width: 17vw;
+  height: 37vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,6 +14,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 10px 10px;
+  text-decoration: none;
+  color: #d80010;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 10px;
+}
+
+.circleCard:hover {
+  color: #ffffff;
+  background-color: #d80010;
 }
 
 .circleCard .imageCircle {
@@ -25,14 +36,13 @@
 .circleCard .jabatan {
   margin-top: 5px;
   font-size: 7pt;
-  color: #d80010;
   font-weight: bold;
 }
 
 .circleCard .nama {
-  width: 50%;
   text-align: center;
   font-weight: 600;
+  width: 56%;
   text-transform: uppercase;
   margin-top: .5rem;
 }

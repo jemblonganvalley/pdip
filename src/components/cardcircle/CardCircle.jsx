@@ -1,16 +1,17 @@
 import React from 'react'
 import './CardCircle.scss'
+import {Link} from 'react-router-dom'
 
 const CardCircle = ({image, jabatan, nama})=> {
     return (
-        <div className="circleCard">
+        <Link className="circleCard">
             <div className="imageCircle" style={{
                 background : `url(${image})`,
                 backgroundSize : 'cover'
             }}></div>
             <small className="jabatan">{jabatan}</small>
             <h6 className="nama">{nama}</h6>
-        </div>
+        </Link>
     )
 }
 
