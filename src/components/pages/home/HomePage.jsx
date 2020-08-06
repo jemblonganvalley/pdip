@@ -8,7 +8,7 @@ import Calendar from '../../../img/calendarr.png'
 import Lagu from '../../../img/laguperjuangan.png'
 import MusicPdi from '../../musicpdi/MusicPdi'
 import CardMaps from '../../cardmaps/CardMaps'
-
+import MainButton from '../../buttons/MainButton'
 
 const HomePage = ()=> {
 
