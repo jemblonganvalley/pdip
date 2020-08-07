@@ -26,9 +26,9 @@ const BkbbWejangan = () => {
                         {/* Row1 */}
                         <div className="row1">
                             <div className="box-quotes">
-                                <i className="fas fa-quote-right"></i>
+                                <i className="fas fa-quote-right" style={{color : '#d80010'}}></i>
 
-                                <p className="txt1">
+                                <p className="txt1" >
                                     BARANG SIAPA JANG INGIN MUTIARA HARUS BERANI TERJUN DI LAUTAN JANG DALAM.
                                 </p>
 

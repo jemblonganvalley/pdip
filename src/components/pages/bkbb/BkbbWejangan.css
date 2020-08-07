@@ -80,7 +80,7 @@
           flex-direction: column;
   height: 100%;
   width: 40%;
-  background-image: url(../../../img/bkbb1.jpg);
+  background-image: url();
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -89,6 +89,7 @@
           align-items: center;
   padding: 10px 15px 10px 15px;
   margin: 0 20px 0 0;
+  color: #d80010;
 }
 
 .wrapperBkbbWejangan .container-1 .col1-container-1 .row1 i {
@@ -112,7 +113,7 @@
   display: flex;
   font-size: 25px;
   font-weight: 500;
-  color: #fff;
+  color: #d80010;
   margin: 1px;
   text-align: center;
 }
@@ -123,7 +124,7 @@
   display: flex;
   font-size: 15px;
   font-weight: 500;
-  color: #fff;
+  color: #d80010;
   margin: 1px;
   text-align: center;
 }
@@ -133,7 +134,7 @@
   display: -ms-flexbox;
   display: flex;
   font-size: 15px;
-  color: #fff;
+  color: #d80010;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -163,7 +164,7 @@
   font-size: 11px;
   font-weight: 500;
   text-align: start;
-  color: #d80010;
+  color: #d80010 !important;
 }
 
 .wrapperBkbbWejangan .container-1 .col1-container-1 .row2 .txt2 {

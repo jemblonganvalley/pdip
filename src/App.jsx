@@ -19,6 +19,8 @@ import VideoMedia from './components/pages/videomedia/VideoMedia';
 import Page1 from './components/pages/berita/page1/Page1';
 import Page2 from './components/pages/berita/page2/Page2';
 import MateriPokok from './components/pages/materipokok/MateriPokok';
+import BkbbWejangan from './components/pages/bkbb/BkbbWejangan'
+
 
 function App() {
 
@@ -47,6 +49,10 @@ function App() {
       <div className="App">
 
         <Switch>
+
+          <Route path="/quotes">
+            <BkbbWejangan />
+          </Route>
 
           <Route path="/materipokok">
             <MateriPokok/>
