@@ -1,0 +1,104 @@
+.wrapperPlayVid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 65vh;
+  margin-top: 1.5rem;
+}
+
+.wrapperPlayVid .kolumVideo {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.wrapperPlayVid .kolumVideo iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapperPlayVid .descVideo {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.wrapperPlayVid .descVideo .textTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 9pt;
+  position: relative;
+}
+
+.wrapperPlayVid .descVideo .textTop small {
+  color: #d80010;
+}
+
+.wrapperPlayVid .descVideo .textTop .countLove {
+  position: absolute;
+  right: 0;
+}
+
+.wrapperPlayVid .descVideo .textTop .countLove i {
+  margin-right: .5rem;
+  color: #d80010;
+}
+
+.wrapperPlayVid .descVideo .textTop .countLove small {
+  color: #818181;
+}
+
+.wrapperPlayVid .descVideo .headline {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.wrapperPlayVid .descVideo p {
+  font-size: 10pt;
+}
+
+.wrapperPlayVid .descVideo .descline {
+  margin-top: 1rem;
+}
+
+.wrapperPlayVid .descVideo .share {
+  font-size: 10pt;
+  position: absolute;
+  bottom: 0;
+}
+
+.wrapperPlayVid .descVideo .share .marginShare {
+  margin: 0 .8rem;
+}
+
+.wrapperPlayVid .descVideo .share i {
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperPlayVid .descVideo .share i:hover {
+  color: #d80010;
+}
+/*# sourceMappingURL=VMedia.css.map */

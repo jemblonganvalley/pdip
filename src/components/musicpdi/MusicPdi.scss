@@ -263,6 +263,10 @@
             flex-direction: column;
             // padding: 10px;
 
+            .judulList {
+                text-transform: uppercase;
+            }
+
             .headersList {
                 width: 100%;
                 display: flex;

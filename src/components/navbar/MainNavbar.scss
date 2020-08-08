@@ -72,13 +72,14 @@ $responsiveEmpat : 719px;
     .navbar-nav {
         list-style: none;
         li {
-            font-size: 8pt;
+            font-size: 9pt;
             text-transform: 
             uppercase;
-            font-weight: 300;
+            // font-weight: 300;
             transition: .3s;
             color: #202020;
             font-weight: 500;
+            transition: .3s;
 
             @include responSatu() {
                 font-size: 7pt;
@@ -98,6 +99,8 @@ $responsiveEmpat : 719px;
             &:hover {
                 color: $colors;
                 // font-weight: bold;
+                font-weight: 300;
+                font-size: 8pt;
             }
             a {
                 text-decoration: none;
@@ -105,6 +108,7 @@ $responsiveEmpat : 719px;
 
                 .active, &:hover {
                     color: #ffffff;
+                   
                 }
             }
         }

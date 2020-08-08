@@ -98,19 +98,19 @@ const MusicPdi = ()=> {
                             <h4>Lagu Perjuangan<br/>PDI Perjuangan</h4>
                         </div>
                         <div className="listSatu">
-                            <h5>Mars PDI Perjuangan</h5>
+                            <h5 className="judulList">Mars PDI Perjuangan</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
                         </div>
                         <div className="listDua">
-                            <h5>Hymne PDI Perjuangan</h5>
+                            <h5 className="judulList">Hymne PDI Perjuangan</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
                         </div>
                         <div className="listTiga">
-                            <h5>Hymne PDI Perjuangan</h5>
+                            <h5 className="judulList">Hymne PDI Perjuangan</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
                         </div>
                         <div className="listEmpat">
-                            <h5>Hymne PDI Perjuangan</h5>
+                            <h5 className="judulList">Hymne PDI Perjuangan</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
                         </div>
                     </div>

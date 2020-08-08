@@ -330,6 +330,10 @@
           flex-direction: column;
 }
 
+.containerDua .contentDua .musicList .judulList {
+  text-transform: uppercase;
+}
+
 .containerDua .contentDua .musicList .headersList {
   width: 100%;
   display: -webkit-box;
