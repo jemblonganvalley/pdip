@@ -10,7 +10,8 @@ const MainNavbar = ({hide})=> {
         <nav className="navbar navbar-expand-lg sticky-top" style={{
           transform : hide ? 'translateY(0)' : 'translateY(-18vh)',
           transitionDelay : '.1s',
-          transitionDuration : '.5s',
+          transitionDuration : '.3s',
+          transitionTimingFunction : 'ease-in-out'
         }}>
             <div className="container-fluid">
               <NavLink className="navbar-brand" to="/" activeClassName="brand" >
@@ -21,6 +22,9 @@ const MainNavbar = ({hide})=> {
               </button>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                   <li className="nav-item" activeClassName="active">
+                    <NavLink className="nav-link active" to="/">Home</NavLink>
+                  </li>
                   <li className="nav-item" activeClassName="active">
                     <NavLink className="nav-link active" to="/partai">Partai</NavLink>
                   </li>

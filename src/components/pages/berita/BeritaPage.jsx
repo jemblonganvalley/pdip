@@ -191,7 +191,7 @@ const BeritaPage = () => {
                 {/* Container2 */}
                 <div className="container-2">
                     {/* Column1 */}
-                    <div className="col1-container-2">
+                    <div className="col1-container-2 banner-berita">
                         <p className="txt-title-col1">
                             Ut enim ad minim veniam, quis nostrud
                             <br /> exercitation ullamco laboris

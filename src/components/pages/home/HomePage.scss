@@ -73,7 +73,7 @@ $phoneSatu : 600px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
+                padding: 10px 10px;
                 @include phone() {
                     flex-direction: column;
                     margin: 2rem;
