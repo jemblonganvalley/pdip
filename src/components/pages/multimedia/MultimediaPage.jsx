@@ -8,6 +8,8 @@ import Cards from '../../cards/MainCards'
 import megawati1 from '../../../img/megawati1.jpg'
 import megawati2 from '../../../img/megawati2.jpg'
 import megawati3 from '../../../img/megawati3.jpg'
+import perempuan from '../../../img/ig-perempuan.png'
+import megawati12 from '../../../img/megawati12.png'
 
 const MultimediaPage = ()=> {
     return (
@@ -66,30 +68,18 @@ const MultimediaPage = ()=> {
             </div>
 
             <div className="cardMediaDua">
-                <div className="col-lg-4 cols1 kols">
-                    <div className="cardMBody">
-                        <div className="cardMBImg"></div>
-                        <div className="cardTextWrapper">
-                            <small className="cardSmall">Admin PDI Perjuangan | 1 Januari 2019</small>
-                            <h4 className="cardH4">Lorem ipsum dolor sit.</h4>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-8 cols2 kols">
-                    <div className="cardMBody2">
-                        <div className="cardMBImg2">
-                            <div className="iconPlayMedia">
-                                <i class="fa fa-play"></i>
-                            </div>
-                        </div>
-                        <div className="cardTextWrapper2">
-                                <small className="cardSmall2">Admin PDI Perjuangan | 1 Januari 2019</small>
-                                <h4 className="cardH42">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing
-                                </h4>
-                            </div>
-                    </div>
-                </div>
+            <Cards imageCard={perempuan}
+                    textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                    TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                    borderRadius="10px"
+                    width="30%"  />
+            <Cards imageCard={megawati12}
+                    textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                    TextH5="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia quo tempore excepturi, accusantium"
+                    borderRadius="10px"
+                    width="70%"
+                    icons="fa fa-play"
+                    classIcon="VBMusic"  />
             </div>
 
             

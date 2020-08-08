@@ -1,4 +1,5 @@
-$red : #d80010;
+@import "../../utilities/variable/variables.scss";
+
 
 .page-item:first-child .page-link {
     border-radius: 0;
@@ -11,7 +12,7 @@ $red : #d80010;
 .page-link {
     border: none;
     background-color: transparent;
-    color: $red;
+    color: $colors;
     // margin: 2rem;
     margin: .5rem;
     padding: 0;
@@ -22,7 +23,7 @@ $red : #d80010;
         color: #ffffff;
         width: 1.5rem;
         height: 1.5rem;
-        background-color: $red;
+        background-color: $colors;
         border: none;
         
     }
@@ -58,11 +59,11 @@ $red : #d80010;
 
 .page-item.active .page-link {
     border-radius: 50%;
-    background-color: $red;
+    background-color: $colors;
     font-size: 10pt;
     width: 1.5rem;
     text-align: center;
     height: 1.5rem;
-    border-color: $red;
+    border-color: $colors;
     
 }

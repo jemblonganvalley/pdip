@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Partitur from '../../img/partitur.png'
 import MinusOn from '../../img/minusone.png'
 import laguPerjuangan from '../../img/lagu.png'
+import ReactJkMusicPlayer from 'react-jinke-music-player'
+import "react-jinke-music-player/assets/index.css";
 import './MusicPdi.scss'
 
 const MusicPdi = ()=> {
+
+    let [audioInstace, setAudioInstance] = useState(null)
+
     return (
         <div className="musicPdi">
             {/* CONTAINER DUA */}
@@ -46,8 +51,12 @@ const MusicPdi = ()=> {
                             </div>
                         </div>
                         <div className="col-md-12 playerMusic">
+                            <ReactJkMusicPlayer getAudioInstance={instance => audioInstace = instance}  />
+
                             <div className="col-sm-2 mulai">
-                                <div className="mulaiIcon">
+                                <div className="mulaiIcon" onClick={()=> {
+                                    audioInstace.play()
+                                }}>
                                     <i class="fa fa-play"></i>
                                 </div>
                             </div>

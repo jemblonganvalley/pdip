@@ -9,6 +9,8 @@ import IconHartaDua from '../../../img/income.png'
 import ConsentWhite from '../../../img/consentwhite.png'
 import Consentblack from '../../../img/consentblack.png'
 import CardMaps from '../../cardmaps/CardMaps'
+import CardsProfile from '../../cardIconProfil/CardsProfile'
+import MainDivider from '../../divider/MainDivider'
 
 const InformasiPage = ()=> {
     return (
@@ -32,9 +34,8 @@ const InformasiPage = ()=> {
 
             {/* START PROFIL */}
             <div className="profilContainer">
-                <div className="textProfil">
-                    <small className="profil">Profil</small>
-                </div>
+                <MainDivider text="Profil"
+                                garisMerah="2rem" />
 
                 <div className="paragrapProfil">
                     <div className="paragrapKiri">
@@ -56,26 +57,7 @@ const InformasiPage = ()=> {
                 <div className="divider"></div>
                 {/* divider */}
 
-                {/* CARD PROFIL */}
-                <div className="cardIconProfil">
-                    <div className="cardProfileSatu cardProfile">
-                        <img src={IconCardSatu} alt="" width="50" />
-                        <small className="textCardProfil textSatu">Struktur PPDI PDI Perjuangan</small>
-                    </div>
-                    <div className="cardProfileDua cardProfile">
-                        <img src={IconCardDua} alt="" width="46" />
-                        <small className="textCardProfil textDua">visi / misi</small>
-                    </div>
-                    <div className="cardProfileTiga cardProfile">
-                        <img src={IconCardTiga} alt="" width="42" />
-                        <small className="textCardProfil textTiga">prosedur pelayanan</small>
-                    </div>
-                    <div className="cardProfileEmpat cardProfile">
-                        <img src={IconCardEmpat} alt="" width="33" />
-                        <small className="textCardProfil textEmpat">regular PPDI</small>
-                    </div>
-                </div>
-                {/* END */}
+                <CardsProfile />
 
                 {/* YOUTUBE PPDI */}
                 <div className="ytProfil">
@@ -109,9 +91,9 @@ const InformasiPage = ()=> {
 
             {/* START TATA CARA */}
             <div className="tataCaraContainer">
-                <div className="textTataCara">
-                    <small className="tataCara">tata cara</small>
-                </div>
+                <MainDivider text="tata Cara"
+                                garisMerah="4rem"
+                                 />
 
             </div>
             {/* END */}
@@ -123,7 +105,6 @@ const InformasiPage = ()=> {
                         <div className="carousel-item active">
                             <div className="imageTC">
                                     <p className="pCarousel">Pemohon informasi publik mengisi formulir permohonan informasi dengan menyertakan identitas yang masih berlaku (KTP, SIM, Paspor). Bagi lembaga publik pemohon informasi menyertakan Akta Notaris/SK Pembentukan.</p>
-                                    <button className="btn kunjungi">kunjungin halaman</button>
                             </div>
                         </div>
                         <div className="carousel-item">

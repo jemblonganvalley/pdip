@@ -1,0 +1,58 @@
+@import "../../utilities/variable/variables.scss";
+
+
+// CARD ICON PROFIL
+.cardIconProfil {
+    display: flex;
+    flex-direction: row;
+    padding: $paddingSmall;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+
+    .cardProfile {
+        margin: 0 1rem;
+        
+
+        .textCardProfil {
+            line-height: 1;
+            margin-left: 1rem;
+            font-size: 9pt;
+            text-transform: uppercase;
+        }
+    }
+
+    .cardProfileSatu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+
+        // border: 1px solid green;
+    }
+    .cardProfileDua {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+
+        // border: 1px solid blue;
+    }
+    .cardProfileTiga {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+
+        // border: 1px solid brown;
+    }
+    .cardProfileEmpat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+
+        // border: 1px solid crimson;
+    }
+}
+// END

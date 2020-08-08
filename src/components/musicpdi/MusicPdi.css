@@ -1,5 +1,5 @@
 .containerDua {
-  padding: 20px 15%;
+  padding: 40px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
   background-color: #d80010 !important;
+=======
+  background: #99000a;
+>>>>>>> agil3
 }
 
 .containerDua .contentDua .wrapperContentMusicHome .contentMusic {
@@ -210,7 +214,7 @@
 
 .containerDua .contentDua .wrapperContentMusicHome .playerMusic .mulai {
   height: 16.5vh;
-  background: #ff0008cc;
+  background: #d80010;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,12 +284,17 @@
 .containerDua .contentDua .wrapperContentMusicHome .playerMusic .rythm .pdiJudul i {
   position: absolute;
   right: 0;
-  color: #ff0008cc;
+  color: #d80010;
   text-align: right;
 }
 
+<<<<<<< HEAD
 .containerDua .contentDua .wrapperContentMusicHome .playerMusic .rythm .pdiSoundBar {
   background: #ff0008cc;
+=======
+.containerDua .contentDua .wrapperContentMusic .playerMusic .rythm .pdiSoundBar {
+  background: #d80010;
+>>>>>>> agil3
   height: 2rem;
 }
 

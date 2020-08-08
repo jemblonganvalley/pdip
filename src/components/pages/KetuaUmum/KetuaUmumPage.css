@@ -41,7 +41,7 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 10px 10%;
+  padding: 40px 10%;
 }
 
 .wrapperKetuaUmum .linkedBerita i span {
@@ -138,7 +138,11 @@
           flex-direction: column;
   height: 30%;
   width: 100%;
+<<<<<<< HEAD
   background-color: rgba(255, 0, 8, 0.6);
+=======
+  background-color: rgba(216, 0, 16, 0.8);
+>>>>>>> agil3
   overflow: hidden;
 }
 
@@ -390,22 +394,15 @@
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 {
-  width: 100%;
-  height: 60vh;
+.wrapperKetuaUmum .container-1 .cardKetuaUmum {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+<<<<<<< HEAD
   margin-top: 0;
   padding: 10px 0 0 0%;
 }
@@ -472,6 +469,8 @@
   width: 100%;
   margin: 30px 0 0px 0;
   overflow: hidden;
+=======
+>>>>>>> agil3
 }
 
 .wrapperKetuaUmum .container-1 .col4-container-1 .row1-video-youtube {
@@ -524,7 +523,11 @@
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 .wrapperKetuaUmum .container-1 .col5-container-1 {
+=======
+.wrapperKetuaUmum .container-3 {
+>>>>>>> agil3
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,6 +535,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
   height: 20vh;
   width: 100%;
   background: #f3f3f3;
@@ -601,19 +605,32 @@
 .wrapperKetuaUmum .container-1 .col6-cardContent-container-1 {
   width: 100%;
   height: 60vh;
+=======
+  height: auto;
+  width: 100%;
+  padding: 0 10% 50px 10%;
+}
+
+.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 {
+>>>>>>> agil3
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+<<<<<<< HEAD
   margin: 0 0 30px 0;
   padding: 10px 0%;
 }
@@ -676,5 +693,7 @@
 
 .wrapperKetuaUmum .container-1 .col6-cardContent-container-1 .col-cardContent .textCard p {
   font-size: 8pt;
+=======
+>>>>>>> agil3
 }
 /*# sourceMappingURL=KetuaUmumPage.css.map */

@@ -1,6 +1,7 @@
 import React from 'react'
 import './DetailPengurus.scss'
 import profil from '../../../img/profil.png'
+import MainDivider from '../../divider/MainDivider'
 
 const DetailPengurus = ()=> {
     return (
@@ -24,9 +25,8 @@ const DetailPengurus = ()=> {
             {/* END */}
 
             <div className="pengurus">
-                <div className="textPengurus">
-                    <small>Pengurus</small>
-                </div>
+                <MainDivider text="Pengurus"
+                                garisMerah="4rem" />
                 <div className="bidangTextHead">
                     <h2>Bidang Ekonomi Kreatif dan<br/>Ekonomi Digital</h2>
                 </div>

@@ -1,4 +1,5 @@
-$padding : 10px 10%;
+@import "../../../utilities/variable/variables.scss";
+
 
 .wrapperVideo {
     width: 100%;
@@ -54,7 +55,7 @@ $padding : 10px 10%;
                 position: relative;
 
                 small {
-                    color: #d80010;
+                    color: $colors;
                 }
 
                 .countLove {
@@ -63,7 +64,7 @@ $padding : 10px 10%;
 
                     i {
                         margin-right: .5rem;
-                        color: #d80010;
+                        color: $colors;
                     }
                     small {
                         color: #818181;
@@ -95,7 +96,7 @@ $padding : 10px 10%;
                     cursor: pointer;
                     transition: .3s;
                     &:hover {
-                        color: #d80010;
+                        color: $colors;
                     }
                 }
             }
@@ -111,7 +112,7 @@ $padding : 10px 10%;
         .borderVideo {
             width: 5%;
             height: 5px;
-            background-color: #d80010;
+            background-color: $colors;
             position: absolute;
             // top: 50%;
             left: 50%;

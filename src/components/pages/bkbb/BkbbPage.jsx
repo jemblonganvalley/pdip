@@ -18,6 +18,7 @@ import Double from '../../../img/double.png'
 import quotes1 from '../../../img/quotes3.png'
 import quotes2 from '../../../img/quotes.png'
 import quotes3 from '../../../img/quotes2.png'
+<<<<<<< HEAD
 import {Link} from 'react-router-dom'
 
 
@@ -25,6 +26,13 @@ import {Link} from 'react-router-dom'
 const BkbbPage = ()=>{
 
  
+=======
+import MainDivider from '../../divider/MainDivider'
+
+const BkbbPage = ()=>{
+
+    
+>>>>>>> agil3
 
     return (
         <div className="wrapperPartai">
@@ -62,9 +70,8 @@ const BkbbPage = ()=>{
             </section>
 
             <section className="wrapper3">
-                <div className="bkbbText">
-                    <small>Materi Pokok Pendukung</small>
-                </div>
+                <MainDivider text="Materi Pokok Pendukung"
+                                garisMerah="8rem" />
             </section>
             
             <div className="wrapperCard">

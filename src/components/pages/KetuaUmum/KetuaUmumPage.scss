@@ -1,4 +1,6 @@
 $secondary : #f3f3f3;
+@import "../../../utilities/variable/variables.scss";
+
 
 .wrapperKetuaUmum{
     width: 100%;
@@ -31,7 +33,7 @@ $secondary : #f3f3f3;
         flex-direction: row;
         width: 40%;
         margin-top: 20px;
-        padding: 10px 10%;
+        padding: $padding;
         i {
             span {
                 margin-left: 5px;
@@ -98,7 +100,7 @@ $secondary : #f3f3f3;
                     flex-direction: column;
                     height: 30%;
                     width: 100%;
-                    background-color: rgba(255, 0, 8, 0.6);
+                    background-color: rgba(216, 0, 16, .8);
                     overflow: hidden;
 
                     .garis-strip-col2{
@@ -309,79 +311,18 @@ $secondary : #f3f3f3;
         // END Column2
 
         // Column3
-        .col3-cardContent-container-1 {
-            width: 100%;
-            height: 60vh;
+        .cardKetuaUmum {
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: row;
-            margin-top: 0;
-            padding: 10px 0 0 0%;
-        
-            .col-cardContent {
-                //  border: 1px solid green;
-                 height: 100%;
-                 width: 100%;
-                 flex: auto;
-                 margin: 0 10px;
-                 background: #ffffff;
-                 cursor: pointer;
-                 transition: .5s;
-                 border-radius: 0px;
-
-                 &:hover{
-                     background: #d80010;
-                     color: #fff;
-                 }
-        
-                 .imageContent {
-                     width: 100%;
-                     height: 30vh;
-                     background: url(../../../img/pemilu13.jpg);
-                     background-size: cover;
-                 }
-        
-                 .imageTwo {
-                    width: 100%;
-                    height: 30vh;
-        
-                    background: url(../../../img/pemilu14.jpg);
-                    background-size: cover;
-                 }
-        
-                 .imageThree {
-                    width: 100%;
-                    height: 30vh;
-        
-                    background: url(../../../img/pemilu15.jpg);
-                    background-size: cover;
-                 }
-        
-                 .textCard {
-                     width: 100%;
-                    //  height: 100%;
-                     padding: 5px 20px;
-        
-                    //  border:  1px solid blue;
-        
-                     small {
-                         font-size: 7pt;
-                         color: #d80010;
-                     }
-        
-                     p {
-                         font-size: 8pt;
-                     }
-                 }
-            }
         }
         // END Column3
 
-        // Column4
-        .col4-container-1{
+       
+
+        // Column5
+        .col5-container-1{
             display: flex;
-            height: 55vh;
+            height: 65vh;
             width: 100%;
             margin: 30px 0 0px 0;
             overflow: hidden;
@@ -393,6 +334,34 @@ $secondary : #f3f3f3;
                 width: 70%;
                 margin: 0 30px 0px 0;
                 overflow: hidden;
+
+                .img-row1{
+                    display: flex;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: #555;
+                    overflow: hidden;
+                    z-index: -1;
+                }
+
+                .box-jdl-row1{
+                    display: flex;
+                    height: 30%;
+                    width: 100%;
+                    background: $colors;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+
+                    h1{
+                        display: flex;
+                        font-size: 20px;
+                        color: #fff;
+                        padding: 20px;
+                        overflow: hidden;
+                    }
+                }
             }
             // END Row1
 
@@ -427,133 +396,98 @@ $secondary : #f3f3f3;
             }
             // END Row2
         }
-        // END Column4
+        // END Column5
+    }
+    // END Container1
 
-        // Column5
-        .col5-container-1{
+    // Container2
+    .container-2{
+        display: flex;
+        flex-direction: column;
+        height: 45vh;
+        width: 100%;
+        background: #555;
+        margin: 50px 0 0px 0;
+        overflow: hidden;
+
+        // Column1
+        .col1-container-2{
             display: flex;
-            flex-direction: column;
-            height: 20vh;
+            flex-direction: column-reverse;
+            height: 70%;
             width: 100%;
-            background: #f3f3f3;
             align-items: center;
-            justify-content: center;
             overflow: hidden;
 
-            .col-title-berita-foto{
+            .txt-title-col1{
                 display: flex;
-                height: auto;
-                width: 100%;
-                justify-content: center;
-                align-items: center;
+                font-size: 25px;
+                color: #fff;
+                text-align: center;
                 overflow: hidden;
-
-                .txt-berita-foto{
-                    display: flex;
-                    font-size: 15px;
-                    font-weight: bold;
-                    color: #d80010;
-                    margin: 1px;
-                    overflow: hidden;
-                }
             }
+        }
+        // END Column1
 
-            .col-garis-lurus{
+        // Column2
+        .col2-container-2{
+            display: flex;
+            height: 30%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            .btn-lihat-col2{
                 display: flex;
-                height: 1px;
-                width: 100%;
-                background: #ccc;
+                height: 35px;
+                width: 120px;
+                background: #fff;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+                overflow: hidden;
+                // For Font Button
+                font-size: 12px;
+                font-weight: 500;
+                color: $colors;
                 justify-content: center;
                 align-items: center;
-                margin: 5px 0 0 0;
-                overflow: hidden;
-                
-                .garis-merah{
-                    display: flex;
-                    position: absolute;
-                    height: 4px;
-                    width: 120px;
-                    background: #d80010;
-                    overflow: hidden;
+                transition: .5s;
+
+                &:hover{
+                    background: $colors;
+                    color: #fff;
                 }
             }
         }
-        // END Column5
+        // END Column2
+    }
+    // END Container2
 
-        // Column6
-        .col6-cardContent-container-1 {
-            width: 100%;
-            height: 60vh;
+    // Container3
+    .container-3{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 0 10% 50px 10%;
+
+        
+
+        // Column2
+        .col2-cardContent-container-3 {
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: row;
-            margin: 0 0 30px 0;
-            padding: 10px 0%;
-        
-            .col-cardContent {
-                //  border: 1px solid green;
-                 height: 100%;
-                 width: 100%;
-                 flex: auto;
-                 margin: 0 10px;
-                 background: #ffffff;
-                 cursor: pointer;
-                 transition: .5s;
-                 border-radius: 10px;
+        }
+        // END Column2
 
-                 &:hover{
-                     background: #d80010;
-                     color: #fff;
-                 }
         
-                 .imageContent {
-                     width: 100%;
-                     height: 30vh;
-        
-                     background: url(../../../img/pemilu18.jpg);
-                     background-size: cover;
-                     background-position: center;
-                     border-top-right-radius: 10px;
-                     border-top-left-radius: 10px;
-                 }
-        
-                 .imageTwo {
-                    width: 100%;
-                    height: 30vh;
-        
-                    background: url(../../../img/img5.jpg);
-                    background-size: cover;
-                     background-position: center;
-                     border-top-right-radius: 10px;
-                     border-top-left-radius: 10px;
-                 }
-        
-                 .imageThree {
-                    width: 100%;
-                    height: 30vh;
-        
-                    background: url(../../../img/pemilu20.jpg);
-                    background-size: cover;
-                 }
-        
-                 .textCard {
-                     width: 100%;
-                    //  height: 100%;
-                     padding: 5px 20px;
-        
-                    //  border:  1px solid blue;
-        
-                     small {
-                         font-size: 7pt;
-                         color: #d80010;
-                     }
-        
-                     p {
-                         font-size: 8pt;
-                     }
-                 }
-            }
+
+        // Column4
+        .col4-cardContent-container-3 {
+            display: flex;
+            flex-direction: row;
         }
         // END Column6
     }

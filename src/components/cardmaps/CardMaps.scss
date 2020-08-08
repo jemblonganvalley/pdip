@@ -5,6 +5,12 @@ $responsiveDua : 1000px;
 $responsiveTiga : 991px;
 $responsiveEmpat : 719px;
 
+@import "../../utilities/variable/variables.scss";
+
+
+
+
+
 @mixin responSatu {
     @media (max-width : #{$responsiveSatu}) {
         @content;
@@ -31,7 +37,7 @@ $responsiveEmpat : 719px;
     height: 25rem;
     // border: 1px solid crimson;
     margin-top: 20px;
-    padding: 20px 15%;
+    padding: $padding;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +67,7 @@ $responsiveEmpat : 719px;
         
 
         .ikutiBerita {
-            background-color: #d80010;
+            background-color: $colors;
             display: flex;
             justify-content: center;
             align-items: center;

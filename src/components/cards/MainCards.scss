@@ -26,6 +26,7 @@ $responsiveEmpat : 500px;
     }
 }
 
+@import "../../utilities/variable/variables.scss";
 
     
 
@@ -40,7 +41,7 @@ $responsiveEmpat : 500px;
         
         &:hover {
             box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);
-            background: #d80010;
+            background: $colors;
             color: #ffffff;
         }
 
@@ -68,7 +69,7 @@ $responsiveEmpat : 500px;
 
                 &:hover {
                     background: #ffffff;
-                    color: #c70000;
+                    color: $colors;
                 }
             }
         }

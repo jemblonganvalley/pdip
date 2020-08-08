@@ -5,6 +5,10 @@ $responsiveDua : 1000px;
 $responsiveTiga : 728px;
 $responsiveEmpat : 500px;
 
+@import "../../utilities/variable/variables.scss";
+
+
+
 @mixin responSatu {
     @media (max-width : #{$responsiveSatu}) {
         @content;
@@ -29,13 +33,13 @@ $responsiveEmpat : 500px;
 
 .btn2 {
     border-radius: 25px;
-    // background-color: #d80010;
-    border: 1px solid #d80010;
+    background-color: $colors;
+    // border: 1px solid #d80010;
     text-transform: uppercase;
     // margin-top: 20px;
     font-size: 7pt;
     font-weight: 500;
-    color: #d80010;
+    color: #ffffff;
     transition: .5s;
 
     @include responSatu() {
@@ -43,7 +47,7 @@ $responsiveEmpat : 500px;
     }
 
     &:hover {
-        background: #d80010;
+        background: #2f3542;
         color: #ffffff;
     }
 }

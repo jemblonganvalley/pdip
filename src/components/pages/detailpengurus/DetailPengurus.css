@@ -6,7 +6,7 @@
 }
 
 .wrapperDetail .detailHead .backHead {
-  background-color: rgba(255, 0, 8, 0.8);
+  background-color: rgba(216, 0, 16, 0.8);
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -37,7 +37,7 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 20px 8%;
+  padding: 40px 10%;
 }
 
 .wrapperDetail .linkedDetail i span {
@@ -60,7 +60,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 8%;
+  padding: 10px 10%;
 }
 
 .wrapperDetail .pengurus .textPengurus {
@@ -93,7 +93,7 @@
   display: flex;
   width: 100%;
   height: 100vh;
-  padding: 20px 8%;
+  padding: 40px 10%;
 }
 
 .wrapperDetail .pengurus .profilPengurus .kolum1 {
