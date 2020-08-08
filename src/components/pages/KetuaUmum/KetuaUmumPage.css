@@ -41,7 +41,7 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 10px 10%;
+  padding: 40px 10%;
 }
 
 .wrapperKetuaUmum .linkedBerita i span {
@@ -136,7 +136,7 @@
           flex-direction: column;
   height: 30%;
   width: 100%;
-  background-color: rgba(255, 0, 8, 0.8);
+  background-color: rgba(216, 0, 16, 0.8);
   overflow: hidden;
 }
 
@@ -416,150 +416,14 @@
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 {
-  width: 100%;
-  height: 60vh;
+.wrapperKetuaUmum .container-1 .cardKetuaUmum {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 0;
-  padding: 10px 0 0 0%;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent {
-  height: 100%;
-  width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  margin: 0 10px;
-  background: #ffffff;
-  -webkit-transition: .5s;
-  transition: .5s;
-  border-radius: 0px;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent:hover {
-  background: #d80010;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .imageContent {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/megawati5.jpg);
-  background-size: cover;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .imageTwo {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/megawati6.jpg);
-  background-size: cover;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .imageThree {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/megawati7.jpg);
-  background-size: cover;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .textCard {
-  width: 100%;
-  padding: 5px 20px;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .textCard small {
-  font-size: 7pt;
-  color: #d80010;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .textCard p {
-  font-size: 8pt;
-}
-
-.wrapperKetuaUmum .container-1 .col4-container-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 20vh;
-  width: 100%;
-  background: #f3f3f3;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-1 .col4-container-1 .col-title-berita-foto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-1 .col4-container-1 .col-title-berita-foto .txt-berita-foto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 15px;
-  font-weight: bold;
-  color: #d80010;
-  margin: 1px;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-1 .col4-container-1 .col-garis-lurus {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 1px;
-  width: 100%;
-  background: #ccc;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 5px 0 0 0;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-1 .col4-container-1 .col-garis-lurus .garis-merah {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  height: 4px;
-  width: 100px;
-  background: #d80010;
-  overflow: hidden;
 }
 
 .wrapperKetuaUmum .container-1 .col5-container-1 {
@@ -794,287 +658,23 @@
   padding: 0 10% 50px 10%;
 }
 
-.wrapperKetuaUmum .container-3 .col1-container-3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 20vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-3 .col1-container-3 .box-jdl-col1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  height: 60%;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-3 .col1-container-3 .box-jdl-col1 .txt-jdl-col1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 15px;
-  font-weight: bold;
-  color: #d80010;
-  margin: 1px;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-3 .col1-container-3 .box-garis-lurus-col1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 1px;
-  width: 100%;
-  background: #ccc;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 5px 0 0 0;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-3 .col1-container-3 .box-garis-lurus-col1 .garis-merah {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  height: 4px;
-  width: 120px;
-  background: #d80010;
-  overflow: hidden;
-}
-
 .wrapperKetuaUmum .container-3 .col2-cardContent-container-3 {
-  width: 100%;
-  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 0;
-  padding: 10px 0%;
-}
-
-.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent {
-  height: 100%;
-  width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  margin: 0 10px;
-  background: #ffffff;
-  -webkit-transition: .5s;
-  transition: .5s;
-  border-radius: 10px;
-}
-
-.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent:hover {
-  background: #d80010;
-}
-
-.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent .imageContent {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/megawati5.jpg);
-  background-size: cover;
-  border-top-right-radius: 10px;
-}
-
-.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent .imageTwo {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/megawati6.jpg);
-  background-size: cover;
-}
-
-.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent .imageThree {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/megawati7.jpg);
-  background-size: cover;
-}
-
-.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent .textCard {
-  width: 100%;
-  padding: 5px 20px;
-}
-
-.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent .textCard small {
-  font-size: 7pt;
-  color: #d80010;
-}
-
-.wrapperKetuaUmum .container-3 .col2-cardContent-container-3 .col-cardContent .textCard p {
-  font-size: 8pt;
-}
-
-.wrapperKetuaUmum .container-3 .col3-container-3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 20vh;
-  width: 100%;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-3 .col3-container-3 .box-jdl-col3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  height: 60%;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-3 .col3-container-3 .box-jdl-col3 .txt-jdl-col3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 15px;
-  font-weight: bold;
-  color: #d80010;
-  margin: 1px;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-3 .col3-container-3 .box-garis-lurus-col3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 1px;
-  width: 100%;
-  background: #ccc;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 5px 0 0 0;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-3 .col3-container-3 .box-garis-lurus-col3 .garis-merah {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  height: 4px;
-  width: 130px;
-  background: #d80010;
-  overflow: hidden;
 }
 
 .wrapperKetuaUmum .container-3 .col4-cardContent-container-3 {
-  width: 100%;
-  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 0;
-  padding: 10px 0%;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent {
-  height: 100%;
-  width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  margin: 0 10px;
-  background: #ffffff;
-  -webkit-transition: .5s;
-  transition: .5s;
-  border-radius: 10px;
-}
-
-.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent:hover {
-  background: #d80010;
-  border-top-right-radius: 10px;
-}
-
-.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent .imageContent {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/megawati5.jpg);
-  background-size: cover;
-  border-top-right-radius: 10px;
-}
-
-.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent .imageTwo {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/megawati6.jpg);
-  background-size: cover;
-}
-
-.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent .imageThree {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/megawati7.jpg);
-  background-size: cover;
-}
-
-.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent .textCard {
-  width: 100%;
-  padding: 5px 20px;
-}
-
-.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent .textCard small {
-  font-size: 7pt;
-  color: #d80010;
-}
-
-.wrapperKetuaUmum .container-3 .col4-cardContent-container-3 .col-cardContent .textCard p {
-  font-size: 8pt;
 }
 /*# sourceMappingURL=KetuaUmumPage.css.map */

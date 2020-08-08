@@ -10,6 +10,8 @@ import {Link} from 'react-router-dom'
 import pdiLogo from '../../../img/pdibanteng.png'
 import MusicPdi from '../../musicpdi/MusicPdi'
 import MainButton from '../../buttons/MainButton'
+import ButtonUnduh from '../../buttons/unduh/ButtonUnduh'
+import MainDivider from '../../divider/MainDivider'
 
 const PartaiPage = ()=>{
     return (
@@ -114,7 +116,7 @@ const PartaiPage = ()=>{
                         <img src={pdiLogo} alt="" width="180" />
                 </div>
                 <div className="col-lg-9 textBanteng">
-                    <h1>Lambang PDI Perjuangan</h1>
+                    <h1>TATA KELOLA PDI PERJUANGAN</h1>
                     <ul>
                         <li>Lambang PDI Perjuangan berupa gambar banteng hitam bermoncong putih dengan latar merah di dalam lingkaran bergaris hitam dan putih.</li>
                         <li>Warna dasar merah melambangkan berani mengambil resiko dalam memperjuangkan keadilan dan kebenaran untuk rakyat.</li>
@@ -126,17 +128,12 @@ const PartaiPage = ()=>{
             </div>
             {/* END */}
 
-                {/* BUTTON UNDUH */}
-                <div className="btnUnduh">
-                    <button className="btn"><a href={pdiLogo} download="pdilogo"><span>unduh lambang</span></a></button>
-                </div>
-                {/* END */}
+                <ButtonUnduh />
 
                 {/* PENGURUS */}
                 <div className="pengurusPage">
-                    <div className="textPengurus">
-                        <small>Pengurus</small>
-                    </div>
+                    <MainDivider text="pengurus"
+                                    garisMerah="3rem" />
                     <div className="paragrapPengurus">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
                     </div>
@@ -146,17 +143,14 @@ const PartaiPage = ()=>{
                 {/* PHOTO PENGURUS */}
                 <div className="photoPengurus">
                     <h2>Struktur Pengurus Dewan Pimpinan Pusat<br/>PDI Perjuangan</h2>
-                    <Link className="btn" to="/struktur"><span>lihat</span></Link>
-                    
+                    <Link className="btn lihat" to="/struktur"><span>lihat</span></Link>
                 </div>
                 {/* END */}
 
                 {/* MAPS */}
                 <div className="maps">
                     <h5>dewan pimpinan daerah pdi perjuangan</h5>
-                    <div className="imageMaps">
-
-                    </div>
+                    <Link as="div" className="imageMaps" to="" to="/dpd" ></Link>
                 </div>
                 {/* END */}
 
@@ -165,7 +159,7 @@ const PartaiPage = ()=>{
                     <h1>Anggota Legislatif</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia a voluptatem mollitia dolorum ea architecto, aliquid quidem fugit accusamus saepe ab repudiandae eos ipsum! Quaerat omnis dolores quidem reiciendis distinctio.</p>
                     <div className="btnGroup">
-                        <MainButton name="DPR RI" margin="0 10px" pages="/dpd" />
+                        <MainButton name="DPR RI" margin="0 10px" />
                         <MainButton name="DPRD Provinsi" margin="0 10px" />
                         <MainButton name="DPRD Kabupaten Kota" margin="0 10px" />
                     </div>

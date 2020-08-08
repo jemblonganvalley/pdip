@@ -2,11 +2,12 @@ import React from 'react'
 import './MainCards.scss'
 import {Link} from 'react-router-dom'
 
-const Cards = ({imageCard, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight, paragrapSize})=> {
+const Cards = ({imageCard, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight, paragrapSize, width})=> {
     return (
      
                 <div className="col col-lg-3 cardCustom" style={{
-                    borderRadius : borderRadius
+                    borderRadius : borderRadius,
+                    width : width
                 }}>
                     <div className="imageCard" style={{
                         backgroundImage : `url(${imageCard})`,

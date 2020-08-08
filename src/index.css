@@ -15,6 +15,7 @@ html {
   margin: 0px;
   /* overflow: hidden; */
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 code {

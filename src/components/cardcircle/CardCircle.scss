@@ -1,3 +1,5 @@
+@import "../../utilities/variable/variables.scss";
+
 .circleCard {
     width: 17vw;
     height: 37vh;
@@ -6,15 +8,15 @@
     align-items: center;
     flex-direction: column;
     // border: 1px solid blue;
-    margin: 10px 10px;
+    margin: $margin;
     text-decoration: none;
-    color: #d80010;
+    color: $colors;
     transition: .5s;
     border-radius: 10px;
 
     &:hover {
         color: #ffffff;
-        background-color: #d80010;
+        background-color: $colors;
     }
 
     .imageCircle {
@@ -26,7 +28,7 @@
     .jabatan {
         margin-top: 5px;
         font-size: 7pt;
-        // color: #d80010;
+        // color: $colors;
         font-weight: bold;
     }
     .nama {

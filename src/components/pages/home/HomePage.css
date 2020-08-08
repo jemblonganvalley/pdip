@@ -1,6 +1,6 @@
 .homePageTwo {
   width: 100vw;
-  padding: 20px 15%;
+  padding: 40px 10%;
 }
 
 @media (max-width: 1085px) {
@@ -11,7 +11,7 @@
 
 @media (max-width: 600px) {
   .homePageTwo {
-    padding: 20px 15%;
+    padding: 40px 10%;
   }
 }
 
@@ -135,6 +135,7 @@
           align-items: center;
   width: 100%;
   height: 15vh;
+  padding: 2rem;
   border-right: 1px solid white;
 }
 
@@ -172,35 +173,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.homePageTwo .videoPage .textVideo {
-  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-@media (max-width: 1085px) {
-  .homePageTwo .videoPage .textVideo {
-    margin-top: 3rem;
-  }
-}
-
-.homePageTwo .videoPage .textVideo small {
-  cursor: pointer;
-  color: #d80010;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 10pt;
-  border-bottom: 5.5px solid #d80010;
-}
-
-@media (max-width: 1085px) {
-  .homePageTwo .videoPage .textVideo small {
-    font-size: 8pt;
-  }
 }
 
 .homePageTwo .videoPage .paragrapVideo {
@@ -389,23 +361,6 @@
           flex-direction: column;
 }
 
-.homePageTwo .beritaPage .textBerita {
-  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.homePageTwo .beritaPage .textBerita small {
-  cursor: pointer;
-  color: #d80010;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 8pt;
-  border-bottom: 5.5px solid #d80010;
-}
-
 .homePageTwo .beritaPage .paragrapBerita {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,7 +531,7 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 15px;
-  padding: 20px 15%;
+  padding: 40px 10%;
 }
 
 .btnSize {

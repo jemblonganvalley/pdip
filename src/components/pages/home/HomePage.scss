@@ -7,6 +7,9 @@ $responsiveEmpat : 500px;
 
 $phoneSatu : 600px;
 
+@import "../../../utilities/variable/variables.scss";
+
+
 @mixin responSatu {
     @media (max-width : #{$responsiveSatu}) {
         @content;
@@ -38,13 +41,13 @@ $phoneSatu : 600px;
 
 .homePageTwo {
     width: 100vw;
-    padding: 20px 15%;
+    padding: $padding;
 
     @include responSatu() {
         padding: 20px 13%;
     }
     @include phone() {
-        padding: 20px 15%;
+        padding: $padding;
     }
 
         .customRow {
@@ -54,6 +57,7 @@ $phoneSatu : 600px;
             display: flex;
             justify-content: center;
             align-items: center;
+            // padding: 3rem;
             flex-direction: row;
 
             @include responSatu() {
@@ -73,6 +77,7 @@ $phoneSatu : 600px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                // border: 1px solid blue;
                 
                 @include phone() {
                     flex-direction: column;
@@ -121,6 +126,7 @@ $phoneSatu : 600px;
                     align-items: center;
                     width: 100%;
                     height: 15vh;
+                    padding: 2rem;
                     border-right: 1px solid white;
 
                     @include responSatu() {
@@ -144,32 +150,6 @@ $phoneSatu : 600px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        .textVideo {
-            border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-            // background-color: #2d3436;
-            width: 100%;
-            text-align: center;
-            // height: 10vh;
-            margin-top: 30px;
-            @include responSatu() {
-                margin-top: 3rem;
-            }
-            small {
-                cursor: pointer;
-                color: #d80010;
-                // width: 100%;
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-size: 10pt;
-                border-bottom: 5.5px solid #d80010;
-
-                @include responSatu() {
-                    font-size: 8pt;
-                }
-                
-            }
-        }
 
         .paragrapVideo {
             display: flex;
@@ -320,30 +300,6 @@ $phoneSatu : 600px;
         align-items: center;
         flex-direction: column;
 
-        // margin-right: 20px;
-
-        .textBerita {
-            border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-            // background-color: #2d3436;
-            width: 100%;
-            text-align: center;
-            // height: 10vh;
-            margin-top: 30px;
-
-            small {
-                cursor: pointer;
-                color: #d80010;
-                // width: 100%;
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-size: 8pt;
-                border-bottom: 5.5px solid #d80010;
-
-                
-            }
-        }
-
         .paragrapBerita {
 
             display: flex;
@@ -486,7 +442,7 @@ $phoneSatu : 600px;
     align-items: center;
     flex-direction: row;
     margin-top: 15px;
-    padding: 20px 15%;
+    padding: $padding;
 
     
 }

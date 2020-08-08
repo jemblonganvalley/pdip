@@ -1,5 +1,8 @@
+@import "../../utilities/variable/variables.scss";
+
+
 .containerDua {
-    padding: 20px 15%;
+    padding: $padding;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +19,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        background: #ff0008cc;
+        background: #99000a;
         // border: 1px solid blue;
         .contentMusic {
             width: 100%;
@@ -166,7 +169,7 @@
             .mulai {
                 // width: 100%;
                 height: 16.5vh;
-                background: #ff0008cc;
+                background: $colors;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -213,7 +216,7 @@
                 i {
                     position: absolute;
                     right: 0;
-                    color: #ff0008cc;
+                    color: $colors;
                     text-align: right;
                     // border: 1px solid blue;
                     // width: 100%;
@@ -222,7 +225,7 @@
                 }
 
                 .pdiSoundBar {
-                    background: #ff0008cc;
+                    background: $colors;
                     height: 2rem;
                 }
 

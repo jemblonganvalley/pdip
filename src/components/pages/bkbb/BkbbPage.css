@@ -16,7 +16,7 @@
 
 .wrapperPartai .lahirnyaPancasila .box-lahirnyaPancasila .redBox {
   width: 100%;
-  background-color: rgba(255, 0, 8, 0.8);
+  background-color: rgba(216, 0, 16, 0.8);
   height: 30%;
   margin-top: auto;
   position: absolute;
@@ -30,6 +30,12 @@
           align-items: center;
   color: #ffff;
   border-top: .2px solid white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperPartai .lahirnyaPancasila .box-lahirnyaPancasila .redBox:hover {
+  background: #2f3542;
 }
 
 .wrapperPartai .lahirnyaPancasila .box-lahirnyaPancasila .redBox .red-box-title {
@@ -96,7 +102,7 @@
 }
 
 .wrapperPartai .materiPokokPendukung .divider-mpp .mpp-title {
-  color: #ff0008cc;
+  color: #d80010;
   text-align: center;
 }
 
@@ -107,7 +113,7 @@
 }
 
 .wrapperPartai .materiPokokPendukung .divider-mpp .block {
-  background-color: #ff0008cc;
+  background-color: #d80010;
   width: 270px;
   height: 10px;
   margin-top: auto;
@@ -134,7 +140,7 @@
   height: 120vh;
   background-color: #5d5d5d;
   position: absolute;
-  top: 110vh;
+  top: 44.3rem;
   z-index: -1;
 }
 
@@ -186,160 +192,6 @@
   font-size: 8pt;
 }
 
-.wrapperPartai .containerSatu {
-  padding: 20px 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperPartai .containerSatu .contentSatu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-
-.wrapperPartai .containerSatu .contentSatu .wrapperContentSatu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wrapperPartai .containerSatu .contentSatu .wrapperContentSatu .textContentSatu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-4 {
-  padding: 10px;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carouselPartai {
-  left: 30%;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carouselPartai .active {
-  background: none;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carouselPartai li {
-  border: 1px solid #ffffff;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carouselImgSatu {
-  width: 100%;
-  height: 80vh;
-  background: url(../../../img/megawati011.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carousel-caption {
-  left: 0;
-  bottom: 20%;
-  margin-left: 2.5rem;
-  text-align: left;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carousel-caption h5 {
-  font-style: italic;
-  font-size: 10pt;
-  font-weight: 300;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-md-4 {
-  margin: 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-md-4 .textContent {
-  margin-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-md-4 .textContent h4 {
-  font-size: 11pt;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-md-4 .textContent p {
-  font-size: 10px;
-  line-height: 1.5;
-}
-
 .wrapperPartai .wrapper3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,23 +202,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.wrapperPartai .wrapper3 .bkbbText {
-  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.wrapperPartai .wrapper3 .bkbbText small {
-  cursor: pointer;
-  color: #d80010;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 8pt;
-  border-bottom: 5.5px solid #d80010;
 }
 
 .wrapperPartai .wrapperCard {
@@ -417,10 +252,12 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 70vh;
   background: url(../../../img/kids.png);
-  background-size: cover;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: #ffff;
+  background-position: center;
 }
 
 .wrapperPartai .bannerBkbb .custom {

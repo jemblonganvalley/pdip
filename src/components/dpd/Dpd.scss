@@ -1,4 +1,6 @@
-$padding : 20px 8%;
+// $padding : 20px 8%;
+@import "../../utilities/variable/variables.scss";
+
 
 .dpdWrapper {
     .dpdHead {
@@ -58,13 +60,13 @@ $padding : 20px 8%;
 
             small {
                 cursor: pointer;
-                color: #d80010;
+                color: $colors;
                 // width: 100%;
                 text-align: center;
                 text-transform: uppercase;
                 font-weight: bold;
                 font-size: 8pt;
-                border-bottom: 5.5px solid #d80010;
+                border-bottom: 5.5px solid $colors;
             }
         }
         .dpdTextHead {
@@ -103,7 +105,7 @@ $padding : 20px 8%;
                         margin: 10px;
 
                         small {
-                            color: #d80010;
+                            color: $colors;
                             font-size: 8pt;
                         }
                         h6 {

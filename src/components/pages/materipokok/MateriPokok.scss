@@ -1,6 +1,9 @@
+@import "../../../utilities/variable/variables.scss";
+
+
 .wrapperMateri {
     width: 100%;
-    padding: 20px 10%;
+    padding: $padding;
 
     .linkedMateri {
         display: flex;
@@ -28,13 +31,13 @@
 
         small {
             cursor: pointer;
-            color: #d80010;
+            color: $colors;
             // width: 100%;
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
             font-size: 8pt;
-            border-bottom: 5.5px solid #d80010;
+            border-bottom: 5.5px solid $colors;
         }
     }
 }

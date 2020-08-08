@@ -1,0 +1,153 @@
+.navbar {
+  padding: 10px 10%;
+  background: url(../../img/pattern-01.svg);
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  -webkit-box-shadow: -1px 7px 30px -12px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px 7px 30px -12px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 1085px) {
+  .navbar {
+    padding: 20px 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 20px 10%;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    padding: 10px 10%;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+
+.navbar .navbar-brand img {
+  margin: 10px;
+}
+
+@media (max-width: 1085px) {
+  .navbar .navbar-brand img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar .navbar-brand img {
+    width: 50px;
+  }
+}
+
+.navbar .navbar-nav {
+  list-style: none;
+}
+
+.navbar .navbar-nav li {
+  font-size: 8pt;
+  text-transform: uppercase;
+  font-weight: 300;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #202020;
+  font-weight: 500;
+}
+
+@media (max-width: 1085px) {
+  .navbar .navbar-nav li {
+    font-size: 7pt;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar .navbar-nav li {
+    font-size: 5pt;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar-nav li {
+    font-size: 10pt;
+  }
+}
+
+@media (max-width: 719px) {
+  .navbar .navbar-nav li {
+    font-size: 8pt;
+  }
+}
+
+.navbar .navbar-nav li:hover {
+  color: #d80010;
+}
+
+.navbar .navbar-nav li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar .navbar-nav li a .active, .navbar .navbar-nav li a:hover {
+  color: #ffffff;
+}
+
+.navbar form {
+  position: relative;
+}
+
+.navbar .form-control {
+  border-radius: 25px;
+  font-size: 10px;
+  font-weight: 500;
+  font-style: italic;
+  background-color: #d80010;
+  color: #ffffff;
+  width: 200px;
+}
+
+.navbar .form-control:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(237, 29, 36, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(237, 29, 36, 0.25);
+  border-color: #d80010;
+}
+
+.navbar button {
+  border: none;
+  background: transparent;
+  color: #ffffff;
+}
+
+.navbar button[name="submit"] {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+
+.navbar ::-webkit-input-placeholder {
+  color: #ffffff;
+  padding: 10px;
+}
+
+.navbar :-ms-input-placeholder {
+  color: #ffffff;
+  padding: 10px;
+}
+
+.navbar ::-ms-input-placeholder {
+  color: #ffffff;
+  padding: 10px;
+}
+
+.navbar ::placeholder {
+  color: #ffffff;
+  padding: 10px;
+}
+/*# sourceMappingURL=MainNavbar.css.map */

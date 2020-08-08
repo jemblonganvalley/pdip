@@ -1,4 +1,5 @@
-$padding : 10px 10%;
+@import "../../../utilities/variable/variables.scss";
+
 
 .wrapperMultimedia {
     width: 100%;
@@ -48,7 +49,7 @@ $padding : 10px 10%;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 70vh;
+        height: 80vh;
         // border: 1px solid blue;
 
 
@@ -70,7 +71,7 @@ $padding : 10px 10%;
             // width: 100%; 
             small {
                 font-size: 8pt;
-                color: #c70000;
+                color: $colors;
             }
             span {
                 margin-top: 1rem;
@@ -96,7 +97,7 @@ $padding : 10px 10%;
                     transition: .3s;
 
                     &:hover {
-                        color: #c70000;
+                        color: $colors;
                         cursor: pointer;
                     }
                 }
@@ -168,6 +169,8 @@ $padding : 10px 10%;
         background-size: cover;
         height: 60vh;
         display: flex;
+        background-attachment: fixed;
+        background-position: center;
         justify-content: center;
         align-items: center;
         // padding: $padding;
@@ -186,7 +189,7 @@ $padding : 10px 10%;
             .btnPanggung {
                 border-radius: 25px;
                 color: #ffffff;
-                border: 1px solid #c70000;
+                border: 1px solid $colors;
                 width: 10vw;
                 font-size: 9pt;
                 text-transform: uppercase;
@@ -194,7 +197,7 @@ $padding : 10px 10%;
                 margin-top: 3rem;
 
                 &:hover {
-                    background-color: #c70000;
+                    background-color: $colors;
                 }
                 
             }
@@ -205,105 +208,14 @@ $padding : 10px 10%;
         padding: $padding;
         display: flex;
 
-        .kols {
-            margin: 10px;
-        }
-
-        .cols1 {
-            // border: 1px solid blue;
-
-            .cardMBody {
-                width: 100%;
-                // height: 65vh;
-                background: #ffffff;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-
-                .cardMBImg {
-                    width: 100%;
-                    height: 45vh;
-                    background: url(../../../img/ig-perempuan.png);
-                    background-size: cover;
-                }
-                .cardTextWrapper {
-                    padding: 5px 20px;
-                    .cardSmall {
-                        font-size: 8pt;
-                        padding: 10px;
-                        color: #c70000;
-                    }
-                    .cardH4 {
-                        padding: 0 10px;
-                    }
-                }
-            }
-        }
-        .cols2 {
-            // border: 1px solid blue;
-
-            .cardMBody2 {
-                width: 100%;
-                // height: 65vh;
-                background: #ffffff;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-
-                .cardMBImg2 {
-                    width: 100%;
-                    height: 45vh;
-                    background: url(../../../img/megawati12.png);
-                    background-size: cover;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    .iconPlayMedia {
-                        width: 40px;
-                        height: 40px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        // background: #ffffff;
-                        border: 1px solid #ffffff;
-                        border-radius: 50%;
-                        text-align: center;
-                        cursor: pointer;
-                        font-size: 10pt;
-                        transition: .1s;
-                        color: #ffffff;
-
-                        &:hover {
-                            width: 45px;
-                            height: 45px;
-                            // font-size: 16pt;
-                            background: #ffffff;
-                            // border: none;
-                            color: #2d3436;
-                        }
-                    }
-                }
-                .cardTextWrapper2 {
-                    padding: 5px 20px;
-                    .cardSmall2 {
-                        font-size: 8pt;
-                        padding: 10px;
-                        color: #c70000;
-                    }
-                    .cardH42 {
-                        padding: 0 10px;
-                    }
-                }
-            }
-        }
+        
     }
     .videoBaruPage {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 20px 15%;
+        padding: 20px 10%;
         width: 100%;
         // border: 1px solid crimson;
 
@@ -317,13 +229,13 @@ $padding : 10px 10%;
 
             .videoBaru {
                 cursor: pointer;
-                color: #d80010;
+                color: $colors;
                 // width: 100%;
                 text-align: center;
                 text-transform: uppercase;
                 font-weight: bold;
                 font-size: 8pt;
-                border-bottom: 5.5px solid #d80010;
+                border-bottom: 5.5px solid $colors;
             }
         }
         .cardVideoBaru {

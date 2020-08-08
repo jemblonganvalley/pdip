@@ -1,5 +1,5 @@
 .containerDua {
-  padding: 20px 15%;
+  padding: 40px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #ff0008cc;
+  background: #99000a;
 }
 
 .containerDua .contentDua .wrapperContentMusic .contentMusic {
@@ -210,7 +210,7 @@
 
 .containerDua .contentDua .wrapperContentMusic .playerMusic .mulai {
   height: 16.5vh;
-  background: #ff0008cc;
+  background: #d80010;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,12 +280,12 @@
 .containerDua .contentDua .wrapperContentMusic .playerMusic .rythm .pdiJudul i {
   position: absolute;
   right: 0;
-  color: #ff0008cc;
+  color: #d80010;
   text-align: right;
 }
 
 .containerDua .contentDua .wrapperContentMusic .playerMusic .rythm .pdiSoundBar {
-  background: #ff0008cc;
+  background: #d80010;
   height: 2rem;
 }
 

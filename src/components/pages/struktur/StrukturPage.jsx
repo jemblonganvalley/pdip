@@ -1,6 +1,7 @@
 import React from 'react'
 import './StrukturPage.scss'
 import StrukturPaginate from '../../pagination/StrukturPaginate'
+import MainDivider from '../../divider/MainDivider'
 
 const StrukturPage = ()=> {
     return (
@@ -24,9 +25,8 @@ const StrukturPage = ()=> {
             {/* END */}
 
             <div className="pengurusPage">
-                <div className="textPengurus">
-                    <small>Pengurus</small>
-                </div>
+                <MainDivider text="pengurus"
+                                garisMerah="3rem" />
                 <div className="strukturTextHead">
                     <h2>Struktur Pengurus Dewan Pimpinan Pusat<br/>PDI Perjuangan</h2>
                 </div>

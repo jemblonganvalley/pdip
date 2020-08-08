@@ -39,7 +39,7 @@ const VideoMedia = ()=> {
             <div className="wrapperCard" style={{
                 display : 'flex',
                 flexDirection : 'row',
-                marginTop : '1rem'
+                marginTop : '2rem'
             }}>
                 <Cards imageCard={megawati}
                         TextH5="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor, tempora optio at nam eaque!"

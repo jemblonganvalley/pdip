@@ -16,6 +16,7 @@ import megawati5 from '../../../img/megawati5.jpg'
 import megawati6 from '../../../img/megawati6.jpg'
 import megawati7 from '../../../img/megawati7.jpg'
 import MainButton from '../../buttons/MainButton'
+import MainDivider from '../../divider/MainDivider'
 
 
 const HomePage = ()=> {
@@ -47,9 +48,9 @@ const HomePage = ()=> {
                     </div>
                 </div>
                 <div className="videoPage">
-                    <div className="textVideo">
-                        <small>Video</small>
-                    </div>
+                    <MainDivider text="Video"
+                                    garisMerah="2.5rem"
+                                    mt="1rem" />
                     <div className="paragrapVideo">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
                     </div>
@@ -91,9 +92,9 @@ const HomePage = ()=> {
                 </div>
 
                 <div className="beritaPage">
-                <div className="textBerita">
-                        <small>Berita</small>
-                    </div>
+                    <MainDivider text="berita"
+                                    garisMerah="2.5rem"
+                                    m="1rem 0" />
                     <div className="paragrapBerita">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
                     </div>

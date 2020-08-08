@@ -37,7 +37,7 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 20px 8%;
+  padding: 40px 10%;
 }
 
 .dpdWrapper .linkedDetail i span {
@@ -92,7 +92,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 20px 8%;
+  padding: 40px 10%;
 }
 
 .dpdWrapper .pengurus .profilDpd .kolum1 {
