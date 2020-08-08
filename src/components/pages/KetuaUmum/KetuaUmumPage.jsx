@@ -1,13 +1,10 @@
 // Import to React
 import React from 'react'
 // END Import to React
-<<<<<<< HEAD
-=======
 import megawati5 from '../../../img/megawati5.jpg'
 import megawati6 from '../../../img/megawati6.jpg'
 import megawati7 from '../../../img/megawati7.jpg'
 import Cards from '../../cards/MainCards'
->>>>>>> agil3
 
 // Import to CSS
 import './KetuaUmumPage.css'
@@ -134,10 +131,6 @@ const KetuaUmumPage = () => {
                     </div>
                     {/* END Column3 */}
 
-<<<<<<< HEAD
-                    {/* Column4 */}
-                    <div className="col4-container-1">
-=======
                     
                     <MainDivider text="Berita Foto"
                                     garisMerah="7rem"
@@ -145,7 +138,6 @@ const KetuaUmumPage = () => {
 
                     {/* Column5 */}
                     <div className="col5-container-1">
->>>>>>> agil3
                         {/* Row1 */}
                         <div className="row1-video-youtube">
                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ChkKZ3hq1Nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -164,53 +156,6 @@ const KetuaUmumPage = () => {
                         </div>
                         {/* END Row2 */}
                     </div>
-<<<<<<< HEAD
-                    {/* END Column4 */}
-
-                    {/* Column5 */}
-                    <div className="col5-container-1">
-                        <div className="col-title-berita-foto">
-                            <p className="txt-berita-foto">
-                                BERITA TERKAIT
-                            </p>
-                        </div>
-                        <div className="col-garis-lurus">
-                            <div className="garis-merah">
-
-                            </div>
-                        </div>
-                    </div>
-                    {/* END Column5 */}
-
-                    {/* Column6 */}
-                    <div className="col6-cardContent-container-1">
-                        <div className="col-cardContent">
-                            <div className="imageContent imageOne"></div>
-                            <div className="textCard">
-                                <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                            </div>
-
-                        </div>
-                        <div className="col-cardContent">
-                            <div className="imageContent imageTwo"></div>
-                            <div className="textCard">
-                                <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                            </div>
-
-                        </div>
-                        <div className="col-cardContent">
-                            <div className="imageContent imageThree"></div>
-                            <div className="textCard">
-                                <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                            </div>
-                        </div>
-=======
                     {/* END Column5 */}
                 </div>
                 {/* END Container1 */}
@@ -282,7 +227,6 @@ const KetuaUmumPage = () => {
                                 TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                                 paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                                 borderRadius="10px" />
->>>>>>> agil3
                     </div>
                     {/* END Column6 */}
                 </div>

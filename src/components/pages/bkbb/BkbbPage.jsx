@@ -1,5 +1,6 @@
 import React from 'react'
 import './BkbbPage.scss'
+import {Link} from 'react-router-dom'
 import backgroundHead from '../../../img/kampanye.jpg'
 import pdiBook1 from '../../../img/pdibook1.png'
 import pdiBook2 from '../../../img/pdibook2.png'
@@ -18,21 +19,11 @@ import Double from '../../../img/double.png'
 import quotes1 from '../../../img/quotes3.png'
 import quotes2 from '../../../img/quotes.png'
 import quotes3 from '../../../img/quotes2.png'
-<<<<<<< HEAD
-import {Link} from 'react-router-dom'
-
-
-
-const BkbbPage = ()=>{
-
- 
-=======
 import MainDivider from '../../divider/MainDivider'
 
+
 const BkbbPage = ()=>{
 
-    
->>>>>>> agil3
 
     return (
         <div className="wrapperPartai">

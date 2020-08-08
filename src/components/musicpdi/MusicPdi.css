@@ -29,11 +29,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-  background-color: #d80010 !important;
-=======
   background: #99000a;
->>>>>>> agil3
 }
 
 .containerDua .contentDua .wrapperContentMusicHome .contentMusic {
@@ -288,13 +284,8 @@
   text-align: right;
 }
 
-<<<<<<< HEAD
 .containerDua .contentDua .wrapperContentMusicHome .playerMusic .rythm .pdiSoundBar {
-  background: #ff0008cc;
-=======
-.containerDua .contentDua .wrapperContentMusic .playerMusic .rythm .pdiSoundBar {
   background: #d80010;
->>>>>>> agil3
   height: 2rem;
 }
 

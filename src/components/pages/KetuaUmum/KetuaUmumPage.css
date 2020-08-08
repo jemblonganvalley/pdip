@@ -138,11 +138,7 @@
           flex-direction: column;
   height: 30%;
   width: 100%;
-<<<<<<< HEAD
-  background-color: rgba(255, 0, 8, 0.6);
-=======
   background-color: rgba(216, 0, 16, 0.8);
->>>>>>> agil3
   overflow: hidden;
 }
 
@@ -402,78 +398,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-<<<<<<< HEAD
-  margin-top: 0;
-  padding: 10px 0 0 0%;
 }
 
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent {
-  height: 100%;
-  width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  margin: 0 10px;
-  background: #ffffff;
-  cursor: pointer;
-  -webkit-transition: .5s;
-  transition: .5s;
-  border-radius: 0px;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent:hover {
-  background: #d80010;
-  color: #fff;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .imageContent {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/pemilu13.jpg);
-  background-size: cover;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .imageTwo {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/pemilu14.jpg);
-  background-size: cover;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .imageThree {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/pemilu15.jpg);
-  background-size: cover;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .textCard {
-  width: 100%;
-  padding: 5px 20px;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .textCard small {
-  font-size: 7pt;
-  color: #d80010;
-}
-
-.wrapperKetuaUmum .container-1 .col3-cardContent-container-1 .col-cardContent .textCard p {
-  font-size: 8pt;
-}
-
-.wrapperKetuaUmum .container-1 .col4-container-1 {
+.wrapperKetuaUmum .container-1 .col5-container-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 55vh;
+  height: 65vh;
   width: 100%;
   margin: 30px 0 0px 0;
   overflow: hidden;
-=======
->>>>>>> agil3
 }
 
-.wrapperKetuaUmum .container-1 .col4-container-1 .row1-video-youtube {
+.wrapperKetuaUmum .container-1 .col5-container-1 .row1-video-youtube {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,7 +420,45 @@
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col4-container-1 .row2-img {
+.wrapperKetuaUmum .container-1 .col5-container-1 .row1-video-youtube .img-row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #555;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 .row1-video-youtube .box-jdl-row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30%;
+  width: 100%;
+  background: #d80010;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 .row1-video-youtube .box-jdl-row1 h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  color: #fff;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.wrapperKetuaUmum .container-1 .col5-container-1 .row2-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,7 +474,7 @@
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col4-container-1 .row2-img .col-txt {
+.wrapperKetuaUmum .container-1 .col5-container-1 .row2-img .col-txt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,7 +487,7 @@
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col4-container-1 .row2-img .col-txt .jdl {
+.wrapperKetuaUmum .container-1 .col5-container-1 .row2-img .col-txt .jdl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,11 +498,7 @@
   overflow: hidden;
 }
 
-<<<<<<< HEAD
-.wrapperKetuaUmum .container-1 .col5-container-1 {
-=======
-.wrapperKetuaUmum .container-3 {
->>>>>>> agil3
+.wrapperKetuaUmum .container-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,77 +506,91 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-  height: 20vh;
+  height: 45vh;
   width: 100%;
-  background: #f3f3f3;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  background: #555;
+  margin: 50px 0 0px 0;
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col5-container-1 .col-title-berita-foto {
+.wrapperKetuaUmum .container-2 .col1-container-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  height: 70%;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col5-container-1 .col-title-berita-foto .txt-berita-foto {
+.wrapperKetuaUmum .container-2 .col1-container-2 .txt-title-col1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 15px;
-  font-weight: bold;
-  color: #d80010;
-  margin: 1px;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col5-container-1 .col-garis-lurus {
+.wrapperKetuaUmum .container-2 .col2-container-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 1px;
+  height: 30%;
   width: 100%;
-  background: #ccc;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5px 0 0 0;
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col5-container-1 .col-garis-lurus .garis-merah {
+.wrapperKetuaUmum .container-2 .col2-container-2 .btn-lihat-col2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  height: 4px;
+  height: 35px;
   width: 120px;
-  background: #d80010;
+  background: #fff;
+  border-radius: 20px;
+  border: none;
+  outline: none;
   overflow: hidden;
+  font-size: 12px;
+  font-weight: 500;
+  color: #d80010;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
-.wrapperKetuaUmum .container-1 .col6-cardContent-container-1 {
-  width: 100%;
-  height: 60vh;
-=======
+.wrapperKetuaUmum .container-2 .col2-container-2 .btn-lihat-col2:hover {
+  background: #d80010;
+  color: #fff;
+}
+
+.wrapperKetuaUmum .container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: auto;
   width: 100%;
   padding: 0 10% 50px 10%;
@@ -622,7 +607,6 @@
 }
 
 .wrapperKetuaUmum .container-3 .col4-cardContent-container-3 {
->>>>>>> agil3
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -630,70 +614,5 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-<<<<<<< HEAD
-  margin: 0 0 30px 0;
-  padding: 10px 0%;
-}
-
-.wrapperKetuaUmum .container-1 .col6-cardContent-container-1 .col-cardContent {
-  height: 100%;
-  width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  margin: 0 10px;
-  background: #ffffff;
-  cursor: pointer;
-  -webkit-transition: .5s;
-  transition: .5s;
-  border-radius: 10px;
-}
-
-.wrapperKetuaUmum .container-1 .col6-cardContent-container-1 .col-cardContent:hover {
-  background: #d80010;
-  color: #fff;
-}
-
-.wrapperKetuaUmum .container-1 .col6-cardContent-container-1 .col-cardContent .imageContent {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/pemilu18.jpg);
-  background-size: cover;
-  background-position: center;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-.wrapperKetuaUmum .container-1 .col6-cardContent-container-1 .col-cardContent .imageTwo {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/img5.jpg);
-  background-size: cover;
-  background-position: center;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-.wrapperKetuaUmum .container-1 .col6-cardContent-container-1 .col-cardContent .imageThree {
-  width: 100%;
-  height: 30vh;
-  background: url(../../../img/pemilu20.jpg);
-  background-size: cover;
-}
-
-.wrapperKetuaUmum .container-1 .col6-cardContent-container-1 .col-cardContent .textCard {
-  width: 100%;
-  padding: 5px 20px;
-}
-
-.wrapperKetuaUmum .container-1 .col6-cardContent-container-1 .col-cardContent .textCard small {
-  font-size: 7pt;
-  color: #d80010;
-}
-
-.wrapperKetuaUmum .container-1 .col6-cardContent-container-1 .col-cardContent .textCard p {
-  font-size: 8pt;
-=======
->>>>>>> agil3
 }
 /*# sourceMappingURL=KetuaUmumPage.css.map */

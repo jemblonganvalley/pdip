@@ -3,7 +3,7 @@ import React from 'react'
 // END Import to React
 
 // Import to CSS
-import './PemiluPage.css'
+import './PemiluPage.scss'
 // END Import to CSS
 
 // Create Component 
