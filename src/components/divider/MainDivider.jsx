@@ -1,10 +1,10 @@
 import React from 'react'
 import './MainDivider.scss'
 
-const MainDivider = ({text, garisMerah, m})=> {
+const MainDivider = ({text, garisMerah})=> {
     return (
         <div className="col3-container-3" style={{
-            margin : m
+            margin : '2rem 0'
         }}>
             <div className="box-jdl-col3">
                 <p className="txt-jdl-col3">
