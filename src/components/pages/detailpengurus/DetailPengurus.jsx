@@ -2,6 +2,7 @@ import React from 'react'
 import './DetailPengurus.scss'
 import profil from '../../../img/profil.png'
 import MainDivider from '../../divider/MainDivider'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const DetailPengurus = ()=> {
     return (
@@ -18,9 +19,12 @@ const DetailPengurus = ()=> {
             
             {/* LINK PARTAI */}
             <div className="linkedDetail">
-                <i class="fa fa-home">
-                    <span>Home / Partai /</span>
-                </i>
+                <BreadCrumbs link1="Home"
+                                to1="/"
+                                link2="Partai"
+                                to2="/partai"
+                                page3="Struktur Pengurus"
+                                 />
             </div>
             {/* END */}
 

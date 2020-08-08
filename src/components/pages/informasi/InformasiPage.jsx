@@ -11,6 +11,7 @@ import Consentblack from '../../../img/consentblack.png'
 import CardMaps from '../../cardmaps/CardMaps'
 import CardsProfile from '../../cardIconProfil/CardsProfile'
 import MainDivider from '../../divider/MainDivider'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const InformasiPage = ()=> {
     return (
@@ -28,7 +29,10 @@ const InformasiPage = ()=> {
 
             {/* START LINKED */}
             <div className="linkedInformasi">
-                <i class="fa fa-home"><span>Home /Informasi Publik</span></i>
+            <BreadCrumbs link1="Home"
+                                to1="/"
+                                page2="Informasi Publik"
+                                 />
             </div>
             {/* END */}
 

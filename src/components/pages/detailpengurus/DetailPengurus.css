@@ -35,9 +35,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 40%;
   margin-top: 20px;
-  padding: 40px 10%;
+  padding: 5px 10%;
 }
 
 .wrapperDetail .linkedDetail i span {

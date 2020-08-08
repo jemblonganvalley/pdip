@@ -19,6 +19,7 @@ import quotes1 from '../../../img/quotes3.png'
 import quotes2 from '../../../img/quotes.png'
 import quotes3 from '../../../img/quotes2.png'
 import MainDivider from '../../divider/MainDivider'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const BkbbPage = ()=>{
 
@@ -34,9 +35,10 @@ const BkbbPage = ()=>{
                 </div>
             </div>
             <div className="linkedPartai">
-                <i class="fa fa-home">
-                    <span>Home / BKBB /</span>
-                </i>
+            <BreadCrumbs link1="Home"
+                                to1="/"
+                                page2="Bung Karno Bapak Bangsa"
+                                 />
             </div>
             
             <section className="lahirnyaPancasila col mx-auto">

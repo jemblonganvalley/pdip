@@ -38,17 +38,11 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 40px 10%;
-}
-
-.wrapperMultimedia .linkedMedia i span {
-  margin-left: 5px;
-  font-style: italic;
-  font-size: 8pt;
+  padding: 5px 10%;
 }
 
 .wrapperMultimedia .pidatoKU {
-  padding: 40px 10%;
+  padding: 10px 10%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

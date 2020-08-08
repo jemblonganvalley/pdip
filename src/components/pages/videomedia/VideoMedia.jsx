@@ -3,12 +3,17 @@ import './VideoMedia.scss'
 import Cards from '../../cards/MainCards'
 import megawati from '../../../img/megawati1.jpg'
 import VMedia from '../../VMedia/VMedia'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const VideoMedia = ()=> {
     return (
         <div className="wrapperVideo">
             <div className="linkedVideo">
-                <i class="fa fa-home"><span>Home /Multimedia/Video</span></i>
+                <BreadCrumbs link1="Home"
+                                to1="/"
+                                link2="Multimedia"
+                                to2="/multimedia"
+                                page3="Video" />
             </div>
 
             <VMedia headline="Ketua Umum PDI Perjuangan, Hj. Megawati Soekarnoputri Meresmikan 20 Kantor Partai" />

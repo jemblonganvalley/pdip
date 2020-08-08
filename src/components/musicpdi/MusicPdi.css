@@ -206,11 +206,19 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 2.5rem 7%;
+  border: 1px solid blue;
 }
 
-.containerDua .contentDua .wrapperContentMusic .playerMusic .mulai {
-  height: 16.5vh;
-  background: #d80010;
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic {
+  width: 80%;
+  height: 100%;
+  border: 1px solid green;
+  padding: 1rem 0;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton {
+  width: 20%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,101 +230,18 @@
           align-items: center;
 }
 
-.containerDua .contentDua .wrapperContentMusic .playerMusic .mulai .mulaiIcon {
-  width: 30px;
-  height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton button {
   border-radius: 50%;
   border: 1px solid #ffffff;
   color: #ffffff;
   -webkit-transition: .3s;
   transition: .3s;
-  cursor: pointer;
-  font-size: 10pt;
+  text-align: center;
 }
 
-.containerDua .contentDua .wrapperContentMusic .playerMusic .mulai .mulaiIcon:hover {
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton button:hover {
   background: #ffffff;
   color: #2d3436;
-}
-
-.containerDua .contentDua .wrapperContentMusic .playerMusic .rythm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: #ffffff;
-  padding: 10px 10px;
-}
-
-.containerDua .contentDua .wrapperContentMusic .playerMusic .rythm .pdiJudul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  position: relative;
-}
-
-.containerDua .contentDua .wrapperContentMusic .playerMusic .rythm .pdiJudul h4 {
-  color: #2d3436;
-  font-size: 12pt;
-}
-
-.containerDua .contentDua .wrapperContentMusic .playerMusic .rythm .pdiJudul i {
-  position: absolute;
-  right: 0;
-  color: #d80010;
-  text-align: right;
-}
-
-.containerDua .contentDua .wrapperContentMusic .playerMusic .rythm .pdiSoundBar {
-  background: #d80010;
-  height: 2rem;
-}
-
-.containerDua .contentDua .wrapperContentMusic .playerMusic .rythm .pdiIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
-  position: relative;
-  font-size: 8pt;
-  margin-top: 10px;
-  padding: 1px;
-  color: #e0e0e0;
-}
-
-.containerDua .contentDua .wrapperContentMusic .playerMusic .rythm .pdiIcons i {
-  margin: 0 10px;
-}
-
-.containerDua .contentDua .wrapperContentMusic .playerMusic .rythm .pdiIcons span {
-  margin-left: 5px;
-}
-
-.containerDua .contentDua .wrapperContentMusic .playerMusic .rythm .pdiIcons .duration {
-  font-size: 8pt;
-  position: absolute;
-  right: 0;
 }
 
 .containerDua .contentDua .musicList {

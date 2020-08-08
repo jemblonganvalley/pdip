@@ -33,18 +33,12 @@
         width: 40%;
         // border: 1px solid blue;
         margin-top: 20px;
-        padding: $padding;
-        i {
-            span {
-                margin-left: 5px;
-                font-style: italic;
-                font-size: 8pt;
-            }
-        }
+        padding: $paddingTiny;
+        
     }
 
     .pidatoKU {
-        padding: $padding;
+        padding: $paddingSmall;
         width: 100%;
         display: flex;
         justify-content: center;

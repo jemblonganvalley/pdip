@@ -10,6 +10,7 @@ import megawati2 from '../../../img/megawati2.jpg'
 import megawati3 from '../../../img/megawati3.jpg'
 import perempuan from '../../../img/ig-perempuan.png'
 import megawati12 from '../../../img/megawati12.png'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const MultimediaPage = ()=> {
     return (
@@ -20,7 +21,9 @@ const MultimediaPage = ()=> {
                 </div>
             </div>
             <div className="linkedMedia">
-                <i class="fa fa-home"><span>Home /Multimedia</span></i>
+                <BreadCrumbs link1="Home"
+                                to1="/"
+                                page2="Multimedia" />
             </div>
             <div className="pidatoKU">
                 <div className="col-lg-9">

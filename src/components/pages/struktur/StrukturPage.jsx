@@ -2,6 +2,7 @@ import React from 'react'
 import './StrukturPage.scss'
 import StrukturPaginate from '../../pagination/StrukturPaginate'
 import MainDivider from '../../divider/MainDivider'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const StrukturPage = ()=> {
     return (
@@ -18,9 +19,11 @@ const StrukturPage = ()=> {
 
             {/* LINK PARTAI */}
             <div className="linkedPartai">
-                <i class="fa fa-home">
-                    <span>Home / Partai /</span>
-                </i>
+                <BreadCrumbs link1="home"
+                                to1="/"
+                                link2="Partai"
+                                to2="/partai"
+                                page3="Struktur Pengurus" />
             </div>
             {/* END */}
 
