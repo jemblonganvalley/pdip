@@ -50,7 +50,7 @@ const HomePage = ()=> {
                 <div className="videoPage">
                     <MainDivider text="Video"
                                     garisMerah="2.5rem"
-                                    mt="1rem" />
+                                    m="1rem 0" />
                     <div className="paragrapVideo">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
                     </div>
