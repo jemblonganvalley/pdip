@@ -51,7 +51,7 @@ const MusicPdi = ()=> {
                             </div>
                         </div>
                         <div className="col-md-12 playerMusic">
-                            <ReactJkMusicPlayer getAudioInstance={instance => audioInstace = instance}  />
+                            <ReactJkMusicPlayer getAudioInstance={instance => audioInstace = instance}  className='jkMusicPlayer'/>
 
                             <div className="col-sm-2 mulai">
                                 <div className="mulaiIcon" onClick={()=> {
