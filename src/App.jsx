@@ -11,7 +11,7 @@ import PemiluPage from './components/pages/Pemilu/PemiluPage';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import BeritaPage from './components/pages/berita/BeritaPage';
-import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
+import KetuaUmumPage from './components/pages/ketuaumum/KetuaUmumPage';
 import StrukturPage from './components/pages/struktur/StrukturPage';
 import DetailPengurus from './components/pages/detailpengurus/DetailPengurus';
 import Dpd from './components/dpd/Dpd';
