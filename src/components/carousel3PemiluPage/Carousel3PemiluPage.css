@@ -1,0 +1,1291 @@
+.row-bagian2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: 0 0 0 20px;
+  padding: 0 0 20px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 33%;
+  padding: 5px 20px 0 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .jdl-jambi-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  margin: 0 0 2px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .garis-merah-tipis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: #d80010;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .garis-merah-tipis .garis-merah-tebal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 2.5px;
+  width: 120px;
+  background: #d80010;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col1-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col1-section1 .title1-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d80010;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col1-section1 .title2-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col1-section1 .txt-nama-pemimpin-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col1-section1 .title3-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col1-section1 .txt-nama-wakil-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col2-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col2-section1 .title1-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d80010;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col2-section1 .title2-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col2-section1 .txt-nama-pemimpin-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col2-section1 .title3-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col2-section1 .txt-nama-wakil-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col3-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col3-section1 .title1-col3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d80010;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col3-section1 .title2-col3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col3-section1 .txt-nama-pemimpin-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col3-section1 .title3-col3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section1-column1 .col3-section1 .txt-nama-wakil-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding: 10px 0 0 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .jdl-riau-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  margin: 0 0 2px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .garis-merah-tipis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: #d80010;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .garis-merah-tipis .garis-merah-tebal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 2.5px;
+  width: 120px;
+  background: #d80010;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .col1-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .col1-section2 .title1-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d80010;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .col1-section2 .title2-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .col1-section2 .txt-nama-pemimpin-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .col1-section2 .title3-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .col1-section2 .txt-nama-wakil-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .col2-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .col2-section2 .title1-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d80010;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .col2-section2 .title2-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .col2-section2 .txt-nama-pemimpin-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .col2-section2 .title3-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column1-bagian2 .section2-column1 .col2-section2 .txt-nama-wakil-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 33%;
+  padding: 5px 20px 0 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section1-column2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section1-column2 .jdl-bengkulu-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  margin: 0 0 2px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section1-column2 .garis-merah-tipis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: #d80010;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section1-column2 .garis-merah-tipis .garis-merah-tebal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 2.5px;
+  width: 120px;
+  background: #d80010;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section1-column2 .col1-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+.row-bagian2 .column2-bagian2 .section1-column2 .col1-section1 .title1-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d80010;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section1-column2 .col1-section1 .title2-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section1-column2 .col1-section1 .txt-nama-pemimpin-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section1-column2 .col1-section1 .title3-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section1-column2 .col1-section1 .txt-nama-wakil-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section2-column2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding: 20px 0 0 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section2-column2 .jdl-sumatera-selatan-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  margin: 0 0 2px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section2-column2 .garis-merah-tipis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: #d80010;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section2-column2 .garis-merah-tipis .garis-merah-tebal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 2.5px;
+  width: 120px;
+  background: #d80010;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section2-column2 .col1-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+.row-bagian2 .column2-bagian2 .section2-column2 .col1-section2 .title1-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d80010;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section2-column2 .col1-section2 .title2-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section2-column2 .col1-section2 .txt-nama-pemimpin-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section2-column2 .col1-section2 .title3-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section2-column2 .col1-section2 .txt-nama-wakil-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section3-column2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding: 20px 0 0 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section3-column2 .jdl-sumatera-selatan-section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  margin: 0 0 2px 0;
+  text-align: start;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section3-column2 .garis-merah-tipis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: #d80010;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section3-column2 .garis-merah-tipis .garis-merah-tebal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 2.5px;
+  width: 120px;
+  background: #d80010;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section3-column2 .col1-section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+.row-bagian2 .column2-bagian2 .section3-column2 .col1-section3 .title1-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d80010;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section3-column2 .col1-section3 .title2-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section3-column2 .col1-section3 .txt-nama-pemimpin-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section3-column2 .col1-section3 .title3-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column2-bagian2 .section3-column2 .col1-section3 .txt-nama-wakil-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 33%;
+  padding: 5px 20px 0 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .jdl-sumatera-barat-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  margin: 0 0 2px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .garis-merah-tipis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: #d80010;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .garis-merah-tipis .garis-merah-tebal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 2.5px;
+  width: 120px;
+  background: #d80010;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .col1-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .col1-section1 .title1-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d80010;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .col1-section1 .title2-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .col1-section1 .txt-nama-pemimpin-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .col1-section1 .title3-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .col1-section1 .txt-nama-wakil-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .col2-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .col2-section1 .title1-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d80010;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .col2-section1 .title2-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .col2-section1 .txt-nama-pemimpin-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .col2-section1 .title3-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section1-column3 .col2-section1 .txt-nama-wakil-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding: 20px 0 0 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .jdl-sumatera-utara-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  margin: 0 0 2px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .garis-merah-tipis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: #d80010;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .garis-merah-tipis .garis-merah-tebal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 2.5px;
+  width: 120px;
+  background: #d80010;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .col1-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .col1-section2 .title1-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d80010;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .col1-section2 .title2-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .col1-section2 .txt-nama-pemimpin-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .col1-section2 .title3-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .col1-section2 .txt-nama-wakil-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .col2-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .col2-section2 .title1-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  color: #d80010;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .col2-section2 .title2-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .col2-section2 .txt-nama-pemimpin-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .col2-section2 .title3-col2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .column3-bagian2 .section2-column3 .col2-section2 .txt-nama-wakil-bupati {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  color: #000;
+  text-align: start;
+  margin: 1px;
+  overflow: hidden;
+}
+
+.row-bagian2 .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 560px 0px 0 -370px;
+}
+
+.row-bagian2 .pagination .page-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px 0 10px;
+}
+
+.row-bagian2 .pagination .page-item .page-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35px;
+  width: 35px;
+  border-radius: 500px;
+  background: #d80010;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.row-bagian2 .pagination .page-item .page-link:hover {
+  background: #d8000e96;
+}
+
+.row-bagian2 .pagination .page-item .page-link i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 1px;
+}
+/*# sourceMappingURL=Carousel3PemiluPage.css.map */

@@ -21,7 +21,6 @@ const KetuaUmumPage = () => {
                 <div className="headers">
                     <div className="backgrounds">
                         <div className="textBackgroundBerita">
-                            <h2>Solid Bergerak Untuk<br />Indonesia Raya </h2>
                         </div>
                     </div>
                 </div>
@@ -64,11 +63,11 @@ const KetuaUmumPage = () => {
                         {/* Row1 */}
                         <div className="row1-col2">
                             <div className="box-img">
-                                <img src="" alt="" className="img-1" />
+
                             </div>
                             <div className="txt-img1">
                                 <p className="txt-1">
-                                    BERITA NASIONAL
+                                    KONGRES
                                 </p>
                             </div>
                         </div>
@@ -76,11 +75,11 @@ const KetuaUmumPage = () => {
                         {/* Row2 */}
                         <div className="row2-col2">
                             <div className="box-img">
-                                <img src="" alt="" className="img-2" />
+
                             </div>
                             <div className="txt-img2">
                                 <p className="txt-2">
-                                    BERITA DAERAH
+                                    RAKERNAS
                                 </p>
                             </div>
                         </div>
@@ -88,11 +87,11 @@ const KetuaUmumPage = () => {
                         {/* Row3 */}
                         <div className="row3-col2">
                             <div className="box-img">
-                                <img src="" alt="" className="img-3" />
+
                             </div>
                             <div className="txt-img3">
                                 <p className="txt-3">
-                                    BERITA FOTO
+                                    RAKORNAS
                                 </p>
                             </div>
                         </div>
@@ -100,11 +99,11 @@ const KetuaUmumPage = () => {
                         {/* Row4 */}
                         <div className="row4-col2">
                             <div className="box-img">
-                                <img src="" alt="" className="img-4" />
+
                             </div>
                             <div className="txt-img4">
                                 <p className="txt-4">
-                                    KEGIATAN PARTAI
+                                    INSTRUKSI
                                 </p>
                             </div>
                         </div>
@@ -141,30 +140,20 @@ const KetuaUmumPage = () => {
                     {/* Column5 */}
                     <div className="col5-container-1">
                         {/* Row1 */}
-                        <div className="row1-col5">
-                            <img src="" alt="" className="img-row1" />
-                            <div className="box-jdl-row1">
-                                <h1>KONGRES Ke- 5 PDI Perjuangan "Solid Bergerak Untuk Indonesia Raya" Bali</h1>
-                            </div>
+                        <div className="row1-video-youtube">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ChkKZ3hq1Nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         {/* END Row1 */}
+
                         {/* Row2 */}
-                        <div className="row2-col5">
-                            {/* Column1 */}
-                            <div className="col1-row2">
-                                <img src="" alt="" className="img-col1" />
-                            </div>
-                            {/* END Column1 */}
-                            {/* Column2 */}
-                            <div className="col2-row2">
-                                <p className="txt-jdl-col2">
-                                    Sekolah Sekretaris DPD & DPC PDI Perjuangan se Indonesia
-                                </p>
-                                <p className="txt-desk-col2">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo ipsum modi provident ut molestiae iure, reiciendis dicta dolores, omnis sit. Praesentium quasi, numquam sint pariatur illo quaerat velit dolor!quasi, numquam sint pariatur illo quaerat velit dolor! sint pariatur illo quaerat velit dolor!
+                        <div className="row2-img">
+                            <div className="col-txt">
+                                <p className="jdl">
+                                    SERUAN
+                                    <br />
+                                    KETUA UMUM
                                 </p>
                             </div>
-                            {/* END Column2 */}
                         </div>
                         {/* END Row2 */}
                     </div>
@@ -238,9 +227,8 @@ const KetuaUmumPage = () => {
                                 paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                                 borderRadius="10px" />
                     </div>
-                    {/* END Column4 */}
+                    {/* END Column6 */}
                 </div>
-                {/* END Container3 */}
             </div>
         </>
     )

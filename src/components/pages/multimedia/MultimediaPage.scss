@@ -1,0 +1,250 @@
+@import "../../../utilities/variable/variables.scss";
+
+
+.wrapperMultimedia {
+    width: 100%;
+
+    .headerMedia {
+        background: url(../../../img/mediabanner.png);
+        background-size: cover;
+        height: 25vh;
+        background-position: bottom;
+
+        .textBannerMedia {
+                width: 30%;
+                height: 50%;
+                margin-left: 13rem;
+                color: #ffffff;
+                position: relative;
+                
+                h2 {
+                    position: absolute;
+                    bottom: -70%;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    font-family: 'Roboto';
+                }
+        }
+    }
+    .linkedMedia {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        // border: 1px solid blue;
+        margin-top: 20px;
+        padding: $paddingTiny;
+        
+    }
+
+    .pidatoKU {
+        padding: $paddingSmall;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        // border: 1px solid blue;
+
+
+        .col-lg-9 {
+            // border: 1px solid blue;
+            height: 100%;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .col-lg-3 {
+            display: flex;
+            flex-direction: column;
+            margin-left: 2rem;
+            // border: 1px solid pink;
+            position: relative;
+            // width: 100%; 
+            small {
+                font-size: 8pt;
+                color: $colors;
+            }
+            span {
+                margin-top: 1rem;
+                font-size: 15pt;
+                font-weight: 700;
+                width: 30vw
+            }
+            p {
+                margin-top: 3rem;
+                font-size: 8pt;
+            }
+            .socialMedia {
+                margin-top: 8.5rem;
+                display: flex;
+                flex-direction: row;
+
+                small {
+                    color: #000000;
+                    margin-right: 10px;
+                }
+                i {
+                    margin: 0 10px;
+                    transition: .3s;
+
+                    &:hover {
+                        color: $colors;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+    .cardMedia {
+        width: 100%;
+        padding: $padding;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .imgCards {
+            margin-right: 1rem;
+        }
+
+        .siaranLangsung {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            
+            .smallCard {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 7pt;
+            }
+        }
+        .videoDokumentasi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .smallCard {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 7pt;
+            }
+        }
+        .videoInteraktif {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .smallCard {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 7pt;
+            }
+        }
+        .siaranPers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .smallCard {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 7pt;
+            }
+        }
+        .mediaCard {
+            margin: 10px 5%;
+        }
+    }
+
+    .panggung {
+        width: 100%;
+        background-image: url(../../../img/panggung.png);
+        background-size: cover;
+        height: 60vh;
+        display: flex;
+        background-attachment: fixed;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+        background-attachment: fixed;
+        background-position: center;
+        // padding: $padding;
+
+        .textPanggung {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-align: center;
+            flex-direction: column;
+            
+            .panggungH1 {
+                margin-top: 2rem;
+            }
+            .btnPanggung {
+                border-radius: 25px;
+                color: #ffffff;
+                border: 1px solid $colors;
+                width: 10vw;
+                font-size: 9pt;
+                text-transform: uppercase;
+                transition: .3s;
+                margin-top: 3rem;
+
+                &:hover {
+                    background-color: $colors;
+                }
+                
+            }
+        }
+    }
+
+    .cardMediaDua {
+        padding: $padding;
+        display: flex;
+
+        
+    }
+    .videoBaruPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 10%;
+        width: 100%;
+        // border: 1px solid crimson;
+
+        .textVideoBaru {
+            border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+            // background-color: #2d3436;
+            width: 100%;
+            text-align: center;
+            // height: 10vh;
+            margin-top: 30px;
+
+            .videoBaru {
+                cursor: pointer;
+                color: $colors;
+                // width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 8pt;
+                border-bottom: 5.5px solid $colors;
+            }
+        }
+        .cardVideoBaru {
+            width: 100%;
+            // height: 50vh;
+            min-width: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+            // border: 1px solid pink;
+            margin-top: 30px;
+        }
+    }
+}

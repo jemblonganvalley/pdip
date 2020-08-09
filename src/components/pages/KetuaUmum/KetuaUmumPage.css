@@ -3,14 +3,14 @@
 }
 
 .wrapperKetuaUmum .headers {
-  background: url(../../../img/kampanye.jpg);
+  background: url(../../../img/pemilu8.jpg);
   background-size: cover;
   height: 25vh;
   background-position: center;
 }
 
 .wrapperKetuaUmum .headers .backgrounds {
-  background-color: rgba(255, 0, 8, 0.8);
+  background-color: rgba(255, 0, 8, 0.1);
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -68,7 +68,9 @@
           flex-direction: column;
   height: auto;
   width: 100%;
-  background: #555;
+  background-image: url(../../../img//ketuaumum6.jpg);
+  background-position: center;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -187,6 +189,7 @@
   height: 10vh;
   width: 100%;
   background: #f3f3f3;
+  margin: 20px 0 20px 0;
   overflow: hidden;
 }
 
@@ -205,16 +208,9 @@
   display: flex;
   height: 100%;
   width: 30%;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-1 .col2-container-1 .row1-col2 .box-img .img-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 100%;
+  background-image: url(../../../img/img1.jpg);
   background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 
@@ -224,9 +220,6 @@
   display: flex;
   height: 100%;
   width: 70%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -260,15 +253,8 @@
   display: flex;
   height: 100%;
   width: 30%;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-1 .col2-container-1 .row2-col2 .box-img .img-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 100%;
+  background-image: url(../../../img/img2.jpg);
+  background-position: center;
   background-size: cover;
   overflow: hidden;
 }
@@ -279,9 +265,6 @@
   display: flex;
   height: 100%;
   width: 70%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -315,16 +298,10 @@
   display: flex;
   height: 100%;
   width: 30%;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-1 .col2-container-1 .row3-col2 .box-img .img-3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 100%;
+  background-image: url(../../../img/img3.jpg);
+  background-position: center;
   background-size: cover;
+  margin: 1px 0 0 0;
   overflow: hidden;
 }
 
@@ -334,9 +311,6 @@
   display: flex;
   height: 100%;
   width: 70%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -370,6 +344,9 @@
   display: flex;
   height: 100%;
   width: 30%;
+  background-image: url(../../../img/ketuaumum5.jpg);
+  background-position: center;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -389,9 +366,6 @@
   display: flex;
   height: 100%;
   width: 70%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -426,24 +400,21 @@
   display: flex;
   height: 65vh;
   width: 100%;
+  margin: 30px 0 0px 0;
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col5-container-1 .row1-col5 {
+.wrapperKetuaUmum .container-1 .col5-container-1 .row1-video-youtube {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  position: relative;
   height: 100%;
-  width: 30%;
+  width: 70%;
+  margin: 0 30px 0px 0;
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col5-container-1 .row1-col5 .img-row1 {
+.wrapperKetuaUmum .container-1 .col5-container-1 .row1-video-youtube .img-row1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,7 +426,7 @@
   z-index: -1;
 }
 
-.wrapperKetuaUmum .container-1 .col5-container-1 .row1-col5 .box-jdl-row1 {
+.wrapperKetuaUmum .container-1 .col5-container-1 .row1-video-youtube .box-jdl-row1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,7 +442,7 @@
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col5-container-1 .row1-col5 .box-jdl-row1 h1 {
+.wrapperKetuaUmum .container-1 .col5-container-1 .row1-video-youtube .box-jdl-row1 h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,76 +452,43 @@
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col5-container-1 .row2-col5 {
+.wrapperKetuaUmum .container-1 .col5-container-1 .row2-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   height: 100%;
-  width: 70%;
-  margin: 0 0 0 20px;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-1 .col5-container-1 .row2-col5 .col1-row2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 70%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-1 .col5-container-1 .row2-col5 .col1-row2 .img-col1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background: #555;
+  width: 30%;
+  background-image: url(../../../img/img4.jpg);
+  background-position: center;
   background-size: cover;
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col5-container-1 .row2-col5 .col2-row2 {
+.wrapperKetuaUmum .container-1 .col5-container-1 .row2-img .col-txt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   height: 30%;
   width: 100%;
-  background: #fff;
-  padding: 20px 35px 5px 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 20px 5px 20px;
   overflow: hidden;
 }
 
-.wrapperKetuaUmum .container-1 .col5-container-1 .row2-col5 .col2-row2 .txt-jdl-col2 {
+.wrapperKetuaUmum .container-1 .col5-container-1 .row2-img .col-txt .jdl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
-  font-weight: 500;
-  color: #000;
-  text-align: start;
-  margin: 0 0 5px 0;
-  padding: 0 0 2px 0;
-  overflow: hidden;
-}
-
-.wrapperKetuaUmum .container-1 .col5-container-1 .row2-col5 .col2-row2 .txt-desk-col2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 12px;
-  color: #000;
-  text-align: start;
-  padding: 0 0 10px 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  margin: 1px;
   overflow: hidden;
 }
 

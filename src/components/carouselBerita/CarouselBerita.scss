@@ -1,0 +1,105 @@
+.carousel-beritaPage{
+    overflow: hidden;
+
+    .box-carousel-beritaPage{
+        display: flex;
+        height: 80vh;
+        width: 100%;
+
+            .box1-beritaPage{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                background-image: url(../../img/ketuaumum6.jpg);
+                background-position: center;
+                background-size: cover;
+                overflow: hidden;
+        
+                .cont-img-col1{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 100%;
+                    overflow: hidden;
+        
+                    .col1-img{
+                        display: flex;
+                        height: 70%;
+                        width: 100%;
+                        overflow: hidden;
+                        border-bottom: 1px solid #fff;
+        
+                        .box-txt-title{
+                            display: flex;
+                            height: 100%;
+                            width: auto;
+                            justify-content: center;
+                            align-items: center;
+                            overflow: hidden;
+        
+                            h1{
+                                display: flex;
+                                font-size: 30px;
+                                color: #fff;
+                                padding: 25% 20% 20% 20%;
+                                overflow: hidden;
+                            }
+                        }  
+                    }
+        
+                    .col2-img{
+                        display: flex;
+                        flex-direction: column;
+                        height: 30%;
+                        width: 100%;
+                        background-color: rgba(255, 0, 8, 0.6);
+                        overflow: hidden;
+        
+                        .garis-strip-col2{
+                            display: flex;
+                            position: absolute;
+                            height: 2.5px;
+                            width: 230px;
+                            background: #fff;
+                            border-radius: 2px;
+                            margin: -2px 0 0 65px;
+                            overflow: hidden;
+                        }
+        
+                        .box-txt-desk-col2{
+                            display: flex;
+                            flex-direction: column;
+                            height: 100%;
+                            width: 100%;
+                            padding: 20px 65px 0 65px;
+                            overflow: hidden;
+        
+                            .txt-admin{
+                                display: flex;
+                                font-size: 12px;
+                                color: #fff;
+                                overflow: hidden;
+                            }
+        
+                            .txt-desk-col2{
+                                display: flex;
+                                font-size: 15px;
+                                font-weight: 500;
+                                color: #fff;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                
+            }  
+            
+            .box2-beritaPage{
+                display: flex;
+                height: 100%;
+                width: 100%;
+                background: #444;
+            }
+        } 
+    }
+}

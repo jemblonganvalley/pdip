@@ -1,5 +1,6 @@
 import React from 'react'
 import './BkbbPage.scss'
+import {Link} from 'react-router-dom'
 import backgroundHead from '../../../img/kampanye.jpg'
 import pdiBook1 from '../../../img/pdibook1.png'
 import pdiBook2 from '../../../img/pdibook2.png'
@@ -21,9 +22,9 @@ import quotes3 from '../../../img/quotes2.png'
 import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
+
 const BkbbPage = ()=>{
 
-    
 
     return (
         <div className="wrapperPartai">
@@ -106,10 +107,10 @@ const BkbbPage = ()=>{
                 <img src={quotes3} alt="" width="300" />
             </div>
 
-            <div className="btnLihatSemua">
+            <Link as='div' className="btnLihatSemua" to='quotes'>
                 <MainButton name="lihat semua"
-                            margin="1rem 0"/>
-            </div>
+                            margin="1rem 0" />
+            </Link>
 
             <div className="backGroundGray">
                 

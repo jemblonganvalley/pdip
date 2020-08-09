@@ -1,0 +1,609 @@
+$secondary : #f3f3f3;
+
+.wrapperPage1{
+    width: 100%;
+
+    .headers {
+        background: url(../../../../img/detailartikel1.jpg);
+        background-size: cover;
+        height: 25vh;
+        background-position: center;
+
+        .backgrounds {
+            background-color: rgba(255, 0, 8, 0.1);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            color: #ffffff;
+
+            .textBackgroundBerita {
+                width: 30%;
+                height: 50%;
+                margin-left: 5rem;
+            }
+        }
+    }
+    .linkedBerita {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        margin-top: 20px;
+        padding: 10px 10%;
+        i {
+            span {
+                margin-left: 5px;
+                font-style: italic;
+                font-size: 8pt;
+            }
+        }
+    }
+
+    // Container1
+    .container-1{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 0 10% 10% 10%;
+        overflow: hidden;
+
+        // Column1
+        .col1-container-1{
+            display: flex;
+            flex-direction: column;
+            height: 50vh;
+            width: 100%;
+            margin: 20px 0 20px 0;
+            overflow: hidden;
+
+            // Section1
+            .section1-col1{
+                display: flex;
+                height: 50%;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                padding: 50px 180px 50px 180px;
+                overflow: hidden;
+
+                .txt-title{
+                    display: flex;
+                    font-size: 35px;
+                    font-weight: bold;
+                    color: #000;
+                    text-align: center;
+                    margin: 1px;
+                    overflow: hidden;
+                }
+            }
+            // END Section1
+
+            // Section2
+            .section2-col1{
+                display: flex;
+                height: 50%;
+                width: 100%;
+                overflow: hidden;
+
+                // Row1
+                .row1{
+                    display: flex;
+                    height: 100%;
+                    width: 10%;
+                    overflow: hidden;
+
+                    .box-btn{
+                        display: flex;
+                        height: 50px;
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 20px 0 0 0;
+                        overflow: hidden;
+
+                        .btn-love{
+                            display: flex;
+                            border: none;
+                            outline: none;
+                            margin: 0 5px 0 0;
+                            overflow: hidden;
+    
+                            i{
+                                display: flex;
+                                font-size: 13px;
+                                color: #d80010;
+                            }
+                        }
+    
+                        .jm-fav{
+                            display: flex;
+                            font-size: 13px;
+                            color: #000;
+                            margin: 1px;
+                            overflow: hidden;
+                        }
+                    }      
+                }
+                // END Row1
+
+                // Row2
+                .row2{
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 80%;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+
+                    .btn-admin{
+                        display: flex;
+                        height: 25px;
+                        width: 100px;
+                        background: #d80010;
+                        border: none;
+                        outline: none;
+                        overflow: hidden;
+                        // For Font Btn 
+                        font-size: 14px;
+                        color: #fff;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .date{
+                        display: flex;
+                        font-size: 15px;
+                        color: #000;
+                        margin: 5px 0 0 0;
+                        overflow: hidden;
+                    }
+
+                    .garis-panjang-tipis{
+                        display: flex;
+                        height: 1px;
+                        width: 90%;
+                        background: #aaa;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 50px 5% 0px 5%;
+                        overflow: hidden;
+
+                        .garis-merah-tebal{
+                            display: flex;
+                            position: absolute;
+                            height: 5px;
+                            width: 50px;
+                            background: #d80010;
+                            margin: 4px 0 0 0;
+                            overflow: hidden;
+                        }
+                    }
+                }
+                // END Row2
+
+                // Row3
+                 .row3{
+                    display: flex;
+                    height: 100%;
+                    width: 10%;
+                    overflow: hidden;
+
+                    .box-btn{
+                        display: flex;
+                        height: 50px;
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 20px 0 0 0;
+                        overflow: hidden;
+
+                        .jm-share{
+                            display: flex;
+                            font-size: 13px;
+                            color: #000;
+                            margin: 1px;
+                            overflow: hidden;
+                        }
+
+                        .btn-love{
+                            display: flex;
+                            border: none;
+                            outline: none;
+                            margin: 0 5px 0 0;
+                            overflow: hidden;
+    
+                            i{
+                                display: flex;
+                                font-size: 13px;
+                                color: #d80010;
+                            }
+                        }         
+                    }      
+                }
+                // END Row3
+            }
+            // END Section2
+        }
+        // END Column1
+
+        // Column2
+        .col2-container-1{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+            overflow: hidden;   
+
+            // Section1
+            .section1{
+                display: flex;
+                height: auto;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 20px;
+                margin: 20px 0 20px 0;
+                overflow: hidden;
+
+                .txt-desk-section1{
+                    display: flex;
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: #000;
+                    text-align: center;
+                    overflow: hidden;
+                }
+            }
+            // END Section1
+
+            // Section2
+            .section2{
+                display: flex;
+                height: 60vh;
+                width: 100%;
+                background: #555;
+                margin: 20px 0 20px 0;
+                overflow: hidden;
+
+                .carousel-inner{
+                    height: 100%;
+                    width: 100%;
+
+                     // Box Indicator
+                     .box-indicator{
+                        display: flex;
+                        position: absolute;
+                        height: 50px;
+                        width: 100px;
+                        background: rgba(255, 0, 8, 0.7);
+                        justify-content: center;
+                        align-items: center;
+                        margin: 344px 0 0 878px;
+                        z-index: 100;
+
+                        .txt-no-slide-in{
+                            display: flex;
+                            font-size: 12px;
+                            margin: 1px;
+                            color: blue;
+                        }
+
+                        .txt-no-slide-total{
+                            display: flex;
+                            font-size: 12px;
+                            margin: 1px;
+                            color: #000;
+                        }
+                    }
+                    // END Box Indicator
+
+                    .img1{
+                        height: 100%;
+                        width: 100%;
+                        background-image: url(../../../../img/detailartikel2.jpg);
+                        background-size: cover;
+                    }
+
+                    .img2{
+                        height: 100%;
+                        width: 100%;
+                        background: #555;
+                    }
+
+                    .img3{
+                        height: 100%;
+                        width: 100%;
+                        background: #aaa;
+                    }
+                }
+
+
+                    .carousel-control-prev{
+                        display: flex;
+                        height: 50px;
+                        width: 50px;
+                        background: #000;
+                        color: #d80010;
+                        margin: 344px 0 0 978px;
+
+                        .carousel-control-prev-icon{
+                            display: flex;
+                            height: 100%;
+                            width: 100%;
+                            background-image: url(../../../../img/detailartikel9.jpg);
+                            background-size: cover;
+                        }
+                    }
+
+                    .carousel-control-next{
+                        display: flex;
+                        height: 50px;
+                        width: 50px;
+                        background: #fff;
+                        margin: 344px 0 0 0;
+
+                        .carousel-control-next-icon{
+                            display: flex;
+                            height: 100%;
+                            width: 100%;
+                            background-image: url(../../../../img/detailartikel8.jpg);
+                            background-size: cover;
+                        }
+                    }
+                
+                // END Carousel
+            }
+            // END Section2
+
+            // Section3
+            .section3{
+                display: flex;
+                height: auto;
+                width: 100%;
+                margin: 20px 0 20px 0;
+                overflow: hidden;
+
+                .txt-desk-section3{
+                    display: flex;
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: #555;
+                    text-align: justify;
+                    overflow: hidden;
+                }
+            }
+            // END Section3
+
+            // Section4
+            .section4{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 200px;
+                margin: 20px 0;
+                overflow: hidden;
+
+                i{
+                    display: flex;
+                    font-size: 30px;
+                    color: #d80010;
+                    margin: 0 0 20px 0;
+                    overflow: hidden;
+                }
+
+                .txt-desk-section4{
+                    display: flex;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #000;
+                    text-align: center;
+                    padding: 0 30px;
+                    overflow: hidden;
+                }
+            }
+            // END Section4
+
+            // Section5
+            .section5{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                margin: 30px 0 10px 0;
+                overflow: hidden;
+
+                .txt-desk-section5{
+                    display: flex;
+                    font-size: 17px;
+                    font-weight: 500;
+                    color: #555;
+                    text-align: justify;
+                    overflow: hidden;
+                }
+
+                .garis-panjang{
+                    display: flex;
+                    height: 2px;
+                    width: 80%;
+                    background: #555;
+                    margin: 30px 10% 0px 10%;
+                    overflow: hidden;
+                }
+
+                .box-medsos{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    height: auto;
+                    width: 100%;
+                    align-items: center;
+
+                    .socialMedia {
+                        margin: 40px 0 0 0;
+                        padding: 0 10px 0 0;
+                        display: flex;
+        
+                        small {
+                            color: #000000;
+                            margin-right: 10px;
+                        }
+
+                        i {
+                            margin: 0 10px;
+                            transition: .3s;
+        
+                            &:hover {
+                                color: #c70000;
+                                cursor: pointer;
+                            }
+                        }
+                    }   
+                }
+            }
+            // END Section5
+
+            // Section6
+            .section6{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                overflow: hidden;
+
+                // Column1
+                .col1-section6{
+                    display: flex;
+                    flex-direction: column;
+                    height: 20vh;
+                    width: 100%;
+                    background: #f3f3f3;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+        
+                    .col-title-berita-terbaru{
+                        display: flex;
+                        height: auto;
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+        
+                        .txt-berita-terbaru{
+                            display: flex;
+                            font-size: 15px;
+                            font-weight: bold;
+                            color: #d80010;
+                            margin: 1px;
+                            overflow: hidden;
+                        }
+                    }
+        
+                    .col-garis-lurus{
+                        display: flex;
+                        height: 1px;
+                        width: 100%;
+                        background: #ccc;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 5px 0 0 0;
+                        overflow: hidden;
+                        
+                        .garis-merah{
+                            display: flex;
+                            position: absolute;
+                            height: 4px;
+                            width: 120px;
+                            background: #d80010;
+                            overflow: hidden;
+                        }
+                    }
+                }
+                // END Column1
+
+                // Column2
+                .col2-section6 {
+                    width: 100%;
+                    height: 60vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                    margin-top: 0;
+                    padding: 10px 0%;
+                
+                    .col-cardContent {
+                        //  border: 1px solid green;
+                        height: 100%;
+                        width: 100%;
+                        flex: auto;
+                        margin: 0 10px;
+                        background: #ffffff;
+                        cursor: pointer;
+                        transition: .5s;
+                        border-radius: 10px;
+
+                        &:hover{
+                            background: #d80010;
+                            color: #fff;
+                        }
+                
+                        .imageContent {
+                            width: 100%;
+                            height: 30vh;        
+                            background: url(../../../../img/pemilu8.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            border-top-right-radius: 10px;
+                            border-top-left-radius: 10px;
+                        }
+                
+                        .imageTwo {
+                            width: 100%;
+                            height: 30vh;   
+                            background: url(../../../../img/pemilu19.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            border-top-right-radius: 10px;
+                            border-top-left-radius: 10px;
+                        }
+                
+                        .imageThree {
+                            width: 100%;
+                            height: 30vh;
+                            background: url(../../../../img/pemilu20.jpg);
+                            background-size: cover;
+                        }
+                
+                        .textCard {
+                            width: 100%;
+                            //  height: 100%;
+                            padding: 5px 20px;
+                
+                            //  border:  1px solid blue;
+                
+                            small {
+                                font-size: 7pt;
+                                color: #d80010;
+                            }
+                
+                            p {
+                                font-size: 8pt;
+                            }
+                        }
+                    }
+                }
+                // END Column2
+            }
+            // END Section6
+        }
+        // END Column2
+    }
+    // END Container1
+}
