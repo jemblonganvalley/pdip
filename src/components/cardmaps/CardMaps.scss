@@ -101,7 +101,7 @@ $responsiveEmpat : 719px;
                 }
 
                 form {
-                        width: 100%;
+                        width: 80%;
                         position: relative;
                     i {
                         position: absolute;
@@ -120,6 +120,9 @@ $responsiveEmpat : 719px;
                         border: none;
                         border-radius: 2px;
                         padding: 2px 10px;
+                        outline: none;
+                        font-size: 9pt;
+                        width: 90%;
                     }
                     ::placeholder {
                         color: #cfcfcf;

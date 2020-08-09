@@ -168,31 +168,87 @@
             border: 1px solid blue;
             
             .wrapperPlayerMusic {
-                width: 80%;
-                height: 100%;
-
+                width: 90%;
+                height: 15vh;
+                display: flex;
+                flex-direction: row;
                 border: 1px solid green;
-                padding: 1rem 0;
+                // padding: 1rem 0;
 
 
                 .playButton {
                     width: 20%;
                     height: 100%;
-
+                    background: #2d3436;
+                    padding: 1rem 0;
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
-                    .musicBtn {
+                    .playbtn {
                         border-radius: 50%;
+                        // background: #ffffff;
                         border: 1px solid #ffffff;
+                        width: 30px;
+                        height: 30px;
+                        cursor: pointer;
+                        text-align: center;
+                        position: relative;
                         color: #ffffff;
                         transition: .3s;
-                        text-align: center;
 
                         &:hover {
-                            background: #ffffff;
-                            color: #2d3436;
+                            background-color: #ffffff;
+                            color: $colors;
+                        }
+
+                        i {
+                            position: absolute;
+                            top: 20%;
+                            left: 30%;
+                        }
+                    }
+                }
+                .playMusic {
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    height: 100%;
+                    background: #ffffff;
+
+                    .judulPlay {
+                        padding: 5px;
+
+                        position: relative;
+                        // border: 1px solid blue;
+                        display: flex;
+                        flex-direction: row;
+                        
+                        
+                        .judulPlays {
+                            font-size: 10pt;
+                        }
+
+                        i {
+                            color: $colors;
+                            position: absolute;
+                            right: 0;
+                            font-size: 9pt;
+                            margin-right: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                    .iconsPlay {
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                        padding: 5px;
+                        align-items: center;
+
+                        font-size: 7pt;
+
+                        i {
+                            color: #ecf0f1;
                         }
                     }
                 }

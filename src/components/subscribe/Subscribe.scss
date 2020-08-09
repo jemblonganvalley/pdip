@@ -40,11 +40,11 @@
             }
 
             form {
-                    width: 80%;
+                    width: 90%;
                     position: relative;
                 i {
                     position: absolute;
-                    left: .4rem;
+                    left: .3rem;
                     top: .8rem;
                     font-size: 11pt;
                     color: #cfcfcf;
@@ -54,7 +54,10 @@
                     border: none;
                     border-radius: 2px;
                     padding: 2px 10px;
-                    width: 100%;
+                    width: 90%;
+                    font-size: 8pt;
+                    outline: none;
+                    // padding: .3rem .5rem;
                 }
                 ::placeholder {
                     color: #cfcfcf;

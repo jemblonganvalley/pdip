@@ -210,15 +210,23 @@
 }
 
 .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic {
-  width: 80%;
-  height: 100%;
+  width: 90%;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   border: 1px solid green;
-  padding: 1rem 0;
 }
 
 .containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton {
   width: 20%;
   height: 100%;
+  background: #2d3436;
+  padding: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,18 +238,86 @@
           align-items: center;
 }
 
-.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton .musicBtn {
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton .playbtn {
   border-radius: 50%;
   border: 1px solid #ffffff;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
   color: #ffffff;
   -webkit-transition: .3s;
   transition: .3s;
-  text-align: center;
 }
 
-.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton .musicBtn:hover {
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton .playbtn:hover {
+  background-color: #ffffff;
+  color: #d80010;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton .playbtn i {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  height: 100%;
   background: #ffffff;
-  color: #2d3436;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .judulPlay {
+  padding: 5px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .judulPlay .judulPlays {
+  font-size: 10pt;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .judulPlay i {
+  color: #d80010;
+  position: absolute;
+  right: 0;
+  font-size: 9pt;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .iconsPlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 7pt;
+}
+
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playMusic .iconsPlay i {
+  color: #ecf0f1;
 }
 
 .containerDua .contentDua .musicList {

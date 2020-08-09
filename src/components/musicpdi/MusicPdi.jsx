@@ -6,7 +6,7 @@ import ReactJkMusicPlayer from 'react-jinke-music-player'
 import "react-jinke-music-player/assets/index.css";
 import './MusicPdi.scss'
 
-const MusicPdi = ()=> {
+const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
 
     
 
@@ -55,7 +55,24 @@ const MusicPdi = ()=> {
                     <div className="col-md-12 playerMusic">
                         <div className="wrapperPlayerMusic">
                             <div className="playButton">
-                                <button className="btn"></button>
+                                <div className="playbtn">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                            <div className="playMusic">
+                                <div className="judulPlay">
+                                <h5 className="judulPlays">{judul}</h5>
+                                <i class="fa fa-heart"></i>
+                                </div>
+                                <div className="progress" style={{height: 1}}>
+                                <div className="progress-bar bg-danger" role="progressbar" style={{width: '1%'}} aria-valuenow={25} aria-valuemin={0} aria-valuemax={100} />
+                                </div>
+                                <div className="iconsPlay">
+                                    <i class="fa fa-play">0</i>
+                                    <i class="fa fa-heart">0</i>
+                                    <i class="fa fa-comment">0</i>
+                                    <span className="duration">0:00</span>
+                                </div>
                             </div>
                         </div>
                     </div>

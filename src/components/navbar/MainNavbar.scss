@@ -79,7 +79,6 @@ $responsiveEmpat : 719px;
             transition: .3s;
             color: #202020;
             font-weight: 500;
-            transition: .3s;
 
             @include responSatu() {
                 font-size: 7pt;
@@ -93,18 +92,10 @@ $responsiveEmpat : 719px;
             @include responEmpat() {
                 font-size: 8pt;
             }
-
-            
-
-            &:hover {
-                color: $colors;
-                // font-weight: bold;
-                font-weight: 300;
-                font-size: 8pt;
-            }
             a {
                 text-decoration: none;
-                color: rgba(255, 255, 255, .8);
+                color: rgba(255, 255, 255, .5);
+                transition: .3s;
 
                 .active, &:hover {
                     color: #ffffff;
