@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import './MultimediaPage.scss'
 import SL from '../../../img/newspaper.png'
 import VD from '../../../img/fake-news.png'
@@ -14,11 +14,6 @@ import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import MainButton from '../../buttons/MainButton'
 
 const MultimediaPage = ()=> {
-
-    useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
-
     return (
         <div className="wrapperMultimedia">
             <div className="headerMedia">
