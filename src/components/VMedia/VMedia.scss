@@ -1,0 +1,85 @@
+@import "../../utilities/variable/variables.scss";
+
+.wrapperPlayVid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 65vh;
+    margin-top: 1.5rem;
+
+    .kolumVideo {
+        width: 70%;
+        // border: 1px solid blue;
+        display: flex;
+        height: 100%;
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .descVideo {
+        width: 30%;
+        // border: 1px solid crimson;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-left: 1rem;
+        position: relative;
+
+        .textTop {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            font-size: 9pt;
+            position: relative;
+
+            small {
+                color: $colors;
+            }
+
+            .countLove {
+                position: absolute;
+                right: 0;
+
+                i {
+                    margin-right: .5rem;
+                    color: $colors;
+                }
+                small {
+                    color: #818181;
+                }
+            }
+        }
+        .headline {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 10pt;
+        }
+        .descline {
+            margin-top: 1rem;
+        }
+
+        .share {
+            font-size: 10pt;
+            position: absolute;
+            bottom: 0;
+
+            .marginShare {
+                margin: 0 .8rem;
+            }
+
+            i {
+                cursor: pointer;
+                transition: .3s;
+                &:hover {
+                    color: $colors;
+                }
+            }
+        }
+    }
+}

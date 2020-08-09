@@ -46,7 +46,7 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 40px 10%;
+  padding: 5px 10%;
 }
 
 .wrapperInformasi .linkedInformasi i span {
@@ -69,7 +69,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 40px 10%;
+  padding: 5px 10%;
 }
 
 .wrapperInformasi .profilContainer .paragrapProfil {

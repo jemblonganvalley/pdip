@@ -165,96 +165,40 @@
             align-items: center;
             padding: 2.5rem 7%;
             // flex-direction: column;
+            border: 1px solid blue;
             
-            .mulai {
-                // width: 100%;
-                height: 16.5vh;
-                background: $colors;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            .wrapperPlayerMusic {
+                width: 80%;
+                height: 100%;
 
-                .mulaiIcon {
-                    width: 30px;
-                    height: 30px;
+                border: 1px solid green;
+                padding: 1rem 0;
+
+
+                .playButton {
+                    width: 20%;
+                    height: 100%;
+
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    border-radius: 50%;
-                    border: 1px solid #ffffff;
-                    color: #ffffff;
-                    transition: .3s;
-                    cursor: pointer;
-                    font-size: 10pt;
 
-                    &:hover {
-                        background: #ffffff;
-                        color: #2d3436;
+                    button {
+                        border-radius: 50%;
+                        border: 1px solid #ffffff;
+                        color: #ffffff;
+                        transition: .3s;
+                        text-align: center;
+
+                        &:hover {
+                            background: #ffffff;
+                            color: #2d3436;
+                        }
                     }
                 }
             }
-            .rythm {
-                // border: 1px solid blue;
-                // height: 100%;
-                display: flex;
-                flex-direction: column;
-                background: #ffffff;
-                padding: 10px 10px;
-
-        .pdiJudul {
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-            position: relative;
-            // border: 1px solid blue;
-            
-            h4 {
-                color: #2d3436;
-                font-size: 12pt;
-            }
-
-                i {
-                    position: absolute;
-                    right: 0;
-                    color: $colors;
-                    text-align: right;
-                    // border: 1px solid blue;
-                    // width: 100%;
-
-                }
-                }
-
-                .pdiSoundBar {
-                    background: $colors;
-                    height: 2rem;
-                }
-
-                .pdiIcons {
-                    display: flex;
-                    flex-direction: row;
-                    width: 100%;
-                    position: relative;
-                    font-size: 8pt;
-                    margin-top: 10px;
-                    // border: 1px solid crimson;
-                    padding: 1px;
-                    color: #e0e0e0;
-
-                    i {
-                        margin: 0 10px;
-                    }
-                    span {
-                        margin-left: 5px;
-                    }
-                    .duration {
-                        font-size: 8pt;
-                        position: absolute;
-                        right: 0;
-                    }
-                }
-            }
-            }
-            }
+        }
+    }
         
         .musicList {
             display: flex;
@@ -262,6 +206,10 @@
             background: #ffffff;
             flex-direction: column;
             // padding: 10px;
+
+            .judulList {
+                text-transform: uppercase;
+            }
 
             .headersList {
                 width: 100%;

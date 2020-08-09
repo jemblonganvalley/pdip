@@ -12,6 +12,7 @@ import MusicPdi from '../../musicpdi/MusicPdi'
 import MainButton from '../../buttons/MainButton'
 import ButtonUnduh from '../../buttons/unduh/ButtonUnduh'
 import MainDivider from '../../divider/MainDivider'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const PartaiPage = ()=>{
     return (
@@ -32,9 +33,10 @@ const PartaiPage = ()=>{
 
             {/* LINK PARTAI */}
             <div className="linkedPartai">
-                <i class="fa fa-home">
-                    <span>Home / Partai /</span>
-                </i>
+                <BreadCrumbs link1="Home"
+                                to1="/"
+                                page2="Partai"
+                                 />
             </div>
             {/* END */}
 

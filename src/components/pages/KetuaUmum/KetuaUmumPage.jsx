@@ -9,6 +9,7 @@ import Cards from '../../cards/MainCards'
 // Import to CSS
 import './KetuaUmumPage.css'
 import MainDivider from '../../divider/MainDivider'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 // END Import to CSS
 
 // Create Component
@@ -24,9 +25,10 @@ const KetuaUmumPage = () => {
                     </div>
                 </div>
                 <div className="linkedBerita">
-                    <i class="fa fa-home">
-                        <span>Home / Ketua Umum</span>
-                    </i>
+                <BreadCrumbs link1="Home"
+                                to1="/"
+                                page2="Ketua Umum"
+                                 />
                 </div>
 
                 {/* Container1 */}

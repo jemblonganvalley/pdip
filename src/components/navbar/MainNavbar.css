@@ -53,13 +53,13 @@
 }
 
 .navbar .navbar-nav li {
-  font-size: 8pt;
+  font-size: 9pt;
   text-transform: uppercase;
-  font-weight: 300;
   -webkit-transition: .3s;
   transition: .3s;
   color: #202020;
   font-weight: 500;
+  transition: .3s;
 }
 
 @media (max-width: 1085px) {
@@ -88,6 +88,8 @@
 
 .navbar .navbar-nav li:hover {
   color: #d80010;
+  font-weight: 300;
+  font-size: 8pt;
 }
 
 .navbar .navbar-nav li a {

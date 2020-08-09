@@ -1,0 +1,19 @@
+.wrapperBread {
+  width: 100%;
+}
+
+.wrapperBread ul {
+  list-style: none;
+}
+
+.wrapperBread ul li {
+  margin: .1rem;
+  font-size: 8pt;
+  font-style: italic;
+}
+
+.wrapperBread ul li a {
+  text-decoration: none;
+  color: #d80010;
+}
+/*# sourceMappingURL=BreadCrumbs.css.map */
