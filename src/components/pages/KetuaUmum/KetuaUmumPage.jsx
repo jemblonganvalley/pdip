@@ -1,5 +1,5 @@
 // Import to React
-import React from 'react'
+import React,{useEffect} from 'react'
 // END Import to React
 import megawati5 from '../../../img/megawati5.jpg'
 import megawati6 from '../../../img/megawati6.jpg'
@@ -17,6 +17,12 @@ import CarouselKetuaUmumPage from '../../carouselKetuaUmumPage/CarouselKetuaUmum
 
 // Create Component
 const KetuaUmumPage = () => {
+
+     useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
+
+
     return (
         <>
             <div className="wrapperKetuaUmum">

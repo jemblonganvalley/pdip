@@ -1,5 +1,5 @@
 // Import to React
-import React from 'react'
+import React, {useEffect} from 'react'
 // END Import to React
 
 // Import to CSS
@@ -11,6 +11,10 @@ import Carousel3PemiluPage from '../../carousel3PemiluPage/Carousel3PemiluPage'
 
 // Create Component 
 const PemiluPage = () => {
+     useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
+
     return (
         <>
             <div className="wrapperPemilu">

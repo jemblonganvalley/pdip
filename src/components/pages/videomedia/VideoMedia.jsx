@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './VideoMedia.scss'
 import Cards from '../../cards/MainCards'
 import megawati from '../../../img/megawati1.jpg'
@@ -6,6 +6,11 @@ import VMedia from '../../VMedia/VMedia'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const VideoMedia = ()=> {
+
+     useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
+
     return (
         <div className="wrapperVideo">
             <div className="linkedVideo">

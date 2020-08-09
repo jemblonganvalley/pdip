@@ -10,6 +10,9 @@ import CarouselBerita from '../../carouselBerita/CarouselBerita'
 // Create Component
 const BeritaPage = () => {
 
+     useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
 
 
     return (

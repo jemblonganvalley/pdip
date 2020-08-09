@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './BkbbPage.scss'
 import {Link} from 'react-router-dom'
 import backgroundHead from '../../../img/kampanye.jpg'
@@ -25,6 +25,9 @@ import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const BkbbPage = ()=>{
 
+     useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
 
     return (
         <div className="wrapperPartai">

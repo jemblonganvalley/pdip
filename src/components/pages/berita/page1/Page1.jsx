@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import '../page1/Page1.css'
 
 const Page1 = () => {
+
+
+     useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
 
     return (
         <>
