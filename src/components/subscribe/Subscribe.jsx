@@ -1,5 +1,6 @@
 import React from 'react'
 import './Subscribe.scss'
+import MainButton from '../buttons/MainButton'
 
 const Subscribe =()=> {
     return (
@@ -12,10 +13,11 @@ const Subscribe =()=> {
                         <i class="fa fa-envelope-o"></i>
                         <input type="email" placeholder="masukan email anda disini" />
                     </form>
-                    <button>
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                        <span>Subscribe</span>
-                    </button>
+                    <MainButton name="Subscribe"
+                                borderButton="1px solid #2d3436"
+                                margin="1rem 0"
+                                btnIcons="fa fa-check"
+                                mr=".5rem" />
                 </div>
             </div>
         </div>
