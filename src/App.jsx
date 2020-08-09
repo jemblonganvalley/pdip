@@ -107,7 +107,11 @@ function App() {
             <PartaiPage/>
           </Route>
 
-          <Route path="/">
+          <Route path="/home">
+            <HomePage />
+          </Route>
+
+          <Route path='*'>
             <HomePage />
           </Route>
 
