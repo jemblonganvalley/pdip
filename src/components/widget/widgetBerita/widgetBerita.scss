@@ -1,0 +1,20 @@
+
+@import "../../../utilities/variable/variables.scss";
+
+.wrapperWidget{
+    width: 100%;
+    display: flex;
+    padding: $padding;
+    flex-wrap: wrap;
+
+
+    .carousel-inner{
+        background: none;
+    }
+
+    .wbCarousel{
+        transition: transform .5s ease-in-out, opacity .2s ease-in-out;
+    }
+
+}
+

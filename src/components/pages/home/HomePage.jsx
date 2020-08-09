@@ -17,6 +17,7 @@ import megawati6 from '../../../img/megawati6.jpg'
 import megawati7 from '../../../img/megawati7.jpg'
 import MainButton from '../../buttons/MainButton'
 import MainDivider from '../../divider/MainDivider'
+import WidgetBerita from '../../widget/widgetBerita/WidgetBerita'
 
 
 const HomePage = ()=> {
@@ -192,7 +193,15 @@ const HomePage = ()=> {
             </div>
 
             <MusicPdi/>
-            <CardMaps/>
+            {/* <CardMaps/> */}
+
+    
+                <MainDivider text="Berita Terbaru "/>
+
+            <div className="wrapperWidget">
+                <WidgetBerita name="berita" col='8'/>
+                <WidgetBerita name="beritaFoto" col='4'/>
+            </div>
 
             <div className="backgroundRed"></div>
         </div>
