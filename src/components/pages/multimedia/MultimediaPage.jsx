@@ -11,6 +11,7 @@ import megawati3 from '../../../img/megawati3.jpg'
 import perempuan from '../../../img/ig-perempuan.png'
 import megawati12 from '../../../img/megawati12.png'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
+import MainButton from '../../buttons/MainButton'
 
 const MultimediaPage = ()=> {
     return (
@@ -64,9 +65,7 @@ const MultimediaPage = ()=> {
             <div className="panggung">
                 <div className="textPanggung">
                     <h1 className="panggungH1">Siaran Langsung Pembukaan Rakernas I<br/>PDI Perjuangan</h1>
-                    <button className="btn btnPanggung">
-                        <span>kunjungi</span>
-                    </button>
+                    <MainButton name="kunjungi" />
                 </div>
             </div>
 

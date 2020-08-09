@@ -110,7 +110,7 @@
   font-style: italic;
 }
 
-.wrapperSubscribe .ikutiBerita .wrapper button {
+.wrapperSubscribe .ikutiBerita .wrapper .subsButton {
   margin-top: 1rem;
   border: none;
   width: 50%;
@@ -122,17 +122,17 @@
   transition: .5s;
 }
 
-.wrapperSubscribe .ikutiBerita .wrapper button:hover {
+.wrapperSubscribe .ikutiBerita .wrapper .subsButton:hover {
   background: #2d3436;
   color: #ffffff;
 }
 
-.wrapperSubscribe .ikutiBerita .wrapper button i {
+.wrapperSubscribe .ikutiBerita .wrapper .subsButton i {
   font-size: 10pt;
   margin-right: .3rem;
 }
 
-.wrapperSubscribe .ikutiBerita .wrapper button span {
+.wrapperSubscribe .ikutiBerita .wrapper .subsButton span {
   font-size: 8pt;
   font-weight: 700;
 }

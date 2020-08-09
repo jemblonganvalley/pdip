@@ -10,7 +10,6 @@ import {Link} from 'react-router-dom'
 import pdiLogo from '../../../img/pdibanteng.png'
 import MusicPdi from '../../musicpdi/MusicPdi'
 import MainButton from '../../buttons/MainButton'
-import ButtonUnduh from '../../buttons/unduh/ButtonUnduh'
 import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
@@ -129,9 +128,9 @@ const PartaiPage = ()=>{
                 </div>
             </div>
             {/* END */}
-
-                <ButtonUnduh />
-
+                <div className="btnUnduh">
+                    <MainButton name="Unduh Lambang" />
+                </div>
                 {/* PENGURUS */}
                 <div className="pengurusPage">
                     <MainDivider text="pengurus"

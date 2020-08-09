@@ -43,7 +43,7 @@ $responsiveEmpat : 719px;
     align-items: center;
     flex: auto;
 
-    .wrapperBerita {
+    .mapsBerita {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -66,7 +66,7 @@ $responsiveEmpat : 719px;
 
         
 
-        .ikutiBerita {
+        .ikutiMaps {
             background-color: $colors;
             display: flex;
             justify-content: center;
@@ -126,41 +126,6 @@ $responsiveEmpat : 719px;
                         font-size: 8pt;
                         padding: 10px;
                         font-style: italic;
-                    }
-                }
-
-                button {
-                    margin-top: 2rem;
-                    border: none;
-                    width: 50%;
-                    border-radius: 25px;
-                    height: 2.5rem;
-                    background: none;
-                    border: 1px solid #2d3436;
-                    transition: .5s;
-                    @include responSatu() {
-                        height: 2rem;
-                    }
-
-                    &:hover {
-                        background: #2d3436;
-                        color: #ffffff;
-                    }
-
-                    i {
-                        font-size: 10pt;
-                        margin-right: .3rem;
-                        @include responSatu() {
-                            font-size: 8pt;
-                        }
-                    }
-
-                    span {
-                        font-size: 8pt;
-                        font-weight: 700;
-                        @include responSatu() {
-                            font-size: 7pt;
-                        }
                     }
                 }
             }

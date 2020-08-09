@@ -10,6 +10,7 @@ import Cards from '../../cards/MainCards'
 import './KetuaUmumPage.css'
 import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
+import MainButton from '../../buttons/MainButton'
 // END Import to CSS
 
 // Create Component
@@ -183,9 +184,7 @@ const KetuaUmumPage = () => {
                     {/* END Column1 */}
                     {/* Column2 */}
                     <div className="col2-container-2">
-                        <button className="btn-lihat-col2">
-                            LIHAT
-                        </button>
+                        <MainButton name="lihat" />
                     </div>
                     {/* END Column2 */}
                 </div>

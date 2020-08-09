@@ -31,7 +31,7 @@ const InformasiPage = ()=> {
             <div className="linkedInformasi">
             <BreadCrumbs link1="Home"
                                 to1="/"
-                                page2="Informasi Publik"
+                                page2="Informasi"
                                  />
             </div>
             {/* END */}

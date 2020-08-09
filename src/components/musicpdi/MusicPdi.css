@@ -230,7 +230,7 @@
           align-items: center;
 }
 
-.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton button {
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton .musicBtn {
   border-radius: 50%;
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -239,7 +239,7 @@
   text-align: center;
 }
 
-.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton button:hover {
+.containerDua .contentDua .wrapperContentMusic .playerMusic .wrapperPlayerMusic .playButton .musicBtn:hover {
   background: #ffffff;
   color: #2d3436;
 }

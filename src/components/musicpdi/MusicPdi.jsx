@@ -55,9 +55,7 @@ const MusicPdi = ()=> {
                     <div className="col-md-12 playerMusic">
                         <div className="wrapperPlayerMusic">
                             <div className="playButton">
-                                <button className="btn">
-                                    <i class="fa fa-play"></i>
-                                </button>
+                                <button className="btn"></button>
                             </div>
                         </div>
                     </div>
