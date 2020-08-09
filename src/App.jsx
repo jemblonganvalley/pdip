@@ -4,7 +4,6 @@ import MainNavbar from './components/navbar/MainNavbar';
 import HomePage from './components/pages/home/HomePage';
 import MainFooter from './components/footer/MainFooter';
 import PartaiPage from './components/pages/partai/PartaiPage';
-import MultimediaPage from './components/pages/multimedia/MultimediaPage';
 import BkbbPage from './components/pages/bkbb/BkbbPage'
 import InformasiPage from './components/pages/informasi/InformasiPage';
 import PemiluPage from './components/pages/Pemilu/PemiluPage';
@@ -40,7 +39,7 @@ function App() {
       prevScrollpos = currentScrollPos;
     })
 
-  },[hide])
+  }, [hide])
 
   return (
     <Router>
@@ -52,7 +51,7 @@ function App() {
         <Switch>
 
           <Route path="/components">
-            <AllComponent />
+
           </Route>
 
           <Route path="/quotes">
@@ -60,25 +59,25 @@ function App() {
           </Route>
 
           <Route path="/materipokok">
-            <MateriPokok/>
+            <MateriPokok />
           </Route>
 
           <Route path="/videomedia">
-            <VideoMedia/>
+
           </Route>
 
           <Route path="/dpd">
-            <Dpd/>
+
           </Route>
 
           <Route path="/detailpengurus">
-            <DetailPengurus/>
+
           </Route>
 
           <Route path="/struktur">
-            <StrukturPage/>
+
           </Route>
-          
+
           <Route path='/page2'>
             <Page2 />
           </Route>
@@ -92,7 +91,7 @@ function App() {
           </Route>
 
           <Route path="/informasi">
-            <InformasiPage />
+
           </Route>
 
           <Route path="/berita">
@@ -100,7 +99,7 @@ function App() {
           </Route>
 
           <Route path="/multimedia">
-            <MultimediaPage />
+
           </Route>
 
           <Route path="/ketuaumum">
@@ -112,11 +111,11 @@ function App() {
           </Route>
 
           <Route path="/partai">
-            <PartaiPage/>
+
           </Route>
 
           <Route path="/">
-            <HomePage />
+
           </Route>
 
         </Switch>

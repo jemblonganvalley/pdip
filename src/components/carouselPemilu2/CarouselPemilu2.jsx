@@ -1,37 +1,38 @@
 import React from 'react'
 
-import '../carouselPemilu2/CarouselPemilu2.css'
+import '../carouselPemilu2/CarouselPemilu2.scss'
 
 const CarouselPemilu2 = () => {
     return (
         <>
-            <div className="cont-img2">
-                {/* Image2 */}
-                <div className="img-2">
+            {/* Carousel */}
+            <div id="carouselExampleControls" className="carousel carousel2-pemiluPage slide" data-ride="carousel">
+                <div className="carousel-inner box-carousel2-pemiluPage">
+                    <div className="carousel-item active">
+                        {/* Image2 */}
+                        <div className="img-2">
 
+                        </div>
+                        {/* END Image2 */}
+                    </div>
+                    <div className="carousel-item">
+                        <img src="..." className="d-block w-100" alt="..." />
+                    </div>
+                    <div className="carousel-item">
+                        <img src="..." className="d-block w-100" alt="..." />
+                    </div>
                 </div>
-                {/* END Image2 */}
-
-                {/* Button Pagination */}
-                <nav aria-label="Page navigation example">
-                    <ul className="pagination">
-                        <li className="page-item">
-                            <a className="page-link" href="#" aria-label="Previous">
-                                <i className="fas fa-angle-left" aria-hidden="true"></i>
-                                <span className="sr-only">Previous</span>
-                            </a>
-                        </li>
-                        <li className="page-item">
-                            <a className="page-link" href="#" aria-label="Next">
-                                <i className="fas fa-angle-right" aria-hidden="true"></i>
-                                <span className="sr-only">Next</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                {/* END Button Pagination */}
+                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true" />
+                    <span className="sr-only">Previous</span>
+                </a>
+                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true" />
+                    <span className="sr-only">Next</span>
+                </a>
             </div>
 
+            {/* END Carousel */}
         </>
     )
 }

@@ -2,10 +2,10 @@
 import React from 'react'
 // END Import to React
 
-// Import to CSS
-import './BeritaPage.css'
+import './BeritaPage.scss'
 import { Link } from 'react-router-dom'
-// END Import to CSS
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
+import CarouselBerita from '../../carouselBerita/CarouselBerita'
 
 // Create Component
 const BeritaPage = () => {
@@ -20,37 +20,15 @@ const BeritaPage = () => {
                     </div>
                 </div>
                 <div className="linkedBerita">
-                    <i class="fa fa-home">
-                        <span>Home / Berita</span>
-                    </i>
+                    <BreadCrumbs link1="Home"
+                        to1="/"
+                        page2="Berita" />
                 </div>
 
                 {/* Container1 */}
                 <div className="container-1">
                     {/* Column1 */}
-                    <div className="col1-container-1">
-                        <div className="cont-img-col1">
-                            <div className="col1-img">
-                                <div className="box-txt-title">
-                                    <h1>Lorem ipsum dolor sit amet, consectetur adipsing elit,</h1>
-                                </div>
-                            </div>
-                            <div className="col2-img">
-                                <div className="garis-strip-col2">
-
-                                </div>
-                                <div className="box-txt-desk-col2">
-                                    <p className="txt-admin">
-                                        Admin PDI Perjuangan | 1 Januari
-                                    </p>
-
-                                    <p className="txt-desk-col2">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quidem ad iure harum optio corporis eligendi amet vitae dolor enim? Molestiae magnam voluptas fuga quo dolores harum dignissimos autem sint distinctio maiores quasi nemo reprehenderit maxime sunt quaerat, aliquam eligendi quas consequuntur delectus nulla eius ex, aspernatur quisquam. Error, voluptatibus.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <CarouselBerita />
                     {/* END Column1 */}
 
                     {/* Column2 */}
