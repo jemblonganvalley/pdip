@@ -439,10 +439,7 @@ const PemiluPage = () => {
 
                 {/* Container2 */}
                 <div className="container-2">
-<<<<<<< HEAD
-=======
                     {/* <img src={pemilu5} alt="" /> */}
->>>>>>> d5df845cbb41be3708d45c3dfc30dd6beb3bd4d5
                     <div className="jdl-col1">
                         <div className="box-txt-jdl">
                             <p className="txt-jdl">

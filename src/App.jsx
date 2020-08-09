@@ -10,10 +10,6 @@ import InformasiPage from './components/pages/informasi/InformasiPage';
 import PemiluPage from './components/pages/Pemilu/PemiluPage';
 import { useState } from 'react';
 import { useEffect } from 'react';
-<<<<<<< HEAD
-
-=======
->>>>>>> d5df845cbb41be3708d45c3dfc30dd6beb3bd4d5
 import BeritaPage from './components/pages/berita/BeritaPage';
 import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
 import StrukturPage from './components/pages/struktur/StrukturPage';
@@ -44,20 +40,12 @@ function App() {
       prevScrollpos = currentScrollPos;
     })
 
-<<<<<<< HEAD
-  }, [hide])
-=======
   },[hide])
->>>>>>> d5df845cbb41be3708d45c3dfc30dd6beb3bd4d5
 
   return (
     <Router>
 
       <MainNavbar hide={hide} />
-<<<<<<< HEAD
-
-=======
->>>>>>> d5df845cbb41be3708d45c3dfc30dd6beb3bd4d5
 
       <div className="App">
 
