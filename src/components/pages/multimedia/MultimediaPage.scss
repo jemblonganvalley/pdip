@@ -1,4 +1,5 @@
-$padding : 20px 15%;
+@import "../../../utilities/variable/variables.scss";
+
 
 .wrapperMultimedia {
     width: 100%;
@@ -32,23 +33,17 @@ $padding : 20px 15%;
         width: 40%;
         // border: 1px solid blue;
         margin-top: 20px;
-        padding: $padding;
-        i {
-            span {
-                margin-left: 5px;
-                font-style: italic;
-                font-size: 8pt;
-            }
-        }
+        padding: $paddingTiny;
+        
     }
 
     .pidatoKU {
-        padding: $padding;
+        padding: $paddingSmall;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 70vh;
+        height: 80vh;
         // border: 1px solid blue;
 
 
@@ -70,7 +65,7 @@ $padding : 20px 15%;
             // width: 100%; 
             small {
                 font-size: 8pt;
-                color: #c70000;
+                color: $colors;
             }
             span {
                 margin-top: 1rem;
@@ -96,7 +91,7 @@ $padding : 20px 15%;
                     transition: .3s;
 
                     &:hover {
-                        color: #c70000;
+                        color: $colors;
                         cursor: pointer;
                     }
                 }
@@ -168,8 +163,12 @@ $padding : 20px 15%;
         background-size: cover;
         height: 60vh;
         display: flex;
+        background-attachment: fixed;
+        background-position: center;
         justify-content: center;
         align-items: center;
+        background-attachment: fixed;
+        background-position: center;
         // padding: $padding;
 
         .textPanggung {
@@ -186,7 +185,7 @@ $padding : 20px 15%;
             .btnPanggung {
                 border-radius: 25px;
                 color: #ffffff;
-                border: 1px solid #c70000;
+                border: 1px solid $colors;
                 width: 10vw;
                 font-size: 9pt;
                 text-transform: uppercase;
@@ -194,7 +193,7 @@ $padding : 20px 15%;
                 margin-top: 3rem;
 
                 &:hover {
-                    background-color: #c70000;
+                    background-color: $colors;
                 }
                 
             }
@@ -205,105 +204,14 @@ $padding : 20px 15%;
         padding: $padding;
         display: flex;
 
-        .kols {
-            margin: 10px;
-        }
-
-        .cols1 {
-            // border: 1px solid blue;
-
-            .cardMBody {
-                width: 100%;
-                // height: 65vh;
-                background: #ffffff;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-
-                .cardMBImg {
-                    width: 100%;
-                    height: 45vh;
-                    background: url(../../../img/ig-perempuan.png);
-                    background-size: cover;
-                }
-                .cardTextWrapper {
-                    padding: 5px 20px;
-                    .cardSmall {
-                        font-size: 8pt;
-                        padding: 10px;
-                        color: #c70000;
-                    }
-                    .cardH4 {
-                        padding: 0 10px;
-                    }
-                }
-            }
-        }
-        .cols2 {
-            // border: 1px solid blue;
-
-            .cardMBody2 {
-                width: 100%;
-                // height: 65vh;
-                background: #ffffff;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-
-                .cardMBImg2 {
-                    width: 100%;
-                    height: 45vh;
-                    background: url(../../../img/megawati12.png);
-                    background-size: cover;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    .iconPlayMedia {
-                        width: 40px;
-                        height: 40px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        // background: #ffffff;
-                        border: 1px solid #ffffff;
-                        border-radius: 50%;
-                        text-align: center;
-                        cursor: pointer;
-                        font-size: 10pt;
-                        transition: .1s;
-                        color: #ffffff;
-
-                        &:hover {
-                            width: 45px;
-                            height: 45px;
-                            // font-size: 16pt;
-                            background: #ffffff;
-                            // border: none;
-                            color: #2d3436;
-                        }
-                    }
-                }
-                .cardTextWrapper2 {
-                    padding: 5px 20px;
-                    .cardSmall2 {
-                        font-size: 8pt;
-                        padding: 10px;
-                        color: #c70000;
-                    }
-                    .cardH42 {
-                        padding: 0 10px;
-                    }
-                }
-            }
-        }
+        
     }
     .videoBaruPage {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 20px 15%;
+        padding: 20px 10%;
         width: 100%;
         // border: 1px solid crimson;
 
@@ -317,18 +225,19 @@ $padding : 20px 15%;
 
             .videoBaru {
                 cursor: pointer;
-                color: #d80010;
+                color: $colors;
                 // width: 100%;
                 text-align: center;
                 text-transform: uppercase;
                 font-weight: bold;
                 font-size: 8pt;
-                border-bottom: 5.5px solid #d80010;
+                border-bottom: 5.5px solid $colors;
             }
         }
         .cardVideoBaru {
             width: 100%;
-            height: 50vh;
+            // height: 50vh;
+            min-width: 50vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -336,108 +245,6 @@ $padding : 20px 15%;
 
             // border: 1px solid pink;
             margin-top: 30px;
-
-            .col {
-                // border: 1px solid green;
-                height: 100%;
-                flex: auto;
-                margin: 0 10px;
-                background: #ffffff;
-                border-bottom-left-radius: 5px;
-                border-bottom-right-radius: 5px;
-                transition: .5s;
-                
-                &:hover {
-                    box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);
-                    background: #d80010;
-                    color: #ffffff;
-                }
-
-                .imageCard {
-                    width: 100%;
-                    // border: 1px solid red;
-                    height: 30vh;
-
-                    background-image: url(../../../img/megawati1.jpg);
-                    background-size: cover;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    .VBMusic {
-                        width: 35px;
-                        height: 35px;
-                        border: 1px solid #ffffff;
-                        border-radius: 50%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                        color: #ffffff;
-                        font-size: 10pt;
-
-                        &:hover {
-                            background: #ffffff;
-                            color: #c70000;
-                        }
-                    }
-                }
-
-                .two {
-                    width: 100%;
-                    // border: 1px solid red;
-                    height: 30vh;
-
-                    background-image: url(../../../img/megawati2.jpg);
-                    background-size: cover;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .three {
-                    width: 100%;
-                    // border: 1px solid red;
-                    height: 30vh;
-
-                    background-image: url(../../../img/megawati3.jpg);
-                    background-size: cover;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-
-                }
-                
-                .text {
-                    width: 100%;
-                    justify-content: center;
-                    flex-direction: column;
-                    height: 19vh;
-                    display: flex;
-                    // margin-top: 40px;
-                    
-                    align-items: flex-start;
-                    // border: 1px solid pink;
-
-                    small {
-                        margin: 10px;
-                        font-size: 8pt;
-                        color: #d80010;
-
-                        &:hover {
-                            
-                            color: #ffffff;
-                        }
-                    }
-
-                    h5 {
-                        margin: 10px;
-                    }
-                }
-            }
         }
     }
 }

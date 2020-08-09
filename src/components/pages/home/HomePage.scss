@@ -5,6 +5,11 @@ $responsiveDua : 1000px;
 $responsiveTiga : 728px;
 $responsiveEmpat : 500px;
 
+$phoneSatu : 600px;
+
+@import "../../../utilities/variable/variables.scss";
+
+
 @mixin responSatu {
     @media (max-width : #{$responsiveSatu}) {
         @content;
@@ -25,25 +30,46 @@ $responsiveEmpat : 500px;
         @content;
     }
 }
+@mixin phone {
+    @media (max-width : #{$phoneSatu}) {
+        @content;
+    }
+}
 
 
 
 
 .homePageTwo {
     width: 100vw;
-    padding: 20px 10%;
+    padding: $padding;
 
     @include responSatu() {
         padding: 20px 13%;
+    }
+    @include phone() {
+        padding: $padding;
     }
 
         .customRow {
             height: 20vh;
             background-color: #2d3436;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // padding: 3rem;
+            flex-direction: row;
 
             @include responSatu() {
                 height: 18vh;
+            }
+            @include phone() {
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 20px;
             }
         
             
@@ -51,12 +77,26 @@ $responsiveEmpat : 500px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                // border: 1px solid blue;
+                
+                @include phone() {
+                    flex-direction: column;
+                    margin: 2rem;
+                    text-align: center;
+                }
 
                 img {
                     margin: 0 10px;
                     @include responSatu() {
                         width: 40px;
                         height: 40px;
+                        
+                    }
+                    @include phone() {
+                        // border: 1px solid blue;
+                        width: 5rem;
+                        height: 5rem;
+                        
                     }
                 
 
@@ -73,6 +113,11 @@ $responsiveEmpat : 500px;
                     @include responSatu() {
                         font-size: 10pt;
                     }
+
+                    @include phone() {
+                        margin-top: 1rem;
+                        font-size: 8pt;
+                    }
                 }
 
                 .customBorder {
@@ -80,12 +125,18 @@ $responsiveEmpat : 500px;
                     justify-content: center;
                     align-items: center;
                     width: 100%;
-                    height: 90%;
+                    height: 15vh;
+                    padding: 2rem;
                     border-right: 1px solid white;
 
                     @include responSatu() {
                         // font-size: 10pt;
                         height: 60%;
+                    }
+                    @include phone() {
+                        // flex-direction: column;
+                        border: none;
+                        flex-direction: column;
                     }
             }
             .calendar {
@@ -99,34 +150,6 @@ $responsiveEmpat : 500px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
-        margin-right: 20px;
-        .textVideo {
-            border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-            // background-color: #2d3436;
-            width: 100%;
-            text-align: center;
-            // height: 10vh;
-            margin-top: 30px;
-            @include responSatu() {
-                margin-top: 3rem;
-            }
-            small {
-                cursor: pointer;
-                color: #d80010;
-                // width: 100%;
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-size: 10pt;
-                border-bottom: 5.5px solid #d80010;
-
-                @include responSatu() {
-                    font-size: 8pt;
-                }
-                
-            }
-        }
 
         .paragrapVideo {
             display: flex;
@@ -246,99 +269,7 @@ $responsiveEmpat : 500px;
             }
         }
 
-        .cardContainer {
-            width: 100%;
-            height: 50vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-
-            // border: 1px solid pink;
-            margin-top: 15px;
-
-            @include responSatu() {
-                margin-top: 25px;
-            }
-
-            .col {
-                // border: 1px solid green;
-                height: 100%;
-                flex: auto;
-                margin: 0 10px;
-                background: #ffffff;
-                border-bottom-left-radius: 5px;
-                border-bottom-right-radius: 5px;
-                transition: .5s;
-                
-                &:hover {
-                    box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);
-                    background: #d80010;
-                    color: #ffffff;
-                }
-
-                .imageCard {
-                    width: 100%;
-                    // border: 1px solid red;
-                    height: 30vh;
-
-                    background-image: url(../../../img/megawati1.jpg);
-                    background-size: cover;
-                }
-
-                .two {
-                    width: 100%;
-                    // border: 1px solid red;
-                    height: 30vh;
-
-                    background-image: url(../../../img/megawati2.jpg);
-                    background-size: cover;
-                }
-
-                .three {
-                    width: 100%;
-                    // border: 1px solid red;
-                    height: 30vh;
-
-                    background-image: url(../../../img/megawati3.jpg);
-                    background-size: cover;
-                }
-                
-                .text {
-                    width: 100%;
-                    justify-content: center;
-                    flex-direction: column;
-                    height: 19vh;
-                    display: flex;
-                    // margin-top: 40px;
-                    
-                    align-items: flex-start;
-                    // border: 1px solid pink;
-
-                    small {
-                        margin: 10px;
-                        font-size: 8pt;
-                        color: #d80010;
-
-                        @include responSatu() {
-                            font-size: 6pt;
-                        }
-
-                        &:hover {
-                            
-                            color: #ffffff;
-                        }
-                    }
-
-                    h5 {
-                        margin: 10px;
-                        @include responSatu() {
-                            font-size: 12pt;
-                        }
-                    }
-                }
-            }
-        }
+        
 
     }
     button {
@@ -369,30 +300,6 @@ $responsiveEmpat : 500px;
         align-items: center;
         flex-direction: column;
 
-        margin-right: 20px;
-
-        .textBerita {
-            border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-            // background-color: #2d3436;
-            width: 100%;
-            text-align: center;
-            // height: 10vh;
-            margin-top: 30px;
-
-            small {
-                cursor: pointer;
-                color: #d80010;
-                // width: 100%;
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-size: 8pt;
-                border-bottom: 5.5px solid #d80010;
-
-                
-            }
-        }
-
         .paragrapBerita {
 
             display: flex;
@@ -415,6 +322,26 @@ $responsiveEmpat : 500px;
         }
 
         
+    }
+
+    .cardContainer {
+    width: 100%;
+    height: auto;
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    
+    
+    // border: 1px solid pink;
+    margin-top: 15px;
+
+    @include responSatu() {
+        margin-top: 25px;
+    }
     }
 
 }
@@ -508,167 +435,18 @@ $responsiveEmpat : 500px;
 
 .cardContent {
     width: 100%;
-    height: 60vh;
+    // height: 60vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: 40px;
-    padding: 20px 15%;
+    margin-top: 15px;
+    padding: $padding;
 
-    .col {
-        //  border: 1px solid green;
-         height: 100%;
-         flex: auto;
-         margin: 0 10px;
-         background: #ffffff;
-         transition: .5s;
-         border-radius: 10px;
-
-         .imageContent {
-             width: 100%;
-             height: 30vh;
-
-             background: url(../../../img/megawati5.jpg);
-             background-size: cover;
-             border-top-left-radius: 10px;
-             border-top-right-radius: 10px;
-         }
-
-         .imageTwo {
-            width: 100%;
-            height: 30vh;
-
-            background: url(../../../img/megawati6.jpg);
-            background-size: cover;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-         }
-
-         .imageThree {
-            width: 100%;
-            height: 30vh;
-
-            background: url(../../../img/megawati7.jpg);
-            background-size: cover;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-         }
-
-         .textCard {
-             width: 100%;
-            //  height: 100%;
-             padding: 5px 20px;
-
-            //  border:  1px solid blue;
-
-             small {
-                 font-size: 7pt;
-                 color: #d80010;
-
-                 @include responSatu() {
-                    font-size: 5pt;
-                }
-             }
-
-             .kolsHome {
-
-                 @include responSatu() {
-                    font-size: 10pt;
-                }
-             }
-
-             p {
-                 font-size: 8pt;
-                 @include responSatu() {
-                    font-size: 6pt;
-                }
-             }
-         }
-    }
-}
-
-.cardContent2 {
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     
-    padding: 20px 15%;
-
-    .col {
-        //  border: 1px solid green;
-         height: 100%;
-         flex: auto;
-         margin: 0 10px;
-         background: #ffffff;
-         transition: .5s;
-         border-radius: 10px;
-
-         .imageContent {
-             width: 100%;
-             height: 30vh;
-
-             background: url(../../../img/megawati5.jpg);
-             background-size: cover;
-             border-top-left-radius: 10px;
-             border-top-right-radius: 10px;
-         }
-
-         .imageTwo {
-            width: 100%;
-            height: 30vh;
-
-            background: url(../../../img/megawati6.jpg);
-            background-size: cover;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-         }
-
-         .imageThree {
-            width: 100%;
-            height: 30vh;
-
-            background: url(../../../img/megawati7.jpg);
-            background-size: cover;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-         }
-
-         .textCard {
-             width: 100%;
-            //  height: 100%;
-             padding: 5px 20px;
-
-            //  border:  1px solid blue;
-
-             small {
-                 font-size: 7pt;
-                 color: #d80010;
-
-                 @include responSatu() {
-                    font-size: 5pt;
-                }
-             }
-
-             .kolsHome {
-
-                 @include responSatu() {
-                    font-size: 10pt;
-                }
-             }
-
-             p {
-                 font-size: 8pt;
-                 @include responSatu() {
-                    font-size: 6pt;
-                }
-             }
-         }
-    }
 }
+
 
 
 .btnSize {
@@ -679,26 +457,7 @@ $responsiveEmpat : 500px;
     
     // border: 1px solid crimson;
 
-    .btn2 {
-        border-radius: 25px;
-        // background-color: #d80010;
-        border: 1px solid #d80010;
-        text-transform: uppercase;
-        // margin-top: 20px;
-        font-size: 7pt;
-        font-weight: 500;
-        color: #d80010;
-        transition: .5s;
-
-        @include responSatu() {
-            font-size: 6pt;
-        }
-
-        &:hover {
-            background: #d80010;
-            color: #ffffff;
-        }
-}
+    
 }
 
 .backgroundRed {

@@ -40,7 +40,7 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 10px 10%;
+  padding: 40px 10%;
 }
 
 .wrapperPemilu .linkedBerita i span {
@@ -1397,9 +1397,14 @@
   display: -ms-flexbox;
   display: flex;
   height: 20vh;
-  width: 50%;
   background: #d80010;
   margin: 0 20px 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
 }
 
@@ -1407,12 +1412,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
-  width: 30%;
-  background-image: url(../../../img/pemilu12.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   overflow: hidden;
 }
 
@@ -1420,7 +1419,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -1477,8 +1475,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 20vh;
-  width: 50%;
   background: #d80010;
   overflow: hidden;
 }
@@ -1487,8 +1483,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 30%;
   background-image: url(../../../img/pemilu9.jpg);
   background-position: center;
@@ -1498,16 +1498,8 @@
 }
 
 .wrapperPemilu .container-1 .col2-container-1 .row2-col2 .col1-row2 img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
+  margin-left: 10px;
 }
 
 .wrapperPemilu .container-1 .col2-container-1 .row2-col2 .col2-row2 {
@@ -1519,7 +1511,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  width: 70%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

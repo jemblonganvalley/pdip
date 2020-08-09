@@ -1,0 +1,103 @@
+$table : 1261px;
+
+$responsiveSatu : 1085px;
+$responsiveDua : 1000px;
+$responsiveTiga : 728px;
+$responsiveEmpat : 500px;
+
+@mixin responSatu {
+    @media (max-width : #{$responsiveSatu}) {
+        @content;
+    }
+}
+@mixin responDua {
+    @media (max-width : #{$responsiveDua}) {
+        @content;
+    }
+}
+@mixin responTiga {
+    @media (max-width : #{$responsiveTiga}) {
+        @content;
+    }
+}
+@mixin responEmpat {
+    @media (max-width : #{$responsiveEmpat}) {
+        @content;
+    }
+}
+
+@import "../../utilities/variable/variables.scss";
+
+    
+
+    .cardCustom {
+        height: 100%;
+        flex: auto;
+        margin: 0 10px;
+        background: #ffffff;
+        
+        transition: .5s;
+        // border: 1px solid blue;
+        
+        &:hover {
+            box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);
+            background: $colors;
+            color: #ffffff;
+        }
+
+        .imageCard {
+            width: 100%;
+            height: 30vh;
+            background-size: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .VBMusic {
+                width: 35px;
+                height: 35px;
+                border: 1px solid #ffffff;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #ffffff;
+                font-size: 10pt;
+
+                &:hover {
+                    background: #ffffff;
+                    color: $colors;
+                }
+            }
+        }
+        
+        .text {
+            width: 100%;
+             padding: 10px 20px;
+            align-items: flex-start;
+
+            .textSmall {
+                font-size: 8pt;
+
+                @include responSatu() {
+                    font-size: 6pt;
+                }
+            }
+
+            .textH5 {
+                margin-top: 1rem;
+                @include responSatu() {
+                    font-size: 12pt;
+                }
+            }
+            .paragrap {
+                font-size: 7pt;
+                @include responSatu() {
+                   font-size: 6pt;
+               }
+            }
+        }
+    }

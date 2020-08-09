@@ -1,4 +1,6 @@
-$red : #d52028;
+
+@import "../../utilities/variable/variables.scss";
+
 $responsiveSatu : 1085px;
 $responsiveDua : 1000px;
 $responsiveTiga : 991px;
@@ -27,7 +29,7 @@ $responsiveEmpat : 719px;
 
 
 .navbar {
-    padding: 4px 10%;
+    padding: $paddingSmall;
     background: url(../../img/pattern-01.svg);
     // border-bottom: 0.5 solid grey;
     position: sticky;
@@ -70,13 +72,14 @@ $responsiveEmpat : 719px;
     .navbar-nav {
         list-style: none;
         li {
-            font-size: 8pt;
+            font-size: 9pt;
             text-transform: 
             uppercase;
-            font-weight: 300;
+            // font-weight: 300;
             transition: .3s;
             color: #202020;
             font-weight: 500;
+            transition: .3s;
 
             @include responSatu() {
                 font-size: 7pt;
@@ -94,15 +97,18 @@ $responsiveEmpat : 719px;
             
 
             &:hover {
-                color: #d52028;
+                color: $colors;
                 // font-weight: bold;
+                font-weight: 300;
+                font-size: 8pt;
             }
             a {
                 text-decoration: none;
-                color: rgb(255, 255, 255, .8);
+                color: rgba(255, 255, 255, .8);
 
                 .active, &:hover {
                     color: #ffffff;
+                   
                 }
             }
         }
@@ -117,13 +123,13 @@ $responsiveEmpat : 719px;
         font-size: 10px;
         font-weight: 500;
         font-style: italic;
-        background-color: $red;
+        background-color: $colors;
         color: #ffffff;
         width: 200px;
 
         &:focus {
             box-shadow: 0 0 0 0.2rem rgba(237, 29, 36, 0.25);
-            border-color: #ed1d24;
+            border-color: $colors;
         }
     }
     button {

@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../../img/logo_footer.png'
 import './MainFooter.scss'
+import Subscribe from '../subscribe/Subscribe'
 
 const MainFooter = ()=> {
     return (
@@ -28,6 +29,7 @@ const MainFooter = ()=> {
                     <span>DPP PDI Perjuangan</span>
                     <small>Jl. Diponegoro No. 58 Menteng<br/>Jakarta Pusat 10310 </small>
                 </div>
+                <Subscribe />
             </div>
         </div>
     )

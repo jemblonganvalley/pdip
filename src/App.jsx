@@ -10,9 +10,21 @@ import InformasiPage from './components/pages/informasi/InformasiPage';
 import PemiluPage from './components/pages/Pemilu/PemiluPage';
 import { useState } from 'react';
 import { useEffect } from 'react';
+<<<<<<< HEAD
 
+=======
+>>>>>>> d5df845cbb41be3708d45c3dfc30dd6beb3bd4d5
 import BeritaPage from './components/pages/berita/BeritaPage';
 import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
+import StrukturPage from './components/pages/struktur/StrukturPage';
+import DetailPengurus from './components/pages/detailpengurus/DetailPengurus';
+import Dpd from './components/dpd/Dpd';
+import VideoMedia from './components/pages/videomedia/VideoMedia';
+import Page1 from './components/pages/berita/page1/Page1';
+import Page2 from './components/pages/berita/page2/Page2';
+import MateriPokok from './components/pages/materipokok/MateriPokok';
+import BkbbWejangan from './components/pages/bkbb/BkbbWejangan'
+import AllComponent from './components/allcomponent/AllComponent';
 
 
 function App() {
@@ -32,17 +44,61 @@ function App() {
       prevScrollpos = currentScrollPos;
     })
 
+<<<<<<< HEAD
   }, [hide])
+=======
+  },[hide])
+>>>>>>> d5df845cbb41be3708d45c3dfc30dd6beb3bd4d5
 
   return (
     <Router>
 
       <MainNavbar hide={hide} />
+<<<<<<< HEAD
 
+=======
+>>>>>>> d5df845cbb41be3708d45c3dfc30dd6beb3bd4d5
 
       <div className="App">
 
         <Switch>
+
+          <Route path="/components">
+            <AllComponent />
+          </Route>
+
+          <Route path="/quotes">
+            <BkbbWejangan />
+          </Route>
+
+          <Route path="/materipokok">
+            <MateriPokok/>
+          </Route>
+
+          <Route path="/videomedia">
+            <VideoMedia/>
+          </Route>
+
+          <Route path="/dpd">
+            <Dpd/>
+          </Route>
+
+          <Route path="/detailpengurus">
+            <DetailPengurus/>
+          </Route>
+
+          <Route path="/struktur">
+            <StrukturPage/>
+          </Route>
+          
+          <Route path='/page2'>
+            <Page2 />
+          </Route>
+
+          <Route path='/page1'>
+            <Page1 />
+          </Route>
+
           <Route path="/pemilu">
             <PemiluPage />
           </Route>
@@ -59,10 +115,6 @@ function App() {
             <MultimediaPage />
           </Route>
 
-          <Route path="/multimedia">
-            <MultimediaPage />
-          </Route>
-
           <Route path="/ketuaumum">
             <KetuaUmumPage />
           </Route>
@@ -72,7 +124,7 @@ function App() {
           </Route>
 
           <Route path="/partai">
-            <PartaiPage />
+            <PartaiPage/>
           </Route>
 
           <Route path="/">

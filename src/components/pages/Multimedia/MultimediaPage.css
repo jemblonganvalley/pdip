@@ -38,17 +38,11 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 20px 15%;
-}
-
-.wrapperMultimedia .linkedMedia i span {
-  margin-left: 5px;
-  font-style: italic;
-  font-size: 8pt;
+  padding: 5px 10%;
 }
 
 .wrapperMultimedia .pidatoKU {
-  padding: 20px 15%;
+  padding: 10px 10%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,7 +53,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70vh;
+  height: 80vh;
 }
 
 .wrapperMultimedia .pidatoKU .col-lg-9 {
@@ -85,7 +79,7 @@
 
 .wrapperMultimedia .pidatoKU .col-lg-3 small {
   font-size: 8pt;
-  color: #c70000;
+  color: #d80010;
 }
 
 .wrapperMultimedia .pidatoKU .col-lg-3 span {
@@ -123,13 +117,13 @@
 }
 
 .wrapperMultimedia .pidatoKU .col-lg-3 .socialMedia i:hover {
-  color: #c70000;
+  color: #d80010;
   cursor: pointer;
 }
 
 .wrapperMultimedia .cardMedia {
   width: 100%;
-  padding: 20px 15%;
+  padding: 40px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,12 +223,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-attachment: fixed;
+  background-position: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .wrapperMultimedia .panggung .textPanggung {
@@ -262,7 +260,7 @@
 .wrapperMultimedia .panggung .textPanggung .btnPanggung {
   border-radius: 25px;
   color: #ffffff;
-  border: 1px solid #c70000;
+  border: 1px solid #d80010;
   width: 10vw;
   font-size: 9pt;
   text-transform: uppercase;
@@ -272,128 +270,14 @@
 }
 
 .wrapperMultimedia .panggung .textPanggung .btnPanggung:hover {
-  background-color: #c70000;
+  background-color: #d80010;
 }
 
 .wrapperMultimedia .cardMediaDua {
-  padding: 20px 15%;
+  padding: 40px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.wrapperMultimedia .cardMediaDua .kols {
-  margin: 10px;
-}
-
-.wrapperMultimedia .cardMediaDua .cols1 .cardMBody {
-  width: 100%;
-  background: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wrapperMultimedia .cardMediaDua .cols1 .cardMBody .cardMBImg {
-  width: 100%;
-  height: 45vh;
-  background: url(../../../img/ig-perempuan.png);
-  background-size: cover;
-}
-
-.wrapperMultimedia .cardMediaDua .cols1 .cardMBody .cardTextWrapper {
-  padding: 5px 20px;
-}
-
-.wrapperMultimedia .cardMediaDua .cols1 .cardMBody .cardTextWrapper .cardSmall {
-  font-size: 8pt;
-  padding: 10px;
-  color: #c70000;
-}
-
-.wrapperMultimedia .cardMediaDua .cols1 .cardMBody .cardTextWrapper .cardH4 {
-  padding: 0 10px;
-}
-
-.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 {
-  width: 100%;
-  background: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 .cardMBImg2 {
-  width: 100%;
-  height: 45vh;
-  background: url(../../../img/megawati12.png);
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 .cardMBImg2 .iconPlayMedia {
-  width: 40px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  font-size: 10pt;
-  -webkit-transition: .1s;
-  transition: .1s;
-  color: #ffffff;
-}
-
-.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 .cardMBImg2 .iconPlayMedia:hover {
-  width: 45px;
-  height: 45px;
-  background: #ffffff;
-  color: #2d3436;
-}
-
-.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 .cardTextWrapper2 {
-  padding: 5px 20px;
-}
-
-.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 .cardTextWrapper2 .cardSmall2 {
-  font-size: 8pt;
-  padding: 10px;
-  color: #c70000;
-}
-
-.wrapperMultimedia .cardMediaDua .cols2 .cardMBody2 .cardTextWrapper2 .cardH42 {
-  padding: 0 10px;
 }
 
 .wrapperMultimedia .videoBaruPage {
@@ -410,7 +294,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 15%;
+  padding: 20px 10%;
   width: 100%;
 }
 
@@ -433,7 +317,7 @@
 
 .wrapperMultimedia .videoBaruPage .cardVideoBaru {
   width: 100%;
-  height: 50vh;
+  min-width: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,129 +332,5 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin-top: 30px;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col {
-  height: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  margin: 0 10px;
-  background: #ffffff;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col:hover {
-  -webkit-box-shadow: 4px 17px 40px -30px rgba(0, 0, 0, 0.75);
-          box-shadow: 4px 17px 40px -30px rgba(0, 0, 0, 0.75);
-  background: #d80010;
-  color: #ffffff;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .imageCard {
-  width: 100%;
-  height: 30vh;
-  background-image: url(../../../img/megawati1.jpg);
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .imageCard .VBMusic {
-  width: 35px;
-  height: 35px;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  color: #ffffff;
-  font-size: 10pt;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .imageCard .VBMusic:hover {
-  background: #ffffff;
-  color: #c70000;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .two {
-  width: 100%;
-  height: 30vh;
-  background-image: url(../../../img/megawati2.jpg);
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .three {
-  width: 100%;
-  height: 30vh;
-  background-image: url(../../../img/megawati3.jpg);
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .text {
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 19vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .text small {
-  margin: 10px;
-  font-size: 8pt;
-  color: #d80010;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .text small:hover {
-  color: #ffffff;
-}
-
-.wrapperMultimedia .videoBaruPage .cardVideoBaru .col .text h5 {
-  margin: 10px;
 }
 /*# sourceMappingURL=MultimediaPage.css.map */

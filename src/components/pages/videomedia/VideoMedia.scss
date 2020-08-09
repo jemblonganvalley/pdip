@@ -1,0 +1,32 @@
+@import "../../../utilities/variable/variables.scss";
+
+
+.wrapperVideo {
+    width: 100%;
+    padding: $paddingSmall;
+    .linkedVideo {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        margin-top: 20px;
+    }
+    
+    .dividerVideo {
+        margin-top: 3.5rem;
+        border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+        // background-color: #2d3436;
+        width: 100%;
+        text-align: center;
+
+        .borderVideo {
+            width: 5%;
+            height: 5px;
+            background-color: $colors;
+            position: absolute;
+            // top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

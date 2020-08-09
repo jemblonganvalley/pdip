@@ -4,11 +4,14 @@ import backgroundHead from '../../../img/kampanye.jpg'
 import pdiBook1 from '../../../img/pdibook1.png'
 import pdiBook2 from '../../../img/pdibook2.png'
 import pdiBook3 from '../../../img/pdibook3.png'
-
+import {Link} from 'react-router-dom'
 
 
 import pdiLogo from '../../../img/pdibanteng.png'
 import MusicPdi from '../../musicpdi/MusicPdi'
+import MainButton from '../../buttons/MainButton'
+import MainDivider from '../../divider/MainDivider'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const PartaiPage = ()=>{
     return (
@@ -29,9 +32,10 @@ const PartaiPage = ()=>{
 
             {/* LINK PARTAI */}
             <div className="linkedPartai">
-                <i class="fa fa-home">
-                    <span>Home / Partai /</span>
-                </i>
+                <BreadCrumbs link1="Home"
+                                to1="/"
+                                page2="Partai"
+                                 />
             </div>
             {/* END */}
 
@@ -113,7 +117,7 @@ const PartaiPage = ()=>{
                         <img src={pdiLogo} alt="" width="180" />
                 </div>
                 <div className="col-lg-9 textBanteng">
-                    <h1>Lambang PDI Perjuangan</h1>
+                    <h1>TATA KELOLA PDI PERJUANGAN</h1>
                     <ul>
                         <li>Lambang PDI Perjuangan berupa gambar banteng hitam bermoncong putih dengan latar merah di dalam lingkaran bergaris hitam dan putih.</li>
                         <li>Warna dasar merah melambangkan berani mengambil resiko dalam memperjuangkan keadilan dan kebenaran untuk rakyat.</li>
@@ -124,18 +128,13 @@ const PartaiPage = ()=>{
                 </div>
             </div>
             {/* END */}
-
-                {/* BUTTON UNDUH */}
                 <div className="btnUnduh">
-                    <button className="btn"><span>unduh lambang</span></button>
+                    <MainButton name="Unduh Lambang" />
                 </div>
-                {/* END */}
-
                 {/* PENGURUS */}
                 <div className="pengurusPage">
-                    <div className="textPengurus">
-                        <small>Pengurus</small>
-                    </div>
+                    <MainDivider text="pengurus"
+                                    garisMerah="3rem" />
                     <div className="paragrapPengurus">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
                     </div>
@@ -145,16 +144,14 @@ const PartaiPage = ()=>{
                 {/* PHOTO PENGURUS */}
                 <div className="photoPengurus">
                     <h2>Struktur Pengurus Dewan Pimpinan Pusat<br/>PDI Perjuangan</h2>
-                    <button className="btn"><span>lihat</span></button>
+                    <Link className="btn lihat" to="/struktur"><span>lihat</span></Link>
                 </div>
                 {/* END */}
 
                 {/* MAPS */}
                 <div className="maps">
                     <h5>dewan pimpinan daerah pdi perjuangan</h5>
-                    <div className="imageMaps">
-
-                    </div>
+                    <Link as="div" className="imageMaps" to="" to="/dpd" ></Link>
                 </div>
                 {/* END */}
 
@@ -163,9 +160,9 @@ const PartaiPage = ()=>{
                     <h1>Anggota Legislatif</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia a voluptatem mollitia dolorum ea architecto, aliquid quidem fugit accusamus saepe ab repudiandae eos ipsum! Quaerat omnis dolores quidem reiciendis distinctio.</p>
                     <div className="btnGroup">
-                        <button className="btn"><span>DPR RI</span></button>
-                        <button className="btn"><span>DPRD Provinsi</span></button>
-                        <button className="btn"><span>DPRD Kabupaten Kota</span></button>
+                        <MainButton name="DPR RI" margin="0 10px" />
+                        <MainButton name="DPRD Provinsi" margin="0 10px" />
+                        <MainButton name="DPRD Kabupaten Kota" margin="0 10px" />
                     </div>
                 </div>
                 {/* END */}

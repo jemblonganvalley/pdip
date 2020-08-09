@@ -1,5 +1,4 @@
-$padding : 20px 10%;
-$red : #d80010;
+@import "../../../utilities/variable/variables.scss";
 
 .wrapperInformasi {
     width: 100%;
@@ -42,7 +41,7 @@ $red : #d80010;
             flex-direction: row;
             width: 40%;
             margin-top: 20px;
-            padding: $padding;
+            padding: $paddingTiny;
 
             i {
                 span {
@@ -60,25 +59,8 @@ $red : #d80010;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding: $padding;
-
-            .textProfil {
-                border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-                width: 100%;
-                text-align: center;
-                .profil {
-                    cursor: pointer;
-                    color: #d80010;
-                    // width: 100%;
-                    text-align: center;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    font-size: 10pt;
-                    border-bottom: 5.5px solid #d80010;
-                    // line-height: 1;
-                    
-                }
-            }
+            padding: $paddingTiny;
+            
             .paragrapProfil {
                 display: flex;
                 width: 100%;
@@ -144,60 +126,7 @@ $red : #d80010;
                 }
             //  END
 
-            // CARD ICON PROFIL
-                .cardIconProfil {
-                    display: flex;
-                    flex-direction: row;
-                    padding: $padding;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 1rem;
-
-                    .cardProfile {
-                        margin: 0 1rem;
-
-                        .textCardProfil {
-                            line-height: 1;
-                            margin-left: 1rem;
-                            font-size: 9pt;
-                            text-transform: uppercase;
-                        }
-                    }
-
-                    .cardProfileSatu {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 25%;
-
-                        // border: 1px solid green;
-                    }
-                    .cardProfileDua {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 25%;
-
-                        // border: 1px solid blue;
-                    }
-                    .cardProfileTiga {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 25%;
-
-                        // border: 1px solid brown;
-                    }
-                    .cardProfileEmpat {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 25%;
-
-                        // border: 1px solid crimson;
-                    }
-                }
-            // END
+            
 
             // YOUTUBE PROFIL
             .ytProfil {
@@ -237,15 +166,20 @@ $red : #d80010;
                 width: 100%;
                 // border: 1px solid blue;
                 .cardLaporan {
-                    width: 50%;
+                    width: 48%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     height: 20vh;
                     flex-direction: row;
-                    margin: 1rem 1rem;
+                    // margin: 1rem 1rem;
                     background: #e50209;
                     // border: 1px solid crimson;
+                    transition: .3s;
+
+                    &:hover {
+                        background: #2f3542;
+                    }
 
                     .imageHarta {
                         margin: 1rem;
@@ -290,13 +224,13 @@ $red : #d80010;
                 margin-top: 30px;
                 .tataCara {
                     cursor: pointer;
-                    color: #d80010;
+                    color: $colors;
                     // width: 100%;
                     text-align: center;
                     text-transform: uppercase;
                     font-weight: bold;
                     font-size: 10pt;
-                    border-bottom: 5.5px solid #d80010;
+                    border-bottom: 5.5px solid $colors;
                     // line-height: 1;
                     
                 }
@@ -342,14 +276,14 @@ $red : #d80010;
                         position: absolute;
                         left: 60%;
                         bottom: 20%;
-                        color: #d80010;
-                        border: 1px solid #d80010;
+                        color: $colors;
+                        border: 1px solid $colors;
                         font-size: 7pt;
                         text-transform: uppercase;
                         transition: .3s;
 
                         &:hover {
-                            background: #d80010;
+                            background: $colors;
                             color: #ffffff;
 
                         }
@@ -397,7 +331,7 @@ $red : #d80010;
             }
 
             .kolomFormulirSatu {
-                background: #d80010;
+                background: $colors;
                 // border: 1px solid #d80010;
                 color: #ffffff;
             }

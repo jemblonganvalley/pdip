@@ -46,7 +46,7 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 20px 10%;
+  padding: 5px 10%;
 }
 
 .wrapperInformasi .linkedInformasi i span {
@@ -69,23 +69,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 10%;
-}
-
-.wrapperInformasi .profilContainer .textProfil {
-  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-  width: 100%;
-  text-align: center;
-}
-
-.wrapperInformasi .profilContainer .textProfil .profil {
-  cursor: pointer;
-  color: #d80010;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 10pt;
-  border-bottom: 5.5px solid #d80010;
+  padding: 5px 10%;
 }
 
 .wrapperInformasi .profilContainer .paragrapProfil {
@@ -170,90 +154,9 @@
   width: 100%;
 }
 
-.wrapperInformasi .profilContainer .cardIconProfil {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 20px 10%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 1rem;
-}
-
-.wrapperInformasi .profilContainer .cardIconProfil .cardProfile {
-  margin: 0 1rem;
-}
-
-.wrapperInformasi .profilContainer .cardIconProfil .cardProfile .textCardProfil {
-  line-height: 1;
-  margin-left: 1rem;
-  font-size: 9pt;
-  text-transform: uppercase;
-}
-
-.wrapperInformasi .profilContainer .cardIconProfil .cardProfileSatu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 25%;
-}
-
-.wrapperInformasi .profilContainer .cardIconProfil .cardProfileDua {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 25%;
-}
-
-.wrapperInformasi .profilContainer .cardIconProfil .cardProfileTiga {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 25%;
-}
-
-.wrapperInformasi .profilContainer .cardIconProfil .cardProfileEmpat {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 25%;
-}
-
 .wrapperInformasi .profilContainer .ytProfil {
   margin-top: 2rem;
-  padding: 20px 10%;
+  padding: 40px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,7 +171,7 @@
 
 .wrapperInformasi .profilContainer .ytProfil .ytIframe {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   position: relative;
 }
 
@@ -295,7 +198,7 @@
 }
 
 .wrapperInformasi .profilContainer .containerLaporan .cardLaporan {
-  width: 50%;
+  width: 48%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,8 +213,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 1rem 1rem;
   background: #e50209;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperInformasi .profilContainer .containerLaporan .cardLaporan:hover {
+  background: #2f3542;
 }
 
 .wrapperInformasi .profilContainer .containerLaporan .cardLaporan .imageHarta {
@@ -352,7 +260,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 10%;
+  padding: 40px 10%;
 }
 
 .wrapperInformasi .tataCaraContainer .textTataCara {

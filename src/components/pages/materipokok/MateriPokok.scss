@@ -1,0 +1,43 @@
+@import "../../../utilities/variable/variables.scss";
+
+
+.wrapperMateri {
+    width: 100%;
+    padding: $padding;
+
+    .linkedMateri {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        margin-top: 20px;
+        // padding: 10px 10%;
+
+        i {
+            span {
+                margin-left: 5px;
+                font-style: italic;
+                font-size: 8pt;
+            }
+        }
+    }
+
+    .bkbbText {
+        border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+        width: 100%;
+        text-align: center;
+        // height: 10vh;
+        margin-top: 30px;
+
+        small {
+            cursor: pointer;
+            color: $colors;
+            // width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 8pt;
+            border-bottom: 5.5px solid $colors;
+        }
+    }
+}

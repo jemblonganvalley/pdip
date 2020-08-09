@@ -1,6 +1,6 @@
 $secondary : #f3f3f3;
-$padding : 20px 15%;
-$color : #c70000;
+@import "../../../utilities/variable/variables.scss";
+
 
     //START CSS
 
@@ -15,7 +15,7 @@ $color : #c70000;
         background-position: center;
 
         .backgrounds {
-            background-color: rgba(255, 0, 8, 0.8);
+            background-color: rgba(216, 0, 16, .8);
             width: 100%;
             height: 100%;
             display: flex;
@@ -40,19 +40,12 @@ $color : #c70000;
         width: 40%;
         margin-top: 20px;
         padding: $padding;
-        i {
-            span {
-                margin-left: 5px;
-                font-style: italic;
-                font-size: 8pt;
-            }
-        }
     }
     // END LINK PARTAI
 
     // START CONTAINER SATU
     .containerSatu {
-        padding: 20px 15%;
+        padding: 20px 10%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -63,6 +56,7 @@ $color : #c70000;
             justify-content: center;
             align-items: center;
             width: 100%;
+            // height: 50vh;
             // border: 1px solid green;
 
             .wrapperContentSatu {
@@ -168,7 +162,7 @@ $color : #c70000;
     
 
     .containerTiga {
-        padding: 20px 15%;
+        padding: $padding;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -193,39 +187,22 @@ $color : #c70000;
             }
         }
     }
+
     .btnUnduh {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 20px;
-
-        button {
-            border-radius: 15px;
-            border: 1px solid #c70000;
-            text-transform: uppercase;
-            color : #c70000;
-            transition: .3s;
-            letter-spacing: 1.5px;
-
-            &:hover {
-                background-color: #c70000;
-                color : #ffffff;
-
-            }
-            span {
-                font-size: 7pt;
-                
-            }
-        }
     }
+    
 
     .pengurusPage {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 20px 15%;
+        padding: $padding;
 
         .textPengurus {
             border-bottom: 1px solid rgba(45, 52, 54, 0.2);
@@ -237,13 +214,13 @@ $color : #c70000;
     
             small {
                 cursor: pointer;
-                color: #d80010;
+                color: $colors;
                 // width: 100%;
                 text-align: center;
                 text-transform: uppercase;
                 font-weight: bold;
                 font-size: 8pt;
-                border-bottom: 5.5px solid #d80010;
+                border-bottom: 5.5px solid $colors;
             }
         }
 
@@ -271,6 +248,8 @@ $color : #c70000;
         background-size: cover;
         height: 60vh;
         display: flex;
+        background-position: center;
+        background-attachment: fixed;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -282,9 +261,9 @@ $color : #c70000;
             font-weight: bold;
         }
 
-        button {
+        .btn {
             color: #ffffff;
-            border: 1px solid #ffffff;
+            background: $colors;
             border-radius: 25px;
 
             width: 10vw;
@@ -294,8 +273,7 @@ $color : #c70000;
             margin-top: 1.5rem;
 
             &:hover {
-                background: #ffffff;
-                color: #c70000;
+                background: #2f3542;
             }
         }
     }
@@ -312,12 +290,13 @@ $color : #c70000;
             font-weight: bold;
             font-size: 10pt;
         }
-        .imageMaps {
-            background: url(../../../img/maps.jpg);
-            background-size: cover;
-            width: 100%;
-            height: 56vh;
-        }
+            .imageMaps {
+                background: url(../../../img/maps.jpg);
+                background-size: cover;
+                width: 100%;
+                height: 56vh;
+                // cursor: pointer;
+            }
     }
 
     .anggotaLegislatif {
@@ -343,21 +322,7 @@ $color : #c70000;
             flex-direction: row;
             margin: 10px 0;
 
-            button {
-                border-radius: 25px;
-                border: 1px solid #c70000;
-                margin: 0 10px;
-                color: #c70000;
-
-                &:hover {
-                    background-color: #c70000;
-                    color: #f3f3f3;
-                }
-
-                span {
-                    font-size: 8pt;
-                }
-            }
+            
         }
     }
 }

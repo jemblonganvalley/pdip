@@ -16,7 +16,7 @@
 
 .wrapperPartai .lahirnyaPancasila .box-lahirnyaPancasila .redBox {
   width: 100%;
-  background-color: rgba(255, 0, 8, 0.8);
+  background-color: rgba(216, 0, 16, 0.8);
   height: 30%;
   margin-top: auto;
   position: absolute;
@@ -30,6 +30,12 @@
           align-items: center;
   color: #ffff;
   border-top: .2px solid white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapperPartai .lahirnyaPancasila .box-lahirnyaPancasila .redBox:hover {
+  background: #2f3542;
 }
 
 .wrapperPartai .lahirnyaPancasila .box-lahirnyaPancasila .redBox .red-box-title {
@@ -96,7 +102,7 @@
 }
 
 .wrapperPartai .materiPokokPendukung .divider-mpp .mpp-title {
-  color: #ff0008cc;
+  color: #d80010;
   text-align: center;
 }
 
@@ -107,7 +113,7 @@
 }
 
 .wrapperPartai .materiPokokPendukung .divider-mpp .block {
-  background-color: #ff0008cc;
+  background-color: #d80010;
   width: 270px;
   height: 10px;
   margin-top: auto;
@@ -134,7 +140,7 @@
   height: 120vh;
   background-color: #5d5d5d;
   position: absolute;
-  top: 110vh;
+  top: 44.3rem;
   z-index: -1;
 }
 
@@ -177,171 +183,41 @@
           flex-direction: row;
   width: 40%;
   margin-top: 20px;
-  padding: 10px 10%;
+  padding: 5px 10%;
 }
 
-.wrapperPartai .linkedPartai i span {
-  margin-left: 5px;
-  font-style: italic;
-  font-size: 8pt;
-}
-
-.wrapperPartai .containerSatu {
-  padding: 20px 15%;
+.wrapperPartai .wrapper3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperPartai .containerSatu .contentSatu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
-}
-
-.wrapperPartai .containerSatu .contentSatu .wrapperContentSatu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 20px 10%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.wrapperPartai .containerSatu .contentSatu .wrapperContentSatu .textContentSatu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-4 {
-  padding: 10px;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carouselPartai {
-  left: 30%;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carouselPartai .active {
-  background: none;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carouselPartai li {
-  border: 1px solid #ffffff;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carouselImgSatu {
-  width: 100%;
-  height: 80vh;
-  background: url(../../../img/megawati011.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carousel-caption {
-  left: 0;
-  bottom: 20%;
-  margin-left: 2.5rem;
-  text-align: left;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carousel-caption h5 {
-  font-style: italic;
-  font-size: 10pt;
-  font-weight: 300;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-md-4 {
-  margin: 10px 0;
+.wrapperPartai .wrapperCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 20px 10%;
+}
+
+.wrapperPartai .wrapperCard .cardKolum {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
 
-.wrapperPartai .containerSatu .contentSatu .col-md-4 .textContent {
-  margin-left: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-md-4 .textContent h4 {
-  font-size: 11pt;
-}
-
-.wrapperPartai .containerSatu .contentSatu .col-md-4 .textContent p {
-  font-size: 10px;
-  line-height: 1.5;
-}
-
-.wrapperPartai .containerDua {
-  padding: 20px 15%;
+.wrapperPartai .btnLihatSemua {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,52 +227,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.wrapperPartai .containerDua .contentDua {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 20px 10%;
 }
 
-.wrapperPartai .containerDua .contentDua .col {
-  border: 1px solid brown;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer {
-  background: url(../../../img/megawati10.png);
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2.5rem 7%;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .plyr {
-  width: 100%;
-  height: 6.5rem;
+.wrapperPartai .bannerBkbb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,149 +241,33 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../../../img/megawati10.png);
-  background-size: cover;
-  background-position: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background: url(../../../img/kids.png);
+  background-size: contain;
+  background-attachment: fixed;
   background-repeat: no-repeat;
+  color: #ffff;
+  background-position: center;
 }
 
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr:hover {
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr .iconMusic {
-  width: 40px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #ffffff;
-  border-radius: 50%;
+.wrapperPartai .bannerBkbb .custom {
+  margin: 1rem;
   text-align: center;
-  cursor: pointer;
-  font-size: 14pt;
-  -webkit-transition: .1s;
-  transition: .1s;
+  font-family: 'Roboto';
+  font-weight: bold;
 }
 
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr .iconMusic:hover {
-  width: 45px;
-  height: 45px;
-  font-size: 16pt;
-  background: #2d3436;
-  color: #ffffff;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .plyr .backplyr .iconMusic i {
-  margin-left: 2px;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .partitur {
-  margin-top: 3.5rem;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .partitur img {
-  cursor: pointer;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .minusOn {
-  margin-top: 2.5rem;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-4 .minusOn img {
-  cursor: pointer;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-8 {
-  margin-left: 2rem;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik small {
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 9pt;
-  letter-spacing: .8;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik .judulLagu {
-  font-size: 15pt;
-  text-transform: uppercase;
-  color: #ffffff;
-  letter-spacing: .8px;
-  font-weight: 300;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik .lirik {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 10pt;
-  font-weight: 700;
-  margin-top: 1rem;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .contentMusic .col-sm-8 .containerLirik p {
+.wrapperPartai .bannerBkbb small {
+  margin: 1rem;
   font-size: 8pt;
-  letter-spacing: .8px;
-  margin-top: 1rem;
-  color: #ffffff;
+  font-style: italic;
 }
 
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic {
-  width: 100%;
+.wrapperPartai .wrapperQuotes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -558,83 +277,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2.5rem 7%;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .mulai {
-  height: 15vh;
-  background: #ff0008cc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .mulai .mulaiIcon {
-  width: 30px;
-  height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  -webkit-transition: .3s;
-  transition: .3s;
-  cursor: pointer;
-  font-size: 10pt;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .mulai .mulaiIcon:hover {
-  background: #ffffff;
-  color: #2d3436;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm {
-  border: 1px solid blue;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: #ffffff;
-  padding: 10px 10px;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm .pdiJudul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: relative;
+  width: 100%;
+  padding: 20px 10%;
 }
 
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm .pdiJudul h4 {
-  color: #2d3436;
-  font-size: 12pt;
-}
-
-.wrapperPartai .containerDua .contentDua .musicPlayer .wrapperContentMusic .playerMusic .rythm .pdiJudul i {
-  position: absolute;
-  right: 0;
-  color: #ff0008cc;
-  text-align: right;
+.wrapperPartai .wrapperQuotes img {
+  margin: 1rem;
 }
 /*# sourceMappingURL=BkbbPage.css.map */
