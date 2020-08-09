@@ -48,6 +48,12 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                             <br/><br/>
                             Atas Rahmat dan Bimbingan Yang Maha Kuasa<br/>Kita Telah Bertekad Berjuang<br/>Berjuang untuk Satu Tujuan Mulia<br/>Mencapai Indonesia Sentosa
                             <br/><br/>
+                            Bersama PDI Perjuangan<br/>Bersama PDI Perjuangan<br/>Wadah Kedaulatan Rakyat Indonesia<br/>Atas Berkat dan Kemurahan Yang Maha Esa<br/>PDI Perjuangan Jaya!
+                            
+                            Atas Kasih dan Kehendak Yang Maha Pencipta<br/>Kita Telat Sepakat Bersatu<br/>Bersatu Dalam Satu Rampak Barisan<br/>Menentang Kemiskinan
+                            <br/><br/>
+                            Atas Rahmat dan Bimbingan Yang Maha Kuasa<br/>Kita Telah Bertekad Berjuang<br/>Berjuang untuk Satu Tujuan Mulia<br/>Mencapai Indonesia Sentosa
+                            <br/><br/>
                             Bersama PDI Perjuangan<br/>Bersama PDI Perjuangan<br/>Wadah Kedaulatan Rakyat Indonesia<br/>Atas Berkat dan Kemurahan Yang Maha Esa<br/>PDI Perjuangan Jaya! </p>
                         </div>
                     </div>
@@ -68,9 +74,9 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                                 <div className="progress-bar bg-danger" role="progressbar" style={{width: '1%'}} aria-valuenow={25} aria-valuemin={0} aria-valuemax={100} />
                                 </div>
                                 <div className="iconsPlay">
-                                    <i class="fa fa-play">0</i>
-                                    <i class="fa fa-heart">0</i>
-                                    <i class="fa fa-comment">0</i>
+                                    <i class="fa fa-play"><span className="textPlay">0</span></i>
+                                    <i class="fa fa-heart"><span className="textPlay">0</span></i>
+                                    <i class="fa fa-comment"><span className="textPlay">0</span></i>
                                     <span className="duration">0:00</span>
                                 </div>
                             </div>

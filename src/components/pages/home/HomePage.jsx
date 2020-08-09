@@ -165,14 +165,15 @@ const HomePage = ()=> {
                         TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                         paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                         borderRadius="10px" />
-                <Cards imageCard={megawati7} 
+                
+            </div>
+            <div className="cardContent">
+            <Cards imageCard={megawati7} 
                         textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                         TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                         paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                         borderRadius="10px" />
-            </div>
-            <div className="cardContent">
-                <Cards imageCard={megawati5} 
+                        <Cards imageCard={megawati5} 
                         textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                         TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                         paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?" />

@@ -87,16 +87,8 @@ function App() {
             <Page1 />
           </Route>
 
-          <Route path="/pemilu">
-            <PemiluPage />
-          </Route>
-
           <Route path="/informasi">
             <InformasiPage />
-          </Route>
-
-          <Route path="/berita">
-            <BeritaPage />
           </Route>
 
           <Route path="/multimedia">
