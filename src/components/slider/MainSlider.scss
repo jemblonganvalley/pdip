@@ -169,7 +169,7 @@ $phoneSatu : 600px;
     width: 100%;
 
     .carousel-inner {
-        background-color: $colors;
+
         .carousel-item {
             width: 105%;
         }
@@ -188,59 +188,46 @@ $phoneSatu : 600px;
             left: 29%;
             
         }
-        
-        .indikator {
-            @include phoneSatu() {
-                font-size: 8pt;
+            .indikator {
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                @include phoneSatu() {
+                    font-size: 8pt;
+                    
+                }
+            }
+    
+            .active {
+                opacity: 1;
+                color: #464646;
+                background-color: #ffffff;
+
+            }
+    
+            small {
+                cursor: pointer;
+                margin: 0 5px;
+                opacity: 0.5;
+                color: #ffffff;
+                transition: opacity .6s ease;
+                // border: 1px solid blue;
+                // width: 20px;
+                // height: 20px;
+                font-weight: bold;
+                font-size: 9pt;
+                text-align: center;
+                font-family: 'Josefin Sans';
+                
+    
+                @include phoneSatu() {
+                    margin: 0 5px;
+                }
                 
             }
-        }
-
-        .active {
-            opacity: 1;
-            background: #ffffff;
-            color: #464646;
-        }
-
-        small {
-            cursor: pointer;
-            margin: 0 5px;
-            opacity: 0.5;
-            color: #ffffff;
-            transition: opacity .6s ease;
-            // border: 1px solid blue;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            font-weight: bold;
-            font-size: 7pt;
-            text-align: center;
-            font-family: 'Josefin Sans';
-            
-
-            @include phoneSatu() {
-                margin: 0 5px;
-            }
-            
-        }
-    } 
-}
-
-button {
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    background: none;
-    border: 1px solid #ffffff;
-    height: 25px;
-    color: #ffffff;
-    transition: .3s;
-    margin-right: 2rem;
-    position: absolute;
-    bottom: -50%;
+        
+    }
 }
 
 .prev-text {
