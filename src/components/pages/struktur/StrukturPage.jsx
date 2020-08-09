@@ -1,10 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './StrukturPage.scss'
 import StrukturPaginate from '../../pagination/StrukturPaginate'
 import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const StrukturPage = ()=> {
+
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
+    
     return (
         <div className="pageStruktur">
             {/* HEADERS */}

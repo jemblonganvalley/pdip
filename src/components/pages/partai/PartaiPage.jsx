@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './PartaiPage.scss'
 import backgroundHead from '../../../img/kampanye.jpg'
 import pdiBook1 from '../../../img/pdibook1.png'
@@ -14,6 +14,11 @@ import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const PartaiPage = ()=>{
+
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
+
     return (
     
     // START PARTAI

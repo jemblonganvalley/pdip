@@ -1,10 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './DetailPengurus.scss'
 import profil from '../../../img/profil.png'
 import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const DetailPengurus = ()=> {
+
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
+
     return (
         <div className="wrapperDetail">
             {/* HEADERS */}

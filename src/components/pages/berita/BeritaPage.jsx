@@ -1,5 +1,5 @@
 // Import to React
-import React from 'react'
+import React, {useEffect} from 'react'
 // END Import to React
 
 // Import to CSS
@@ -9,6 +9,9 @@ import { Link } from 'react-router-dom'
 
 // Create Component
 const BeritaPage = () => {
+
+
+
     return (
         <>
             <div className="wrapperBerita">

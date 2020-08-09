@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './InformasiPage.scss'
 import IconCardSatu from '../../../img/networking.png'
 import IconCardDua from '../../../img/target.png'
@@ -12,8 +12,14 @@ import CardMaps from '../../cardmaps/CardMaps'
 import CardsProfile from '../../cardIconProfil/CardsProfile'
 import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
+import WidgetBerita from '../../widget/widgetBerita/WidgetBerita'
 
 const InformasiPage = ()=> {
+
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
+
     return (
 
         // START INFORMASI
@@ -149,8 +155,12 @@ const InformasiPage = ()=> {
             </div>
             {/* END */}
 
-            <CardMaps/>
+            {/* <CardMaps/> */}
 
+            <div className="wrapperWidget">
+                <WidgetBerita name="berita" col='8'/>
+                <WidgetBerita name="beritaFoto" col='4'/>
+            </div>
 
         </div>
     )

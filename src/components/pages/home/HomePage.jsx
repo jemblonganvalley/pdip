@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect} from 'react'
 // import './HomePage.css'
 import './HomePage.scss'
 import MainSlider from '../../slider/MainSlider'
@@ -22,7 +22,9 @@ import WidgetBerita from '../../widget/widgetBerita/WidgetBerita'
 
 const HomePage = ()=> {
 
-    
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
 
     return (
         <div classname="homepage">
