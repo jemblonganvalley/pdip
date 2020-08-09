@@ -68,9 +68,9 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                                 <div className="progress-bar bg-danger" role="progressbar" style={{width: '1%'}} aria-valuenow={25} aria-valuemin={0} aria-valuemax={100} />
                                 </div>
                                 <div className="iconsPlay">
-                                    <i class="fa fa-play">0</i>
-                                    <i class="fa fa-heart">0</i>
-                                    <i class="fa fa-comment">0</i>
+                                    <i class="fa fa-play"><span className="textPlay">0</span></i>
+                                    <i class="fa fa-heart"><span className="textPlay">0</span></i>
+                                    <i class="fa fa-comment"><span className="textPlay">0</span></i>
                                     <span className="duration">0:00</span>
                                 </div>
                             </div>

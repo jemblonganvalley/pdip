@@ -6,10 +6,8 @@ import MainFooter from './components/footer/MainFooter';
 import PartaiPage from './components/pages/partai/PartaiPage';
 import MultimediaPage from './components/pages/multimedia/MultimediaPage';
 import BkbbPage from './components/pages/bkbb/BkbbPage'
-import BeritaPage from './components/pages/berita/BeritaPage';
 import InformasiPage from './components/pages/informasi/InformasiPage';
-import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
-import PemiluPage from './components/pages/Pemilu/PemiluPage';
+import KetuaUmumPage from './components/pages/ketuaumum/KetuaUmumPage';
 import StrukturPage from './components/pages/struktur/StrukturPage';
 import DetailPengurus from './components/pages/detailpengurus/DetailPengurus';
 import Dpd from './components/dpd/Dpd';
@@ -44,16 +42,8 @@ function App() {
             <StrukturPage/>
           </Route>
 
-          <Route path="/pemilu">
-            <PemiluPage />
-          </Route>
-
           <Route path="/informasi">
             <InformasiPage />
-          </Route>
-
-          <Route path="/berita">
-            <BeritaPage />
           </Route>
 
           <Route path="/multimedia">
