@@ -51,14 +51,8 @@ function App() {
 
         <Switch>
 
-
-
           <Route path='/pemilu'>
             <PemiluPage />
-          </Route>
-
-          <Route path="/components">
-
           </Route>
 
           <Route path="/quotes">
@@ -70,19 +64,19 @@ function App() {
           </Route>
 
           <Route path="/videomedia">
-
+            <VideoMedia />
           </Route>
 
           <Route path="/dpd">
-
+            <Dpd />
           </Route>
 
           <Route path="/detailpengurus">
-
+            <DetailPengurus />
           </Route>
 
           <Route path="/struktur">
-
+            <StrukturPage />
           </Route>
 
           <Route path='/page2'>
@@ -94,7 +88,7 @@ function App() {
           </Route>
 
           <Route path="/informasi">
-
+            <InformasiPage />
           </Route>
 
           <Route path='/berita'>
@@ -102,7 +96,7 @@ function App() {
           </Route>
 
           <Route path="/multimedia">
-
+            <MultimediaPage />
           </Route>
 
           <Route path="/ketuaumum">
@@ -114,7 +108,7 @@ function App() {
           </Route>
 
           <Route path="/partai">
-
+            <PartaiPage />
           </Route>
 
           <Route path="/home">
