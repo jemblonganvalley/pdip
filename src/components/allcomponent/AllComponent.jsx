@@ -14,7 +14,7 @@ const AllComponent = () => {
 
         <Button variant='danger' size='sm' style={{
             borderRadius : '100px',
-        }} value={['test', 'text2']} >test</Button>
+        }} value={['test', 'text2']} >saya ini test</Button>
         
     </div>
   )
