@@ -12,6 +12,7 @@ import perempuan from '../../../img/ig-perempuan.png'
 import megawati12 from '../../../img/megawati12.png'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import MainButton from '../../buttons/MainButton'
+import MainDivider from '../../divider/MainDivider'
 
 const MultimediaPage = ()=> {
     return (
@@ -87,9 +88,7 @@ const MultimediaPage = ()=> {
             
 
             <div className="videoBaruPage">
-                <div className="textVideoBaru">
-                    <small className="videoBaru">video terbaru</small>
-                </div>
+                    <MainDivider text="Video Terbaru" />
                 <div className="cardVideoBaru">
                 <Cards imageCard={megawati1}
                                 textSmall="Admin PDI Perjuangan | 1 Januari 2019"
