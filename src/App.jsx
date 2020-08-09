@@ -4,14 +4,14 @@ import MainNavbar from './components/navbar/MainNavbar';
 import HomePage from './components/pages/home/HomePage';
 import MainFooter from './components/footer/MainFooter';
 import PartaiPage from './components/pages/partai/PartaiPage';
-import MultimediaPage from './components/pages/multimedia/MultimediaPage';
+import MultimediaPage from './components/pages/multimediaPage/MultimediaPage';
 import BkbbPage from './components/pages/bkbb/BkbbPage'
 import InformasiPage from './components/pages/informasi/InformasiPage';
 import PemiluPage from './components/pages/Pemilu/PemiluPage';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import BeritaPage from './components/pages/berita/BeritaPage';
-import KetuaUmumPage from './components/pages/ketuaumum/KetuaUmumPage';
+import KetuaUmumPage from './components/pages/KetuaUmum/KetuaUmumPage';
 import StrukturPage from './components/pages/struktur/StrukturPage';
 import DetailPengurus from './components/pages/detailpengurus/DetailPengurus';
 import Dpd from './components/dpd/Dpd';
