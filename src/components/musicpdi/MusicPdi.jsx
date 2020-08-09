@@ -8,9 +8,9 @@ import './MusicPdi.scss'
 
 const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
 
-    
+    let x = document.getElementById("audio")
 
-    
+        
 
     return (
         <div className="musiPdi">
@@ -61,7 +61,8 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                     <div className="col-md-12 playerMusic">
                         <div className="wrapperPlayerMusic">
                             <div className="playButton">
-                                <div className="playbtn">
+                                <audio src="https://file-examples-com.github.io/uploads/2017/11/file_example_OOG_1MG.ogg" id="audio"></audio>
+                                <div className="controls" id="audioControl">
                                     <i class="fa fa-play"></i>
                                 </div>
                             </div>
@@ -71,13 +72,16 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                                 <i class="fa fa-heart"></i>
                                 </div>
                                 <div className="progress" style={{height: 1}}>
-                                <div className="progress-bar bg-danger" role="progressbar" style={{width: '1%'}} aria-valuenow={25} aria-valuemin={0} aria-valuemax={100} />
+                                <canvas id="progress" width="500" height="100"></canvas>
                                 </div>
                                 <div className="iconsPlay">
                                     <i class="fa fa-play"><span className="textPlay">0</span></i>
                                     <i class="fa fa-heart"><span className="textPlay">0</span></i>
                                     <i class="fa fa-comment"><span className="textPlay">0</span></i>
-                                    <span className="duration">0:00</span>
+                                    <div className="time">
+                                        <span className="currentTime" id="current-time"> /</span>
+                                        <span className="duration" id="duration"> </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

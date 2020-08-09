@@ -160,6 +160,7 @@
 
                     ::-webkit-scrollbar {
                         width: 10px;
+                        background: transparent;
                       }
 
                     ::-webkit-scrollbar-track {
@@ -197,7 +198,7 @@
                     justify-content: center;
                     align-items: center;
 
-                    .playbtn {
+                    .controls {
                         border-radius: 50%;
                         // background: #ffffff;
                         border: 1px solid #ffffff;
@@ -269,9 +270,13 @@
                                 margin: 0 .3rem;
                             }
                         }
-                        .duration {
+                        .time {
                             position: absolute;
                             right: 0;
+                            color: #ecf0f1;
+                        }
+
+                        .duration {
                             color: #ecf0f1;
                         }
                     }
