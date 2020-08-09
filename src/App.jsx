@@ -51,6 +51,12 @@ function App() {
 
         <Switch>
 
+
+
+          <Route path='/pemilu'>
+            <PemiluPage />
+          </Route>
+
           <Route path="/components">
 
           </Route>
@@ -89,6 +95,10 @@ function App() {
 
           <Route path="/informasi">
 
+          </Route>
+
+          <Route path='/berita'>
+            <BeritaPage />
           </Route>
 
           <Route path="/multimedia">
