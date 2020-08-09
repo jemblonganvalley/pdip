@@ -1,9 +1,285 @@
-import React, {useEffect, use} from 'react'
+import React, {useEffect, use, useState} from 'react'
 import logo from '../../img/pdiperjuangan02.svg'
 import './MainNavbar.scss'
 import {NavLink} from 'react-router-dom'
+import { Dropdown } from 'react-bootstrap'
+import DropDown from './DropDown'
 
 const MainNavbar = ()=> {
+
+    let [show, setShow] = useState('')
+    let [menu, setMenu] = useState([
+      {
+        id : 1,
+        name : 'home',
+        to : '/home',
+        listItem : [
+          {
+          listName : 'Partai',
+          listTo : '#Partai'
+          },
+          {
+          listName : 'Bung Karno Bapak Bangsa',
+          listTo : '#Bung Karno Bapak Bangsa'
+          },
+          {
+          listName : 'PIDATO KETUA UMUM',
+          listTo : '#PIDATO KETUA UMUM'
+          },
+          {
+          listName : 'MULTIMEDIA',
+          listTo : '#MULTIMEDIA'
+          },
+          {
+          listName : 'BERITA',
+          listTo : '#BERITA'
+          },
+          {
+          listName : 'INFORMASI PUBLIK ',
+          listTo : '#INFORMASI PUBLIK '
+          },
+          {
+          listName : 'PEMILU',
+          listTo : '#PEMILU'
+          }
+        ]
+      },
+       {
+        id : 2,
+        name : 'partai',
+        to : '/partai',
+        listItem : [
+          {
+          listName : 'Ad/Art',
+          listTo : '#Ad/Art'
+          },
+          {
+          listName : 'Visi Dan Misi',
+          listTo : '#Visi Dan Misi'
+          },
+          {
+          listName : 'Lambang dan Bendera',
+          listTo : '#Lambang dan Bendera'
+          },
+          {
+          listName : 'Peraturan Partai',
+          listTo : '#Peraturan Partai'
+          },
+          {
+          listName : 'Piagam PDI Perjuangan',
+          listTo : '#Piagam PDI Perjuangan'
+          },
+          {
+          listName : 'AStruktur dan Komposisi ',
+          listTo : '#AStruktur dan Komposisi '
+          },
+          {
+          listName : 'Anggota Legislatif',
+          listTo : '#Anggota Legislatif'
+          },
+           {
+          listName : 'Lagu Perjuangan',
+          listTo : '#Lagu Perjuangan'
+          },
+        ]
+      },
+       {
+        id : 3,
+        name : 'bung karno bapak bangsa',
+        to : '/bungkarno',
+        listItem : [
+          {
+          listName : 'Pidato Bung Karno 1 Juni  1945',
+          listTo : '#Pidato Bung Karno 1 Juni  1945'
+          },
+          {
+          listName : 'Indonesia Menggugat',
+          listTo : '#Indonesia Menggugat'
+          },
+          {
+          listName : 'Mencapai Indonesia Merdeka',
+          listTo : '#Mencapai Indonesia Merdeka'
+          },
+          {
+          listName : 'Membangun Dunia kembali 1960',
+          listTo : '#Membangun Dunia kembali 1960'
+          },
+          {
+          listName : 'Nawaksara tahun 1966',
+          listTo : '#Nawaksara tahun 1966'
+          },
+          {
+          listName : 'Kapitalisme Bangsa sendiri Tahun 1932',
+          listTo : '#Kapitalisme Bangsa sendiri Tahun 1932'
+          },
+          {
+          listName : 'Deklarasi Ekonomi Tahun 1963; dan',
+          listTo : '#Deklarasi Ekonomi Tahun 1963; dan'
+          },
+           {
+          listName : 'Marhenisme adalah Teori Perjuangan Tahun 1965',
+          listTo : '#Marhenisme adalah Teori Perjuangan Tahun 1965'
+          },
+        ]
+      },
+       {
+        id : 4,
+        name : 'ketua umum',
+        to : '/ketuaumum',
+        listItem : [
+          {
+          listName : 'Kongres',
+          listTo : '#Kongres'
+          },
+          {
+          listName : 'Rakernas',
+          listTo : '#Rakernas'
+          },
+          {
+          listName : 'Rakornas',
+          listTo : '#Rakornas'
+          },
+          {
+          listName : 'Sikap Politik',
+          listTo : '#Sikap Politik'
+          }
+        ]
+      },
+       {
+        id : 5,
+        name : 'multimedia',
+        to : '/multimedia',
+        listItem : [
+          {
+          listName : 'Siaran Pers',
+          listTo : '#Siaran Pers'
+          },
+          {
+          listName : 'Streaming',
+          listTo : '#Streaming'
+          },
+          {
+          listName : 'Video',
+          listTo : '#Video'
+          },
+          {
+          listName : 'Video Dokumentasi',
+          listTo : '#Video Dokumentasi'
+          },
+          {
+          listName : 'Teaser Video',
+          listTo : '#Teaser Video'
+          }
+        ]
+      },
+       {
+        id : 6,
+        name : 'berita',
+        to : '/berita',
+        listItem : [
+          {
+          listName : 'Nasional',
+          listTo : '#Nasional'
+          },
+          {
+          listName : 'Daerah',
+          listTo : '#Daerah'
+          },
+          {
+          listName : 'Kegiatan Partai',
+          listTo : '#Kegiatan Partai'
+          },
+          {
+          listName : 'Foto',
+          listTo : '#Foto'
+          },
+          {
+          listName : 'Foto Berita',
+          listTo : '#Foto Berita'
+          },
+          {
+          listName : 'Infografis',
+          listTo : '#Infografis'
+          }
+        ]
+      },
+       {
+        id : 7,
+        name : 'informasi publik',
+        to : '/informasi',
+        listItem : [
+          {
+          listName : 'Profil PPID',
+          listTo : '#Profil PPID'
+          },
+          {
+          listName : 'Struktur PPID PDI PERJUANGAN',
+          listTo : '#Struktur PPID PDI PERJUANGAN'
+          },
+          {
+          listName : 'Maklumat PPID',
+          listTo : '#Maklumat PPID'
+          },
+          {
+          listName : 'Tugas Dan Fungsi PPID',
+          listTo : '#Tugas Dan Fungsi PPID'
+          },
+          {
+          listName : 'Regulasi',
+          listTo : '#Regulasi'
+          },
+          {
+          listName : 'LHKPN',
+          listTo : '#LHKPN'
+          },
+          {
+          listName : 'Laporan Keuangan',
+          listTo : '#Laporan Keuangan'
+          },
+           {
+          listName : 'Regulasi',
+          listTo : '#Regulasi'
+          },
+          {
+          listName : 'Formulir Permintaan Informasi Publik',
+          listTo : '#Formulir Permintaan Informasi Publik'
+          },
+          {
+          listName : 'Tata Cara Memperoleh Informasi',
+          listTo : '#Tata Cara Memperoleh Informasi'
+          },
+          
+        ]
+      },
+       {
+        id : 8,
+        name : 'pemilu',
+        to : '/pemilu',
+        listItem : [
+          {
+          listName : 'Pilkada',
+          listTo : '#Pilkada'
+          },
+          {
+          listName : 'Pileg',
+          listTo : '#Pileg'
+          },
+          {
+          listName : 'Pilpres',
+          listTo : '#Pilpres'
+          }
+        ]
+      },
+
+    ])
+
+
+
+    const handleShow = (e)=>{
+      setShow(e.target.value)
+      console.log(show);
+    }
+
     return (
       // START NAVBAR
 
@@ -17,30 +293,31 @@ const MainNavbar = ()=> {
               </button>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li className="nav-item" >
-                    <NavLink className="nav-link" to="/home" activeClassName='active'>Home</NavLink>
+
+                 {menu.map((e)=>(
+                    <li className="nav-item" style={{
+                    position : 'relative'
+                  }} 
+                    key={e.id}
+                    onMouseOver={()=>{
+                      setShow(e.name)
+                      // console.log(show);
+                    }}
+
+                    onMouseLeave={()=>{
+                      setShow('')
+                    }}
+                    
+                  >
+                    <NavLink className="nav-link" to={e.to} activeClassName='active'>{e.name}</NavLink>
+                      {show === e.name && (
+                          <DropDown menuItem={e.listItem}/>
+                      )}
+
                   </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/partai" >Partai</NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/bungkarno" >bung karno bapak bangsa</NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/ketuaumum" >ketua umum</NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/multimedia" >multimedia</NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/berita" >berita</NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/informasi" >informasi publik</NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/pemilu" activeClassName='active'>pemilu</NavLink>
-                  </li>
+                 ))}
+                  
+               
                 </ul>
                 <form className="d-inline-flex">
                   <input className="form-control mr-2" type="text" placeholder="Search for something" name="search" />

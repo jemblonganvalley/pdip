@@ -1,0 +1,13 @@
+@import "../../utilities/variable/variables.scss";
+
+.dropdownMenu{
+
+    a {
+        color: $black !important;
+
+        &:hover{
+            color: $colors !important;
+        }
+    }
+
+}
