@@ -1,0 +1,418 @@
+.wrapperPartai {
+  width: 100%;
+}
+
+.wrapperPartai .headers {
+  background: url(../../../img/kampanye.jpg);
+  background-size: cover;
+  height: 25vh;
+  background-position: center;
+}
+
+.wrapperPartai .headers .backgrounds {
+  background-color: rgba(216, 0, 16, 0.8);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.wrapperPartai .headers .backgrounds .textBackgroundPartai {
+  width: 30%;
+  height: 50%;
+  margin-left: 13rem;
+}
+
+.wrapperPartai .linkedPartai {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  margin-top: 20px;
+  padding: 40px 10%;
+}
+
+.wrapperPartai .containerSatu {
+  padding: 20px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapperPartai .containerSatu .contentSatu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.wrapperPartai .containerSatu .contentSatu .wrapperContentSatu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperPartai .containerSatu .contentSatu .wrapperContentSatu .textContentSatu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperPartai .containerSatu .contentSatu .col-lg-4 {
+  padding: 10px;
+}
+
+.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carouselPartai {
+  left: 30%;
+}
+
+.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carouselPartai .active {
+  background: none;
+}
+
+.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carouselPartai li {
+  border: 1px solid #ffffff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carouselImgSatu {
+  width: 100%;
+  height: 80vh;
+  background: url(../../../img/megawati011.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carousel-caption {
+  left: 0;
+  bottom: 20%;
+  margin-left: 2.5rem;
+  text-align: left;
+}
+
+.wrapperPartai .containerSatu .contentSatu .col-lg-8 .wrapperCarousel .carousel-caption h5 {
+  font-style: italic;
+  font-size: 10pt;
+  font-weight: 300;
+}
+
+.wrapperPartai .containerSatu .contentSatu .col-md-4 {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrapperPartai .containerSatu .contentSatu .col-md-4 .textContent {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+.wrapperPartai .containerSatu .contentSatu .col-md-4 .textContent h4 {
+  font-size: 11pt;
+}
+
+.wrapperPartai .containerSatu .contentSatu .col-md-4 .textContent p {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.wrapperPartai .containerTiga {
+  padding: 40px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+.wrapperPartai .containerTiga .textBanteng {
+  margin-left: 2rem;
+}
+
+.wrapperPartai .containerTiga .textBanteng h1 {
+  font-size: 30pt;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.wrapperPartai .containerTiga .textBanteng ul {
+  font-size: 10pt;
+}
+
+.wrapperPartai .btnUnduh {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.wrapperPartai .pengurusPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 10%;
+}
+
+.wrapperPartai .pengurusPage .textPengurus {
+  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wrapperPartai .pengurusPage .textPengurus small {
+  cursor: pointer;
+  color: #d80010;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 8pt;
+  border-bottom: 5.5px solid #d80010;
+}
+
+.wrapperPartai .pengurusPage .paragrapPengurus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.wrapperPartai .pengurusPage .paragrapPengurus p {
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
+
+.wrapperPartai .photoPengurus {
+  width: 100%;
+  background: url(../../../img/pengurus.png);
+  background-size: cover;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.wrapperPartai .photoPengurus h2 {
+  margin-top: 6rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.wrapperPartai .photoPengurus .btn {
+  color: #ffffff;
+  background: #d80010;
+  border-radius: 25px;
+  width: 10vw;
+  font-size: 7pt;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.wrapperPartai .photoPengurus .btn:hover {
+  background: #2f3542;
+}
+
+.wrapperPartai .maps {
+  padding: 40px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperPartai .maps h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.wrapperPartai .maps .imageMaps {
+  background: url(../../../img/maps.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 56vh;
+}
+
+.wrapperPartai .anggotaLegislatif {
+  padding: 40px 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.wrapperPartai .anggotaLegislatif h1 {
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+
+.wrapperPartai .anggotaLegislatif p {
+  margin-top: 2.5rem;
+}
+
+.wrapperPartai .anggotaLegislatif .btnGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px 0;
+}
+/*# sourceMappingURL=PartaiPage.css.map */

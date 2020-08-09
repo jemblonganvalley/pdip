@@ -1,0 +1,42 @@
+@import "../../utilities/variable/variables.scss";
+
+.circleCard {
+    width: 17vw;
+    height: 37vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border: 1px solid blue;
+    margin: $margin;
+    text-decoration: none;
+    color: $colors;
+    transition: .5s;
+    border-radius: 10px;
+
+    &:hover {
+        color: #ffffff;
+        background-color: $colors;
+    }
+
+    .imageCircle {
+        width: 7.5rem;
+        height: 7.5rem;
+        border-radius: 50%;
+    }
+
+    .jabatan {
+        margin-top: 5px;
+        font-size: 7pt;
+        // color: $colors;
+        font-weight: bold;
+    }
+    .nama {
+        text-align: center;
+        font-weight: 600;
+        width: 56%;
+        // border: 1px solid crimson;
+        text-transform: uppercase;
+        margin-top: .5rem;
+    }
+}

@@ -1,0 +1,144 @@
+
+@import "../../utilities/variable/variables.scss";
+
+$responsiveSatu : 1085px;
+$responsiveDua : 1000px;
+$responsiveTiga : 991px;
+$responsiveEmpat : 719px;
+
+@mixin responSatu {
+    @media (max-width : #{$responsiveSatu}) {
+        @content;
+    }
+}
+@mixin responDua {
+    @media (max-width : #{$responsiveDua}) {
+        @content;
+    }
+}
+@mixin responTiga {
+    @media (max-width : #{$responsiveTiga}) {
+        @content;
+    }
+}
+@mixin responEmpat {
+    @media (max-width : #{$responsiveEmpat}) {
+        @content;
+    }
+}
+
+
+.navbar {
+    padding: $paddingSmall;
+    background: url(../../img/pattern-01.svg);
+    // border-bottom: 0.5 solid grey;
+    position: sticky;
+    // z-index: 2000;
+    width: 100%;
+    box-shadow: -1px 7px 30px -12px rgba(0,0,0,0.75);
+
+    @include responSatu() {
+        padding: 20px 5%;
+    }
+    @include responDua() {
+        padding: 20px 10%;
+    }
+    @include responTiga() {
+        padding: 10px 10%;
+    }
+
+    .navbar-collapse {
+        
+        @include responTiga() {
+            text-align: center;
+        }
+    }
+    
+
+    .navbar-brand {
+
+        img {
+            margin: 10px;
+            // font-weight: 800;
+
+            @include responSatu() {
+                width: 40px;
+            }
+            @include responDua() {
+                width: 50px;
+            }
+        }
+    }
+    .navbar-nav {
+        list-style: none;
+        li {
+            font-size: 9pt;
+            text-transform: 
+            uppercase;
+            // font-weight: 300;
+            transition: .3s;
+            color: #202020;
+            font-weight: 500;
+
+            @include responSatu() {
+                font-size: 7pt;
+            }
+            @include responDua() {
+                font-size: 5pt;
+            }
+            @include responTiga() {
+                font-size: 10pt;
+            }
+            @include responEmpat() {
+                font-size: 8pt;
+            }
+            a {
+                text-decoration: none;
+                color: rgba(255, 255, 255, .5);
+                transition: .3s;
+
+                .active, &:hover {
+                    color: #ffffff;
+                   
+                }
+            }
+        }
+    }
+
+    form {
+        position: relative;
+    }
+
+    .form-control {
+        border-radius: 25px;
+        font-size: 10px;
+        font-weight: 500;
+        font-style: italic;
+        background-color: $colors;
+        color: #ffffff;
+        width: 200px;
+
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba(237, 29, 36, 0.25);
+            border-color: $colors;
+        }
+    }
+    button {
+        border: none;
+        background: transparent;
+        color: #ffffff;
+        
+    }
+
+    button[name="submit"] {
+        position: absolute;
+        right: 10%;
+        bottom: 10%; 
+    }
+
+    ::placeholder {
+        color: #ffffff;
+        padding: 10px;
+    }
+    
+}

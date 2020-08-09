@@ -1,0 +1,67 @@
+.page-item:first-child .page-link {
+  border-radius: 0;
+}
+
+.page-item:last-child .page-link {
+  border-radius: 0;
+}
+
+.page-link {
+  border: none;
+  background-color: transparent;
+  color: #d80010;
+  margin: .5rem;
+  padding: 0;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.page-link:hover {
+  color: #ffffff;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #d80010;
+  border: none;
+}
+
+.page-link:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(216, 0, 16, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(216, 0, 16, 0.5);
+}
+
+.prevnext:hover {
+  border-radius: 0;
+  border: none;
+}
+
+.page-item .page-link {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10pt;
+}
+
+.page-item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-item.active .page-link {
+  border-radius: 50%;
+  background-color: #d80010;
+  font-size: 10pt;
+  width: 1.5rem;
+  text-align: center;
+  height: 1.5rem;
+  border-color: #d80010;
+}
+/*# sourceMappingURL=StrukturPaginate.css.map */

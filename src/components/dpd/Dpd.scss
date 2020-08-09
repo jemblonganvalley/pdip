@@ -1,0 +1,156 @@
+// $padding : 20px 8%;
+@import "../../utilities/variable/variables.scss";
+
+
+.dpdWrapper {
+    .dpdHead {
+        background: url(../../img/kampanye.jpg);
+        background-size: cover;
+        height: 25vh;
+        background-position: center;
+        
+        .backDpd {
+            background-color: rgba(255, 0, 8, 0.8);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        
+            .textDpdHead {
+                width: 30%;
+                height: 50%;
+                margin-left: 13rem;
+            }
+        }
+    }
+        // START LINK PARTAI
+        .linkedDetail {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            width: 40%;
+            margin-top: 20px;
+            padding: $padding;
+            i {
+                span {
+                    margin-left: 5px;
+                    font-style: italic;
+                    font-size: 8pt;
+                }
+            }
+        }
+    // END LINK PARTAI
+
+    .pengurus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 8%;
+
+        .textPengurus {
+            border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+            // background-color: #2d3436;
+            width: 100%;
+            text-align: center;
+            // height: 10vh;
+            margin-top: 30px;
+
+            small {
+                cursor: pointer;
+                color: $colors;
+                // width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 8pt;
+                border-bottom: 5.5px solid $colors;
+            }
+        }
+        .dpdTextHead {
+            margin: 2rem 0;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .profilDpd {
+            display: flex;
+            // flex-direction: column;
+            width: 100%;
+            // height: 100vh;
+            padding: $padding;
+            // border: 1px solid blue;
+
+            .kolum1 {
+                // border: 1px solid crimson;
+                width: 30vw;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .textDpd {
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                    // height: 100%;
+
+                    // border: 1px solid green;
+
+                    .dpdText {
+                        margin: 10px;
+
+                        small {
+                            color: $colors;
+                            font-size: 8pt;
+                        }
+                        h6 {
+                        font-weight: bold;
+                        font-size: 10pt;
+                        text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+            .kolum2 {
+                display: flex;
+                // justify-content: center;
+                // align-items: center;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                // border: 1px solid blue;
+                .peta {
+                    width: 100%;
+                    height: 37vh;
+                    border-radius: 10px;
+                    background-color: #a0000b;
+                }
+                .descPeta {
+                    width: 100%;
+                    display: flex;
+                    // align-items: center;
+                    flex-direction: column;
+
+                    .dpc {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        margin-top: 1rem;
+                    }
+                    small {
+                        font-size: 8pt;
+                    }
+                    .small {
+                        margin-bottom: 1rem;
+                        // font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}

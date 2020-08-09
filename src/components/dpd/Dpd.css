@@ -1,0 +1,186 @@
+.dpdWrapper .dpdHead {
+  background: url(../../img/kampanye.jpg);
+  background-size: cover;
+  height: 25vh;
+  background-position: center;
+}
+
+.dpdWrapper .dpdHead .backDpd {
+  background-color: rgba(255, 0, 8, 0.8);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.dpdWrapper .dpdHead .backDpd .textDpdHead {
+  width: 30%;
+  height: 50%;
+  margin-left: 13rem;
+}
+
+.dpdWrapper .linkedDetail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 40%;
+  margin-top: 20px;
+  padding: 40px 10%;
+}
+
+.dpdWrapper .linkedDetail i span {
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 8pt;
+}
+
+.dpdWrapper .pengurus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 8%;
+}
+
+.dpdWrapper .pengurus .textPengurus {
+  border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.dpdWrapper .pengurus .textPengurus small {
+  cursor: pointer;
+  color: #d80010;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 8pt;
+  border-bottom: 5.5px solid #d80010;
+}
+
+.dpdWrapper .pengurus .dpdTextHead {
+  margin: 2rem 0;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+}
+
+.dpdWrapper .pengurus .profilDpd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 40px 10%;
+}
+
+.dpdWrapper .pengurus .profilDpd .kolum1 {
+  width: 30vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dpdWrapper .pengurus .profilDpd .kolum1 .textDpd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+.dpdWrapper .pengurus .profilDpd .kolum1 .textDpd .dpdText {
+  margin: 10px;
+}
+
+.dpdWrapper .pengurus .profilDpd .kolum1 .textDpd .dpdText small {
+  color: #d80010;
+  font-size: 8pt;
+}
+
+.dpdWrapper .pengurus .profilDpd .kolum1 .textDpd .dpdText h6 {
+  font-weight: bold;
+  font-size: 10pt;
+  text-transform: uppercase;
+}
+
+.dpdWrapper .pengurus .profilDpd .kolum2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.dpdWrapper .pengurus .profilDpd .kolum2 .peta {
+  width: 100%;
+  height: 37vh;
+  border-radius: 10px;
+  background-color: #a0000b;
+}
+
+.dpdWrapper .pengurus .profilDpd .kolum2 .descPeta {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dpdWrapper .pengurus .profilDpd .kolum2 .descPeta .dpc {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.dpdWrapper .pengurus .profilDpd .kolum2 .descPeta small {
+  font-size: 8pt;
+}
+
+.dpdWrapper .pengurus .profilDpd .kolum2 .descPeta .small {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=Dpd.css.map */

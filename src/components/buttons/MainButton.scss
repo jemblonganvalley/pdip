@@ -1,0 +1,53 @@
+$table : 1261px;
+
+$responsiveSatu : 1085px;
+$responsiveDua : 1000px;
+$responsiveTiga : 728px;
+$responsiveEmpat : 500px;
+
+@import "../../utilities/variable/variables.scss";
+
+
+
+@mixin responSatu {
+    @media (max-width : #{$responsiveSatu}) {
+        @content;
+    }
+}
+@mixin responDua {
+    @media (max-width : #{$responsiveDua}) {
+        @content;
+    }
+}
+@mixin responTiga {
+    @media (max-width : #{$responsiveTiga}) {
+        @content;
+    }
+}
+@mixin responEmpat {
+    @media (max-width : #{$responsiveEmpat}) {
+        @content;
+    }
+}
+
+
+.btn2 {
+    border-radius: 25px;
+    background-color: $colors;
+    // border: 1px solid #d80010;
+    text-transform: uppercase;
+    // margin-top: 20px;
+    font-size: 7pt;
+    font-weight: 500;
+    color: #ffffff;
+    transition: .5s;
+
+    @include responSatu() {
+        font-size: 6pt;
+    }
+
+    &:hover {
+        background: #2f3542;
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,245 @@
+$secondary : #f3f3f3;
+@import "../../../utilities/variable/variables.scss";
+
+
+.wrapperPartai {
+    width: 100%;
+    // section lahirnya pancasil
+    .lahirnyaPancasila{
+        padding: 0px 8%;
+      
+
+        .box-lahirnyaPancasila{
+            height: 80vh;
+            // border: 1px solid blue;
+            background-image: url(../../../img/BKBB_BungKarno.jpg);
+            background-size: cover;
+            padding: 0px;
+            position: relative;
+
+            .redBox{
+             width: 100%;
+            background-color: rgba(216, 0, 16, .8);
+            height: 30%;
+            margin-top: auto;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            color: #ffff;
+            border-top: .2px solid white;
+            transition: .3s;
+
+            &:hover {
+                // background: rgba(47, 53, 66, .8);
+                background: #2f3542;
+            }
+
+            .red-box-title{
+                height: 100%;
+                // border: 1px solid green;
+                font-size: 30pt;
+                text-align: left;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40%;
+                padding: 20px;
+
+                h2{
+                    padding: 0px;
+                    margin: 0px;
+                }
+            }
+
+             .red-box-body{
+                padding: 20px;
+                width: 60%;
+                height: 100%;
+                // border: 1px solid green;
+                // font-size: 30pt;
+                text-align: left;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+
+         
+
+        }
+    }
+
+    //section Video Bung Karno
+    .videoBungKarno{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 8%;
+        // background-color: #bebebe;
+    }
+
+    //section materi pokok pendukung
+    .materiPokokPendukung{
+        width: 100vw;
+        min-height: 100vh;
+        padding: 60px 8%;
+
+      .divider-mpp{
+
+        position: relative;
+        .mpp-title{
+            color: $colors;
+            text-align: center;
+            
+        }
+
+        .mpp-title-line{
+            border-bottom: .5px solid #797979;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .block{
+            background-color: $colors;
+            width: 270px;
+            height: 10px;
+            margin-top: auto;
+            padding: 0px;
+            margin: 0px;
+        }
+
+      }
+
+      .cardHolder{
+          width: 100%;
+          min-height: 100vh;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        //   align-items: center;
+        padding: 40px 0px;
+          
+      }
+
+    }
+
+    .backGroundGray{
+          width: 100vw;
+          height: 120vh;
+          background-color: #5d5d5d;
+          position: absolute;
+          top: 44.3rem;
+          z-index: -1;
+      }
+   
+    .headers-bkbb {
+        background: url(../../../img/BKBB_Header.jpg);
+        background-size: cover;
+        height: 25vh;
+        background-position: center;
+
+        .backgrounds-bkbb {
+            background-color: #0000;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            color: #ffffff;
+
+            .textBackgroundPartai {
+                width: 30%;
+                height: 50%;
+                margin-left: 5rem;
+            }
+        }
+    }
+    .linkedPartai {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        margin-top: 20px;
+        padding: $paddingTiny;
+        
+    }
+
+    
+
+    .wrapper3 {
+        display: flex;
+        width: 100%;
+        padding: 20px 10%;
+        flex-direction: column;
+    }
+    
+    .wrapperCard {
+        display: flex;
+        // flex-direction: row;
+        width: 100%;
+        // border: 1px solid blue;
+        padding: 20px 10%;
+
+        .cardKolum {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            
+        }
+    }
+    .btnLihatSemua {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px 10%;
+    }
+
+    .bannerBkbb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        // height: 70vh;
+
+        background: url(../../../img/kids.png);
+        background-size: contain;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: #ffff;
+        background-position: center;
+        // font-family: 'Josefin Sans';
+
+        .custom {
+            margin: 1rem;
+            text-align: center;
+            font-family: 'Roboto';
+            font-weight: bold;
+        }
+        small {
+            margin: 1rem;
+            font-size: 8pt;
+            font-style: italic;
+        }
+    }
+
+    .wrapperQuotes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        padding: 20px 10%;
+
+        img {
+            margin: 1rem;
+        }
+    }
+}

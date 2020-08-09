@@ -1,0 +1,67 @@
+.col3-container-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.col3-container-3 .box-jdl-col3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  height: 60%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.col3-container-3 .box-jdl-col3 .txt-jdl-col3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #d80010;
+  margin: 1px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.col3-container-3 .box-garis-lurus-col3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0 0 0;
+  overflow: hidden;
+}
+
+.col3-container-3 .box-garis-lurus-col3 .garis-merah {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 4px;
+  background: #d80010;
+  overflow: hidden;
+}
+/*# sourceMappingURL=MainDivider.css.map */

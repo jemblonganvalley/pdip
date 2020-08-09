@@ -1,0 +1,345 @@
+@import "../../../utilities/variable/variables.scss";
+
+.wrapperInformasi {
+    width: 100%;
+
+    // START HEADER
+    .headInformasi {
+        background: url(../../../img/mask.png);
+        background-size: cover;
+        height: 25vh;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        // width: 100%;
+
+        .textHeadInformasi {
+                width: 100%;
+                // height: 50%;
+                display: flex;
+                // margin-left: 13rem;
+                padding: 0 10%;
+                // border: 1px solid blue;
+                color: #ffffff;
+
+                h2 {
+                    text-transform: uppercase;
+                    font-family: 'Roboto';
+
+                    .pdip {
+                        font-weight: 300;
+                    }
+                }
+        }
+    }
+    // END HEADER
+
+    // START LINKED INFORMASI
+        .linkedInformasi {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            width: 40%;
+            margin-top: 20px;
+            padding: $paddingTiny;
+
+            i {
+                span {
+                    margin-left: 5px;
+                    font-style: italic;
+                    font-size: 8pt;
+                }
+            }
+        }
+    // END
+
+    // START PROFIL
+        .profilContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: $paddingTiny;
+            
+            .paragrapProfil {
+                display: flex;
+                width: 100%;
+                // height: 70vh;
+                margin-top: 1rem;
+                position: relative;
+                // border: 1px solid blue;
+
+                .paragrapKiri {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: 'Roboto';
+                    .merdeka {
+                        font-style: italic;
+                    }
+                    .solid {
+                        font-style: italic;
+                    }
+                    .textParagrap {
+                        font-size: 10pt;
+                        width: 50vw;
+                    }
+
+                }
+            }
+
+            .paragrapKanan {
+                display: flex;
+                flex-direction: column;
+                // width: 100%;
+                width: 50vw;
+                
+                .backgroundPK {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    flex-direction: column;
+                    position: absolute;
+                    bottom: 0;
+                    width: 25vw;
+                    right: 0;
+                    height: 45vh;
+                    background: url(../../../img/illustrator.png);
+                    background-size: cover;
+                    color: #ffffff;
+                    font-family: 'Roboto';
+
+                    .textParagrapKanan {
+                        margin-top: 1rem;
+                        font-size: 10pt;
+                    }
+                }
+            }
+
+            // divider
+                .divider {
+                    // padding: $padding;
+                    margin-top: 1rem;
+                    border: 1px solid #000000;
+                    height: 1px;
+                    width: 100%;
+                }
+            //  END
+
+            
+
+            // YOUTUBE PROFIL
+            .ytProfil {
+                margin-top: 2rem;
+                padding: $padding;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                .ytIframe {
+                    width: 100%;
+                    // border: 1px solid #48ff00;
+                    height: 60vh;
+                    position: relative;
+                    // overflow: hidden;
+
+                    .iframeProfil {
+                        border: 0;
+                        height: 100%;
+                        width: 100%;
+                        // border: 1px solid blue;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+
+                    }
+                }
+            }
+            // END
+
+            // CARD LAPORAN
+            .containerLaporan {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                // border: 1px solid blue;
+                .cardLaporan {
+                    width: 48%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 20vh;
+                    flex-direction: row;
+                    // margin: 1rem 1rem;
+                    background: #e50209;
+                    // border: 1px solid crimson;
+                    transition: .3s;
+
+                    &:hover {
+                        background: #2f3542;
+                    }
+
+                    .imageHarta {
+                        margin: 1rem;
+                    }
+
+                    .textHarta {
+                        display: flex;
+                        flex-direction: column;
+                        color: #ffffff;
+                        margin: 0 1rem;
+
+                        .h5Harta {
+                            text-transform: uppercase;
+
+                        }
+
+                        .paragrapHarta {
+                            font-size: 8pt;
+                        }
+                    }
+
+                }
+            }
+            // END
+        }
+    // END
+
+    // TATA CARA CONTAINER
+        .tataCaraContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: $padding;
+
+            .textTataCara {
+                border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+                // background-color: #2d3436;
+                width: 100%;
+                text-align: center;
+                // height: 10vh;
+                margin-top: 30px;
+                .tataCara {
+                    cursor: pointer;
+                    color: $colors;
+                    // width: 100%;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 10pt;
+                    border-bottom: 5.5px solid $colors;
+                    // line-height: 1;
+                    
+                }
+            }
+
+        }
+        // END
+        
+        // CAROUSEL TATA CARA
+        .sliderTataCara {
+            // padding: 0px;
+            width: 100%;
+            display: flex;
+            // height: 50vh;
+            margin-top: 1rem;
+            // border: 1px solid blue;
+            
+            
+
+            .carousel-item {
+                .imageTC {
+                    // width: 100%;
+                    width: 100%;
+                    display: block;
+                    height: 60vh;
+                    // border: 1px solid crimson;
+                    background: url(../../../img/illustrator2.png);
+                    background-size: cover;
+                    background-position: bottom;
+                    position: relative;
+
+                    .pCarousel {
+                        position: absolute;
+                        width: 30%;
+                        bottom: 40%;
+                        right: 15%;
+                        font-weight: 700;
+                    }
+                    .kunjungi {
+                        color: black;
+                        width: 10vw;
+                        border-radius: 25px;
+                        position: absolute;
+                        left: 60%;
+                        bottom: 20%;
+                        color: $colors;
+                        border: 1px solid $colors;
+                        font-size: 7pt;
+                        text-transform: uppercase;
+                        transition: .3s;
+
+                        &:hover {
+                            background: $colors;
+                            color: #ffffff;
+
+                        }
+                    }
+                }
+            }
+            .carousel-control-next-icon {
+                background: url(../../../img/right.png);
+                background-size: cover;
+            }
+            .carousel-control-prev-icon {
+                background: url(../../../img/left.png);
+                background-size: cover;
+
+            }
+            .carousel-control-next-icon,
+            .carousel-control-prev-icon {
+                width: 40px;
+                height: 40px;
+            }
+            
+        }
+        // END
+
+        // Container Dua
+        .infoDua {
+            padding: 0 10%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .kolomFormulir {
+                width: 50%;
+                // border: 1px solid blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 25vh;
+
+                .textFormulir {
+                    margin-left: 1rem;
+                    font-family: 'Roboto';
+                }
+            }
+
+            .kolomFormulirSatu {
+                background: $colors;
+                // border: 1px solid #d80010;
+                color: #ffffff;
+            }
+            .kolomFormulirDua {
+                background: #ffffff;
+                // border: 1px solid #ffffff;
+            }
+        }
+        // END
+
+}

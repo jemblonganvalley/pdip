@@ -1,0 +1,156 @@
+.wrapperFooter {
+  width: 100%;
+  height: 40vh;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 40px 7%;
+}
+
+.wrapperFooter .wrapperContent {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #ffffff;
+}
+
+.wrapperFooter .wrapperContent .textFooter {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapperFooter .wrapperContent .textFooter .heads {
+  text-transform: uppercase;
+  font-size: 8pt;
+  font-weight: 700;
+}
+
+.wrapperFooter .wrapperContent .textFooter .body {
+  margin-top: 15px;
+  font-size: 7pt;
+  letter-spacing: .3px;
+}
+
+.wrapperFooter .wrapperContent .textFooter .foot {
+  font-size: 7pt;
+  letter-spacing: .3px;
+  margin-top: 15px;
+}
+
+.wrapperFooter .wrapperContent .emailFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 3%;
+}
+
+.wrapperFooter .wrapperContent .emailFooter i {
+  margin-bottom: 15px;
+}
+
+.wrapperFooter .wrapperContent .emailFooter span {
+  margin-bottom: 15px;
+  font-size: 8pt;
+}
+
+.wrapperFooter .wrapperContent .emailFooter small {
+  font-size: 8pt;
+}
+
+.wrapperFooter .wrapperContent .kontakFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 3%;
+}
+
+.wrapperFooter .wrapperContent .kontakFooter i {
+  margin-bottom: 15px;
+}
+
+.wrapperFooter .wrapperContent .kontakFooter span {
+  margin-bottom: 15px;
+  font-size: 8pt;
+}
+
+.wrapperFooter .wrapperContent .kontakFooter small {
+  font-size: 8pt;
+}
+
+.wrapperFooter .wrapperContent .alamatFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 3%;
+}
+
+.wrapperFooter .wrapperContent .alamatFooter i {
+  margin-bottom: 15px;
+}
+
+.wrapperFooter .wrapperContent .alamatFooter span {
+  margin-bottom: 15px;
+  font-size: 8pt;
+}
+
+.wrapperFooter .wrapperContent .alamatFooter small {
+  text-align: center;
+  font-size: 8pt;
+}
+/*# sourceMappingURL=MainFooter.css.map */

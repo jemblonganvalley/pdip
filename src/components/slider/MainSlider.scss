@@ -1,0 +1,271 @@
+$phoneSatu : 600px;
+@import "../../utilities/variable/variables.scss";
+
+
+@mixin phoneSatu {
+    @media (max-width : #{$phoneSatu}) {
+        @content;
+    }
+}
+
+
+.image1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../img/slider.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include phoneSatu() {
+        
+        height: 50vh;
+    }
+    
+
+    .text1 {
+        height: 100%;
+        padding-left: 15%;
+        padding-top: 10%;
+        color: #ffffff;
+        // border: 1px solid green;
+        text-align: left;
+        background: url(../../img/bg_text.svg);
+        background-size: cover;
+        opacity: 0.8;
+        background-repeat: no-repeat;
+
+        @include phoneSatu() {
+            background: none;
+            height: 20vh;
+            padding: 0;
+            position: absolute;
+            bottom: 0;
+            // left: 0;
+            width: 100%;
+            // border-top-left-radius: 25px;
+            // border-top-right-radius: 25px;
+            box-shadow: 0px -1px 10px -2px rgba(0,0,0,0.75);
+            background-color: rgba(216, 0, 16, .7);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+        }
+    
+        
+        h1 {
+            position: absolute;
+            bottom: 45%;
+            // left: 20%;
+            text-transform: uppercase;
+            width: 25%;
+        // border: 1px solid green;
+
+        @include phoneSatu() {
+            // position: initial;
+            text-align: center;
+            font-size: 10pt;
+            width: 50%;
+        }
+            
+
+        }
+        p {
+            width: 25%;
+            position: absolute;
+            bottom: 30%;
+            font-size: 10pt;
+
+            @include phoneSatu() {
+                // position: initial;
+                text-align: center;
+                font-size: 5pt;
+                width: 80%;
+                bottom: 10%;
+            }
+        }
+        
+    }
+}
+
+.image2 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../img/slider2.jpg);
+    background-size: cover;
+
+    @include phoneSatu() {
+        height: 50vh;
+    }
+
+    .text2 {
+        height: 100%;
+        padding-left: 15%;
+        padding-top: 10%;
+        color: #ffffff;
+        // border: 1px solid green;
+        text-align: left;
+        background: url(../../img/bg_text.svg);
+        background-size: cover;
+        opacity: 0.8;
+        background-repeat: no-repeat;
+
+        @include phoneSatu() {
+            background: none;
+            height: 20vh;
+            padding: 0;
+            position: absolute;
+            bottom: 0;
+            // left: 0;
+            width: 100%;
+            // border-top-left-radius: 25px;
+            // border-top-right-radius: 25px;
+            box-shadow: 0px -1px 10px -2px rgba(0,0,0,0.75);
+            background-color: rgba(216, 0, 16, .7);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        h1 {
+            position: absolute;
+            bottom: 45%;
+            // left: 20%;
+            text-transform: uppercase;
+            width: 25%;
+        // border: 1px solid green;
+            
+        @include phoneSatu() {
+            // position: initial;
+            text-align: center;
+            font-size: 10pt;
+            width: 50%;
+        }
+
+        }
+        p {
+            width: 25%;
+            position: absolute;
+            bottom: 30%;
+            font-size: 10pt;
+            
+            @include phoneSatu() {
+                // position: initial;
+                text-align: center;
+                font-size: 5pt;
+                width: 80%;
+                bottom: 10%;
+            }
+        }
+    }
+}
+
+.carousel {
+    width: 100%;
+
+    .carousel-inner {
+        background-color: $colors;
+        .carousel-item {
+            width: 105%;
+        }
+    }
+    
+    .carousel-indicators {
+        right: auto;
+        bottom: 5%;
+        margin-bottom: 30px;
+        @include phoneSatu() {
+            bottom: 40%;
+            // display: inline-block;
+            // left: 25%;
+            // margin: 0;
+            margin-bottom: .5rem;
+            left: 29%;
+            
+        }
+        
+        .indikator {
+            @include phoneSatu() {
+                font-size: 8pt;
+                
+            }
+        }
+
+        .active {
+            opacity: 1;
+            background: #ffffff;
+            color: #464646;
+        }
+
+        small {
+            cursor: pointer;
+            margin: 0 5px;
+            opacity: 0.5;
+            color: #ffffff;
+            transition: opacity .6s ease;
+            // border: 1px solid blue;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-weight: bold;
+            font-size: 7pt;
+            text-align: center;
+            font-family: 'Josefin Sans';
+            
+
+            @include phoneSatu() {
+                margin: 0 5px;
+            }
+            
+        }
+    } 
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    background: none;
+    border: 1px solid #ffffff;
+    height: 25px;
+    color: #ffffff;
+    transition: .3s;
+    margin-right: 2rem;
+    position: absolute;
+    bottom: -50%;
+}
+
+.prev-text {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: none;
+    line-height: .7;
+
+    span {
+        font-size: 8pt;
+        letter-spacing: 1.5px;
+        
+        @include phoneSatu() {
+            font-size: 7pt;
+            display: block;
+        }
+    }
+
+    
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+    text-decoration: none;
+}
+

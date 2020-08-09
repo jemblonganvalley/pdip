@@ -1,0 +1,19 @@
+@import "../../utilities/variable/variables.scss";
+
+.wrapperBread {
+    width: 100%;
+
+    ul {
+        list-style: none;
+        
+        li {
+            margin: .1rem;
+            font-size: 8pt;
+            font-style: italic;
+            a {
+                text-decoration: none;
+                color: $colors;
+            }
+        }
+    }
+}

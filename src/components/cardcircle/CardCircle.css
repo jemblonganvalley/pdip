@@ -1,0 +1,49 @@
+.circleCard {
+  width: 17vw;
+  height: 37vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 10px;
+  text-decoration: none;
+  color: #d80010;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 10px;
+}
+
+.circleCard:hover {
+  color: #ffffff;
+  background-color: #d80010;
+}
+
+.circleCard .imageCircle {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+}
+
+.circleCard .jabatan {
+  margin-top: 5px;
+  font-size: 7pt;
+  font-weight: bold;
+}
+
+.circleCard .nama {
+  text-align: center;
+  font-weight: 600;
+  width: 56%;
+  text-transform: uppercase;
+  margin-top: .5rem;
+}
+/*# sourceMappingURL=CardCircle.css.map */

@@ -1,0 +1,328 @@
+$secondary : #f3f3f3;
+@import "../../../utilities/variable/variables.scss";
+
+
+    //START CSS
+
+.wrapperPartai {
+    width: 100%;
+
+    // START HEADERS
+    .headers {
+        background: url(../../../img/kampanye.jpg);
+        background-size: cover;
+        height: 25vh;
+        background-position: center;
+
+        .backgrounds {
+            background-color: rgba(216, 0, 16, .8);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            color: #ffffff;
+
+            .textBackgroundPartai {
+                width: 30%;
+                height: 50%;
+                margin-left: 13rem;
+            }
+        }
+    }
+    // END HEADERS
+
+    // START LINK PARTAI
+    .linkedPartai {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        margin-top: 20px;
+        padding: $padding;
+    }
+    // END LINK PARTAI
+
+    // START CONTAINER SATU
+    .containerSatu {
+        padding: 20px 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid blue;
+
+        .contentSatu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            // height: 50vh;
+            // border: 1px solid green;
+
+            .wrapperContentSatu {
+                display: flex;
+                justify-content: center;
+                // align-items: center;
+                flex-direction: column;
+                // border: 1px solid goldenrod;
+
+                .textContentSatu {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                }
+               
+            }
+
+            .col-lg-4 {
+                // border: 1px solid crimson;
+                padding: 10px;
+            }
+            .col-lg-8 {
+                // border: 1px solid yellowgreen;
+
+                .wrapperCarousel {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .carouselPartai {
+                        left: 30%;
+
+                        .active {
+                            background: none;
+                        }
+
+                        li {
+                            // border: none;
+                            border: 1px solid #ffffff;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .carouselImgSatu {
+                        width: 100%;
+                        height: 80vh;
+                        background: url(../../../img/megawati011.jpg);
+                        background-size: cover;
+                        background-position: center;
+                    }
+
+                    .carousel-caption {
+                        left: 0;
+                        bottom: 20%;
+                        margin-left: 2.5rem;
+                        text-align: left;
+
+                        h5 {
+                            font-style: italic;
+                            font-size: 10pt;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+
+            .col-md-4 {
+                margin: 10px 0;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+
+                .textContent {
+                    margin-left: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    padding: 10px;
+
+                    h4 {
+                        font-size: 11pt;
+                    }
+
+                    p {
+                        font-size: 10px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+    // END CONTAINER SATU
+
+    
+
+    .containerTiga {
+        padding: $padding;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        // height: 85vh;
+        // border: 1px solid blue;
+
+        .textBanteng {
+            // border: 1px solid green;
+            margin-left: 2rem;
+
+            h1 {
+                font-size: 30pt;
+                letter-spacing: 1px;
+                margin-bottom: 2rem;
+                font-weight: bold;
+            }
+
+            ul {
+                font-size: 10pt;
+
+            }
+        }
+    }
+
+    .btnUnduh {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+
+    .pengurusPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: $padding;
+
+        .textPengurus {
+            border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+            // background-color: #2d3436;
+            width: 100%;
+            text-align: center;
+            // height: 10vh;
+            margin-top: 30px;
+    
+            small {
+                cursor: pointer;
+                color: $colors;
+                // width: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 8pt;
+                border-bottom: 5.5px solid $colors;
+            }
+        }
+
+        .paragrapPengurus {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            // border: 1px solid blue;
+            
+            p {
+                font-size: 14pt;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .photoPengurus {
+        width: 100%;
+        background: url(../../../img/pengurus.png);
+        background-size: cover;
+        height: 60vh;
+        display: flex;
+        background-position: center;
+        background-attachment: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+
+        h2 {
+            margin-top: 6rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .btn {
+            color: #ffffff;
+            background: $colors;
+            border-radius: 25px;
+
+            width: 10vw;
+            font-size: 7pt;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 1.5rem;
+
+            &:hover {
+                background: #2f3542;
+            }
+        }
+    }
+
+    .maps {
+        padding: $padding;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h5 {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 10pt;
+        }
+            .imageMaps {
+                background: url(../../../img/maps.jpg);
+                background-size: cover;
+                width: 100%;
+                height: 56vh;
+                // cursor: pointer;
+            }
+    }
+
+    .anggotaLegislatif {
+        padding: $padding;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 7rem;
+        text-align: center;
+
+        h1 {
+            font-weight: bold;
+            font-family: 'Roboto';
+        }
+        p {
+            margin-top: 2.5rem;
+        }
+        .btnGroup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            margin: 10px 0;
+
+            
+        }
+    }
+}
