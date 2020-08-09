@@ -97,10 +97,14 @@ $responsiveEmpat : 719px;
                 color: rgba(255, 255, 255, .5);
                 transition: .3s;
 
-                .active, &:hover {
+                &:hover {
                     color: #ffffff;
                    
                 }
+            }
+            .active{
+                    color: #ffffff;
+                   
             }
         }
     }

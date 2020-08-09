@@ -17,29 +17,29 @@ const MainNavbar = ()=> {
               </button>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li className="nav-item" activeClassName="active">
-                    <NavLink className="nav-link active" to="/">Home</NavLink>
-                  </li>
-                  <li className="nav-item" activeClassName="active">
-                    <NavLink className="nav-link active" to="/partai">Partai</NavLink>
+                <li className="nav-item" >
+                    <NavLink className="nav-link" to="/home" activeClassName='active'>Home</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/bungkarno">bung karno bapak bangsa</NavLink>
+                    <NavLink className="nav-link" to="/partai" >Partai</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/ketuaumum">ketua umum</NavLink>
+                    <NavLink className="nav-link" to="/bungkarno" >bung karno bapak bangsa</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/multimedia">multimedia</NavLink>
+                    <NavLink className="nav-link" to="/ketuaumum" >ketua umum</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/berita">berita</NavLink>
+                    <NavLink className="nav-link" to="/multimedia" >multimedia</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/informasi">informasi publik</NavLink>
+                    <NavLink className="nav-link" to="/berita" >berita</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/pemilu">pemilu</NavLink>
+                    <NavLink className="nav-link" to="/informasi" >informasi publik</NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/pemilu" activeClassName='active'>pemilu</NavLink>
                   </li>
                 </ul>
                 <form className="d-inline-flex">
