@@ -45,96 +45,6 @@ $secondary : #f3f3f3;
         padding: 0 10%;
         overflow: hidden;
 
-        // Column1
-        .col1-container-1{
-            display: flex;
-            flex-direction: column;
-            height: auto;
-            width: 100%;
-            background-image: url(../../../img//ketuaumum6.jpg);
-            background-position: center;
-            background-size: cover;
-            overflow: hidden;
-
-            .cont-img-col1{
-                display: flex;
-                flex-direction: column;
-                height: 80vh;
-                width: 100%;
-                overflow: hidden;
-
-                .col1-img{
-                    display: flex;
-                    height: 70%;
-                    width: 100%;
-                    overflow: hidden;
-                    border-bottom: 1px solid #fff;
-
-                    .box-txt-title{
-                        display: flex;
-                        height: 100%;
-                        width: auto;
-                        justify-content: center;
-                        align-items: center;
-                        overflow: hidden;
-
-                        h1{
-                            display: flex;
-                            font-size: 30px;
-                            color: #fff;
-                            padding: 25% 20% 20% 10%;
-                            overflow: hidden;
-                        }
-                    }  
-                }
-
-                .col2-img{
-                    display: flex;
-                    flex-direction: column;
-                    height: 30%;
-                    width: 100%;
-                    background-color: rgba(216, 0, 16, .8);
-                    overflow: hidden;
-
-                    .garis-strip-col2{
-                        display: flex;
-                        position: absolute;
-                        height: 2.5px;
-                        width: 230px;
-                        background: #fff;
-                        border-radius: 2px;
-                        margin: -2px 0 0 65px;
-                        overflow: hidden;
-                    }
-
-                    .box-txt-desk-col2{
-                        display: flex;
-                        flex-direction: column;
-                        height: 100%;
-                        width: 100%;
-                        padding: 20px 65px 0 65px;
-                        overflow: hidden;
-
-                        .txt-admin{
-                            display: flex;
-                            font-size: 12px;
-                            color: #fff;
-                            overflow: hidden;
-                        }
-
-                        .txt-desk-col2{
-                            display: flex;
-                            font-size: 15px;
-                            font-weight: 500;
-                            color: #fff;
-                            overflow: hidden;
-                        }
-                    }
-                }
-            }
-        }
-        // END Column1
-
         // Column2
         .col2-container-1{
             display: flex;
@@ -168,14 +78,20 @@ $secondary : #f3f3f3;
                     align-items: center;
                     text-align: center;
                     overflow: hidden;
+                    cursor: pointer;
 
                     .txt-1{
                         display: flex;
                         font-size: 15px;
                         font-weight: 500;
-                        color: #333;
                         margin: 1px 0 0 0;
                         overflow: hidden;
+                        color: #333;
+                        transition: .5s;
+
+                        &:hover{
+                            color: #d80010;
+                        }
                     }
                 }
             }
@@ -205,14 +121,20 @@ $secondary : #f3f3f3;
                     align-items: center;
                     text-align: center;
                     overflow: hidden;
+                    cursor: pointer;
 
                     .txt-2{
                         display: flex;
                         font-size: 15px;
                         font-weight: 500;
-                        color: #333;
                         margin: 1px 0 0 0;
                         overflow: hidden;
+                        color: #333;
+                        transition: .5s;
+
+                        &:hover{
+                            color: #d80010;
+                        }
                     }
                 }
             }
@@ -243,6 +165,7 @@ $secondary : #f3f3f3;
                     align-items: center;
                     text-align: center;
                     overflow: hidden;
+                    cursor: pointer;
 
                     .txt-3{
                         display: flex;
@@ -251,6 +174,12 @@ $secondary : #f3f3f3;
                         color: #333;
                         margin: 1px 0 0 0;
                         overflow: hidden;
+                        color: #333;
+                        transition: .5s;
+
+                        &:hover{
+                            color: #d80010;
+                        }
                     }
                 }
             }
@@ -288,6 +217,7 @@ $secondary : #f3f3f3;
                     align-items: center;
                     text-align: center;
                     overflow: hidden;
+                    cursor: pointer;
 
                     .txt-4{
                         display: flex;
@@ -296,6 +226,12 @@ $secondary : #f3f3f3;
                         color: #333;
                         margin: 1px 0 0 0;
                         overflow: hidden;
+                        color: #333;
+                        transition: .5s;
+
+                        &:hover{
+                            color: #d80010;
+                        }
                     }
                 }
             }
@@ -309,8 +245,6 @@ $secondary : #f3f3f3;
             flex-direction: row;
         }
         // END Column3
-
-       
 
         // Column5
         .col5-container-1{
@@ -399,7 +333,8 @@ $secondary : #f3f3f3;
         flex-direction: column;
         height: 45vh;
         width: 100%;
-        background: #555;
+        background-image: url(../../../img/ketuaumum7.jpg);
+        background-size: cover;
         margin: 50px 0 0px 0;
         overflow: hidden;
 

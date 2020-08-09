@@ -40,7 +40,7 @@ function App() {
       prevScrollpos = currentScrollPos;
     })
 
-  },[hide])
+  }, [hide])
 
   return (
     <Router>
@@ -52,7 +52,7 @@ function App() {
         <Switch>
 
           <Route path="/components">
-            <AllComponent />
+
           </Route>
 
           <Route path="/quotes">
@@ -60,25 +60,25 @@ function App() {
           </Route>
 
           <Route path="/materipokok">
-            <MateriPokok/>
+            <MateriPokok />
           </Route>
 
           <Route path="/videomedia">
-            <VideoMedia/>
+
           </Route>
 
           <Route path="/dpd">
-            <Dpd/>
+
           </Route>
 
           <Route path="/detailpengurus">
-            <DetailPengurus/>
+
           </Route>
 
           <Route path="/struktur">
-            <StrukturPage/>
+
           </Route>
-          
+
           <Route path='/page2'>
             <Page2 />
           </Route>
@@ -88,11 +88,11 @@ function App() {
           </Route>
 
           <Route path="/informasi">
-            <InformasiPage />
+
           </Route>
 
           <Route path="/multimedia">
-            <MultimediaPage />
+
           </Route>
 
           <Route path="/ketuaumum">
@@ -104,7 +104,7 @@ function App() {
           </Route>
 
           <Route path="/partai">
-            <PartaiPage/>
+
           </Route>
 
           <Route path="/home">
