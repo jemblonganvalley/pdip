@@ -8,6 +8,62 @@ import './MusicPdi.scss'
 
 const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
 
+    // let songs = [
+    //     "Mars PDI Perjuangan.mp3",
+    //     "Hymne PDI Perjuangan.mp3"
+    // ]
+
+    // let songSlider = document.getElementById('songSlider')
+    // let currentTime = document.getElementById('currentTime')
+    // let duration = document.getElementById('duration')
+    // let songTitle = document.getElementById('songTitle')
+
+    // let song = new Audio()
+    // let currentSong = 0
+
+    // window.onload = loadSong
+
+    // function loadSong() {
+    //     song.src = "sound/" + songs[currentSong]
+    //     songTitle.textContent = (currentSong + 1) + songs[currentSong]
+    //     song.play()
+    //     setTimeout(showDuration, 1000)
+    // }
+
+    // setInterval(updateSongSlider, 1000) 
+
+    // function updateSongSlider() {
+
+    //     let c = Math.random(song.currentTime)
+    //     songSlider.value = c
+    //     currentTime.textContent = converTime(c)
+    // }
+
+    // function converTime (secs) {
+    //     let min = Math.floor(secs/60)
+    //     let sec = secs % 60
+    //     min = (min < 10) ? "0" + min : min
+    //     sec = (sec < 10) ? "0" + sec : sec
+    //     return (min + ":" + sec)
+    // }
+
+    // function showDuration () {
+    //     let d = Math.floor(song.duration)
+    //     songSlider.setAttribute("max", d)
+    //     duration.textContent = converTime(d)
+    // }
+
+    // function playOrPauseSong() {
+    //     if(song.paysed) {
+    //         song.play()
+    //     }
+    // }
+
+    // function seekSong () {
+    //     song.currentTime = songSlider.value
+    //     currentTime.textContent = converTime(song.currentTime)
+    // } 
+
     
 
     
@@ -40,7 +96,7 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                     <div className="col-sm-8">
                         <div className="containerLirik">
                             <small>lagu perjuangan</small>
-                            <span className="judulLagu">
+                            <span className="judulLagu" id="songTitle">
                                 mars pdi perjuangan
                             </span>
                             <span className="lirik">lirik</span>
@@ -61,7 +117,7 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                     <div className="col-md-12 playerMusic">
                         <div className="wrapperPlayerMusic">
                             <div className="playButton">
-                                <div className="playbtn">
+                                <div className="playbtn" >
                                     <i class="fa fa-play"></i>
                                 </div>
                             </div>
@@ -70,14 +126,15 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                                 <h5 className="judulPlays">{judul}</h5>
                                 <i class="fa fa-heart"></i>
                                 </div>
-                                <div className="progress" style={{height: 1}}>
-                                <div className="progress-bar bg-danger" role="progressbar" style={{width: '1%'}} aria-valuenow={25} aria-valuemin={0} aria-valuemax={100} />
-                                </div>
+                                <input type="range" id="songSlider" className="song-slider" min="0" step="1" />
                                 <div className="iconsPlay">
                                     <i class="fa fa-play"><span className="textPlay">0</span></i>
                                     <i class="fa fa-heart"><span className="textPlay">0</span></i>
                                     <i class="fa fa-comment"><span className="textPlay">0</span></i>
-                                    <span className="duration">0:00</span>
+                                    <div className="times">
+                                        <span className="current-time time" id="currentTime">00:00 /</span>
+                                        <span className="duration time" id="duration"> 00:00</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
