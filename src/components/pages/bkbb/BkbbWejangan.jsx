@@ -6,6 +6,7 @@ import bkbb4 from '../../../img/bkbb4.jpg'
 
 import './BkbbWejangan.scss'
 import CardQuotes from '../../cardquotes/CardQuotes'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 const BkbbWejangan = () => {
     return (
@@ -19,9 +20,9 @@ const BkbbWejangan = () => {
                     </div>
                 </div>
                 <div className="linkedBerita">
-                    <i class="fa fa-home">
-                        <span>Home / Bung Karno Bapak Bangsa</span>
-                    </i>
+                    <BreadCrumbs link1="home"
+                        to1="/" link2="Bungkarno Bapak Bangsa" to2="/bungkarno"
+                        page3="Quotes" />
                 </div>
 
                 {/* Container1 */}

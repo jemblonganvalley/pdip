@@ -1,9 +1,9 @@
-@import "../../../utilities/variable/variables.scss";
+// @import "../../../utilities/variable/variables.scss";
 
 
 .wrapperMateri {
     width: 100%;
-    padding: $padding;
+    // padding: $paddin;
 
     .linkedMateri {
         display: flex;
@@ -31,49 +31,52 @@
 
         small {
             cursor: pointer;
-            color: $colors;
+            // color: $colors;
             // width: 100%;
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
             font-size: 8pt;
-            border-bottom: 5.5px solid $colors;
+            // border-bottom: 5.5px solid $colors;
         }
     }
 
-    // Column Card Materi Pokok
-    .col-card-materi-pokok{
+    // Column Card Wejangan Bungkarno
+    .col-card-wejangan-bungkarno{
         display: flex;
         flex-direction: column;
         height: auto;
         width: 100%;
-        margin: 40px 0 20px 0;
+        padding: 40px 0 0 0;
 
-        // Row1
-        .row1{
+        // Box1 Image
+        .box1-image{
             display: flex;
-            height: auto;
+            height: 45vh;
             width: 100%;
+            padding: 10px 0 10px 0;
         }
-        // END Row1
+        // END Box1 Image
 
-        // Row2
-        .row2{
+        // Box2 Image
+        .box2-image{
             display: flex;
-            height: auto;
+            height: 45vh;
             width: 100%;
+            padding: 10px 0 10px 0;
         }
-        // END Row2
+        // END Box2 Image
 
-        // Row3
-        .row3{
+        // Box3 Image
+        .box3-image{
             display: flex;
-            height: auto;
+            height: 45vh;
             width: 100%;
+            padding: 10px 0 10px 0;
         }
-        // END Row3
+        // END Box3 Image
     }
-    // END Column Card Materi Pokok
+    // END Column Card Wejangan Bungkarno
 
     // Column Pagination
     .col-pagination-materi-pokok{
@@ -83,4 +86,5 @@
         border: 1px solid blue;
     }
     // END Column Pagination
+
 }

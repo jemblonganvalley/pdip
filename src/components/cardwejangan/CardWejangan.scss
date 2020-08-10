@@ -1,15 +1,16 @@
-.img{
+.imgWejangan{
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     justify-content: center;
     align-items: center;
-    margin: 40px 10px 0 10px;
-    padding: 20px;
     border-radius: 10px;
+    padding: 20px;
+    margin: 0px 10px 0px 10px;
     cursor: pointer;
+    text-decoration: none;
 
 
     i{

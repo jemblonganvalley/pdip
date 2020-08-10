@@ -7,6 +7,7 @@ import './PemiluPage.scss'
 import CarouselPemilu1 from '../../carouselPemilu1/CarouselPemilu1'
 import CarouselPemilu2 from '../../carouselPemilu2/CarouselPemilu2'
 import Carousel3PemiluPage from '../../carousel3PemiluPage/Carousel3PemiluPage'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 // END Import to CSS
 
 // Create Component 
@@ -21,9 +22,7 @@ const PemiluPage = () => {
                     </div>
                 </div>
                 <div className="linkedBerita">
-                    <i class="fa fa-home">
-                        <span>Home / Pemilu</span>
-                    </i>
+                    <BreadCrumbs link1="Home" to1="/" page2="Pemilu" />
                 </div>
 
                 {/* Container1 */}

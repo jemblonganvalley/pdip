@@ -21,6 +21,7 @@ import Page2 from './components/pages/berita/page2/Page2';
 import MateriPokok from './components/pages/materipokok/MateriPokok';
 import BkbbWejangan from './components/pages/bkbb/BkbbWejangan'
 import AllComponent from './components/allcomponent/AllComponent';
+import WejanganBungKarno from './components/pages/bkbb/wejanganbungkarno/WejanganBungKarno';
 
 
 function App() {
@@ -57,6 +58,10 @@ function App() {
 
           <Route path="/components">
 
+          </Route>
+
+          <Route path='/wejanganbungkarno'>
+            <WejanganBungKarno />
           </Route>
 
           <Route path="/quotes">

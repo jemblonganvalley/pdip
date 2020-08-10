@@ -199,6 +199,7 @@ $secondary : #f3f3f3;
         align-items: center;
         width: 100%;
         padding: 20px 10%;
+        text-decoration: none;
     }
 
     .bannerBkbb {
@@ -230,16 +231,23 @@ $secondary : #f3f3f3;
         }
     }
 
-    .wrapperQuotes {
+    // Column Card Wejangan Bungkarno
+    .col-card-wejangan-bungkarno{
         display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
-        width: 100%;
-        padding: 20px 10%;
+        padding: 50px 10% 0 10%;
 
-        img {
-            margin: 1rem;
+        // Box1 Image
+        .box1-image{
+            display: flex;
+            height: 45vh;
+            width: 100%;
+            padding: 10px 0 10px 0;
         }
+        // END Box1 Image
     }
 }
