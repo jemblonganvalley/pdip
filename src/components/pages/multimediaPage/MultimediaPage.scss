@@ -43,7 +43,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80vh;
+        height: 70vh;
         // border: 1px solid blue;
 
 
@@ -63,6 +63,7 @@
             // border: 1px solid pink;
             position: relative;
             // width: 100%; 
+            height: 100%;
             small {
                 font-size: 8pt;
                 color: $colors;
@@ -75,12 +76,14 @@
             }
             p {
                 margin-top: 3rem;
-                font-size: 8pt;
+                font-size: 10pt;
             }
             .socialMedia {
                 margin-top: 8.5rem;
                 display: flex;
                 flex-direction: row;
+                position: absolute;
+                bottom: 0;
 
                 small {
                     color: #000000;
@@ -99,63 +102,7 @@
             }
         }
     }
-    .cardMedia {
-        width: 100%;
-        padding: $padding;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        .imgCards {
-            margin-right: 1rem;
-        }
-
-        .siaranLangsung {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            
-            .smallCard {
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 7pt;
-            }
-        }
-        .videoDokumentasi {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .smallCard {
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 7pt;
-            }
-        }
-        .videoInteraktif {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .smallCard {
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 7pt;
-            }
-        }
-        .siaranPers {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .smallCard {
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 7pt;
-            }
-        }
-        .mediaCard {
-            margin: 10px 5%;
-        }
-    }
+    
 
     .panggung {
         width: 100%;

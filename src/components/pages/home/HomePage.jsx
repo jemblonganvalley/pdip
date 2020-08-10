@@ -209,7 +209,7 @@ const HomePage = ()=> {
                 <WidgetBerita name="beritaFoto" col='4'/>
             </div>
 
-            <div className="backgroundRed"></div>
+            
         </div>
 
     )

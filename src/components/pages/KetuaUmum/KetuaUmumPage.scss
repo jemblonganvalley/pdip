@@ -45,199 +45,97 @@ $secondary : #f3f3f3;
         padding: 0 10%;
         overflow: hidden;
 
-        // Column2
-        .col2-container-1{
+        // Column1
+        .col1-container-1{
             display: flex;
-            height: 10vh;
+            flex-direction: column;
+            height: auto;
             width: 100%;
-            background: #f3f3f3;
-            margin: 20px 0 20px 0;
+            background-image: url(../../../img//ketuaumum6.jpg);
+            background-position: center;
+            background-size: cover;
             overflow: hidden;
 
-            // Row1
-            .row1-col2{
+            .cont-img-col1{
                 display: flex;
-                height: 100%;
-                width: 25%;
+                flex-direction: column;
+                height: 80vh;
+                width: 100%;
                 overflow: hidden;
 
-                .box-img{
+                .col1-img{
                     display: flex;
-                    height: 100%;
-                    width: 30%;
-                    background-image: url(../../../img/img1.jpg);
-                    background-size: cover;
-                    background-position: center;
+                    height: 70%;
+                    width: 100%;
                     overflow: hidden;
-                }
+                    border-bottom: 1px solid #fff;
 
-                .txt-img1{
-                    display: flex;
-                    height: 100%;
-                    width: 70%;
-                    align-items: center;
-                    text-align: center;
-                    overflow: hidden;
-                    cursor: pointer;
-
-                    .txt-1{
-                        display: flex;
-                        font-size: 15px;
-                        font-weight: 500;
-                        margin: 1px 0 0 0;
-                        overflow: hidden;
-                        color: #333;
-                        transition: .5s;
-
-                        &:hover{
-                            color: #d80010;
-                        }
-                    }
-                }
-            }
-            // END Row1
-
-             // Row2
-             .row2-col2{
-                display: flex;
-                height: 100%;
-                width: 25%;
-                overflow: hidden;
-
-                .box-img{
-                    display: flex;
-                    height: 100%;
-                    width: 30%;
-                    background-image: url(../../../img/img2.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    overflow: hidden;
-                }
-
-                .txt-img2{
-                    display: flex;
-                    height: 100%;
-                    width: 70%;
-                    align-items: center;
-                    text-align: center;
-                    overflow: hidden;
-                    cursor: pointer;
-
-                    .txt-2{
-                        display: flex;
-                        font-size: 15px;
-                        font-weight: 500;
-                        margin: 1px 0 0 0;
-                        overflow: hidden;
-                        color: #333;
-                        transition: .5s;
-
-                        &:hover{
-                            color: #d80010;
-                        }
-                    }
-                }
-            }
-            // END Row2
-
-            // Row3
-            .row3-col2{
-                display: flex;
-                height: 100%;
-                width: 25%;
-                overflow: hidden;
-
-                .box-img{
-                    display: flex;
-                    height: 100%;
-                    width: 30%;
-                    background-image: url(../../../img/img3.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    margin: 1px 0 0 0;
-                    overflow: hidden;
-                }
-
-                .txt-img3{
-                    display: flex;
-                    height: 100%;
-                    width: 70%;
-                    align-items: center;
-                    text-align: center;
-                    overflow: hidden;
-                    cursor: pointer;
-
-                    .txt-3{
-                        display: flex;
-                        font-size: 15px;
-                        font-weight: 500;
-                        color: #333;
-                        margin: 1px 0 0 0;
-                        overflow: hidden;
-                        color: #333;
-                        transition: .5s;
-
-                        &:hover{
-                            color: #d80010;
-                        }
-                    }
-                }
-            }
-            // END Row3
-
-            // Row4
-            .row4-col2{
-                display: flex;
-                height: 100%;
-                width: 25%;
-                overflow: hidden;
-
-                .box-img{
-                    display: flex;
-                    height: 100%;
-                    width: 30%;
-                    background-image: url(../../../img/ketuaumum5.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    overflow: hidden;
-
-                    .img-4{
+                    .box-txt-title{
                         display: flex;
                         height: 100%;
-                        width: 100%;
-                        background-size: cover;
+                        width: auto;
+                        justify-content: center;
+                        align-items: center;
                         overflow: hidden;
-                    }
+
+                        h1{
+                            display: flex;
+                            font-size: 30px;
+                            color: #fff;
+                            padding: 25% 20% 20% 10%;
+                            overflow: hidden;
+                        }
+                    }  
                 }
 
-                .txt-img4{
+                .col2-img{
                     display: flex;
-                    height: 100%;
-                    width: 70%;
-                    align-items: center;
-                    text-align: center;
+                    flex-direction: column;
+                    height: 30%;
+                    width: 100%;
+                    background-color: rgba(216, 0, 16, .8);
                     overflow: hidden;
-                    cursor: pointer;
 
-                    .txt-4{
+                    .garis-strip-col2{
                         display: flex;
-                        font-size: 15px;
-                        font-weight: 500;
-                        color: #333;
-                        margin: 1px 0 0 0;
+                        position: absolute;
+                        height: 2.5px;
+                        width: 230px;
+                        background: #fff;
+                        border-radius: 2px;
+                        margin: -2px 0 0 65px;
                         overflow: hidden;
-                        color: #333;
-                        transition: .5s;
+                    }
 
-                        &:hover{
-                            color: #d80010;
+                    .box-txt-desk-col2{
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                        width: 100%;
+                        padding: 20px 65px 0 65px;
+                        overflow: hidden;
+
+                        .txt-admin{
+                            display: flex;
+                            font-size: 12px;
+                            color: #fff;
+                            overflow: hidden;
+                        }
+
+                        .txt-desk-col2{
+                            display: flex;
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: #fff;
+                            overflow: hidden;
                         }
                     }
                 }
             }
-            // END Row4
         }
-        // END Column2
+        // END Column1
+
+        
 
         // Column3
         .cardKetuaUmum {

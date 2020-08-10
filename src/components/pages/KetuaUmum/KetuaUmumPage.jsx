@@ -7,12 +7,18 @@ import megawati7 from '../../../img/megawati7.jpg'
 import Cards from '../../cards/MainCards'
 import './KetuaUmumPage.scss'
 
+import ketuaUmumSatu from '../../../img/ketuaumum1.png'
+import ketuaUmumDua from '../../../img/ketuaumum2.png'
+import ketuaUmumTiga from '../../../img/ketuaumum3.png'
+import ketuaUmumEmpat from '../../../img/ketuaumum4.png'
+
 // Import to CSS
 import './KetuaUmumPage.css'
 import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import MainButton from '../../buttons/MainButton'
 import CarouselKetuaUmumPage from '../../carouselKetuaUmumPage/CarouselKetuaUmumPage'
+import CardInformasi from '../../cardInformasi/CardInformasi'
 // END Import to CSS
 
 // Create Component
@@ -45,57 +51,14 @@ const KetuaUmumPage = () => {
                     {/* END Column1 */}
 
                     {/* Column2 */}
-                    <div className="col2-container-1">
-                        {/* Row1 */}
-                        <div className="row1-col2">
-                            <div className="box-img">
-
-                            </div>
-                            <div className="txt-img1">
-                                <p className="txt-1">
-                                    KONGRES
-                                </p>
-                            </div>
-                        </div>
-                        {/* END Row1 */}
-                        {/* Row2 */}
-                        <div className="row2-col2">
-                            <div className="box-img">
-
-                            </div>
-                            <div className="txt-img2">
-                                <p className="txt-2">
-                                    RAKERNAS
-                                </p>
-                            </div>
-                        </div>
-                        {/* END Row2 */}
-                        {/* Row3 */}
-                        <div className="row3-col2">
-                            <div className="box-img">
-
-                            </div>
-                            <div className="txt-img3">
-                                <p className="txt-3">
-                                    RAKORNAS
-                                </p>
-                            </div>
-                        </div>
-                        {/* END Row3 */}
-                        {/* Row4 */}
-                        <div className="row4-col2">
-                            <div className="box-img">
-
-                            </div>
-                            <div className="txt-img4">
-                                <p className="txt-4">
-                                    INSTRUKSI
-                                </p>
-                            </div>
-                        </div>
-                        {/* END Row4 */}
-
-                    </div>
+                        <CardInformasi image={ketuaUmumSatu}
+                                        image2={ketuaUmumDua}
+                                        image3={ketuaUmumTiga}
+                                        image4={ketuaUmumEmpat}
+                                        text="pidato kongres"
+                                        text2="pidato rakernas"
+                                        text3="pidato rakornas"
+                                        text4="pidato hut" />
                     {/* END Column2 */}
 
                     {/* Column3 */}

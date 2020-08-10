@@ -131,7 +131,7 @@
             // YOUTUBE PROFIL
             .ytProfil {
                 margin-top: 2rem;
-                padding: $padding;
+                padding: $paddingTiny;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -165,6 +165,7 @@
                 align-items: center;
                 width: 100%;
                 // border: 1px solid blue;
+                padding: 2rem;
                 .cardLaporan {
                     width: 48%;
                     display: flex;

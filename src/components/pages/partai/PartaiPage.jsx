@@ -4,6 +4,10 @@ import backgroundHead from '../../../img/kampanye.jpg'
 import pdiBook1 from '../../../img/pdibook1.png'
 import pdiBook2 from '../../../img/pdibook2.png'
 import pdiBook3 from '../../../img/pdibook3.png'
+import partaiSatu from '../../../img/partai1.png'
+import partaiDua from '../../../img/partai2.png'
+import partaiTiga from '../../../img/partai3.png'
+import partaiEmpat from '../../../img/partai4.png'
 import {Link} from 'react-router-dom'
 
 
@@ -49,24 +53,31 @@ const PartaiPage = ()=>{
                 <div className="contentSatu">
                     <div className="col col-lg-4">
                         <div className="wrapperContentSatu">
-                            <div className="col-md-4">
-                                <img src={pdiBook1} alt="" width="60" />
+                            <div className="col-md-3">
+                                <img src={partaiSatu} alt="" width="60" />
                                 <div className="textContent textContentSatu">
                                     <h4>AD/ART<br/>PDI Perjuangan</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore nobis doloremque.</p>
                                 </div>
                             </div>
-                            <div className="col-md-4">
-                                <img src={pdiBook2} alt="" width="60" />
+                            <div className="col-md-3">
+                                <img src={partaiDua} alt="" width="60" />
                                 <div className="textContent textContentDua">
                                     <h4>Peraturan<br/>PDI Perjuangan</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore nobis doloremque.</p>
                                 </div>
                             </div>
-                            <div className="col-md-4">
-                                <img src={pdiBook3} alt="" width="60" />
+                            <div className="col-md-3">
+                                <img src={partaiTiga} alt="" width="60" />
                                 <div className="textContent textContentTiga">
                                     <h4>Piagam<br/>PDI Perjuangan</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore nobis doloremque.</p>
+                                </div>
+                            </div>
+                            <div className="col-md-3">
+                                <img src={partaiEmpat} alt="" width="60" />
+                                <div className="textContent textContentTiga">
+                                    <h4>Visi &<br/>Misi</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore nobis doloremque.</p>
                                 </div>
                             </div>
@@ -171,8 +182,6 @@ const PartaiPage = ()=>{
                     </div>
                 </div>
                 {/* END */}
-                
-                <div className="backgroundRed"></div>
         </div>
     )
 }

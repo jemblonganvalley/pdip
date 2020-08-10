@@ -21,6 +21,7 @@ import Page2 from './components/pages/berita/page2/Page2';
 import MateriPokok from './components/pages/materipokok/MateriPokok';
 import BkbbWejangan from './components/pages/bkbb/BkbbWejangan'
 import AllComponent from './components/allcomponent/AllComponent';
+import BgRed from './components/bgRed/BgRed';
 
 
 function App() {
@@ -122,6 +123,7 @@ function App() {
         </Switch>
 
       </div>
+      <BgRed />
       <MainFooter />
     </Router >
   );
