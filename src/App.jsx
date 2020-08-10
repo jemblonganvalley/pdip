@@ -51,8 +51,6 @@ function App() {
 
         <Switch>
 
-
-
           <Route path='/pemilu'>
             <PemiluPage />
           </Route>

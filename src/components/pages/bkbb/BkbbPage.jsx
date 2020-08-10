@@ -1,6 +1,6 @@
 import React from 'react'
 import './BkbbPage.scss'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import backgroundHead from '../../../img/kampanye.jpg'
 import pdiBook1 from '../../../img/pdibook1.png'
 import pdiBook2 from '../../../img/pdibook2.png'
@@ -23,7 +23,7 @@ import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 
 
-const BkbbPage = ()=>{
+const BkbbPage = () => {
 
 
     return (
@@ -36,19 +36,19 @@ const BkbbPage = ()=>{
                 </div>
             </div>
             <div className="linkedPartai">
-            <BreadCrumbs link1="Home"
-                                to1="/"
-                                page2="Bung Karno Bapak Bangsa"
-                                 />
+                <BreadCrumbs link1="Home"
+                    to1="/"
+                    page2="Bung Karno Bapak Bangsa"
+                />
             </div>
-            
+
             <section className="lahirnyaPancasila col mx-auto">
                 <div className="box-lahirnyaPancasila ">
 
                     <div className="redBox mt-auto">
-                        <div className="col col-lg-4 red-box-title ">
+                        <Link to='/quotes' className="col col-lg-4 red-box-title ">
                             <h2>Lahirnya Pancasila <br />1 Juni 1945</h2>
-                        </div>
+                        </Link>
                         <div className="col col-lg-4 red-box-body">
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quod delectus earum, eaque nemo saepe laboriosam vitae facilis eveniet repellendus unde ducimus temporibus iusto doloremque est illo. Ipsum, pariatur nulla.</p>
                         </div>
@@ -64,40 +64,40 @@ const BkbbPage = ()=>{
 
             <section className="wrapper3">
                 <MainDivider text="Materi Pokok Pendukung"
-                                garisMerah="8rem" />
+                    garisMerah="8rem" />
             </section>
-            
+
             <div className="wrapperCard">
                 <div className="cardKolum">
                     <Cards imageCard={bkbbCard1}
-                            borderRadius="10px"
-                            TextH5="INDONESIA MENGGUGAT TAHUN 1930"
-                            paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial"
-                            h5Weight="bold" />
+                        borderRadius="10px"
+                        TextH5="INDONESIA MENGGUGAT TAHUN 1930"
+                        paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial"
+                        h5Weight="bold" />
                     <Cards imageCard={bkbbCard2}
-                            borderRadius="10px"
-                            TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932"
-                            paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit"
-                            h5Weight="bold" />
+                        borderRadius="10px"
+                        TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932"
+                        paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+                        h5Weight="bold" />
                     <Cards imageCard={bkbbCard3}
-                            borderRadius="10px"
-                            TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933"
-                            paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit"
-                            h5Weight="bold" />
+                        borderRadius="10px"
+                        TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933"
+                        paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+                        h5Weight="bold" />
                 </div>
             </div>
 
             <div className="btnLihatSemua">
                 <MainButton name="lihat semua"
-                            margin="1rem 0"
-                            pages="/materipokok" />
+                    margin="1rem 0"
+                    pages="/materipokok" />
             </div>
 
             <div className="bannerBkbb">
-                <img src={Double} alt="" className="custom"/>
-                <h4 className="custom">BARANG SIAPA JANG INGIN MUTIARA HARUS<br/>BERANI TERJUN DI LAUTAN JANG DALAM. </h4>
-                <h5 className="custom">JANGANLAH LEMBEK, MOHON PADA TUHAN SUPAYA BANGSA INDONESIA<br/>MEJADI SATU BANGSA YANG JAYA DI DUNIA, MENJADI BANGSA KUAT DAN TABAH</h5>
-                <img src={Double} alt="" className="custom"/>
+                <img src={Double} alt="" className="custom" />
+                <h4 className="custom">BARANG SIAPA JANG INGIN MUTIARA HARUS<br />BERANI TERJUN DI LAUTAN JANG DALAM. </h4>
+                <h5 className="custom">JANGANLAH LEMBEK, MOHON PADA TUHAN SUPAYA BANGSA INDONESIA<br />MEJADI SATU BANGSA YANG JAYA DI DUNIA, MENJADI BANGSA KUAT DAN TABAH</h5>
+                <img src={Double} alt="" className="custom" />
                 <small>Bung Karno, 17 Agustus 1946</small>
             </div>
 
@@ -109,11 +109,11 @@ const BkbbPage = ()=>{
 
             <Link as='div' className="btnLihatSemua" to='quotes'>
                 <MainButton name="lihat semua"
-                            margin="1rem 0" />
+                    margin="1rem 0" />
             </Link>
 
             <div className="backGroundGray">
-                
+
             </div>
         </div>
     )

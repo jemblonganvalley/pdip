@@ -1,0 +1,61 @@
+@import "../../utilities/variable/variables.scss";
+
+.cardCustom {
+    height: 100%;
+    flex: auto;
+    margin: 0 10px;
+    background: #ffffff;
+    
+    transition: .5s;
+    // border: 1px solid blue;
+    
+    &:hover {
+        box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);
+        background: $colors;
+        color: #ffffff;
+    }
+
+    .imageCard {
+        width: 100%;
+        height: 30vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .VBMusic {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #ffffff;
+            border-radius: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            font-size: 10pt;
+
+            &:hover {
+                background: #ffffff;
+                color: $colors;
+            }
+        }
+    }
+    
+    .text {
+        width: 100%;
+         padding: 10px 20px;
+        align-items: flex-start;
+
+        .textSmall {
+            font-size: 8pt;
+        }
+
+        .textH5 {
+            margin-top: 1rem;
+        }
+        .paragrap {
+            font-size: 7pt;
+        }
+    }
+}

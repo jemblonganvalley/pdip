@@ -1,6 +1,11 @@
 import React from 'react'
 
-import './BkbbWejangan.css'
+import bkbb2 from '../../../img/bkbb2.jpg'
+import bkbb3 from '../../../img/bkbb3.jpg'
+import bkbb4 from '../../../img/bkbb4.jpg'
+
+import './BkbbWejangan.scss'
+import CardQuotes from '../../cardquotes/CardQuotes'
 
 const BkbbWejangan = () => {
     return (
@@ -26,7 +31,7 @@ const BkbbWejangan = () => {
                         {/* Row1 */}
                         <div className="row1">
                             <div className="box-quotes">
-                                <i className="fas fa-quote-right" style={{color : '#d80010'}}></i>
+                                <i className="fas fa-quote-right"></i>
 
                                 <p className="txt1" >
                                     BARANG SIAPA JANG INGIN MUTIARA HARUS BERANI TERJUN DI LAUTAN JANG DALAM.
@@ -87,53 +92,13 @@ const BkbbWejangan = () => {
                 <div className="container-2">
                     {/* Column1 */}
                     <div className="col1-container-2">
-                        {/* Image 1 */}
-                        <div className="img img1">
-                            <i className="fas fa-quote-right"></i>
+                        {/* CardQuotes */}
+                        <CardQuotes img={bkbb2} icon1="fas fa-quote-right" txt1='NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1928" />
 
-                            <p className="txt1">
-                                NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH."
-                            </p>
+                        <CardQuotes img={bkbb3} icon1="fas fa-quote-right" txt1="ORANG TIDAK DAPAT MENGABDI KEPADA TUHAN DENGAN TIDAK MENGABDI KEPADA SESAMA MANUSIA. TUHAN BERSEMAYAM DI GUBUKNYA SI MISKIN" icon2="fas fa-quote-right" txt2="Soekarno, 23 Oktober 1946" />
 
-                            <i className="fas fa-quote-right"></i>
-
-                            <p className="txt2">
-                                Soekarno, Suluh Indonesia Muda, 1928
-                            </p>
-                        </div>
-                        {/* Image 1 */}
-
-                        {/* Image 2 */}
-                        <div className="img img2">
-                            <i className="fas fa-quote-right"></i>
-
-                            <p className="txt1">
-                                ORANG TIDAK DAPAT MENGABDI KEPADA TUHAN DENGAN TIDAK MENGABDI KEPADA SESAMA MANUSIA. TUHAN BERSEMAYAM DI GUBUKNYA SI MISKIN
-                            </p>
-
-                            <i className="fas fa-quote-right"></i>
-
-                            <p className="txt2">
-                                Soekarno, 23 Oktober 1946
-                            </p>
-                        </div>
-                        {/* Image 2 */}
-
-                        {/* Image 3 */}
-                        <div className="img img3">
-                            <i className="fas fa-quote-right"></i>
-
-                            <p className="txt1">
-                                TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUNAN SUATU BANGSA
-                            </p>
-
-                            <i className="fas fa-quote-right"></i>
-
-                            <p className="txt2">
-                                Soekarno, Suluh Indonesia Muda, 1922
-                            </p>
-                        </div>
-                        {/* END Image 3 */}
+                        <CardQuotes img={bkbb4} icon1="fas fa-quote-right" txt1="TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA" icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1922" />
+                        {/* END CardQuotes */}
                     </div>
                     {/* END Column1 */}
 

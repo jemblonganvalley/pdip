@@ -5,1025 +5,162 @@
     width: 100%;
 
     .box-carousel3-pemiluPage{
-        height: auto;
+        display: flex;
+        height: 100%;
         width: 100%;
         background: #fff;
 
-        // Row Bagian2
-        .row-bagian2{
+        .carousel-item{
             display: flex;
-            position: relative;
-            height: auto;
+            flex-direction: row;
+            height: 100%;
             width: 100%;
-            margin: 0 0 0 20px;
-            padding: 0 0 20px 0;
-            overflow: hidden;
-            border: 1px solid blue;
 
-            // Column1 Bagian2
-            .column1-bagian2{
+        // Section1 Row2
+        .section1-row2{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 33%;
+            padding: 0 0 0 0px;
+       
+            // Column1 Section1
+            .column1-section1{
                 display: flex;
                 flex-direction: column;
                 height: auto;
-                width: 33%;
-                padding: 5px 20px 0 0;
-                overflow: hidden;
-
-                // Section1 JAMBI
-                .section1-column1{
-                    display: flex;
-                    flex-direction: column;
-                    height: auto;
-                    width: 100%;
-                    overflow: hidden;
-
-                    .jdl-jambi-section1{
-                        display: flex;
-                        font-size: 15px;
-                        font-weight: 500;
-                        color: #555;
-                        margin: 0 0 2px 0;
-                        overflow: hidden;
-                    }
-
-                    .garis-merah-tipis{
-                        display: flex;
-                        height: 1px;
-                        width: 100%;
-                        background: #d80010;
-                        margin: 0 0 10px 0;
-                        overflow: hidden;
-
-                        .garis-merah-tebal{
-                            display: flex;
-                            position: absolute;
-                            height: 2.5px;
-                            width: 120px;
-                            background: #d80010;
-                            border-radius: 3px;
-                            overflow: hidden;
-                        }
-                    }
-
-                    // Column1 Section1
-                    .col1-section1{
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        padding: 5px 0 0 0;
-                        width: 100%;
-
-                        .title1-col1{
-                            display: flex;
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: #d80010;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title2-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-pemimpin-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title3-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-wakil-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-                    }
-                    // END Column1 Section1
-
-                    // Column2 Section1
-                    .col2-section1{
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        padding: 5px 0 0 0;
-                        width: 100%;
-
-                        .title1-col2{
-                            display: flex;
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: #d80010;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title2-col2{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-pemimpin-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title3-col2{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-wakil-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-                    }
-                    // END Column2 Section1
-
-                    // Column3 Section1
-                    .col3-section1{
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        padding: 5px 0 0 0;
-                        width: 100%;
-
-                        .title1-col3{
-                            display: flex;
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: #d80010;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title2-col3{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-pemimpin-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title3-col3{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-wakil-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-                    }
-                    // END Column3 Section1
-                }
-                // END Section1 JAMBI
-
-                // Section2 RIAU
-                .section2-column1{
-                    display: flex;
-                    flex-direction: column;
-                    height: auto;
-                    width: 100%;
-                    padding: 10px 0 0 0;
-                    overflow: hidden;
-
-                    .jdl-riau-section2{
-                        display: flex;
-                        font-size: 15px;
-                        font-weight: 500;
-                        color: #555;
-                        margin: 0 0 2px 0;
-                        overflow: hidden;
-                    }
-
-                    .garis-merah-tipis{
-                        display: flex;
-                        height: 1px;
-                        width: 100%;
-                        background: #d80010;
-                        margin: 0 0 10px 0;
-                        overflow: hidden;
-
-                        .garis-merah-tebal{
-                            display: flex;
-                            position: absolute;
-                            height: 2.5px;
-                            width: 120px;
-                            background: #d80010;
-                            border-radius: 3px;
-                            overflow: hidden;
-                        }
-                    }
-
-                     // Column1 Section2
-                     .col1-section2{
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        padding: 5px 0 0 0;
-                        width: 100%;
-
-                        .title1-col1{
-                            display: flex;
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: #d80010;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title2-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-pemimpin-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title3-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-wakil-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-                    }
-                    // END Column1 Section2
-
-                    // Column2 Section2
-                    .col2-section2{
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        padding: 5px 0 0 0;
-                        width: 100%;
-
-                        .title1-col2{
-                            display: flex;
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: #d80010;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title2-col2{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-pemimpin-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title3-col2{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-wakil-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-                    }
-                    // END Column2 Section2
-                }
-                // END Section2 RIAU
-                
+                width: 100%;
+                padding: 10px 20px 0 0;
+                overflow: hidden;  
             }
-            // END Column1 Bagian2
+            // END Column1 Section1
 
-            // Column2 Bagian2
-            .column2-bagian2{
+            // Column2 Section1
+            .column2-section1{
                 display: flex;
                 flex-direction: column;
                 height: auto;
-                width: 33%;
-                padding: 5px 20px 0 0;
+                width: 100%;
+                padding: 30px 20px 0 0;
                 overflow: hidden;
-
-                // Section1 BENGKULU
-                .section1-column2{
-                    display: flex;
-                    flex-direction: column;
-                    height: auto;
-                    width: 100%;
-                    overflow: hidden;
-
-                    .jdl-bengkulu-section1{
-                        display: flex;
-                        font-size: 15px;
-                        font-weight: 500;
-                        color: #555;
-                        margin: 0 0 2px 0;
-                        overflow: hidden;
-                    }
-
-                    .garis-merah-tipis{
-                        display: flex;
-                        height: 1px;
-                        width: 100%;
-                        background: #d80010;
-                        margin: 0 0 10px 0;
-                        overflow: hidden;
-
-                        .garis-merah-tebal{
-                            display: flex;
-                            position: absolute;
-                            height: 2.5px;
-                            width: 120px;
-                            background: #d80010;
-                            border-radius: 3px;
-                            overflow: hidden;
-                        }
-                    }
-
-                    // Column1 Section1
-                    .col1-section1{
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        padding: 5px 0 0 0;
-                        width: 100%;
-
-                        .title1-col1{
-                            display: flex;
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: #d80010;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title2-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-pemimpin-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title3-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-wakil-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-                    }
-                    // END Column1 Section1
-                }
-                // END Section1 BENGKULU
-
-                // Section2 SUMATERA SELATAN
-                .section2-column2{
-                    display: flex;
-                    flex-direction: column;
-                    height: auto;
-                    width: 100%;
-                    padding: 20px 0 0 0;
-                    overflow: hidden;
-
-                    .jdl-sumatera-selatan-section2{
-                        display: flex;
-                        font-size: 15px;
-                        font-weight: 500;
-                        color: #555;
-                        margin: 0 0 2px 0;
-                        overflow: hidden;
-                    }
-
-                    .garis-merah-tipis{
-                        display: flex;
-                        height: 1px;
-                        width: 100%;
-                        background: #d80010;
-                        margin: 0 0 10px 0;
-                        overflow: hidden;
-
-                        .garis-merah-tebal{
-                            display: flex;
-                            position: absolute;
-                            height: 2.5px;
-                            width: 120px;
-                            background: #d80010;
-                            border-radius: 3px;
-                            overflow: hidden;
-                        }
-                    }
-
-                    // Column1 Section2
-                    .col1-section2{
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        padding: 5px 0 0 0;
-                        width: 100%;
-
-                        .title1-col1{
-                            display: flex;
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: #d80010;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title2-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-pemimpin-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title3-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-wakil-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-                    }
-                    // END Column1 Section2
-                }
-                // END Section2 SUMATERA SELATAN
-
-                // Section3 KEPULAUAN BANGKA BELITUNG
-                .section3-column2{
-                    display: flex;
-                    flex-direction: column;
-                    height: auto;
-                    width: 100%;
-                    padding: 20px 0 0 0;
-                    overflow: hidden;
-
-                    .jdl-sumatera-selatan-section3{
-                        display: flex;
-                        font-size: 15px;
-                        font-weight: 500;
-                        color: #555;
-                        margin: 0 0 2px 0;
-                        text-align: start;
-                        overflow: hidden;
-                    }
-
-                    .garis-merah-tipis{
-                        display: flex;
-                        height: 1px;
-                        width: 100%;
-                        background: #d80010;
-                        margin: 0 0 10px 0;
-                        overflow: hidden;
-
-                        .garis-merah-tebal{
-                            display: flex;
-                            position: absolute;
-                            height: 2.5px;
-                            width: 120px;
-                            background: #d80010;
-                            border-radius: 3px;
-                            overflow: hidden;
-                        }
-                    }
-
-                    // Column1 Section3
-                    .col1-section3{
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        padding: 5px 0 0 0;
-                        width: 100%;
-
-                        .title1-col1{
-                            display: flex;
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: #d80010;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title2-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-pemimpin-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title3-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-wakil-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-                    }
-                    // END Column1 Section3
-                }
-                // END Section3 KEPULAUAN BANGKA BELITUNG
             }
-            // END Column2 Bagian2
-
-            // Column3 Bagian2
-            .column3-bagian2{
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                width: 33%;
-                padding: 5px 20px 0 0;
-                overflow: hidden;
-
-                // Section1 SUMATERA BARAT
-                .section1-column3{
-                    display: flex;
-                    flex-direction: column;
-                    height: auto;
-                    width: 100%;
-                    overflow: hidden;
-
-                    .jdl-sumatera-barat-section1{
-                        display: flex;
-                        font-size: 15px;
-                        font-weight: 500;
-                        color: #555;
-                        margin: 0 0 2px 0;
-                        overflow: hidden;
-                    }
-
-                    .garis-merah-tipis{
-                        display: flex;
-                        height: 1px;
-                        width: 100%;
-                        background: #d80010;
-                        margin: 0 0 10px 0;
-                        overflow: hidden;
-
-                        .garis-merah-tebal{
-                            display: flex;
-                            position: absolute;
-                            height: 2.5px;
-                            width: 120px;
-                            background: #d80010;
-                            border-radius: 3px;
-                            overflow: hidden;
-                        }
-                    }
-
-                    // Column1 Section1
-                    .col1-section1{
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        padding: 5px 0 0 0;
-                        width: 100%;
-
-                        .title1-col1{
-                            display: flex;
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: #d80010;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title2-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-pemimpin-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title3-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-wakil-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-                    }
-                    // END Column1 Section1
-
-                    // Column2 Section1
-                    .col2-section1{
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        padding: 5px 0 0 0;
-                        width: 100%;
-
-                        .title1-col2{
-                            display: flex;
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: #d80010;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title2-col2{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-pemimpin-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title3-col2{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-wakil-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-                    }
-                    // END Column2 Section1
-                }
-                // END Section1 SUMATERA BARAT
-
-                // Section2 SUMATERA UTARA
-                .section2-column3{
-                    display: flex;
-                    flex-direction: column;
-                    height: auto;
-                    width: 100%;
-                    padding: 20px 0 0 0;
-                    overflow: hidden;
-
-                    .jdl-sumatera-utara-section2{
-                        display: flex;
-                        font-size: 15px;
-                        font-weight: 500;
-                        color: #555;
-                        margin: 0 0 2px 0;
-                        overflow: hidden;
-                    }
-
-                    .garis-merah-tipis{
-                        display: flex;
-                        height: 1px;
-                        width: 100%;
-                        background: #d80010;
-                        margin: 0 0 10px 0;
-                        overflow: hidden;
-
-                        .garis-merah-tebal{
-                            display: flex;
-                            position: absolute;
-                            height: 2.5px;
-                            width: 120px;
-                            background: #d80010;
-                            border-radius: 3px;
-                            overflow: hidden;
-                        }
-                    }
-
-                    // Column1 Section2
-                    .col1-section2{
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        padding: 5px 0 0 0;
-                        width: 100%;
-
-                        .title1-col1{
-                            display: flex;
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: #d80010;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title2-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-pemimpin-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title3-col1{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-wakil-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-                    }
-                    // END Column1 Section2
-
-                    // Column2 Section2
-                    .col2-section2{
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        padding: 5px 0 0 0;
-                        width: 100%;
-
-                        .title1-col2{
-                            display: flex;
-                            font-size: 13px;
-                            font-weight: bold;
-                            color: #d80010;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title2-col2{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-pemimpin-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .title3-col2{
-                            display: flex;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-
-                        .txt-nama-wakil-bupati{
-                            display: flex;
-                            font-size: 11px;
-                            color: #000;
-                            text-align: start;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-                    }
-                    // END Column2 Section2
-                }
-                // END Section2 SUMATERA UTARA
-            }
-            // END Column3 Bagian2
-
-            
+            // Column2 Section1
         }
-        // END Row Bagian2
+        // END Section1 Row2
+
+        // Section2 Row2
+        .section2-row2{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 33%;
+
+            // Column1 Section2
+            .column1-section2{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                padding: 10px 20px 0 0;
+                overflow: hidden;  
+            }
+            // END Column1 Section2
+
+            // Column2 Section2
+            .column2-section2{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                padding: 30px 20px 0 0;
+                overflow: hidden;
+            }
+            // Column2 Section2
+
+            // Column3 Section2
+            .column3-section2{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                padding: 30px 20px 0 0;
+                overflow: hidden;
+            }
+            // Column3 Section2
+        }
+        // END Section2 Row2
+
+        // Section3 Row2
+        .section3-row2{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 33%;
+
+            // Column1 Section3
+            .column1-section3{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                padding: 10px 20px 0 0;
+                overflow: hidden;
+            }
+            // Column1 Section3
+
+            // Column2 Section3
+            .column2-section3{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                padding: 30px 20px 0 0;
+                overflow: hidden;
+            }
+            // Column2 Section3
+        }
+        // END Section3 Row2
+    }
+
+        .carousel-item{
+            height: 100%;
+            width: 100%;
+        }
+
+        .carousel-item{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    #btn-left-carousel3{
+        display: flex;
+        height: 35px;
+        width: 35px;
+        background: #d80010;
+        color: #fff;
+        border-radius: 500px;
+        margin: 560px 0 0 290px;
+        transition: .5s;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+    
+    #btn-right-carousel3{
+        display: flex;
+        height: 35px;
+        width: 35px;
+        background: #d80010;
+        color: #fff;
+        border-radius: 500px;
+        margin: 560px 290px 0 0px;
+        transition: .5s;
+
+        &:hover{
+            opacity: 1;
+        }
     }
 }
 // END Carousel
