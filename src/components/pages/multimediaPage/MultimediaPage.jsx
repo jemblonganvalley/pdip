@@ -4,6 +4,12 @@ import SL from '../../../img/newspaper.png'
 import VD from '../../../img/fake-news.png'
 import VI from '../../../img/camera.png'
 import SP from '../../../img/notebook.png'
+
+import multimediaSatu from '../../../img/multimedia1.png'
+import multimediaDua from '../../../img/multimedia2.png'
+import multimediaTiga from '../../../img/multimedia3.png'
+import multimediaEmpat from '../../../img/multimedia4.png'
+
 import Cards from '../../cards/MainCards'
 import megawati1 from '../../../img/megawati1.jpg'
 import megawati2 from '../../../img/megawati2.jpg'
@@ -13,6 +19,7 @@ import megawati12 from '../../../img/megawati12.png'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import MainButton from '../../buttons/MainButton'
 import MainDivider from '../../divider/MainDivider'
+import CardInformasi from '../../cardInformasi/CardInformasi'
 
 const MultimediaPage = ()=> {
     return (
@@ -44,24 +51,15 @@ const MultimediaPage = ()=> {
                     </div>
                 </div>
             </div>
-            <div className="cardMedia">
-                <div className="siaranLangsung mediaCard">
-                    <img src={SL} alt="" width="35" className="imgCards" />
-                    <small className="smallCard">siaran langsung</small>
-                </div>
-                <div className="videoDokumentasi mediaCard">
-                    <img src={VD} alt="" width="35" className="imgCards" />
-                    <small className="smallCard">video dokumentasi</small>
-                </div>
-                <div className="videoInteraktif mediaCard">
-                    <img src={VI} alt="" width="35" className="imgCards" />
-                    <small className="smallCard">video interaktif</small>
-                </div>
-                <div className="siaranPers mediaCard">
-                    <img src={SP} alt="" width="35" className="imgCards" />
-                    <small className="smallCard">siaran pers</small>
-                </div>
-            </div>
+            
+            <CardInformasi image={multimediaSatu}
+                            image2={multimediaDua}
+                            image3={multimediaTiga}
+                            image4={multimediaEmpat}
+                            text="siaran langsung"
+                            text2="video dokumentasi"
+                            text3="video teaser"
+                            text4="wawancara" />
 
             <div className="panggung">
                 <div className="textPanggung">
@@ -74,15 +72,17 @@ const MultimediaPage = ()=> {
             <Cards imageCard={perempuan}
                     textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                     TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                    borderRadius="10px"
-                    width="30%"  />
+                    borderRadius="10px"  />
             <Cards imageCard={megawati12}
                     textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                    TextH5="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia quo tempore excepturi, accusantium"
+                    TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                     borderRadius="10px"
-                    width="70%"
                     icons="fa fa-play"
                     classIcon="VBMusic"  />
+            <Cards imageCard={perempuan}
+                    textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                    TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                    borderRadius="10px"  />
             </div>
 
             

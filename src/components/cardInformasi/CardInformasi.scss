@@ -1,0 +1,44 @@
+@import "../../utilities/variable/variables.scss";
+
+.cardMedia {
+    width: 100%;
+    padding: $padding;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .mediaCard {
+        .smallCard {
+            text-transform: uppercase;
+            // font-weight: 700;
+            font-family: 'Open Sans';
+            font-size: 9pt;
+        }
+    }
+    
+    .imgCards {
+        margin-right: 1rem;
+    }
+
+    .siaranLangsung {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .videoDokumentasi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .videoInteraktif {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .siaranPers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

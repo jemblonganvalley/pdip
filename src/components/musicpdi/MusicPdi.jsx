@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
-import Partitur from '../../img/partitur.png'
-import MinusOn from '../../img/minusone.png'
+import downloadSatu from '../../img/downloadSatu.png'
+import downloadDua from '../../img/downloadDua.png'
+import downloadTiga from '../../img/downloadTiga.png'
 import laguPerjuangan from '../../img/lagu.png'
 import ReactJkMusicPlayer from 'react-jinke-music-player'
 import "react-jinke-music-player/assets/index.css";
@@ -86,11 +87,19 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                                 </div>
                             </div>
                         </div>
-                        <div className="partitur">
-                            <img src={Partitur} alt="" width="140" />
-                        </div>
-                        <div className="minusOn">
-                        <img src={MinusOn} alt="" width="140" />
+                        <div className="download">
+                            <div className="partitur downloadContent">
+                                <img src={downloadSatu} alt="" width="35" />
+                                <span className="downloadSpan">Download</span>
+                            </div>
+                            <div className="minusOn downloadContent">
+                            <img src={downloadDua} alt="" width="35" />
+                            <span className="downloadSpan">Download</span>
+                            </div>
+                            <div className="minusOn downloadContent">
+                            <img src={downloadTiga} alt="" width="35" />
+                            <span className="downloadSpan">Download</span>
+                            </div>
                         </div>
                     </div>
                     <div className="col-sm-8">
@@ -148,21 +157,21 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                     <div className="col col-md-4 musicList">
                         <div className="headersList">
                             <img src={laguPerjuangan} alt="" width="60" />
-                            <h4>Lagu Perjuangan<br/>PDI Perjuangan</h4>
+                            <h4>Lagu<br/>Perjuangan</h4>
                         </div>
-                        <div className="listSatu">
+                        <div className="listSatu list">
                             <h5 className="judulList">Mars PDI Perjuangan</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
                         </div>
-                        <div className="listDua">
+                        <div className="listDua list">
                             <h5 className="judulList">Hymne PDI Perjuangan</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
                         </div>
-                        <div className="listTiga">
+                        <div className="listTiga list">
                             <h5 className="judulList">Hymne PDI Perjuangan</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
                         </div>
-                        <div className="listEmpat">
+                        <div className="listEmpat list">
                             <h5 className="judulList">Hymne PDI Perjuangan</h5>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
                         </div>

@@ -53,18 +53,19 @@ $secondary : #f3f3f3;
 
         .contentSatu {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             width: 100%;
-            // height: 50vh;
+            // height: 100%;
             // border: 1px solid green;
 
             .wrapperContentSatu {
                 display: flex;
-                justify-content: center;
-                // align-items: center;
+                justify-content: space-around;
+                align-items: center;
                 flex-direction: column;
                 // border: 1px solid goldenrod;
+                // height: 100%;
 
                 .textContentSatu {
                     display: flex;
@@ -72,6 +73,34 @@ $secondary : #f3f3f3;
                     align-items: center;
                     flex-direction: column;
 
+                }
+
+                .col-md-3 {
+                    margin: 10px 0;
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+    
+                    .textContent {
+                        margin-left: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        padding: 10px;
+    
+                        h4 {
+                            font-size: 11pt;
+                        }
+    
+                        p {
+                            font-size: 10px;
+                            line-height: 1.5;
+                        }
+                    }
                 }
                
             }
@@ -129,32 +158,7 @@ $secondary : #f3f3f3;
                 }
             }
 
-            .col-md-4 {
-                margin: 10px 0;
-                display: flex;
-                width: 100%;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-
-                .textContent {
-                    margin-left: 10px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-                    flex-direction: column;
-                    padding: 10px;
-
-                    h4 {
-                        font-size: 11pt;
-                    }
-
-                    p {
-                        font-size: 10px;
-                        line-height: 1.5;
-                    }
-                }
-            }
+            
         }
     }
     // END CONTAINER SATU

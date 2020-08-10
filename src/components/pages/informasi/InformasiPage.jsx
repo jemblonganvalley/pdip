@@ -5,6 +5,12 @@ import IconCardDua from '../../../img/target.png'
 import IconCardTiga from '../../../img/cs.png'
 import IconCardEmpat from '../../../img/law-book.png'
 import IconHartaSatu from '../../../img/lh.png'
+
+import ppidSatu from '../../../img/ppid.png'
+import ppidDua from '../../../img/ppid2.png'
+import ppidTiga from '../../../img/ppid3.png'
+import ppidEmpat from '../../../img/ppid4.png'
+
 import IconHartaDua from '../../../img/income.png'
 import ConsentWhite from '../../../img/consentwhite.png'
 import Consentblack from '../../../img/consentblack.png'
@@ -13,6 +19,7 @@ import CardsProfile from '../../cardIconProfil/CardsProfile'
 import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import WidgetBerita from '../../widget/widgetBerita/WidgetBerita'
+import CardInformasi from '../../cardInformasi/CardInformasi'
 
 const InformasiPage = ()=> {
 
@@ -67,7 +74,14 @@ const InformasiPage = ()=> {
                 <div className="divider"></div>
                 {/* divider */}
 
-                <CardsProfile />
+                <CardInformasi image={ppidSatu}
+                                image2={ppidDua}
+                                image3={ppidTiga}
+                                image4={ppidEmpat}
+                                text="Struktur PPDI PDI Perjuangan"
+                                text2="visi / misi"
+                                text3="prosedur pelayanan"
+                                text4="regulasi PPDI" />
 
                 {/* YOUTUBE PPDI */}
                 <div className="ytProfil">

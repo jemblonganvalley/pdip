@@ -228,6 +228,14 @@ $phoneSatu : 600px;
             }
         
     }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+    width: 7%;
+    text-decoration: none;
+    height: 0;
+    top: 50%;
+}
 }
 
 .prev-text {
@@ -250,9 +258,5 @@ $phoneSatu : 600px;
     
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 10%;
-    text-decoration: none;
-}
+
 
