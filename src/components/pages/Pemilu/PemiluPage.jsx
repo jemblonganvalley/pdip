@@ -117,7 +117,7 @@ const PemiluPage = () => {
                     </div>
                     <div className="btn-col2">
                         <button className="btn-lihat">
-                            Lihat
+                            LIHAT
                         </button>
                     </div>
                 </div>
