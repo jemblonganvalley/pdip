@@ -51,19 +51,7 @@ const PemiluPage = () => {
 
                         {/* Row2 */}
                         <div className="row2-col1">
-                            {/* Row Bagian1 */}
-                            <div className="row-bagian1">
-                                <div className="garis-pinggir-merah">
-
-                                </div>
-                            </div>
-                            {/* END Row Bagian1 */}
-
-                            {/* Row Bagian2 */}
-                            <div className="row-bagian2">
-                                <Carousel3PemiluPage />
-                            </div>
-                            {/* END Row Bagian2 */}
+                            <Carousel3PemiluPage />
                         </div>
                         {/* END Row2 */}
                     </div>

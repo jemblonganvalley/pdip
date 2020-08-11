@@ -1,7 +1,7 @@
 // Carousel
 .carousel3-pemiluPage{
     display: flex;
-    height: 100%;
+    height: auto;
     width: 100%;
 
     .box-carousel3-pemiluPage{
@@ -11,116 +11,18 @@
         background: #fff;
 
         .carousel-item{
-            display: flex;
-            flex-direction: row;
             height: 100%;
-            width: 100%;
+            width: 100%;    
 
-        // Section1 Row2
-        .section1-row2{
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            width: 33%;
-            padding: 0 0 0 0px;
-       
-            // Column1 Section1
-            .column1-section1{
+            .img1{
                 display: flex;
-                flex-direction: column;
-                height: auto;
+                height: 100%;
                 width: 100%;
-                padding: 10px 20px 0 0;
-                overflow: hidden;  
+                background-image: url(../../img/pemilu2.jpg);
+                background-size: cover;
+                background-position: center;
             }
-            // END Column1 Section1
-
-            // Column2 Section1
-            .column2-section1{
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                width: 100%;
-                padding: 30px 20px 0 0;
-                overflow: hidden;
-            }
-            // Column2 Section1
         }
-        // END Section1 Row2
-
-        // Section2 Row2
-        .section2-row2{
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            width: 33%;
-
-            // Column1 Section2
-            .column1-section2{
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                width: 100%;
-                padding: 10px 20px 0 0;
-                overflow: hidden;  
-            }
-            // END Column1 Section2
-
-            // Column2 Section2
-            .column2-section2{
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                width: 100%;
-                padding: 30px 20px 0 0;
-                overflow: hidden;
-            }
-            // Column2 Section2
-
-            // Column3 Section2
-            .column3-section2{
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                width: 100%;
-                padding: 30px 20px 0 0;
-                overflow: hidden;
-            }
-            // Column3 Section2
-        }
-        // END Section2 Row2
-
-        // Section3 Row2
-        .section3-row2{
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            width: 33%;
-
-            // Column1 Section3
-            .column1-section3{
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                width: 100%;
-                padding: 10px 20px 0 0;
-                overflow: hidden;
-            }
-            // Column1 Section3
-
-            // Column2 Section3
-            .column2-section3{
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                width: 100%;
-                padding: 30px 20px 0 0;
-                overflow: hidden;
-            }
-            // Column2 Section3
-        }
-        // END Section3 Row2
-    }
 
         .carousel-item{
             height: 100%;
@@ -140,7 +42,7 @@
         background: #d80010;
         color: #fff;
         border-radius: 500px;
-        margin: 560px 0 0 280px;
+        margin: 560px 0 0 300px;
         transition: .5s;
 
         &:hover{
@@ -155,7 +57,7 @@
         background: #d80010;
         color: #fff;
         border-radius: 500px;
-        margin: 560px 280px 0 0px;
+        margin: 560px 300px 0 0px;
         transition: .5s;
 
         &:hover{
