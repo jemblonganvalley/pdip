@@ -2,7 +2,7 @@ import React from 'react'
 
 import './CardKetuaUmum.scss'
 
-const CardKetuaUmum = ({ imageCard, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight, paragrapSize, width }) => {
+const CardKetuaUmum = ({ imageCardKetuaUmum, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight, paragrapSize, width }) => {
     return (
         <>
             {/* Card Ketua Umum */}
@@ -11,7 +11,7 @@ const CardKetuaUmum = ({ imageCard, textSmall, TextH5, borderRadius, paragrap, i
                 width: width
             }}>
                 <div className="imageCard" style={{
-                    backgroundImage: `url(${imageCard})`,
+                    backgroundImage: `url(${imageCardKetuaUmum})`,
                 }} >
                     {/* JIKA MAU DIPAKAI CLASS, PAKAI CLASS VBMusic */}
                     <div as="div" className={`${classIcon}`} to={href} style={{ textDecoration: 'none' }} >

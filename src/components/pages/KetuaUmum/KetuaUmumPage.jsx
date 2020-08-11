@@ -98,17 +98,17 @@ const KetuaUmumPage = () => {
 
                     {/* Column3 */}
                     <div className="cardKetuaUmum">
-                        <CardKetuaUmum imageCard={pemilu13}
+                        <CardKetuaUmum imageCardKetuaUmum={pemilu13}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                             borderRadius="0px" />
-                        <CardKetuaUmum imageCard={pemilu14}
+                        <CardKetuaUmum imageCardKetuaUmum={pemilu14}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                             borderRadius="0px" />
-                        <CardKetuaUmum imageCard={pemilu15}
+                        <CardKetuaUmum imageCardKetuaUmum={pemilu15}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
