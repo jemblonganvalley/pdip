@@ -7,6 +7,7 @@ import bkbb4 from '../../../img/bkbb4.jpg'
 import './BkbbWejangan.scss'
 import CardQuotes from '../../cardquotes/CardQuotes'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
+import MainButton from '../../buttons/MainButton'
 
 const BkbbWejangan = () => {
     return (
@@ -105,9 +106,7 @@ const BkbbWejangan = () => {
 
                     {/* Column2 */}
                     <div className="col2-container-2">
-                        <button className="btn-lihat-semua">
-                            LIHAT SEMUA
-                        </button>
+                        <MainButton name="LIHAT SEMUA" margin="1rem 0" />
                     </div>
                     {/* END Column2 */}
                 </div>
