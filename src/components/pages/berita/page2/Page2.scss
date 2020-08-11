@@ -30,7 +30,7 @@ $secondary : #f3f3f3;
         align-items: center;
         flex-direction: row;
         width: 40%;
-        margin-top: 20px;
+        margin-top: 15px;
         padding: 10px 10%;
         i {
             span {
@@ -207,7 +207,7 @@ $secondary : #f3f3f3;
 
                 .txt-desk1{
                     display: flex;
-                    font-size: 15px;
+                    font-size: 13px;
                     color: #000;
                     text-align: start;
                     margin: 25px 0 0 0;
@@ -267,72 +267,13 @@ $secondary : #f3f3f3;
         // Column2
         .col2-container-1 {
             width: 100%;
-            height: 50vh;
+            height: 55vh;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: row;
             margin-top: 0;
             padding: 10px 0%;
-        
-            .col-cardContent {
-                //  border: 1px solid green;
-                height: 100%;
-                width: 100%;
-                flex: auto;
-                margin: 0 10px;
-                background: #ffffff;
-                cursor: pointer;
-                transition: .5s;
-                border-radius: 10px;
-
-                &:hover{
-                    background: #d80010;
-                    color: #fff;
-                }
-        
-                .imageContent {
-                    width: 100%;
-                    height: 30vh;        
-                    background-image: url(../../../../img/detailartikel3.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    border-top-right-radius: 10px;
-                    border-top-left-radius: 10px;
-                }
-        
-                .imageTwo {
-                    width: 100%;
-                    height: 30vh;   
-                    background: url(../../../../img/detailartikel4.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    border-top-right-radius: 10px;
-                    border-top-left-radius: 10px;
-                }
-        
-                .imageThree {
-                    width: 100%;
-                    height: 30vh;
-                    background: url(../../../../img/detailartikel5.jpg);
-                    background-size: cover;
-                }
-
-                .imageFour {
-                    width: 100%;
-                    height: 30vh;
-                    background: url(../../../../img/detailartikel6.jpg);
-                    background-size: cover;
-                }
-        
-                .textCard {
-                    width: 100%;
-                    //  height: 100%;
-                    padding: 10px 20px;
-        
-                    //  border:  1px solid blue;
-                }
-            }
         }
         // END Column2
     }

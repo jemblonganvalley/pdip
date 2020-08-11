@@ -60,12 +60,12 @@ $secondary : #f3f3f3;
                 flex-direction: column;
                 height: 100%;
                 width: 40%;
-                background-image: url();
+                background-image: url(../../../img/bkbb1.jpg);
                 justify-content: center;
                 align-items: center;
                 padding: 10px 15px 10px 15px;
                 margin: 0 20px 0 0;
-                color : #d80010;
+                color : #fff;
 
                 i{
                     display: flex;
@@ -80,7 +80,6 @@ $secondary : #f3f3f3;
                     display: flex;
                     font-size: 25px;
                     font-weight: 500;
-                    color: #d80010;
                     margin: 1px;
                     text-align: center;
                 }
@@ -89,7 +88,6 @@ $secondary : #f3f3f3;
                     display: flex;
                     font-size: 15px;
                     font-weight: 500;
-                    color: #d80010;
                     margin: 1px;
                     text-align: center;
                 }
@@ -97,7 +95,6 @@ $secondary : #f3f3f3;
                 .txt3{
                     display: flex;
                     font-size: 15px;
-                    color: #d80010;
                     justify-content: center;
                     align-items: center;
                     margin: 20px 0 0 0;
@@ -194,124 +191,6 @@ $secondary : #f3f3f3;
             width: 100%;
             padding: 10px 10px 25px 10px;
             align-items: center;
-        
-            .img{
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                width: 100%;
-                background: #000;
-                justify-content: center;
-                align-items: center;
-                margin: 40px 10px 0 10px;
-                border-radius: 10px;
-                cursor: pointer;
-            }
-
-            // Image1
-            .img1{
-                display: flex;
-                height: 100%;
-                width: 100%;
-                background-image: url(../../../img/bkbb2.jpg);
-                background-size: cover;
-                padding: 0 20px;
-                flex-direction: column;
-
-                i{
-                    display: 15px;
-                    color: #fff;
-                    margin: 5px;
-                }
-
-                .txt1{
-                    display: flex;
-                    font-size: 15px;
-                    font-weight: 500;
-                    color: #fff;
-                    text-align: center;
-                    margin: 2px 0 0 0;
-                }
-
-                .txt2{
-                    display: flex;
-                    font-size: 12px;
-                    color: #fff;
-                    text-align: center;
-                    margin: 10px 0 0 0;
-                }
-            }
-            // END Image1
-
-            // Image2
-            .img2{
-                display: flex;
-                height: 100%;
-                width: 100%;
-                background-image: url(../../../img/bkbb3.jpg);
-                background-size: cover;
-                padding: 0 20px;
-                flex-direction: column;
-
-                i{
-                    display: 15px;
-                    color: #fff;
-                    margin: 5px;
-                }
-
-                .txt1{
-                    display: flex;
-                    font-size: 15px;
-                    font-weight: 500;
-                    color: #fff;
-                    text-align: center;
-                    margin: 2px 0 0 0;
-                }
-
-                .txt2{
-                    display: flex;
-                    font-size: 12px;
-                    color: #fff;
-                    text-align: center;
-                    margin: 10px 0 0 0;
-                }
-            }
-            // END Image2
-
-            // Image3
-            .img3{
-                display: flex;
-                height: 100%;
-                width: 100%;
-                background-image: url(../../../img/bkbb4.jpg);
-                background-size: cover;
-                padding: 0 20px;
-                flex-direction: column;
-
-                i{
-                    display: 15px;
-                    color: #fff;
-                    margin: 5px;
-                }
-
-                .txt1{
-                    display: flex;
-                    font-size: 15px;
-                    font-weight: 500;
-                    color: #fff;
-                    text-align: center;
-                    margin: 2px 0 0 0;
-                }
-
-                .txt2{
-                    display: flex;
-                    font-size: 12px;
-                    color: #fff;
-                    text-align: center;
-                    margin: 10px 0 0 0;
-                }
-            }
-            // END Image3
         }
         // END Column1
 
@@ -322,27 +201,6 @@ $secondary : #f3f3f3;
             width: 100%;
             justify-content: center;
             align-items: center;
-
-            .btn-lihat-semua{
-                display: flex;
-                height: 35px;
-                width: 120px;
-                background: #d80010;
-                border-radius: 50px;
-                border: none;
-                outline: none;
-                font-size: 13px;
-                font-weight: 500;
-                color: #fff;
-                justify-content: center;
-                align-items: center;
-                transition: .5s;
-
-                &:hover{
-                    background: #fff;
-                    color: #d80010;
-                }
-            }
         }
         // END Column2
     }

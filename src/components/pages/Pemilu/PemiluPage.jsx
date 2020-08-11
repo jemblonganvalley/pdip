@@ -7,6 +7,7 @@ import './PemiluPage.scss'
 import CarouselPemilu1 from '../../carouselPemilu1/CarouselPemilu1'
 import CarouselPemilu2 from '../../carouselPemilu2/CarouselPemilu2'
 import Carousel3PemiluPage from '../../carousel3PemiluPage/Carousel3PemiluPage'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 // END Import to CSS
 
 // Create Component 
@@ -25,9 +26,7 @@ const PemiluPage = () => {
                     </div>
                 </div>
                 <div className="linkedBerita">
-                    <i class="fa fa-home">
-                        <span>Home / Pemilu</span>
-                    </i>
+                    <BreadCrumbs link1="Home" to1="/" page2="Pemilu" />
                 </div>
 
                 {/* Container1 */}
@@ -56,17 +55,7 @@ const PemiluPage = () => {
 
                         {/* Row2 */}
                         <div className="row2-col1">
-                            {/* Row Bagian1 */}
-                            <div className="row-bagian1">
-                                <div className="garis-pinggir-merah">
-
-                                </div>
-                            </div>
-                            {/* END Row Bagian1 */}
-
-                            {/* Row Bagian2 */}
                             <Carousel3PemiluPage />
-                            {/* END Row Bagian2 */}
                         </div>
                         {/* END Row2 */}
                     </div>
@@ -120,7 +109,7 @@ const PemiluPage = () => {
                     </div>
                     <div className="btn-col2">
                         <button className="btn-lihat">
-                            Lihat
+                            LIHAT
                         </button>
                     </div>
                 </div>

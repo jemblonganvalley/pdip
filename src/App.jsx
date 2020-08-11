@@ -22,6 +22,7 @@ import MateriPokok from './components/pages/materipokok/MateriPokok';
 import BkbbWejangan from './components/pages/bkbb/BkbbWejangan'
 import AllComponent from './components/allcomponent/AllComponent';
 import BgRed from './components/bgRed/BgRed';
+import WejanganBungKarno from './components/pages/bkbb/wejanganbungkarno/WejanganBungKarno';
 
 
 function App() {
@@ -54,6 +55,14 @@ function App() {
 
           <Route path='/pemilu'>
             <PemiluPage />
+          </Route>
+
+          <Route path="/components">
+
+          </Route>
+
+          <Route path='/wejanganbungkarno'>
+            <WejanganBungKarno />
           </Route>
 
           <Route path="/quotes">

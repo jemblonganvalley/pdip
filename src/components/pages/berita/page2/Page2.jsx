@@ -1,6 +1,14 @@
 import React ,{useEffect} from 'react'
 
-import '../page2/Page2.css'
+import detailartikel3 from '../../../../img/detailartikel3.jpg'
+import detailartikel4 from '../../../../img/detailartikel4.jpg'
+import detailartikel5 from '../../../../img/detailartikel5.jpg'
+import detailartikel6 from '../../../../img/detailartikel6.jpg'
+
+
+import '../page2/Page2.scss'
+import BreadCrumbs from '../../../breadcrumbs/BreadCrumbs'
+import Card1Berita from '../../../card1berita/Card1Berita'
 
 const Page2 = () => {
 
@@ -19,9 +27,7 @@ const Page2 = () => {
                     </div>
                 </div>
                 <div className="linkedBerita">
-                    <i class="fa fa-home">
-                        <span>Home / Berita / Bung Karno Bapak Bangsa</span>
-                    </i>
+                    <BreadCrumbs link1="Home" to1="/" link2="Berita" to2="/berita" page3="Berita Foto" />
                 </div>
 
                 {/* Container1 */}
@@ -118,33 +124,14 @@ const Page2 = () => {
 
                     {/* Column2 */}
                     <div className="col2-container-1">
-                        <div className="col-cardContent">
-                            <div className="imageContent imageOne">
-                            </div>
-                            <div className="textCard">
-                                <h6>Lorem ipsum dolor, sit amet consectetur adipisicing.</h6>
-                            </div>
-
-                        </div>
-                        <div className="col-cardContent">
-                            <div className="imageContent imageTwo"></div>
-                            <div className="textCard">
-                                <h6>Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil</h6>
-                            </div>
-
-                        </div>
-                        <div className="col-cardContent">
-                            <div className="imageContent imageThree"></div>
-                            <div className="textCard">
-                                <h6>Lorem ipsum dolor, sit amet consectetur adipisicing.</h6>
-                            </div>
-                        </div>
-                        <div className="col-cardContent">
-                            <div className="imageContent imageFour"></div>
-                            <div className="textCard">
-                                <h6>Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil</h6>
-                            </div>
-                        </div>
+                        <Card1Berita imageCard={detailartikel3} title="Lorem ipsum dolor, sit amet consectetur adipisicing"
+                            borderRadius="10px" />
+                        <Card1Berita imageCard={detailartikel4} title="Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil"
+                            borderRadius="10px" />
+                        <Card1Berita imageCard={detailartikel5} title="Lorem ipsum dolor, sit amet consectetur adipisicing"
+                            borderRadius="10px" />
+                        <Card1Berita imageCard={detailartikel6} title="Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil"
+                            borderRadius="10px" />
                     </div>
                     {/* END Column2 */}
 

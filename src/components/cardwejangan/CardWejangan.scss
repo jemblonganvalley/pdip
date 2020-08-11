@@ -1,0 +1,40 @@
+.imgWejangan{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100vw;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0px 10px 0px 10px;
+    cursor: pointer;
+    text-decoration: none;
+
+
+    i{
+        display: 15px;
+        color: #fff;
+        margin: 5px;
+    }
+
+    .txt1{
+        display: flex;
+        font-size: 15px;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+        margin: 2px 0 0 0;
+    }
+
+    .txt2{
+        display: flex;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+}
+// END Img

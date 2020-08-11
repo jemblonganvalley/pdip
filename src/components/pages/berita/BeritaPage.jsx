@@ -1,11 +1,27 @@
 // Import to React
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 // END Import to React
+
+import pemilu13 from '../../../img/pemilu13.jpg'
+import pemilu14 from '../../../img/pemilu14.jpg'
+import pemilu15 from '../../../img/pemilu15.jpg'
+import pemilu18 from '../../../img/pemilu18.jpg'
+import pemilu19 from '../../../img/pemilu19.jpg'
+import pemilu20 from '../../../img/pemilu20.jpg'
+import pemilu21 from '../../../img/pemilu21.jpg'
+import pemilu22 from '../../../img/pemilu22.jpg'
+import pemilu23 from '../../../img/pemilu23.jpg'
 
 import './BeritaPage.scss'
 import { Link } from 'react-router-dom'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import CarouselBerita from '../../carouselBerita/CarouselBerita'
+import Cards from '../../cards/MainCards'
+import megawati5 from '../../../img/megawati5.jpg'
+import megawati6 from '../../../img/megawati6.jpg'
+import megawati7 from '../../../img/megawati7.jpg'
+import Card1Berita from '../../card1berita/Card1Berita'
+import Card2Berita from '../../card2berita/Card2Berita'
 
 // Create Component
 const BeritaPage = () => {
@@ -92,32 +108,13 @@ const BeritaPage = () => {
                     {/* END Column2 */}
 
                     {/* Column3 */}
-                    <div className="col3-cardContent-container-1">
-                        <Link to='/page1' className="col-cardContent card1">
-                            <div className="imageContent imageOne"></div>
-                            <div className="textCard">
-                                <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                            </div>
-                        </Link>
-
-                        <Link to='/page2' className="col-cardContent">
-                            <div className="imageContent imageTwo"></div>
-                            <div className="textCard">
-                                <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                            </div>
-                        </Link>
-                        <div className="col-cardContent">
-                            <div className="imageContent imageThree"></div>
-                            <div className="textCard">
-                                <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                            </div>
-                        </div>
+                    <div className="cardBerita1-col3-container-1">
+                        <Card1Berita page="/page1" imageCard={pemilu13} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                            borderRadius="10px" />
+                        <Card1Berita imageCard={pemilu14} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                            borderRadius="10px" />
+                        <Card1Berita imageCard={pemilu15} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                            borderRadius="10px" />
                     </div>
                     {/* END Column3 */}
 
@@ -149,7 +146,7 @@ const BeritaPage = () => {
                         </div>
                         {/* END Row1 */}
                         {/* Row2 */}
-                        <div className="row2-col5">
+                        <Link to='/page2' className="row2-col5">
                             {/* Column1 */}
                             <div className="col1-row2">
 
@@ -165,7 +162,7 @@ const BeritaPage = () => {
                                 </p>
                             </div>
                             {/* END Column2 */}
-                        </div>
+                        </Link>
                         {/* END Row2 */}
                     </div>
                     {/* END Column5 */}
@@ -211,32 +208,12 @@ const BeritaPage = () => {
 
                     {/* Column2 */}
                     <div className="col2-cardContent-container-3">
-                        <div className="col-cardContent">
-                            <div className="imageContent imageOne"></div>
-                            <div className="textCard">
-                                <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                            </div>
-
-                        </div>
-                        <div className="col-cardContent">
-                            <div className="imageContent imageTwo"></div>
-                            <div className="textCard">
-                                <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                            </div>
-
-                        </div>
-                        <div className="col-cardContent">
-                            <div className="imageContent imageThree"></div>
-                            <div className="textCard">
-                                <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                            </div>
-                        </div>
+                        <Card2Berita imageCard={pemilu18} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                            borderRadius="10px" />
+                        <Card2Berita imageCard={pemilu19} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                            borderRadius="10px" />
+                        <Card2Berita imageCard={pemilu20} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                            borderRadius="10px" />
                     </div>
                     {/* END Column2 */}
 
@@ -257,31 +234,13 @@ const BeritaPage = () => {
 
                     {/* Column4 */}
                     <div className="col4-cardContent-container-3">
-                        <div className="col-cardContent">
-                            <div className="imageContent imageOne"></div>
-                            <div className="textCard">
-                                <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                            </div>
-
-                        </div>
-                        <div className="col-cardContent">
-                            <div className="imageContent imageTwo"></div>
-                            <div className="textCard">
-                                <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                            </div>
-
-                        </div>
-                        <div className="col-cardContent">
-                            <div className="imageContent imageThree"></div>
-                            <div className="textCard">
-                                <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio odit voluptatem harum quam earum ut molestias.</p>
-                            </div>
+                        <div className="col2-cardContent-container-3">
+                            <Card2Berita imageCard={pemilu21} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                                borderRadius="10px" />
+                            <Card2Berita imageCard={pemilu22} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                                borderRadius="10px" />
+                            <Card2Berita imageCard={pemilu23} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                                borderRadius="10px" />
                         </div>
                     </div>
                     {/* END Column4 */}

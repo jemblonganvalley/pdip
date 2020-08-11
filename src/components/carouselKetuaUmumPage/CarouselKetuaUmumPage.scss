@@ -4,6 +4,14 @@
     width: 100%;
     background: #555;
 
+    .indicatorKetuaUmum{
+        display: flex;
+
+        li{
+            margin: -200px 10px 0 0;
+        }
+    }
+
     .carousel-ketuaUmumPage{
         display: flex;
         overflow: hidden;

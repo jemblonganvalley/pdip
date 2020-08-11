@@ -30,7 +30,7 @@ $secondary : #f3f3f3;
         align-items: center;
         flex-direction: row;
         width: 40%;
-        margin-top: 20px;
+        margin-top: 15px;
         padding: 10px 10%;
         i {
             span {
@@ -137,6 +137,7 @@ $secondary : #f3f3f3;
                     width: 80%;
                     justify-content: center;
                     align-items: center;
+                    padding: 0 0 20px 0;
                     overflow: hidden;
 
                     .btn-admin{
@@ -192,37 +193,37 @@ $secondary : #f3f3f3;
                     width: 10%;
                     overflow: hidden;
 
-                    .box-btn{
-                        display: flex;
-                        height: 50px;
-                        width: 100%;
-                        align-items: center;
-                        justify-content: center;
-                        margin: 20px 0 0 0;
-                        overflow: hidden;
+                    // .box-btn{
+                    //     display: flex;
+                    //     height: 50px;
+                    //     width: 100%;
+                    //     align-items: center;
+                    //     justify-content: center;
+                    //     margin: 20px 0 0 0;
+                    //     overflow: hidden;
 
-                        .jm-share{
-                            display: flex;
-                            font-size: 13px;
-                            color: #000;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
+                    //     .jm-share{
+                    //         display: flex;
+                    //         font-size: 13px;
+                    //         color: #000;
+                    //         margin: 1px;
+                    //         overflow: hidden;
+                    //     }
 
-                        .btn-love{
-                            display: flex;
-                            border: none;
-                            outline: none;
-                            margin: 0 5px 0 0;
-                            overflow: hidden;
+                    //     .btn-love{
+                    //         display: flex;
+                    //         border: none;
+                    //         outline: none;
+                    //         margin: 0 5px 0 0;
+                    //         overflow: hidden;
     
-                            i{
-                                display: flex;
-                                font-size: 13px;
-                                color: #d80010;
-                            }
-                        }         
-                    }      
+                    //         i{
+                    //             display: flex;
+                    //             font-size: 13px;
+                    //             color: #d80010;
+                    //         }
+                    //     }         
+                    // }      
                 }
                 // END Row3
             }
@@ -537,67 +538,6 @@ $secondary : #f3f3f3;
                     flex-direction: row;
                     margin-top: 0;
                     padding: 10px 0%;
-                
-                    .col-cardContent {
-                        //  border: 1px solid green;
-                        height: 100%;
-                        width: 100%;
-                        flex: auto;
-                        margin: 0 10px;
-                        background: #ffffff;
-                        cursor: pointer;
-                        transition: .5s;
-                        border-radius: 10px;
-
-                        &:hover{
-                            background: #d80010;
-                            color: #fff;
-                        }
-                
-                        .imageContent {
-                            width: 100%;
-                            height: 30vh;        
-                            background: url(../../../../img/pemilu8.jpg);
-                            background-size: cover;
-                            background-position: center;
-                            border-top-right-radius: 10px;
-                            border-top-left-radius: 10px;
-                        }
-                
-                        .imageTwo {
-                            width: 100%;
-                            height: 30vh;   
-                            background: url(../../../../img/pemilu19.jpg);
-                            background-size: cover;
-                            background-position: center;
-                            border-top-right-radius: 10px;
-                            border-top-left-radius: 10px;
-                        }
-                
-                        .imageThree {
-                            width: 100%;
-                            height: 30vh;
-                            background: url(../../../../img/pemilu20.jpg);
-                            background-size: cover;
-                        }
-                
-                        .textCard {
-                            width: 100%;
-                            //  height: 100%;
-                            padding: 5px 20px;
-                
-                            //  border:  1px solid blue;
-                
-                            small {
-                                font-size: 7pt;
-                                color: #d80010;
-                            }
-                
-                            p {
-                                font-size: 8pt;
-                            }
-                        }
-                    }
                 }
                 // END Column2
             }
