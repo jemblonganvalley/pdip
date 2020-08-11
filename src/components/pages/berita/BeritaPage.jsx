@@ -106,12 +106,12 @@ const BeritaPage = () => {
 
                     {/* Column3 */}
                     <div className="cardBerita1-col3-container-1">
-                        <Card1Berita imageCard={pemilu13} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="0px" />
+                        <Card1Berita page="/page1" imageCard={pemilu13} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                            borderRadius="10px" />
                         <Card1Berita imageCard={pemilu14} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="0px" />
+                            borderRadius="10px" />
                         <Card1Berita imageCard={pemilu15} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="0px" />
+                            borderRadius="10px" />
                     </div>
                     {/* END Column3 */}
 

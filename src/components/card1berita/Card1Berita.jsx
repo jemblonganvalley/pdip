@@ -4,21 +4,21 @@ import './Card1Berita.scss'
 
 import { Link } from 'react-router-dom'
 
-const Card1Berita = ({ imageCard, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight, paragrapSize, width }) => {
+const Card1Berita = ({ page, imageCard, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight, paragrapSize, width, title }) => {
     return (
         // Card1 Berita
         <div className="col col-lg-3 cardCustom" style={{
             borderRadius: borderRadius,
             width: width
         }}>
-            <div className="imageCard" style={{
+            <Link to={page} className="imageCard" style={{
                 backgroundImage: `url(${imageCard})`,
             }} >
                 {/* JIKA MAU DIPAKAI CLASS, PAKAI CLASS VBMusic */}
                 <Link as="div" className={`${classIcon}`} to={href} style={{ textDecoration: 'none' }} >
                     <i class={`${icons}`}></i>
                 </Link>
-            </div>
+            </Link>
             <div className="text">
                 <small className="textSmall">{textSmall}</small>
                 <h5 className="textH5" style={{
@@ -28,6 +28,9 @@ const Card1Berita = ({ imageCard, textSmall, TextH5, borderRadius, paragrap, ico
                 <p className="paragrap" style={{
                     fontSize: paragrapSize
                 }}>{paragrap}</p>
+                <p className="title">
+                    {title}
+                </p>
             </div>
         </div>
         // END Card1 Berita

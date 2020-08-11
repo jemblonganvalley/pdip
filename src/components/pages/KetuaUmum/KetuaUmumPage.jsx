@@ -102,17 +102,17 @@ const KetuaUmumPage = () => {
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="0px" />
+                            borderRadius="10px" />
                         <CardKetuaUmum imageCardKetuaUmum={pemilu14}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="0px" />
+                            borderRadius="10px" />
                         <CardKetuaUmum imageCardKetuaUmum={pemilu15}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="0px" />
+                            borderRadius="10px" />
                     </div>
                     {/* END Column3 */}
 
@@ -141,15 +141,15 @@ const KetuaUmumPage = () => {
                 {/* END Container1 */}
 
                 {/* Container2 */}
-
+                <div className="container-2">
+                    <MainDivider text="Berita Terkait"
+                        garisMerah="7rem"
+                        m="1rem 0" />
+                </div>
                 {/* END Container2 */}
 
                 {/* Container3 */}
                 <div className="container-3">
-
-                    <MainDivider text="Berita Terkait"
-                        garisMerah="7rem"
-                        m="1rem 0" />
                     {/* Column4 */}
                     <div className="col4-cardContent-container-3">
                         <Cards imageCard={pemilu18}

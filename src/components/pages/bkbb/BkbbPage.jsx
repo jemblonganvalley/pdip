@@ -77,7 +77,7 @@ const BkbbPage = () => {
 
             <div className="wrapperCard">
                 <div className="cardKolum">
-                    <Cards imageCard={bkbbCard1}
+                    <Cards page="materipokok" imageCard={bkbbCard1}
                         borderRadius="10px"
                         TextH5="INDONESIA MENGGUGAT TAHUN 1930"
                         paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial"

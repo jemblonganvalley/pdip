@@ -6,11 +6,6 @@ const CarouselKetuaUmumPage = () => {
     return (
         <>
             <div id="carouselExampleIndicators" className="carousel box-carousel-ketuaUmumPage slide" data-ride="carousel">
-                <ol className="carousel-indicators indicatorKetuaUmum">
-                    <li data-target="#carouselExampleIndicators" data-slide-to={0} className="active" />
-                    <li data-target="#carouselExampleIndicators" data-slide-to={1} />
-                    <li data-target="#carouselExampleIndicators" data-slide-to={2} />
-                </ol>
                 <div className="carousel-inner carousel-ketuaUmumPage">
                     <div className="carousel-item active">
                         <div className="col1-container-1">
@@ -21,9 +16,9 @@ const CarouselKetuaUmumPage = () => {
                                     </div>
                                 </div>
                                 <div className="col2-img">
-                                    {/* <div className="garis-strip-col2">
+                                    <div className="garis-strip-col2">
 
-                                    </div> */}
+                                    </div>
                                     <div className="box-txt-desk-col2">
                                         <p className="txt-admin">
                                             Admin PDI Perjuangan | 1 Januari
