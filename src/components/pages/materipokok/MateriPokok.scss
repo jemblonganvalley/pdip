@@ -10,7 +10,7 @@
         align-items: center;
         flex-direction: row;
         width: 40%;
-        margin-top: 20px;
+        margin-top: 15px;
         // padding: 10px 10%;
 
         i {
@@ -22,24 +22,43 @@
         }
     }
 
-    .bkbbText {
-        border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-        width: 100%;
-        text-align: center;
-        // height: 10vh;
-        margin-top: 0px;
+    // .bkbbText {
+    //     border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+    //     width: 100%;
+    //     text-align: center;
+    //     // height: 10vh;
+    //     margin-top: 0px;
 
-        small {
-            cursor: pointer;
-            color: $colors;
-            // width: 100%;
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 8pt;
-            border-bottom: 5.5px solid $colors;
-        }
-    }
+    //     small {
+    //         cursor: pointer;
+    //         color: $colors;
+    //         // width: 100%;
+    //         text-align: center;
+    //         text-transform: uppercase;
+    //         font-weight: bold;
+    //         font-size: 8pt;
+    //         border-bottom: 5.5px solid $colors;
+    //     }
+    // }
+}
+
+// Container1
+.container1{
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin: -40px 0 0 0;
+}
+// END Container1
+
+// Container2
+.container2{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 0px 0 20px 0;
+    padding: 0 10%;
 
     // Column Card Materi Pokok
     .col-card-materi-pokok{
@@ -75,26 +94,27 @@
     }
     // END Column Card Materi Pokok
 
-    // Column Pagination
-    .col-pagination-materi-pokok{
+// Column Pagination
+.col-pagination-materi-pokok{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    nav{
         display: flex;
-        height: 10vh;
-        width: 100%;
         justify-content: center;
         align-items: center;
 
-        nav{
+        ul{
             display: flex;
             justify-content: center;
             align-items: center;
-
-            ul{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 1px;
-            }
+            margin: 1px;
         }
     }
-    // END Column Pagination
 }
+// END Column Pagination
+}
+// END Container2
