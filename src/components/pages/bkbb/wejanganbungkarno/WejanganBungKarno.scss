@@ -47,7 +47,7 @@
         flex-direction: column;
         height: auto;
         width: 100%;
-        padding: 40px 0 0 0;
+        padding: 40px 0% 20px 0;
 
         // Box1 Image
         .box1-image{
@@ -79,11 +79,25 @@
     // END Column Card Wejangan Bungkarno
 
     // Column Pagination
-    .col-pagination-materi-pokok{
+    .col-pagination-wejangan-bungkarno{
         display: flex;
         height: 10vh;
         width: 100%;
-        border: 1px solid blue;
+        justify-content: center;
+        align-items: center;
+
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1px;
+            }
+        }
     }
     // END Column Pagination
 
