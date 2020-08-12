@@ -28,7 +28,8 @@ $secondary : #f3f3f3;
             display: flex;
             align-items: center;
             color: #ffff;
-            border-top: .2px solid white;
+            border-bottom: .2px solid white;
+            border-left: .2px solid white;
             transition: .3s;
 
             &:hover {

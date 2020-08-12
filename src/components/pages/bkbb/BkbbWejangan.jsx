@@ -106,7 +106,7 @@ const BkbbWejangan = () => {
 
                     {/* Column2 */}
                     <div className="col2-container-2">
-                        <MainButton name="LIHAT SEMUA" margin="1rem 0" />
+                        <MainButton pages="/wejanganbungkarno" name="LIHAT SEMUA" margin="1rem 0" />
                     </div>
                     {/* END Column2 */}
                 </div>
