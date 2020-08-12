@@ -1,13 +1,15 @@
 import React from 'react'
 
 import './CardQuotes.scss'
+import { Link } from 'react-router-dom'
 
-const CardQuotes = ({ img, icon1, txt1, icon2, txt2 }) => {
+const CardQuotes = ({ page, img, icon1, txt1, icon2, txt2 }) => {
     return (
         <>
             {/* Img */}
-            <div className="img" style={{
-                backgroundImage: `url(${img})`
+            <Link to={page} className="img" style={{
+                backgroundImage: `url(${img})`,
+                textDecoration: 'none'
             }}>
                 <i className={icon1}></i>
 
@@ -20,7 +22,7 @@ const CardQuotes = ({ img, icon1, txt1, icon2, txt2 }) => {
                 <p className="txt2">
                     {txt2}
                 </p>
-            </div>
+            </Link>
             {/* Img */}
         </>
     )
