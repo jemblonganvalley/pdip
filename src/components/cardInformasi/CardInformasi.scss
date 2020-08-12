@@ -8,11 +8,14 @@
     align-items: center;
 
     .mediaCard {
+        text-decoration: none;
+        color: #000000;
         .smallCard {
             text-transform: uppercase;
             // font-weight: 700;
             font-family: 'Open Sans';
             font-size: 9pt;
+            
         }
     }
     
