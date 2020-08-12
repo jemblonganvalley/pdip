@@ -8,6 +8,7 @@ import bkbb3 from '../../../../img/bkbb3.jpg'
 import bkbb4 from '../../../../img/bkbb4.jpg'
 import CardMateriPokok from '../../../cardmateripokok/CardMateriPokok'
 import BreadCrumbs from '../../../breadcrumbs/BreadCrumbs'
+import MainDivider from '../../../divider/MainDivider'
 
 const WejanganBungKarno = () => {
     return (
@@ -18,11 +19,17 @@ const WejanganBungKarno = () => {
                 <div className="linkedMateri">
                     <BreadCrumbs link1="Home" to1="/" link2="Bungkarno Bapak Bangsa" to2="/bungkarno" />
                 </div>
+            </div>
+            {/* END Thumbnail Wejangan Bungkarno */}
 
-                <div className="bkbbText">
-                    <small>WEJANGAN BUNG KARNO</small>
-                </div>
+            {/* Container1 */}
+            <div className="container1">
+                <MainDivider text="WEJANGAN BUNG KARNO" />
+            </div>
+            {/* END Container1 */}
 
+            {/* Container2 */}
+            <div className="container2">
                 {/* Column Card Wejangan Bungkarno */}
                 <div className="col-card-wejangan-bungkarno">
                     {/* Box1 Image */}
@@ -81,7 +88,7 @@ const WejanganBungKarno = () => {
                 </div>
                 {/* END Column Pagination */}
             </div>
-            {/* END Thumbnail Wejangan Bungkarno */}
+            {/* END Container2 */}
         </>
     )
 }
