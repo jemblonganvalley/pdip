@@ -7,6 +7,13 @@ import { Link } from 'react-router-dom'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import CarouselBerita from '../../carouselBerita/CarouselBerita'
 
+import CardInformasi from '../../cardInformasi/CardInformasi'
+
+import BeritaSatu from '../../../img/berita1.png'
+import BeritaDua from '../../../img/berita2.png'
+import BeritaTiga from '../../../img/berita3.png'
+import BeritaEmpat from '../../../img/berita4.png'
+
 // Create Component
 const BeritaPage = () => {
 
@@ -38,57 +45,14 @@ const BeritaPage = () => {
                     {/* END Column1 */}
 
                     {/* Column2 */}
-                    <div className="col2-container-1">
-                        {/* Row1 */}
-                        <div className="row1-col2">
-                            <div className="box-img">
-
-                            </div>
-                            <div className="txt-img1">
-                                <p className="txt-1">
-                                    BERITA NASIONAL
-                                </p>
-                            </div>
-                        </div>
-                        {/* END Row1 */}
-                        {/* Row2 */}
-                        <div className="row2-col2">
-                            <div className="box-img">
-
-                            </div>
-                            <div className="txt-img2">
-                                <p className="txt-2">
-                                    BERITA DAERAH
-                                </p>
-                            </div>
-                        </div>
-                        {/* END Row2 */}
-                        {/* Row3 */}
-                        <div className="row3-col2">
-                            <div className="box-img">
-
-                            </div>
-                            <div className="txt-img3">
-                                <p className="txt-3">
-                                    BERITA FOTO
-                                </p>
-                            </div>
-                        </div>
-                        {/* END Row3 */}
-                        {/* Row4 */}
-                        <div className="row4-col2">
-                            <div className="box-img">
-
-                            </div>
-                            <div className="txt-img4">
-                                <p className="txt-4">
-                                    KEGIATAN PARTAI
-                                </p>
-                            </div>
-                        </div>
-                        {/* END Row4 */}
-
-                    </div>
+                        <CardInformasi image={BeritaSatu}
+                                image2={BeritaDua}
+                                image3={BeritaTiga}
+                                image4={BeritaEmpat}
+                                text="berita nasional"
+                                text2="berita daerah"
+                                text3="berita foto"
+                                text4="kegiatan partai" />
                     {/* END Column2 */}
 
                     {/* Column3 */}
