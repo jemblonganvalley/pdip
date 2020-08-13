@@ -23,13 +23,16 @@ import BkbbWejangan from './components/pages/bkbb/BkbbWejangan'
 import AllComponent from './components/allcomponent/AllComponent';
 import BgRed from './components/bgRed/BgRed';
 import WejanganBungKarno from './components/pages/bkbb/wejanganbungkarno/WejanganBungKarno';
+import { useStoreActions } from 'easy-peasy';
 
 
 function App() {
 
   let [hide, setHide] = useState(true)
+  let setBlogCategory = useStoreActions(action => action.setBlogCategory)
 
   useEffect(() => {
+    setBlogCategory()
     var prevScrollpos = window.pageYOffset;
     window.addEventListener('scroll', function () {
       var currentScrollPos = window.pageYOffset;
