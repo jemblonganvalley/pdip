@@ -192,9 +192,32 @@ $phoneSatu : 600px;
                 border-radius: 50%;
                 width: 20px;
                 height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 text-align: center;
                 @include phoneSatu() {
                     font-size: 8pt;
+                }
+
+                .indicatorText {
+                    cursor: pointer;
+                    margin: 0 5px;
+                    opacity: 0.5;
+                    color: #000000;
+                    transition: opacity .6s ease;
+                    // border: 1px solid blue;
+                    // width: 20px;
+                    // height: 20px;
+                    font-weight: bold;
+                    font-size: 8pt;
+                    text-align: center;
+                    font-family: 'Josefin Sans';
+                    
+        
+                    @include phoneSatu() {
+                        margin: 0 5px;
+                    }
                     
                 }
             }
@@ -203,30 +226,7 @@ $phoneSatu : 600px;
                 opacity: 1;
                 color: #464646;
                 background-color: #ffffff;
-
             }
-    
-            small {
-                cursor: pointer;
-                margin: 0 5px;
-                opacity: 0.5;
-                color: #ffffff;
-                transition: opacity .6s ease;
-                // border: 1px solid blue;
-                // width: 20px;
-                // height: 20px;
-                font-weight: bold;
-                font-size: 9pt;
-                text-align: center;
-                font-family: 'Josefin Sans';
-                
-    
-                @include phoneSatu() {
-                    margin: 0 5px;
-                }
-                
-            }
-        
     }
 
     .carousel-control-prev,
@@ -254,8 +254,24 @@ $phoneSatu : 600px;
             display: block;
         }
     }
+}
 
-    
+.next-text {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: none;
+    line-height: .7;
+
+    span {
+        font-size: 8pt;
+        letter-spacing: 1.5px;
+        
+        @include phoneSatu() {
+            font-size: 7pt;
+            display: block;
+        }
+    }
 }
 
 

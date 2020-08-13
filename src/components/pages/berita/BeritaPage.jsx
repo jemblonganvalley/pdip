@@ -49,6 +49,10 @@ const BeritaPage = () => {
                                 image2={BeritaDua}
                                 image3={BeritaTiga}
                                 image4={BeritaEmpat}
+                                width1="35"
+                                width2="35"
+                                width3="35"
+                                width4="35"
                                 text="berita nasional"
                                 text2="berita daerah"
                                 text3="berita foto"

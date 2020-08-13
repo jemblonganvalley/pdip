@@ -6,6 +6,8 @@
     display: flex;
     padding: $padding;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
 
     .carousel-inner{

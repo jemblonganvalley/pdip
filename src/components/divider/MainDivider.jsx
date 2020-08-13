@@ -9,7 +9,6 @@ const MainDivider = ({text, garisMerah})=> {
     return (
         <div className="col3-container-3" style={{
             margin : '2rem 0',
-            padding : '0px 10%',
         }}>
             <div className="box-jdl-col3">
                 <p className="txt-jdl-col3">

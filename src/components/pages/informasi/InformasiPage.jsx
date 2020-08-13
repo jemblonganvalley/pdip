@@ -79,6 +79,10 @@ const InformasiPage = ()=> {
                                 image3={ppidTiga}
                                 image4={ppidEmpat}
                                 text="Struktur PPDI PDI Perjuangan"
+                                width1="45"
+                                width2="45"
+                                width3="30"
+                                width4="31"
                                 text2="visi / misi"
                                 text3="prosedur pelayanan"
                                 text4="regulasi PPDI" />

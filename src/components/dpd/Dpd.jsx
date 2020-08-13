@@ -1,6 +1,8 @@
 import React from 'react'
 import './Dpd.scss'
 import image from '../../img/bali.png'
+import BreadCrumbs from '../breadcrumbs/BreadCrumbs'
+import MainDivider from '../divider/MainDivider'
 
 const Dpd = ()=> {
     return (
@@ -17,16 +19,16 @@ const Dpd = ()=> {
 
             {/* LINK PARTAI */}
             <div className="linkedDetail">
-                <i class="fa fa-home">
-                    <span>Home / Partai /</span>
-                </i>
+                <BreadCrumbs to1="/"
+                                link1="Home"
+                                to2="/partai"
+                                link2="Partai"
+                                page3="Dewan Pimpinan" />
             </div>
             {/* END */}
 
             <div className="pengurus">
-                <div className="textPengurus">
-                    <small>Pengurus</small>
-                </div>
+                <MainDivider text="Pengurus" />
                 <div className="dpdTextHead">
                     <h1>Dewan Pimpinan Daerah PDI Perjuangan<br/>Provinsi Bali</h1>
                 </div>
