@@ -48,27 +48,9 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 20px 8%;
+        padding: $padding;
 
-        .textPengurus {
-            border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-            // background-color: #2d3436;
-            width: 100%;
-            text-align: center;
-            // height: 10vh;
-            margin-top: 30px;
-
-            small {
-                cursor: pointer;
-                color: $colors;
-                // width: 100%;
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-size: 8pt;
-                border-bottom: 5.5px solid $colors;
-            }
-        }
+        
         .dpdTextHead {
             margin: 2rem 0;
             text-align: center;

@@ -55,14 +55,18 @@ const KetuaUmumPage = () => {
                     {/* END Column1 */}
 
                     {/* Column2 */}
-                    <CardInformasi image={ketuaUmumSatu}
-                        image2={ketuaUmumDua}
-                        image3={ketuaUmumTiga}
-                        image4={ketuaUmumEmpat}
-                        text="pidato kongres"
-                        text2="pidato rakernas"
-                        text3="pidato rakornas"
-                        text4="pidato hut" />
+                        <CardInformasi image={ketuaUmumSatu}
+                                        image2={ketuaUmumDua}
+                                        image3={ketuaUmumTiga}
+                                        image4={ketuaUmumEmpat}
+                                        width1="35"
+                                        width2="35"
+                                        width3="35"
+                                        width4="35"
+                                        text="pidato kongres"
+                                        text2="pidato rakernas"
+                                        text3="pidato rakornas"
+                                        text4="pidato hut" />
                     {/* END Column2 */}
 
                     {/* Column3 */}

@@ -299,7 +299,6 @@ $phoneSatu : 600px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
         .paragrapBerita {
 
             display: flex;
@@ -431,6 +430,11 @@ $phoneSatu : 600px;
             }
         }
     }
+}
+
+.beritaTerbaru {
+    width: 100%;
+    padding: $padding;
 }
 
 .cardContent {

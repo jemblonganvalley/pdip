@@ -61,6 +61,10 @@ const MultimediaPage = ()=> {
                             image2={multimediaDua}
                             image3={multimediaTiga}
                             image4={multimediaEmpat}
+                            width1="35"
+                            width2="35"
+                            width3="35"
+                            width4="35"
                             text="siaran langsung"
                             text2="video dokumentasi"
                             text3="video teaser"

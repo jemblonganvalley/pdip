@@ -10,8 +10,10 @@ const MainSlider = ()=> {
 
                 
                 <div className="carousel-indicators">
-                        <small data-target="#carouselExampleIndicators" data-slide-to={0} className="active indikator" >01</small>
-                        <small data-target="#carouselExampleIndicators" data-slide-to={1} className="indikator">02</small>
+                        <div data-target="#carouselExampleIndicators" data-slide-to={0} className="active indikator" ><small className="indicatorText">
+                        01</small></div>
+                        <div data-target="#carouselExampleIndicators" data-slide-to={1} className="indikator"><small className="indicatorText">
+                        02</small></div>
                 </div>
                 
                 <div className="carousel-inner">
@@ -44,7 +46,7 @@ const MainSlider = ()=> {
                 </a>
                 
                 <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <div className="prev-text">
+                        <div className="next-text">
                             <span>NEXT</span>
                             <img src={arrowKanan} alt="" width="35" />
                         </div>

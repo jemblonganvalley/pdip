@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './widgetBerita.scss'
 
-const WidgetBerita = ({name, col}) => {
+const WidgetBerita = ({name, col, width}) => {
 
     let [berita, setBerita] = useState([
         {
@@ -22,7 +22,9 @@ const WidgetBerita = ({name, col}) => {
     ])
 
   return (
-        <div className={`col col-lg-${col}`}>
+        <div className={`col col-lg-${col}`} style={{
+            width : width
+        }}>
         <div id={name} className="carousel slide" data-ride="carousel" >
         <div className="carousel-inner">
 

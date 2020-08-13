@@ -51,9 +51,7 @@ const HomePage = ()=> {
                     </div>
                 </div>
                 <div className="videoPage">
-                    <MainDivider text="Video"
-                                    garisMerah="2.5rem"
-                                    m="1rem 0" />
+                    <MainDivider text="Video" />
                     <div className="paragrapVideo">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
                     </div>
@@ -95,9 +93,7 @@ const HomePage = ()=> {
                 </div>
 
                 <div className="beritaPage">
-                    <MainDivider text="berita"
-                                    garisMerah="2.5rem"
-                                    m="1rem 0" />
+                    <MainDivider text="berita"/>
                     <div className="paragrapBerita">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
                     </div>
@@ -202,11 +198,24 @@ const HomePage = ()=> {
             {/* <CardMaps/> */}
 
     
+            <div className="beritaTerbaru" style={{
+                display: 'flex',
+                justifyContent : 'center',
+                alignItems : 'center'
+            }}>
                 <MainDivider text="Berita Terbaru "/>
-
+            </div>
             <div className="wrapperWidget">
-                <WidgetBerita name="berita" col='8'/>
-                <WidgetBerita name="beritaFoto" col='4'/>
+                <WidgetBerita name="berita" width="70%"/>
+                <div className="verticalDivider" style={{
+                    width : '2px',
+                    height : '50vh',
+                    // borderLeft : '1px solid gray',
+                    background : 'gray',
+                    display : 'flex',
+                    
+                }}></div>
+                <WidgetBerita name="beritaFoto" width="30%"/>
             </div>
 
             
