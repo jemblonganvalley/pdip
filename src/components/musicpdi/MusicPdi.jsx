@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import downloadSatu from '../../img/downloadSatu.png'
 import downloadDua from '../../img/downloadDua.png'
 import downloadTiga from '../../img/downloadTiga.png'
-import laguPerjuangan from '../../img/lagu.png'
+import laguPerjuangan from '../../img/laguperjuangan.png'
 import ReactJkMusicPlayer from 'react-jinke-music-player'
 import "react-jinke-music-player/assets/index.css";
 import './MusicPdi.scss'
@@ -154,9 +154,9 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
             {/* END */}
 
                     {/* PLAYLIST */}
-                    <div className="col col-md-4 musicList">
+                    <div className=" col-md-4 musicList">
                         <div className="headersList">
-                            <img src={laguPerjuangan} alt="" width="55" />
+                            <img src={laguPerjuangan} alt="" width="75" />
                             <div className="textHeader">
                                 <h4>Lagu<br/>Perjuangan</h4>
                             </div>
