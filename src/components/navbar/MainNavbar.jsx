@@ -4,19 +4,30 @@ import './MainNavbar.scss'
 import {NavLink} from 'react-router-dom'
 import { Dropdown } from 'react-bootstrap'
 import DropDown from './DropDown'
-import { useStoreState } from 'easy-peasy'
+import { useStoreState, useStoreActions } from 'easy-peasy'
 
 const MainNavbar = ()=> {
 
     let [show, setShow] = useState('')
-    let [menu, setMenu] = useState([])
+    // let [menu, setMenu] = useState([])
 
-    const st = useStoreState(state => state.blogCategory.query)
-
+    const menu = useStoreState(state => state.blogCategory)
+    const setBlogCategory = useStoreActions(action => action.setBlogCategory)
 
    useEffect(()=>{
 
-     setMenu(st)
+      // fetch('https://cms.biar.pw/api/blog/category/merger', {
+      //   method : 'POST',
+      //   mode : 'cors',
+      //   headers : {
+      //     "Content-Type" : "application/json",
+      //     "Authorization" : "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9jbXMuYmlhci5wd1wvYXBpXC9hdXRoXC9hcHAiLCJpYXQiOjE1OTcyNjYxNTQsImV4cCI6MTU5NzM1MjU1NCwibmJmIjoxNTk3MjY2MTU0LCJqdGkiOiJOOUl3MDd4S2VrNXc1bVdIIiwic3ViIjoxNCwicHJ2IjoiOGZmNjMwYTAwY2E0YTNlYWY2ZjI1NGY1YWJlNWFiMWJlZWQyNzI0OSJ9.Pu29QRdPec2vdkhdCJx1fhzyuIfIZv3wI7m9Q_ZS5EU"
+      //   }
+      // }).then(res => res.json())
+      // .then(data =>{
+      //   console.log(data.query)
+      //   setMenu(data.query)
+      // })
 
    },[])
 
@@ -33,7 +44,6 @@ const MainNavbar = ()=> {
               </button>
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-
                  {menu.map((e)=>(
                     <li className="nav-item" style={{
                     position : 'relative'
@@ -49,7 +59,7 @@ const MainNavbar = ()=> {
                     }}
                     
                   >
-                    <NavLink className="nav-link" to={'#'} activeClassName='active'>{e.name}</NavLink>
+                    <NavLink className="nav-link" to={e.name.split(" ")[0].toLowerCase()} activeClassName='active'>{e.name}</NavLink>
                       {show === e.name && (
                           <DropDown menuItem={e.child}/>
                       )}

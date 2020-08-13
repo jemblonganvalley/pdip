@@ -16,10 +16,10 @@ export let globalState = createStore({
             }
         })
         var data = await res.json()
-        actions.pushBlogCategory(data)
+        actions.pushBlogCategory(data.query)
     }),
 
- 
+   
 
 
 
