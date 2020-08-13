@@ -28,12 +28,13 @@ $secondary : #f3f3f3;
             display: flex;
             align-items: center;
             color: #ffff;
-            border-top: .2px solid white;
+            border-bottom: .2px solid white;
+            border-left: .2px solid white;
             transition: .3s;
 
             &:hover {
                 // background: rgba(47, 53, 66, .8);
-                background: #2f3542;
+                background: #111;
             }
 
             .red-box-title{
@@ -169,8 +170,6 @@ $secondary : #f3f3f3;
         
     }
 
-    
-
     .wrapper3 {
         display: flex;
         width: 100%;
@@ -199,6 +198,7 @@ $secondary : #f3f3f3;
         align-items: center;
         width: 100%;
         padding: 20px 10%;
+        text-decoration: none;
     }
 
     .bannerBkbb {
@@ -230,16 +230,23 @@ $secondary : #f3f3f3;
         }
     }
 
-    .wrapperQuotes {
+    // Column Card Wejangan Bungkarno
+    .col-card-wejangan-bungkarno{
         display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
-        width: 100%;
-        padding: 20px 10%;
+        padding: 50px 10% 0 10%;
 
-        img {
-            margin: 1rem;
+        // Box1 Image
+        .box1-image{
+            display: flex;
+            height: 45vh;
+            width: 100%;
+            padding: 10px 0 10px 0;
         }
+        // END Box1 Image
     }
 }

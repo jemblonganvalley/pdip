@@ -1,10 +1,12 @@
 import React from 'react'
-import './MainCards.scss'
+
+import './Card1Berita.scss'
+
 import { Link } from 'react-router-dom'
 
-const Cards = ({ page, imageCard, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight, paragrapSize, width }) => {
+const Card1Berita = ({ page, imageCard, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight, paragrapSize, width, title }) => {
     return (
-
+        // Card1 Berita
         <div className="col col-lg-3 cardCustom" style={{
             borderRadius: borderRadius,
             width: width
@@ -26,12 +28,13 @@ const Cards = ({ page, imageCard, textSmall, TextH5, borderRadius, paragrap, ico
                 <p className="paragrap" style={{
                     fontSize: paragrapSize
                 }}>{paragrap}</p>
+                <p className="title">
+                    {title}
+                </p>
             </div>
         </div>
-
-
-
+        // END Card1 Berita
     )
 }
 
-export default Cards
+export default Card1Berita

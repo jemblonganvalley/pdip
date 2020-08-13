@@ -1,0 +1,137 @@
+// @import "../../../utilities/variable/variables.scss";
+
+
+.wrapperMateri {
+    width: 100%;
+    // padding: $paddin;
+
+    .linkedMateri {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 40%;
+        margin-top: 15px;
+        // padding: 10px 10%;
+
+        i {
+            span {
+                margin-left: 5px;
+                font-style: italic;
+                font-size: 8pt;
+            }
+        }
+    }
+
+    .bkbbText {
+        border-bottom: 1px solid rgba(45, 52, 54, 0.2);
+        width: 100%;
+        text-align: center;
+        // height: 10vh;
+        margin-top: 0px;
+
+        small {
+            cursor: pointer;
+            // color: $colors;
+            // width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 8pt;
+            // border-bottom: 5.5px solid $colors;
+        }
+    }
+      
+}
+
+// Container1
+.container1{
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin: -40px 0 0 0;
+}
+// END Container1
+
+// Container2
+.container2{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 0px 0 20px 0;
+    padding: 0 10%;
+
+    // Column Card Wejangan Bungkarno
+    .col-card-wejangan-bungkarno{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 40px 0% 20px 0;
+
+        // Box1 Image
+        .box1-image{
+            display: flex;
+            height: 45vh;
+            width: 100%;
+            padding: 10px 0 10px 0;
+        }
+        // END Box1 Image
+
+        // Box2 Image
+        .box2-image{
+            display: flex;
+            height: 45vh;
+            width: 100%;
+            padding: 10px 0 10px 0;
+        }
+        // END Box2 Image
+
+        // Box3 Image
+        .box3-image{
+            display: flex;
+            height: 45vh;
+            width: 100%;
+            padding: 10px 0 10px 0;
+        }
+        // END Box3 Image
+    }
+    // END Column Card Wejangan Bungkarno
+
+    // Column Pagination
+    .col-pagination-wejangan-bungkarno{
+        display: flex;
+        height: 10vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 1px;
+
+                li{
+                    justify-content: center;
+                    align-items: center;
+    
+                    a{
+                        justify-content: center;
+                        align-items: center;
+                        padding: 2px;
+                    }
+                }
+            }
+        }
+    }
+    // END Column Pagination
+}
+
+
+  

@@ -1,10 +1,13 @@
 // Import to React
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 // END Import to React
-import megawati5 from '../../../img/megawati5.jpg'
-import megawati6 from '../../../img/megawati6.jpg'
-import megawati7 from '../../../img/megawati7.jpg'
-import Cards from '../../cards/MainCards'
+import pemilu13 from '../../../img/pemilu13.jpg'
+import pemilu14 from '../../../img/pemilu14.jpg'
+import pemilu15 from '../../../img/pemilu15.jpg'
+import pemilu18 from '../../../img/pemilu18.jpg'
+import img5 from '../../../img/img5.jpg'
+import pemilu20 from '../../../img/pemilu20.jpg'
+
 import './KetuaUmumPage.scss'
 
 import ketuaUmumSatu from '../../../img/ketuaumum1.png'
@@ -13,20 +16,21 @@ import ketuaUmumTiga from '../../../img/ketuaumum3.png'
 import ketuaUmumEmpat from '../../../img/ketuaumum4.png'
 
 // Import to CSS
-import './KetuaUmumPage.css'
 import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import MainButton from '../../buttons/MainButton'
 import CarouselKetuaUmumPage from '../../carouselKetuaUmumPage/CarouselKetuaUmumPage'
 import CardInformasi from '../../cardInformasi/CardInformasi'
+import CardKetuaUmum from '../../cardketuaumum/CardKetuaUmum'
+import Cards from '../../cards/MainCards'
 // END Import to CSS
 
 // Create Component
 const KetuaUmumPage = () => {
 
-     useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
 
     return (
@@ -67,28 +71,23 @@ const KetuaUmumPage = () => {
 
                     {/* Column3 */}
                     <div className="cardKetuaUmum">
-                        <Cards imageCard={megawati5}
+                        <CardKetuaUmum imageCardKetuaUmum={pemilu13}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                             borderRadius="10px" />
-                        <Cards imageCard={megawati6}
+                        <CardKetuaUmum imageCardKetuaUmum={pemilu14}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                             borderRadius="10px" />
-                        <Cards imageCard={megawati7}
+                        <CardKetuaUmum imageCardKetuaUmum={pemilu15}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                             borderRadius="10px" />
                     </div>
                     {/* END Column3 */}
-
-
-                    <MainDivider text="Berita Foto"
-                        garisMerah="7rem"
-                        m="1rem 0" />
 
                     {/* Column5 */}
                     <div className="col5-container-1">
@@ -116,65 +115,27 @@ const KetuaUmumPage = () => {
 
                 {/* Container2 */}
                 <div className="container-2">
-                    {/* Column1 */}
-                    <div className="col1-container-2">
-                        <p className="txt-title-col1">
-                            Ut enim ad minim veniam, quis nostrud
-                            <br /> exercitation ullamco laboris
-                        </p>
-                    </div>
-                    {/* END Column1 */}
-                    {/* Column2 */}
-                    <div className="col2-container-2">
-                        <MainButton name="lihat" />
-                    </div>
-                    {/* END Column2 */}
+                    <MainDivider text="Berita Terkait"
+                        garisMerah="7rem"
+                        m="1rem 0" />
                 </div>
                 {/* END Container2 */}
 
                 {/* Container3 */}
                 <div className="container-3">
-
-                    <MainDivider text="Berita Daerah"
-                        garisMerah="6rem"
-                        m="1rem 0" />
-
-                    {/* Column2 */}
-                    <div className="col2-cardContent-container-3">
-                        <Cards imageCard={megawati5}
-                            textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                            paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="10px" />
-                        <Cards imageCard={megawati6}
-                            textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                            paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="10px" />
-                        <Cards imageCard={megawati7}
-                            textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                            paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="10px" />
-                    </div>
-                    {/* END Column2 */}
-
-                    <MainDivider text="Kegiatan Partai"
-                        garisMerah="7rem"
-                        m="1rem 0" />
                     {/* Column4 */}
                     <div className="col4-cardContent-container-3">
-                        <Cards imageCard={megawati5}
+                        <Cards imageCard={pemilu18}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                             borderRadius="10px" />
-                        <Cards imageCard={megawati6}
+                        <Cards imageCard={img5}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                             borderRadius="10px" />
-                        <Cards imageCard={megawati7}
+                        <Cards imageCard={pemilu20}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"

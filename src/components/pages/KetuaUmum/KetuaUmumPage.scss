@@ -32,7 +32,7 @@ $secondary : #f3f3f3;
         align-items: center;
         flex-direction: row;
         width: 40%;
-        margin-top: 20px;
+        margin-top: 15px;
         padding: $paddingSmall;
     }
 
@@ -140,7 +140,6 @@ $secondary : #f3f3f3;
         // Column3
         .cardKetuaUmum {
             display: flex;
-            flex-direction: row;
         }
         // END Column3
 
@@ -225,71 +224,10 @@ $secondary : #f3f3f3;
     }
     // END Container1
 
-    // Container2
     .container-2{
         display: flex;
-        flex-direction: column;
-        height: 45vh;
-        width: 100%;
-        background-image: url(../../../img/ketuaumum7.jpg);
-        background-size: cover;
-        margin: 50px 0 0px 0;
-        overflow: hidden;
-
-        // Column1
-        .col1-container-2{
-            display: flex;
-            flex-direction: column-reverse;
-            height: 70%;
-            width: 100%;
-            align-items: center;
-            overflow: hidden;
-
-            .txt-title-col1{
-                display: flex;
-                font-size: 25px;
-                color: #fff;
-                text-align: center;
-                overflow: hidden;
-            }
-        }
-        // END Column1
-
-        // Column2
-        .col2-container-2{
-            display: flex;
-            height: 30%;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-
-            .btn-lihat-col2{
-                display: flex;
-                height: 35px;
-                width: 120px;
-                background: #fff;
-                border-radius: 20px;
-                border: none;
-                outline: none;
-                overflow: hidden;
-                // For Font Button
-                font-size: 12px;
-                font-weight: 500;
-                color: $colors;
-                justify-content: center;
-                align-items: center;
-                transition: .5s;
-
-                &:hover{
-                    background: $colors;
-                    color: #fff;
-                }
-            }
-        }
-        // END Column2
+        padding: 20px 0 0 0;
     }
-    // END Container2
 
     // Container3
     .container-3{
@@ -297,23 +235,14 @@ $secondary : #f3f3f3;
         flex-direction: column;
         height: auto;
         width: 100%;
-        padding: 0 10% 50px 10%;
-
-        
-
-        // Column2
-        .col2-cardContent-container-3 {
-            display: flex;
-            flex-direction: row;
-        }
-        // END Column2
-
-        
+        padding: 0px 10% 50px 10%;
+        margin: 0px 0 0 0 ;
 
         // Column4
         .col4-cardContent-container-3 {
             display: flex;
             flex-direction: row;
+            margin: 30px 0 0 0;
         }
         // END Column6
     }
