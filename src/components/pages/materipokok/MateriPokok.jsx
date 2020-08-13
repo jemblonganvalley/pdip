@@ -5,9 +5,9 @@ import bkbb6 from '../../../img/bkbb6.jpg'
 import bkbb7 from '../../../img/bkbb7.jpg'
 
 import './MateriPokok.scss'
-import CardMateriPokok from '../../cardmateripokok/CardMateriPokok'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import MainDivider from '../../divider/MainDivider'
+import Cards from '../../cards/MainCards'
 
 const MateriPokok = () => {
     return (
@@ -31,31 +31,34 @@ const MateriPokok = () => {
                 <div className="col-card-materi-pokok">
                     {/* Row1 */}
                     <div className="row1">
-                        <CardMateriPokok imageCard={bkbb5} TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" />
-
-                        <CardMateriPokok imageCard={bkbb6} TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" />
-
-                        <CardMateriPokok imageCard={bkbb7} TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" />
+                        <Cards imageCard={bkbb5}
+                            TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" />
+                        <Cards imageCard={bkbb6}
+                            TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" />
+                        <Cards imageCard={bkbb7}
+                            TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" />
                     </div>
                     {/* END Row1 */}
 
                     {/* Row2 */}
                     <div className="row2">
-                        <CardMateriPokok imageCard={bkbb5} TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" />
-
-                        <CardMateriPokok imageCard={bkbb6} TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" />
-
-                        <CardMateriPokok imageCard={bkbb7} TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" />
+                        <Cards imageCard={bkbb5}
+                            TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" />
+                        <Cards imageCard={bkbb6}
+                            TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" />
+                        <Cards imageCard={bkbb7}
+                            TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" />
                     </div>
                     {/* END Row2 */}
 
                     {/* Row3 */}
                     <div className="row3">
-                        <CardMateriPokok imageCard={bkbb5} TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" />
-
-                        <CardMateriPokok imageCard={bkbb6} TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" />
-
-                        <CardMateriPokok imageCard={bkbb7} TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" />
+                        <Cards imageCard={bkbb5}
+                            TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" />
+                        <Cards imageCard={bkbb6}
+                            TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" />
+                        <Cards imageCard={bkbb7}
+                            TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" />
                     </div>
                     {/* END Row3 */}
                 </div>

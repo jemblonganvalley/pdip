@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../carouselBerita/CarouselBerita.css'
+import '../carouselBerita/CarouselBerita.scss'
 
 const CarouselBerita = () => {
     return (
