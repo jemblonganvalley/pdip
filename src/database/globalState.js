@@ -1,6 +1,8 @@
 import {action, createStore, thunk} from 'easy-peasy'
 
-export let globalState = createStore({
+export let globalApi = createStore({
+
+    // BLOG CATEGORY
     blogCategory : [],
     pushBlogCategory : action((state, payload)=>{
         state.blogCategory = payload
@@ -16,4 +18,23 @@ export let globalState = createStore({
         var data = await res.json()
         actions.pushBlogCategory(data)
     }),
+
+    // BERITA API
+    berita : [],
+    pushBerita : action((state, payload)=>{
+        state.berita = payload
+    }),
+    fetchBerita : thunk( async (action, page)=>{
+        let res = await fetch(`https://cms.biar.pw/api/blog/data?page=${page}`, {
+            method : "POST",
+            mode : 'cors',
+            headers : {
+                "Content-Type" : "application/json",
+                "Authorization" : "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9jbXMuYmlhci5wd1wvYXBpXC9hdXRoXC9hcHAiLCJpYXQiOjE1OTczMjg1NTUsImV4cCI6MTU5NzQxNDk1NSwibmJmIjoxNTk3MzI4NTU1LCJqdGkiOiJFRmhlV1NCTXZIMjVHcUthIiwic3ViIjoxNCwicHJ2IjoiOGZmNjMwYTAwY2E0YTNlYWY2ZjI1NGY1YWJlNWFiMWJlZWQyNzI0OSJ9.Hy90zGBG8jHr7PByMwwp-mGAy_Ns7cFBnt57Mwo4Srk"
+            }
+        })
+        let data = await res.json()
+        action.pushBerita(data)
+    })
+
 })

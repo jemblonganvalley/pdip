@@ -2,7 +2,6 @@ import React, {useEffect, use, useState} from 'react'
 import logo from '../../img/pdiperjuangan02.svg'
 import './MainNavbar.scss'
 import {NavLink} from 'react-router-dom'
-import { Dropdown } from 'react-bootstrap'
 import DropDown from './DropDown'
 
 const MainNavbar = ()=> {

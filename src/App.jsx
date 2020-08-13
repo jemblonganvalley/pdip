@@ -30,9 +30,24 @@ function App() {
 
   let [hide, setHide] = useState(true)
   let setBlogCategory = useStoreActions(action => action.setBlogCategory)
+  let fetchBerita = useStoreActions(action => action.fetchBerita)
+  let [firstHit, setFirstHit] = useState(true)
+
+  let hit = ()=>{
+    if(firstHit){
+      setBlogCategory()
+      fetchBerita(2)
+
+      setFirstHit(false)
+    }else{
+      return
+    }
+  }
 
   useEffect(() => {
-    setBlogCategory()
+
+    hit()
+
     var prevScrollpos = window.pageYOffset;
     window.addEventListener('scroll', function () {
       var currentScrollPos = window.pageYOffset;
