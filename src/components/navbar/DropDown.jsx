@@ -12,9 +12,7 @@ const DropDown = ({menuItem}) => {
        }}>
            <span></span>
             {menuItem.map((e)=>(
-                <a href={e.listTo} className="list-group-item"  
-                    
-                >{e.listName}</a>
+                <a href={'#'} className="list-group-item" key={e.id_category}>{e.name}</a>
             ))}
           
             

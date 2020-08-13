@@ -1,6 +1,8 @@
 import {action, createStore, thunk} from 'easy-peasy'
 
 export let globalState = createStore({
+
+    // API BLOG CATEGORIES
     blogCategory : [],
     pushBlogCategory : action((state, payload)=>{
         state.blogCategory = payload
@@ -16,4 +18,11 @@ export let globalState = createStore({
         var data = await res.json()
         actions.pushBlogCategory(data)
     }),
+
+ 
+
+
+
+
+
 })
