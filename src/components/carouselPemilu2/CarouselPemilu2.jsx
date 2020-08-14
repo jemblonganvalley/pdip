@@ -22,17 +22,25 @@ const CarouselPemilu2 = () => {
 
                     </div>
                 </div>
-                <a className="carousel-control-prev" href="#pemilu2" role="button" data-slide="prev" id="btn-left-carousel2">
-                    <span className="carousel-control" aria-hidden="true" />
-                    <i className="fas fa-angle-left"></i>
-                    <span className="sr-only">Previous</span>
-                </a>
-                <a className="carousel-control-next" href="#pemilu2" role="button" data-slide="next" id="btn-right-carousel2">
-                    <span className="carousel-control" aria-hidden="true" />
-                    <i className="fas fa-angle-right"></i>
-                    <span className="sr-only">Next</span>
-                </a>
+                {/* Container Box Indicator Carousel */}
+                <div className="container-box-indicator-pemilu2">
+                    {/* Box Indicator */}
+                    <div className="box-indicator-carousel-pemilu2">
+                        <a className="carousel-control-prev" href="#pemilu2" role="button" data-slide="prev" id="btn-left-carousel2">
+                            <span className="carousel-control" aria-hidden="true" />
+                            <i className="fas fa-angle-left"></i>
+                            <span className="sr-only">Previous</span>
+                        </a>
+                        <a className="carousel-control-next" href="#pemilu2" role="button" data-slide="next" id="btn-right-carousel2">
+                            <span className="carousel-control" aria-hidden="true" />
+                            <i className="fas fa-angle-right"></i>
+                            <span className="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                {/* END Box Indicator */}
             </div>
+            {/* END Container Box Indicator Carousel */}
 
             {/* END Carousel */}
         </>

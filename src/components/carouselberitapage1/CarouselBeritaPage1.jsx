@@ -6,45 +6,53 @@ const CarouselBeritaPage1 = () => {
     return (
         <>
             {/* Carousel Page1 */}
-            {/* Section2 */}
-            <div className="section2">
-                <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-                    <div className="carousel-inner">
-                        {/* Box Indicator */}
-                        <div className="box-indicator">
-                            <p className="txt-no-slide-in">
+            <div id="page1" className="carousel carousel-berita-page1 slide" data-ride="carousel">
+                <div className="carousel-inner">
+                    <div
+                        className="carousel-item active img1">
+
+                    </div>
+                    <div className="carousel-item img2">
+
+                    </div>
+                    <div className="carousel-item img3">
+
+                    </div>
+                </div>
+                {/* Container Box Indicator Carousel */}
+                <div className="container-box-indicator-page1">
+                    {/* Box Indicator */}
+                    <div className="box-tombol-carousel-page1">
+                        <a className="carousel-control-prev" href="#page1" role="button" data-slide="prev" id="btn-left-page1">
+                            <span className="carousel-control" aria-hidden="true" />
+                            <div className="btn-arrow-left-page1">
+
+                            </div>
+                            <span className="sr-only">Previous</span>
+                        </a>
+                        <a className="carousel-control-next" href="#page1" role="button" data-slide="next" id="btn-right-page1">
+                            <span className="carousel-control" aria-hidden="true" />
+                            <div className="btn-arrow-right-page1">
+
+                            </div>
+                            <span className="sr-only">Next</span>
+                        </a>
+                        {/* Box Indicator Number */}
+                        <div className="box-indicator-number-page1">
+                            <p className="txt-nomer-utama">
                                 2
                             </p>
-                            <p className="txt-no-slide-total">
+
+                            <p className="txt-nomer-target-total">
                                 / 34
                             </p>
                         </div>
-                        {/* END Box Indicator */}
-
-                        <div
-                            className="carousel-item active img1">
-
-                        </div>
-                        <div className="carousel-item img2">
-
-                        </div>
-                        <div className="carousel-item img3">
-
-                        </div>
+                        {/* END Box Indicator Number */}
                     </div>
-                    <div className="box-btn">
-                        <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true" />
-                            <span className="sr-only ">Previous</span>
-                        </a>
-                        <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true" />
-                            <span className="sr-only">Next</span>
-                        </a>
-                    </div>
+                    {/* END Box Indicator */}
                 </div>
+                {/* END Container Box Indicator Carousel */}
             </div>
-            {/* END Section2 */}
             {/* END Carousel Page1*/}
         </>
     )
