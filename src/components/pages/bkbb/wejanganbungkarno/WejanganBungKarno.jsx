@@ -6,7 +6,6 @@ import CardWejangan from '../../../cardwejangan/CardWejangan'
 import bkbb2 from '../../../../img/bkbb2.jpg'
 import bkbb3 from '../../../../img/bkbb3.jpg'
 import bkbb4 from '../../../../img/bkbb4.jpg'
-import CardMateriPokok from '../../../cardmateripokok/CardMateriPokok'
 import BreadCrumbs from '../../../breadcrumbs/BreadCrumbs'
 import MainDivider from '../../../divider/MainDivider'
 

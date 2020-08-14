@@ -1,3 +1,46 @@
+
+// Responsive Max Width 500px
+@media screen and (max-width: 500px){
+    .box-carousel-ketuaUmumPage{
+        height: 60vh !important;
+        padding: 0 !important;
+        margin: 0;
+
+        // Column1
+        .col1-container-1{
+            height: 60vh !important;
+
+            .box-txt-title{
+                height: 100%;
+
+                h1{
+                    font-size: 20px !important;
+                }
+            }
+        }
+        // END Column1
+
+        // Column2
+        .col2-img{
+            height: 30%;
+
+            .garis-strip-col2{
+                width: 180px !important;
+            }
+
+            .txt-admin{
+                font-size: 8px !important;
+            }
+
+            .txt-desk-col2{
+                font-size: 11px !important;
+            }
+        }
+        // END Column2
+    }
+}
+// END Responsive Max Width 500px
+
 .box-carousel-ketuaUmumPage{
     display: flex;
     height: 80vh;
@@ -33,6 +76,7 @@
                 width: 100%;
                 overflow: hidden;
 
+                // Column1
                 .col1-img{
                     display: flex;
                     height: 70%;
@@ -57,7 +101,9 @@
                         }
                     }  
                 }
+                // END Column1
 
+                // Column2
                 .col2-img{
                     display: flex;
                     flex-direction: column;
@@ -101,6 +147,7 @@
                         }
                     }
                 }
+                // END Column2
             }
         }
     }

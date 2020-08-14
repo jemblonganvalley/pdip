@@ -18,11 +18,9 @@ import ketuaUmumEmpat from '../../../img/ketuaumum4.png'
 // Import to CSS
 import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
-import MainButton from '../../buttons/MainButton'
 import CarouselKetuaUmumPage from '../../carouselKetuaUmumPage/CarouselKetuaUmumPage'
-import CardInformasi from '../../cardInformasi/CardInformasi'
-import CardKetuaUmum from '../../cardketuaumum/CardKetuaUmum'
 import Cards from '../../cards/MainCards'
+import CardInformasi from '../../cardInformasi/CardInformasi'
 // END Import to CSS
 
 // Create Component
@@ -55,37 +53,38 @@ const KetuaUmumPage = () => {
                     {/* END Column1 */}
 
                     {/* Column2 */}
-                        <CardInformasi image={ketuaUmumSatu}
-                                        image2={ketuaUmumDua}
-                                        image3={ketuaUmumTiga}
-                                        image4={ketuaUmumEmpat}
-                                        width1="35"
-                                        width2="35"
-                                        width3="35"
-                                        width4="35"
-                                        text="pidato kongres"
-                                        text2="pidato rakernas"
-                                        text3="pidato rakornas"
-                                        text4="pidato hut" />
+                    <CardInformasi image={ketuaUmumSatu}
+                        image2={ketuaUmumDua}
+                        image3={ketuaUmumTiga}
+                        image4={ketuaUmumEmpat}
+                        width1="35"
+                        width2="35"
+                        width3="35"
+                        width4="35"
+                        text="pidato kongres"
+                        text2="pidato rakernas"
+                        text3="pidato rakornas"
+                        text4="pidato hut" />
                     {/* END Column2 */}
 
                     {/* Column3 */}
                     <div className="cardKetuaUmum">
-                        <CardKetuaUmum imageCardKetuaUmum={pemilu13}
+                        <Cards imageCard={pemilu13}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                             borderRadius="10px" />
-                        <CardKetuaUmum imageCardKetuaUmum={pemilu14}
+                        <Cards imageCard={pemilu14}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                             borderRadius="10px" />
-                        <CardKetuaUmum imageCardKetuaUmum={pemilu15}
+                        <Cards imageCard={pemilu15}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                             borderRadius="10px" />
+
                     </div>
                     {/* END Column3 */}
 
@@ -93,7 +92,7 @@ const KetuaUmumPage = () => {
                     <div className="col5-container-1">
                         {/* Row1 */}
                         <div className="row1-video-youtube">
-                            <iframe width="100%" height="120%" src="https://www.youtube.com/embed/ChkKZ3hq1Nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="117%" src="https://www.youtube.com/embed/ChkKZ3hq1Nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         {/* END Row1 */}
 

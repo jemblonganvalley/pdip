@@ -1,5 +1,11 @@
 @import "../../../utilities/variable/variables.scss";
 
+// Responsive 500px
+@media screen and (max-width:500px){
+    
+}
+// END Responsive 500px
+
 
 .wrapperBerita{
     width: 100%;
@@ -57,6 +63,7 @@
             cursor: pointer;
             margin: 0;
             padding: 0px 0 0 0%;
+            border: 1px solid blue;
         }
         // END Column3
 

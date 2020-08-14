@@ -5,8 +5,8 @@ import pemilu19 from '../../../../img/pemilu19.jpg'
 import pemilu20 from '../../../../img/pemilu20.jpg'
 
 import '../page1/Page1.scss'
-import Card1Berita from '../../../card1berita/Card1Berita'
 import BreadCrumbs from '../../../breadcrumbs/BreadCrumbs'
+import Cards from '../../../cards/MainCards'
 
 const Page1 = () => {
 
@@ -213,11 +213,14 @@ const Page1 = () => {
 
                             {/* Column2 */}
                             <div className="col2-section6">
-                                <Card1Berita imageCard={pemilu18} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                                <Cards imageCard={pemilu18}
+                                    textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                                     borderRadius="10px" />
-                                <Card1Berita imageCard={pemilu19} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                                <Cards imageCard={pemilu19}
+                                    textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                                     borderRadius="10px" />
-                                <Card1Berita imageCard={pemilu20} textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                                <Cards imageCard={pemilu20}
+                                    textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                                     borderRadius="10px" />
                             </div>
                             {/* END Column2 */}

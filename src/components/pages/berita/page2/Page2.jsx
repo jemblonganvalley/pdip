@@ -8,7 +8,7 @@ import detailartikel6 from '../../../../img/detailartikel6.jpg'
 
 import '../page2/Page2.scss'
 import BreadCrumbs from '../../../breadcrumbs/BreadCrumbs'
-import Card1Berita from '../../../card1berita/Card1Berita'
+import Cards from '../../../cards/MainCards'
 
 const Page2 = () => {
 
@@ -124,13 +124,13 @@ const Page2 = () => {
 
                     {/* Column2 */}
                     <div className="col2-container-1">
-                        <Card1Berita imageCard={detailartikel3} title="Lorem ipsum dolor, sit amet consectetur adipisicing"
+                        <Cards imageCard={detailartikel3} title="Lorem ipsum dolor, sit amet consectetur adipisicing"
                             borderRadius="10px" />
-                        <Card1Berita imageCard={detailartikel4} title="Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil"
+                        <Cards imageCard={detailartikel4} title="Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil"
                             borderRadius="10px" />
-                        <Card1Berita imageCard={detailartikel5} title="Lorem ipsum dolor, sit amet consectetur adipisicing"
+                        <Cards imageCard={detailartikel5} title="Lorem ipsum dolor, sit amet consectetur adipisicing"
                             borderRadius="10px" />
-                        <Card1Berita imageCard={detailartikel6} title="Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil"
+                        <Cards imageCard={detailartikel6} title="Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil"
                             borderRadius="10px" />
                     </div>
                     {/* END Column2 */}
