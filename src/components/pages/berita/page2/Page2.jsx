@@ -1,4 +1,4 @@
-import React ,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 
 import detailartikel3 from '../../../../img/detailartikel3.jpg'
 import detailartikel4 from '../../../../img/detailartikel4.jpg'
@@ -12,9 +12,9 @@ import Cards from '../../../cards/MainCards'
 
 const Page2 = () => {
 
-     useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <>
@@ -124,13 +124,13 @@ const Page2 = () => {
 
                     {/* Column2 */}
                     <div className="col2-container-1">
-                        <Cards imageCard={detailartikel3} title="Lorem ipsum dolor, sit amet consectetur adipisicing"
+                        <Cards imageCard={detailartikel3} TextH6="Lorem ipsum dolor, sit amet consectetur adipisicing eliteiusmod tempor indicidunt"
                             borderRadius="10px" />
-                        <Cards imageCard={detailartikel4} title="Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil"
+                        <Cards imageCard={detailartikel4} TextH6="Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil"
                             borderRadius="10px" />
-                        <Cards imageCard={detailartikel5} title="Lorem ipsum dolor, sit amet consectetur adipisicing"
+                        <Cards imageCard={detailartikel5} TextH6="Lorem ipsum dolor, sit amet consectetur adipisicing eliteiusmod tempor indicidunt"
                             borderRadius="10px" />
-                        <Cards imageCard={detailartikel6} title="Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil"
+                        <Cards imageCard={detailartikel6} TextH6="Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil"
                             borderRadius="10px" />
                     </div>
                     {/* END Column2 */}

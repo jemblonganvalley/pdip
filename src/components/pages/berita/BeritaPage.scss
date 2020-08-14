@@ -2,7 +2,116 @@
 
 // Responsive 500px
 @media screen and (max-width:500px){
-    
+    // Container1
+    .container-1{
+        display: flex;
+        flex-direction: column;
+
+        // Column3
+        .cardBerita1-col3-container-1 {
+            display: flex;
+            flex-direction: column !important;
+            height: auto !important;
+        }
+        // END Column3
+
+        // Column4
+        .col4-container-1{
+            display: flex;
+            padding: 0 10px !important;
+            border: 1px solid red;
+        }
+        // END Column4
+
+        // Column5
+        .col5-container-1{
+            display: flex !important;
+            flex-direction: column !important;
+            padding: 0 10px !important;
+
+            // Row1
+            .row1-col5{
+                display: flex;
+                width: 100% !important;
+
+                h1{
+                    font-size: 15px !important;
+                }
+            }
+            // END Row1
+
+            // Row2
+            .row2-col5{
+                display: flex;
+                width: 100% !important;
+                margin: 10px 0 0 0 !important;
+
+                .txt-jdl-col2{
+                    display: flex;
+                    font-size: 15px !important;
+                }
+
+                .txt-desk-col2{
+                    display: flex;
+                    font-size: 10px !important;
+                }
+            }
+            // END Row2
+        }
+        // END Column5
+    }
+    // END Container1
+
+    // Container2
+    .container-2{
+        display: flex;
+        height: 35vh !important;
+
+        .txt-title-col1{
+            font-size: 20px !important;
+        }
+    }
+    // END Container2
+
+    // Container3
+    .container-3{
+        display: flex;
+
+        // Column1
+        .col1-container-3{
+            display: flex;
+            padding: 0 5px !important;
+        }
+        // END Column1
+
+        // Column2
+        .col2-cardContent-container-3{
+            display: flex;
+            flex-direction: column !important;
+            height: auto !important;
+            width: 100% !important;
+        }
+        // END Column2
+
+        // Column3
+        .col3-container-3{
+            display: flex;
+            padding: 0 5px !important;
+            margin: 0 !important;
+        }
+        // END Column3
+
+        // Column4
+        .col4-cardContent-container-3{
+            display: flex;
+            flex-direction: column !important;
+            height: auto !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        // END Column4
+    }
+    // END Container3
 }
 // END Responsive 500px
 
@@ -63,7 +172,6 @@
             cursor: pointer;
             margin: 0;
             padding: 0px 0 0 0%;
-            border: 1px solid blue;
         }
         // END Column3
 
@@ -77,44 +185,6 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
-
-            .col-title-berita-foto{
-                display: flex;
-                height: auto;
-                width: 100%;
-                justify-content: center;
-                align-items: center;
-                overflow: hidden;
-
-                .txt-berita-foto{
-                    display: flex;
-                    font-size: 15px;
-                    font-weight: bold;
-                    color: #d80010;
-                    margin: 1px;
-                    overflow: hidden;
-                }
-            }
-
-            .col-garis-lurus{
-                display: flex;
-                height: 1px;
-                width: 100%;
-                background: #ccc;
-                justify-content: center;
-                align-items: center;
-                margin: 5px 0 0 0;
-                overflow: hidden;
-                
-                .garis-merah{
-                    display: flex;
-                    position: absolute;
-                    height: 4px;
-                    width: 100px;
-                    background: #d80010;
-                    overflow: hidden;
-                }
-            }
         }
         // END Column4
 
@@ -320,44 +390,6 @@
             height: 20vh;
             width: 100%;
             overflow: hidden;
-
-            .box-jdl-col1{
-                display: flex;
-                flex-direction: column-reverse;
-                height: 60%;
-                width: 100%;
-                align-items: center;
-                overflow: hidden;
-
-                .txt-jdl-col1{
-                    display: flex;
-                    font-size: 15px;
-                    font-weight: bold;
-                    color: #d80010;
-                    margin: 1px;
-                    overflow: hidden;
-                }
-            }
-
-            .box-garis-lurus-col1{
-                display: flex;
-                height: 1px;
-                width: 100%;
-                background: #ccc;
-                justify-content: center;
-                align-items: center;
-                margin: 5px 0 0 0;
-                overflow: hidden;
-
-                .garis-merah{
-                    display: flex;
-                    position: absolute;
-                    height: 4px;
-                    width: 120px;
-                    background: #d80010;
-                    overflow: hidden;
-                }
-            }
         }
         // END Column1
 
@@ -370,7 +402,7 @@
             align-items: center;
             flex-direction: row;
             margin-top: 0;
-            padding: 10px 0%;
+            padding: 0px 0%;
         
             // .col-cardContent {
             //     //  border: 1px solid green;
@@ -444,44 +476,6 @@
             height: 20vh;
             width: 100%;
             overflow: hidden;
-
-            .box-jdl-col3{
-                display: flex;
-                flex-direction: column-reverse;
-                height: 60%;
-                width: 100%;
-                align-items: center;
-                overflow: hidden;
-
-                .txt-jdl-col3{
-                    display: flex;
-                    font-size: 15px;
-                    font-weight: bold;
-                    color: #d80010;
-                    margin: 1px;
-                    overflow: hidden;
-                }
-            }
-
-            .box-garis-lurus-col3{
-                display: flex;
-                height: 1px;
-                width: 100%;
-                background: #ccc;
-                justify-content: center;
-                align-items: center;
-                margin: 5px 0 0 0;
-                overflow: hidden;
-
-                .garis-merah{
-                    display: flex;
-                    position: absolute;
-                    height: 4px;
-                    width: 130px;
-                    background: #d80010;
-                    overflow: hidden;
-                }
-            }
         }
         // END Column3
 

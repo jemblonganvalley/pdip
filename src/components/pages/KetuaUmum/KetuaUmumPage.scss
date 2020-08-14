@@ -54,11 +54,19 @@ $secondary : #f3f3f3;
     }
     // END Container1
 
+    // Container2
+    .container-2-ketuaumum{
+        display: flex;
+        padding: 0px 10px !important;
+    }
+    // END Container2
+
     // Container3
     .container-3{
         display: flex;
         flex-direction: column !important;
         padding: 0 0 50px 0 !important;
+        margin: 0 !important;
 
         .col4-cardContent-container-3{
             display: flex;
@@ -203,12 +211,9 @@ $secondary : #f3f3f3;
         }
         // END Column1
 
-        
-
         // Column3
         .cardKetuaUmum {
             display: flex;
-            border: 1px solid blue;
         }
         // END Column3
 
@@ -227,6 +232,10 @@ $secondary : #f3f3f3;
                 width: 70%;
                 margin: 0 30px 0px 0;
                 overflow: hidden;
+
+                iframe{
+                    height: 121%;
+                }
             }
             // END Row1
 
@@ -265,10 +274,15 @@ $secondary : #f3f3f3;
     }
     // END Container1
 
-    .container-2{
+    // Container2
+    .container-2-ketuaumum{
         display: flex;
-        padding: 20px 0 0 0;
+        height: 20vh;
+        padding: 0 10%;
+        justify-content: center;
+        align-items: center;
     }
+    // END Container
 
     // Container3
     .container-3{
@@ -282,7 +296,7 @@ $secondary : #f3f3f3;
         .col4-cardContent-container-3 {
             display: flex;
             flex-direction: row;
-            margin: 30px 0 0 0;
+            margin: 0px 0 0 0;
         }
         // END Column4
     }

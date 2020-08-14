@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 
 import pemilu18 from '../../../../img/pemilu18.jpg'
 import pemilu19 from '../../../../img/pemilu19.jpg'
@@ -7,13 +7,14 @@ import pemilu20 from '../../../../img/pemilu20.jpg'
 import '../page1/Page1.scss'
 import BreadCrumbs from '../../../breadcrumbs/BreadCrumbs'
 import Cards from '../../../cards/MainCards'
+import CarouselBeritaPage1 from '../../../carouselberitapage1/CarouselBeritaPage1'
 
 const Page1 = () => {
 
 
-     useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <>
@@ -100,44 +101,7 @@ const Page1 = () => {
                         {/* END Section1 */}
 
                         {/* Section2 */}
-                        <div className="section2">
-                            <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-                                <div className="carousel-inner">
-                                    {/* Box Indicator */}
-                                    <div className="box-indicator">
-                                        <p className="txt-no-slide-in">
-                                            2
-                                        </p>
-                                        <p className="txt-no-slide-total">
-                                            / 34
-                                        </p>
-                                    </div>
-                                    {/* END Box Indicator */}
-
-                                    <div
-                                        className="carousel-item active img1">
-
-                                    </div>
-                                    <div className="carousel-item img2">
-
-                                    </div>
-                                    <div className="carousel-item img3">
-
-                                    </div>
-                                </div>
-                                <div className="box-btn">
-                                    <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                        <span className="carousel-control-prev-icon" aria-hidden="true" />
-                                        <span className="sr-only ">Previous</span>
-                                    </a>
-                                    <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                        <span className="carousel-control-next-icon" aria-hidden="true" />
-                                        <span className="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
+                        <CarouselBeritaPage1 />
                         {/* END Section2 */}
 
                         {/* Section3 */}

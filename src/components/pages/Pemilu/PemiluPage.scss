@@ -1,6 +1,84 @@
+// Responsive Max Width 500px
+@media screen and (max-width: 500px){
+    // Container1
+    .container-1{
+        display: flex;
+
+        // Column1
+        .col1-container-1{
+            display: flex;
+            height: 160vh !important;
+            flex-direction: column !important;
+            padding: 0 10px !important;
+
+            // Row1
+            .row1-col1{
+                display: flex;
+                height: 110vh !important;
+                width: 100% !important;
+            }
+            // END Row1
+
+            // Row2
+            .row2-col1{
+                display: flex;
+                height: 50% !important;
+                width: 100% !important;
+                margin: 20px 0 0 0 !important;
+            }
+            // END Row2
+        }
+        // END Column1
+
+        // Column2
+        .col2-container-1{
+            display: flex;
+            flex-direction: column !important;
+            padding: 30px 10px 30px 10px !important;
+
+            // Row1
+            .row1-col2{
+                width: 100% !important;
+                margin: 0 0 20px 0 !important;
+            }
+            // END Row1
+
+            // Row2
+            .row2-col2{
+                width: 100% !important;
+            }
+            // END Row2
+        }
+        // END Column2
+    }
+    // END Container
+
+    // Container2
+    .container-2{
+        width: 100% !important;
+        background-position: center !important;
+        background-size: cover !important;
+    }
+    // END Container2
+
+    // Container3
+    .container-3{
+        display: flex;
+        margin: 40px 0 0 0 !important;
+
+        iframe{
+            padding: 0 10px !important;
+            width: 100% !important;
+        }
+       
+    }
+    // END Container3
+}
+// END Responsive Max Width 500px
+
+
 $secondary : #f3f3f3;
 @import "../../../utilities/variable/variables.scss";
-
 
 .wrapperPemilu {
     width: 100%;
@@ -167,7 +245,7 @@ $secondary : #f3f3f3;
             // Row2
             .row2-col2{
                 display: flex;
-                // height: 20vh;
+                height: 20vh;
                 // width: 50%;
                 background: $colors;
                 overflow: hidden;
