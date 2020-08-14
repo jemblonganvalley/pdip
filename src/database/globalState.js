@@ -30,11 +30,16 @@ export let globalApi = createStore({
             mode : 'cors',
             headers : {
                 "Content-Type" : "application/json",
-                "Authorization" : "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9jbXMuYmlhci5wd1wvYXBpXC9hdXRoXC9hcHAiLCJpYXQiOjE1OTczMjg1NTUsImV4cCI6MTU5NzQxNDk1NSwibmJmIjoxNTk3MzI4NTU1LCJqdGkiOiJFRmhlV1NCTXZIMjVHcUthIiwic3ViIjoxNCwicHJ2IjoiOGZmNjMwYTAwY2E0YTNlYWY2ZjI1NGY1YWJlNWFiMWJlZWQyNzI0OSJ9.Hy90zGBG8jHr7PByMwwp-mGAy_Ns7cFBnt57Mwo4Srk"
+                "Authorization" : "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9jbXMuYmlhci5wd1wvYXBpXC9hdXRoXC9hcHAiLCJpYXQiOjE1OTczMjg1NTUsImV4cCI6MTU5NzQxNDk1NSwibmJmIjoxNTk3MzI4NTU1LCJqdGkiOiJFRmhlV1NCTXZIMjVHcUthIiwic3ViIjoxNCwicHJ2IjoiOGZmNjMwYTAwY2E0YTNlYWY2ZjI1NGY1YWJlNWFiMWJlZWQyNzI0OSJ9.Hy90zGBG8jHr7PByMwwp-mGAy_Ns7cFBnt57Mwo4Srk",
+                "Accept" : "*/*",
+            },
+            body : {
+                "order":{"key":"id","value":"desc"} ,
+	            "limit" : 3
             }
         })
         let data = await res.json()
-        action.pushBerita(data)
+        action.pushBerita(data.query.data)
     })
 
 })

@@ -18,12 +18,19 @@ import megawati7 from '../../../img/megawati7.jpg'
 import MainButton from '../../buttons/MainButton'
 import MainDivider from '../../divider/MainDivider'
 import WidgetBerita from '../../widget/widgetBerita/WidgetBerita'
+import { useStoreState, useStoreActions } from 'easy-peasy'
 
 
 const HomePage = ()=> {
 
+    const berita = useStoreState(state => state.berita)
+    const fetchBerita = useStoreActions(action => action.fetchBerita)
+
     useEffect(()=>{
+
+        fetchBerita()
         window.scrollTo(0,0)
+
     },[])
 
     return (
@@ -73,18 +80,28 @@ const HomePage = ()=> {
                     </div>
 
                     <div className="cardContainer">
-                        <Cards imageCard={megawati1}
-                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                        
+                        {berita.map((e)=>(
+                            
+                              <Cards imageCard={megawati1}
+                                textSmall={`${e.author} | ${e.created_at.split(" ")[0]}`}
+                                TextH5={e.title}
                                 borderRadius="10px" />
-                        <Cards imageCard={megawati2}
+
+                        ))}
+
+                      
+
+
+                        {/* <Cards imageCard={megawati2}
                                 textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                                 TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                                 borderRadius="10px" />
                         <Cards imageCard={megawati3}
                                 textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                                 TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                                borderRadius="10px" />
+                                borderRadius="10px" /> */}
+
                     </div>
                     
 
