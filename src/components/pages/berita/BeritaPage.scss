@@ -277,29 +277,29 @@
             align-items: center;
             overflow: hidden;
 
-            .btn-lihat-col2{
-                display: flex;
-                position: static;
-                height: 35px;
-                width: 130px;
-                background: #fff;
-                border-radius: 20px;
-                border: none;
-                outline: none;
-                overflow: hidden;
-                // For Font Button
-                font-size: 11px;
-                font-weight: bold;
-                color: #d80010;
-                justify-content: center;
-                align-items: center;
-                transition: .5s;
+            // .btn-lihat-col2{
+            //     display: flex;
+            //     position: static;
+            //     height: 35px;
+            //     width: 130px;
+            //     background: #fff;
+            //     border-radius: 20px;
+            //     border: none;
+            //     outline: none;
+            //     overflow: hidden;
+            //     // For Font Button
+            //     font-size: 11px;
+            //     font-weight: bold;
+            //     color: #d80010;
+            //     justify-content: center;
+            //     align-items: center;
+            //     transition: .5s;
 
-                &:hover{
-                    background: #d80010;
-                    color: #fff;
-                }
-            }
+            //     &:hover{
+            //         background: #d80010;
+            //         color: #fff;
+            //     }
+            // }
         }
         // END Column2
     }

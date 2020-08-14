@@ -1,5 +1,5 @@
 // Import to React
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 // END Import to React
 
 // Import to CSS
@@ -8,13 +8,14 @@ import CarouselPemilu1 from '../../carouselPemilu1/CarouselPemilu1'
 import CarouselPemilu2 from '../../carouselPemilu2/CarouselPemilu2'
 import Carousel3PemiluPage from '../../carousel3PemiluPage/Carousel3PemiluPage'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
+import MainButton from '../../buttons/MainButton'
 // END Import to CSS
 
 // Create Component 
 const PemiluPage = () => {
-     useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <>
@@ -108,9 +109,7 @@ const PemiluPage = () => {
                         </div>
                     </div>
                     <div className="btn-col2">
-                        <button className="btn-lihat">
-                            LIHAT
-                        </button>
+                        <MainButton name="LIHAT" />
                     </div>
                 </div>
                 {/* END Container2 */}
