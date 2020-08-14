@@ -113,7 +113,7 @@ const KetuaUmumPage = () => {
                 {/* END Container1 */}
 
                 {/* Container2 */}
-                <div className="container-2">
+                <div className="container-2-ketuaumum">
                     <MainDivider text="Berita Terkait"
                         garisMerah="7rem"
                         m="1rem 0" />

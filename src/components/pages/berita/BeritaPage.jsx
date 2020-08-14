@@ -27,13 +27,15 @@ import BeritaSatu from '../../../img/berita1.png'
 import BeritaDua from '../../../img/berita2.png'
 import BeritaTiga from '../../../img/berita3.png'
 import BeritaEmpat from '../../../img/berita4.png'
+import MainButton from '../../buttons/MainButton'
+import MainDivider from '../../divider/MainDivider'
 
 // Create Component
 const BeritaPage = () => {
 
-     useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
 
     return (
@@ -59,23 +61,23 @@ const BeritaPage = () => {
                     {/* END Column1 */}
 
                     {/* Column2 */}
-                        <CardInformasi image={BeritaSatu}
-                                image2={BeritaDua}
-                                image3={BeritaTiga}
-                                image4={BeritaEmpat}
-                                width1="35"
-                                width2="35"
-                                width3="35"
-                                width4="35"
-                                text="berita nasional"
-                                text2="berita daerah"
-                                text3="berita foto"
-                                text4="kegiatan partai" />
+                    <CardInformasi image={BeritaSatu}
+                        image2={BeritaDua}
+                        image3={BeritaTiga}
+                        image4={BeritaEmpat}
+                        width1="35"
+                        width2="35"
+                        width3="35"
+                        width4="35"
+                        text="berita nasional"
+                        text2="berita daerah"
+                        text3="berita foto"
+                        text4="kegiatan partai" />
                     {/* END Column2 */}
 
                     {/* Column3 */}
                     <div className="cardBerita1-col3-container-1">
-                        <Cards imageCard={pemilu13}
+                        <Cards page="/page1" imageCard={pemilu13}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                             paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
@@ -95,16 +97,9 @@ const BeritaPage = () => {
 
                     {/* Column4 */}
                     <div className="col4-container-1">
-                        <div className="col-title-berita-foto">
-                            <p className="txt-berita-foto">
-                                BERITA FOTO
-                            </p>
-                        </div>
-                        <div className="col-garis-lurus">
-                            <div className="garis-merah">
-
-                            </div>
-                        </div>
+                        <MainDivider text="Berita Foto"
+                            garisMerah="7rem"
+                            m="1rem 0" />
                     </div>
                     {/* END Column4 */}
 
@@ -156,9 +151,7 @@ const BeritaPage = () => {
                     {/* END Column1 */}
                     {/* Column2 */}
                     <div className="col2-container-2">
-                        <button className="btn-lihat-col2">
-                            LIHAT
-                        </button>
+                        <MainButton name="LIHAT" />
                     </div>
                     {/* END Column2 */}
                 </div>
@@ -168,16 +161,9 @@ const BeritaPage = () => {
                 <div className="container-3">
                     {/* Column1 */}
                     <div className="col1-container-3">
-                        <div className="box-jdl-col1">
-                            <p className="txt-jdl-col1">
-                                BERITA DAERAH
-                            </p>
-                        </div>
-                        <div className="box-garis-lurus-col1">
-                            <div className="garis-merah">
-
-                            </div>
-                        </div>
+                        <MainDivider text="Berita Daerah"
+                            garisMerah="7rem"
+                            m="1rem 0" />
                     </div>
                     {/* END Column1 */}
 
@@ -203,16 +189,9 @@ const BeritaPage = () => {
 
                     {/* Column3 */}
                     <div className="col3-container-3">
-                        <div className="box-jdl-col3">
-                            <p className="txt-jdl-col3">
-                                KEGIATAN PARTAI
-                            </p>
-                        </div>
-                        <div className="box-garis-lurus-col3">
-                            <div className="garis-merah">
-
-                            </div>
-                        </div>
+                        <MainDivider text="Kegiatan Partai"
+                            garisMerah="7rem"
+                            m="1rem 0" />
                     </div>
                     {/* END Column3 */}
 
