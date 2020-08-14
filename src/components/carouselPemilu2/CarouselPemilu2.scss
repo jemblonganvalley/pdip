@@ -27,35 +27,56 @@
         }   
     }
 
-    #btn-left-carousel2{
+    // Container Box Indicator Carousel
+    .container-box-indicator-pemilu2{
         display: flex;
-        height: 35px;
-        width: 35px;
-        background: #fff;
-        color: #000;
-        border-radius: 500px;
-        margin: 100px 0 0 150px;
-        transition: .5s;
+        flex-direction: column-reverse;
+        position: absolute;
+        height: 100%;
+        width: 100%;
 
-        &:hover{
-            opacity: 1;
-        }
-    }
-    
-    #btn-right-carousel2{
-        display: flex;
-        height: 35px;
-        width: 35px;
-        background: #fff;
-        color: #000;
-        border-radius: 500px;
-        margin: 100px 140px 0 0px;
-        transition: .5s;
+        // Box Indicator
+        .box-indicator-carousel-pemilu2{
+            display: flex;
+            height: 70px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
 
-        &:hover{
-            opacity: 1;
+            #btn-left-carousel2{
+                display: flex;
+                position: static;
+                height: 35px;
+                width: 35px;
+                background: #fff;
+                color: #000;
+                border-radius: 500px;
+                margin: 0 10px 0 0;
+                transition: .5s;
+        
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            
+            #btn-right-carousel2{
+                display: flex;
+                position: static;
+                height: 35px;
+                width: 35px;
+                background: #fff;
+                color: #000;
+                border-radius: 500px;
+                transition: .5s;
+        
+                &:hover{
+                    opacity: 1;
+                }
+            }
         }
+        // END Box Indicator
     }
+    // END Container Box Indicator Carousel
 }
 // END Carousel
 

@@ -35,34 +35,55 @@
         }
     }
 
-    #btn-left-carousel3{
+    // Container Box Indicator Carousel
+    .container-box-indicator-pemilu3{
         display: flex;
-        height: 35px;
-        width: 35px;
-        background: #d80010;
-        color: #fff;
-        border-radius: 500px;
-        margin: 250px 0 0 300px;
-        transition: .5s;
+        flex-direction: column-reverse;
+        position: absolute;
+        height: 100%;
+        width: 100%;
 
-        &:hover{
-            opacity: 1;
-        }
-    }
-    
-    #btn-right-carousel3{
-        display: flex;
-        height: 35px;
-        width: 35px;
-        background: #d80010;
-        color: #fff;
-        border-radius: 500px;
-        margin: 250px 300px 0 0px;
-        transition: .5s;
+        // Box Indicator
+        .box-indicator-carousel-pemilu3{
+            display: flex;
+            height: 70px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
 
-        &:hover{
-            opacity: 1;
+            #btn-left-carousel3{
+                display: flex;
+                position: static;
+                height: 35px;
+                width: 35px;
+                background: #d80010;
+                color: #fff;
+                border-radius: 500px;
+                margin: 0 10px 0 0;
+                transition: .5s;
+        
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            
+            #btn-right-carousel3{
+                display: flex;
+                position: static;
+                height: 35px;
+                width: 35px;
+                background: #d80010;
+                color: #fff;
+                border-radius: 500px;
+                transition: .5s;
+        
+                &:hover{
+                    opacity: 1;
+                }
+            }
         }
+        // END Box Indicator
     }
+    // END Container Box Indicator Carousel
 }
 // END Carousel
