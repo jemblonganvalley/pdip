@@ -46,14 +46,18 @@
                 width: 100% !important;
                 margin: 10px 0 0 0 !important;
 
-                .txt-jdl-col2{
-                    display: flex;
-                    font-size: 15px !important;
-                }
+                .col2-row2{
+                    padding: 5px 10px 5px 10px !important;
 
-                .txt-desk-col2{
-                    display: flex;
-                    font-size: 10px !important;
+                    .txt-jdl-col2{
+                        display: flex;
+                        font-size: 7px !important;
+                    }
+    
+                    .txt-desk-col2{
+                        display: flex;
+                        font-size: 6px !important;
+                    }
                 }
             }
             // END Row2
@@ -68,7 +72,7 @@
         height: 35vh !important;
 
         .txt-title-col1{
-            font-size: 20px !important;
+            font-size: 15px !important;
         }
     }
     // END Container2
