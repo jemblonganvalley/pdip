@@ -6,6 +6,13 @@ $responsiveDua : 1000px;
 $responsiveTiga : 991px;
 $responsiveEmpat : 719px;
 
+$smallPhoneSatu : 500px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+
 @mixin responSatu {
     @media (max-width : #{$responsiveSatu}) {
         @content;
@@ -46,6 +53,9 @@ $responsiveEmpat : 719px;
     @include responTiga() {
         padding: 10px 10%;
     }
+    @include smallPhone() {
+        padding: 5px 7%;
+    }
 
     .navbar-collapse {
         
@@ -66,6 +76,10 @@ $responsiveEmpat : 719px;
             }
             @include responDua() {
                 width: 50px;
+            }
+
+            @include smallPhone() {
+                width: 35px;
             }
         }
     }

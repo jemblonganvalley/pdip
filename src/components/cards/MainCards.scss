@@ -1,27 +1,6 @@
-$table : 1261px;
-
-$responsiveSatu : 1085px;
-$responsiveDua : 1000px;
-$responsiveTiga : 728px;
-$responsiveEmpat : 500px;
-
-@mixin responSatu {
-    @media (max-width : #{$responsiveSatu}) {
-        @content;
-    }
-}
-@mixin responDua {
-    @media (max-width : #{$responsiveDua}) {
-        @content;
-    }
-}
-@mixin responTiga {
-    @media (max-width : #{$responsiveTiga}) {
-        @content;
-    }
-}
-@mixin responEmpat {
-    @media (max-width : #{$responsiveEmpat}) {
+$smallPhoneSatu : 500px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
         @content;
     }
 }
@@ -37,14 +16,14 @@ $responsiveEmpat : 500px;
         background: #ffffff;
         
         transition: .5s;
-        // border: 1px solid blue;
         
         &:hover {
             box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);
-            background: $colors;
+            background: $darkRedTwo;
             color: #ffffff;
         }
 
+        
         .imageCard {
             width: 100%;
             height: 30vh;
@@ -54,6 +33,8 @@ $responsiveEmpat : 500px;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            
 
             .VBMusic {
                 width: 35px;
@@ -81,23 +62,13 @@ $responsiveEmpat : 500px;
 
             .textSmall {
                 font-size: 8pt;
-
-                @include responSatu() {
-                    font-size: 6pt;
-                }
             }
 
             .textH5 {
                 margin-top: 1rem;
-                @include responSatu() {
-                    font-size: 12pt;
-                }
             }
             .paragrap {
                 font-size: 7pt;
-                @include responSatu() {
-                   font-size: 6pt;
-               }
             }
         }
     }

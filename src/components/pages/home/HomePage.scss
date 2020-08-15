@@ -5,33 +5,14 @@ $responsiveDua : 1000px;
 $responsiveTiga : 728px;
 $responsiveEmpat : 500px;
 
-$phoneSatu : 600px;
+$smallPhoneSatu : 500px;
 
 @import "../../../utilities/variable/variables.scss";
 
 
-@mixin responSatu {
-    @media (max-width : #{$responsiveSatu}) {
-        @content;
-    }
-}
-@mixin responDua {
-    @media (max-width : #{$responsiveDua}) {
-        @content;
-    }
-}
-@mixin responTiga {
-    @media (max-width : #{$responsiveTiga}) {
-        @content;
-    }
-}
-@mixin responEmpat {
-    @media (max-width : #{$responsiveEmpat}) {
-        @content;
-    }
-}
-@mixin phone {
-    @media (max-width : #{$phoneSatu}) {
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
         @content;
     }
 }
@@ -42,12 +23,8 @@ $phoneSatu : 600px;
 .homePageTwo {
     width: 100vw;
     padding: $padding;
-
-    @include responSatu() {
-        padding: 20px 13%;
-    }
-    @include phone() {
-        padding: $padding;
+    @include smallPhone() {
+        padding: 0;
     }
 
         .customRow {
@@ -59,17 +36,12 @@ $phoneSatu : 600px;
             align-items: center;
             // padding: 3rem;
             flex-direction: row;
-
-            @include responSatu() {
-                height: 18vh;
-            }
-            @include phone() {
+            @include smallPhone() {
                 height: auto;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                flex-direction: column;
-                padding: 20px;
             }
         
             
@@ -77,26 +49,21 @@ $phoneSatu : 600px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                // border: 1px solid blue;
                 
-                @include phone() {
+                
+                @include smallPhone() {
                     flex-direction: column;
-                    margin: 2rem;
                     text-align: center;
+                    padding: 10px 0;
+                    flex: 1;
                 }
 
                 img {
                     margin: 0 10px;
-                    @include responSatu() {
-                        width: 40px;
-                        height: 40px;
-                        
-                    }
-                    @include phone() {
+                    @include smallPhone() {
                         // border: 1px solid blue;
-                        width: 5rem;
-                        height: 5rem;
-                        
+                        width: 30px;
+                        height: 30px;
                     }
                 
 
@@ -110,13 +77,11 @@ $phoneSatu : 600px;
                     line-height: 1.3;
                     letter-spacing: 1px;
 
-                    @include responSatu() {
-                        font-size: 10pt;
-                    }
-
-                    @include phone() {
+                    @include smallPhone() {
                         margin-top: 1rem;
-                        font-size: 8pt;
+                        font-size: 6pt;
+                        width: 100%;
+                        font-family: 'Josefin Sans';
                     }
                 }
 
@@ -128,14 +93,10 @@ $phoneSatu : 600px;
                     height: 15vh;
                     padding: 2rem;
                     border-right: 1px solid white;
-
-                    @include responSatu() {
-                        // font-size: 10pt;
-                        height: 60%;
-                    }
-                    @include phone() {
+                    @include smallPhone() {
                         // flex-direction: column;
-                        border: none;
+                        padding: 1rem;
+                        // border: none;
                         flex-direction: column;
                     }
             }
@@ -160,12 +121,17 @@ $phoneSatu : 600px;
             width: 100%;
             text-align: center;
             // border: 1px solid blue;
+
+            @include smallPhone() {
+                margin: 0;
+                padding: $paddingSmall;
+            }
             
             p {
                 font-size: 14pt;
                 letter-spacing: 1px;
 
-                @include responSatu() {
+                @include smallPhone() {
                     font-size: 10pt;
                 }
             }
@@ -179,9 +145,11 @@ $phoneSatu : 600px;
             background-position-y: -150px;
             margin-top: 20px;
             height: 40vh;
-            @include responSatu() {
-                height: 30vh;
-                margin-top: 2.5rem;
+
+            @include smallPhone() {
+                background-size: cover;
+                background-position: center;
+                width: 95.5%;
             }
 
             .textYoutube {
@@ -193,48 +161,48 @@ $phoneSatu : 600px;
                 // border: 1px solid blue;
                 background: rgba(0, 0, 0, 0.7);
 
+                
+
                 .wrapperText {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    
                     width: 50%;
                     height: 90%;
-
-                    // border: 1px solid green;
+                    @include smallPhone() {
+                        width: 100%;
+                    }
 
                     ul {
                         list-style: none;
 
                         li {
-                            display: inline-block;
-                            background-color: #d80010;
+                            display: table-cell;
+                            background-color: $darkRed;
                             border-radius: 50%;
+                            height: 50px;
+                            width: 50px;
+                            vertical-align: middle;
+                            text-align: center;
+
+                            @include smallPhone() {
+                                height: 2.3rem;
+                                width: 2.3rem;
+                            }
 
                             a {
                                 text-decoration: none;
                                 color: #ffffff;
-                                display: table-cell;
-                                vertical-align: middle;
-                                text-align: center;
-                                
-                                height: 50px;
-                                width: 50px;
-
-                                @include responSatu() {
-                                    height: 35px;
-                                    width: 35px;
+                                @include smallPhone() {
                                 }
 
                                 i {
                                     font-size: 20pt;
                                     margin-left: 5px;
                                     margin-top: 5px;
-
-                                    @include responSatu() {
-                                        font-size: 10pt;
-                                        margin-left: 3px;
-                                        margin-top: 7px;
+                                    @include smallPhone() {
+                                        font-size: 12pt;
+                                        margin: 0;
                                     }
                                 }
                             }
@@ -249,50 +217,30 @@ $phoneSatu : 600px;
                         justify-content: center;
                         align-items: flex-start;
                         flex-direction: column;
-
-                        // border: 1px solid pink;
                         color: #ffffff;
                         margin-left: 20px;
+                        @include smallPhone() {
+                            height: auto;
+                            line-height: .5;
+                        }
 
                         .videoTerbaru {
-                            @include responSatu() {
-                                font-size: 13pt;
+                            @include smallPhone() {
+                                font-size: 15pt;
                             }
                         }
                         .siaranHut {
-                            @include responSatu() {
+                            @include smallPhone() {
                                 font-size: 10pt;
+                                font-weight: 400;
                             }
                         }
                     }
                 }
             }
         }
-
-        
-
     }
-    button {
-        border-radius: 25px;
-        // background-color: #d80010;
-        border: 1px solid #d80010;
-        text-transform: uppercase;
-        margin-top: 20px;
-        font-size: 7pt;
-        font-weight: 500;
-        color: #d80010;
-        transition: .5s;
-
-        @include responSatu() {
-            font-size: 6pt;
-        }
-
-        &:hover {
-            background: #d80010;
-            color: #ffffff;
-        }
-
-    }
+    
 
     .beritaPage {
         display: flex;
@@ -313,14 +261,8 @@ $phoneSatu : 600px;
             p {
                 font-size: 14pt;
                 letter-spacing: 1px;
-
-                @include responSatu() {
-                    font-size: 10pt;
-                }
             }
         }
-
-        
     }
 
     .cardContainer {
@@ -331,18 +273,11 @@ $phoneSatu : 600px;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-
     flex-wrap: wrap;
-    
-    
-    // border: 1px solid pink;
     margin-top: 15px;
 
-    @include responSatu() {
-        margin-top: 25px;
+        
     }
-    }
-
 }
 
 .ketuaUmum {
@@ -404,27 +339,15 @@ $phoneSatu : 600px;
                     h5 {
                         font-weight: 400;
                         font-size: 10pt;
-
-                        @include responSatu() {
-                            font-size: 8pt;
-                        }
                     }
 
                     h3 {
                         font-size: 15pt;
                         font-weight: 300;
-
-                        @include responSatu() {
-                            font-size: 12pt;
-                        }
                     }
 
                     p {
                         font-size: 8pt;
-
-                        @include responSatu() {
-                            font-size: 6pt;
-                        }
                     }
                 }
             }
@@ -451,19 +374,121 @@ $phoneSatu : 600px;
     
 }
 
-
-
 .btnSize {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    
-    // border: 1px solid crimson;
-
-    
 }
 
+    // MUSIC PDI MOBILE
+.musicPdiMobile {
+    
+    display: none;
+
+    @include smallPhone() {
+        display: flex;
+        padding: 40px 1.5%;
+        // border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapperMobileMusic {
+
+        .headlineMusic {
+            @include smallPhone() {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                background: $darkRed;
+                padding: 10px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+    
+            .headlineText {
+                @include smallPhone() {
+                    width: min-content;
+                    color: $accent;
+                    font-weight: 500;
+                    font-size: 20pt;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .judulMusic {
+            @include smallPhone() {
+                display: flex;
+                justify-content: center;
+                height: auto;
+                // align-items: center;
+                flex-direction: column;
+                width: 100%;
+                background: $lightRed;
+                padding: 20px 10%;
+                color: $accent;
+            }
+            .judul {
+                @include smallPhone() {
+                    font-weight: 700;
+                    letter-spacing: .5px;
+                    // border: 1px solid blue;
+
+                }
+            }
+            .judulDesc {
+                @include smallPhone() {
+                    // border: 1px solid blue;
+                    font-size: 10pt;
+                    font-weight: 300;
+                }
+            }
+        }
+        .lirikMobile {
+            @include smallPhone() {
+                background: $brown;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 10%;
+            }
+            .lirikMobileContainer {
+                @include smallPhone() {
+                    // border: 1px solid blue;
+                    width: 100%;
+                    color: $accent;
+                }
+                span {
+                    font-weight: 300;
+                    font-size: 10pt;
+                }
+                .liriks {
+                    margin-top: 1rem;
+                    font-size: 10pt;
+                    font-weight: 300;
+                    overflow: scroll;
+                    height: 30vh;
+                }
+                .liriks::-webkit-scrollbar {
+                    width: 6px;
+                }
+                .liriks::-webkit-scrollbar-track {
+                    background: $accent;
+                    border-radius: 5px;
+                }
+                .liriks::-webkit-scrollbar-thumb {
+                    background: $darkRed;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
 
 
 
