@@ -8,6 +8,7 @@ import bkbb3 from '../../../../img/bkbb3.jpg'
 import bkbb4 from '../../../../img/bkbb4.jpg'
 import BreadCrumbs from '../../../breadcrumbs/BreadCrumbs'
 import MainDivider from '../../../divider/MainDivider'
+import StrukturPaginate from '../../../pagination/StrukturPaginate'
 
 const WejanganBungKarno = () => {
     return (
@@ -65,25 +66,7 @@ const WejanganBungKarno = () => {
 
                 {/* Column Pagination */}
                 <div className="col-pagination-wejangan-bungkarno">
-                    <nav aria-label="Page navigation example">
-                        <ul className="pagination">
-                            <li className="page-item">
-                                <a className="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                    <span className="sr-only">Previous</span>
-                                </a>
-                            </li>
-                            <li className="page-item"><a className="page-link" href="#">1</a></li>
-                            <li className="page-item"><a className="page-link" href="#">2</a></li>
-                            <li className="page-item"><a className="page-link" href="#">3</a></li>
-                            <li className="page-item">
-                                <a className="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                    <span className="sr-only">Next</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <StrukturPaginate />
                 </div>
                 {/* END Column Pagination */}
             </div>

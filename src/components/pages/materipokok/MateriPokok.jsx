@@ -8,6 +8,8 @@ import './MateriPokok.scss'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import MainDivider from '../../divider/MainDivider'
 import Cards from '../../cards/MainCards'
+import { Pagination } from 'react-bootstrap'
+import StrukturPaginate from '../../pagination/StrukturPaginate'
 
 const MateriPokok = () => {
     return (
@@ -32,33 +34,33 @@ const MateriPokok = () => {
                     {/* Row1 */}
                     <div className="row1">
                         <Cards imageCard={bkbb5}
-                            TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" />
+                            TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" borderRadius="10px" />
                         <Cards imageCard={bkbb6}
-                            TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" />
+                            TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" borderRadius="10px" />
                         <Cards imageCard={bkbb7}
-                            TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" />
+                            TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" borderRadius="10px" />
                     </div>
                     {/* END Row1 */}
 
                     {/* Row2 */}
                     <div className="row2">
                         <Cards imageCard={bkbb5}
-                            TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" />
+                            TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" borderRadius="10px" />
                         <Cards imageCard={bkbb6}
-                            TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" />
+                            TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" borderRadius="10px" />
                         <Cards imageCard={bkbb7}
-                            TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" />
+                            TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" borderRadius="10px" />
                     </div>
                     {/* END Row2 */}
 
                     {/* Row3 */}
                     <div className="row3">
                         <Cards imageCard={bkbb5}
-                            TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" />
+                            TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" borderRadius="10px" />
                         <Cards imageCard={bkbb6}
-                            TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" />
+                            TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" borderRadius="10px" />
                         <Cards imageCard={bkbb7}
-                            TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" />
+                            TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" borderRadius="10px" />
                     </div>
                     {/* END Row3 */}
                 </div>
@@ -66,27 +68,9 @@ const MateriPokok = () => {
 
                 {/* Column Pagination */}
                 <div className="col-pagination-materi-pokok">
-                    <nav aria-label="Page navigation example">
-                        <ul className="pagination">
-                            <li className="page-item">
-                                <a className="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                    <span className="sr-only">Previous</span>
-                                </a>
-                            </li>
-                            <li className="page-item"><a className="page-link" href="#">1</a></li>
-                            <li className="page-item"><a className="page-link" href="#">2</a></li>
-                            <li className="page-item"><a className="page-link" href="#">3</a></li>
-                            <li className="page-item">
-                                <a className="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                    <span className="sr-only">Next</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <StrukturPaginate />
                 </div>
-                {/* END Column */}
+                {/* END Column Pagination */}
             </div>
             {/* END Container2 */}
         </>

@@ -73,6 +73,7 @@
             display: flex;
             height: auto;
             width: 100%;
+            padding: 10px 0;
         }
         // END Row1
 
@@ -80,6 +81,7 @@
         .row2{
             display: flex;
             height: auto;
+            padding: 10px 0;
             width: 100%;
         }
         // END Row2
@@ -88,44 +90,21 @@
         .row3{
             display: flex;
             height: auto;
+            padding: 10px 0;
             width: 100%;
         }
         // END Row3
     }
     // END Column Card Materi Pokok
 
-// Column Pagination
-.col-pagination-materi-pokok{
-    display: flex;
-    height: 10vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-
-    nav{
+    // Column Pagination
+    .col-pagination-materi-pokok{
         display: flex;
+        height: 10vh;
+        width: 100%;
         justify-content: center;
         align-items: center;
-
-        ul{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 1px;
-
-            li{
-                justify-content: center;
-                align-items: center;
-
-                a{
-                    justify-content: center;
-                    align-items: center;
-                    padding: 2px;
-                }
-            }
-        }
     }
-}
-// END Column Pagination
+    // END Column Pagination
 }
 // END Container2
