@@ -1,6 +1,14 @@
 $smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
 @mixin smallPhone {
     @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
         @content;
     }
 }
@@ -22,6 +30,9 @@ $smallPhoneSatu : 500px;
             display: flex;
             height: auto;
             margin: .5rem;
+        }
+        @include smallPhoneDua() {
+            margin: .2rem;
         }
         
         &:hover {
@@ -47,6 +58,9 @@ $smallPhoneSatu : 500px;
                 width: 70%;
                 background-position: center;
                 flex: 1;
+            }
+            @include smallPhoneDua() {
+
             }
 
             
