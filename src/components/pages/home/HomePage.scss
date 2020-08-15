@@ -247,6 +247,8 @@ $smallPhoneSatu : 500px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        
         .paragrapBerita {
 
             display: flex;
@@ -257,10 +259,19 @@ $smallPhoneSatu : 500px;
             width: 100%;
             text-align: center;
             // border: 1px solid blue;
+
+            @include smallPhone() {
+                margin: 0;
+                padding: $paddingSmall;
+            }
             
             p {
                 font-size: 14pt;
                 letter-spacing: 1px;
+
+                @include smallPhone() {
+                    font-size: 10pt;
+                }
             }
         }
     }
@@ -275,85 +286,32 @@ $smallPhoneSatu : 500px;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 15px;
-
+    
+        @include smallPhone() {
+            justify-content: space-between;
+            min-height: 40vh;
+        }
         
     }
 }
 
-.ketuaUmum {
+.wrapperKMobile {
     width: 100%;
-    height: 60vh;
-    // outline: 1px solid crimson;
-    box-sizing: content-box;
     display: flex;
-    justify-content: center;
     align-items: center;
+    border: 1px solid blue;
+    height: 60vh;
+    flex-direction: column;
 
-    .row>* {
-        padding-right: 0;
-    }
-    
-    .rowCustom {
+    .carouselMobile {
+        background: url(../../../img/megawati10.png );
+        background-size: cover;
         width: 100%;
         height: 100%;
-        // outline: 1px solid rgb(20, 190, 220);
-
-    }
-
-    .banner {
-        background: url(../../../img/megawati4.jpg);
-        background-size: cover;
-    }
-
-    .carousels {
-        .kmCarousel {
-            width: 100%;
-            height: 100%;
-            background: #d80010;
-
-            .carousel-indicators {
-
-                right: 0;
-
-                li {
-                    border: none;
-                    width: 8px;
-                    height: 8px;
-                    border-radius: 50%;
-                }
-            }
-
-            .carousel-inner {
-                // border: 1px solid blue;
-                height: 100%;
-                // background: #d80010;
-
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-
-                color: #ffffff;
-
-                .carousel-item {
-                    text-align: center;
-                    h5 {
-                        font-weight: 400;
-                        font-size: 10pt;
-                    }
-
-                    h3 {
-                        font-size: 15pt;
-                        font-weight: 300;
-                    }
-
-                    p {
-                        font-size: 8pt;
-                    }
-                }
-            }
-        }
     }
 }
+
+
 
 .beritaTerbaru {
     width: 100%;
@@ -362,16 +320,22 @@ $smallPhoneSatu : 500px;
 
 .cardContent {
     width: 100%;
-    // height: 60vh;
+    height: auto;
     min-height: 50vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 15px;
     padding: $padding;
 
     
+    @include smallPhone() {
+        justify-content: space-between;
+        // min-height:;
+        padding: 0;
+    }
 }
 
 .btnSize {
@@ -467,23 +431,62 @@ $smallPhoneSatu : 500px;
                     font-weight: 300;
                     font-size: 10pt;
                 }
-                .liriks {
-                    margin-top: 1rem;
-                    font-size: 10pt;
-                    font-weight: 300;
+                .wrapperLirik {
+                    display: flex;
                     overflow: scroll;
-                    height: 30vh;
+                    flex-direction: column;
+                    overflow-x: hidden;
+                    height: 40vh;
+
+                    .liriks {
+                        margin-top: 1rem;
+                        font-size: 10pt;
+                        font-weight: 300;
+                        width: 70%;
+                    }
                 }
-                .liriks::-webkit-scrollbar {
+                .wrapperLirik::-webkit-scrollbar {
                     width: 6px;
                 }
-                .liriks::-webkit-scrollbar-track {
+                .wrapperLirik::-webkit-scrollbar-thumb {
+                    background: $darkRed;
+                    border-radius: 5px;
+                }
+                .wrapperLirik::-webkit-scrollbar-track {
                     background: $accent;
                     border-radius: 5px;
                 }
-                .liriks::-webkit-scrollbar-thumb {
+            }
+        }
+        .wrapperDownload {
+            display: flex;
+            background: $brown;
+            justify-content: space-between;
+            padding: 20px 10%;
+        }
+        .playlist {
+            width: 100%;
+            background: $accent;
+            display: flex;
+            flex-direction: column;
+            height: 35vh;
+            overflow: scroll;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            .playlistCustom {
+                display: flex;
+                flex-direction: column;
+                padding: 10px 5%;
+                color: $lightRed;
+
+                span {
+                    font-size: 10pt;
+                }
+
+                &:hover {
                     background: $darkRed;
-                    border-radius: 5px;
+                    color: $accent;
                 }
             }
         }

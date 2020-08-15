@@ -19,6 +19,10 @@ import MainButton from '../../buttons/MainButton'
 import MainDivider from '../../divider/MainDivider'
 import laguPerjuangan from '../../../img/laguperjuangan.png'
 import WidgetBerita from '../../widget/widgetBerita/WidgetBerita'
+import CarouselKM from '../../carouselKM/CarouselKM'
+import downloadSatu from '../../../img/lightDownSatu.png'
+import downloadDua from '../../../img/lightDownDua.png'
+import downloadTiga from '../../../img/lightDownTiga.png'
 
 
 const HomePage = ()=> {
@@ -104,55 +108,51 @@ const HomePage = ()=> {
                 </div>
             </div>
 
-            <div className="ketuaUmum">
-                <div className="row rowCustom">
-                    <div className="col-lg-6 carousels">
-                        
-
-                    <div id="carouselnih" className="carousel slide kmCarousel" data-ride="carousel" data-interval="0">
+            <CarouselKM />
+            <div className="wrapperKMobile">
+                 <div className="col-lg-8 carouselMobile"></div>
+                 <div className="col-lg-4">
+                    <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
                         <ol className="carousel-indicators">
-                            <li data-target="#carouselnih" data-slide-to={0} className="active" />
-                            <li data-target="#carouselnih" data-slide-to={1} />
-                            <li data-target="#carouselnih" data-slide-to={2} />
+                            <li data-target="#carouselExampleCaptions" data-slide-to={0} className="active" />
+                            <li data-target="#carouselExampleCaptions" data-slide-to={1} />
+                            <li data-target="#carouselExampleCaptions" data-slide-to={2} />
                         </ol>
                         <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                    <h5>Ketua Umum PDI PERJUANGAN</h5>
-                                    <br/>
-                                    <h3>Ikuti Perkembangan Teknologi Informasi dengan Otak dan Hati</h3>
-                                    <br/>
-                                    <br/>
-                                    <p>
-                                        Ketua umum PDI PERJUANGAN Megawati Soekarnoputri menutup Pelatihan <br/> kader Fungsional Bertugas di Kantor Partai, sekaligus <br/> membuka pembekalan Caleg DPR RI Gelombang III di kantor DPP PDI Perjuangan, Jl. Diponegoro 58, Jakarta, Kamis
-                                    </p>
+                            
+                        <div className="carousel-item active">
+                            <img src="..." className="d-block w-100" alt="..." />
+                            <div className="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
                             </div>
                             <div className="carousel-item">
-                                    <h5>Ketua Umum PDI PERJUANGAN</h5>
-                                    <br/>
-                                    <h3>Ikuti Perkembangan Teknologi Informasi dengan Otak dan Hati</h3>
-                                    <br/>
-                                    <br/>
-                                    <p>
-                                        Ketua umum PDI PERJUANGAN Megawati Soekarnoputri menutup Pelatihan <br/> kader Fungsional Bertugas di Kantor Partai, sekaligus <br/> membuka pembekalan Caleg DPR RI Gelombang III di kantor DPP PDI Perjuangan, Jl. Diponegoro 58, Jakarta, Kamis
-                                    </p>
-
+                            <img src="..." className="d-block w-100" alt="..." />
+                            <div className="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
                             </div>
                             <div className="carousel-item">
-                                     <h5>Ketua Umum PDI PERJUANGAN</h5>
-                                    <br/>
-                                    <h3>Ikuti Perkembangan Teknologi Informasi dengan Otak dan Hati</h3>
-                                    <br/>
-                                    <br/>
-                                    <p>
-                                        Ketua umum PDI PERJUANGAN Megawati Soekarnoputri menutup Pelatihan <br/> kader Fungsional Bertugas di Kantor Partai, sekaligus <br/> membuka pembekalan Caleg DPR RI Gelombang III di kantor DPP PDI Perjuangan, Jl. Diponegoro 58, Jakarta, Kamis
-                                    </p>
-
+                            <img src="..." className="d-block w-100" alt="..." />
+                            <div className="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
                             </div>
                         </div>
+                        <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true" />
+                            <span className="sr-only">Previous</span>
+                        </a>
+                        <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true" />
+                            <span className="sr-only">Next</span>
+                        </a>
                     </div>
-                </div>
-                    <div className="col-lg-6 banner"></div>
-                </div>
+                 </div>
+
             </div>
 
             <div className="cardContent">
@@ -210,7 +210,34 @@ const HomePage = ()=> {
                     <div className="lirikMobile">
                         <div className="lirikMobileContainer">
                             <span>LIRIK</span>
-                            <p className="liriks">Atas Kasih dan Kehendak Yang Maha Pencipta<br/>Kita Telah Sepakat Bersatu<br/>Bersatu Dalam Rampak Barisa<br/>Menentang Kemiskinan<br/><br/> Atas Rahmat dan Bimbingan Yang Maha Kuasa<br/>Kita Telah Bertekad Berjuang<br/>Berjuang untuk Satu Tujuan Mulia<br/>Mencapai Indonesia Sentosa<br/><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ab sit nobis maxime. Nihil magni, illo voluptate quibusdam quaerat necessitatibus doloremque veritatis fugit reiciendis, numquam praesentium, error autem adipisci blanditiis.</p>
+                            <div className="wrapperLirik">
+                                <span className="liriks">Atas Kasih dan Kehendak Yang Maha Pencipta<br/>Kita Telah Sepakat Bersatu<br/>Bersatu Dalam Rampak Barisa<br/>Menentang Kemiskinan</span>
+                                <span className="liriks">Atas Rahmat dan Bimbingan Yang Maha Kuasa<br/>Kita Telah Bertekad Berjuang<br/>Berjuang untuk Satu Tujuan Mulia<br/>Mencapai Indonesia Sentosa</span>
+                                <span className="liriks">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ab sit nobis maxime. Nihil magni, illo voluptate quibusdam quaerat necessitatibus doloremque veritatis fugit reiciendis, numquam praesentium, error autem adipisci blanditiis.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="wrapperDownload">
+                        <img src={downloadSatu} alt="" width="50" />
+                        <img src={downloadDua} alt="" width="50" />
+                        <img src={downloadTiga} alt="" width="50" />
+                    </div>
+                    <div className="playlist">
+                        <div className="playlistSatu playlistCustom">
+                            <strong>Hymne PDI Perjuangan</strong>
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
+                        </div>
+                        <div className="playlistDua playlistCustom">
+                            <strong>Hymne PDI Perjuangan</strong>
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
+                        </div>
+                        <div className="playlistTiga playlistCustom">
+                            <strong>Hymne PDI Perjuangan</strong>
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
+                        </div>
+                        <div className="playlistEmpat playlistCustom">
+                            <strong>Hymne PDI Perjuangan</strong>
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
                         </div>
                     </div>
                 </div>
@@ -228,8 +255,6 @@ const HomePage = ()=> {
                 <div className="verticalDivider" style={{
                     width : '2px',
                     height : '50vh',
-                    borderLeft : '1px solid gray',
-                    background : 'gray',
                     display : 'flex',
                     margin : '10px'
                     

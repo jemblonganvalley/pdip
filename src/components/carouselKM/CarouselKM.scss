@@ -1,0 +1,98 @@
+@import '../../utilities/variable/variables.scss';
+
+$smallPhoneSatu : 500px;
+
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+
+.ketuaUmum {
+    width: 100%;
+    height: 60vh;
+    // outline: 1px solid crimson;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include smallPhone() {
+        display: none;
+    }
+    
+
+    .row>* {
+        padding-right: 0;
+    }
+    
+    .rowCustom {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .banner {
+        background: url(../../img/megawati4.jpg);
+        background-size: cover;
+
+        
+    }
+
+    .carousels {
+        .kmCarousel {
+            width: 100%;
+            height: 100%;
+            background: $darkRed;
+
+            
+            
+        .carousel-indicators {
+
+            right: 0;
+
+            li {
+                border: none;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+            }
+        }
+
+            
+            
+
+            .carousel-inner {
+                // border: 1px solid blue;
+                height: 100%;
+                // background: #d80010;
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                color: #ffffff;
+
+                .carousel-item {
+                    text-align: center;
+                    width: 100%;
+                    
+                    h5 {
+                        font-weight: 400;
+                        font-size: 10pt;
+                    }
+
+                    h3 {
+                        font-size: 15pt;
+                        font-weight: 300;
+                    }
+
+                    p {
+                        font-size: 8pt;
+                    }
+                }
+            }
+        }
+    }
+}

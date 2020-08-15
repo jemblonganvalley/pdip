@@ -9,65 +9,7 @@ import './MusicPdi.scss'
 
 const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
 
-    // let songs = [
-    //     "Mars PDI Perjuangan.mp3",
-    //     "Hymne PDI Perjuangan.mp3"
-    // ]
-
-    // let songSlider = document.getElementById('songSlider')
-    // let currentTime = document.getElementById('currentTime')
-    // let duration = document.getElementById('duration')
-    // let songTitle = document.getElementById('songTitle')
-
-    // let song = new Audio()
-    // let currentSong = 0
-
-    // window.onload = loadSong
-
-    // function loadSong() {
-    //     song.src = "sound/" + songs[currentSong]
-    //     songTitle.textContent = (currentSong + 1) + songs[currentSong]
-    //     song.play()
-    //     setTimeout(showDuration, 1000)
-    // }
-
-    // setInterval(updateSongSlider, 1000) 
-
-    // function updateSongSlider() {
-
-    //     let c = Math.random(song.currentTime)
-    //     songSlider.value = c
-    //     currentTime.textContent = converTime(c)
-    // }
-
-    // function converTime (secs) {
-    //     let min = Math.floor(secs/60)
-    //     let sec = secs % 60
-    //     min = (min < 10) ? "0" + min : min
-    //     sec = (sec < 10) ? "0" + sec : sec
-    //     return (min + ":" + sec)
-    // }
-
-    // function showDuration () {
-    //     let d = Math.floor(song.duration)
-    //     songSlider.setAttribute("max", d)
-    //     duration.textContent = converTime(d)
-    // }
-
-    // function playOrPauseSong() {
-    //     if(song.paysed) {
-    //         song.play()
-    //     }
-    // }
-
-    // function seekSong () {
-    //     song.currentTime = songSlider.value
-    //     currentTime.textContent = converTime(song.currentTime)
-    // } 
-
-    
-
-    
+   
 
     return (
         <div className="musiPdi">
@@ -126,11 +68,14 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                     <div className="col-md-12 playerMusic">
                         <div className="wrapperPlayerMusic">
                             <div className="playButton">
-                                <div className="playbtn" >
+                                <div className="playbtn" id="play-btn" >
                                     <i class="fa fa-play"></i>
                                 </div>
                             </div>
                             <div className="playMusic">
+                                <audio id="player" className="audio-wrapper">
+                                    <source src="http://www.lukeduncan.me/oslo.mp3" type="audio/mp3" />
+                                </audio>
                                 <div className="judulPlay">
                                 <h5 className="judulPlays">{judul}</h5>
                                 <i class="fa fa-heart"></i>
