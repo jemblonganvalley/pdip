@@ -21,7 +21,7 @@ const VideoMedia = ()=> {
                                 page3="Video" />
             </div>
 
-            <VMedia headline="Ketua Umum PDI Perjuangan, Hj. Megawati Soekarnoputri Meresmikan 20 Kantor Partai" />
+            <VMedia headline="Ketua Umum PDI Perjuangan, Hj. Megawati Soekarnoputri Meresmikan 20 Kantor Partai" source="https://www.youtube.com/embed/V4pM1xY9ntY" />
 
             <div className="dividerVideo">
                 <div className="borderVideo"></div>

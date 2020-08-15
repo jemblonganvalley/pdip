@@ -20,6 +20,7 @@ import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import MainButton from '../../buttons/MainButton'
 import MainDivider from '../../divider/MainDivider'
 import CardInformasi from '../../cardInformasi/CardInformasi'
+import VMedia from '../../VMedia/VMedia'
 
 const MultimediaPage = ()=> {
 
@@ -40,21 +41,7 @@ const MultimediaPage = ()=> {
                                 page2="Multimedia" />
             </div>
             <div className="pidatoKU">
-                <div className="col-lg-9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4Y9vU1dCk78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div className="col-lg-3">
-                    <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                    <span>Megawati Soekarnoputri,<br/>Ketua Umum PDI Perjuangan</span>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, ullam dicta architecto hic expedita, harum tempore quae sunt obcaecati aperiam placeat praesentium rem voluptatibus quibusdam qui nesciunt non illo! Magni.</p>
-                    <div className="socialMedia">
-                        <small>SHARE : </small>
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-instagram"></i>
-                        <i class="fa fa-whatsapp" ></i>
-                    </div>
-                </div>
+                <VMedia headline="Megawati Soekarnoputri, Ketua Umum PDI Perjuangan" source="https://www.youtube.com/embed/4Y9vU1dCk78" />
             </div>
             
             <CardInformasi image={multimediaSatu}
