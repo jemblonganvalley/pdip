@@ -1,7 +1,13 @@
 
 @import "../../utilities/variable/variables.scss";
 
+$smallPhoneSatu : 600px;
 
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
 
 .col3-container-3{
     display: flex;
@@ -25,6 +31,10 @@
             margin: 1px;
             overflow: hidden;
             text-transform: uppercase;
+
+            @include smallPhone() {
+                font-size: 8pt;
+            }
         }
     }
 

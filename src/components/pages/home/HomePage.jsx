@@ -17,6 +17,7 @@ import megawati6 from '../../../img/megawati6.jpg'
 import megawati7 from '../../../img/megawati7.jpg'
 import MainButton from '../../buttons/MainButton'
 import MainDivider from '../../divider/MainDivider'
+import laguPerjuangan from '../../../img/laguperjuangan.png'
 import WidgetBerita from '../../widget/widgetBerita/WidgetBerita'
 
 
@@ -28,25 +29,26 @@ const HomePage = ()=> {
 
     return (
         <div classname="homepage">
-            <MainSlider/>
+            <MainSlider headline="Solid bergerak untuk Indonesia raya"
+                        headline2="Solid bergerak untuk Indonesia raya" />
             <div className="homePageTwo">
                 <div className="customRow">
-                    <div className="col col-lg-4 custom ">
+                    <div className="col-lg-4 custom">
                         <div className="customBorder">
                             <img src={Informasi} alt="" width="50" height="50" />
                             <h3>informasi dan dokumentasi publik</h3>
                         </div>
                     </div>
-                    <div className="col col-lg-4 custom ">
+                    <div className="col-lg-4 custom">
                         <div className="customBorder">
                             <img src={Rekening} alt="" width="50" height="50" />
-                            <h3>informasi dan dokumentasi publik</h3>
+                            <h3>rekening gotong royong</h3>
                         </div>
                     </div>
-                    <div className="col col-lg-4 custom ">
+                    <div className="col-lg-4 custom">
                         <div className="customBorder calendar">
                             <img src={Calendar} alt="" width="50" height="50" />
-                            <h3>informasi dan dokumentasi publik</h3>
+                            <h3>kalender kegiatan partai</h3>
                         </div>
                     </div>
                 </div>
@@ -195,8 +197,24 @@ const HomePage = ()=> {
             </div>
 
             <MusicPdi/>
-            {/* <CardMaps/> */}
-
+            <div className="musicPdiMobile">
+                <div className="wrapperMobileMusic">
+                    <div className="headlineMusic">
+                        <img src={laguPerjuangan} alt="" width="70" />
+                        <span className="headlineText">Lagu Perjuangan</span>
+                    </div>
+                    <div className="judulMusic">
+                        <h6 className="judul">Mars PDI Perjuangan</h6>
+                        <span className="judulDesc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, numquam?</span>
+                    </div>
+                    <div className="lirikMobile">
+                        <div className="lirikMobileContainer">
+                            <span>LIRIK</span>
+                            <p className="liriks">Atas Kasih dan Kehendak Yang Maha Pencipta<br/>Kita Telah Sepakat Bersatu<br/>Bersatu Dalam Rampak Barisa<br/>Menentang Kemiskinan<br/><br/> Atas Rahmat dan Bimbingan Yang Maha Kuasa<br/>Kita Telah Bertekad Berjuang<br/>Berjuang untuk Satu Tujuan Mulia<br/>Mencapai Indonesia Sentosa<br/><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ab sit nobis maxime. Nihil magni, illo voluptate quibusdam quaerat necessitatibus doloremque veritatis fugit reiciendis, numquam praesentium, error autem adipisci blanditiis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     
             <div className="beritaTerbaru" style={{
                 display: 'flex',
@@ -206,16 +224,17 @@ const HomePage = ()=> {
                 <MainDivider text="Berita Terbaru "/>
             </div>
             <div className="wrapperWidget">
-                <WidgetBerita name="berita" width="70%"/>
+                <WidgetBerita name="berita" col="7" />
                 <div className="verticalDivider" style={{
                     width : '2px',
                     height : '50vh',
-                    // borderLeft : '1px solid gray',
+                    borderLeft : '1px solid gray',
                     background : 'gray',
                     display : 'flex',
+                    margin : '10px'
                     
                 }}></div>
-                <WidgetBerita name="beritaFoto" width="30%"/>
+                <WidgetBerita name="beritaFoto" col="4" />
             </div>
 
             

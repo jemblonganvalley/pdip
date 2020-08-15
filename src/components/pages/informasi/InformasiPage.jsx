@@ -176,7 +176,16 @@ const InformasiPage = ()=> {
             {/* <CardMaps/> */}
 
             <div className="wrapperWidget">
-                <WidgetBerita name="berita" col='8'/>
+                <WidgetBerita name="berita" col='7'/>
+                <div className="verticalDivider" style={{
+                    width : '2px',
+                    height : '50vh',
+                    borderLeft : '1px solid gray',
+                    background : 'gray',
+                    display : 'flex',
+                    margin : '10px'
+                    
+                }}></div>
                 <WidgetBerita name="beritaFoto" col='4'/>
             </div>
 

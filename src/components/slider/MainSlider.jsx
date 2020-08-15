@@ -3,8 +3,26 @@ import './MainSlider.scss'
 import arrowKanan from '../../img/arrowkanan.png'
 import arrowKiri from '../../img/arrowkiri.png'
 import arrowButton from '../../img/form.png'
+import arrowsLeft from '../../img/arrowsLeft.png'
+import arrows from '../../img/arrows.png'
 
-const MainSlider = ()=> {
+
+const MainSlider = ({headline, headline2})=> {
+
+    let sliders = [
+        {
+            id : 1,
+            headline : "Solid bergerak untuk Indonesia raya",
+            desc : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium. Praesentium tempora a dicta fugiat numquam quidem consequuntur ad sint."
+        },
+        {
+            id : 2,
+            headline : "Solid bergerak untuk Indonesia raya",
+            desc : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium. Praesentium tempora a dicta fugiat numquam quidem consequuntur ad sint."
+        }
+    ]
+    
+
     return (
         <div id="carouselExampleIndicators" className="carousel slide carousel-fade" data-ride="carousel" data-interval="0">
 
@@ -20,7 +38,7 @@ const MainSlider = ()=> {
                     <div className="carousel-item active">
                         <div className="row image1">
                             <div className="col col-lg-6 mr-auto text1">
-                                    <h1>Lorem ipsum dolor sit amet consectetur</h1>
+                                    <h1>{headline}</h1>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium. Praesentium tempora a dicta fugiat numquam quidem consequuntur ad sint.</p>
                                     
                             </div>
@@ -28,8 +46,8 @@ const MainSlider = ()=> {
                     </div>
                     <div className="carousel-item">
                         <div className="row image2">
-                            <div className="col col-lg-6 mr-auto text2">
-                                <h1>Lorem ipsum dolor sit amet consectetur</h1>
+                            <div className="col col-lg-6 mr-auto text1">
+                                <h1>{headline2}</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non suscipit exercitationem enim nesciunt, esse, hic accusantium in blanditiis repellat at aperiam magni ab? Ullam sequi possimus mollitia, maiores assumenda facilis!</p>
                             </div>
                         </div>
@@ -41,7 +59,9 @@ const MainSlider = ()=> {
                     <div className="prev-text">
                         <span>PREV</span>
                         <img src={arrowKiri} alt="" width="35" />
-                        
+                    </div>
+                    <div className="arrowsLeft">
+                        <img src={arrowsLeft} alt=""/>
                     </div>
                 </a>
                 
@@ -49,6 +69,9 @@ const MainSlider = ()=> {
                         <div className="next-text">
                             <span>NEXT</span>
                             <img src={arrowKanan} alt="" width="35" />
+                        </div>
+                        <div className="arrowsRight">
+                            <img src={arrows} alt=""/>
                         </div>
                     
                 </a>

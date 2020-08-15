@@ -1,5 +1,12 @@
 @import "../../utilities/variable/variables.scss";
 
+$smallPhoneSatu : 500px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+
 
 .containerDua {
     padding: $padding;
@@ -7,12 +14,25 @@
     justify-content: center;
     align-items: center;
 
+    @include smallPhone() {
+        display: none;
+    }
+
+    @include smallPhone() {
+        padding: 0 2%;
+        flex-direction: column;
+        border: 1px solid blue;
+    }
+
     .contentDua {
         // border: 1px solid blue;
         width: 100%;
         height: 100%;
         display: flex;
         border-radius: 10px;
+        @include smallPhone() {
+            flex-direction: column;
+        }
 
     .wrapperContentMusic {
         width: 100%;
@@ -35,8 +55,6 @@
             // border: 1px solid green;
 
             .col-sm-4 {
-                // border: 1px solid blue;
-
     .plyr {
         width: 100%;
         height: 6.5rem;
@@ -49,6 +67,8 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        
 
         .backplyr {
             width: 100%;
