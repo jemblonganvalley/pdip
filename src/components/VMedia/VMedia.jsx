@@ -7,6 +7,7 @@ const VMedia = ({source, headline})=> {
             <div className="kolumVideo">
                 <iframe width="560" height="315" src={source} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            
             <div className="descVideo">
                 <div className="textTop">
                     <small>Admin PDI Perjuangan | 1 Januari 2019</small>
