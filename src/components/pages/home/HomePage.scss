@@ -6,6 +6,7 @@ $responsiveTiga : 728px;
 $responsiveEmpat : 500px;
 
 $smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
 
 @import "../../../utilities/variable/variables.scss";
 
@@ -13,6 +14,11 @@ $smallPhoneSatu : 500px;
 
 @mixin smallPhone {
     @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
         @content;
     }
 }
@@ -43,6 +49,7 @@ $smallPhoneSatu : 500px;
                 justify-content: center;
                 align-items: center;
             }
+            
         
             
             .custom {
@@ -82,6 +89,10 @@ $smallPhoneSatu : 500px;
                         font-size: 6pt;
                         width: 100%;
                         font-family: 'Josefin Sans';
+                    }
+                    
+                    @include smallPhoneDua() {
+                        font-size: 5pt;
                     }
                 }
 
@@ -302,6 +313,13 @@ $smallPhoneSatu : 500px;
     border: 1px solid blue;
     height: 60vh;
     flex-direction: column;
+    display: none;
+
+    @include smallPhone() {
+        display: flex;
+    }
+
+    
 
     .carouselMobile {
         background: url(../../../img/megawati10.png );
@@ -463,6 +481,13 @@ $smallPhoneSatu : 500px;
             background: $brown;
             justify-content: space-between;
             padding: 20px 10%;
+
+            img {
+
+            @include smallPhone() {
+                    width: 40px;
+                }
+            }
         }
         .playlist {
             width: 100%;

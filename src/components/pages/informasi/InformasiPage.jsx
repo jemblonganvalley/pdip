@@ -180,8 +180,6 @@ const InformasiPage = ()=> {
                 <div className="verticalDivider" style={{
                     width : '2px',
                     height : '50vh',
-                    borderLeft : '1px solid gray',
-                    background : 'gray',
                     display : 'flex',
                     margin : '10px'
                     

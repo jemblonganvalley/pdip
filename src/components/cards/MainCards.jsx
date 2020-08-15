@@ -11,10 +11,13 @@ const Cards = ({ page, imageCard, textSmall, TextH5, borderRadius, paragrap, ico
         }}>
             <Link to={page} className="imageCard" style={{
                 backgroundImage: `url(${imageCard})`,
+                textDecoration : 'none'
             }} >
                 {/* JIKA MAU DIPAKAI CLASS, PAKAI CLASS VBMusic */}
-                <Link as="div" className={`${classIcon}`} to={href} style={{ textDecoration: 'none' }} >
-                    <i class={`${icons}`}></i>
+                <Link as="a" className={`${classIcon}`} to={href} style={{ textDecoration: 'none' }} >
+                    <i class={`${icons}`} style={{
+                        textDecoration : 'none'
+                    }}></i>
                 </Link>
             </Link>
             <div className="text">

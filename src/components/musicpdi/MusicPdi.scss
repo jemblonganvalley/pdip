@@ -1,6 +1,13 @@
 @import "../../utilities/variable/variables.scss";
 
 $smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 @mixin smallPhone {
     @media (max-width : #{$smallPhoneSatu}) {
         @content;

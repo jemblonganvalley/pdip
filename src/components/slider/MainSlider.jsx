@@ -56,20 +56,14 @@ const MainSlider = ({headline, headline2})=> {
 
                 
                 <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <div className="prev-text">
-                        <span>PREV</span>
-                        <img src={arrowKiri} alt="" width="35" />
-                    </div>
+                    
                     <div className="arrowsLeft">
                         <img src={arrowsLeft} alt=""/>
                     </div>
                 </a>
                 
                 <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <div className="next-text">
-                            <span>NEXT</span>
-                            <img src={arrowKanan} alt="" width="35" />
-                        </div>
+                        
                         <div className="arrowsRight">
                             <img src={arrows} alt=""/>
                         </div>
