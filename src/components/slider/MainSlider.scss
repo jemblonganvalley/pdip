@@ -6,8 +6,12 @@ $smallPhoneSatu : 500px;
         @content;
     }
 }
-
-
+$smallPhoneDua : 400px;
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 .image1 {
     height: 100vh;
     width: 100%;
@@ -20,6 +24,10 @@ $smallPhoneSatu : 500px;
         height: 50vh;
     }
     
+    @include smallPhoneDua() {
+        background-size: cover;
+        height: 30vh;
+    }
 
     .text1 {
         height: 100%;
@@ -45,8 +53,11 @@ $smallPhoneSatu : 500px;
             align-items: flex-start;
             padding-top: 2em;
             padding-left: 4.5em;
+        }
 
-
+        @include smallPhoneDua() {
+            padding: 4rem 3rem;
+            text-align: center;
         }
         
         h1 {
@@ -59,8 +70,12 @@ $smallPhoneSatu : 500px;
             font-size: 10pt;
             width: 40%;
             margin-bottom: 1em;
-            // text-align: center;
-            
+        }
+
+        @include smallPhoneDua() {
+            // border: 1px solid blue;
+            width: 50%;
+            font-size: 9pt;
         }
             
 
@@ -72,6 +87,10 @@ $smallPhoneSatu : 500px;
             @include smallPhone() {
                 font-size: 6pt;
                 width: 40%;
+            }
+            @include smallPhoneDua() {
+                width: 53%;
+
             }
         }
     }
@@ -87,6 +106,10 @@ $smallPhoneSatu : 500px;
         background-size: cover;
         height: 50vh;
     }
+    @include smallPhoneDua() {
+        background-size: cover;
+        height: 30vh;
+    }
 
     .text1 {
         height: 100%;
@@ -112,8 +135,11 @@ $smallPhoneSatu : 500px;
             align-items: flex-start;
             padding-top: 2em;
             padding-left: 4.5em;
+        }
 
-
+        @include smallPhoneDua() {
+            padding: 4rem 3rem;
+            text-align: center;
         }
         
         h1 {
@@ -126,8 +152,11 @@ $smallPhoneSatu : 500px;
             font-size: 10pt;
             width: 40%;
             margin-bottom: 1em;
-            // text-align: center;
-            
+        }
+        @include smallPhoneDua() {
+            // border: 1px solid blue;
+            width: 50%;
+            font-size: 9pt;
         }
             
 
@@ -140,6 +169,10 @@ $smallPhoneSatu : 500px;
                 font-size: 6pt;
                 width: 40%;
             }
+            @include smallPhoneDua() {
+                width: 53%;
+
+            }
         }
     }
     
@@ -147,6 +180,8 @@ $smallPhoneSatu : 500px;
 
 .carousel {
     width: 100%;
+
+    
 
     .carousel-inner {
 
@@ -186,8 +221,8 @@ $smallPhoneSatu : 500px;
                     width: 10px;
                     height: 10px;
                     padding: 10px;
-
                 }
+                
 
                 .indicatorText {
                     cursor: pointer;
@@ -223,22 +258,7 @@ $smallPhoneSatu : 500px;
 }
 }
 
-// .prev-text {
-//     display: inline-block;
-//     width: 20px;
-//     height: 20px;
-//     border: none;
-//     line-height: .7;
 
-//     span {
-//         font-size: 8pt;
-//         letter-spacing: 1.5px;
-//     }
-
-//     @include smallPhone() {
-//         display: none;
-//     }
-// }
 .arrowsLeft {
     height: 30px;
     display: flex;
@@ -248,26 +268,13 @@ $smallPhoneSatu : 500px;
     // border: 1px solid blue;
     background: rgba(255, 186, 186, 0.8);
     // display: none;
-
+    @include smallPhoneDua() {
+        height: 25px;
+        width: 25px;
+    }
     
 }
 
-// .next-text {
-//     display: inline-block;
-//     width: 20px;
-//     height: 20px;
-//     border: none;
-//     line-height: .7;
-
-//     span {
-//         font-size: 8pt;
-//         letter-spacing: 1.5px;
-//     }
-
-//     @include smallPhone() {
-//         display: none;
-//     }
-// }
 
 .arrowsRight {
     height: 30px;
@@ -278,6 +285,10 @@ $smallPhoneSatu : 500px;
     // border: 1px solid blue;
     background: rgba(255, 186, 186, 0.8);
 
+    @include smallPhoneDua() {
+        height: 25px;
+        width: 25px;
+    }
     
 }
 

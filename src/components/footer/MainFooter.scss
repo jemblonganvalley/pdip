@@ -1,5 +1,18 @@
 @import "../../utilities/variable/variables.scss";
 
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 
 .wrapperFooter {
     width: 100%;
@@ -12,6 +25,12 @@
     flex-direction: row;
     padding: 40px 10%;
 
+    @include smallPhone() {
+        height: auto;
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+
     .wrapperContent {
         width: 100%;
         display: flex;
@@ -20,6 +39,11 @@
         flex-direction: row;
         // border: 1px solid crimson;
         color: #ffffff;
+
+        @include smallPhone() {
+            flex-direction: column;
+            text-align: center;
+        }
 
         .textFooter {
             word-wrap: break-word;
@@ -30,80 +54,74 @@
             // padding: 0px 20px;
             padding-right: 20px;
             box-sizing: border-box;
+            @include smallPhone() {
+                padding-right: 0;
+            }
             .heads {
                 text-transform: uppercase;
                 font-size: 8pt;
                 font-weight: 700;
+                @include smallPhone() {
+                    font-size: 10pt;
+                }
+                @include smallPhoneDua() {
+                    font-size: 9pt;
+                }
             }
             .body {
                 margin-top: 15px;
                 font-size: 7pt;
                 letter-spacing: .3px;
+                @include smallPhone() {
+                    letter-spacing: 0;
+                    font-size: 9pt;
+                }
+                @include smallPhoneDua() {
+                    letter-spacing: 0;
+                    font-size: 8pt;
+                }
             }
             .foot {
                 font-size: 7pt;
                 letter-spacing: .3px;
                 margin-top: 15px;
+
+                @include smallPhoneDua() {
+                    letter-spacing: 0;
+                    font-size: 8pt;
+                    margin-top: 10px;
+                }
             }
         }
         .emailFooter {
-            // flex-direction: column;
             display: inline;
-            // padding: 10px 3%;
             padding-right: 20px;
-            // border: 1px solid crimson;
-            
-            i {
-                margin-bottom: 15px;
-            }
-            span {
-                margin-bottom: 15px;
-                font-size: 8pt;
-            }
-            small {
-                font-size: 8pt;
-            }
-        }
-        .kontakFooter {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 3%;
-            // border: 1px solid crimson;
-            
-            i {
-                margin-bottom: 15px;
-            }
-            span {
-                margin-bottom: 15px;
-                font-size: 8pt;
-            }
-            small {
-                font-size: 8pt;
-            }
-        }
-        .alamatFooter {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 3%;
-            // border: 1px solid crimson;
-            
-            i {
-                margin-bottom: 15px;
-            }
-            span {
-                margin-bottom: 15px;
-                font-size: 8pt;
-            }
-            small {
-                text-align: center;
-                font-size: 8pt;
-            }
-        }
 
+            @include smallPhone() {
+                padding-right: 0;
+                margin-top: 10px;
+            }
+            @include smallPhoneDua() {
+                padding-right: 0;
+            }
+            
+            i {
+                margin-bottom: 15px;
+                @include smallPhone() {
+                    margin-bottom: 0;
+                }
+            }
+            span {
+                margin-bottom: 15px;
+                font-size: 8pt;
+                @include smallPhone() {
+                    margin-bottom: 0;
+                }
+            }
+            small {
+                font-size: 8pt;
+            }
+        }
         .contact{
             display: flex;
             flex-direction: column;
@@ -115,10 +133,13 @@
                 &:hover{
                     color: $colors;
                 }
-
-                
             }
-
+        }
+        .subscribe {
+            margin-left: auto;
+            @include smallPhone() {
+                margin-left: inherit;
+            }
         }
     }
 }

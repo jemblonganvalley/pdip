@@ -6,12 +6,6 @@ $responsiveDua : 1000px;
 $responsiveTiga : 991px;
 $responsiveEmpat : 719px;
 
-$smallPhoneSatu : 500px;
-@mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
-}
 
 @mixin responSatu {
     @media (max-width : #{$responsiveSatu}) {
@@ -30,6 +24,20 @@ $smallPhoneSatu : 500px;
 }
 @mixin responEmpat {
     @media (max-width : #{$responsiveEmpat}) {
+        @content;
+    }
+}
+
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
         @content;
     }
 }
@@ -55,6 +63,8 @@ $smallPhoneSatu : 500px;
     }
     @include smallPhone() {
         padding: 5px 7%;
+        background-size: cover;
+
     }
 
     .navbar-collapse {

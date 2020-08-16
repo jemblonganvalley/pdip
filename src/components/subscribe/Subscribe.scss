@@ -1,11 +1,26 @@
 @import "../../utilities/variable/variables.scss";
 
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
 .wrapperSubscribe {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     // padding: 10px 3%;
+    
     
 
     .ikutiBerita {
@@ -17,6 +32,10 @@
         width: auto;
         border-radius: 10px;
         height: auto;
+
+        @include smallPhone() {
+            padding: 10px 2%;
+        }
 
         .wrapper {
             // border: 1px solid green;

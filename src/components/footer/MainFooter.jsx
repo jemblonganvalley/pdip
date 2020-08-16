@@ -64,10 +64,7 @@ const MainFooter = ()=> {
 
               
 
-                <span className="subscribe" style={{
-                    marginLeft : 'auto'
-                }}>
-
+                <span className="subscribe">
                     <Subscribe />
                 </span>
             </div>

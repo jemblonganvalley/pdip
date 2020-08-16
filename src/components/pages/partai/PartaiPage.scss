@@ -1,6 +1,19 @@
 $secondary : #f3f3f3;
 @import "../../../utilities/variable/variables.scss";
 
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 
     //START CSS
 
@@ -13,6 +26,13 @@ $secondary : #f3f3f3;
         background-size: cover;
         height: 25vh;
         background-position: center;
+
+        @include smallPhone() {
+            height: 20vh;
+        }
+        @include smallPhoneDua() {
+            height: 15vh;
+        }
 
         .backgrounds {
             background-color: rgba(216, 0, 16, .8);
@@ -27,6 +47,17 @@ $secondary : #f3f3f3;
                 width: 30%;
                 height: 50%;
                 margin-left: 13rem;
+                @include smallPhone() {
+                    width: auto;
+                    margin-left: 0;
+                    padding: 0 10%;
+                }
+
+                h2 {
+                    @include smallPhoneDua() {
+                        font-size: 15pt;                        
+                    }
+                }
             }
         }
     }
@@ -40,6 +71,12 @@ $secondary : #f3f3f3;
         width: 40%;
         margin-top: 20px;
         padding: $padding;
+
+        @include smallPhone() {
+            // border: 1px solid crimson;
+            width: 100%;
+            padding: $paddingMobile;
+        }
     }
     // END LINK PARTAI
 
@@ -51,21 +88,32 @@ $secondary : #f3f3f3;
         align-items: center;
         // border: 1px solid blue;
 
+        
+        @include smallPhone() {
+            padding: $paddingMobile;
+        }
+
         .contentSatu {
             display: flex;
             justify-content: space-around;
             align-items: center;
             width: 100%;
-            // height: 100%;
-            // border: 1px solid green;
+
+            @include smallPhone() {
+                flex-direction: column-reverse;
+            }
+
+            @include smallPhone() {
+                flex-direction: column;
+            }
 
             .wrapperContentSatu {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 flex-direction: column;
-                // border: 1px solid goldenrod;
-                // height: 100%;
+
+                
 
                 .textContentSatu {
                     display: flex;
@@ -74,6 +122,7 @@ $secondary : #f3f3f3;
                     flex-direction: column;
 
                 }
+                
 
                 .col-md-3 {
                     margin: 10px 0;
@@ -83,7 +132,14 @@ $secondary : #f3f3f3;
                     justify-content: center;
                     align-items: center;
                     flex-direction: row;
-    
+
+                    @include smallPhone() {
+                        border-radius: 10px;
+                        background: $accent;
+                        margin: 8px 0;
+                        padding: .5rem 2rem;
+                        
+                    }
                     .textContent {
                         margin-left: 10px;
                         display: flex;
@@ -91,9 +147,17 @@ $secondary : #f3f3f3;
                         align-items: flex-start;
                         flex-direction: column;
                         padding: 10px;
+                        @include smallPhone() {
+
+                            padding: .5rem;
+                            
+                        }
     
                         h4 {
                             font-size: 11pt;
+                            @include smallPhone() {
+                                font-weight: 700;
+                            }
                         }
     
                         p {
@@ -106,12 +170,13 @@ $secondary : #f3f3f3;
             }
 
             .col-lg-4 {
-                // border: 1px solid crimson;
                 padding: 10px;
+
+                @include smallPhone() {
+                    padding: 0;
+                }
             }
             .col-lg-8 {
-                // border: 1px solid yellowgreen;
-
                 .wrapperCarousel {
                     width: 100%;
                     height: 100%;
@@ -119,8 +184,16 @@ $secondary : #f3f3f3;
                     align-items: center;
                     justify-content: center;
 
+                    @include smallPhone() {
+                        height: auto;
+                    }
+                    
                     .carouselPartai {
                         left: 30%;
+
+                        @include smallPhone() {
+                            left: 27%;
+                        }
 
                         .active {
                             background: none;
@@ -132,6 +205,11 @@ $secondary : #f3f3f3;
                             width: 8px;
                             height: 8px;
                             border-radius: 50%;
+
+                            @include smallPhoneDua() {
+                                width: 6px;
+                                height: 6px;
+                            }
                         }
                     }
 
@@ -141,6 +219,17 @@ $secondary : #f3f3f3;
                         background: url(../../../img/megawati011.jpg);
                         background-size: cover;
                         background-position: center;
+
+                        @include smallPhone() {
+                            width: 100vw;
+                            height: 50vh;
+                            display: flex;
+                        }
+
+                        @include smallPhoneDua() {
+                            height: 40vh;
+                        }
+    
                     }
 
                     .carousel-caption {
@@ -149,10 +238,30 @@ $secondary : #f3f3f3;
                         margin-left: 2.5rem;
                         text-align: left;
 
+                        @include smallPhone() {
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            bottom: 5%;
+                            
+                        }
+
                         h5 {
                             font-style: italic;
                             font-size: 10pt;
                             font-weight: 300;
+
+                            @include smallPhone() {
+                                font-size: 8pt;
+                                
+                            }
+                        }
+
+                        h3 {
+                            @include smallPhone() {
+                                font-size: 15pt;
+                            }
                         }
                     }
                 }
@@ -173,20 +282,50 @@ $secondary : #f3f3f3;
         margin-top: 3rem;
         // height: 85vh;
         // border: 1px solid blue;
+        @include smallPhone() {
+            flex-direction: column;
+            padding: $paddingMobile;
+            margin-top: 2rem;
+        }
+        @include smallPhoneDua() {
+            margin-top: 1rem;
+        }
 
         .textBanteng {
             // border: 1px solid green;
             margin-left: 2rem;
+
+            @include smallPhone() {
+                margin-left: 0;
+                display: flex;
+                flex-direction: column;
+                // border: 1px solid blue;
+                justify-content: center;
+                align-items: center;
+            }
 
             h1 {
                 font-size: 30pt;
                 letter-spacing: 1px;
                 margin-bottom: 2rem;
                 font-weight: bold;
+                @include smallPhone() {
+                    font-size: 20pt;
+                   margin: 1rem 0;
+                }
+                @include smallPhoneDua() {
+                    font-size: 15pt;
+                    margin: 1.5rem 0;
+                }
             }
 
             ul {
                 font-size: 10pt;
+
+                @include smallPhone() {
+                    font-size: 8pt;
+                    // border: 1px solid blue;
+                }
 
             }
         }
@@ -198,6 +337,10 @@ $secondary : #f3f3f3;
         justify-content: center;
         align-items: center;
         padding: 20px;
+
+        @include smallPhone() {
+            padding: 10px;
+        }
     }
     
 
@@ -208,24 +351,8 @@ $secondary : #f3f3f3;
         flex-direction: column;
         padding: $padding;
 
-        .textPengurus {
-            border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-            // background-color: #2d3436;
-            width: 100%;
-            text-align: center;
-            // height: 10vh;
-            margin-top: 30px;
-    
-            small {
-                cursor: pointer;
-                color: $colors;
-                // width: 100%;
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-size: 8pt;
-                border-bottom: 5.5px solid $colors;
-            }
+        @include smallPhone() {
+            padding: $paddingMobile;
         }
 
         .paragrapPengurus {
@@ -238,10 +365,16 @@ $secondary : #f3f3f3;
             width: 100%;
             text-align: center;
             // border: 1px solid blue;
+            @include smallPhone() {
+                padding: $paddingMobile;
+            }
             
             p {
                 font-size: 14pt;
                 letter-spacing: 1px;
+                @include smallPhone() {
+                    font-size: 10pt;
+                }
             }
         }
     }
@@ -259,10 +392,25 @@ $secondary : #f3f3f3;
         align-items: center;
         color: #ffffff;
 
+        @include smallPhone() {
+            background-attachment: inherit;
+        }
+        @include smallPhoneDua() {
+            // background-attachment: inherit;
+            height: 40vh;
+        }
+
         h2 {
             margin-top: 6rem;
             text-align: center;
             font-weight: bold;
+
+            @include smallPhone() {
+                font-size: 15pt;
+            }
+            @include smallPhone() {
+                font-size: 12pt;
+            }
         }
 
         .btn {
@@ -276,6 +424,10 @@ $secondary : #f3f3f3;
             font-weight: bold;
             margin-top: 1.5rem;
 
+            @include smallPhone() {
+                width: 25vw;
+            }
+
             &:hover {
                 background: #2f3542;
             }
@@ -288,11 +440,22 @@ $secondary : #f3f3f3;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        @include smallPhone() {
+            padding: 2rem 2%;
+        }
 
         h5 {
             text-transform: uppercase;
             font-weight: bold;
             font-size: 10pt;
+
+            @include smallPhone() {
+                font-size: 12pt;
+            }
+            @include smallPhoneDua() {
+                font-size: 14pt;
+                text-align: center;
+            }
         }
             .imageMaps {
                 background: url(../../../img/maps.jpg);
@@ -300,6 +463,12 @@ $secondary : #f3f3f3;
                 width: 100%;
                 height: 56vh;
                 // cursor: pointer;
+                @include smallPhone() {
+                    height: 31vh;
+                }
+                @include smallPhoneDua() {
+                    height: 20vh;
+                }
             }
     }
 
@@ -312,12 +481,29 @@ $secondary : #f3f3f3;
         margin-top: 7rem;
         text-align: center;
 
+        @include smallPhone() {
+            padding: $paddingMobile;
+            margin-top: 5rem;
+        }
+        @include smallPhoneDua() {
+            margin-top: 2.5rem;
+        }
+
         h1 {
             font-weight: bold;
             font-family: 'Roboto';
+
+
+            @include smallPhone() {
+                font-size: 20pt;
+            }
         }
         p {
             margin-top: 2.5rem;
+            @include smallPhone() {
+                margin-top: 1.5rem;
+                font-size: 10pt;
+            }
         }
         .btnGroup {
             display: flex;

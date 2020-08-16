@@ -16,6 +16,8 @@ import MusicPdi from '../../musicpdi/MusicPdi'
 import MainButton from '../../buttons/MainButton'
 import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
+import MusicMobile from '../../musicPdiMobile/MusicMobile'
+
 
 const PartaiPage = ()=>{
 
@@ -53,29 +55,29 @@ const PartaiPage = ()=>{
                 <div className="contentSatu">
                     <div className="col col-lg-4">
                         <div className="wrapperContentSatu">
-                            <div className="col-md-3">
-                                <img src={partaiSatu} alt="" width="60" />
+                            <div className="col-md-3 mobileRow">
+                                <img src={partaiSatu} alt="" width="60" className="imgMobilePartai" />
                                 <div className="textContent textContentSatu">
                                     <h4>AD/ART<br/>PDI Perjuangan</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore nobis doloremque.</p>
                                 </div>
                             </div>
-                            <div className="col-md-3">
-                                <img src={partaiDua} alt="" width="60" />
+                            <div className="col-md-3 mobileRow">
+                                <img src={partaiDua} alt="" width="60" className="imgMobilePartai" />
                                 <div className="textContent textContentDua">
                                     <h4>Peraturan<br/>PDI Perjuangan</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore nobis doloremque.</p>
                                 </div>
                             </div>
-                            <div className="col-md-3">
-                                <img src={partaiTiga} alt="" width="60" />
+                            <div className="col-md-3 mobileRow">
+                                <img src={partaiTiga} alt="" width="60" className="imgMobilePartai" />
                                 <div className="textContent textContentTiga">
                                     <h4>Piagam<br/>PDI Perjuangan</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore nobis doloremque.</p>
                                 </div>
                             </div>
-                            <div className="col-md-3">
-                                <img src={partaiEmpat} alt="" width="60" />
+                            <div className="col-md-3 mobileRow">
+                                <img src={partaiEmpat} alt="" width="60" className="imgMobilePartai" />
                                 <div className="textContent textContentTiga">
                                     <h4>Visi &<br/>Misi</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore nobis doloremque.</p>
@@ -95,7 +97,7 @@ const PartaiPage = ()=>{
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
                                     <div className="carouselImgSatu"></div>
-                                    <div class="carousel-caption d-none d-md-block">
+                                    <div class="carousel-caption  d-md-block">
                                         <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                                         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus et fuga sit.</h3>
                                 </div>
@@ -120,12 +122,12 @@ const PartaiPage = ()=>{
                         </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             {/* END */}
 
             <MusicPdi/>
+            <MusicMobile/>
 
             {/* CONTAINER TIGA */}
             <div className="containerTiga">
@@ -149,8 +151,7 @@ const PartaiPage = ()=>{
                 </div>
                 {/* PENGURUS */}
                 <div className="pengurusPage">
-                    <MainDivider text="pengurus"
-                                    garisMerah="3rem" />
+                    <MainDivider text="pengurus" />
                     <div className="paragrapPengurus">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
                     </div>

@@ -36,7 +36,7 @@ const MainSlider = ({headline, headline2})=> {
                 
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <div className="row image1">
+                        <div className="row image1 images">
                             <div className="col col-lg-6 mr-auto text1">
                                     <h1>{headline}</h1>
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium. Praesentium tempora a dicta fugiat numquam quidem consequuntur ad sint.</p>
@@ -45,7 +45,7 @@ const MainSlider = ({headline, headline2})=> {
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <div className="row image2">
+                        <div className="row image2 images">
                             <div className="col col-lg-6 mr-auto text1">
                                 <h1>{headline2}</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non suscipit exercitationem enim nesciunt, esse, hic accusantium in blanditiis repellat at aperiam magni ab? Ullam sequi possimus mollitia, maiores assumenda facilis!</p>
