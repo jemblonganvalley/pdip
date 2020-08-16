@@ -2,6 +2,13 @@
 
 // Responsive 500px
 @media screen and (max-width:500px){
+    // Text Link
+    .linkedBerita {
+        width: 100% !important;
+        padding: $paddingMobile;
+    }
+    // END Text Link
+
     // Container1
     .container-1{
         display: flex;
@@ -19,14 +26,14 @@
         .col4-container-1{
             display: flex;
             padding: 0 10px !important;
-            border: 1px solid red;
         }
         // END Column4
 
         // Column5
-        .col5-container-1{
-            display: flex !important;
-            flex-direction: column !important;
+        .col5-container-1-berita{
+            display: flex;
+            flex-direction: column !important; 
+            height: 90vh !important;
             padding: 0 10px !important;
 
             // Row1
@@ -36,6 +43,8 @@
 
                 h1{
                     font-size: 15px !important;
+                    padding: 20px !important;
+                    margin: 1px !important;
                 }
             }
             // END Row1
@@ -51,12 +60,14 @@
 
                     .txt-jdl-col2{
                         display: flex;
-                        font-size: 7px !important;
+                        font-size: 8pt !important;
+                        padding: 2px 0 !important;
                     }
     
                     .txt-desk-col2{
                         display: flex;
-                        font-size: 6px !important;
+                        font-size: 6pt !important;
+                        padding: 2px 0 !important;
                     }
                 }
             }
@@ -70,6 +81,7 @@
     .container-2{
         display: flex;
         height: 35vh !important;
+        background-attachment: inherit;
 
         .txt-title-col1{
             font-size: 15px !important;
@@ -193,7 +205,7 @@
         // END Column4
 
         // Column5
-        .col5-container-1{
+        .col5-container-1-berita{
             display: flex;
             height: 70vh;
             width: 100%;

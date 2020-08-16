@@ -26,12 +26,12 @@ $smallPhoneDua : 400px;
     
     @include smallPhoneDua() {
         background-size: cover;
-        height: 30vh;
+        height: auto;
     }
 
     .text1 {
         height: 100%;
-        
+
         color: #ffffff;
         // border: 1px solid green;
         background: url(../../img/bgTextMobilez-01.svg);
@@ -108,7 +108,7 @@ $smallPhoneDua : 400px;
     }
     @include smallPhoneDua() {
         background-size: cover;
-        height: 30vh;
+        height: auto;
     }
 
     .text1 {

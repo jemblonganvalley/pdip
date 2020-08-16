@@ -104,7 +104,7 @@ const BeritaPage = () => {
                     {/* END Column4 */}
 
                     {/* Column5 */}
-                    <div className="col5-container-1">
+                    <div className="col5-container-1-berita">
                         {/* Row1 */}
                         <div className="row1-col5">
                             <div className="box-img">

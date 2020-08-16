@@ -1,3 +1,62 @@
+// Responsive Max Width 500px
+@media screen and (max-width : 500px) {
+    // Container1
+    .container-1{
+        border: 1px solid blue;
+        padding: 0 10px !important;
+
+        // Column1
+        .col1-container-1{
+            height: auto !important;
+            padding: 0 !important;
+
+            // Section1
+            .section1-col1{
+                height: auto !important;
+                width: 100% !important;
+                padding: 0 !important;
+
+                .txt-title{
+                    font-size: 20px !important;
+                }
+            }
+            // END Section1
+
+            // Section2
+            .section2-col1{
+                height: 30vh !important;
+                width: 100% !important;
+
+                // Row1
+                .row1{
+                    width: auto !important;
+                    border: 1px solid blue;
+                }
+                // END Row1
+
+                // Row2
+                .row2{
+                    width: 50% !important;
+                    border: 1px solid green;
+                }
+                // END Row2
+
+                // Row3
+                .row3{
+                    border: 1px solid yellow;
+                }
+                // END Row3
+            }
+            // END Section2
+        }
+        // END Column1
+    }
+    // END Container1
+}
+// END Responsive Max Width 500px
+
+
+
 $secondary : #f3f3f3;
 
 .wrapperPage1{
@@ -87,6 +146,7 @@ $secondary : #f3f3f3;
                 height: 50%;
                 width: 100%;
                 overflow: hidden;
+                border: 1px solid blue;
 
                 // Row1
                 .row1{
