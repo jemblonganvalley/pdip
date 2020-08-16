@@ -283,8 +283,6 @@ const MainNavbar = ()=> {
     query: '(max-device-width: 599px)'
     })
 
-
-
     const handleShow = (e)=>{
       setShow(e.target.value)
       console.log(show);
