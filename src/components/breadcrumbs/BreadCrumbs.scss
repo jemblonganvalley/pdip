@@ -1,7 +1,21 @@
 @import "../../utilities/variable/variables.scss";
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
 
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 .wrapperBread {
     width: 100%;
+
+    
 
     ul {
         list-style: none;
@@ -10,6 +24,10 @@
             margin: .1rem;
             font-size: 8pt;
             font-style: italic;
+
+            @include smallPhone() {
+                font-size: 7pt;
+            }
             a {
                 text-decoration: none;
                 color: $colors;

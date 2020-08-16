@@ -1,4 +1,16 @@
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
 
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 @import "../../../utilities/variable/variables.scss";
 
 .wrapperWidget{
@@ -8,6 +20,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    @include smallPhone() {
+        flex-direction: column;
+        padding: 0;
+    }
 
 
     .carousel-inner{

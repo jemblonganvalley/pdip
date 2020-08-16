@@ -23,6 +23,7 @@ import CarouselKM from '../../carouselKM/CarouselKM'
 import downloadSatu from '../../../img/lightDownSatu.png'
 import downloadDua from '../../../img/lightDownDua.png'
 import downloadTiga from '../../../img/lightDownTiga.png'
+import MusicMobile from '../../musicPdiMobile/MusicMobile'
 
 
 const HomePage = ()=> {
@@ -32,7 +33,9 @@ const HomePage = ()=> {
     },[])
 
     return (
-        <div classname="homepage">
+        <div classname="homepage" style={{
+            overflowX : 'hidden'
+        }}>
             <MainSlider headline="Solid bergerak untuk Indonesia raya"
                         headline2="Solid bergerak untuk Indonesia raya" />
             <div className="homePageTwo">
@@ -109,51 +112,7 @@ const HomePage = ()=> {
             </div>
 
             <CarouselKM />
-            <div className="wrapperKMobile">
-                 <div className="col-lg-8 carouselMobile"></div>
-                 <div className="col-lg-4">
-                    <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
-                        <ol className="carousel-indicators">
-                            <li data-target="#carouselExampleCaptions" data-slide-to={0} className="active" />
-                            <li data-target="#carouselExampleCaptions" data-slide-to={1} />
-                            <li data-target="#carouselExampleCaptions" data-slide-to={2} />
-                        </ol>
-                        <div className="carousel-inner">
-                            
-                        <div className="carousel-item active">
-                            <img src="..." className="d-block w-100" alt="..." />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </div>
-                            </div>
-                            <div className="carousel-item">
-                            <img src="..." className="d-block w-100" alt="..." />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            </div>
-                            <div className="carousel-item">
-                            <img src="..." className="d-block w-100" alt="..." />
-                            <div className="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </div>
-                            </div>
-                        </div>
-                        <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true" />
-                            <span className="sr-only">Previous</span>
-                        </a>
-                        <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true" />
-                            <span className="sr-only">Next</span>
-                        </a>
-                    </div>
-                 </div>
-
-            </div>
+            
 
             <div className="cardContent">
                 <Cards imageCard={megawati5} 
@@ -193,55 +152,12 @@ const HomePage = ()=> {
             </div>
 
             <div className="btnSize">
-                <MainButton name="lihat semua" />
+                <MainButton name="lihat semua"
+                margin="1rem 0" />
             </div>
 
             <MusicPdi/>
-            <div className="musicPdiMobile">
-                <div className="wrapperMobileMusic">
-                    <div className="headlineMusic">
-                        <img src={laguPerjuangan} alt="" width="70" />
-                        <span className="headlineText">Lagu Perjuangan</span>
-                    </div>
-                    <div className="judulMusic">
-                        <h6 className="judul">Mars PDI Perjuangan</h6>
-                        <span className="judulDesc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, numquam?</span>
-                    </div>
-                    <div className="lirikMobile">
-                        <div className="lirikMobileContainer">
-                            <span>LIRIK</span>
-                            <div className="wrapperLirik">
-                                <span className="liriks">Atas Kasih dan Kehendak Yang Maha Pencipta<br/>Kita Telah Sepakat Bersatu<br/>Bersatu Dalam Rampak Barisa<br/>Menentang Kemiskinan</span>
-                                <span className="liriks">Atas Rahmat dan Bimbingan Yang Maha Kuasa<br/>Kita Telah Bertekad Berjuang<br/>Berjuang untuk Satu Tujuan Mulia<br/>Mencapai Indonesia Sentosa</span>
-                                <span className="liriks">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ab sit nobis maxime. Nihil magni, illo voluptate quibusdam quaerat necessitatibus doloremque veritatis fugit reiciendis, numquam praesentium, error autem adipisci blanditiis.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="wrapperDownload">
-                        <img src={downloadSatu} alt="" width="50" />
-                        <img src={downloadDua} alt="" width="50" />
-                        <img src={downloadTiga} alt="" width="50" />
-                    </div>
-                    <div className="playlist">
-                        <div className="playlistSatu playlistCustom">
-                            <strong>Hymne PDI Perjuangan</strong>
-                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
-                        </div>
-                        <div className="playlistDua playlistCustom">
-                            <strong>Hymne PDI Perjuangan</strong>
-                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
-                        </div>
-                        <div className="playlistTiga playlistCustom">
-                            <strong>Hymne PDI Perjuangan</strong>
-                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
-                        </div>
-                        <div className="playlistEmpat playlistCustom">
-                            <strong>Hymne PDI Perjuangan</strong>
-                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <MusicMobile />
     
             <div className="beritaTerbaru" style={{
                 display: 'flex',
@@ -251,7 +167,7 @@ const HomePage = ()=> {
                 <MainDivider text="Berita Terbaru "/>
             </div>
             <div className="wrapperWidget">
-                <WidgetBerita name="berita" col="7" />
+                <WidgetBerita name="berita" col="8" />
                 <div className="verticalDivider" style={{
                     width : '2px',
                     height : '50vh',
@@ -261,6 +177,7 @@ const HomePage = ()=> {
                 }}></div>
                 <WidgetBerita name="beritaFoto" col="4" />
             </div>
+            
 
             
         </div>

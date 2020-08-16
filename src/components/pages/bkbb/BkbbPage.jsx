@@ -46,7 +46,7 @@ const BkbbPage = () => {
                     </div> */}
                 </div>
             </div>
-            <div className="linkedPartai">
+            <div className="linkedBkbb">
                 <BreadCrumbs link1="Home"
                     to1="/"
                     page2="Bung Karno Bapak Bangsa"

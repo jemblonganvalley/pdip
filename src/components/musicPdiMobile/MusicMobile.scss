@@ -1,0 +1,228 @@
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
+@import "../../utilities/variable/variables.scss";
+
+
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+ 
+ // MUSIC PDI MOBILE
+ .musicPdiMobile {
+    
+    display: none;
+
+    @include smallPhone() {
+        display: flex;
+        padding: 40px 1.5%;
+        // border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapperMobileMusic {
+
+        .headlineMusic {
+            @include smallPhone() {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                background: $darkRed;
+                padding: 10px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+    
+            .headlineText {
+                @include smallPhone() {
+                    width: min-content;
+                    color: $accent;
+                    font-weight: 500;
+                    font-size: 20pt;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .judulMusic {
+            @include smallPhone() {
+                display: flex;
+                justify-content: center;
+                height: auto;
+                // align-items: center;
+                flex-direction: column;
+                width: 100%;
+                background: $lightRed;
+                padding: 20px 10%;
+                color: $accent;
+            }
+            .judul {
+                @include smallPhone() {
+                    font-weight: 700;
+                    letter-spacing: .5px;
+                    // border: 1px solid blue;
+
+                }
+            }
+            .judulDesc {
+                @include smallPhone() {
+                    // border: 1px solid blue;
+                    font-size: 10pt;
+                    font-weight: 300;
+                }
+            }
+        }
+        .lirikMobile {
+            @include smallPhone() {
+                background: $brown;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 10%;
+            }
+            .lirikMobileContainer {
+                @include smallPhone() {
+                    // border: 1px solid blue;
+                    width: 100%;
+                    color: $accent;
+                }
+                span {
+                    font-weight: 300;
+                    font-size: 10pt;
+                }
+                .wrapperLirik {
+                    display: flex;
+                    overflow: scroll;
+                    flex-direction: column;
+                    overflow-x: hidden;
+                    height: 40vh;
+
+                    .liriks {
+                        margin-top: 1rem;
+                        font-size: 10pt;
+                        font-weight: 300;
+                        width: 70%;
+                    }
+                }
+                .wrapperLirik::-webkit-scrollbar {
+                    width: 6px;
+                }
+                .wrapperLirik::-webkit-scrollbar-thumb {
+                    background: $darkRed;
+                    border-radius: 5px;
+                }
+                .wrapperLirik::-webkit-scrollbar-track {
+                    background: $accent;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .wrapperDownload {
+            display: flex;
+            background: $brown;
+            justify-content: space-between;
+            padding: 20px 10%;
+
+            img {
+
+            @include smallPhone() {
+                    width: 40px;
+                }
+            }
+        }
+        .playlist {
+            width: 100%;
+            background: $accent;
+            display: flex;
+            flex-direction: column;
+            height: 35vh;
+            overflow: scroll;
+
+            .playlistCustom {
+                display: flex;
+                flex-direction: column;
+                padding: 10px 5%;
+                color: $lightRed;
+
+                span {
+                    font-size: 10pt;
+                }
+
+                &:hover {
+                    background: $darkRed;
+                    color: $accent;
+                }
+            }
+        }
+        .playMusicMobile {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background: $lightRed;
+            height: auto;
+            color: $accent;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            
+            .player-track {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 10px;
+                flex-direction: column;
+
+
+                .time {
+                    font-size: 16px;
+                    margin: 10px 0;
+                }
+                .progress-bar {
+                    background: #d0d8e6;
+                    height: 5px;
+                    border-radius: 20px;
+                    width: 100%;
+
+                    .fillBar {
+                        background: #a3b3ce;
+                        width: 0;
+                        height: 5px;
+                        border-radius: 20px;
+                    }
+                }
+
+            }
+
+            .playerControl {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 1rem 0;
+                box-shadow: 0px 15px 35px -5px rgba(206, 206, 206, 0.32);
+
+                i {
+                    font-size: 25pt;
+                    &::before {
+                        color: #ffffff;
+                    }
+                    &:hover::before {
+                        color: $accent;
+                        opacity: .7;
+                    }
+                }
+            }
+            
+        }
+    }
+}
