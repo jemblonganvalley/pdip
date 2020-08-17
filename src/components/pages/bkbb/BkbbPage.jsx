@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import './BkbbPage.scss'
 
 import bkbb2 from '../../../img/bkbb2.jpg'
@@ -33,12 +33,12 @@ import CardWejangan from '../../cardwejangan/CardWejangan'
 
 const BkbbPage = () => {
 
-     useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
-        <div className="wrapperPartai">
+        <div className="wrapperBkbb">
             <div className="headers-bkbb">
                 <div className="backgrounds-bkbb">
                     {/* <div className="textBackgroundPartai">
