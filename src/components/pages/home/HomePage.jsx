@@ -177,7 +177,10 @@ const HomePage = ()=> {
                 }}></div>
                 <WidgetBerita name="beritaFoto" col="4" />
             </div>
-            
+            <div className="widgetMobile">
+                <WidgetBerita width="100%" name="berita" />
+                <WidgetBerita width="100%" name="beritaFoto" margin=".5rem 0" />
+            </div>
 
             
         </div>

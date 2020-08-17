@@ -22,13 +22,15 @@ $smallPhoneDua : 400px;
     align-items: center;
 
     @include smallPhone() {
-        flex-direction: column;
-        padding: 0;
+        display: none;
     }
 
+    
 
     .carousel-inner{
         background: none;
+
+        
     }
 
     .wbCarousel{

@@ -1,17 +1,40 @@
 @import "../../utilities/variable/variables.scss";
 
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
 .wrapperPlayVid {
     width: 100%;
     display: flex;
     flex-direction: row;
     height: 65vh;
     margin-top: 1.5rem;
+    @include smallPhone() {
+        flex-direction: column;
+        height: auto;
+        margin-top: 0;
+    }
 
     .kolumVideo {
         width: 70%;
         // border: 1px solid blue;
         display: flex;
         height: 100%;
+
+        @include smallPhone() {
+            width: 100%;
+            height: 50vh;
+        }
         
         iframe {
             width: 100%;
@@ -28,22 +51,26 @@
         // margin-left: 1rem;
         padding : 0px 20px;
         position: relative;
+        @include smallPhone() {
+            width: auto;
+            padding: 0;
+            height: auto;
+            padding: 10px 20px;
+        }
 
         .textTop {
             display: flex;
             width: 100%;
             flex-direction: row;
             font-size: 9pt;
-            position: relative;
+            align-items: center;
 
             small {
                 color: $colors;
             }
 
             .countLove {
-                position: absolute;
-                right: 0;
-
+                margin-left: auto;
                 i {
                     margin-right: .5rem;
                     color: $colors;
@@ -56,10 +83,21 @@
         .headline {
             margin-top: 1rem;
             font-weight: bold;
+
+            @include smallPhone() {
+                text-align: center;
+            }
         }
 
         p {
             font-size: 10pt;
+            @include smallPhone() {
+                text-align: center;
+                font-size: 9pt;
+            }
+            @include smallPhoneDua() {
+                font-size: 8pt;
+            }
         }
         .descline {
             margin-top: 1rem;
@@ -69,6 +107,13 @@
             font-size: 10pt;
             position: absolute;
             bottom: 0;
+            @include smallPhone() {
+                position: inherit;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 9pt;
+            }
 
             .marginShare {
                 margin: 0 .8rem;

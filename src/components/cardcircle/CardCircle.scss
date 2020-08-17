@@ -1,5 +1,17 @@
 @import "../../utilities/variable/variables.scss";
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
 
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 .circleCard {
     width: 17vw;
     height: 37vh;
@@ -7,12 +19,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    // border: 1px solid blue;
     margin: $margin;
     text-decoration: none;
     color: $colors;
     transition: .5s;
     border-radius: 10px;
+
+    @include smallPhone() {
+        width: auto;
+        height: auto;
+        padding: .5rem;
+    }
+    
 
     &:hover {
         color: #ffffff;
@@ -23,6 +41,14 @@
         width: 7.5rem;
         height: 7.5rem;
         border-radius: 50%;
+        @include smallPhone() {
+            width: 5.5rem;
+            height: 5.5rem;
+        }
+        @include smallPhoneDua() {
+            width: 5rem;
+            height: 5rem;
+        }
     }
 
     .jabatan {
@@ -30,6 +56,7 @@
         font-size: 7pt;
         // color: $colors;
         font-weight: bold;
+    
     }
     .nama {
         text-align: center;
@@ -38,5 +65,12 @@
         // border: 1px solid crimson;
         text-transform: uppercase;
         margin-top: .5rem;
+        @include smallPhone() {
+            width: auto;
+            font-size: 10pt;
+        }
+        @include smallPhoneDua() {
+            font-size: 9pt;
+        }
     }
 }

@@ -72,7 +72,6 @@ const DetailPengurus = ()=> {
                         </div>
                     </div>
                 </div>
-
                 <div className="textPengurus">
                     <div className="borderBottom"></div>
                 </div>

@@ -1,15 +1,35 @@
 @import "../../../utilities/variable/variables.scss";
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
 
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 
 .wrapperVideo {
     width: 100%;
     padding: $paddingSmall;
+    @include smallPhone() {
+        padding: $paddingMobile;
+    }
     .linkedVideo {
         display: flex;
         align-items: center;
         flex-direction: row;
         width: 40%;
         margin-top: 20px;
+        @include smallPhone() {
+            // border: 1px solid crimson;
+            width: 100%;
+            padding: $paddingMobile;
+        }
     }
     
     .dividerVideo {
@@ -27,6 +47,18 @@
             // top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+    }
+
+    .wrapperCardVideo {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        padding: $paddingMobile;
+        justify-content: space-between;
+        @include smallPhone() {
+            flex-wrap: wrap;
+            
         }
     }
 }

@@ -132,7 +132,12 @@ const InformasiPage = ()=> {
                     <div className="carousel-inner">
                         <div className="carousel-item active">
                             <div className="imageTC">
-                                    <p className="pCarousel">Pemohon informasi publik mengisi formulir permohonan informasi dengan menyertakan identitas yang masih berlaku (KTP, SIM, Paspor). Bagi lembaga publik pemohon informasi menyertakan Akta Notaris/SK Pembentukan.</p>
+                                    <div className="textTC">
+                                        <div style={{
+                                            width : '40%'
+                                        }}></div>
+                                        <p className="pCarousel">Pemohon informasi publik mengisi formulir permohonan informasi dengan menyertakan identitas yang masih berlaku (KTP, SIM, Paspor). Bagi lembaga publik pemohon informasi menyertakan Akta Notaris/SK Pembentukan.</p>
+                                    </div>
                             </div>
                         </div>
                         <div className="carousel-item">
@@ -186,7 +191,10 @@ const InformasiPage = ()=> {
                 }}></div>
                 <WidgetBerita name="beritaFoto" col='4'/>
             </div>
-
+            <div className="widgetMobile">
+                <WidgetBerita width="100%" />
+                <WidgetBerita width="100%" margin=".5rem 0" />
+            </div>
         </div>
     )
 }

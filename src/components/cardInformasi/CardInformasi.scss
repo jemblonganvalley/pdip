@@ -1,5 +1,18 @@
 @import "../../utilities/variable/variables.scss";
 
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
 .cardMedia {
     width: 100%;
     padding: $padding;
@@ -7,15 +20,30 @@
     justify-content: space-around;
     align-items: center;
 
+    @include smallPhone() {
+        flex-direction: column;
+        padding: $paddingMobile;
+    }
+
     .mediaCard {
         text-decoration: none;
         color: #000000;
+
+        @include smallPhone() {
+            width: 100%;
+            margin: .5rem 0;
+            height: 10vh;
+            background: $accent;
+            border-radius: 10px;
+        }
         .smallCard {
             text-transform: uppercase;
             // font-weight: 700;
             font-family: 'Open Sans';
             font-size: 9pt;
-            
+            @include smallPhone() {
+                margin-right: 1rem;
+            }
         }
     }
     
@@ -32,6 +60,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include smallPhone() {
+            flex-direction: row-reverse;
+        }
     }
     .videoInteraktif {
         display: flex;
@@ -43,5 +74,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        @include smallPhone() {
+            flex-direction: row-reverse;
+        }
     }
 }
