@@ -1,26 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './MainSlider.scss'
 import arrowKanan from '../../img/arrowkanan.png'
 import arrowKiri from '../../img/arrowkiri.png'
 import arrowButton from '../../img/form.png'
 import arrowsLeft from '../../img/arrowsLeft.png'
 import arrows from '../../img/arrows.png'
+import sliders from '../../img/slider.jpg'
+import slider2 from '../../img/slider2.jpg'
 
 
-const MainSlider = ({headline, headline2})=> {
+const MainSlider = ()=> {
 
-    let sliders = [
+    let [slider, setSlider] = useState([
         {
             id : 1,
             headline : "Solid bergerak untuk Indonesia raya",
-            desc : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium. Praesentium tempora a dicta fugiat numquam quidem consequuntur ad sint."
+            paragrap : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium.",
+            images : sliders
         },
         {
             id : 2,
             headline : "Solid bergerak untuk Indonesia raya",
-            desc : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium. Praesentium tempora a dicta fugiat numquam quidem consequuntur ad sint."
-        }
-    ]
+            paragrap : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium.",
+            images : slider2
+        },
+    ])
     
 
     return (
@@ -35,23 +39,23 @@ const MainSlider = ({headline, headline2})=> {
                 </div>
                 
                 <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div className="row image1 images">
-                            <div className="col col-lg-6 mr-auto text1">
-                                    <h1>{headline}</h1>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium. Praesentium tempora a dicta fugiat numquam quidem consequuntur ad sint.</p>
-                                    
+
+                    {slider.map((e)=> {
+                        return (
+                            <div className={e.id == 1 ? "carousel-item active" : "carousel-item"}>
+                                <div className="row image1 images" style={{
+                                    background : `url(${e.images})`,
+                                    backgroundSize : 'cover'
+                                }}>
+                                    <div className="col col-lg-6 mr-auto text1">
+                                            <h1>{e.headline}</h1>
+                                            <p>{e.paragrap}</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="row image2 images">
-                            <div className="col col-lg-6 mr-auto text1">
-                                <h1>{headline2}</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non suscipit exercitationem enim nesciunt, esse, hic accusantium in blanditiis repellat at aperiam magni ab? Ullam sequi possimus mollitia, maiores assumenda facilis!</p>
-                            </div>
-                        </div>
-                    </div>
+                        )
+                    })}
+                    
                 </div>
 
                 

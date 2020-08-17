@@ -5,22 +5,43 @@ import './StrukturPaginate.scss'
 
 const StrukturPaginate = ()=> {
 
-    let [struktur, setStruktur] = useState([])
+    let [struktur, setStruktur] = useState([
+        {
+            image : 'megawati.png',
+            jabatan : 'Ketua Umum',
+            nama : 'Megawati Soekarnoputri'
+        },
+        {
+            image : 'megawati.png',
+            jabatan : 'Ketua Umum',
+            nama : 'Megawati Soekarnoputri'
+        },
+        {
+            image : 'megawati.png',
+            jabatan : 'Ketua Umum',
+            nama : 'Megawati Soekarnoputri'
+        },
+        {
+            image : 'megawati.png',
+            jabatan : 'Ketua Umum',
+            nama : 'Megawati Soekarnoputri'
+        }
+    ])
     
 
-    useEffect(()=> {
-        fetch("http://localhost:3005/pagination", {
-            method : 'GET',
-            mode : 'cors',
-            headers : {
-                "Content-Type" : "application/json"
-            }
-        })
-        .then(res => res.json())
-        .then(data => {
-            setStruktur(data)
-        })
-    }, [])
+    // useEffect(()=> {
+    //     fetch("http://localhost:3005/pagination", {
+    //         method : 'GET',
+    //         mode : 'cors',
+    //         headers : {
+    //             "Content-Type" : "application/json"
+    //         }
+    //     })
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         setStruktur(data)
+    //     })
+    // }, [])
 
     // const struktur = [
     //     {

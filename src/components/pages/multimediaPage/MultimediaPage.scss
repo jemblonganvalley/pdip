@@ -1,6 +1,20 @@
 @import "../../../utilities/variable/variables.scss";
 
 
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+
 .wrapperMultimedia {
     width: 100%;
 
@@ -10,19 +24,39 @@
         height: 25vh;
         background-position: bottom;
 
+        @include smallPhone() {
+            height: 20vh;
+        }
+        @include smallPhoneDua() {
+            height: 15vh;
+        }
+
         .textBannerMedia {
                 width: 30%;
                 height: 50%;
                 margin-left: 13rem;
                 color: #ffffff;
                 position: relative;
-                
+                @include smallPhone() {
+                    width: auto;
+                    margin-left: 0;
+                    padding: 0 6%;
+                }
                 h2 {
                     position: absolute;
                     bottom: -70%;
                     line-height: 1;
                     text-transform: uppercase;
                     font-family: 'Roboto';
+
+                    @include smallPhone() {
+                        font-size: 15pt;
+                    }
+
+                    @include smallPhoneDua() {
+                        font-size: 14pt;
+                        position: inherit;
+                    }
                 }
         }
     }
@@ -34,6 +68,12 @@
         // border: 1px solid blue;
         margin-top: 20px;
         padding: $paddingTiny;
+
+        @include smallPhone() {
+            // border: 1px solid crimson;
+            width: 100%;
+            padding: $paddingMobile;
+        }
         
     }
 
@@ -45,6 +85,11 @@
         align-items: center;
         height: 70vh;
         // border: 1px solid blue;
+
+        @include smallPhone() {
+            padding: $paddingMobile;
+            height: auto;
+        }
 
 
         .col-lg-9 {
@@ -115,6 +160,10 @@
         justify-content: center;
         align-items: center;
         // padding: $padding;
+        @include smallPhone() {
+            height: 30vh;
+            background-attachment: inherit;
+        }
 
         .textPanggung {
             display: flex;
@@ -126,29 +175,21 @@
             
             .panggungH1 {
                 margin-top: 2rem;
-            }
-            .btnPanggung {
-                border-radius: 25px;
-                color: #ffffff;
-                border: 1px solid $colors;
-                width: 10vw;
-                font-size: 9pt;
-                text-transform: uppercase;
-                transition: .3s;
-                margin-top: 3rem;
-
-                &:hover {
-                    background-color: $colors;
+                @include smallPhone() {
+                    font-size: 14pt;
                 }
-                
             }
+            
         }
     }
 
     .cardMediaDua {
         padding: $padding;
         display: flex;
-
+        @include smallPhone() {
+            padding: 10px 2%;
+            flex-direction: column;
+        }
         
     }
     .videoBaruPage {
@@ -159,22 +200,11 @@
         padding: $padding;
         width: 100%;
         // border: 1px solid crimson;
-
-        .textVideoBaru {
-            width: 100%;
-            text-align: center;
-
-            .videoBaru {
-                cursor: pointer;
-                color: $colors;
-                // width: 100%;
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-size: 8pt;
-                border-bottom: 5.5px solid $colors;
-            }
+        @include smallPhone() {
+            padding: 10px 2%;
         }
+
+        
         .cardVideoBaru {
             width: 100%;
             // height: 50vh;
@@ -186,6 +216,10 @@
 
             // border: 1px solid pink;
             margin-top: 30px;
+            @include smallPhone() {
+                padding: 0 2%;
+                flex-direction: column;
+            }
         }
     }
 }

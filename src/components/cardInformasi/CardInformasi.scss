@@ -1,9 +1,7 @@
 @import "../../utilities/variable/variables.scss";
 
-// Variable For Responsive
 $smallPhoneSatu : 500px;
 $smallPhoneDua : 400px;
-
 @mixin smallPhone {
     @media (max-width : #{$smallPhoneSatu}) {
         @content;
@@ -14,8 +12,6 @@ $smallPhoneDua : 400px;
         @content;
     }
 }
-// END Variable For Responsive
-
 
 .cardMedia {
     width: 100%;
@@ -25,39 +21,28 @@ $smallPhoneDua : 400px;
     align-items: center;
 
     @include smallPhone() {
-        // padding: 0 8%;
-        flex-wrap: wrap;
-        justify-content: center;
         flex-direction: column;
-    }
-
-    @include smallPhoneDua() {
-        padding: 15px 2%;
+        padding: $paddingMobile;
     }
 
     .mediaCard {
         text-decoration: none;
         color: #000000;
+
         @include smallPhone() {
-            // margin: 0 .5rem;
-            // outline: 1px solid blue;
             width: 100%;
             margin: .5rem 0;
             height: 10vh;
-            border-radius: 10px;
             background: $accent;
-            
+            border-radius: 10px;
         }
         .smallCard {
             text-transform: uppercase;
             // font-weight: 700;
             font-family: 'Open Sans';
             font-size: 9pt;
-            
-            
             @include smallPhone() {
-                font-size: 8pt;
-                margin-right: .5rem;
+                margin-right: 1rem;
             }
         }
     }
@@ -96,6 +81,7 @@ $smallPhoneDua : 400px;
         display: flex;
         justify-content: center;
         align-items: center;
+        
         @include smallPhone() {
             flex-direction: row-reverse;
         }

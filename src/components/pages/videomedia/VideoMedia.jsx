@@ -26,7 +26,7 @@ const VideoMedia = ()=> {
             <div className="dividerVideo">
                 <div className="borderVideo"></div>
             </div>
-            <div className="wrapperCard" style={{
+            <div className="wrapperCardVideo" style={{
                 display : 'flex',
                 flexDirection : 'row',
                 marginTop : '2rem'

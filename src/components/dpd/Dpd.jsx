@@ -28,7 +28,7 @@ const Dpd = ()=> {
             {/* END */}
 
             <div className="pengurus">
-                <MainDivider text="Pengurus" />
+                <MainDivider text="Dewan Pimpinan" />
                 <div className="dpdTextHead">
                     <h1>Dewan Pimpinan Daerah PDI Perjuangan<br/>Provinsi Bali</h1>
                 </div>

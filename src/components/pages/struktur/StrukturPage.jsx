@@ -15,7 +15,7 @@ const StrukturPage = ()=> {
             {/* HEADERS */}
             <div className="headers">
                 <div className="backgrounds">
-                    <div className="textBackgroundPartai">
+                    <div className="textBackgroundStruktur">
                         <h2>Solid Bergerak Untuk<br/>Indonesia Raya </h2>
                     </div>
                 </div>
@@ -23,7 +23,7 @@ const StrukturPage = ()=> {
             {/* END */}
 
             {/* LINK PARTAI */}
-            <div className="linkedPartai">
+            <div className="linkedStruktur">
                 <BreadCrumbs link1="home"
                                 to1="/"
                                 link2="Partai"

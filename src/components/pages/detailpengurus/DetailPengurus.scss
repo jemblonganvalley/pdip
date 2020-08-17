@@ -1,4 +1,18 @@
 @import "../../../utilities/variable/variables.scss";
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 
 
 .wrapperDetail {
@@ -8,6 +22,12 @@
         background-size: cover;
         height: 25vh;
         background-position: center;
+        @include smallPhone() {
+            height: 20vh;
+        }
+        @include smallPhoneDua() {
+            height: 15vh;
+        }
         
         .backHead {
             background-color: rgba(216, 0, 16, .8);
@@ -22,25 +42,34 @@
                 width: 30%;
                 height: 50%;
                 margin-left: 13rem;
+                @include smallPhone() {
+                    width: auto;
+                    margin-left: 0;
+                    padding: 0 10%;
+                }
+
+                h2 {
+                    @include smallPhoneDua() {
+                        font-size: 15pt;                        
+                    }
+                }
             }
         }
         }
         // END HEADERS
         // START LINK PARTAI
-        .linkedDetail {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        margin-top: 20px;
-        padding: $paddingTiny;
-        i {
-            span {
-                margin-left: 5px;
-                font-style: italic;
-                font-size: 8pt;
-            }
-        }
-        }
+    .linkedDetail {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: $paddingTiny;
+    @include smallPhone() {
+        // border: 1px solid crimson;
+        width: 100%;
+        padding: $paddingMobile;
+    }
+}
 // END LINK PARTAI
 
         .pengurus {
@@ -49,30 +78,17 @@
             align-items: center;
             flex-direction: column;
             padding: $paddingSmall;
-
-            .textPengurus {
-                border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-                // background-color: #2d3436;
-                width: 100%;
-                text-align: center;
-                // height: 10vh;
-                margin-top: 30px;
-            small {
-                cursor: pointer;
-                color: $colors;
-                // width: 100%;
-                text-align: center;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-size: 8pt;
-                border-bottom: 5.5px solid $colors;
+            @include smallPhone() {
+                padding: $paddingMobile;
             }
-        }
         .bidangTextHead {
             margin: 2rem 0;
             text-align: center;
             font-weight: bold;
             color: #000000;
+            @include smallPhone() {
+                margin: 1rem 0;
+            }
         }
         .profilPengurus {
             display: flex;
@@ -81,26 +97,47 @@
             height: 100vh;
             padding: $padding;
             // border: 1px solid blue;
+            @include smallPhone() {
+                padding: $paddingMobile;
+                flex-direction: column;
+                height: auto;
+            }
             
             .kolum1 {
-                // border: 1px solid crimson;
                 width: 30vw;
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                @include smallPhone() {
+                    width: 100%;
+                }
+                img {
+                    @include smallPhone() {
+                        width: 180px;
+                    }
+                    @include smallPhoneDua() {
+                        width: 150px;
+                    }
+                }
 
                 .textProfil {
                     display: flex;
                     flex-direction: column;
                     width: 70%;
-                    // height: 100%;
-
-                    // border: 1px solid green;
+                    @include smallPhone() {
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        text-align: center;
+                    }
 
                     .profilText {
                         margin: 10px;
+                        @include smallPhone() {
+                            margin: 5px;
+                        }
 
                         small {
                             color: $colors;
@@ -128,6 +165,9 @@
                 .descProfil {
                     display: flex;
                     flex-direction: column;
+                    @include smallPhone() {
+                        text-align: center;
+                    }
 
                     .biografi {
                         text-transform: uppercase;

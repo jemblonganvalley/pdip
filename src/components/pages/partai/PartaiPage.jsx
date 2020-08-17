@@ -88,7 +88,7 @@ const PartaiPage = ()=>{
                     <div className="col col-lg-8">
                         <div className="wrapperCarousel">
                             
-                        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" data-interval={0}>
+                        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                             <ol className="carousel-indicators carouselPartai">
                                 <li data-target="#carouselExampleIndicators" data-slide-to={0} className="active" />
                                 <li data-target="#carouselExampleIndicators" data-slide-to={1} />

@@ -1,4 +1,18 @@
 @import "../../../utilities/variable/variables.scss";
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 
 .wrapperInformasi {
     width: 100%;
@@ -12,6 +26,12 @@
         display: flex;
         align-items: center;
         // width: 100%;
+        @include smallPhone() {
+            height: 20vh;
+        }
+        @include smallPhoneDua() {
+            height: 15vh;
+        }
 
         .textHeadInformasi {
                 width: 100%;
@@ -25,6 +45,13 @@
                 h2 {
                     text-transform: uppercase;
                     font-family: 'Roboto';
+                    
+                    @include smallPhone() {
+                        font-size: 15pt;
+                    }
+                    @include smallPhone() {
+                        font-size: 12pt;
+                    }
 
                     .pdip {
                         font-weight: 300;
@@ -42,13 +69,10 @@
             width: 40%;
             margin-top: 20px;
             padding: $paddingTiny;
-
-            i {
-                span {
-                    margin-left: 5px;
-                    font-style: italic;
-                    font-size: 8pt;
-                }
+            @include smallPhone() {
+                // border: 1px solid crimson;
+                width: 100%;
+                padding: $paddingMobile;
             }
         }
     // END
@@ -60,6 +84,11 @@
             align-items: center;
             flex-direction: column;
             padding: $paddingTiny;
+            @include smallPhone() {
+                // border: 1px solid crimson;
+                width: 100%;
+                padding: $paddingMobile;
+            }
             
             .paragrapProfil {
                 display: flex;
@@ -68,20 +97,37 @@
                 margin-top: 1rem;
                 position: relative;
                 // border: 1px solid blue;
+                @include smallPhone() {
+                    flex-direction: column;
+                    position: inherit;
+                }
 
                 .paragrapKiri {
                     display: flex;
                     flex-direction: column;
                     font-family: 'Roboto';
+                    @include smallPhone() {
+                        justify-content: center;
+                        align-items: center;
+                    }
                     .merdeka {
                         font-style: italic;
                     }
                     .solid {
                         font-style: italic;
+                        @include smallPhone() {
+                            text-align: center;
+                        }
                     }
                     .textParagrap {
                         font-size: 10pt;
                         width: 50vw;
+                        @include smallPhone() {
+                            width: auto;
+                            font-size: 9pt;
+                            text-align: center;
+                            padding: 0 2%;
+                        }
                     }
 
                 }
@@ -92,6 +138,11 @@
                 flex-direction: column;
                 // width: 100%;
                 width: 50vw;
+                @include smallPhone() {
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                }
                 
                 .backgroundPK {
                     display: flex;
@@ -108,6 +159,10 @@
                     background-size: cover;
                     color: #ffffff;
                     font-family: 'Roboto';
+                    @include smallPhone() {
+                        position: inherit;
+                        width: 100%;
+                    }
 
                     .textParagrapKanan {
                         margin-top: 1rem;
@@ -118,11 +173,13 @@
 
             // divider
                 .divider {
-                    // padding: $padding;
                     margin-top: 1rem;
                     border: 1px solid #000000;
                     height: 1px;
                     width: 100%;
+                    @include smallPhone() {
+                        margin: 1rem 0;
+                    }
                 }
             //  END
 
@@ -136,6 +193,9 @@
                 justify-content: center;
                 align-items: center;
                 width: 100%;
+                @include smallPhone() {
+                    padding: $paddingMobile;
+                }
 
                 .ytIframe {
                     width: 100%;
@@ -143,6 +203,9 @@
                     height: 60vh;
                     position: relative;
                     // overflow: hidden;
+                    @include smallPhoneDua() {
+                        height: 40vh;
+                    }
 
                     .iframeProfil {
                         border: 0;
@@ -152,6 +215,10 @@
                         top: 0;
                         left: 0;
                         position: absolute;
+
+                        @include smallPhoneDua() {
+                            position: inherit;
+                        }
 
                     }
                 }
@@ -166,6 +233,10 @@
                 width: 100%;
                 // border: 1px solid blue;
                 padding: 2rem;
+                @include smallPhone() {
+                    padding: .5rem 0;
+                    flex-direction: column;
+                }
                 .cardLaporan {
                     width: 48%;
                     display: flex;
@@ -177,6 +248,12 @@
                     background: #e50209;
                     // border: 1px solid crimson;
                     transition: .3s;
+
+                    @include smallPhone() {
+                        width: 100%;
+                        margin: .5rem 0;
+                        border-radius: 5px;
+                    }
 
                     &:hover {
                         background: #2f3542;
@@ -216,27 +293,9 @@
             flex-direction: column;
             padding: $padding;
 
-            .textTataCara {
-                border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-                // background-color: #2d3436;
-                width: 100%;
-                text-align: center;
-                // height: 10vh;
-                margin-top: 30px;
-                .tataCara {
-                    cursor: pointer;
-                    color: $colors;
-                    // width: 100%;
-                    text-align: center;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    font-size: 10pt;
-                    border-bottom: 5.5px solid $colors;
-                    // line-height: 1;
-                    
-                }
+            @include smallPhone() {
+                padding: $paddingMobile;
             }
-
         }
         // END
         
@@ -262,13 +321,30 @@
                     background-size: cover;
                     background-position: bottom;
                     position: relative;
+                    @include smallPhone() {
+                        height: 35vh;
+                    }
+                    @include smallPhoneDua() {
+                        height: 30vh;
+                    }
 
-                    .pCarousel {
-                        position: absolute;
-                        width: 30%;
-                        bottom: 40%;
-                        right: 15%;
-                        font-weight: 700;
+                    .textTC {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        .pCarousel {
+                            width: 45%;
+                            font-weight: 700;
+                            @include smallPhone() {
+                                // width: 50%;
+                                font-size: 9pt;
+                                text-align: center;
+                            }
+                            @include smallPhoneDua() {
+                                font-size: 7.5pt;
+                            }
+                        }
                     }
                     .kunjungi {
                         color: black;
@@ -304,6 +380,14 @@
             .carousel-control-prev-icon {
                 width: 40px;
                 height: 40px;
+                @include smallPhone() {
+                    width: 30px;
+                    height: 30px;
+                }
+                @include smallPhoneDua() {
+                    width: 25px;
+                    height: 25px;
+                }
             }
             
         }
@@ -316,6 +400,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @include smallPhone() {
+                flex-direction: column;
+                padding: $paddingMobile;
+            }
 
             .kolomFormulir {
                 width: 50%;
@@ -324,10 +412,27 @@
                 justify-content: center;
                 align-items: center;
                 height: 25vh;
+                @include smallPhone() {
+                    width: 100%;
+                    height: 20vh;
+                }
+                @include smallPhoneDua() {
+                    width: 100%;
+                    height: 15vh;
+                }
+
+                img {
+                    @include smallPhone() {
+                        width: 40px;
+                    }
+                }
 
                 .textFormulir {
                     margin-left: 1rem;
                     font-family: 'Roboto';
+                    @include smallPhoneDua() {
+                        font-size: 13pt;
+                    }
                 }
             }
 
