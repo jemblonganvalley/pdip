@@ -5,7 +5,7 @@ import '../carouselKetuaUmumPage/CarouselKetuaUmumPage.scss'
 const CarouselKetuaUmumPage = () => {
     return (
         <>
-            <div id="carouselExampleIndicators" className="carousel box-carousel-ketuaUmumPage slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" className="carousel container-carousel-ketuaUmumPage slide" data-ride="carousel">
                 <div className="carousel-inner carousel-ketuaUmumPage">
                     <div className="carousel-item active">
                         <div className="col1-container-1">

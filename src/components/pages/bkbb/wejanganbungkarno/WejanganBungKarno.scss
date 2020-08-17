@@ -1,17 +1,33 @@
 // @import "../../../utilities/variable/variables.scss";
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 
-
-.wrapperMateri {
+.wrapperWejanganThumbnail {
     width: 100%;
     // padding: $paddin;
 
-    .linkedMateri {
+    .linkedBkbbWBK {
         display: flex;
         align-items: center;
         flex-direction: row;
         width: 40%;
         margin-top: 15px;
         // padding: 10px 10%;
+
+        @include smallPhone(){
+            width: 100%;
+            padding: 0 2%;
+        }
 
         i {
             span {
@@ -44,16 +60,20 @@
 }
 
 // Container1
-.container1{
+.container1-wejanganThumbnail{
     display: flex;
     height: auto;
     width: 100%;
     margin: -40px 0 0 0;
+
+    @include smallPhone(){
+        margin: 0;
+    }
 }
 // END Container1
 
 // Container2
-.container2{
+.container2-wejanganThumbnail{
     display: flex;
     flex-direction: column;
     height: auto;
@@ -61,45 +81,73 @@
     margin: 0px 0 20px 0;
     padding: 0 10%;
 
+    @include smallPhone(){
+        margin: 0;
+        padding: 0;
+    }
+
     // Column Card Wejangan Bungkarno
-    .col-card-wejangan-bungkarno{
+    .col-card-wejanganThumbnail{
         display: flex;
         flex-direction: column;
         height: auto;
         width: 100%;
         padding: 40px 0% 20px 0;
 
+        @include smallPhone(){
+            position: relative;
+            padding: 0 0 20px 0;
+        }
+
         // Box1 Image
-        .box1-image{
+        .box1-image-wejanganThumbnail{
             display: flex;
             height: 45vh;
             width: 100%;
             padding: 10px 0 10px 0;
+
+            @include smallPhone(){
+                height: auto;
+                flex-direction: column;
+                padding: 0;
+            }
         }
         // END Box1 Image
 
         // Box2 Image
-        .box2-image{
+        .box2-image-wejanganThumbnail{
             display: flex;
             height: 45vh;
             width: 100%;
             padding: 10px 0 10px 0;
+
+            @include smallPhone(){
+                height: auto;
+                flex-direction: column;
+                padding: 0;
+            }
         }
         // END Box2 Image
 
         // Box3 Image
-        .box3-image{
+        .box3-image-wejanganThumbnail{
             display: flex;
             height: 45vh;
             width: 100%;
             padding: 10px 0 10px 0;
+
+            @include smallPhone(){
+                flex-direction: column;
+                height: auto;
+                padding: 0;
+            }
         }
         // END Box3 Image
     }
     // END Column Card Wejangan Bungkarno
 
     // Column Pagination
-    .col-pagination-wejangan-bungkarno{
+    .col-pagination-wejanganThumbnail{
         display: flex;
         height: 10vh;
         width: 100%;

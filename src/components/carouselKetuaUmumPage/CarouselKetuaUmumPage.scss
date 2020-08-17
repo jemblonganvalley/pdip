@@ -1,59 +1,26 @@
-
-// Responsive Max Width 500px
-@media screen and (max-width: 500px){
-    .box-carousel-ketuaUmumPage{
-        height: 60vh !important;
-        padding: 0 !important;
-        margin: 0 !important;
-
-        // Column1
-        .col1-container-1{
-            height: 60vh !important;
-            padding: 0 !important;
-
-            .box-txt-title{
-                height: 100%;
-
-                h1{
-                    font-size: 20px !important;
-                }
-            }
-        }
-        // END Column1
-
-        // Column2
-        .col2-img{
-            height: 30%;
-
-            .garis-strip-col2{
-                width: 130px !important;
-                margin: -2px 0 0 30px !important;
-            }
-
-            .box-txt-desk-col2{
-                display: flex;
-                padding: 15px 30px 0 30px !important; 
-    
-                .txt-admin{
-                    font-size: 7px !important;
-                    padding: 2px 0 !important;
-                }
-    
-                .txt-desk-col2{
-                    font-size: 10px !important;
-                }
-            }            
-        }
-        // END Column2
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
     }
 }
-// END Responsive Max Width 500px
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 
-.box-carousel-ketuaUmumPage{
+
+.container-carousel-ketuaUmumPage{
     display: flex;
     height: 80vh;
     width: 100%;
     background: #555;
+
+    @include smallPhone(){
+        height: 60vh;
+    }
 
     .indicatorKetuaUmum{
         display: flex;
@@ -84,6 +51,10 @@
                 width: 100%;
                 overflow: hidden;
 
+                @include smallPhone(){
+                    height: 60vh;
+                }
+
                 // Column1
                 .col1-img{
                     display: flex;
@@ -106,6 +77,10 @@
                             color: #fff;
                             padding: 25% 20% 20% 20%;
                             overflow: hidden;
+
+                            @include smallPhone(){
+                                font-size: 20px;
+                            }
                         }
                     }  
                 }
@@ -129,6 +104,11 @@
                         border-radius: 2px;
                         margin: -2px 0 0 65px;
                         overflow: hidden;
+
+                        @include smallPhone(){
+                            width: 130px;
+                            margin: -2px 0 0 30px;
+                        }
                     }
 
                     .box-txt-desk-col2{
@@ -139,11 +119,20 @@
                         padding: 20px 65px 0 65px;
                         overflow: hidden;
 
+                        @include smallPhone(){
+                            padding: 15px 30px 0 30px;
+                        }
+
                         .txt-admin{
                             display: flex;
                             font-size: 12px;
                             color: #fff;
                             overflow: hidden;
+
+                            @include smallPhone(){
+                                font-size: 7px;
+                                padding: 2px 0;
+                            }
                         }
 
                         .txt-desk-col2{
@@ -152,6 +141,10 @@
                             font-weight: 500;
                             color: #fff;
                             overflow: hidden;
+
+                            @include smallPhone(){
+                                font-size: 10px;
+                            }
                         }
                     }
                 }

@@ -13,26 +13,26 @@ const BkbbWejangan = () => {
     return (
         <>
             <div className="wrapperBkbbWejangan">
-                <div className="headers">
+                <div className="headersBkbbWejangan">
                     <div className="backgrounds">
                         <div className="textBackgroundBerita">
 
                         </div>
                     </div>
                 </div>
-                <div className="linkedBerita">
+                <div className="linkedBkbbWejangan">
                     <BreadCrumbs link1="home"
                         to1="/" link2="Bungkarno Bapak Bangsa" to2="/bungkarno"
                         page3="Quotes" />
                 </div>
 
                 {/* Container1 */}
-                <div className="container-1">
+                <div className="container-1-bkbbWejangan">
                     {/* Column1 */}
-                    <div className="col1-container-1">
+                    <div className="col1-container-1-bkbbWejangan">
                         {/* Row1 */}
-                        <div className="row1">
-                            <div className="box-quotes">
+                        <div className="row1-bkbbWejangan">
+                            <div className="box-quotes-bkbbWejangan">
                                 <i className="fas fa-quote-right"></i>
 
                                 <p className="txt1" >
@@ -55,7 +55,7 @@ const BkbbWejangan = () => {
                         {/* END Row1 */}
 
                         {/* Row2 */}
-                        <div className="row2">
+                        <div className="row2-bkbbWejangan">
                             <p className="txt1">
                                 Admin PDI Perjuangan | 1 Januari 2019
                             </p>
@@ -74,7 +74,7 @@ const BkbbWejangan = () => {
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eligendi neque saepe cupiditate, porro maiores officia, sequi voluptate, amet exercitationem incidunt veniam. Mollitia soluta laborum quae quisquam aliquam neque illum. Dolores incidunt quos iure nobis rem laborum doloremque quasi beatae ad natus! Sequi, quos doloribus. Quod sequi animi illum numquam?
                             </p>
 
-                            <div className="box-medsos">
+                            <div className="box-medsos-bkbbWejangan">
                                 <div className="socialMedia">
                                     <small>SHARE : </small>
                                     <i class="fa fa-facebook"></i>
@@ -91,9 +91,9 @@ const BkbbWejangan = () => {
                 {/* END Container1 */}
 
                 {/* Container2 */}
-                <div className="container-2">
+                <div className="container-2-bkbbWejangan">
                     {/* Column1 */}
-                    <div className="col1-container-2">
+                    <div className="col1-container-2-bkbbWejangan">
                         {/* CardQuotes */}
                         <CardQuotes img={bkbb2} icon1="fas fa-quote-right" txt1='NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1928" />
 

@@ -19,29 +19,29 @@ const Page2 = () => {
 
     return (
         <>
-            <div className="wrapperPage2">
-                <div className="headers">
+            <div className="wrapperBeritaPage2">
+                <div className="headers-beritaPage2">
                     <div className="backgrounds">
                         <div className="textBackgroundBerita">
 
                         </div>
                     </div>
                 </div>
-                <div className="linkedBerita">
+                <div className="linkedBeritaPage2">
                     <BreadCrumbs link1="Home" to1="/" link2="Berita" to2="/berita" page3="Berita Foto" />
                 </div>
 
                 {/* Container1 */}
-                <div className="container-1">
+                <div className="container-1-beritaPage2">
                     {/* Column1 */}
-                    <div className="col1-container-1">
+                    <div className="col1-container-1-beritaPage2">
                         {/* Row1 */}
                         <CarouselBeritaPage2 />
                         {/* END Row1 */}
 
                         {/* Row2 */}
-                        <div className="row2">
-                            <div className="jdl-row2">
+                        <div className="row2-beritaPage2">
+                            <div className="jdl-row2-beritaPage2">
                                 <p className="txt-admin">
                                     Admin PDI Perjuangan | 1 Januari 2019
                                 </p>
@@ -53,11 +53,11 @@ const Page2 = () => {
                                 </p>
                             </div>
 
-                            <p className="title-2">
+                            <p className="title-2-beritaPage2">
                                 Ketua Umum PDI Perjuangan, Hj. Megawati Soekarnoputri Meresmikan 20 Kantor Partai
                             </p>
 
-                            <p className="txt-desk1">
+                            <p className="txt-desk1-beritaPage2">
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ad, ut corporis veniam consectetur officiis fuga voluptas porro veritatis aliquid?
 
                                 <br />
@@ -66,7 +66,7 @@ const Page2 = () => {
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam ad, ut corporis veniam consectetur officiis fuga voluptas porro veritatis aliquid?
                             </p>
 
-                            <div className="box-medsos">
+                            <div className="box-medsos-beritaPage2">
                                 <div className="socialMedia">
                                     <small>SHARE : </small>
                                     <i class="fa fa-facebook"></i>
@@ -87,7 +87,7 @@ const Page2 = () => {
                     </div>
 
                     {/* Column2 */}
-                    <div className="col2-container-1">
+                    <div className="col2-container-1-beritaPage2">
                         <Cards imageCard={detailartikel3} TextH6="Lorem ipsum dolor, sit amet consectetur adipisicing eliteiusmod tempor indicidunt"
                             borderRadius="10px" />
                         <Cards imageCard={detailartikel4} TextH6="Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil"

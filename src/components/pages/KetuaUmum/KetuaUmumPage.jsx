@@ -34,20 +34,20 @@ const KetuaUmumPage = () => {
     return (
         <>
             <div className="wrapperKetuaUmum">
-                <div className="headers">
+                <div className="headers-ketuaumum">
                     <div className="backgrounds">
                         <div className="textBackgroundBerita">
                         </div>
                     </div>
                 </div>
-                <div className="linkedBerita">
+                <div className="linkedKetuaumum">
                     <BreadCrumbs link1="Home"
                         to1="/"
                         page2="Ketua Umum"
                     />
                 </div>
                 {/* Container1 */}
-                <div className="container-1">
+                <div className="container-1-ketuaUmum">
                     {/* Column1 */}
                     <CarouselKetuaUmumPage />
                     {/* END Column1 */}
@@ -89,7 +89,7 @@ const KetuaUmumPage = () => {
                     {/* END Column3 */}
 
                     {/* Column5 */}
-                    <div className="col5-container-1">
+                    <div className="col5-container-1-ketuaumum">
                         {/* Row1 */}
                         <div className="row1-video-youtube">
                             <iframe width="100%" height="117%" src="https://www.youtube.com/embed/ChkKZ3hq1Nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -121,7 +121,7 @@ const KetuaUmumPage = () => {
                 {/* END Container2 */}
 
                 {/* Container3 */}
-                <div className="container-3">
+                <div className="container-3-ketuaumum">
                     {/* Column4 */}
                     <div className="col4-cardContent-container-3">
                         <Cards imageCard={pemilu18}

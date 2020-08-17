@@ -1,117 +1,38 @@
-// Responsive Max Width 500px
-@media screen and (max-width: 500px){
-    // Container1
-    .container-1{
-        display: flex;
-
-        // Column1
-        .col1-container-1{
-            display: flex;
-            height: 160vh !important;
-            flex-direction: column !important;
-            padding: 0 10px !important;
-
-            // Row1
-            .row1-col1{
-                display: flex;
-                height: 110vh !important;
-                width: 100% !important;
-            }
-            // END Row1
-
-            // Row2
-            .row2-col1{
-                display: flex;
-                height: 34% !important;
-                width: 100% !important;
-                margin: 20px 0 0 0 !important;
-            }
-            // END Row2
-        }
-        // END Column1
-
-        // Column2
-        .col2-container-1{
-            display: flex;
-            flex-direction: column !important;
-            padding: 30px 10px 30px 10px !important;
-
-            // Row1
-            .row1-col2{
-                width: 100% !important;
-                margin: 0 0 20px 0 !important;
-
-                .col1-row1{
-                    background-position: center;
-                }
-
-                .txt-title{
-                    font-size: 14px !important;
-                }
-    
-                .txt-desk{
-                    font-size: 10px !important;
-                }
-            }            
-            // END Row1
-
-            // Row2
-            .row2-col2{
-                width: 100% !important;
-
-                .col1-row2{
-                    background-position: center;
-                }
-
-                .txt-title{
-                    font-size: 14px !important;
-                }
-    
-                .txt-desk{
-                    font-size: 10px !important;
-                }
-            }
-            // END Row2
-        }
-        // END Column2
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
     }
-    // END Container
-
-    // Container2
-    .container-2{
-        width: 100% !important;
-        background-position: center !important;
-        background-size: cover !important;
-    }
-    // END Container2
-
-    // Container3
-    .container-3{
-        display: flex;
-        margin: 40px 0 0 0 !important;
-
-        iframe{
-            padding: 0 10px !important;
-            width: 100% !important;
-        }
-       
-    }
-    // END Container3
 }
-// END Responsive Max Width 500px
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 
 
 $secondary : #f3f3f3;
 @import "../../../utilities/variable/variables.scss";
 
-.wrapperPemilu {
+.wrapperPemiluPage {
     width: 100%;
 
-    .headers {
+    .headers-pemiluPage {
         background: url(../../../img/pemilu6.jpg);
         background-size: cover;
         height: 25vh;
         background-position: center;
+
+        @include smallPhone(){
+            height: 20vh;
+            background-attachment: inherit;
+        }
+
+        @include smallPhone(){
+            height: 15vh;
+            background-attachment: inherit;
+        }
 
         .backgrounds {
             width: 100%;
@@ -128,13 +49,18 @@ $secondary : #f3f3f3;
             }
         }
     }
-    .linkedBerita {
+    .linkedPemiluPage {
         display: flex;
         align-items: center;
         flex-direction: row;
         width: 40%;
         margin-top: 15px;
         padding: $paddingSmall;
+
+        @include smallPhone(){
+            width: 100%;
+            padding: 0 2%;
+        }
 
 
         i {
@@ -147,7 +73,7 @@ $secondary : #f3f3f3;
     }
 
     // Container1
-    .container-1{
+    .container-1-pemiluPage{
         display: flex;
         flex-direction: column;
         height: auto;
@@ -156,42 +82,67 @@ $secondary : #f3f3f3;
         padding: 0 10%;
         overflow: hidden;
 
+        @include smallPhone(){
+            padding: 0 5px;
+        }
+
         // Column1
-        .col1-container-1{
+        .col1-container-1-pemiluPage{
             display: flex;
             height: 95vh;
             width: 100%;
             overflow: hidden;
 
+            @include smallPhone(){
+                height: auto;
+                flex-direction: column;
+            }
+
             // Row1
-            .row1-col1{
+            .row1-col1-pemiluPage{
                 display: flex;
                 flex-direction: column;
                 height: 100%;
                 width: 35%;
                 overflow: hidden;
+
+                @include smallPhone(){
+                    height: auto;
+                    width: 100%;
+                }
                 
                 // Bagian1
-                .bagian1{
+                .bagian1-pemiluPage{
                     display: flex;
                     height: 50%;
                     width: 100%;
                     margin: 0 0 20px 0;
+
+                    @include smallPhone(){
+                        height: 40vh;
+                        width: 100%;
+                        margin: 0 0 10px 0;
+                    }
                 }
                 // END Bagian1
 
                 // Bagian2
-                .bagian2{
+                .bagian2-pemiluPage{
                     display: flex;
                     height: 50%;
                     width: 100%;
+
+                    @include smallPhone(){
+                        height: 40vh;
+                        width: 100%;
+                    }
                 }
                 // END Bagian2
             }
             // END Row1
 
             // Row2
-            .row2-col1{
+            .row2-col1-pemiluPage{
                 display: flex;
                 height: 100%;
                 width: 65%;
@@ -199,20 +150,30 @@ $secondary : #f3f3f3;
                 margin: 0px 0px 0 20px;
                 padding: 0px 0 0 0;
                 overflow: hidden;
+
+                @include smallPhone(){
+                    height: 40vh;
+                    width: 100%;
+                    margin: 10px 0 0 0;
+                }
             }
         }
         // END Column1
 
         // Column2
-        .col2-container-1{
+        .col2-container-1-pemiluPage{
             display: flex;
             height: auto;
             width: 100%;
             padding: 30px 0 30px 0;
             overflow: hidden;
 
+            @include smallPhone(){
+                flex-direction: column;
+            }
+
             // Row1
-            .row1-col2{
+            .row1-col2-pemiluPage{
                 display: flex;
                 height: 20vh;
                 width: 50%;
@@ -222,7 +183,11 @@ $secondary : #f3f3f3;
                 align-items: center;
                 overflow: hidden;
 
-                .col1-row1{
+                @include smallPhone(){
+                    width: 100%;
+                }
+
+                .col1-row1-pemiluPage{
                     display: flex;
                     height: 100%;
                     width: 30%;
@@ -231,9 +196,13 @@ $secondary : #f3f3f3;
                     background-image: url(../../../img/pemilu25.jpg);
                     background-size: cover;
                     overflow: hidden;
+
+                    @include smallPhone(){
+                        background-position: center;
+                    }
                 }
 
-                .col2-row1{
+                .col2-row1-pemiluPage{
                     display: flex;
                     flex-direction: column;
                     height: 100%;
@@ -243,6 +212,10 @@ $secondary : #f3f3f3;
                     padding: 5px 20px 5px 20px;
                     overflow: hidden;
 
+                    @include smallPhone(){
+                        padding: 5px 10px 5px 0px;
+                    }
+
                     .txt-title{
                         display: flex;
                         font-size: 18px;
@@ -251,6 +224,10 @@ $secondary : #f3f3f3;
                         text-align: start;
                         margin: 1px;
                         overflow: hidden;
+
+                        @include smallPhone(){
+                            font-size: 15px;
+                        }
                     }
 
                     .txt-desk{
@@ -261,20 +238,29 @@ $secondary : #f3f3f3;
                         text-align: start;
                         margin: 1px;
                         overflow: hidden;
+
+                        @include smallPhone(){
+                            font-size: 10px;
+                        }
                     }
                 }
             }
             // END Row1
 
             // Row2
-            .row2-col2{
+            .row2-col2-pemiluPage{
                 display: flex;
                 height: 20vh;
                 width: 50%;
                 background: $colors;
                 overflow: hidden;
 
-                .col1-row2{
+                @include smallPhone(){
+                    width: 100%;
+                    margin: 10px 0 0 0;
+                }
+
+                .col1-row2-pemiluPage{
                     display: flex;
                     height: 100%;
                     width: 30%;
@@ -283,9 +269,13 @@ $secondary : #f3f3f3;
                     background-image: url(../../../img/pemilu26.jpg);
                     background-size: cover;
                     overflow: hidden;
+
+                    @include smallPhone(){
+                        background-position: center;
+                    }
                 }
 
-                .col2-row2{
+                .col2-row2-pemiluPage{
                     display: flex;
                     flex-direction: column;
                     height: 100%;
@@ -295,6 +285,10 @@ $secondary : #f3f3f3;
                     padding: 5px 20px 5px 20px;
                     overflow: hidden;
 
+                    @include smallPhone(){
+                        padding: 5px 10px 5px 0px;
+                    }
+
                     .txt-title{
                         display: flex;
                         font-size: 18px;
@@ -303,6 +297,10 @@ $secondary : #f3f3f3;
                         text-align: start;
                         margin: 1px;
                         overflow: hidden;
+                        
+                        @include smallPhone(){
+                            font-size: 15px;
+                        }
                     }
 
                     .txt-desk{
@@ -313,6 +311,10 @@ $secondary : #f3f3f3;
                         text-align: start;
                         margin: 1px;
                         overflow: hidden;
+
+                        @include smallPhone(){
+                            font-size: 10px;
+                        }
                     }
                 }
             }
@@ -323,7 +325,7 @@ $secondary : #f3f3f3;
     // END Container1
 
     // Container2
-    .container-2{
+    .container-2-pemiluPage{
         display: flex;
         flex-direction: column;
         position: relative;
@@ -335,17 +337,13 @@ $secondary : #f3f3f3;
         margin: 20px 0 20px 0;
         overflow: hidden;
 
-        img{
-            display: flex;
-            position: absolute;
-            height: 100%;
-            width: 150%;
-            background-position: center;
-            background-size: cover;
-            overflow: hidden;
+        @include smallPhone(){
+            height: 30vh;
+            width: 100%;
+            margin: 0;
         }
 
-        .jdl-col1{
+        .jdl-col1-pemiluPage{
             display: flex;
             flex-direction: row-reverse;
             height: 70%;
@@ -353,7 +351,7 @@ $secondary : #f3f3f3;
             overflow: hidden;
             z-index: 1;
 
-            .box-txt-jdl{
+            .box-txt-jdl-pemiluPage{
                 display: flex;
                 flex-direction: column-reverse;
                 height: 100%;
@@ -361,19 +359,29 @@ $secondary : #f3f3f3;
                 padding: 10px 10px 20px 10px;
                 margin: 0 100px 0 0;
                 overflow: hidden;
+
+                @include smallPhone(){
+                    width: 60%;
+                    padding: 10px;
+                    margin: 0 0 0 50px;
+                }
             }
 
-            .txt-jdl{
+            .txt-jdl-pemiluPage{
                 display: flex;
                 font-size: 20px;
                 font-weight: bold;
                 color: #000;
                 text-align: start;
                 overflow: hidden;
+
+                @include smallPhone(){
+                    font-size: 10px;
+                }
             }
         }
 
-        .btn-col2{
+        .btn-col2-pemiluPage{
             display: flex;
             flex-direction: row-reverse;
             height: 30%;
@@ -383,34 +391,15 @@ $secondary : #f3f3f3;
             z-index: 1;
             overflow: hidden;
 
-            .btn-lihat{
-                display: flex;
-                height: 35px;
-                width: 130px;
-                background: #eee;
-                border-radius: 20px;
-                border: none;
-                outline: none;
-                justify-content: center;
-                align-items: center;
-                overflow: hidden;
-                // For Font Btn
-                font-size: 11px;
-                font-weight: bold;
-                color: $colors;
-                transition: .5s;
-
-                &:hover{
-                    background: $colors;
-                    color: #fff;
-                }
+            @include smallPhone(){
+                padding: 0 50px 0 0 ;
             }
         }
     }
     // END Container2
 
     // Container3
-    .container-3{
+    .container-3-pemiluPage{
         display: flex;
         height: 60vh;
         width: 100%;
@@ -420,6 +409,19 @@ $secondary : #f3f3f3;
         padding: 0 10%;
         margin: 40px 0 80px 0;
         overflow: hidden;
+
+        @include smallPhone(){
+            padding: 0;
+        }
+
+        iframe{
+            display: flex;
+
+            @include smallPhone(){
+                width: 100%;
+                padding: 0 5px;
+            }
+        }
     }
     // END Container3
 }

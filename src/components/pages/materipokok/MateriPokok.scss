@@ -1,17 +1,35 @@
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+
 @import "../../../utilities/variable/variables.scss";
 
 
-.wrapperMateri {
+.wrapperMateriThumbnail {
     width: 100%;
-    padding: $padding;
 
-    .linkedMateri {
+    .linkedMateriThumbnail {
         display: flex;
         align-items: center;
         flex-direction: row;
         width: 40%;
         margin-top: 15px;
         // padding: 10px 10%;
+
+        @include smallPhone(){
+            width: 100%;
+            padding: 0 2%;
+        }
 
         i {
             span {
@@ -21,38 +39,23 @@
             }
         }
     }
-
-    // .bkbbText {
-    //     border-bottom: 1px solid rgba(45, 52, 54, 0.2);
-    //     width: 100%;
-    //     text-align: center;
-    //     // height: 10vh;
-    //     margin-top: 0px;
-
-    //     small {
-    //         cursor: pointer;
-    //         color: $colors;
-    //         // width: 100%;
-    //         text-align: center;
-    //         text-transform: uppercase;
-    //         font-weight: bold;
-    //         font-size: 8pt;
-    //         border-bottom: 5.5px solid $colors;
-    //     }
-    // }
 }
 
 // Container1
-.container1{
+.container1-materiThumbnail{
     display: flex;
     height: auto;
     width: 100%;
     margin: -40px 0 0 0;
+
+    @include smallPhone(){
+        margin: 0;
+    }
 }
 // END Container1
 
 // Container2
-.container2{
+.container2-materiThumbnail{
     display: flex;
     flex-direction: column;
     height: auto;
@@ -60,20 +63,33 @@
     margin: 0px 0 20px 0;
     padding: 0 10%;
 
+    @include smallPhone(){
+        margin: 0;
+        padding: 0;
+    }
+
     // Column Card Materi Pokok
-    .col-card-materi-pokok{
+    .col-card-materiThumbnail{
         display: flex;
         flex-direction: column;
         height: auto;
         width: 100%;
         margin: 40px 0 20px 0;
 
+        @include smallPhone(){
+            margin: 0 0 20px 0;
+        }
+
         // Row1
-        .row1{
+        .row1-materiThumbnail{
             display: flex;
             height: auto;
             width: 100%;
             padding: 10px 0;
+
+            @include smallPhone(){
+                flex-direction: column;
+            }
         }
         // END Row1
 
@@ -83,6 +99,10 @@
             height: auto;
             padding: 10px 0;
             width: 100%;
+
+            @include smallPhone(){
+                flex-direction: column;
+            }
         }
         // END Row2
 
@@ -92,6 +112,10 @@
             height: auto;
             padding: 10px 0;
             width: 100%;
+
+            @include smallPhone(){
+                flex-direction: column;
+            }
         }
         // END Row3
     }

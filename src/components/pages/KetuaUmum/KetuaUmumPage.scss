@@ -2,90 +2,35 @@
 $secondary : #f3f3f3;
 @import "../../../utilities/variable/variables.scss";
 
-// Responsive Max Width 500px
-@media screen and (max-width: 500px){
-    // Container1
-    .container-1{
-        padding: 0 !important;
-        
-        // Column3
-        .cardKetuaUmum {
-            display: flex;
-            flex-direction: column;
-        }
-        // END Column3
-
-        // Column5
-        .col5-container-1{
-            display: flex;
-            flex-direction: column !important;
-            height: 70vh !important;
-            padding: 0 10px !important;
-
-             // Row1
-             .row1-video-youtube{
-                display: flex;
-                height: 160% !important;
-                width: 100% !important;
-                margin: 0 0 10px 0 !important;
-            }
-            // END Row1
-
-            // Row2
-            .row2-img{
-                display: flex;
-                flex-direction: column-reverse;
-                height: 90% !important;
-                width: 100% !important;
-
-                .col-txt{
-                    display: flex;
-                    height: 50% !important;
-
-                    .jdl{
-                        display: flex;
-                        font-size: 20px !important;
-                    }
-                }
-            }
-            // END Row2
-        }
-        // END Column5
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
     }
-    // END Container1
-
-    // Container2
-    .container-2-ketuaumum{
-        display: flex;
-        padding: 0px 10px !important;
-    }
-    // END Container2
-
-    // Container3
-    .container-3{
-        display: flex;
-        flex-direction: column !important;
-        padding: 0 0 50px 0 !important;
-        margin: 0 !important;
-
-        .col4-cardContent-container-3{
-            display: flex;
-            flex-direction: column !important;
-        }
-    }
-    // END Container3
 }
-// END Responsive Max Width 500px
-
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 
 .wrapperKetuaUmum{
     width: 100%;
 
-    .headers {
+    .headers-ketuaumum {
         background: url(../../../img/pemilu8.jpg);
         background-size: cover;
         height: 25vh;
         background-position: center;
+
+        @include smallPhone(){
+            height: 20vh;
+        }
+
+        @include smallPhoneDua(){
+            height: 15vh;
+        }
 
         .backgrounds {
             background-color: rgba(255, 0, 8, 0.1);
@@ -103,23 +48,32 @@ $secondary : #f3f3f3;
             }
         }
     }
-    .linkedBerita {
+    .linkedKetuaumum {
         display: flex;
         align-items: center;
         flex-direction: row;
         width: 40%;
         margin-top: 15px;
         padding: $paddingSmall;
+
+        @include smallPhone(){
+            width: 100%;
+            padding: 0 2%;
+        }
     }
 
     // Container1
-    .container-1{
+    .container-1-ketuaUmum{
         display: flex;
         flex-direction: column;
         height: auto;
         width: 100%;
         padding: 0 10%;
         overflow: hidden;
+
+        @include smallPhone(){
+            padding: 0;
+        }
 
         // Column1
         .col1-container-1{
@@ -214,16 +168,28 @@ $secondary : #f3f3f3;
         // Column3
         .cardKetuaUmum {
             display: flex;
+
+            @include smallPhone(){
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+            }
         }
         // END Column3
 
         // Column5
-        .col5-container-1{
+        .col5-container-1-ketuaumum{
             display: flex;
             height: 70vh;
             width: 100%;
             margin: 30px 0 0px 0;
             overflow: hidden;
+
+            @include smallPhone(){
+                height: auto;
+                flex-direction: column;
+                padding: 0 5px;
+            }
 
             // Row1
             .row1-video-youtube{
@@ -232,6 +198,12 @@ $secondary : #f3f3f3;
                 width: 70%;
                 margin: 0 30px 0px 0;
                 overflow: hidden;
+                
+                @include smallPhone(){
+                    height: 50vh;
+                    width: 100%;
+                    margin: 0 0 10px 0;
+                }
 
                 iframe{
                     height: 121%;
@@ -250,6 +222,11 @@ $secondary : #f3f3f3;
                 background-size: cover;
                 overflow: hidden;
 
+                @include smallPhone(){
+                    height: 25vh;
+                    width: 100%;
+                }
+
                 .col-txt{
                     display: flex;
                     height: 30%;
@@ -258,6 +235,10 @@ $secondary : #f3f3f3;
                     padding: 5px 20px 5px 20px;
                     overflow: hidden;
 
+                    @include smallPhone(){
+                        height: 50%;
+                    }
+
                     .jdl{
                         display: flex;
                         font-size: 25px;
@@ -265,6 +246,10 @@ $secondary : #f3f3f3;
                         color: #fff;
                         margin: 1px;
                         overflow: hidden;
+
+                        @include smallPhone(){
+                            font-size: 20px;
+                        }
                     }
                 }
             }
@@ -285,18 +270,27 @@ $secondary : #f3f3f3;
     // END Container
 
     // Container3
-    .container-3{
+    .container-3-ketuaumum{
         display: flex;
         flex-direction: column;
         height: auto;
         width: 100%;
         padding: 0px 10% 50px 10%;
+        
+        @include smallPhone(){
+            flex-direction: column;
+            padding: 0 0px;
+        }
 
         // Column4
         .col4-cardContent-container-3 {
             display: flex;
             flex-direction: row;
             margin: 0px 0 0 0;
+
+            @include smallPhone(){
+                flex-direction: column;
+            }
         }
         // END Column4
     }

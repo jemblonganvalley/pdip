@@ -55,7 +55,7 @@ const BeritaPage = () => {
                 </div>
 
                 {/* Container1 */}
-                <div className="container-1">
+                <div className="container-1-beritaPage">
                     {/* Column1 */}
                     <CarouselBerita />
                     {/* END Column1 */}
@@ -96,7 +96,7 @@ const BeritaPage = () => {
                     {/* END Column3 */}
 
                     {/* Column4 */}
-                    <div className="col4-container-1">
+                    <div className="col4-container-1-beritaPage">
                         <MainDivider text="Berita Foto"
                             garisMerah="7rem"
                             m="1rem 0" />
@@ -104,9 +104,9 @@ const BeritaPage = () => {
                     {/* END Column4 */}
 
                     {/* Column5 */}
-                    <div className="col5-container-1-berita">
+                    <div className="col5-container-1-beritaPage">
                         {/* Row1 */}
-                        <div className="row1-col5">
+                        <div className="row1-col5-beritaPage">
                             <div className="box-img">
 
                             </div>
@@ -116,14 +116,14 @@ const BeritaPage = () => {
                         </div>
                         {/* END Row1 */}
                         {/* Row2 */}
-                        <Link to='/page2' className="row2-col5">
+                        <Link to='/page2' className="row2-col5-beritaPage">
                             {/* Column1 */}
-                            <div className="col1-row2">
+                            <div className="col1-row2-beritaPage">
 
                             </div>
                             {/* END Column1 */}
                             {/* Column2 */}
-                            <div className="col2-row2">
+                            <div className="col2-row2-beritaPage">
                                 <p className="txt-jdl-col2">
                                     Sekolah Sekretaris DPD & DPC PDI Perjuangan se Indonesia
                                 </p>
@@ -140,9 +140,9 @@ const BeritaPage = () => {
                 {/* END Container1 */}
 
                 {/* Container2 */}
-                <div className="container-2">
+                <div className="container-2-beritaPage">
                     {/* Column1 */}
-                    <div className="col1-container-2 banner-berita">
+                    <div className="col1-container-2-beritaPage banner-berita">
                         <p className="txt-title-col1">
                             Ut enim ad minim veniam, quis nostrud
                             <br /> exercitation ullamco laboris
@@ -150,7 +150,7 @@ const BeritaPage = () => {
                     </div>
                     {/* END Column1 */}
                     {/* Column2 */}
-                    <div className="col2-container-2">
+                    <div className="col2-container-2-beritaPage">
                         <MainButton name="LIHAT" />
                     </div>
                     {/* END Column2 */}
@@ -158,9 +158,9 @@ const BeritaPage = () => {
                 {/* END Container2 */}
 
                 {/* Container3 */}
-                <div className="container-3">
+                <div className="container-3-beritaPage">
                     {/* Column1 */}
-                    <div className="col1-container-3">
+                    <div className="col1-container-3-beritaPage">
                         <MainDivider text="Berita Daerah"
                             garisMerah="7rem"
                             m="1rem 0" />
@@ -168,7 +168,7 @@ const BeritaPage = () => {
                     {/* END Column1 */}
 
                     {/* Column2 */}
-                    <div className="col2-cardContent-container-3">
+                    <div className="col2-cardContent-container-3-beritaPage">
                         <Cards imageCard={pemilu18}
                             textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                             TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
@@ -188,7 +188,7 @@ const BeritaPage = () => {
                     {/* END Column2 */}
 
                     {/* Column3 */}
-                    <div className="col3-container-3">
+                    <div className="col3-container-3-beritaPage">
                         <MainDivider text="Kegiatan Partai"
                             garisMerah="7rem"
                             m="1rem 0" />
@@ -196,8 +196,8 @@ const BeritaPage = () => {
                     {/* END Column3 */}
 
                     {/* Column4 */}
-                    <div className="col4-cardContent-container-3">
-                        <div className="col2-cardContent-container-3">
+                    <div className="col4-cardContent-container-3-beritaPage">
+                        <div className="col2-cardContent-container-3-beritaPage">
                             <Cards imageCard={pemilu21}
                                 textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                                 TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
