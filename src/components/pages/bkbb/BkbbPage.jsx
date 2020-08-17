@@ -60,8 +60,8 @@ const BkbbPage = () => {
                         <div className="col col-lg-4 red-box-title ">
                             <h2>Lahirnya Pancasila <br />1 Juni 1945</h2>
                         </div>
-                        <div className="col col-lg-4 red-box-body">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quod delectus earum, eaque nemo saepe laboriosam vitae facilis eveniet repellendus unde ducimus temporibus iusto doloremque est illo. Ipsum, pariatur nulla.</p>
+                        <div className="txt2-redBox">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quod delectus earum, eaque nemo saepe laboriosam vitae facilis eveniet repellendus unde ducimu</p>
                         </div>
                     </div>
                 </div>
@@ -105,10 +105,10 @@ const BkbbPage = () => {
             </div>
 
             <div className="bannerBkbb">
-                <img src={Double} alt="" className="custom" />
+                <i className="fas fa-quote-right"></i>
                 <h4 className="custom">BARANG SIAPA JANG INGIN MUTIARA HARUS<br />BERANI TERJUN DI LAUTAN JANG DALAM. </h4>
                 <h5 className="custom">JANGANLAH LEMBEK, MOHON PADA TUHAN SUPAYA BANGSA INDONESIA<br />MEJADI SATU BANGSA YANG JAYA DI DUNIA, MENJADI BANGSA KUAT DAN TABAH</h5>
-                <img src={Double} alt="" className="custom" />
+                <i className="fas fa-quote-right"></i>
                 <small>Bung Karno, 17 Agustus 1946</small>
             </div>
 

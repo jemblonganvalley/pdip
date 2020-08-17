@@ -21,7 +21,6 @@ $secondary : #f3f3f3;
     // section lahirnya pancasil
     .lahirnyaPancasila{
         padding: 0px 8%;
-        border: 1px solid blue;
 
         @include smallPhone(){
             padding: 0 10px;
@@ -53,6 +52,10 @@ $secondary : #f3f3f3;
             border-left: .2px solid white;
             transition: .3s;
 
+            @include smallPhone(){
+                height: 35%;
+            }
+
             &:hover {
                 // background: rgba(47, 53, 66, .8);
                 background: #111;
@@ -64,50 +67,38 @@ $secondary : #f3f3f3;
                 font-size: 30pt;
                 text-align: left;
                 display: flex;
+                width: 30%;
                 justify-content: center;
                 align-items: center;
-                width: 40%;
-                padding: 20px;
-
-                @include smallPhone(){
-                    width: 10%;
-                    padding: 0px;
-                    margin: 0;
-                }
+                padding: 15px;
+                margin: 1px;
 
                 h2{
-                    padding: 0px;
-                    margin: 0px;
+                    display: flex;
 
                     @include smallPhone(){
                         font-size: 13px;
+                        padding: 0;
                     }
                 }
             }
 
-             .red-box-body{
-                padding: 20px;
-                width: 60%;
-                height: 100%;
-                // border: 1px solid green;
-                // font-size: 30pt;
-                text-align: left;
+            .txt2-redBox{
                 display: flex;
+                height: 100%;
+                width: 70%;
                 justify-content: center;
                 align-items: center;
-                border: 1px solid blue;
-
-                @include smallPhone(){
-                    width: 50%;
-                }
+                padding: 15px;
 
                 p{
-                    display: flex;
+                    font-size: 15px;
 
                     @include smallPhone(){
-                        font-size: 9px;
-                        padding: 0;
-                        margin: 0;
+                        font-size: 11px;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 1px;
                     }
                 }
             }
@@ -128,6 +119,21 @@ $secondary : #f3f3f3;
         align-items: center;
         padding: 60px 8%;
         // background-color: #bebebe;
+
+        @include smallPhone(){
+            height: 60vh;
+            padding: 30px 10px;
+        }
+    
+        iframe{
+            height: 80vh;
+            width: 100%;
+
+            @include smallPhone(){
+                height: 50vh;
+                width: 100%;
+            }
+        }
     }
 
     //section materi pokok pendukung
@@ -177,11 +183,16 @@ $secondary : #f3f3f3;
 
     .backGroundGray{
           width: 100vw;
-          height: 120vh;
+          height: 100vh;
           background-color: #5d5d5d;
           position: absolute;
           top: 44.3rem;
           z-index: -1;
+
+          @include smallPhone(){
+              height: 65vh;
+              top: 27.5rem;
+          }
       }
    
     .headers-bkbbPage {
@@ -242,12 +253,21 @@ $secondary : #f3f3f3;
         // border: 1px solid blue;
         padding: 20px 10%;
 
+        @include smallPhone(){
+            height: auto;
+            flex-direction: column;
+            padding: 0;
+        }
+
         .cardKolum {
             width: 100%;
             display: flex;
             flex-direction: row;
 
-            
+            @include smallPhone(){
+                height: auto;
+                flex-direction: column;
+            }
         }
     }
     .btnLihatSemua {
@@ -265,7 +285,7 @@ $secondary : #f3f3f3;
         align-items: center;
         flex-direction: column;
         width: 100%;
-        // height: 70vh;
+        height: 70vh;
 
         background: url(../../../img/kids.png);
         background-size: contain;
@@ -274,12 +294,44 @@ $secondary : #f3f3f3;
         color: #ffff;
         background-position: center;
         // font-family: 'Josefin Sans';
+        z-index: 100000;
+
+        @include smallPhone(){
+            height: 50vh;
+            background-size: cover;
+            background-attachment: inherit;
+            padding: 10px 0 0 0;
+        }
+
+        i{
+            font-size: 30px;
+
+            @include smallPhone(){
+                font-size: 20px;
+            }
+        }
+
+        h4{
+            @include smallPhone(){
+                font-size: 15px;
+            }
+        }
+
+        h5{
+            @include smallPhone(){
+                font-size: 15px;
+            }
+        }
 
         .custom {
             margin: 1rem;
             text-align: center;
             font-family: 'Roboto';
             font-weight: bold;
+
+            @include smallPhone(){
+                margin: 1.2rem;
+            }
         }
         small {
             margin: 1rem;
@@ -298,12 +350,23 @@ $secondary : #f3f3f3;
         align-items: center;
         padding: 50px 10% 0 10%;
 
+        @include smallPhone(){
+            padding: 0;
+            margin: 40px 0 0 0;  
+        }
+
         // Box1 Image
         .box1-image{
             display: flex;
             height: 45vh;
             width: 100%;
             padding: 10px 0 10px 0;
+
+            @include smallPhone(){
+                flex-direction: column;
+                height: auto;
+                padding: 0;
+            }
         }
         // END Box1 Image
     }
