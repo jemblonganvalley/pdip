@@ -51,6 +51,7 @@ $smallPhoneDua : 400px;
     // z-index: 2000;
     width: 100%;
     box-shadow: -1px 7px 30px -12px rgba(0,0,0,0.75);
+  
 
     @include responSatu() {
         padding: 20px 5%;
@@ -72,6 +73,11 @@ $smallPhoneDua : 400px;
         @include responTiga() {
             text-align: center;
         }
+
+        transition-duration: .2s;
+        transition-timing-function: ease;
+
+
     }
     
 
