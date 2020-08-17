@@ -14,25 +14,25 @@ import StrukturPaginate from '../../pagination/StrukturPaginate'
 const MateriPokok = () => {
     return (
         <>
-            <div className="wrapperMateri">
+            <div className="wrapperMateriThumbnail">
 
-                <div className="linkedMateri">
+                <div className="linkedMateriThumbnail">
                     <BreadCrumbs link1="Home" to1="/" link2="Bung Karno Bapak Bangsa" to2="/bungkarno" />
                 </div>
             </div>
 
             {/* Container1 */}
-            <div className="container1">
+            <div className="container1-materiThumbnail">
                 <MainDivider text="MATERI POKOK PENDUKUNG" />
             </div>
             {/* END Container1 */}
 
             {/* Container2 */}
-            <div className="container2">
+            <div className="container2-materiThumbnail">
                 {/* Column Card Materi Pokok */}
-                <div className="col-card-materi-pokok">
+                <div className="col-card-materiThumbnail">
                     {/* Row1 */}
-                    <div className="row1">
+                    <div className="row1-materiThumbnail">
                         <Cards imageCard={bkbb5}
                             TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" borderRadius="10px" />
                         <Cards imageCard={bkbb6}

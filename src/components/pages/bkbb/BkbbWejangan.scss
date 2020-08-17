@@ -1,13 +1,35 @@
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+
 $secondary : #f3f3f3;
 
 .wrapperBkbbWejangan{
     width: 100%;
 
-    .headers {
+    .headersBkbbWejangan {
         background: url(../../../img/BKBB.jpg);
         background-size: cover;
         height: 25vh;
         background-position: center;
+
+        @include smallPhone(){
+            height: 20vh;
+        }
+
+        @include smallPhoneDua(){
+            height: 15vh;
+        }
 
         .backgrounds {
             width: 100%;
@@ -24,13 +46,19 @@ $secondary : #f3f3f3;
             }
         }
     }
-    .linkedBerita {
+    .linkedBkbbWejangan {
         display: flex;
         align-items: center;
         flex-direction: row;
         width: 40%;
         margin-top: 20px;
         padding: 10px 10%;
+
+        @include smallPhoneDua(){
+            width: 100%;
+            padding: 0 2%;
+        }   
+
         i {
             span {
                 margin-left: 5px;
@@ -41,21 +69,30 @@ $secondary : #f3f3f3;
     }
 
     // Container1
-    .container-1{
+    .container-1-bkbbWejangan{
         display: flex;
         flex-direction: column;
         height: auto;
         width: 100%;
         padding: 0 10%;
 
+        @include smallPhone(){
+            padding: 0 0px;
+        }
+
         // Column1
-        .col1-container-1{
+        .col1-container-1-bkbbWejangan{
             display: flex;
             height: 55vh;
             width: 100%;
 
+            @include smallPhone(){
+                height: auto;
+                flex-direction: column;
+            }
+
             // Row1
-            .row1{
+            .row1-bkbbWejangan{
                 display: flex;
                 flex-direction: column;
                 height: 100%;
@@ -67,6 +104,11 @@ $secondary : #f3f3f3;
                 margin: 0 20px 0 0;
                 color : #fff;
 
+                @include smallPhone(){
+                    height: 60vh;
+                    width: 100%;
+                }
+
                 i{
                     display: flex;
                     font-size: 20px;
@@ -74,6 +116,10 @@ $secondary : #f3f3f3;
                     justify-content: center;
                     align-items: center;
                     margin: 10px 0;
+
+                    @include smallPhone(){
+                        font-size: 18px;
+                    }
                 }
 
                 .txt1{
@@ -82,6 +128,10 @@ $secondary : #f3f3f3;
                     font-weight: 500;
                     margin: 1px;
                     text-align: center;
+
+                    @include smallPhone(){
+                        font-size: 20px;
+                    }
                 }
 
                 .txt2{
@@ -90,6 +140,10 @@ $secondary : #f3f3f3;
                     font-weight: 500;
                     margin: 1px;
                     text-align: center;
+
+                    @include smallPhone(){
+                        font-size: 13px;
+                    }
                 }
 
                 .txt3{
@@ -99,23 +153,35 @@ $secondary : #f3f3f3;
                     align-items: center;
                     margin: 20px 0 0 0;
                     text-align: center;
+
+                    @include smallPhone(){
+                        font-size: 13px;
+                    }
                 }
             }
             // END Row1
 
             // Row1
-            .row2{
+            .row2-bkbbWejangan{
                 display: flex;
                 flex-direction: column;
                 height: 100%;
                 width: 60%;
 
+                @include smallPhone(){
+                    width: 100%;
+                    padding: 0 10px;
+                }
+
                 .txt1{
                     display: flex;
                     font-size: 11px;
-                    font-weight: 500;
                     text-align: start;
                     color: #d80010 !important;
+
+                    @include smallPhone(){
+                        margin: 15px 0 0 0;
+                    }
                 }
 
                 .txt2{
@@ -124,6 +190,11 @@ $secondary : #f3f3f3;
                     font-weight: 500;
                     text-align: start;
                     color: #000;
+
+                    @include smallPhone(){
+                        font-size: 15px;
+                        margin: 10px 0 0 0;
+                    }
                 }
 
                 .txt3{
@@ -131,6 +202,10 @@ $secondary : #f3f3f3;
                     font-size: 13px;
                     text-align: start;
                     color: #000;
+
+                    @include smallPhone(){
+                        font-size: 12px;
+                    }
                 }
 
                 .txt4{
@@ -138,13 +213,21 @@ $secondary : #f3f3f3;
                     font-size: 13px;
                     text-align: start;
                     color: #000;
+
+                    @include smallPhone(){
+                        font-size: 12px;
+                    }
                 }
 
-                .box-medsos{
+                .box-medsos-bkbbWejangan{
                     display: flex;
                     flex-direction: column-reverse;
                     height: 50%;
                     width: 100%;
+
+                    @include smallPhone(){
+                        margin: 10px 0 0 0;
+                    }
 
                     .socialMedia {
                         margin: 0px 0 0 0;
@@ -175,7 +258,7 @@ $secondary : #f3f3f3;
     // END Container1
 
     // Container2
-    .container-2{
+    .container-2-bkbbWejangan{
         display: flex;
         flex-direction: column;
         height: 65vh;
@@ -184,13 +267,24 @@ $secondary : #f3f3f3;
         margin: 30px 0 0 0;
         background: #333;
 
+        @include smallPhone(){
+            height: auto;
+            padding: 0 20px;
+        }
+
         // Column1
-        .col1-container-2{
+        .col1-container-2-bkbbWejangan{
             display: flex;
             height: 75%;
             width: 100%;
             padding: 10px 10px 25px 10px;
             align-items: center;
+
+            @include smallPhone(){
+                flex-direction: column;
+                height: auto;
+                padding: 0;
+            }
         }
         // END Column1
 

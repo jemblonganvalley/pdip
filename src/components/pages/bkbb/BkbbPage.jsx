@@ -38,15 +38,15 @@ const BkbbPage = () => {
     }, [])
 
     return (
-        <div className="wrapperBkbb">
-            <div className="headers-bkbb">
+        <div className="wrapperBkbbPage">
+            <div className="headers-bkbbPage">
                 <div className="backgrounds-bkbb">
                     {/* <div className="textBackgroundPartai">
                         <h2>Solid Bergerak Untuk<br/>Indonesia Raya </h2>
                     </div> */}
                 </div>
             </div>
-            <div className="linkedBkbb">
+            <div className="linkedBkbbPage">
                 <BreadCrumbs link1="Home"
                     to1="/"
                     page2="Bung Karno Bapak Bangsa"

@@ -1,20 +1,43 @@
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+
 $secondary : #f3f3f3;
 @import "../../../utilities/variable/variables.scss";
 
 
-.wrapperBkbb {
+.wrapperBkbbPage {
     width: 100%;
     // section lahirnya pancasil
     .lahirnyaPancasila{
         padding: 0px 8%;
-      
+        border: 1px solid blue;
 
+        @include smallPhone(){
+            padding: 0 10px;
+        }
+      
         .box-lahirnyaPancasila{
             height: 75.1vh;
             background-image: url(../../../img/BKBB_BungKarno.jpg);
             background-size: cover;
             padding: 0px;
             position: relative;
+
+            @include smallPhone(){
+                height: 50vh;
+                background-position: center;
+            }
 
             .redBox{
              width: 100%;
@@ -46,9 +69,19 @@ $secondary : #f3f3f3;
                 width: 40%;
                 padding: 20px;
 
+                @include smallPhone(){
+                    width: 10%;
+                    padding: 0px;
+                    margin: 0;
+                }
+
                 h2{
                     padding: 0px;
                     margin: 0px;
+
+                    @include smallPhone(){
+                        font-size: 13px;
+                    }
                 }
             }
 
@@ -62,6 +95,21 @@ $secondary : #f3f3f3;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                border: 1px solid blue;
+
+                @include smallPhone(){
+                    width: 50%;
+                }
+
+                p{
+                    display: flex;
+
+                    @include smallPhone(){
+                        font-size: 9px;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
             }
         }
         
@@ -136,11 +184,19 @@ $secondary : #f3f3f3;
           z-index: -1;
       }
    
-    .headers-bkbb {
+    .headers-bkbbPage {
         background: url(../../../img/BKBB_Header.jpg);
         background-size: cover;
         height: 25vh;
         background-position: center;
+
+        @include smallPhone(){
+            height: 20vh;
+        }
+
+        @include smallPhoneDua(){
+            height: 15vh;
+        }
 
         .backgrounds-bkbb {
             background-color: #0000;
@@ -158,13 +214,18 @@ $secondary : #f3f3f3;
             }
         }
     }
-    .linkedBkbb {
+    .linkedBkbbPage {
         display: flex;
         align-items: center;
         flex-direction: row;
         width: 40%;
         margin-top: 20px;
         padding: $paddingTiny;
+
+        @include smallPhone(){
+            width: 100%;
+            padding: 0 2%;
+        }
     }
 
     .wrapper3 {

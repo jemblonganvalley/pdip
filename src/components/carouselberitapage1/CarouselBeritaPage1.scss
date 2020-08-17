@@ -1,3 +1,17 @@
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+
 // Section2
 .carousel-berita-page1{
     display: flex;
@@ -6,6 +20,10 @@
     background: #555;
     margin: 20px 0 20px 0;
     overflow: hidden;
+
+    @include smallPhone(){
+        height: 40vh;
+    }
 
     .carousel-inner{
         height: 100%;
@@ -16,6 +34,11 @@
             width: 100%;
             background-image: url(../../img/detailartikel2.jpg);
             background-size: cover;
+
+            @include smallPhone(){
+                background-attachment: inherit;
+                background-position: center;
+            }
         }
 
         .img2{

@@ -1,3 +1,17 @@
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+
 // Row1
 .carousel-berita-page2{
     display: flex;
@@ -7,6 +21,11 @@
     background: #555;
     margin: 0px 20px 0px 0;
     overflow: hidden;
+
+    @include smallPhone(){
+        height: 40vh;
+        width: 100%;
+    }
 
     .carousel-inner{
         position: relative;

@@ -7,7 +7,7 @@ const CardQuotes = ({ page, img, icon1, txt1, icon2, txt2 }) => {
     return (
         <>
             {/* Img */}
-            <Link to={page} className="img" style={{
+            <Link to={page} className="imgQuotes" style={{
                 backgroundImage: `url(${img})`,
                 textDecoration: 'none'
             }}>
