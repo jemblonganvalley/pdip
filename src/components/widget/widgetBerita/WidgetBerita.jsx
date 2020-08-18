@@ -42,7 +42,8 @@ const WidgetBerita = ({name, col, width, margin}) => {
                             background : `url(${e.image})`,
                             padding : '20px',
                             position : 'relative',
-                            backgroundRepeat : 'no-repeat'
+                            backgroundRepeat : 'no-repeat',
+                            width : '100%'
                         }}>
                             <h3 style={{
                                 position : 'absolute',
