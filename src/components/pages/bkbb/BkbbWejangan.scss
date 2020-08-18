@@ -170,7 +170,10 @@ $secondary : #f3f3f3;
 
                 @include smallPhone(){
                     width: 100%;
-                    padding: 0 10px;
+                    padding: 0 20px;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
                 }
 
                 .txt1{
@@ -192,8 +195,12 @@ $secondary : #f3f3f3;
                     color: #000;
 
                     @include smallPhone(){
-                        font-size: 15px;
+                        font-size: 20px;
+                        font-weight: bold;
                         margin: 10px 0 0 0;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
                     }
                 }
 
@@ -205,6 +212,9 @@ $secondary : #f3f3f3;
 
                     @include smallPhone(){
                         font-size: 12px;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
                     }
                 }
 
@@ -216,6 +226,9 @@ $secondary : #f3f3f3;
 
                     @include smallPhone(){
                         font-size: 12px;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
                     }
                 }
 
@@ -227,6 +240,9 @@ $secondary : #f3f3f3;
 
                     @include smallPhone(){
                         margin: 10px 0 0 0;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
                     }
 
                     .socialMedia {
@@ -237,11 +253,19 @@ $secondary : #f3f3f3;
                         small {
                             color: #000000;
                             margin-right: 10px;
+
+                            @include smallPhone(){
+                                font-size: 12px;
+                            }
                         }
 
                         i {
                             margin: 0 10px;
                             transition: .3s;
+
+                            @include smallPhone(){
+                                font-size: 13px;
+                            }
         
                             &:hover {
                                 color: #c70000;
