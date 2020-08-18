@@ -60,8 +60,8 @@ $smallPhoneDua : 400px;
         }
         
         h1 {
-            width: 50%;
-            font-size: 20pt;
+            width: 60%;
+            font-size: 25pt;
             text-transform: uppercase;
             margin-bottom: 2em;
             
@@ -80,8 +80,8 @@ $smallPhoneDua : 400px;
 
         }
         p {
-            font-size: 10pt;
-            width: 50%;
+            font-size: 13pt;
+            width: 60%;
 
             @include smallPhone() {
                 font-size: 6pt;
