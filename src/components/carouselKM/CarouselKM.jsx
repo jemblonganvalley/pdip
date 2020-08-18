@@ -14,7 +14,7 @@ const CarouselKM = ()=> {
 
     return (
         <div className="wrapperKM">
-            <div className="ketuaUmum">
+            <div className="KM">
                 <div className="row rowCustom">
                     <div className="col-lg-6 carousels">
                         

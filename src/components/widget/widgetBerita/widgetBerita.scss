@@ -17,15 +17,12 @@ $smallPhoneDua : 400px;
     width: 100%;
     display: flex;
     padding: $padding;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
     @include smallPhone() {
         display: none;
     }
-
-    
 
     .carousel-inner{
         background: none;

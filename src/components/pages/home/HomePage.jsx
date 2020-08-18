@@ -167,15 +167,9 @@ const HomePage = ()=> {
                 <MainDivider text="Berita Terbaru "/>
             </div>
             <div className="wrapperWidget">
-                <WidgetBerita name="berita" col="7" />
-                <div className="verticalDivider" style={{
-                    width : '2px',
-                    height : '50vh',
-                    display : 'flex',
-                    margin : '10px'
-                    
-                }}></div>
-                <WidgetBerita name="beritaFoto" col="4" />
+                <WidgetBerita name="berita" width="70%" />
+                
+                <WidgetBerita name="beritaFoto" width="30%"  />
             </div>
             <div className="widgetMobile">
                 <WidgetBerita width="100%" name="berita" />

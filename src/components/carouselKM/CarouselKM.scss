@@ -14,18 +14,22 @@ $smallPhoneDua : 400px;
     }
 }
 
-.ketuaUmum {
+.KM {
     width: 100%;
-    height: auto;
-    // outline: 1px solid crimson;
+    height: 60vh;
     box-sizing: content-box;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @include smallPhoneDua() {
+        height: auto;
+    }
+
+    @include smallPhoneDua() {
         padding: 5px;
         box-sizing: border-box;
+        height: auto;
     }
 
     
@@ -72,6 +76,8 @@ $smallPhoneDua : 400px;
         background-size: cover;
 
         @include smallPhone() {
+            background: url(../../img/megawati4.jpg);
+
             height: 40vh;
         }
 
