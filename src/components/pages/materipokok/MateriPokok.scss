@@ -51,7 +51,7 @@ $smallPhoneDua : 400px;
 
     @include smallPhone(){
         margin: 0;
-        padding: 0;
+        padding: 0 10px;
     }
 }
 // END Container1

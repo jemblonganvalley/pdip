@@ -469,6 +469,10 @@ $secondary : #f3f3f3;
                     align-items: center;
                     justify-content: center;
                     overflow: hidden;
+
+                    @include smallPhone(){
+                        padding: 0 10px;
+                    }
         
                     .col-title-berita-terbaru-beritaPage1{
                         display: flex;

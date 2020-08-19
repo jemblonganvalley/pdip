@@ -54,7 +54,7 @@ $secondary : #f3f3f3;
         margin-top: 20px;
         padding: 10px 10%;
 
-        @include smallPhoneDua(){
+        @include smallPhone(){
             width: 100%;
             padding: 0 2%;
         }   

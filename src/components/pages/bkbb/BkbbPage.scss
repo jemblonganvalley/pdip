@@ -244,6 +244,10 @@ $secondary : #f3f3f3;
         width: 100%;
         padding: 20px 10%;
         flex-direction: column;
+
+        @include smallPhone(){
+            padding: 0 10px;
+        }
     }
     
     .wrapperCard {
