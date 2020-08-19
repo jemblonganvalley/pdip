@@ -289,25 +289,7 @@ const MainNavbar = ()=> {
       console.log(show);
     }
 
-    const handleCollapse =  ()=>{
-      window.addEventListener('scroll', function(){
-        setCollapse(false)
-        // console.log(show);
-      })
-    }
 
-    const handleHide = ()=>{
-      setTimeout(()=>{
-        setCollapse(true)
-      },100)
-    }
-
-    useEffect(()=>{
-
-      handleCollapse()
-
-
-    },[show])
 
     return (
       // START NAVBAR
@@ -370,10 +352,10 @@ const MainNavbar = ()=> {
               <NavLink className="navbar-brand" to="/" activeClassName="brand" >
                 <img src={logo} alt="" width="60"  className="d-inline-block align-center active" loading="lazy" />
               </NavLink>
-              <button className={collapse ? "navbar-toggler collapse" : "navbar-toggler "} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" onClick={handleHide}>
+              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" >
                 <i class="fa fa-bars" aria-hidden="true"></i>
               </button>
-              <div className={collapse ? "collapse navbar-collapse show" : "collapse navbar-collapse"} id="navbarSupportedContent">
+              <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
 
                  {menu.map((e)=>(
