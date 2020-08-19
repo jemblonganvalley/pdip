@@ -1,11 +1,40 @@
 @import "../../utilities/variable/variables.scss";
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+
 
 .dropdownMenu{
 
+    position: absolute;
+    width: 200px;
+    background: #343a40;
+    
+    @include smallPhone() {
+        position: initial;
+        width: 100%;
+        background: rgba(150, 0, 1, .7);
+        transition: .3s;
+        
+    }
     
     .list-group-item{
         background-color : #0000 !important;
-
+        
+        @include smallPhone() {
+            border: none;
+        }
     }
 
     a {
@@ -17,6 +46,26 @@
             // font-weight: 600;
 
         }
+    }
+
+    .arrow {
+        position: absolute;
+            width: 11px;
+            height: 11px;
+            top: -5.5px;
+            left: 34.5px;
+            background-color: #2d3436;
+            transform: rotate(45deg);
+            z-index: -100;
+            cursor: pointer;
+            transition: .3s;
+            @include smallPhone() {
+                display: none;
+            }
+    }
+
+    .list-group-item:first-of-type:hover ~ .arrow {
+        background-color: $colors;
     }
 
 }

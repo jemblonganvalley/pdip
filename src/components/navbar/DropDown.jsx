@@ -5,11 +5,7 @@ const DropDown = ({menuItem}) => {
 
 
   return (
-       <div className="list-group dropdownMenu bg-dark" style={{
-           position : 'absolute',
-           width : '200px',
-            
-       }}>
+       <div className="list-group dropdownMenu">
            <span></span>
             {menuItem.map((e)=>(
                 <a href={e.listTo} className="list-group-item"  
@@ -17,7 +13,7 @@ const DropDown = ({menuItem}) => {
                 >{e.listName}</a>
             ))}
           
-            
+            <div className="arrow"></div>
         </div>
   )
 }
