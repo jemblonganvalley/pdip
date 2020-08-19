@@ -65,13 +65,12 @@ $smallPhoneDua : 400px;
     @include smallPhone() {
         padding: 5px 7%;
         background-size: cover;
-
     }
 
     .navbar-collapse {
         
         @include responTiga() {
-            text-align: center;
+            text-align: left;
         }
 
         transition-duration: .2s;
@@ -101,6 +100,7 @@ $smallPhoneDua : 400px;
     }
     .navbar-nav {
         list-style: none;
+        
         li {
             font-size: 9pt;
             text-transform: 
@@ -136,6 +136,10 @@ $smallPhoneDua : 400px;
                     color: #ffffff;
                    
             }
+        }
+        .nav-link {
+            position: relative;
+            
         }
     }
 

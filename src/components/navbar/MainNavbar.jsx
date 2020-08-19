@@ -377,19 +377,24 @@ const MainNavbar = ()=> {
                 <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
 
                  {menu.map((e)=>(
-                    <li className="nav-item dropdown" style={{
+                    <li className="nav-item" style={{
                     position : 'relative'
                   }} 
                     key={e.id}
+                    onClick={()=> {
+                        setShow(e.name)
+                    }}
                   >
-                    <NavLink className="nav-link dropdown-toggle" to={e.to} activeClassName='active'>{e.name}</NavLink>
-
-                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown" expanded>
+                    <NavLink className="nav-link" to={e.to} activeClassName='active'>{e.name}</NavLink>
+                    {show === e.name && (
+                          <DropDown menuItem={e.listItem}/>
+                      )}
+                    {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown" expanded>
                       {e.listItem.map((e)=>(
                         <li><Link class="dropdown-item" to={e.listTo}>{e.listName}</Link></li>
                         
                       ))}
-                    </ul>
+                    </ul> */}
 
 
                   </li>
@@ -397,7 +402,7 @@ const MainNavbar = ()=> {
                
                 </ul>
                 <form className="d-inline-flex">
-                  <input className="form-control mr-2" type="text" placeholder="Search for something" name="search" />
+                  <input className="form-control mr-2" type="text" placeholder="cari sesuatu" name="search" />
                   <button name="submit">
                       <i class="fa fa-long-arrow-right" aria-hidden="true" name="icon" ></i>
                   </button>
