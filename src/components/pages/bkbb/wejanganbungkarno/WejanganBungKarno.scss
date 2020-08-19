@@ -22,7 +22,7 @@ $smallPhoneDua : 400px;
         flex-direction: row;
         width: 40%;
         margin-top: 15px;
-        // padding: 10px 10%;
+        padding: 10px 10%;
 
         @include smallPhone(){
             width: 100%;
@@ -64,10 +64,12 @@ $smallPhoneDua : 400px;
     display: flex;
     height: auto;
     width: 100%;
-    margin: -40px 0 0 0;
+    margin: 0px 0 0 0;
+    padding: 0 10%;
 
     @include smallPhone(){
         margin: 0;
+        padding: 0;
     }
 }
 // END Container1

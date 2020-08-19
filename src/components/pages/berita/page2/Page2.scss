@@ -109,6 +109,7 @@ $secondary : #f3f3f3;
                     height: auto;
                     width: 100%;
                     padding: 1px;
+                    justify-content: center;
                     align-items: center;
 
                     @include smallPhone(){
