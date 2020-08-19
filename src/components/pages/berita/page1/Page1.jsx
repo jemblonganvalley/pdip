@@ -8,6 +8,7 @@ import '../page1/Page1.scss'
 import BreadCrumbs from '../../../breadcrumbs/BreadCrumbs'
 import Cards from '../../../cards/MainCards'
 import CarouselBeritaPage1 from '../../../carouselberitapage1/CarouselBeritaPage1'
+import MainDivider from '../../../divider/MainDivider'
 
 const Page1 = () => {
 
@@ -162,16 +163,9 @@ const Page1 = () => {
                         <div className="section6-beritaPage1">
                             {/* Column1 */}
                             <div className="col1-section6-beritaPage1">
-                                <div className="col-title-berita-terbaru-beritaPage1">
-                                    <p className="txt-berita-terbaru">
-                                        BERITA TERBARU
-                                    </p>
-                                </div>
-                                <div className="col-garis-lurus">
-                                    <div className="garis-merah">
-
-                                    </div>
-                                </div>
+                                <MainDivider text="Berita Terbaru"
+                                    garisMerah="7rem"
+                                    m="1rem 0" />
                             </div>
                             {/* END Column1 */}
 
