@@ -1,158 +1,160 @@
-// Responsive Max Width 500px
-@media screen and (max-width : 500px){
-    .box-carousel-beritaPage{
-        height: 60vh !important;
-        padding: 0 !important;
-        margin: 0;
-
-        // Column1
-        .box1-beritaPage{
-            height: 60vh !important;
-
-            .box-txt-title{
-                height: 100%;
-
-                h1{
-                    font-size: 20px !important;
-                }
-            }
-        }
-        // END Column1
-
-        // Column2
-        .col2-img{
-            height: 30%;
-
-            .garis-strip-col2{
-                width: 130px !important;
-                margin: -2px 0 0 30px !important; 
-             }
-
-            .box-txt-desk-col2{
-                display: flex;
-                padding: 15px 30px 0 30px !important; 
-
-                .txt-admin{
-                    font-size: 7px !important;
-                    padding: 2px 0 !important;
-                }
-    
-                .txt-desk-col2{
-                    font-size: 10px !important;
-                }
-            }
-        }
-        // END Column2
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
     }
 }
-// END Responsive Max Width 500px
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
 
-.carousel-beritaPage{
-    overflow: hidden;
 
-    .box-carousel-beritaPage{
+.container-carousel-beritaPage{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    background: #555;
+
+    @include smallPhone(){
+        height: 65vh;
+    }
+
+    .indicatorKetuaUmum{
         display: flex;
-        height: 80vh;
-        width: 100%;
 
-            .box1-beritaPage{
+        li{
+            margin: -200px 10px 0 0;
+        }
+    }
+
+    .carousel-beritaPage{
+        display: flex;
+        overflow: hidden;
+
+        .col1-container-1-beritaPage{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+            background-image: url(../../img/ketuaumum6.jpg);
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+
+            .cont-img-col1-beritaPage{
                 display: flex;
                 flex-direction: column;
-                height: 100%;
+                height: 80vh;
                 width: 100%;
-                background-image: url(../../img/ketuaumum6.jpg);
-                background-position: center;
-                background-size: cover;
                 overflow: hidden;
-        
-                .cont-img-col1{
+
+                @include smallPhone(){
+                    height: 65vh;
+                }
+
+                // Column1
+                .col1-img-beritaPage{
                     display: flex;
-                    flex-direction: column;
-                    height: 100%;
+                    height: 70%;
                     width: 100%;
                     overflow: hidden;
-        
-                    // Column1
-                    .col1-img{
+                    border-bottom: 1px solid #fff;
+
+                    .box-txt-title-beritaPage{
                         display: flex;
-                        height: 70%;
-                        width: 100%;
+                        height: 100%;
+                        width: auto;
+                        justify-content: center;
+                        align-items: center;
                         overflow: hidden;
-                        border-bottom: 1px solid #fff;
-        
-                        .box-txt-title{
+
+                        h1{
                             display: flex;
-                            height: 100%;
-                            width: auto;
-                            justify-content: center;
-                            align-items: center;
+                            font-size: 30px;
+                            color: #fff;
+                            padding: 25% 20% 20% 20%;
                             overflow: hidden;
-        
-                            h1{
-                                display: flex;
-                                font-size: 30px;
-                                color: #fff;
-                                padding: 25% 20% 20% 20%;
-                                overflow: hidden;
+
+                            @include smallPhone(){
+                                font-size: 20px;
                             }
-                        }  
+                        }
+                    }  
+                }
+                // END Column1
+
+                // Column2
+                .col2-img-beritaPage{
+                    display: flex;
+                    flex-direction: column;
+                    height: 30%;
+                    width: 100%;
+                    background-color: rgba(255, 0, 8, 0.6);
+                    overflow: hidden;
+
+                    @include smallPhone(){
+                        height: auto;
                     }
-                    // END Column1
-        
-                    // Column2
-                    .col2-img{
+
+                    .garis-strip-col2-beritaPage{
+                        display: flex;
+                        position: absolute;
+                        height: 2.5px;
+                        width: 230px;
+                        background: #fff;
+                        border-radius: 2px;
+                        margin: -2px 0 0 65px;
+                        overflow: hidden;
+
+                        @include smallPhone(){
+                            width: 130px;
+                            margin: -2px 0 0 30px;
+                        }
+                    }
+
+                    .box-txt-desk-col2-beritaPage{
                         display: flex;
                         flex-direction: column;
-                        height: 30%;
+                        height: 100%;
                         width: 100%;
-                        background-color: rgba(255, 0, 8, 0.6);
+                        padding: 20px 65px 0 65px;
                         overflow: hidden;
-        
-                        .garis-strip-col2{
-                            display: flex;
-                            position: absolute;
-                            height: 2.5px;
-                            width: 230px;
-                            background: #fff;
-                            border-radius: 2px;
-                            margin: -2px 0 0 65px;
-                            overflow: hidden;
+
+                        @include smallPhone(){
+                            height: auto;
+                            padding: 15px 30px 0 30px;
                         }
-        
-                        .box-txt-desk-col2{
+
+                        .txt-admin-beritaPage{
                             display: flex;
-                            flex-direction: column;
-                            height: 100%;
-                            width: 100%;
-                            padding: 20px 65px 0 65px;
+                            font-size: 12px;
+                            color: #fff;
                             overflow: hidden;
-        
-                            .txt-admin{
-                                display: flex;
-                                font-size: 12px;
-                                color: #fff;
-                                overflow: hidden;
+
+                            @include smallPhone(){
+                                font-size: 7px;
+                                padding: 2px 0;
                             }
-        
-                            .txt-desk-col2{
-                                display: flex;
-                                font-size: 15px;
-                                font-weight: 500;
-                                color: #fff;
-                                overflow: hidden;
+                        }
+
+                        .txt-desk-col2-beritaPage{
+                            display: flex;
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: #fff;
+                            overflow: hidden;
+
+                            @include smallPhone(){
+                                font-size: 10px;
                             }
                         }
                     }
-                    // END Column2
-                
-            }  
-            
-            .box2-beritaPage{
-                display: flex;
-                height: 100%;
-                width: 100%;
-                background: #444;
+                }
+                // END Column2
             }
-        } 
+        }
     }
 }

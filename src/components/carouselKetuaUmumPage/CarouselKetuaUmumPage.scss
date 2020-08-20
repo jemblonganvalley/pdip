@@ -16,10 +16,10 @@ $smallPhoneDua : 400px;
     display: flex;
     height: 80vh;
     width: 100%;
-    background: #555;
+    background: #aaa;
 
     @include smallPhone(){
-        height: 60vh;
+        height: 65vh;
     }
 
     .indicatorKetuaUmum{
@@ -52,7 +52,7 @@ $smallPhoneDua : 400px;
                 overflow: hidden;
 
                 @include smallPhone(){
-                    height: 60vh;
+                    height: 65vh;
                 }
 
                 // Column1
@@ -95,6 +95,10 @@ $smallPhoneDua : 400px;
                     background-color: rgba(255, 0, 8, 0.6);
                     overflow: hidden;
 
+                    @include smallPhone(){
+                        height: auto;
+                    }
+
                     .garis-strip-col2{
                         display: flex;
                         position: absolute;
@@ -120,6 +124,7 @@ $smallPhoneDua : 400px;
                         overflow: hidden;
 
                         @include smallPhone(){
+                            height: auto;
                             padding: 15px 30px 0 30px;
                         }
 

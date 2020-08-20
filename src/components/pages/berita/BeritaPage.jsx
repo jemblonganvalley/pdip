@@ -128,7 +128,7 @@ const BeritaPage = () => {
                                     Sekolah Sekretaris DPD & DPC PDI Perjuangan se Indonesia
                                 </p>
                                 <p className="txt-desk-col2">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo ipsum modi provident ut molestiae iure, reiciendis dicta dolores, omnis sit. Praesentium quasi, numquam sint pariatur illo quaerat velit dolor!quasi, numquam sint pariatur illo quaerat velit dolor! sint pariatur illo quaerat velit dolor!
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo ipsum modi provident ut molestiae iure, reiciendis dicta dolores, omnis sit. Praesentium quasi, numquam sint pariatur illo quaerat velit dolor!quasi, numqua.
                                 </p>
                             </div>
                             {/* END Column2 */}
