@@ -447,5 +447,14 @@ $smallPhoneDua : 400px;
             }
         }
         // END
+        .widgetDesktop {
+            display: flex;
+            justify-content: space-between;
+            padding: $padding;
+            width: 100%;
 
+            @include smallPhone() {
+                display: none;
+            }
+        }
 }

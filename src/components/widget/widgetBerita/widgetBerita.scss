@@ -17,7 +17,6 @@ $smallPhoneDua : 400px;
     width: 100%;
     display: flex;
     padding: $padding;
-    justify-content: center;
     align-items: center;
 
     @include smallPhone() {
@@ -25,9 +24,7 @@ $smallPhoneDua : 400px;
     }
 
     .carousel-inner{
-        background: none;
-
-        
+        border: 1px solid blue;
     }
 
     .wbCarousel{

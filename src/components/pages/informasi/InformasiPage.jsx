@@ -20,6 +20,7 @@ import MainDivider from '../../divider/MainDivider'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import WidgetBerita from '../../widget/widgetBerita/WidgetBerita'
 import CardInformasi from '../../cardInformasi/CardInformasi'
+import WidgetBaru from '../../widgetBaru/WidgetBaru'
 
 const InformasiPage = ()=> {
 
@@ -179,18 +180,17 @@ const InformasiPage = ()=> {
             {/* END */}
 
             {/* <CardMaps/> */}
-
-            <div className="wrapperWidget">
-                <WidgetBerita name="berita" col='7'/>
-                <div className="verticalDivider" style={{
-                    width : '2px',
-                    height : '50vh',
-                    display : 'flex',
-                    margin : '10px'
-                    
+            
+            <div className="widgetDesktop">
+                <WidgetBaru width="68%" carouselName="berita" />
+                <div className="pemisah" style={{
+                    width : '4%',
+                    height : '100%',
+                    background : 'black'
                 }}></div>
-                <WidgetBerita name="beritaFoto" col='4'/>
+                <WidgetBaru width="28%" carouselName="beritaFoto" />
             </div>
+            
             <div className="widgetMobile">
                 <WidgetBerita width="100%" />
                 <WidgetBerita width="100%" margin=".5rem 0" />
