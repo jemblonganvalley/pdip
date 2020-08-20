@@ -80,9 +80,11 @@ const Page2 = () => {
                     </div>
                     {/* END Column1 */}
 
-                    <div className="garis-vertical-tipis">
-                        <div className="garis-merah-tebal">
+                    <div className="container-garis-vertical">
+                        <div className="garis-vertical-tipis">
+                            <div className="garis-merah-tebal">
 
+                            </div>
                         </div>
                     </div>
 

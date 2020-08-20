@@ -231,22 +231,27 @@ $secondary : #f3f3f3;
         }
         // END Column1
 
-        .garis-vertical-tipis{
-            display: flex;
-            height: 1px;
-            width: 100%;
-            background: #aaa;
+        .container-garis-vertical{
+            padding: 0 10px;
             justify-content: center;
-            margin: 60px 0 30px 0;
 
-            .garis-merah-tebal{
+            .garis-vertical-tipis{
                 display: flex;
-                position: absolute;
-                height: 5px;
-                width: 60px;
-                background: #d80010;
+                height: 1px;
+                width: 100%;
+                background: #aaa;
                 justify-content: center;
-                margin: -5px 0;
+                margin: 60px 0 30px 0;
+    
+                .garis-merah-tebal{
+                    display: flex;
+                    position: absolute;
+                    height: 5px;
+                    width: 50px;
+                    background: #d80010;
+                    justify-content: center;
+                    margin: -5px 0;
+                }
             }
         }
 
