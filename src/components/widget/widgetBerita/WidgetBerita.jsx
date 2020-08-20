@@ -25,7 +25,7 @@ const WidgetBerita = ({name, col, width, margin}) => {
     ])
 
   return (
-        <div className={`col col-lg-${col}`} style={{
+        <div style={{
             width : width,
             margin : margin
         }}>
@@ -35,15 +35,16 @@ const WidgetBerita = ({name, col, width, margin}) => {
            {berita.map((e)=>{
                return(
                     <div className={e.id == 1 ? "carousel-item wbCarousel active" : "carousel-item wbCarousel"}>
-                        <div className="d-block w-100 imageWidget" alt="..." style={{
+                        <div className="imageWidget" alt="..." style={{
                             backgroundSize : 'cover',
                             height : '40vh',
                             backgroundPosition : 'center',
                             background : `url(${e.image})`,
-                            padding : '20px',
+                            // padding : '20px',
                             position : 'relative',
                             backgroundRepeat : 'no-repeat',
-                            width : '100%'
+                            width : '100%',
+                            border : '1px solid blue'
                         }}>
                             <h3 style={{
                                 position : 'absolute',
@@ -57,10 +58,6 @@ const WidgetBerita = ({name, col, width, margin}) => {
                     </div>
                )
            })}
-
-         
-
-         
 
         </div>
         <a className="carousel-control-prev" href={`#${name}`} role="button" data-slide="prev">

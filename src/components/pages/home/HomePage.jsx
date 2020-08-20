@@ -24,6 +24,7 @@ import downloadSatu from '../../../img/lightDownSatu.png'
 import downloadDua from '../../../img/lightDownDua.png'
 import downloadTiga from '../../../img/lightDownTiga.png'
 import MusicMobile from '../../musicPdiMobile/MusicMobile'
+import WidgetBaru from '../../widgetBaru/WidgetBaru'
 
 
 const HomePage = ()=> {
@@ -166,11 +167,17 @@ const HomePage = ()=> {
             }}>
                 <MainDivider text="Berita Terbaru "/>
             </div>
-            <div className="wrapperWidget">
-                <WidgetBerita name="berita" width="70%" />
-                
-                <WidgetBerita name="beritaFoto" width="30%"  />
+
+            <div className="widgetHome">
+                <WidgetBaru width="68%" carouselName="berita" />
+                <div className="pemisah" style={{
+                    width : '4%',
+                    height : '100%',
+                    background : 'black'
+                }}></div>
+                <WidgetBaru width="28%" carouselName="beritaFoto" />
             </div>
+
             <div className="widgetMobile">
                 <WidgetBerita width="100%" name="berita" />
                 <WidgetBerita width="100%" name="beritaFoto" margin=".5rem 0" />

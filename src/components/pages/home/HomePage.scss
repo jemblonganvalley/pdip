@@ -341,8 +341,13 @@ $smallPhoneDua : 400px;
     align-items: center;
 }
 
-.verticalDivider {
-    @include smallPhoneDua() {
+.widgetHome {
+    display: flex;
+    justify-content: space-between;
+    padding: $padding;
+    width: 100%;
+
+    @include smallPhone() {
         display: none;
     }
 }
@@ -357,6 +362,8 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         width: 100%;
     }
+
+    
 }
 
 
