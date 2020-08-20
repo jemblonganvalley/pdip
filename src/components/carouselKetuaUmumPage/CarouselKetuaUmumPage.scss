@@ -95,10 +95,6 @@ $smallPhoneDua : 400px;
                     background-color: rgba(255, 0, 8, 0.6);
                     overflow: hidden;
 
-                    @include smallPhone(){
-                        height: auto;
-                    }
-
                     .garis-strip-col2{
                         display: flex;
                         position: absolute;
