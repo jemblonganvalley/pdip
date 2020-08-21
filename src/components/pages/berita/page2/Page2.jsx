@@ -42,15 +42,24 @@ const Page2 = () => {
                         {/* Row2 */}
                         <div className="row2-beritaPage2">
                             <div className="jdl-row2-beritaPage2">
-                                <p className="txt-admin">
-                                    Admin PDI Perjuangan | 1 Januari 2019
-                                </p>
-                                <a className="btn-fav">
-                                    <i className="fas fa-heart"></i>
-                                </a>
-                                <p className="txt-jm-fav">
-                                    98101
-                                </p>
+                                {/* Column Txt Admin */}
+                                <div className="column-txt-admin">
+                                    <p className="txt-admin">
+                                        Admin PDI Perjuangan | 1 Januari 2019
+                                    </p>
+                                </div>
+                                {/* END Column Txt Admin */}
+
+                                {/* Column Button Love */}
+                                <div className="column-txt-btn-heart">
+                                    <a className="btn-fav">
+                                        <i className="fas fa-heart"></i>
+                                    </a>
+                                    <p className="txt-jm-fav">
+                                        0
+                                    </p>
+                                </div>
+                                {/* END Column Button Love */}
                             </div>
 
                             <p className="title-2-beritaPage2">

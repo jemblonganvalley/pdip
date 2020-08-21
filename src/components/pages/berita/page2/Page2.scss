@@ -109,46 +109,62 @@ $secondary : #f3f3f3;
                     height: auto;
                     width: 100%;
                     padding: 1px;
-                    justify-content: center;
                     align-items: center;
 
                     @include smallPhone(){
                         margin: 10px 0 0 0;
                     }
 
-                    .txt-admin{
+                    // Column Txt Admin
+                    .column-txt-admin{
                         display: flex;
-                        font-size: 10px;
-                        color: #d80010;
-                        margin: 1px;
-                        
-                        @include smallPhone(){
-                            justify-content: center;
-                            align-items: center;
-                            text-align: center;
+                        height: auto;
+                        width: 90%;
+
+                        .txt-admin{
+                            display: flex;
+                            font-size: 10px;
+                            color: #d80010;
+                            margin: 1px;
+                            
+                            @include smallPhone(){
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                            }
                         }
                     }
+                    // END Column Txt Admin
 
-                    .btn-fav{
+                    // Column Button Heart
+                    .column-txt-btn-heart{
                         display: flex;
-                        cursor: pointer;
-                        text-decoration: none;
-                        
-                        i{
+                        height: auto;
+                        width: auto;
+                        align-items: center;
+
+                        .btn-fav{
+                            display: flex;
+                            cursor: pointer;
+                            text-decoration: none;
+                            
+                            i{
+                                display: flex;
+                                font-size: 12px;
+                                color: #d80010;
+                                margin: 0 5px 0 0px;
+                            }
+                        }
+    
+                        .txt-jm-fav{
                             display: flex;
                             font-size: 12px;
-                            color: #d80010;
-                            margin: 0 10px 0 80px;
+                            color: #555;
+                            text-align: start;
+                            margin: 1px;
                         }
-                    }
-
-                    .txt-jm-fav{
-                        display: flex;
-                        font-size: 12px;
-                        color: #555;
-                        text-align: start;
-                        margin: 1px;
-                    }
+                    } 
+                    // END Column Button Love 
                 }
 
                 .title-2-beritaPage2{
