@@ -17,7 +17,7 @@ const MateriPokok = () => {
             <div className="wrapperMateriThumbnail">
 
                 <div className="linkedMateriThumbnail">
-                    <BreadCrumbs link1="Home" to1="/" link2="Bung Karno Bapak Bangsa" to2="/bungkarno" />
+                    <BreadCrumbs link1="Home" to1="/" link2="Bung Karno Bapak Bangsa" to2="/bungkarno" page3="Materi Pokok Pendukung" />
                 </div>
             </div>
 

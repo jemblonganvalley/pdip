@@ -52,7 +52,7 @@ const Page1 = () => {
                                         <i className="fas fa-heart"></i>
                                     </button>
                                     <p className="jm-fav">
-                                        98101
+                                        0
                                     </p>
                                 </div>
                             </div>

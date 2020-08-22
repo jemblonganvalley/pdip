@@ -17,7 +17,7 @@ const WejanganBungKarno = () => {
             <div className="wrapperWejanganThumbnail">
 
                 <div className="linkedBkbbWBK">
-                    <BreadCrumbs link1="Home" to1="/" link2="Bungkarno Bapak Bangsa" to2="/bungkarno" />
+                    <BreadCrumbs link1="Home" to1="/" link2="Bungkarno Bapak Bangsa" to2="/bungkarno" page3="Wejangan Bung Karno" />
                 </div>
             </div>
             {/* END Thumbnail Wejangan Bungkarno */}
