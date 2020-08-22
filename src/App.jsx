@@ -57,7 +57,7 @@ function App() {
 
         <Switch>
 
-        <Route path='/event'>
+          <Route path='/event'>
             <EventPage />
           </Route>
 

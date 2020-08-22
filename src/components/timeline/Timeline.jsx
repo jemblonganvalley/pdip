@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
-import Swiper from 'swiper'
+// import Swiper from 'swiper'
 import './Timeline.scss'
 
 
-const Timeline = ({images, headIsi, judul, paragrap})=> {
+const Timeline = ({ images, headIsi, judul, paragrap }) => {
 
-    
+
 
     return (
         <section className="wrapperTimeline">
@@ -15,12 +15,12 @@ const Timeline = ({images, headIsi, judul, paragrap})=> {
                         <h6 className="titleline">Admin PDI Perjuangan | 1 Januari 2021</h6>
                         <div className="timelineContent">
                             <div className="imgContent" style={{
-                                background : `url(https://picsum.photos/seed/${images}/200/300)`,
-                                backgroundSize : 'cover',
-                                backgroundPosition : 'center center'
+                                background: `url(https://picsum.photos/seed/${images}/200/300)`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center center'
                             }}></div>
                             <div className="isiTimeline">
-                        <span className="headIsi">{headIsi}</span>
+                                <span className="headIsi">{headIsi}</span>
                                 <h6 className="judulTimeline">{judul}</h6>
                                 <p className="paragrapTimeline">
                                     {paragrap}
@@ -53,12 +53,12 @@ const Timeline = ({images, headIsi, judul, paragrap})=> {
                         <h6 className="titleline">Admin PDI Perjuangan | 1 Januari 2021</h6>
                         <div className="timelineContent">
                             <div className="imgContent" style={{
-                                background : `url(https://picsum.photos/seed/${images}/200/300)`,
-                                backgroundSize : 'cover',
-                                backgroundPosition : 'center center'
+                                background: `url(https://picsum.photos/seed/${images}/200/300)`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center center'
                             }}></div>
                             <div className="isiTimeline">
-                        <span className="headIsi">{headIsi}</span>
+                                <span className="headIsi">{headIsi}</span>
                                 <h6 className="judulTimeline">{judul}</h6>
                                 <p className="paragrapTimeline">
                                     {paragrap}
