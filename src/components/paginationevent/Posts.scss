@@ -1,0 +1,14 @@
+.loadingEvent{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    border: 1px solid blue;
+
+    .bagianEvent{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 50%;
+    }
+}

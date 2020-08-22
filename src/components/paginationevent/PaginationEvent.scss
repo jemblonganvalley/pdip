@@ -1,0 +1,27 @@
+// // Container
+// .container-paginationEvent{
+//     display: flex;
+//     height: 100%;
+//     width: 100%;
+//     justify-content: center;
+//     align-items: center;
+
+//     .col-angka-paginationEvent{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         margin: 1px;
+//     }
+// }
+// // END Container
+
+
+// Container Pagination Event
+.container-pagination-event{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    border: 1px solid yellow;
+}
+// END Container Pagination Event

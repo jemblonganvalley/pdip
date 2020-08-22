@@ -1,0 +1,53 @@
+// Angka Pagination
+.container-angka-pagination{
+    display: flex;
+    height: auto;
+    width: 100%;
+    border: 1px solid red;
+
+    .col-angka-pagination{
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid yellow;
+
+        .angka-pagination{
+            display: flex;
+            list-style: none;
+        }
+    }
+}
+// END Angka Pagination
+
+
+
+
+
+// // Angka Pagination
+// .angka-paginationEvent{
+//     list-style: none;
+
+//     .paginationLink{
+//         display: flex;
+//         // background: transparent;
+//         border-radius: 500px;
+//         justify-content: center;
+//         align-items: center;
+//         font-size: 10.3pt;
+//         font-weight: 500;
+//         text-decoration: none;
+//         margin: 0 10px 0 0;
+//         height: 26px;
+//         width: 26px;
+        
+//         // &:hover{
+//         //     background: #fff;
+//         //     color: #fff;
+//         //     font-size: 12pt;
+//         //     transition: .100s ease-out;
+//         // }
+//     }
+// }
+// // END Angka Pagination
