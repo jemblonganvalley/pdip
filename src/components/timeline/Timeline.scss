@@ -1,0 +1,193 @@
+$primary: #3F51B5;
+$dark-primary: #303F9F;
+$light-primary: #C5CAE9;
+$text: #FFFFFF;
+$primary-text: #212121;
+$secondary-text: #757575;
+$accent: #FF4081;
+@import '../../utilities/variable/variables.scss';
+
+
+.wrapperTimeline {
+	.pembungkusLine {
+
+		.timeline-item {
+			list-style: none;
+			position: relative;
+			width: 3px;
+			margin: 0 auto;
+			padding-top: 50px;
+			background: $darkRed;
+
+			&::after {
+				content: '';
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				transform: translateX(-50%);
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background: inherit;
+			}
+
+			.kosong {
+				position: relative;
+				bottom: 0;
+				width: 500px;
+				padding: 15px;
+				background: $accent;
+				border-radius: 10px;
+
+				&::before {
+					content: '';
+					position: absolute;
+					bottom: 5px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+				}
+
+				.titleline {
+					// float: right;
+					// text-align: start;
+					font-size: 7pt;
+					color: $darkRed;
+				}
+
+				.timelineContent {
+					width: 100%;
+					display: flex;
+
+					.imgContent {
+						width: 40%;
+						height: 40vh;
+						border-top-right-radius: 10px;
+					}
+					
+					.isiTimeline {
+						display: flex;
+						flex-direction: column;
+						width: 60%;
+						padding: 10px 5%;
+						text-align: left;
+
+						.headIsi {
+							font-size: 8pt;
+							margin-bottom: .3rem;
+							color: $lightRed;
+						}
+
+						.judulTimeline {
+							font-weight: 700;
+						}
+
+						.paragrapTimeline {
+							font-size: 8pt;
+							margin-top: 1rem;
+						}
+					}
+				}
+				.timelineInfo {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin-top: 1rem;
+
+					.tanggal {
+						// border: 1px solid blue;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						padding: 10px 3%;
+						align-items: center;
+
+						i {
+							margin-bottom: 10px;
+						}
+
+						.bulan {
+							font-size: 8pt;
+						}
+						
+						.waktu {
+							font-size: 8pt;
+						}
+					}
+
+					.telphone {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						padding: 10px 3%;
+
+						i {
+							margin-bottom: 1.5rem;
+
+						}
+
+						.nomor {
+							font-size: 8pt;
+						}
+					}
+
+					.lokasi {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						padding: 10px 3%;
+
+						i {
+							margin-bottom: 10px;
+						}
+
+						.tempat {
+							font-size: 8pt;
+						}
+
+						.kota {
+							font-size: 8pt;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.wrapperTimeline .pembungkusLine .timeline-item:nth-child(odd) .kosong {
+	left: 45px;
+
+	&::before {
+		left: -15px;
+		border-width: 8px 16px 8px 0;
+		border-color: transparent $accent transparent transparent;
+	}
+}
+
+.wrapperTimeline .pembungkusLine .timeline-item:nth-child(even) .kosong {
+	left: -539px;
+	text-align: end;
+
+
+	&::before {
+		right: -15px;
+		border-width: 8px 0 8px 16px;
+		border-color: transparent transparent transparent $accent;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
