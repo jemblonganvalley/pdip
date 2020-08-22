@@ -3,7 +3,7 @@ import Swiper from 'swiper'
 import './Timeline.scss'
 
 
-const Timeline = ()=> {
+const Timeline = ({images, headIsi, judul, paragrap})=> {
 
     
 
@@ -15,15 +15,15 @@ const Timeline = ()=> {
                         <h6 className="titleline">Admin PDI Perjuangan | 1 Januari 2021</h6>
                         <div className="timelineContent">
                             <div className="imgContent" style={{
-                                background : 'url(https://picsum.photos/seed/picsum/200/300)',
+                                background : `url(https://picsum.photos/seed/${images}/200/300)`,
                                 backgroundSize : 'cover',
                                 backgroundPosition : 'center center'
                             }}></div>
                             <div className="isiTimeline">
-                                <span className="headIsi">Kegiatan Partai</span>
-                                <h6 className="judulTimeline">HUT 48 dan Rakernas || PDI Perjuangan</h6>
+                        <span className="headIsi">{headIsi}</span>
+                                <h6 className="judulTimeline">{judul}</h6>
                                 <p className="paragrapTimeline">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, culpa tempora reiciendis dolores deleniti distinctio aut, natus dicta doloremque voluptas sint neque, laboriosam corporis consequuntur veniam veritatis cupiditate! Error, quos.
+                                    {paragrap}
                                 </p>
                             </div>
                         </div>
@@ -53,15 +53,15 @@ const Timeline = ()=> {
                         <h6 className="titleline">Admin PDI Perjuangan | 1 Januari 2021</h6>
                         <div className="timelineContent">
                             <div className="imgContent" style={{
-                                background : 'url(https://picsum.photos/seed/picsum/200/300)',
+                                background : `url(https://picsum.photos/seed/${images}/200/300)`,
                                 backgroundSize : 'cover',
                                 backgroundPosition : 'center center'
                             }}></div>
                             <div className="isiTimeline">
-                                <span className="headIsi">Kegiatan Partai</span>
-                                <h6 className="judulTimeline">HUT 48 dan Rakernas || PDI Perjuangan</h6>
+                        <span className="headIsi">{headIsi}</span>
+                                <h6 className="judulTimeline">{judul}</h6>
                                 <p className="paragrapTimeline">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, culpa tempora reiciendis dolores deleniti distinctio aut, natus dicta doloremque voluptas sint neque, laboriosam corporis consequuntur veniam veritatis cupiditate! Error, quos.
+                                    {paragrap}
                                 </p>
                             </div>
                         </div>

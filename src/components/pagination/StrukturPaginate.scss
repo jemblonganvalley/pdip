@@ -28,17 +28,12 @@ $smallPhoneDua : 400px;
     // margin: 2rem;
     margin: .5rem;
     padding: 0;
-    border-radius: 50%;
-
-    transition: .5s;
+    // border-radius: 50%;
     &:hover {
-        color: #ffffff;
-        width: 1.5rem;
-        height: 1.5rem;
-        background-color: $colors;
-        border: none;
-        
+        color : $colors;
+        background: none;
     }
+    
 
     &:focus {
         box-shadow: 0 0 0 0.2rem rgba(216,0,16,.5);
@@ -54,12 +49,9 @@ $smallPhoneDua : 400px;
 }
 
 .page-item {
-    width: 2rem;
-    height: 2rem;
     display: flex;
     justify-content: center;
-    align-items: center ;
-    border-radius: 50%;
+    align-items: center;
     text-align: center;
     font-size: 10pt;
 }

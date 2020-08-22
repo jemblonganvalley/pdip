@@ -1,10 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './EventPage.scss'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import Timeline from '../../timeline/Timeline'
 
 
 const EventPage = ()=> {
+
+    let [itemEvent, setItemEvent] = useState([
+        {
+            images : 'awqkdqdq',
+            headIsi : 'Ketua Umum',
+            judul : 'judul Satu',
+            pargrap : 'lorem ipsum dolor sit amet'
+        },
+        {
+            images : 'qweqew',
+            headIsi : 'Kegiatan Partai',
+            judul : 'judul Dua',
+            pargrap : 'lorem ipsum dolor sit amet'
+        },
+    ])
+    
+    let [currentPage, setCurrentPage] = useState(1)
+    let [timelinePage, setTimelinePage] = useState(4)
+
     return (
         <div className="wrapperEvent">
 
@@ -21,6 +40,26 @@ const EventPage = ()=> {
                                  />
             </div>
 
+            <div className="paginationBulan">
+                <ul className="wrapperBulanItem">
+                    <li className="bulan-item"><a href="#" className="customBulan">
+                        <i class="fa fa-arrow-left"></i>
+                    </a></li>
+
+                    <li className="bulan-item"><a href="#" className="customBulan">
+                        Januari 2020
+                    </a></li>
+
+                    <li className="bulan-item"><a href="#" className="customBulan">
+                        <i class="fa fa-arrow-right"></i>
+                    </a></li>
+                </ul>
+            </div>
+
+            <div className="paginationTimeline">
+
+            </div>
+
             <div className="timeline" style={{
             width : '100%',
             display : 'flex',
@@ -30,7 +69,14 @@ const EventPage = ()=> {
             padding : '40px 10%'
             
         }}>
-                <Timeline />
+                {itemEvent.map((e)=>{
+                    return (
+                        <Timeline images={e.images}
+                                    headIsi={e.headIsi}
+                                    judul={e.judul}
+                                    paragrap={e.pargrap} />
+                    )
+                })}
             </div>
         </div>
     )

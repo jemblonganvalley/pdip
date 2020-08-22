@@ -68,4 +68,35 @@ $smallPhoneDua : 400px;
             padding: $paddingMobile;
         }
     }
+
+    .paginationBulan {
+        padding: $paddingSmall;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .wrapperBulanItem {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+
+            .bulan-item {
+                margin: 0 1rem;
+
+                .customBulan {
+                    text-decoration: none;
+                    color: $darkRed;
+                }
+            }
+        }
+    }
+
+    .paginationTimeline {
+        padding: $paddingSmall;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid blue;
+    }
 }
