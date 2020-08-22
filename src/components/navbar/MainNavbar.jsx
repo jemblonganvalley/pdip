@@ -12,43 +12,9 @@ const MainNavbar = ()=> {
     let [show, setShow] = useState()
     let [collapse, setCollapse] = useState(false)
     let [menu, setMenu] = useState([
-      {
-        id : 1,
-        name : 'home',
-        to : '/home',
-        listItem : [
-          {
-          listName : 'Partai',
-          listTo : '#Partai'
-          },
-          {
-          listName : 'Bung Karno Bapak Bangsa',
-          listTo : '#Bung Karno Bapak Bangsa'
-          },
-          {
-          listName : 'PIDATO KETUA UMUM',
-          listTo : '#PIDATO KETUA UMUM'
-          },
-          {
-          listName : 'MULTIMEDIA',
-          listTo : '#MULTIMEDIA'
-          },
-          {
-          listName : 'BERITA',
-          listTo : '#BERITA'
-          },
-          {
-          listName : 'INFORMASI PUBLIK ',
-          listTo : '#INFORMASI PUBLIK '
-          },
-          {
-          listName : 'PEMILU',
-          listTo : '#PEMILU'
-          }
-        ]
-      },
+
        {
-        id : 2,
+        id : 1,
         name : 'partai',
         to : '/partai',
         listItem : [
@@ -87,7 +53,7 @@ const MainNavbar = ()=> {
         ]
       },
        {
-        id : 3,
+        id : 2,
         name : 'bung karno bapak bangsa',
         to : '/bungkarno',
         listItem : [
@@ -126,7 +92,7 @@ const MainNavbar = ()=> {
         ]
       },
        {
-        id : 4,
+        id : 3,
         name : 'ketua umum',
         to : '/ketuaumum',
         listItem : [
@@ -149,7 +115,7 @@ const MainNavbar = ()=> {
         ]
       },
        {
-        id : 5,
+        id : 4,
         name : 'multimedia',
         to : '/multimedia',
         listItem : [
@@ -176,7 +142,7 @@ const MainNavbar = ()=> {
         ]
       },
        {
-        id : 6,
+        id : 5,
         name : 'berita',
         to : '/berita',
         listItem : [
@@ -207,7 +173,7 @@ const MainNavbar = ()=> {
         ]
       },
        {
-        id : 7,
+        id : 6,
         name : 'informasi publik',
         to : '/informasi',
         listItem : [
@@ -255,7 +221,7 @@ const MainNavbar = ()=> {
         ]
       },
        {
-        id : 8,
+        id : 7,
         name : 'pemilu',
         to : '/pemilu',
         listItem : [
@@ -273,6 +239,16 @@ const MainNavbar = ()=> {
           }
         ]
       },
+      {
+        id : 7,
+        name : 'Events',
+        to : '/event',
+        listItem : [
+          {
+
+          }
+        ]
+      }
 
     ])
 
@@ -331,7 +307,6 @@ const MainNavbar = ()=> {
 
                   </li>
                  ))}
-               
                 </ul>
                 <form className="d-inline-flex">
                   <input className="form-control mr-2" type="text" placeholder="Search for something" name="search" />

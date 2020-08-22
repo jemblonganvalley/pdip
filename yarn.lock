@@ -9019,6 +9019,13 @@ react-router-dom@^5.2.0:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
+react-router-hash-link@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-router-hash-link/-/react-router-hash-link-2.0.0.tgz#c0baade5cb0957f4c6da4519f7992c825f1b3b35"
+  integrity sha512-vAiiHUhPcT5NYwKutvbAgHR2HXoESkTyaeXQaW1cmVwZujhmHEfaXRh28uS52jQaja/S+Xrc0aFizfljY7rvAw==
+  dependencies:
+    prop-types "^15.6.0"
+
 react-router@5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-5.2.0.tgz#424e75641ca8747fbf76e5ecca69781aa37ea293"
@@ -10342,10 +10349,10 @@ svgo@^1.0.0, svgo@^1.2.2:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-swiper@^6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-6.1.1.tgz#1246f28557dd33968dc43e926bc6e9e9a7b3850d"
-  integrity sha512-w6rmEUnpuSWvzuIDJ+nTi7YQ4+pvr++zUnBO2VxkzOZbzQzcMNKNw1yj0RFEok682IHDPCs3LXSl8zSQ+zDEdw==
+swiper@^6.1.2:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-6.1.2.tgz#334693491915da51954fa388115c521dfba1eb6a"
+  integrity sha512-g3+4yHwHD1+qjhr7cxqKyJ/zTyo1SnQv5eUVE0QdygRyb13KejtISXbN44xkLmJIw9WOS/xa7Fg5YtyBH2Kg+A==
   dependencies:
     dom7 "^3.0.0-alpha.7"
     ssr-window "^3.0.0-alpha.4"

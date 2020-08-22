@@ -15,9 +15,10 @@
     "react-jinke-music-player": "^4.16.5",
     "react-responsive": "^8.1.0",
     "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.0.0",
     "react-scripts": "^3.4.3",
     "sass": "^1.26.10",
-    "swiper": "^6.1.1",
+    "swiper": "^6.1.2",
     "yarn": "^1.22.4"
   },
   "scripts": {

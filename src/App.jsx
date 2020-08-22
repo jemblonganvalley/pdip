@@ -24,6 +24,7 @@ import AllComponent from './components/allcomponent/AllComponent';
 import BgRed from './components/bgRed/BgRed';
 import WejanganBungKarno from './components/pages/bkbb/wejanganbungkarno/WejanganBungKarno';
 import { useStoreActions } from 'easy-peasy';
+import EventPage from './components/pages/events/EventPage';
 
 
 function App() {
@@ -55,6 +56,10 @@ function App() {
       <div className="App">
 
         <Switch>
+
+        <Route path='/event'>
+            <EventPage />
+          </Route>
 
           <Route path='/pemilu'>
             <PemiluPage />
