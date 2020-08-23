@@ -58,9 +58,6 @@ const EventPage = () => {
     let [currentPage, setCurrentPage] = useState(1)
     let [timelinePage, setTimelinePage] = useState(4)
 
-
-
-
     let [loading, setLoading] = useState(false)
     let [currentPage2, setCurrentPage2] = useState(1)
     let [itemEventPerPage] = useState(4)

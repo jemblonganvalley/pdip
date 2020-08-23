@@ -4,7 +4,7 @@ import './Timeline.scss'
 
 const Timeline = ({ timeline }) => {
 
-    let [hover, setHover] = useState(false)
+    let [hover, setHover] = useState()
 
 
 
@@ -15,15 +15,15 @@ const Timeline = ({ timeline }) => {
             <ul className="pembungkusLine">
                 {timeline.map((e) => {
                     return (
-                        <li className="timeline-item" onClick={() => {
-                            setHover(!hover)
+                        <li className="timeline-item" key={e.id} onClick={() => {
+                            setHover(e.id)
                         }}>
                             <div className="kosong" style={{
-                                background: hover ? '#960001' : '#fff',
-                                color: hover ? '#fff' : '#000'
+                                background: hover == e.id ? '#960001' : '#fff',
+                                color: hover == e.id ? '#fff' : '#000'
                             }}>
                                 <h6 className="titleline" style={{
-                                    color: hover ? '#fff' : '#960001'
+                                    color: hover == e.id ? '#fff' : '#960001'
                                 }}>Admin PDI Perjuangan | 1 Januari 2021</h6>
                                 <div className="timelineContent" >
                                     <div className="imgContent" style={{
@@ -33,7 +33,7 @@ const Timeline = ({ timeline }) => {
                                     }}></div>
                                     <div className="isiTimeline">
                                         <span className="headIsi" style={{
-                                            color: hover ? '#fff' : '#c60605'
+                                            color: hover == e.id ? '#fff' : '#c60605'
                                         }}>{e.headIsi}</span>
                                         <h6 className="judulTimeline">{e.judul}</h6>
                                         <p className="paragrapTimeline">
