@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './WejanganBungKarno.scss'
 import CardWejangan from '../../../cardwejangan/CardWejangan'
@@ -8,9 +8,120 @@ import bkbb3 from '../../../../img/bkbb3.jpg'
 import bkbb4 from '../../../../img/bkbb4.jpg'
 import BreadCrumbs from '../../../breadcrumbs/BreadCrumbs'
 import MainDivider from '../../../divider/MainDivider'
-import StrukturPaginate from '../../../pagination/StrukturPaginate'
+import AngkaPaginationEvent from '../../../paginationevent/AngkaPaginationEvent'
 
 const WejanganBungKarno = () => {
+
+    // Create Database Card Item
+    let [cardWejanganBkItem, setCardWejanganBk] = useState([
+        {
+            pageWejanganBk: '',
+            imgWejanganBk: '',
+            icon1WejanganBk: 'fas fa-quote-right',
+            txt1WejanganBk: 'NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".',
+            icon2WejanganBk: 'fas fa-quote-right',
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1928'
+        },
+        {
+            pageWejanganBk: '',
+            imgWejanganBk: '',
+            icon1WejanganBk: 'fas fa-quote-right',
+            txt1WejanganBk: 'ORANG TIDAK DAPAT MENGABDI KEPADA TUHAN DENGAN TIDAK MENGABDI KEPADA SESAMA MANUSIA. TUHAN BERSEMAYAM DI GUBUKNYA SI MISKIN',
+            icon2WejanganBk: 'fas fa-quote-right',
+            txt2WejanganBk: 'Soekarno, 23 Oktober 1946'
+        },
+        {
+            pageWejanganBk: '',
+            imgWejanganBk: '',
+            icon1WejanganBk: 'fas fa-quote-right',
+            txt1WejanganBk: 'TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA',
+            icon2WejanganBk: 'fas fa-quote-right',
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1922'
+        },
+        {
+            pageWejanganBk: '',
+            imgWejanganBk: '',
+            icon1WejanganBk: 'fas fa-quote-right',
+            txt1WejanganBk: 'NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".',
+            icon2WejanganBk: 'fas fa-quote-right',
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1928'
+        },
+        {
+            pageWejanganBk: '',
+            imgWejanganBk: '',
+            icon1WejanganBk: 'fas fa-quote-right',
+            txt1WejanganBk: 'ORANG TIDAK DAPAT MENGABDI KEPADA TUHAN DENGAN TIDAK MENGABDI KEPADA SESAMA MANUSIA. TUHAN BERSEMAYAM DI GUBUKNYA SI MISKIN',
+            icon2WejanganBk: 'fas fa-quote-right',
+            txt2WejanganBk: 'Soekarno, 23 Oktober 1946'
+        },
+        {
+            pageWejanganBk: '',
+            imgWejanganBk: '',
+            icon1WejanganBk: 'fas fa-quote-right',
+            txt1WejanganBk: 'TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA',
+            icon2WejanganBk: 'fas fa-quote-right',
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1922'
+        },
+        {
+            pageWejanganBk: '',
+            imgWejanganBk: '',
+            icon1WejanganBk: 'fas fa-quote-right',
+            txt1WejanganBk: 'NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".',
+            icon2WejanganBk: 'fas fa-quote-right',
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1928'
+        },
+        {
+            pageWejanganBk: '',
+            imgWejanganBk: '',
+            icon1WejanganBk: 'fas fa-quote-right',
+            txt1WejanganBk: 'ORANG TIDAK DAPAT MENGABDI KEPADA TUHAN DENGAN TIDAK MENGABDI KEPADA SESAMA MANUSIA. TUHAN BERSEMAYAM DI GUBUKNYA SI MISKIN',
+            icon2WejanganBk: 'fas fa-quote-right',
+            txt2WejanganBk: 'Soekarno, 23 Oktober 1946'
+        },
+        {
+            pageWejanganBk: '',
+            imgWejanganBk: '',
+            icon1WejanganBk: 'fas fa-quote-right',
+            txt1WejanganBk: 'TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA',
+            icon2WejanganBk: 'fas fa-quote-right',
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1922'
+        },
+        {
+            pageWejanganBk: '',
+            imgWejanganBk: '',
+            icon1WejanganBk: 'fas fa-quote-right',
+            txt1WejanganBk: 'NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".',
+            icon2WejanganBk: 'fas fa-quote-right',
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1928'
+        },
+        {
+            pageWejanganBk: '',
+            imgWejanganBk: '',
+            icon1WejanganBk: 'fas fa-quote-right',
+            txt1WejanganBk: 'ORANG TIDAK DAPAT MENGABDI KEPADA TUHAN DENGAN TIDAK MENGABDI KEPADA SESAMA MANUSIA. TUHAN BERSEMAYAM DI GUBUKNYA SI MISKIN',
+            icon2WejanganBk: 'fas fa-quote-right',
+            txt2WejanganBk: 'Soekarno, 23 Oktober 1946'
+        },
+        {
+            pageWejanganBk: '',
+            imgWejanganBk: '',
+            icon1WejanganBk: 'fas fa-quote-right',
+            txt1WejanganBk: 'TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA',
+            icon2WejanganBk: 'fas fa-quote-right',
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1922'
+        },
+    ])
+    // END Create Databasae Card Item
+
+    let [currentPage2, setCurrentPage2] = useState(1)
+    let [itemEventPerPage] = useState(9)
+
+    const indexOfLastPost = currentPage2 * itemEventPerPage
+    const indexOfFirstPost = indexOfLastPost - itemEventPerPage
+    const currentPosts = cardWejanganBkItem.slice(indexOfFirstPost, indexOfLastPost)
+
+    const paginate = (pageNumber) => setCurrentPage2(pageNumber)
+
     return (
         <>
             {/* Thumbnail Wejangan Bungkarno */}
@@ -31,42 +142,18 @@ const WejanganBungKarno = () => {
             {/* Container2 */}
             <div className="container2-wejanganThumbnail">
                 {/* Column Card Wejangan Bungkarno */}
-                <div className="col-card-wejanganThumbnail">
-                    {/* Box1 Image */}
-                    <div className="box1-image-wejanganThumbnail">
-                        <CardWejangan imgWejangan={bkbb2} icon1="fas fa-quote-right" txt1='NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1928" />
-
-                        <CardWejangan imgWejangan={bkbb3} icon1="fas fa-quote-right" txt1='ORANG TIDAK DAPAT MENGABDI KEPADA TUHAN DENGAN TIDAK MENGABDI KEPADA SESAMA MANUSIA. TUHAN BERSEMAYAM DI GUBUKNYA SI MISKIN' icon2="fas fa-quote-right" txt2="Soekarno, 23 Oktober 1946" />
-
-                        <CardWejangan imgWejangan={bkbb4} icon1="fas fa-quote-right" txt1='TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1922" />
-                    </div>
-                    {/* END Box1 Image */}
-
-                    {/* Box2 Image */}
-                    <div className="box2-image-wejanganThumbnail">
-                        <CardWejangan imgWejangan={bkbb2} icon1="fas fa-quote-right" txt1='NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1928" />
-
-                        <CardWejangan imgWejangan={bkbb3} icon1="fas fa-quote-right" txt1='ORANG TIDAK DAPAT MENGABDI KEPADA TUHAN DENGAN TIDAK MENGABDI KEPADA SESAMA MANUSIA. TUHAN BERSEMAYAM DI GUBUKNYA SI MISKIN' icon2="fas fa-quote-right" txt2="Soekarno, 23 Oktober 1946" />
-
-                        <CardWejangan imgWejangan={bkbb4} icon1="fas fa-quote-right" txt1='TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1922" />
-                    </div>
-                    {/* END Box2 Image */}
-
-                    {/* Box3 Image */}
-                    <div className="box1-image-wejanganThumbnail">
-                        <CardWejangan imgWejangan={bkbb2} icon1="fas fa-quote-right" txt1='NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1928" />
-
-                        <CardWejangan imgWejangan={bkbb3} icon1="fas fa-quote-right" txt1='ORANG TIDAK DAPAT MENGABDI KEPADA TUHAN DENGAN TIDAK MENGABDI KEPADA SESAMA MANUSIA. TUHAN BERSEMAYAM DI GUBUKNYA SI MISKIN' icon2="fas fa-quote-right" txt2="Soekarno, 23 Oktober 1946" />
-
-                        <CardWejangan imgWejangan={bkbb4} icon1="fas fa-quote-right" txt1='TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1922" />
-                    </div>
-                    {/* END Box3 Image */}
+                <div className="col-card-wejanganThumbnail" style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexWrap: 'wrap',
+                }}>
+                    <CardWejangan cardWejanganBkItem={currentPosts} />
                 </div>
                 {/* END Column Card Wejangan Bungkarno */}
 
                 {/* Column Pagination */}
                 <div className="col-pagination-wejanganThumbnail">
-                    <StrukturPaginate />
+                    <AngkaPaginationEvent itemEventPerPage={itemEventPerPage} totalPosts={cardWejanganBkItem.length} paginate={paginate} />
                 </div>
                 {/* END Column Pagination */}
             </div>

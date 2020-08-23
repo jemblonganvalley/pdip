@@ -1,0 +1,71 @@
+@import "../../utilities/variable/variables.scss";
+
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+.cont-card-materi-pk{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 25vw;
+    background: #fff;
+    border-radius: 10px;
+    transition: .5s;
+    color: #000;
+    margin: 0 8px 15px 8px;
+
+    &:hover{
+        box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);
+        background: $darkRedTwo;
+        color: #fff;
+    }
+
+    @include smallPhone(){
+        height: auto;
+        width: 94vw;
+        margin: 0 10px 10px 10px;
+    }
+
+    // Image
+    .img-card-materi-pk{
+        display: flex;
+        flex-wrap: wrap;
+        height: 30vh;
+        width: 100%;
+        background-size: cover;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    // END Image
+
+    // Box Title
+    .box-title-card-materi-pk{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 10px 20px;
+
+        .txt-jdl-materi-pk{
+            display: flex;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .txt-paragrap-materi-pk{
+            display: flex;
+            font-size: 7pt;
+        }
+    }
+    // END Box Title
+}
