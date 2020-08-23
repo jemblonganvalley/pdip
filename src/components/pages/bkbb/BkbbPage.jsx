@@ -116,11 +116,11 @@ const BkbbPage = () => {
             <div className="col-card-wejangan-bungkarno">
                 {/* Box1 Image */}
                 <div className="box1-image">
-                    <CardWejangan page="/quotes" imgWejangan={bkbb2} icon1="fas fa-quote-right" txt1='NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1928" />
+                    <CardQuotes page="/quotes" img={bkbb2} icon1="fas fa-quote-right" txt1='NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1928" />
 
-                    <CardWejangan imgWejangan={bkbb3} icon1="fas fa-quote-right" txt1='ORANG TIDAK DAPAT MENGABDI KEPADA TUHAN DENGAN TIDAK MENGABDI KEPADA SESAMA MANUSIA. TUHAN BERSEMAYAM DI GUBUKNYA SI MISKIN' icon2="fas fa-quote-right" txt2="Soekarno, 23 Oktober 1946" />
+                    <CardQuotes img={bkbb3} icon1="fas fa-quote-right" txt1='ORANG TIDAK DAPAT MENGABDI KEPADA TUHAN DENGAN TIDAK MENGABDI KEPADA SESAMA MANUSIA. TUHAN BERSEMAYAM DI GUBUKNYA SI MISKIN' icon2="fas fa-quote-right" txt2="Soekarno, 23 Oktober 1946" />
 
-                    <CardWejangan imgWejangan={bkbb4} icon1="fas fa-quote-right" txt1='TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1922" />
+                    <CardQuotes img={bkbb4} icon1="fas fa-quote-right" txt1='TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1922" />
                 </div>
                 {/* END Box1 Image */}
             </div>

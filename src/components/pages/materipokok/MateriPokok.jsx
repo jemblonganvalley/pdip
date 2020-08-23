@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import bkbb5 from '../../../img/bkbb5.jpg'
 import bkbb6 from '../../../img/bkbb6.jpg'
@@ -7,11 +7,98 @@ import bkbb7 from '../../../img/bkbb7.jpg'
 import './MateriPokok.scss'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import MainDivider from '../../divider/MainDivider'
-import Cards from '../../cards/MainCards'
-import { Pagination } from 'react-bootstrap'
-import StrukturPaginate from '../../pagination/StrukturPaginate'
+import CardMateriPokok from '../../cardmateripokok/CardMateriPokok'
+import AngkaPaginationEvent from '../../paginationevent/AngkaPaginationEvent'
 
 const MateriPokok = () => {
+
+    // Create Database Card Item
+    let [cardMateriPk, setCardMateriPk] = useState([
+        {
+            pageMateriPk: '',
+            imgMateriPk: '../../img/bkbb5.jpg',
+            txtJdlMateriPk: 'Indonesia Menggugat Tahun 1930',
+            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial'
+        },
+        {
+            pageMateriPk: '',
+            imgMateriPk: '../../img/bkbb6.jpg',
+            txtJdlMateriPk: 'Kapitalisme Bangsa Sendiri 1932',
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+        },
+        {
+            pageMateriPk: '',
+            imgMateriPk: '../../img/bkbb7.jpg',
+            txtJdlMateriPk: 'MENCAPAI INDONESIA MERDEKA TAHUN 1933',
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+        },
+        {
+            pageMateriPk: '',
+            imgMateriPk: '../../img/bkbb5.jpg',
+            txtJdlMateriPk: 'Indonesia Menggugat Tahun 1930',
+            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial'
+        },
+        {
+            pageMateriPk: '',
+            imgMateriPk: '../../img/bkbb6.jpg',
+            txtJdlMateriPk: 'Kapitalisme Bangsa Sendiri 1932',
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+        },
+        {
+            pageMateriPk: '',
+            imgMateriPk: '../../img/bkbb7.jpg',
+            txtJdlMateriPk: 'MENCAPAI INDONESIA MERDEKA TAHUN 1933',
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+        },
+        {
+            pageMateriPk: '',
+            imgMateriPk: '../../img/bkbb5.jpg',
+            txtJdlMateriPk: 'Indonesia Menggugat Tahun 1930',
+            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial'
+        },
+        {
+            pageMateriPk: '',
+            imgMateriPk: '../../img/bkbb6.jpg',
+            txtJdlMateriPk: 'Kapitalisme Bangsa Sendiri 1932',
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+        },
+        {
+            pageMateriPk: '',
+            imgMateriPk: '../../img/bkbb7.jpg',
+            txtJdlMateriPk: 'MENCAPAI INDONESIA MERDEKA TAHUN 1933',
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+        },
+        {
+            pageMateriPk: '',
+            imgMateriPk: '../../img/bkbb5.jpg',
+            txtJdlMateriPk: 'Indonesia Menggugat Tahun 1930',
+            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial'
+        },
+        {
+            pageMateriPk: '',
+            imgMateriPk: '../../img/bkbb6.jpg',
+            txtJdlMateriPk: 'Kapitalisme Bangsa Sendiri 1932',
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+        },
+        {
+            pageMateriPk: '',
+            imgMateriPk: '../../img/bkbb7.jpg',
+            txtJdlMateriPk: 'MENCAPAI INDONESIA MERDEKA TAHUN 1933',
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+        },
+    ])
+    // END Create Database Card Item
+
+    let [currentPage2, setCurrentPage2] = useState(1)
+    let [itemEventPerPage] = useState(9)
+
+    const indexOfLastPost = currentPage2 * itemEventPerPage
+    const indexOfFirstPost = indexOfLastPost - itemEventPerPage
+    const currentPosts = cardMateriPk.slice(indexOfFirstPost, indexOfLastPost)
+
+    const paginate = (pageNumber) => setCurrentPage2(pageNumber)
+
+
     return (
         <>
             <div className="wrapperMateriThumbnail">
@@ -31,44 +118,14 @@ const MateriPokok = () => {
             <div className="container2-materiThumbnail">
                 {/* Column Card Materi Pokok */}
                 <div className="col-card-materiThumbnail">
-                    {/* Row1 */}
-                    <div className="row1-materiThumbnail">
-                        <Cards imageCard={bkbb5}
-                            TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" borderRadius="10px" />
-                        <Cards imageCard={bkbb6}
-                            TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" borderRadius="10px" />
-                        <Cards imageCard={bkbb7}
-                            TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" borderRadius="10px" />
-                    </div>
-                    {/* END Row1 */}
 
-                    {/* Row2 */}
-                    <div className="row2">
-                        <Cards imageCard={bkbb5}
-                            TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" borderRadius="10px" />
-                        <Cards imageCard={bkbb6}
-                            TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" borderRadius="10px" />
-                        <Cards imageCard={bkbb7}
-                            TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" borderRadius="10px" />
-                    </div>
-                    {/* END Row2 */}
-
-                    {/* Row3 */}
-                    <div className="row3">
-                        <Cards imageCard={bkbb5}
-                            TextH5="INDONESIA MENGGUGAT TAHUN 1930" paragrap="Pidato Pembelaan Bung Karno di Muka Hakim Kolonial" borderRadius="10px" />
-                        <Cards imageCard={bkbb6}
-                            TextH5="KAPITALISME BANGSA SENDIRI TAHUN 1932" paragrap="Lorem ipsum dolor sit amet, consectetur adipisicing elit" borderRadius="10px" />
-                        <Cards imageCard={bkbb7}
-                            TextH5="MENCAPAI INDONESIA MERDEKA TAHUN 1933" paragrap="Lorem ipsum dolor sit amet, consectetur adipicising" borderRadius="10px" />
-                    </div>
-                    {/* END Row3 */}
+                    <CardMateriPokok cardMateriPokokItem={currentPosts} />
                 </div>
                 {/* END Column Card Materi Pokok */}
 
                 {/* Column Pagination */}
                 <div className="col-pagination-materi-pokok">
-                    <StrukturPaginate />
+                    <AngkaPaginationEvent itemEventPerPage={itemEventPerPage} totalPosts={cardMateriPk.length} paginate={paginate} />
                 </div>
                 {/* END Column Pagination */}
             </div>

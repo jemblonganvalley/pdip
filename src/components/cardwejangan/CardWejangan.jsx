@@ -3,27 +3,35 @@ import React from 'react'
 import './CardWejangan.scss'
 import { Link } from 'react-router-dom'
 
-const CardWejangan = ({ page, imgWejangan, icon1, txt1, icon2, txt2 }) => {
+const CardWejangan = ({ cardWejanganBkItem }) => {
     return (
-        <>
-            {/* Img */}
-            <Link to={page} className="imgWejangan" style={{
-                backgroundImage: `url(${imgWejangan})`
-            }}>
-                <i className={icon1}></i>
+        <div className="container-card-wejangan-bk" style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}>
+            {cardWejanganBkItem.map((e) => {
+                return (
+                    <Link to={e.pageWejanganBk} className="imgWejangan" style={{
+                        backgroundImage: `url(${e.imgWejanganBk})`
+                    }}>
+                        <i className={e.icon1WejanganBk}></i>
 
-                <p className="txt1">
-                    {txt1}
-                </p>
+                        <p className="txt1">
+                            {e.txt1WejanganBk}
+                        </p>
 
-                <i className={icon2}></i>
+                        <i className={e.icon2WejanganBk}></i>
 
-                <p className="txt2">
-                    {txt2}
-                </p>
-            </Link>
-            {/* Img */}
-        </>
+                        <p className="txt2">
+                            {e.txt2WejanganBk}
+                        </p>
+                    </Link>
+                )
+            })}
+        </div>
     )
 }
 

@@ -44,7 +44,6 @@ $smallPhoneDua : 400px;
 // Container1
 .container1-materiThumbnail{
     display: flex;
-    height: auto;
     width: 100%;
     margin: 0px 0 0 0;
     padding: 0 10%;
@@ -60,7 +59,6 @@ $smallPhoneDua : 400px;
 .container2-materiThumbnail{
     display: flex;
     flex-direction: column;
-    height: auto;
     width: 100%;
     margin: 0px 0 20px 0;
     padding: 0 10%;
@@ -81,45 +79,6 @@ $smallPhoneDua : 400px;
         @include smallPhone(){
             margin: 0 0 20px 0;
         }
-
-        // Row1
-        .row1-materiThumbnail{
-            display: flex;
-            height: auto;
-            width: 100%;
-            padding: 10px 0;
-
-            @include smallPhone(){
-                flex-direction: column;
-            }
-        }
-        // END Row1
-
-        // Row2
-        .row2{
-            display: flex;
-            height: auto;
-            padding: 10px 0;
-            width: 100%;
-
-            @include smallPhone(){
-                flex-direction: column;
-            }
-        }
-        // END Row2
-
-        // Row3
-        .row3{
-            display: flex;
-            height: auto;
-            padding: 10px 0;
-            width: 100%;
-
-            @include smallPhone(){
-                flex-direction: column;
-            }
-        }
-        // END Row3
     }
     // END Column Card Materi Pokok
 
