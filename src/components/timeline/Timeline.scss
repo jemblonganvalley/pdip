@@ -1,10 +1,3 @@
-$primary: #3F51B5;
-$dark-primary: #303F9F;
-$light-primary: #C5CAE9;
-$text: #FFFFFF;
-$primary-text: #212121;
-$secondary-text: #757575;
-$accent: #FF4081;
 @import '../../utilities/variable/variables.scss';
 
 
@@ -15,8 +8,9 @@ $accent: #FF4081;
 			list-style: none;
 			position: relative;
 			width: 3px;
+			height: auto;
 			margin: 0 auto;
-			padding-top: 50px;
+			// padding-top: 50px;
 			background: $darkRed;
 
 			&::after {
@@ -29,6 +23,13 @@ $accent: #FF4081;
 				height: 20px;
 				border-radius: 50%;
 				background: inherit;
+				cursor: pointer;
+				pointer-events: all;
+
+				&:target {
+					width: 30px;
+					height: 30px;
+				}
 			}
 
 			.kosong {
@@ -36,32 +37,26 @@ $accent: #FF4081;
 				bottom: 0;
 				width: 500px;
 				padding: 15px;
-				background: $accent;
+				background: #ffffff;
 				border-radius: 10px;
 
-				&::before {
-					content: '';
-					position: absolute;
-					bottom: 5px;
-					width: 0;
-					height: 0;
-					border-style: solid;
-				}
+				
 
 				.titleline {
 					// float: right;
 					// text-align: start;
 					font-size: 7pt;
-					color: $darkRed;
+					color: #960001;
 				}
 
 				.timelineContent {
 					width: 100%;
 					display: flex;
 
+					
 					.imgContent {
 						width: 40%;
-						height: 40vh;
+						height: 35vh;
 						border-top-right-radius: 10px;
 					}
 					
@@ -75,7 +70,7 @@ $accent: #FF4081;
 						.headIsi {
 							font-size: 8pt;
 							margin-bottom: .3rem;
-							color: $lightRed;
+							color: #c60605;
 						}
 
 						.judulTimeline {
@@ -160,25 +155,35 @@ $accent: #FF4081;
 
 .wrapperTimeline .pembungkusLine .timeline-item:nth-child(odd) .kosong {
 	left: 45px;
+	// bottom: 100px;
 
-	&::before {
-		left: -15px;
-		border-width: 8px 16px 8px 0;
-		border-color: transparent $accent transparent transparent;
-	}
+}
+
+.wrapperTimeline .pembungkusLine .timeline-item:nth-child(odd) .kosong {
+	left: 45px;
+	// bottom: 100px;
+
 }
 
 .wrapperTimeline .pembungkusLine .timeline-item:nth-child(even) .kosong {
 	left: -539px;
 	text-align: end;
+	bottom: 300px;
+	
+}
 
-	&::before {
-		right: -15px;
-		border-width: 8px 0 8px 16px;
-		border-color: transparent transparent transparent $accent;
+.wrapperTimeline .pembungkusLine .timeline-item:nth-child(even) {
+
+	&::after {
+			bottom: 632px;
 	}
 }
 
+.wrapperTimeline .pembungkusLine .timeline-item:nth-child(odd) {
+	&::after {
+			bottom: 335px;
+	}
+}
 
 
 

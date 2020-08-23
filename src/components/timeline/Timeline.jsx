@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Timeline.scss'
 
 
 const Timeline = ({ timeline }) => {
+
+    let [hover, setHover] = useState(false)
 
 
     return (
@@ -11,17 +13,26 @@ const Timeline = ({ timeline }) => {
             <ul className="pembungkusLine">
                 {timeline.map((e) => {
                     return (
-                        <li className="timeline-item">
-                            <div className="kosong">
-                                <h6 className="titleline">Admin PDI Perjuangan | 1 Januari 2021</h6>
-                                <div className="timelineContent">
+                        <li className="timeline-item" onClick={()=> {
+                            setHover(!hover)
+                        }}>
+                            <div className="kosong" style={{
+                                    background : hover ? '#960001' : '#fff',
+                                    color : hover ? '#fff' : '#000'
+                                }}>
+                                <h6 className="titleline" style={{
+                                    color : hover ? '#fff' : '#960001'
+                                }}>Admin PDI Perjuangan | 1 Januari 2021</h6>
+                                <div className="timelineContent" >
                                     <div className="imgContent" style={{
-                                        background: `url(https://picsum.photos/seed/${e.images}/200/300)`,
+                                        background: `url(${e.images})`,
                                         backgroundSize: 'cover',
                                         backgroundPosition: 'center center'
                                     }}></div>
                                     <div className="isiTimeline">
-                                        <span className="headIsi">{e.headIsi}</span>
+                                        <span className="headIsi" style={{
+                                            color : hover ? '#fff' : '#c60605' 
+                                        }}>{e.headIsi}</span>
                                         <h6 className="judulTimeline">{e.judul}</h6>
                                         <p className="paragrapTimeline">
                                             {e.paragrap}

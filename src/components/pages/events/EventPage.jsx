@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import './EventPage.scss'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import Timeline from '../../timeline/Timeline'
+import megawatisatu from '../../../img/megawati1.jpg'
+import megawatidua from '../../../img/megawati2.jpg'
 
 import AngkaPaginationEvent from '../../paginationevent/AngkaPaginationEvent'
 
@@ -11,42 +13,29 @@ const EventPage = () => {
     let [itemEvent, setItemEvent] = useState([
         {
             id: 1,
-            images: 'awqkdqdq',
+            images: megawatisatu,
             headIsi: 'Ketua Umum',
-            judul: 'judul Satu',
-            pargrap: 'lorem ipsum dolor sit amet'
+            judul: 'HUT 48 dan Rakernas || PDI Perjuangan',
+            paragrap: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium et voluptatum deleniti quidem odio quasi. At voluptatum dicta quia, voluptas voluptatibus eaque, ullam in vitae dolore, numquam similique nostrum perferendis?'
         },
         {
             id: 2,
-            images: 'qweqew',
+            images: megawatidua,
             headIsi: 'Kegiatan Partai',
-            judul: 'judul Dua',
-            pargrap: 'lorem ipsum dolor sit amet'
-        },
-        {
-            id: 3,
-            images: 'qweqew',
-            headIsi: 'Kegiatan Partai',
-            judul: 'judul Dua',
-            pargrap: 'lorem ipsum dolor sit amet'
-        },
-        {
-            id: 4,
-            images: 'qweqew',
-            headIsi: 'Kegiatan Partai',
-            judul: 'judul Dua',
-            pargrap: 'lorem ipsum dolor sit amet'
-        },
+            judul: '75 Tahun Merdeka, Masih ada yang Pertentangkan Agama dan Pancasila',
+            paragrap: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium et voluptatum deleniti quidem odio quasi. At voluptatum dicta quia, voluptas voluptatibus eaque, ullam in vitae dolore, numquam similique nostrum perferendis?'
+        }
     ])
 
     let [currentPage, setCurrentPage] = useState(1)
     let [timelinePage, setTimelinePage] = useState(4)
 
+    
 
 
     let [loading, setLoading] = useState(false)
     let [currentPage2, setCurrentPage2] = useState(1)
-    let [itemEventPerPage] = useState(3)
+    let [itemEventPerPage] = useState(4)
 
     const indexOfLastPost = currentPage2 * itemEventPerPage
     const indexOfFirstPost = indexOfLastPost - itemEventPerPage
@@ -62,7 +51,7 @@ const EventPage = () => {
                     <h2>Timeline Event </h2>
                 </div>
             </div>
-
+        
             <div className="linkedEvent">
                 <BreadCrumbs link1="Home"
                     to1="/"
