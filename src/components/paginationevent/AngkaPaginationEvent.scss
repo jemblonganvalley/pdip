@@ -1,3 +1,5 @@
+@import "../../utilities/variable/variables.scss";
+
 // Angka Pagination
 .container-angka-pagination{
     display: flex;
@@ -37,7 +39,15 @@
                     background: #d80010;
                     color: #fff;
                     font-size: 12pt;
-                    transition: .20s;
+                }
+            }
+
+            .paginationLink.active {
+
+                &:focus {
+                color: $accent;
+                background: $colors;
+
                 }
             }
         }

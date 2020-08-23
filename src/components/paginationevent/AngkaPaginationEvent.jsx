@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './AngkaPaginationEvent.scss'
+import { Link, NavLink } from 'react-router-dom'
 
 const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
 
@@ -9,15 +10,17 @@ const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
         pageNumbers.push(i)
     }
 
+
+
     return (
         <>
             <div className="container-angka-pagination">
                 <ul className="col-angka-pagination">
                     {pageNumbers.map(number => (
-                        <li key={number} className="angka-pagination">
-                            <a onClick={() => paginate(number)} className="paginationLink">
+                        <li key={number} className="angka-pagination" onClick={() => paginate(number)}>
+                            <NavLink className="paginationLink" activeClassName="active" to="#">
                                 {number}
-                            </a>
+                            </NavLink>
                         </li>
                     ))}
                 </ul>

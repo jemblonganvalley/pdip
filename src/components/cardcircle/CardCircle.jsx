@@ -1,17 +1,27 @@
 import React from 'react'
 import './CardCircle.scss'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-const CardCircle = ({image, jabatan, nama})=> {
+const CardCircle = ({ strukturCard }) => {
     return (
-        <Link className="circleCard" to="/detailpengurus">
-            <div className="imageCircle" style={{
-                background : `url(${image})`,
-                backgroundSize : 'cover'
-            }}></div>
-            <small className="jabatan">{jabatan}</small>
-            <h6 className="nama">{nama}</h6>
-        </Link>
+        <div className="wrapperCircle" style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            flexDirection: 'row'
+        }}>
+            {strukturCard.map((e) => {
+                return (
+                    <Link className="circleCard" to="/detailpengurus">
+                        <div className="imageCircle" style={{
+                            background: `url(${e.image})`,
+                            backgroundSize: 'cover'
+                        }}></div>
+                        <small className="jabatan">{e.jabatan}</small>
+                        <h6 className="nama">{e.nama}</h6>
+                    </Link>
+                )
+            })}
+        </div>
     )
 }
 

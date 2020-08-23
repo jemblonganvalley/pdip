@@ -92,7 +92,7 @@ const KetuaUmumPage = () => {
                     <div className="col5-container-1-ketuaumum">
                         {/* Row1 */}
                         <div className="row1-video-youtube">
-                            <iframe width="100%" height="117%" src="https://www.youtube.com/embed/ChkKZ3hq1Nw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                            <iframe width="1349" height="488" src="https://www.youtube.com/embed/l2doUcFirGE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                         {/* END Row1 */}
 

@@ -24,13 +24,41 @@ const EventPage = () => {
             headIsi: 'Kegiatan Partai',
             judul: '75 Tahun Merdeka, Masih ada yang Pertentangkan Agama dan Pancasila',
             paragrap: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium et voluptatum deleniti quidem odio quasi. At voluptatum dicta quia, voluptas voluptatibus eaque, ullam in vitae dolore, numquam similique nostrum perferendis?'
-        }
+        },
+        {
+            id: 3,
+            images: megawatidua,
+            headIsi: 'Kegiatan Partai',
+            judul: '75 Tahun Merdeka, Masih ada yang Pertentangkan Agama dan Pancasila',
+            paragrap: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium et voluptatum deleniti quidem odio quasi. At voluptatum dicta quia, voluptas voluptatibus eaque, ullam in vitae dolore, numquam similique nostrum perferendis?'
+        },
+        {
+            id: 4,
+            images: megawatidua,
+            headIsi: 'Kegiatan Partai',
+            judul: '75 Tahun Merdeka, Masih ada yang Pertentangkan Agama dan Pancasila',
+            paragrap: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium et voluptatum deleniti quidem odio quasi. At voluptatum dicta quia, voluptas voluptatibus eaque, ullam in vitae dolore, numquam similique nostrum perferendis?'
+        },
+        {
+            id: 5,
+            images: megawatidua,
+            headIsi: 'Kegiatan Partai',
+            judul: '75 Tahun Merdeka, Masih ada yang Pertentangkan Agama dan Pancasila',
+            paragrap: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium et voluptatum deleniti quidem odio quasi. At voluptatum dicta quia, voluptas voluptatibus eaque, ullam in vitae dolore, numquam similique nostrum perferendis?'
+        },
+        {
+            id: 6,
+            images: megawatidua,
+            headIsi: 'Kegiatan Partai',
+            judul: '75 Tahun Merdeka, Masih ada yang Pertentangkan Agama dan Pancasila',
+            paragrap: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium et voluptatum deleniti quidem odio quasi. At voluptatum dicta quia, voluptas voluptatibus eaque, ullam in vitae dolore, numquam similique nostrum perferendis?'
+        },
     ])
 
     let [currentPage, setCurrentPage] = useState(1)
     let [timelinePage, setTimelinePage] = useState(4)
 
-    
+
 
 
     let [loading, setLoading] = useState(false)
@@ -51,7 +79,7 @@ const EventPage = () => {
                     <h2>Timeline Event </h2>
                 </div>
             </div>
-        
+
             <div className="linkedEvent">
                 <BreadCrumbs link1="Home"
                     to1="/"
@@ -80,12 +108,13 @@ const EventPage = () => {
             </div>
 
             <div className="timeline" style={{
+                position: 'relative',
                 width: '100%',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
                 flexDirection: 'column',
-                padding: '40px 10%'
+                padding: '10px 10%',
             }}>
                 <Timeline timeline={currentPosts} />
             </div>

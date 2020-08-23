@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import CardCircle from '../cardcircle/CardCircle'
 import megawati from '../../img/megawati.png'
 import './StrukturPaginate.scss'
+import AngkaPaginationEvent from '../paginationevent/AngkaPaginationEvent'
 
 const StrukturPaginate = () => {
 
@@ -25,31 +26,85 @@ const StrukturPaginate = () => {
             image: 'megawati.png',
             jabatan: 'Ketua Umum',
             nama: 'Megawati Soekarnoputri'
-        }
+        },
+        {
+            image: 'megawati.png',
+            jabatan: 'Ketua Umum',
+            nama: 'Megawati Soekarnoputri'
+        },
+        {
+            image: 'megawati.png',
+            jabatan: 'Ketua Umum',
+            nama: 'Megawati Soekarnoputri'
+        },
+        {
+            image: 'megawati.png',
+            jabatan: 'Ketua Umum',
+            nama: 'Megawati Soekarnoputri'
+        },
+        {
+            image: 'megawati.png',
+            jabatan: 'Ketua Umum',
+            nama: 'Megawati Soekarnoputri'
+        },
+        {
+            image: 'megawati.png',
+            jabatan: 'Ketua Umum',
+            nama: 'Megawati Soekarnoputri'
+        },
+        {
+            image: 'megawati.png',
+            jabatan: 'Ketua Umum',
+            nama: 'Megawati Soekarnoputri'
+        },
+        {
+            image: 'megawati.png',
+            jabatan: 'Ketua Umum',
+            nama: 'Megawati Soekarnoputri'
+        },
+        {
+            image: 'megawati.png',
+            jabatan: 'Ketua Umum',
+            nama: 'Megawati Soekarnoputri'
+        },
+        {
+            image: 'megawati.png',
+            jabatan: 'Ketua Umum',
+            nama: 'Megawati Soekarnoputri'
+        },
+        {
+            image: 'megawati.png',
+            jabatan: 'Ketua Umum',
+            nama: 'Megawati Soekarnoputri'
+        },
+        {
+            image: 'megawati.png',
+            jabatan: 'Ketua Umum',
+            nama: 'Megawati Soekarnoputri'
+        },
+        {
+            image: 'megawati.png',
+            jabatan: 'Ketua Umum',
+            nama: 'Megawati Soekarnoputri'
+        },
+        {
+            image: 'megawati.png',
+            jabatan: 'Ketua Umum',
+            nama: 'Megawati Soekarnoputri'
+        },
+
     ])
 
 
-    // useEffect(()=> {
-    //     fetch("http://localhost:3005/pagination", {
-    //         method : 'GET',
-    //         mode : 'cors',
-    //         headers : {
-    //             "Content-Type" : "application/json"
-    //         }
-    //     })
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         setStruktur(data)
-    //     })
-    // }, [])
 
-    // const struktur = [
-    //     {
-    //         image : megawati,
-    //         jabatan : 'Ketua Umum',
-    //         nama : 'Megawati Soekarnoputri'
-    //     }
-    // ]
+    let [currentPage2, setCurrentPage2] = useState(1)
+    let [itemEventPerPage] = useState(16)
+
+    const indexOfLastPost = currentPage2 * itemEventPerPage
+    const indexOfFirstPost = indexOfLastPost - itemEventPerPage
+    const currentPosts = struktur.slice(indexOfFirstPost, indexOfLastPost)
+
+    const paginate = (pageNumber) => setCurrentPage2(pageNumber)
 
     return (
         <div className="wrapperPaginate" style={{
@@ -57,13 +112,7 @@ const StrukturPaginate = () => {
             justifyContent: 'center',
             flexWrap: 'wrap'
         }}>
-            {struktur.map((e) => {
-                return (
-                    <CardCircle image={e.image}
-                        jabatan={e.jabatan}
-                        nama={e.nama} />
-                )
-            })}
+            <CardCircle strukturCard={currentPosts} />
 
             <nav aria-label="Page navigation example" style={{
                 marginTop: '10px',
@@ -72,7 +121,7 @@ const StrukturPaginate = () => {
                 justifyContent: 'center'
             }}>
 
-                <ul className="pagination">
+                {/* <ul className="pagination">
                     <li className="page-item">
                         <a className="page-link prevnext" href="#" aria-label="Previous">
                             <span aria-hidden="true">«</span>
@@ -84,7 +133,9 @@ const StrukturPaginate = () => {
                             <span aria-hidden="true">»</span>
                         </a>
                     </li>
-                </ul>
+                </ul> */}
+
+                <AngkaPaginationEvent itemEventPerPage={itemEventPerPage} totalPosts={struktur.length} paginate={paginate} />
             </nav>
 
         </div>
