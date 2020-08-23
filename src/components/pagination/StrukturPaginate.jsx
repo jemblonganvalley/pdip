@@ -57,13 +57,13 @@ const StrukturPaginate = () => {
             justifyContent: 'center',
             flexWrap: 'wrap'
         }}>
-            {/* {struktur.map((e)=> {
+            {struktur.map((e) => {
                 return (
                     <CardCircle image={e.image}
-                                jabatan={e.jabatan}
-                                nama={e.nama} />
+                        jabatan={e.jabatan}
+                        nama={e.nama} />
                 )
-            })} */}
+            })}
 
             <nav aria-label="Page navigation example" style={{
                 marginTop: '10px',
