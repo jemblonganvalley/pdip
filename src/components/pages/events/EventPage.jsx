@@ -85,34 +85,26 @@ const EventPage = () => {
             </div>
 
             <div className="paginationBulan">
-                <ul className="wrapperBulanItem">
-                    <li className="bulan-item"><a href="#" className="customBulan">
+                <div className="wrapperBulanItem">
+                    <div className="bulan-item"><a href="#" className="customBulan">
                         <i class="fa fa-arrow-left"></i>
-                    </a></li>
+                    </a></div>
 
-                    <li className="bulan-item"><a href="#" className="customBulan">
+                    <div className="bulan-item"><a href="#" className="customBulan">
                         Januari 2020
-                    </a></li>
+                    </a></div>
 
-                    <li className="bulan-item"><a href="#" className="customBulan">
+                    <div className="bulan-item"><a href="#" className="customBulan">
                         <i class="fa fa-arrow-right"></i>
-                    </a></li>
-                </ul>
+                    </a></div>
+                </div>
             </div>
 
             <div className="paginationTimeline">
                 <AngkaPaginationEvent itemEventPerPage={itemEventPerPage} totalPosts={itemEvent.length} paginate={paginate} />
             </div>
 
-            <div className="timeline" style={{
-                position: 'relative',
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                flexDirection: 'column',
-                padding: '10px 10%',
-            }}>
+            <div className="timeline">
                 <Timeline timeline={currentPosts} />
             </div>
         </div>

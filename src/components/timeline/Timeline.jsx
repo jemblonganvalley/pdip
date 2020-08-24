@@ -29,7 +29,7 @@ const Timeline = ({ timeline }) => {
                                     <div className="imgContent" style={{
                                         background: `url(${e.images})`,
                                         backgroundSize: 'cover',
-                                        backgroundPosition: 'center center'
+                                        backgroundPosition : 'center center'
                                     }}></div>
                                     <div className="isiTimeline">
                                         <span className="headIsi" style={{
