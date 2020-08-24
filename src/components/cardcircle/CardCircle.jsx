@@ -7,7 +7,8 @@ const CardCircle = ({ strukturCard }) => {
         <div className="wrapperCircle" style={{
             display: 'flex',
             flexWrap: 'wrap',
-            flexDirection: 'row'
+            flexDirection: 'row',
+            justifyContent : 'center'
         }}>
             {strukturCard.map((e) => {
                 return (

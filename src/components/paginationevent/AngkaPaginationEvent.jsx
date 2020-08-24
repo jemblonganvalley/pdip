@@ -15,15 +15,15 @@ const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
     return (
         <>
             <div className="container-angka-pagination">
-                <ul className="col-angka-pagination">
+                <div className="col-angka-pagination">
                     {pageNumbers.map(number => (
-                        <li key={number} className="angka-pagination" onClick={() => paginate(number)}>
+                        <div key={number} className="angka-pagination" onClick={() => paginate(number)}>
                             <NavLink className="paginationLink" activeClassName="active" to="#">
                                 {number}
                             </NavLink>
-                        </li>
+                        </div>
                     ))}
-                </ul>
+                </div>
             </div>
 
         </>

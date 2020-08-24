@@ -30,6 +30,11 @@ $smallPhoneDua : 400px;
         height: auto;
         padding: .5rem;
     }
+
+    @include smallPhoneDua() {
+        width: 80%;
+        height: 40vh;
+    }
     
 
     &:hover {
@@ -46,8 +51,8 @@ $smallPhoneDua : 400px;
             height: 5.5rem;
         }
         @include smallPhoneDua() {
-            width: 5rem;
-            height: 5rem;
+            width: 10rem;
+            height: 10rem;
         }
     }
 
@@ -70,7 +75,7 @@ $smallPhoneDua : 400px;
             font-size: 10pt;
         }
         @include smallPhoneDua() {
-            font-size: 9pt;
+            font-size: 12pt;
         }
     }
 }

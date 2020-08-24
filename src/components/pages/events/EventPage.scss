@@ -75,10 +75,19 @@ $smallPhoneDua : 400px;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @include smallPhone() {
+            padding: 0;
+        }
+
         .wrapperBulanItem {
             display: flex;
-            flex-direction: row;
             list-style: none;
+            @include smallPhone() {
+                justify-content: center;
+                align-items: center;
+
+            }
 
             .bulan-item {
                 margin: 0 1rem;
@@ -106,4 +115,20 @@ $smallPhoneDua : 400px;
         width: 100%;
     }
     // END Container Percobaan Pagination
+
+    .timeline {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 10%;
+        flex-wrap: wrap;
+
+        @include smallPhoneDua() {
+            flex-direction: row;
+            padding: 0;
+            
+        }
+    }
 }
