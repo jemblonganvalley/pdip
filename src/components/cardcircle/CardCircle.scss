@@ -46,6 +46,8 @@ $smallPhoneDua : 400px;
         width: 7.5rem;
         height: 7.5rem;
         border-radius: 50%;
+        background-size: cover;
+        background-position: center center;
         @include smallPhone() {
             width: 5.5rem;
             height: 5.5rem;

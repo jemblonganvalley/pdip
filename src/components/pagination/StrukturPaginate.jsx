@@ -22,90 +22,94 @@ const StrukturPaginate = () => {
 
     let [struktur, setStruktur] = useState([
         {
+            id : 1,
             image: megawati,
             jabatan: 'Ketua Umum',
             nama: 'Megawati Soekarnoputri'
         },
         {
+            id : 2,
             image: hasto,
             jabatan: 'Sekretaris Jendral',
             nama: 'Hasto Kristiyanto'
         },
         {
+            id : 3,
             image: utut,
             jabatan: 'Wasekjen Bidang Internal',
             nama: 'Utut Adianto'
         },
         {
+            id : 4,
+
             image: komarudin,
             jabatan: 'Wasekjen Bidang Kerakyatan',
             nama: 'Komarudin Watubun'
         },
         {
+            id : 5,
+
             image: olly,
             jabatan: 'Ketua Umum',
             nama: 'Olly Dondo Kambey'
         },
         {
+            id : 6,
+
             image: rudi,
             jabatan: 'Sekretaris Jendral',
             nama: 'Rudiyanto Chen'
         },
         {
+            id : 7,
+
             image: peter,
             jabatan: 'Wasekjen Bidang Kerakyatan',
             nama: 'Yuliari Peter Batubara'
         },
         {
+            id : 8,
+
             image: watubun,
             jabatan: 'Ketua Bidang Kehormatan Partai',
             nama: 'Komarudin Watubun'
         },
         {
+            id : 9,
+
             image: prananda,
             jabatan: 'Ekonomi Kreatif & Ekonomi Digital',
             nama: 'Prananda Prabowo'
         },
         {
+            id : 10,
+            
             image: yasonna,
             jabatan: 'Sekretaris Jendral',
             nama: 'Yasonna H. Laoly'
         },
         {
+            id : 11,
+
             image: said,
             jabatan: 'Wasekjen Bidang Internal',
             nama: 'Said Abdullah'
         },
         {
+            id : 12,
+
             image: eriko,
             jabatan: 'Pemuda dan Olahraga',
             nama: 'Eriko Sotardugo'
         },
         {
+            id : 13,
+
             image: 'megawati.png',
             jabatan: 'Ketua Umum',
             nama: 'Megawati Soekarnoputri'
         },
-        {
-            image: 'megawati.png',
-            jabatan: 'Ketua Umum',
-            nama: 'Megawati Soekarnoputri'
-        },
-        {
-            image: 'megawati.png',
-            jabatan: 'Ketua Umum',
-            nama: 'Megawati Soekarnoputri'
-        },
-        {
-            image: 'megawati.png',
-            jabatan: 'Ketua Umum',
-            nama: 'Megawati Soekarnoputri'
-        },
-        {
-            image: 'megawati.png',
-            jabatan: 'Ketua Umum',
-            nama: 'Megawati Soekarnoputri'
-        },
+        
 
     ])
 
