@@ -12,10 +12,10 @@ const CardCircle = ({ strukturCard }) => {
         }}>
             {strukturCard.map((e) => {
                 return (
-                    <Link className="circleCard" to="/detailpengurus">
+                    <Link className="circleCard" to="/detailpengurus" key={e.id}>
                         <div className="imageCircle" style={{
                             background: `url(${e.image})`,
-                            backgroundSize: 'cover'
+                            backgroundSize : 'cover'
                         }}></div>
                         <small className="jabatan">{e.jabatan}</small>
                         <h6 className="nama">{e.nama}</h6>
