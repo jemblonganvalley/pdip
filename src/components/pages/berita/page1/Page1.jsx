@@ -159,32 +159,38 @@ const Page1 = () => {
                         {/* Section6 */}
                         <div className="section6-beritaPage1">
                             {/* Column1 */}
-                            <div className="col1-section6-beritaPage1">
-                                <MainDivider text="Berita Terbaru"
-                                    garisMerah="7rem"
-                                    m="1rem 0" />
-                            </div>
+                            
                             {/* END Column1 */}
 
                             {/* Column2 */}
-                            <div className="col2-section6-beritaPage1">
-                                <Cards imageCard={pemilu18}
-                                    textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                                    borderRadius="10px" />
-                                <Cards imageCard={pemilu19}
-                                    textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                                    borderRadius="10px" />
-                                <Cards imageCard={pemilu20}
-                                    textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                                    borderRadius="10px" />
-                            </div>
+                            
                             {/* END Column2 */}
                         </div>
                         {/* END Section6 */}
                     </div>
+
+                    
                     {/* END Column2 */}
                 </div>
                 {/* END Container1 */}
+
+                <div className="col1-section6-beritaPage1">
+                    <MainDivider text="Berita Terbaru"
+                        garisMerah="7rem"
+                        m="1rem 0" />
+                </div>
+
+                <div className="col2-section6-beritaPage1">
+                    <Cards imageCard={pemilu18}
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                        borderRadius="10px" />
+                    <Cards imageCard={pemilu19}
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                        borderRadius="10px" />
+                    <Cards imageCard={pemilu20}
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                        borderRadius="10px" />
+                </div>
             </div>
         </>
     )

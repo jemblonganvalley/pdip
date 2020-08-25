@@ -11,6 +11,8 @@ $smallPhoneDua : 400px;
     }
 }
 
+@import "../../../../utilities/variable/variables.scss";
+
 
 $secondary : #f3f3f3;
 
@@ -79,6 +81,8 @@ $secondary : #f3f3f3;
         width: 100%;
         padding: 20px 20%;
         overflow: hidden;
+
+        
 
         @include smallPhone(){
             padding: 0;
@@ -459,82 +463,83 @@ $secondary : #f3f3f3;
                 overflow: hidden;
 
                 // Column1
-                .col1-section6-beritaPage1{
-                    display: flex;
-                    flex-direction: column;
-                    height: 20vh;
-                    width: 100%;
-                    background: #f3f3f3;
-                    align-items: center;
-                    justify-content: center;
-                    overflow: hidden;
-
-                    @include smallPhone(){
-                        padding: 0 10px;
-                    }
-        
-                    .col-title-berita-terbaru-beritaPage1{
-                        display: flex;
-                        height: auto;
-                        width: 100%;
-                        justify-content: center;
-                        align-items: center;
-                        overflow: hidden;
-        
-                        .txt-berita-terbaru{
-                            display: flex;
-                            font-size: 15px;
-                            font-weight: bold;
-                            color: #d80010;
-                            margin: 1px;
-                            overflow: hidden;
-                        }
-                    }
-        
-                    .col-garis-lurus{
-                        display: flex;
-                        height: 1px;
-                        width: 100%;
-                        background: #ccc;
-                        justify-content: center;
-                        align-items: center;
-                        margin: 5px 0 0 0;
-                        overflow: hidden;
-                        
-                        .garis-merah{
-                            display: flex;
-                            position: absolute;
-                            height: 4px;
-                            width: 120px;
-                            background: #d80010;
-                            overflow: hidden;
-                        }
-                    }
-                }
+                
                 // END Column1
 
                 // Column2
-                .col2-section6-beritaPage1 {
-                    width: 100%;
-                    height: 60vh;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: row;
-                    margin-top: 0;
-                    padding: 10px 0%;
-
-                    @include smallPhone(){
-                        flex-direction: column;
-                        height: auto;
-                        padding: 0;
-                    }
-                }
+                
                 // END Column2
             }
             // END Section6
         }
+
+        
         // END Column2
     }
     // END Container1
+
+    .col1-section6-beritaPage1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: #f3f3f3;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: $padding;
+
+        @include smallPhone(){
+            padding: 0 10px;
+        }
+
+        .col-title-berita-terbaru-beritaPage1{
+            display: flex;
+            height: auto;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            .txt-berita-terbaru{
+                display: flex;
+                font-size: 15px;
+                font-weight: bold;
+                color: #d80010;
+                margin: 1px;
+                overflow: hidden;
+            }
+        }
+
+        .col-garis-lurus{
+            display: flex;
+            height: 1px;
+            width: 100%;
+            background: #ccc;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0 0 0;
+            overflow: hidden;
+            
+            
+        }
+    }
+    
+    .col2-section6-beritaPage1 {
+        width: 100%;
+        // height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 0;
+        padding: $padding;
+
+        
+
+        @include smallPhone(){
+            flex-direction: column;
+            height: auto;
+            padding: 0;
+        }
+    }
 }
