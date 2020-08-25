@@ -61,9 +61,9 @@ const BeritaPage = () => {
                     {/* END Column1 */}
 
                     {/* Column2 */}
-                    <CardInformasi image={BeritaSatu}
-                        image2={BeritaDua}
-                        image3={BeritaTiga}
+                    <CardInformasi to1="/beritanasional" image={BeritaSatu} to2="/beritadaerah"
+                        image2={BeritaDua} to3="/beritafoto"
+                        image3={BeritaTiga} to4="/kegiatanpartai"
                         image4={BeritaEmpat}
                         width1="35"
                         width2="35"

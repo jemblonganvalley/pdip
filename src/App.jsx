@@ -25,6 +25,14 @@ import BgRed from './components/bgRed/BgRed';
 import WejanganBungKarno from './components/pages/bkbb/wejanganbungkarno/WejanganBungKarno';
 import { useStoreActions } from 'easy-peasy';
 import EventPage from './components/pages/events/EventPage';
+import PidatoKongres from './components/pages/KetuaUmum/pidatokongres/PidatoKongres';
+import PidatoRakernas from './components/pages/KetuaUmum/pidatorakernas/PidatoRakernas';
+import PidatoRakornas from './components/pages/KetuaUmum/pidatorakornas/PidatoRakornas';
+import PidatoHut from './components/pages/KetuaUmum/pidatohut/PidatoHut';
+import BeritaNasional from './components/pages/berita/beritanasional/BeritaNasional';
+import BeritaDaerah from './components/pages/berita/beritadaerah/BeritaDaerah';
+import BeritaFoto from './components/pages/berita/beritafoto/BeritaFoto';
+import KegiatanPartai from './components/pages/berita/kegiatanpartai/KegiatanPartai';
 
 
 function App() {
@@ -56,6 +64,38 @@ function App() {
       <div className="App">
 
         <Switch>
+
+          <Route path='/kegiatanpartai'>
+            <KegiatanPartai />
+          </Route>
+
+          <Route path='/beritafoto'>
+            <BeritaFoto />
+          </Route>
+
+          <Route path='/beritadaerah'>
+            <BeritaDaerah />
+          </Route>
+
+          <Route path='/beritanasional'>
+            <BeritaNasional />
+          </Route>
+
+          <Route path='/pidatohut'>
+            <PidatoHut />
+          </Route>
+
+          <Route path='/pidatorakornas'>
+            <PidatoRakornas />
+          </Route>
+
+          <Route path='/pidatorakernas'>
+            <PidatoRakernas />
+          </Route>
+
+          <Route path='/pidatokongres'>
+            <PidatoKongres />
+          </Route>
 
           <Route path='/event'>
             <EventPage />

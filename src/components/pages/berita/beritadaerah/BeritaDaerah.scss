@@ -1,0 +1,85 @@
+$secondary : #f3f3f3;
+@import "../../../../utilities/variable/variables.scss";
+
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+.wrapper-berita-daerah{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+
+    .linked-berita-daerah {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 15px;
+        padding: $paddingSmall;
+
+        @include smallPhone(){
+            width: 100%;
+            padding: 0 2%;
+        }
+    }
+
+    // Container1
+    .container1-berita-daerah{
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10%;
+
+        @include smallPhone(){
+            padding: 0 10px;
+        }
+    }
+    // END Container1
+
+    // Container2
+    .container2-berita-daerah{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 0 10%;
+        margin: 30px 0 0 0;
+        
+        @include smallPhone(){
+            padding: 0px;
+        }
+
+        // Column Card
+        .column-card-berita-daerah{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+        }
+        // END Column Card
+
+        // Column Pagination
+        .column-pagination-berita-daerah{
+            display: flex;
+            height: 10vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        // END Column Pagination
+    }
+    // END Container2
+}

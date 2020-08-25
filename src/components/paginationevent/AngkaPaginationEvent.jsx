@@ -10,8 +10,6 @@ const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
         pageNumbers.push(i)
     }
 
-
-
     return (
         <>
             <div className="container-angka-pagination">

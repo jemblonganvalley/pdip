@@ -53,9 +53,9 @@ const KetuaUmumPage = () => {
                     {/* END Column1 */}
 
                     {/* Column2 */}
-                    <CardInformasi image={ketuaUmumSatu}
-                        image2={ketuaUmumDua}
-                        image3={ketuaUmumTiga}
+                    <CardInformasi to1="/pidatokongres" image={ketuaUmumSatu} to2="/pidatorakernas"
+                        image2={ketuaUmumDua} to3="/pidatorakornas"
+                        image3={ketuaUmumTiga} to4="/pidatohut"
                         image4={ketuaUmumEmpat}
                         width1="35"
                         width2="35"
