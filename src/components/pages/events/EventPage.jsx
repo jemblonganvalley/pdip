@@ -69,7 +69,7 @@ const EventPage = () => {
     const paginate = (pageNumber) => setCurrentPage2(pageNumber)
 
     return (
-        <div className="wrapperEvent">
+    <div className="wrapperEvent">
 
             <div className="headEvent">
                 <div className="textHeadEvent">
@@ -83,8 +83,8 @@ const EventPage = () => {
                     page2="Events"
                 />
             </div>
-
-            <div className="paginationBulan">
+        <div className="wrapperPaginations">
+            <div className="paginationBulan" >
                 <div className="wrapperBulanItem">
                     <div className="bulan-item"><a href="#" className="customBulan">
                         <i class="fa fa-arrow-left"></i>
@@ -100,6 +100,7 @@ const EventPage = () => {
                 </div>
             </div>
 
+
             <div className="paginationTimeline">
                 <AngkaPaginationEvent itemEventPerPage={itemEventPerPage} totalPosts={itemEvent.length} paginate={paginate} />
             </div>
@@ -108,6 +109,8 @@ const EventPage = () => {
                 <Timeline timeline={currentPosts} />
             </div>
         </div>
+    </div>
+
     )
 }
 

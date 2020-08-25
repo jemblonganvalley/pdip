@@ -46,7 +46,7 @@ const Page1 = () => {
                         {/* Section2 */}
                         <div className="section2-col1-beritaPage1">
                             {/* Row1 */}
-                            <div className="row1-beritaPage1">
+                            {/* <div className="row1-beritaPage1">
                                 <div className="box-btn">
                                     <button className="btn-love">
                                         <i className="fas fa-heart"></i>
@@ -55,14 +55,11 @@ const Page1 = () => {
                                         0
                                     </p>
                                 </div>
-                            </div>
+                            </div> */}
                             {/* END Row1 */}
 
                             {/* Row2 */}
                             <div className="row2-beritaPage1">
-                                <button className="btn-admin">
-                                    Admin
-                                </button>
                                 <p className="date">
                                     May 15, 2016 9:24 p.m.
                                 </p>
