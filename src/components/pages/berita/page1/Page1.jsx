@@ -60,9 +60,7 @@ const Page1 = () => {
 
                             {/* Row2 */}
                             <div className="row2-beritaPage1">
-                                <p className="date">
-                                    May 15, 2016 9:24 p.m.
-                                </p>
+                            <small className="date">Admin PDI Perjuangan | 15 May 2016</small>
                                 <div className="garis-panjang-tipis">
                                     <div className="garis-merah-tebal">
 

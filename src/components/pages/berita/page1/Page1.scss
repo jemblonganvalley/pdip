@@ -235,8 +235,8 @@ $secondary : #f3f3f3;
 
                     .date{
                         display: flex;
-                        font-size: 15px;
-                        color: #000;
+                        font-size: .8rem;
+                        color: $colors;
                         margin: 5px 0 0 0;
                         overflow: hidden;
 
@@ -253,6 +253,7 @@ $secondary : #f3f3f3;
                         justify-content: center;
                         align-items: center;
                         // margin: 50px 5% 0px 5%;
+                        margin: 1rem 0;
                         overflow: hidden;
 
                         @include smallPhone(){
