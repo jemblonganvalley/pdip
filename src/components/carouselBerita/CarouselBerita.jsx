@@ -10,8 +10,8 @@ const CarouselBerita = () => {
                     <div className="carousel-item active">
                         <div className="col1-container-1-beritaPage">
                             <div className="cont-img-col1-beritaPage">
-                                <div className="col1-img-beritaPage">
-                                    <div className="box-txt-title-beritaPage">
+                                <div className="col1-img-carousel-beritaPage">
+                                    <div className="box-title-carousel-beritaPage">
                                         <h1>Lorem ipsum dolor sit amet, consectetur adipsing elit,</h1>
                                     </div>
                                 </div>

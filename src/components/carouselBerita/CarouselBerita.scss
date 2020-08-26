@@ -56,17 +56,17 @@ $smallPhoneDua : 400px;
                 }
 
                 // Column1
-                .col1-img-beritaPage{
+                .col1-img-carousel-beritaPage{
                     display: flex;
                     height: 70%;
                     width: 100%;
                     overflow: hidden;
                     border-bottom: 1px solid #fff;
 
-                    .box-txt-title-beritaPage{
+                    .box-title-carousel-beritaPage{
                         display: flex;
                         height: 100%;
-                        width: 100%;
+                        width: auto;
                         justify-content: center;
                         align-items: center;
                         overflow: hidden;

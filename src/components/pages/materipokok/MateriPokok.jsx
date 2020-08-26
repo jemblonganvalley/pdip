@@ -16,7 +16,7 @@ const MateriPokok = () => {
     let [cardMateriPk, setCardMateriPk] = useState([
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb5.jpg',
+            imgMateriPk: '../../../img/bkbb5.jpg',
             txtJdlMateriPk: 'Indonesia Menggugat Tahun 1930',
             txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial'
         },
