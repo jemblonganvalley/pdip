@@ -119,7 +119,7 @@ const MateriPokok = () => {
                 {/* Column Card Materi Pokok */}
                 <div className="col-card-materiThumbnail">
 
-                    <CardMateriPokok cardMateriPokokItem={currentPosts} />
+                    <CardMateriPokok cardMateriPokokItem={currentPosts} imgMateriPk={bkbb5} imgMateriPk={bkbb6} imgMateriPk={bkbb7} />
                 </div>
                 {/* END Column Card Materi Pokok */}
 
