@@ -5,6 +5,9 @@ import BreadCrumbs from '../../../breadcrumbs/BreadCrumbs'
 import MainDivider from '../../../divider/MainDivider'
 import CardMateriPokok from '../../../cardmateripokok/CardMateriPokok'
 import AngkaPaginationEvent from '../../../paginationevent/AngkaPaginationEvent'
+import pemilu13 from '../../../../img/pemilu13.jpg'
+import pemilu14 from '../../../../img/pemilu14.jpg'
+import pemilu15 from '../../../../img/pemilu15.jpg'
 
 const KegiatanPartai = () => {
 
@@ -12,75 +15,99 @@ const KegiatanPartai = () => {
     let [cardKegiatanPartai, setCardKegiatanPartai] = useState([
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb5.jpg',
+            imgMateriPk: pemilu13,
             txtJdlMateriPk: 'kegiatan partai',
-            txtParagrapMateriPk: ''
+            txtParagrapMateriPk: '',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb6.jpg',
+            imgMateriPk: pemilu14,
             txtJdlMateriPk: 'kegiatan partai',
-            txtParagrapMateriPk: ''
+            txtParagrapMateriPk: '',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb7.jpg',
+            imgMateriPk: pemilu15,
             txtJdlMateriPk: 'kegiatan partai',
-            txtParagrapMateriPk: ''
+            txtParagrapMateriPk: '',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb5.jpg',
+            imgMateriPk: pemilu13,
             txtJdlMateriPk: 'kegiatan partai',
-            txtParagrapMateriPk: ''
+            txtParagrapMateriPk: '',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb6.jpg',
+            imgMateriPk: pemilu14,
             txtJdlMateriPk: 'kegiatan partai',
-            txtParagrapMateriPk: ''
+            txtParagrapMateriPk: '',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb7.jpg',
+            imgMateriPk: pemilu15,
             txtJdlMateriPk: 'kegiatan partai',
-            txtParagrapMateriPk: ''
+            txtParagrapMateriPk: '',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb5.jpg',
+            imgMateriPk: pemilu13,
             txtJdlMateriPk: 'kegiatan partai',
-            txtParagrapMateriPk: ''
+            txtParagrapMateriPk: '',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb6.jpg',
+            imgMateriPk: pemilu14,
             txtJdlMateriPk: 'kegiatan partai',
-            txtParagrapMateriPk: ''
+            txtParagrapMateriPk: '',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb7.jpg',
+            imgMateriPk: pemilu15,
             txtJdlMateriPk: 'kegiatan partai',
-            txtParagrapMateriPk: ''
+            txtParagrapMateriPk: '',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb5.jpg',
+            imgMateriPk: pemilu13,
             txtJdlMateriPk: 'kegiatan partai',
-            txtParagrapMateriPk: ''
+            txtParagrapMateriPk: '',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb6.jpg',
+            imgMateriPk: pemilu14,
             txtJdlMateriPk: 'kegiatan partai',
-            txtParagrapMateriPk: ''
+            txtParagrapMateriPk: '',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb7.jpg',
+            imgMateriPk: pemilu15,
             txtJdlMateriPk: 'kegiatan partai',
-            txtParagrapMateriPk: ''
+            txtParagrapMateriPk: '',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
     ])
     // END Create Database Card Item

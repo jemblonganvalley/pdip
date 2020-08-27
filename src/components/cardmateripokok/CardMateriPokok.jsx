@@ -15,7 +15,9 @@ const CardMateriPokok = ({ cardMateriPokokItem }) => {
                 return (
                     <div className="cont-card-materi-pk">
                         <Link to={e.pageMateriPk} className="img-card-materi-pk" style={{
-                            backgroundImage: `url(${e.imgMateriPk})`
+                            backgroundImage: `url(${e.imgMateriPk})`,
+                            borderTopLeftRadius: `${e.borderTopLeftRadius}`,
+                            borderTopRightRadius: `${e.borderTopRightRadius}`
                         }}>
                         </Link>
                         <div className="box-title-card-materi-pk">

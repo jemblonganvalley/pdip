@@ -16,75 +16,99 @@ const MateriPokok = () => {
     let [cardMateriPk, setCardMateriPk] = useState([
         {
             pageMateriPk: '',
-            imgMateriPk: '../../../img/bkbb5.jpg',
+            imgMateriPk: bkbb5,
             txtJdlMateriPk: 'Indonesia Menggugat Tahun 1930',
-            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial'
+            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb6.jpg',
+            imgMateriPk: bkbb6,
             txtJdlMateriPk: 'Kapitalisme Bangsa Sendiri 1932',
-            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb7.jpg',
+            imgMateriPk: bkbb7,
             txtJdlMateriPk: 'MENCAPAI INDONESIA MERDEKA TAHUN 1933',
-            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb5.jpg',
+            imgMateriPk: bkbb5,
             txtJdlMateriPk: 'Indonesia Menggugat Tahun 1930',
-            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial'
+            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb6.jpg',
+            imgMateriPk: bkbb6,
             txtJdlMateriPk: 'Kapitalisme Bangsa Sendiri 1932',
-            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb7.jpg',
+            imgMateriPk: bkbb7,
             txtJdlMateriPk: 'MENCAPAI INDONESIA MERDEKA TAHUN 1933',
-            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb5.jpg',
+            imgMateriPk: bkbb5,
             txtJdlMateriPk: 'Indonesia Menggugat Tahun 1930',
-            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial'
+            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb6.jpg',
+            imgMateriPk: bkbb6,
             txtJdlMateriPk: 'Kapitalisme Bangsa Sendiri 1932',
-            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb7.jpg',
+            imgMateriPk: bkbb7,
             txtJdlMateriPk: 'MENCAPAI INDONESIA MERDEKA TAHUN 1933',
-            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb5.jpg',
+            imgMateriPk: bkbb5,
             txtJdlMateriPk: 'Indonesia Menggugat Tahun 1930',
-            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial'
+            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb6.jpg',
+            imgMateriPk: bkbb6,
             txtJdlMateriPk: 'Kapitalisme Bangsa Sendiri 1932',
-            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
         {
             pageMateriPk: '',
-            imgMateriPk: '../../img/bkbb7.jpg',
+            imgMateriPk: bkbb7,
             txtJdlMateriPk: 'MENCAPAI INDONESIA MERDEKA TAHUN 1933',
-            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit'
+            txtParagrapMateriPk: 'Lorem ipsum dolor sit amet, consectetur adipicising elit',
+            borderTopLeftRadius: '10px',
+            borderTopRightRadius: '10px'
         },
     ])
     // END Create Database Card Item
@@ -119,7 +143,7 @@ const MateriPokok = () => {
                 {/* Column Card Materi Pokok */}
                 <div className="col-card-materiThumbnail">
 
-                    <CardMateriPokok cardMateriPokokItem={currentPosts} imgMateriPk={bkbb5} imgMateriPk={bkbb6} imgMateriPk={bkbb7} />
+                    <CardMateriPokok cardMateriPokokItem={currentPosts} />
                 </div>
                 {/* END Column Card Materi Pokok */}
 
