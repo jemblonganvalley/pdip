@@ -33,6 +33,10 @@ import BeritaNasional from './components/pages/berita/beritanasional/BeritaNasio
 import BeritaDaerah from './components/pages/berita/beritadaerah/BeritaDaerah';
 import BeritaFoto from './components/pages/berita/beritafoto/BeritaFoto';
 import KegiatanPartai from './components/pages/berita/kegiatanpartai/KegiatanPartai';
+import SiaranLangsung from './components/pages/siaranlangsung/SiaranLangsung';
+import VideoDokumen from './components/pages/videodokumen/VideoDokumen';
+import VideoTeaser from './components/pages/videoteaser/VideoTeaser';
+import Wawancara from './components/pages/wawancara/Wawancara';
 
 
 function App() {
@@ -95,6 +99,22 @@ function App() {
 
           <Route path='/pidatokongres'>
             <PidatoKongres />
+          </Route>
+
+          <Route path='/wawancara'>
+            <Wawancara />
+          </Route>
+
+          <Route path='/videoteaser'>
+            <VideoTeaser />
+          </Route>
+
+          <Route path='/videodokumen'>
+            <VideoDokumen />
+          </Route>
+
+          <Route path='/siaranlangsung'>
+            <SiaranLangsung />
           </Route>
 
           <Route path='/event'>

@@ -12,14 +12,14 @@ $smallPhoneDua : 400px;
         @content;
     }
 }
-
-.wrapperVideo {
+.wrapperVD {
     width: 100%;
     padding: $paddingSmall;
     @include smallPhone() {
         padding: $paddingMobile;
     }
-    .linkedVideo {
+
+    .linkedVD {
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -31,17 +31,14 @@ $smallPhoneDua : 400px;
             padding: $paddingMobile;
         }
     }
-    
-    
 
-    .wrapperCardVideo {
-        display: flex;
-        flex-direction: row;
-        margin-top: 2rem;
-        padding: $paddingMobile;
-        justify-content: space-between;
-        @include smallPhone() {
+    .cardVD {
+        max-width: 100%;
+
+        .listVD {
             flex-wrap: wrap;
+            width: 100%;
+            display: flex;
             
         }
     }
