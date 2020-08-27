@@ -37,6 +37,10 @@ import SiaranLangsung from './components/pages/siaranlangsung/SiaranLangsung';
 import VideoDokumen from './components/pages/videodokumen/VideoDokumen';
 import VideoTeaser from './components/pages/videoteaser/VideoTeaser';
 import Wawancara from './components/pages/wawancara/Wawancara';
+import StrukturPpdi from './components/pages/strukturppdi/StrukturPpdi';
+import VisiMisi from './components/pages/visimisi/VisiMisi';
+import Prosedur from './components/pages/prosedur/Prosedur';
+import Regulasi from './components/pages/regulasi/Regulasi';
 
 
 function App() {
@@ -68,6 +72,22 @@ function App() {
       <div className="App">
 
         <Switch>
+
+          <Route path='/regulasi'>
+            <Regulasi />
+          </Route>
+
+          <Route path='/prosedur'>
+            <Prosedur />
+          </Route>
+
+          <Route path='/visimisi'>
+            <VisiMisi />
+          </Route>
+
+          <Route path='/strukturppdi'>
+            <StrukturPpdi />
+          </Route>
 
           <Route path='/kegiatanpartai'>
             <KegiatanPartai />

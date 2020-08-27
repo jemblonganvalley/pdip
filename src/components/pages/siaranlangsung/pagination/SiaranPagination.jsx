@@ -97,6 +97,7 @@ const SiaranPagination = ()=> {
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
     return (
+        <>
         <div className="wrapperSiaran" style={{
             display : 'flex',
             justifyContent : 'center',
@@ -104,16 +105,20 @@ const SiaranPagination = ()=> {
         }}>
              <CardMultimedia siaran={currentPosts} />
 
-            <nav aria-label="Page navigation example" style={{
-                marginTop: '10px',
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'center'
-            }}>
-
-                <AngkaPaginationEvent itemEventPerPage={itemSiaran} totalPosts={siaran.length} paginate={paginate} />
-            </nav>
+            
         </div>
+
+        <nav aria-label="Page navigation example" style={{
+            marginTop: '10px',
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center'
+        }}>
+
+            <AngkaPaginationEvent itemEventPerPage={itemSiaran} totalPosts={siaran.length} paginate={paginate} />
+        </nav>
+
+        </>
     )
 }
 

@@ -86,7 +86,11 @@ const InformasiPage = ()=> {
                                 width4="31"
                                 text2="visi / misi"
                                 text3="prosedur pelayanan"
-                                text4="regulasi PPDI" />
+                                text4="regulasi PPDI"
+                                to1="/strukturppdi"
+                                to2="/visimisi"
+                                to3="/prosedur"
+                                to4="/regulasi" />
 
                 {/* YOUTUBE PPDI */}
                 <div className="ytProfil">

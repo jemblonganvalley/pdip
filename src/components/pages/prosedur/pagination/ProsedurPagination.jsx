@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import AngkaPaginationEvent from '../../../paginationevent/AngkaPaginationEvent'
-import CardMultimedia from '../../../cardmultimedia/CardMultimedia'
+import './ProsedurPagination.scss'
 import megawati12 from '../../../../img/megawati12.png'
+import CardInfo from '../../../cardinfo/CardInfo'
+import AngkaPaginationEvent from '../../../paginationevent/AngkaPaginationEvent'
 
-const TeaserPagination = () => {
+const ProsedurPagination = () => {
 
-    let [siaran , setSiaran] = useState([
+    let [info , setInfo] = useState([
         {
             id : 1, 
             images : megawati12,
@@ -87,22 +88,23 @@ const TeaserPagination = () => {
     ])
 
     let [currentPage, setCurrentPage] = useState(1)
-    let [itemTeaser] = useState(12)
-    const indexOfLastPost = currentPage * itemTeaser
-    const indexOfFirstPost = indexOfLastPost - itemTeaser
-    const currentPosts = siaran.slice(indexOfFirstPost, indexOfLastPost)
+    let [itemProsedur] = useState(12)
+    const indexOfLastPost = currentPage * itemProsedur
+    const indexOfFirstPost = indexOfLastPost - itemProsedur
+    const currentPosts = info.slice(indexOfFirstPost, indexOfLastPost)
 
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
   return (
-      <>
-    <div className="wrapperTeaser" style={{
+    <>
+    <div className="prosedurPagination" style={{
         display : 'flex',
         justifyContent : 'center',
         flexWrap : 'wrap'
     }}>
+         <CardInfo info={currentPosts} />
 
-        <CardMultimedia siaran={currentPosts} />
+        
     </div>
 
     <nav aria-label="Page navigation example" style={{
@@ -112,10 +114,10 @@ const TeaserPagination = () => {
         justifyContent: 'center'
     }}>
 
-        <AngkaPaginationEvent itemEventPerPage={itemTeaser} totalPosts={siaran.length} paginate={paginate} />
+        <AngkaPaginationEvent itemEventPerPage={itemProsedur} totalPosts={info.length} paginate={paginate} />
     </nav>
     </>
   )
 }
 
-export default TeaserPagination
+export default ProsedurPagination

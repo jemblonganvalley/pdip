@@ -97,6 +97,7 @@ const WawancaraPagination = () => {
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
   return (
+    <>
     <div className="wrapperWawancara" style={{
         display : 'flex',
         justifyContent : 'center',
@@ -104,18 +105,18 @@ const WawancaraPagination = () => {
     }}>
 
         <CardMultimedia siaran={currentPosts} />
-
-        <nav aria-label="Page navigation example" style={{
-            marginTop: '10px',
-            width: '100%',
-            display: 'flex',
-            justifyContent: 'center'
-        }}>
-
-            <AngkaPaginationEvent itemEventPerPage={itemWawancara} totalPosts={siaran.length} paginate={paginate} />
-        </nav>
-
     </div>
+
+    <nav aria-label="Page navigation example" style={{
+        marginTop: '10px',
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'center'
+    }}>
+
+        <AngkaPaginationEvent itemEventPerPage={itemWawancara} totalPosts={siaran.length} paginate={paginate} />
+    </nav>
+    </>
   )
 }
 

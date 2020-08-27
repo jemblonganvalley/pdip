@@ -13,14 +13,14 @@ $smallPhoneDua : 400px;
     }
 }
 
-.wrapperSL {
+.wrapperVisiMisi {
     width: 100%;
     padding: $paddingSmall;
     @include smallPhone() {
         padding: $paddingMobile;
     }
 
-    .linkedSL {
+    .linkedVisiMisi {
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -33,10 +33,10 @@ $smallPhoneDua : 400px;
         }
     }
 
-    .cardSL {
+    .cardVisiMisi {
         max-width: 100%;
 
-        .listSL {
+        .listVisiMisi {
             flex-wrap: wrap;
             width: 100%;
             display: flex;

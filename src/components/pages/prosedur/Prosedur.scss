@@ -13,14 +13,14 @@ $smallPhoneDua : 400px;
     }
 }
 
-.wrapperSL {
+.wrapperProsedur {
     width: 100%;
     padding: $paddingSmall;
     @include smallPhone() {
         padding: $paddingMobile;
     }
 
-    .linkedSL {
+    .linkedProsedur {
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -33,10 +33,10 @@ $smallPhoneDua : 400px;
         }
     }
 
-    .cardSL {
+    .cardProsedur {
         max-width: 100%;
 
-        .listSL {
+        .listProsedur {
             flex-wrap: wrap;
             width: 100%;
             display: flex;

@@ -1,0 +1,32 @@
+import React from 'react'
+import './VisiMisi.scss'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
+import MainDivider from '../../divider/MainDivider'
+import VisiMisiPagination from './pagination/VisiMisiPagination'
+
+const VisiMisi = () => {
+  return (
+    <div className="wrapperVisiMisi">
+        <div className="linkedVisiMisi">
+            <BreadCrumbs link1="Home"
+                            to1="/"
+                            link2="Informasi Publik"
+                            to2="/informasi"
+                            page3="Visi Misi" />
+        </div>
+
+        <div className="dividerVisiMisi">
+            <MainDivider text="Visi Misi" />
+        </div>
+
+        <div className="cardVisiMisi">
+            <div className="listVisiMisi">
+                <VisiMisiPagination />
+            </div>
+        </div>
+
+    </div>
+  )
+}
+
+export default VisiMisi

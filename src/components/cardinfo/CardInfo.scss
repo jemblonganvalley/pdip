@@ -1,0 +1,53 @@
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+@import "../../utilities/variable/variables.scss";
+
+.cardInfo {
+    flex: auto;
+    margin: 10px 10px;
+    background: #ffffff;
+    transition: .5s;
+    border-radius: 10px;
+    width: 20vw;
+
+
+    &:hover {
+        box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);
+        background: $darkRedTwo;
+        color: #ffffff;
+    }
+
+    .imgCardInfo {
+        width: 100%;
+        height: 30vh;
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textInfo {
+        width: 100%;
+        padding: 10px 20px;
+        align-items: flex-start;
+
+        .textSmall {
+            font-size: 8pt;
+        }
+    }
+}

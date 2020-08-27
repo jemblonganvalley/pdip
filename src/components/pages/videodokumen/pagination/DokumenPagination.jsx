@@ -97,6 +97,7 @@ const DokumenPagination = ()=> {
 
 
     return (
+        <>
         <div className="wrapperDokumen" style={{
             display : 'flex',
             justifyContent : 'center',
@@ -104,18 +105,19 @@ const DokumenPagination = ()=> {
         }}>
 
             <CardMultimedia siaran={currentPosts} />
-
-            <nav aria-label="Page navigation example" style={{
-                marginTop: '10px',
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'center'
-            }}>
-
-                <AngkaPaginationEvent itemEventPerPage={itemDokumen} totalPosts={siaran.length} paginate={paginate} />
-            </nav>
-
         </div>
+
+        <nav aria-label="Page navigation example" style={{
+            marginTop: '10px',
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center'
+        }}>
+
+            <AngkaPaginationEvent itemEventPerPage={itemDokumen} totalPosts={siaran.length} paginate={paginate} />
+        </nav>
+
+        </>
     )
 }
 
