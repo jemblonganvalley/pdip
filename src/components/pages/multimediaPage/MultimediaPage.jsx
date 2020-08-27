@@ -55,7 +55,11 @@ const MultimediaPage = ()=> {
                             text="siaran langsung"
                             text2="video dokumentasi"
                             text3="video teaser"
-                            text4="wawancara" />
+                            text4="wawancara"
+                            to1="/siaranlangsung"
+                            to2="/videodokumen"
+                            to3="/videoteaser"
+                            to4="/wawancara" />
 
             <div className="panggung">
                 <div className="textPanggung">

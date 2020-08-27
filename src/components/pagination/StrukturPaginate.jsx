@@ -139,20 +139,6 @@ const StrukturPaginate = () => {
                 justifyContent: 'center'
             }}>
 
-                {/* <ul className="pagination">
-                    <li className="page-item">
-                        <a className="page-link prevnext" href="#" aria-label="Previous">
-                            <span aria-hidden="true">«</span>
-                        </a>
-                    </li>
-                    <li className="page-item active" ><a className="page-link" href="/partai" >01</a></li>
-                    <li className="page-item">
-                        <a className="page-link prevnext" href="#" aria-label="Next">
-                            <span aria-hidden="true">»</span>
-                        </a>
-                    </li>
-                </ul> */}
-
                 <AngkaPaginationEvent itemEventPerPage={itemEventPerPage} totalPosts={struktur.length} paginate={paginate} />
             </nav>
 

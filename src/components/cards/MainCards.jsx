@@ -14,7 +14,7 @@ const Cards = ({ page, margin, imageCard, textSmall, TextH5, borderRadius, parag
             }} >
                 {/* JIKA MAU DIPAKAI CLASS, PAKAI CLASS VBMusic */}
                 <Link as="a" className={`${classIcon}`} to={href} style={{ textDecoration: 'none' }} >
-                    <i class={`${icons}`} style={{
+                    <i className={`${icons}`} style={{
                         textDecoration: 'none'
                     }}></i>
                 </Link>

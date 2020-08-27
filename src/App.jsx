@@ -25,6 +25,10 @@ import BgRed from './components/bgRed/BgRed';
 import WejanganBungKarno from './components/pages/bkbb/wejanganbungkarno/WejanganBungKarno';
 import { useStoreActions } from 'easy-peasy';
 import EventPage from './components/pages/events/EventPage';
+import SiaranLangsung from './components/pages/siaranlangsung/SiaranLangsung';
+import VideoDokumen from './components/pages/videodokumen/VideoDokumen';
+import VideoTeaser from './components/pages/videoteaser/VideoTeaser';
+import Wawancara from './components/pages/wawancara/Wawancara';
 
 
 function App() {
@@ -56,6 +60,22 @@ function App() {
       <div className="App">
 
         <Switch>
+
+          <Route path='/wawancara'>
+            <Wawancara />
+          </Route>
+
+          <Route path='/videoteaser'>
+            <VideoTeaser />
+          </Route>
+
+          <Route path='/videodokumen'>
+            <VideoDokumen />
+          </Route>
+
+          <Route path='/siaranlangsung'>
+            <SiaranLangsung />
+          </Route>
 
           <Route path='/event'>
             <EventPage />
