@@ -147,6 +147,14 @@ $smallPhoneDua : 400px;
             }
         }
     }
+
+    .wrapperCardInfo {
+        padding: 0 10%;
+
+        @include smallPhone() {
+            padding: 0;
+        }
+    }
     
 
     .panggung {

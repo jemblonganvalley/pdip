@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import './PartaiPage.scss'
 import backgroundHead from '../../../img/kampanye.jpg'
 import pdiBook1 from '../../../img/pdibook1.png'
@@ -8,7 +8,7 @@ import partaiSatu from '../../../img/partai1.png'
 import partaiDua from '../../../img/partai2.png'
 import partaiTiga from '../../../img/partai3.png'
 import partaiEmpat from '../../../img/partai4.png'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 import pdiLogo from '../../../img/pdibanteng.png'
@@ -19,23 +19,23 @@ import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import MusicMobile from '../../musicPdiMobile/MusicMobile'
 
 
-const PartaiPage = ()=>{
+const PartaiPage = () => {
 
-    useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
-    
-    // START PARTAI
-    
+
+        // START PARTAI
+
         <div className="wrapperPartai">
 
             {/* HEADERS */}
             <div className="headers">
                 <div className="backgrounds">
                     <div className="textBackgroundPartai">
-                        <h2>Solid Bergerak Untuk<br/>Indonesia Raya </h2>
+                        <h2>Solid Bergerak Untuk<br />Indonesia Raya </h2>
                     </div>
                 </div>
             </div>
@@ -44,42 +44,42 @@ const PartaiPage = ()=>{
             {/* LINK PARTAI */}
             <div className="linkedPartai">
                 <BreadCrumbs link1="Home"
-                                to1="/"
-                                page2="Partai"
-                                 />
+                    to1="/"
+                    page2="Partai"
+                />
             </div>
             {/* END */}
 
             {/* CONTAINER SATU */}
             <div className="containerSatu">
                 <div className="contentSatu">
-                    <div className="col col-lg-4">
+                    <div className="col ">
                         <div className="wrapperContentSatu">
                             <div className="col-md-3 mobileRow">
-                                <img src={partaiSatu} alt="" width="60" className="imgMobilePartai" />
+                                <img src={partaiSatu} alt="" className="imgMobilePartai" />
                                 <div className="textContent textContentSatu">
-                                    <h4>AD/ART<br/>PDI Perjuangan</h4>
+                                    <h4>AD/ART<br />PDI Perjuangan</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore nobis doloremque.</p>
                                 </div>
                             </div>
                             <div className="col-md-3 mobileRow">
-                                <img src={partaiDua} alt="" width="60" className="imgMobilePartai" />
+                                <img src={partaiDua} alt="" className="imgMobilePartai" />
                                 <div className="textContent textContentDua">
-                                    <h4>Peraturan<br/>PDI Perjuangan</h4>
+                                    <h4>Peraturan<br />PDI Perjuangan</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore nobis doloremque.</p>
                                 </div>
                             </div>
                             <div className="col-md-3 mobileRow">
-                                <img src={partaiTiga} alt="" width="60" className="imgMobilePartai" />
+                                <img src={partaiTiga} alt="" className="imgMobilePartai" />
                                 <div className="textContent textContentTiga">
-                                    <h4>Piagam<br/>PDI Perjuangan</h4>
+                                    <h4>Piagam<br />PDI Perjuangan</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore nobis doloremque.</p>
                                 </div>
                             </div>
                             <div className="col-md-3 mobileRow">
                                 <img src={partaiEmpat} alt="" width="60" className="imgMobilePartai" />
                                 <div className="textContent textContentTiga">
-                                    <h4>Visi &<br/>Misi</h4>
+                                    <h4>Visi &<br />Misi</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias inventore nobis doloremque.</p>
                                 </div>
                             </div>
@@ -87,52 +87,52 @@ const PartaiPage = ()=>{
                     </div>
                     <div className="col col-lg-8">
                         <div className="wrapperCarousel">
-                            
-                        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-                            <ol className="carousel-indicators carouselPartai">
-                                <li data-target="#carouselExampleIndicators" data-slide-to={0} className="active" />
-                                <li data-target="#carouselExampleIndicators" data-slide-to={1} />
-                                <li data-target="#carouselExampleIndicators" data-slide-to={2} />
-                            </ol>
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <div className="carouselImgSatu"></div>
-                                    <div class="carousel-caption  d-md-block">
-                                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus et fuga sit.</h3>
-                                </div>
-                                </div>
-                                <div className="carousel-item">
-                                    <div className="carouselImgSatu">
-                                        <div class="carousel-caption d-none d-md-block">
+
+                            <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+                                <ol className="carousel-indicators carouselPartai">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to={0} className="active" />
+                                    <li data-target="#carouselExampleIndicators" data-slide-to={1} />
+                                    <li data-target="#carouselExampleIndicators" data-slide-to={2} />
+                                </ol>
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <div className="carouselImgSatu"></div>
+                                        <div class="carousel-caption  d-md-block">
                                             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
                                             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus et fuga sit.</h3>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="carousel-item">
-                                    <div className="carouselImgSatu">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus et fuga sit.</h3>
+                                    <div className="carousel-item">
+                                        <div className="carouselImgSatu">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus et fuga sit.</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <div className="carouselImgSatu">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus et fuga sit.</h3>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                 </div>
             </div>
             {/* END */}
 
-            <MusicPdi/>
-            <MusicMobile/>
+            <MusicPdi />
+            <MusicMobile />
 
             {/* CONTAINER TIGA */}
             <div className="containerTiga">
                 <div className="col-lg-3">
-                        <img src={pdiLogo} alt="" width="180" />
+                    <img src={pdiLogo} alt="" width="180" />
                 </div>
                 <div className="col-lg-9 textBanteng">
                     <h1>TATA KELOLA PDI PERJUANGAN</h1>
@@ -146,43 +146,43 @@ const PartaiPage = ()=>{
                 </div>
             </div>
             {/* END */}
-                <div className="btnUnduh">
-                    <MainButton name="Unduh Lambang" />
+            <div className="btnUnduh">
+                <MainButton name="Unduh Lambang" />
+            </div>
+            {/* PENGURUS */}
+            <div className="pengurusPage">
+                <MainDivider text="pengurus" />
+                <div className="paragrapPengurus">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
                 </div>
-                {/* PENGURUS */}
-                <div className="pengurusPage">
-                    <MainDivider text="pengurus" />
-                    <div className="paragrapPengurus">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
-                    </div>
-                </div>
-                {/* END */}
+            </div>
+            {/* END */}
 
-                {/* PHOTO PENGURUS */}
-                <div className="photoPengurus">
-                    <h2>Struktur Pengurus Dewan Pimpinan Pusat<br/>PDI Perjuangan</h2>
-                    <Link className="btn lihat" to="/struktur"><span>lihat</span></Link>
-                </div>
-                {/* END */}
+            {/* PHOTO PENGURUS */}
+            <div className="photoPengurus">
+                <h2>Struktur Pengurus Dewan Pimpinan Pusat<br />PDI Perjuangan</h2>
+                <Link className="btn lihat" to="/struktur"><span>lihat</span></Link>
+            </div>
+            {/* END */}
 
-                {/* MAPS */}
-                <div className="maps">
-                    <h5>dewan pimpinan daerah pdi perjuangan</h5>
-                    <Link as="div" className="imageMaps" to="" to="/dpd" ></Link>
-                </div>
-                {/* END */}
+            {/* MAPS */}
+            <div className="maps">
+                <h5>dewan pimpinan daerah pdi perjuangan</h5>
+                <Link as="div" className="imageMaps" to="" to="/dpd" ></Link>
+            </div>
+            {/* END */}
 
-                {/* ANGGOTA LEGISLATIF */}
-                <div className="anggotaLegislatif">
-                    <h1>Anggota Legislatif</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia a voluptatem mollitia dolorum ea architecto, aliquid quidem fugit accusamus saepe ab repudiandae eos ipsum! Quaerat omnis dolores quidem reiciendis distinctio.</p>
-                    <div className="btnGroup">
-                        <MainButton name="DPR RI" margin="0 10px" />
-                        <MainButton name="DPRD Provinsi" margin="0 10px" />
-                        <MainButton name="DPRD Kabupaten Kota" margin="0 10px" />
-                    </div>
+            {/* ANGGOTA LEGISLATIF */}
+            <div className="anggotaLegislatif">
+                <h1>Anggota Legislatif</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia a voluptatem mollitia dolorum ea architecto, aliquid quidem fugit accusamus saepe ab repudiandae eos ipsum! Quaerat omnis dolores quidem reiciendis distinctio.</p>
+                <div className="btnGroup">
+                    <MainButton name="DPR RI" margin="0 10px" />
+                    <MainButton name="DPRD Provinsi" margin="0 10px" />
+                    <MainButton name="DPRD Kabupaten Kota" margin="0 10px" />
                 </div>
-                {/* END */}
+            </div>
+            {/* END */}
         </div>
     )
 }

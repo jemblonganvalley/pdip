@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import './MultimediaPage.scss'
 import SL from '../../../img/newspaper.png'
 import VD from '../../../img/fake-news.png'
@@ -22,89 +22,91 @@ import MainDivider from '../../divider/MainDivider'
 import CardInformasi from '../../cardInformasi/CardInformasi'
 import VMedia from '../../VMedia/VMedia'
 
-const MultimediaPage = ()=> {
+const MultimediaPage = () => {
 
-     useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div className="wrapperMultimedia">
             <div className="headerMedia">
                 <div className="textBannerMedia">
-                    <h2>Lorem ipsum dolor<br/>sit amet consectetur<br/>adipisicing elit.</h2>
+                    <h2>Lorem ipsum dolor<br />sit amet consectetur<br />adipisicing elit.</h2>
                 </div>
             </div>
             <div className="linkedMedia">
                 <BreadCrumbs link1="Home"
-                                to1="/"
-                                page2="Multimedia" />
+                    to1="/"
+                    page2="Multimedia" />
             </div>
             <div className="pidatoKU">
                 <VMedia headline="Megawati Soekarnoputri, Ketua Umum PDI Perjuangan" source="https://www.youtube.com/embed/4Y9vU1dCk78" />
             </div>
-            
-            <CardInformasi image={multimediaSatu}
-                            image2={multimediaDua}
-                            image3={multimediaTiga}
-                            image4={multimediaEmpat}
-                            width1="35"
-                            width2="35"
-                            width3="35"
-                            width4="35"
-                            text="siaran langsung"
-                            text2="video dokumentasi"
-                            text3="video teaser"
-                            text4="wawancara"
-                            to1="/siaranlangsung"
-                            to2="/videodokumen"
-                            to3="/videoteaser"
-                            to4="/wawancara" />
+
+            <div className="wrapperCardInfo">
+                <CardInformasi image={multimediaSatu}
+                    image2={multimediaDua}
+                    image3={multimediaTiga}
+                    image4={multimediaEmpat}
+                    width1="35"
+                    width2="35"
+                    width3="35"
+                    width4="35"
+                    text="siaran langsung"
+                    text2="video dokumentasi"
+                    text3="video teaser"
+                    text4="wawancara"
+                    to1="/siaranlangsung"
+                    to2="/videodokumen"
+                    to3="/videoteaser"
+                    to4="/wawancara" />
+            </div>
 
             <div className="panggung">
                 <div className="textPanggung">
-                    <h1 className="panggungH1">Siaran Langsung Pembukaan Rakernas I<br/>PDI Perjuangan</h1>
+                    <h1 className="panggungH1">Siaran Langsung Pembukaan Rakernas I<br />PDI Perjuangan</h1>
                     <MainButton name="kunjungi" />
                 </div>
             </div>
 
             <div className="cardMediaDua">
-            <Cards imageCard={perempuan}
+                <Cards imageCard={perempuan}
                     textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                     TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                    borderRadius="10px"  />
-            <Cards imageCard={megawati12}
+                    borderRadius="10px" />
+                <Cards imageCard={megawati12}
                     textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                     TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                     borderRadius="10px"
                     icons="fa fa-play"
-                    classIcon="VBMusic"  />
-            <Cards imageCard={perempuan}
+                    classIcon="VBMusic" />
+                <Cards imageCard={perempuan}
                     textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                     TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                    borderRadius="10px"  />
+                    borderRadius="10px" />
             </div>
 
-            
+
 
             <div className="videoBaruPage">
-                    <MainDivider text="Video Terbaru" />
+                <MainDivider text="Video Terbaru" />
                 <div className="cardVideoBaru">
-                <Cards imageCard={megawati1}
-                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                                borderRadius="10px"
-                                icons="fa fa-play"
-                                classIcon="VBMusic"
-                                href="/videomedia"  />
-                <Cards imageCard={megawati2}
+                    <Cards imageCard={megawati1}
                         textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                         TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                         borderRadius="10px"
                         icons="fa fa-play"
                         classIcon="VBMusic"
-                        href="/videomedia"  />
-                <Cards imageCard={megawati3}
+                        href="/videomedia" />
+                    <Cards imageCard={megawati2}
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                        borderRadius="10px"
+                        icons="fa fa-play"
+                        classIcon="VBMusic"
+                        href="/videomedia" />
+                    <Cards imageCard={megawati3}
                         textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                         TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
                         borderRadius="10px"
