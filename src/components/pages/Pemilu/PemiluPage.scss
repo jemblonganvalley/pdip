@@ -190,19 +190,19 @@ $secondary : #f3f3f3;
                 .img1-pemiluPage{
                     display: flex;
                     height: 100%;
-                    width: 25%;
+                    width: 30%;
                     justify-content: center;
                     align-items: center;
 
                     .col1-row1-pemiluPage{
                         display: flex;
-                        height: 70%;
+                        height: 90%;
                         width: 100%;
                         background-size: cover;
                         overflow: hidden;
     
                         @include smallPhone(){
-                            height: 65%;
+                            height: 70%;
                             width: 100%;
                         }
                     }
@@ -213,7 +213,7 @@ $secondary : #f3f3f3;
                     display: flex;
                     flex-direction: column;
                     height: 100%;
-                    width: 75%;
+                    width: 70%;
                     justify-content: center;
                     padding: 5px 20px 5px 0px;
                     overflow: hidden;
@@ -273,19 +273,19 @@ $secondary : #f3f3f3;
                 .img2-pemiluPage{
                     display: flex;
                     height: 100%;
-                    width: 25%;
+                    width: 30%;
                     justify-content: center;
                     align-items: center;
 
                     .col1-row2-pemiluPage{
                         display: flex;
-                        height: 75%;
+                        height: 95%;
                         width: 90%;
                         background-size: cover;
                         overflow: hidden;
     
                         @include smallPhone(){
-                            height: 60%;
+                            height: 80%;
                             width: 100%;
                         }
                     }
@@ -296,7 +296,7 @@ $secondary : #f3f3f3;
                     display: flex;
                     flex-direction: column;
                     height: 100%;
-                    width: 75%;
+                    width: 70%;
                     justify-content: center;
                     align-items: center;
                     padding: 5px 20px 5px 0px;
