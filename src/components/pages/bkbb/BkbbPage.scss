@@ -196,13 +196,14 @@ $secondary : #f3f3f3;
       }
    
     .headers-bkbbPage {
-        background: url(../../../img/BKBB_Header.jpg);
-        background-size: cover;
+        // background: url(../../../img/BKBB_Header.jpg);
         height: 25vh;
-        background-position: center;
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
 
         @include smallPhone(){
-            height: 20vh;
+            height: 20vh
         }
 
         @include smallPhoneDua(){

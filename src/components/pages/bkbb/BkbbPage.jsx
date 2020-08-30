@@ -29,7 +29,7 @@ import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import CardQuotes from '../../cardquotes/CardQuotes'
 import CardBkbbQuotes2 from '../../cardbkbbquotes2/CardBkbbQuotes2'
 import CardWejangan from '../../cardwejangan/CardWejangan'
-
+import bkbbHeader from '../../../img/BKBB_Header.jpg'
 
 const BkbbPage = () => {
 
@@ -39,13 +39,13 @@ const BkbbPage = () => {
 
     return (
         <div className="wrapperBkbbPage">
-            <div className="headers-bkbbPage">
-                <div className="backgrounds-bkbb">
-                    {/* <div className="textBackgroundPartai">
+            <img src={bkbbHeader} className="headers-bkbbPage">
+                {/* <div className="backgrounds-bkbb"> */}
+                {/* <div className="textBackgroundPartai">
                         <h2>Solid Bergerak Untuk<br/>Indonesia Raya </h2>
                     </div> */}
-                </div>
-            </div>
+                {/* </div> */}
+            </img>
             <div className="linkedBkbbPage">
                 <BreadCrumbs link1="Home"
                     to1="/"
