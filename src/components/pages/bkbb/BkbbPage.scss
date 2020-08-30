@@ -35,7 +35,7 @@ $secondary : #f3f3f3;
 
             @include smallPhone(){
                 height: 50vh;
-                background-position: center;
+                background-position: inherit;
             }
 
             .redBox{

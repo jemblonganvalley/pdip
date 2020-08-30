@@ -155,6 +155,10 @@ $smallPhoneDua : 400px;
                     background-image: url(../../../img/pemilu16.jpg);
                     background-size: cover;
                     overflow: hidden;
+
+                    @include smallPhone(){
+                        background-position: inherit;
+                    }
                 }
 
                 .box-jdl-row1{

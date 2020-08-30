@@ -185,22 +185,31 @@ $secondary : #f3f3f3;
 
                 @include smallPhone(){
                     width: 100%;
+                    border-radius: 5px;
                 }
 
-                .col1-row1-pemiluPage{
+                // Image1
+                .img1-pemiluPage{
                     display: flex;
                     height: 100%;
                     width: 30%;
                     justify-content: center;
                     align-items: center;
-                    background-image: url(../../../img/pemilu25.jpg);
-                    background-size: cover;
-                    overflow: hidden;
 
-                    @include smallPhone(){
-                        background-position: center;
+                    .col1-row1-pemiluPage{
+                        display: flex;
+                        height: 75%;
+                        width: 90%;
+                        background-size: cover;
+                        overflow: hidden;
+    
+                        @include smallPhone(){
+                            height: 70%;
+                            width: 100%;
+                        }
                     }
                 }
+                // END Image1
 
                 .col2-row1-pemiluPage{
                     display: flex;
@@ -253,27 +262,40 @@ $secondary : #f3f3f3;
                 height: 20vh;
                 width: 50%;
                 background: $colors;
+                justify-content: center;
+                align-items: center;
                 overflow: hidden;
 
                 @include smallPhone(){
                     width: 100%;
                     margin: 10px 0 0 0;
+                    border-radius: 5px;
                 }
 
-                .col1-row2-pemiluPage{
+                // Image2
+                .img2-pemiluPage{
                     display: flex;
                     height: 100%;
                     width: 30%;
                     justify-content: center;
                     align-items: center;
-                    background-image: url(../../../img/pemilu26.jpg);
-                    background-size: cover;
-                    overflow: hidden;
 
-                    @include smallPhone(){
-                        background-position: center;
+                    .col1-row2-pemiluPage{
+                        display: flex;
+                        height: 75%;
+                        width: 80%;
+                        justify-content: center;
+                        align-items: center;
+                        background-size: cover;
+                        overflow: hidden;
+    
+                        @include smallPhone(){
+                            height: 70%;
+                            width: 100%;
+                        }
                     }
                 }
+                // END Image2      
 
                 .col2-row2-pemiluPage{
                     display: flex;
