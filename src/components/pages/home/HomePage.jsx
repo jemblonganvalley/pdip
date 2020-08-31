@@ -25,6 +25,7 @@ import downloadDua from '../../../img/lightDownDua.png'
 import downloadTiga from '../../../img/lightDownTiga.png'
 import MusicMobile from '../../musicPdiMobile/MusicMobile'
 import WidgetBaru from '../../widgetBaru/WidgetBaru'
+import KMobile from '../../carouselKMobile/KMobile'
 
 
 const HomePage = ()=> {
@@ -113,6 +114,7 @@ const HomePage = ()=> {
             </div>
 
             <CarouselKM />
+            <KMobile />
             
 
             <div className="cardContent">

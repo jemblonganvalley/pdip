@@ -14,16 +14,16 @@ $smallPhoneDua : 400px;
     }
 }
 
-.KM {
-    width: 100%;
-    height: 60vh;
-    box-sizing: content-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.KMobile {
+    display: none;
+    
 
     @include smallPhone() {
-        display: none;
+        width: 100%;
+        box-sizing: content-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     
@@ -45,16 +45,16 @@ $smallPhoneDua : 400px;
         }
     }
     
-    .rowCustom {
+    .rowCustomMobile {
         width: 100%;
         height: 100%;
 
         @include smallPhone() {
-            border: 1PX SOLID BLUE;
+            
         }
 
         @include smallPhoneDua() {
-            border: 1PX SOLID BLUE;
+            
             // border: 1px solid green;
             display: flex;
             justify-content: center;
@@ -110,16 +110,15 @@ $smallPhoneDua : 400px;
 
                 color: #ffffff;
 
-                .itemKM {
-                    height: 100%;
+                .itemKMobile {
 
                     position: relative;
 
                     @include smallPhone() {
-                        padding: 10px;
+                        height: 75vh;
+
                     }
                     @include smallPhoneDua() {
-                        padding: 1rem;
                     }
                 }
 
@@ -127,16 +126,22 @@ $smallPhoneDua : 400px;
                     text-align: center;
                     width: 100%;
 
-                    
+                    .bannerMobile {
+                        
+                        @include smallPhone() {
+                            height: 50vh;
+                        }
+                    }
 
                     .textKM {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: column;
-                        height: 100%;
+                        
+                        @include smallPhone() {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                        }
                         .textCarousel {
-                            margin: 2rem 0; 
     
                             @include smallPhoneDua() {
                                 margin: .8rem 0;
@@ -144,9 +149,6 @@ $smallPhoneDua : 400px;
                         }
                         
                         h5 {
-                            font-weight: 400;
-                            font-size: 10pt;
-    
                             @include smallPhone() {
                                 font-size: 9pt;
                             }
@@ -159,33 +161,6 @@ $smallPhoneDua : 400px;
                         h3 {
                             font-size: 15pt;
                             font-weight: 300;
-                        }
-    
-                        p {
-                            font-size: 8pt;
-    
-                            @include smallPhone() {
-                                display: none;
-                            }
-    
-                            @include smallPhoneDua() {
-                                display: none;
-                            }
-                        }
-                    }
-                    .banner {
-                        position: absolute;
-                        float: right;
-                        height: 100%;
-                        top: 0;
-                        right: 0;
-                        background-position: center center;
-                        @include smallPhone() {
-                            position: inherit;
-                        }
-
-                        @include smallPhoneDua() {
-                            position: initial;
                         }
                     }
                 }
