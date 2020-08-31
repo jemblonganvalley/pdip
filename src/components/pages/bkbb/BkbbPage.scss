@@ -196,14 +196,11 @@ $secondary : #f3f3f3;
       }
    
     .headers-bkbbPage {
-        // background: url(../../../img/BKBB_Header.jpg);
         height: 25vh;
         width: 100%;
-        object-position: center;
-        object-fit: cover;
 
         @include smallPhone(){
-            height: 20vh
+            height: 20vh;
         }
 
         @include smallPhoneDua(){
@@ -211,19 +208,16 @@ $secondary : #f3f3f3;
         }
 
         .backgrounds-bkbb {
-            background-color: #0000;
-            width: 100%;
             height: 100%;
-            display: flex;
-            // justify-content: center;
-            align-items: center;
-            color: #ffffff;
+            width: 100%;
+            object-position: center;
+            object-fit: cover;
 
-            .textBackgroundPartai {
-                width: 30%;
-                height: 50%;
-                margin-left: 5rem;
-            }
+            // .textBackgroundPartai {
+            //     width: 30%;
+            //     height: 50%;
+            //     margin-left: 5rem;
+            // }
         }
     }
     .linkedBkbbPage {

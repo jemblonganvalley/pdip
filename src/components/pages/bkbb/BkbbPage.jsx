@@ -39,13 +39,13 @@ const BkbbPage = () => {
 
     return (
         <div className="wrapperBkbbPage">
-            <img src={bkbbHeader} className="headers-bkbbPage">
-                {/* <div className="backgrounds-bkbb"> */}
-                {/* <div className="textBackgroundPartai">
+            <div className="headers-bkbbPage">
+                <img src={bkbbHeader} className="backgrounds-bkbb">
+                    {/* <div className="textBackgroundPartai">
                         <h2>Solid Bergerak Untuk<br/>Indonesia Raya </h2>
                     </div> */}
-                {/* </div> */}
-            </img>
+                </img>
+            </div>
             <div className="linkedBkbbPage">
                 <BreadCrumbs link1="Home"
                     to1="/"
