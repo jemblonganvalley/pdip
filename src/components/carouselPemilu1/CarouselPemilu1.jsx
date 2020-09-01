@@ -1,6 +1,8 @@
 import React from 'react'
 
 import '../carouselPemilu1/CarouselPemilu1.scss'
+import pemilu from '../../img/pemilu.jpeg'
+
 
 const CarouselPemilu1 = () => {
     return (
@@ -10,9 +12,9 @@ const CarouselPemilu1 = () => {
                 <div className="carousel-inner box-carousel1-pemiluPage">
                     <div className="carousel-item active">
                         {/* Image1 */}
-                        <div className="img-1">
+                        <img src={pemilu} className="img-1">
 
-                        </div>
+                        </img>
                         {/* END Image1 */}
                     </div>
                     <div className="carousel-item">

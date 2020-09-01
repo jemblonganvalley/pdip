@@ -1,6 +1,7 @@
 import React from 'react'
 
 import '../carousel3PemiluPage/Carousel3PemiluPage.scss'
+import pemilu2 from '../../img/pemilu2.jpg'
 
 const Carousel3PemiluPage = () => {
     return (
@@ -9,9 +10,9 @@ const Carousel3PemiluPage = () => {
             <div id="pemilu3" className="carousel carousel3-pemiluPage slide" data-ride="carousel">
                 <div className="carousel-inner box-carousel3-pemiluPage">
                     <div className="carousel-item active">
-                        <div className="img1">
+                        <img src={pemilu2} className="img1">
 
-                        </div>
+                        </img>
                     </div>
                     <div className="carousel-item">
 

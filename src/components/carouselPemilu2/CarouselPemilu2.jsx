@@ -1,6 +1,7 @@
 import React from 'react'
 
 import '../carouselPemilu2/CarouselPemilu2.scss'
+import pemilu2 from '../../img/pemilu2.jpg'
 
 const CarouselPemilu2 = () => {
     return (
@@ -10,9 +11,9 @@ const CarouselPemilu2 = () => {
                 <div className="carousel-inner box-carousel2-pemiluPage">
                     <div className="carousel-item active">
                         {/* Image2 */}
-                        <div className="img-2">
+                        <img src={pemilu2} className="img-2">
 
-                        </div>
+                        </img>
                         {/* END Image2 */}
                     </div>
                     <div className="carousel-item">
