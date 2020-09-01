@@ -167,6 +167,7 @@ $secondary : #f3f3f3;
                 flex-direction: column;
                 height: 100%;
                 width: 60%;
+                overflow-y: auto;
 
                 @include smallPhone(){
                     width: 100%;

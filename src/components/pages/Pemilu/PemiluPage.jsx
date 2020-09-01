@@ -101,13 +101,13 @@ const PemiluPage = () => {
                 {/* Container2 */}
                 <div className="container-2-pemiluPage">
                     {/* <img src={pemilu5} alt="" /> */}
-                    <div className="jdl-col1-pemiluPage">
+                    {/* <div className="jdl-col1-pemiluPage">
                         <div className="box-txt-jdl-pemiluPage">
                             <p className="txt-jdl-pemiluPage">
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque mollitia assumenda architecto facilis et deleniti iste alias autem quo exercitationem!
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="btn-col2-pemiluPage">
                         <MainButton name="LIHAT" />
                     </div>
