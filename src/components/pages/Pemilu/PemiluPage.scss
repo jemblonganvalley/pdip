@@ -179,6 +179,7 @@ $secondary : #f3f3f3;
                 width: 50%;
                 background: $colors;
                 margin: 0 20px 0 0;
+                align-items: center;
                 overflow: hidden;
 
                 @include smallPhone(){
@@ -186,28 +187,19 @@ $secondary : #f3f3f3;
                     border-radius: 5px;
                 }
 
-                // Image1
-                .img1-pemiluPage{
+                .col1-row1-pemiluPage{
                     display: flex;
-                    height: 100%;
-                    width: 30%;
-                    justify-content: center;
-                    align-items: center;
-
-                    .col1-row1-pemiluPage{
-                        display: flex;
-                        height: 90%;
-                        width: 100%;
-                        background-size: cover;
-                        overflow: hidden;
+                    height: 110px;
+                    width: 150px;
+                    object-fit: cover;
+                    overflow: hidden;
     
-                        @include smallPhone(){
-                            height: 70%;
-                            width: 100%;
-                        }
+                    @include smallPhone(){
+                        height: 100px;
+                        width: 130px;
+                        object-fit: cover;
                     }
                 }
-                // END Image1
 
                 .col2-row1-pemiluPage{
                     display: flex;
@@ -259,7 +251,6 @@ $secondary : #f3f3f3;
                 height: 20vh;
                 width: 50%;
                 background: $colors;
-                justify-content: center;
                 align-items: center;
                 overflow: hidden;
 
@@ -269,28 +260,20 @@ $secondary : #f3f3f3;
                     border-radius: 5px;
                 }
 
-                // Image2
-                .img2-pemiluPage{
+                .col1-row2-pemiluPage{
                     display: flex;
-                    height: 100%;
-                    width: 30%;
-                    justify-content: center;
-                    align-items: center;
-
-                    .col1-row2-pemiluPage{
-                        display: flex;
-                        height: 95%;
-                        width: 90%;
-                        background-size: cover;
-                        overflow: hidden;
+                    height: 110px;
+                    width: 140px;
+                    object-fit: cover;
+                    overflow: hidden;
+                    // border: 1px solid yellow;
     
-                        @include smallPhone(){
-                            height: 80%;
-                            width: 100%;
-                        }
+                    @include smallPhone(){
+                        height: 100px;
+                        width: 130px;
+                        object-fit: cover;
                     }
-                }
-                // END Image2      
+                }     
 
                 .col2-row2-pemiluPage{
                     display: flex;
