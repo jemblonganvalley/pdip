@@ -23,7 +23,9 @@ const Page1 = () => {
                 <div className="headers-BeritaPage1">
                     <div className="backgrounds">
                         <div className="textBackgroundBerita">
-
+                            <h2 className="txt-backg-beritaPage1">
+                                LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPICISING ELIT,
+                            </h2>
                         </div>
                     </div>
                 </div>
@@ -60,7 +62,7 @@ const Page1 = () => {
 
                             {/* Row2 */}
                             <div className="row2-beritaPage1">
-                            <small className="date">Admin PDI Perjuangan | 15 May 2016</small>
+                                <small className="date">Admin PDI Perjuangan | 15 May 2016</small>
                                 <div className="garis-panjang-tipis">
                                     <div className="garis-merah-tebal">
 
@@ -157,17 +159,17 @@ const Page1 = () => {
                         {/* Section6 */}
                         <div className="section6-beritaPage1">
                             {/* Column1 */}
-                            
+
                             {/* END Column1 */}
 
                             {/* Column2 */}
-                            
+
                             {/* END Column2 */}
                         </div>
                         {/* END Section6 */}
                     </div>
 
-                    
+
                     {/* END Column2 */}
                 </div>
                 {/* END Container1 */}

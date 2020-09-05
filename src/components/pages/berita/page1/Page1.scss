@@ -46,8 +46,20 @@ $secondary : #f3f3f3;
 
             .textBackgroundBerita {
                 width: 30%;
-                height: 50%;
-                margin-left: 5rem;
+                height: auto;
+                margin-left: 13rem;
+
+                @include smallPhone(){
+                    width: auto;
+                    margin-left: 0;
+                    padding: 0 10%;
+                }
+
+                .txt-backg-beritaPage1{
+                    @include smallPhone(){
+                        font-size: 12pt;
+                    }
+                }
             }
         }
     }
@@ -419,8 +431,12 @@ $secondary : #f3f3f3;
                     height: 2px;
                     width: 80%;
                     background: #555;
-                    // margin: 30px 10% 0px 10%;
+                    margin: 30px 10% 0px 10%;
                     overflow: hidden;
+
+                    @include smallPhone(){
+                        margin: 10px 10% 0 10%;
+                    }
                 }
 
                 .box-medsos-beritaPage1{
