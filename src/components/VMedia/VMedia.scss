@@ -18,7 +18,7 @@ $smallPhoneDua : 400px;
     display: flex;
     flex-direction: row;
     height: 65vh;
-    margin-top: 1.5rem;
+    // margin-top: 1.5rem;
     @include smallPhone() {
         flex-direction: column;
         height: auto;

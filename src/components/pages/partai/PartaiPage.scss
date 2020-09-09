@@ -68,9 +68,9 @@ $smallPhoneDua : 400px;
         display: flex;
         align-items: center;
         flex-direction: row;
-        width: 40%;
-        margin-top: 20px;
-        padding: $padding;
+        width: 100%;
+        margin-top: 15px;
+        padding: 10px 20%;
 
         @include smallPhone() {
             // border: 1px solid crimson;
@@ -82,12 +82,10 @@ $smallPhoneDua : 400px;
 
     // START CONTAINER SATU
     .containerSatu {
-        padding: 20px 10%;
+        padding: 0px 20% 20px 20%;
         display: flex;
         justify-content: center;
         align-items: center;
-        // border: 1px solid blue;
-
         
         @include smallPhone() {
             padding: $paddingMobile;
@@ -288,7 +286,6 @@ $smallPhoneDua : 400px;
         align-items: center;
         margin-top: 3rem;
         // height: 85vh;
-        // border: 1px solid blue;
         @include smallPhone() {
             flex-direction: column;
             padding: $paddingMobile;
@@ -356,7 +353,7 @@ $smallPhoneDua : 400px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: $padding;
+        padding: 30px 20% 20px 20%;
 
         @include smallPhone() {
             padding: $paddingMobile;
@@ -368,10 +365,9 @@ $smallPhoneDua : 400px;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            margin-top: 20px;
+            margin-top: 0px;
             width: 100%;
             text-align: center;
-            // border: 1px solid blue;
             @include smallPhone() {
                 padding: $paddingMobile;
             }
@@ -480,7 +476,7 @@ $smallPhoneDua : 400px;
     }
 
     .anggotaLegislatif {
-        padding: $padding;
+        padding: 20px 20%;
         display: flex;
         justify-content: center;
         align-items: center;
