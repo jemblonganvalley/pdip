@@ -67,8 +67,9 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         height: auto;
         width: 100%;
-        padding: 0 10%;
+        padding: 0 20%;
         overflow: hidden;
+        border: 1px solid blue;
 
         @include smallPhone(){
             padding: 0;
@@ -87,6 +88,7 @@ $smallPhoneDua : 400px;
             cursor: pointer;
             margin: 0;
             padding: 0px 0 0 0%;
+            border: 1px solid blue;
 
             @include smallPhone(){
                 height: auto;
@@ -117,6 +119,7 @@ $smallPhoneDua : 400px;
             height: auto;
             width: 100%;
             overflow: hidden;
+            border: 1px solid yellow;
 
             @include smallPhone(){
                 height: auto;
@@ -234,6 +237,7 @@ $smallPhoneDua : 400px;
                     width: 100%;
                     padding: 20px 35px 5px 35px;
                     overflow: hidden;
+                    border: 1px solid green;
 
                     @include smallPhone(){
                         height: 40%;
@@ -256,7 +260,7 @@ $smallPhoneDua : 400px;
 
                     .txt-desk-col2{
                         display: flex;
-                        font-size: 12px;
+                        // font-size: 12px;
                         text-align: start;
                         padding: 0 0 10px 0;
                         overflow: hidden;
@@ -336,7 +340,8 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         height: auto;
         width: 100%;
-        padding: 0 10% 50px 10%;
+        padding: 0 20% 50px 20%;
+        border: 1px solid blue;
 
         @include smallPhone(){
             padding: 0 0px;

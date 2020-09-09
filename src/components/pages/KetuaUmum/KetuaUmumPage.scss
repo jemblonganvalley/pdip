@@ -68,8 +68,9 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         height: auto;
         width: 100%;
-        padding: 0 10%;
+        padding: 0 20%;
         overflow: hidden;
+        border: 1px solid blue;
 
         @include smallPhone(){
             padding: 0;
@@ -267,7 +268,7 @@ $smallPhoneDua : 400px;
     .container-2-ketuaumum{
         display: flex;
         height: 20vh;
-        padding: 0 10%;
+        padding: 0 20%;
         justify-content: center;
         align-items: center;
 
@@ -283,7 +284,7 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         height: auto;
         width: 100%;
-        padding: 0px 10% 50px 10%;
+        padding: 0px 20% 50px 20%;
         
         @include smallPhone(){
             flex-direction: column;
