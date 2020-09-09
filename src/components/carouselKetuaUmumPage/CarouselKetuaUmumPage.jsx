@@ -8,7 +8,7 @@ const CarouselKetuaUmumPage = () => {
             <div id="carouselExampleIndicators" className="carousel container-carousel-ketuaUmumPage slide" data-ride="carousel">
                 <div className="carousel-inner carousel-ketuaUmumPage">
                     <div className="carousel-item active">
-                        <div className="col1-container-1">
+                        <div className="col1-container-1-carousel-ketuaUmumPage">
                             <div className="cont-img-col1">
                                 <div className="col1-img">
                                     <div className="box-txt-title">

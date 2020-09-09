@@ -52,7 +52,7 @@ $secondary : #f3f3f3;
         flex-direction: row;
         width: 100%;
         margin-top: 20px;
-        padding: 10px 10%;
+        padding: 10px 20%;
 
         @include smallPhone(){
             width: 100%;
@@ -74,7 +74,7 @@ $secondary : #f3f3f3;
         flex-direction: column;
         height: auto;
         width: 100%;
-        padding: 0 10%;
+        padding: 0 20%;
 
         @include smallPhone(){
             padding: 0 0px;
@@ -167,7 +167,6 @@ $secondary : #f3f3f3;
                 flex-direction: column;
                 height: 100%;
                 width: 60%;
-                overflow-y: auto;
 
                 @include smallPhone(){
                     width: 100%;

@@ -125,10 +125,10 @@ const BkbbPage = () => {
                 {/* END Box1 Image */}
             </div>
 
-            <Link as='div' className="btnLihatSemua">
+            <div className="btnLihatSemua">
                 <MainButton name="lihat semua"
                     margin="1rem 0" pages="/wejanganbungkarno" />
-            </Link>
+            </div>
 
             <div className="backGroundGray">
 

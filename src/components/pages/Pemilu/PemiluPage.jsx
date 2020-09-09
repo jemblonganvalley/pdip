@@ -73,7 +73,7 @@ const PemiluPage = () => {
                                     PEMILIHAN KEPALA DAERAH SERRENTAK
                                 </p>
                                 <p className="txt-desk">
-                                    Harta kekayaan pengurus PDI Perjuangan yang menjadi pejabat negara dilaporkan kepada Komisi Pemberantasan Korupsi [KPK].
+                                    Lorem ipsum dolor sit amet consectetur adipisicing.
                                 </p>
                             </div>
                         </div>
@@ -88,7 +88,7 @@ const PemiluPage = () => {
                                     PEMILIHAN CALON LEGISLATIF PDI PERJUANGAN
                                 </p>
                                 <p className="txt-desk">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eaque fugiat provident voluptates at dignissimos error ex, similique asperiores odit.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing.
                                 </p>
                             </div>
                         </div>
