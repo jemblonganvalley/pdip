@@ -101,27 +101,27 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                     {/* PLAYLIST */}
                     <div className=" col-md-4 musicList">
                         <div className="headersList">
-                            <img src={laguPerjuangan} alt="" width="75" />
+                            <img src={laguPerjuangan} alt="" width="50" />
                             <div className="textHeader">
                                 <h4>Lagu<br/>Perjuangan</h4>
                             </div>
                         </div>
                         <div className="listMusic">
                             <div className="listSatu list">
-                                <h5 className="judulList">Mars PDI Perjuangan</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                                <h6 className="judulList">Mars PDI Perjuangan</h6>
+                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</small>
                             </div>
                             <div className="listDua list">
-                                <h5 className="judulList">Hymne PDI Perjuangan</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                                <h6 className="judulList">Hymne PDI Perjuangan</h6>
+                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</small>
                             </div>
                             <div className="listTiga list">
-                                <h5 className="judulList">Hymne PDI Perjuangan</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                                <h6 className="judulList">Hymne PDI Perjuangan</h6>
+                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</small>
                             </div>
                             <div className="listEmpat list">
-                                <h5 className="judulList">Hymne PDI Perjuangan</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</p>
+                                <h6 className="judulList">Hymne PDI Perjuangan</h6>
+                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</small>
                             </div>
                         </div>
                     </div>

@@ -32,7 +32,7 @@ $smallPhoneDua : 400px;
     .contentDua {
         // border: 1px solid blue;
         width: 100%;
-        height: 88vh;
+        height: 66vh;
         display: flex;
         border-radius: 10px;
         @include smallPhone() {
@@ -55,7 +55,7 @@ $smallPhoneDua : 400px;
             // flex-direction: row;
             // align-items: center;
             
-            padding: 2.5rem 7%;
+            padding: 1rem 7%;
             // border: 1px solid green;
 
             .col-sm-4 {
@@ -120,10 +120,9 @@ $smallPhoneDua : 400px;
                 align-items: center;
                 // border: 1px solid blue;
                 width: 100%;
-                height: 30vh;
+                height: 25vh;
                 .downloadContent {
                     // margin: 1.5rem;
-                    padding: 1rem;
                     flex-direction: row;
                     display: flex;
                     align-items: center;
@@ -177,7 +176,7 @@ $smallPhoneDua : 400px;
 
                 }
                 p {
-                    font-size: 10pt;
+                    font-size: 9pt;
                     letter-spacing: .8px;
                     margin-top: 1rem;
                     height: 30vh;
@@ -198,14 +197,11 @@ $smallPhoneDua : 400px;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 0px 7% 2.5rem 7%;
-            
             .wrapperPlayerMusic {
                 width: 90%;
-                height: 15vh;
+                height: 12vh;
                 display: flex;
                 flex-direction: row;
-
 
                 .playButton {
                     width: 20%;
@@ -246,10 +242,9 @@ $smallPhoneDua : 400px;
                     width: 80%;
                     height: 100%;
                     background: #ffffff;
-                    padding: 1rem;
+                    padding: .5rem;
 
                     .judulPlay {
-                        padding: 5px;
 
                         position: relative;
                         // border: 1px solid blue;
@@ -274,7 +269,6 @@ $smallPhoneDua : 400px;
                         display: flex;
                         flex-direction: row;
                         width: 100%;
-                        padding: 5px 0;
                         align-items: center;
                         position: relative;
 
@@ -419,7 +413,7 @@ $smallPhoneDua : 400px;
                     align-items: center;
                     margin-top: 10px;
                     h4 {
-                        font-size: 18pt;
+                        font-size: 17pt;
                         font-weight: 700;
                     }
                 }
@@ -427,28 +421,27 @@ $smallPhoneDua : 400px;
 
             .listMusic {
                 .listSatu {
-                    height: 18vh;
+                    
                     display: flex;
                     justify-content: center;
                     color: #c70000;
                     width: 100%;
                     flex-direction: column;
-                    padding: 15px 20px;
+                    padding: 5px 20px;
                     transition: .3s;
                     cursor: pointer;
                     &:hover {
                         background: $secondRed;
                         color: #ffffff;
                     }
-                h5 {
-                    font-size: 11pt;
+                h6 {
+                    
                     &:nth-child(0) {
                         color: #9e0000;
                     }
                 }
-                p{
+                small{
                     margin-top: 5px;
-                    font-size: 9pt;
                     letter-spacing: .8px;
                     font-weight: 300;
                     
@@ -457,27 +450,26 @@ $smallPhoneDua : 400px;
     
                 .listDua {
                     color: #c70000;
-                    height: 18vh;
+                    
                     display: flex;
                     justify-content: center;
                     width: 100%;
                     flex-direction: column;
-                    padding: 15px 20px;
+                    padding: 5px 20px;
                     transition: .3s;
                     cursor: pointer;
                     &:hover {
                         background: $secondRed;
                         color: #ffffff;
                     }
-                h5 {
-                    font-size: 11pt;
+                h6 {
+                    
                     &:nth-child(0) {
                         color: #9e0000;
                     }
                 }
-                p{
+                small{
                     margin-top: 5px;
-                    font-size: 8pt;
                     letter-spacing: .8px;
                     font-weight: 300;
                     
@@ -487,27 +479,26 @@ $smallPhoneDua : 400px;
                 .listTiga {
                     color: #c70000;
                     display: flex;
-                    height: 18vh;
+                    
                     justify-content: center;
                     width: 100%;
                     flex-direction: column;
-                    padding: 15px 20px;
+                    padding: 5px 20px;
                     transition: .3s;
                     cursor: pointer;
                     &:hover {
                         background: $secondRed;
                         color: #ffffff;
                     }
-                h5 {
-                    font-size: 11pt;
+                h6 {
+                    
                     // color: #9e0000;
                     &:nth-child(0) {
                         color: #9e0000;
                     }
                 }
-                p{
+                small{
                     margin-top: 5px;
-                    font-size: 8pt;
                     letter-spacing: .8px;
                     font-weight: 300;
                     
@@ -518,9 +509,9 @@ $smallPhoneDua : 400px;
                     display: flex;
                     justify-content: center;
                     width: 100%;
-                    height: 18vh;
+                    
                     flex-direction: column;
-                    padding: 15px 20px;
+                    padding: 5px 20px;
                     border-bottom-right-radius: 10px;
                     transition: .3s;
                     color: #c70000;
@@ -529,16 +520,15 @@ $smallPhoneDua : 400px;
                         background: $secondRed;
                         color: #ffffff;
                     }
-                h5 {
-                    font-size: 11pt;
+                h6 {
+                    
                     // color: #9e0000;
                     &:nth-child(0) {
                         color: #9e0000;
                     }
                 }
-                p{
+                small{
                     margin-top: 5px;
-                    font-size: 8pt;
                     letter-spacing: .8px;
                     font-weight: 300;
                     
