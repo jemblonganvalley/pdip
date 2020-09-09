@@ -26,7 +26,6 @@ $smallPhoneDua : 400px;
     
     @include smallPhoneDua() {
         background-size: cover;
-        height: auto;
     }
 
     .text1 {
@@ -51,7 +50,8 @@ $smallPhoneDua : 400px;
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding-left: 4.5em;
+            padding-left: 2rem;
+            text-align: center;
         }
 
         @include smallPhoneDua() {
@@ -66,7 +66,7 @@ $smallPhoneDua : 400px;
             margin-bottom: 2em;
             
         @include smallPhone() {
-            font-size: 10pt;
+            font-size: 9pt;
             width: 40%;
             margin-bottom: 1em;
         }
@@ -74,7 +74,7 @@ $smallPhoneDua : 400px;
         @include smallPhoneDua() {
             // border: 1px solid blue;
             width: 50%;
-            font-size: 9pt;
+            font-size: 8pt;
         }
             
 
@@ -84,7 +84,7 @@ $smallPhoneDua : 400px;
             width: 60%;
 
             @include smallPhone() {
-                font-size: 6pt;
+                font-size: 8pt;
                 width: 40%;
             }
             @include smallPhoneDua() {

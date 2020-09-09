@@ -400,7 +400,7 @@ $smallPhoneDua : 400px;
         }
         @include smallPhoneDua() {
             // background-attachment: inherit;
-            height: 40vh;
+            height: 50vh;
         }
 
         h2 {
@@ -422,13 +422,18 @@ $smallPhoneDua : 400px;
             border-radius: 25px;
 
             width: 10vw;
-            font-size: 7pt;
+            font-size: 10pt;
             text-transform: uppercase;
             font-weight: bold;
             margin-top: 1.5rem;
 
             @include smallPhone() {
                 width: 25vw;
+                font-size: 9pt;
+            }
+            @include smallPhoneDua() {
+                width: 30vw;
+                font-size: 9pt;
             }
 
             &:hover {

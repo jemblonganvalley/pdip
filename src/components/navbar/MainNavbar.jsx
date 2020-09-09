@@ -24,7 +24,7 @@ const MainNavbar = ()=> {
           },
           {
           listName : 'Visi Dan Misi',
-          listTo : '#Visi Dan Misi'
+          listTo : '/page1'
           },
           {
           listName : 'Lambang dan Bendera',
@@ -59,7 +59,7 @@ const MainNavbar = ()=> {
         listItem : [
           {
           listName : 'Pidato Bung Karno 1 Juni  1945',
-          listTo : '#Pidato Bung Karno 1 Juni  1945'
+          listTo : '/page1'
           },
           {
           listName : 'Indonesia Menggugat',
@@ -98,19 +98,19 @@ const MainNavbar = ()=> {
         listItem : [
           {
           listName : 'Kongres',
-          listTo : '#Kongres'
+          listTo : '/pidatokongres'
           },
           {
           listName : 'Rakernas',
-          listTo : '#Rakernas'
+          listTo : '/pidatorakernas'
           },
           {
           listName : 'Rakornas',
-          listTo : '#Rakornas'
+          listTo : '/pidatorakornas'
           },
           {
-          listName : 'Sikap Politik',
-          listTo : '#Sikap Politik'
+          listName : 'HUT',
+          listTo : '/pidatohut'
           }
         ]
       },
@@ -125,7 +125,7 @@ const MainNavbar = ()=> {
           },
           {
           listName : 'Streaming',
-          listTo : '#Streaming'
+          listTo : '/videomedia'
           },
           {
           listName : 'Video',
@@ -133,11 +133,11 @@ const MainNavbar = ()=> {
           },
           {
           listName : 'Video Dokumentasi',
-          listTo : '#Video Dokumentasi'
+          listTo : '/videdokumen'
           },
           {
           listName : 'Teaser Video',
-          listTo : '#Teaser Video'
+          listTo : '/videoteaser'
           }
         ]
       },
@@ -148,15 +148,15 @@ const MainNavbar = ()=> {
         listItem : [
           {
           listName : 'Nasional',
-          listTo : '#Nasional'
+          listTo : '/beritanasional'
           },
           {
           listName : 'Daerah',
-          listTo : '#Daerah'
+          listTo : '/beritadaerah'
           },
           {
           listName : 'Kegiatan Partai',
-          listTo : '#Kegiatan Partai'
+          listTo : '/kegiatanpartai'
           },
           {
           listName : 'Foto',
