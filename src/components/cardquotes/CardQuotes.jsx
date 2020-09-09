@@ -19,9 +19,9 @@ const CardQuotes = ({ page, img, icon1, txt1, icon2, txt2 }) => {
 
                 <i className={icon2}></i>
 
-                <p className="txt2">
+                <small className="txt2">
                     {txt2}
-                </p>
+                </small>
             </Link>
             {/* Img */}
         </>

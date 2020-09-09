@@ -32,7 +32,8 @@ $smallPhoneDua : 400px;
     .contentDua {
         // border: 1px solid blue;
         width: 100%;
-        height: 66vh;
+        // height: 66vh;
+        height: auto;
         display: flex;
         border-radius: 10px;
         @include smallPhone() {
@@ -398,7 +399,7 @@ $smallPhoneDua : 400px;
                 align-items: center;
                 flex-direction: row;
                 // margin: 0 10px;
-                height: 20vh;
+                height: 10vh;
                 border-top-right-radius: 10px;
                 // border: 1px solid blue;
                 background: $darkRed;
@@ -421,13 +422,12 @@ $smallPhoneDua : 400px;
 
             .listMusic {
                 .listSatu {
-                    
                     display: flex;
                     justify-content: center;
                     color: #c70000;
                     width: 100%;
                     flex-direction: column;
-                    padding: 5px 20px;
+                    padding: 10px 20px;
                     transition: .3s;
                     cursor: pointer;
                     &:hover {
@@ -455,7 +455,7 @@ $smallPhoneDua : 400px;
                     justify-content: center;
                     width: 100%;
                     flex-direction: column;
-                    padding: 5px 20px;
+                    padding: 10px 20px;
                     transition: .3s;
                     cursor: pointer;
                     &:hover {
@@ -483,7 +483,7 @@ $smallPhoneDua : 400px;
                     justify-content: center;
                     width: 100%;
                     flex-direction: column;
-                    padding: 5px 20px;
+                    padding: 10px 20px;
                     transition: .3s;
                     cursor: pointer;
                     &:hover {
@@ -511,7 +511,7 @@ $smallPhoneDua : 400px;
                     width: 100%;
                     
                     flex-direction: column;
-                    padding: 5px 20px;
+                    padding: 10px 20px;
                     border-bottom-right-radius: 10px;
                     transition: .3s;
                     color: #c70000;

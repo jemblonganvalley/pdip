@@ -15,7 +15,7 @@ $smallPhoneDua : 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100%;
+    height: 45vh;
     width: 100%;
     background-size: cover;
     justify-content: center;
@@ -26,7 +26,7 @@ $smallPhoneDua : 400px;
     cursor: pointer;
 
     @include smallPhone(){
-        height: 40vh;
+        height: 45vh;
         margin: 20px 0 0 0;
     }
 
@@ -39,7 +39,7 @@ $smallPhoneDua : 400px;
 
     .txt1{
         display: flex;
-        font-size: 15px;
+        // font-size: 15px;
         font-weight: 500;
         color: #fff;
         text-align: center;

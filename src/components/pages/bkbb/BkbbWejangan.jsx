@@ -35,9 +35,9 @@ const BkbbWejangan = () => {
                             <div className="box-quotes-bkbbWejangan">
                                 <i className="fas fa-quote-right"></i>
 
-                                <p className="txt1" >
+                                <h5 className="txt1" >
                                     BARANG SIAPA JANG INGIN MUTIARA HARUS BERANI TERJUN DI LAUTAN JANG DALAM.
-                                </p>
+                                </h5>
 
                                 <br />
 
@@ -47,9 +47,9 @@ const BkbbWejangan = () => {
 
                                 <i className="fas fa-quote-right"></i>
 
-                                <p className="txt3">
+                                <small className="txt3">
                                     Bung Karno, 17 Agustus 1946
-                                </p>
+                                </small>
                             </div>
                         </div>
                         {/* END Row1 */}

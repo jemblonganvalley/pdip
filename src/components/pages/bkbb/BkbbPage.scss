@@ -64,13 +64,13 @@ $secondary : #f3f3f3;
             .red-box-title{
                 height: 100%;
                 // border: 1px solid green;
-                font-size: 30pt;
+                // font-size: 30pt;
                 text-align: left;
                 display: flex;
                 width: 30%;
                 justify-content: center;
                 align-items: center;
-                padding: 15px;
+                padding: 30px;
                 margin: 1px;
 
                 h2{
@@ -92,7 +92,7 @@ $secondary : #f3f3f3;
                 padding: 15px;
 
                 p{
-                    font-size: 15px;
+                    // font-size: 15px;
 
                     @include smallPhone(){
                         font-size: 11px;
@@ -339,15 +339,14 @@ $secondary : #f3f3f3;
     // Column Card Wejangan Bungkarno
     .col-card-wejangan-bungkarno{
         display: flex;
-        flex-direction: column;
         height: auto;
         width: 100%;
         justify-content: center;
         align-items: center;
-        padding: 20px 20% 0 20%;
-        margin: 0 0 30px 0;
+        padding: 0px 20% 0 20%;
 
         @include smallPhone(){
+            flex-direction: column;
             padding: 0 10px;
             margin: 40px 0 0 0;  
         }
@@ -355,9 +354,9 @@ $secondary : #f3f3f3;
         // Box1 Image
         .box1-image{
             display: flex;
-            height: 45vh;
+            height: auto;
             width: 100%;
-            padding: 10px 0 10px 0;
+            padding: 10px 0 0px 0;
 
             @include smallPhone(){
                 flex-direction: column;
