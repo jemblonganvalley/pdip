@@ -22,7 +22,7 @@ $smallPhoneDua : 400px;
         flex-direction: row;
         width: 100%;
         margin-top: 15px;
-        padding: 10px 10%;
+        padding: 10px 20%;
 
         @include smallPhone(){
             width: 100%;
@@ -65,7 +65,7 @@ $smallPhoneDua : 400px;
     height: auto;
     width: 100%;
     margin: 0px 0 0 0;
-    padding: 0 10%;
+    padding: 20px 20% 0 20%;
     justify-content: center;
     align-items: center;
 
@@ -83,7 +83,7 @@ $smallPhoneDua : 400px;
     height: auto;
     width: 100%;
     margin: 0px 0 20px 0;
-    padding: 0 10%;
+    padding: 0 20%;
 
     @include smallPhone(){
         margin: 0;
@@ -94,59 +94,17 @@ $smallPhoneDua : 400px;
     .col-card-wejanganThumbnail{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         height: auto;
         width: 100%;
-        padding: 40px 0% 20px 0;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0% 20px 0;
 
         @include smallPhone(){
             position: relative;
             padding: 0 0 20px 0;
         }
-
-        // Box1 Image
-        .box1-image-wejanganThumbnail{
-            display: flex;
-            height: 45vh;
-            width: 100%;
-            padding: 10px 0 10px 0;
-
-            @include smallPhone(){
-                height: auto;
-                flex-direction: column;
-                padding: 0;
-            }
-        }
-        // END Box1 Image
-
-        // Box2 Image
-        .box2-image-wejanganThumbnail{
-            display: flex;
-            height: 45vh;
-            width: 100%;
-            padding: 10px 0 10px 0;
-
-            @include smallPhone(){
-                height: auto;
-                flex-direction: column;
-                padding: 0;
-            }
-        }
-        // END Box2 Image
-
-        // Box3 Image
-        .box3-image-wejanganThumbnail{
-            display: flex;
-            height: 45vh;
-            width: 100%;
-            padding: 10px 0 10px 0;
-
-            @include smallPhone(){
-                flex-direction: column;
-                height: auto;
-                padding: 0;
-            }
-        }
-        // END Box3 Image
     }
     // END Column Card Wejangan Bungkarno
 

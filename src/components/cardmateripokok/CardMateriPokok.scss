@@ -17,12 +17,12 @@ $smallPhoneDua : 400px;
     display: flex;
     flex-direction: column;
     height: auto;
-    width: 25vw;
+    width: 18vw;
     background: #fff;
     border-radius: 10px;
     transition: .5s;
     color: #000;
-    margin: 0 8px 15px 8px;
+    margin: 0 10px 15px 10px;
 
     &:hover{
         box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);
@@ -64,7 +64,7 @@ $smallPhoneDua : 400px;
 
         .txt-paragrap-materi-pk{
             display: flex;
-            font-size: 7pt;
+            // font-size: 7pt;
         }
     }
     // END Box Title

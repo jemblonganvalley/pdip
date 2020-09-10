@@ -18,7 +18,7 @@ const MateriPokok = () => {
             pageMateriPk: '',
             imgMateriPk: bkbb5,
             txtJdlMateriPk: 'Indonesia Menggugat Tahun 1930',
-            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial',
+            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim.',
             borderTopLeftRadius: '10px',
             borderTopRightRadius: '10px'
         },
@@ -42,7 +42,7 @@ const MateriPokok = () => {
             pageMateriPk: '',
             imgMateriPk: bkbb5,
             txtJdlMateriPk: 'Indonesia Menggugat Tahun 1930',
-            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial',
+            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim.',
             borderTopLeftRadius: '10px',
             borderTopRightRadius: '10px'
         },
@@ -66,7 +66,7 @@ const MateriPokok = () => {
             pageMateriPk: '',
             imgMateriPk: bkbb5,
             txtJdlMateriPk: 'Indonesia Menggugat Tahun 1930',
-            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial',
+            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim.',
             borderTopLeftRadius: '10px',
             borderTopRightRadius: '10px'
         },
@@ -90,7 +90,7 @@ const MateriPokok = () => {
             pageMateriPk: '',
             imgMateriPk: bkbb5,
             txtJdlMateriPk: 'Indonesia Menggugat Tahun 1930',
-            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim Kolonial',
+            txtParagrapMateriPk: 'Pidato Pembelaan Bung Karno di Muka Hakim.',
             borderTopLeftRadius: '10px',
             borderTopRightRadius: '10px'
         },

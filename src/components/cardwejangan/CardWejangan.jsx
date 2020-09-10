@@ -25,9 +25,9 @@ const CardWejangan = ({ cardWejanganBkItem }) => {
 
                         <i className={e.icon2WejanganBk}></i>
 
-                        <p className="txt2">
+                        <small className="txt2">
                             {e.txt2WejanganBk}
-                        </p>
+                        </small>
                     </Link>
                 )
             })}
