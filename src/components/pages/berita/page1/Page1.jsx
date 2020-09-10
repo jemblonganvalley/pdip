@@ -124,9 +124,9 @@ const Page1 = () => {
                         <div className="section4-beritaPage1">
                             <i className="fas fa-quote-right"></i>
 
-                            <p className="txt-desk-section4-beritaPage1">
+                            <h5 className="txt-desk-section4-beritaPage1">
                                 In the tumultuos business of cutting-in and attending to a whale, there is much
-                            </p>
+                            </h5>
                         </div>
                         {/* END Section4 */}
 

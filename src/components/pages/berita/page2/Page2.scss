@@ -52,7 +52,7 @@ $secondary : #f3f3f3;
         flex-direction: row;
         width: 100%;
         margin-top: 15px;
-        padding: 10px 10%;
+        padding: 10px 20%;
 
         @include smallPhone(){
             width: 100%;
@@ -74,7 +74,7 @@ $secondary : #f3f3f3;
         flex-direction: column;
         height: auto;
         width: 100%;
-        padding: 0 10% 40px 10%;
+        padding: 0 20% 40px 20%;
 
         @include smallPhone(){
             padding: 0%;
@@ -83,7 +83,7 @@ $secondary : #f3f3f3;
         // Column1
         .col1-container-1-beritaPage2{
             display: flex;
-            height: 70vh;
+            height: auto;
             width: 100%;
 
             @include smallPhone(){
@@ -97,7 +97,6 @@ $secondary : #f3f3f3;
                 flex-direction: column;
                 height: 100%;
                 width: 30%;
-                overflow-y: auto;
 
                 @include smallPhone(){
                     height: auto;
@@ -110,7 +109,6 @@ $secondary : #f3f3f3;
                     display: flex;
                     height: auto;
                     width: 100%;
-                    padding: 1px;
                     align-items: center;
 
                     @include smallPhone(){
@@ -171,7 +169,7 @@ $secondary : #f3f3f3;
 
                 .title-2-beritaPage2{
                     display: flex;
-                    font-size: 20px;
+                    // font-size: 20px;
                     font-weight: 500;
                     color: #000;
                     text-align: start;
@@ -189,7 +187,7 @@ $secondary : #f3f3f3;
 
                 .txt-desk1-beritaPage2{
                     display: flex;
-                    font-size: 13px;
+                    // font-size: 13px;
                     color: #000;
                     text-align: start;
                     margin: 25px 0 0 0;
@@ -207,6 +205,7 @@ $secondary : #f3f3f3;
                     flex-direction: column-reverse;
                     height: 50%;
                     width: 100%;
+                    margin: 30px 0 0 0;
 
                     @include smallPhone(){
                         margin: 20px 0 0 0;

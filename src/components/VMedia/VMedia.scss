@@ -17,7 +17,7 @@ $smallPhoneDua : 400px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 65vh;
+    height: auto;
     // margin-top: 1.5rem;
     @include smallPhone() {
         flex-direction: column;
@@ -29,7 +29,7 @@ $smallPhoneDua : 400px;
         width: 70%;
         // border: 1px solid blue;
         display: flex;
-        height: 100%;
+        height: auto;
 
         @include smallPhone() {
             width: 100%;
@@ -49,7 +49,7 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         height: 100%;
         // margin-left: 1rem;
-        padding : 0px 20px;
+        padding : 0px 0 0 20px;
         position: relative;
         @include smallPhone() {
             width: auto;
@@ -90,7 +90,7 @@ $smallPhoneDua : 400px;
         }
 
         p {
-            font-size: 10pt;
+            // font-size: 10pt;
             @include smallPhone() {
                 text-align: center;
                 font-size: 9pt;
@@ -104,8 +104,9 @@ $smallPhoneDua : 400px;
         }
 
         .share {
-            font-size: 10pt;
-            position: absolute;
+            // font-size: 10pt;
+            // position: absolute;
+            margin: 10px 0 0 0;
             bottom: 0;
             @include smallPhone() {
                 position: inherit;
@@ -116,12 +117,13 @@ $smallPhoneDua : 400px;
             }
 
             .marginShare {
-                margin: 0 .8rem;
+                // margin: 0 .5rem;
+                align-items: center;
             }
-
             i {
                 cursor: pointer;
                 transition: .3s;
+                margin: 0 .5rem;
                 &:hover {
                     color: $colors;
                 }
