@@ -503,7 +503,8 @@ $secondary : #f3f3f3;
         padding: 20px 20% 0 20%;
 
         @include smallPhone(){
-            padding: 0 10px;
+            height: auto;
+            padding: 30px 10px 0 10px;
         }
 
         .col-title-berita-terbaru-beritaPage1{

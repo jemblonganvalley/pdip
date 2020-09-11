@@ -52,7 +52,8 @@ $smallPhoneDua : 400px;
 
     @include smallPhone(){
         margin: 0;
-        padding: 0 10px;
+        height: auto;
+        padding: 0px 10px 0px 10px;
     }
 }
 // END Container1

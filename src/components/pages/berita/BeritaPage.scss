@@ -107,7 +107,8 @@ $smallPhoneDua : 400px;
             overflow: hidden;
 
             @include smallPhone(){
-                padding: 0 10px;
+                height: auto;
+                padding: 30px 10px 0 10px;
             }
         }
         // END Column4
@@ -354,7 +355,8 @@ $smallPhoneDua : 400px;
             overflow: hidden;
 
             @include smallPhone(){
-                padding: 0 10px;
+                height: auto;
+                padding: 30px 10px 0 10px;
                 justify-content: center;
                 align-items: center;
             }
@@ -391,7 +393,8 @@ $smallPhoneDua : 400px;
             overflow: hidden;
 
             @include smallPhone(){
-                padding: 0 10px;
+                height: auto;
+                padding: 30px 10px 0 10px;
                 justify-content: center;
                 align-items: center;
             }

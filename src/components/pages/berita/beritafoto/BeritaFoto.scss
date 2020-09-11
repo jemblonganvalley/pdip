@@ -26,7 +26,7 @@ $smallPhoneDua : 400px;
         flex-direction: row;
         width: 100%;
         margin-top: 15px;
-        padding: $paddingSmall;
+        padding: 10px 20%;
 
         @include smallPhone(){
             width: 100%;
@@ -37,13 +37,14 @@ $smallPhoneDua : 400px;
     // Container1
     .container1-berita-foto{
         display: flex;
-        height: auto;
+        height: 20vh;
         width: 100%;
         justify-content: center;
         align-items: center;
-        padding: 0 10%;
+        padding: 20px 20% 0 20%;
 
         @include smallPhone(){
+            height: auto;
             padding: 0 10px;
         }
     }
@@ -55,8 +56,8 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         height: auto;
         width: 100%;
-        padding: 0 10%;
-        margin: 30px 0 0 0;
+        padding: 0 20%;
+        margin: 0px 0 0 0;
 
         @include smallPhone(){
             padding: 0px;
