@@ -291,7 +291,7 @@ $smallPhoneDua : 400px;
         overflow: hidden;
 
         @include smallPhone(){
-            height: 32vh;
+            height: 40vh;
             background-attachment: inherit;
         }
 
@@ -299,21 +299,21 @@ $smallPhoneDua : 400px;
         .col1-container-2-beritaPage{
             display: flex;
             flex-direction: column-reverse;
-            height: 70%;
+            height: 60%;
             width: 100%;
             align-items: center;
             overflow: hidden;
 
             .txt-title-col1{
                 display: flex;
-                font-size: 30px;
+                // font-size: 30px;
                 font-weight: bold;
                 color: #fff;
                 text-align: center;
                 overflow: hidden;
 
                 @include smallPhone(){
-                    font-size: 15px;
+                    font-size: 16px;
                 }
             }
         }
@@ -322,7 +322,7 @@ $smallPhoneDua : 400px;
         // Column2
         .col2-container-2-beritaPage{
             display: flex;
-            height: 30%;
+            height: 40%;
             width: 100%;
             justify-content: center;
             align-items: center;
