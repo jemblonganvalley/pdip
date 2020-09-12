@@ -60,9 +60,9 @@ const BkbbWejangan = () => {
                                 Admin PDI Perjuangan | 1 Januari 2019
                             </p>
 
-                            <p className="txt2">
+                            <h5 className="txt2">
                                 Barang siapa jang ingin mutiara harus berani terjun di lautan jang dalam. Janglah lembek, mohon pada Tuhan supaya bangsa Indonesia menjadi satu bangsa yang jaya di dunia, menjadi bangsa. Kuat dan tabah
-                            </p>
+                            </h5>
 
                             <br />
 

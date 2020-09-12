@@ -285,10 +285,10 @@ $secondary : #f3f3f3;
     .container-2-bkbbWejangan{
         display: flex;
         flex-direction: column;
-        height: 65vh;
+        height: 70vh;
         width: 100%;
-        padding: 0 20%;
-        margin: 30px 0 0 0;
+        padding: 0 20% 0px 20%;
+        margin: 30px 0 0px 0;
         background: #333;
 
         @include smallPhone(){
@@ -301,7 +301,7 @@ $secondary : #f3f3f3;
             display: flex;
             height: 80%;
             width: 100%;
-            padding: 10px 0px 25px 0px;
+            padding: 10px 0px 0px 0px;
             align-items: center;
 
             @include smallPhone(){

@@ -39,9 +39,9 @@ const Page1 = () => {
                     <div className="col1-container-1-beritaPage1">
                         {/* Section1 */}
                         <div className="section1-col1-beritaPage1">
-                            <p className="txt-title">
+                            <h2 className="txt-title">
                                 Sekolah Sekretaris DPD & DPC PDI Perjuangan se-Indonesia
-                            </p>
+                            </h2>
                         </div>
                         {/* END Section1 */}
 
@@ -92,9 +92,9 @@ const Page1 = () => {
                     <div className="col2-container-1-beritaPage1">
                         {/* Section1 */}
                         <div className="section1-beritaPage1">
-                            <p className="txt-desk-section1-beritaPage1">
+                            <h5 className="txt-desk-section1-beritaPage1">
                                 So strongly and metaphysically did I conceive of my situation then, that while earnestly watching his motions, I seemed distincly to perceive that my own individuality was now merged in a joint stock company of two ; that my free will had received a mortal.
-                            </p>
+                            </h5>
                         </div>
                         {/* END Section1 */}
 

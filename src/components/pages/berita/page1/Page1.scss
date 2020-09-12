@@ -123,21 +123,21 @@ $secondary : #f3f3f3;
 
                 @include smallPhone(){
                     height: auto;
-                    padding: 0;
+                    padding: 0 10px;
                 }
 
                 .txt-title{
                     display: flex;
-                    font-size: 20pt;
+                    // font-size: 20pt;
                     font-weight: bold;
                     color: #000;
                     text-align: center;
                     margin: 1px;
                     overflow: hidden;
 
-                    @include smallPhone(){
-                        font-size: 20px;
-                    }
+                    // @include smallPhone(){
+                    //     font-size: 20px;
+                    // }
                 }
             }
             // END Section1
@@ -316,15 +316,15 @@ $secondary : #f3f3f3;
 
                 .txt-desk-section1-beritaPage1{
                     display: flex;
-                    font-size: 15pt;
+                    // font-size: 15pt;
                     font-weight: bold;
                     color: #000;
                     text-align: center;
                     overflow: hidden;
 
-                    @include smallPhone(){
-                        font-size: 15px;
-                    }
+                    // @include smallPhone(){
+                    //     font-size: 16px;
+                    // }
                 }
             }
             // END Section1
@@ -349,9 +349,9 @@ $secondary : #f3f3f3;
                     text-align: justify;
                     overflow: hidden;
 
-                    @include smallPhone(){
-                        font-size: 13px;
-                    }
+                    // @include smallPhone(){
+                    //     font-size: 13px;
+                    // }
                 }
             }
             // END Section3
@@ -419,9 +419,9 @@ $secondary : #f3f3f3;
                     text-align: justify;
                     overflow: hidden;
 
-                    @include smallPhone(){
-                        font-size: 13px;
-                    }
+                    // @include smallPhone(){
+                    //     font-size: 13px;
+                    // }
                 }
 
                 .garis-panjang{
