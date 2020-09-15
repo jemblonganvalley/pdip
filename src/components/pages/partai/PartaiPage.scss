@@ -70,7 +70,7 @@ $smallPhoneDua : 400px;
         flex-direction: row;
         width: 100%;
         margin-top: 15px;
-        padding: 10px 20%;
+        padding: 10px 10%;
 
         @include smallPhone() {
             // border: 1px solid crimson;
@@ -96,7 +96,6 @@ $smallPhoneDua : 400px;
             justify-content: space-around;
             align-items: center;
             width: 100%;
-            flex-direction: column-reverse;
 
             @include smallPhone() {
                 flex-direction: column-reverse;
@@ -110,14 +109,14 @@ $smallPhoneDua : 400px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                flex-direction: column;
+
                 @include smallPhone() {
-                    flex-direction: column;
                 }
 
                 .textContentSatu {
                     display: flex;
                     justify-content: center;
-                    align-items: center;
                     flex-direction: column;
 
                 }
@@ -130,7 +129,6 @@ $smallPhoneDua : 400px;
                     height: 100%;
                     justify-content: center;
                     align-items: center;
-                    flex-direction: column;
 
                     @include smallPhone() {
                         border-radius: 10px;
@@ -144,11 +142,8 @@ $smallPhoneDua : 400px;
                     .textContent {
                         margin-left: 10px;
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: column;
                         padding: 1rem;
-                        text-align: center;
+                        flex-direction: column;
                         @include smallPhone() {
 
                             padding: .5rem;
@@ -167,6 +162,7 @@ $smallPhoneDua : 400px;
                         p {
                             font-size: 10pt;
                             line-height: 1.5;
+                            width: 20vw;
                         }
                     }
                 }
@@ -455,7 +451,6 @@ $smallPhoneDua : 400px;
         h5 {
             text-transform: uppercase;
             font-weight: bold;
-            font-size: 10pt;
 
             @include smallPhone() {
                 font-size: 12pt;
