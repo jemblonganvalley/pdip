@@ -92,13 +92,7 @@ const InformasiPage = () => {
                     to3="/prosedur"
                     to4="/regulasi" />
 
-                {/* YOUTUBE PPDI */}
-                <div className="ytProfil">
-                    <div className="ytIframe">
-                        <iframe src="https://www.youtube.com/embed/V4pM1xY9ntY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="iframeProfil" ></iframe>
-                    </div>
-                </div>
-                {/* END */}
+                
 
                 {/* CARD LAPORAN */}
                 <div className="containerLaporan">
@@ -119,6 +113,14 @@ const InformasiPage = () => {
                 </div>
                 {/* END */}
 
+            </div>
+            {/* END */}
+
+            {/* YOUTUBE PPDI */}
+            <div className="ytProfil">
+                <div className="ytIframe">
+                    <iframe src="https://www.youtube.com/embed/V4pM1xY9ntY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="iframeProfil" ></iframe>
+                </div>
             </div>
             {/* END */}
 

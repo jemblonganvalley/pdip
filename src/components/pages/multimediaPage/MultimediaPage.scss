@@ -67,7 +67,7 @@ $smallPhoneDua : 400px;
         width: 100%;
         // border: 1px solid blue;
         margin-top: 15px;
-        padding: 10px 20%;
+        padding: 10px 10%;
 
         @include smallPhone() {
             // border: 1px solid crimson;
@@ -148,7 +148,7 @@ $smallPhoneDua : 400px;
     }
 
     .wrapperCardInfo {
-        padding: 0 10%;
+        padding: 0 20%;
 
         @include smallPhone() {
             padding: 0;
