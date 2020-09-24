@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 // import './HomePage.css'
 import './HomePage.scss'
 import MainSlider from '../../slider/MainSlider'
@@ -15,6 +15,8 @@ import megawati3 from '../../../img/megawati3.jpg'
 import megawati5 from '../../../img/megawati5.jpg'
 import megawati6 from '../../../img/megawati6.jpg'
 import megawati7 from '../../../img/megawati7.jpg'
+import pemilu16 from '../../../img/pemilu16.jpg'
+import pemilu17 from '../../../img/pemilu17.jpg'
 import MainButton from '../../buttons/MainButton'
 import MainDivider from '../../divider/MainDivider'
 import laguPerjuangan from '../../../img/laguperjuangan.png'
@@ -26,20 +28,22 @@ import downloadTiga from '../../../img/lightDownTiga.png'
 import MusicMobile from '../../musicPdiMobile/MusicMobile'
 import WidgetBaru from '../../widgetBaru/WidgetBaru'
 import KMobile from '../../carouselKMobile/KMobile'
+import CardBeritaFoto from '../../cardberitafoto/CardBeritaFoto'
 
 
-const HomePage = ()=> {
 
-    useEffect(()=>{
-        window.scrollTo(0,0)
-    },[])
+const HomePage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <div classname="homepage" style={{
-            overflowX : 'hidden'
+            overflowX: 'hidden'
         }}>
             <MainSlider headline="Solid bergerak untuk Indonesia raya"
-                        headline2="Solid bergerak untuk Indonesia raya" />
+                headline2="Solid bergerak untuk Indonesia raya" />
             <div className="homePageTwo">
                 <div className="customRow">
                     <div className="col-lg-4 custom">
@@ -76,7 +80,7 @@ const HomePage = ()=> {
                                 </ul>
                                 <div className="textInfoYT">
                                     <h3 className="videoTerbaru">Video Terbaru</h3>
-                                    <br/>
+                                    <br />
                                     <h6 className="siaranHut">Siaran langsung HUT ke-47 PDI Perjuangan Kemayoran Jakarta. 10 Januari 2020</h6>
                                 </div>
                             </div>
@@ -85,97 +89,97 @@ const HomePage = ()=> {
 
                     <div className="cardContainer">
                         <Cards imageCard={megawati1}
-                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                                borderRadius="10px" />
+                            textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                            borderRadius="10px" />
                         <Cards imageCard={megawati2}
-                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                                borderRadius="10px" />
+                            textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                            borderRadius="10px" />
                         <Cards imageCard={megawati3}
-                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                                borderRadius="10px" />
+                            textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                            borderRadius="10px" />
                     </div>
-                    
+
 
                     <MainButton name="lihat semua"
-                                margin="1rem 0" />
+                        margin="1rem 0" />
                 </div>
 
                 <div className="beritaPage">
-                    <MainDivider text="berita"/>
+                    <MainDivider text="berita" />
                     <div className="paragrapBerita">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
                     </div>
 
-                    
+
                 </div>
             </div>
 
             <CarouselKM />
             <KMobile />
-            
+
 
             <div className="cardContent">
-                <Cards imageCard={megawati5} 
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                        borderRadius="10px" />
-                <Cards imageCard={megawati6} 
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                        borderRadius="10px" />
-                <Cards imageCard={megawati7} 
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                        borderRadius="10px" />
-                
+                <Cards imageCard={megawati5}
+                    textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                    TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                    paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                    borderRadius="10px" />
+                <Cards imageCard={megawati6}
+                    textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                    TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                    paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                    borderRadius="10px" />
+                <Cards imageCard={megawati7}
+                    textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                    TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                    paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                    borderRadius="10px" />
+
             </div>
             <div className="cardContent">
-            
-                        <Cards imageCard={megawati5} 
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                        borderRadius="10px" />
-                <Cards imageCard={megawati5} 
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                        borderRadius="10px" />
-                <Cards imageCard={megawati5} 
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                        borderRadius="10px" />
+
+                <Cards imageCard={megawati5}
+                    textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                    TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                    paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                    borderRadius="10px" />
+                <Cards imageCard={megawati5}
+                    textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                    TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                    paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                    borderRadius="10px" />
+                <Cards imageCard={megawati5}
+                    textSmall="Admin PDI Perjuangan | 1 Januari 2019"
+                    TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+                    paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                    borderRadius="10px" />
             </div>
 
             <div className="btnSize">
                 <MainButton name="lihat semua"
-                margin="1rem 0" />
+                    margin="1rem 0" />
             </div>
 
-            <MusicPdi/>
+            <MusicPdi />
             <MusicMobile />
-    
+
             <div className="beritaTerbaru" style={{
                 display: 'flex',
-                justifyContent : 'center',
-                alignItems : 'center'
+                justifyContent: 'center',
+                alignItems: 'center'
             }}>
-                <MainDivider text="Berita Terbaru "/>
+                <MainDivider text="Berita Terbaru " />
             </div>
 
             <div className="widgetHome">
                 <WidgetBaru width="68%" carouselName="berita" />
                 <div className="pemisah" style={{
-                    width : '4%',
-                    height : '100%',
-                    background : 'black'
+                    width: '4%',
+                    height: '100%',
+                    background: 'black'
                 }}></div>
                 <WidgetBaru width="28%" carouselName="beritaFoto" />
             </div>
@@ -185,7 +189,14 @@ const HomePage = ()=> {
                 <WidgetBerita width="100%" name="beritaFoto" margin=".5rem 0" />
             </div>
 
-            
+            {/* Container Card Berita Foto */}
+            <div className="container-card-beritaFoto">
+                {/* Card Berita Foto */}
+                <CardBeritaFoto pemilu16={pemilu16} pemilu17={pemilu17} title='KONGRES Ke-5 PDI Perjuangan "Solid Bergerak Untuk Indonesia Raya" Bali' paragraph1="Sekolah Sekretaris DPD & DPC PDI Perjuangan se Indonesia" paragraph2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci ipsam error, quia quo blanditiis minus enim quod magni vero veritatis?" />
+                {/* END Card Berita Foto */}
+            </div>
+            {/* END Container Card Berita Foto*/}
+
         </div>
 
     )

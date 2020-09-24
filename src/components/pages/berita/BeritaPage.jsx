@@ -5,6 +5,8 @@ import React, { useEffect } from 'react'
 import pemilu13 from '../../../img/pemilu13.jpg'
 import pemilu14 from '../../../img/pemilu14.jpg'
 import pemilu15 from '../../../img/pemilu15.jpg'
+import pemilu16 from '../../../img/pemilu16.jpg'
+import pemilu17 from '../../../img/pemilu17.jpg'
 import pemilu18 from '../../../img/pemilu18.jpg'
 import pemilu19 from '../../../img/pemilu19.jpg'
 import pemilu20 from '../../../img/pemilu20.jpg'
@@ -29,6 +31,7 @@ import BeritaTiga from '../../../img/berita3.png'
 import BeritaEmpat from '../../../img/berita4.png'
 import MainButton from '../../buttons/MainButton'
 import MainDivider from '../../divider/MainDivider'
+import CardBeritaFoto from '../../cardberitafoto/CardBeritaFoto'
 
 // Create Component
 const BeritaPage = () => {
@@ -104,37 +107,7 @@ const BeritaPage = () => {
                     {/* END Column4 */}
 
                     {/* Column5 */}
-                    <div className="col5-container-1-beritaPage">
-                        {/* Row1 */}
-                        <div className="row1-col5-beritaPage">
-                            <div className="box-img">
-
-                            </div>
-                            <div className="box-jdl-row1">
-                                <h1>KONGRES Ke- 5 PDI Perjuangan "Solid Bergerak Untuk Indonesia Raya" Bali</h1>
-                            </div>
-                        </div>
-                        {/* END Row1 */}
-                        {/* Row2 */}
-                        <Link to='/page2' className="row2-col5-beritaPage">
-                            {/* Column1 */}
-                            <div className="col1-row2-beritaPage">
-
-                            </div>
-                            {/* END Column1 */}
-                            {/* Column2 */}
-                            <div className="col2-row2-beritaPage">
-                                <p className="txt-jdl-col2">
-                                    Sekolah Sekretaris DPD & DPC PDI Perjuangan se Indonesia
-                                </p>
-                                <p className="txt-desk-col2">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo ipsum modi provident ut molestiae iure, reiciendis dicta dolores, omnis sit. Praesentium quasi, numquam sint pariatur illo quaerat velit dolor!quasi, numqua.
-                                </p>
-                            </div>
-                            {/* END Column2 */}
-                        </Link>
-                        {/* END Row2 */}
-                    </div>
+                    <CardBeritaFoto pemilu16={pemilu16} pemilu17={pemilu17} title='KONGRES Ke-5 PDI Perjuangan "Solid Bergerak Untuk Indonesia Raya" Bali' paragraph1="Sekolah Sekretaris DPD & DPC PDI Perjuangan se Indonesia" paragraph2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci ipsam error, quia quo blanditiis minus enim quod magni vero veritatis?" />
                     {/* END Column5 */}
                 </div>
                 {/* END Container1 */}

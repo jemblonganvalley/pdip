@@ -1,0 +1,179 @@
+@import '../../utilities/variable/variables.scss';
+
+
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+
+// Wrapper
+.wrapper-cardBerFoto{
+    display: flex;
+    height: 65vh;
+    width: 100%;
+    overflow: hidden;
+
+    @include smallPhone(){
+        height: auto;
+        flex-direction: column;
+        padding: 0 5px;
+    }
+
+    // Row1
+    .row1-col5-cardBerFoto{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: auto;
+        width: 30%;
+        background-color: #d80010;
+        color: #fff;
+        background-size: cover;
+        overflow: hidden;
+        transition: .5s;
+
+        @include smallPhone(){
+            height: auto;
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+
+        &:hover{
+            background: #fff;
+            color: #000;
+        }
+
+        .box-img{
+            display: flex;
+            height: 35vh;
+            width: 100%;
+            // background-image: url(../../../img/pemilu16.jpg);
+            object-fit: cover;
+            object-position: center;
+            overflow: hidden;
+
+            @include smallPhone(){
+                height: 40vh;
+                background-position: inherit;
+            }
+        }
+
+        .box-jdl-row1{
+            display: flex;
+            height: auto;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            h1{
+                display: flex;
+                font-size: 20px;
+                padding: 20px;
+                overflow: hidden;
+
+                @include smallPhone(){
+                    font-size: 15px;
+                    margin: 1px;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+    // END Row1
+
+    // Row2
+    .row2-col5-cardBerFoto{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 70%;
+        background: #fff;
+        color: #000;
+        margin: 0 0 0 20px;
+        text-decoration: none;
+        transition: .5s;
+        overflow: hidden;
+
+        @include smallPhone(){
+            height: auto;
+            width: 100%;
+            margin: 0;
+        }
+        
+        &:hover{
+            background: #d80010;
+            color: #fff;
+        }
+
+        // Column1
+        .col1-row2-cardBerFoto{
+            display: flex;
+            height: 35vh;
+            width: 100%;
+            // background: url(../../../img/pemilu17.jpg);
+            object-fit: cover;
+            object-position: center;
+            overflow: hidden;
+
+            @include smallPhone(){
+                height: 40vh;
+            }
+        }
+        // END Column1
+
+        // Column2
+        .col2-row2-cardBerFoto{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+            padding: 20px 35px 5px 35px;
+            overflow: hidden;
+
+            @include smallPhone(){
+                height: 40%;
+                padding: 20px;
+            }
+
+            .txt-jdl-col2{
+                display: flex;
+                // font-size: 20px;
+                font-weight: 500;
+                text-align: start;
+                margin: 0 0 5px 0;
+                padding: 0 0 2px 0;
+                overflow: hidden;
+
+                @include smallPhone(){
+                    font-size: 15px;
+                }
+            }
+
+            .txt-desk-col2{
+                display: flex;
+                // font-size: 12px;
+                text-align: start;
+                padding: 0 0 10px 0;
+                overflow: hidden;
+
+                @include smallPhone(){
+                    font-size: 10px;
+                    padding: 0;
+                }
+            }
+        }
+        // END Column2
+    }
+    // END Row2
+}
+// END Wrapper
