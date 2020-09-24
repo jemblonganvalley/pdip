@@ -1,0 +1,18 @@
+POST https://atur.biar.pw/api/auth/app
+Content-Type: application/json
+
+{
+    "app_id" : "1555309664580",
+    "api_secret" : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
+}
+
+###
+POST https://atur.biar.pw/api/web/config
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAwOTMzODc0LCJleHAiOjE2MDEwMjAyNzQsIm5iZiI6MTYwMDkzMzg3NCwianRpIjoiaXlsbkE1TGt6SEZGcGFKOCIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.KxFv6Kb0iqE8ALCFT_eK-ly7-80Cyw2fENiHxti8Et8"
+
+###
+
+POST https://atur.biar.pw/api/blog/data?page=1
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAwOTMzODc0LCJleHAiOjE2MDEwMjAyNzQsIm5iZiI6MTYwMDkzMzg3NCwianRpIjoiaXlsbkE1TGt6SEZGcGFKOCIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.KxFv6Kb0iqE8ALCFT_eK-ly7-80Cyw2fENiHxti8Et8"
