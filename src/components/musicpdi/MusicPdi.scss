@@ -33,7 +33,7 @@ $smallPhoneDua : 400px;
         // border: 1px solid blue;
         width: 100%;
         // height: 66vh;
-        height: auto;
+        height: 65.2vh;
         display: flex;
         border-radius: 10px;
         @include smallPhone() {
@@ -56,7 +56,7 @@ $smallPhoneDua : 400px;
             // flex-direction: row;
             // align-items: center;
             
-            padding: 1rem 7%;
+            padding: 1rem 7% 0 7%;
             // border: 1px solid green;
 
             .col-sm-4 {
@@ -121,7 +121,7 @@ $smallPhoneDua : 400px;
                 align-items: center;
                 // border: 1px solid blue;
                 width: 100%;
-                height: 40vh;
+                height: 30vh;
                 .downloadContent {
                     // margin: 1.5rem;
                     flex-direction: row;
@@ -145,7 +145,6 @@ $smallPhoneDua : 400px;
 
         .col-sm-8 {
             // border: 1px solid green;
-            
             margin-left: 2rem;
 
             .containerLirik {
@@ -179,8 +178,7 @@ $smallPhoneDua : 400px;
                 p {
                     letter-spacing: .8px;
                     margin-top: 1rem;
-                    height: 40vh;
-                    // border: 1px solid blue;
+                    height: 30vh;
                     overflow: scroll;
                     color: #ffffff;
                     overflow-x: hidden;
@@ -426,7 +424,7 @@ $smallPhoneDua : 400px;
                     color: #c70000;
                     width: 100%;
                     flex-direction: column;
-                    padding: 15px 20px;
+                    padding: 9px 20px;
                     transition: .3s;
                     cursor: pointer;
                     &:hover {
@@ -440,7 +438,7 @@ $smallPhoneDua : 400px;
                     }
                 }
                 small{
-                    margin-top: 5px;
+                    margin-top: 0px;
                     letter-spacing: .8px;
                     font-weight: 300;
                     
@@ -454,7 +452,7 @@ $smallPhoneDua : 400px;
                     justify-content: center;
                     width: 100%;
                     flex-direction: column;
-                    padding: 15px 20px;
+                    padding: 9px 20px;
                     transition: .3s;
                     cursor: pointer;
                     &:hover {
@@ -482,7 +480,7 @@ $smallPhoneDua : 400px;
                     justify-content: center;
                     width: 100%;
                     flex-direction: column;
-                    padding: 15px 20px;
+                    padding: 9px 20px;
                     transition: .3s;
                     cursor: pointer;
                     &:hover {
@@ -510,7 +508,7 @@ $smallPhoneDua : 400px;
                     width: 100%;
                     
                     flex-direction: column;
-                    padding: 15px 20px;
+                    padding: 9px 20px;
                     border-bottom-right-radius: 10px;
                     transition: .3s;
                     color: #c70000;
