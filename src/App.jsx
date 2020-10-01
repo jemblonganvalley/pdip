@@ -23,7 +23,7 @@ import BkbbWejangan from './components/pages/bkbb/BkbbWejangan'
 import AllComponent from './components/allcomponent/AllComponent';
 import BgRed from './components/bgRed/BgRed';
 import WejanganBungKarno from './components/pages/bkbb/wejanganbungkarno/WejanganBungKarno';
-import { useStoreActions } from 'easy-peasy';
+import { useStoreActions, useStoreState } from 'easy-peasy';
 import EventPage from './components/pages/events/EventPage';
 import PidatoKongres from './components/pages/KetuaUmum/pidatokongres/PidatoKongres';
 import PidatoRakernas from './components/pages/KetuaUmum/pidatorakernas/PidatoRakernas';
@@ -41,15 +41,39 @@ import StrukturPpdi from './components/pages/strukturppdi/StrukturPpdi';
 import VisiMisi from './components/pages/visimisi/VisiMisi';
 import Prosedur from './components/pages/prosedur/Prosedur';
 import Regulasi from './components/pages/regulasi/Regulasi';
+import ListBerita from './components/pages/berita/listBerita/ListBerita';
 
 
 function App() {
 
   let [hide, setHide] = useState(true)
-  let setBlogCategory = useStoreActions(action => action.setBlogCategory)
+  let token = useStoreState(state => state.token)
+  const getGlobalToken = useStoreActions(action => action.setToken)
+  let [dataMenu, setDataMenu] = useState()
+  let [tkn, setTkn] = useState()
 
+ 
+
+  const getToken = async ()=>{
+    const res = await fetch('https://atur.biar.pw/api/auth/app', {
+      method :'POST',
+      headers : {
+        "Content-Type" : "application/json"
+      },
+      body : JSON.stringify({
+                app_id : "1555309664580",
+                api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
+            })
+    })
+    const data = await res.json()
+    setTkn(data.token)
+
+  }
+
+  
   useEffect(() => {
-    setBlogCategory()
+    getGlobalToken()
+    getToken()
     var prevScrollpos = window.pageYOffset;
     window.addEventListener('scroll', function () {
       var currentScrollPos = window.pageYOffset;
@@ -67,7 +91,14 @@ function App() {
   return (
     <Router>
 
-      <MainNavbar hide={hide} />
+      {/* {console.log(`
+        >>>>>>>>>>>>>>>>>>>>
+        ${hd.Authorization}
+      `)} */}
+
+      {tkn && (
+        <MainNavbar hide={hide} token={tkn}/>
+      )}
 
       <div className="App">
 
@@ -99,6 +130,10 @@ function App() {
 
           <Route path='/beritadaerah'>
             <BeritaDaerah />
+          </Route>
+
+          <Route path='/list-berita'>
+            <ListBerita />
           </Route>
 
           <Route path='/beritanasional'>
@@ -185,7 +220,7 @@ function App() {
             <Page1 />
           </Route>
 
-          <Route path="/informasi">
+          <Route path="/informasi-publik">
             <InformasiPage />
           </Route>
 
@@ -197,11 +232,11 @@ function App() {
             <MultimediaPage />
           </Route>
 
-          <Route path="/ketuaumum">
+          <Route path="/ketua-umum">
             <KetuaUmumPage />
           </Route>
 
-          <Route path="/bungkarno">
+          <Route path="/bung-karno-bapak-bangsa">
             <BkbbPage />
           </Route>
 

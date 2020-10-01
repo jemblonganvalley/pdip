@@ -13,7 +13,7 @@ $smallPhoneDua : 400px;
     }
 }
 .image1 {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-image: url(../../img/slider.jpg);
     background-size: cover;
@@ -34,7 +34,8 @@ $smallPhoneDua : 400px;
         color: #ffffff;
         // border: 1px solid green;
         background: url(../../img/bgTextMobilez-01.svg);
-        background-size: cover;
+        background-size: contain;
+        background-position: left;
         opacity: 0.8;
         background-repeat: no-repeat;
         display: flex;
@@ -182,7 +183,7 @@ $smallPhoneDua : 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    height: 90vh;
 
     .carousel-inner {
 
@@ -264,13 +265,13 @@ $smallPhoneDua : 400px;
 
 
 .arrowsLeft {
-    height: 30px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
+    width: 80px;
     // border: 1px solid blue;
-    background: rgba(255, 186, 186, 0.8);
+    // background: rgba(255, 186, 186, 0.8);
     // display: none;
     @include smallPhoneDua() {
         height: 20px;
@@ -281,13 +282,13 @@ $smallPhoneDua : 400px;
 
 
 .arrowsRight {
-    height: 30px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
+    width: 80px;
     // border: 1px solid blue;
-    background: rgba(255, 186, 186, 0.8);
+    // background: rgba(255, 186, 186, 0.8);
 
     @include smallPhoneDua() {
         height: 20px;

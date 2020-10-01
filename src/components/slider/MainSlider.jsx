@@ -28,7 +28,7 @@ const MainSlider = ()=> {
     
 
     return (
-        <div id="carouselExampleIndicators" className="carousel slide carousel-fade" data-ride="carousel" data-interval="0">
+        <div id="carouselExampleIndicators" className="carousel slide carousel-fade" data-ride="carousel" data-interval="0" >
 
                 
                 <div className="carousel-indicators">

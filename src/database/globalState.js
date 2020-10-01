@@ -1,19 +1,27 @@
 import {action, createStore, thunk} from 'easy-peasy'
 
 export let globalState = createStore({
-    blogCategory : [],
-    pushBlogCategory : action((state, payload)=>{
-        state.blogCategory = payload
+
+    token : null,
+    pushToken : action((state, payload)=>{
+        state.token = payload
     }),
-    setBlogCategory : thunk(async actions=>{
-        var res = await fetch('https://cms.biar.pw/api/blog/category/merger', {
+    setToken : thunk(async act=>{
+        let res = await fetch('https://atur.biar.pw/api/auth/app', {
             method : 'POST',
             headers : {
-                "Content-Type" : "application/json",
-                "Authorization" : "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9jbXMuYmlhci5wd1wvYXBpXC9hdXRoXC9hcHAiLCJpYXQiOjE1OTcyNjYxNTQsImV4cCI6MTU5NzM1MjU1NCwibmJmIjoxNTk3MjY2MTU0LCJqdGkiOiJOOUl3MDd4S2VrNXc1bVdIIiwic3ViIjoxNCwicHJ2IjoiOGZmNjMwYTAwY2E0YTNlYWY2ZjI1NGY1YWJlNWFiMWJlZWQyNzI0OSJ9.Pu29QRdPec2vdkhdCJx1fhzyuIfIZv3wI7m9Q_ZS5EU"
-            }
+                "Content-Type" : "application/json"
+            },
+            body : JSON.stringify({
+                app_id : "1555309664580",
+                api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
+            })
         })
-        var data = await res.json()
-        actions.pushBlogCategory(data)
+        let data = await res.json()
+        let ps = await act.pushToken(data.token)
+
     }),
+ 
+
+
 })

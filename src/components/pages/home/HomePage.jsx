@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 // import './HomePage.css'
 import './HomePage.scss'
 import MainSlider from '../../slider/MainSlider'
@@ -26,11 +26,78 @@ import downloadTiga from '../../../img/lightDownTiga.png'
 import MusicMobile from '../../musicPdiMobile/MusicMobile'
 import WidgetBaru from '../../widgetBaru/WidgetBaru'
 import KMobile from '../../carouselKMobile/KMobile'
+import { useStoreState } from 'easy-peasy'
+import { Link, NavLink, Redirect } from 'react-router-dom'
 
 
 const HomePage = ()=> {
 
+    const [berita, setBerita] = useState([])
+    const [beritaVideo, setBeritaVideo] = useState([])
+
+    const getDataBerita = async ()=>{
+         const res = await fetch('https://atur.biar.pw/api/auth/app', {
+            method :'POST',
+            headers : {
+                "Content-Type" : "application/json"
+        },
+        body : JSON.stringify({
+                    app_id : "1555309664580",
+                    api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
+                })
+        })
+        const data = await res.json()
+
+        const resBerita = await fetch('https://atur.biar.pw/api/blog/data/?page=13',{
+            method : "POST",
+            headers : {
+                "Content-Type" : "application/json",
+                Authorization : `Bearer ${data.token}`
+            },
+            body : JSON.stringify({
+                order :{"key":"id","value":"desc"} ,
+	            limit : 6
+            })
+        })
+        const dataBerita = await resBerita.json()
+        setBerita(dataBerita.query.data)
+
+    }
+
+     const getDataBeritaVideo = async ()=>{
+         const res = await fetch('https://atur.biar.pw/api/auth/app', {
+            method :'POST',
+            headers : {
+                "Content-Type" : "application/json"
+        },
+        body : JSON.stringify({
+                    app_id : "1555309664580",
+                    api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
+                })
+        })
+        const data = await res.json()
+
+        const resBerita = await fetch('https://atur.biar.pw/api/blog/data/?page=10',{
+            method : "POST",
+            headers : {
+                "Content-Type" : "application/json",
+                Authorization : `Bearer ${data.token}`
+            },
+            body : JSON.stringify({
+                order :{"key":"id","value":"desc"} ,
+	            limit : 3
+            })
+        })
+        const dataBerita = await resBerita.json()
+        setBeritaVideo(dataBerita.query.data)
+
+    }
+
+  
+
     useEffect(()=>{
+        getDataBerita()
+        getDataBeritaVideo()
         window.scrollTo(0,0)
     },[])
 
@@ -40,6 +107,7 @@ const HomePage = ()=> {
         }}>
             <MainSlider headline="Solid bergerak untuk Indonesia raya"
                         headline2="Solid bergerak untuk Indonesia raya" />
+
             <div className="homePageTwo">
                 <div className="customRow">
                     <div className="col-lg-4 custom">
@@ -61,6 +129,7 @@ const HomePage = ()=> {
                         </div>
                     </div>
                 </div>
+
                 <div className="videoPage">
                     <MainDivider text="Video" />
                     <div className="paragrapVideo">
@@ -84,23 +153,22 @@ const HomePage = ()=> {
                     </div>
 
                     <div className="cardContainer">
-                        <Cards imageCard={megawati1}
-                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                                borderRadius="10px" />
-                        <Cards imageCard={megawati2}
-                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                                borderRadius="10px" />
-                        <Cards imageCard={megawati3}
-                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                                borderRadius="10px" />
+                          {beritaVideo.map((e,i)=>{
+                                return (
+                                    <Cards 
+                                    id={e.id}
+                                    imageCard={e.path} 
+                                    textSmall={e.author}
+                                    TextH5={e.title}
+                                    dateTime={e.created_at}
+                                    borderRadius="10px" />
+                                )
+                            })}
                     </div>
                     
-
                     <MainButton name="lihat semua"
-                                margin="1rem 0" />
+                                margin="1rem 0" 
+                                pages='videomedia'/>
                 </div>
 
                 <div className="beritaPage">
@@ -118,47 +186,27 @@ const HomePage = ()=> {
             
 
             <div className="cardContent">
-                <Cards imageCard={megawati5} 
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+
+                {berita.map((e,i)=>{
+                    return (
+                        <Cards 
+                        id={e.id}
+                        imageCard={e.path} 
+                        textSmall={e.author}
+                        TextH5={e.title}
+                        dateTime={e.created_at}
+                        // paragrap={e.description}
                         borderRadius="10px" />
-                <Cards imageCard={megawati6} 
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                        borderRadius="10px" />
-                <Cards imageCard={megawati7} 
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                        borderRadius="10px" />
+
+                    )
+                })}
                 
             </div>
-            <div className="cardContent">
-            
-                        <Cards imageCard={megawati5} 
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                        borderRadius="10px" />
-                <Cards imageCard={megawati5} 
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                        borderRadius="10px" />
-                <Cards imageCard={megawati5} 
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                        TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                        paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                        borderRadius="10px" />
-            </div>
-
-            <div className="btnSize">
-                <MainButton name="lihat semua"
-                margin="1rem 0" />
-            </div>
-
+           
+                <span className="btnSize" >
+                        <MainButton name="lihat semua"
+                        margin="1rem 0" pages='/berita'/>
+                </span>
             <MusicPdi/>
             <MusicMobile />
     
@@ -170,20 +218,39 @@ const HomePage = ()=> {
                 <MainDivider text="Berita Terbaru "/>
             </div>
 
-            <div className="widgetHome">
-                <WidgetBaru width="68%" carouselName="berita" />
-                <div className="pemisah" style={{
-                    width : '4%',
-                    height : '100%',
-                    background : 'black'
-                }}></div>
-                <WidgetBaru width="28%" carouselName="beritaFoto" />
-            </div>
+            {/* Column5 */}
+                    <div className="col5-container-1-beritaPage" style={{padding : '0px 10%',}}>
+                        {/* Row1 */}
+                        <div className="row1-col5-beritaPage">
+                            <div className="box-img">
 
-            <div className="widgetMobile">
-                <WidgetBerita width="100%" name="berita" />
-                <WidgetBerita width="100%" name="beritaFoto" margin=".5rem 0" />
-            </div>
+                            </div>
+                            <div className="box-jdl-row1">
+                                <h1>KONGRES Ke- 5 PDI Perjuangan "Solid Bergerak Untuk Indonesia Raya" Bali</h1>
+                            </div>
+                        </div>
+                        {/* END Row1 */}
+                        {/* Row2 */}
+                        <Link to='/page2' className="row2-col5-beritaPage">
+                            {/* Column1 */}
+                            <div className="col1-row2-beritaPage">
+
+                            </div>
+                            {/* END Column1 */}
+                            {/* Column2 */}
+                            <div className="col2-row2-beritaPage">
+                                <p className="txt-jdl-col2">
+                                    Sekolah Sekretaris DPD & DPC PDI Perjuangan se Indonesia
+                                </p>
+                                <p className="txt-desk-col2">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo ipsum modi provident ut molestiae iure, reiciendis dicta dolores, omnis sit. Praesentium quasi, numquam sint pariatur illo quaerat velit dolor!quasi, numqua.
+                                </p>
+                            </div>
+                            {/* END Column2 */}
+                        </Link>
+                        {/* END Row2 */}
+                    </div>
+                    {/* END Column5 */}
 
             
         </div>

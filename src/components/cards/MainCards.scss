@@ -18,12 +18,16 @@ $smallPhoneDua : 400px;
     
 
     .cardCustom {
-        height: 100%;
-        flex: auto;
+        height: auto;
+        min-height: 450px;
+        width: calc(90%/3);
         margin: 0 10px;
         background: #ffffff;
         transition: .5s;
-
+        // margin: 40px auto;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
         @include smallPhone() {
             flex-direction: row;
             flex: auto;
@@ -44,7 +48,7 @@ $smallPhoneDua : 400px;
         
         .imageCard {
             width: 100%;
-            height: 30vh;
+            height: 200px;
             background-size: cover;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
@@ -86,9 +90,8 @@ $smallPhoneDua : 400px;
         
         .text {
             width: 100%;
+            height: auto;
             padding: 10px 20px;
-            align-items: flex-start;
-
             @include smallPhone() {
                 flex: 1;
             }
@@ -96,7 +99,7 @@ $smallPhoneDua : 400px;
             
 
             .textSmall {
-                font-size: 8pt;
+                font-size: 10pt;
 
                 @include smallPhone() {
                     font-size: 5pt;

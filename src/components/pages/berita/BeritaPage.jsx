@@ -1,5 +1,5 @@
 // Import to React
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 // END Import to React
 
 import pemilu13 from '../../../img/pemilu13.jpg'
@@ -33,7 +33,77 @@ import MainDivider from '../../divider/MainDivider'
 // Create Component
 const BeritaPage = () => {
 
+    const [berita, setBerita] = useState([])
+    const [beritaDaerah, setBeritaDaerah] = useState([])
+    const [beritaNasional, setBeritaNasional] = useState([])
+    const [beritaPartai, setBeritaPartai] = useState([])
+
+    const getDataBerita = async ()=>{
+         const res = await fetch('https://atur.biar.pw/api/auth/app', {
+            method :'POST',
+            headers : {
+                "Content-Type" : "application/json"
+        },
+        body : JSON.stringify({
+                    app_id : "1555309664580",
+                    api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
+                })
+        })
+        const data = await res.json()
+
+        //FETCH BERITA DAERAH
+        const resBeritaDaerah = await fetch('https://atur.biar.pw/api/blog/data/?page=1',{
+            method : "POST",
+            headers : {
+                "Content-Type" : "application/json",
+                Authorization : `Bearer ${data.token}`
+            },
+            body : JSON.stringify({
+                order :{"key":"id","value":"desc"} ,
+                limit : 6,
+                where : {"key":"blog.id_category","value":"47"} 
+            })
+        })
+        const dataBeritaDaerah = await resBeritaDaerah.json()
+        setBeritaDaerah(dataBeritaDaerah.query.data)
+
+        //FETCH BERITA NASIONAL
+        const resBeritaNasional = await fetch('https://atur.biar.pw/api/blog/data/?page=1',{
+            method : "POST",
+            headers : {
+                "Content-Type" : "application/json",
+                Authorization : `Bearer ${data.token}`
+            },
+            body : JSON.stringify({
+                order :{"key":"id","value":"desc"} ,
+                limit : 6,
+                where : {"key":"blog.id_category","value":"45"} 
+            })
+        })
+        const dataBeritaNasional = await resBeritaNasional.json()
+        setBeritaNasional(dataBeritaNasional.query.data)
+
+        //FETCH BERITA PARTAI
+        const reasBeritaPartai = await fetch('https://atur.biar.pw/api/blog/data/?page=1',{
+            method : "POST",
+            headers : {
+                "Content-Type" : "application/json",
+                Authorization : `Bearer ${data.token}`
+            },
+            body : JSON.stringify({
+                order :{"key":"id","value":"desc"} ,
+                limit : 6,
+                where : {"key":"blog.id_category","value":"43"} 
+            })
+        })
+        const dataBeritaPartai = await reasBeritaPartai.json()
+        setBeritaPartai(dataBeritaPartai.query.data)
+
+        }
+
+
     useEffect(() => {
+        getDataBerita()
         window.scrollTo(0, 0)
     }, [])
 
@@ -75,31 +145,27 @@ const BeritaPage = () => {
                         text4="kegiatan partai" />
                     {/* END Column2 */}
 
-                    {/* Column3 */}
-                    <div className="cardBerita1-col3-container-1">
-                        <Cards page="/page1" imageCard={pemilu13}
-                            textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                            paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="10px" />
-                        <Cards imageCard={pemilu14}
-                            textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                            paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="10px" />
-                        <Cards imageCard={pemilu15}
-                            textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                            paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="10px" />
+                    <div className="cardContainer">
+                          {beritaDaerah.map((e,i)=>{
+                                return (
+                                    <Cards 
+                                    id={e.id}
+                                    imageCard={e.path} 
+                                    textSmall={e.author}
+                                    TextH5={e.title}
+                                    dateTime={e.created_at}
+                                    borderRadius="10px" />
+                                )
+                            })}
                     </div>
+
                     {/* END Column3 */}
 
                     {/* Column4 */}
                     <div className="col4-container-1-beritaPage">
                         <MainDivider text="Berita Foto"
                             garisMerah="7rem"
-                            m="1rem 0" />
+                            m="1rem 0 0 0" />
                     </div>
                     {/* END Column4 */}
 
@@ -160,60 +226,46 @@ const BeritaPage = () => {
                 {/* Container3 */}
                 <div className="container-3-beritaPage">
                     {/* Column1 */}
-                    <div className="col1-container-3-beritaPage">
                         <MainDivider text="Berita Daerah"
                             garisMerah="7rem"
-                            m="1rem 0" />
-                    </div>
+                            m="1rem 0 0 0" />
                     {/* END Column1 */}
 
                     {/* Column2 */}
-                    <div className="col2-cardContent-container-3-beritaPage">
-                        <Cards imageCard={pemilu18}
-                            textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                            paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="10px" />
-                        <Cards imageCard={pemilu19}
-                            textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                            paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="10px" />
-                        <Cards imageCard={pemilu20}
-                            textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                            TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                            paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                            borderRadius="10px" />
+                   <div className="cardContainer">
+                          {beritaNasional.map((e,i)=>{
+                                return (
+                                    <Cards 
+                                    id={e.id}
+                                    imageCard={e.path} 
+                                    textSmall={e.author}
+                                    TextH5={e.title}
+                                    dateTime={e.created_at}
+                                    borderRadius="10px" />
+                                )
+                            })}
                     </div>
                     {/* END Column2 */}
 
                     {/* Column3 */}
-                    <div className="col3-container-3-beritaPage">
                         <MainDivider text="Kegiatan Partai"
                             garisMerah="7rem"
-                            m="1rem 0" />
-                    </div>
+                            m="1rem 0 0 0" />
                     {/* END Column3 */}
 
                     {/* Column4 */}
-                    <div className="col4-cardContent-container-3-beritaPage">
-                        <div className="col2-cardContent-container-3-beritaPage">
-                            <Cards imageCard={pemilu21}
-                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                                paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                                borderRadius="10px" />
-                            <Cards imageCard={pemilu22}
-                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                                paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                                borderRadius="10px" />
-                            <Cards imageCard={pemilu23}
-                                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                                TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                                paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                                borderRadius="10px" />
-                        </div>
+                   <div className="cardContainer">
+                          {beritaPartai.map((e,i)=>{
+                                return (
+                                    <Cards 
+                                    id={e.id}
+                                    imageCard={e.path} 
+                                    textSmall={e.author}
+                                    TextH5={e.title}
+                                    dateTime={e.created_at}
+                                    borderRadius="10px" />
+                                )
+                            })}
                     </div>
                     {/* END Column4 */}
                 </div>
