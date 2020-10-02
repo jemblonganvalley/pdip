@@ -15,6 +15,8 @@ import megawati3 from '../../../img/megawati3.jpg'
 import megawati5 from '../../../img/megawati5.jpg'
 import megawati6 from '../../../img/megawati6.jpg'
 import megawati7 from '../../../img/megawati7.jpg'
+import pemilu16 from '../../../img/pemilu16.jpg'
+import pemilu17 from '../../../img/pemilu17.jpg'
 import MainButton from '../../buttons/MainButton'
 import MainDivider from '../../divider/MainDivider'
 import laguPerjuangan from '../../../img/laguperjuangan.png'
@@ -31,7 +33,6 @@ import { Link, NavLink, Redirect } from 'react-router-dom'
 import { CarouselDuelBerita } from '../../carouselDualBerita/CarouselDuelBerita'
 
 
-const HomePage = ()=> {
 
     const [berita, setBerita] = useState([])
     const [beritaVideo, setBeritaVideo] = useState([])
@@ -104,7 +105,7 @@ const HomePage = ()=> {
 
     return (
         <div classname="homepage" style={{
-            overflowX : 'hidden'
+            overflowX: 'hidden'
         }}>
             <MainSlider headline="Solid bergerak untuk Indonesia raya"
                         headline2="Solid bergerak untuk Indonesia raya" />
@@ -146,7 +147,7 @@ const HomePage = ()=> {
                                 </ul>
                                 <div className="textInfoYT">
                                     <h3 className="videoTerbaru">Video Terbaru</h3>
-                                    <br/>
+                                    <br />
                                     <h6 className="siaranHut">Siaran langsung HUT ke-47 PDI Perjuangan Kemayoran Jakarta. 10 Januari 2020</h6>
                                 </div>
                             </div>
@@ -173,18 +174,18 @@ const HomePage = ()=> {
                 </div>
 
                 <div className="beritaPage">
-                    <MainDivider text="berita"/>
+                    <MainDivider text="berita" />
                     <div className="paragrapBerita">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores repellat illum quos? Assumenda, soluta? Totam?</p>
                     </div>
 
-                    
+
                 </div>
             </div>
 
             <CarouselKM />
             <KMobile />
-            
+
 
             <div className="cardContent">
 
@@ -210,18 +211,25 @@ const HomePage = ()=> {
                 </span>
             <MusicPdi/>
             <MusicMobile />
-    
+
             <div className="beritaTerbaru" style={{
                 display: 'flex',
-                justifyContent : 'center',
-                alignItems : 'center'
+                justifyContent: 'center',
+                alignItems: 'center'
             }}>
-                <MainDivider text="Berita Terbaru "/>
+                <MainDivider text="Berita Terbaru " />
             </div>
 
             <CarouselDuelBerita />
 
-            
+            {/* Container Card Berita Foto */}
+            <div className="container-card-beritaFoto">
+                {/* Card Berita Foto */}
+                <CardBeritaFoto pemilu16={pemilu16} pemilu17={pemilu17} title='KONGRES Ke-5 PDI Perjuangan "Solid Bergerak Untuk Indonesia Raya" Bali' paragraph1="Sekolah Sekretaris DPD & DPC PDI Perjuangan se Indonesia" paragraph2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci ipsam error, quia quo blanditiis minus enim quod magni vero veritatis?" />
+                {/* END Card Berita Foto */}
+            </div>
+            {/* END Container Card Berita Foto*/}
+
         </div>
 
     )
