@@ -40,7 +40,6 @@ const ListBerita = () => {
         })
         const dataBerita = await resBerita.json()
         setBerita(dataBerita.query.data)
-
     }
 
     // Create Database Card Item

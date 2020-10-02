@@ -1,0 +1,28 @@
+
+
+.mainCarouselDual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    gap : 20px;
+    // border: 1px solid red;
+    padding: 0 10%;
+
+    .mainCarouselDual_car1{
+        width: 30%;
+        height: 50vh;
+        // border: 1px solid blue;
+    }
+
+    .mainCarouselDual_car2{
+        width: 70%;
+        height: 50vh;
+        // border: 1px solid blue;
+
+    }
+
+
+
+}

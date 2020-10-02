@@ -28,6 +28,7 @@ import WidgetBaru from '../../widgetBaru/WidgetBaru'
 import KMobile from '../../carouselKMobile/KMobile'
 import { useStoreState } from 'easy-peasy'
 import { Link, NavLink, Redirect } from 'react-router-dom'
+import { CarouselDuelBerita } from '../../carouselDualBerita/CarouselDuelBerita'
 
 
 const HomePage = ()=> {
@@ -218,39 +219,7 @@ const HomePage = ()=> {
                 <MainDivider text="Berita Terbaru "/>
             </div>
 
-            {/* Column5 */}
-                    <div className="col5-container-1-beritaPage" style={{padding : '0px 10%',}}>
-                        {/* Row1 */}
-                        <div className="row1-col5-beritaPage">
-                            <div className="box-img">
-
-                            </div>
-                            <div className="box-jdl-row1">
-                                <h1>KONGRES Ke- 5 PDI Perjuangan "Solid Bergerak Untuk Indonesia Raya" Bali</h1>
-                            </div>
-                        </div>
-                        {/* END Row1 */}
-                        {/* Row2 */}
-                        <Link to='/page2' className="row2-col5-beritaPage">
-                            {/* Column1 */}
-                            <div className="col1-row2-beritaPage">
-
-                            </div>
-                            {/* END Column1 */}
-                            {/* Column2 */}
-                            <div className="col2-row2-beritaPage">
-                                <p className="txt-jdl-col2">
-                                    Sekolah Sekretaris DPD & DPC PDI Perjuangan se Indonesia
-                                </p>
-                                <p className="txt-desk-col2">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet illo ipsum modi provident ut molestiae iure, reiciendis dicta dolores, omnis sit. Praesentium quasi, numquam sint pariatur illo quaerat velit dolor!quasi, numqua.
-                                </p>
-                            </div>
-                            {/* END Column2 */}
-                        </Link>
-                        {/* END Row2 */}
-                    </div>
-                    {/* END Column5 */}
+            <CarouselDuelBerita />
 
             
         </div>

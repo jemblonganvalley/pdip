@@ -15,12 +15,12 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 
 POST https://atur.biar.pw/api/blog/data/
 Content-Type: application/json
-Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNDkzNTUwLCJleHAiOjE2MDE1Nzk5NTAsIm5iZiI6MTYwMTQ5MzU1MCwianRpIjoickVpZndzZWFWZnV3WnZ6biIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.ZouuHmO96XnNU4M8tMNeoHe9cfwa4H388xMXyzZ2sO4"
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNjIzODkxLCJleHAiOjE2MDE3MTAyOTEsIm5iZiI6MTYwMTYyMzg5MSwianRpIjoibXJ6cEZXSzg1M3VscTMzNyIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.Euwtol7yBSCran3zrUC9JMuiR6nBIXWopcggdqgsWPI"
 
 {
 	"order":{"key":"id","value":"desc"} ,
 	"limit" : 3,
-    "where" : {"key":"blog.id_category","value":"43"} 
+    "where" : {"key":"blog.id_category","value":"44"} 
 }
 
 
