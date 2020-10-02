@@ -154,7 +154,6 @@ const MainNavbar = ({token})=> {
         )}
         </>
 
-    
     )
 }
 
