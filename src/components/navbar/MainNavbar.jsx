@@ -154,8 +154,7 @@ const MainNavbar = ({token})=> {
       )}
     </>
 
-
-  )
+    )
 }
 
 export default MainNavbar

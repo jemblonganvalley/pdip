@@ -231,8 +231,8 @@ import { CarouselDuelBerita } from '../../carouselDualBerita/CarouselDuelBerita'
             {/* END Container Card Berita Foto*/}
 
         </div>
-
+    
     )
-}
+
 
 export default HomePage
