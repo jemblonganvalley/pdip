@@ -99,7 +99,6 @@ const MainNavbar = ({token})=> {
                 </form>
               </div>
             </div>
-          </div>
         </nav>
 
       )}
@@ -150,7 +149,7 @@ const MainNavbar = ({token})=> {
               </form>
             </div>
           </div>
-        </nav>
+          </nav>
 
       )}
     </>
