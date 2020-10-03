@@ -35,6 +35,7 @@ const HomePage = ()=> {
 
     const [berita, setBerita] = useState([])
     const [beritaVideo, setBeritaVideo] = useState([])
+    const [configHome, setConfigHome] = useState([])
 
     const getDataBerita = async ()=>{
          const res = await fetch('https://atur.biar.pw/api/auth/app', {
@@ -49,7 +50,7 @@ const HomePage = ()=> {
         })
         const data = await res.json()
 
-        const resBerita = await fetch('https://atur.biar.pw/api/blog/data/?page=13',{
+        const resBerita = await fetch('https://atur.biar.pw/api/blog/data/',{
             method : "POST",
             headers : {
                 "Content-Type" : "application/json",
@@ -66,7 +67,7 @@ const HomePage = ()=> {
     }
 
      const getDataBeritaVideo = async ()=>{
-         const res = await fetch('https://atur.biar.pw/api/auth/app', {
+        const res = await fetch('https://atur.biar.pw/api/auth/app', {
             method :'POST',
             headers : {
                 "Content-Type" : "application/json"
@@ -78,7 +79,7 @@ const HomePage = ()=> {
         })
         const data = await res.json()
 
-        const resBerita = await fetch('https://atur.biar.pw/api/blog/data/?page=10',{
+        const resBerita = await fetch('https://atur.biar.pw/api/blog/data/',{
             method : "POST",
             headers : {
                 "Content-Type" : "application/json",
@@ -94,11 +95,37 @@ const HomePage = ()=> {
 
     }
 
-  
+    const getConfigHome = async ()=>{
+        const res = await fetch('https://atur.biar.pw/api/auth/app', {
+            method :'POST',
+            headers : {
+                "Content-Type" : "application/json"
+        },
+        body : JSON.stringify({
+                    app_id : "1555309664580",
+                    api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
+                })
+        })
+        const data = await res.json()
+
+        const resConfigHome = await fetch('https://atur.biar.pw/api/web/pages/home', {
+            method : 'POST',
+            headers : {
+                "Content-Type" : "application/json",
+                Authorization : `Bearer ${data.token}`
+            }
+
+        })
+
+        const dataConfigHome = await resConfigHome.json()
+        // console.log(dataConfigHome)
+        setConfigHome(dataConfigHome.query)
+    }
 
     useEffect(()=>{
         getDataBerita()
         getDataBeritaVideo()
+        getConfigHome()
         window.scrollTo(0,0)
     },[])
 
@@ -106,29 +133,28 @@ const HomePage = ()=> {
         <div classname="homepage" style={{
             overflowX : 'hidden'
         }}>
-            <MainSlider headline="Solid bergerak untuk Indonesia raya"
-                        headline2="Solid bergerak untuk Indonesia raya" />
 
-            <div className="homePageTwo">
+            {configHome.length > 0 && (
+                <MainSlider 
+                value={configHome[0].value}
+                cls={configHome[0].class}
+            />
+            )}
+
+            <div className="homePageTwo" >
                 <div className="customRow">
-                    <div className="col-lg-4 custom">
-                        <div className="customBorder">
-                            <img src={Informasi} alt="" width="50" height="50" />
-                            <h3>informasi dan dokumentasi publik</h3>
+
+                    {configHome.length > 0 && (
+                        configHome[1].value.map((e,i)=>(
+                         <div className="col-lg-4 custom" key={i}>
+                            <div className="customBorder">
+                                <img src={`https://atur.biar.pw/public/${e.image}`} alt="" width="100" height="100" />
+                                <h3>{e.title}</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div className="col-lg-4 custom">
-                        <div className="customBorder">
-                            <img src={Rekening} alt="" width="50" height="50" />
-                            <h3>rekening gotong royong</h3>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 custom">
-                        <div className="customBorder calendar">
-                            <img src={Calendar} alt="" width="50" height="50" />
-                            <h3>kalender kegiatan partai</h3>
-                        </div>
-                    </div>
+                        ))
+                    )}
+
                 </div>
 
                 <div className="videoPage">
@@ -158,6 +184,7 @@ const HomePage = ()=> {
                                 return (
                                     <Cards 
                                     id={e.id}
+                                    textCategoryChild={e.category_child_name}
                                     imageCard={e.path} 
                                     textSmall={e.author}
                                     TextH5={e.title}
@@ -193,12 +220,12 @@ const HomePage = ()=> {
                         <Cards 
                         id={e.id}
                         imageCard={e.path} 
+                        textCategoryChild={e.category_child_name}
                         textSmall={e.author}
                         TextH5={e.title}
                         dateTime={e.created_at}
                         // paragrap={e.description}
                         borderRadius="10px" />
-
                     )
                 })}
                 
@@ -216,7 +243,7 @@ const HomePage = ()=> {
                 justifyContent : 'center',
                 alignItems : 'center'
             }}>
-                <MainDivider text="Berita Terbaru "/>
+                <MainDivider text="Foto Gallery "/>
             </div>
 
             <CarouselDuelBerita />

@@ -28,7 +28,7 @@ $smallPhoneDua : 400px;
 
 .homePageTwo {
     width: 100vw;
-    margin-top: 40px;
+    // margin-top: 40px;
     padding: 20px 20%;
     @include smallPhone() {
         padding: 0;

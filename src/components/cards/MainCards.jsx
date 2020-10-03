@@ -2,7 +2,20 @@ import React from 'react'
 import './MainCards.scss'
 import { Link } from 'react-router-dom'
 
-const Cards = ({ page, margin, imageCard, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight, TextH6, paragrapSize, width, dateTime }) => {
+const Cards = ({ page, margin, imageCard, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight, TextH6, paragrapSize, width, dateTime, textCategoryChild }) => {
+
+    let dt = toString(dateTime)
+    let dtt = dt.split(" ")
+
+    const add3Dots = (string, limit)=>{
+        var dots = "...";
+            if(string.length > limit){
+                    // you can also use substr instead of substring
+                    string = string.substring(0,limit) + dots;
+            }
+            return string;
+        }
+
     return (
 
         <div className="col col-lg-3 cardCustom" style={{
@@ -21,18 +34,32 @@ const Cards = ({ page, margin, imageCard, textSmall, TextH5, borderRadius, parag
                 </Link>
             </Link>
             <div className="text">
-                <small className="textSmall">{textSmall}</small> <br/>
-                <small className="textSmall">{dateTime}</small>
+                <p style={{
+                    color : 'red', 
+                    fontSize: '8pt', 
+                    fontWeight : '800', 
+                    lineHeight : '0', 
+                    padding : '0', 
+                    margin :'10px 0 0 0'}}>
+                    {textCategoryChild}
+                </p>
+                <small className="textSmall" style={{fontSize: '8pt'}}>{textSmall}</small> | &nbsp;
+                <small className="textSmall" style={{fontSize: '8pt'}}>{dateTime}</small>
+
                 <p className="textH5" style={{
                     fontSize: h5Font,
-                    fontWeight: h5Weight
-                }}><b>{TextH5}</b></p>
+                    fontWeight: h5Weight,
+                    // maxHeight : '50px',
+                    // overflow : 'hidden',
+                    // textOverflow : 'elipsis',
+                }}><b>{add3Dots(TextH5, 70)}</b></p>
                 <h6 className="textH6">
                     {TextH6}
                 </h6>
                 <p className="paragrap" style={{
                     fontSize: paragrapSize
                 }}>{paragrap}</p>
+                
             </div>
         </div>
 

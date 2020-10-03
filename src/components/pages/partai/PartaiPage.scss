@@ -19,7 +19,7 @@ $smallPhoneDua : 400px;
 
 .wrapperPartai {
     width: 100%;
-
+    
     // START HEADERS
     .headers {
         background: url(../../../img/kampanye.jpg);
@@ -96,6 +96,7 @@ $smallPhoneDua : 400px;
             justify-content: space-around;
             align-items: center;
             width: 100%;
+            padding: 0 20%;
 
             @include smallPhone() {
                 flex-direction: column-reverse;
@@ -107,9 +108,11 @@ $smallPhoneDua : 400px;
 
             .wrapperContentSatu {
                 display: flex;
-                justify-content: space-around;
+                justify-content: flex-start;
                 align-items: center;
                 flex-direction: column;
+
+               
 
                 @include smallPhone() {
                 }

@@ -9,22 +9,24 @@ import sliders from '../../img/slider.jpg'
 import slider2 from '../../img/slider2.jpg'
 
 
-const MainSlider = ()=> {
+const MainSlider = ({value, cls})=> {
 
-    let [slider, setSlider] = useState([
-        {
-            id : 1,
-            headline : "Solid bergerak untuk Indonesia raya",
-            paragrap : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium.",
-            images : sliders
-        },
-        {
-            id : 2,
-            headline : "Solid bergerak untuk Indonesia raya",
-            paragrap : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium.",
-            images : slider2
-        },
-    ])
+    // let [slider, setSlider] = useState([
+    //     {
+    //         id : 1,
+    //         headline : "Solid bergerak untuk Indonesia raya",
+    //         paragrap : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium.",
+    //         images : sliders
+    //     },
+    //     {
+    //         id : 2,
+    //         headline : "Solid bergerak untuk Indonesia raya",
+    //         paragrap : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta aut nobis tempore earum velit, fugit nostrum ratione modi praesentium.",
+    //         images : slider2
+    //     },
+    // ])
+
+    let slider = value
     
 
     return (
@@ -40,16 +42,16 @@ const MainSlider = ()=> {
                 
                 <div className="carousel-inner">
 
-                    {slider.map((e)=> {
+                    {slider.map((e, i)=> {
                         return (
-                            <div className={e.id == 1 ? "carousel-item active" : "carousel-item"}>
+                            <div className={i == 1 ? `carousel-item ${cls} active` : `carousel-item ${e.class}`}>
                                 <div className="row image1 images" style={{
-                                    background : `url(${e.images})`,
+                                    background : `url(https://atur.biar.pw/public/${e.image})`,
                                     backgroundSize : 'cover'
                                 }}>
                                     <div className="col col-lg-6 mr-auto text1">
-                                            <h1>{e.headline}</h1>
-                                            <p>{e.paragrap}</p>
+                                            <h1>{e.title}</h1>
+                                            <p dangerouslySetInnerHTML={{__html : e.paragraph}}></p>
                                     </div>
                                 </div>
                             </div>

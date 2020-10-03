@@ -9,13 +9,13 @@ Content-Type: application/json
 ###
 POST https://atur.biar.pw/api/web/config
 Content-Type: application/json
-Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNDkzNTUwLCJleHAiOjE2MDE1Nzk5NTAsIm5iZiI6MTYwMTQ5MzU1MCwianRpIjoickVpZndzZWFWZnV3WnZ6biIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.ZouuHmO96XnNU4M8tMNeoHe9cfwa4H388xMXyzZ2sO4"
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI5Mzc5LCJleHAiOjE2MDE4MTU3NzksIm5iZiI6MTYwMTcyOTM3OSwianRpIjoiR3pNSjNRTXVJRlV1bkVpSCIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.uyRHBeo7OXrezIKqCGYD6tylM2ScaqA4O87ios-HydU"
 
 ###
 
 POST https://atur.biar.pw/api/blog/data/
 Content-Type: application/json
-Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNjIzODkxLCJleHAiOjE2MDE3MTAyOTEsIm5iZiI6MTYwMTYyMzg5MSwianRpIjoibXJ6cEZXSzg1M3VscTMzNyIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.Euwtol7yBSCran3zrUC9JMuiR6nBIXWopcggdqgsWPI"
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI2ODkxLCJleHAiOjE2MDE4MTMyOTEsIm5iZiI6MTYwMTcyNjg5MSwianRpIjoiVXE4ZnFSUTBYM1ExU0JmcyIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.ZAAHA8outuyYzCfyqY3Rk5SJDCZ8yjN9VUMKmtNPmHI"
 
 {
 	"order":{"key":"id","value":"desc"} ,
@@ -33,3 +33,90 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 POST https://atur.biar.pw/api/blog/find/?id=658
 Content-Type: application/json
 Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNDkzNTUwLCJleHAiOjE2MDE1Nzk5NTAsIm5iZiI6MTYwMTQ5MzU1MCwianRpIjoickVpZndzZWFWZnV3WnZ6biIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.ZouuHmO96XnNU4M8tMNeoHe9cfwa4H388xMXyzZ2sO4"
+
+###
+POST https://atur.biar.pw/api/gallery/album
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI1ODk0LCJleHAiOjE2MDE4MTIyOTQsIm5iZiI6MTYwMTcyNTg5NCwianRpIjoid0ZhYzRjV2I4ODFpOUtlQSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.EC_AbVqtnqtsqvjLV6leOymxL8Kc7p4VEH2muKcwV_4"
+
+{
+	"order":{"key":"id","value":"desc"} ,
+	"where":{"key":"type", "value":"image"},
+	"limit" : 10
+}
+
+###
+POST https://atur.biar.pw/api/gallery/data
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI1ODk0LCJleHAiOjE2MDE4MTIyOTQsIm5iZiI6MTYwMTcyNTg5NCwianRpIjoid0ZhYzRjV2I4ODFpOUtlQSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.EC_AbVqtnqtsqvjLV6leOymxL8Kc7p4VEH2muKcwV_4"
+
+{
+	"order":{"key":"id","value":"desc"} ,
+	"where":{"key":"type", "value":"image"},
+	"limit" : 10
+}
+
+###
+POST https://atur.biar.pw/api/web/pages/partai
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI1ODk0LCJleHAiOjE2MDE4MTIyOTQsIm5iZiI6MTYwMTcyNTg5NCwianRpIjoid0ZhYzRjV2I4ODFpOUtlQSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.EC_AbVqtnqtsqvjLV6leOymxL8Kc7p4VEH2muKcwV_4"
+
+###
+POST https://atur.biar.pw/api/multimedia/youtube-data
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI1ODk0LCJleHAiOjE2MDE4MTIyOTQsIm5iZiI6MTYwMTcyNTg5NCwianRpIjoid0ZhYzRjV2I4ODFpOUtlQSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.EC_AbVqtnqtsqvjLV6leOymxL8Kc7p4VEH2muKcwV_4"
+
+{
+	"order" : {"key":"id","value":"desc"} ,
+	"limit" : 2,
+    "where" : {"key":"category","value":"siaran_pers"} 
+}
+
+###
+POST https://atur.biar.pw/api/multimedia/youtube-find
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI1ODk0LCJleHAiOjE2MDE4MTIyOTQsIm5iZiI6MTYwMTcyNTg5NCwianRpIjoid0ZhYzRjV2I4ODFpOUtlQSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.EC_AbVqtnqtsqvjLV6leOymxL8Kc7p4VEH2muKcwV_4"
+
+{
+	"id" : 2
+}
+
+###
+POST https://atur.biar.pw/api/partai/pengurus/data
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI1ODk0LCJleHAiOjE2MDE4MTIyOTQsIm5iZiI6MTYwMTcyNTg5NCwianRpIjoid0ZhYzRjV2I4ODFpOUtlQSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.EC_AbVqtnqtsqvjLV6leOymxL8Kc7p4VEH2muKcwV_4"
+
+{
+	"order" : {"key":"id","value":"desc"} ,
+	"limit" : 10
+}
+
+###
+POST https://atur.biar.pw/api/partai/pengurus/find
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI1ODk0LCJleHAiOjE2MDE4MTIyOTQsIm5iZiI6MTYwMTcyNTg5NCwianRpIjoid0ZhYzRjV2I4ODFpOUtlQSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.EC_AbVqtnqtsqvjLV6leOymxL8Kc7p4VEH2muKcwV_4"
+
+{
+	"id" : 7
+}
+
+###
+POST https://atur.biar.pw/api/partai/legislatif/data
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI1ODk0LCJleHAiOjE2MDE4MTIyOTQsIm5iZiI6MTYwMTcyNTg5NCwianRpIjoid0ZhYzRjV2I4ODFpOUtlQSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.EC_AbVqtnqtsqvjLV6leOymxL8Kc7p4VEH2muKcwV_4"
+
+{
+	"order" : {"key":"id","value":"desc"},
+	"limit" : 10
+}
+
+
+###
+POST https://atur.biar.pw/api/partai/legislatif/find
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI1ODk0LCJleHAiOjE2MDE4MTIyOTQsIm5iZiI6MTYwMTcyNTg5NCwianRpIjoid0ZhYzRjV2I4ODFpOUtlQSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.EC_AbVqtnqtsqvjLV6leOymxL8Kc7p4VEH2muKcwV_4"
+
+{
+	"id" : 9
+}
+

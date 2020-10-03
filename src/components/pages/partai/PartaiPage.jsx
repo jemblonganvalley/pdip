@@ -85,6 +85,7 @@ const PartaiPage = () => {
                             </div>
                         </div>
                     </div>
+                    
                     <div className="col col-lg-8">
                         <div className="wrapperCarousel">
 

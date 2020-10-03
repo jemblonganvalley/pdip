@@ -9,10 +9,44 @@ import './MusicPdi.scss'
 
 const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
 
-   
+        const [music, setMusic] = useState([])
+        const [defaultMusic, setDefaultMusic] = useState()
+
+      const getConfigMusic = async ()=>{
+        const res = await fetch('https://atur.biar.pw/api/auth/app', {
+            method :'POST',
+            headers : {
+                "Content-Type" : "application/json"
+        },
+        body : JSON.stringify({
+                    app_id : "1555309664580",
+                    api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
+                })
+        })
+        const data = await res.json()
+
+        const resGetMusic = await fetch('https://atur.biar.pw/api/web/pages/partai', {
+            method : 'POST',
+            headers : {
+                "Content-Type" : "application/json",
+                Authorization : `Bearer ${data.token}`
+            }
+
+        })
+
+        const dataConfigHome = await resGetMusic.json()
+        // console.log(dataConfigHome)
+        setMusic(dataConfigHome.query[3].value)
+        setDefaultMusic(dataConfigHome.query[3].value[0])
+    }
+
+    useEffect(()=>{
+        getConfigMusic()
+    },[])
 
     return (
         <div className="musiPdi">
+            {console.log(music)}
             {/* CONTAINER DUA */}
             <div className="containerDua">
                 <div className="contentDua">
@@ -51,17 +85,15 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                                 mars pdi perjuangan
                             </span>
                             <span className="lirik">lirik</span>
-                            <p className="isiLirik">Atas Kasih dan Kehendak Yang Maha Pencipta<br/>Kita Telat Sepakat Bersatu<br/>Bersatu Dalam Satu Rampak Barisan<br/>Menentang Kemiskinan
-                            <br/><br/>
-                            Atas Rahmat dan Bimbingan Yang Maha Kuasa<br/>Kita Telah Bertekad Berjuang<br/>Berjuang untuk Satu Tujuan Mulia<br/>Mencapai Indonesia Sentosa
-                            <br/><br/>
-                            Bersama PDI Perjuangan<br/>Bersama PDI Perjuangan<br/>Wadah Kedaulatan Rakyat Indonesia<br/>Atas Berkat dan Kemurahan Yang Maha Esa<br/>PDI Perjuangan Jaya!
-                            
-                            Atas Kasih dan Kehendak Yang Maha Pencipta<br/>Kita Telat Sepakat Bersatu<br/>Bersatu Dalam Satu Rampak Barisan<br/>Menentang Kemiskinan
-                            <br/><br/>
-                            Atas Rahmat dan Bimbingan Yang Maha Kuasa<br/>Kita Telah Bertekad Berjuang<br/>Berjuang untuk Satu Tujuan Mulia<br/>Mencapai Indonesia Sentosa
-                            <br/><br/>
-                            Bersama PDI Perjuangan<br/>Bersama PDI Perjuangan<br/>Wadah Kedaulatan Rakyat Indonesia<br/>Atas Berkat dan Kemurahan Yang Maha Esa<br/>PDI Perjuangan Jaya! </p>
+                            <p className="isiLirik">
+
+                                  {defaultMusic && (
+                                <>
+                                    {defaultMusic.short_description}
+                                </>
+                            )}
+
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -73,7 +105,7 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                                 </div>
                             </div>
                             <div className="playMusic">
-                                <audio id="player" className="audio-wrapper">
+                                <audio id="player" className="audio-wrapper" autoPlay={false}>
                                     <source src="http://www.lukeduncan.me/oslo.mp3" type="audio/mp3" />
                                 </audio>
                                 <div className="judulPlay">
@@ -107,22 +139,23 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                             </div>
                         </div>
                         <div className="listMusic">
-                            <div className="listSatu list">
-                                <h6 className="judulList">Mars PDI Perjuangan</h6>
-                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</small>
-                            </div>
-                            <div className="listDua list">
-                                <h6 className="judulList">Hymne PDI Perjuangan</h6>
-                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</small>
-                            </div>
-                            <div className="listTiga list">
-                                <h6 className="judulList">Hymne PDI Perjuangan</h6>
-                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</small>
-                            </div>
-                            <div className="listEmpat list">
-                                <h6 className="judulList">Hymne PDI Perjuangan</h6>
-                                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, est totam. Et?</small>
-                            </div>
+                            {music.length > 0 && (
+                                <>
+                                    {music.map((e,i)=>(
+                                        <div className="listSatu list" onClick={()=>{
+                                            setDefaultMusic({
+                                                short_description : e.short_description,
+                                                
+                                            })
+                                        }}>
+                                            <h6 className="judulList">{e.title}</h6>
+                                            {/* <small>{e.short_description}</small> */}
+                                        </div>
+                                    ))}
+                                </>
+                            )}
+                       
+
                         </div>
                     </div>
                     {/* END */}

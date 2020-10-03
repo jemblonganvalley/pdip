@@ -3,7 +3,7 @@ import './CarouselKM.scss'
 import megawati4 from '../../img/megawati4.jpg'
 import megawati3 from '../../img/megawati3.jpg'
 
-const CarouselKM = ()=> {
+const CarouselKM = ({cat=44, totalPage=3})=> {
 
     const [berita, setBerita] = useState([])
 
@@ -28,8 +28,8 @@ const CarouselKM = ()=> {
             },
             body : JSON.stringify({
                 order :{"key":"id","value":"desc"} ,
-                limit : 3,
-                where : {"key":"blog.id_category","value":"44"} 
+                limit : totalPage,
+                where : {"key":"blog.id_category","value":cat} 
             })
         })
         const dataBerita = await resBerita.json()
@@ -60,9 +60,9 @@ const CarouselKM = ()=> {
                                     <div className={`carousel-item ${i == 1 && 'active'} itemKM`}>
                                         <div className="col-lg-6 textKM">
                                             <h5 className="textCarousel">
-                                            <b> Ketua Umum PDI Perjuangan</b>
+                                            <b> {e.category_child_name}</b>
                                             </h5>
-                                            <h1 className="textCarousel">{e.title}</h1>
+                                            <h5 className="textCarousel">{e.title}</h5>
                                             {/* <p className="textCarousel" dangerouslySetInnerHTML={{ __html: e.description}}>
                                             
                                             </p> */}

@@ -66,15 +66,26 @@ export const CarouselDuelBerita = ({cat1 = 45, cat2 = 46, totalPage=3}) => {
 
                 {berita1.map((e,i)=>(
                     <div className={`carousel-item ${i == 1 && 'active'}`}>
-                        <h3 className='carouselDual_title' style={{
+                        <span className='carouselDual_title' style={{
                             position : 'absolute',
                             width : '100%',
-                            padding : '40px',
+                            padding : '30px',
                             bottom : '0',
                             zIndex : '100',
                             color : 'white',
                             wordWrap : 'break-word',
-                        }}>{e.title}</h3>
+                        }}>
+                            <p style={{
+                                padding : '0',
+                                margin : '0',
+                                fontWeight : '600',
+                                }}>{e.category_child_name}</p>
+                            <small style={{padding : '0'}}>{e.author}</small> | &nbsp;
+                            <small style={{padding : '0'}}>{e.created_at}</small>
+
+                            <h4>{e.title}</h4>
+
+                        </span>
 
                         <span className="gradientOverlay" style={{
                             width : '100%',
@@ -96,17 +107,15 @@ export const CarouselDuelBerita = ({cat1 = 45, cat2 = 46, totalPage=3}) => {
                     </div>
                 ))}
 
-               
-
             </div>
-                {/* <a className="carousel-control-prev" href="#carouselDualSatu" role="button" data-slide="prev">
+                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true" />
                     <span className="sr-only">Previous</span>
                 </a>
-                <a className="carousel-control-next" href="#carouselDualSatu" role="button" data-slide="next">
+                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true" />
                     <span className="sr-only">Next</span>
-                </a> */}
+                </a>
             </div>
 
             {/* CAROUSEL 2 */}
@@ -114,15 +123,27 @@ export const CarouselDuelBerita = ({cat1 = 45, cat2 = 46, totalPage=3}) => {
             <div className="carousel-inner">
                  {berita2.map((e,i)=>(
                     <div className={`carousel-item ${i == 1 && 'active'}`}>
-                        <h3 className='carouselDual_title' style={{
+                        <span className='carouselDual_title' style={{
                             position : 'absolute',
                             width : '90%',
-                            padding : '40px',
+                            padding : '30px',
                             bottom : '0',
                             zIndex : '100',
                             color : 'white',
                             wordWrap : 'break-word',
-                        }}>{e.title}</h3>
+                        }}>
+                            <p style={{
+                                padding : '0',
+                                margin : '0',
+                                fontWeight : '600',
+                                }}>{e.category_child_name}</p>
+
+                            <small style={{padding : '0'}}>{e.author}</small> | &nbsp;
+                            <small style={{padding : '0'}}>{e.created_at}</small>
+                            <h4>{e.title}</h4>
+                          
+
+                        </span>
 
                         <span className="gradientOverlay" style={{
                             width : '100%',

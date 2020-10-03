@@ -21,6 +21,8 @@ import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import WidgetBerita from '../../widget/widgetBerita/WidgetBerita'
 import CardInformasi from '../../cardInformasi/CardInformasi'
 import WidgetBaru from '../../widgetBaru/WidgetBaru'
+import { CarouselDuelBerita } from '../../carouselDualBerita/CarouselDuelBerita'
+import CarouselKM from '../../carouselKM/CarouselKM'
 
 const InformasiPage = () => {
 
@@ -134,43 +136,13 @@ const InformasiPage = () => {
             {/* END */}
 
             {/* SLIDER TATA CARA */}
-            <div className="sliderTataCara">
-                <div id="carouselExampleControls" className="carousel slide overflow-hidden" data-ride="carousel" data-interval={0}>
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <div className="imageTC">
-                                <div className="textTC">
-                                    <div style={{
-                                        width: '40%'
-                                    }}></div>
-                                    <p className="pCarousel">Pemohon informasi publik mengisi formulir permohonan informasi dengan menyertakan identitas yang masih berlaku (KTP, SIM, Paspor). Bagi lembaga publik pemohon informasi menyertakan Akta Notaris/SK Pembentukan.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-                            <div className="imageTC"></div>
-
-                        </div>
-                        <div className="carousel-item ">
-                            <div className="imageTC"></div>
-
-                        </div>
-                    </div>
-                    <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true" />
-                        <span className="sr-only">Previous</span>
-                    </a>
-                    <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true" />
-                        <span className="sr-only">Next</span>
-                    </a>
-                </div>
-
-            </div>
+                <CarouselKM cat={44}/>
             {/* END */}
 
             {/* Container dua */}
-            <div className="infoDua">
+            <div className="infoDua" style={{
+                margin : '40px 0',
+            }}>
 
                 {/* kolom formulir */}
                 <div className="kolomFormulir kolomFormulirSatu">
@@ -187,15 +159,7 @@ const InformasiPage = () => {
 
             {/* <CardMaps/> */}
 
-            <div className="widgetDesktop">
-                <WidgetBaru width="68%" carouselName="berita" />
-                <div className="pemisah" style={{
-                    width: '4%',
-                    height: '100%',
-                    background: 'black'
-                }}></div>
-                <WidgetBaru width="28%" carouselName="beritaFoto" />
-            </div>
+            <CarouselDuelBerita cat1={45} cat2={46} totalPage={5}/>                        
 
             <div className="widgetMobile">
                 <WidgetBerita width="100%" />
