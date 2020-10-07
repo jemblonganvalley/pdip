@@ -51,8 +51,8 @@ const PartaiPage = () => {
             {/* END */}
 
             {/* CONTAINER SATU */}
-            <div className="containerSatu">
-                <div className="contentSatu">
+            <div className="containerSatu row ">
+                <div className="contentSatu col col-lg-6">
                     <div className="col ">
                         <div className="wrapperContentSatu">
                             <div className="col-md-3 mobileRow">
@@ -86,7 +86,7 @@ const PartaiPage = () => {
                         </div>
                     </div>
                     
-                    <div className="col col-lg-8">
+                    <div className="col col-lg-6 parentCarousel">
                         <div className="wrapperCarousel">
 
                             <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
@@ -111,6 +111,7 @@ const PartaiPage = () => {
                                             </div>
                                         </div>
                                     </div>
+
                                     <div className="carousel-item">
                                         <div className="carouselImgSatu">
                                             <div class="carousel-caption d-none d-md-block">

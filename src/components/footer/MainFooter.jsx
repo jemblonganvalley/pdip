@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../img/logo_footer.png'
+import Logo from '../../img/pdiperjuangan02.svg'
 import './MainFooter.scss'
 import Subscribe from '../subscribe/Subscribe'
 
@@ -7,15 +7,16 @@ const MainFooter = ()=> {
     return (
         <div className="wrapperFooter">
             <div className="wrapperContent">
-                <img src={Logo} alt="" width="180" height="180" />
+                <span style={{display: 'flex', gap: '20px', width : '400px'}}>
+                <img src={Logo} alt="" width="100" height="100" />
 
                 <div className="textFooter">
                     <span className="heads">situation room pdi perjuangan</span>
                     <span className="body">Situs pdiperjuangan.id adalah situs resmi PDI Perjuangan. Situs ini<br/>dikelola oleh Pusat Analisa dan Pengendali Situasi (Situation Room)<br/>yang dikepalai oleh Prananda Prabowo.</span>
                     <span className="foot">Untuk dukungan dan partisipasi, kirimkan naskah atau artikel beserta<br/>foto kegiatan anda ke email : redaksi@pdiperjuangan.id</span>
                 </div>
-
-                  <address className="contact col ">
+                </span>
+                  <address className="contact " >
 
                         <a className="emailFooter row"
                             href="mailto:redaksi@pdiperjuangan.id"
@@ -61,12 +62,8 @@ const MainFooter = ()=> {
 
                         
                 </address>
-
-              
-
-                <span className="subscribe">
+                <span style={{flex : '1',}}></span>
                     <Subscribe />
-                </span>
             </div>
         </div>
     )

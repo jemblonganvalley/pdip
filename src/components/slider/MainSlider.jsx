@@ -41,10 +41,10 @@ const MainSlider = ({value, cls})=> {
                 </div>
                 
                 <div className="carousel-inner">
+             
 
-                    {slider.map((e, i)=> {
-                        return (
-                            <div className={i == 1 ? `carousel-item ${cls} active` : `carousel-item ${e.class}`}>
+                   {slider.map((e,i)=>(
+                         <div className={i == 1 ? `carousel-item ${cls} active` : `carousel-item ${e.class}`}>
                                 <div className="row image1 images" style={{
                                     background : `url(https://atur.biar.pw/public/${e.image})`,
                                     backgroundSize : 'cover'
@@ -55,8 +55,9 @@ const MainSlider = ({value, cls})=> {
                                     </div>
                                 </div>
                             </div>
-                        )
-                    })}
+                   ))}
+
+              
                     
                 </div>
 

@@ -22,7 +22,6 @@ const MainNavbar = ({token})=> {
       }
     })
     const data = await res.json()
-    console.log(token)
     setMenu(data.query.nav)
   }
 
@@ -36,7 +35,6 @@ const MainNavbar = ({token})=> {
 
     const handleShow = (e)=>{
       setShow(e.target.value)
-      console.log(show);
     }
 
     useEffect(()=>{

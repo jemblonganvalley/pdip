@@ -93,7 +93,7 @@ function App() {
 
       {/* {console.log(`
         >>>>>>>>>>>>>>>>>>>>
-        ${hd.Authorization}
+        ${token}
       `)} */}
 
       {tkn && (

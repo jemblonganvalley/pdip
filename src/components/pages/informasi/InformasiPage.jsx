@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './InformasiPage.scss'
 import IconCardSatu from '../../../img/networking.png'
 import IconCardDua from '../../../img/target.png'
@@ -26,7 +26,67 @@ import CarouselKM from '../../carouselKM/CarouselKM'
 
 const InformasiPage = () => {
 
+        const [gallery, setGallery] = useState([])
+        const [configHome, setConfigHome] = useState([])
+
+      const getGallery = async ()=>{
+        const res = await fetch('https://atur.biar.pw/api/auth/app', {
+            method :'POST',
+            headers : {
+                "Content-Type" : "application/json"
+        },
+        body : JSON.stringify({
+                    app_id : "1555309664580",
+                    api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
+                })
+        })
+        const data = await res.json()
+
+        const resGallery = await fetch('https://atur.biar.pw/api/gallery/data?page=2', {
+            method : 'POST',
+            headers : {
+                "Content-Type" : "application/json",
+                Authorization : `Bearer ${data.token}`
+            }
+
+        })
+
+        const dataGallery = await resGallery.json()
+        // console.log(dataGallery)
+        setGallery(dataGallery.query.data)
+    }
+
+    const getConfigHome = async () => {
+    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        app_id: "1555309664580",
+        api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
+      }),
+    });
+    const data = await res.json();
+
+    const resConfigHome = await fetch(
+      "https://atur.biar.pw/api/web/pages/home",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+      }
+    );
+
+    const dataConfigHome = await resConfigHome.json();
+    setConfigHome(dataConfigHome.query);
+  };
+
     useEffect(() => {
+        getGallery()
+        getConfigHome()
         window.scrollTo(0, 0)
     }, [])
 
@@ -136,7 +196,7 @@ const InformasiPage = () => {
             {/* END */}
 
             {/* SLIDER TATA CARA */}
-                <CarouselKM cat={44}/>
+                <CarouselKM data={configHome}/>
             {/* END */}
 
             {/* Container dua */}
@@ -159,7 +219,7 @@ const InformasiPage = () => {
 
             {/* <CardMaps/> */}
 
-            <CarouselDuelBerita cat1={45} cat2={46} totalPage={5}/>                        
+            <CarouselDuelBerita current_page={2} data={gallery}/>                    
 
             <div className="widgetMobile">
                 <WidgetBerita width="100%" />

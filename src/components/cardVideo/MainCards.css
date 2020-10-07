@@ -1,0 +1,97 @@
+.cardCustom {
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin: 0 10px;
+  background: #ffffff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.cardCustom:hover {
+  -webkit-box-shadow: 4px 17px 40px -30px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 17px 40px -30px rgba(0, 0, 0, 0.75);
+  background: #d80010;
+  color: #ffffff;
+}
+
+.cardCustom .imageCard {
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardCustom .imageCard .VBMusic {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 10pt;
+}
+
+.cardCustom .imageCard .VBMusic:hover {
+  background: #ffffff;
+  color: #d80010;
+}
+
+.cardCustom .text {
+  width: 100%;
+  padding: 10px 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.cardCustom .text .textSmall {
+  font-size: 8pt;
+}
+
+@media (max-width: 1085px) {
+  .cardCustom .text .textSmall {
+    font-size: 6pt;
+  }
+}
+
+.cardCustom .text .textH5 {
+  margin-top: 1rem;
+}
+
+@media (max-width: 1085px) {
+  .cardCustom .text .textH5 {
+    font-size: 12pt;
+  }
+}
+
+.cardCustom .text .paragrap {
+  font-size: 7pt;
+}
+
+@media (max-width: 1085px) {
+  .cardCustom .text .paragrap {
+    font-size: 6pt;
+  }
+}
+/*# sourceMappingURL=MainCards.css.map */

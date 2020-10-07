@@ -2,6 +2,7 @@ import {action, createStore, thunk} from 'easy-peasy'
 
 export let globalState = createStore({
 
+    // TOKEN AREA
     token : null,
     pushToken : action((state, payload)=>{
         state.token = payload
@@ -21,6 +22,11 @@ export let globalState = createStore({
         let ps = await act.pushToken(data.token)
 
     }),
+    // END TOKEN AREA
+
+
+    
+
  
 
 

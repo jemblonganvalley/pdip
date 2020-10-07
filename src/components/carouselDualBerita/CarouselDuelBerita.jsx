@@ -1,7 +1,14 @@
 import React, {useState, useEffect} from 'react'
 import './carouselDual.scss'
 
-export const CarouselDuelBerita = ({cat1 = 45, cat2 = 46, totalPage=3}) => {
+export const CarouselDuelBerita = ({
+    cat1 = 45, 
+    cat2 = 46, 
+    totalPage=3,
+    data=null,
+    current_page=null,
+
+}) => {
 
     const [berita1, setBerita1] = useState([])
     const [berita2, setBerita2] = useState([])
@@ -64,7 +71,7 @@ export const CarouselDuelBerita = ({cat1 = 45, cat2 = 46, totalPage=3}) => {
             <div id="carouselDualSatu " className="carousel slide mainCarouselDual_car1" data-ride="carousel">
             <div className="carousel-inner">
 
-                {berita1.map((e,i)=>(
+                {data.map((e,i)=>(
                     <div className={`carousel-item ${i == 1 && 'active'}`}>
                         <span className='carouselDual_title' style={{
                             position : 'absolute',
@@ -75,11 +82,11 @@ export const CarouselDuelBerita = ({cat1 = 45, cat2 = 46, totalPage=3}) => {
                             color : 'white',
                             wordWrap : 'break-word',
                         }}>
-                            <p style={{
+                            {/* <p style={{
                                 padding : '0',
                                 margin : '0',
                                 fontWeight : '600',
-                                }}>{e.category_child_name}</p>
+                                }}>{e.title}</p> */}
                             <small style={{padding : '0'}}>{e.author}</small> | &nbsp;
                             <small style={{padding : '0'}}>{e.created_at}</small>
 
@@ -121,7 +128,7 @@ export const CarouselDuelBerita = ({cat1 = 45, cat2 = 46, totalPage=3}) => {
             {/* CAROUSEL 2 */}
             <div id="carouselExampleControls" className="carousel slide mainCarouselDual_car2" data-ride="carousel">
             <div className="carousel-inner">
-                 {berita2.map((e,i)=>(
+                 {data.map((e,i)=>(
                     <div className={`carousel-item ${i == 1 && 'active'}`}>
                         <span className='carouselDual_title' style={{
                             position : 'absolute',
@@ -132,11 +139,11 @@ export const CarouselDuelBerita = ({cat1 = 45, cat2 = 46, totalPage=3}) => {
                             color : 'white',
                             wordWrap : 'break-word',
                         }}>
-                            <p style={{
+                            {/* <p style={{
                                 padding : '0',
                                 margin : '0',
                                 fontWeight : '600',
-                                }}>{e.category_child_name}</p>
+                                }}>{e.category_child_name}</p> */}
 
                             <small style={{padding : '0'}}>{e.author}</small> | &nbsp;
                             <small style={{padding : '0'}}>{e.created_at}</small>
@@ -144,16 +151,16 @@ export const CarouselDuelBerita = ({cat1 = 45, cat2 = 46, totalPage=3}) => {
                           
 
                         </span>
-
+                        
+                        {/* 
                         <span className="gradientOverlay" style={{
                             width : '100%',
                             height : '100%',
                             backgroundColor : 'rgba(0,0,0,0.500)',
                             position : 'absolute',
                             background: `linear-gradient(176deg, rgba(0,0,0,0.28335084033613445) 0%, rgba(255,0,0,1) 100%)`,
-                            // backgroundBlendMode : 'multiply',
                             
-                        }}></span>
+                        }}></span> */}
 
                         <img src={`https://www.pdiperjuangan.id/cms/${e.path}`} className="d-block w-100 carouselDual1Image" alt="..." key={i} style={{
                             width : '100%',

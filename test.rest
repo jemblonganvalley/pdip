@@ -6,16 +6,17 @@ Content-Type: application/json
     "api_secret" : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
 }
 
+# CONFIG UNTUK MENU
 ###
 POST https://atur.biar.pw/api/web/config
 Content-Type: application/json
-Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI5Mzc5LCJleHAiOjE2MDE4MTU3NzksIm5iZiI6MTYwMTcyOTM3OSwianRpIjoiR3pNSjNRTXVJRlV1bkVpSCIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.uyRHBeo7OXrezIKqCGYD6tylM2ScaqA4O87ios-HydU"
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxOTY2OTc2LCJleHAiOjE2MDIwNTMzNzYsIm5iZiI6MTYwMTk2Njk3NiwianRpIjoiUkRqbGNFRmJKRkdLY1ZhNSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.0MobySu5-POu9htd2_xE_6JFtlLc4iPNmMU8tCQAKU4"
 
+# ALL BLOG DATA
 ###
-
 POST https://atur.biar.pw/api/blog/data/
 Content-Type: application/json
-Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI2ODkxLCJleHAiOjE2MDE4MTMyOTEsIm5iZiI6MTYwMTcyNjg5MSwianRpIjoiVXE4ZnFSUTBYM1ExU0JmcyIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.ZAAHA8outuyYzCfyqY3Rk5SJDCZ8yjN9VUMKmtNPmHI"
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxOTY2OTc2LCJleHAiOjE2MDIwNTMzNzYsIm5iZiI6MTYwMTk2Njk3NiwianRpIjoiUkRqbGNFRmJKRkdLY1ZhNSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.0MobySu5-POu9htd2_xE_6JFtlLc4iPNmMU8tCQAKU4"
 
 {
 	"order":{"key":"id","value":"desc"} ,
@@ -23,21 +24,23 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
     "where" : {"key":"blog.id_category","value":"44"} 
 }
 
-
+# BLOG CATEGORY
 ###
 POST https://atur.biar.pw/api/blog/category
 Content-Type: application/json
-Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNDkzNTUwLCJleHAiOjE2MDE1Nzk5NTAsIm5iZiI6MTYwMTQ5MzU1MCwianRpIjoickVpZndzZWFWZnV3WnZ6biIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.ZouuHmO96XnNU4M8tMNeoHe9cfwa4H388xMXyzZ2sO4"
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxOTY2OTc2LCJleHAiOjE2MDIwNTMzNzYsIm5iZiI6MTYwMTk2Njk3NiwianRpIjoiUkRqbGNFRmJKRkdLY1ZhNSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.0MobySu5-POu9htd2_xE_6JFtlLc4iPNmMU8tCQAKU4"
 
+# FIND BLOG BY ID
 ###
 POST https://atur.biar.pw/api/blog/find/?id=658
 Content-Type: application/json
-Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNDkzNTUwLCJleHAiOjE2MDE1Nzk5NTAsIm5iZiI6MTYwMTQ5MzU1MCwianRpIjoickVpZndzZWFWZnV3WnZ6biIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.ZouuHmO96XnNU4M8tMNeoHe9cfwa4H388xMXyzZ2sO4"
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxOTY2OTc2LCJleHAiOjE2MDIwNTMzNzYsIm5iZiI6MTYwMTk2Njk3NiwianRpIjoiUkRqbGNFRmJKRkdLY1ZhNSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.0MobySu5-POu9htd2_xE_6JFtlLc4iPNmMU8tCQAKU4"
 
+# GALLERY ALBUM
 ###
 POST https://atur.biar.pw/api/gallery/album
 Content-Type: application/json
-Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI1ODk0LCJleHAiOjE2MDE4MTIyOTQsIm5iZiI6MTYwMTcyNTg5NCwianRpIjoid0ZhYzRjV2I4ODFpOUtlQSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.EC_AbVqtnqtsqvjLV6leOymxL8Kc7p4VEH2muKcwV_4"
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxOTY2OTc2LCJleHAiOjE2MDIwNTMzNzYsIm5iZiI6MTYwMTk2Njk3NiwianRpIjoiUkRqbGNFRmJKRkdLY1ZhNSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.0MobySu5-POu9htd2_xE_6JFtlLc4iPNmMU8tCQAKU4"
 
 {
 	"order":{"key":"id","value":"desc"} ,
@@ -46,20 +49,20 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 }
 
 ###
-POST https://atur.biar.pw/api/gallery/data
+POST https://atur.biar.pw/api/gallery/data?page=2
 Content-Type: application/json
-Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI1ODk0LCJleHAiOjE2MDE4MTIyOTQsIm5iZiI6MTYwMTcyNTg5NCwianRpIjoid0ZhYzRjV2I4ODFpOUtlQSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.EC_AbVqtnqtsqvjLV6leOymxL8Kc7p4VEH2muKcwV_4"
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxOTY2OTc2LCJleHAiOjE2MDIwNTMzNzYsIm5iZiI6MTYwMTk2Njk3NiwianRpIjoiUkRqbGNFRmJKRkdLY1ZhNSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.0MobySu5-POu9htd2_xE_6JFtlLc4iPNmMU8tCQAKU4"
 
 {
 	"order":{"key":"id","value":"desc"} ,
-	"where":{"key":"type", "value":"image"},
+	"where":{"key":"type", "value":"video"},
 	"limit" : 10
 }
 
 ###
-POST https://atur.biar.pw/api/web/pages/partai
+POST https://atur.biar.pw/api/web/pages/home
 Content-Type: application/json
-Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxNzI1ODk0LCJleHAiOjE2MDE4MTIyOTQsIm5iZiI6MTYwMTcyNTg5NCwianRpIjoid0ZhYzRjV2I4ODFpOUtlQSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.EC_AbVqtnqtsqvjLV6leOymxL8Kc7p4VEH2muKcwV_4"
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAxOTY2OTc2LCJleHAiOjE2MDIwNTMzNzYsIm5iZiI6MTYwMTk2Njk3NiwianRpIjoiUkRqbGNFRmJKRkdLY1ZhNSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.0MobySu5-POu9htd2_xE_6JFtlLc4iPNmMU8tCQAKU4"
 
 ###
 POST https://atur.biar.pw/api/multimedia/youtube-data
@@ -68,7 +71,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 
 {
 	"order" : {"key":"id","value":"desc"} ,
-	"limit" : 2,
+	"limit" : 10,
     "where" : {"key":"category","value":"siaran_pers"} 
 }
 

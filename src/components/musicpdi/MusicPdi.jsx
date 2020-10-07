@@ -3,50 +3,43 @@ import downloadSatu from '../../img/downloadSatu.png'
 import downloadDua from '../../img/downloadDua.png'
 import downloadTiga from '../../img/downloadTiga.png'
 import laguPerjuangan from '../../img/laguperjuangan.png'
-import ReactJkMusicPlayer from 'react-jinke-music-player'
 import "react-jinke-music-player/assets/index.css";
 import './MusicPdi.scss'
+import AudioPlayer from 'react-h5-audio-player';
+import './styles.scss';
 
-const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
+// MUSIC 1
+const Music1 = '../../music/HymnePDIPerjuangan/hymne.mp3'
+const MinOne1 = '../../music/HymnePDIPerjuangan/hymneminusone.mp3'
 
-        const [music, setMusic] = useState([])
-        const [defaultMusic, setDefaultMusic] = useState()
+// MUSIC 2
+const Music2 = '../../music/MarsPDIPerjuangan/MARS.mp3'
+const MinOne2 = '../../music/MarsPDIPerjuangan/MARSminusone.mp3'
 
-      const getConfigMusic = async ()=>{
-        const res = await fetch('https://atur.biar.pw/api/auth/app', {
-            method :'POST',
-            headers : {
-                "Content-Type" : "application/json"
-        },
-        body : JSON.stringify({
-                    app_id : "1555309664580",
-                    api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
-                })
-        })
-        const data = await res.json()
+//MUSIC 3
+const Music3 = '../../music/OneForAllAllForOne/AllForOne.mp3'
+const MinOne3 = '../../music/OneForAllAllForOne/AllForOneMinusOne.mp3'
 
-        const resGetMusic = await fetch('https://atur.biar.pw/api/web/pages/partai', {
-            method : 'POST',
-            headers : {
-                "Content-Type" : "application/json",
-                Authorization : `Bearer ${data.token}`
-            }
+//MUSIC 4
+const Music4 = '../../music/SolidBergerak/AllForOne.mp3'
+const MinOne4 = '../../music/SolidBergerak/AllForOne.mp3'
 
-        })
 
-        const dataConfigHome = await resGetMusic.json()
-        // console.log(dataConfigHome)
-        setMusic(dataConfigHome.query[3].value)
-        setDefaultMusic(dataConfigHome.query[3].value[0])
-    }
 
-    useEffect(()=>{
-        getConfigMusic()
-    },[])
+const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan', data})=> {
+
+    const [defaultMusic, setDefaultMusic] = useState([])
+    const [musicData, setMusicData] = useState(data)
+    
+    const [music, setMusic] = useState({
+        mp3 : Music1,
+        mo : MinOne1,
+    })
+
+ 
 
     return (
         <div className="musiPdi">
-            {console.log(music)}
             {/* CONTAINER DUA */}
             <div className="containerDua">
                 <div className="contentDua">
@@ -56,13 +49,16 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                 <div className="wrapperContentMusic">
                 <div className="contentMusic">
                     <div className="col-sm-4">
-                        <div className="plyr">
-                            <div className="backplyr">
-                                <div className="iconMusic">
-                                    <i class="fa fa-play"></i>
+                            <div className="plyr" style={{
+                                background: `url()`,
+                            }}>
+                                <div className="backplyr">
+                                    <div className="iconMusic">
+                                        <i className="fa fa-play"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+               
                         <div className="download">
                             <div className="partitur downloadContent">
                                 <img src={downloadSatu} alt="" width="35" />
@@ -70,14 +66,15 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                             </div>
                             <div className="minusOn downloadContent">
                             <img src={downloadDua} alt="" width="35" />
-                            <span className="downloadSpan">Download</span>
+                            <span className="downloadSpan">Minus One</span>
                             </div>
                             <div className="minusOn downloadContent">
                             <img src={downloadTiga} alt="" width="35" />
-                            <span className="downloadSpan">Download</span>
+                            <span className="downloadSpan">Partitur</span>
                             </div>
                         </div>
                     </div>
+
                     <div className="col-sm-8">
                         <div className="containerLirik">
                             <small>lagu perjuangan</small>
@@ -85,44 +82,24 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                                 mars pdi perjuangan
                             </span>
                             <span className="lirik">lirik</span>
-                            <p className="isiLirik">
+                                <p className="isiLirik">
+                                    
 
-                                  {defaultMusic && (
-                                <>
-                                    {defaultMusic.short_description}
-                                </>
-                            )}
-
-                            </p>
+                                </p>
+                          
                         </div>
                     </div>
                 </div>
+
                     <div className="col-md-12 playerMusic">
                         <div className="wrapperPlayerMusic">
-                            <div className="playButton">
-                                <div className="playbtn" id="play-btn" >
-                                    <i class="fa fa-play"></i>
-                                </div>
-                            </div>
-                            <div className="playMusic">
-                                <audio id="player" className="audio-wrapper" autoPlay={false}>
-                                    <source src="http://www.lukeduncan.me/oslo.mp3" type="audio/mp3" />
-                                </audio>
-                                <div className="judulPlay">
-                                <h5 className="judulPlays">{judul}</h5>
-                                <i class="fa fa-heart"></i>
-                                </div>
-                                <input type="range" id="songSlider" className="song-slider" min="0" step="1" />
-                                <div className="iconsPlay">
-                                    <i class="fa fa-play"><span className="textPlay">0</span></i>
-                                    <i class="fa fa-heart"><span className="textPlay">0</span></i>
-                                    <i class="fa fa-comment"><span className="textPlay">0</span></i>
-                                    <div className="times">
-                                        <span className="current-time time" id="currentTime">00:00 /</span>
-                                        <span className="duration time" id="duration"> 00:00</span>
-                                    </div>
-                                </div>
-                            </div>
+                            <AudioPlayer 
+                                src={music.mp3}
+                                layout='horizontal'
+                                header='Lagu Perjuangan'
+                                showJumpControls={false}
+                                customAdditionalControls={[]}
+                            />
                         </div>
                     </div>
                 </div>
@@ -139,21 +116,26 @@ const MusicPdi = ({judul =  'Mars Partai Demokrasi Indonesia Perjuangan'})=> {
                             </div>
                         </div>
                         <div className="listMusic">
-                            {music.length > 0 && (
-                                <>
-                                    {music.map((e,i)=>(
-                                        <div className="listSatu list" onClick={()=>{
-                                            setDefaultMusic({
-                                                short_description : e.short_description,
-                                                
-                                            })
-                                        }}>
-                                            <h6 className="judulList">{e.title}</h6>
-                                            {/* <small>{e.short_description}</small> */}
+
+                                        <div className="listSatu list" >
+                                            <h6 className="judulList">Hymne PDI Perjuangan</h6>
+                                            <small></small>
                                         </div>
-                                    ))}
-                                </>
-                            )}
+
+                                         <div className="listSatu list" >
+                                            <h6 className="judulList">Mars PDI Perjuangan</h6>
+                                            <small></small>
+                                        </div>
+
+                                         <div className="listSatu list" >
+                                            <h6 className="judulList">One For All All For One</h6>
+                                            <small></small>
+                                        </div>
+
+                                         <div className="listSatu list" >
+                                            <h6 className="judulList">Solid Bergerak</h6>
+                                            <small></small>
+                                        </div>
                        
 
                         </div>
