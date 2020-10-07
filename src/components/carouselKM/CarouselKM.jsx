@@ -1,44 +1,42 @@
 import React, { useEffect, useState } from 'react'
 import './CarouselKM.scss'
-import megawati4 from '../../img/megawati4.jpg'
-import megawati3 from '../../img/megawati3.jpg'
 
-const CarouselKM = ()=> {
+const CarouselKM = ({cat=44, totalPage=3, data=data})=> {
 
-    const [berita, setBerita] = useState([])
+    const [berita, setBerita] = useState(data)
 
-    const getDataBerita = async ()=>{
-         const res = await fetch('https://atur.biar.pw/api/auth/app', {
-            method :'POST',
-            headers : {
-                "Content-Type" : "application/json"
-        },
-        body : JSON.stringify({
-                    app_id : "1555309664580",
-                    api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
-                })
-        })
-        const data = await res.json()
+    // const getDataBerita = async ()=>{
+    //      const res = await fetch('https://atur.biar.pw/api/auth/app', {
+    //         method :'POST',
+    //         headers : {
+    //             "Content-Type" : "application/json"
+    //     },
+    //     body : JSON.stringify({
+    //                 app_id : "1555309664580",
+    //                 api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
+    //             })
+    //     })
+    //     const data = await res.json()
 
-        const resBerita = await fetch('https://atur.biar.pw/api/blog/data/?page=1',{
-            method : "POST",
-            headers : {
-                "Content-Type" : "application/json",
-                Authorization : `Bearer ${data.token}`
-            },
-            body : JSON.stringify({
-                order :{"key":"id","value":"desc"} ,
-                limit : 3,
-                where : {"key":"blog.id_category","value":"44"} 
-            })
-        })
-        const dataBerita = await resBerita.json()
-        setBerita(dataBerita.query.data)
-    }
+    //     const resBerita = await fetch('https://atur.biar.pw/api/blog/data/?page=1',{
+    //         method : "POST",
+    //         headers : {
+    //             "Content-Type" : "application/json",
+    //             Authorization : `Bearer ${data.token}`
+    //         },
+    //         body : JSON.stringify({
+    //             order :{"key":"id","value":"desc"} ,
+    //             limit : totalPage,
+    //             where : {"key":"blog.id_category","value":cat} 
+    //         })
+    //     })
+    //     const dataBerita = await resBerita.json()
+    //     setBerita(dataBerita.query.data)
+    // }
 
-    useEffect(()=>{
-        getDataBerita()
-    },[])
+    // useEffect(()=>{
+    //     getDataBerita()
+    // },[])
 
     return (
         <div className="wrapperKM">
@@ -60,15 +58,15 @@ const CarouselKM = ()=> {
                                     <div className={`carousel-item ${i == 1 && 'active'} itemKM`}>
                                         <div className="col-lg-6 textKM">
                                             <h5 className="textCarousel">
-                                            <b> Ketua Umum PDI Perjuangan</b>
+                                            <b> {e.category_child_name}</b>
                                             </h5>
-                                            <h1 className="textCarousel">{e.title}</h1>
+                                            <h5 className="textCarousel">{e.title}</h5>
                                             {/* <p className="textCarousel" dangerouslySetInnerHTML={{ __html: e.description}}>
                                             
                                             </p> */}
                                         </div>
                                         <div className="col-lg-6 banner" style={{
-                                            backgroundImage : `url(https://www.pdiperjuangan.id/cms/${e.path})`,
+                                            backgroundImage : `url(${e.image.replace('http:\/\/localhost\/PDIP\/api_backend\/public\/', 'https://www.pdiperjuangan.id/cms/')})`,
                                             backgroundSize : 'cover'
                                         }}></div>
                                     </div>

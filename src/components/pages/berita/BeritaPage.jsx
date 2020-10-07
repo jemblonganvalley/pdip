@@ -40,6 +40,8 @@ const BeritaPage = () => {
     const [beritaDaerah, setBeritaDaerah] = useState([])
     const [beritaNasional, setBeritaNasional] = useState([])
     const [beritaPartai, setBeritaPartai] = useState([])
+    const [gallery, setGallery] = useState([])
+
 
     const getDataBerita = async ()=>{
          const res = await fetch('https://atur.biar.pw/api/auth/app', {
@@ -103,10 +105,37 @@ const BeritaPage = () => {
         setBeritaPartai(dataBeritaPartai.query.data)
 
         }
+    
+    const getGallery = async ()=>{
+        const res = await fetch('https://atur.biar.pw/api/auth/app', {
+            method :'POST',
+            headers : {
+                "Content-Type" : "application/json"
+        },
+        body : JSON.stringify({
+                    app_id : "1555309664580",
+                    api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
+                })
+        })
+        const data = await res.json()
 
+        const resGallery = await fetch('https://atur.biar.pw/api/gallery/data?page=2', {
+            method : 'POST',
+            headers : {
+                "Content-Type" : "application/json",
+                Authorization : `Bearer ${data.token}`
+            }
+
+        })
+
+        const dataGallery = await resGallery.json()
+        // console.log(dataGallery)
+        setGallery(dataGallery.query.data)
+    }
 
     useEffect(() => {
         getDataBerita()
+        getGallery()
         window.scrollTo(0, 0)
     }, [])
 
@@ -178,7 +207,7 @@ const BeritaPage = () => {
              
                        {/* CAROUSEL DUAL BERITA */}
                   
-                        <CarouselDuelBerita cat1={45} cat2={44} totalPage={3}/>
+                        <CarouselDuelBerita cat1={45} cat2={44} totalPage={3} data={gallery} />
                        
                 {/* END Container1 */}
 

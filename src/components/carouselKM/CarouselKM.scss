@@ -86,7 +86,8 @@ $smallPhoneDua : 400px;
             
         .carousel-indicators {
 
-            right: 0;
+            right: calc(100%/2);
+            position: absolute;
 
             li {
                 border: none;
@@ -136,9 +137,9 @@ $smallPhoneDua : 400px;
                         flex-direction: column;
                         height: 100%;
                         .textCarousel {
-                            margin: 2rem 0; 
+                            margin: 1rem 0; 
                             word-break: break-word;
-   
+                            width: 80%;
 
                             @include smallPhoneDua() {
                                 margin: .8rem 0;

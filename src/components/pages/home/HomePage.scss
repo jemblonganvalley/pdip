@@ -28,7 +28,7 @@ $smallPhoneDua : 400px;
 
 .homePageTwo {
     width: 100vw;
-    margin-top: 40px;
+    // margin-top: 40px;
     padding: 20px 20%;
     @include smallPhone() {
         padding: 0;
@@ -152,7 +152,7 @@ $smallPhoneDua : 400px;
 
         .bannerYoutube {
             width: 100%;
-            background: url(../../../img/image-1.jpg);
+            // background: url(../../../img/image-1.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position-y: -150px;

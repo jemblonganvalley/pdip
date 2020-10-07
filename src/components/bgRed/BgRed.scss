@@ -17,4 +17,48 @@ $smallPhoneDua : 400px;
     margin-top: 20px;
     width: 100%;
     height: 30vh;
+    
+    .holderFrame{
+        margin: 20px 0;
+        width: 320px;
+        min-width: 320px;
+        height: auto;
+        padding: 70px 10px 10px 10px;
+        background-color: rgba(0,0,0,0.300);
+        border-radius: 8px;
+        position: relative;
+
+        .fbWidget{
+            width: 100%;
+            height: 100%;
+            z-index: 200;
+        }
+        .holderFrame_header{
+            width: 340px;
+            min-width: 340px;
+            height: 50px;
+            background-color: rgba(216, 0, 16, 0.500);
+            
+            // opacity: 0.5;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+            h3{
+                opacity: 1 !important;
+            }
+        }
+
+
+
+    }
+
+
+
+
 }
