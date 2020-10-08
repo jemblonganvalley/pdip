@@ -57,8 +57,6 @@ const MainSlider = ({value, cls})=> {
                             </div>
                    ))}
 
-              
-                    
                 </div>
 
                 

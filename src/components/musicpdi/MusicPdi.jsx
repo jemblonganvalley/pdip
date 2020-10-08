@@ -194,19 +194,19 @@ const MusicPdi = ({
                   </div>
 
                   <div className="download">
-                    <Link as='a' to={play[indexPlay].song} download target='_blank'>
+                    <Link as='a' to={play[indexPlay].song} download target='_blank' style={{cursor : 'pointer'}}>
                     <div className="partitur downloadContent">
                       <img src={downloadSatu} alt="" width="35" />
                       <span className="downloadSpan">Unduh Lagu</span>
                     </div>
                     </Link>
-                    <Link as='a' to={play[indexPlay].minusOne} download target='_blank'>
+                    <Link as='a' to={play[indexPlay].minusOne} download target='_blank' style={{cursor : 'pointer'}}>
                     <div className="minusOn downloadContent">
                       <img src={downloadDua} alt="" width="35" />
                       <span className="downloadSpan">Minus One</span>
                     </div>
                     </Link>
-                    <Link as='a' to={play[indexPlay].pdf} download target='_blank'>
+                    <Link as='a' to={play[indexPlay].pdf} download target='_blank' style={{cursor : 'pointer'}}>
                     <div className="minusOn downloadContent">
                       <img src={downloadTiga} alt="" width="35" />
                       <span className="downloadSpan">Partitur</span>
