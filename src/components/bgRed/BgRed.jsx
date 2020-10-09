@@ -1,7 +1,6 @@
 import React from 'react'
 import './BgRed.scss'
 import {TwitterTimelineEmbed} from 'react-twitter-embed'
-import InstagramEmbed from 'react-instagram-embed';
 
 
 const BgRed = () => {
@@ -12,7 +11,6 @@ const BgRed = () => {
    
     <div>
         <div className="backgroundRed" style={{
-          padding : '20px 10%',
           display : 'flex',
           justifyContent : 'space-between',
           height : 'auto',

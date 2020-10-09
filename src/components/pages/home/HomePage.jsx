@@ -282,25 +282,29 @@ const HomePage = () => {
           </div>
         </div>
 
-        {configHome.length > 0 && <CarouselKM data={configHome[6].value}/>}
+        {configHome.length > 0 && <CarouselKM data={configHome[6].value} />}
 
         <KMobile />
 
         <div className="cardContent">
-          {berita.map((e, i) => {
-            return (
-              <Cards
-                id={e.id}
-                imageCard={e.path}
-                textCategoryChild={e.category_child_name}
-                textSmall={e.author}
-                TextH5={e.title}
-                dateTime={e.created_at}
-                // paragrap={e.description}
-                borderRadius="10px"
-              />
-            );
-          })}
+          {configHome.length > 0 && (
+            <>
+              {configHome[7].value.map((e, i) => {
+                return (
+                  <Cards
+                    id={e.id}
+                    imageCard={e.path}
+                    textCategoryChild={e.category_child_name}
+                    textSmall={e.author}
+                    TextH5={e.title}
+                    dateTime={e.created_at}
+                    // paragrap={e.description}
+                    borderRadius="10px"
+                  />
+                );
+              })}
+            </>
+          )}
         </div>
 
         <span className="btnSize">

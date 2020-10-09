@@ -33,9 +33,8 @@ const MusicPdi = ({
   judul = "Mars Partai Demokrasi Indonesia Perjuangan",
   data,
 }) => {
-
-   const [indexPlay, setIndexPlay] = useState(0) 
-    const [play, setPlay] = useState([
+  const [indexPlay, setIndexPlay] = useState(0);
+  const [play, setPlay] = useState([
     {
       song: hymne,
       minusOne: hymne_mo,
@@ -194,23 +193,41 @@ const MusicPdi = ({
                   </div>
 
                   <div className="download">
-                    <Link as='a' to={play[indexPlay].song} download target='_blank' style={{cursor : 'pointer'}}>
-                    <div className="partitur downloadContent">
-                      <img src={downloadSatu} alt="" width="35" />
-                      <span className="downloadSpan">Unduh Lagu</span>
-                    </div>
+                    <Link
+                      as="a"
+                      to={play[indexPlay].song}
+                      download
+                      target="_blank"
+                      style={{ cursor: "pointer" }}
+                    >
+                      <div className="partitur downloadContent">
+                        <img src={downloadSatu} alt="" width="35" />
+                        <span className="downloadSpan">Unduh Lagu</span>
+                      </div>
                     </Link>
-                    <Link as='a' to={play[indexPlay].minusOne} download target='_blank' style={{cursor : 'pointer'}}>
-                    <div className="minusOn downloadContent">
-                      <img src={downloadDua} alt="" width="35" />
-                      <span className="downloadSpan">Minus One</span>
-                    </div>
+                    <Link
+                      as="a"
+                      to={play[indexPlay].minusOne}
+                      download
+                      target="_blank"
+                      style={{ cursor: "pointer" }}
+                    >
+                      <div className="minusOn downloadContent">
+                        <img src={downloadDua} alt="" width="35" />
+                        <span className="downloadSpan">Minus One</span>
+                      </div>
                     </Link>
-                    <Link as='a' to={play[indexPlay].pdf} download target='_blank' style={{cursor : 'pointer'}}>
-                    <div className="minusOn downloadContent">
-                      <img src={downloadTiga} alt="" width="35" />
-                      <span className="downloadSpan">Partitur</span>
-                    </div>
+                    <Link
+                      as="a"
+                      to={play[indexPlay].pdf}
+                      download
+                      target="_blank"
+                      style={{ cursor: "pointer" }}
+                    >
+                      <div className="minusOn downloadContent">
+                        <img src={downloadTiga} alt="" width="35" />
+                        <span className="downloadSpan">Partitur</span>
+                      </div>
                     </Link>
                   </div>
                 </div>
@@ -222,10 +239,15 @@ const MusicPdi = ({
                       mars pdi perjuangan
                     </span>
                     <span className="lirik">lirik</span>
-                    <p className="isiLirik" dangerouslySetInnerHTML={{__html : play[indexPlay].lyric}} style={{
-                        width : '80%',
-                    }}>
-                    </p>
+                    <p
+                      className="isiLirik"
+                      dangerouslySetInnerHTML={{
+                        __html: play[indexPlay].lyric,
+                      }}
+                      style={{
+                        width: "80%",
+                      }}
+                    ></p>
                   </div>
                 </div>
               </div>
@@ -257,33 +279,61 @@ const MusicPdi = ({
                 </h4>
               </div>
             </div>
-            <div className="listMusic" >
-              <div className="listSatu list" onClick={()=>{
-                setIndexPlay(0)
-            }}>
+            <div className="listMusic">
+              <div
+                className="listSatu list"
+                onClick={() => {
+                  setIndexPlay(0);
+                }}
+              >
                 <h6 className="judulList">Hymne PDI Perjuangan</h6>
-                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis inventore dolorem autem nam voluptatem laboriosam minima ullam quae. Doloribus quia,</small>
+                <small>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nobis inventore dolorem autem nam voluptatem laboriosam minima
+                  ullam quae. Doloribus quia,
+                </small>
               </div>
 
-              <div className="listSatu list" onClick={()=>{
-                setIndexPlay(1)
-                }}>
-                <h6 className="judulList" >Mars PDI Perjuangan</h6>
-                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis inventore dolorem autem nam voluptatem laboriosam minima ullam quae. Doloribus quia,</small>
+              <div
+                className="listSatu list"
+                onClick={() => {
+                  setIndexPlay(1);
+                }}
+              >
+                <h6 className="judulList">Mars PDI Perjuangan</h6>
+                <small>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nobis inventore dolorem autem nam voluptatem laboriosam minima
+                  ullam quae. Doloribus quia,
+                </small>
               </div>
 
-              <div className="listSatu list" onClick={()=>{
-                setIndexPlay(2)
-                }}>
+              <div
+                className="listSatu list"
+                onClick={() => {
+                  setIndexPlay(2);
+                }}
+              >
                 <h6 className="judulList">One For All All For One</h6>
-                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis inventore dolorem autem nam voluptatem laboriosam minima ullam quae. Doloribus quia,</small>
+                <small>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nobis inventore dolorem autem nam voluptatem laboriosam minima
+                  ullam quae. Doloribus quia,
+                </small>
               </div>
 
-              <div className="listSatu list" onClick={()=>{
-                setIndexPlay(3)
-                }}>
+              <div
+                className="listSatu list"
+                onClick={() => {
+                  setIndexPlay(3);
+                }}
+              >
                 <h6 className="judulList">Solid Bergerak</h6>
-                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis inventore dolorem autem nam voluptatem laboriosam minima ullam quae. Doloribus quia,</small>
+                <small>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Nobis inventore dolorem autem nam voluptatem laboriosam minima
+                  ullam quae. Doloribus quia,
+                </small>
               </div>
             </div>
           </div>
