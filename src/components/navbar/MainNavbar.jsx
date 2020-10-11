@@ -78,13 +78,12 @@ const MainNavbar = ({token})=> {
                     }}
 
                   >
-                    <NavLink className="nav-link" to={e.replace(/\s/g, '-').toLowerCase()} activeClassName='active'>{e}</NavLink>
+                    <NavLink className="nav-link" to={'/' + e.replace(/\s/g, '-').toLowerCase()} activeClassName='active'>{e}</NavLink>
 
                       {show === e && (
                           <DropDown menuItem={Object.values(menu)} listIndex={i}/>
                       )}
                       
-
                   </li>
                  ))}
 
@@ -114,7 +113,7 @@ const MainNavbar = ({token})=> {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
 
-                {menu.map((e) => (
+                {Object.keys(menu).map((e, i) => (
                   <li className="nav-item" style={{
                     position: 'relative'
                   }}
@@ -123,10 +122,14 @@ const MainNavbar = ({token})=> {
                       setShow(e.name)
                     }}
                   >
-                    <NavLink className="nav-link" to={e.to} activeClassName='active'>{e.name}</NavLink>
-                    {show === e.name && (
-                      <DropDown menuItem={e.listItem} />
-                    )}
+                      <NavLink className="nav-link" to={'/' + e.replace(/\s/g, '-').toLowerCase()} activeClassName='active'>{e}</NavLink>
+
+                      {show === e && (
+                          <DropDown menuItem={Object.values(menu)} listIndex={i}/>
+                      )}
+                      
+
+
                     {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown" expanded>
                       {e.listItem.map((e)=>(
                         <li><Link class="dropdown-item" to={e.listTo}>{e.listName}</Link></li>

@@ -17,7 +17,7 @@ $secondary : #f3f3f3;
 
 
 .wrapperBkbbPage {
-    width: 100%;
+    width: 100vw;
     // section lahirnya pancasil
     .lahirnyaPancasila{
         padding: 0px 20%;
@@ -28,7 +28,7 @@ $secondary : #f3f3f3;
       
         .box-lahirnyaPancasila{
             height: 75.1vh;
-            background-image: url(../../../img/BKBB_BungKarno.jpg);
+     
             background-size: cover;
             padding: 0px;
             position: relative;
@@ -113,11 +113,11 @@ $secondary : #f3f3f3;
     //section Video Bung Karno
     .videoBungKarno{
         width: 100vw;
-        height: 100vh;
+        // height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 60px 20%;
+        padding: 0px 20%;
         // background-color: #bebebe;
 
         @include smallPhone(){
@@ -135,6 +135,108 @@ $secondary : #f3f3f3;
             }
         }
     }
+
+    .bannerYoutube {
+            width: 100%;
+            // background: url(../../../img/image-1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-y: -150px;
+            height: 40vh;
+            margin-top: 40px;
+            @include smallPhone() {
+                background-size: cover;
+                background-position: center;
+                width: 95.5%;
+            }
+
+            .textYoutube {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // border: 1px solid blue;
+                background: rgba(0, 0, 0, 0.7);
+
+                
+
+                .wrapperText {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50%;
+                    height: 90%;
+                    @include smallPhone() {
+                        width: 100%;
+                    }
+
+                    ul {
+                        list-style: none;
+
+                        li {
+                            display: table-cell;
+                            background-color: $darkRed;
+                            border-radius: 50%;
+                            height: 50px;
+                            width: 50px;
+                            vertical-align: middle;
+                            text-align: center;
+
+                            @include smallPhone() {
+                                height: 2.3rem;
+                                width: 2.3rem;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                color: #ffffff;
+                                @include smallPhone() {
+                                }
+
+                                i {
+                                    font-size: 20pt;
+                                    margin-left: 5px;
+                                    margin-top: 5px;
+                                    @include smallPhone() {
+                                        font-size: 12pt;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .textInfoYT {
+                        width: 60%;
+                        height: 60%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        color: #ffffff;
+                        margin-left: 20px;
+                        @include smallPhone() {
+                            height: auto;
+                            line-height: .5;
+                        }
+
+                        .videoTerbaru {
+                            @include smallPhone() {
+                                font-size: 15pt;
+                            }
+                        }
+                        .siaranHut {
+                            @include smallPhone() {
+                                font-size: 10pt;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
     //section materi pokok pendukung
     .materiPokokPendukung{
@@ -181,19 +283,19 @@ $secondary : #f3f3f3;
 
     }
 
-    .backGroundGray{
-          width: 100vw;
-          height: 100vh;
-          background-color: #5d5d5d;
-          position: absolute;
-          top: 44.3rem;
-          z-index: -1;
+    // .backGroundGray{
+    //       width: 100vw;
+    //       height: 100vh;
+    //       background-color: #5d5d5d;
+    //       position: absolute;
+    //       top: 44.3rem;
+    //       z-index: -1;
 
-          @include smallPhone(){
-              height: 65vh;
-              top: 27.5rem;
-          }
-      }
+    //       @include smallPhone(){
+    //           height: 65vh;
+    //           top: 27.5rem;
+    //       }
+    //   }
    
     .headers-bkbbPage {
         height: 25vh;
@@ -287,7 +389,6 @@ $secondary : #f3f3f3;
         flex-direction: column;
         width: 100%;
         height: 70vh;
-        background: url(../../../img/kids.png);
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;

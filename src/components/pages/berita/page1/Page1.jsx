@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import pemilu18 from '../../../../img/pemilu18.jpg'
 import pemilu19 from '../../../../img/pemilu19.jpg'
@@ -9,22 +9,62 @@ import BreadCrumbs from '../../../breadcrumbs/BreadCrumbs'
 import Cards from '../../../cards/MainCards'
 import CarouselBeritaPage1 from '../../../carouselberitapage1/CarouselBeritaPage1'
 import MainDivider from '../../../divider/MainDivider'
+import { useParams } from 'react-router-dom'
 
 const Page1 = () => {
 
+    let {id} = useParams()
+    const [detailPage, setDetailPage] = useState()
+    const [missing , setMissing] = useState(false)
+
+     const getDetailPage = async () => {
+    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        app_id: "1555309664580",
+        api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
+      }),
+    });
+    const data = await res.json();
+
+    const resConfigHome = await fetch(
+      `https://atur.biar.pw/api/blog/find/?id=${id}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+      }
+    );
+
+    const dataConfigHome = await resConfigHome.json();
+    console.log(dataConfigHome.query);
+    setDetailPage(dataConfigHome.query);
+  };
 
     useEffect(() => {
+        getDetailPage()
         window.scrollTo(0, 0)
+        setTimeout(()=>{
+            setMissing(true)
+        }, 3000)
+
+    
     }, [])
 
     return (
         <>
-            <div className="wrapperBeritaPage1">
+            {detailPage ? (
+                 <div className="wrapperBeritaPage1">
                 <div className="headers-BeritaPage1">
                     <div className="backgrounds">
                         <div className="textBackgroundBerita">
                             <h2 className="txt-backg-beritaPage1">
-                                LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPICISING ELIT,
+                                {detailPage.category_name}
                             </h2>
                         </div>
                     </div>
@@ -40,7 +80,7 @@ const Page1 = () => {
                         {/* Section1 */}
                         <div className="section1-col1-beritaPage1">
                             <h2 className="txt-title">
-                                Sekolah Sekretaris DPD & DPC PDI Perjuangan se-Indonesia
+                                {detailPage.title}
                             </h2>
                         </div>
                         {/* END Section1 */}
@@ -62,7 +102,7 @@ const Page1 = () => {
 
                             {/* Row2 */}
                             <div className="row2-beritaPage1">
-                                <small className="date">Admin PDI Perjuangan | 15 May 2016</small>
+                        <small className="date">{detailPage.author}</small>
                                 <div className="garis-panjang-tipis">
                                     <div className="garis-merah-tebal">
 
@@ -99,47 +139,35 @@ const Page1 = () => {
                         {/* END Section1 */}
 
                         {/* Section2 */}
-                        <CarouselBeritaPage1 />
+                        {detailPage.category_name == 'Berita' && (
+                            <img src={`https://atur.biar.pw/public/${detailPage.path}`} alt=""/>
+                        )}
+
+                        {detailPage.category_name == 'Berita_video' && (
+                            <CarouselBeritaPage1 />
+                        )}
                         {/* END Section2 */}
 
                         {/* Section3 */}
                         <div className="section3-beritaPage1">
-                            <p className="txt-desk-section3-beritaPage1">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident enim, commodi culpa minima incidunt cum nam fugit sequi! Nisi, suscipit. Magnam eos dolorem soluta, enim consectetur assumenda, atque, quia itaque voluptatibus possimus voluptatem! Aspernatur tenetur voluptatem modi unde fugit neque eligendi aliquid molestiae harum consequatur, ducimus explicabo porro fuga.
-
-                                <br />
-                                <br />
-
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident enim, commodi culpa minima incidunt cum nam fugit sequi! Nisi, suscipit. Magnam eos dolorem soluta, enim consectetur assumenda, atque, quia itaque voluptatibus possimus voluptatem! Aspernatur tenetur voluptatem modi unde fugit neque eligendi aliquid molestiae harum consequatur, ducimus explicabo porro fuga.
-
-                                <br />
-                                <br />
-
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat provident enim, commodi culpa minima incidunt cum nam fugit sequi! Nisi, suscipit. Magnam eos dolorem soluta, enim consectetur assumenda, atque, quia itaque voluptatibus possimus voluptatem! Aspernatur tenetur voluptatem modi unde fugit neque eligendi aliquid molestiae harum consequatur, ducimus explicabo porro fuga.
-                            </p>
+                            <div className="txt-desk-section3-beritaPage1" dangerouslySetInnerHTML={{__html : detailPage.description}}>
+                                
+                            </div>
                         </div>
                         {/* END Section3 */}
 
                         {/* Section4 */}
-                        <div className="section4-beritaPage1">
+                        {/* <div className="section4-beritaPage1">
                             <i className="fas fa-quote-right"></i>
 
                             <h5 className="txt-desk-section4-beritaPage1">
                                 In the tumultuos business of cutting-in and attending to a whale, there is much
                             </h5>
-                        </div>
+                        </div> */}
                         {/* END Section4 */}
 
                         {/* Section5 */}
                         <div className="section5-beritaPage1">
-                            <p className="txt-desk-section5-beritaPage1">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis veritatis alias laudantium quibusdam. Perspiciatis iure deleniti, dignissimos debitis ratione id illum sunt quidem odio quia eius nesciunt earum voluptatibus dolor porro corporis suscipit quam adipisci molestias sit. Dolores optio, dicta eos omnis quam aspernatur! Consequuntur, ad. Aliquid modi nobis fugiat inventore, beatae deleniti rem autem ea officia quam, eaque laborum quasi. Pariatur, odit? Omnis distinctio ea voluptate voluptatem libero accusantium quisquam inventore molestiae natus perferendis. Nobis at accusamus iste deleniti!
-
-                                <br />
-                                <br />
-
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad debitis voluptate eligendi est accusamus! Minima distinctio rem maxime, non veritatis dolor aspernatur quae rerum obcaecati fugiat quis inventore aut vitae velit tenetur, nostrum minus at delectus fuga dolorem assumenda perspiciatis ipsam est ea! Laborum adipisci facilis eum minus, necessitatibus ducimus?
-                            </p>
 
                             <div className="garis-panjang">
                             </div>
@@ -192,6 +220,25 @@ const Page1 = () => {
                         borderRadius="10px" />
                 </div>
             </div>
+            ) : (
+                <>
+                   
+                        <div className="page" id="wait" style={{
+                            width : '100vw',
+                            height : '100vh',
+                            display : 'flex',
+                            justifyContent : 'center',
+                            alignItems : 'center',
+                        }}>
+                            {missing ? 'page tidak ditemukan' : 'wait'}
+                       
+                        </div>
+                        
+                        
+
+                </>
+            )}
+           
         </>
     )
 }

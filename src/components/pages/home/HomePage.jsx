@@ -226,7 +226,6 @@ const HomePage = () => {
                   }}
                   key={i}
                 >
-                  {console.log(e)}
 
                   <div className="textYoutube">
                     <div className="wrapperText">

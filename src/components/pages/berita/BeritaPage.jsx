@@ -186,7 +186,9 @@ const BeritaPage = () => {
                                     textSmall={e.author}
                                     TextH5={e.title}
                                     dateTime={e.created_at}
-                                    borderRadius="10px" />
+                                    borderRadius="10px" 
+                                    page='page'
+                                    />
                                 )
                             })}
                     </div>

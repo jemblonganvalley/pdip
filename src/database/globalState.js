@@ -23,29 +23,7 @@ export let globalState = createStore({
 
     }),
     // END TOKEN AREA
-
-    menu : [
-        {
-            id : 1,
-            name : 'home',
-            link : '#home'
-        },
-        {
-            id : 2,
-            name : 'about',
-            link : '#about'
-        },
-        {
-            id : 3,
-            name : 'contact',
-            link : '#contact'
-        },
-        {
-            id : 4,
-            name : 'gallery',
-            link : '#gallery'
-        }
-    ]
+    
 
     
 

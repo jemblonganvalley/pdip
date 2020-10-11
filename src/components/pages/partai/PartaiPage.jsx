@@ -9,7 +9,6 @@ import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import MusicMobile from "../../musicPdiMobile/MusicMobile";
 
 const PartaiPage = () => {
-
   const [config, setConfig] = useState([]);
   const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
@@ -36,7 +35,7 @@ const PartaiPage = () => {
     );
 
     const dataConfigHome = await resConfigHome.json();
-    console.log(dataConfigHome.query);
+    // console.log(dataConfigHome.query);
     setConfig(dataConfigHome.query);
   };
 
@@ -47,223 +46,244 @@ const PartaiPage = () => {
 
   return (
     // START PARTAI
-
-    <div className="wrapperPartai">
-      {config.length > 0 && (
-        <>
-          {/* HEADERS */}
-          <div
-            className={`headers ${config[0].value.class}`}
-            style={{
-              backgroundImage: `url(https://atur.biar.pw/public/${config[0].value.image})`,
-            }}
-          >
-            <div className="backgrounds">
-              <div className="textBackgroundPartai">
-                <h2>{config[0].value.title}</h2>
-              </div>
-            </div>
-          </div>
-          {/* END */}
-
-          {/* LINK PARTAI */}
-          <div className="linkedPartai">
-            <BreadCrumbs link1="Home" to1="/" page2="Partai" />
-          </div>
-          {/* END */}
-
-          {/* CONTAINER SATU */}
-          <div className="containerSatu row ">
-            <div className="contentSatu row">
-
+    <>
+      {config.length > 0 ? (
+        <div className="wrapperPartai">
+          {config.length > 0 && (
+            <>
+              {/* HEADERS */}
               <div
-                className="col col-lg-4"
-                
+                className={`headers ${config[0].value.class}`}
+                style={{
+                  backgroundImage: `url(https://atur.biar.pw/public/${config[0].value.image})`,
+                }}
               >
-                <div className={`wrapperContentSatu`} style={{
-                  width: "100%",
-                  height : '50vh',
-                  display : 'flex',
-                  flexDirection : 'column',
-                  justifyContent : 'space-between',
-                }}>
+                <div className="backgrounds">
+                  <div className="textBackgroundPartai">
+                    <h2>{config[0].value.title}</h2>
+                  </div>
+                </div>
+              </div>
+              {/* END */}
 
-                  {config[1].value.map((e, i) => (
+              {/* LINK PARTAI */}
+              <div className="linkedPartai">
+                <BreadCrumbs link1="Home" to1="/" page2="Partai" />
+              </div>
+              {/* END */}
+
+              {/* CONTAINER SATU */}
+              <div className="containerSatu row ">
+                <div className="contentSatu row">
+                  <div className="col col-lg-4">
                     <div
-                      className="mobileRow"
+                      className={`wrapperContentSatu`}
                       style={{
                         width: "100%",
-                        display : 'flex',
-                        justifyContent : 'flex-start',
-                        alignItems : 'center',
-                        height : 'calc(100%/4)',
-                        gap : '40px',
+                        height: "50vh",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-between",
                       }}
                     >
-                      <img
-                        src={`https://atur.biar.pw/public/${e.image}`}
-                        alt=""
-                        className="imgMobilePartai"
-                        style={{
-                          height : '50%',
-                          
-                        }}
-                      />
-                      <div className="textContent textContentSatu" style={{
-                      }}>
-                        <h3>{e.title}</h3>
-                        {/* <p>
+                      {config[1].value.map((e, i) => (
+                        <div
+                          className="mobileRow"
+                          style={{
+                            width: "100%",
+                            display: "flex",
+                            justifyContent: "flex-start",
+                            alignItems: "center",
+                            height: "calc(100%/4)",
+                            gap: "40px",
+                          }}
+                        >
+                          <img
+                            src={`https://atur.biar.pw/public/${e.image}`}
+                            alt=""
+                            className="imgMobilePartai"
+                            style={{
+                              height: "50%",
+                            }}
+                          />
+                          <div
+                            className="textContent textContentSatu"
+                            style={{}}
+                          >
+                            <h3>{e.title}</h3>
+                            {/* <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Molestias inventore nobis doloremque.
                         </p> */}
-                      </div>
-                    </div>
-
-                  ))}
-                </div>
-              </div>
-
-              <div className="col col-lg-8 parentCarousel">
-                <div className="wrapperCarousel">
-                  <div
-                    id="carouselExampleIndicators"
-                    className="carousel slide"
-                    data-ride="carousel"
-                  >
-                    <ol className="carousel-indicators carouselPartai">
-                      <li
-                        data-target="#carouselExampleIndicators"
-                        data-slide-to={0}
-                        className="active"
-                      />
-                      <li
-                        data-target="#carouselExampleIndicators"
-                        data-slide-to={1}
-                      />
-                      <li
-                        data-target="#carouselExampleIndicators"
-                        data-slide-to={2}
-                      />
-                    </ol>
-
-                    <div className="carousel-inner">
-                      {config[2].value.map((e, i) => (
-                        <div
-                          className={
-                            i == 0 ? `carousel-item active` : "carousel-item"
-                          }
-                          key={i}
-                        >
-                          <div
-                            className="carouselImgSatu"
-                            style={{
-                              backgroundImage: `url(https://atur.biar.pw/public/${e.image})`,
-                            }}
-                          ></div>
-
-                          <div class="carousel-caption  d-md-block">
-                            <h3>{e.title}</h3>
-                            <p
-                              dangerouslySetInnerHTML={{ __html: e.paragraph }}
-                            ></p>
                           </div>
                         </div>
                       ))}
                     </div>
                   </div>
+
+                  <div className="col col-lg-8 parentCarousel">
+                    <div className="wrapperCarousel">
+                      <div
+                        id="carouselExampleIndicators"
+                        className="carousel slide"
+                        data-ride="carousel"
+                      >
+                        <ol className="carousel-indicators carouselPartai">
+                          <li
+                            data-target="#carouselExampleIndicators"
+                            data-slide-to={0}
+                            className="active"
+                          />
+                          <li
+                            data-target="#carouselExampleIndicators"
+                            data-slide-to={1}
+                          />
+                          <li
+                            data-target="#carouselExampleIndicators"
+                            data-slide-to={2}
+                          />
+                        </ol>
+
+                        <div className="carousel-inner">
+                          {config[2].value.map((e, i) => (
+                            <div
+                              className={
+                                i == 0
+                                  ? `carousel-item active`
+                                  : "carousel-item"
+                              }
+                              key={i}
+                            >
+                              <div
+                                className="carouselImgSatu"
+                                style={{
+                                  backgroundImage: `url(https://atur.biar.pw/public/${e.image})`,
+                                }}
+                              ></div>
+
+                              <div class="carousel-caption  d-md-block">
+                                <h3>{e.title}</h3>
+                                <p
+                                  dangerouslySetInnerHTML={{
+                                    __html: e.paragraph,
+                                  }}
+                                ></p>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          {/* END */}
+              {/* END */}
 
-          <MusicPdi />
-          <MusicMobile />
+              <MusicPdi />
+              <MusicMobile />
 
-          {/* CONTAINER TIGA */}
-          <div className="containerTiga">
-            <div className="col-lg-3">
-              <img src={pdiLogo} alt="" width="180" />
-            </div>
-            <div className="col-lg-9 textBanteng">
-              <h1>TATA KELOLA PDI PERJUANGAN</h1>
-              <ul>
-                <li>
-                  Lambang PDI Perjuangan berupa gambar banteng hitam bermoncong
-                  putih dengan latar merah di dalam lingkaran bergaris hitam dan
-                  putih.
-                </li>
-                <li>
-                  Warna dasar merah melambangkan berani mengambil resiko dalam
-                  memperjuangkan keadilan dan kebenaran untuk rakyat.
-                </li>
-                <li>
-                  Mata merah dengan pandangan tajam melambangkan selalu waspada
-                  terhadap ancaman dalam berjuang.
-                </li>
-                <li>
-                  Moncong putih melambangkan dapat dipercaya dan berkomitmen
-                  dalam memperjuangkan keadilan dan kebenaran
-                </li>
-                <li>
-                  Lingkaran melambangkan tekad yang bulat dan perjuangan yang
-                  terus-menerus tanpa terputus
-                </li>
-              </ul>
-            </div>
-          </div>
-          {/* END */}
-          <div className="btnUnduh">
-            <MainButton name="Unduh Lambang" />
-          </div>
+              {/* CONTAINER TIGA */}
+              <div className="containerTiga">
+                <div className="col-lg-3">
+                  <img src={pdiLogo} alt="" width="180" />
+                </div>
+                <div className="col-lg-9 textBanteng">
+                  <h1>TATA KELOLA PDI PERJUANGAN</h1>
+                  <ul>
+                    <li>
+                      Lambang PDI Perjuangan berupa gambar banteng hitam
+                      bermoncong putih dengan latar merah di dalam lingkaran
+                      bergaris hitam dan putih.
+                    </li>
+                    <li>
+                      Warna dasar merah melambangkan berani mengambil resiko
+                      dalam memperjuangkan keadilan dan kebenaran untuk rakyat.
+                    </li>
+                    <li>
+                      Mata merah dengan pandangan tajam melambangkan selalu
+                      waspada terhadap ancaman dalam berjuang.
+                    </li>
+                    <li>
+                      Moncong putih melambangkan dapat dipercaya dan berkomitmen
+                      dalam memperjuangkan keadilan dan kebenaran
+                    </li>
+                    <li>
+                      Lingkaran melambangkan tekad yang bulat dan perjuangan
+                      yang terus-menerus tanpa terputus
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              {/* END */}
+              <div className="btnUnduh">
+                <MainButton name="Unduh Lambang" />
+              </div>
 
-          {/* PENGURUS */}
-          <div className="pengurusPage">
-            <MainDivider text="pengurus" />
-            <div className="paragrapPengurus">
-              <span
-                dangerouslySetInnerHTML={{ __html: config[5].value }}
-              ></span>
-            </div>
-          </div>
-          {/* END */}
+              {/* PENGURUS */}
+              <div className="pengurusPage">
+                <MainDivider text="pengurus" />
+                <div className="paragrapPengurus">
+                  <span
+                    dangerouslySetInnerHTML={{ __html: config[5].value }}
+                  ></span>
+                </div>
+              </div>
+              {/* END */}
 
-          {/* PHOTO PENGURUS */}
+              {/* PHOTO PENGURUS */}
+              <div
+                className="photoPengurus"
+                style={{
+                  backgroundImage: `url(https://atur.biar.pw/public/${config[6].value.image})`,
+                }}
+              >
+                <h2>{config[6].value.title}</h2>
+                <Link className="btn lihat" to="/struktur">
+                  <span>lihat</span>
+                </Link>
+              </div>
+              {/* END */}
+
+              {/* MAPS */}
+              <div className="maps">
+                <h5>dewan pimpinan daerah pdi perjuangan</h5>
+                <Link as="div" className="imageMaps" to="" to="/dpd"></Link>
+              </div>
+              {/* END */}
+
+              {/* ANGGOTA LEGISLATIF */}
+              <div className="anggotaLegislatif">
+                <span
+                  dangerouslySetInnerHTML={{ __html: config[7].value }}
+                ></span>
+                <div className="btnGroup">
+                  <MainButton name="DPR RI" margin="0 10px" />
+                  <MainButton name="DPRD Provinsi" margin="0 10px" />
+                  <MainButton name="DPRD Kabupaten Kota" margin="0 10px" />
+                </div>
+              </div>
+              {/* END */}
+            </>
+          )}
+        </div>
+      ) : (
+        <>
           <div
-            className="photoPengurus"
+            className="page"
+            id="wait"
             style={{
-              backgroundImage: `url(https://atur.biar.pw/public/${config[6].value.image})`,
+              width: "100vw",
+              height: "100vh",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            <h2>{config[6].value.title}</h2>
-            <Link className="btn lihat" to="/struktur">
-              <span>lihat</span>
-            </Link>
+            Wait ...
           </div>
-          {/* END */}
-
-          {/* MAPS */}
-          <div className="maps">
-            <h5>dewan pimpinan daerah pdi perjuangan</h5>
-            <Link as="div" className="imageMaps" to="" to="/dpd"></Link>
-          </div>
-          {/* END */}
-
-          {/* ANGGOTA LEGISLATIF */}
-          <div className="anggotaLegislatif">
-            <span dangerouslySetInnerHTML={{ __html: config[7].value }}></span>
-            <div className="btnGroup">
-              <MainButton name="DPR RI" margin="0 10px" />
-              <MainButton name="DPRD Provinsi" margin="0 10px" />
-              <MainButton name="DPRD Kabupaten Kota" margin="0 10px" />
-            </div>
-          </div>
-          {/* END */}
         </>
       )}
-
-
-    </div>
+    </>
   );
 };
 

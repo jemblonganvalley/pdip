@@ -4,6 +4,15 @@ import { Link } from 'react-router-dom'
 
 const DropDown = ({menuItem, listIndex}) => {
 
+  const refresh = (pg)=>{
+    window.location.href = `${pg}`;
+
+  }
+
+  const refresh2 = (pg)=>{
+    window.location.href = `/${pg}`;
+
+  }
 
   return (
    
@@ -16,9 +25,18 @@ const DropDown = ({menuItem, listIndex}) => {
 
            <span></span>
             {menuItem[listIndex].map((e, i)=>(
-                <Link to={e.params} className="list-group-item"  
+                <Link className="list-group-item"  
                   key={i} 
-                >{e.title}</Link>
+                  onClick={
+                    e.params !== 'all' ? ()=>{
+                        refresh(`/page/${e.params}`)
+                    } : ()=>{
+                        refresh2(`/${e.params}`)
+                    }
+
+                  }
+                  
+                  >{e.title}</Link>
             ))}
           
             <div className="arrow"></div>
