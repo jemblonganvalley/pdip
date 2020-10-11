@@ -95,7 +95,7 @@ const BkbbWejangan = () => {
                     {/* Column1 */}
                     <div className="col1-container-2-bkbbWejangan">
                         {/* CardQuotes */}
-                        <CardQuotes img={bkbb2} icon1="fas fa-quote-right" txt1='NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia Muda, 1928" />
+                        <CardQuotes img={bkbb2} icon1="fas fa-quote-right" txt1='NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".' icon2="fas fa-quote-right" txt2="Soekarno, Suluh Indonesia" />
 
                         <CardQuotes img={bkbb3} icon1="fas fa-quote-right" txt1="ORANG TIDAK DAPAT MENGABDI KEPADA TUHAN DENGAN TIDAK MENGABDI KEPADA SESAMA MANUSIA. TUHAN BERSEMAYAM DI GUBUKNYA SI MISKIN" icon2="fas fa-quote-right" txt2="Soekarno, 23 Oktober 1946" />
 

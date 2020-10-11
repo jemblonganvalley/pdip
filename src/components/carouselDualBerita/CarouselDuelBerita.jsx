@@ -106,7 +106,7 @@ export const CarouselDuelBerita = ({
 
                         <img src={`https://www.pdiperjuangan.id/cms/${e.path}`} className="d-block w-100 carouselDual1Image" alt="..." key={i} style={{
                             width : '100%',
-                            height : '50vh',
+                            height : '45vh',
                             objectFit : 'cover',
                             objectPosition : 'center',
 
@@ -164,7 +164,7 @@ export const CarouselDuelBerita = ({
 
                         <img src={`https://www.pdiperjuangan.id/cms/${e.path}`} className="d-block w-100 carouselDual1Image" alt="..." key={i} style={{
                             width : '100%',
-                            height : '50vh',
+                            height : '45vh',
                             objectFit : 'cover',
                             objectPosition : 'center',
 

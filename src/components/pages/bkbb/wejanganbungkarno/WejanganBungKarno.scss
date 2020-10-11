@@ -62,7 +62,7 @@ $smallPhoneDua : 400px;
 // Container1
 .container1-wejanganThumbnail{
     display: flex;
-    height: auto;
+    height: 10vh;
     width: 100%;
     margin: 0px 0 0 0;
     padding: 20px 20% 0 20%;
@@ -82,7 +82,7 @@ $smallPhoneDua : 400px;
     flex-direction: column;
     height: auto;
     width: 100%;
-    margin: 0px 0 20px 0;
+    margin: 40px 0 20px 0;
     padding: 0 20%;
 
     @include smallPhone(){

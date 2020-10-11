@@ -33,7 +33,8 @@ $smallPhoneDua : 400px;
         // border: 1px solid blue;
         width: 100%;
         // height: 66vh;
-        height: 65.2vh;
+        // height: 65.2vh;
+        height: auto;
         display: flex;
         border-radius: 10px;
         @include smallPhone() {
@@ -197,7 +198,7 @@ $smallPhoneDua : 400px;
             align-items: center;
             .wrapperPlayerMusic {
                 width: 100%;
-                height: 12vh;
+                height: 14vh;
                 display: flex;
                 flex-direction: row;
 

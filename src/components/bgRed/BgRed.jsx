@@ -22,7 +22,7 @@ const BgRed = () => {
               <h3>facebook</h3>
             </header>
 
-           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPDIPerjuangan%2F&tabs=timeline&width=300&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width={300} height={300} style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder={0} allowTransparency="true" allow="encrypted-media" />
+           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPDIPerjuangan%2F&tabs=timeline&width=250&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width={250} height={300} style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder={0} allowTransparency="true" allow="encrypted-media" />
 
 
           </div>
@@ -35,10 +35,10 @@ const BgRed = () => {
             sourceType = 'profile'
             screenName = 'pdi_perjuangan'
             options={{
-              width : 300,
+              width : 250,
               height : 300,
               margin : 0,
-              padding : 0
+              padding : 0,
             }}
            />
            </div>

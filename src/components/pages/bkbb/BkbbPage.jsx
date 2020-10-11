@@ -96,7 +96,7 @@ const BkbbPage = () => {
             >
               <div className="redBox mt-auto">
                 <div className="col col-lg-4 red-box-title ">
-                  <h2>{configHome[1].value.title}</h2>
+                  <h3>{configHome[1].value.title}</h3>
                 </div>
                 <div
                   className="txt2-redBox"

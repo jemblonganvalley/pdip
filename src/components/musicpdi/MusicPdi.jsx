@@ -288,9 +288,7 @@ const MusicPdi = ({
               >
                 <h6 className="judulList">Hymne PDI Perjuangan</h6>
                 <small>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nobis inventore dolorem autem nam voluptatem laboriosam minima
-                  ullam quae. Doloribus quia,
+                  Lorem ipsum, dolor sit amet consectetur disin asekuma one direct
                 </small>
               </div>
 
@@ -302,9 +300,7 @@ const MusicPdi = ({
               >
                 <h6 className="judulList">Mars PDI Perjuangan</h6>
                 <small>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nobis inventore dolorem autem nam voluptatem laboriosam minima
-                  ullam quae. Doloribus quia,
+                Lorem ipsum, dolor sit amet consectetur disin asekuma one
                 </small>
               </div>
 
@@ -316,9 +312,7 @@ const MusicPdi = ({
               >
                 <h6 className="judulList">One For All All For One</h6>
                 <small>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nobis inventore dolorem autem nam voluptatem laboriosam minima
-                  ullam quae. Doloribus quia,
+                Lorem ipsum, dolor sit amet consectetur
                 </small>
               </div>
 
@@ -330,9 +324,7 @@ const MusicPdi = ({
               >
                 <h6 className="judulList">Solid Bergerak</h6>
                 <small>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Nobis inventore dolorem autem nam voluptatem laboriosam minima
-                  ullam quae. Doloribus quia,
+                Lorem ipsum, dolor sit amet consectetur
                 </small>
               </div>
             </div>

@@ -20,7 +20,7 @@ const WejanganBungKarno = () => {
             icon1WejanganBk: 'fas fa-quote-right',
             txt1WejanganBk: 'NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".',
             icon2WejanganBk: 'fas fa-quote-right',
-            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1928'
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia'
         },
         {
             pageWejanganBk: '',
@@ -36,7 +36,7 @@ const WejanganBungKarno = () => {
             icon1WejanganBk: 'fas fa-quote-right',
             txt1WejanganBk: 'TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA',
             icon2WejanganBk: 'fas fa-quote-right',
-            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1922'
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia'
         },
         {
             pageWejanganBk: '',
@@ -44,7 +44,7 @@ const WejanganBungKarno = () => {
             icon1WejanganBk: 'fas fa-quote-right',
             txt1WejanganBk: 'NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".',
             icon2WejanganBk: 'fas fa-quote-right',
-            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1928'
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia'
         },
         {
             pageWejanganBk: '',
@@ -60,7 +60,7 @@ const WejanganBungKarno = () => {
             icon1WejanganBk: 'fas fa-quote-right',
             txt1WejanganBk: 'TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA',
             icon2WejanganBk: 'fas fa-quote-right',
-            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1922'
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia'
         },
         {
             pageWejanganBk: '',
@@ -68,7 +68,7 @@ const WejanganBungKarno = () => {
             icon1WejanganBk: 'fas fa-quote-right',
             txt1WejanganBk: 'NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".',
             icon2WejanganBk: 'fas fa-quote-right',
-            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1928'
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia'
         },
         {
             pageWejanganBk: '',
@@ -84,7 +84,7 @@ const WejanganBungKarno = () => {
             icon1WejanganBk: 'fas fa-quote-right',
             txt1WejanganBk: 'TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA',
             icon2WejanganBk: 'fas fa-quote-right',
-            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1922'
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia'
         },
         {
             pageWejanganBk: '',
@@ -92,7 +92,7 @@ const WejanganBungKarno = () => {
             icon1WejanganBk: 'fas fa-quote-right',
             txt1WejanganBk: 'NASIONALISME KITA ADALAH NASIONALISME YANG MEMBUAT KITA MENJADI "PERKAKASNYA TUHAN", DAN MEMBUAT KITA MENJADI "HIDUP DI DALAM ROH".',
             icon2WejanganBk: 'fas fa-quote-right',
-            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1928'
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia'
         },
         {
             pageWejanganBk: '',
@@ -108,7 +108,7 @@ const WejanganBungKarno = () => {
             icon1WejanganBk: 'fas fa-quote-right',
             txt1WejanganBk: 'TUJUAN SAYA IALAH UNTUK MENJADI PEMBANGUN DARI SUATU BANGSA',
             icon2WejanganBk: 'fas fa-quote-right',
-            txt2WejanganBk: 'Soekarno, Suluh Indonesia Muda, 1922'
+            txt2WejanganBk: 'Soekarno, Suluh Indonesia'
         },
     ])
     // END Create Databasae Card Item
