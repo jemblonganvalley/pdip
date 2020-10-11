@@ -24,6 +24,10 @@ a{
   color: inherit;
 }
 
+p{
+  font-size: 10pt;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

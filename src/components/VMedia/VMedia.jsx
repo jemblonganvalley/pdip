@@ -1,7 +1,7 @@
 import React from 'react'
 import './VMedia.scss'
 
-const VMedia = ({source, headline})=> {
+const VMedia = ({source, headline, desc})=> {
     return (
         <div className="wrapperPlayVid">
             <div className="kolumVideo">
@@ -16,9 +16,12 @@ const VMedia = ({source, headline})=> {
                         <small>0</small>
                     </div>
                 </div>
+                
                 <h5 className="headline">{headline}</h5>
-                <p className="descline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident obcaecati, optio hic sequi similique tenetur ratione cumque molestias quaerat porro deleniti minus, laudantium deserunt, velit quia aliquid eveniet alias doloribus!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident obcaecati, optio hic sequi similique tenetur ratione cumque molestias quaerat porro deleniti minus, laudantium deserunt, velit quia aliquid eveniet alias doloribus!</p>
+                <p className="descline">
+                    {desc}
+
+                </p>
                 <div className="share">
                     <small className="marginShare">SHARE : </small>
                     <i class="fa fa-facebook marginShare" aria-hidden="true"></i>

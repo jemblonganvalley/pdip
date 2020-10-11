@@ -19,7 +19,6 @@ $smallPhoneDua : 400px;
     width: 100%;
 
     .headerMedia {
-        background: url(../../../img/mediabanner.png);
         background-size: cover;
         height: 25vh;
         background-position: bottom;
@@ -158,8 +157,8 @@ $smallPhoneDua : 400px;
 
     .panggung {
         width: 100%;
-        background-image: url(../../../img/panggung.png);
         background-size: cover;
+        background-repeat: no-repeat;
         height: 60vh;
         display: flex;
         background-attachment: fixed;
@@ -191,7 +190,7 @@ $smallPhoneDua : 400px;
     }
 
     .cardMediaDua {
-        padding: 40px 20% 10px 20%;
+        padding: 0 20%;
         display: flex;
         flex-wrap: wrap;
         @include smallPhone() {

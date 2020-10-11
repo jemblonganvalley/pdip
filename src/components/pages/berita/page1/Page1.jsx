@@ -140,7 +140,11 @@ const Page1 = () => {
 
                         {/* Section2 */}
                         {detailPage.category_name == 'Berita' && (
-                            <img src={`https://atur.biar.pw/public/${detailPage.path}`} alt=""/>
+                            <img src={`https://atur.biar.pw/public/${detailPage.path}`} alt="" style={{
+                                height : '40vh',
+                                objectFit : 'cover',
+                                margin : '40px 0',
+                            }}/>
                         )}
 
                         {detailPage.category_name == 'Berita_video' && (
