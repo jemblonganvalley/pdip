@@ -89,7 +89,7 @@ const MainNavbar = ({token})=> {
 
                 </ul>
                 <form className="d-inline-flex">
-                  <input className="form-control mr-2" type="text" placeholder="Search for something" name="search" />
+                  <input className="form-control mr-2" type="text" placeholder="Cari Artikel" name="search" />
                   <button name="submit">
                       <i class="fa fa-long-arrow-right" aria-hidden="true" name="icon" ></i>
                   </button>
@@ -143,7 +143,7 @@ const MainNavbar = ({token})=> {
 
               </ul>
               <form className="d-inline-flex">
-                <input className="form-control mr-2" type="text" placeholder="cari sesuatu" name="search" />
+                <input className="form-control mr-2" type="text" placeholder="cari artikel" name="search" />
                 <button name="submit">
                   <i class="fa fa-long-arrow-right" aria-hidden="true" name="icon" ></i>
                 </button>

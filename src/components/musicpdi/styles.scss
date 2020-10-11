@@ -18,6 +18,7 @@ $rhap_font-family: inherit !default;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
   outline: none;
   color : #fff !important;
+  border-radius: 8px;
   &:focus:not(:focus-visible) {
     outline: 0;
   }
