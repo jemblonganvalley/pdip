@@ -54,7 +54,7 @@ const CarouselKM = ({cat=44, totalPage=3, data=data})=> {
                             </ol>
 
                             <div className="carousel-inner">
-                            {berita.map((e,i)=>(
+                            {data.map((e,i)=>(
                                     <div className={`carousel-item ${i == 1 && 'active'} itemKM`}>
                                         <div className="col-lg-6 textKM">
                                             <h5 className="textCarousel">
@@ -66,7 +66,7 @@ const CarouselKM = ({cat=44, totalPage=3, data=data})=> {
                                             </p> */}
                                         </div>
                                         <div className="col-lg-6 banner" style={{
-                                            backgroundImage : `url(${e.image.replace('http:\/\/localhost\/PDIP\/api_backend\/public\/', 'https://www.pdiperjuangan.id/cms/')})`,
+                                            backgroundImage : `url(https://atur.biar.pw/public/${e.path})`,
                                             backgroundSize : 'cover'
                                         }}></div>
                                     </div>
