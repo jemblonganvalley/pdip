@@ -92,11 +92,10 @@ $smallPhoneDua : 400px;
             .paragrapProfil {
                 display: flex;
                 width: 100%;
-                margin-top: 1rem;
+                margin-top: 0rem;
                 justify-content: center;
                 align-items: center;
                 // position: relative;
-                // border: 1px solid blue;
                 @include smallPhone() {
                     flex-direction: column;
                     position: inherit;
@@ -122,6 +121,7 @@ $smallPhoneDua : 400px;
                     .textParagrap {
                         font-size: 10pt;
                         width: 37vw;
+                        padding: 0 4% 0 0;
                         @include smallPhone() {
                             width: auto;
                             font-size: 9pt;
@@ -440,12 +440,10 @@ $smallPhoneDua : 400px;
 
             .kolomFormulirSatu {
                 background: $colors;
-                // border: 1px solid #d80010;
                 color: #ffffff;
             }
             .kolomFormulirDua {
                 background: #ffffff;
-                // border: 1px solid #ffffff;
             }
         }
         // END

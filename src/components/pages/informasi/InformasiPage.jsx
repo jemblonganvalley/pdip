@@ -115,7 +115,7 @@ const InformasiPage = () => {
             {/* START PROFIL */}
             <div className="profilContainer">
                 <MainDivider text="Profil"
-                    garisMerah="2rem" />
+                    garisMerah="0rem" />
 
                 <div className="paragrapProfil">
                     <div className="paragrapKiri">

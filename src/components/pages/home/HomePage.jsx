@@ -264,7 +264,7 @@ const HomePage = () => {
 
             <MainButton
               name="lihat semua"
-              margin="-40px 0 0 0"
+              margin="20px 0 0 0"
               pages="videomedia"
             />
           </div>
