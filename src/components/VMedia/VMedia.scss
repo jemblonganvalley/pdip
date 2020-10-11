@@ -17,7 +17,7 @@ $smallPhoneDua : 400px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: auto;
+    height: 50vh;
     // margin-top: 1.5rem;
     @include smallPhone() {
         flex-direction: column;
@@ -47,7 +47,7 @@ $smallPhoneDua : 400px;
         // border: 1px solid crimson;
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 50vh;
         // margin-left: 1rem;
         padding : 0px 0 0 20px;
         position: relative;
@@ -100,13 +100,13 @@ $smallPhoneDua : 400px;
             }
         }
         .descline {
-            margin-top: 1rem;
+            overflow-y: scroll;
         }
 
         .share {
             // font-size: 10pt;
             // position: absolute;
-            margin: 10px 0 0 0;
+            margin-top: auto;
             bottom: 0;
             @include smallPhone() {
                 position: inherit;

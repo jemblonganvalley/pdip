@@ -4,25 +4,22 @@ import '../carouselPemilu1/CarouselPemilu1.scss'
 import pemilu from '../../img/pemilu.jpeg'
 
 
-const CarouselPemilu1 = () => {
+const CarouselPemilu1 = ({data}) => {
     return (
         <>
             {/* Carousel */}
             <div id="pemilu1" className="carousel carousel1-pemiluPage slide" data-ride="carousel">
                 <div className="carousel-inner box-carousel1-pemiluPage">
-                    <div className="carousel-item active">
-                        {/* Image1 */}
-                        <img src={pemilu} className="img-1">
 
-                        </img>
+                    {data.map((e,i)=>(
+
+                    <div className="carousel-item active" key={i}>
+                        {/* Image1 */}
+                        <img src={e.image} className="img-1" />
                         {/* END Image1 */}
                     </div>
-                    <div className="carousel-item">
+                    ))}
 
-                    </div>
-                    <div className="carousel-item">
-
-                    </div>
                 </div>
                 {/* Container Box Indicator Carousel */}
                 <div className="container-box-indicator-pemilu1">
