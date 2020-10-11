@@ -27,8 +27,8 @@ $secondary : #f3f3f3;
         }
       
         .box-lahirnyaPancasila{
-            height: 75.1vh;
-     
+            // height: 75.1vh;
+            height: 50vh;
             background-size: cover;
             padding: 0px;
             position: relative;
@@ -41,7 +41,7 @@ $secondary : #f3f3f3;
             .redBox{
              width: 100%;
             background-color: rgba(216, 0, 16, .8);
-            height: 30%;
+            height: 35%;
             margin-top: auto;
             position: absolute;
             bottom: 0;

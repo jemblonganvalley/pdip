@@ -193,6 +193,7 @@ $smallPhoneDua : 400px;
     .cardMediaDua {
         padding: 40px 20% 10px 20%;
         display: flex;
+        flex-wrap: wrap;
         @include smallPhone() {
             padding: 10px 2%;
             flex-direction: column;

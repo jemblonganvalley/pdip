@@ -132,13 +132,13 @@ const BeritaDaerah = () => {
                 </div>
 
                 {/* Container1 */}
-                <div className="container1-berita-daerah">
+                <div className="container1-berita-daerah-con1">
                     <MainDivider text="Berita Daerah" />
                 </div>
                 {/* END Container1 */}
 
                 {/* Container2 */}
-                <div className="container2-berita-daerah">
+                <div className="container2-berita-daerah-con2">
                     {/* Column Card */}
                     <div className="column-card-berita-daerah">
                         <CardMateriPokok cardMateriPokokItem={currentPosts} />

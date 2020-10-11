@@ -132,13 +132,13 @@ const BeritaNasional = () => {
                 </div>
 
                 {/* Container1 */}
-                <div className="container1-berita-nasional">
+                <div className="container1-berita-nasional-con1">
                     <MainDivider text="Berita Nasional" />
                 </div>
                 {/* END Container1 */}
 
                 {/* Container2 */}
-                <div className="container2-berita-nasional">
+                <div className="container2-berita-nasional-con2">
                     {/* Column Card */}
                     <div className="column-card-berita-nasional">
                         <CardMateriPokok cardMateriPokokItem={currentPosts} />

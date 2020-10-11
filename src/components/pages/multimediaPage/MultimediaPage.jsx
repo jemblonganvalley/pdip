@@ -90,7 +90,7 @@ const MultimediaPage = () => {
 
 
             <div className="videoBaruPage">
-                <MainDivider text="Video Terbaru" />
+                <MainDivider text="Video Terbaru"/>
                 <div className="cardVideoBaru">
                     <Cards imageCard={megawati1}
                         textSmall="Admin PDI Perjuangan | 1 Januari 2019"

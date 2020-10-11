@@ -35,9 +35,9 @@ $smallPhoneDua : 400px;
     }
 
     // Container1
-    .container1-berita-daerah{
+    .container1-berita-daerah-con1{
         display: flex;
-        height: 20vh;
+        height: 10vh;
         width: 100%;
         justify-content: center;
         align-items: center;
@@ -51,12 +51,12 @@ $smallPhoneDua : 400px;
     // END Container1
 
     // Container2
-    .container2-berita-daerah{
+    .container2-berita-daerah-con2{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         height: auto;
         width: 100%;
-        padding: 0 20%;
+        padding: 40px 20% 0 20%;
         margin: 0px 0 0 0;
         
         @include smallPhone(){
