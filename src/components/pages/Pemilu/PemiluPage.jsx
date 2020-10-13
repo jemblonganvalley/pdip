@@ -8,8 +8,8 @@ import CarouselPemilu2 from "../../carouselPemilu2/CarouselPemilu2";
 import Carousel3PemiluPage from "../../carousel3PemiluPage/Carousel3PemiluPage";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import MainButton from "../../buttons/MainButton";
-import pemilu25 from "../../../img/pemilu25.jpg";
-import pemilu26 from "../../../img/pemilu26.jpg";
+import IconHartaSatu from '../../../img/lh.png'
+import IconHartaDua from '../../../img/income.png'
 
 // Create Component
 const PemiluPage = () => {
@@ -101,8 +101,8 @@ const PemiluPage = () => {
             {/* Column2 */}
             <div className="col2-container-1-pemiluPage">
               {/* Row1 */}
-              <div className="row1-col2-pemiluPage">
-                <img src={pemilu25} className="col1-row1-pemiluPage"></img>
+              <div className="row1-col2-pemiluPage pemilihan">
+                <img src={IconHartaSatu} width="45" className="col1-row1-pemiluPage"></img>
                 <div className="col2-row1-pemiluPage">
                   <p className="txt-title">PEMILIHAN KEPALA DAERAH SERRENTAK</p>
                   <p className="txt-desk">
@@ -113,8 +113,8 @@ const PemiluPage = () => {
               {/* END Row1 */}
 
               {/* Row2 */}
-              <div className="row2-col2-pemiluPage">
-                <img src={pemilu26} className="col1-row2-pemiluPage"></img>
+              <div className="row2-col2-pemiluPage pemilihan">
+                <img src={IconHartaDua} width="45" className="col1-row2-pemiluPage"></img>
                 <div className="col2-row2-pemiluPage">
                   <p className="txt-title">
                     PEMILIHAN CALON LEGISLATIF PDI PERJUANGAN

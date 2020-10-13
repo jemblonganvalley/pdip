@@ -16,7 +16,7 @@ $smallPhoneDua : 400px;
     flex-direction: column;
     flex-wrap: wrap;
     height: 300px;
-    width: 18vw;
+    width: calc(90%/3);
     background-size: cover;
     justify-content: center;
     align-items: center;

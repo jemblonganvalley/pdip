@@ -26,7 +26,7 @@ $smallPhoneDua : 400px;
         background: #ffffff;
         transition: .5s;
         // margin: 40px auto;
-        margin-top: 40px;
+        // margin-top: 0px;
         display: flex;
         flex-direction: column;
         @include smallPhone() {

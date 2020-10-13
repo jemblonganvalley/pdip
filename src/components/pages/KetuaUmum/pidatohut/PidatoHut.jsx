@@ -133,7 +133,7 @@ const PidatoHut = () => {
 
                 {/* Container1 */}
                 <div className="container1-pidato-hut">
-                    <MainDivider text="pidato hut" />
+                    <MainDivider text="pidato hut" mrgn="0 0 40px 0"/>
                 </div>
                 {/* END Container1 */}
 

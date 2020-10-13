@@ -186,7 +186,8 @@ const BeritaPage = () => {
                                     textSmall={e.author}
                                     TextH5={e.title}
                                     dateTime={e.created_at}
-                                    borderRadius="10px" 
+                                    borderRadius="10px"
+                                    marginTop="20px"
                                     page='page'
                                     />
                                 )
@@ -199,7 +200,7 @@ const BeritaPage = () => {
                     <div className="col4-container-1-beritaPage">
                         <MainDivider text="Berita Foto"
                             garisMerah="7rem"
-                            m="1rem 0 0 0" />
+                            mrgn="40px 0" />
                     </div>
                     {/* END Column4 */}
 
@@ -236,7 +237,7 @@ const BeritaPage = () => {
                     {/* Column1 */}
                         <MainDivider text="Berita Daerah"
                             garisMerah="7rem"
-                            m="1rem 0 0 0" />
+                            mrgn="40px 0 20px 0"/>
                     {/* END Column1 */}
 
                     {/* Column2 */}
@@ -249,7 +250,8 @@ const BeritaPage = () => {
                                     textSmall={e.author}
                                     TextH5={e.title}
                                     dateTime={e.created_at}
-                                    borderRadius="10px" />
+                                    borderRadius="10px"
+                                    marginTop="20px" />
                                 )
                             })}
                     </div>
@@ -258,11 +260,11 @@ const BeritaPage = () => {
                     {/* Column3 */}
                         <MainDivider text="Kegiatan Partai"
                             garisMerah="7rem"
-                            m="1rem 0 0 0" />
+                            mrgn="40px 0 20px 0" />
                     {/* END Column3 */}
 
                     {/* Column4 */}
-                   <div className="cardContainer">
+                   <div className="cardContainer" id="cardContainer">
                           {beritaPartai.map((e,i)=>{
                                 return (
                                     <Cards 
@@ -271,7 +273,8 @@ const BeritaPage = () => {
                                     textSmall={e.author}
                                     TextH5={e.title}
                                     dateTime={e.created_at}
-                                    borderRadius="10px" />
+                                    borderRadius="10px"
+                                    marginTop="20px" />
                                 )
                             })}
                     </div>

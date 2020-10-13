@@ -100,6 +100,7 @@ const MultimediaPage = () => {
               to2="/videodokumen"
               to3="/videoteaser"
               to4="/wawancara"
+              paddingBottom="20px"
             />
           </div>
 
@@ -114,9 +115,8 @@ const MultimediaPage = () => {
             </div>
           </div>
 
-        <MainDivider text="Video Terbaru" />
-
           <div className="cardMediaDua">
+            <MainDivider text="Video Terbaru" mrgn="40px 0 40px 0"/>
 
             <Cards
               imageCard={perempuan}

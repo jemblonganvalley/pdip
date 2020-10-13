@@ -15,11 +15,13 @@ const StrukturPpdi = () => {
                             page3="Struktur PPDI PDI Perjuangan" />
         </div>
 
-        <div className="dividerPPDI">
-            <MainDivider text="Struktur PPDI" />
+        <div className="dividerPPDI" style={{
+            padding: '0 20% 0 20%'
+        }}>
+            <MainDivider text="Struktur PPDI" mrgn="0 0 40px 0"/>
         </div>
 
-        <div className="cardPPDI">
+        <div className="card-PPDI">
             <div className="listPPDI">
                 <PpdiPagination />
             </div>

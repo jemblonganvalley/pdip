@@ -20,7 +20,7 @@ $smallPhoneDua : 400px;
     .headers {
         background: url(../../../img/pemilu8.jpg);
         background-size: cover;
-        height: 25vh;
+        height: 15vh;
         background-position: center;
 
         @include smallPhone(){
@@ -98,12 +98,12 @@ $smallPhoneDua : 400px;
         // Column4
         .col4-container-1-beritaPage{
             display: flex;
-            height: 20vh;
+            height: auto;
             width: 100%;
             background: #f3f3f3;
             align-items: center;
             justify-content: center;
-            padding: 20px 0 0 0;
+            padding: 0px 0 0 0;
             overflow: hidden;
 
             @include smallPhone(){
@@ -282,13 +282,13 @@ $smallPhoneDua : 400px;
     .container-2-beritaPage{
         display: flex;
         flex-direction: column;
-        height: 55vh;
+        height: 40vh;
         width: 100%;
         background-image: url(../../../img/ketuaumum7.jpg);
         background-attachment: fixed;
         background-position: center;
-        background-size: cover;
-        margin: 50px 0 0px 0;
+        background-size: auto;
+        margin: 20px 0 0px 0;
         overflow: hidden;
 
         @include smallPhone(){
@@ -339,7 +339,7 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         height: auto;
         width: 100%;
-        padding: 0 20% 50px 20%;
+        padding: 0 20% 0px 20%;
 
         @include smallPhone(){
             padding: 0 0px;
@@ -442,4 +442,8 @@ $smallPhoneDua : 400px;
     flex-wrap: wrap;
     // margin-top: 15px;
 
+}
+
+#cardContainer{
+    padding-bottom: 40px;
 }

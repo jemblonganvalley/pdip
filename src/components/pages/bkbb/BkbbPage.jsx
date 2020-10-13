@@ -147,7 +147,8 @@ const BkbbPage = () => {
           </section>
 
           <section className="wrapper3">
-            <MainDivider text="Materi Pokok Pendukung" garisMerah="8rem" />
+            <MainDivider text="Materi Pokok Pendukung" garisMerah="8rem"
+            mrgn="40px 0" />
           </section>
 
           <div className="wrapperCard">
@@ -170,7 +171,7 @@ const BkbbPage = () => {
           <div className="btnLihatSemua">
             <MainButton
               name="lihat semua"
-              margin="1rem 0"
+              margin="1rem 0 0 0"
               pages="/materipokok"
             />
           </div>
@@ -178,6 +179,9 @@ const BkbbPage = () => {
             className="bannerBkbb"
             style={{
               background: `url(https://atur.biar.pw/public/${configHome[4].value.image})`,
+              backgroundAttachment: 'fixed',
+              backgroundSize: 'auto',
+              backgroundPosition: 'center',
             }}
           >
             <i className="fas fa-quote-right"></i>
@@ -213,7 +217,7 @@ const BkbbPage = () => {
           <div className="btnLihatSemua">
             <MainButton
               name="lihat semua"
-              margin="1rem 0"
+              margin="1rem 0 0 0"
               pages="/wejanganbungkarno"
             />
           </div>

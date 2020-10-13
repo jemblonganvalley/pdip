@@ -133,7 +133,7 @@ const BeritaFoto = () => {
 
                 {/* Container1 */}
                 <div className="container1-berita-foto">
-                    <MainDivider text="Berita Foto" />
+                    <MainDivider text="Berita Foto" mrgn="0 0 40px 0"/>
                 </div>
                 {/* END Container1 */}
 

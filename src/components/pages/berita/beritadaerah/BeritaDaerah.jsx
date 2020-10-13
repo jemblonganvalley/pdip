@@ -19,7 +19,7 @@ const BeritaDaerah = () => {
             txtJdlMateriPk: 'berita daerah',
             txtParagrapMateriPk: '',
             borderTopLeftRadius: '10px',
-            borderTopRightRadius: '10px'
+            borderTopRightRadius: '10px',
         },
         {
             pageMateriPk: '',
@@ -133,7 +133,7 @@ const BeritaDaerah = () => {
 
                 {/* Container1 */}
                 <div className="container1-berita-daerah-con1">
-                    <MainDivider text="Berita Daerah" />
+                    <MainDivider text="Berita Daerah" mrgn="0 0 40px 0"/>
                 </div>
                 {/* END Container1 */}
 

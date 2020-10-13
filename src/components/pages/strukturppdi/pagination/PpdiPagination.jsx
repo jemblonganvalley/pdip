@@ -98,7 +98,8 @@ const PpdiPagination = () => {
     <>
     <div className="wrapperSiaran" style={{
         display : 'flex',
-        justifyContent : 'center',
+        justifyContent : 'space-between',
+        alignItems: 'flex-start',
         flexWrap : 'wrap'
     }}>
          <CardInfo info={currentPosts} />

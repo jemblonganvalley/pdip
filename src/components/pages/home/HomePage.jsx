@@ -182,6 +182,7 @@ const HomePage = () => {
         className="homepage"
         style={{
           overflowX: "hidden",
+          paddingBottom: '40px'
         }}
       >
         {configHome.length > 0 && (
@@ -209,7 +210,7 @@ const HomePage = () => {
 
           {/* SECTION VIDEO  */}
           <div className="videoPage">
-            <MainDivider text="Video" />
+            <MainDivider text="Video" mrgn="40px 0"/>
             {configHome.length > 0 && (
               <div
                 className="paragrapVideo"
@@ -256,6 +257,7 @@ const HomePage = () => {
                       textSmall={e.description}
                       TextH5={e.title}
                       borderRadius="10px"
+                      marginTop="20px"
                       key={i}
                     />
                   );
@@ -270,7 +272,7 @@ const HomePage = () => {
           </div>
 
           <div className="beritaPage">
-            <MainDivider text="berita" />
+            <MainDivider text="berita" mrgn="40px 0"/>
 
             {configHome.length > 0 && (
               <div
@@ -307,8 +309,14 @@ const HomePage = () => {
         </div>
 
         <span className="btnSize">
-          <MainButton name="lihat semua" margin="1rem 0" pages="/berita" />
+          <MainButton name="lihat semua" margin="1rem 0 0 0" pages="/berita" />
         </span>
+            
+        <div className="divider-laguPerjuangan" style={{
+          padding: '0 20% 0 20%'
+        }}>
+          <MainDivider text="Lagu Perjuangan" mrgn="0 0 40px 0"/>
+        </div>
 
         <MusicPdi />
         <MusicMobile />
@@ -321,7 +329,7 @@ const HomePage = () => {
             alignItems: "center",
           }}
         >
-          <MainDivider text="Foto Gallery " />
+          <MainDivider text="Foto Gallery" mrgn="40px 0"/>
         </div>
         {gallery.length > 0 && (
           <CarouselDuelBerita current_page={2} data={gallery} />

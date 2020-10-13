@@ -221,7 +221,7 @@ const PartaiPage = () => {
 
               {/* PENGURUS */}
               <div className="pengurusPage">
-                <MainDivider text="pengurus" />
+                <MainDivider text="pengurus" mrgn="40px 0" />
                 <div className="paragrapPengurus">
                   <span
                     dangerouslySetInnerHTML={{ __html: config[5].value }}

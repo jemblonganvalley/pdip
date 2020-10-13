@@ -9,8 +9,8 @@ const CardWejangan = ({ cardWejanganBkItem }) => {
             display: 'flex',
             flexWrap: 'wrap',
             flexDirection: 'row',
-            justifyContent: 'center',
-            alignItems: 'center'
+            justifyContent: 'space-between',
+            alignItems: 'flex-start'
         }}>
             {cardWejanganBkItem.map((e) => {
                 return (

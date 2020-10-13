@@ -15,8 +15,10 @@ const Prosedur = () => {
                             page3="Prosedur Pelayanan" />
         </div>
 
-        <div className="dividerProsedur">
-            <MainDivider text="Prosedur Pelayanan" />
+        <div className="dividerProsedur" style={{
+            padding: '0 20% 0 20%'
+        }}>
+            <MainDivider text="Prosedur Pelayanan" mrgn="0 0 40px 0"/>
         </div>
 
         <div className="cardProsedur">

@@ -8,8 +8,8 @@ const CardMateriPokok = ({ cardMateriPokokItem }) => {
             display: 'flex',
             flexWrap: 'wrap',
             flexDirection: 'row',
-            justifyContent: 'center',
-            alignItems: 'center',
+            justifyContent: 'space-between',
+            alignItems: 'flex-start',
         }}>
             {cardMateriPokokItem.map((e) => {
                 return (

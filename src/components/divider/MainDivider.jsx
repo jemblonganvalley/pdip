@@ -1,14 +1,14 @@
 import React from 'react'
 import './MainDivider.scss'
 
-const MainDivider = ({ text, garisMerah }) => {
+const MainDivider = ({ text, garisMerah, mrgn }) => {
 
     let lenText = text
     let pt = 10
 
     return (
         <div className="col3-container-3" style={{
-            margin : '40px 0',
+            margin : mrgn
         }}>
             <div className="box-jdl-col3">
                 <p className="txt-jdl-col3">

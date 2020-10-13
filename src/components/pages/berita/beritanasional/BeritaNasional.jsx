@@ -123,7 +123,7 @@ const BeritaNasional = () => {
 
     return (
         <>
-            <div className="wrapper-berita-nasional">
+            <div className="wrapper-beritaNasional">
                 <div className="linked-berita-nasional">
                     <BreadCrumbs link1="Home"
                         to1="/"
@@ -133,7 +133,7 @@ const BeritaNasional = () => {
 
                 {/* Container1 */}
                 <div className="container1-berita-nasional-con1">
-                    <MainDivider text="Berita Nasional" />
+                    <MainDivider text="Berita Nasional" mrgn="0 0 40px 0"/>
                 </div>
                 {/* END Container1 */}
 

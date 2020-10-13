@@ -133,7 +133,7 @@ const PidatoRakornas = () => {
 
                 {/* Container1 */}
                 <div className="container1-pidato-rakornas">
-                    <MainDivider text="pidato rakornas" />
+                    <MainDivider text="pidato rakornas" mrgn="0 0 40px 0"/>
                 </div>
                 {/* END Container1 */}
 

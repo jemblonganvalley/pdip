@@ -115,7 +115,8 @@ const InformasiPage = () => {
             {/* START PROFIL */}
             <div className="profilContainer">
                 <MainDivider text="Profil"
-                    garisMerah="0rem" />
+                    garisMerah="0rem"
+                    mrgn="0 0 40px 0" />
 
                 <div className="paragrapProfil">
                     <div className="paragrapKiri">
@@ -152,13 +153,16 @@ const InformasiPage = () => {
                     to1="/strukturppdi"
                     to2="/visimisi"
                     to3="/prosedur"
-                    to4="/regulasi" />
+                    to4="/regulasi"
+                    paddingBottom="20px" />
 
                 
 
                 {/* CARD LAPORAN */}
                 <div className="containerLaporan">
-                    <div className="cardLaporan cardLaporanSatu">
+                    <div className="cardLaporan cardLaporanSatu" style={{
+                        marginRight: '20px'
+                    }}>
                         <img src={IconHartaSatu} alt="" width="45" className="imageHarta" />
                         <div className="textHarta">
                             <h6 className="hartaKekayaan h5Harta">Laporan harta kekayaan<br />pejabat negara (LHKPN)</h6>
@@ -190,6 +194,7 @@ const InformasiPage = () => {
             <div className="tataCaraContainer">
                 <MainDivider text="tata Cara"
                     garisMerah="4rem"
+                    mrgn="40px 0"
                 />
 
             </div>
@@ -201,11 +206,13 @@ const InformasiPage = () => {
 
             {/* Container dua */}
             <div className="infoDua" style={{
-                margin : '40px 0',
+                margin : '20px 0 40px 0',
             }}>
 
                 {/* kolom formulir */}
-                <div className="kolomFormulir kolomFormulirSatu">
+                <div className="kolomFormulir kolomFormulirSatu" style={{
+                    marginRight: '20px'
+                }}>
                     <img src={ConsentWhite} alt="" width="50" />
                     <h4 className="textFormulir">Formulir Permohonan<br />Informasi Publik</h4>
                 </div>

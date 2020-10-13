@@ -135,7 +135,7 @@ const WejanganBungKarno = () => {
 
             {/* Container1 */}
             <div className="container1-wejanganThumbnail">
-                <MainDivider text="WEJANGAN BUNG KARNO" />
+                <MainDivider text="WEJANGAN BUNG KARNO" mrgn="0 0 40px 0"/>
             </div>
             {/* END Container1 */}
 
@@ -144,8 +144,6 @@ const WejanganBungKarno = () => {
                 {/* Column Card Wejangan Bungkarno */}
                 <div className="col-card-wejanganThumbnail" style={{
                     display: 'flex',
-                    justifyContent: 'center',
-                    flexWrap: 'wrap',
                 }}>
                     <CardWejangan cardWejanganBkItem={currentPosts} />
                 </div>

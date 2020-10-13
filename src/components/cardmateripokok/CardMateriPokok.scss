@@ -17,7 +17,7 @@ $smallPhoneDua : 400px;
     display: flex;
     flex-direction: column;
     height: 300px;
-    width: 18vw;
+    width: calc(90%/3);
     background: #fff;
     border-radius: 10px;
     transition: .5s;

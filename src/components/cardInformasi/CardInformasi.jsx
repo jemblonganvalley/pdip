@@ -2,9 +2,11 @@ import React from 'react'
 import './CardInformasi.scss'
 import {Link} from 'react-router-dom'
 
-const CardInformasi = ({image, image2, image3, image4, text, text2, text3, text4, to1, to2, to3, to4, width1, width2, width3, width4})=> {
+const CardInformasi = ({image, image2, image3, image4, text, text2, text3, text4, to1, to2, to3, to4, width1, width2, width3, width4, paddingBottom})=> {
     return (
-        <div className="cardMedia">
+        <div className="cardMedia" style={{
+            paddingBottom: paddingBottom
+        }}>
             <Link to={to1} className="siaranLangsung mediaCard">
                 <img src={image} alt="" width={width1} className="imgCards" />
                 <small className="smallCard">{text}</small>

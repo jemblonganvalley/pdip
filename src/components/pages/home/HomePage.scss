@@ -29,14 +29,14 @@ $smallPhoneDua : 400px;
 .homePageTwo {
     width: 100vw;
     // margin-top: 40px;
-    padding: 20px 20%;
+    padding: 20px 20% 0 20%;
     @include smallPhone() {
         padding: 0;
         overflow-x: hidden;
     }
 
         .customRow {
-            height: 20vh;
+            height: 15vh;
             background-color: #2d3436;
             width: 100%;
             display: flex;
@@ -105,7 +105,7 @@ $smallPhoneDua : 400px;
                     width: 100%;
                     height: 15vh;
                     padding: 2rem;
-                    border-right: 1px solid white;
+                    border-right: 20px solid #f3f3f3;
                     @include smallPhone() {
                         // flex-direction: column;
                         padding: 1rem;
@@ -130,10 +130,9 @@ $smallPhoneDua : 400px;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            margin-top: 20px;
+            margin-top: 0px;
             width: 100%;
             text-align: center;
-            // border: 1px solid blue;
 
             @include smallPhone() {
                 margin: 0;
@@ -143,6 +142,7 @@ $smallPhoneDua : 400px;
             p {
                 font-size: 14pt;
                 letter-spacing: 1px;
+                margin-bottom: 0;
 
                 @include smallPhone() {
                     font-size: 10pt;
@@ -268,7 +268,7 @@ $smallPhoneDua : 400px;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            margin-top: 20px;
+            // margin-top: 20px;
             width: 100%;
             text-align: center;
             // border: 1px solid blue;
@@ -292,13 +292,13 @@ $smallPhoneDua : 400px;
     .cardContainer {
     width: 100%;
     height: auto;
-    min-height: 50vh;
+    min-height: 0vh;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 15px;
+    margin-top: 0px;
     
         @include smallPhone() {
             justify-content: space-between;
@@ -312,21 +312,21 @@ $smallPhoneDua : 400px;
 
 .beritaTerbaru {
     width: 100%;
-    height: 20vh;
-    padding: 20px 20% 0 20%;
+    height: auto;
+    padding: 0px 20% 0 20%;
 }
 
 .cardContent {
     width: 100%;
     height: auto;
-    min-height: 50vh;
+    min-height: 0vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 10px;
-    padding: 10px 20% 0px 20%;
+    // margin-top: 10px;
+    padding: 20px 20% 0px 20%;
 
     
     @include smallPhone() {

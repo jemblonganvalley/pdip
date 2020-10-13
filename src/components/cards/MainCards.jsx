@@ -21,6 +21,7 @@ const Cards = ({
   dateTime,
   textCategoryChild,
   id,
+  marginTop,
 }) => {
   let dt = toString(dateTime);
   let dtt = dt.split(" ");
@@ -40,6 +41,7 @@ const Cards = ({
         className="col col-lg-3 cardCustom"
         style={{
           borderRadius: borderRadius,
+          marginTop: marginTop
         }}
         to={`${page}/${id}`}
       >

@@ -134,7 +134,7 @@ const MateriPokok = () => {
 
             {/* Container1 */}
             <div className="container1-materiThumbnail">
-                <MainDivider text="MATERI POKOK PENDUKUNG" />
+                <MainDivider text="MATERI POKOK PENDUKUNG" mrgn="0 0 40px 0"/>
             </div>
             {/* END Container1 */}
 

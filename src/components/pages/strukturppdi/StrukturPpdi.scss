@@ -15,7 +15,7 @@ $smallPhoneDua : 400px;
 
 .wrapperPPDI {
     width: 100%;
-    padding: $paddingSmall;
+    padding: 10px 0 40px 0;
     @include smallPhone() {
         padding: $paddingMobile;
     }
@@ -26,6 +26,7 @@ $smallPhoneDua : 400px;
         flex-direction: row;
         width: 40%;
         margin-top: 20px;
+        padding: 0 10% 0 10%;
         @include smallPhone() {
             // border: 1px solid crimson;
             width: 100%;
@@ -33,7 +34,8 @@ $smallPhoneDua : 400px;
         }
     }
 
-    .cardPPDI {
+    .card-PPDI {
+        padding: 0 20% 0 20%;
         max-width: 100%;
 
         .listPPDI {

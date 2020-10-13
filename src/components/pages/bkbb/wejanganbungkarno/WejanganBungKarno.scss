@@ -62,10 +62,10 @@ $smallPhoneDua : 400px;
 // Container1
 .container1-wejanganThumbnail{
     display: flex;
-    height: 10vh;
+    height: auto;
     width: 100%;
     margin: 0px 0 0 0;
-    padding: 20px 20% 0 20%;
+    padding: 0px 20% 0 20%;
     justify-content: center;
     align-items: center;
 
@@ -82,7 +82,7 @@ $smallPhoneDua : 400px;
     flex-direction: column;
     height: auto;
     width: 100%;
-    margin: 40px 0 20px 0;
+    margin: 0px 0 20px 0;
     padding: 0 20%;
 
     @include smallPhone(){
@@ -97,9 +97,9 @@ $smallPhoneDua : 400px;
         flex-wrap: wrap;
         height: auto;
         width: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 0% 20px 0;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px 0% 0px 0;
 
         @include smallPhone(){
             position: relative;
@@ -111,10 +111,11 @@ $smallPhoneDua : 400px;
     // Column Pagination
     .col-pagination-wejanganThumbnail{
         display: flex;
-        height: 10vh;
+        height: auto;
         width: 100%;
         justify-content: center;
         align-items: center;
+        padding: 20px 0 40px 0;
     }
     // END Column Pagination
 }

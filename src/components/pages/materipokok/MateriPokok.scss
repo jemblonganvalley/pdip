@@ -44,9 +44,9 @@ $smallPhoneDua : 400px;
 // Container1
 .container1-materiThumbnail{
     display: flex;
-    height: 10vh;
+    height: auto;
     width: 100%;
-    padding: 20px 20% 0 20%;
+    padding: 0px 20% 0 20%;
     justify-content: center;
     align-items: center;
 
@@ -64,7 +64,7 @@ $smallPhoneDua : 400px;
     flex-direction: column;
     height: auto;
     width: 100%;
-    margin: 40px 0 20px 0;
+    margin: 0px 0 0px 0;
     padding: 0 20%;
 
     @include smallPhone(){
@@ -78,7 +78,7 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         height: auto;
         width: 100%;
-        margin: 0px 0 20px 0;
+        margin: 0px 0 0px 0;
         @include smallPhone(){
             margin: 0 0 20px 0;
         }
@@ -88,10 +88,11 @@ $smallPhoneDua : 400px;
     // Column Pagination
     .col-pagination-materi-pokok{
         display: flex;
-        height: 10vh;
+        height: auto;
         width: 100%;
         justify-content: center;
         align-items: center;
+        padding: 20px 0 40px 0;
     }
     // END Column Pagination
 }

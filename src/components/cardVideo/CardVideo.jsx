@@ -2,7 +2,7 @@ import React from 'react'
 import './MainCards.scss'
 import { Link } from 'react-router-dom'
 
-const CardVideo = ({ page, margin, imageCard, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight, TextH6, paragrapSize, width, dateTime, textCategoryChild }) => {
+const CardVideo = ({ page, margin, imageCard, textSmall, TextH5, borderRadius, paragrap, icons, classIcon, href, h5Font, h5Weight, TextH6, paragrapSize, width, dateTime, textCategoryChild, marginTop }) => {
 
     let dt = toString(dateTime)
     let dtt = dt.split(" ")
@@ -20,6 +20,7 @@ const CardVideo = ({ page, margin, imageCard, textSmall, TextH5, borderRadius, p
 
         <div className="col col-lg-3 cardCustom" style={{
             borderRadius: borderRadius,
+            marginTop : marginTop
         }}>
             <Link to={page} className="imageCard" style={{
                 backgroundImage: `url(https://www.pdiperjuangan.id/cms/${imageCard})`,

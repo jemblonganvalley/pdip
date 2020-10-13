@@ -133,7 +133,7 @@ const KegiatanPartai = () => {
 
                 {/* Container1 */}
                 <div className="container1-kegiatan-partai">
-                    <MainDivider text="Kegiatan Partai" />
+                    <MainDivider text="Kegiatan Partai" mrgn="0 0 40px 0"/>
                 </div>
                 {/* END Container1 */}
 

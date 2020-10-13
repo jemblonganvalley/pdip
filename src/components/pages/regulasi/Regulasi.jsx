@@ -15,8 +15,10 @@ const Regulasi = () => {
                             page3="Regulasi Pelayanan" />
         </div>
 
-        <div className="dividerRegulasi">
-            <MainDivider text="Regulasi Pelayanan" />
+        <div className="dividerRegulasi" style={{
+            padding: '0 20% 0 20%'
+        }}>
+            <MainDivider text="Regulasi Pelayanan" mrgn="0 0 40px 0"/>
         </div>
 
         <div className="cardRegulasi">

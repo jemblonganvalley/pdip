@@ -133,7 +133,7 @@ const PidatoRakernas = () => {
 
                 {/* Container1 */}
                 <div className="container1-pr">
-                    <MainDivider text="pidato rakernas" />
+                    <MainDivider text="pidato rakernas" mrgn="0 0 40px 0"/>
                 </div>
                 {/* END Container1 */}
 

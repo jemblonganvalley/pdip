@@ -16,12 +16,13 @@ $smallPhoneDua : 400px;
 
 .wrapperInformasi {
     width: 100%;
+    padding-bottom: 40px;
 
     // START HEADER
     .headInformasi {
         background: url(../../../img/mask.png);
         background-size: cover;
-        height: 25vh;
+        height: 15vh;
         background-position: center;
         display: flex;
         align-items: center;
@@ -68,7 +69,7 @@ $smallPhoneDua : 400px;
             flex-direction: row;
             width: 100%;
             margin-top: 15px;
-            padding: 10px 20%;
+            padding: 10px 10%;
             @include smallPhone() {
                 // border: 1px solid crimson;
                 width: 100%;
@@ -83,7 +84,7 @@ $smallPhoneDua : 400px;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding: 5px 20%;
+            padding: 0 20% 5px 20%;
             @include smallPhone() {
                 width: 100%;
                 padding: $paddingMobile;
@@ -94,7 +95,6 @@ $smallPhoneDua : 400px;
                 width: 100%;
                 margin-top: 0rem;
                 justify-content: center;
-                align-items: center;
                 // position: relative;
                 @include smallPhone() {
                     flex-direction: column;
@@ -120,7 +120,8 @@ $smallPhoneDua : 400px;
                     }
                     .textParagrap {
                         font-size: 10pt;
-                        width: 37vw;
+                        // width: 37vw;
+                        width: 100%;
                         padding: 0 4% 0 0;
                         @include smallPhone() {
                             width: auto;
@@ -137,6 +138,7 @@ $smallPhoneDua : 400px;
                 display: flex;
                 flex-direction: column;
                 // width: 100%;
+                height: 100%;
                 width: 50vw;
                 @include smallPhone() {
                     width: 100%;
@@ -193,7 +195,6 @@ $smallPhoneDua : 400px;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                // border: 1px solid blue;
                 // padding: 2rem;
                 @include smallPhone() {
                     padding: .5rem 0;
@@ -204,7 +205,7 @@ $smallPhoneDua : 400px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    height: 25vh;
+                    height: 15vh;
                     flex-direction: row;
                     // margin: 1rem 1rem;
                     background: #e50209;
@@ -250,7 +251,7 @@ $smallPhoneDua : 400px;
     // YOUTUBE PROFIL
     .ytProfil {
         margin-top: 2rem;
-        padding: 10px 20%;
+        padding: 10px 20% 0 20%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -290,7 +291,7 @@ $smallPhoneDua : 400px;
     // TATA CARA CONTAINER
         .tataCaraContainer {
             display: flex;
-            height: 20vh;
+            height: auto;
             justify-content: center;
             align-items: center;
             flex-direction: column;
@@ -413,7 +414,7 @@ $smallPhoneDua : 400px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 25vh;
+                height: 15vh;
                 @include smallPhone() {
                     width: 100%;
                     height: 20vh;
