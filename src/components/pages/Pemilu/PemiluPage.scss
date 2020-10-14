@@ -173,6 +173,8 @@ $secondary : #f3f3f3;
             }
 
             .pemilihan{
+                transition: .3s;
+                
                 &:hover {
                     background: #2f3542;
                 }

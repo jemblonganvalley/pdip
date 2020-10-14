@@ -12,11 +12,35 @@ $smallPhoneDua : 400px;
         @content;
     }
 }
+
+$deviceOne : 1000px;
+@mixin deviceOne {
+    @media (min-width : #{$deviceOne}) {
+        @content;
+    }
+}
+
+$deviceTwo : 1500px;
+@mixin deviceTwo {
+    @media (max-width : #{$deviceTwo}) {
+        @content;
+    }
+}
+
+$deviceThree : 1200px;
+@mixin deviceThree {
+    @media (max-width : #{$deviceThree}) {
+        @content;
+    }
+}
+
+
 .image1 {
     height: 90vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 
     @include smallPhone() {
         background-size: cover;
@@ -29,11 +53,10 @@ $smallPhoneDua : 400px;
 
     .text1 {
         height: 100%;
-
         color: #ffffff;
         // border: 1px solid green;
         background: url(../../img/bgTextMobilez-01.svg);
-        background-size: contain;
+        object-fit: cover;
         background-position: left;
         opacity: 0.8;
         background-repeat: no-repeat;
@@ -41,6 +64,20 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        left: 0;
+
+        @include deviceOne(){
+            width: 55%;
+        }
+
+        @include deviceTwo(){
+            width: 70%;
+        }
+
+        @include deviceThree(){
+            width: 80%;
+        }
 
         @include smallPhone() {
             background-size: cover;

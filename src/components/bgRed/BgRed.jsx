@@ -19,23 +19,30 @@ const BgRed = () => {
 
           <div className="holderFrame">
             <header className='holderFrame_header'>
-              <h3>facebook</h3>
+              <i className="icon-facebook" style={{
+                fontWeight: 'bold',
+                fontStyle: 'normal'
+              }} id="iconGroup">f</i>
+              <h5>facebook</h5>
             </header>
 
-           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPDIPerjuangan%2F&tabs=timeline&width=250&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width={250} height={300} style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder={0} allowTransparency="true" allow="encrypted-media" />
+           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPDIPerjuangan%2F&tabs=timeline&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" height={300} style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder={0} allowTransparency="true" allow="encrypted-media" style={{
+             width: '100%',
+           }}/>
 
 
           </div>
 
           <div className="holderFrame">
              <header className='holderFrame_header'>
-              <h3>twitter</h3>
+              <i class="fab fa-twitter" id="iconGroup"></i>
+              <h5>twitter</h5>
             </header>
            <TwitterTimelineEmbed 
             sourceType = 'profile'
             screenName = 'pdi_perjuangan'
             options={{
-              width : 250,
+              width : '100%',
               height : 300,
               margin : 0,
               padding : 0,
@@ -45,9 +52,12 @@ const BgRed = () => {
 
             <div className="holderFrame">
              <header className='holderFrame_header'>
-              <h3>instagram</h3>
+              <i class="fab fa-instagram" id="iconGroup"></i>
+              <h5>instagram</h5>
             </header>
-           <div class="elfsight-app-d9bdc03f-58ca-4000-b6ee-f3b1f267801f"></div>
+           <div class="elfsight-app-d9bdc03f-58ca-4000-b6ee-f3b1f267801f" style={{
+             height: 300
+           }}></div>
            </div>
 
       

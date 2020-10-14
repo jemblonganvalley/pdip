@@ -18,12 +18,12 @@ $smallPhoneDua : 400px;
     width: 100vw;
     height: 30vh;
     padding: 0 20%;
-    justify-content: center;
+    // justify-content: center;
     
     .holderFrame{
-        margin: 20px 0;
-        width: 270px;
-        min-width: 270px;
+        margin: 40px 20px;
+        width: 100%;
+        // min-width: 270px;
         height: auto;
         padding: 70px 10px 10px 10px;
         // margin: 0 10px 0 0px;
@@ -31,14 +31,27 @@ $smallPhoneDua : 400px;
         border-radius: 8px;
         position: relative;
 
+        #iconGroup{
+            display: flex;
+            font-size: 35px;
+            margin: 0 20px 0 0;
+            position: absolute;
+            left: 20px;
+        }
+
+        h5{
+            position: absolute;
+            right: 30px;
+        }
+
         .fbWidget{
             width: 100%;
             height: 100%;
             z-index: 200;
         }
         .holderFrame_header{
-            width: 270px;
-            min-width: 270px;
+            width: 100%;
+            // min-width: 270px;
             height: 50px;
             background-color: rgba(216, 0, 16, 0.500);
             
