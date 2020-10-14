@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './BgRed.scss'
 import {TwitterTimelineEmbed} from 'react-twitter-embed'
 import InstagramEmbed from 'react-instagram-embed';
 
 const BgRed = () => {
-
 
   return (
     <>
@@ -54,7 +53,7 @@ const BgRed = () => {
               <h5>instagram</h5>
             </header>
             {/* <InstagramEmbed
-              url='https://instagr.am/p/Zw9o4/'
+              url='https://www.instagram.com/p/CGUueFxg69i/?__a=1'
               hideCaption={false}
               containerTagName='div'
               screenName='pdi_perjuangan'
@@ -64,10 +63,17 @@ const BgRed = () => {
               onSuccess={() => {}}
               onAfterRender={() => {}}
               onFailure={() => {}}
+              style={{
+                height: 50,
+                border: '1px solid blue'
+              }}
             /> */}
-           <div class="elfsight-app-d9bdc03f-58ca-4000-b6ee-f3b1f267801f" style={{
+
+<iframe src="https://api.instagram.com/v1/users/pdiperjuangan/media/recent/?access_token=fb2e77d.47a0479900504cb3ab4a1f626d174d2d" height="300" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+
+           {/* <div class="elfsight-app-d9bdc03f-58ca-4000-b6ee-f3b1f267801f" style={{
              height: 300
-           }}></div>
+           }}></div> */}
            </div>
 
       
