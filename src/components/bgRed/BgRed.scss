@@ -1,5 +1,5 @@
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+$smallPhoneDua : 500px;
+$smallPhoneSatu : 400px;
 
 @mixin smallPhone {
     @media (max-width : #{$smallPhoneSatu}) {
@@ -23,7 +23,7 @@ $smallPhoneDua : 400px;
     @include smallPhoneDua(){
         flex-direction: column;
         height: auto;
-        padding: 20px 10px;
+        padding: 20px 20px;
     }
     
     .holderFrame{
@@ -41,24 +41,41 @@ $smallPhoneDua : 400px;
             margin: 10px 0;
         }
 
+        .widgetFb{
+            width: 100%;
+            justify-content: center;
+
+            @include smallPhoneDua(){
+                width: 100%;
+            }
+        }
+
         #iconGroup{
             display: flex;
             font-size: 35px;
             margin: 0 20px 0 0;
             position: absolute;
             left: 20px;
+
+            @include smallPhoneDua(){
+                font-size: 25px;
+            }
         }
 
         h5{
             position: absolute;
             right: 30px;
+
+            @include smallPhoneDua(){
+                font-size: 15px;
+            }
         }
 
-        .fbWidget{
-            width: 100%;
-            height: 100%;
-            z-index: 200;
-        }
+        // .fbWidget{
+        //     width: 100%;
+        //     height: 100%;
+        //     z-index: 200;
+        // }
         .holderFrame_header{
             width: 100%;
             // min-width: 270px;
