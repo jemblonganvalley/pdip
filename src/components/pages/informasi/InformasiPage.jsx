@@ -217,7 +217,7 @@ const InformasiPage = () => {
                     <h4 className="textFormulir">Formulir Permohonan<br />Informasi Publik</h4>
                 </div>
                 <div className="kolomFormulir kolomFormulirDua">
-                    <img src={Consentblack} alt="" width="50" />
+                    <img src={ConsentWhite} alt="" width="50" />
                     <h4 className="textFormulir">Formulir Keberatan<br />atas Pelayanan Informasi</h4>
                 </div>
                 {/* END */}
