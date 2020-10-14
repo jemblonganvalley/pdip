@@ -1,7 +1,7 @@
 import React from 'react'
 import './BgRed.scss'
 import {TwitterTimelineEmbed} from 'react-twitter-embed'
-
+import InstagramEmbed from 'react-instagram-embed';
 
 const BgRed = () => {
 
@@ -55,6 +55,18 @@ const BgRed = () => {
               <i class="fab fa-instagram" id="iconGroup"></i>
               <h5>instagram</h5>
             </header>
+            {/* <InstagramEmbed
+              url='https://instagr.am/p/Zw9o4/'
+              hideCaption={false}
+              containerTagName='div'
+              screenName='pdi_perjuangan'
+              protocol=''
+              injectScript
+              onLoading={() => {}}
+              onSuccess={() => {}}
+              onAfterRender={() => {}}
+              onFailure={() => {}}
+            /> */}
            <div class="elfsight-app-d9bdc03f-58ca-4000-b6ee-f3b1f267801f" style={{
              height: 300
            }}></div>
