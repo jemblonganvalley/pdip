@@ -38,7 +38,7 @@ const BgRed = () => {
               <i class="fab fa-twitter" id="iconGroup"></i>
               <h5>twitter</h5>
             </header>
-           <TwitterTimelineEmbed 
+           <TwitterTimelineEmbed className="twitter-timeline"
             sourceType = 'profile'
             screenName = 'pdi_perjuangan'
             options={{

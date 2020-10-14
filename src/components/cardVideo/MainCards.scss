@@ -21,7 +21,7 @@ $smallPhoneDua : 400px;
         height: auto;
         min-height: 100px;
         height: 300px;
-        width: calc(90%/3);
+        width: cal(100%/3);
         margin: 0 10px;
         background: #ffffff;
         transition: .5s;
@@ -29,15 +29,12 @@ $smallPhoneDua : 400px;
         // margin-top: 0px;
         display: flex;
         flex-direction: column;
-        @include smallPhone() {
+        @include smallPhoneDua() {
             flex-direction: row;
-            flex: auto;
+            // flex: auto;
             display: flex;
             height: auto;
-            margin: .5rem;
-        }
-        @include smallPhoneDua() {
-            margin: .2rem;
+            margin: .5rem 0 0 0;
         }
         
         &:hover {
@@ -65,7 +62,7 @@ $smallPhoneDua : 400px;
                 flex: 1;
             }
             @include smallPhoneDua() {
-
+                
             }
 
             

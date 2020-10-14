@@ -19,6 +19,12 @@ $smallPhoneDua : 400px;
     height: 30vh;
     padding: 0 20%;
     // justify-content: center;
+
+    @include smallPhoneDua(){
+        flex-direction: column;
+        height: auto;
+        padding: 20px 10px;
+    }
     
     .holderFrame{
         margin: 40px 20px;
@@ -30,6 +36,10 @@ $smallPhoneDua : 400px;
         background-color: rgba(0,0,0,0.300);
         border-radius: 8px;
         position: relative;
+
+        @include smallPhoneDua(){
+            margin: 10px 0;
+        }
 
         #iconGroup{
             display: flex;
@@ -65,6 +75,7 @@ $smallPhoneDua : 400px;
             padding: 10px;
             margin-bottom: 20px;
             justify-content: center;
+
             h3{
                 opacity: 1 !important;
             }

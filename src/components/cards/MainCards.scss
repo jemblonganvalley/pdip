@@ -16,6 +16,9 @@ $smallPhoneDua : 400px;
 @import "../../utilities/variable/variables.scss";
 
     
+    #cardCustom2{
+        margin: 0rem 0 .5rem 0;
+    }
 
     .cardCustom {
         height: auto;
@@ -29,15 +32,8 @@ $smallPhoneDua : 400px;
         margin-top: 40px;
         display: flex;
         flex-direction: column;
-        @include smallPhone() {
-            flex-direction: row;
-            flex: auto;
-            display: flex;
-            height: auto;
-            margin: .5rem;
-        }
         @include smallPhoneDua() {
-            margin: .2rem;
+            width: 100%;
         }
         
         &:hover {
@@ -94,6 +90,7 @@ $smallPhoneDua : 400px;
             height: auto;
             padding: 10px 20px;
             @include smallPhone() {
+                width: 30%;
                 flex: 1;
             }
             

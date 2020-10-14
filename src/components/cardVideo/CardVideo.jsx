@@ -21,7 +21,7 @@ const CardVideo = ({ page, margin, imageCard, textSmall, TextH5, borderRadius, p
         <div className="col col-lg-3 cardCustom" style={{
             borderRadius: borderRadius,
             marginTop : marginTop
-        }}>
+        }} id="cardCustom2">
             <Link to={page} className="imageCard" style={{
                 backgroundImage: `url(https://www.pdiperjuangan.id/cms/${imageCard})`,
                 textDecoration: 'none',

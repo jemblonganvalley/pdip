@@ -23,7 +23,7 @@ $smallPhoneDua : 400px;
 
     @include smallPhone() {
         display: flex;
-        padding: 40px 1.5%;
+        padding: 0px 1.5%;
         // border: 1px solid green;
         display: flex;
         flex-direction: column;

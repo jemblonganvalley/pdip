@@ -114,8 +114,8 @@ $smallPhoneDua : 400px;
 
                     position: relative;
 
-                    @include smallPhone() {
-                        height: 75vh;
+                    @include smallPhoneDua() {
+                        height: 50vh;
 
                     }
                     @include smallPhoneDua() {
@@ -128,8 +128,8 @@ $smallPhoneDua : 400px;
 
                     .bannerMobile {
                         
-                        @include smallPhone() {
-                            height: 50vh;
+                        @include smallPhoneDua() {
+                            height: 25vh;
                         }
                     }
 

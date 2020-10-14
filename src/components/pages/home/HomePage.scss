@@ -30,9 +30,10 @@ $smallPhoneDua : 400px;
     width: 100vw;
     // margin-top: 40px;
     padding: 20px 20% 0 20%;
-    @include smallPhone() {
+    @include smallPhoneDua() {
         padding: 0;
         overflow-x: hidden;
+        padding: 10px 0 0 0;
     }
 
         .customRow {
@@ -46,31 +47,29 @@ $smallPhoneDua : 400px;
             flex-direction: row;
             @include smallPhone() {
                 height: auto;
-                width: 100%;
+                width: auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
             }
-            
-        
             
             .custom {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
-                
+            
                 @include smallPhone() {
+                    width: 100%;
                     flex-direction: column;
                     text-align: center;
-                    padding: 10px 0;
+                    padding: 10px 0 0 0;
                     flex: 1;
                 }
 
                 img {
                     margin: 0 10px;
                     @include smallPhone() {
-                        // border: 1px solid blue;
                         width: 30px;
                         height: 30px;
                     }
@@ -107,10 +106,12 @@ $smallPhoneDua : 400px;
                     padding: 2rem;
                     border-right: 1px solid #f3f3f3;
                     @include smallPhone() {
+                        height: auto;
                         // flex-direction: column;
                         padding: 1rem;
-                        // border: none;
                         flex-direction: column;
+                        border: none;
+                        border-bottom: 5px solid #f3f3f3;
                     }
             }
             .calendar {
@@ -125,6 +126,19 @@ $smallPhoneDua : 400px;
         align-items: center;
         flex-direction: column;
 
+        .divider-video-home{
+            display: flex;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            margin: 40px 0;
+
+            @include smallPhoneDua(){
+                padding: 0 10px;
+                margin: 20px 0 40px 0;
+            }
+        }
+
         .paragrapVideo {
             display: flex;
             justify-content: center;
@@ -136,7 +150,7 @@ $smallPhoneDua : 400px;
 
             @include smallPhone() {
                 margin: 0;
-                padding: $paddingSmall;
+                padding: 0 10% 10px 10%;
             }
             
             p {
@@ -157,12 +171,13 @@ $smallPhoneDua : 400px;
             background-repeat: no-repeat;
             background-position-y: -150px;
             margin-top: 20px;
-            height: 40vh;
+            height: 50vh;
 
-            @include smallPhone() {
+            @include smallPhoneDua() {
                 background-size: cover;
                 background-position: center;
-                width: 95.5%;
+                width: 100%;
+                margin: 0;
             }
 
             .textYoutube {
@@ -173,8 +188,6 @@ $smallPhoneDua : 400px;
                 align-items: center;
                 // border: 1px solid blue;
                 background: rgba(0, 0, 0, 0.7);
-
-                
 
                 .wrapperText {
                     display: flex;
@@ -254,6 +267,15 @@ $smallPhoneDua : 400px;
         }
     }
     
+    .btn-lihatSemua-card{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 0 0;
+
+        @include smallPhoneDua(){
+            margin: 5px 0 0 0;
+        }
+    }
 
     .beritaPage {
         display: flex;
@@ -261,6 +283,13 @@ $smallPhoneDua : 400px;
         align-items: center;
         flex-direction: column;
 
+        .divider-berita{
+            display: flex;
+            height: auto;
+            width: 100%;
+            align-items: center;
+            padding: 0 10px;
+        }
         
         .paragrapBerita {
 
@@ -273,9 +302,9 @@ $smallPhoneDua : 400px;
             text-align: center;
             // border: 1px solid blue;
 
-            @include smallPhone() {
+            @include smallPhoneDua() {
                 margin: 0;
-                padding: $paddingSmall;
+                padding: 0px 10% 0 10%;
             }
             
             p {
@@ -298,22 +327,36 @@ $smallPhoneDua : 400px;
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 0px;
+    margin-top: 20px;
     
-        @include smallPhone() {
-            justify-content: space-between;
-            min-height: 40vh;
+        @include smallPhoneDua() {
+            flex-direction: column;
+            padding: 0px 5px 0 5px;
+            margin: 10px 0 0 0;
+            // justify-content: space-between;
+            // min-height: 40vh;
         }
         
     }
 }
 
+.divider-laguPerjuangan{
+    padding: 0 20% 0 20%;
+    margin: 40px 0 0 0;
 
+    @include smallPhoneDua(){
+        padding: 0 10px;
+    }
+}
 
 .beritaTerbaru {
     width: 100%;
     height: auto;
     padding: 0px 20% 0 20%;
+    
+    @include smallPhoneDua(){
+        padding: 0 10px;
+    }
 }
 
 .cardContent {
@@ -321,18 +364,17 @@ $smallPhoneDua : 400px;
     height: auto;
     min-height: 0vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     // margin-top: 10px;
     padding: 20px 20% 0px 20%;
 
-    
     @include smallPhone() {
-        justify-content: space-between;
-        // min-height:;
-        padding: 0;
+        flex-direction: column;
+        margin: 5px 0 0 0;
+        padding: 0px 5px 0 5px;
     }
 }
 
@@ -342,6 +384,10 @@ $smallPhoneDua : 400px;
     justify-content: center;
     align-items: center;
     margin: 0px 0 40px 0;
+
+    @include smallPhoneDua(){
+        margin: 0;
+    }
 }
 
 .widgetHome {

@@ -210,7 +210,10 @@ const HomePage = () => {
 
           {/* SECTION VIDEO  */}
           <div className="videoPage">
-            <MainDivider text="Video" mrgn="40px 0"/>
+            <div className="divider-video-home">
+            <MainDivider text="Video"/>
+            </div>
+
             {configHome.length > 0 && (
               <div
                 className="paragrapVideo"
@@ -257,22 +260,26 @@ const HomePage = () => {
                       textSmall={e.description}
                       TextH5={e.title}
                       borderRadius="10px"
-                      marginTop="20px"
+                      marginTop="0px"
                       key={i}
                     />
                   );
                 })}
             </div>
 
+            <div className="btn-lihatSemua-card">
             <MainButton
               name="lihat semua"
-              margin="20px 0 0 0"
+              margin="0px 0 0 0"
               pages="videomedia"
             />
+            </div>
           </div>
 
           <div className="beritaPage">
-            <MainDivider text="berita" mrgn="40px 0"/>
+            <div className="divider-berita">
+              <MainDivider text="berita" mrgn="40px 0"/>
+            </div>
 
             {configHome.length > 0 && (
               <div
@@ -312,9 +319,7 @@ const HomePage = () => {
           <MainButton name="lihat semua" margin="1rem 0 0 0" pages="/berita" />
         </span>
             
-        <div className="divider-laguPerjuangan" style={{
-          padding: '0 20% 0 20%'
-        }}>
+        <div className="divider-laguPerjuangan">
           <MainDivider text="Lagu Perjuangan" mrgn="0 0 40px 0"/>
         </div>
 
