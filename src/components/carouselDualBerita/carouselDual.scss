@@ -21,7 +21,7 @@ $smallPhoneDua : 400px;
     gap : 20px;
     padding: 0 21% 0 20%;
 
-    @include smallPhoneDua(){
+    @include smallPhone(){
         height: auto;
         flex-direction: column;
         padding: 0;
@@ -33,7 +33,7 @@ $smallPhoneDua : 400px;
         height: 40vh;
         // border: 1px solid blue;
 
-        @include smallPhoneDua(){
+        @include smallPhone(){
             height: 40vh;
             width: 100%;
             margin: 0 0 10px 0;
@@ -44,7 +44,7 @@ $smallPhoneDua : 400px;
         width: 70%;
         height: 40vh;
 
-        @include smallPhoneDua(){
+        @include smallPhone(){
             width: 100%;
         }
     }

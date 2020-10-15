@@ -51,10 +51,6 @@ $smallPhoneDua : 400px;
 
         @include smallPhone() {
             
-        }
-
-        @include smallPhoneDua() {
-            
             // border: 1px solid green;
             display: flex;
             justify-content: center;
@@ -73,7 +69,7 @@ $smallPhoneDua : 400px;
             height: 100%;
             background: $darkRed;
 
-            @include smallPhoneDua() {
+            @include smallPhone() {
                 height: auto;
             }
 
@@ -114,7 +110,7 @@ $smallPhoneDua : 400px;
 
                     position: relative;
 
-                    @include smallPhoneDua() {
+                    @include smallPhone() {
                         height: 50vh;
 
                     }
@@ -128,7 +124,7 @@ $smallPhoneDua : 400px;
 
                     .bannerMobile {
                         
-                        @include smallPhoneDua() {
+                        @include smallPhone() {
                             height: 25vh;
                         }
                     }
@@ -143,7 +139,7 @@ $smallPhoneDua : 400px;
                         }
                         .textCarousel {
     
-                            @include smallPhoneDua() {
+                            @include smallPhone() {
                                 margin: .8rem 0;
                             }
                         }
@@ -161,6 +157,10 @@ $smallPhoneDua : 400px;
                         h3 {
                             font-size: 15pt;
                             font-weight: 300;
+
+                            @include smallPhone(){
+                                padding: 0 5%;
+                            }
                         }
                     }
                 }

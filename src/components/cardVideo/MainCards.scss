@@ -29,7 +29,7 @@ $smallPhoneDua : 400px;
         // margin-top: 0px;
         display: flex;
         flex-direction: column;
-        @include smallPhoneDua() {
+        @include smallPhone() {
             flex-direction: row;
             // flex: auto;
             display: flex;

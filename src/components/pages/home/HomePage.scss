@@ -30,7 +30,7 @@ $smallPhoneDua : 400px;
     width: 100vw;
     // margin-top: 40px;
     padding: 20px 20% 0 20%;
-    @include smallPhoneDua() {
+    @include smallPhone() {
         padding: 0;
         overflow-x: hidden;
         padding: 10px 0 0 0;
@@ -133,7 +133,7 @@ $smallPhoneDua : 400px;
             width: 100%;
             margin: 40px 0;
 
-            @include smallPhoneDua(){
+            @include smallPhone(){
                 padding: 0 10px;
                 margin: 20px 0 40px 0;
             }
@@ -173,7 +173,7 @@ $smallPhoneDua : 400px;
             margin-top: 20px;
             height: 50vh;
 
-            @include smallPhoneDua() {
+            @include smallPhone() {
                 background-size: cover;
                 background-position: center;
                 width: 100%;
@@ -272,7 +272,7 @@ $smallPhoneDua : 400px;
         justify-content: center;
         margin: 20px 0 0 0;
 
-        @include smallPhoneDua(){
+        @include smallPhone(){
             margin: 5px 0 0 0;
         }
     }
@@ -302,7 +302,7 @@ $smallPhoneDua : 400px;
             text-align: center;
             // border: 1px solid blue;
 
-            @include smallPhoneDua() {
+            @include smallPhone() {
                 margin: 0;
                 padding: 0px 10% 0 10%;
             }
@@ -329,7 +329,7 @@ $smallPhoneDua : 400px;
     flex-wrap: wrap;
     margin-top: 20px;
     
-        @include smallPhoneDua() {
+        @include smallPhone() {
             flex-direction: column;
             padding: 0px 5px 0 5px;
             margin: 10px 0 0 0;
@@ -344,7 +344,7 @@ $smallPhoneDua : 400px;
     padding: 0 20% 0 20%;
     margin: 40px 0 0 0;
 
-    @include smallPhoneDua(){
+    @include smallPhone(){
         padding: 0 10px;
     }
 }
@@ -354,7 +354,7 @@ $smallPhoneDua : 400px;
     height: auto;
     padding: 0px 20% 0 20%;
     
-    @include smallPhoneDua(){
+    @include smallPhone(){
         padding: 0 10px;
     }
 }
@@ -385,7 +385,7 @@ $smallPhoneDua : 400px;
     align-items: center;
     margin: 0px 0 40px 0;
 
-    @include smallPhoneDua(){
+    @include smallPhone(){
         margin: 0;
     }
 }
