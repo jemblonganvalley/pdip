@@ -28,9 +28,6 @@ $smallPhoneDua : 400px;
         align-items: center;
         // width: 100%;
         @include smallPhone() {
-            height: 20vh;
-        }
-        @include smallPhoneDua() {
             height: 15vh;
         }
 
@@ -87,7 +84,18 @@ $smallPhoneDua : 400px;
             padding: 0 20% 5px 20%;
             @include smallPhone() {
                 width: 100%;
-                padding: $paddingMobile;
+                padding: 0;
+            }
+
+            .divider-profil{
+                display: flex;
+                height: auto;
+                width: 100%;
+                align-items: center;
+
+                @include smallPhone(){
+                    padding: 0 10px;
+                }
             }
             
             .paragrapProfil {
@@ -108,6 +116,7 @@ $smallPhoneDua : 400px;
                     @include smallPhone() {
                         justify-content: center;
                         align-items: center;
+                        padding: 0 10%;
                     }
                     .merdeka {
                         font-style: italic;
@@ -162,6 +171,7 @@ $smallPhoneDua : 400px;
                     color: #ffffff;
                     font-family: 'Roboto';
                     @include smallPhone() {
+                        height: 50vh;
                         position: inherit;
                         width: 100%;
                     }
@@ -180,7 +190,7 @@ $smallPhoneDua : 400px;
                     height: 1px;
                     width: 100%;
                     @include smallPhone() {
-                        margin: 1rem 0;
+                        margin: 1rem 0 0 0;
                     }
                 }
             //  END
@@ -197,9 +207,14 @@ $smallPhoneDua : 400px;
                 width: 100%;
                 // padding: 2rem;
                 @include smallPhone() {
-                    padding: .5rem 0;
+                    padding: 0 10px;
                     flex-direction: column;
                 }
+
+                .cardLaporanSatu{
+                    margin-right: 20px;
+                }
+
                 .cardLaporan {
                     width: 50%;
                     display: flex;
@@ -213,8 +228,10 @@ $smallPhoneDua : 400px;
                     transition: .3s;
 
                     @include smallPhone() {
+                        height: auto;
                         width: 100%;
-                        margin: .5rem 0;
+                        margin: .5rem 0 0 0;
+                        padding: 10px 0;
                         border-radius: 5px;
                     }
 
@@ -239,6 +256,10 @@ $smallPhoneDua : 400px;
 
                         .paragrapHarta {
                             font-size: 10pt;
+
+                            @include smallPhone(){
+                                font-size: 8pt;
+                            }
                         }
                     }
 
@@ -257,7 +278,7 @@ $smallPhoneDua : 400px;
         align-items: center;
         width: 100%;
         @include smallPhone() {
-            padding: $paddingMobile;
+            padding: 0 10px;
         }
 
         .ytIframe {
@@ -298,7 +319,7 @@ $smallPhoneDua : 400px;
             padding: 0 20%;
 
             @include smallPhone() {
-                padding: $paddingMobile;
+                padding: 0 10px;
             }
         }
         // END
@@ -403,9 +424,12 @@ $smallPhoneDua : 400px;
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: 20px 0 40px 0;
+
             @include smallPhone() {
                 flex-direction: column;
-                padding: $paddingMobile;
+                padding: 0 10px;
+                margin: 0 0 20px 0;
             }
 
             .kolomFormulir {
@@ -416,6 +440,11 @@ $smallPhoneDua : 400px;
                 align-items: center;
                 height: 15vh;
                 transition: .3s;
+
+                @include smallPhone(){
+                    margin: 0 0 .5rem 0;
+                    border-radius: 5px;
+                }
 
                 &:hover{
                     background: #2f3542;
@@ -448,6 +477,11 @@ $smallPhoneDua : 400px;
             .kolomFormulirSatu {
                 background: $colors;
                 color: #ffffff;
+                margin-right: 20px;
+
+                @include smallPhone(){
+                    margin-right: 0;
+                }
             }
             .kolomFormulirDua {
                 background: $colors;
@@ -455,6 +489,17 @@ $smallPhoneDua : 400px;
             }
         }
         // END
+
+        .carousel-informasiPage{
+            display: flex;
+            height: auto;
+            
+            @include smallPhone(){
+                margin: 0;
+                padding: 0;
+            }
+        }
+
         .widgetDesktop {
             display: flex;
             justify-content: space-between;

@@ -24,9 +24,6 @@ $smallPhoneDua : 400px;
         background-position: bottom;
 
         @include smallPhone() {
-            height: 20vh;
-        }
-        @include smallPhoneDua() {
             height: 15vh;
         }
 
@@ -85,7 +82,7 @@ $smallPhoneDua : 400px;
         height: auto;
 
         @include smallPhone() {
-            padding: $paddingMobile;
+            padding: 0 10px;
             height: auto;
         }
 
@@ -167,7 +164,7 @@ $smallPhoneDua : 400px;
         align-items: center;
         // padding: $padding;
         @include smallPhone() {
-            height: 30vh;
+            height: 40vh;
             background-attachment: inherit;
         }
 
@@ -178,6 +175,10 @@ $smallPhoneDua : 400px;
             color: #ffffff;
             text-align: center;
             flex-direction: column;
+
+            // @include smallPhone(){
+            //     border: 1px solid blue;
+            // }
             
             .panggungH1 {
                 margin-top: 2rem;

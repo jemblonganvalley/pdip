@@ -25,11 +25,6 @@ $secondary : #f3f3f3;
         background-position: center;
 
         @include smallPhone(){
-            height: 20vh;
-            background-attachment: inherit;
-        }
-
-        @include smallPhone(){
             height: 15vh;
             background-attachment: inherit;
         }
@@ -46,6 +41,12 @@ $secondary : #f3f3f3;
                 width: 30%;
                 height: 50%;
                 margin-left: 5rem;
+
+                @include smallPhone(){
+                    width: 100%;
+                    margin: 0;
+                    padding: 0 10%;
+                }
             }
         }
     }
@@ -83,7 +84,7 @@ $secondary : #f3f3f3;
         overflow: hidden;
 
         @include smallPhone(){
-            padding: 0 5px;
+            padding: 0 10px;
         }
 
         // Column1
@@ -191,7 +192,9 @@ $secondary : #f3f3f3;
                 overflow: hidden;
 
                 @include smallPhone(){
+                    height: auto;
                     width: 100%;
+                    padding: 5px 0;
                     border-radius: 5px;
                 }
 
@@ -204,8 +207,8 @@ $secondary : #f3f3f3;
                     margin: 0 30px 0 30px;
     
                     @include smallPhone(){
-                        height: 100px;
-                        width: 130px;
+                        // height: 100px;
+                        // width: 130px;
                         object-fit: cover;
                     }
                 }
@@ -264,8 +267,10 @@ $secondary : #f3f3f3;
                 overflow: hidden;
 
                 @include smallPhone(){
+                    height: auto;
                     width: 100%;
                     margin: 10px 0 0 0;
+                    padding: 5px 0;
                     border-radius: 5px;
                 }
 
@@ -278,8 +283,8 @@ $secondary : #f3f3f3;
                     margin: 0 30px 0 30px;
     
                     @include smallPhone(){
-                        height: 100px;
-                        width: 130px;
+                        // height: 100px;
+                        // width: 130px;
                         object-fit: cover;
                     }
                 }     
@@ -429,7 +434,7 @@ $secondary : #f3f3f3;
 
             @include smallPhone(){
                 width: 100%;
-                padding: 0 5px;
+                padding: 0 10px;
             }
         }
     }

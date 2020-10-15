@@ -24,8 +24,6 @@ $smallPhoneDua : 400px;
 }
 
 
-
-
 .homePageTwo {
     width: 100vw;
     // margin-top: 40px;
@@ -49,8 +47,8 @@ $smallPhoneDua : 400px;
                 height: auto;
                 width: auto;
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                // justify-content: center;
+                // align-items: center;
                 flex-direction: column;
             }
             
@@ -62,16 +60,18 @@ $smallPhoneDua : 400px;
                 @include smallPhone() {
                     width: 100%;
                     flex-direction: column;
-                    text-align: center;
-                    padding: 10px 0 0 0;
+                    padding: 0px 0 0 0;
                     flex: 1;
                 }
 
                 img {
                     margin: 0 10px;
                     @include smallPhone() {
-                        width: 30px;
-                        height: 30px;
+                        width: 65px;
+                        height: 65px;
+                        // margin: 0 20px 0 0;
+                        position: absolute;
+                        left: 30px;
                     }
                 
 
@@ -86,15 +86,20 @@ $smallPhoneDua : 400px;
                     letter-spacing: 1px;
 
                     @include smallPhone() {
-                        margin-top: 1rem;
-                        font-size: 6pt;
-                        width: 100%;
+                        // margin-top: 1rem;
+                        // // justify-content: center;
+                        // text-align: center;
+                        font-size: 9pt;
+                        // width: 100%;
                         font-family: 'Josefin Sans';
+                        margin: 0 10px 0 0;
+                        position: absolute;
+                        left: 140px;
                     }
                     
-                    @include smallPhoneDua() {
-                        font-size: 5pt;
-                    }
+                    // @include smallPhoneDua() {
+                    //     font-size: 5pt;
+                    // }
                 }
 
                 .customBorder {
@@ -106,12 +111,10 @@ $smallPhoneDua : 400px;
                     padding: 2rem;
                     border-right: 1px solid #f3f3f3;
                     @include smallPhone() {
-                        height: auto;
-                        // flex-direction: column;
-                        padding: 1rem;
-                        flex-direction: column;
+                        height: 15vh;
+                        // padding: 1rem;
                         border: none;
-                        border-bottom: 5px solid #f3f3f3;
+                        border-bottom: 1px solid #f3f3f3;
                     }
             }
             .calendar {
@@ -135,7 +138,7 @@ $smallPhoneDua : 400px;
 
             @include smallPhone(){
                 padding: 0 10px;
-                margin: 20px 0 40px 0;
+                margin: 30px 0 40px 0;
             }
         }
 
@@ -178,6 +181,7 @@ $smallPhoneDua : 400px;
                 background-position: center;
                 width: 100%;
                 margin: 0;
+                height: 40vh;
             }
 
             .textYoutube {
@@ -273,7 +277,7 @@ $smallPhoneDua : 400px;
         margin: 20px 0 0 0;
 
         @include smallPhone(){
-            margin: 5px 0 0 0;
+            margin: 10px 0 0 0;
         }
     }
 
@@ -331,7 +335,7 @@ $smallPhoneDua : 400px;
     
         @include smallPhone() {
             flex-direction: column;
-            padding: 0px 5px 0 5px;
+            padding: 0 10px;
             margin: 10px 0 0 0;
             // justify-content: space-between;
             // min-height: 40vh;
@@ -374,7 +378,7 @@ $smallPhoneDua : 400px;
     @include smallPhone() {
         flex-direction: column;
         margin: 5px 0 0 0;
-        padding: 0px 5px 0 5px;
+        padding: 0 10px;
     }
 }
 

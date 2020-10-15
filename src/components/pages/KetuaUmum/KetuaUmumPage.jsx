@@ -106,7 +106,6 @@ const KetuaUmumPage = () => {
               text2="pidato rakernas"
               text3="pidato rakornas"
               text4="pidato hut"
-              paddingBottom="20px"
             />
             {/* END Column2 */}
 
@@ -157,7 +156,7 @@ const KetuaUmumPage = () => {
 
           {/* Container2 */}
           <div className="container-2-ketuaumum">
-            <MainDivider text="Berita Terkait" garisMerah="7rem" mrgn="40px 0" />
+            <MainDivider text="Berita Terkait" garisMerah="7rem" mrgn="0px 0" />
           </div>
           {/* END Container2 */}
 

@@ -10,7 +10,6 @@ import CarouselKM from "../../carouselKM/CarouselKM";
 import MusicMobile from "../../musicPdiMobile/MusicMobile";
 import KMobile from "../../carouselKMobile/KMobile";
 import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
-import CardVideo from "../../cardVideo/CardVideo";
 
 const HomePage = () => {
   const [berita, setBerita] = useState([]);
@@ -189,6 +188,14 @@ const HomePage = () => {
           <MainSlider value={configHome[0].value} cls={configHome[0].class} />
         )}
 
+        {/* STATISTIK INFO COVID */}
+        <div className="statistik-covid">
+          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+          <div class="elfsight-app-b27c8ef3-b23c-490b-b273-df4e80eb8980">
+
+          </div>
+        </div>
+        
         {/* LOGO ICON COVID DAN LAIN LAIN */}
         <div className="homePageTwo">
           <div className="customRow">
@@ -254,13 +261,12 @@ const HomePage = () => {
               {configHome.length > 0 &&
                 configHome[4].value.map((e, i) => {
                   return (
-                    <CardVideo
+                    <Cards
                       type={e.type}
                       imageCard={e.path}
                       textSmall={e.description}
                       TextH5={e.title}
                       borderRadius="10px"
-                      marginTop="0px"
                       key={i}
                     />
                   );

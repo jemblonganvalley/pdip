@@ -102,7 +102,7 @@ const PemiluPage = () => {
             <div className="col2-container-1-pemiluPage">
               {/* Row1 */}
               <div className="row1-col2-pemiluPage pemilihan">
-                <img src={IconHartaSatu} width="45" className="col1-row1-pemiluPage"></img>
+                <img src={IconHartaSatu} width="45" className="col1-row1-pemiluPage"/>
                 <div className="col2-row1-pemiluPage">
                   <p className="txt-title">PEMILIHAN KEPALA DAERAH SERRENTAK</p>
                   <p className="txt-desk">
@@ -114,7 +114,7 @@ const PemiluPage = () => {
 
               {/* Row2 */}
               <div className="row2-col2-pemiluPage pemilihan">
-                <img src={IconHartaDua} width="45" className="col1-row2-pemiluPage"></img>
+                <img src={IconHartaDua} width="45" className="col1-row2-pemiluPage"/>
                 <div className="col2-row2-pemiluPage">
                   <p className="txt-title">
                     PEMILIHAN CALON LEGISLATIF PDI PERJUANGAN

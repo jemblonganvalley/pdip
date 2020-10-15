@@ -177,7 +177,7 @@ const BeritaPage = () => {
                         text4="kegiatan partai" />
                     {/* END Column2 */}
 
-                    <div className="cardContainer">
+                    <div className="cardContainer" id="card-berita">
                           {beritaDaerah.map((e,i)=>{
                                 return (
                                     <Cards 
@@ -187,7 +187,6 @@ const BeritaPage = () => {
                                     TextH5={e.title}
                                     dateTime={e.created_at}
                                     borderRadius="10px"
-                                    marginTop="20px"
                                     page='page'
                                     />
                                 )
@@ -199,8 +198,7 @@ const BeritaPage = () => {
                     {/* Column4 */}
                     <div className="col4-container-1-beritaPage">
                         <MainDivider text="Berita Foto"
-                            garisMerah="7rem"
-                            mrgn="40px 0" />
+                            garisMerah="7rem" />
                     </div>
                     {/* END Column4 */}
 
@@ -235,13 +233,16 @@ const BeritaPage = () => {
                 {/* Container3 */}
                 <div className="container-3-beritaPage">
                     {/* Column1 */}
-                        <MainDivider text="Berita Daerah"
+                    <div className="divider-beritaDaerah">
+                    <MainDivider text="Berita Daerah"
                             garisMerah="7rem"
-                            mrgn="40px 0 20px 0"/>
+                            mrgn="40px 0 0px 0"/>
+                    </div>
+                        
                     {/* END Column1 */}
 
                     {/* Column2 */}
-                   <div className="cardContainer">
+                   <div className="cardContainer" id="card-berita">
                           {beritaNasional.map((e,i)=>{
                                 return (
                                     <Cards 
@@ -251,20 +252,23 @@ const BeritaPage = () => {
                                     TextH5={e.title}
                                     dateTime={e.created_at}
                                     borderRadius="10px"
-                                    marginTop="20px" />
+                                     />
                                 )
                             })}
                     </div>
                     {/* END Column2 */}
 
                     {/* Column3 */}
-                        <MainDivider text="Kegiatan Partai"
+                    <div className="divider-kegiatanPartai">
+                    <MainDivider text="Kegiatan Partai"
                             garisMerah="7rem"
-                            mrgn="40px 0 20px 0" />
+                            mrgn="40px 0 0px 0" />
+                    </div>
+                        
                     {/* END Column3 */}
 
                     {/* Column4 */}
-                   <div className="cardContainer" id="cardContainer">
+                   <div className="cardContainer" id="card-berita">
                           {beritaPartai.map((e,i)=>{
                                 return (
                                     <Cards 
@@ -273,8 +277,7 @@ const BeritaPage = () => {
                                     textSmall={e.author}
                                     TextH5={e.title}
                                     dateTime={e.created_at}
-                                    borderRadius="10px"
-                                    marginTop="20px" />
+                                    borderRadius="10px" />
                                 )
                             })}
                     </div>

@@ -1,121 +1,123 @@
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+// $smallPhoneSatu : 500px;
+// $smallPhoneDua : 400px;
 
-@mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
-}
+// @mixin smallPhone {
+//     @media (max-width : #{$smallPhoneSatu}) {
+//         @content;
+//     }
+// }
 
-@mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
-}
+// @mixin smallPhoneDua {
+//     @media (max-width : #{$smallPhoneDua}) {
+//         @content;
+//     }
+// }
 
-@import "../../utilities/variable/variables.scss";
+// @import "../../utilities/variable/variables.scss";
 
-    
+//     #cardCustom1{
+//     margin: 0rem 0 .5rem 0;
+//     }
 
-    .cardCustom {
-        height: auto;
-        min-height: 100px;
-        height: 300px;
-        width: cal(100%/3);
-        margin: 0 10px;
-        background: #ffffff;
-        transition: .5s;
-        // margin: 40px auto;
-        // margin-top: 0px;
-        display: flex;
-        flex-direction: column;
-        @include smallPhone() {
-            flex-direction: row;
-            // flex: auto;
-            display: flex;
-            height: auto;
-            margin: .5rem 0 0 0;
-        }
+//     .cardCustom1 {
+//         height: auto;
+//         min-height: 100px;
+//         height: 300px;
+//         width: cal(100%/3);
+//         // margin: 0 10px;
+//         background: #ffffff;
+//         transition: .5s;
+//         // margin: 40px auto;
+//         // margin: 40px 10px;
+//         display: flex;
+//         flex-direction: column;
+//         @include smallPhone() {
+//             flex-direction: row;
+//             // flex: auto;
+//             display: flex;
+//             height: auto;
+//             margin: .5rem 0 0 0;
+//         }
         
-        &:hover {
-            box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);
-            background: $darkRedTwo;
-            color: #ffffff;
-        }
+//         &:hover {
+//             box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);
+//             background: $darkRedTwo;
+//             color: #ffffff;
+//         }
 
         
-        .imageCard {
-            width: 100%;
-            height: 150px;
-            background-size: cover;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+//         .imageCard {
+//             width: 100%;
+//             height: 150px;
+//             background-size: cover;
+//             border-top-left-radius: 10px;
+//             border-top-right-radius: 10px;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
 
-            @include smallPhone() {
-                border-radius: 10px;
-                height: auto;
-                width: 70%;
-                background-position: center;
-                flex: 1;
-            }
-            @include smallPhoneDua() {
+//             @include smallPhone() {
+//                 border-radius: 10px;
+//                 height: auto;
+//                 width: 70%;
+//                 background-position: center;
+//                 flex: 1;
+//             }
+//             @include smallPhoneDua() {
                 
-            }
+//             }
 
             
 
-            .VBMusic {
-                width: 35px;
-                height: 35px;
-                border: 1px solid #ffffff;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                color: #ffffff;
-                font-size: 10pt;
+//             .VBMusic {
+//                 width: 35px;
+//                 height: 35px;
+//                 border: 1px solid #ffffff;
+//                 border-radius: 50%;
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 text-align: center;
+//                 color: #ffffff;
+//                 font-size: 10pt;
 
-                &:hover {
-                    background: #ffffff;
-                    color: $colors;
-                }
-            }
-        }
+//                 &:hover {
+//                     background: #ffffff;
+//                     color: $colors;
+//                 }
+//             }
+//         }
         
-        .text {
-            width: 100%;
-            height: auto;
-            padding: 10px 20px;
-            @include smallPhone() {
-                flex: 1;
-            }
+//         .text {
+//             width: 100%;
+//             height: auto;
+//             padding: 10px 20px;
+//             @include smallPhone() {
+//                 flex: 1;
+//             }
             
             
 
-            .textSmall {
-                font-size: 10pt;
+//             .textSmall {
+//                 font-size: 10pt;
 
-                @include smallPhone() {
-                    font-size: 5pt;
+//                 @include smallPhone() {
+//                     font-size: 5pt;
 
-                }
-            }
+//                 }
+//             }
 
-            .textH5 {
-                margin-top: 1rem;
+//             .textH5 {
+//                 margin-top: 1rem;
 
-                @include smallPhone() {
-                    font-size: 12pt;
-                    margin-top: .5rem;
-                }
-            }
+//                 @include smallPhone() {
+//                     font-size: 12pt;
+//                     margin-top: .5rem;
+//                 }
+//             }
 
-            .textH6{
-                font-size: 12pt;
-            }
-        }
-    }
+//             .textH6{
+//                 font-size: 12pt;
+//             }
+//         }
+//     }

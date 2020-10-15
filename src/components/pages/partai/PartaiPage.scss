@@ -20,6 +20,10 @@ $smallPhoneDua : 400px;
 .wrapperPartai {
     width: 100%;
     padding: 0 0 40px 0;
+
+    @include smallPhone(){
+        padding: 0 0 30px 0;
+    }
     
     // START HEADERS
     .headers {
@@ -89,7 +93,7 @@ $smallPhoneDua : 400px;
         margin: 0px 0 40px 0;
         
         @include smallPhone() {
-            padding: 0 5px;
+            padding: 0 10px;
         }
 
         .contentSatu {
@@ -368,11 +372,22 @@ $smallPhoneDua : 400px;
         padding: 0px 20% 20px 20%;
 
         @include smallPhone() {
-            padding: $paddingMobile;
+            padding: 0 0 10px 0;
+        }
+
+        .divider-pengurusPage{
+            display: flex;  
+            height: auto;
+            width: 100%;
+            align-items: center;
+            margin: 40px 0;
+
+            @include smallPhone(){
+                padding: 0 10px;
+            }
         }
 
         .paragrapPengurus {
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -381,7 +396,7 @@ $smallPhoneDua : 400px;
             width: 100%;
             text-align: center;
             @include smallPhone() {
-                padding: $paddingMobile;
+                padding: 0 10%;
             }
             
             p {
@@ -389,6 +404,7 @@ $smallPhoneDua : 400px;
                 letter-spacing: 1px;
                 @include smallPhone() {
                     font-size: 10pt;
+                    margin: 0;
                 }
             }
         }
@@ -407,11 +423,8 @@ $smallPhoneDua : 400px;
         color: #ffffff;
 
         @include smallPhone() {
-            background-attachment: inherit;
-        }
-        @include smallPhoneDua() {
-            // background-attachment: inherit;
-            height: 50vh;
+            height: 40vh;
+            background-size: auto;
         }
 
         h2 {
@@ -460,7 +473,7 @@ $smallPhoneDua : 400px;
         align-items: center;
         flex-direction: column;
         @include smallPhone() {
-            padding: 2rem 2%;
+            padding: 10px 0px 0 0px;
         }
 
         h5 {
@@ -468,12 +481,14 @@ $smallPhoneDua : 400px;
             font-weight: bold;
 
             @include smallPhone() {
-                font-size: 12pt;
-            }
-            @include smallPhoneDua() {
                 font-size: 14pt;
                 text-align: center;
+                padding: 0 10%;
             }
+            // @include smallPhoneDua() {
+            //     font-size: 14pt;
+            //     text-align: center;
+            // }
         }
             .imageMaps {
                 background: url(../../../img/maps.jpg);
@@ -482,11 +497,11 @@ $smallPhoneDua : 400px;
                 height: 56vh;
                 // cursor: pointer;
                 @include smallPhone() {
-                    height: 31vh;
+                    height: 30vh;
                 }
-                @include smallPhoneDua() {
-                    height: 20vh;
-                }
+                // @include smallPhoneDua() {
+                //     height: 20vh;
+                // }
             }
     }
 
@@ -500,12 +515,12 @@ $smallPhoneDua : 400px;
         text-align: center;
 
         @include smallPhone() {
-            padding: $paddingMobile;
-            margin-top: 5rem;
+            padding: 0;
+            margin-top: 40px;
         }
-        @include smallPhoneDua() {
-            margin-top: 2.5rem;
-        }
+        // @include smallPhoneDua() {
+        //     margin-top: 2.5rem;
+        // }
 
         h1 {
             font-weight: bold;
@@ -520,6 +535,7 @@ $smallPhoneDua : 400px;
             margin-top: 2.5rem;
             @include smallPhone() {
                 margin-top: 1.5rem;
+                padding: 0 10%;
                 font-size: 10pt;
             }
         }
@@ -530,7 +546,16 @@ $smallPhoneDua : 400px;
             flex-direction: row;
             margin: 10px 0 0 0;
 
+            @include smallPhone(){
+                flex-direction: column;
+                margin: 0;
+            }
             
+            #btnGroup{
+                @include smallPhone(){
+                    margin: 0px 0 10px 0;
+                }
+            }
         }
     }
 }

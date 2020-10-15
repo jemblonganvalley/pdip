@@ -221,7 +221,10 @@ const PartaiPage = () => {
 
               {/* PENGURUS */}
               <div className="pengurusPage">
-                <MainDivider text="pengurus" mrgn="40px 0" />
+                <div className="divider-pengurusPage">
+                  <MainDivider text="pengurus" mrgn="0px 0" />
+                </div>
+
                 <div className="paragrapPengurus">
                   <span
                     dangerouslySetInnerHTML={{ __html: config[5].value }}
@@ -257,9 +260,18 @@ const PartaiPage = () => {
                   dangerouslySetInnerHTML={{ __html: config[7].value }}
                 ></span>
                 <div className="btnGroup">
+                  <div className="btn-dprRi" id="btnGroup">
                   <MainButton name="DPR RI" margin="0 10px" />
+                  </div>
+                  
+                  <div className="btn-dprd-provinsi" id="btnGroup">
                   <MainButton name="DPRD Provinsi" margin="0 10px" />
+                  </div>
+                  
+                  <div className="btn-dprd-kab" id="btnGroup">
                   <MainButton name="DPRD Kabupaten Kota" margin="0 10px" />
+                  </div>
+                  
                 </div>
               </div>
               {/* END */}

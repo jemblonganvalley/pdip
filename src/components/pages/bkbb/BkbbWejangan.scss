@@ -106,7 +106,7 @@ $secondary : #f3f3f3;
                 color : #fff;
 
                 @include smallPhone(){
-                    height: 60vh;
+                    height: 50vh;
                     width: 100%;
                 }
 
@@ -171,7 +171,7 @@ $secondary : #f3f3f3;
 
                 @include smallPhone(){
                     width: 100%;
-                    padding: 0 20px;
+                    padding: 0 10%;
                     justify-content: center;
                     align-items: center;
                     text-align: center;
@@ -294,7 +294,7 @@ $secondary : #f3f3f3;
 
         @include smallPhone(){
             height: auto;
-            padding: 0 20px;
+            padding: 0 10px;
         }
 
         // Column1
@@ -311,7 +311,7 @@ $secondary : #f3f3f3;
             @include smallPhone(){
                 flex-direction: column;
                 height: auto;
-                padding: 0;
+                padding: 10px 0 0 0;
             }
         }
         // END Column1

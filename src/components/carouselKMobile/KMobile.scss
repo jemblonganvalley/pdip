@@ -111,7 +111,7 @@ $smallPhoneDua : 400px;
                     position: relative;
 
                     @include smallPhone() {
-                        height: 50vh;
+                        height: 45vh;
 
                     }
                     @include smallPhoneDua() {
@@ -140,7 +140,7 @@ $smallPhoneDua : 400px;
                         .textCarousel {
     
                             @include smallPhone() {
-                                margin: .8rem 0;
+                                margin: .5rem 0;
                             }
                         }
                         

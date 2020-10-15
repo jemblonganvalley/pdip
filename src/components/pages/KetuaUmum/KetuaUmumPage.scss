@@ -25,10 +25,6 @@ $smallPhoneDua : 400px;
         width: 100%;
 
         @include smallPhone(){
-            height: 20vh;
-        }
-
-        @include smallPhoneDua(){
             height: 15vh;
         }
 
@@ -171,11 +167,13 @@ $smallPhoneDua : 400px;
             justify-content: space-between;
             align-items: flex-start;
             flex-wrap: wrap;
+            margin: 20px 0 0 0;
 
             @include smallPhone(){
                 flex-direction: column;
-                padding: 0;
+                padding: 0px 10px;
                 margin: 0;
+                // border: 1px solid blue;
             }
         }
         // END Column3
@@ -191,7 +189,7 @@ $smallPhoneDua : 400px;
             @include smallPhone(){
                 height: auto;
                 flex-direction: column;
-                padding: 0 5px;
+                padding: 0 10px;
             }
 
             // Row1
@@ -203,7 +201,7 @@ $smallPhoneDua : 400px;
                 overflow: hidden;
                 
                 @include smallPhone(){
-                    height: 60vh;
+                    height: 40vh;
                     width: 100%;
                     margin: 0 0 10px 0;
                 }
@@ -230,7 +228,7 @@ $smallPhoneDua : 400px;
                 overflow: hidden;
 
                 @include smallPhone(){
-                    height: 25vh;
+                    height: 40vh;
                     width: 100%;
                 }
 
@@ -271,12 +269,17 @@ $smallPhoneDua : 400px;
         display: flex;
         height: auto;
         padding: 0 20% 0 20%;
+        margin: 40px 0;
         justify-content: center;
         align-items: center;
 
         @include smallPhone(){
+            display: flex;
+            align-items: center;
             height: auto;
-            padding: 30px 10px 0 10px;
+            width: 100%;
+            margin: 40px 0 40px 0;
+            padding: 0px 10px 0 10px;
         }
     }
     // END Container
@@ -292,6 +295,7 @@ $smallPhoneDua : 400px;
         @include smallPhone(){
             flex-direction: column;
             padding: 0 0px;
+            margin: 0;
         }
 
         // Column4
@@ -305,6 +309,7 @@ $smallPhoneDua : 400px;
 
             @include smallPhone(){
                 flex-direction: column;
+                padding: 0 10px;
             }
         }
         // END Column4

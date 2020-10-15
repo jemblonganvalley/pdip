@@ -156,7 +156,7 @@ const BkbbPage = () => {
               {configHome.length > 0 &&
                 configHome[3].value.map((e, i) => {
                   return (
-                    <CardVideo
+                    <Cards
                       type={e.type}
                       imageCard={e.path}
                       TextH5={e.title}
@@ -171,7 +171,7 @@ const BkbbPage = () => {
           <div className="btnLihatSemua">
             <MainButton
               name="lihat semua"
-              margin="1rem 0 0 0"
+              margin="0"
               pages="/materipokok"
             />
           </div>
@@ -217,7 +217,7 @@ const BkbbPage = () => {
           <div className="btnLihatSemua">
             <MainButton
               name="lihat semua"
-              margin="1rem 0 0 0"
+              margin="0rem 0 0 0"
               pages="/wejanganbungkarno"
             />
           </div>

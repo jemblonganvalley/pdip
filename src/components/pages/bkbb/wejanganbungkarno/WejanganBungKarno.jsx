@@ -135,7 +135,7 @@ const WejanganBungKarno = () => {
 
             {/* Container1 */}
             <div className="container1-wejanganThumbnail">
-                <MainDivider text="WEJANGAN BUNG KARNO" mrgn="0 0 40px 0"/>
+                <MainDivider text="WEJANGAN BUNG KARNO" mrgn="0 0 0px 0"/>
             </div>
             {/* END Container1 */}
 

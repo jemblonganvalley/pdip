@@ -18,8 +18,7 @@ const KMobile = () => {
                             <div className="carousel-item active itemKMobile">
                             <div className="col-lg-6 bannerMobile" style={{
                                 background : `url(${megawati4})`,
-                                backgroundSize : 'cover'
-
+                                backgroundSize: 'cover'
 
                             }}></div>
                                 <div className="col-lg-6 textKM">

@@ -114,9 +114,11 @@ const InformasiPage = () => {
 
             {/* START PROFIL */}
             <div className="profilContainer">
+                <div className="divider-profil">
                 <MainDivider text="Profil"
                     garisMerah="0rem"
                     mrgn="0 0 40px 0" />
+                </div>
 
                 <div className="paragrapProfil">
                     <div className="paragrapKiri">
@@ -160,9 +162,7 @@ const InformasiPage = () => {
 
                 {/* CARD LAPORAN */}
                 <div className="containerLaporan">
-                    <div className="cardLaporan cardLaporanSatu" style={{
-                        marginRight: '20px'
-                    }}>
+                    <div className="cardLaporan cardLaporanSatu">
                         <img src={IconHartaSatu} alt="" width="45" className="imageHarta" />
                         <div className="textHarta">
                             <h6 className="hartaKekayaan h5Harta">Laporan harta kekayaan<br />pejabat negara (LHKPN)</h6>
@@ -205,14 +205,10 @@ const InformasiPage = () => {
             {/* END */}
 
             {/* Container dua */}
-            <div className="infoDua" style={{
-                margin : '20px 0 40px 0',
-            }}>
+            <div className="infoDua">
 
                 {/* kolom formulir */}
-                <div className="kolomFormulir kolomFormulirSatu" style={{
-                    marginRight: '20px'
-                }}>
+                <div className="kolomFormulir kolomFormulirSatu">
                     <img src={ConsentWhite} alt="" width="50" />
                     <h4 className="textFormulir">Formulir Permohonan<br />Informasi Publik</h4>
                 </div>
@@ -226,12 +222,14 @@ const InformasiPage = () => {
 
             {/* <CardMaps/> */}
 
+            <div className="carousel-informasiPage">
             <CarouselDuelBerita current_page={2} data={gallery}/>                    
+            </div>
 
-            <div className="widgetMobile">
+            {/* <div className="widgetMobile">
                 <WidgetBerita width="100%" />
                 <WidgetBerita width="100%" margin=".5rem 0" />
-            </div>
+            </div> */}
         </div>
     )
 }

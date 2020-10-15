@@ -26,8 +26,9 @@ $smallPhoneDua : 400px;
     cursor: pointer;
 
     @include smallPhone(){
-        height: 45vh;
-        margin: 20px 0 0 0;
+        height: 40vh;
+        margin: .5rem 0 0 0;
+        width: 100%;
     }
 
 

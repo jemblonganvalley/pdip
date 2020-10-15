@@ -22,6 +22,7 @@ const Cards = ({
   textCategoryChild,
   id,
   marginTop,
+  dataVideo
 }) => {
   let dt = toString(dateTime);
   let dtt = dt.split(" ");
@@ -38,7 +39,7 @@ const Cards = ({
   return (
       <Link
         as='div'
-        className="col col-lg-3 cardCustom"
+        className="col col-lg-3 cardCustom" id="cardCustom2"
         style={{
           borderRadius: borderRadius,
           marginTop: marginTop

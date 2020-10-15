@@ -29,8 +29,8 @@ $smallPhoneDua : 400px;
 
     @include smallPhone(){
         height: 40vh;
-        width: 94vw;
-        margin: 0 10px 10px 10px;
+        width: 100%;
+        margin: .5rem 0 0 0;
     }
 
 

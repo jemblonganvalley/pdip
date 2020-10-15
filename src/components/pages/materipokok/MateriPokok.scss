@@ -80,7 +80,7 @@ $smallPhoneDua : 400px;
         width: 100%;
         margin: 0px 0 0px 0;
         @include smallPhone(){
-            margin: 0 0 20px 0;
+            margin: 0 0 0px 0;
         }
     }
     // END Column Card Materi Pokok
@@ -93,6 +93,10 @@ $smallPhoneDua : 400px;
         justify-content: center;
         align-items: center;
         padding: 0px 0 40px 0;
+
+        @include smallPhone(){
+            padding: 0 0 40px 0;
+        }
     }
     // END Column Pagination
 }

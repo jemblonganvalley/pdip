@@ -19,7 +19,7 @@ $smallPhoneDua : 400px;
     background: #aaa;
 
     @include smallPhone(){
-        height: 65vh;
+        height: 45vh;
     }
 
     .indicatorKetuaUmum{
@@ -53,7 +53,7 @@ $smallPhoneDua : 400px;
                 overflow: hidden;
 
                 @include smallPhone(){
-                    height: 65vh;
+                    height: 45vh;
                 }
 
                 // Column1
