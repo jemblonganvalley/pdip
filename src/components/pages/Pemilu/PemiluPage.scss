@@ -38,9 +38,9 @@ $secondary : #f3f3f3;
             color: #ffffff;
 
             .textBackgroundBerita {
-                width: 30%;
+                width: 100%;
                 height: 50%;
-                margin-left: 5rem;
+                padding: 0 10%;
 
                 @include smallPhone(){
                     width: 100%;
