@@ -148,6 +148,7 @@ $smallPhoneDua : 400px;
         @include smallPhone(){
             margin: 0 0 30px 0;
         }
+
     }
 
     .form-control {
@@ -164,7 +165,7 @@ $smallPhoneDua : 400px;
             border-color: $colors;
         }
     }
-    button {
+    .btn-next {
         border: none;
         background: transparent;
         color: #ffffff;
@@ -174,7 +175,7 @@ $smallPhoneDua : 400px;
         // }
     }
 
-    button[name="submit"] {
+    .btn-next[name="submit"] {
         position: absolute;
         right: 10%;
         bottom: 10%; 
@@ -183,6 +184,5 @@ $smallPhoneDua : 400px;
     ::placeholder {
         color: #ffffff;
         padding: 10px;
-    }
-    
+    }    
 }

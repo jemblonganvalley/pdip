@@ -13,29 +13,24 @@ $smallPhoneDua : 400px;
     }
 }
 .circleCard {
-    width: 17vw;
-    height: 37vh;
+    width: calc(90%/3);
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: $margin;
+    margin: 20px 0px 0 0px;
     text-decoration: none;
     color: $colors;
     transition: .5s;
     border-radius: 10px;
 
     @include smallPhone() {
-        width: auto;
-        height: auto;
+        width: 100%;
+        // height: auto;
         padding: .5rem;
+        margin: .5rem 0 0 0;
     }
-
-    @include smallPhoneDua() {
-        width: 80%;
-        height: 40vh;
-    }
-    
 
     &:hover {
         color: #ffffff;
@@ -48,11 +43,8 @@ $smallPhoneDua : 400px;
         border-radius: 50%;
         background-size: cover;
         background-position: center center;
+        border: 2px solid #f3f3f3;
         @include smallPhone() {
-            width: 5.5rem;
-            height: 5.5rem;
-        }
-        @include smallPhoneDua() {
             width: 10rem;
             height: 10rem;
         }

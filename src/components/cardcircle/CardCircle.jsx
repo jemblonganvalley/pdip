@@ -8,7 +8,7 @@ const CardCircle = ({ strukturCard }) => {
             display: 'flex',
             flexWrap: 'wrap',
             flexDirection: 'row',
-            justifyContent : 'center'
+            justifyContent : 'space-between'
         }}>
             {strukturCard.map((e) => {
                 return (

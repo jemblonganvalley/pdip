@@ -17,7 +17,7 @@ $smallPhoneDua : 400px;
     width: 100%;
     padding: 10px 0 40px 0;
     @include smallPhone() {
-        padding: $paddingMobile;
+        padding: 0;
     }
 
     .linkedPPDI {
@@ -30,13 +30,31 @@ $smallPhoneDua : 400px;
         @include smallPhone() {
             // border: 1px solid crimson;
             width: 100%;
-            padding: $paddingMobile;
+            padding: 0 10px;
+        }
+    }
+
+    .dividerPPDI{
+        margin: 0px 0 40px 0;
+        padding: 0 20%;
+
+        @include smallPhone(){
+            margin: 0px 0 20px 0;
+            padding: 0 10px;
         }
     }
 
     .card-PPDI {
+        height: auto;
+        width: 100%;
         padding: 0 20% 0 20%;
+        justify-content: space-between;
+        flex-wrap: wrap;
         max-width: 100%;
+        
+        @include smallPhone(){
+            padding: 0 0px 20px 0;
+        }
 
         .listPPDI {
             flex-wrap: wrap;

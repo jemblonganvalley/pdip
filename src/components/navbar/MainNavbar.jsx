@@ -1,17 +1,25 @@
 import React, {useEffect, useState} from 'react'
 import logo from '../../img/pdiperjuangan02.svg'
 import './MainNavbar.scss'
-import {NavLink} from 'react-router-dom'
+import {Link, NavLink, Redirect} from 'react-router-dom'
 import DropDown from './DropDown'
 import {useMediaQuery} from 'react-responsive'
 import { useStoreState } from 'easy-peasy'
 
 const MainNavbar = ({token})=> {
 
-
+    let [search, setSearch] = useState(false)
     let [show, setShow] = useState()
     let [collapse, setCollapse] = useState(false)
     let [menu, setMenu] = useState([])
+
+    // let pageSearch = window.location.href='/search'
+
+    // onSubmit = ()=>{
+    //   if(userFound){
+    //     return <Redirect to
+    //   }
+    // }
     
     const getDataMenu = async function(){
     const res = await fetch('https://atur.biar.pw/api/web/config', {
@@ -89,13 +97,16 @@ const MainNavbar = ({token})=> {
 
                 </ul>
                 <form className="d-inline-flex">
-                  <input className="form-control mr-2" type="text" placeholder="Cari Artikel" name="search" />
-                  <button name="submit">
+                  <input className="form-control mr-2" type="text" placeholder="Cari Artikel" name="search"/>
+                  <Link to='/search' name="submit" className="btn-next">
                       <i class="fa fa-long-arrow-right" aria-hidden="true" name="icon" ></i>
-                  </button>
+                  </Link>
                 </form>
               </div>
+              
             </div>
+
+            
         </nav>
 
       )}
@@ -148,10 +159,11 @@ const MainNavbar = ({token})=> {
                   <i class="fa fa-long-arrow-right" aria-hidden="true" name="icon" ></i>
                 </button>
               </form>
+
+              
             </div>
           </div>
           </nav>
-
       )}
     </>
 

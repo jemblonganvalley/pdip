@@ -125,12 +125,11 @@ const StrukturPaginate = () => {
     const paginate = (pageNumber) => setCurrentPage2(pageNumber)
 
     return (
-        <div className="wrapperPaginate" style={{
-            display: 'flex',
-            justifyContent: 'center',
-            flexWrap: 'wrap',
-        }}>
+        <div className="wrapperPaginate">
+            <div className="card-strukturPaginate">
             <CardCircle strukturCard={currentPosts} />
+            </div>
+            
 
             <nav aria-label="Page navigation example" style={{
                 marginTop: '10px',

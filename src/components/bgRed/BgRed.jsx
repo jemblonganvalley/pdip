@@ -18,10 +18,7 @@ const BgRed = () => {
 
           <div className="holderFrame">
             <header className='holderFrame_header'>
-              <i className="icon-facebook" style={{
-                fontWeight: 'bold',
-                fontStyle: 'normal'
-              }} id="iconGroup">f</i>
+              <i class="fab fa-facebook-square" id="iconGroup"></i>
               <h5>facebook</h5>
             </header>
 
@@ -32,7 +29,7 @@ const BgRed = () => {
 
           <div className="holderFrame">
              <header className='holderFrame_header'>
-              <i class="fab fa-twitter" id="iconGroup"></i>
+             <i class="fab fa-twitter-square" id="iconGroup"></i>
               <h5>twitter</h5>
             </header>
            <TwitterTimelineEmbed className="twitter-timeline"

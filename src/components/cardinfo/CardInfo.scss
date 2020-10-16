@@ -17,13 +17,12 @@ $smallPhoneDua : 400px;
 
 .cardInfo {
     flex: auto;
-    margin: 10px 10px;
+    margin: .5rem 0px;
     background: #ffffff;
     transition: .5s;
     border-radius: 10px;
     height: 300px;
     width: cal(90%/3);
-
 
     &:hover {
         box-shadow: 4px 17px 40px -30px rgba(0,0,0,0.75);

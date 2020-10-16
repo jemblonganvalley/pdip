@@ -49,6 +49,7 @@ import Prosedur from "./components/pages/prosedur/Prosedur";
 import Regulasi from "./components/pages/regulasi/Regulasi";
 import ListBerita from "./components/pages/berita/listBerita/ListBerita";
 import ContainerCard from "./components/containerCard/ContainerCard";
+import Search from "./components/pages/search/Search";
 
 function App() {
   let [hide, setHide] = useState(true);
@@ -103,6 +104,10 @@ function App() {
           {/* CONTAINER CARD */}
           <Route path='/detail/:category_id'>
             <ContainerCard />
+          </Route>
+
+          <Route path='/search'>
+              <Search/>
           </Route>
 
           <Route path="/regulasi">

@@ -1,0 +1,222 @@
+@import "../../../utilities/variable/variables.scss";
+
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+// Modal Display Search
+.modal-display-search{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    background: #ddd;
+    margin: 0 0 40px 0;
+    padding: 0 0 100px 0;
+
+    // Bg Black Search
+    .background-black-search{
+        display: flex;
+        position: relative;
+        height: 10vh;
+        width: 100%;
+        background: #333;
+        padding: 0 0 0 20%;
+        align-items: center;
+
+        // .txt-kata-yang-diCari{
+            // font-size: 15px;
+        // }
+
+        // Txt Group
+        #txtGroup{
+            color: #fff;
+        }
+
+        .kolom-search-modal{
+            display: flex;
+            position: relative;
+            height: auto;
+            width: auto;
+            margin: 5px 0 0 50px;
+
+            .input-search{
+                height: 3vh;
+                width: 100%;
+                background: none;
+                border: none;
+                border-bottom: 1px solid #fff;
+                outline: none;
+                padding: 0px 2vw 5px 0px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .btn-icon-pageSearch{
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                outline: none;
+                border: none;
+                background: none;
+            }
+        }
+    }
+    // END Bg Black Search
+
+    // Container Hasil Pencarian
+    .container-hasil-pencarian{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 0 20% 0px 20%;
+
+        .column1-hasil-pencarian{
+            display: flex;
+            position: relative;
+            height: 10vh;
+            width: 100%;
+            align-items: center;
+
+            .txt-hasil-pencarian{
+                display: flex;
+                // font-size: 15px;
+                margin: 0 10px 0 0;
+                position: absolute;
+            }
+
+            .garis-abu-abu{
+                display: flex;
+                height: 3px;
+                width: 100%;
+                margin: 0 0 0 130px;
+                background: #bbb;
+            }
+
+        }
+
+        // Card hasil pencarian
+        .column2-hasil-pencarian{
+            display: flex;
+            height: auto;
+            width: 100%;
+            margin-top: 0px;
+
+            // Info kiri
+            .column-info-kiri{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 75%;
+                margin: 0 80px 0px 0;
+
+                .card-hasil-pencarian{
+                    display: flex;
+                    height: auto;
+                    width: 100%;
+                    margin: 0 0 10px 0;
+                    border-bottom: 1px solid #aaa;
+                    text-decoration: none;
+                    color: #000;
+                    transition: .3s;
+
+                    &:hover{
+                        color: $colors;
+                    }
+
+                    // Img
+                    .img-card{
+                        display: flex;
+                        height: auto;
+                        width: 70px;
+                        background: #555;
+                    }
+
+                    // Content card
+                    .column-content-card{
+                        display: flex;
+                        flex-direction: column;
+                        height: auto;
+                        width: 100%;
+                        margin: 0 0 0 20px;
+                        padding: 0 5% 0 0;
+
+                        .column-title-card{
+                            display: flex;
+                            width: 100%;
+
+                            .title1-card{
+                                color: $colors;
+                            }
+
+                            .title2-card{
+                                margin: 0 0 0 5px;
+                                color: #555;
+                            }
+                        }
+
+                        .txt-paragrap-card{
+                            display: flex;
+                            height: auto;
+                            width: 100%;
+                            text-align: start;
+                            margin: 10px 0 0 0;
+                        }
+                    }
+                }
+            }
+            // END Info kiri
+
+            // Info kanan
+            .column-info-kanan{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                width: 25%;
+
+                .btn-info-kanan{
+                    display: flex;
+                    height: 3vh;
+                    width: 100%;
+                    align-items: center;
+                    margin: 0 0 10px 0;
+                    color: #000;
+                    text-decoration: none;
+                    transition: .3s;
+
+                    &:hover{
+                        color: $colors;
+                    }
+
+                    i{
+                        font-size: 15px;
+                    }
+                }
+
+                .title-info{
+                    display: flex;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    margin: -2px 0 0 10px;
+                }
+            }
+            // END Info kanan
+
+        }
+        // END Card hasil pencarian
+
+    }
+    // END Container Hasil pencarian
+}
+// END Modal Display Search

@@ -21,13 +21,10 @@ $smallPhoneDua : 400px;
 .headers {
     background: url(../../../img/kampanye.jpg);
     background-size: cover;
-    height: 25vh;
+    height: 15vh;
     background-position: center;
 
     @include smallPhone() {
-        height: 20vh;
-    }
-    @include smallPhoneDua() {
         height: 15vh;
     }
 
@@ -60,9 +57,9 @@ $smallPhoneDua : 400px;
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: 40%;
-    margin-top: 20px;
-    padding: $padding;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 10%;
     @include smallPhone() {
         // border: 1px solid crimson;
         width: 100%;
@@ -76,9 +73,9 @@ $smallPhoneDua : 400px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: $padding;
+        padding: 0 20% 20px 20%;
         @include smallPhone() {
-            padding: $paddingMobile;
+            padding: 0 10px;
         }
 
         .strukturTextHead {
@@ -87,7 +84,7 @@ $smallPhoneDua : 400px;
             font-weight: bold;
             color: #000000;
             @include smallPhone() {
-                margin: .5rem 0;
+                margin: 40px 0 20px 0;
             }
             h2 {
                 @include smallPhone() {
@@ -101,7 +98,7 @@ $smallPhoneDua : 400px;
 
         .pengurusList {
             max-width: 100%;
-            padding: 10px 3%;
+            padding: 0px 0 10px 0%;
             
 
             .listPengurus {
