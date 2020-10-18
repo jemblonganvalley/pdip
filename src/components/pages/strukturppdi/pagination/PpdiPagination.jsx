@@ -115,7 +115,7 @@ const PpdiPagination = () => {
     </div>
 
     <nav aria-label="Page navigation example" style={{
-        marginTop: '10px',
+        marginTop: '0px',
         width: '100%',
         display: 'flex',
         justifyContent: 'center'

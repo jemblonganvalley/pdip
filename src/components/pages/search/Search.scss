@@ -24,6 +24,10 @@ $smallPhoneDua : 400px;
     margin: 0 0 40px 0;
     padding: 0 0 100px 0;
 
+    // @include smallPhone(){
+    //     border: 1px solid blue;
+    // }
+
     // Bg Black Search
     .background-black-search{
         display: flex;
@@ -34,9 +38,18 @@ $smallPhoneDua : 400px;
         padding: 0 0 0 20%;
         align-items: center;
 
-        // .txt-kata-yang-diCari{
-            // font-size: 15px;
-        // }
+        @include smallPhone(){
+            padding: 0 10px;
+        }
+
+        .txt-kata-yang-diCari{
+            margin: 0;
+
+            @include smallPhone(){
+                font-size: 10pt;
+                margin: 0;
+            }
+        }
 
         // Txt Group
         #txtGroup{
@@ -50,6 +63,13 @@ $smallPhoneDua : 400px;
             width: auto;
             margin: 5px 0 0 50px;
 
+            @include smallPhone(){
+                position: absolute;
+                margin: 0 0 0 10px;
+                left: 120px;
+                right: 10px;
+            }
+
             .input-search{
                 height: 3vh;
                 width: 100%;
@@ -60,6 +80,12 @@ $smallPhoneDua : 400px;
                 padding: 0px 2vw 5px 0px;
                 font-size: 20px;
                 font-weight: 500;
+
+                @include smallPhone(){
+                    height: auto;
+                    font-size: 10pt;
+                    padding: 0 0 0px 0;
+                }
             }
 
             .btn-icon-pageSearch{
@@ -82,6 +108,10 @@ $smallPhoneDua : 400px;
         width: 100%;
         padding: 0 20% 0px 20%;
 
+        @include smallPhone(){
+            padding: 0 10px;
+        }
+
         .column1-hasil-pencarian{
             display: flex;
             position: relative;
@@ -89,11 +119,20 @@ $smallPhoneDua : 400px;
             width: 100%;
             align-items: center;
 
+            @include smallPhone(){
+                flex-direction: column;
+                padding: 10px 0 0 0;
+            }
+
             .txt-hasil-pencarian{
                 display: flex;
                 // font-size: 15px;
                 margin: 0 10px 0 0;
                 position: absolute;
+
+                @include smallPhone(){
+                    position: static;
+                }
             }
 
             .garis-abu-abu{
@@ -102,6 +141,10 @@ $smallPhoneDua : 400px;
                 width: 100%;
                 margin: 0 0 0 130px;
                 background: #bbb;
+
+                @include smallPhone(){
+                    margin: 10px 0 0 0;
+                }
             }
 
         }
@@ -113,6 +156,10 @@ $smallPhoneDua : 400px;
             width: 100%;
             margin-top: 0px;
 
+            @include smallPhone(){
+                flex-direction: column;
+            }
+
             // Info kiri
             .column-info-kiri{
                 display: flex;
@@ -120,6 +167,11 @@ $smallPhoneDua : 400px;
                 height: auto;
                 width: 75%;
                 margin: 0 80px 0px 0;
+
+                @include smallPhone(){
+                    width: 100%;
+                    margin: 0;
+                }
 
                 .card-hasil-pencarian{
                     display: flex;
@@ -136,11 +188,17 @@ $smallPhoneDua : 400px;
                         color: $colors;
                     }
 
+                    // @include smallPhone(){
+                    //     border: 1px solid blue;
+                    // }
+
                     // Img
                     .img-card{
                         display: flex;
                         height: auto;
                         width: 70px;
+                        object-fit: cover;
+                        object-position: center;
                         background: #555;
                     }
 
@@ -153,17 +211,30 @@ $smallPhoneDua : 400px;
                         margin: 0 0 0 20px;
                         padding: 0 5% 0 0;
 
+                        @include smallPhone(){
+                            margin: 0 0 0 10px;
+                            padding: 0;
+                        }
+
                         .column-title-card{
                             display: flex;
                             width: 100%;
 
                             .title1-card{
                                 color: $colors;
+
+                                @include smallPhone(){
+                                    font-size: 8pt;
+                                }
                             }
 
                             .title2-card{
                                 margin: 0 0 0 5px;
                                 color: #555;
+
+                                @include smallPhone(){
+                                    font-size: 8pt;
+                                }
                             }
                         }
 
@@ -173,6 +244,11 @@ $smallPhoneDua : 400px;
                             width: 100%;
                             text-align: start;
                             margin: 10px 0 0 0;
+                            
+                            @include smallPhone(){
+                                font-size: 10pt;
+                                margin: 5px 0 0 0;
+                            }
                         }
                     }
                 }

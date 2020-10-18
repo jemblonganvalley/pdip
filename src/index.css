@@ -1,3 +1,4 @@
+
 body {
   /* margin: 0; */
   font-family: 'Roboto', sans-serif;
@@ -5,6 +6,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f3f3f3;
   user-select: none;
+  overflow-x: hidden;
+  margin-top: 117px;
 }
 
 * {
@@ -32,3 +35,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media only screen and (max-width: 500px) {
+  body{
+    margin-top: 79px;
+  }
+}
+

@@ -157,9 +157,9 @@ const MainNavbar = ({token})=> {
               </ul>
               <form className="d-inline-flex">
                 <input className="form-control mr-2" type="text" placeholder="cari artikel" name="search" />
-                <button name="submit" className="btn-next">
+                <Link to='/search' name="submit" className="btn-next">
                   <i class="fa fa-long-arrow-right" aria-hidden="true" name="icon" ></i>
-                </button>
+                </Link>
               </form>
 
               

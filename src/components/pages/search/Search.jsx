@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../search/Search.scss'
+import img from '../../../img/profil.png'
+import img5 from '../../../img/img5.jpg'
+import kampanye from '../../../img/kampanye.jpg'
 
 const Search = ()=>{
     return(
@@ -10,7 +13,7 @@ const Search = ()=>{
                   {/* Bg Black Search */}
                   <form action="" className="background-black-search">
                       <h6 className="txt-kata-yang-diCari" id="txtGroup">
-                        Kata yang dicari:
+                        Kata yang dicari :
                       </h6>
 
                       <div className="kolom-search-modal">
@@ -42,7 +45,7 @@ const Search = ()=>{
                     <div className="column2-hasil-pencarian">
                       <div className="column-info-kiri">
                           <Link className="card-hasil-pencarian">
-                            <img src="" alt="" className="img-card"/>
+                            <img src={img5} alt="" className="img-card"/>
 
                             <div className="column-content-card">
                               <div className="column-title-card">
@@ -62,7 +65,7 @@ const Search = ()=>{
                           </Link>
 
                           <Link className="card-hasil-pencarian">
-                            <img src="" alt="" className="img-card"/>
+                            <img src={img} alt="" className="img-card"/>
 
                             <div className="column-content-card">
                               <div className="column-title-card">
@@ -82,7 +85,7 @@ const Search = ()=>{
                           </Link>
 
                           <Link className="card-hasil-pencarian">
-                            <img src="" alt="" className="img-card"/>
+                            <img src={kampanye} alt="" className="img-card"/>
 
                             <div className="column-content-card">
                               <div className="column-title-card">
