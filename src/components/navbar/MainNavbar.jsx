@@ -118,7 +118,9 @@ const MainNavbar = ({token})=> {
             <NavLink className="navbar-brand" to="/" activeClassName="brand" >
               <img src={logo} alt="" width="60" className="d-inline-block align-center active" loading="lazy" />
             </NavLink>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" >
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" style={{
+              color: '#fff'
+            }}>
               <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -155,7 +157,7 @@ const MainNavbar = ({token})=> {
               </ul>
               <form className="d-inline-flex">
                 <input className="form-control mr-2" type="text" placeholder="cari artikel" name="search" />
-                <button name="submit">
+                <button name="submit" className="btn-next">
                   <i class="fa fa-long-arrow-right" aria-hidden="true" name="icon" ></i>
                 </button>
               </form>

@@ -209,7 +209,7 @@ const Page1 = () => {
                 <div className="col1-section6-beritaPage1">
                     <MainDivider text="Berita Terbaru"
                         garisMerah="7rem"
-                        m="1rem 0" />
+                        mrgn="0rem 0" />
                 </div>
 
                 <div className="col2-section6-beritaPage1">

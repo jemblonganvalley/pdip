@@ -21,6 +21,12 @@ const CardMateriPokok = ({ cardMateriPokokItem }) => {
                         }}>
                         </Link>
                         <div className="box-title-card-materi-pk">
+                            <small className="txt-author-card-materi-pk">
+                                {e.txtAuthor}
+                            </small>
+                            <small className="txt-headline-card-materi-pk">
+                                {e.txtHeadline}
+                            </small>
                             <h5 className="txt-jdl-materi-pk">
                                 {e.txtJdlMateriPk}
                             </h5>
