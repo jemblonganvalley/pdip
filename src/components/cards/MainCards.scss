@@ -92,10 +92,19 @@ $smallPhoneDua : 400px;
                 flex: 1;
             }
             
-            
+            .txt-title-page-mainCard{
+                display: flex;
+                font-size: 8pt;
+                font-weight: bold;
+                color: $colors;
+
+                @include smallPhone(){
+                    font-size: 7pt;
+                }
+            }
 
             .textSmall {
-                font-size: 10pt;
+                font-size: 8pt;
 
                 @include smallPhone() {
                     font-size: 5pt;

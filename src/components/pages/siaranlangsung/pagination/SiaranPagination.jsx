@@ -4,87 +4,101 @@ import Cards from '../../../cards/MainCards'
 import megawati12 from '../../../../img/megawati12.png'
 import CardMultimedia from '../../../cardmultimedia/CardMultimedia'
 import AngkaPaginationEvent from '../../../paginationevent/AngkaPaginationEvent'
+import CardMateriPokok from '../../../cardmateripokok/CardMateriPokok'
 
 const SiaranPagination = ()=> {
 
     let [siaran , setSiaran] = useState([
         {
-            id : 1, 
-            images : megawati12,
-            headline : 'Admin PDI Perjuangan | 1 Januari 2019',
-            isi : 'lorem ipsum dolor sit amet.'
+            pageMateriPk : 1, 
+            imgMateriPk : megawati12,
+            txtAuthor: 'Berita |',
+            txtHeadline : 'Admin PDI Perjuangan | 1 Januari 2019',
+            txtParagrapMateriPk : 'lorem ipsum dolor sit amet.'
         },
         {
-            id : 2, 
-            images : megawati12,
-            headline : 'Admin PDI Perjuangan | 1 Januari 2019',
-            isi : 'lorem ipsum dolor sit amet.'
+            pageMateriPk : 2, 
+            imgMateriPk : megawati12,
+            txtAuthor: 'Berita |',
+            txtHeadline : 'Admin PDI Perjuangan | 1 Januari 2019',
+            txtParagrapMateriPk : 'lorem ipsum dolor sit amet.'
         },
         {
-            id : 3, 
-            images : megawati12,
-            headline : 'Admin PDI Perjuangan | 1 Januari 2019',
-            isi : 'lorem ipsum dolor sit amet.'
+            pageMateriPk : 3, 
+            imgMateriPk : megawati12,
+            txtAuthor: 'Berita |',
+            txtHeadline : 'Admin PDI Perjuangan | 1 Januari 2019',
+            txtParagrapMateriPk : 'lorem ipsum dolor sit amet.'
         },
         {
-            id : 4, 
-            images : megawati12,
-            headline : 'Admin PDI Perjuangan | 1 Januari 2019',
-            isi : 'lorem ipsum dolor sit amet.'
+            pageMateriPk : 4, 
+            imgMateriPk : megawati12,
+            txtAuthor: 'Berita |',
+            txtHeadline : 'Admin PDI Perjuangan | 1 Januari 2019',
+            txtParagrapMateriPk : 'lorem ipsum dolor sit amet.'
         },
         {
-            id : 5, 
-            images : megawati12,
-            headline : 'Admin PDI Perjuangan | 1 Januari 2019',
-            isi : 'lorem ipsum dolor sit amet.'
+            pageMateriPk : 5, 
+            imgMateriPk : megawati12,
+            txtAuthor: 'Berita |',
+            txtHeadline : 'Admin PDI Perjuangan | 1 Januari 2019',
+            txtParagrapMateriPk : 'lorem ipsum dolor sit amet.'
         },
         {
-            id : 6, 
-            images : megawati12,
-            headline : 'Admin PDI Perjuangan | 1 Januari 2019',
-            isi : 'lorem ipsum dolor sit amet.'
+            pageMateriPk : 6, 
+            imgMateriPk : megawati12,
+            txtAuthor: 'Berita |',
+            txtHeadline : 'Admin PDI Perjuangan | 1 Januari 2019',
+            txtParagrapMateriPk : 'lorem ipsum dolor sit amet.'
         },
         {
-            id : 7, 
-            images : megawati12,
-            headline : 'Admin PDI Perjuangan | 1 Januari 2019',
-            isi : 'lorem ipsum dolor sit amet.'
+            pageMateriPk : 7, 
+            imgMateriPk : megawati12,
+            txtAuthor: 'Berita |',
+            txtHeadline : 'Admin PDI Perjuangan | 1 Januari 2019',
+            txtParagrapMateriPk : 'lorem ipsum dolor sit amet.'
         },
         {
-            id : 8, 
-            images : megawati12,
-            headline : 'Admin PDI Perjuangan | 1 Januari 2019',
-            isi : 'lorem ipsum dolor sit amet.'
+            pageMateriPk : 8, 
+            imgMateriPk : megawati12,
+            txtAuthor: 'Berita |',
+            txtHeadline : 'Admin PDI Perjuangan | 1 Januari 2019',
+            txtParagrapMateriPk : 'lorem ipsum dolor sit amet.'
         },
         {
-            id : 9, 
-            images : megawati12,
-            headline : 'Admin PDI Perjuangan | 1 Januari 2019',
-            isi : 'lorem ipsum dolor sit amet.'
+            pageMateriPk : 9, 
+            imgMateriPk : megawati12,
+            txtAuthor: 'Berita |',
+            txtHeadline : 'Admin PDI Perjuangan | 1 Januari 2019',
+            txtParagrapMateriPk : 'lorem ipsum dolor sit amet.'
         },
         {
-            id : 10, 
-            images : megawati12,
-            headline : 'Admin PDI Perjuangan | 1 Januari 2019',
-            isi : 'lorem ipsum dolor sit amet.'
+            pageMateriPk : 10, 
+            imgMateriPk : megawati12,
+            txtAuthor: 'Berita |',
+            txtHeadline : 'Admin PDI Perjuangan | 1 Januari 2019',
+            txtParagrapMateriPk : 'lorem ipsum dolor sit amet.'
         },
         {
-            id : 11, 
-            images : megawati12,
-            headline : 'Admin PDI Perjuangan | 1 Januari 2019',
-            isi : 'lorem ipsum dolor sit amet.'
+            pageMateriPk : 11, 
+            imgMateriPk : megawati12,
+            txtAuthor: 'Berita |',
+            txtHeadline : 'Admin PDI Perjuangan | 1 Januari 2019',
+            txtParagrapMateriPk : 'lorem ipsum dolor sit amet.'
         },
         {
-            id : 12, 
-            images : megawati12,
-            headline : 'Admin PDI Perjuangan | 1 Januari 2019',
-            isi : 'lorem ipsum dolor sit amet.'
+            pageMateriPk : 12, 
+            imgMateriPk : megawati12,
+            txtAuthor: 'Berita |',
+            txtHeadline : 'Admin PDI Perjuangan | 1 Januari 2019',
+            txtParagrapMateriPk : 'lorem ipsum dolor sit amet.'
         },
         {
-            id : 13, 
-            images : megawati12,
-            headline : 'Admin PDI Perjuangan | 1 Januari 2019',
-            isi : 'lorem ipsum dolor sit amet.'
+            pageMateriPk : 13, 
+            imgMateriPk : megawati12,
+            txtAuthor: 'Berita |',
+            txtHeadline : 'Admin PDI Perjuangan | 1 Januari 2019',
+            txtParagrapMateriPk : 'lorem ipsum dolor sit amet.'
         },
     ])
 
@@ -98,18 +112,16 @@ const SiaranPagination = ()=> {
 
     return (
         <>
-        <div className="wrapperSiaran" style={{
-            display : 'flex',
-            justifyContent : 'center',
-            flexWrap : 'wrap'
-        }}>
-             <CardMultimedia siaran={currentPosts} />
+        <div className="wrapperSiaran">
+             {/* <CardMultimedia siaran={currentPosts} /> */}
+
+             <CardMateriPokok cardMateriPokokItem={currentPosts}/>
 
             
         </div>
 
         <nav aria-label="Page navigation example" style={{
-            marginTop: '10px',
+            marginTop: '0px',
             width: '100%',
             display: 'flex',
             justifyContent: 'center'

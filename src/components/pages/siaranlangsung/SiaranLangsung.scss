@@ -15,9 +15,9 @@ $smallPhoneDua : 400px;
 
 .wrapperSL {
     width: 100%;
-    padding: $paddingSmall;
+    padding: 10px 0 40px 0;
     @include smallPhone() {
-        padding: $paddingMobile;
+        padding: 0 0 40px 0;
     }
 
     .linkedSL {
@@ -26,6 +26,7 @@ $smallPhoneDua : 400px;
         flex-direction: row;
         width: 40%;
         margin-top: 20px;
+        padding: 0 10%;
         @include smallPhone() {
             // border: 1px solid crimson;
             width: 100%;
@@ -33,8 +34,39 @@ $smallPhoneDua : 400px;
         }
     }
 
+    .SiaranLangsung{
+        padding: 0 20%;
+
+        @include smallPhone(){
+            padding: 0 10px;
+        }
+    }
+
+    .dividerSL{
+        display: flex;
+        height: auto;
+        width: 100%;
+        align-items: center;
+        padding: 0 20%;
+        margin: 40px 0;
+
+        @include smallPhone(){
+            padding: 0 10px;
+        }
+    }
+
     .cardSL {
         max-width: 100%;
+        padding: 0 20%;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        @include smallPhone(){
+            flex-direction: column;
+            justify-content: center;
+            padding: 0;
+        }
 
         .listSL {
             flex-wrap: wrap;

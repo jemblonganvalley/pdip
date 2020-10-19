@@ -22,7 +22,8 @@ const Cards = ({
   textCategoryChild,
   id,
   marginTop,
-  dataVideo
+  dataVideo,
+  siaran
 }) => {
   let dt = toString(dateTime);
   let dtt = dt.split(" ");
@@ -83,6 +84,9 @@ const Cards = ({
           >
             {textCategoryChild}
           </p>
+          <small className="txt-title-page-mainCard">
+              Berita |
+          </small>
           <small className="textSmall" style={{ fontSize: "8pt" }}>
             {textSmall}
           </small>{" "}

@@ -18,6 +18,10 @@ $smallPhoneDua : 400px;
 .wrapperMultimedia {
     width: 100%;
 
+    @include smallPhone(){
+        padding: 0 0 20px 0;
+    }
+
     .headerMedia {
         background-size: cover;
         height: 15vh;

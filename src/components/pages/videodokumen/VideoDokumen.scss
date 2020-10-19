@@ -14,9 +14,9 @@ $smallPhoneDua : 400px;
 }
 .wrapperVD {
     width: 100%;
-    padding: $paddingSmall;
+    padding: 10px 0 40px 0;
     @include smallPhone() {
-        padding: $paddingMobile;
+        padding: 0 0 40px 0;
     }
 
     .linkedVD {
@@ -25,6 +25,7 @@ $smallPhoneDua : 400px;
         flex-direction: row;
         width: 40%;
         margin-top: 20px;
+        padding: 0 10%;
         @include smallPhone() {
             // border: 1px solid crimson;
             width: 100%;
@@ -32,8 +33,34 @@ $smallPhoneDua : 400px;
         }
     }
 
+    .videoDokumen{
+        display: flex;
+        padding: 0 20%;
+
+        @include smallPhone(){
+            padding: 0 10px;
+        }
+    }
+
+    .dividerVD{
+        display: flex;
+        height: auto;
+        padding: 0 20%;
+        margin: 40px 0;
+        align-items: center;
+
+        @include smallPhone(){
+            padding: 0 10px;
+        }
+    }
+
     .cardVD {
         max-width: 100%;
+        padding: 0 20%;
+
+        @include smallPhone(){
+            padding: 0;
+        }
 
         .listVD {
             flex-wrap: wrap;

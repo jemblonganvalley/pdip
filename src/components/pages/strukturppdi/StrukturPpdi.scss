@@ -17,14 +17,14 @@ $smallPhoneDua : 400px;
     width: 100%;
     padding: 10px 0 40px 0;
     @include smallPhone() {
-        padding: 0;
+        padding: 0 0 20px 0;
     }
 
     .linkedPPDI {
         display: flex;
         align-items: center;
         flex-direction: row;
-        width: 40%;
+        width: 100%;
         margin-top: 20px;
         padding: 0 10% 0 10%;
         @include smallPhone() {
@@ -39,7 +39,7 @@ $smallPhoneDua : 400px;
         padding: 0 20%;
 
         @include smallPhone(){
-            margin: 0px 0 20px 0;
+            margin: 0px 0 40px 0;
             padding: 0 10px;
         }
     }

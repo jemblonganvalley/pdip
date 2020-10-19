@@ -17,7 +17,7 @@ $smallPhoneDua : 400px;
     width: 100%;
     padding: 10px 0 40px 0;
     @include smallPhone() {
-        padding: $paddingMobile;
+        padding: 0 0 40px 0;
     }
 
     .linkedRegulasi {
@@ -34,9 +34,21 @@ $smallPhoneDua : 400px;
         }
     }
 
+    .dividerRegulasi{
+        padding: 0 20%;
+
+        @include smallPhone(){
+            padding: 0 10px;
+        }
+    }
+
     .cardRegulasi {
         max-width: 100%;
         padding: 0 20% 0 20%;
+
+        @include smallPhone(){
+            padding: 0;
+        }
 
         .listRegulasi {
             flex-wrap: wrap;

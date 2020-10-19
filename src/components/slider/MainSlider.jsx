@@ -56,21 +56,20 @@ const MainSlider = ({ value, cls }) => {
                 : `carousel-item ${e.class}`
             }
           >
-            <div className="row image1 images">
+            <div className="rowMainSlider image1 images">
               <img
                 src={`http://atur.biar.pw/public${e.image}`}
-                alt={e.title}
-                style={{
-                  width: "100vw",
-                  height: "90vh",
-                  position: "absolute",
-                  top: "0",
-                  objectFit: "cover",
-                }}
-              />
+                alt={e.title}/>
+
               <div className="col col-lg-6 mr-auto text1">
                 <h1>{e.title}</h1>
                 <p dangerouslySetInnerHTML={{ __html: e.paragraph }}></p>
+
+                {/* For Responsive Mobile */}
+                <div className="box-red-paragrap-mainSlider">
+                  <p dangerouslySetInnerHTML={{ __html: e.paragraph }}></p>
+                </div>
+                {/* END For Responsive Mobile */}
               </div>
             </div>
           </div>

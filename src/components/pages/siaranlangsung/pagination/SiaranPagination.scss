@@ -13,6 +13,16 @@ $smallPhoneDua : 400px;
     }
 }
 
+.wrapperSiaran{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include smallPhone(){
+        flex-direction: column;
+    }
+}
+
 .page-item:first-child .page-link {
     border-radius: 0;
 }

@@ -15,9 +15,7 @@ const VisiMisi = () => {
                             page3="Visi Misi" />
         </div>
 
-        <div className="dividerVisiMisi" style={{
-            padding: '0 20% 0 20%'
-        }}>
+        <div className="dividerVisiMisi">
             <MainDivider text="Visi Misi" mrgn="0 0 40px 0"/>
         </div>
 
