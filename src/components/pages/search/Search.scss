@@ -46,6 +46,7 @@ $smallPhoneDua : 400px;
             margin: 0;
 
             @include smallPhone(){
+                display: none;
                 font-size: 10pt;
                 margin: 0;
             }
@@ -66,8 +67,8 @@ $smallPhoneDua : 400px;
             @include smallPhone(){
                 position: absolute;
                 margin: 0 0 0 10px;
-                left: 120px;
-                right: 10px;
+                left: 50px;
+                right: 50px;
             }
 
             .input-search{
@@ -83,8 +84,8 @@ $smallPhoneDua : 400px;
 
                 @include smallPhone(){
                     height: auto;
-                    font-size: 10pt;
-                    padding: 0 0 0px 0;
+                    font-size: 13pt;
+                    padding: 0 30px 0px 0;
                 }
             }
 
@@ -170,7 +171,6 @@ $smallPhoneDua : 400px;
 
                 @include smallPhone(){
                     width: 100%;
-                    margin: 0;
                 }
 
                 .card-hasil-pencarian{
@@ -261,6 +261,11 @@ $smallPhoneDua : 400px;
                 flex-direction: column;
                 height: auto;
                 width: 25%;
+
+                @include smallPhone(){
+                    width: 100%;
+                    margin: 10px 0 0 0;
+                }
 
                 .btn-info-kanan{
                     display: flex;

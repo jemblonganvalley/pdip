@@ -110,7 +110,7 @@ const PartaiPage = () => {
                             className="textContent textContentSatu"
                             style={{}}
                           >
-                            <h3>{e.title}</h3>
+                            <h5>{e.title}</h5>
                             {/* <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Molestias inventore nobis doloremque.

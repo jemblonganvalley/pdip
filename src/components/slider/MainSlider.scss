@@ -34,8 +34,8 @@ $deviceThree : 1200px;
     }
 }
 
-
 .image1 {
+    display: flex;
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -43,8 +43,21 @@ $deviceThree : 1200px;
     position: relative;
 
     @include smallPhone() {
-        background-size: cover;
-        height: 47vh;
+        height: 40vh;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        // position: absolute;
+        object-fit: cover;
+        object-position: center;
+
+        @include smallPhone(){
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
     }
 
     .text1 {
@@ -62,6 +75,7 @@ $deviceThree : 1200px;
         align-items: center;
         position: absolute;
         left: 0;
+        padding: 0;
 
         @include deviceOne(){
             width: 55%;
@@ -76,20 +90,18 @@ $deviceThree : 1200px;
         }
 
         @include smallPhone() {
-            background-size: cover;
-            height: auto;
-            background: url(../../img/bgTextMobilez-01.svg);
-            background-repeat: no-repeat;
             display: flex;
-            justify-content: center;
+            position: relative;
+            background-size: cover;
+            height: 100%;
+            width: auto;
+            background: none;
+            background-repeat: no-repeat;
             align-items: flex-start;
-            padding-left: 1rem 2rem 0 2rem;
+            padding: 1rem 0rem 0 0rem;
             text-align: center;
-        }
-
-        @include smallPhone() {
-            padding: 1rem 2rem 0 2rem;
-            text-align: center;
+            opacity: 1;
+            padding: 0;
         }
         
         h1 {
@@ -99,9 +111,13 @@ $deviceThree : 1200px;
             margin-bottom: 2em;
             
         @include smallPhone() {
-            font-size: 9pt;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-size: 10pt;
             width: 50%;
-            margin-bottom: 1em;
+            text-align: start;
+            // margin-bottom: 1em;
         }
 
         // @include smallPhoneDua() {
@@ -118,8 +134,34 @@ $deviceThree : 1200px;
             width: 60%;
 
             @include smallPhone() {
+                display: none;
                 font-size: 8pt;
                 width: 50%;
+            }
+        }
+
+        .box-red-paragrap-mainSlider{
+            display: none;
+
+            @include smallPhone(){
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                height: 45%;
+                width: 100%;
+                background-color: rgba(255, 0, 8, 0.6);
+                padding: 20px 30px 0 30px;
+            }
+
+            p{
+                display: flex;
+
+                @include smallPhone(){
+                    display: flex;
+                    top: 0;
+                    width: 100%;
+                    text-align: start;
+                }
             }
         }
     }
