@@ -15,16 +15,17 @@ $smallPhoneDua : 400px;
 
 .wrapperVideo {
     width: 100%;
-    padding: $paddingSmall;
+    padding: 10px 0 40px 0;
     @include smallPhone() {
-        padding: $paddingMobile;
+        padding: 0 0 40px 0;
     }
     .linkedVideo {
         display: flex;
         align-items: center;
         flex-direction: row;
-        width: 40%;
-        margin-top: 20px;
+        width: 100%;
+        margin-top: 15px;
+        padding: 0 10%;
         @include smallPhone() {
             // border: 1px solid crimson;
             width: 100%;
@@ -32,17 +33,24 @@ $smallPhoneDua : 400px;
         }
     }
     
-    
+    .container-vmedia-page{
+        padding: 0 20%;
+
+        @include smallPhone(){
+            padding: 0 10px;
+        }
+    }
 
     .wrapperCardVideo {
         display: flex;
-        flex-direction: row;
         margin-top: 2rem;
-        padding: $paddingMobile;
+        padding: 0 20%;
         justify-content: space-between;
+        flex-wrap: wrap;
         @include smallPhone() {
             flex-wrap: wrap;
-            
+            flex-direction: column;
+            padding: 0 10px;
         }
     }
 }

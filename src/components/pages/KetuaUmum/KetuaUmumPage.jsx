@@ -98,10 +98,10 @@ const KetuaUmumPage = () => {
               image3={`https://atur.biar.pw/public/${configHome[2].value[2].image}`}
               to4="/pidatohut"
               image4={`https://atur.biar.pw/public/${configHome[2].value[3].image}`}
-              width1="35"
-              width2="35"
-              width3="35"
-              width4="35"
+              width1="0"
+              width2="0"
+              width3="0"
+              width4="0"
               text="pidato kongres"
               text2="pidato rakernas"
               text3="pidato rakornas"

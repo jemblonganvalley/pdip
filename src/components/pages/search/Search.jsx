@@ -1,11 +1,117 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../search/Search.scss'
 import img from '../../../img/profil.png'
 import img5 from '../../../img/img5.jpg'
 import kampanye from '../../../img/kampanye.jpg'
+import AngkaPaginationEvent from '../../paginationevent/AngkaPaginationEvent'
+import CardSearch from '../../cardsearch/CardSearch'
 
 const Search = ()=>{
+
+    let [cardSearch, setCardSearch] = useState([
+      {
+        page : '/',
+        img : img5,
+        title1 : 'Berita |',
+        title2 : 'Nasional',
+        paragrap : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!'
+      },
+      {
+        page : '/',
+        img : img5,
+        title1 : 'Berita |',
+        title2 : 'Nasional',
+        paragrap : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!'
+      },
+      {
+        page : '/',
+        img : img5,
+        title1 : 'Berita |',
+        title2 : 'Nasional',
+        paragrap : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!'
+      },
+      {
+        page : '/',
+        img : img5,
+        title1 : 'Berita |',
+        title2 : 'Nasional',
+        paragrap : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!'
+      },
+      {
+        page : '/',
+        img : img5,
+        title1 : 'Berita |',
+        title2 : 'Nasional',
+        paragrap : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!'
+      },
+      {
+        page : '/',
+        img : img5,
+        title1 : 'Berita |',
+        title2 : 'Nasional',
+        paragrap : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!'
+      },
+      {
+        page : '/',
+        img : img5,
+        title1 : 'Berita |',
+        title2 : 'Nasional',
+        paragrap : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!'
+      },
+      {
+        page : '/',
+        img : img5,
+        title1 : 'Berita |',
+        title2 : 'Nasional',
+        paragrap : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!'
+      },
+      {
+        page : '/',
+        img : img5,
+        title1 : 'Berita |',
+        title2 : 'Nasional',
+        paragrap : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!'
+      },
+      {
+        page : '/',
+        img : img5,
+        title1 : 'Berita |',
+        title2 : 'Nasional',
+        paragrap : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!'
+      },
+      {
+        page : '/',
+        img : img5,
+        title1 : 'Berita |',
+        title2 : 'Nasional',
+        paragrap : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!'
+      },
+      {
+        page : '/',
+        img : img5,
+        title1 : 'Berita |',
+        title2 : 'Nasional',
+        paragrap : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!'
+      },
+      {
+        page : '/',
+        img : img5,
+        title1 : 'Berita |',
+        title2 : 'Nasional',
+        paragrap : 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!'
+      },
+    ])
+
+    let [currentPage2, setCurrentPage2] = useState(1)
+    let [itemEventPerPage] = useState(9)
+
+    const indexOfLastPost = currentPage2 * itemEventPerPage
+    const indexOfFirstPost = indexOfLastPost - itemEventPerPage
+    const currentPosts = cardSearch.slice(indexOfFirstPost, indexOfLastPost)
+
+    const paginate = (pageNumber) => setCurrentPage2(pageNumber)
+
     return(
         <>
         {/* Modal Display Search */}
@@ -44,145 +150,9 @@ const Search = ()=>{
                     {/* Column2 */}
                     <div className="column2-hasil-pencarian">
                       <div className="column-info-kiri">
-                          <Link className="card-hasil-pencarian">
-                            <img src={img5} alt="" className="img-card"/>
-
-                            <div className="column-content-card">
-                              <div className="column-title-card">
-                                  <small className="title1-card">
-                                    Berita |
-                                  </small>
-
-                                  <small className="title2-card">
-                                    Nasional
-                                  </small>
-                              </div>
-
-                              <h6 className="txt-paragrap-card">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, minima!
-                              </h6>
-                            </div>
-                          </Link>
-
-                          <Link className="card-hasil-pencarian">
-                            <img src={img} alt="" className="img-card"/>
-
-                            <div className="column-content-card">
-                              <div className="column-title-card">
-                                  <small className="title1-card">
-                                    Berita |
-                                  </small>
-
-                                  <small className="title2-card">
-                                    Nasional
-                                  </small>
-                              </div>
-
-                              <h6 className="txt-paragrap-card">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, minima!
-                              </h6>
-                            </div>
-                          </Link>
-
-                          <Link className="card-hasil-pencarian">
-                            <img src={kampanye} alt="" className="img-card"/>
-
-                            <div className="column-content-card">
-                              <div className="column-title-card">
-                                  <small className="title1-card">
-                                    Berita |
-                                  </small>
-
-                                  <small className="title2-card">
-                                    Nasional
-                                  </small>
-                              </div>
-
-                              <h6 className="txt-paragrap-card">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, minima!
-                              </h6>
-                            </div>
-                          </Link>
-
-                          <Link className="card-hasil-pencarian">
-                            <img src="" alt="" className="img-card"/>
-
-                            <div className="column-content-card">
-                              <div className="column-title-card">
-                                  <small className="title1-card">
-                                    Berita |
-                                  </small>
-
-                                  <small className="title2-card">
-                                    Nasional
-                                  </small>
-                              </div>
-
-                              <h6 className="txt-paragrap-card">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, minima!
-                              </h6>
-                            </div>
-                          </Link>
-
-                          <Link className="card-hasil-pencarian">
-                            <img src="" alt="" className="img-card"/>
-
-                            <div className="column-content-card">
-                              <div className="column-title-card">
-                                  <small className="title1-card">
-                                    Berita |
-                                  </small>
-
-                                  <small className="title2-card">
-                                    Nasional
-                                  </small>
-                              </div>
-
-                              <h6 className="txt-paragrap-card">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, minima!
-                              </h6>
-                            </div>
-                          </Link>
-
-                          <Link className="card-hasil-pencarian">
-                            <img src="" alt="" className="img-card"/>
-
-                            <div className="column-content-card">
-                              <div className="column-title-card">
-                                  <small className="title1-card">
-                                    Berita |
-                                  </small>
-
-                                  <small className="title2-card">
-                                    Nasional
-                                  </small>
-                              </div>
-
-                              <h6 className="txt-paragrap-card">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, minima!
-                              </h6>
-                            </div>
-                          </Link>
-
-                          <Link className="card-hasil-pencarian">
-                            <img src="" alt="" className="img-card"/>
-
-                            <div className="column-content-card">
-                              <div className="column-title-card">
-                                  <small className="title1-card">
-                                    Berita |
-                                  </small>
-
-                                  <small className="title2-card">
-                                    Nasional
-                                  </small>
-                              </div>
-
-                              <h6 className="txt-paragrap-card">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, minima!
-                              </h6>
-                            </div>
-                          </Link>
+                          {/* Card Search */}
+                          <CardSearch cardSearchItem={currentPosts}/>
+                          {/* END Card Search */}
                       </div>
 
                       <div className="column-info-kanan">
@@ -204,6 +174,13 @@ const Search = ()=>{
                       </div>
                     </div>
                     {/* END Column2 */}
+
+                    {/* Column3 Paginate */}
+                    <div className="column3-pagination-pencarian">
+                      <AngkaPaginationEvent itemEventPerPage={itemEventPerPage} totalPosts={cardSearch.length} paginate={paginate} />
+                    </div>
+                    {/* END Column3 Paginate */}
+                    {/* END Container Hasil Pencarian */}
                   </div>
                   {/* END Container Hasil Pencarian */}
               </div>

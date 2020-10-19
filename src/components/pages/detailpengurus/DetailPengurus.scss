@@ -20,12 +20,9 @@ $smallPhoneDua : 400px;
     .detailHead {
         background: url(../../../img/kampanye.jpg);
         background-size: cover;
-        height: 25vh;
+        height: 15vh;
         background-position: center;
         @include smallPhone() {
-            height: 20vh;
-        }
-        @include smallPhoneDua() {
             height: 15vh;
         }
         
@@ -77,9 +74,9 @@ $smallPhoneDua : 400px;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding: $paddingSmall;
+            padding: 0 20%;
             @include smallPhone() {
-                padding: $paddingMobile;
+                padding: 0 10px;
             }
         .bidangTextHead {
             margin: 2rem 0;
@@ -95,7 +92,7 @@ $smallPhoneDua : 400px;
             // flex-direction: column;
             width: 100%;
             height: 100vh;
-            padding: $padding;
+            padding: 0;
             // border: 1px solid blue;
             @include smallPhone() {
                 padding: $paddingMobile;
@@ -104,26 +101,29 @@ $smallPhoneDua : 400px;
             }
             
             .kolum1 {
-                width: 30vw;
+                width: 20%;
                 height: 100%;
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
                 flex-direction: column;
                 @include smallPhone() {
+                    align-items: center;
                     width: 100%;
                 }
                 img {
+                    height: 200px;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
                     @include smallPhone() {
                         width: 180px;
-                    }
-                    @include smallPhoneDua() {
-                        width: 150px;
                     }
                 }
 
                 .textProfil {
                     display: flex;
                     flex-direction: column;
+                    position: static;
                     width: 70%;
                     @include smallPhone() {
                         justify-content: center;
@@ -133,7 +133,8 @@ $smallPhoneDua : 400px;
                     }
 
                     .profilText {
-                        margin: 10px;
+                        height: auto;
+                        margin: 10px 10px 10px 0;
                         @include smallPhone() {
                             margin: 5px;
                         }
@@ -146,8 +147,8 @@ $smallPhoneDua : 400px;
                             text-transform: uppercase;
                         }
                         h6 {
+                            text-align: start;
                         font-weight: bold;
-
                         }
                     }
                 }
@@ -157,9 +158,16 @@ $smallPhoneDua : 400px;
                 // justify-content: center;
                 // align-items: center;
                 flex-direction: column;
-                width: 100%;
+                width: 80%;
                 height: 100%;
+                margin: 0 0 0 30px;
                 // border: 1px solid blue;
+
+                @include smallPhone(){
+                    width: 100%;
+                    margin: 40px 0 0 0px;
+                    padding: 0 20px 0 20px;
+                }
 
                 .descProfil {
                     display: flex;
