@@ -41,10 +41,8 @@ export const LighBox = ({source})=>{
 const HomePage = () => {
   const [configHome, setConfigHome] = useState([]);
   const [gallery, setGallery] = useState([]);
-  const [video, setVideo] = useState([]);
   const [showVid, setShowVid] = useState(false)
 
- 
 
   const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
@@ -104,9 +102,6 @@ const HomePage = () => {
     setGallery(dataGallery.query.data);
   };
 
-  
-
-
   useEffect(() => {
     getConfigHome();
     getGallery();
@@ -125,6 +120,8 @@ const HomePage = () => {
         {configHome.length > 0 && (
           <>
           <MainSlider value={configHome[0].value} cls={configHome[0].class} />
+
+          {/* LIGHTBOX */}
           {showVid && (
             <>
             <span style={{
@@ -141,6 +138,7 @@ const HomePage = () => {
             </>
           )}
           </>
+
         )}
 
         {/* STATISTIK INFO COVID */}
@@ -157,6 +155,7 @@ const HomePage = () => {
             {configHome.length > 0 &&
               configHome[1].value.map((e, i) => (
                 <div className="col-lg-4 custom" key={i}>
+                  {/* URUTAN LINK */}
                   <a href={i === 0 ? '/home' : i === 1 ? 'https://www.pdipkreatif.com/home' : '/event'} target={i == 1 ? '_blank' : ''}>
                     <div className="customBorder">
                       <img
@@ -193,15 +192,16 @@ const HomePage = () => {
                     backgroundImage: `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
                   }}
                   key={i}
+                  onClick={()=>{
+                              setShowVid(true)
+                            }}
                 >
 
                   <div className="textYoutube">
                     <div className="wrapperText">
                       <ul className="circleYoutube">
                         <li>
-                            <i className="fa fa-play" onClick={()=>{
-                              setShowVid(true)
-                            }} style={{color : 'white'}}></i>
+                            <i className="fa fa-play" style={{color : 'white'}}></i>
                         </li>
                       </ul>
                       <div className="textInfoYT">

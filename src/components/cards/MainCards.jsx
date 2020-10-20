@@ -141,7 +141,7 @@ const Cards = ({
           to={`${page}/${id}`}
           className="imageCard"
           style={{
-            backgroundImage: `url(https://www.pdiperjuangan.id/cms/${imageCard})`,
+            backgroundImage: `url(https://atur.biar.pw/public/${imageCard})`,
             textDecoration: "none",
             backgroundPosition: "center",
           }}
