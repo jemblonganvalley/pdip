@@ -1,4 +1,5 @@
 import React from 'react'
+import CardSocialMedia from '../cardsocialmedia/CardSocialMedia'
 import './VMedia.scss'
 
 const VMedia = ({source, headline, desc})=> {
@@ -23,11 +24,15 @@ const VMedia = ({source, headline, desc})=> {
 
                 </p>
                 <div className="share">
-                    <small className="marginShare">SHARE : </small>
+                    {/* Card Social Media */}
+                    <CardSocialMedia/>
+                    {/* END Card Social Media */}
+
+                    {/* <small className="marginShare">SHARE : </small>
                     <i class="fa fa-facebook marginShare" aria-hidden="true"></i>
                     <i class="fa fa-twitter marginShare" aria-hidden="true"></i>
                     <i class="fa fa-instagram marginShare" aria-hidden="true"></i>
-                    <i class="fa fa-whatsapp marginShare" aria-hidden="true"></i>
+                    <i class="fa fa-whatsapp marginShare" aria-hidden="true"></i> */}
                 </div>
             </div>
         </div>

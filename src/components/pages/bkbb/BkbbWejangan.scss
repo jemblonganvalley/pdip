@@ -246,34 +246,35 @@ $secondary : #f3f3f3;
                         text-align: center;
                     }
 
-                    .socialMedia {
-                        margin: 0px 0 0 0;
-                        padding: 0 0px 0 0;
-                        display: flex;
+                    // .socialMedia {
+                    //     margin: 0px 0 0 0;
+                    //     padding: 0 0px 0 0;
+                    //     display: flex;
+                    //     align-items: center;
         
-                        small {
-                            color: #000000;
-                            margin-right: 10px;
+                    //     small {
+                    //         color: #000000;
+                    //         margin-right: 10px;
 
-                            @include smallPhone(){
-                                font-size: 12px;
-                            }
-                        }
+                    //         @include smallPhone(){
+                    //             font-size: 12px;
+                    //         }
+                    //     }
 
-                        i {
-                            margin: 0 10px;
-                            transition: .3s;
+                    //     i {
+                    //         margin: 0 10px;
+                    //         transition: .3s;
 
-                            @include smallPhone(){
-                                font-size: 13px;
-                            }
+                    //         @include smallPhone(){
+                    //             font-size: 13px;
+                    //         }
         
-                            &:hover {
-                                color: #c70000;
-                                cursor: pointer;
-                            }
-                        }
-                    }
+                    //         &:hover {
+                    //             color: #c70000;
+                    //             cursor: pointer;
+                    //         }
+                    //     }
+                    // }
                 }
             }
             // END Row1
