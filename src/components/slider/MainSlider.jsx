@@ -32,6 +32,9 @@ const MainSlider = ({ value, cls }) => {
       className="carousel slide carousel-fade"
       data-ride="carousel"
       data-interval="0"
+      style={{
+        overflow: 'hidden'
+      }}
     >
       <div className="carousel-indicators">
         {slider.map((e, i) => (

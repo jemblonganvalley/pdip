@@ -131,6 +131,7 @@ const HomePage = () => {
               color : 'white',
               zIndex : '6000',
               fontSize : '2rem',
+              cursor: 'pointer'
             }} onClick={()=>{
               setShowVid(false)
             }} class='fa fa-close'></span>

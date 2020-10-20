@@ -462,7 +462,8 @@ $deviceThree : 1200px;
 
         @include smallPhone() {
             height: 40vh;
-            background-size: auto;
+            background-size: cover;
+            background-attachment: inherit;
         }
 
         h2 {

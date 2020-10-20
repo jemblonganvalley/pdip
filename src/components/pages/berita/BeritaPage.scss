@@ -304,6 +304,7 @@ $smallPhoneDua : 400px;
 
         @include smallPhone(){
             height: 40vh;
+            background-size: cover;
             background-attachment: inherit;
         }
 

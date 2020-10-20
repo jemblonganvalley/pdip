@@ -217,6 +217,7 @@ $smallPhoneDua : 400px;
                             width: 50px;
                             vertical-align: middle;
                             text-align: center;
+                            cursor: pointer;
 
                             @include smallPhone() {
                                 height: 2.3rem;

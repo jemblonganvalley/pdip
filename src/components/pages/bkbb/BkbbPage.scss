@@ -76,6 +76,7 @@ $secondary : #f3f3f3;
 
                 @include smallPhone(){
                     padding: 15px;
+                    overflow: hidden;
                 }
 
                 h3{
@@ -98,6 +99,7 @@ $secondary : #f3f3f3;
 
                 @include smallPhone(){
                     padding: 15px 15px 15px 5px;
+                    overflow: hidden;
                 }
 
                 p{
@@ -416,25 +418,26 @@ $secondary : #f3f3f3;
             background-attachment: inherit;
             padding: 10px 0 0 0;
             margin: 20px 0 0 0;
+            overflow: hidden;
         }
 
         i{
             font-size: 30px;
 
             @include smallPhone(){
-                font-size: 20px;
+                font-size: 10pt;
             }
         }
 
         h4{
             @include smallPhone(){
-                font-size: 15px;
+                font-size: 10pt;
             }
         }
 
         h5{
             @include smallPhone(){
-                font-size: 15px;
+                font-size: 10pt;
             }
         }
 
