@@ -87,8 +87,9 @@ export const CarouselDuelBerita = ({
                                 margin : '0',
                                 fontWeight : '600',
                                 }}>{e.title}</p> */}
-                            <small style={{padding : '0'}}>{e.author}</small> | &nbsp;
-                            <small style={{padding : '0'}}>{e.created_at}</small>
+
+                            {/* <small style={{padding : '0'}}>{e.author}</small> | &nbsp;
+                            <small style={{padding : '0'}}>{e.created_at}</small> */}
 
                             <h4>{e.title}</h4>
 
@@ -145,9 +146,9 @@ export const CarouselDuelBerita = ({
                                 fontWeight : '600',
                                 }}>{e.category_child_name}</p> */}
 
-                            <small style={{padding : '0'}}>{e.author}</small> | &nbsp;
+                            {/* <small style={{padding : '0'}}>{e.author}</small> | &nbsp;
                             <small style={{padding : '0'}}>{e.created_at}</small>
-                            <h4>{e.title}</h4>
+                            <h4>{e.title}</h4> */}
                           
 
                         </span>

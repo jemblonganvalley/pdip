@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./MultimediaPage.scss";
 import Wait from "../../wait/Wait";
 
-
 import Cards from "../../cards/MainCards";
 import perempuan from "../../../img/ig-perempuan.png";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
@@ -52,14 +51,14 @@ const MultimediaPage = () => {
     <>
       {configHome.length > 0 ? (
         <div className="wrapperMultimedia">
-
-          <div className="headerMedia" style={{
-              background : `url(https://atur.biar.pw/public/${configHome[0].value.image})`
-          }}>
+          <div
+            className="headerMedia"
+            style={{
+              background: `url(https://atur.biar.pw/public/${configHome[0].value.image})`,
+            }}
+          >
             <div className="textBannerMedia">
-              <h2>
-                {configHome[0].value.title}
-              </h2>
+              <h2>{configHome[0].value.title}</h2>
             </div>
           </div>
 
@@ -96,28 +95,36 @@ const MultimediaPage = () => {
             />
           </div>
 
-          <div className="panggung" style={{
-              backgroundImage : `url(https://atur.biar.pw/public/${configHome[3].value.image})`
-          }}>
+          <div
+            className="panggung"
+            style={{
+              backgroundImage: `url(https://atur.biar.pw/public/${configHome[3].value.image})`,
+            }}
+          >
             <div className="textPanggung">
-              <h1 className="panggungH1">
-                {configHome[3].value.title}
-              </h1>
+              <h1 className="panggungH1">{configHome[3].value.title}</h1>
               <MainButton name="kunjungi" />
             </div>
           </div>
 
-          <div className="cardMediaDua">
-            <MainDivider text="Video Terbaru" mrgn="40px 0 40px 0"/>
+            <MainDivider text="Video Terbaru" mrgn="40px 0 40px 0" />
 
-            <Cards
-              imageCard={perempuan}
-              textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-              title="Lorem ipsum dolor, sit amet consectetur adipisicing."
-              borderRadius="10px"
-            />
-            
-          </div>
+           <div className="cardContent">
+
+            {configHome[4].value.map((e, i) => (
+              <Cards
+                category = {configHome[4].slug} 
+                page="page"
+                id={e.id}
+                imageCard={e.path}
+                textCategoryChild={e.category_child_name}
+                author={e.author}
+                title={e.title}
+                dateTime={e.created_at}
+                borderRadius="10px"
+              />
+            ))}
+            </div>
 
         </div>
       ) : (

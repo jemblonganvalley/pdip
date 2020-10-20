@@ -1,62 +1,53 @@
-import React, { useEffect, useState } from 'react'
-import './InformasiPage.scss'
-import IconCardSatu from '../../../img/networking.png'
-import IconCardDua from '../../../img/target.png'
-import IconCardTiga from '../../../img/cs.png'
-import IconCardEmpat from '../../../img/law-book.png'
-import IconHartaSatu from '../../../img/lh.png'
+import React, { useEffect, useState } from "react";
+import "./InformasiPage.scss";
+import IconHartaSatu from "../../../img/lh.png";
 
-import ppidSatu from '../../../img/ppid.png'
-import ppidDua from '../../../img/ppid2.png'
-import ppidTiga from '../../../img/ppid3.png'
-import ppidEmpat from '../../../img/ppid4.png'
-
-import IconHartaDua from '../../../img/income.png'
-import ConsentWhite from '../../../img/consentwhite.png'
-import Consentblack from '../../../img/consentblack.png'
-import CardMaps from '../../cardmaps/CardMaps'
-import CardsProfile from '../../cardIconProfil/CardsProfile'
-import MainDivider from '../../divider/MainDivider'
-import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
-import WidgetBerita from '../../widget/widgetBerita/WidgetBerita'
-import CardInformasi from '../../cardInformasi/CardInformasi'
-import WidgetBaru from '../../widgetBaru/WidgetBaru'
-import { CarouselDuelBerita } from '../../carouselDualBerita/CarouselDuelBerita'
-import CarouselKM from '../../carouselKM/CarouselKM'
+import ppidSatu from "../../../img/ppid.png";
+import ppidDua from "../../../img/ppid2.png";
+import ppidTiga from "../../../img/ppid3.png";
+import ppidEmpat from "../../../img/ppid4.png";
+import IconHartaDua from "../../../img/income.png";
+import ConsentWhite from "../../../img/consentwhite.png";
+import MainDivider from "../../divider/MainDivider";
+import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
+import CardInformasi from "../../cardInformasi/CardInformasi";
+import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
+import CarouselKM from "../../carouselKM/CarouselKM";
 
 const InformasiPage = () => {
+  const [gallery, setGallery] = useState([]);
+  const [configHome, setConfigHome] = useState([]);
 
-        const [gallery, setGallery] = useState([])
-        const [configHome, setConfigHome] = useState([])
+  const getGallery = async () => {
+    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        app_id: "1555309664580",
+        api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
+      }),
+    });
+    const data = await res.json();
 
-      const getGallery = async ()=>{
-        const res = await fetch('https://atur.biar.pw/api/auth/app', {
-            method :'POST',
-            headers : {
-                "Content-Type" : "application/json"
+    const resGallery = await fetch(
+      "https://atur.biar.pw/api/gallery/data?page=2",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
         },
-        body : JSON.stringify({
-                    app_id : "1555309664580",
-                    api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
-                })
-        })
-        const data = await res.json()
+      }
+    );
 
-        const resGallery = await fetch('https://atur.biar.pw/api/gallery/data?page=2', {
-            method : 'POST',
-            headers : {
-                "Content-Type" : "application/json",
-                Authorization : `Bearer ${data.token}`
-            }
+    const dataGallery = await resGallery.json();
+    // console.log(dataGallery)
+    setGallery(dataGallery.query.data);
+  };
 
-        })
-
-        const dataGallery = await resGallery.json()
-        // console.log(dataGallery)
-        setGallery(dataGallery.query.data)
-    }
-
-    const getConfigHome = async () => {
+  const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
       method: "POST",
       headers: {
@@ -70,7 +61,7 @@ const InformasiPage = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://atur.biar.pw/api/web/pages/home",
+      "https://atur.biar.pw/api/web/pages/informasi",
       {
         method: "POST",
         headers: {
@@ -84,154 +75,201 @@ const InformasiPage = () => {
     setConfigHome(dataConfigHome.query);
   };
 
-    useEffect(() => {
-        getGallery()
-        getConfigHome()
-        window.scrollTo(0, 0)
-    }, [])
+  useEffect(() => {
+    getGallery();
+    getConfigHome();
+    window.scrollTo(0, 0);
+  }, []);
 
-    return (
-
+  return (
+    <>
+      {configHome.length > 0 ? (
         // START INFORMASI
         <div className="wrapperInformasi">
-
-            {/* START HEADERS */}
-            <div className="headInformasi">
-                <div className="textHeadInformasi">
-                    <h2>pejabat pengelola<br />informasi dan dokumentasi<br /><span className="pdip">pdi perjuangan</span> </h2>
-                </div>
+          {/* START HEADERS */}
+          <div
+            className="headInformasi"
+            style={{
+              backgroundImage: `url(https://atur.biar.pw/public/${configHome[0].value.image})`,
+            }}
+          >
+            <div className="textHeadInformasi">
+              <h2>{configHome[0].value.title}</h2>
             </div>
-            {/* END */}
+          </div>
+          {/* END */}
 
-            {/* START LINKED */}
-            <div className="linkedInformasi">
-                <BreadCrumbs link1="Home"
-                    to1="/"
-                    page2="Informasi"
+          {/* START LINKED */}
+          <div className="linkedInformasi">
+            <BreadCrumbs link1="Home" to1="/" page2="Informasi" />
+          </div>
+          {/* END */}
+
+          {/* START PROFIL */}
+          <div className="profilContainer">
+            <div className="divider-profil">
+              <MainDivider text="Profil" garisMerah="0rem" mrgn="0 0 40px 0" />
+            </div>
+
+            <div className="paragrapProfil">
+              <div
+                className="paragrapKiri"
+                dangerouslySetInnerHTML={{ __html: configHome[1].value }}
+              ></div>
+              <div className="paragrapKanan">
+                <div
+                  className="backgroundPK"
+                  style={{
+                    backgroundImage: `url(https://atur.biar.pw/public/${configHome[2].value.image})`,
+                  }}
+                >
+                  <h4 className="maklumat">{configHome[2].value.title}</h4>
+                  <p className="textParagrapKanan">
+                    {configHome[2].value.paragraph}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* divider */}
+            <div className="divider"></div>
+            {/* divider */}
+            <CardInformasi
+              to1="/pidatokongres"
+              image={`https://atur.biar.pw/public/${configHome[3].value[0].image}`}
+              to2="/pidatorakernas"
+              image2={`https://atur.biar.pw/public/${configHome[3].value[1].image}`}
+              to3="/pidatorakornas"
+              image3={`https://atur.biar.pw/public/${configHome[3].value[2].image}`}
+              to4="/pidatohut"
+              image4={`https://atur.biar.pw/public/${configHome[3].value[3].image}`}
+              width1="0"
+              width2="0"
+              width3="0"
+              width4="0"
+              text="pidato kongres"
+              text2="pidato rakernas"
+              text3="pidato rakornas"
+              text4="pidato hut"
+            />
+
+            {/* CARD LAPORAN */}
+            <div className="containerLaporan" style={{
+                marginTop : '20px'
+            }}>
+              <div className="cardLaporan cardLaporanSatu">
+                <img
+                  src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
+                  alt=""
+                  width="45"
+                  className="imageHarta"
                 />
-            </div>
-            {/* END */}
-
-            {/* START PROFIL */}
-            <div className="profilContainer">
-                <div className="divider-profil">
-                <MainDivider text="Profil"
-                    garisMerah="0rem"
-                    mrgn="0 0 40px 0" />
+                <div className="textHarta">
+                  <h6 className="hartaKekayaan h5Harta">
+                    {configHome[4].value[0].title}
+                  </h6>
+         
                 </div>
+              </div>
 
-                <div className="paragrapProfil">
-                    <div className="paragrapKiri">
-                        <h5 className="merdeka">Merdeka !!</h5>
-                        <h4 className="solid">" Solid Bergerak untuk Indonesia Raya "</h4>
-                        <p className="textParagrap">Salah satu elemen penting dalam mewujudkan penyelenggaraan Partai pelopor yang ideologis dan modern adalah terpenuhinya hak publik untuk memperoleh informasi sesuai dengan peraturan perundang-undangan yang berlaku. Hak masyarakat untuk memperoleh Informasi menjadi sangat penting karena semakin terbuka sistem Penyelenggaraan Pengelolaan Partai kepada publik, maka program partai terutama dalam hal pendidikan politik bagi masyarakat dalam kehidupan berbangsa dan bernegara semakin dapat diwujudkan dan dipertanggungjawabkan. Hak setiap orang untuk memperoleh Informasi juga relevan untuk meningkatkan kualitas pelibatan masyarakat dalam proses pengambilan keputusan publik. Partisipasi atau pelibatan masyarakat tidak banyak berarti tanpa jaminan keterbukaan Informasi Publik.
-                        <br /><br />
-                        Berdasarkan Undang-undang UU No.14 Tahun 2008 tentang Keterbukaan Informasi Publik sebagai landasan hukum yang mengatur berkaitan baik mengenai hak dan kewajiban setiap orang untuk memperoleh Informasi, maupun hak dan kewajiban Badan Publik untuk menyediakan dan melayani permintaan Informasi dan dokumentasi yang menjadi kewenangannya. Sebagai Partai Politik, PDI Perjuangan berkomitmen untuk membuka akses atas Informasi Publik tersebut terbuka untuk masyarakat luas.</p>
-                    </div>
-                    <div className="paragrapKanan">
-                        <div className="backgroundPK">
-                            <h4 className="maklumat">Maklumat Keterbukaan<br />Informasi Publik</h4>
-                            <p className="textParagrapKanan">Berkomitmen Memberikan Pelayanan Optimal<br />untuk Memenuhi Hak Publik Memperoleh<br />Informasi Sesuai dengan Peraturan<br />Perundang-undangan yang Berlaku</p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* divider */}
-                <div className="divider"></div>
-                {/* divider */}
-
-                <CardInformasi image={ppidSatu}
-                    image2={ppidDua}
-                    image3={ppidTiga}
-                    image4={ppidEmpat}
-                    text="Struktur PPDI PDI Perjuangan"
-                    width1="45"
-                    width2="45"
-                    width3="30"
-                    width4="31"
-                    text2="visi / misi"
-                    text3="prosedur pelayanan"
-                    text4="regulasi PPDI"
-                    to1="/strukturppdi"
-                    to2="/visimisi"
-                    to3="/prosedur"
-                    to4="/regulasi"
-                    paddingBottom="20px" />
-
-                
-
-                {/* CARD LAPORAN */}
-                <div className="containerLaporan">
-                    <div className="cardLaporan cardLaporanSatu">
-                        <img src={IconHartaSatu} alt="" width="45" className="imageHarta" />
-                        <div className="textHarta">
-                            <h6 className="hartaKekayaan h5Harta">Laporan harta kekayaan<br />pejabat negara (LHKPN)</h6>
-                            <p className="paragrapHarta">Harta kekayaan pengurus PDI Perjuangan yang menjadi pejabat negara dilaporkan kepada Komisi Pemberantasan Korupsi (KPK).</p>
-                        </div>
-                    </div>
-                    <div className="cardLaporan cardLaporanDua">
-                        <img src={IconHartaDua} alt="" width="45" className="imageHarta" />
-                        <div className="textHarta">
-                            <h6 className="keuangan h5Harta">Laporan kekayaan<br />PDI Perjuangan</h6>
-                            <p className="paragrapHarta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolores quasi labore rerum reprehenderit quis perspiciatis sequi necessitatibus adipisci ipsa.</p>
-                        </div>
-                    </div>
-                </div>
-                {/* END */}
-
-            </div>
-            {/* END */}
-
-            {/* YOUTUBE PPDI */}
-            <div className="ytProfil">
-                <div className="ytIframe">
-                    <iframe src="https://www.youtube.com/embed/V4pM1xY9ntY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="iframeProfil" ></iframe>
-                </div>
-            </div>
-            {/* END */}
-
-            {/* START TATA CARA */}
-            <div className="tataCaraContainer">
-                <MainDivider text="tata Cara"
-                    garisMerah="4rem"
-                    mrgn="40px 0"
+              <div className="cardLaporan cardLaporanDua">
+                <img
+                  src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
+                  alt=""
+                  width="45"
+                  className="imageHarta"
                 />
+                <div className="textHarta">
+                  <h6 className="keuangan h5Harta">
+                    {configHome[4].value[1].title}
 
-            </div>
-            {/* END */}
-
-            {/* SLIDER TATA CARA */}
-                <CarouselKM data={configHome}/>
-            {/* END */}
-
-            {/* Container dua */}
-            <div className="infoDua">
-
-                {/* kolom formulir */}
-                <div className="kolomFormulir kolomFormulirSatu">
-                    <img src={ConsentWhite} alt="" width="50" />
-                    <h4 className="textFormulir">Formulir Permohonan<br />Informasi Publik</h4>
+                  </h6>
+             
                 </div>
-                <div className="kolomFormulir kolomFormulirDua">
-                    <img src={ConsentWhite} alt="" width="50" />
-                    <h4 className="textFormulir">Formulir Keberatan<br />atas Pelayanan Informasi</h4>
-                </div>
-                {/* END */}
+              </div>
+
             </div>
             {/* END */}
+          </div>
+          {/* END */}
 
-            {/* <CardMaps/> */}
-
-            <div className="carousel-informasiPage">
-            <CarouselDuelBerita current_page={2} data={gallery}/>                    
+          {/* YOUTUBE PPDI */}
+          <div className="ytProfil">
+            <div className="ytIframe">
+              <iframe
+                src="https://www.youtube.com/embed/V4pM1xY9ntY"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                className="iframeProfil"
+              ></iframe>
             </div>
+          </div>
+          {/* END */}
 
-            {/* <div className="widgetMobile">
+          {/* START TATA CARA */}
+          <div className="tataCaraContainer">
+            <MainDivider text="tata Cara" garisMerah="4rem" mrgn="40px 0" />
+          </div>
+          {/* END */}
+
+          {/* SLIDER TATA CARA */}
+          <CarouselKM data={configHome} />
+          {/* END */}
+
+          {/* Container dua */}
+          <div className="infoDua">
+            {/* kolom formulir */}
+            <div className="kolomFormulir kolomFormulirSatu">
+              <img src={ConsentWhite} alt="" width="50" />
+              <h4 className="textFormulir">
+                Formulir Permohonan
+                <br />
+                Informasi Publik
+              </h4>
+            </div>
+            <div className="kolomFormulir kolomFormulirDua">
+              <img src={ConsentWhite} alt="" width="50" />
+              <h4 className="textFormulir">
+                Formulir Keberatan
+                <br />
+                atas Pelayanan Informasi
+              </h4>
+            </div>
+            {/* END */}
+          </div>
+          {/* END */}
+
+          {/* <CardMaps/> */}
+
+          <div className="carousel-informasiPage">
+            <CarouselDuelBerita current_page={2} data={gallery} />
+          </div>
+
+          {/* <div className="widgetMobile">
                 <WidgetBerita width="100%" />
                 <WidgetBerita width="100%" margin=".5rem 0" />
             </div> */}
         </div>
-    )
-}
+      ) : (
+        <>
+          <div
+            className="page"
+            id="wait"
+            style={{
+              width: "100vw",
+              height: "100vh",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            wait ..
+          </div>
+        </>
+      )}
+    </>
+  );
+};
 
-export default InformasiPage
+export default InformasiPage;

@@ -41,6 +41,7 @@ $smallPhoneDua : 400px;
                 color: #ffffff;
 
                 h2 {
+                    max-width: 500px;
                     text-transform: uppercase;
                     font-family: 'Roboto';
                     
@@ -156,6 +157,7 @@ $smallPhoneDua : 400px;
                 }
                 
                 .backgroundPK {
+                    padding: 20px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -166,7 +168,6 @@ $smallPhoneDua : 400px;
                     width: 25vw;
                     right: 0;
                     height: 45vh;
-                    background: url(../../../img/illustrator.png);
                     background-size: cover;
                     color: #ffffff;
                     font-family: 'Roboto';

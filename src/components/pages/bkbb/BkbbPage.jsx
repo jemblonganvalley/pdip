@@ -168,7 +168,6 @@ const BkbbPage = () => {
                 </div>
               </div>
             ))}
-            ))}
             {/* <iframe
           width="80%"
           height="90%"
@@ -198,6 +197,8 @@ const BkbbPage = () => {
                       title={e.title}
                       borderRadius="10px"
                       key={i}
+                      page='page'
+                      id={e.id}
                     />
                   );
                 })}

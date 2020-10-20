@@ -1,20 +1,10 @@
 // Import to React
 import React, { useEffect, useState } from "react";
 // END Import to React
-import pemilu13 from "../../../img/pemilu13.jpg";
-import pemilu14 from "../../../img/pemilu14.jpg";
-import pemilu15 from "../../../img/pemilu15.jpg";
 import pemilu18 from "../../../img/pemilu18.jpg";
 import img5 from "../../../img/img5.jpg";
 import pemilu20 from "../../../img/pemilu20.jpg";
-import bgWait from "../../../img/pattern-01.svg";
-
 import "./KetuaUmumPage.scss";
-
-import ketuaUmumSatu from "../../../img/ketuaumum1.png";
-import ketuaUmumDua from "../../../img/ketuaumum2.png";
-import ketuaUmumTiga from "../../../img/ketuaumum3.png";
-import ketuaUmumEmpat from "../../../img/ketuaumum4.png";
 
 // Import to CSS
 import MainDivider from "../../divider/MainDivider";
@@ -22,11 +12,13 @@ import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import CarouselKetuaUmumPage from "../../carouselKetuaUmumPage/CarouselKetuaUmumPage";
 import Cards from "../../cards/MainCards";
 import CardInformasi from "../../cardInformasi/CardInformasi";
+import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
 // END Import to CSS
 
 // Create Component
 const KetuaUmumPage = () => {
   const [configHome, setConfigHome] = useState([]);
+  const [gallery, setGallery] = useState([]);
 
   const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
@@ -57,8 +49,38 @@ const KetuaUmumPage = () => {
     setConfigHome(dataConfigHome.query);
   };
 
+  const getGallery = async () => {
+    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        app_id: "1555309664580",
+        api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
+      }),
+    });
+    const data = await res.json();
+
+    const resGallery = await fetch(
+      "https://atur.biar.pw/api/gallery/data?page=2",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+      }
+    );
+
+    const dataGallery = await resGallery.json();
+    // console.log(dataGallery)
+    setGallery(dataGallery.query.data);
+  };
+
   useEffect(() => {
     getConfigHome();
+    getGallery();
     window.scrollTo(0, 0);
   }, []);
 
@@ -70,8 +92,8 @@ const KetuaUmumPage = () => {
             className="headers-ketuaumum"
             style={{
               background: `url(https://atur.biar.pw/public/${configHome[0].value.image})`,
-              objectFit: 'cover',
-              objectPosition: 'center'
+              objectFit: "cover",
+              objectPosition: "center",
             }}
           >
             <div className="backgrounds">
@@ -114,45 +136,26 @@ const KetuaUmumPage = () => {
               {configHome[3].value.map((e, i) => (
                 <Cards
                   imageCard={e.path}
-                  textSmall="Admin PDI Perjuangan | 1 Januari 2019"
                   title={e.title}
-                  // paragrap={e.description}
+                  page='page'
+                  id={e.id}
                   borderRadius="10px"
                 />
               ))}
             </div>
             {/* END Column3 */}
-
-            {/* Column5 */}
-            <div className="col5-container-1-ketuaumum">
-              {/* Row1 */}
-              <div className="row1-video-youtube">
-                <iframe
-                  width="1349"
-                  height="488"
-                  src="https://www.youtube.com/embed/l2doUcFirGE"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              {/* END Row1 */}
-
-              {/* Row2 */}
-              <div className="row2-img">
-                <div className="col-txt">
-                  <p className="jdl">
-                    SERUAN
-                    <br />
-                    KETUA UMUM
-                  </p>
-                </div>
-              </div>
-              {/* END Row2 */}
-            </div>
-            {/* END Column5 */}
           </div>
           {/* END Container1 */}
+
+          <div
+            style={{
+              marginTop: "20px",
+            }}
+          >
+            {gallery.length > 0 && (
+              <CarouselDuelBerita current_page={2} data={gallery} />
+            )}
+          </div>
 
           {/* Container2 */}
           <div className="container-2-ketuaumum">
@@ -164,27 +167,14 @@ const KetuaUmumPage = () => {
           <div className="container-3-ketuaumum">
             {/* Column4 */}
             <div className="col4-cardContent-container-3">
-              <Cards
-                imageCard={pemilu18}
-                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                title="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                borderRadius="10px"
-              />
-              <Cards
-                imageCard={img5}
-                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                title="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                borderRadius="10px"
-              />
-              <Cards
-                imageCard={pemilu20}
-                textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-                title="Lorem ipsum dolor, sit amet consectetur adipisicing."
-                paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
-                borderRadius="10px"
-              />
+              {configHome[6].value.map((e, i) => (
+                <Cards
+                  imageCard={e.path}
+                  title={e.title}
+                  page='page'
+                  id={e.id}
+                />
+              ))}
             </div>
             {/* END Column6 */}
           </div>
