@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./InformasiPage.scss";
-import IconHartaSatu from "../../../img/lh.png";
 
-import ppidSatu from "../../../img/ppid.png";
-import ppidDua from "../../../img/ppid2.png";
-import ppidTiga from "../../../img/ppid3.png";
-import ppidEmpat from "../../../img/ppid4.png";
-import IconHartaDua from "../../../img/income.png";
 import ConsentWhite from "../../../img/consentwhite.png";
 import MainDivider from "../../divider/MainDivider";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
@@ -197,7 +191,7 @@ const InformasiPage = () => {
           <div className="ytProfil">
             <div className="ytIframe">
               <iframe
-                src="https://www.youtube.com/embed/V4pM1xY9ntY"
+                src={`https://www.youtube.com/embed/${configHome[5].value[0].path}`}
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -214,7 +208,7 @@ const InformasiPage = () => {
           {/* END */}
 
           {/* SLIDER TATA CARA */}
-          <CarouselKM data={configHome} />
+          <CarouselKM data={configHome[6].value} />
           {/* END */}
 
           {/* Container dua */}

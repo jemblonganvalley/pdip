@@ -5,38 +5,7 @@ const CarouselKM = ({cat=44, totalPage=3, data=data})=> {
 
     const [berita, setBerita] = useState(data)
 
-    // const getDataBerita = async ()=>{
-    //      const res = await fetch('https://atur.biar.pw/api/auth/app', {
-    //         method :'POST',
-    //         headers : {
-    //             "Content-Type" : "application/json"
-    //     },
-    //     body : JSON.stringify({
-    //                 app_id : "1555309664580",
-    //                 api_secret : "4d672ce3-e422-4d8a-86ff-fabb1808a689"
-    //             })
-    //     })
-    //     const data = await res.json()
-
-    //     const resBerita = await fetch('https://atur.biar.pw/api/blog/data/?page=1',{
-    //         method : "POST",
-    //         headers : {
-    //             "Content-Type" : "application/json",
-    //             Authorization : `Bearer ${data.token}`
-    //         },
-    //         body : JSON.stringify({
-    //             order :{"key":"id","value":"desc"} ,
-    //             limit : totalPage,
-    //             where : {"key":"blog.id_category","value":cat} 
-    //         })
-    //     })
-    //     const dataBerita = await resBerita.json()
-    //     setBerita(dataBerita.query.data)
-    // }
-
-    // useEffect(()=>{
-    //     getDataBerita()
-    // },[])
+   
 
     return (
         <div className="wrapperKM">

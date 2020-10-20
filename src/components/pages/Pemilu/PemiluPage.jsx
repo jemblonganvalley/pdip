@@ -8,8 +8,8 @@ import CarouselPemilu2 from "../../carouselPemilu2/CarouselPemilu2";
 import Carousel3PemiluPage from "../../carousel3PemiluPage/Carousel3PemiluPage";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import MainButton from "../../buttons/MainButton";
-import IconHartaSatu from '../../../img/lh.png'
-import IconHartaDua from '../../../img/income.png'
+import IconHartaSatu from "../../../img/lh.png";
+import IconHartaDua from "../../../img/income.png";
 
 // Create Component
 const PemiluPage = () => {
@@ -29,7 +29,7 @@ const PemiluPage = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://atur.biar.pw/api/web/pages/partai",
+      "https://atur.biar.pw/api/web/pages/pemilu",
       {
         method: "POST",
         headers: {
@@ -52,13 +52,15 @@ const PemiluPage = () => {
     <>
       {configHome.length > 0 ? (
         <div className="wrapperPemiluPage">
-
-          <div className="headers-pemiluPage" style={{
-              backgroundImage : `url(https://atur.biar.pw/public/${configHome[0].value.image})`
-          }}>
+          <div
+            className="headers-pemiluPage"
+            style={{
+              backgroundImage: `url(https://atur.biar.pw/public/${configHome[0].value.image})`,
+            }}
+          >
             <div className="backgrounds">
               <div className="textBackgroundBerita">
-                    <h2>{configHome[0].value.title}</h2>
+                <h2>{configHome[0].value.title}</h2>
               </div>
             </div>
           </div>
@@ -75,7 +77,7 @@ const PemiluPage = () => {
                 {/* Bagian1 */}
                 <div className="bagian1-pemiluPage">
                   {/* Image 1 */}
-                  <CarouselPemilu1 data={configHome[1].value}/>
+                  <CarouselPemilu1 data={configHome[1].value} />
                   {/* END Image 1 */}
                 </div>
                 {/* END Bagian1 */}
@@ -83,7 +85,7 @@ const PemiluPage = () => {
                 {/* Bagian2 */}
                 <div className="bagian2-pemiluPage">
                   {/* Image 2 */}
-                  <CarouselPemilu2 />
+                  <CarouselPemilu2 data={configHome[2].value} />
                   {/* END Image 2 */}
                 </div>
                 {/* END Bagian2 */}
@@ -92,72 +94,68 @@ const PemiluPage = () => {
 
               {/* Row2 */}
               <div className="row2-col1-pemiluPage">
-                <Carousel3PemiluPage />
+                <Carousel3PemiluPage data={configHome[3].value} />
               </div>
               {/* END Row2 */}
             </div>
             {/* END Column1 */}
 
             {/* Column2 */}
-            <div className="col2-container-1-pemiluPage">
+            <a className="col2-container-1-pemiluPage" href='/' >
               {/* Row1 */}
               <div className="row1-col2-pemiluPage pemilihan">
-                <img src={IconHartaSatu} width="45" className="col1-row1-pemiluPage"/>
+                <img
+                  src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
+                  width="75"
+                  className="col1-row1-pemiluPage"
+                />
                 <div className="col2-row1-pemiluPage">
-                  <p className="txt-title">PEMILIHAN KEPALA DAERAH SERRENTAK</p>
-                  <p className="txt-desk">
-                    Lorem ipsum dolor sit amet consectetur adipisicing.
-                  </p>
+                  <p className="txt-title">{configHome[4].value[0].title}</p>
                 </div>
               </div>
               {/* END Row1 */}
 
               {/* Row2 */}
-              <div className="row2-col2-pemiluPage pemilihan">
-                <img src={IconHartaDua} width="45" className="col1-row2-pemiluPage"/>
-                <div className="col2-row2-pemiluPage">
-                  <p className="txt-title">
-                    PEMILIHAN CALON LEGISLATIF PDI PERJUANGAN
-                  </p>
-                  <p className="txt-desk">
-                    Lorem ipsum dolor sit amet consectetur adipisicing.
-                  </p>
-                </div>
-              </div>
+                <a className="row2-col2-pemiluPage pemilihan" href='https://www.pdipkreatif.com/home' target='_blank'>
+                  <img
+                    src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
+                    width="75"
+                    className="col1-row2-pemiluPage"
+                  />
+                  <div className="col2-row2-pemiluPage">
+                    <p className="txt-title">{configHome[4].value[1].title}</p>
+                  </div>
+                </a>
               {/* END Row2 */}
-            </div>
+            </a>
             {/* END Column2 */}
           </div>
           {/* END Container1 */}
 
           {/* Container2 */}
           <div className="container-2-pemiluPage">
-            {/* <img src={pemilu5} alt="" /> */}
-            {/* <div className="jdl-col1-pemiluPage">
-                        <div className="box-txt-jdl-pemiluPage">
-                            <p className="txt-jdl-pemiluPage">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque mollitia assumenda architecto facilis et deleniti iste alias autem quo exercitationem!
-                            </p>
-                        </div>
-                    </div> */}
+     
             <div className="btn-col2-pemiluPage">
               <MainButton name="LIHAT" />
             </div>
           </div>
           {/* END Container2 */}
 
-          {/* Container3 */}
-          <div className="container-3-pemiluPage">
-            <iframe
-              width="80%"
-              height="100%"
-              src="https://www.youtube.com/embed/FquQvej9l8I"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          
+          {/* YOUTUBE PPDI */}
+          <div className="ytProfil">
+            <div className="ytIframe">
+              <iframe
+                src={`https://www.youtube.com/embed/${configHome[6].value[0].path}`}
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                className="iframeProfil"
+              ></iframe>
+            </div>
           </div>
-          {/* END Container3 */}
+          {/* END */}
+
         </div>
       ) : (
         <Wait />

@@ -13,11 +13,11 @@ const CarouselPemilu1 = ({data}) => {
 
                     {data.map((e,i)=>(
 
-                    <div className="carousel-item active" key={i}>
-                        {/* Image1 */}
-                        <img src={e.image} className="img-1" />
-                        {/* END Image1 */}
-                    </div>
+                        <div className={i === 0 ? "carousel-item active" : "carousel-item"} key={i}>
+                            {/* Image1 */}
+                            <img src={`https://atur.biar.pw/public/${e.image}`} className="img-1" />
+                            {/* END Image1 */}
+                        </div>
                     ))}
 
                 </div>

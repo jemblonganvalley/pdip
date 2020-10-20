@@ -439,4 +439,47 @@ $secondary : #f3f3f3;
         }
     }
     // END Container3
+
+
+       // YOUTUBE PROFIL
+    .ytProfil {
+        margin-top: 2rem;
+        padding: 10px 20% 0 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        @include smallPhone() {
+            padding: 0 10px;
+        }
+
+        .ytIframe {
+            width: 100%;
+            // border: 1px solid #48ff00;
+            height: 60vh;
+            position: relative;
+            // overflow: hidden;
+            @include smallPhoneDua() {
+                height: 40vh;
+            }
+
+            .iframeProfil {
+                border: 0;
+                height: 100%;
+                width: 100%;
+                // border: 1px solid blue;
+                top: 0;
+                left: 0;
+                position: absolute;
+
+                @include smallPhoneDua() {
+                    position: inherit;
+                }
+
+            }
+        }
+    }
+    // END
+
+
 }
