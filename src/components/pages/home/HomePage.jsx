@@ -10,69 +10,41 @@ import CarouselKM from "../../carouselKM/CarouselKM";
 import MusicMobile from "../../musicPdiMobile/MusicMobile";
 import KMobile from "../../carouselKMobile/KMobile";
 import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
+import { Link, Redirect } from "react-router-dom";
+
+
+export const LighBox = ({source})=>{
+
+
+  return(
+    <>
+      <main className="container_lightbox" style={{
+        width : '100vw',
+        height : '100vh',
+        position : 'fixed',
+        top : '0',
+        left : '0',
+        backgroundColor : 'rgba(0,0,0,0.800)',
+        display : 'flex',
+        justifyContent : 'center',
+        alignItems : 'center',
+        zIndex : '2000',
+      }}>
+
+        <iframe width="800" height="500" src={`https://www.youtube.com/embed/${source}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {console.log(source)}
+      </main>
+    </>
+  )
+}
 
 const HomePage = () => {
-  const [berita, setBerita] = useState([]);
-  const [beritaVideo, setBeritaVideo] = useState([]);
   const [configHome, setConfigHome] = useState([]);
   const [gallery, setGallery] = useState([]);
   const [video, setVideo] = useState([]);
+  const [showVid, setShowVid] = useState(false)
 
-  const getDataBerita = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        app_id: "1555309664580",
-        api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
-      }),
-    });
-    const data = await res.json();
-
-    const resBerita = await fetch("https://atur.biar.pw/api/blog/data/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${data.token}`,
-      },
-      body: JSON.stringify({
-        order: { key: "id", value: "desc" },
-        limit: 6,
-      }),
-    });
-    const dataBerita = await resBerita.json();
-    setBerita(dataBerita.query.data);
-  };
-
-  const getDataBeritaVideo = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        app_id: "1555309664580",
-        api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
-      }),
-    });
-    const data = await res.json();
-
-    const resBerita = await fetch("https://atur.biar.pw/api/blog/data/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${data.token}`,
-      },
-      body: JSON.stringify({
-        order: { key: "id", value: "desc" },
-        limit: 3,
-      }),
-    });
-    const dataBerita = await resBerita.json();
-    setBeritaVideo(dataBerita.query.data);
-  };
+ 
 
   const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
@@ -132,46 +104,12 @@ const HomePage = () => {
     setGallery(dataGallery.query.data);
   };
 
-  const getVideo = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        app_id: "1555309664580",
-        api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
-      }),
-    });
-    const data = await res.json();
+  
 
-    const resVideo = await fetch(
-      "https://atur.biar.pw/api/gallery/data?page=2",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${data.token}`,
-        },
-        body: JSON.stringify({
-          order: { key: "id", value: "desc" },
-          where: { key: "type", value: "video" },
-          limit: 6,
-        }),
-      }
-    );
-
-    const dataVideo = await resVideo.json();
-    // console.log(dataGallery)
-    setVideo(dataVideo.query.data);
-  };
 
   useEffect(() => {
-    getDataBerita();
-    getDataBeritaVideo();
     getConfigHome();
     getGallery();
-    getVideo();
     window.scrollTo(0, 0);
   }, []);
 
@@ -185,7 +123,24 @@ const HomePage = () => {
         }}
       >
         {configHome.length > 0 && (
+          <>
           <MainSlider value={configHome[0].value} cls={configHome[0].class} />
+          {showVid && (
+            <>
+            <span style={{
+              position : 'fixed',
+              top : '20vh',
+              right : '20vh',
+              color : 'white',
+              zIndex : '6000',
+              fontSize : '2rem',
+            }} onClick={()=>{
+              setShowVid(false)
+            }} class='fa fa-close'></span>
+            <LighBox source={configHome[3].value[0].path}/>
+            </>
+          )}
+          </>
         )}
 
         {/* STATISTIK INFO COVID */}
@@ -202,15 +157,17 @@ const HomePage = () => {
             {configHome.length > 0 &&
               configHome[1].value.map((e, i) => (
                 <div className="col-lg-4 custom" key={i}>
-                  <div className="customBorder">
-                    <img
-                      src={`https://atur.biar.pw/public/${e.image}`}
-                      alt=""
-                      width="100"
-                      height="100"
-                    />
-                    <h3>{e.title}</h3>
-                  </div>
+                  <a href={i === 0 ? '/home' : i === 1 ? 'https://www.pdipkreatif.com/home' : '/event'} target={i == 1 ? '_blank' : ''}>
+                    <div className="customBorder">
+                      <img
+                        src={`https://atur.biar.pw/public/${e.image}`}
+                        alt=""
+                        width="100"
+                        height="100"
+                      />
+                      <h3>{e.title}</h3>
+                    </div>
+                  </a>
                 </div>
               ))}
           </div>
@@ -242,9 +199,9 @@ const HomePage = () => {
                     <div className="wrapperText">
                       <ul className="circleYoutube">
                         <li>
-                          <a href="youtube">
-                            <i className="fa fa-play"></i>
-                          </a>
+                            <i className="fa fa-play" onClick={()=>{
+                              setShowVid(true)
+                            }} style={{color : 'white'}}></i>
                         </li>
                       </ul>
                       <div className="textInfoYT">
@@ -257,6 +214,7 @@ const HomePage = () => {
                 </div>
               ))}
 
+            {/* ONTAINER CARD GALLERY */}
             <div className="cardContainer">
               {configHome.length > 0 &&
                 configHome[4].value.map((e, i) => {
@@ -264,8 +222,8 @@ const HomePage = () => {
                     <Cards
                       type={e.type}
                       imageCard={e.path}
-                      textSmall={e.description}
-                      TextH5={e.title}
+                      // textSmall={e.title}
+                      title={e.title}
                       borderRadius="10px"
                       key={i}
                     />
@@ -306,13 +264,13 @@ const HomePage = () => {
               {configHome[7].value.map((e, i) => {
                 return (
                   <Cards
+                    page='page'
                     id={e.id}
                     imageCard={e.path}
                     textCategoryChild={e.category_child_name}
-                    textSmall={e.author}
-                    TextH5={e.title}
+                    author={e.author}
+                    title={e.title}
                     dateTime={e.created_at}
-                    // paragrap={e.description}
                     borderRadius="10px"
                   />
                 );

@@ -86,7 +86,7 @@ const ContainerCard = () => {
                     {configHome.map((e, i) => (
                       <Cards
                         imageCard={e.path}
-                        TextH5={e.title}
+                        title={e.title}
                         textSmall={e.author}
                         dateTime={e.created_at}
                         page={"/page"}

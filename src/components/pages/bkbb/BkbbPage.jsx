@@ -1,36 +1,13 @@
 import React, { useEffect } from "react";
 import "./BkbbPage.scss";
 
-import bkbb2 from "../../../img/bkbb2.jpg";
-import bkbb3 from "../../../img/bkbb3.jpg";
-import bkbb4 from "../../../img/bkbb4.jpg";
-import bgWait from "../../../img/pattern-01.svg";
-import { Link } from "react-router-dom";
-import backgroundHead from "../../../img/kampanye.jpg";
-import pdiBook1 from "../../../img/pdibook1.png";
-import pdiBook2 from "../../../img/pdibook2.png";
-import pdiBook3 from "../../../img/pdibook3.png";
-import laguPerjuangan from "../../../img/lagu.png";
-import Partitur from "../../../img/partitur.png";
-import MinusOn from "../../../img/minusone.png";
-import BkbbCard from "./BkbbCard";
 import { useState } from "react";
 import Cards from "../../cards/MainCards";
-import bkbbCard1 from "../../../img/bkbbcard.png";
-import bkbbCard2 from "../../../img/bkbbcard2.png";
-import bkbbCard3 from "../../../img/bkbbcard3.png";
 import MainButton from "../../buttons/MainButton";
-import Double from "../../../img/double.png";
-import quotes1 from "../../../img/quotes3.png";
-import quotes2 from "../../../img/quotes.png";
-import quotes3 from "../../../img/quotes2.png";
 import MainDivider from "../../divider/MainDivider";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import CardQuotes from "../../cardquotes/CardQuotes";
-import CardBkbbQuotes2 from "../../cardbkbbquotes2/CardBkbbQuotes2";
-import CardWejangan from "../../cardwejangan/CardWejangan";
-import bkbbHeader from "../../../img/BKBB_Header.jpg";
-import CardVideo from "../../cardVideo/CardVideo";
+
 
 const BkbbPage = () => {
   const [configHome, setConfigHome] = useState([]);
@@ -159,7 +136,7 @@ const BkbbPage = () => {
                     <Cards
                       type={e.type}
                       imageCard={e.path}
-                      TextH5={e.title}
+                      title={e.title}
                       borderRadius="10px"
                       key={i}
                     />

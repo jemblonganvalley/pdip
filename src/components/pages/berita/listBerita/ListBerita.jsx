@@ -185,7 +185,7 @@ const ListBerita = () => {
                             id={e.id}
                             imageCard={e.path} 
                             textSmall={e.author}
-                            TextH5={e.title}
+                            title={e.title}
                             dateTime={e.created_at}
                             // paragrap={e.description}
                             borderRadius="10px" 

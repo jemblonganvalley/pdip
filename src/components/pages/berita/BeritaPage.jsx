@@ -184,7 +184,7 @@ const BeritaPage = () => {
                                     id={e.id}
                                     imageCard={e.path} 
                                     textSmall={e.author}
-                                    TextH5={e.title}
+                                    title={e.title}
                                     dateTime={e.created_at}
                                     borderRadius="10px"
                                     page='page'
@@ -249,7 +249,7 @@ const BeritaPage = () => {
                                     id={e.id}
                                     imageCard={e.path} 
                                     textSmall={e.author}
-                                    TextH5={e.title}
+                                    title={e.title}
                                     dateTime={e.created_at}
                                     borderRadius="10px"
                                      />
@@ -275,7 +275,7 @@ const BeritaPage = () => {
                                     id={e.id}
                                     imageCard={e.path} 
                                     textSmall={e.author}
-                                    TextH5={e.title}
+                                    title={e.title}
                                     dateTime={e.created_at}
                                     borderRadius="10px" />
                                 )

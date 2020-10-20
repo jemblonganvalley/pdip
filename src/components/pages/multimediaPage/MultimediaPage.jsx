@@ -2,17 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./MultimediaPage.scss";
 import Wait from "../../wait/Wait";
 
-import multimediaSatu from "../../../img/multimedia1.png";
-import multimediaDua from "../../../img/multimedia2.png";
-import multimediaTiga from "../../../img/multimedia3.png";
-import multimediaEmpat from "../../../img/multimedia4.png";
 
 import Cards from "../../cards/MainCards";
-import megawati1 from "../../../img/megawati1.jpg";
-import megawati2 from "../../../img/megawati2.jpg";
-import megawati3 from "../../../img/megawati3.jpg";
 import perempuan from "../../../img/ig-perempuan.png";
-import megawati12 from "../../../img/megawati12.png";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import MainButton from "../../buttons/MainButton";
 import MainDivider from "../../divider/MainDivider";
@@ -121,7 +113,7 @@ const MultimediaPage = () => {
             <Cards
               imageCard={perempuan}
               textSmall="Admin PDI Perjuangan | 1 Januari 2019"
-              TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing."
+              title="Lorem ipsum dolor, sit amet consectetur adipisicing."
               borderRadius="10px"
             />
             

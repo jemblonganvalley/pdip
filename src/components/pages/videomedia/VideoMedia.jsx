@@ -32,17 +32,17 @@ const VideoMedia = ()=> {
             </div>
             <div className="wrapperCardVideo">
                 <Cards imageCard={megawati}
-                        TextH5="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor, tempora optio at nam eaque!"
+                        title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor, tempora optio at nam eaque!"
                         h5Font="10pt"
                         h5Weight="bold"
                         borderRadius="10px" />
                 <Cards imageCard={megawati}
-                        TextH5="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor, tempora optio at nam eaque!"
+                        title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor, tempora optio at nam eaque!"
                         h5Font="10pt"
                         h5Weight="bold"
                         borderRadius="10px" />
                 <Cards imageCard={megawati}
-                        TextH5="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor, tempora optio at nam eaque!"
+                        title="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor, tempora optio at nam eaque!"
                         h5Font="10pt"
                         h5Weight="bold"
                         borderRadius="10px" />

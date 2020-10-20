@@ -116,22 +116,29 @@ const MusicPdi = ({
       pdf: allForOne_pdf,
       lyric: `
         <p>
-        Atas Kasih dan Kehendak Yang Maha Pencipta
-        Kita Telah Sepakat Bersatu
-        Bersatu Dalam Satu Rampak Barisan
-        Menentang Kemiskinan <br /><br />
+        Seribu masalah
+        Yang silih berganti datang
+        Bukan menjadi rintangan <br /><br />
 
-        Atas Rahmat dan Bimbingan Yang Maha Kuasa
-        Kita Telah Bertekad Berjuang
-        Berjuang untuk Satu Tujuan Mulia
-        Mencapai Indonesia Sentosa <br /><br />
+        Jika kita slalu
+        Menghadapi semua bersama
+        Pastikan kita satu/utuh <br /><br />
 
-        Bersama PDI Perjuangan
-        Bersama PDI Perjuangan
-        Wadah Kedaulatan Rakyat Indonesia
-        Atas Berkat dan Kemurahan Yang Maha Esa <br /><br />
+        Kita slalu bersama
+        Dalam gerak dan langkah
+        Hadapi rintangan
+        Bersatu kita bisa <br /><br />
 
-        PDI Perjuangan Jaya!
+        One  for all and all  for one
+        Kita kan slalu hadapi semua bersama <br /><br />
+
+        One for all and all for one
+        sebab kita semua satu kesatuan <br /><br />
+
+        One love
+        One life
+        One heart
+        We are one
         </p>
         `,
     },
@@ -288,7 +295,8 @@ const MusicPdi = ({
               >
                 <h6 className="judulList">Hymne PDI Perjuangan</h6>
                 <small>
-                  Lorem ipsum, dolor sit amet consectetur disin asekuma one direct
+                  Lorem ipsum, dolor sit amet consectetur disin asekuma one
+                  direct
                 </small>
               </div>
 
@@ -300,7 +308,7 @@ const MusicPdi = ({
               >
                 <h6 className="judulList">Mars PDI Perjuangan</h6>
                 <small>
-                Lorem ipsum, dolor sit amet consectetur disin asekuma one
+                  Lorem ipsum, dolor sit amet consectetur disin asekuma one
                 </small>
               </div>
 
@@ -311,9 +319,7 @@ const MusicPdi = ({
                 }}
               >
                 <h6 className="judulList">One For All All For One</h6>
-                <small>
-                Lorem ipsum, dolor sit amet consectetur
-                </small>
+                <small>Lorem ipsum, dolor sit amet consectetur</small>
               </div>
 
               <div
@@ -323,9 +329,7 @@ const MusicPdi = ({
                 }}
               >
                 <h6 className="judulList">Solid Bergerak</h6>
-                <small>
-                Lorem ipsum, dolor sit amet consectetur
-                </small>
+                <small>Lorem ipsum, dolor sit amet consectetur</small>
               </div>
             </div>
           </div>

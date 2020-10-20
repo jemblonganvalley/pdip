@@ -131,11 +131,11 @@ const Page1 = () => {
                     {/* Column2 */}
                     <div className="col2-container-1-beritaPage1">
                         {/* Section1 */}
-                        <div className="section1-beritaPage1">
+                        {/* <div className="section1-beritaPage1">
                             <h5 className="txt-desk-section1-beritaPage1">
                                 So strongly and metaphysically did I conceive of my situation then, that while earnestly watching his motions, I seemed distincly to perceive that my own individuality was now merged in a joint stock company of two ; that my free will had received a mortal.
                             </h5>
-                        </div>
+                        </div> */}
                         {/* END Section1 */}
 
                         {/* Section2 */}
@@ -214,13 +214,13 @@ const Page1 = () => {
 
                 <div className="col2-section6-beritaPage1">
                     <Cards imageCard={pemilu18}
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019" title="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                         borderRadius="10px" />
                     <Cards imageCard={pemilu19}
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019" title="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                         borderRadius="10px" />
                     <Cards imageCard={pemilu20}
-                        textSmall="Admin PDI Perjuangan | 1 Januari 2019" TextH5="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
+                        textSmall="Admin PDI Perjuangan | 1 Januari 2019" title="Lorem ipsum dolor, sit amet consectetur adipisicing." paragrap="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur neque minima eum temporibus. Ipsa at fugit rerum veritatis sint?"
                         borderRadius="10px" />
                 </div>
             </div>
