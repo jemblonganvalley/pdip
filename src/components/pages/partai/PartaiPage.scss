@@ -15,6 +15,27 @@ $smallPhoneDua : 400px;
     }
 }
 
+$deviceOne : 1000px;
+@mixin deviceOne {
+    @media (min-width : #{$deviceOne}) {
+        @content;
+    }
+}
+
+$deviceTwo : 1500px;
+@mixin deviceTwo {
+    @media (max-width : #{$deviceTwo}) {
+        @content;
+    }
+}
+
+$deviceThree : 1200px;
+@mixin deviceThree {
+    @media (max-width : #{$deviceThree}) {
+        @content;
+    }
+}
+
     //START CSS
 
 .wrapperPartai {
@@ -124,6 +145,23 @@ $smallPhoneDua : 400px;
                 .mobileRow{
                     @include smallPhone(){
                         padding: 0 5px;
+                    }
+
+                    .imgMobilePartai{
+                        height: 75px;
+                        width: 75px;
+                        object-fit: cover;
+                        object-position: center;
+
+                        @include deviceOne(){
+                            height: 50px;
+                            width: 50px;
+                        }
+
+                        @include smallPhone(){
+                            height: 65px;
+                            width: 65px;
+                        }
                     }
                 }
 

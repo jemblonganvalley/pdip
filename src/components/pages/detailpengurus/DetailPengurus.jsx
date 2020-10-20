@@ -41,7 +41,7 @@ const DetailPengurus = ()=> {
                 </div>
                 <div className="profilPengurus">
                     <div className="kolum1">
-                        <img src={profil} alt="" width="200" />
+                        <img src={profil} alt="" />
                         <div className="textProfil">
                             <div className="ketua profilText">
                                 <small className="ketuaText">Ketua</small>

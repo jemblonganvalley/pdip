@@ -102,9 +102,6 @@ const PartaiPage = () => {
                             src={`https://atur.biar.pw/public/${e.image}`}
                             alt=""
                             className="imgMobilePartai"
-                            style={{
-                              height: "50%",
-                            }}
                           />
                           <div
                             className="textContent textContentSatu"

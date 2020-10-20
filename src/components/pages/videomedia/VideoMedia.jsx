@@ -21,21 +21,16 @@ const VideoMedia = ()=> {
                                 page3="Video" />
             </div>
 
+            {/* Card VMedia */}
+            <div className="container-vmedia-page">
             <VMedia headline="Ketua Umum PDI Perjuangan, Hj. Megawati Soekarnoputri Meresmikan 20 Kantor Partai" source="https://www.youtube.com/embed/V4pM1xY9ntY" />
+            </div>
+            {/* END Card VMedia */}
 
             <div className="dividerVideo">
                 <div className="borderVideo"></div>
             </div>
-            <div className="wrapperCardVideo" style={{
-                display : 'flex',
-                flexDirection : 'row',
-                marginTop : '2rem'
-            }}>
-                <Cards imageCard={megawati}
-                        TextH5="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor, tempora optio at nam eaque!"
-                        h5Font="10pt"
-                        h5Weight="bold"
-                        borderRadius="10px" />
+            <div className="wrapperCardVideo">
                 <Cards imageCard={megawati}
                         TextH5="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolor, tempora optio at nam eaque!"
                         h5Font="10pt"

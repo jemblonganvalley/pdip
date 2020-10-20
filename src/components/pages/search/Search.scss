@@ -22,11 +22,12 @@ $smallPhoneDua : 400px;
     width: 100vw;
     background: #f3f3f3;
     margin: 0 0 40px 0;
-    padding: 0 0 100px 0;
+    padding: 0 0 20px 0;
 
-    // @include smallPhone(){
-    //     border: 1px solid blue;
-    // }
+    @include smallPhone(){
+        padding: 0 0 20px 0;
+        height: auto;
+    }
 
     // Bg Black Search
     .background-black-search{
@@ -113,6 +114,7 @@ $smallPhoneDua : 400px;
             padding: 0 10px;
         }
 
+        // Column1
         .column1-hasil-pencarian{
             display: flex;
             position: relative;
@@ -121,8 +123,10 @@ $smallPhoneDua : 400px;
             align-items: center;
 
             @include smallPhone(){
+                height: 15vh;
                 flex-direction: column;
-                padding: 10px 0 0 0;
+                justify-content: center;
+                padding: 0px 0 0 0;
             }
 
             .txt-hasil-pencarian{
@@ -149,13 +153,15 @@ $smallPhoneDua : 400px;
             }
 
         }
+        // END Column1
 
+        // Column2
         // Card hasil pencarian
         .column2-hasil-pencarian{
             display: flex;
             height: auto;
             width: 100%;
-            margin-top: 0px;
+            margin-top: 0px; 
 
             @include smallPhone(){
                 flex-direction: column;
@@ -173,85 +179,87 @@ $smallPhoneDua : 400px;
                     width: 100%;
                 }
 
-                .card-hasil-pencarian{
-                    display: flex;
-                    height: auto;
-                    width: 100%;
-                    margin: 0 0 20px 0;
-                    padding: 0 0 10px 0;
-                    border-bottom: 1px solid #aaa;
-                    text-decoration: none;
-                    color: #000;
-                    transition: .3s;
+                // Card Search
+                // .card-hasil-pencarian{
+                //     display: flex;
+                //     height: auto;
+                //     width: 100%;
+                //     margin: 0 0 20px 0;
+                //     padding: 0 0 10px 0;
+                //     border-bottom: 1px solid #aaa;
+                //     text-decoration: none;
+                //     color: #000;
+                //     transition: .3s;
 
-                    &:hover{
-                        color: $colors;
-                    }
+                //     &:hover{
+                //         color: $colors;
+                //     }
 
-                    // @include smallPhone(){
-                    //     border: 1px solid blue;
-                    // }
+                //     // @include smallPhone(){
+                //     //     border: 1px solid blue;
+                //     // }
 
-                    // Img
-                    .img-card{
-                        display: flex;
-                        height: auto;
-                        width: 70px;
-                        object-fit: cover;
-                        object-position: center;
-                        background: #555;
-                    }
+                //     // Img
+                //     .img-card{
+                //         display: flex;
+                //         height: auto;
+                //         width: 70px;
+                //         object-fit: cover;
+                //         object-position: center;
+                //         background: #555;
+                //     }
 
-                    // Content card
-                    .column-content-card{
-                        display: flex;
-                        flex-direction: column;
-                        height: auto;
-                        width: 100%;
-                        margin: 0 0 0 20px;
-                        padding: 0 5% 0 0;
+                //     // Content card
+                //     .column-content-card{
+                //         display: flex;
+                //         flex-direction: column;
+                //         height: auto;
+                //         width: 100%;
+                //         margin: 0 0 0 20px;
+                //         padding: 0 5% 0 0;
 
-                        @include smallPhone(){
-                            margin: 0 0 0 10px;
-                            padding: 0;
-                        }
+                //         @include smallPhone(){
+                //             margin: 0 0 0 10px;
+                //             padding: 0;
+                //         }
 
-                        .column-title-card{
-                            display: flex;
-                            width: 100%;
+                //         .column-title-card{
+                //             display: flex;
+                //             width: 100%;
 
-                            .title1-card{
-                                color: $colors;
+                //             .title1-card{
+                //                 color: $colors;
 
-                                @include smallPhone(){
-                                    font-size: 8pt;
-                                }
-                            }
+                //                 @include smallPhone(){
+                //                     font-size: 8pt;
+                //                 }
+                //             }
 
-                            .title2-card{
-                                margin: 0 0 0 5px;
-                                color: #555;
+                //             .title2-card{
+                //                 margin: 0 0 0 5px;
+                //                 color: #555;
 
-                                @include smallPhone(){
-                                    font-size: 8pt;
-                                }
-                            }
-                        }
+                //                 @include smallPhone(){
+                //                     font-size: 8pt;
+                //                 }
+                //             }
+                //         }
 
-                        .txt-paragrap-card{
-                            display: flex;
-                            height: auto;
-                            width: 100%;
-                            text-align: start;
-                            margin: 10px 0 0 0;
+                //         .txt-paragrap-card{
+                //             display: flex;
+                //             height: auto;
+                //             width: 100%;
+                //             text-align: start;
+                //             margin: 10px 0 0 0;
                             
-                            @include smallPhone(){
-                                font-size: 10pt;
-                                margin: 5px 0 0 0;
-                            }
-                        }
-                    }
-                }
+                //             @include smallPhone(){
+                //                 font-size: 10pt;
+                //                 margin: 5px 0 0 0;
+                //             }
+                //         }
+                //     }
+                // }
+                // END Card Search
             }
             // END Info kiri
 
@@ -263,6 +271,7 @@ $smallPhoneDua : 400px;
                 width: 25%;
 
                 @include smallPhone(){
+                    display: none;
                     width: 100%;
                     margin: 10px 0 0 0;
                 }
@@ -297,6 +306,22 @@ $smallPhoneDua : 400px;
 
         }
         // END Card hasil pencarian
+        // END Column2
+
+        // Column3 Paginate
+        .column3-pagination-pencarian{
+            display: flex;
+            height: auto;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 0 0 0;
+
+            @include smallPhone(){
+                margin: 0;
+            }
+        }
+        // END Column3 Paginate
 
     }
     // END Container Hasil pencarian
