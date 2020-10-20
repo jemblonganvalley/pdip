@@ -8,8 +8,10 @@ import './BkbbWejangan.scss'
 import CardQuotes from '../../cardquotes/CardQuotes'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import MainButton from '../../buttons/MainButton'
+import CardSocialMedia from '../../cardsocialmedia/CardSocialMedia'
 
 const BkbbWejangan = () => {
+
     return (
         <>
             <div className="wrapperBkbbWejangan">
@@ -75,13 +77,17 @@ const BkbbWejangan = () => {
                             </p>
 
                             <div className="box-medsos-bkbbWejangan">
-                                <div className="socialMedia">
-                                    <small>SHARE : </small>
-                                    <i class="fa fa-facebook"></i>
-                                    <i class="fa fa-twitter"></i>
-                                    <i class="fa fa-instagram"></i>
-                                    <i class="fa fa-whatsapp" ></i>
-                                </div>
+                                {/* Card Social Media */}
+                                    <CardSocialMedia/>
+                                {/* END Card Social Media */}
+
+                                {/* <div className="socialMedia">
+                                    <small>SHARE : </small>  
+                                    <i className="fa fa-facebook"></i>
+                                    <i className="fa fa-twitter"></i>
+                                    <i className="fa fa-instagram"></i>
+                                    <i className="fa fa-whatsapp" ></i>
+                                </div> */}
                             </div>
                         </div>
                         {/* END Row2 */}

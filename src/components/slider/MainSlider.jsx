@@ -67,6 +67,7 @@ const MainSlider = ({ value, cls }) => {
 
                 {/* For Responsive Mobile */}
                 <div className="box-red-paragrap-mainSlider">
+                  <h1>{e.title}</h1>
                   <p dangerouslySetInnerHTML={{ __html: e.paragraph }}></p>
                 </div>
                 {/* END For Responsive Mobile */}
