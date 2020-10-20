@@ -10,6 +10,7 @@ import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import MainButton from "../../buttons/MainButton";
 import IconHartaSatu from "../../../img/lh.png";
 import IconHartaDua from "../../../img/income.png";
+import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
 
 // Create Component
 const PemiluPage = () => {
@@ -134,10 +135,9 @@ const PemiluPage = () => {
 
           {/* Container2 */}
           <div className="container-2-pemiluPage">
-     
-            <div className="btn-col2-pemiluPage">
-              <MainButton name="LIHAT" />
-            </div>
+            {/* Carousel Tata Cara */}
+            <CarouselTataCara/>
+            {/* END Carousel Tata Cara */}
           </div>
           {/* END Container2 */}
 

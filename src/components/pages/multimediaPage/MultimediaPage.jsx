@@ -107,8 +107,10 @@ const MultimediaPage = () => {
             </div>
           </div>
 
-            <MainDivider text="Video Terbaru" mrgn="40px 0 40px 0" />
-
+            <div className="divider-video-terbaru">
+            <MainDivider text="Video Terbaru"/>
+            </div>
+          
            <div className="cardContent">
 
             {configHome[4].value.map((e, i) => (
