@@ -8,9 +8,41 @@ import MainDivider from "../../divider/MainDivider";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import CardQuotes from "../../cardquotes/CardQuotes";
 
+export const LighBox = ({ source }) => {
+  return (
+    <>
+      <main
+        className="container_lightbox"
+        style={{
+          width: "100vw",
+          height: "100vh",
+          position: "fixed",
+          top: "0",
+          left: "0",
+          backgroundColor: "rgba(0,0,0,0.800)",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          zIndex: "2000",
+        }}
+      >
+        <iframe
+          width="800"
+          height="500"
+          src={`https://www.youtube.com/embed/${source}`}
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        {console.log(source)}
+      </main>
+    </>
+  );
+};
 
 const BkbbPage = () => {
   const [configHome, setConfigHome] = useState([]);
+  const [showVid, setShowVid] = useState(false);
 
   const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
@@ -47,6 +79,26 @@ const BkbbPage = () => {
 
   return (
     <>
+      {showVid && (
+        <>
+          <span
+            style={{
+              position: "fixed",
+              top: "20vh",
+              right: "20vh",
+              color: "white",
+              zIndex: "6000",
+              fontSize: "2rem",
+            }}
+            onClick={() => {
+              setShowVid(false);
+            }}
+            class="fa fa-close"
+          ></span>
+          <LighBox source={configHome[2].value[0].path} />
+        </>
+      )}
+
       {configHome.length > 0 ? (
         <div className="wrapperBkbbPage">
           <div className="headers-bkbbPage">
@@ -93,26 +145,30 @@ const BkbbPage = () => {
                   backgroundImage: `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
                 }}
                 key={i}
+                onClick={() => {
+                  setShowVid(true);
+                }}
               >
                 <div className="textYoutube">
                   <div className="wrapperText">
                     <ul className="circleYoutube">
                       <li>
-                        <a href="youtube">
-                          <i className="fa fa-play"></i>
-                        </a>
+                        <i
+                          className="fa fa-play"
+                          style={{ color: "white" }}
+                        ></i>
                       </li>
                     </ul>
                     <div className="textInfoYT">
                       <h3 className="videoTerbaru">{e.title}</h3>
                       <br />
-                      {/* <p className="siaranHut">{e.description}</p> */}
+                      <h6 className="siaranHut">{e.description}</h6>
                     </div>
                   </div>
                 </div>
               </div>
             ))}
-
+            ))}
             {/* <iframe
           width="80%"
           height="90%"
@@ -124,8 +180,11 @@ const BkbbPage = () => {
           </section>
 
           <section className="wrapper3">
-            <MainDivider text="Materi Pokok Pendukung" garisMerah="8rem"
-            mrgn="40px 0" />
+            <MainDivider
+              text="Materi Pokok Pendukung"
+              garisMerah="8rem"
+              mrgn="40px 0"
+            />
           </section>
 
           <div className="wrapperCard">
@@ -146,19 +205,15 @@ const BkbbPage = () => {
           </div>
 
           <div className="btnLihatSemua">
-            <MainButton
-              name="lihat semua"
-              margin="0"
-              pages="/materipokok"
-            />
+            <MainButton name="lihat semua" margin="0" pages="/materipokok" />
           </div>
           <div
             className="bannerBkbb"
             style={{
               background: `url(https://atur.biar.pw/public/${configHome[4].value.image})`,
-              backgroundAttachment: 'fixed',
-              backgroundSize: 'auto',
-              backgroundPosition: 'center',
+              backgroundAttachment: "fixed",
+              backgroundSize: "auto",
+              backgroundPosition: "center",
             }}
           >
             <i className="fas fa-quote-right"></i>
