@@ -1,8 +1,9 @@
 import React from 'react'
 import './CarouselTataCara.scss'
-import ilustrator from '../../img/illustrator2.png'
 
-const CarouselTataCara = ()=>{
+const CarouselTataCara = ({
+    img1, img2, img3, paragrapOne, paragrapTwo, paragrapThree
+})=>{
     return(
         <>
         {/* SLIDER TATA CARA */}
@@ -12,22 +13,20 @@ const CarouselTataCara = ()=>{
             <div className="carousel-item active" style={{
                 backgroundImage: 'none'
             }}>
-                <img src={ilustrator} className="imageTC"/>
-                <p className="pCarousel">Pemohon informasi publik mengisi formulir permohonan informasi dengan menyertakan
-                    identitas yang masih berlaku (KTP, SIM, Paspor). Bagi lembaga publik pemohon informasi menyertakan Akta
-                    Notaris/SK Pembentukan.</p>
+                <img src={img1} className="imageTC"/>
+                <p className="pCarousel">{paragrapOne}</p>
             </div>
             <div className="carousel-item" style={{
                 backgroundImage: `none`
             }}>
-                <img src={ilustrator} className="imageTC"/>
-                <p className="pCarousel">Pemohon informasi publik mengisi formulir permohonan informasi dengan menyertakan</p>
+                <img src={img2} className="imageTC"/>
+                <p className="pCarousel">{paragrapTwo}</p>
             </div>
             <div className="carousel-item" style={{
                 backgroundImage: `none`
             }}>
-                <img src={ilustrator} className="imageTC"/>
-                <p className="pCarousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aut officia laudantium quaerat pariatur eius maiores maxime nam nobis placeat.</p>
+                <img src={img3} className="imageTC"/>
+                <p className="pCarousel">{paragrapThree}</p>
             </div>
             </div>
             <a className="carousel-control-prev" href="#carouselTataCara" role="button" data-slide="prev">

@@ -11,6 +11,8 @@ import MainButton from "../../buttons/MainButton";
 import IconHartaSatu from "../../../img/lh.png";
 import IconHartaDua from "../../../img/income.png";
 import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
+import illustrator from '../../../img/illustrator2.png'
+
 
 // Create Component
 const PemiluPage = () => {
@@ -136,7 +138,14 @@ const PemiluPage = () => {
           {/* Container2 */}
           <div className="container-2-pemiluPage">
             {/* Carousel Tata Cara */}
-            <CarouselTataCara/>
+            <CarouselTataCara
+            img1={illustrator}
+            img2={illustrator}
+            img3={illustrator}
+            paragrapOne="Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint neque, amet tempore sed atque maxime sapiente dolor similique rerum."
+            paragrapTwo="Lorem ipsum dolor elit. Soluta sint neque, amet tempore sed atque maxime sapiente dolor similique rerum."
+            paragrapThree="Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint neque, amet tempore sed atque maxi."
+          />
             {/* END Carousel Tata Cara */}
           </div>
           {/* END Container2 */}
