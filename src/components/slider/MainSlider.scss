@@ -34,6 +34,13 @@ $deviceThree : 1200px;
     }
 }
 
+$deviceFour : 1300px;
+@mixin deviceFour {
+    @media (max-width: #{$deviceFour}){
+        @content;
+    }
+}
+
 .image1 {
     display: flex;
     height: 90vh;
@@ -43,7 +50,8 @@ $deviceThree : 1200px;
     position: relative;
 
     @include smallPhone() {
-        height: 40vh;
+        flex-direction: column;
+        height: 45vh;
     }
 
     img{
@@ -54,21 +62,50 @@ $deviceThree : 1200px;
         object-position: center;
 
         @include smallPhone(){
-            height: 100%;
+            height: 55%;
             width: 100%;
-            position: absolute;
-            object-fit: fill;
+            object-fit: cover;
         }
     }
+
+    // Background Red Carousel (Desktop)
+    .bgRed-carousel-desktop{
+        display: flex;
+        position: absolute;
+        height: 1100px;
+        min-height: 750px;
+        width: 1200px;
+        background-color: $colors;
+        opacity: 0.8;
+        border-radius: 0px 0px 1800px 2000px;
+        transform: rotate(-120deg);
+        top: -100px;
+        left: -230px;
+
+        // For Mobile
+        @include smallPhone(){
+            display: none;
+        }
+        // END For Mobile
+
+        @include deviceFour(){
+            height: 1200px;
+            max-height: 100%;
+            width: 1000px;
+            transform: rotate(-90deg);
+            top: 0;
+            left: -180px;
+        }
+    }
+    // END Background Red Carousel (Desktop)
 
     .text1 {
         height: 100%;
         color: #ffffff;
         // border: 1px solid green;
-        background: url(../../img/bgTextMobilez-01.svg);
         object-fit: cover;
         background-position: left;
-        opacity: 0.8;
+        opacity: 1;
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
@@ -94,15 +131,16 @@ $deviceThree : 1200px;
             display: flex;
             position: relative;
             background-size: cover;
-            height: 100%;
-            width: auto;
+            height: 45%;
+            width: 100%;
             background: none;
             background-repeat: no-repeat;
             align-items: flex-start;
-            padding: 1rem 0rem 0 0rem;
             text-align: center;
             opacity: 1;
-            padding: 0;
+            padding: 0 0 40px 0;
+            overflow: hidden;
+            background-color: $colors;
         }
         
         h1 {
@@ -148,12 +186,10 @@ $deviceThree : 1200px;
             @include smallPhone(){
                 display: flex;
                 flex-direction: column;
-                position: absolute;
-                bottom: 0;
-                height: 50%;
+                height: 100%;
                 width: 100%;
-                background-color: rgba(255, 0, 8, 0.6);
-                padding: 20px 30px 0 30px;
+                background-color: $colors;
+                padding: 20px 20px 0 20px;
             }
 
             h1{
@@ -162,6 +198,7 @@ $deviceThree : 1200px;
                     position: static;
                     width: 100%;
                     margin: 0;
+                    overflow: hidden;
                 }
             }
 
@@ -174,6 +211,7 @@ $deviceThree : 1200px;
                     width: 100%;
                     text-align: start;
                     margin: 10px 0 0 0;
+                    overflow: hidden;
                 }
             }
         }

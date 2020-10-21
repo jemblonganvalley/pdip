@@ -64,6 +64,12 @@ const MainSlider = ({ value, cls }) => {
                 src={`http://atur.biar.pw/public${e.image}`}
                 alt={e.title}/>
 
+                {/* Background Red Carousel (Desktop) */}
+                <div className="bgRed-carousel-desktop">
+                  
+                </div>
+                {/* END Backround Red Carousel (Desktop) */}
+
               <div className="col col-lg-6 mr-auto text1">
                 <h1>{e.title}</h1>
                 <p dangerouslySetInnerHTML={{ __html: e.paragraph }}></p>
@@ -71,7 +77,10 @@ const MainSlider = ({ value, cls }) => {
                 {/* For Responsive Mobile */}
                 <div className="box-red-paragrap-mainSlider">
                   <h1>{e.title}</h1>
-                  <p dangerouslySetInnerHTML={{ __html: e.paragraph }}></p>
+
+                  {/* Cukup Titlenya Saja */}
+
+                  {/* <p dangerouslySetInnerHTML={{ __html: e.paragraph }}></p> */}
                 </div>
                 {/* END For Responsive Mobile */}
               </div>

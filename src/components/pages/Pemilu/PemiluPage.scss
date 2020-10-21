@@ -181,7 +181,7 @@ $secondary : #f3f3f3;
 
                 @include smallPhone(){
                     justify-content: flex-start;
-                    padding: 0 20px;
+                    padding: 0 0px;
                 }
                 
                 &:hover {
@@ -217,7 +217,7 @@ $secondary : #f3f3f3;
                         // height: 100px;
                         // width: 130px;
                         object-fit: cover;
-                        margin: 0 20px 0 10px;
+                        margin: 0 20px 0 30px;
                     }
                 }
 
@@ -293,7 +293,7 @@ $secondary : #f3f3f3;
                         // height: 100px;
                         // width: 130px;
                         object-fit: cover;
-                        margin: 0 20px 0 10px;
+                        margin: 0 20px 0 30px;
                     }
                 }     
 
