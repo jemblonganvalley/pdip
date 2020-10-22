@@ -56,12 +56,15 @@ $smallPhoneDua : 400px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                border-right: 1px solid #f3f3f3;
             
                 @include smallPhone() {
                     width: 100%;
                     flex-direction: column;
                     padding: 0px 0 0 0;
                     flex: 1;
+                    border-right: none;
+                    border-bottom: 1px solid #f3f3f3;
                 }
 
                 img {
@@ -109,12 +112,12 @@ $smallPhoneDua : 400px;
                     width: 100%;
                     height: 15vh;
                     padding: 2rem;
-                    border-right: 1px solid #f3f3f3;
+                    // border-right: 1px solid #f3f3f3;
                     @include smallPhone() {
                         height: 15vh;
                         // padding: 1rem;
+                        // padding: 4rem;
                         border: none;
-                        border-bottom: 1px solid #f3f3f3;
                     }
             }
             .calendar {
@@ -214,6 +217,7 @@ $smallPhoneDua : 400px;
                             width: 50px;
                             vertical-align: middle;
                             text-align: center;
+                            cursor: pointer;
 
                             @include smallPhone() {
                                 height: 2.3rem;

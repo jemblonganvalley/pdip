@@ -3,15 +3,21 @@ import './CardSocialMedia.scss'
 import { FacebookShareButton, InstapaperShareButton, TwitterShareButton, WhatsappShareButton } from 'react-share'
 
 const CardSocialMedia = ()=>{
+
+    let urlShare = "https://www.npmjs.com/package/react-share"
+    let quote ="PDI Perjuangan"
+    let hashtag = "#PPDI Perjuangan"
+    let titleForWhatsapp = "PPDI Perjuangan"
+
     return(
         <>
         <div className="socialMedia">
             <small>SHARE : </small>
               {/* Facebook Share */}
               <FacebookShareButton
-                url={"https://www.npmjs.com/package/react-share"}
-                quote={"PDI Perjuangan"}
-                hashtag={"#PPDIPerjuangan"}
+                url={urlShare}
+                quote={quote}
+                hashtag={hashtag}
               >
                 <i className="fa fa-facebook"></i>
               </FacebookShareButton>
@@ -19,9 +25,9 @@ const CardSocialMedia = ()=>{
 
               {/* Twitter Share */}
               <TwitterShareButton
-                url={"https://www.npmjs.com/package/react-share"}
-                quote={"PDI Perjuangan"}
-                hashtag={"#PPDIPerjuangan"}
+                url={urlShare}
+                quote={quote}
+                hashtag={hashtag}
               >
                 <i className="fa fa-twitter"></i>
               </TwitterShareButton>
@@ -29,9 +35,9 @@ const CardSocialMedia = ()=>{
 
               {/* Instagram Share */}
               <InstapaperShareButton
-                url={"https://www.npmjs.com/package/react-share"}
-                quote={"PDI Perjuangan"}
-                hashtag={"#PPDIPerjuangan"}
+                url={urlShare}
+                quote={quote}
+                hashtag={hashtag}
               >
                 <i className="fa fa-instagram"></i>
               </InstapaperShareButton>
@@ -39,8 +45,8 @@ const CardSocialMedia = ()=>{
 
               {/* WhatsApp Share */}
               <WhatsappShareButton
-                url={"https://www.npmjs.com/package/react-share"}
-                title="PPDI Perjuangan"
+                url={urlShare}
+                title={titleForWhatsapp}
               >
                 <i className="fa fa-whatsapp" ></i>
               </WhatsappShareButton>

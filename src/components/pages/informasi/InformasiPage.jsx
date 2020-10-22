@@ -7,6 +7,8 @@ import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import CardInformasi from "../../cardInformasi/CardInformasi";
 import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
 import CarouselKM from "../../carouselKM/CarouselKM";
+import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
+import illustrator from '../../../img/illustrator2.png'
 
 const InformasiPage = () => {
   const [gallery, setGallery] = useState([]);
@@ -208,7 +210,15 @@ const InformasiPage = () => {
           {/* END */}
 
           {/* SLIDER TATA CARA */}
-          <CarouselKM data={configHome[6].value} />
+          <CarouselTataCara
+            img1={illustrator}
+            img2={illustrator}
+            img3={illustrator}
+            paragrapOne="Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint neque, amet tempore sed atque maxime sapiente dolor similique rerum."
+            paragrapTwo="Lorem ipsum dolor elit. Soluta sint neque, amet tempore sed atque maxime sapiente dolor similique rerum."
+            paragrapThree="Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint neque, amet tempore sed atque maxi."
+          />
+          {/* <CarouselKM data={configHome[6].value} /> */}
           {/* END */}
 
           {/* Container dua */}

@@ -167,10 +167,6 @@ const BeritaPage = () => {
                         image2={BeritaDua} to3="/beritafoto"
                         image3={BeritaTiga} to4="/kegiatanpartai"
                         image4={BeritaEmpat}
-                        width1="0"
-                        width2="0"
-                        width3="0"
-                        width4="0"
                         text="berita nasional"
                         text2="berita daerah"
                         text3="berita foto"

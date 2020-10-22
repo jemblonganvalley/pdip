@@ -68,7 +68,7 @@ export const CarouselDuelBerita = ({
         <div className='mainCarouselDual'>
             
             {/* Carousel 1 */}
-            <div id="carouselDualSatu " className="carousel slide mainCarouselDual_car1" data-ride="carousel">
+            <div id="carouselone" className="carousel slide mainCarouselDual_car1" data-ride="carousel">
             <div className="carousel-inner">
 
                 {data.map((e,i)=>(
@@ -116,18 +116,18 @@ export const CarouselDuelBerita = ({
                 ))}
 
             </div>
-                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <a className="carousel-control-prev" href="#carouselone" role="button" data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true" />
                     <span className="sr-only">Previous</span>
                 </a>
-                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <a className="carousel-control-next" href="#carouselone" role="button" data-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true" />
                     <span className="sr-only">Next</span>
                 </a>
             </div>
 
             {/* CAROUSEL 2 */}
-            <div id="carouselExampleControls" className="carousel slide mainCarouselDual_car2" data-ride="carousel">
+            <div id="carouseltwo" className="carousel slide mainCarouselDual_car2" data-ride="carousel">
             <div className="carousel-inner">
                  {data.map((e,i)=>(
                     <div className={`carousel-item ${i == 1 && 'active'}`}>
@@ -176,11 +176,11 @@ export const CarouselDuelBerita = ({
 
 
             </div>
-            <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a className="carousel-control-prev" href="#carouseltwo" role="button" data-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true" />
                 <span className="sr-only">Previous</span>
             </a>
-            <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a className="carousel-control-next" href="#carouseltwo" role="button" data-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true" />
                 <span className="sr-only">Next</span>
             </a>
