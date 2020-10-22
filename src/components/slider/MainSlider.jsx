@@ -7,6 +7,7 @@ import arrowsLeft from "../../img/arrowsLeft.png";
 import arrows from "../../img/arrows.png";
 import sliders from "../../img/slider.jpg";
 import slider2 from "../../img/slider2.jpg";
+import pattern from '../../img/pattern.jpeg'
 
 const MainSlider = ({ value, cls }) => {
   // let [slider, setSlider] = useState([
@@ -27,13 +28,16 @@ const MainSlider = ({ value, cls }) => {
   let slider = value;
 
   return (
+    <>
+
     <div
       id="carouselExampleIndicators"
-      className="carousel slide carousel-fade"
+      className="carousel slide carousel-fade carousel-mainSlider"
       data-ride="carousel"
       data-interval="0"
       style={{
-        overflow: 'hidden'
+        overflow: 'hidden',
+        backgroundImage: `url(${pattern})`
       }}
     >
       <div className="carousel-indicators">
@@ -60,23 +64,48 @@ const MainSlider = ({ value, cls }) => {
             }
           >
             <div className="rowMainSlider image1 images">
-              <img
+              {/* <img
                 src={`http://atur.biar.pw/public${e.image}`}
-                alt={e.title}/>
+                alt={e.title}/> */}
 
                 {/* Background Red Carousel (Desktop) */}
-                <div className="bgRed-carousel-desktop">
+                {/* <div className="bgRed-carousel-desktop">
                   
-                </div>
+                </div> */}
                 {/* END Backround Red Carousel (Desktop) */}
 
-              <div className="col col-lg-6 mr-auto text1">
-                <h1>{e.title}</h1>
-                <p dangerouslySetInnerHTML={{ __html: e.paragraph }}></p>
+              <div className="col text1">
+                {/* Box Paragrap */}
+                <div className="box-paragrap-mainSlider">
+                  <h3>{e.title}</h3>
+                  <p dangerouslySetInnerHTML={{ __html: e.paragraph }}></p>
+                </div>
+                {/* END Box Paragrap */}
+
+                {/* Box Image */}
+                <div className="box-img-mainSlider">
+  
+                <img
+                src={`http://atur.biar.pw/public${e.image}`}
+                alt={e.title} className="img-home-mainSlider"/>
+                {/* END Box Image */}
+
+                </div>
+                
 
                 {/* For Responsive Mobile */}
-                <div className="box-red-paragrap-mainSlider">
-                  <h1>{e.title}</h1>
+                <div className="box-paragrap-mobile-mainSlider">
+                  {/* Title For Mobile */}
+                  <div className="box-red-mobile-mainSlider">
+                    <h1>{e.title}</h1>
+                  </div>
+                  {/* END Title For Mobile */}
+
+                  {/* Paragrap For Mobile */}
+                  {/* <div className="box-white-mobile-mainSlider">
+                    <p dangerouslySetInnerHTML={{ __html: e.paragraph }}></p>
+                  </div> */}
+                  {/* END Paragrap For Mobile */}
 
                   {/* Cukup Titlenya Saja */}
 
@@ -96,7 +125,8 @@ const MainSlider = ({ value, cls }) => {
         data-slide="prev"
       >
         <div className="arrowsLeft">
-          <img src={arrowsLeft} alt="" />
+          {/* <img src={arrowsLeft} alt="" /> */}
+          <i className="fas fa-angle-left"></i>
         </div>
       </a>
 
@@ -107,10 +137,15 @@ const MainSlider = ({ value, cls }) => {
         data-slide="next"
       >
         <div className="arrowsRight">
-          <img src={arrows} alt="" />
+          {/* <img src={arrows} alt="" /> */}
+          <i className="fas fa-angle-right"></i>
         </div>
       </a>
+
+      
     </div>
+    {/* END Wrapper Carousel */}
+    </>
   );
 };
 

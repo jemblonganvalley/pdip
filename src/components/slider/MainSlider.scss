@@ -41,32 +41,42 @@ $deviceFour : 1300px;
     }
 }
 
+// .carousel-fade{
+//     display: flex;
+//     position: relative;
+    
+//     padding: 10%;
+// }
+
 .image1 {
     display: flex;
     height: 90vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-
+    padding: 20px 0 100px 0;
+    border-radius: 10px;
+    
     @include smallPhone() {
-        flex-direction: column;
-        height: 45vh;
-    }
-
-    img{
+        height: 50vh;
         width: 100%;
-        height: 100%;
-        // position: absolute;
-        object-fit: cover;
-        object-position: center;
-
-        @include smallPhone(){
-            height: 55%;
-            width: 100%;
-            object-fit: cover;
-        }
+        padding: 0;
+        border-radius: 0;
     }
+
+    // img{
+    //     width: 100%;
+    //     height: auto;
+    //     // position: absolute;
+    //     object-fit: cover;
+    //     object-position: center;
+
+    //     @include smallPhone(){
+    //         height: 55%;
+    //         width: 100%;
+    //         object-fit: cover;
+    //     }
+    // }
 
     // Background Red Carousel (Desktop)
     // .bgRed-carousel-desktop{
@@ -117,20 +127,16 @@ $deviceFour : 1300px;
     // END Tes BgRed Carousel
 
     .text1 {
+        display: flex;
         height: 100%;
+        width: 100%;
         color: #ffffff;
         // border: 1px solid green;
-        object-fit: cover;
-        background-position: left;
-        opacity: 1;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
+        box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.6);
         left: 0;
-        padding: 0;
+        
+        border-radius: 5px;
+        // margin: 20px;
 
         @include deviceOne(){
             width: 55%;
@@ -146,25 +152,85 @@ $deviceFour : 1300px;
 
         @include smallPhone() {
             display: flex;
+            flex-direction: column;
             position: relative;
             background-size: cover;
-            height: 45%;
+            height: 100%;
             width: 100%;
             background: none;
             background-repeat: no-repeat;
             align-items: flex-start;
             text-align: center;
             opacity: 1;
-            padding: 0 0 40px 0;
+            padding: 0 0 45px 0;
             overflow: hidden;
             background-color: $colors;
+            border-radius: 0;
         }
+
+        // Box Paragrap mainSlider
+        .box-paragrap-mainSlider{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 30%;
+            background-color: #fff;
+            padding: 50px;
+            overflow: hidden;
+            border-radius: 5px 0px 0px 5px;
+            box-shadow: 2px 0px 5px -2px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+
+            @include smallPhone(){
+                display: none;
+            }
+        }
+        // END Box paragrap mainSlider
+
+        .box-img-mainSlider{
+            height: 100%;
+            width: 70%;
+
+            @include smallPhone(){
+                display: flex;
+                height: 65%;
+                width: 100%;
+                z-index: 8;
+            }
+
+            .img-home-mainSlider{
+                display: flex;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: right;
+                border-radius: 0 5px 5px 0px;
+                overflow: hidden;
+                
+                // Responsive Max width 1300px
+                @include deviceFour(){
+                    object-position: right;
+                }
+                // END Responsive Max Width 1300px
+
+                @include smallPhone(){
+                    display: flex;
+                }
+            }
+
+        }
+
+        // Box Image
         
-        h1 {
-            width: 60%;
-            font-size: 25pt;
+        // END Box Image
+        
+        h3 {
+            width: 100%;
+            // font-size: 25pt;
             text-transform: uppercase;
-            margin-bottom: 2em;
+            // margin-bottom: 2em;
+            color: rgb(170, 5, 5);
+            font-weight: bold;
             
         @include smallPhone() {
             display: none;
@@ -187,8 +253,10 @@ $deviceFour : 1300px;
 
         }
         p {
-            font-size: 13pt;
-            width: 60%;
+            // font-size: 13pt;
+            width: 100%;
+            color: #000;
+            margin: 10px 0 0 0;
 
             @include smallPhone() {
                 display: none;
@@ -197,41 +265,71 @@ $deviceFour : 1300px;
             }
         }
 
-        .box-red-paragrap-mainSlider{
+
+        // For Mobile
+        .box-paragrap-mobile-mainSlider{
             display: none;
 
             @include smallPhone(){
                 display: flex;
-                flex-direction: column;
+                height: 50%;
+                width: 100%;
+                background-color: $colors;
+                padding: 0;
+                // box-shadow: 0 3px 7px -1px rgba(0,0,0,0.7);
+            }
+
+            // Title For Mobile
+            .box-red-mobile-mainSlider{
+                display: flex;
                 height: 100%;
                 width: 100%;
                 background-color: $colors;
-                padding: 20px 20px 0 20px;
-            }
+                color: #fff;
+                padding: 10px 20px;
 
-            h1{
-                @include smallPhone(){
-                    display: flex;
-                    position: static;
-                    width: 100%;
-                    margin: 0;
-                    overflow: hidden;
+                h1{
+                    @include smallPhone(){
+                        display: flex;
+                        position: static;
+                        height: 100%;
+                        width: 100%;
+                        font-size: 10pt;
+                        justify-content: center;
+                        text-align: center;
+                        margin: 0;
+                        overflow: hidden;
+                        color: #fff;
+                    }
                 }
             }
+            // END Title For Mobile
 
-            p{
-                display: flex;
+            // Paragrap For Mobile
+            .box-white-mobile-mainSlider{
+                display: none;
+                height: 100%;
+                width: 50%;
+                background-color: #fff;
+                color: #000;
 
-                @include smallPhone(){
+                p{
                     display: flex;
-                    top: 0;
-                    width: 100%;
-                    text-align: start;
-                    margin: 10px 0 0 0;
-                    overflow: hidden;
+    
+                    @include smallPhone(){
+                        display: flex;
+                        width: 100%;
+                        text-align: start;
+                        padding: 5px;
+                        margin: 0;
+                        font-size: 8pt;
+                        overflow: hidden;
+                    }
                 }
             }
+            // END Paragrap For Mobile
         }
+        // END For Mobile
     }
 }
 
@@ -316,31 +414,40 @@ $deviceFour : 1300px;
     
 }
 
-.carousel {
+.carousel-mainSlider {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
     height: 90vh;
+    padding: 0px 10% 0px 10%;
+    position: relative;
 
     @include smallPhone(){
         height: auto;
+        padding: 0;
     }
 
     .carousel-inner {
+        position: relative;
 
         .carousel-item {
+            position: relative;
             width: 100%;
         }
     }
     
     .carousel-indicators {
-        right: auto;
-        bottom: 5%;
-        margin-bottom: 30px;
+        right: 0;
+        left: 0;
+        bottom: 4%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
 
         @include smallPhone() {
             margin-bottom: 0;
+            bottom: 3%;
         }
         
             .indikator {
@@ -379,7 +486,6 @@ $deviceFour : 1300px;
 
                     @include smallPhone() {
                         font-size: 7pt;
-    
                     }
                 }
             }
@@ -402,38 +508,88 @@ $deviceFour : 1300px;
 
 
 .arrowsLeft {
-    height: 80px;
+    position: absolute;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: 50px;
+    border-radius: 500px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px -1px rgba(0,0,0,0.7);
+    left: 100px;
     // border: 1px solid blue;
     // background: rgba(255, 186, 186, 0.8);
     // display: none;
+
+    // Max Width 1300px
+    @include deviceFour(){
+        left: 50px;
+        height: 45px;
+        width: 45px;
+    }
+    // END Max Width 1300px
+
+    i{
+        font-size: 25px;
+        color: #000;
+
+        // Max Width 1300px
+        @include deviceFour(){
+            font-size: 20px;
+        }
+        // END Max Width 1300px
+    }
+
     @include smallPhone() {
-        height: 20px;
-        width: 20px;
+        position: absolute;
+        top: -70px;
+        left: 10px;
+        height: 30px;
+        width: 30px;
     }
     
 }
 
 
 .arrowsRight {
-    height: 80px;
+    position: absolute;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: 50px;
+    border-radius: 500px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px -1px rgba(0,0,0,0.7);
+    right: 100px;
     // border: 1px solid blue;
     // background: rgba(255, 186, 186, 0.8);
 
+    // Max Width 1300px
+    @include deviceFour(){
+        right: 50px;
+        height: 45px;
+        width: 45px;
+    }
+    // END Max Width 1300px
+
+    i{
+        font-size: 25px;
+        color: #000;
+
+        // Max Width 1300px
+        @include deviceFour(){
+            font-size: 20px;
+        }
+        // END Max Width 1300px
+    }
+
     @include smallPhone() {
-        height: 20px;
-        width: 20px;
+        top: -70px;
+        right: 10px;
+        height: 30px;
+        width: 30px;
     }
     
 }
-
-
-
-

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {Component, useEffect, useState} from 'react'
 import logo from '../../img/pdiperjuangan02.svg'
 import './MainNavbar.scss'
 import {Link, NavLink, Redirect} from 'react-router-dom'
@@ -10,6 +10,7 @@ const MainNavbar = ({token})=> {
 
     let [show, setShow] = useState()
     let [menu, setMenu] = useState([])
+    let [scroll, setScroll] = useState(false)
 
     // let pageSearch = window.location.href='/search'
 
@@ -17,7 +18,26 @@ const MainNavbar = ({token})=> {
     //   if(userFound){
     //     return <Redirect to
     //   }
-    // }
+    // }]
+
+    // Onscroll
+    // let [shadow, setShadow] = useState(true)
+
+    // END onScroll
+
+    // OnScroll Navbar
+    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+      // var prevScrollpos = window.pageYOffset;
+      // window.onscroll = function() {
+      //   var currentScrollPos = window.pageYOffset;
+      //   if (prevScrollpos > currentScrollPos) {
+      //     document.getElementById("navbar").style.top = "0";
+      //   } else {
+      //     document.getElementById("navbar").style.top = "-200px";
+      //   }
+      //   prevScrollpos = currentScrollPos;
+      // }
+    // END OnScroll Navbar
     
     const getDataMenu = async function(){
     const res = await fetch('https://atur.biar.pw/api/web/config/home', {
@@ -43,9 +63,25 @@ const MainNavbar = ({token})=> {
       setShow(e.target.value)
     }
 
+    
     useEffect(()=>{
       getDataMenu()
+
+      // onScroll BoxShadow
+      // window.addEventListener('scroll', handleScroll)
+      // return () => {
+      //     window.removeEventListener('scroll', handleScroll)
+      // }
+      // END onScroll BoxShadow
     },[])
+
+    // const handleScroll = () => {
+    //   if (window.scrollY > 50) {
+    //     document.querySelector('.navbar').className = 'navbar muncul'
+    //   } else {
+    //     document.querySelector('.navbar').className = 'navbar'
+    //   }
+    // }
    
 
     return (
@@ -54,10 +90,10 @@ const MainNavbar = ({token})=> {
         {/* DESKTOP SIZE */}
         {isDesktopOrLaptop && (
 
-        <nav className="navbar navbar-expand-lg sticky-top">
+        <nav className="navbar navbar-expand-lg sticky-top" id="navbar">
           <div className="container-fluid">
             <NavLink className="navbar-brand" to="/" activeClassName="brand" >
-              <img src={logo} alt="" width="60" className="d-inline-block align-center active" loading="lazy" />
+              <img src={logo} alt="" width="60" className="d-inline-block align-center active" loading="lazy"/>
             </NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" >
               <i class="fa fa-bars" aria-hidden="true"></i>
@@ -91,10 +127,12 @@ const MainNavbar = ({token})=> {
                  ))}
 
                 </ul>
-                <form className="d-inline-flex">
+                <form className="d-inline-flex" style={{
+                  display: 'flex'
+                }}>
                   <input className="form-control mr-2" type="text" placeholder="Cari Artikel" name="search"/>
                   <Link to='/search' name="submit" className="btn-next">
-                      <i class="fa fa-long-arrow-right" aria-hidden="true" name="icon" ></i>
+                      <i class="fas fa-search" aria-hidden="true" name="icon" ></i>
                   </Link>
                 </form>
               </div>
@@ -108,7 +146,7 @@ const MainNavbar = ({token})=> {
 
       {isMobile && (
 
-        <nav className="navbar navbar-expand-lg sticky-top">
+        <nav className="navbar navbar-expand-lg sticky-top" id="navbar">
           <div className="container-fluid">
             <NavLink className="navbar-brand" to="/" activeClassName="brand" >
               <img src={logo} alt="" width="60" className="d-inline-block align-center active" loading="lazy" />
@@ -153,7 +191,7 @@ const MainNavbar = ({token})=> {
               <form className="d-inline-flex">
                 <input className="form-control mr-2" type="text" placeholder="cari artikel" name="search" />
                 <Link to='/search' name="submit" className="btn-next">
-                  <i class="fa fa-long-arrow-right" aria-hidden="true" name="icon" ></i>
+                  <i class="fas fa-search" aria-hidden="true" name="icon" ></i>
                 </Link>
               </form>
 

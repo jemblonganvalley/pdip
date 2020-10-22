@@ -16,19 +16,21 @@ $smallPhoneDua : 400px;
 
 .wrapperEvent {
     width: 100%;
+    padding: 0 0 30px 0;
+    
+    @include smallPhone(){
+        padding: 0 0 30px 0;
+    }
 
     .headEvent {
         background: url(../../../img/pattern-05.svg);
         // background-size: cover;
-        height: 25vh;
+        height: 15vh;
         background-position: center;
         display: flex;
         align-items: center;
         // width: 100%;
         @include smallPhone() {
-            height: 20vh;
-        }
-        @include smallPhoneDua() {
             height: 15vh;
         }
 
