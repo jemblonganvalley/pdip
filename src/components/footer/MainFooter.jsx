@@ -8,7 +8,11 @@ const MainFooter = ()=> {
         <div className="wrapperFooter">
             <div className="wrapperContent">
                 <span style={{display: 'flex', gap: '20px', width : '400px'}}>
-                <img src={Logo} alt="" width="100" height="100" />
+                <img src={Logo} alt="" width="100" height="100" className="logo-mainFooter"
+                    style={{
+                        objectFit: 'fill'
+                    }}
+                />
 
                 <div className="textFooter">
                     <span className="heads">situation room pdi perjuangan</span>

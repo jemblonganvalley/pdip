@@ -47,6 +47,21 @@ $smallPhoneDua : 400px;
             text-align: center;
         }
 
+        span{
+            @include smallPhone(){
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .logo-mainFooter{
+                @include smallPhone(){
+                    margin: 0 0 20px 0;
+                }
+            }
+        }
+
         .textFooter {
             width: 250px;
             word-wrap: break-word;
