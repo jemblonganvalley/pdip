@@ -8,7 +8,7 @@ Content-Type: application/json
 
 # CONFIG UNTUK MENU
 ###
-POST https://atur.biar.pw/api/web/config/bkbb
+POST https://atur.biar.pw/api/web/config/berita
 Content-Type: application/json
 Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAzMzQ5NTg5LCJleHAiOjE2MDM0MzU5ODksIm5iZiI6MTYwMzM0OTU4OSwianRpIjoicEVuTGJPMHJ3MjZVZkVFciIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.0rvH5DclZGyk09OsuEXh4CIpGoQzof4kHTcxbcCePfg"
 
@@ -18,10 +18,42 @@ POST https://atur.biar.pw/api/blog/data/
 Content-Type: application/json
 Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAzMzQ5NTg5LCJleHAiOjE2MDM0MzU5ODksIm5iZiI6MTYwMzM0OTU4OSwianRpIjoicEVuTGJPMHJ3MjZVZkVFciIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.0rvH5DclZGyk09OsuEXh4CIpGoQzof4kHTcxbcCePfg"
 
+
+# BLOG DATA by CATEGORY ID
+###
+POST https://atur.biar.pw/api/blog/data/
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAzMzQ5NTg5LCJleHAiOjE2MDM0MzU5ODksIm5iZiI6MTYwMzM0OTU4OSwianRpIjoicEVuTGJPMHJ3MjZVZkVFciIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.0rvH5DclZGyk09OsuEXh4CIpGoQzof4kHTcxbcCePfg"
+
 {
 	"order":{"key":"id","value":"desc"} ,
 	"limit" : 3,
-    "where" : {"key":"blog.id_category","value":"44"} 
+    "where" : {"key":"blog.id","value":"692"} 
+}
+
+# BLOG DATA by CATEGORY CHILD ID - PAKE YANG INI -
+###
+POST https://atur.biar.pw/api/blog/data/
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAzMzQ5NTg5LCJleHAiOjE2MDM0MzU5ODksIm5iZiI6MTYwMzM0OTU4OSwianRpIjoicEVuTGJPMHJ3MjZVZkVFciIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.0rvH5DclZGyk09OsuEXh4CIpGoQzof4kHTcxbcCePfg"
+
+{
+	"order":{"key":"id","value":"desc"} ,
+	# "limit" : 3,
+    "where" : {"key":"blog.id_category_child","value":"234"} 
+}
+
+
+# BLOG DATA by CATEGORY ID
+###
+POST https://atur.biar.pw/api/blog/data/
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAzMzQ5NTg5LCJleHAiOjE2MDM0MzU5ODksIm5iZiI6MTYwMzM0OTU4OSwianRpIjoicEVuTGJPMHJ3MjZVZkVFciIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.0rvH5DclZGyk09OsuEXh4CIpGoQzof4kHTcxbcCePfg"
+
+{
+	"order":{"key":"id","value":"desc"} ,
+	"limit" : 3,
+    "where" : {"key":"blog.id_category","value":"28"} 
 }
 
 # BLOG CATEGORY
@@ -60,7 +92,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 }
 
 ###
-POST https://atur.biar.pw/api/web/pages/ketua-umum
+POST https://atur.biar.pw/api/web/pages/bkbb
 Content-Type: application/json
 Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAzMzQ5NTg5LCJleHAiOjE2MDM0MzU5ODksIm5iZiI6MTYwMzM0OTU4OSwianRpIjoicEVuTGJPMHJ3MjZVZkVFciIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.0rvH5DclZGyk09OsuEXh4CIpGoQzof4kHTcxbcCePfg"
 
@@ -123,3 +155,11 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 	"id" : 9
 }
 
+# TRACK NOMER KTA
+###
+GET http://101.255.87.186/anggota/lib/mpp.api.php?nokta=32760510100111730001&key=2
+
+
+# TRACK NOMER KTA
+###
+GET http://101.255.87.186/anggota/lib/mpp.api.php?nokta=32760510100111730001&key=2

@@ -110,58 +110,6 @@ function App() {
               <Search/>
           </Route>
 
-          <Route path="/regulasi">
-            <Regulasi />
-          </Route>
-
-          <Route path="/prosedur">
-            <Prosedur />
-          </Route>
-
-          <Route path="/visimisi">
-            <VisiMisi />
-          </Route>
-
-          <Route path="/strukturppdi">
-            <StrukturPpdi />
-          </Route>
-
-          <Route path="/kegiatanpartai">
-            <KegiatanPartai />
-          </Route>
-
-          <Route path="/beritafoto">
-            <BeritaFoto />
-          </Route>
-
-          <Route path="/beritadaerah">
-            <BeritaDaerah />
-          </Route>
-
-          <Route path="/list-berita">
-            <ListBerita />
-          </Route>
-
-          <Route path="/beritanasional">
-            <BeritaNasional />
-          </Route>
-
-          <Route path="/pidatohut">
-            <PidatoHut />
-          </Route>
-
-          <Route path="/pidatorakornas">
-            <PidatoRakornas />
-          </Route>
-
-          <Route path="/pidatorakernas">
-            <PidatoRakernas />
-          </Route>
-
-          <Route path="/pidatokongres">
-            <PidatoKongres />
-          </Route>
-
           <Route path="/page/wawancara">
             <Wawancara />
           </Route>

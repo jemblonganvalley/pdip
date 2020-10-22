@@ -8,9 +8,7 @@ import { useStoreState } from 'easy-peasy'
 
 const MainNavbar = ({token})=> {
 
-    let [search, setSearch] = useState(false)
     let [show, setShow] = useState()
-    let [collapse, setCollapse] = useState(false)
     let [menu, setMenu] = useState([])
 
     // let pageSearch = window.location.href='/search'
@@ -53,9 +51,6 @@ const MainNavbar = ({token})=> {
     return (
       // START NAVBAR
       <>
-
-  
-
         {/* DESKTOP SIZE */}
         {isDesktopOrLaptop && (
 
