@@ -56,13 +56,13 @@ const ContainerCard = () => {
               to1="/"
               link2="Berita"
               to2="/berita"
-              page3="Berita Nasional"
+              page3={configHome[0].category_name}
             />
           </div>
 
           {/* Container1 */}
           <span style={{padding : '0 20%'}}>
-          <MainDivider text="Berita Nasional" />
+          <MainDivider text={configHome[0].category_name} />
           </span>
           {/* END Container1 */}
           {/* Container2 */}

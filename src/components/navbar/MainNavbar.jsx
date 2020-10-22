@@ -22,7 +22,7 @@ const MainNavbar = ({token})=> {
     // }
     
     const getDataMenu = async function(){
-    const res = await fetch('https://atur.biar.pw/api/web/config', {
+    const res = await fetch('https://atur.biar.pw/api/web/config/home', {
       method : "POST",
       headers : {
         "Content-Type" : "application/json",
