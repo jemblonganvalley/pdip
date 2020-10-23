@@ -102,7 +102,7 @@ function App() {
         <Switch>
 
           {/* CONTAINER CARD */}
-          <Route path='/detail/:category_id'>
+          <Route path='/article/:category_id'>
             <ContainerCard />
           </Route>
 
@@ -110,19 +110,19 @@ function App() {
               <Search/>
           </Route>
 
-          <Route path="/page/wawancara">
+          <Route path="/multimedia/wawancara">
             <Wawancara />
           </Route>
 
-          <Route path="/page/teaser">
+          <Route path="/multimedia/teaser">
             <VideoTeaser />
           </Route>
 
-          <Route path="/page/dokumentasi">
+          <Route path="/multimedia/dokumentasi">
             <VideoDokumen />
           </Route>
 
-          <Route path="/page/siaran_langsung">
+          <Route path="/multimedia/siaran_langsung">
             <SiaranLangsung />
           </Route>
 
@@ -154,7 +154,11 @@ function App() {
             <DetailPengurus />
           </Route>
 
-          <Route path="/struktur">
+          <Route path="/struktur-dpp">
+            <StrukturPage slug='struktur-dpp'/>
+          </Route>
+
+          <Route path="/anggota-legislatif">
             <StrukturPage />
           </Route>
 
@@ -163,7 +167,7 @@ function App() {
           </Route>
 
           {/* BLOG PAGE  */}
-          <Route path="/page/:id">
+          <Route path="/detail-article/:id">
             <Page1 />
           </Route>
 

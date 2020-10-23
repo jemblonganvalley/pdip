@@ -33,7 +33,7 @@ const ContainerCard = () => {
       body: JSON.stringify({
         order: { key: "id", value: "desc" },
         limit: 9,
-        where: { key: "blog.id_category", value: category_id },
+        where: { key: "blog.id_category_child", value: category_id },
       }),
     });
 
@@ -44,7 +44,7 @@ const ContainerCard = () => {
 
   useEffect(() => {
     getConfigHome();
-  }, []);
+  }, [category_id]);
 
   return (
     <>
@@ -54,15 +54,15 @@ const ContainerCard = () => {
             <BreadCrumbs
               link1="Home"
               to1="/"
-              link2="Berita"
-              to2="/berita"
-              page3={configHome[0].category_name}
+              link2={`${configHome[0].category_name}`}
+              to2={`/${configHome[0].category_name.replace(/\s/g, '-').toLowerCase()}`}
+              page3={configHome[0].category_child_name}
             />
           </div>
 
           {/* Container1 */}
           <span style={{padding : '0 20%'}}>
-          <MainDivider text={configHome[0].category_name} />
+          <MainDivider text={configHome[0].category_child_name} />
           </span>
           {/* END Container1 */}
           {/* Container2 */}
@@ -85,11 +85,12 @@ const ContainerCard = () => {
                   <>
                     {configHome.map((e, i) => (
                       <Cards
+                        category={e.category_name}
                         imageCard={e.path}
                         title={e.title}
                         textSmall={e.author}
                         dateTime={e.created_at}
-                        page={"/page"}
+                        page={"/detail-article"}
                         id={e.id}
                       />
                     ))}

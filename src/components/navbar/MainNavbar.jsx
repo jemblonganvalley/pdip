@@ -4,7 +4,6 @@ import './MainNavbar.scss'
 import {Link, NavLink, Redirect} from 'react-router-dom'
 import DropDown from './DropDown'
 import {useMediaQuery} from 'react-responsive'
-import { useStoreState } from 'easy-peasy'
 
 const MainNavbar = ({token})=> {
 

@@ -145,7 +145,7 @@ const PartaiPage = () => {
                           {config[2].value.map((e, i) => (
                             <div
                               className={
-                                i == 0
+                                i === 0
                                   ? `carousel-item active`
                                   : "carousel-item"
                               }

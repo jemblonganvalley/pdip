@@ -65,9 +65,9 @@ const Page1 = () => {
             <BreadCrumbs
               link1="Home"
               to1="/"
-              link2="Berita"
-              to2="/berita"
-              page3="Detail Berita"
+              link2={detailPage.category_name}
+              to2={`/${detailPage.category_name}`}
+              page3={detailPage.category_child_name}
             />
           </div>
 

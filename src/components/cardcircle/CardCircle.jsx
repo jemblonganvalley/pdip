@@ -14,7 +14,7 @@ const CardCircle = ({ strukturCard }) => {
                 return (
                     <Link className="circleCard" to="/detailpengurus" key={e.id}>
                         <div className="imageCircle" style={{
-                            background: `url(${e.image})`,
+                            background: `url(https://atur.biar.pw/public/${e.photo})`,
                             backgroundSize : 'cover'
                         }}></div>
                         <small className="jabatan">{e.jabatan}</small>
