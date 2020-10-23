@@ -35,6 +35,17 @@ $smallPhoneDua : 400px;
         }
     }
 
+    // Divider
+    .divider-page-berita-nasional{
+        display: flex;
+        padding: 0px 20% 20px 20%;
+
+        @include smallPhone(){
+            padding: 0 10px 30px 10px;
+        }
+    }
+    // END Divider
+
     // Container1
     .container1-berita-nasional{
         display: flex;
@@ -68,6 +79,22 @@ $smallPhoneDua : 400px;
             flex-direction: column;
             height: auto;
             width: 100%;
+
+            // Container Card
+            .containerCard-berita-nasional{
+                display: flex;
+                height: auto;
+                width: 100%;
+                min-height: 100vh;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                @include smallPhone(){
+                    flex-direction: column;
+                    padding: 0 10px;
+                }
+            }
+            // END Container Card
         }
         // END Column Card
 

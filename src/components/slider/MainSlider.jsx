@@ -7,7 +7,7 @@ import arrowsLeft from "../../img/arrowsLeft.png";
 import arrows from "../../img/arrows.png";
 import sliders from "../../img/slider.jpg";
 import slider2 from "../../img/slider2.jpg";
-import pattern from '../../img/home_bg.jpg'
+import pattern from '../../img/pattern.jpeg'
 
 const MainSlider = ({ value, cls }) => {
   // let [slider, setSlider] = useState([

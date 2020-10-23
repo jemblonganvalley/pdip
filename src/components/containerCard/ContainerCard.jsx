@@ -61,7 +61,7 @@ const ContainerCard = () => {
           </div>
 
           {/* Container1 */}
-          <span style={{padding : '0 20%'}}>
+          <span className="divider-page-berita-nasional">
           <MainDivider text={configHome[0].category_name} />
           </span>
           {/* END Container1 */}
@@ -70,16 +70,7 @@ const ContainerCard = () => {
             {/* Column Card */}
             <div className="column-card-berita-nasional">
               <div
-                className="containerCard"
-                style={{
-                  width: "100w",
-                  height: "auto",
-                  minHeight: "100vh",
-                  display: "flex",
-                  flexWrap: "wrap",
-                  justifyContent : 'space-between',
-                  // padding : '40px 0',
-                }}
+                className="containerCard-berita-nasional"
               >
                 {configHome.length > 0 && (
                   <>
