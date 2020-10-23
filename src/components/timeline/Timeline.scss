@@ -23,15 +23,13 @@ $smallPhoneDua : 400px;
 			max-height: 50vh;
 			background: $darkRed;
 
-			@include smallPhoneDua() {
+			@include smallPhone() {
 				// max-width: 100vh;
 				max-height: 100vh;
 				// padding-top: 0;
 				padding-top: 1px;
 			}
 
-			
-			
 			&::after {
 				content: '';
 				position: absolute;
@@ -56,7 +54,7 @@ $smallPhoneDua : 400px;
 				background: #ffffff;
 				border-radius: 10px;
 				box-shadow: 0px 6px 21px -5px rgba(0,0,0,0.49);
-				@include smallPhoneDua() {
+				@include smallPhone() {
 					width: 280px;
 					// padding: 15px;
 					margin-top: 1rem;
@@ -72,7 +70,7 @@ $smallPhoneDua : 400px;
 				.timelineContent {
 					width: 100%;
 					display: flex;
-					@include smallPhoneDua() {
+					@include smallPhone() {
 						flex-direction: column;
 						justify-content: center;
 						align-items: center;
@@ -85,7 +83,7 @@ $smallPhoneDua : 400px;
 						border-top-right-radius: 10px;
 						// background-position: center center;
 
-						@include smallPhoneDua() {
+						@include smallPhone() {
 							height: 20vh;
 							width: 100%;
 						}
@@ -99,7 +97,7 @@ $smallPhoneDua : 400px;
 						padding: 10px 5%;
 						text-align: left;
 
-						@include smallPhoneDua() {
+						@include smallPhone() {
 							text-align: center;
 							width: 100%;
 						}
@@ -126,7 +124,7 @@ $smallPhoneDua : 400px;
 					align-items: center;
 					margin-top: 1rem;
 
-					@include smallPhoneDua() {
+					@include smallPhone() {
 						flex-direction: row;
 						margin-top: 0;
 					}
@@ -140,7 +138,7 @@ $smallPhoneDua : 400px;
 						align-items: center;
 						width: 33.33%;
 
-						@include smallPhoneDua() {
+						@include smallPhone() {
 							padding: 0;
 							
 							width: 30%;
@@ -153,7 +151,7 @@ $smallPhoneDua : 400px;
 
 						.bulan {
 							font-size: 8pt;
-							@include smallPhoneDua() {
+							@include smallPhone() {
 								font-size: 6pt;
 							}
 						}
@@ -161,7 +159,7 @@ $smallPhoneDua : 400px;
 						.waktu {
 							font-size: 8pt;
 
-							@include smallPhoneDua() {
+							@include smallPhone() {
 								font-size: 6pt;
 							}
 						}
@@ -176,7 +174,7 @@ $smallPhoneDua : 400px;
 						width: 33.33%;
 
 
-						@include smallPhoneDua() {
+						@include smallPhone() {
 							padding: 0;
 							
 						}
@@ -184,7 +182,7 @@ $smallPhoneDua : 400px;
 						i {
 							margin-bottom: 1.5rem;
 
-							@include smallPhoneDua() {
+							@include smallPhone() {
 								
 							}
 
@@ -192,7 +190,7 @@ $smallPhoneDua : 400px;
 
 						.nomor {
 							font-size: 8pt;
-							@include smallPhoneDua() {
+							@include smallPhone() {
 								font-size: 6pt;
 								text-align: center;
 							}
@@ -208,14 +206,14 @@ $smallPhoneDua : 400px;
 						width: 33.33%;
 
 
-						@include smallPhoneDua() {
+						@include smallPhone() {
 							padding: 0;
 							
 						}
 
 						i {
 							margin-bottom: 10px;
-							@include smallPhoneDua() {
+							@include smallPhone() {
 								margin-bottom: 0;
 							}
 						}
@@ -224,7 +222,7 @@ $smallPhoneDua : 400px;
 							font-size: 8pt;
 							text-align: center;
 
-							@include smallPhoneDua() {
+							@include smallPhone() {
 								text-align: center;
 								font-size: 6pt;
 							}
@@ -232,7 +230,7 @@ $smallPhoneDua : 400px;
 
 						.kota {
 							font-size: 8pt;
-							@include smallPhoneDua() {
+							@include smallPhone() {
 								text-align: center;
 								font-size: 6pt;
 							}
@@ -250,7 +248,7 @@ $smallPhoneDua : 400px;
 	bottom: 50px;
 
 
-	@include smallPhoneDua() {
+	@include smallPhone() {
 		left: 30px;
 		bottom: 5px;
 		text-align: start;
@@ -263,7 +261,7 @@ $smallPhoneDua : 400px;
 	text-align: end;
 	// bottom: 300px;
 	bottom: 165px;
-	@include smallPhoneDua() {
+	@include smallPhone() {
 		left: 30px;
 		text-align: start;
 		bottom: 0;
@@ -278,7 +276,7 @@ $smallPhoneDua : 400px;
 	
 	&::after {
 			bottom: 395px;
-			@include smallPhoneDua() {
+			@include smallPhone() {
 				bottom: 91%;
 			}
 	}
@@ -288,7 +286,7 @@ $smallPhoneDua : 400px;
 	&::after {
 			bottom: 280px;
 
-			@include smallPhoneDua() {
+			@include smallPhone() {
 				bottom: 91%;
 			}
 	}

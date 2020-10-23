@@ -89,14 +89,6 @@ const PartaiPage = () => {
                       {config[1].value.map((e, i) => (
                         <div
                           className="mobileRow"
-                          style={{
-                            width: "100%",
-                            display: "flex",
-                            justifyContent: "flex-start",
-                            alignItems: "center",
-                            height: "calc(100%/4)",
-                            gap: "40px",
-                          }}
                         >
                           <img
                             src={`https://atur.biar.pw/public/${e.image}`}
