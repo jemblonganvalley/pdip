@@ -71,13 +71,14 @@ $smallPhoneDua : 400px;
 
             @include smallPhone() {
                 height: auto;
+                padding: 0 0 20px 0;
             }
 
-            @include smallPhone() {
-                height: auto;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
-            }
+            // @include smallPhone() {
+            //     height: auto;
+            //     border-bottom-left-radius: 10px;
+            //     border-bottom-right-radius: 10px;
+            // }
             
             
         .carousel-indicators {
@@ -114,8 +115,6 @@ $smallPhoneDua : 400px;
                         height: 45vh;
 
                     }
-                    @include smallPhoneDua() {
-                    }
                 }
 
                 .carousel-item {
@@ -125,7 +124,7 @@ $smallPhoneDua : 400px;
                     .bannerMobile {
                         
                         @include smallPhone() {
-                            height: 25vh;
+                            height: 60%;
                         }
                     }
 
@@ -133,25 +132,26 @@ $smallPhoneDua : 400px;
                         
                         @include smallPhone() {
                             display: flex;
+                            height: 40%;
                             justify-content: center;
                             align-items: center;
                             flex-direction: column;
+                            padding: 10px;
                         }
                         .textCarousel {
-    
                             @include smallPhone() {
-                                margin: .5rem 0;
+                                margin: 0;
                             }
                         }
                         
                         h5 {
                             @include smallPhone() {
-                                font-size: 9pt;
-                            }
-    
-                            @include smallPhoneDua() {
                                 font-size: 8pt;
                             }
+    
+                            // @include smallPhoneDua() {
+                            //     font-size: 8pt;
+                            // }
                         }
     
                         h3 {

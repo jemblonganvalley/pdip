@@ -45,12 +45,13 @@ $smallPhoneDua : 400px;
 
 .navbar {
     padding: $paddingSmall;
-    background-image: url(../../img/pattern.jpeg);
+    background-image: url(../../img/home_bg.jpg);
     // border-bottom: 0.5 solid grey;
     position: fixed;
     z-index: 2000111111111;
     width: 100%;
     transition: 0.4s;
+    background-position: top;
     // box-shadow: -1px 7px 30px -12px rgba(0,0,0,0.75);
 
     @include responSatu() {
@@ -64,7 +65,6 @@ $smallPhoneDua : 400px;
     }
     @include smallPhone() {
         padding: 5px 7%;
-        background-size: cover;
     }
 
     .navbar-collapse {

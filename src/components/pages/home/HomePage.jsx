@@ -18,20 +18,8 @@ export const LighBox = ({source})=>{
 
   return(
     <>
-      <main className="container_lightbox" style={{
-        width : '100vw',
-        height : '100vh',
-        position : 'fixed',
-        top : '0',
-        left : '0',
-        backgroundColor : 'rgba(0,0,0,0.800)',
-        display : 'flex',
-        justifyContent : 'center',
-        alignItems : 'center',
-        zIndex : '2000',
-      }}>
-
-        <iframe width="800" height="500" src={`https://www.youtube.com/embed/${source}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <main className="container_lightbox">
+        <iframe className="overlay-youtube-home" src={`https://www.youtube.com/embed/${source}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         {console.log(source)}
       </main>
     </>
@@ -124,17 +112,9 @@ const HomePage = () => {
           {/* LIGHTBOX */}
           {showVid && (
             <>
-            <span style={{
-              position : 'fixed',
-              top : '20vh',
-              right : '20vh',
-              color : 'white',
-              zIndex : '6000',
-              fontSize : '2rem',
-              cursor: 'pointer'
-            }} onClick={()=>{
+            <span onClick={()=>{
               setShowVid(false)
-            }} class='fa fa-close'></span>
+            }} class='fa fa-close' id="btn-overlay-video-yt"></span>
             <LighBox source={configHome[3].value[0].path}/>
             </>
           )}
@@ -256,7 +236,8 @@ const HomePage = () => {
 
         {configHome.length > 0 && <CarouselKM data={configHome[6].value} />}
 
-        <KMobile />
+        {/* <KMobile /> */}
+        {configHome.length > 0 && <KMobile data={configHome[6].value} />}
 
         <div className="cardContent">
           {configHome.length > 0 && (

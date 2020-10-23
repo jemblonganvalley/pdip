@@ -13,6 +13,20 @@ $smallPhoneDua : 400px;
     }
 }
 
+.wrapperTeaser-paginate{
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include smallPhone(){
+        flex-direction: column;
+        padding: 0 10px;
+    }
+}
+
 .page-item:first-child .page-link {
     border-radius: 0;
 }

@@ -7,7 +7,7 @@ import arrowsLeft from "../../img/arrowsLeft.png";
 import arrows from "../../img/arrows.png";
 import sliders from "../../img/slider.jpg";
 import slider2 from "../../img/slider2.jpg";
-import pattern from '../../img/pattern.jpeg'
+import pattern from '../../img/home_bg.jpg'
 
 const MainSlider = ({ value, cls }) => {
   // let [slider, setSlider] = useState([
@@ -34,7 +34,6 @@ const MainSlider = ({ value, cls }) => {
       id="carouselExampleIndicators"
       className="carousel slide carousel-fade carousel-mainSlider"
       data-ride="carousel"
-      data-interval="0"
       style={{
         overflow: 'hidden',
         backgroundImage: `url(${pattern})`
