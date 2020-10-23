@@ -137,7 +137,7 @@ const KetuaUmumPage = () => {
                 <Cards
                   imageCard={e.path}
                   title={e.title}
-                  page='page'
+                  page='detail-article'
                   id={e.id}
                   borderRadius="10px"
                 />
@@ -171,7 +171,7 @@ const KetuaUmumPage = () => {
                 <Cards
                   imageCard={e.path}
                   title={e.title}
-                  page='page'
+                  page='detail-article'
                   id={e.id}
                 />
               ))}

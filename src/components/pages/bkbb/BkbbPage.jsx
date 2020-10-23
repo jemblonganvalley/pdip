@@ -197,7 +197,7 @@ const BkbbPage = () => {
                       title={e.title}
                       borderRadius="10px"
                       key={i}
-                      page='page'
+                      page='detail-article'
                       id={e.id}
                     />
                   );

@@ -183,7 +183,7 @@ const BeritaPage = () => {
                                     title={e.title}
                                     dateTime={e.created_at}
                                     borderRadius="10px"
-                                    page='page'
+                                    page='detail-article'
                                     />
                                 )
                             })}
