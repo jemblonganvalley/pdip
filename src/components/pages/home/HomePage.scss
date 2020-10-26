@@ -23,6 +23,55 @@ $smallPhoneDua : 400px;
     }
 }
 
+// Overlay video Youtube
+// Btn Close
+#btn-overlay-video-yt{
+    display: flex;
+    position: fixed;
+    top: 20vh;
+    right: 20vh;
+    color: #fff;
+    z-index: 6000;
+    font-size: 2rem;
+    cursor: pointer;
+
+    @include smallPhone(){
+        flex-direction: row-reverse;
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 0 20px 0 0;
+    }
+}
+
+// Wrapper overlay For Mobile
+.container_lightbox{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.800);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+
+    .overlay-youtube-home{
+        display: flex;
+        height: 500px;
+        width: 800px;
+
+        @include smallPhone(){
+            height: 300px;
+            width: 90%;
+            margin: 50px 0 0 0;
+            box-shadow: 0 3px 8px -1px rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+// END Wrapper Overlay For Mobile
+// END Overlay Video Youtube
 
 .homePageTwo {
     width: 100vw;
@@ -179,6 +228,7 @@ $smallPhoneDua : 400px;
             background-position-y: -150px;
             margin-top: 20px;
             height: 50vh;
+            cursor: pointer;
 
             @include smallPhone() {
                 background-size: cover;

@@ -13,6 +13,17 @@ $smallPhoneDua : 400px;
     }
 }
 
+.wrapperWawancara{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @include smallPhone(){
+        flex-direction: column;
+        padding: 0 10px;
+    }
+}
+
 .page-item:first-child .page-link {
     border-radius: 0;
 }

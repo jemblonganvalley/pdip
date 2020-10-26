@@ -51,8 +51,9 @@ $smallPhoneDua : 400px;
     z-index: 2000111111111;
     width: 100%;
     transition: 0.4s;
+    background-position: top;
     // box-shadow: -1px 7px 30px -12px rgba(0,0,0,0.75);
-
+    
     @include responSatu() {
         padding: 20px 5%;
     }
@@ -64,7 +65,6 @@ $smallPhoneDua : 400px;
     }
     @include smallPhone() {
         padding: 5px 7%;
-        background-size: cover;
     }
 
     .navbar-collapse {
@@ -102,7 +102,7 @@ $smallPhoneDua : 400px;
         list-style: none;
         
         li {
-            font-size: 9pt;
+            font-size: 12pt;
             text-transform: 
             uppercase;
             // font-weight: 300;

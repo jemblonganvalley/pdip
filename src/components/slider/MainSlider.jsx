@@ -34,7 +34,6 @@ const MainSlider = ({ value, cls }) => {
       id="carouselExampleIndicators"
       className="carousel slide carousel-fade carousel-mainSlider"
       data-ride="carousel"
-      data-interval="0"
       style={{
         overflow: 'hidden',
         backgroundImage: `url(${pattern})`

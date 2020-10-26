@@ -89,7 +89,9 @@ const MainNavbar = ({token})=> {
         {/* DESKTOP SIZE */}
         {isDesktopOrLaptop && (
 
-        <nav className="navbar navbar-expand-lg sticky-top" id="navbar">
+        <nav className="navbar navbar-expand-lg sticky-top" id="navbar" style={{
+          boxShadow : window.scrollY > 1 ? '-1px 7px 30px -12px rgba(0,0,0,0.75)' : 'none'
+        }}>
           <div className="container-fluid">
             <NavLink className="navbar-brand" to="/" activeClassName="brand" >
               <img src={logo} alt="" width="60" className="d-inline-block align-center active" loading="lazy"/>
@@ -145,7 +147,9 @@ const MainNavbar = ({token})=> {
 
       {isMobile && (
 
-        <nav className="navbar navbar-expand-lg sticky-top" id="navbar">
+        <nav className="navbar navbar-expand-lg sticky-top" id="navbar" style={{
+          boxShadow : window.scrollY > 1 ? '-1px 7px 30px -12px rgba(0,0,0,0.75)' : 'none'
+        }}>
           <div className="container-fluid">
             <NavLink className="navbar-brand" to="/" activeClassName="brand" >
               <img src={logo} alt="" width="60" className="d-inline-block align-center active" loading="lazy" />

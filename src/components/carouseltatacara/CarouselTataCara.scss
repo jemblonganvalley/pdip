@@ -41,6 +41,7 @@ $secondary : #f3f3f3;
             border: none;
 
             @include smallPhone(){
+                flex-direction: column;
                 background-size: auto;
                 background-position: left;
             }
@@ -56,8 +57,8 @@ $secondary : #f3f3f3;
                 border: none;
 
                 @include smallPhone(){
-                    height: 100%;
-                    object-fit: fill;
+                    height: 60%;
+                    object-fit: cover;
                 }
             }
 
@@ -69,10 +70,35 @@ $secondary : #f3f3f3;
                 font-weight: bold;
 
                 @include smallPhone(){
+                    display: none;
                     top: 20px;
                     right: 20px;
                 }
             }
+
+            // Box Red Paragrap For Mobile
+            .box-red-mobile-sliderTataCara{
+                display: none;
+
+                @include smallPhone(){
+                    display: flex;
+                    height: 40%;
+                    width: 100%;
+                    background-color: $colors;
+                    color: #fff;
+                    padding: 10px 20px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .pCarousel-for-mobile{
+                    @include smallPhone(){
+                        text-align: center;
+                    }
+                }
+            }
+            // END Box Red Paragrap For Mobile
+
             .kunjungi {
                 color: black;
                 width: 10vw;
@@ -94,7 +120,7 @@ $secondary : #f3f3f3;
             }
         }
     }
-    .carousel-control-next-icon {
+    .btn-right-tata-cara {
         background: url(../../img/right.png);
         background-size: cover;
 
@@ -103,7 +129,7 @@ $secondary : #f3f3f3;
             right: 10px;
         }
     }
-    .carousel-control-prev-icon {
+    .btn-left-tata-cara {
         background: url(../../img/left.png);
         background-size: cover;
 
@@ -112,10 +138,16 @@ $secondary : #f3f3f3;
             left: 10px;
         }
     }
-    .carousel-control-next-icon,
-    .carousel-control-prev-icon {
+    .btn-left-tata-cara,
+    .btn-right-tata-cara {
         width: 40px;
         height: 40px;
+
+        @include smallPhone(){
+            height: 25px;
+            width: 25px;
+            top: 75px;
+        }
     }
     
 }

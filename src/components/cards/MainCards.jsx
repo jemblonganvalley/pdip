@@ -26,6 +26,7 @@ const Cards = ({
   marginTop,
   dataVideo,
   siaran,
+  paginateCard
 }) => {
   let dt = toString(dateTime);
   let dtt = dt.split(" ");

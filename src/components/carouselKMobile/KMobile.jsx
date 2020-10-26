@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './KMobile.scss'
 import megawati4 from '../../img/megawati4.jpg'
 
-const KMobile = () => {
+const KMobile = ({cat=44, totalPage=3, data=data}) => {
+
+    const [berita, setBerita] = useState(data)
+
   return (
     <div className="wrapperKMobile">
         <div className="KMobile">
@@ -15,17 +18,22 @@ const KMobile = () => {
                                 <li data-target="#carouselnih" data-slide-to={2} />
                             </ol>
                             <div className="carousel-inner">
-                            <div className="carousel-item active itemKMobile">
-                            <div className="col-lg-6 bannerMobile" style={{
-                                background : `url(${megawati4})`,
-                                backgroundSize: 'cover'
+                                {data.map((e,i)=>(
+                                    <div className={`carousel-item ${i == 1 && 'active'} itemKMobile`}>
+                                    <div className="col-lg-6 bannerMobile" style={{
+                                        backgroundImage : `url(https://atur.biar.pw/public/${e.path})`,
+                                        backgroundSize: 'cover'
+        
+                                    }}></div>
+                                        <div className="col-lg-6 textKM">
+                                            <h6 className="textCarousel">
+                                                {e.category_child_name}
+                                            </h6>
+                                            <h3 className="textCarousel">{e.title}</h3>
+                                        </div>
+                                    </div>
 
-                            }}></div>
-                                <div className="col-lg-6 textKM">
-                                    <h5 className="textCarousel">Ketua Umum PDI Perjuangan</h5>
-                                    <h3 className="textCarousel">Ikuti Perkembangan Teknologi Informasi dengan Otak dan Hati</h3>
-                                </div>
-                            </div>
+                                ))}
                         </div>
                     </div>
                 </div>

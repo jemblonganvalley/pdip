@@ -50,9 +50,9 @@ $smallPhoneDua : 400px;
                 @include smallPhone() {
                     font-size: 15pt;
                 }
-                @include smallPhone() {
-                    font-size: 12pt;
-                }
+                // @include smallPhone() {
+                //     font-size: 12pt;
+                // }
             }
         }
     }
@@ -127,10 +127,9 @@ $smallPhoneDua : 400px;
         padding: 10px 10%;
         flex-wrap: wrap;
 
-        @include smallPhoneDua() {
+        @include smallPhone() {
             flex-direction: row;
             padding: 0;
-            
         }
     }
 }
