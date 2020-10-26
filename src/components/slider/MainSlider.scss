@@ -50,6 +50,15 @@ $mobile600 : 600px;
 }
 // END Max-height 600px
 
+// Min-height 650px
+$mobile650 : 650px;
+@mixin mobile650 {
+    @media(min-height: #{$mobile650}){
+        @content;
+    }
+}
+// END Min-height 650px
+
 // Min-height 700px
 $mobile700 : 700px;
 @mixin mobile700 {
@@ -57,7 +66,7 @@ $mobile700 : 700px;
         @content;
     }
 }
-// END Min-height 700px
+// END Min-height 650px
 
 // .carousel-fade{
 //     display: flex;
@@ -87,9 +96,14 @@ $mobile700 : 700px;
         height: 70vh;
     }
 
+    // Min height 650
+    @include mobile650(){
+        height: 65vh;
+    }
+
     // Min height 700
     @include mobile700(){
-        height: 45vh;
+        height: 60vh;
     }
 
     // img{
