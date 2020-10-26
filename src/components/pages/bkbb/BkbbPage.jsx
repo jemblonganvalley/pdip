@@ -178,13 +178,11 @@ const BkbbPage = () => {
         /> */}
           </section>
 
-          <section className="wrapper3">
-            <MainDivider
-              text="Materi Pokok Pendukung"
-              garisMerah="8rem"
-              mrgn="40px 0"
-            />
-          </section>
+          <MainDivider
+            text="Materi Pokok Pendukung"
+            garisMerah="8rem"
+            margin="40px 0"
+          />
 
           <div className="wrapperCard">
             <div className="cardKolum">

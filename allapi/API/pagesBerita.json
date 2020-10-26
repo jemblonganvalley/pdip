@@ -1,0 +1,255 @@
+
+{
+  "result": true,
+  "query": [
+    {
+      "slug": "berita",
+      "class": "r-banner-image",
+      "index": 0,
+      "langcode": "ID",
+      "value": {
+        "link": null,
+        "image": "uploads\/page\/21092020113421FSm.jpeg",
+        "title": "Solid Bergerak Untuk Indonesia Raya",
+        "paragraph": null
+      },
+      "config_ordering": "manual"
+    },
+    {
+      "slug": "berita",
+      "class": "r-carousel",
+      "index": 0,
+      "langcode": "ID",
+      "value": [
+        {
+          "link": null,
+          "image": "\/uploads\/page\/221020200931080d4.jpeg",
+          "title": "INFORMASI DAN DOKUMENTASI PUBLIK",
+          "paragraph": "<p>we testing ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntdsdsur dicta quam sequi facere eligendi voluptatibus aliquid, maiores<\/p>"
+        },
+        {
+          "link": null,
+          "image": "uploads\/page\/22092020062505PT9.jpeg",
+          "title": "TEST DAN DOKUMENTASI PUBLIK",
+          "paragraph": "<p>testing ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores<\/p>"
+        },
+        {
+          "link": null,
+          "image": "uploads\/page\/22092020062505PT9.jpeg",
+          "title": "TEST DAN DOKUMENTASI PUBLIK",
+          "paragraph": "<p>testing ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, fugiat consequuntur dicta quam sequi facere eligendi voluptatibus aliquid, maiores<\/p>"
+        }
+      ],
+      "config_ordering": "manual"
+    },
+    {
+      "slug": "berita",
+      "class": "r-group-text-image",
+      "index": 0,
+      "langcode": "ID",
+      "value": [
+        {
+          "image": "\/uploads\/page\/2610202005211982V.png",
+          "title": "Berita Nasional",
+          "paragraph": null
+        },
+        {
+          "image": "\/uploads\/page\/26102020052119yuQ.png",
+          "title": "Berita Daerah",
+          "paragraph": null
+        },
+        {
+          "image": "\/uploads\/page\/261020200521198fh.png",
+          "title": "Berita Foto",
+          "paragraph": null
+        },
+        {
+          "image": "\/uploads\/page\/26102020052119OyH.png",
+          "title": "Berita Nuasnsa",
+          "paragraph": null
+        }
+      ],
+      "config_ordering": "manual"
+    },
+    {
+      "slug": "berita",
+      "class": "r-sync-blog",
+      "index": 0,
+      "langcode": "ID",
+      "value": [],
+      "config_ordering": "desc"
+    },
+    {
+      "slug": "berita",
+      "class": "r-carousel",
+      "index": 1,
+      "langcode": "ID",
+      "value": [
+        {
+          "link": null,
+          "image": "\/uploads\/page\/03102020115041P0U.jpeg",
+          "title": "Orang Indonesia dengan adat budaya Nusantara yang",
+          "paragraph": "<p>Kalau jadi Hindu, jangan jadi orang India. Kalau jadi Islam, jangan jadi orang Arab. Kalau jadi Kristen, jangan jadi orang Yahudi. Tetaplah jadi orang Indonesia dengan adat budaya Nusantara yang kaya raya ini<\/p>"
+        },
+        {
+          "link": null,
+          "image": "\/uploads\/page\/03102020033045Xh8.jpeg",
+          "title": "Kedaulatan Pangan dan Pelestarian Alam Demi Kesejahteraan Rakyat",
+          "paragraph": "<p>Kepala daerah yang diusung PDI Perjuangan diingatkan agar giat menanam tanaman pangan pendamping beras.<\/p>"
+        },
+        {
+          "link": null,
+          "image": "\/uploads\/page\/03102020033045Xh8.jpeg",
+          "title": "Kedaulatan Pangan dan Pelestarian Alam Demi Kesejahteraan Rakyat",
+          "paragraph": "<p>Kepala daerah yang diusung PDI Perjuangan diingatkan agar giat menanam tanaman pangan pendamping beras.<\/p>"
+        }
+      ],
+      "config_ordering": "manual"
+    },
+    {
+      "slug": "berita",
+      "class": "r-sync-gallery",
+      "index": 0,
+      "langcode": "ID",
+      "value": [
+        {
+          "id": 2139,
+          "title": "Perjuangan Ketua Umum PDI Perjuangan, Presiden ke 5 RI Ibu Megawati Soekarnoputri.",
+          "description": "<p>Perjuangan Ketua Umum PDI Perjuangan, Presiden ke 5 RI Ibu Megawati Soekarnoputri.<\/p><p>&nbsp;<\/p>",
+          "type": "video",
+          "path": "QsrfcqPMnKA"
+        },
+        {
+          "id": 2138,
+          "title": "Pidato Politik Ketua Umum PDI Perjuangan pada Pembukaan HUT 47 Tahun dan Rakernas I",
+          "description": "<p>Solid Bergerak:<\/p><p>Wujudkan Indonesia Negara Industri Berbasis Riset dan Inovasi Nasional<\/p><p>Sub Tema:<\/p><p>Strategi Jalur Rempah dalam Lima Prioritas Industri Nasional untuk Mewujudkan Indonesia Berdikari<\/p>",
+          "type": "video",
+          "path": "CrM9fVh9XVs"
+        },
+        {
+          "id": 2137,
+          "title": "Pancasila",
+          "description": "<p>Bung Karno memperkenalkan dan menguraikan Pancasila kepada para pemimpin dunia padda Sidang Umum PBB ke XV di New York dengan rjudul <strong>\"To Build a World a New\" , <\/strong>30\/9\/1960.<\/p>",
+          "type": "video",
+          "path": "cRJoKbDfn2I"
+        }
+      ],
+      "config_ordering": "desc"
+    },
+    {
+      "slug": "berita",
+      "class": "r-banner-image",
+      "index": 1,
+      "langcode": "ID",
+      "value": {
+        "link": null,
+        "image": "\/uploads\/page\/23102020012704yxu.jpeg",
+        "title": "Solid Bergerak UntukIndonesia Raya",
+        "paragraph": "dfdsfdsf"
+      },
+      "config_ordering": "manual"
+    },
+    {
+      "slug": "berita",
+      "class": "r-sync-blog",
+      "index": 1,
+      "langcode": "ID",
+      "value": [
+        {
+          "id": 825,
+          "title": "PDI Perjuangan Cianjur Mengutuk Keras Pelemparan Bom Molotov di Kantor DPC",
+          "description": "<p align=\"center\"><em>DPD PDI Perjuangan Jawa Barat meminta kader PDI Perjuangan di Cianjur untuk tetap tenang dan pihak kepolisian serius menuntaskan kasus ini. Budayawan dan ormas keagamaan turut mengutuk perbuatan kriminal tersebut.<\/em><\/p>\r\n\r\n<p align=\"center\">&nbsp;<\/p>\r\n\r\n<p>Terkait pelemparan bom molotov ke Kantor DPC PDI Perjuangan Kabupaten Cianjur di Jl. Abdulah bin Nuh Kav. 18 Desa Nagrak Kecamatan Cianjur yang terjadi sekitar pukul 02.04 WIB, hari Jumat tanggal 7 Agustus 2020, pengurus DPC mengutuk keras perbuatan tersebut, selain kriminal juga cara yang tidak beradab dan tidak demokratis.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Kekerasan apapun bentuknya adalah titik terendah dalam keadaban politik. kami menyerahkan sepenuhnya kepada aparat kepolisian untuk melakukan penyelidikan dan penyidikan secara profesional, mandiri sesuai prinsip <em>due process of law<\/em> dan segera dapat menemukan pelakunya dan menyeret ke meja hijau,&rdquo; kata Ketua DPC PDI Perjuangan Kabupaten Cianjur, Susilawati.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Susilawati dan Sekretaris DPC PDI Perjuangan Kabupaten Cianjur, Dadang Sutarmo dalam kronologi menyampaikan, peristiwa pelemparan bom molotov terjadi sekitar pukul 02.04 WIB hari Jumat tanggal 7 Agustus 2020. Didin Saripudin selaku Staf Umum Kesekretariatan DPC PDI Perjuangan sedang terjaga di dalam kantor Sekretariat, mendengar bunyi ledakan, kemudian berlari keluar ruangan menuju ke area bawah untuk membangunkan saudara Erlan (Staf Kesekretariatan) agar dapat bersama-sama melihat sumber bunyi ledakan.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Kemudian kedua staf kesekretariatan tersebut menuju ke arah depan kantor DPC PDI Perjuangan yang sudah terlihat kobaran api di sekitar pintu masuk kantor. Api dengan sendirinya padam tanpa dilakukan penyiraman. Terlihat di sekitar lokasi pecahan botol dan terdapat satu kursi yang hangus terbakar.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Setelah itu saudara Erlan menghubungi Polisi dan beberapa pengurus DPC. Setelah berdatangan menuju TKP, baik pihak Kepolisian serta beberapa pengurus DPC PDI Perjuangan Kabupaten Cianjur, dilakukan pengecekan bersama terhadap TKP dan CCTV yang dimiliki DPC PDI Perjuangan Kabupaten Cianjur. Terlihat dalam CCTV seseorang melemparkan bom molotov melalui samping kanan jalan Kantor DPC PDI Perjuangan Kabupaten Cianjur.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Ketua DPD PDI Perjuangan Jawa Barat, Ono Surono juga mengutuk keras pelemparan bom molotov tersebut. Ono meminta agar seluruh kader PDI Perjuangan khususnya di Cianjur untuk tetap tenang dan tidak terpancing serta tetap menjaga kondusivitas.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;DPD PDI Perjuangan Jawa Barat mengutuk keras aksi pelemparan bom molotov ini. Insiden tersebut merupakan ancaman bagi rakyat Indonesia, khususnya PDI Perjuangan,&rdquo; kata Ono.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Ono mengatakan, insiden pelemparan bom molotov terhadap PDI Perjuangan ini sudah ketiga kalinya, yakni di Kecamatan Cileungsi dan Megamendung, Kabupaten Bogor dan kemudian di kantor DPC PDI Perjuangan Kabupaten Cianjur.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Menurut Ono, tindakan yang dilakukan oleh oknum tak bertanggungjawab ini merupakan tindakan yang tak mencerminkan nilai inti Pancasila. &ldquo;Tidak ada satu agamapun yang membenarkan atau melegalkan tindakan anarkisme seperti ini,&rdquo; tegasnya.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Ono menginstruksikan agar seluruh kantor DPC PDI Perjuangan di seluruh Jawa Barat dijaga ketat 24 jam untuk mengantisipasi aksi serupa. Ia juga mengimbau agar Kader PDI Perjuangan melakukan silaturahmi dengan masyarakat disekitar kantor DPC PDI Perjuangan untuk berpartisipasi aktif, mencegah kejadian serupa.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Pengurus partai di seluruh daerah Jabar agar melibatkan masyarakat di sekitar kantor DPC PDI Perjuangan untuk bersama-sama menjaga kondusifitas di wilayahnya masing-masing,&rdquo; kata anggota Komisi IV DPR RI ini.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Selain itu, Ono juga meminta agar pihak kepolisian serius menuntaskan kasus ini. Apalagi, kata dia, pihaknya telah melakukan pelaporan sejak insiden pertama namun belum ada titik terang.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Aparat keamanan, baik TNI atau Polri agar dapat memberikan rasa aman kepada masyarakat dan kami berharap agar kejadian ini tak terulang kembali,&rdquo; tandasnya.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Aktivis dan organisasi kemasyarakatan di Cianjur juga turut mengutuk keras kejadian tersebut. Salah satunya Ketua Pimpinan Cabang Nahdlatul Ulama (PCNU) Kabupaten Cianjur KH. M. Chaerul Anam Mzd.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Kami sangat terkejut atas kejadian ini, dan tentu saja atas nama PCNU mengutuk keras apa yang dilakukan oleh pelaku karena tidak mencerminkan akhlakul karimah,&rdquo; kata Anam.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Dikutip dari <a href=\"https:\/\/infocianjur.com\/sejumlah-tokoh-budayawan-prihatin-pengeboman-kantor-pdip-cianjur\/\">infocianjur.com<\/a>, sejumlah tokoh budayawan di Cianjur menyesalkan dan mengutuk keras pelaku pengeboman dengan menggunakan bom molotov ke Kantor DPC PDI Perjuangan Cianjur.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Kami tentu saja sangat prihatin dengan mereka yang melakukan kekerasan dan perusakan karena perbedaan pandangan politik atau apapun, ini tidak sesuai dengan akhlak dan budaya Cianjur,&rdquo; kata Aki Dadan, maestro Mamaos Cianjuran saat berkunjung ke Kantor DPC.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
+          "filetype": "image",
+          "path": "uploads\/image\/blog\/7-Agustus_Foto_200807095003.jpg"
+        },
+        {
+          "id": 821,
+          "title": "BSPN Kota Surabaya Siapkan Rekrutmen Ribuan Saksi dan Guraklih",
+          "description": "<p>Pemilihan Kepala Daerah (Pilkada) Kota Surabaya yang akan diselenggarakan pada Desember 2020 menjadi fokus prioritas Badan Saksi Pemenangan Nasional (BSPN) PDI Perjuangan Kota Surabaya. BSPN saat ini telah menyiapkan skema rekrutmen, pemantapan saksi, dan Regu Penggerak Pemilih (Guraklih) sebagai salah satu instrumen pemenangan pilkada serentak.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Kami sedang melakukan pemetaan perolehan suara partai pada beberapa momentum pemilihan,&nbsp; disitu kita rumuskan skemanya,&rdquo; kata Sekretaris BSPN Kota Surabaya Abdul Ghoni Mukhlas Ni&#39;am, Kamis (30\/7\/2020).<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Menurut Abdul Ghoni anggota Komisi C DPRD Kota Surabaya ini, pada pemilu legislatif tahun 2019 lalu, PDI Perjuangan meraih 15 kursi legislatif di DPRD dengan total perolehan sebanyak 418.872 suara.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Kami memiliki bekal elektoral yang baik, kekuatan struktur hingga di tingkat Rukun Warga serta kader-kader PDI Perjuangan yang berpengalaman dalan membangun Kota Surabaya,&rdquo; imbuh Ghoni<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Kota Surabaya memiliki 1.405 RW, 154 kelurahan, dan 31 kecamatan. BSPN berpengalaman dalam pengkondisian dan jaringan saksi yang mengawal suara rakyat untuk memilih pemimpin penerus Tri Rismaharini.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Komitmen kami mengawal suara rakyat,&nbsp; sehingga pilkada melahirkan pemimpin yang melayani rakyat sepenuh hati, bukan hanya mengejar jabatan,&rdquo; ujar Abdul.<\/p>\r\n",
+          "filetype": "image",
+          "path": "uploads\/image\/blog\/30-Juli_foto_200730052941.jpg"
+        },
+        {
+          "id": 820,
+          "title": "PDI Perjuangan Tidak Takut Teror, Hukum Harus Ditegakkan",
+          "description": "<p align=\"center\"><em>Tiga bom molotov dilempar ke Sekretariat PDI Perjuangan di <\/em><em>Kabupaten Bogor<\/em><em>.<\/em><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Setelah aksi lempar 3 bom molotov ke rumah kader sekaligus Sekretariat PDI Perjuangan Kecamatan Megamendung, Kabupaten Bogor pada hari Selasa, 28 Juli 2020 pukul 03.37 dini hari. Hari ini pelemparan bom molotov kembali terjadi ke Sekretariat PDI Perjuangan Kecamatan Cileungsi, Kabupaten Bogor yang juga rumah kader PDI Perjuangan sekaligus Wakil Ketua Komisi IV DPRD Kabupaten Bogor, Mu&rsquo;ad Kalim.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;PDI Perjuangan mengecam keras aksi pelemparan bom molotov di Sekretariat PAC PDI Perjuangan Kecamatan Megamendung dan Cileungsi, Kabupaten Bogor. Sebagai partai ideologis yang selalu berpegang teguh pada Pancasila, UUD NRI 1945, NKRI dan Kebhinekaan, aksi teror tersebut tidak akan dapat menyurutkan semangat juang kader PDI Perjuangan,&rdquo; tegas Ketua DPD PDI Perjuangan Jawa Barat, Ono Surono, Rabu (29\/7\/2020).<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Ono menandaskan, aksi teror ini benar-benar serius, dilakukan dengan berani dan mempunyai tujuan yang sangat besar. Hal ini bukan lagi semata untuk melakukan teror kepada PDI Perjuangan, tetapi juga kepada seluruh Rakyat Indonesia.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Pelaku aksi itu sudah menunjukkan keberadaan kelompok kekerasan ada dan nyata di Indonesia. Sehingga, kami berharap pihak kepolisian secara serius mengungkap aksi tersebut dan melakukan proses hukum sampai tuntas,&rdquo; kata Ono.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Lebih lanjut Ono menjelaskan, PDI Perjuangan Jawa Barat menginstruksikan kepada seluruh Kader PDI Perjuangan Kabupaten Bogor untuk mengedepankan proses Hukum. Berkoordinasi dengan pihak kepolisian dan aparat penegak hukum yang lain&nbsp;untuk mengungkap dan memenjarakan pelakunya.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Selalu siap siaga dan mulai melalukan antisipasi kejadian serupa dengan melakukan penjagaan setiap rumah dan kantor sekretariat Partai, serta berkoordinasi dengan aparat pemerintah di tingkat kabupaten, kecamatan hingga desa dan kelurahan,&rdquo; jelas Ono.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Sementara itu seperti dikutip dari <a href=\"https:\/\/news.detik.com\/berita-jawa-barat\/d-5112533\/2-kantor-pac-dibom-molotov-ketua-dpc-pdip-bogor-ada-upaya-adu-domba\">detik.com<\/a>, pengurus PDI Perjuangan Kabupaten Bogor mengecam aksi tersebut dan menganggap pelakunya adalah kelompok yang berniat mengadu domba.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Kita mengecam tindakan anarkis ini yang dilakukan oleh orang yang tidak bertanggungjawab. Saya rasa ini adalah pelaku-pelakunya mungkin sejenis atau satu geng dengan pembakar bendera kami. Mengadu domba-lah, artinya mau memecah belah NKRI,&quot; ujar Ketua DPC PDI Perjuangan Kabupaten Bogor. Budi Johan, Rabu (29\/7\/2020).<\/p>\r\n",
+          "filetype": "image",
+          "path": "uploads\/image\/blog\/29-Juli_foto-molotov_200729050442.jpg"
+        },
+        {
+          "id": 818,
+          "title": "Aktivis Kota Medan Napak Tilas Gerakan Pro Demokrasi 27 Juli 1996",
+          "description": "<p align=\"center\"><em>Perlu literasi dari pelaku sejarah untuk menyatukan cerita terputus sepanjang periode 1996-1998.<\/em><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Beberapa mantan aktivis di Kota Medan berkumpul dan berdiskusi pengalaman mengingat kembali rentetan peristiwa chaos diakhir masa Orde Baru, dalam rangka Refleksi Peristiwa Sabtu Kelabu 27 Juli di Bengawan Coffee Jl. Darusalam, Medan, Sumatera Utara pada hari Senin (27\/7\/2020).<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Mantan aktivis 98 yang kini Wakil Ketua Bidang Komunikasi Politik DPD PDI Perjuangan Sumut, Aswan Jaya menginisiasi diskusi tersebut. Menurut Aswan, diskusi dimaksudkan untuk napak tilas gerakan pro demokrasi yang ada di Sumatera Utara, khususnya Kota Medan dengan segala dinamikanya. Mengingat pada masa itu teknologi informasi belum secanggih saat ini, maka banyak catatan sejarah yang hilang dan terputus.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Untuk itu kita kembali mengumpulkan para pelaku sejarahnya agar bisa menyatukan kembali <em>puz<\/em><em>zle<\/em>, cerita yang banyak terputus, terutama sepanjang periode 1996-1998,&quot; ujar Aswan, Senin (27\/7\/2020).<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Sementara menurut aktivis yang sempat menjadi komisioner KPUD Sumut, Turunan Gulo, sesungguhnya gerakan demokrasi di Kota Medan memiliki semangat gerakan cukup besar dan menentukan gerakan massa skala nasional.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Ternyata api gerakan massa di Medan itu sangat besar dan mempengaruhi gerakan secara nasional, tapi karena catatan sejarah tidak terdokumentasi, maka api gerakan itu jadi terlihat kecil,&quot; jelas Turunan.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Dalam diskusi tersebut akhirnya tercetus keinginan menuliskan buku sejarah tentang gerakan rakyat di Kota Medan. Hal itu, lanjut Aswan, dimaksudkan melengkapi literasi untuk generasi aktivis masa kini terhadap catatan sejarah masa lalu agar tidak hilang dimakan zaman. Apalagi para pelaku sejarahnya itu sendiri semakin menua, bahkan beberapa di antaranya sudah terlebih dahulu meninggal dunia.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Intinya tadi muncul ide untuk menulis buku sejarah yang bersumber dari pelaku sejarah langsung dan beberapa catatan serta dokumentasi yang masih tertinggal,&quot; kata Aswan.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Wakil Ketua Bidang Buruh DPD PDI Perjuangan Sumut Sarma Hutajulu mendukung niat baik penulisan buku tersebut. Menurut Sarma, dinamika gerakan Kota Medan memiliki kekhasan terutama dimasa-masa sulit. Medan menjadi titik awal peristiwa Kudatuli, dimana Kongres Luar Biasa (KLB) PDI yang melahirkan PDI Suryadi dilaksanakan di Medan dan saat itu adalah masa mencekam serta situasi paling sulit bagi kader PDI Pro Mega.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Sangat sedikit catatan maupun dokumentasi yang menceritakan gerakan massa arus bawah di Medan, maka saya sangat mendukung jika ada inisiatif menulis buku tersebut,&quot; ujar Sarma.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Nampak hadir dalam diskusi, Wakil Ketua Bidang Hukum DPD PDI Perjuangan Sumut, Alamsyah Hamdani, Kepala Badan Saksi Pemenangan Nasional (BSPN) Sumut, Leonardo Marbun, Agus Marwan, Wahyu, Harizal, Hasan, Khaidir, Barat, dan beberapa aktivis Mahasiswa USU, UINSU dan UMSU.<\/p>\r\n",
+          "filetype": "image",
+          "path": "uploads\/image\/blog\/28-Juli_foto_200728104701.jpg"
+        },
+        {
+          "id": 815,
+          "title": "PDI Perjuangan: Sanksi Disiplin Bagi Kader Pindah Partai Terlebih Karena Berburu Kekuasaan ",
+          "description": "<p>PDI Perjuangan menegaskan bahwa berpartai, sama juga bernegara dilandasi oleh ketaatan pada konstitusi, hukum, dan etika politik.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Kader Partai harus berdisiplin dan berpolitik itu untuk pengabdian yang lebih besar, bukan untuk berburu kekuasaan politik. Karena itulah langkah pragmatis yang dilakukan Sdr. Akhyar Nasution dengan pindah ke Partai Demokrat justru ditempatkan sebagai bagian konsolidasi kader. Dalam konsolidasi tersebut ada kader yang lolos karena memiliki kesabaran revolusioner, namun ada yang gagal karena ambisi kekuasaan. Yang bersnagkutan masuk pada ketegori kedua. Partai akan memberikan sanksi disiplin, karena anggota Partai tidak boleh memiliki keanggotaan ganda dengan Partai lain,&rdquo; kata Ketua DPP Bidang Ideologi dan Kaderisasi PDI Perjuangan, Djarot Saiful Hidayat, Sabtu (25\/7\/2020).<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Djarot menjelaskan, PDI Perjuangan melakukan seleksi ketat terhadap setiap calon kepala daerah yang akan diusung Partai. Mereka yang memiliki persoalan hukum tidak akan pernah dicalonkan Partai.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;PDI Perjuangan belajar dari kasus korupsi berjamaah yang dilakukan oleh mantan Gubernur Sumatera Utara yang diusung PKS, Gatot Pujo Nugroho yang melebar kemana-mana. Kasus korupsi yang melibatkan mantan Walikota Medan, Tengku Dzulmi Eldon dikhawatirkan memiliki konsekuensi hukum ke yang lain,&rdquo; ujar Djarot.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Menurut Djarot, PDI Perjuangan juga mencatat bahwa Akhyar Nasution pernah diperiksa terkait dugaan penyelewengan anggaran Musabaqah Tilawatil Quran (MTQ) ke-53 tingkat Kota Medan tahun 2020 di Jalan Ngumban Surbakti, Kelurahan Sempakata, Kecamatan Medan Selayang sebesar Rp 4,7 miliar menjadi pertimbangan penting mengapa Partai tidak mencalonkan yang bersangkutan.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Betapa bahayanya ketika MTQ saja ada dugaan disalahgunakan. Mungkin dengan bergabung ke Partai tersebut, yang bersangkutan ingin mencitrakan &lsquo;katakan tidak pada korupsi&rsquo; yang pernah menjadi slogan Partai tersebut,&rdquo; ujar Djarot, Pelaksana Tugas Ketua DPD PDI Perjuangan Sumut sambil tersenyum.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Selain hal tersebut di atas, PDI Perjuangan juga mempertimbangkan posisi Kota Medan sebagai salah satu sentral perekonomian di Sumatera.<\/p>\r\n\r\n<p>&ldquo;Pertimbangan yang komprehensif, strategik, dan obyektif sesuai harapan rakyat, menjadi landasan keputusan Partai. PDI Perjuangan juga membangun dialog dengan Partai koalisi pendukung Pak Jokowi. Masuknya Sdr. Akhyar dengan dukungan dari Demokrat dan kemungkinan dari PKS semakin menunjukkan arah kebenaran koalisi pada Pileg 2024 yang akan datang,&rdquo; jelas Djarot.<\/p>\r\n",
+          "filetype": "image",
+          "path": "uploads\/image\/blog\/25-Juli_Foto_200725010114.jpg"
+        },
+        {
+          "id": 812,
+          "title": "Peduli Produk Lokal, Gubernur Koster Terbitkan Surat Edaran Pasar Gotong Royong",
+          "description": "<p align=\"center\"><em>Pemerintah daerah, instansi vertikal, BUMN dan BUMD, dan pihak swasta harus hadir untuk para petani, nelayan, perajin, pelaku usaha mikro, kecil, dan menengah.<\/em><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Pemerintah Provinsi Bali melaksanakan program Pasar Gotong Royong Krama Bali untuk percepatan pemulihan perekonomian rakyat yang sedang menghadapi pandemi Covid-19. Pandemi ini berdampak secara ekonomi dan sosial yang mengakibatkan penurunan pasar produk pertanian, perikanan, dan industri lokal masyarakat Bali. Program Pasar Gotong Royong disosialisasikan untuk seluruh masyarakat Bali melalui Surat Edaran Gubernur Wayan Koster yang ditandatangani pada Rabu (22\/7\/2020).<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Pasar Gotong Rorong sejalan dengan visi pembangunan daerah yakni &lsquo;<em>Nangun Sat Kerthi Loka Bali&rsquo;<\/em> melalui Pembangunan Semesta Berencana untuk menuju Bali era baru sekaligus wujudkan kesejahteraan dan kebahagiaan Krama Bali,&rdquo; kata Gubernur Koster dalam Surat Edaran.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Program Pasar Gotong Royong Krama Bali, menurut Koster, merupakan tindak lanjut dari arahan Presiden Jokowi saat Rapat Koordinasi Gubernur Se-Indonesia, tanggal 15 Juli 2020 lalu di Istana Bogor. Presiden mengarahkan agar mengutamakan penggunaan produk lokal untuk menggairahkan para petani, nelayan, perajin, dan pelaku usaha mikro, kecil, dan menengah.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Pasar ini untuk meningkatkan kepedulian pegawai dan karyawan, serta kesadaran bergotong-royong membantu petani, nelayan, perajin, dan pelaku usaha mikro, kecil, dan menengah dengan menggunakan produk pertanian, perikanan, dan industri lokal di Bali. Sebelumnya Pemerintah Provinsi Bali telah menerbitkan Peraturan Gubernur Bali Nomor 99 Tahun 2018 tentang Pemasaran dan Pemanfaatan Produk Pertanian, Perikanan, dan Industri Lokal Bali.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Pemerintah daerah, instansi vertikal, BUMN dan BUMD, dan pihak swasta harus hadir dan peduli kepada para petani, nelayan, perajin, dan pelaku usaha mikro, kecil, dan menengah. Melalui Pasar Gotong Royong, penjual dan pembeli dapat melakukan transaksi dengan harga yang lebih wajar serta sama-sama diuntungkan,&rdquo; ujar Gubernur Koster.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Koster menjelaskan, Pasar Gotong Royong Krama Bali difasilitasi dan dilaksanakan serentak oleh Pemerintah daerah, instansi vertikal, BUMN dan BUMD, dan pihak swasta dengan mempertemukan secara langsung antara penjual dan pembeli produk pangan kebutuhan dasar sehari-hari serta sandang Krama Bali.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Tempat, sarana, dan prasarana yang diperlukan difasilitasi oleh penyelenggara tanpa dipungut biaya agar dapat dilaksanakan dengan baik dan tertib. Sarana dan prasarana dapat berupa meja, kursi, tenda sederhana, atau dengan memanfaatkan fasilitas yang telah tersedia,&rdquo; kata Gubernur.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Pasar Gotong Royong dilaksanakan pada hari kerja, setiap Jumat mulai pukul 07.00 WITA hingga selesai. Khusus hari Jumat setiap awal bulan menjual produk sandang. Koster mengharapkan penjual mampu menyediakan produk pangan segar, sehat, berkualitas dari hasil usaha tani dan nelayan sendiri, produk sandang berkualitas serta tidak menjual produk pangan dari luar Bali. Pedagang bisa menyediakan daftar barang dengan harga yang wajar dan bersaing dengan harga di pasar rakyat dan toko swalayan.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Penjual tidak menggunakan plastik sekali pakai seperti tas kresek dan pipet, harus menyiapkan tas atau kantong serta pipet ramah lingkungan,&rdquo; jelas Koster.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Koster mengatakan pegawai Pemerintah Daerah Provinsi Bali berstatus PNS wajib berbelanja sekurang-kurangnya 10 persen dari gaji per bulan, yang dibelanjakan dengan pengaturan secara proporsional setiap hari Jumat dalam sebulan di Pasar Gotong Royong Krama Bali. Sementara, pegawai yang bukan PNS dapat berbelanja secara sukarela. Kepala Perangkat Daerah dapat memerintahkan pegawainya agar berbelanja setiap hari Jumat. Untuk Pemerintah Daerah Kabupaten dan Kota, instansi vertikal, BUMN dan BUMD dan pihak swasta dihimbau memberlakukan kebijakan mengikuti kebijakan Pemerintah Daerah Provinsi Bali.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Berlaku sama penjual dan pembeli berkewajiban membawa tas atau kantong ramah lingkungan, dilarang membawa tas atau kantong dari bahan plastik sekali pakai,&rdquo; ujar Koster.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Pasar Gotong Royong juga menerapkan Protokol Tatanan Kehidupan Era Baru (New Normal). Penyelenggara pasar menyiapkan tempat cuci tangan dan hand sanitizer, menyiapkan petugas pengukur suhu tubuh, mengatur jarak tempat penjual, mengatur pembeli agar tidak berkerumun, petugas penyelenggara wajib menggunakan masker, dan melarang penjual dan pembeli yang tidak mematuhi Protokol Tatanan Kehidupan Era Baru.<\/p>\r\n",
+          "filetype": "image",
+          "path": "uploads\/image\/blog\/22-Juli_Foto_ok_200722014922.jpg"
+        }
+      ],
+      "config_ordering": "desc"
+    },
+    {
+      "slug": "berita",
+      "class": "r-sync-blog",
+      "index": 2,
+      "langcode": "ID",
+      "value": [
+        {
+          "id": 823,
+          "title": "Gema Takbir Iringi Penyembelihan Hewan Kurban di Kantor DPD PDI Perjuangan Sumut",
+          "description": "<p>DPD PDI Perjuangan Sumut sembelih 3 ekor lembu sebagai bagian dari pelaksanaan kurban di Hari Raya Idul Adha, lafaz takbir pun bergema di Kantor DPD PDI Perjuangan Jalan Jamin Ginting Medan mengeringi setiap penyembelihan hewan kurban yang berlangsung pada Minggu (2\/8\/2020)<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Pelaksanaan penyembelihan hewan kurban DPD Partai langsung dipimpin oleh Sekretaris DPD PDI Perjuangan Sumut Dr. Sutarto dan didampingi&nbsp; oleh Bendahara DPD Partai dr. Meriahta Sitepu.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Ustad Jhon Hendra Tanjung beserta&nbsp; Tim Bamusi Sumut bertindak sebagai pemotong hewan kurban yang dibantu oleh Stagas DPD Partai yang dipimpin oleh Kasmadi.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Esensi kurban itu berbagi kepada kaum dhuafa, terlebih pada masa pandemi Covid-19 ini merupakan momentum untuk kita semua saling berbagi, karena itu PDI Perjuangan Sumut telah memotong 24 ekor lembu yang dilaksanakan di 24 DPC Partai se-Sumut dan hari ini khusus di DPD partai memotong 3 ekor lembu atas nama Pengurus DPD, Ketua Plt Djarot Saiful Hidayat dan Ketua DPRD Sumut Baskami Ginting,&quot; ujar Sutarto<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Lebih lanjut, Sutarto menyatakan bahwa pelaksanaan penyembelihan hewan kurban ini adalah perwujudan dari keimanan dan kepercayaan pimpinan PDI Perjuangan kepada Allah SWT, Tuhan Yang Maha Esa dan tanggung jawab sosial PDI Perjuangan kepada umat<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Pengadaan 27 ekor lembu ini merupakan partisipasi secara gotong royong dari 7 Anggota DPR RI Dapil Sumut, 19 Anggota DPRD Sumut dan Pengurus DPD PDI Perjuangan sumut. Selain itu, seluruh Anggota DPRD Fraksi PDI Perjuangan Kabupaten\/Kota juga melaksanakan kurban di daerah masing,&quot; jelas Sutarto alumnus doktoral UIN Sumut.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Turut hadir dalam acara penyembelihan hewan kurban para Wakil Ketua DPD PDI Perjuangan&nbsp;Sumut yakini, Ustad H. Syahrul Siregar, Dr. Aswan Jaya, Meinarty Bangun, Samulya Indra, Dame Tobing, Sarma Hutajulu, dan Wasek Internal DPD Bima Nusa dan Ketua DPRD Sumut Drs. Baskami Ginting.<\/p>\r\n",
+          "filetype": "image",
+          "path": "uploads\/image\/blog\/2-agst_foto_200802042729.jpg"
+        },
+        {
+          "id": 822,
+          "title": "Elektrifikasi dan Digitalisasi Desa: Solusi Penting Pembangunan Ekonomi Desa Tertinggal",
+          "description": "<p>Pengadaan jaringan listrik hingga ke pelosok dan digitalisasi menjadi salah satu solusi penting untuk pembangunan ekonomi desa tertinggal. Demikian hal yang mengemuka saat Dewan Pimpinan Luar Negeri (DPLN) PDI Perjuangan Belanda menggelar webinar bertema &ldquo;Peran Diaspora Indonesia dalam Mengembangkan Perekonomian Perdesaan di Indonesia&rdquo; pada Sabtu (25\/7\/2020).<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Webinar melibatkan 5 narasumber yakni Wakil Menteri Desa Pembangunan Daerah Tertinggal dan Transmigrasi, Budi Arie Setiadi, Arif Budimanta (Staf Khusus Presiden RI), Budiman Sudjatmiko (Pembina PAPDESI-Perkumpulan Aparatur Pemerintah Desa Seluruh Indonesia), Ari Manik (Diaspora Indonesia di Austria, Ketua Umum Perhimpunan Eropa untuk Indonesia Maju), dan Latief Gau (Diaspora Indonesia di Belanda, Pengusaha Energi Terbarukan dan Ketua DPLN PDI Perjuangan Belanda).<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Sebagai pembicara kunci Budi Arie menekankan upaya pengurangan tingkat kemiskinan harus dimulai dari desa karena bagian terbesar penduduk miskin ada di desa, khususnya mereka yang tinggal di desa 3T (tertinggal, terluar, terdepan). Belum terjangkaunya internet dan aliran listrik ke desa-desa, menjadi salah satu penyebab makin tertinggalnya desa-desa tersebut.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Tantangan konektifitas logistik juga menjadi salah satu tantangan besar lainnya bagi desa-desa tersebut keluar dari kemiskinannya,&rdquo; ujar Budi Arie.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Namun Budi Arie meyakini melalui kebijakan-kebijakan yang tepat dan dijalankan Presiden Joko Widodo, seperti penyaluran dana desa yang telah mencapai lebih dari 200 triliun sejak tahun 2014, akan mendorong desa mampu menyelesaikan tantangan-tantangan yang ada. &ldquo;Para diaspora Indonesia dapat aktif membantu memasarkan produk-produk desa di Indonesia di pasar luar negeri,&rdquo; kata Budi.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Arif Budimanta selaku staf khusus Presiden RI di bidang ekonomi menjelaskan, di bawah kepemimpinan Presiden RI Joko Widodo, pengembangan ekonomi perdesaan telah dilakukan sejak tahun 2014. Upaya ini dilakukan melalui kebijakan yang memprioritaskan pembangunan dari desa yang biasa dikenal dengan membangun dari pinggiran (asimetric development), kebijakan-kebijakan yang meningkatkan konektivitas, dan kebijakan pembangunan sumber daya manusia (SDM) desa seperti Kartu Indonesia Pintar, Kartu Indonesia Sehat, dan Wajib Belajar 12 tahun.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Selain itu kebijakan <em>capital reform<\/em> juga dilakukan melalui dua hal yaitu, reforma agraria dan reforma akses modal dalam program Kredit Usaha Rakyat dengan bunga 6-7% untuk pelaku UMKM yang tidak pernah serendah ini sebelumnya, dengan tujuan meningkatkan ekonomi lokal di desa yang pada akhirnya akan memberikan <em>trickle up effect<\/em> ke atas dalam meningkatkan Produk Domestik Bruto (PDB) nasional. Terlihat dengan jelas bahwa pemerintahan Joko Widodo menempatkan desa sebagai strategi pembangunan nasional,&rdquo; jelas Arif Budimanta.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Sementara Budiman Sudjatmiko secara menarik menyampaikan, pembangunan perdesaan di Indonesia saat ini telah meninggalkan pendekatan sumber daya alam yang kaya dan sumber daya manusia yang murah (comparative advantage) dan menciptakan sesuatu (competitive advantage) dan diharapkan saling bersinergi untuk menjawab tantangan ke depan (collaborative advantage). Bagi penduduk desa, <em>collaborative advantage<\/em> ini sudah teruji sejak ratusan tahun yang lalu melalui nilai-nilai gotong royong. Namun tantangannya adalah apakah <em>collaborative advantage<\/em> ini dapat juga berfungsi di era industrialisasi saat ini.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Penguatan desa juga harus memberikan perhatian kepada dua hal yaitu, <em>data storage<\/em> dan <em>energy storage<\/em>. Di sinilah diharapkan peran diaspora memperkenalkan teknologi tersebut dalam membantu ekonomi perdesaan,&rdquo; kata Budiman Sudjatmiko.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Sementara Ari Manik, diaspora Indonesia yang tinggal dan bekerja di Austria pada salah satu perusahaan global bidang telekomunikasi, menyampaikan konsep desa digital yang dapat dijalankan di Indonesia. Ari berharap ada kerjasama dengan BUMDES, pemerintah desa, operator telekomunikasi dan para diaspora yang memiliki keahlian teknis untuk meningkatkan perekonomian desa tersebut.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Tantangan saat ini adalah besarnya biaya untuk membuka akses internet sampai ke desa-desa tertinggal, terluar, dan terdepan. Semoga ada desa-desa yang dapat dijadikan pilot untuk penerapan desa digital setelah webinar,&rdquo; harap Ari Manik.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Latif Gau, pengusaha energi terbarukan menyampaikan hal senada. Saat ini telah menjalankan proyek-proyek besar di beberapa desa di Indonesia yang berkaitan dengan elektrifikasi desa melalui pemanfaatan sumberdaya rumput laut, arus laut, tenaga matahari dan baterai ramah lingkungan. Melalui proyek tersebut, Latief Gau mencontohkan bahwa sebagai diaspora, perusahaannya dapat membantu membuka akses sumber pendanaan luar negeri dan membawa teknologi terbarukan yang tepat guna.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Masih banyak sekali peluang bagi dana luar negeri masuk ke Indonesia untuk meningkatkan ekonomi desa terlebih bila <em>omnibus law<\/em> yang memangkas birokrasi dapat segera diselesaikan,&rdquo; kata Latif Gau.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Lebih lanjut Latief menekankan pentingnya para diaspora menjadi duta bangsa sehingga dapat membantu memberikan informasi yang tepat. Karena walaupun saat ini informasi dapat diperoleh dengan mudah melalui berbagai mesin pencari, namun informasi yang diberikan tidak dapat memisahkan antara informasi sampah atau emas. Di sinilah peran penting diaspora Indonesia yang memiliki local knowledge untuk dapat menjembatani kekurangan dari mesin pencari tersebut.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Tentu saja Diaspora juga dapat membantu membuka akses pasar bagi produk-produk desa sesuai harapan Wakil Menteri Desa Budi Arie Setiadi,&rdquo; ujar Latif.<\/p>\r\n",
+          "filetype": "image",
+          "path": "uploads\/image\/blog\/foto_200730092254.jpg"
+        },
+        {
+          "id": 803,
+          "title": "Live Jejak Bung Karno 2020, Guntur Soekarnoputra Beri Kado Istimewa",
+          "description": "<p>Momentum Bulan Bung Karno diperingati secara spesial di Surabaya. Putra sulung Proklamator RI, Ir. Soekarno, Guntur Soekarnoputra&nbsp; turut berpartisipasi dalam kemeriahan kegiatan Jejak Bung Karno 2020, Senin (29\/6\/2020).<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Mas To, sapaan Guntur Soekarnoputra menjadi tamu spesial. Guntur menjadi penampil istimewa dalam acara yang disiarkan secara <em>live streaming<\/em> serentak di tiga kota. Yakni, Surabaya, Yogyakarta, dan Jakarta.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Ayah dari Puti Guntur ini tampil secara akustik membawakan tiga lagu. Diantaranya, Click Song , Senandung Rindu, dan Bengawan Solo. Guntur mengaku mempersiapkan diri dengan berlatih beberapa hari sebelum acara.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&rsquo;&rsquo;Saya mengapresiasi acara ini karena inisiasi memperingati Bulan Bung Karno dari anak-anak muda,&rsquo;&rsquo; kata Mas To saat siaran langsung.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Ia kagum dengan penyelenggara acara yang didominasi para generasi muda. Kegiatan tersebut dikatakan Guntur sebagai bentuk pelestarian sejarah. Khususnya edukasi tentang napak tilas Soekarno yang merupakan Arek Suroboyo.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Guntur cukup enerjik dan memainkan alunan nada gitar bolong bersama dua pengiring. Meski awalnya hanya membawakan dua lagu, namun lantaran digoda bercanda oleh pembawa acara akhirnya Bengawan Solo dilantunkan sebagai lagu pamungkas.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Acara berdurasi kurang lebih 90 menit tersebut juga menghadirkan anggota komisi X DPR RI, Puti Guntur dan Wakil Walikota Surabaya, Whisnu Sakti Buana selaku inisiator acara.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&ldquo;Acara Jejak Bung Karno 2020 setidaknya memberikan sebuah sentuhan pelestarian edukasi sejarah. Khususnya terhadap Bung Karno dan napak tilas beliau. Ini harus menjadi program yang dipertahankan. Tidak hanya penyelenggara, melainkan juga oleh Pemerintah Kota Surabaya,&rsquo;&rsquo; kata Puti.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Hal tersebut direspon oleh Whisnu Sakti Buana. Pemerintah Kota Surabaya telah mempersiapkan program wisata edukasi sejarah Soekarno Trip.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&rsquo;&rsquo;Ini sedang kita bahas. Mungkin langkah awal adalah proses pembebasan rumah kelahiran Bung Karno di Pandean terlebih dahulu,&rsquo;&rsquo; terang orang nomor dua di jajaran Pemkot Surabaya yang akrab disapa WS ini.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Acara yang disiarkan dari portal sosial media youtube @jejakbungkarno&nbsp; ini dimeriahkan penampilan dari Rio Sax, Dian Wasita, Ida Yuliana dari Surabaya. Sedangkan Louise Deredia dari Jakarta, dan juga diselingi <em>talkshow<\/em> seputar Bung Karno oleh Dienan Silmy, kreator Kisah Tanah Jawa dari Yogyakarta.<\/p>\r\n",
+          "filetype": "image",
+          "path": "uploads\/image\/blog\/29-Juni_Foto-DPC-Surabaya_200629055125.jpg"
+        },
+        {
+          "id": 777,
+          "title": "Presiden Tinjau Kesiapan Menuju Tatanan Normal Baru di Bekasi",
+          "description": "<p>Presiden Joko Widodo kembali meninjau kesiapan penerapan prosedur standar tatanan baru atau new normal di sarana publik pada Selasa, 26 Mei 2020. Jika tadi pagi Kepala Negara meninjau Stasiun Moda Raya Terpadu (MRT) Bundaran HI, maka siang ini Presiden meninjau salah satu pusat niaga di Kota Bekasi, Provinsi Jawa Barat.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Pada siang hari ini saya datang ke Kota Bekasi, Provinsi Jawa Barat untuk memastikan pelaksanaan kesiapan kita dalam menuju ke sebuah tatanan baru, ke sebuah normal yang baru,&quot; kata Presiden dalam keterangan persnya usai peninjauan.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Untuk memastikan kesiapan pelaksanaan tatanan baru tersebut, Presiden mengatakan, TNI dan Polri akan diterjunkan di setiap keramaian untuk lebih mendisiplinkan masyarakat menjalankan protokol kesehatan. Tujuannya adalah agar masyarakat bisa tetap produktif sekaligus aman dari ancaman Covid-19. Presiden menyebut bahwa dalam menuju ke tatanan baru tersebut, pemerintah juga melihat angka-angka dan fakta-fakta di lapangan.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Angka-angka bagaimana kurva R0 (R-naught)-nya, seperti di Bekasi ini sudah di bawah 1, sudah bagus. Kita harapkan, tadi saya sampaikan ke Pak Wali Kota, ke Pak Gubernur, agar di Jawa Barat di Bekasi khususnya terus ditekan agar terus R0-nya bisa di bawah 1,&quot; jelasnya.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Kepala Negara menjelaskan bahwa dalam mengawasi pelaksanaan di lapangan dan memastikan agar protokol kesehatan dijalankan, TNI dan Polri akan mengingatkan hal-hal seperti memakai masker, menjaga jarak, dan menghindarkan orang dari kerumunan atau saling berdesak-desakan. Mulai hari ini, TNI dan Polri telah menggelar pasukan di 4 provinsi dan 25 kabupaten\/kota.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Ini yang ingin kita pastikan sehingga pada hari ini telah dimulai TNI dan Polri menggelar pasukan dan aparatnya di 4 provinsi dan 25 kabupaten dan kota. Di Sumatera Barat, di DKI Jakarta, di Jawa Barat, dan di Gorontalo. Di kota-kota ada 25, di Surabaya, di Malang, dan lain-lainnya,&quot; imbuhnya.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Presiden pun berharap kesadaran dan kedisiplinan yang kuat di masyarakat akan muncul sehingga R0-nya bisa terus ditekan hingga di bawah angka 1. Penerapan prosedur standar tatanan baru sendiri akan dilihat dalam satu minggu ke depan untuk kemudian dievaluasi.<\/p>\r\n",
+          "filetype": "image",
+          "path": "uploads\/image\/blog\/26-Mei_Jokowi_new-normal_200526030907.jpg"
+        },
+        {
+          "id": 775,
+          "title": "Presiden Jokowi Tiadakan Gelar Griya saat Idulfitri Tahun Ini",
+          "description": "<p>Presiden Joko Widodo beserta Ibu Negara Iriana Joko Widodo dipastikan tidak akan mengadakan gelar griya (open house) pada Idulfitri 1 Syawal 1441 Hijriah. Hal ini dilakukan untuk mencegah penyebaran Covid-19.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Demikian disampaikan Deputi Bidang Protokol, Pers dan Media Sekretariat Presiden Bey Machmudin kepada Biro Pers, Media dan Informasi Sekretariat Presiden di Jakarta, Jumat, 22 Mei 2020.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Presiden Jokowi dan keluarga tidak akan menggelar <em>open house<\/em> saat Lebaran tahun ini. Hal ini sebagai upaya pencegahan penyebaran Covid-19,&quot; jelas Bey.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Lebih lanjut, sebagaimana disampaikan Bey, Presiden juga meminta kepada seluruh menteri dan anggota Kabinet Indonesia Maju untuk tidak mengadakan acara gelar griya.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Tentunya apa yang dilakukan oleh Presiden diharapkan bisa diikuti oleh seluruh jajaran kabinet, karena Wakil Presiden juga tidak akan mengadakan acara <em>open house<\/em>,&quot; ungkap Bey.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Meski demikian, Bey menuturkan, Presiden Jokowi tetap mendorong agar tradisi silaturahmi saat Lebaran terus dilakukan meskipun tidak berjumpa secara tatap muka. Menurutnya, silaturahmi tersebut bisa dilakukan secara virtual dengan memanfaatkan berbagai media dan teknologi.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Tradisi silaturahmi bersama keluarga dan kerabat agar terus dijaga. Meski tidak bertemu secara langsung, silaturahmi bisa dilakukan secara virtual,&quot; lanjutnya.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Untuk diketahui, Presiden Jokowi biasanya mengadakan gelar griya bagi semua kalangan saat Idulfitri. Lebaran tahun lalu Presiden Jokowi melakukan gelar griya di Istana Negara Jakarta. Dua tahun sebelumnya, Presiden juga menggelar kegiatan tersebut di Istana Kepresidenan Bogor.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Hari Raya Idulfitri tahun 1441 Hijriah sendiri jatuh bertepatan pada hari Minggu, 24 Mei 2020, sesuai dengan hasil sidang isbat yang telah ditetapkan Menteri Agama Fachrul Razi.<\/p>\r\n",
+          "filetype": "image",
+          "path": "uploads\/image\/blog\/22-Mei_Presiden-Jokowi_200522063745.jpg"
+        },
+        {
+          "id": 773,
+          "title": "Bupati Taput Groundbreaking dan Resmikan Lingkar Sitabo Tabo Siborongborong Menjadi Jalan Ir. Soekarno",
+          "description": "<p>Bupati Tapanuli Utara Nikson Nababan bersama Ketua DPRD Taput Poltak Pakpahan, Dandim 0210\/TU Agus Widodo, Kajari Tapanuli Utara Tatang Darmi,&nbsp; kepala balai dan OPD terkait&nbsp; groundbreaking dan resmikan nama jalan lingkar Sitabo Tabo Kecamatan Siborongborong menjadi jalan&nbsp; Ir.Soekarno&nbsp; sepanjang 13 Km, Kecamatan Siborongborong, Rabu (20\/5\/2020).<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Atas nama Pemerintah Kabupaten Tapanuli Utara, saya ucapkan terimakasih kepada masyarakat yang telah memberikan tanahnya dan yang ikut berpatisipasi dalam pembangunan jalan ini. Tahun ini ada dua proyek pembangunan di Siborongborong, yakni jalan lingkar dan pelebaran jalan kota Siborongborong,&quot; kata Bupati Nikson mengawali sambutan.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Selanjutnya Bupati menyampaikan agar seluruh masyarakat bersama pemerintah bersinergi dalam membangun Tapanuli Utara agar semakin berkembang dan maju.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&quot;Bangsa yang besar adalah bangsa yang menghargai sejarahnya. Hargailah jasa para pahlawanmu. Untuk itu, saya memilih nama Soekarno sebagai nama jalan lingkar ini, semoga kita kelak dapat melahirkan Soekarno Soekarno baru di Tapanuli Utara,&quot; ujar Bupati mengakhiri.<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>Usai sambutan, Bupati Taput diulosi sebagai ucapan terimakasih dari masyarakat setempat yang sangat bangga dan berterimakasih atas pembangunan jalan tersebut. Peresmian nama jalan Ir. Soekarno diwarnai dengan penandatanganan prasasti dilanjutkan dengan penyerahan piagam penghargaan bagi masyarakat yang dengan rela memberikan tanahnya untuk pembangunan jalan tersebut.<\/p>\r\n",
+          "filetype": "image",
+          "path": "uploads\/image\/blog\/20-Mei_Foto-Groundbreaking-Jalan-Soekarno_200520081116.jpg"
+        }
+      ],
+      "config_ordering": "desc"
+    }
+  ]
+}

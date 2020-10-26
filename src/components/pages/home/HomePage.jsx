@@ -91,9 +91,9 @@ const HomePage = () => {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     getConfigHome();
     getGallery();
-    window.scrollTo(0, 0);
   }, []);
 
   return (

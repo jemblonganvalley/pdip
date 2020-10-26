@@ -10,10 +10,6 @@ import Cards from "../../cards/MainCards";
 import Wait from "../../wait/Wait";
 
 import CardInformasi from "../../cardInformasi/CardInformasi";
-
-import BeritaSatu from "../../../img/berita1.png";
-import BeritaDua from "../../../img/berita2.png";
-import BeritaTiga from "../../../img/berita3.png";
 import BeritaEmpat from "../../../img/berita4.png";
 import MainButton from "../../buttons/MainButton";
 import MainDivider from "../../divider/MainDivider";
@@ -62,6 +58,7 @@ const BeritaPage = () => {
     {configHome.length > 0 ? (
 
       <div className="wrapperBerita">
+        {/* INDEX 0 */}
         <div className="headers">
           <div className="backgrounds" style={{
               backgroundImage : `url(https://atur.biar.pw/public${configHome[0].value.image})`
@@ -77,11 +74,11 @@ const BeritaPage = () => {
 
         {/* Container1 */}
         <div className="container-1-beritaPage">
-          {/* Column1 */}
+          {/* INDEX 1 */}
           <CarouselKetuaUmumPage data={configHome[1].value}/>
           {/* END Column1 */}
 
-          {/* Column2 */}
+          {/* INDEX 2 */}
           <CardInformasi
             to1="/article/190/nasional"
             image={`https://atur.biar.pw/public` + configHome[2].value[0].image}
@@ -99,7 +96,7 @@ const BeritaPage = () => {
           {/* END Column2 */}
 
           <div className="cardContainer" id="card-berita">
-            {configHome[3].value.map((e, i) => {
+            {configHome[7].value.map((e, i) => {
               return (
                 <Cards
                   id={e.id}
@@ -165,7 +162,7 @@ const BeritaPage = () => {
 
           {/* Column2 */}
           <div className="cardContainer" id="card-berita">
-            {configHome[5].value.map((e, i) => {
+            {configHome[8].value.map((e, i) => {
               return (
                 <Cards
                   id={e.id}
@@ -174,6 +171,7 @@ const BeritaPage = () => {
                   title={e.title}
                   dateTime={e.created_at}
                   borderRadius="10px"
+                  page="detail-article"
                 />
               );
             })}
@@ -193,8 +191,8 @@ const BeritaPage = () => {
 
           {/* Column4 BERITA PARTAI */}
 
-          {/* <div className="cardContainer" id="card-berita">
-            {beritaPartai.map((e, i) => {
+          <div className="cardContainer" id="card-berita">
+            {configHome[8].value.map((e, i) => {
               return (
                 <Cards
                   id={e.id}
@@ -203,10 +201,12 @@ const BeritaPage = () => {
                   title={e.title}
                   dateTime={e.created_at}
                   borderRadius="10px"
+                  page="detail-article"
+
                 />
               );
             })}
-          </div> */}
+          </div>
 
           {/* END Column4 */}
         </div>

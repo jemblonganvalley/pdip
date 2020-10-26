@@ -1,0 +1,129 @@
+
+{
+  "result": true,
+  "query": {
+    "current_page": 2,
+    "data": [
+      {
+        "id": 1234,
+        "id_album": 14,
+        "type": "video",
+        "path": "4SKeN7X2k0g",
+        "title": "",
+        "description": "Pesan Perjuangan Ketua Umum pada HUT 45 Tahun PDI Perjuangan",
+        "author": 27,
+        "created_at": "2018-02-19 21:11:11",
+        "updated_at": "2018-02-19 21:11:11"
+      },
+      {
+        "id": 1216,
+        "id_album": 14,
+        "type": "video",
+        "path": "JMMti90S7sE",
+        "title": "",
+        "description": "HUT 45 TAHUN PDI PERJUANGAN",
+        "author": 27,
+        "created_at": "2018-01-10 16:20:21",
+        "updated_at": "2018-01-10 16:20:21"
+      },
+      {
+        "id": 1201,
+        "id_album": 14,
+        "type": "video",
+        "path": "v0-1HsnHjng",
+        "title": "",
+        "description": "Pengumuman Pasangan Calon Gubernur & Wakil Gubernur PDI Perjuangan 7 januari",
+        "author": 27,
+        "created_at": "2018-01-07 12:06:17",
+        "updated_at": "2018-01-07 12:06:17"
+      },
+      {
+        "id": 1192,
+        "id_album": 14,
+        "type": "video",
+        "path": "UiWSHj9GcFY",
+        "title": "",
+        "description": "Pengumuman Pasangan Calon Gubernur & Wakil Gubernur PDI Perjuangan",
+        "author": 27,
+        "created_at": "2018-01-04 15:28:49",
+        "updated_at": "2018-01-04 15:28:49"
+      },
+      {
+        "id": 1174,
+        "id_album": 14,
+        "type": "video",
+        "path": "jf2H9qI19KY",
+        "title": "",
+        "description": "Pengumuman Pasangan Calon Gubernur & Wakil Gubernur PDI Perjuangan Live Stream",
+        "author": 27,
+        "created_at": "2017-12-17 12:36:49",
+        "updated_at": "2017-12-17 12:36:49"
+      },
+      {
+        "id": 1153,
+        "id_album": 14,
+        "type": "video",
+        "path": "L9OHQVH_gmw",
+        "title": "",
+        "description": "Maulid Nabi Muhammad 1439",
+        "author": 55,
+        "created_at": "2017-12-04 21:16:04",
+        "updated_at": "2017-12-04 21:16:04"
+      },
+      {
+        "id": 1143,
+        "id_album": 14,
+        "type": "video",
+        "path": "3ymCzo4CC6s",
+        "title": "",
+        "description": "BAGUNA",
+        "author": 55,
+        "created_at": "2018-01-18 19:03:21",
+        "updated_at": "2018-01-18 19:03:21"
+      },
+      {
+        "id": 1109,
+        "id_album": 14,
+        "type": "video",
+        "path": "NfdYjY1RVk0",
+        "title": "",
+        "description": "Pengumuman Pasangan Calon Gubernur dan Wakil Gubernur BALI",
+        "author": 44,
+        "created_at": "2017-11-11 14:36:42",
+        "updated_at": "2017-11-11 14:36:42"
+      },
+      {
+        "id": 1079,
+        "id_album": 14,
+        "type": "video",
+        "path": "pLgubJ1NO_s",
+        "title": "",
+        "description": "Pengumuman Pasangan Calon Gubernur & Wakil Gubernur Jawa Timur dan Sulawesi Selatan  PDI Perjuangan",
+        "author": 27,
+        "created_at": "2017-10-15 12:27:31",
+        "updated_at": "2017-10-15 12:27:31"
+      },
+      {
+        "id": 1078,
+        "id_album": 14,
+        "type": "video",
+        "path": "WuE9mhC03kM",
+        "title": "",
+        "description": "Pendaftaran PDI Perjuangan Sebagai Peserta Pemilu 2019",
+        "author": 27,
+        "created_at": "2017-11-20 20:25:54",
+        "updated_at": "2017-11-20 20:25:54"
+      }
+    ],
+    "first_page_url": "http:\/\/atur.biar.pw\/api\/gallery\/data?page=1",
+    "from": 11,
+    "last_page": 3,
+    "last_page_url": "http:\/\/atur.biar.pw\/api\/gallery\/data?page=3",
+    "next_page_url": "http:\/\/atur.biar.pw\/api\/gallery\/data?page=3",
+    "path": "http:\/\/atur.biar.pw\/api\/gallery\/data",
+    "per_page": 10,
+    "prev_page_url": "http:\/\/atur.biar.pw\/api\/gallery\/data?page=1",
+    "to": 20,
+    "total": 27
+  }
+}
