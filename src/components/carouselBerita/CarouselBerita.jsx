@@ -2,9 +2,10 @@ import React from 'react'
 
 import '../carouselBerita/CarouselBerita.scss'
 
-const CarouselBerita = () => {
+const CarouselBerita = ({data}) => {
     return (
         <>
+
             <div id="beritaPage" className="carousel container-carousel-beritaPage slide" data-ride="carousel">
                 <div className="carousel-inner carousel-beritaPage">
                     <div className="carousel-item active">
@@ -32,12 +33,7 @@ const CarouselBerita = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="carousel-item">
-                        <img className="d-block w-100" src="..." alt="Second slide" />
-                    </div>
-                    <div className="carousel-item">
-                        <img className="d-block w-100" src="..." alt="Third slide" />
-                    </div>
+                
                 </div>
                 <a className="carousel-control-prev" href="#beritaPage" role="button" data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true" />
