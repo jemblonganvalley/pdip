@@ -44,6 +44,8 @@ const ContainerCard = () => {
 
   useEffect(() => {
     getConfigHome();
+    window.scrollTo(0, 0);
+
   }, [category_id]);
 
   return (
