@@ -99,17 +99,17 @@ const MainSlider = ({ value, cls }) => {
                     <h1>{e.title}</h1>
 
                     {/* Box Iklan For Mobile */}
-                    <div className="box-iklan-for-mobile">
                       <p className="txt-info-iklan-mobile">
                       Segera hadir aplikasi PINTAR PERJUANGAN untuk mendapatkan pengalaman
                       dan informasi program serta kerja nyata Partai PDI Perjuangan.
                       </p>
 
-                      <div className="box-logo-apk-store-mobile">
-                      <img src={playstore} alt="" className="logoAppStoreMobile"/>
-                      <img src={appstore} alt="" className="logoAppStoreMobile"/>
-                      </div>
-                    </div>
+                      <img src={playstore} alt="" className="logoAppStoreMobile logoStoreMobile1"/>
+                      <img src={appstore} alt="" className="logoAppStoreMobile logoStoreMobile2"/>
+
+                      {/* <div className="box-logo-apk-store-mobile">
+                      
+                      </div> */}
                     {/* END Box Iklan For Mobile */}
                   </div>
                   {/* END Title For Mobile */}
