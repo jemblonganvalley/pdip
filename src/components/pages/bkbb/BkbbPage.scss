@@ -318,6 +318,9 @@ $secondary : #f3f3f3;
 
         @include smallPhone(){
             height: 15vh;
+            width: auto;
+            object-fit: cover;
+            object-position: center;
         }
 
         .backgrounds-bkbb {
@@ -402,6 +405,7 @@ $secondary : #f3f3f3;
 
     .bannerBkbb{
         display: flex;
+        position: relative;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -411,6 +415,19 @@ $secondary : #f3f3f3;
         // font-family: 'Josefin Sans';
         z-index: 100000;
         margin: 40px 0 0 0;
+
+        // Background black transparent
+        .bg-black-transparent{
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #000;
+            opacity: 0.5;
+        }
+        // END Background black transparent
 
         @include smallPhone(){
             height: 40vh;
@@ -423,6 +440,7 @@ $secondary : #f3f3f3;
 
         i{
             font-size: 30px;
+            z-index: 1;
 
             @include smallPhone(){
                 font-size: 10pt;
@@ -430,12 +448,14 @@ $secondary : #f3f3f3;
         }
 
         h4{
+            z-index: 1;
             @include smallPhone(){
                 font-size: 10pt;
             }
         }
 
         h5{
+            z-index: 1;
             @include smallPhone(){
                 font-size: 10pt;
             }
@@ -446,6 +466,7 @@ $secondary : #f3f3f3;
             text-align: center;
             font-family: 'Roboto';
             font-weight: bold;
+            z-index: 1;
 
             @include smallPhone(){
                 margin: .5rem;
@@ -455,6 +476,7 @@ $secondary : #f3f3f3;
             margin: 1rem;
             // font-size: 8pt;
             font-style: italic;
+            z-index: 1;
         }
     }
 

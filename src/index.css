@@ -27,9 +27,9 @@ a{
   color: inherit;
 }
 
-p{
+/* p{
   font-size: 10pt;
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -44,7 +44,7 @@ img{
 
 @media only screen and (max-width: 500px) {
   body{
-    margin-top: 79px;
+    margin-top: 78px;
   }
 }
 

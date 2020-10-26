@@ -63,8 +63,8 @@ const ContainerCard = () => {
           </div>
 
           {/* Container1 */}
-          <span style={{padding : '0 20%'}}>
-          <MainDivider text={configHome[0].category_child_name} />
+          <span className="divider-page-berita-nasional">
+          <MainDivider text={configHome[0].category_child_name}/>
           </span>
           {/* END Container1 */}
           {/* Container2 */}

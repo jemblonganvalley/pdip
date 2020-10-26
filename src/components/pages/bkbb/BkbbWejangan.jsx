@@ -35,7 +35,7 @@ const BkbbWejangan = () => {
                         {/* Row1 */}
                         <div className="row1-bkbbWejangan">
                             <div className="box-quotes-bkbbWejangan">
-                                <i className="fas fa-quote-right"></i>
+                                {/* <i className="fas fa-quote-right"></i>
 
                                 <h5 className="txt1" >
                                     BARANG SIAPA JANG INGIN MUTIARA HARUS BERANI TERJUN DI LAUTAN JANG DALAM.
@@ -51,7 +51,7 @@ const BkbbWejangan = () => {
 
                                 <small className="txt3">
                                     Bung Karno, 17 Agustus 1946
-                                </small>
+                                </small> */}
                             </div>
                         </div>
                         {/* END Row1 */}

@@ -45,7 +45,7 @@ $smallPhoneDua : 400px;
 
 .navbar {
     padding: $paddingSmall;
-    background-image: url(../../img/pattern.jpeg);
+    background-color: #aa0000;
     // border-bottom: 0.5 solid grey;
     position: fixed;
     z-index: 2000111111111;
@@ -64,7 +64,7 @@ $smallPhoneDua : 400px;
         padding: 10px 10%;
     }
     @include smallPhone() {
-        padding: 5px 7%;
+        padding: 5px 7% 5px 2%;
     }
 
     .navbar-collapse {
@@ -94,7 +94,7 @@ $smallPhoneDua : 400px;
             }
 
             @include smallPhone() {
-                width: 35px;
+                width: 150px;
             }
         }
     }
@@ -121,6 +121,9 @@ $smallPhoneDua : 400px;
             }
             @include responEmpat() {
                 font-size: 8pt;
+            }
+            @include smallPhone(){
+                font-size: 9pt;
             }
             a {
                 text-decoration: none;

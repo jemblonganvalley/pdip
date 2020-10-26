@@ -122,9 +122,15 @@ const HomePage = () => {
         )}
 
         {/* STATISTIK INFO COVID */}
-        <div className="statistik-covid">
-          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-          <div class="elfsight-app-b27c8ef3-b23c-490b-b273-df4e80eb8980">
+        <div className="statistik-covid" style={{
+          backgroundColor: '#000'
+        }}>
+          <script src="https://apps.elfsight.com/p/platform.js" defer style={{
+            backgroundColor: '#000'
+          }}></script>
+          <div className="elfsight-app-b27c8ef3-b23c-490b-b273-df4e80eb8980" style={{
+            backgroundColor: '#000'
+          }}>
 
           </div>
         </div>
@@ -144,7 +150,7 @@ const HomePage = () => {
                         width="100"
                         height="100"
                       />
-                      <h3>{e.title}</h3>
+                      <h4>{e.title}</h4>
                     </div>
                   </a>
                 </div>

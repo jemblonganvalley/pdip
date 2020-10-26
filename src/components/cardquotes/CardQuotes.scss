@@ -13,6 +13,7 @@ $smallPhoneDua : 400px;
 
 .imgQuotes{
     display: flex;
+    position: relative;
     flex-direction: column;
     flex-wrap: wrap;
     height: 300px;
@@ -25,6 +26,20 @@ $smallPhoneDua : 400px;
     border-radius: 10px;
     cursor: pointer;
 
+    // Background black transparent
+    .background-black-transparent{
+        display: flex;
+        position: absolute;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.3;
+        border-radius: 10px;
+    }
+    // END Background black transparet
+
     @include smallPhone(){
         height: 40vh;
         margin: .5rem 0 0 0;
@@ -36,6 +51,7 @@ $smallPhoneDua : 400px;
         display: 15px;
         color: #fff;
         margin: 5px;
+        z-index: 1;
     }
 
     .txt1{
@@ -45,6 +61,7 @@ $smallPhoneDua : 400px;
         color: #fff;
         text-align: center;
         margin: 2px 0 0 0;
+        z-index: 1;
     }
 
     .txt2{
@@ -53,6 +70,7 @@ $smallPhoneDua : 400px;
         color: #fff;
         text-align: center;
         margin: 10px 0 0 0;
+        z-index: 1;
     }
 }
 // END Img
