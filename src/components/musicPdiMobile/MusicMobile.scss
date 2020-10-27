@@ -138,11 +138,116 @@ $smallPhoneDua : 400px;
             height: auto;
             // overflow: scroll;
 
+            // Modal Lirik Music Mobile
+            .modal-lirik-musicMobile{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                color: #fff;
+                padding: 0px 0 0 0%;
+                overflow: hidden;
+
+                // Download Music
+                .wrapperDownload {
+                    display: flex;
+                    // background: $brown;
+                    justify-content: space-between;
+                    padding: 20px 10%;
+        
+                    img {
+        
+                    @include smallPhone() {
+                            width: 40px;
+                        }
+                    }
+                }
+                // END Download Music
+
+                // Button Play Music Mobile
+                .playMusicMobile {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    background: $darkRed;
+                    color: $accent;
+                    // border-bottom-right-radius: 5px;
+                    // border-bottom-left-radius: 5px;
+                    // border: 1px solid blue;
+                    
+                    .player-track {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0 10px;
+                        flex-direction: column;
+
+                        .time {
+                            font-size: 16px;
+                            margin: 10px 0;
+                        }
+                        .progress-bar {
+                            background: #d0d8e6;
+                            height: 5px;
+                            border-radius: 20px;
+                            width: 100%;
+
+                            .fillBar {
+                                background: #a3b3ce;
+                                width: 0;
+                                height: 5px;
+                                border-radius: 20px;
+                            }
+                        }
+
+                    }
+
+                    .playerControl {
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        padding: 1rem 0;
+                        box-shadow: 0px 15px 35px -5px rgba(206, 206, 206, 0.32);
+
+                        i {
+                            font-size: 25pt;
+                            &::before {
+                                color: #ffffff;
+                            }
+                            &:hover::before {
+                                color: $accent;
+                                opacity: .7;
+                            }
+                        }
+                    }
+                    
+                }
+                // END Button Play Music Mobile
+
+                .txt-lirik-musicMobile{
+                    padding: 0 5%;
+                    overflow-y: scroll;
+                }
+
+                .txt-lirik-musicMobile::-webkit-scrollbar {
+                    width: 3px;
+                }
+                .txt-lirik-musicMobile::-webkit-scrollbar-thumb {
+                    background: $darkRed;
+                    border-radius: 3px;
+                }
+                .txt-lirik-musicMobile::-webkit-scrollbar-track {
+                    background: $accent;
+                    border-radius: 3px;
+                }
+            }
+            // END Modal Lirik Music Mobile
+
             .playlistCustom {
                 display: flex;
                 flex-direction: column;
                 padding: 0px 0;
-                color: $lightRed;
+                // color: $lightRed;
+                transition: 0.3s all ease-in-out;
 
                 strong{
                     padding: 10px 5% 0 5%;
@@ -153,104 +258,11 @@ $smallPhoneDua : 400px;
                     padding: 0 5% 10px 5%;
                 }
 
-                &:hover {
-                    background: $darkRed;
-                    color: $accent;
-                }
-
-                // Modal Lirik Music Mobile
-                .modal-lirik-musicMobile{
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    background-color: #000;
-                    color: #fff;
-                    padding: 0px 0 0 0%;
-                    overflow: hidden;
-
-                    // Download Music
-                    .wrapperDownload {
-                        display: flex;
-                        background: $brown;
-                        justify-content: space-between;
-                        padding: 20px 10%;
-            
-                        img {
-            
-                        @include smallPhone() {
-                                width: 40px;
-                            }
-                        }
-                    }
-                    // END Download Music
-
-                    // Button Play Music Mobile
-                    .playMusicMobile {
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        background: $darkRed;
-                        color: $accent;
-                        // border-bottom-right-radius: 5px;
-                        // border-bottom-left-radius: 5px;
-                        // border: 1px solid blue;
-                        
-                        .player-track {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            padding: 0 10px;
-                            flex-direction: column;
-
-                            .time {
-                                font-size: 16px;
-                                margin: 10px 0;
-                            }
-                            .progress-bar {
-                                background: #d0d8e6;
-                                height: 5px;
-                                border-radius: 20px;
-                                width: 100%;
-
-                                .fillBar {
-                                    background: #a3b3ce;
-                                    width: 0;
-                                    height: 5px;
-                                    border-radius: 20px;
-                                }
-                            }
-
-                        }
-
-                        .playerControl {
-                            display: flex;
-                            justify-content: space-evenly;
-                            align-items: center;
-                            padding: 1rem 0;
-                            box-shadow: 0px 15px 35px -5px rgba(206, 206, 206, 0.32);
-
-                            i {
-                                font-size: 25pt;
-                                &::before {
-                                    color: #ffffff;
-                                }
-                                &:hover::before {
-                                    color: $accent;
-                                    opacity: .7;
-                                }
-                            }
-                        }
-                        
-                    }
-                    // END Button Play Music Mobile
-
-                    .txt-lirik-musicMobile{
-                        padding: 0 5%;
-                        overflow: scroll;
-                    }
-                }
-                // END Modal Lirik Music Mobile
-            }
+                // &:hover {
+                //     background: $darkRed;
+                //     color: $accent;
+                // }
+            }            
         }
     }
 }

@@ -4,7 +4,7 @@ import downloadSatu from '../../img/lightDownSatu.png'
 import laguPerjuangan from '../../img/laguperjuangan.png'
 import downloadDua from '../../img/lightDownDua.png'
 import downloadTiga from '../../img/lightDownTiga.png'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import AudioPlayer from 'react-h5-audio-player'
 
 // MUSIC 1
@@ -79,6 +79,8 @@ const MusicMobile = ({data})=> {
             lyric: `
       
               <p>
+                  LIRIK
+                  <br/>
                   * <br />
                   Nyalakan kawan suluh perjuangan
                   Satukan diri singsingkan lengan
@@ -128,6 +130,9 @@ const MusicMobile = ({data})=> {
             pdf: mars_pdf,
             lyric: `
               <p>
+              LIRIK
+              <br/>
+              <br/>
               Atas Kasih dan Kehendak Yang Maha Pencipta
               Kita Telah Sepakat Bersatu
               Bersatu Dalam Satu Rampak Barisan
@@ -153,6 +158,9 @@ const MusicMobile = ({data})=> {
             pdf: allForOne_pdf,
             lyric: `
               <p>
+              LIRIK
+              <br/>
+              <br/>
               Seribu masalah
               Yang silih berganti datang
               Bukan menjadi rintangan <br /><br />
@@ -185,6 +193,9 @@ const MusicMobile = ({data})=> {
             pdf: solid_pdf,
             lyric: `
               <p>
+              LIRIK
+              <br/>
+              <br/>
               Berderap Serentak Bergerak
               Berderap Dalam Satu Barisan
               Bergerak Dengan Satu Semangat <br /><br />
@@ -245,20 +256,32 @@ const MusicMobile = ({data})=> {
                     </div>
                     
                     <div className="playlist">
+                        {/* Play list 1 */}
                         <div className="playlistSatu playlistCustom"
-                            onClick={()=>{
-                                setShow1(!show1);
-                                setIndexPlay1(0);
+                            style={{
+                                backgroundColor : show1 ? '#960001' : '#fff',
+                                color : show1 ? '#fff' : '#c60605'
+                            }}
+                            // onClick={()=>{
+                            //     setShow1(!show1);
+                            //     setIndexPlay1(0);
+                            // }}
+
+                            onClick={async()=>{
+                                const sw1 = await setShow1(!show1);
+                                const ipl = await setIndexPlay1(0);
                             }}
                         >
                             <strong>Hymne PDI Perjuangan</strong>
                             <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
+                        </div>
+                        {/* END Play list 1 */}
 
-                            {/* Modal Lirik Music 1 */}
-                            <div className="modal-lirik-musicMobile lirikMusic1" style={{
+                        {/* Modal Lirik Music 1 */}
+                        <div className="modal-lirik-musicMobile lirikMusic1" style={{
                                 height: show1 ? '60vh' : '0.1px',
                                 backgroundColor: show1 ? '#000' : '#fff',
-                                transition: show1 ? '0.3s ease-in-out' : '0.3s ease-out'
+                                transition: show1 ? '0.4s ease-in-out' : '0.4s ease-out'
                             }}>
                                 {/* Download Music */}
                                 <div className="wrapperDownload">
@@ -332,23 +355,33 @@ const MusicMobile = ({data})=> {
                                 </p>
                             </div>
                             {/* END Modal Lirik Music 1 */}
-                        </div>
 
-                        
+                        {/* Play list 2 */}
                         <div className="playlistDua playlistCustom"
-                            onClick={()=>{
-                                setShow2(!show2);
-                                setIndexPlay2(1);
+                            style={{
+                                backgroundColor : show2 ? '#960001' : '#fff',
+                                color : show2 ? '#fff' : '#c60605'
+                            }}
+                            // onClick={()=>{
+                            //     setShow2(!show2);
+                            //     setIndexPlay2(1);
+                            // }}
+
+                            onClick={async()=>{
+                                const sw2 = await setShow2(!show2);
+                                const ip2 = await setIndexPlay2(1);
                             }}
                         >
                             <strong>Mars PDI Perjuangan</strong>
                             <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
+                        </div>
+                        {/* END Play list 2 */}
 
-                            {/* Modal Lirik Music 2 */}
-                            <div className="modal-lirik-musicMobile lirikMusic2" style={{
+                        {/* Modal Lirik Music 2 */}
+                        <div className="modal-lirik-musicMobile lirikMusic2" style={{
                                 height: show2 ? '60vh' : '0.1px',
                                 backgroundColor: show2 ? '#000' : '#fff',
-                                transition: show2 ? '0.3s ease-in-out' : '0.3s ease-out'
+                                transition: show2 ? '0.4s ease-in-out' : '0.4s ease-out'
                             }}>
                                 {/* Download Music */}
                                 <div className="wrapperDownload">
@@ -422,9 +455,15 @@ const MusicMobile = ({data})=> {
                                 </p>
                             </div>
                             {/* END Modal Lirik Music 2 */}
-                        </div>
 
+
+                        {/* Play list 3 */}
                         <div className="playlistTiga playlistCustom"
+                            style={{
+                                backgroundColor : show3 ? '#960001' : '#fff',
+                                color : show3 ? '#fff' : '#c60605'
+                            }}
+
                             onClick={()=>{
                                 setShow3(!show3)
                                 setIndexPlay3(2);
@@ -432,12 +471,14 @@ const MusicMobile = ({data})=> {
                         >
                             <strong>One For All For One</strong>
                             <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
+                        </div>
+                        {/* END Play list 3 */}
 
-                            {/* Modal Lirik Music 3 */}
-                            <div className="modal-lirik-musicMobile lirikMusic3" style={{
+                        {/* Modal Lirik Music 3 */}
+                        <div className="modal-lirik-musicMobile lirikMusic3" style={{
                                 height: show3 ? '60vh' : '0.1px',
                                 backgroundColor: show3 ? '#000' : '#fff',
-                                transition: show3 ? '0.3s ease-in-out' : '0.3s ease-out'
+                                transition: show3 ? '0.4s ease-in-out' : '0.4s ease-out'
                             }}>
                                 {/* Download Music */}
                                 <div className="wrapperDownload">
@@ -511,9 +552,15 @@ const MusicMobile = ({data})=> {
                                 </p>
                             </div>
                             {/* END Modal Lirik Music 3 */}
-                        </div>
 
+
+                        {/* Play list 4 */}
                         <div className="playlistEmpat playlistCustom"
+                            style={{
+                                backgroundColor : show4 ? '#960001' : '#fff',
+                                color : show4 ? '#fff' : '#c60605'
+                            }}
+
                             onClick={()=>{
                                 setShow4(!show4)
                                 setIndexPlay4(3);
@@ -521,12 +568,14 @@ const MusicMobile = ({data})=> {
                         >
                             <strong>Solid Bergerak</strong>
                             <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
+                        </div>
+                        {/* END Play list 4 */}
 
-                            {/* Modal Lirik Music 4 */}
-                            <div className="modal-lirik-musicMobile lirikMusic4" style={{
+                        {/* Modal Lirik Music 4 */}
+                        <div className="modal-lirik-musicMobile lirikMusic4" style={{
                                 height: show4 ? '60vh' : '0.1px',
                                 backgroundColor: show4 ? '#000' : '#fff',
-                                transition: show4 ? '0.3s ease-in-out' : '0.3s ease-out'
+                                transition: show4 ? '0.4s ease-in-out' : '0.4s ease-out'
                             }}>
                                 {/* Download Music */}
                                 <div className="wrapperDownload">
@@ -600,9 +649,7 @@ const MusicMobile = ({data})=> {
                                 </p>
                             </div>
                             {/* END Modal Lirik Music 4 */}
-                        </div>
                     </div>
-                    {/* Tombol Play Music Mobile */}
                     
                 </div>
             </div>
