@@ -41,6 +41,33 @@ $deviceFour : 1300px;
     }
 }
 
+// Max-height 600px
+$mobile600 : 600px;
+@mixin mobile600 {
+    @media(max-height: #{$mobile600}){
+        @content;
+    }
+}
+// END Max-height 600px
+
+// Min-height 650px
+$mobile650 : 650px;
+@mixin mobile650 {
+    @media(min-height: #{$mobile650}){
+        @content;
+    }
+}
+// END Min-height 650px
+
+// Min-height 700px
+$mobile700 : 700px;
+@mixin mobile700 {
+    @media(min-height: #{$mobile700}){
+        @content;
+    }
+}
+// END Min-height 650px
+
 // .carousel-fade{
 //     display: flex;
 //     position: relative;
@@ -50,18 +77,33 @@ $deviceFour : 1300px;
 
 .image1 {
     display: flex;
-    height: 90vh;
+    height: 60vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20px 0 100px 0;
+    padding: 0px 0 0px 0;
     border-radius: 10px;
     
     @include smallPhone() {
-        height: 50vh;
+        height: 70vh;
         width: 100%;
-        padding: 0;
+        padding: 0 0 5px 0;
         border-radius: 0;
+    }
+
+    // Max height 600
+    @include mobile600(){
+        height: 70vh;
+    }
+
+    // Min height 650
+    @include mobile650(){
+        height: 65vh;
+    }
+
+    // Min height 700
+    @include mobile700(){
+        height: 60vh;
     }
 
     // img{
@@ -175,10 +217,12 @@ $deviceFour : 1300px;
             height: 100%;
             width: 30%;
             background-color: #fff;
-            padding: 50px;
+            justify-content: center;
+            padding: 30px 40px;
+            // padding: 50px;
             overflow: hidden;
             border-radius: 5px 0px 0px 5px;
-            box-shadow: 2px 0px 5px -2px rgba(0, 0, 0, 0.3);
+            // box-shadow: 2px 0px 5px -2px rgba(0, 0, 0, 0.3);
             z-index: 10;
 
             @include smallPhone(){
@@ -187,13 +231,14 @@ $deviceFour : 1300px;
         }
         // END Box paragrap mainSlider
 
+        // Box Img
         .box-img-mainSlider{
             height: 100%;
             width: 70%;
 
             @include smallPhone(){
                 display: flex;
-                height: 65%;
+                height: 45%;
                 width: 100%;
                 z-index: 8;
             }
@@ -219,10 +264,7 @@ $deviceFour : 1300px;
             }
 
         }
-
-        // Box Image
-        
-        // END Box Image
+        // END Box Img
         
         h3 {
             width: 100%;
@@ -272,27 +314,37 @@ $deviceFour : 1300px;
 
             @include smallPhone(){
                 display: flex;
-                height: 50%;
+                position: absolute;
+                height: 60%;
                 width: 100%;
-                background-color: $colors;
-                padding: 0;
+                bottom: 0;
                 // box-shadow: 0 3px 7px -1px rgba(0,0,0,0.7);
+            }
+
+            // Max height
+            @include mobile600(){
+                height: 60%;
+                max-height: 60%;
             }
 
             // Title For Mobile
             .box-red-mobile-mainSlider{
                 display: flex;
-                height: 100%;
+                flex-direction: column;
+                position: relative;
+                height: auto;
                 width: 100%;
-                background-color: $colors;
+                background-image: linear-gradient(to top, black, #720000 60%, #aa0000);
                 color: #fff;
-                padding: 10px 20px;
+                align-items: center;
+                padding: 0;
 
                 h1{
                     @include smallPhone(){
                         display: flex;
                         position: static;
-                        height: 100%;
+                        height: auto;
+                        max-height: 50%;
                         width: 100%;
                         font-size: 10pt;
                         justify-content: center;
@@ -300,8 +352,58 @@ $deviceFour : 1300px;
                         margin: 0;
                         overflow: hidden;
                         color: #fff;
+                        padding: 20px 20px;
                     }
                 }
+
+                .txt-info-iklan-mobile{
+                    display: flex;
+                    position: absolute;
+                    width: 100%;
+                    color: #fff;
+                    padding: 0 20px;
+                    bottom: 70px;
+                }
+
+                .logoAppStoreMobile{
+                    display: flex;
+                    position: absolute;
+                    height: auto;
+                    width: 30%;
+                    margin: 0 0px 5px 0;
+                    opacity: 0.7;
+                    transition: 0.3s;
+
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+
+                // logo play store
+                .logoStoreMobile1{
+                    bottom: 30px;
+                }
+                // END Logo play store
+
+                // logo apps store
+                .logoStoreMobile2{
+                    bottom: 0%;
+                }
+                // END Logo apps store
+
+                    // .box-logo-apk-store-mobile{
+                    //     display: flex;
+                    //     flex-direction: column;
+                    //     position: relative;
+                    //     height: auto;
+                    //     width: 100%;
+                    //     justify-content: center;
+                    //     align-items: center;
+                    //     margin: 0px 0 0 0;
+                    //     border: 1px solid yellow;
+                    // }
+                
+                // END Box iklan for mobile
             }
             // END Title For Mobile
 
@@ -331,6 +433,8 @@ $deviceFour : 1300px;
         }
         // END For Mobile
     }
+
+    
 }
 
 .image2 {
@@ -420,6 +524,7 @@ $deviceFour : 1300px;
     // justify-content: center;
     // align-items: center;
     height: 90vh;
+    background-image: linear-gradient(to top, black, #720000, #aa0000);
     padding: 0px 10% 0px 10%;
     position: relative;
 
@@ -431,6 +536,67 @@ $deviceFour : 1300px;
     .carousel-inner {
         position: relative;
 
+        // Info Iklan
+        .box-info-iklan{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            height: 24vh;
+            width: 100%;
+            bottom: 0;
+
+            @include smallPhone(){
+                display: none;
+            }
+
+            // box-paragrap-info-iklan
+            .box-paragrap-info-iklan{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                align-items: center;
+                text-align: center;
+                font-weight: normal;
+                color: #fff;
+                padding: 30px 0;
+
+                // Box Logo
+                .box-logo-info-iklan{
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    margin: 10px 0 0 0;
+
+                    // Logo App store (GROUP)
+                    .logoAppGroup{
+                        display: flex;
+                        height: 60px;
+                        width: auto;
+                        object-fit: cover;
+                        object-position: center;
+                        opacity: 0.7;
+                        cursor: pointer;
+                        transition: 0.5s;
+
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                    // END logo app store (GROUP)
+
+                    // app store
+                    .logo-app-store{
+                        margin: 0 0 0px 50px;
+                    }
+                    // END Play Store
+                }
+                // END Box Logo
+            }
+            // box-paragrap-info-iklan
+        }
+        // END Info Iklan
+
         .carousel-item {
             position: relative;
             width: 100%;
@@ -440,14 +606,14 @@ $deviceFour : 1300px;
     .carousel-indicators {
         right: 0;
         left: 0;
-        bottom: 4%;
+        bottom: 27%;
         justify-content: center;
         align-items: center;
         position: absolute;
 
         @include smallPhone() {
             margin-bottom: 0;
-            bottom: 3%;
+            bottom: 125px;
         }
         
             .indikator {
@@ -502,7 +668,7 @@ $deviceFour : 1300px;
     width: 7%;
     text-decoration: none;
     height: 0;
-    top: 50%;
+    top: 30%;
 }
 }
 
@@ -543,7 +709,7 @@ $deviceFour : 1300px;
 
     @include smallPhone() {
         position: absolute;
-        top: -70px;
+        top: -50px;
         left: 10px;
         height: 30px;
         width: 30px;
@@ -586,7 +752,7 @@ $deviceFour : 1300px;
     }
 
     @include smallPhone() {
-        top: -70px;
+        top: -50px;
         right: 10px;
         height: 30px;
         width: 30px;

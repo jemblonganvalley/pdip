@@ -38,10 +38,14 @@ $smallPhoneDua : 400px;
     // Divider
     .divider-page-berita-nasional{
         display: flex;
+        height: auto;
+        align-items: center;
+        margin: 0 0 10px 0;
         padding: 0px 20% 20px 20%;
 
         @include smallPhone(){
             padding: 0 10px 30px 10px;
+            margin: 0;
         }
     }
     // END Divider

@@ -8,6 +8,8 @@ import arrows from "../../img/arrows.png";
 import sliders from "../../img/slider.jpg";
 import slider2 from "../../img/slider2.jpg";
 import pattern from '../../img/pattern.jpeg'
+import playstore from '../../img/playstore.svg'
+import appstore from '../../img/appstore.svg'
 
 const MainSlider = ({ value, cls }) => {
   // let [slider, setSlider] = useState([
@@ -36,7 +38,6 @@ const MainSlider = ({ value, cls }) => {
       data-ride="carousel"
       style={{
         overflow: 'hidden',
-        backgroundImage: `url(${pattern})`
       }}
     >
       <div className="carousel-indicators">
@@ -91,12 +92,25 @@ const MainSlider = ({ value, cls }) => {
 
                 </div>
                 
-
                 {/* For Responsive Mobile */}
                 <div className="box-paragrap-mobile-mainSlider">
                   {/* Title For Mobile */}
                   <div className="box-red-mobile-mainSlider">
                     <h1>{e.title}</h1>
+
+                    {/* Box Iklan For Mobile */}
+                      <p className="txt-info-iklan-mobile">
+                      Segera hadir aplikasi PINTAR PERJUANGAN untuk mendapatkan pengalaman
+                      dan informasi program serta kerja nyata Partai PDI Perjuangan.
+                      </p>
+
+                      <img src={playstore} alt="" className="logoAppStoreMobile logoStoreMobile1"/>
+                      <img src={appstore} alt="" className="logoAppStoreMobile logoStoreMobile2"/>
+
+                      {/* <div className="box-logo-apk-store-mobile">
+                      
+                      </div> */}
+                    {/* END Box Iklan For Mobile */}
                   </div>
                   {/* END Title For Mobile */}
 
@@ -112,9 +126,30 @@ const MainSlider = ({ value, cls }) => {
                 </div>
                 {/* END For Responsive Mobile */}
               </div>
+
+              
             </div>
           </div>
         ))}
+
+        {/* Info Iklan */}
+        <div className="box-info-iklan">
+            {/* Box Paragrap Iklan */}
+            <div className="box-paragrap-info-iklan">
+              <h6 className="txt-info-iklan">
+                Segera hadir aplikasi PINTAR PERJUANGAN untuk mendapatkan pengalaman
+                <br/>
+                dan informasi program serta kerja nyata Partai PDI Perjuangan.
+              </h6>
+
+              <div className="box-logo-info-iklan">
+                <img src={playstore} alt="" className="logo-play-store logoAppGroup"/>
+                <img src={appstore} alt="" className="logo-app-store logoAppGroup"/>
+              </div>
+            </div>
+            {/* END Box Paragrap Iklan */}
+        </div>
+        {/* END Info Iklan */}
       </div>
 
       <a

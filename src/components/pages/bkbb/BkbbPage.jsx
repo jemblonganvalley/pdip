@@ -225,6 +225,12 @@ const BkbbPage = () => {
             ></h5>
             <i className="fas fa-quote-right"></i>
             <small>Bung Karno, 17 Agustus 1946</small>
+
+            {/* Background Black transparent */}
+            <div className="bg-black-transparent">
+              
+            </div>
+            {/* END Background black transparent */}
           </div>
 
           {/* Column Card Wejangan Bungkarno */}

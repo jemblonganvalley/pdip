@@ -5,6 +5,7 @@ import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
 import CarouselBeritaPage1 from "../../../carouselberitapage1/CarouselBeritaPage1";
 import MainDivider from "../../../divider/MainDivider";
 import { useParams } from "react-router-dom";
+import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
 
 const Page1 = () => {
   let { id } = useParams();
@@ -135,12 +136,12 @@ const Page1 = () => {
               {/* Section2 */}
               {detailPage.category_name !== "Berita_video" && (
                 <img
+                  className="img-beritaPage1"
                   src={`https://atur.biar.pw/public/${detailPage.path}`}
                   alt={`${detailPage.path}`}
                   style={{
                     height: "40vh",
                     objectFit: "cover",
-                    margin: "40px 0",
                   }}
                 />
               )}
@@ -152,10 +153,10 @@ const Page1 = () => {
 
               {/* Section3 */}
               <div className="section3-beritaPage1">
-                <div
+                <p
                   className="txt-desk-section3-beritaPage1"
                   dangerouslySetInnerHTML={{ __html: detailPage.description }}
-                ></div>
+                ></p>
               </div>
               {/* END Section3 */}
 
@@ -174,13 +175,15 @@ const Page1 = () => {
                 <div className="garis-panjang"></div>
 
                 <div className="box-medsos-beritaPage1">
-                  <div className="socialMedia">
+                  <CardSocialMedia/>
+
+                  {/* <div className="socialMedia">
                     <small>SHARE : </small>
                     <i class="fa fa-facebook"></i>
                     <i class="fa fa-twitter"></i>
                     <i class="fa fa-instagram"></i>
                     <i class="fa fa-whatsapp"></i>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               {/* END Section5 */}

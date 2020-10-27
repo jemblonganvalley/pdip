@@ -4,10 +4,11 @@ import './MainNavbar.scss'
 import {Link, NavLink, Redirect} from 'react-router-dom'
 import DropDown from './DropDown'
 import {useMediaQuery} from 'react-responsive'
+import pdimobile from '../../img/pdimobile.svg'
 
 const MainNavbar = ({token})=> {
 
-    let [show, setShow] = useState()
+    let [show, setShow] = useState(false)
     let [menu, setMenu] = useState([])
     let [scroll, setScroll] = useState(false)
 
@@ -152,14 +153,18 @@ const MainNavbar = ({token})=> {
         }}>
           <div className="container-fluid">
             <NavLink className="navbar-brand" to="/" activeClassName="brand" >
-              <img src={logo} alt="" width="60" className="d-inline-block align-center active" loading="lazy" />
+              <img src={pdimobile} alt="" width="60" className="d-inline-block align-center active" loading="lazy"/>
             </NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" style={{
               color: '#fff'
-            }}>
+            }} onClick={(()=>{
+              setShow(!show)
+            })}>
               <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{
+              display: show ? 'block' : 'none',
+            }}>
               <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
 
                 {Object.keys(menu).map((e, i) => (

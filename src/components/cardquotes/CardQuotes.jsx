@@ -22,6 +22,12 @@ const CardQuotes = ({ page, img, icon1, txt1, icon2, txt2 }) => {
                 <small className="txt2">
                     {txt2}
                 </small>
+
+                {/* Background Black Transparant */}
+                <div className="background-black-transparent">
+                    
+                </div>
+                {/* END Background Black Transparant */}
             </Link>
             {/* Img */}
         </>
