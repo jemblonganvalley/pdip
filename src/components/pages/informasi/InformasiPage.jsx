@@ -9,6 +9,7 @@ import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita"
 import CarouselKM from "../../carouselKM/CarouselKM";
 import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
 import illustrator from '../../../img/illustrator2.png'
+import CardHeader from "../../cardheader/CardHeader";
 
 const InformasiPage = () => {
   const [gallery, setGallery] = useState([]);
@@ -83,7 +84,7 @@ const InformasiPage = () => {
         // START INFORMASI
         <div className="wrapperInformasi">
           {/* START HEADERS */}
-          <div
+          {/* <div
             className="headInformasi"
             style={{
               backgroundImage: `url(https://atur.biar.pw/public/${configHome[0].value.image})`,
@@ -92,8 +93,12 @@ const InformasiPage = () => {
             <div className="textHeadInformasi">
               <h2>{configHome[0].value.title}</h2>
             </div>
-          </div>
+          </div> */}
           {/* END */}
+
+          {/* Card Header */}
+          <CardHeader/>
+          {/* END Card Header */}
 
           {/* START LINKED */}
           <div className="linkedInformasi">

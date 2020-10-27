@@ -9,19 +9,24 @@ import CardQuotes from '../../cardquotes/CardQuotes'
 import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import MainButton from '../../buttons/MainButton'
 import CardSocialMedia from '../../cardsocialmedia/CardSocialMedia'
+import CardHeader from '../../cardheader/CardHeader'
 
 const BkbbWejangan = () => {
 
     return (
         <>
             <div className="wrapperBkbbWejangan">
-                <div className="headersBkbbWejangan">
+                {/* <div className="headersBkbbWejangan">
                     <div className="backgrounds">
                         <div className="textBackgroundBerita">
 
                         </div>
                     </div>
-                </div>
+                </div> */}
+
+                {/* Card Header */}
+                <CardHeader/>
+                {/* END Card Header */}
                 <div className="linkedBkbbWejangan">
                     <BreadCrumbs link1="home"
                         to1="/" link2="Bungkarno Bapak Bangsa" to2="/bungkarno"

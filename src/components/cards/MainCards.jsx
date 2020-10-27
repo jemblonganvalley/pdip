@@ -87,10 +87,9 @@ const Cards = ({
           </Link>
         </Link>
         <div className="text">
-          <p
+          <small className="title-page-mainCards"
             style={{
               color: "red",
-              fontSize: "12pt",
               fontWeight: "800",
               lineHeight: "0",
               padding: "0",
@@ -98,13 +97,15 @@ const Cards = ({
             }}
           >
             {category || 'Gallery'}
-          </p>
-   
-          <small className="textSmall" style={{ fontSize: "8pt" }}>
+          </small>
+            
+            <br/>
+
+          <small className="textSmall">
             {author || 'PDI Perjuangan'}
           </small>{" "}
           | &nbsp;
-          <small className="textSmall" style={{ fontSize: "8pt" }}>
+          <small className="textSmall">
             {dateTime || getToday()}
           </small>
           <p
@@ -163,10 +164,9 @@ const Cards = ({
           </Link>
         </Link>
         <div className="text">
-          <p
+          <small className="title-page-mainCards"
             style={{
               color: "red",
-              fontSize: "12pt",
               fontWeight: "800",
               lineHeight: "0",
               padding: "0",
@@ -174,13 +174,15 @@ const Cards = ({
             }}
           >
             {category || 'Berita'}
-          </p>
+          </small>
+
+          <br/>
    
-          <small className="textSmall" style={{ fontSize: "8pt" }}>
+          <small className="textSmall">
             {author || 'PDI Perjuangan'}
           </small>{" "}
           | &nbsp;
-          <small className="textSmall" style={{ fontSize: "8pt" }}>
+          <small className="textSmall">
             {dateTime || getToday()}
           </small>
           <p

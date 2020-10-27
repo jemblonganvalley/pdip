@@ -9,6 +9,7 @@ import MainButton from "../../buttons/MainButton";
 import MainDivider from "../../divider/MainDivider";
 import CardInformasi from "../../cardInformasi/CardInformasi";
 import VMedia from "../../VMedia/VMedia";
+import CardHeader from "../../cardheader/CardHeader";
 
 const MultimediaPage = () => {
   const [configHome, setConfigHome] = useState([]);
@@ -51,7 +52,7 @@ const MultimediaPage = () => {
     <>
       {configHome.length > 0 ? (
         <div className="wrapperMultimedia">
-          <div
+          {/* <div
             className="headerMedia"
             style={{
               background: `url(https://atur.biar.pw/public/${configHome[0].value.image})`,
@@ -60,7 +61,11 @@ const MultimediaPage = () => {
             <div className="textBannerMedia">
               <h2>{configHome[0].value.title}</h2>
             </div>
-          </div>
+          </div> */}
+
+          {/* Card Header */}
+          <CardHeader/>
+          {/* END Card Header */}
 
           <div className="linkedMedia">
             <BreadCrumbs link1="Home" to1="/" page2="Multimedia" />

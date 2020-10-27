@@ -32,6 +32,7 @@ import BeritaEmpat from '../../../img/berita4.png'
 import MainButton from '../../buttons/MainButton'
 import MainDivider from '../../divider/MainDivider'
 import { CarouselDuelBerita } from '../../carouselDualBerita/CarouselDuelBerita'
+import CardHeader from '../../cardheader/CardHeader'
 
 // Create Component
 const BeritaPage = () => {
@@ -143,13 +144,17 @@ const BeritaPage = () => {
     return (
         <>
             <div className="wrapperBerita">
-                <div className="headers">
+                {/* <div className="headers">
                     <div className="backgrounds">
                         <div className="textBackgroundBerita">
 
                         </div>
                     </div>
-                </div>
+                </div> */}
+
+                {/* Card Header */}
+                <CardHeader/>
+                {/* END Card Header */}
                 <div className="linkedBerita">
                     <BreadCrumbs link1="Home"
                         to1="/"

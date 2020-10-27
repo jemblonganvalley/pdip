@@ -3,19 +3,24 @@ import './Dpd.scss'
 import image from '../../img/bali.png'
 import BreadCrumbs from '../breadcrumbs/BreadCrumbs'
 import MainDivider from '../divider/MainDivider'
+import CardHeader from '../cardheader/CardHeader'
 
 const Dpd = ()=> {
     return (
         <div className="dpdWrapper">
             {/* HEADERS */}
-            <div className="dpdHead">
+            {/* <div className="dpdHead">
                 <div className="backDpd">
                     <div className="textDpdHead">
                         <h2>Solid Bergerak Untuk<br/>Indonesia Raya </h2>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* END */}
+
+            {/* Card Header */}
+            <CardHeader/>
+            {/* END Card Header */}
 
             {/* LINK PARTAI */}
             <div className="linkedDetail">
@@ -28,13 +33,18 @@ const Dpd = ()=> {
             {/* END */}
 
             <div className="pengurus">
+                {/* Divider */}
+                <div className="divider-dewan-pimpinan">
                 <MainDivider text="Dewan Pimpinan" />
+                </div>
+                {/* END Divider */}
+                
                 <div className="dpdTextHead">
                     <h1>Dewan Pimpinan Daerah PDI Perjuangan<br/>Provinsi Bali</h1>
                 </div>
                 <div className="profilDpd">
                     <div className="kolum1">
-                        <img src={image} alt="" width="200" />
+                        <img src={image} alt="" width="250" />
                         <div className="textDpd">
                             <div className="alamat dpdText">
                                 <small className="alamatText">Alamat</small>

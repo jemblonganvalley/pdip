@@ -5,6 +5,8 @@ import {Link, NavLink, Redirect} from 'react-router-dom'
 import DropDown from './DropDown'
 import {useMediaQuery} from 'react-responsive'
 import pdimobile from '../../img/pdimobile.svg'
+import { action, thunk, useStoreActions } from 'easy-peasy'
+import axios from 'axios'
 
 const MainNavbar = ({token})=> {
 
@@ -82,6 +84,22 @@ const MainNavbar = ({token})=> {
     //     document.querySelector('.navbar').className = 'navbar'
     //   }
     // }
+
+    // Global State
+    // const model = {
+    //   todos: [],
+    //   addTodo: action((state, payload) => {
+    //     state.todos.push(payload);
+    //   }),
+    //   saveTodo: thunk(async (actions, payload) => {
+    //     const { data } = await axios.post('/todos', payload);
+    //     actions.addTodo(data);
+    //   }),
+    // };
+
+    // Onchange text input search to text input page search
+    const saveTodo = useStoreActions((actions)=> actions.saveTodo);
+    const [value, setValue] = React.useState('');
    
 
     return (
@@ -132,7 +150,9 @@ const MainNavbar = ({token})=> {
                 <form className="d-inline-flex" style={{
                   display: 'flex'
                 }}>
-                  <input className="form-control mr-2" type="text" placeholder="Cari Artikel" name="search"/>
+                  <input className="form-control mr-2" type="text" placeholder="Cari Artikel" name="search"
+                      onChange={(e)=> setValue(e.target.value)} value={value}
+                  />
                   <Link to='/search' name="submit" className="btn-next">
                       <i class="fas fa-search" aria-hidden="true" name="icon" ></i>
                   </Link>
@@ -162,9 +182,7 @@ const MainNavbar = ({token})=> {
             })}>
               <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{
-              display: show ? 'block' : 'none',
-            }}>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
 
                 {Object.keys(menu).map((e, i) => (

@@ -12,6 +12,7 @@ import IconHartaSatu from "../../../img/lh.png";
 import IconHartaDua from "../../../img/income.png";
 import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
 import illustrator from '../../../img/illustrator2.png'
+import CardHeader from "../../cardheader/CardHeader";
 
 
 // Create Component
@@ -55,7 +56,7 @@ const PemiluPage = () => {
     <>
       {configHome.length > 0 ? (
         <div className="wrapperPemiluPage">
-          <div
+          {/* <div
             className="headers-pemiluPage"
             style={{
               backgroundImage: `url(https://atur.biar.pw/public/${configHome[0].value.image})`,
@@ -66,7 +67,12 @@ const PemiluPage = () => {
                 <h2>{configHome[0].value.title}</h2>
               </div>
             </div>
-          </div>
+          </div> */}
+
+          {/* Card Header */}
+          <CardHeader/>
+          {/* END Card Header */}
+
           <div className="linkedPemiluPage">
             <BreadCrumbs link1="Home" to1="/" page2="Pemilu" />
           </div>

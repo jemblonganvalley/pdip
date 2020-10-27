@@ -6,6 +6,7 @@ import img5 from '../../../img/img5.jpg'
 import kampanye from '../../../img/kampanye.jpg'
 import AngkaPaginationEvent from '../../paginationevent/AngkaPaginationEvent'
 import CardSearch from '../../cardsearch/CardSearch'
+import { useStoreActions } from 'easy-peasy'
 
 const Search = ()=>{
 
@@ -111,6 +112,9 @@ const Search = ()=>{
     const currentPosts = cardSearch.slice(indexOfFirstPost, indexOfLastPost)
 
     const paginate = (pageNumber) => setCurrentPage2(pageNumber)
+
+    // Onchange text from input search
+    const todos = useStoreActions((state)=> state.todos);
 
     return(
         <>

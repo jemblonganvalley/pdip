@@ -26,6 +26,7 @@ import allForOne_pdf from "../../music/OneForAllAllForOne/AllForOne.pdf";
 import solid from "../../music/SolidBergerak/SolidBergerak.mp3";
 import solid_mo from "../../music/SolidBergerak/SolidBergerak.mp3";
 import solid_pdf from "../../music/SolidBergerak/SolidBergerakMinusOne.mp3";
+import zIndex from '@material-ui/core/styles/zIndex'
 
 const MusicMobile = ({data})=> {
 
@@ -281,27 +282,12 @@ const MusicMobile = ({data})=> {
                     
 
                     <div className="playlist">
-                        <div className="playlistSatu playlistCustom"
-                            onClick={()=>{
-                                setShow1(!show1);
-                                setIndexPlay1(0);
-                            }}
-                        >
-                            <strong>Hymne PDI Perjuangan</strong>
-                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
-
-                            {/* Modal Lirik Music 1 */}
-                            <div className="modal-lirik-musicMobile lirikMusic1" style={{
-                                display: show1 ? 'flex' : 'none'
+                        {/* Button Play Music Mobile1 */}
+                        <div className="playMusicMobile btnMusicMobile" style={{
+                                height: show1 ? '15vh' : '0.1px',
+                                // backgroundColor: show1 ? '#960001' : '#fff',
+                                transition: show1 ? '0.3s ease-in-out' : '0.3s ease-out',
                             }}>
-                                <p className="txt-lirik-musicMobile" dangerouslySetInnerHTML={{
-                                        __html:play[indexPlay1].lyric
-                                    }}>
-                                
-                                </p>
-                                
-                                {/* Button Play Music Mobile1 */}
-                                <div className="playMusicMobile btnMusicMobile">
                                 <AudioPlayer
                                     src={play[indexPlay1].song}
                                     layout="horizontal"
@@ -309,6 +295,9 @@ const MusicMobile = ({data})=> {
                                     showJumpControls={false}
                                     customAdditionalControls={[]}
                                     // onPlay={indexPlay1}
+                                    style={{
+                                        display: show1 ? 'flex' : 'none'
+                                    }}
                                 />
 
 
@@ -325,37 +314,46 @@ const MusicMobile = ({data})=> {
                                 </div> */}
                             </div>
                             {/* END Button Play Music Mobile1 */}
-                            </div>
-                            {/* END Modal Lirik Music 1 */}
-                        </div>
-                        <div className="playlistDua playlistCustom"
+                        <div className="playlistSatu playlistCustom"
                             onClick={()=>{
-                                setShow2(!show2);
-                                setIndexPlay2(1);
+                                setShow1(!show1);
+                                setIndexPlay1(0);
                             }}
                         >
                             <strong>Hymne PDI Perjuangan</strong>
                             <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
 
-                            {/* Modal Lirik Music 2 */}
-                            <div className="modal-lirik-musicMobile lirikMusic2" style={{
-                                display: show2 ? 'flex' : 'none'
+                            {/* Modal Lirik Music 1 */}
+                            <div className="modal-lirik-musicMobile lirikMusic1" style={{
+                                height: show1 ? '40vh' : '0.1px',
+                                backgroundColor: show1 ? '#000' : '#fff',
+                                transition: show1 ? '0.3s ease-in-out' : '0.3s ease-out'
                             }}>
                                 <p className="txt-lirik-musicMobile" dangerouslySetInnerHTML={{
-                                        __html:play[indexPlay2].lyric
+                                        __html:play[indexPlay1].lyric
                                     }}>
                                 
                                 </p>
-                                
+                            </div>
+                            {/* END Modal Lirik Music 1 */}
+                        </div>
 
-                                {/* Button Play music mobile2 */}
-                                <div className="playMusicMobile btnMusicMobile2">
+                        {/* Button Play Music Mobile2 */}
+                        <div className="playMusicMobile btnMusicMobile" style={{
+                                 height: show2 ? '15vh' : '0.1px',
+                                 // backgroundColor: show1 ? '#960001' : '#fff',
+                                 transition: show2 ? '0.3s ease-in-out' : '0.3s ease-out',
+                            }}>
                                 <AudioPlayer
                                     src={play[indexPlay2].song}
                                     layout="horizontal"
                                     header="Lagu Perjuangan"
                                     showJumpControls={false}
                                     customAdditionalControls={[]}
+                                    // onPlay={indexPlay1}
+                                    style={{
+                                        display: show2 ? 'flex' : 'none'
+                                    }}
                                 />
 
 
@@ -371,38 +369,47 @@ const MusicMobile = ({data})=> {
                                     <i class="fa fa-forward" id="next"></i>
                                 </div> */}
                             </div>
-                            {/* END button Play Music Mobile2 */}
-                            </div>
-                            {/* END Modal Lirik Music 2 */}
-                        </div>
-                        <div className="playlistTiga playlistCustom"
+                            {/* END Button Play Music Mobile2 */}
+                        <div className="playlistDua playlistCustom"
                             onClick={()=>{
-                                setShow3(!show3)
-                                setIndexPlay3(2);
+                                setShow2(!show2);
+                                setIndexPlay2(1);
                             }}
                         >
-                            <strong>Hymne PDI Perjuangan</strong>
+                            <strong>Mars PDI Perjuangan</strong>
                             <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
 
-                            {/* Modal Lirik Music 3 */}
-                            <div className="modal-lirik-musicMobile lirikMusic3" style={{
-                                display: show3 ? 'flex' : 'none'
+                            {/* Modal Lirik Music 2 */}
+                            <div className="modal-lirik-musicMobile lirikMusic2" style={{
+                                height: show2 ? '40vh' : '0.1px',
+                                backgroundColor: show2 ? '#000' : '#fff',
+                                transition: show2 ? '0.5s ease-in-out' : '0.5s ease-out'
                             }}>
                                 <p className="txt-lirik-musicMobile" dangerouslySetInnerHTML={{
-                                        __html:play[indexPlay3].lyric
+                                        __html:play[indexPlay2].lyric
                                     }}>
                                 
                                 </p>
-                                
+                            </div>
+                            {/* END Modal Lirik Music 2 */}
+                        </div>
 
-                                {/* Button play music mobile3 */}
-                                <div className="playMusicMobile btnMusicMobile3">
+                        {/* Button Play Music Mobile3 */}
+                        <div className="playMusicMobile btnMusicMobile" style={{
+                                height: show3 ? '15vh' : '0.1px',
+                                // backgroundColor: show1 ? '#960001' : '#fff',
+                                transition: show3 ? '0.3s ease-in-out' : '0.3s ease-out',
+                            }}>
                                 <AudioPlayer
                                     src={play[indexPlay3].song}
                                     layout="horizontal"
                                     header="Lagu Perjuangan"
                                     showJumpControls={false}
                                     customAdditionalControls={[]}
+                                    // onPlay={indexPlay1}
+                                    style={{
+                                        display : show3 ? 'flex' : 'none'
+                                    }}
                                 />
 
 
@@ -418,38 +425,48 @@ const MusicMobile = ({data})=> {
                                     <i class="fa fa-forward" id="next"></i>
                                 </div> */}
                             </div>
-                            {/* END button Play Music Mobile3 */}
+                            {/* END Button Play Music Mobile3 */}
+                        <div className="playlistTiga playlistCustom"
+                            onClick={()=>{
+                                setShow3(!show3)
+                                setIndexPlay3(2);
+                            }}
+                        >
+                            <strong>One For All For One</strong>
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
+
+                            {/* Modal Lirik Music 3 */}
+                            <div className="modal-lirik-musicMobile lirikMusic3" style={{
+                                height: show3 ? '40vh' : '0.1px',
+                                backgroundColor: show3 ? '#000' : '#fff',
+                                transition: show3 ? '0.5s ease-in-out' : '0.5s ease-out'
+                            }}>
+                                <p className="txt-lirik-musicMobile" dangerouslySetInnerHTML={{
+                                        __html:play[indexPlay3].lyric
+                                    }}>
+                                
+                                </p>
                             </div>
                             {/* END Modal Lirik Music 3 */}
                         </div>
-                        <div className="playlistEmpat playlistCustom"
-                            onClick={()=>{
-                                setShow4(!show4)
-                                setIndexPlay4(3);
-                            }}
-                        >
-                            <strong>Hymne PDI Perjuangan</strong>
-                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
 
-                            {/* Modal Lirik Music 4 */}
-                            <div className="modal-lirik-musicMobile lirikMusic4" style={{
-                                display: show4 ? 'flex' : 'none',
+
+                        {/* Button Play Music Mobile4 */}
+                        <div className="playMusicMobile btnMusicMobile" style={{
+                                 height: show4 ? '15vh' : '0.1px',
+                                 // backgroundColor: show1 ? '#960001' : '#fff',
+                                 transition: show4 ? '0.3s ease-in-out' : '0.3s ease-out',
                             }}>
-                                <p className="txt-lirik-musicMobile" dangerouslySetInnerHTML={{
-                                        __html:play[indexPlay4].lyric
-                                    }}>
-
-                                </p>
-                                
-
-                                {/* Button play music mobile4 */}
-                                <div className="playMusicMobile btnMusicMobile4">
                                 <AudioPlayer
                                     src={play[indexPlay4].song}
                                     layout="horizontal"
                                     header="Lagu Perjuangan"
                                     showJumpControls={false}
                                     customAdditionalControls={[]}
+                                    // onPlay={indexPlay1}
+                                    style={{
+                                        display : show4 ? 'flex' : 'none'
+                                    }}
                                 />
 
 
@@ -466,6 +483,26 @@ const MusicMobile = ({data})=> {
                                 </div> */}
                             </div>
                             {/* END Button Play Music Mobile4 */}
+                        <div className="playlistEmpat playlistCustom"
+                            onClick={()=>{
+                                setShow4(!show4)
+                                setIndexPlay4(3);
+                            }}
+                        >
+                            <strong>Solid Bergerak</strong>
+                            <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, vitae.</span>
+
+                            {/* Modal Lirik Music 4 */}
+                            <div className="modal-lirik-musicMobile lirikMusic4" style={{
+                                height: show4 ? '40vh' : '0.1px',
+                                backgroundColor: show4 ? '#000' : '#fff',
+                                transition: show4 ? '0.3s ease-in-out' : '0.2s ease-out'
+                            }}>
+                                <p className="txt-lirik-musicMobile" dangerouslySetInnerHTML={{
+                                        __html:play[indexPlay4].lyric
+                                    }}>
+
+                                </p>
                             </div>
                             {/* END Modal Lirik Music 4 */}
                         </div>

@@ -19,37 +19,37 @@ $secondary : #f3f3f3;
     width: 100%;
     padding-bottom: 40px;
 
-    .headers-pemiluPage {
-        background-size: cover;
-        height: 15vh;
-        background-position: center;
+    // .headers-pemiluPage {
+    //     background-size: cover;
+    //     height: 15vh;
+    //     background-position: center;
 
-        @include smallPhone(){
-            height: 15vh;
-            background-attachment: inherit;
-        }
+    //     @include smallPhone(){
+    //         height: 15vh;
+    //         background-attachment: inherit;
+    //     }
 
-        .backgrounds {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            // justify-content: center;
-            align-items: center;
-            color: #ffffff;
+    //     .backgrounds {
+    //         width: 100%;
+    //         height: 100%;
+    //         display: flex;
+    //         // justify-content: center;
+    //         align-items: center;
+    //         color: #ffffff;
 
-            .textBackgroundBerita {
-                width: 100%;
-                height: 50%;
-                padding: 0 10%;
+    //         .textBackgroundBerita {
+    //             width: 100%;
+    //             height: 50%;
+    //             padding: 0 10%;
 
-                @include smallPhone(){
-                    width: 100%;
-                    margin: 0;
-                    padding: 0 10%;
-                }
-            }
-        }
-    }
+    //             @include smallPhone(){
+    //                 width: 100%;
+    //                 margin: 0;
+    //                 padding: 0 10%;
+    //             }
+    //         }
+    //     }
+    // }
     .linkedPemiluPage {
         display: flex;
         align-items: center;
