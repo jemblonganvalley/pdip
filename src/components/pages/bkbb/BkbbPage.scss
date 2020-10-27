@@ -312,30 +312,30 @@ $secondary : #f3f3f3;
     //       }
     //   }
    
-    .headers-bkbbPage {
-        height: 15vh;
-        width: 100%;
+    // .headers-bkbbPage {
+    //     height: 15vh;
+    //     width: 100%;
 
-        @include smallPhone(){
-            height: 15vh;
-            width: auto;
-            object-fit: cover;
-            object-position: center;
-        }
+    //     @include smallPhone(){
+    //         height: 15vh;
+    //         width: auto;
+    //         object-fit: cover;
+    //         object-position: center;
+    //     }
 
-        .backgrounds-bkbb {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
+    //     .backgrounds-bkbb {
+    //         height: 100%;
+    //         width: 100%;
+    //         object-fit: cover;
+    //         object-position: center;
 
-            // .textBackgroundPartai {
-            //     width: 30%;
-            //     height: 50%;
-            //     margin-left: 5rem;
-            // }
-        }
-    }
+    //         // .textBackgroundPartai {
+    //         //     width: 30%;
+    //         //     height: 50%;
+    //         //     margin-left: 5rem;
+    //         // }
+    //     }
+    // }
     .linkedBkbbPage {
         display: flex;
         align-items: center;

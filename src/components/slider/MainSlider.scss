@@ -255,6 +255,7 @@ $mobile700 : 700px;
                 // Responsive Max width 1300px
                 @include deviceFour(){
                     object-position: right;
+                    border-radius: 0;
                 }
                 // END Responsive Max Width 1300px
 
@@ -370,9 +371,9 @@ $mobile700 : 700px;
                     position: absolute;
                     height: auto;
                     width: 30%;
-                    margin: 0 0px 5px 0;
                     opacity: 0.7;
                     transition: 0.3s;
+                    left: 35%;
 
                     &:hover{
                         opacity: 1;

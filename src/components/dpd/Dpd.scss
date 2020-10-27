@@ -17,45 +17,46 @@ $smallPhoneDua : 400px;
 
 
 .dpdWrapper {
-    .dpdHead {
-        background: url(../../img/kampanye.jpg);
-        background-size: cover;
-        height: 25vh;
-        background-position: center;
-        @include smallPhone() {
-            height: 20vh;
-        }
-        @include smallPhoneDua() {
-            height: 15vh;
-        }
+    // .dpdHead {
+    //     background: url(../../img/kampanye.jpg);
+    //     background-size: cover;
+    //     height: 25vh;
+    //     background-position: center;
+    //     border: 1px solid blue;
+    //     @include smallPhone() {
+    //         height: 20vh;
+    //     }
+    //     @include smallPhoneDua() {
+    //         height: 15vh;
+    //     }
 
         
-        .backDpd {
-            background-color: rgba(255, 0, 8, 0.8);
-            width: 100%;
-            height: 100%;
-            display: flex;
-            // justify-content: center;
-            align-items: center;
-            color: #ffffff;
+    //     .backDpd {
+    //         background-color: rgba(255, 0, 8, 0.8);
+    //         width: 100%;
+    //         height: 100%;
+    //         display: flex;
+    //         // justify-content: center;
+    //         align-items: center;
+    //         color: #ffffff;
         
-            .textDpdHead {
-                width: 30%;
-                height: 50%;
-                margin-left: 13rem;
-                @include smallPhone() {
-                    width: auto;
-                    margin-left: 0;
-                    padding: 0 10%;
-                }
-                h2 {
-                    @include smallPhoneDua() {
-                        font-size: 15pt;                        
-                    }
-                }
-            }
-        }
-    }
+    //         .textDpdHead {
+    //             width: 30%;
+    //             height: 50%;
+    //             margin-left: 13rem;
+    //             @include smallPhone() {
+    //                 width: auto;
+    //                 margin-left: 0;
+    //                 padding: 0 10%;
+    //             }
+    //             h2 {
+    //                 @include smallPhoneDua() {
+    //                     font-size: 15pt;                        
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
         // START LINK PARTAI
         .linkedDetail {
             display: flex;
@@ -77,10 +78,25 @@ $smallPhoneDua : 400px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: $padding;
+        padding: 0 0 30px 0;
         @include smallPhone() {
-            padding: $paddingMobile;
+            padding: 0 0 20px 0;
         }
+
+        // Divider
+        .divider-dewan-pimpinan{
+            display: flex;
+            height: auto;
+            width: 100%;
+            margin: 0;
+            padding: 0 20%;
+            align-items: center;
+
+            @include smallPhone(){
+                padding: 0 10px;
+            }
+        }
+        // END Divider
 
         
         .dpdTextHead {
@@ -88,6 +104,11 @@ $smallPhoneDua : 400px;
             text-align: center;
             font-weight: bold;
             color: #000000;
+
+            @include smallPhone(){
+                margin: 2rem 0 1rem 0;
+            }
+
             h1 {
                 @include smallPhone() {
                     font-size: 15pt;
@@ -101,24 +122,25 @@ $smallPhoneDua : 400px;
         .profilDpd {
             display: flex;
             width: 100%;
-            padding: $padding;
+            padding: 0 20%;
             @include smallPhone() {
-                padding: $paddingMobile;
+                padding: 0 10px;
                 flex-direction: column;
             }
 
             .kolum1 {
                 // border: 1px solid crimson;
-                width: 30vw;
+                width: 25vw;
                 height: 100%;
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                align-items: flex-start;
                 flex-direction: column;
+                margin: 0 30px 0 0;
 
                 @include smallPhone() {
                     width: 100%;
-                    
+                    justify-content: center;
+                    align-items: center;
                 }
 
                 .textDpd {
@@ -133,7 +155,7 @@ $smallPhoneDua : 400px;
                     }
 
                     .dpdText {
-                        margin: 10px;
+                        margin: 10px 10px 10px 0;
                         @include smallPhone() {
                             margin: 5px;
                         }
@@ -169,6 +191,7 @@ $smallPhoneDua : 400px;
                     display: flex;
                     // align-items: center;
                     flex-direction: column;
+                    align-items: center;
                     @include smallPhone() {
                         justify-content: center;
                         align-items: center;

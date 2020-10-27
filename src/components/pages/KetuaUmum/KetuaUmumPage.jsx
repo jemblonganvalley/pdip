@@ -13,6 +13,7 @@ import CarouselKetuaUmumPage from "../../carouselKetuaUmumPage/CarouselKetuaUmum
 import Cards from "../../cards/MainCards";
 import CardInformasi from "../../cardInformasi/CardInformasi";
 import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
+import CardHeader from "../../cardheader/CardHeader";
 // END Import to CSS
 
 // Create Component
@@ -88,7 +89,7 @@ const KetuaUmumPage = () => {
     <>
       {configHome.length > 0 ? (
         <div className="wrapperKetuaUmum">
-          <div
+          {/* <div
             className="headers-ketuaumum"
             style={{
               background: `url(https://atur.biar.pw/public/${configHome[0].value.image})`,
@@ -99,7 +100,11 @@ const KetuaUmumPage = () => {
             <div className="backgrounds">
               <div className="textBackgroundBerita"></div>
             </div>
-          </div>
+          </div> */}
+
+          {/* Card Header */}
+          <CardHeader/>
+          {/* END Card Header */}
 
           <div className="linkedKetuaumum">
             <BreadCrumbs link1="Home" to1="/" page2="Ketua Umum" />

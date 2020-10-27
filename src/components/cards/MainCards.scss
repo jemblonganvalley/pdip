@@ -94,20 +94,20 @@ $smallPhoneDua : 400px;
             
             .txt-title-page-mainCard{
                 display: flex;
-                font-size: 8pt;
+                // font-size: 8pt;
                 font-weight: bold;
                 color: $colors;
 
                 @include smallPhone(){
-                    font-size: 7pt;
+                    // font-size: 7pt;
                 }
             }
 
             .textSmall {
-                font-size: 8pt;
+                // font-size: 8pt;
 
                 @include smallPhone() {
-                    font-size: 5pt;
+                    // font-size: 5pt;
 
                 }
             }
@@ -116,13 +116,14 @@ $smallPhoneDua : 400px;
                 margin-top: 1rem;
 
                 @include smallPhone() {
-                    font-size: 12pt;
+                    // font-size: 12pt;
                     margin-top: .5rem;
                 }
             }
 
-            .textH6{
-                font-size: 12pt;
-            }
+            // .textH6{
+            //     font-size: 12pt;
+            //     border: 1px solid blue;
+            // }
         }
     }

@@ -7,6 +7,7 @@ import MainButton from "../../buttons/MainButton";
 import MainDivider from "../../divider/MainDivider";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import MusicMobile from "../../musicPdiMobile/MusicMobile";
+import CardHeader from "../../cardheader/CardHeader";
 
 const PartaiPage = () => {
   const [config, setConfig] = useState([]);
@@ -51,20 +52,9 @@ const PartaiPage = () => {
         <div className="wrapperPartai">
           {config.length > 0 && (
             <>
-              {/* HEADERS */}
-              <div
-                className={`headers ${config[0].value.class}`}
-                style={{
-                  backgroundImage: `url(https://atur.biar.pw/public/${config[0].value.image})`,
-                }}
-              >
-                <div className="backgrounds">
-                  <div className="textBackgroundPartai">
-                    <h2>{config[0].value.title}</h2>
-                  </div>
-                </div>
-              </div>
-              {/* END */}
+              {/* Card Header */}
+              <CardHeader/>
+              {/* END Card Header */}
 
               {/* LINK PARTAI */}
               <div className="linkedPartai">

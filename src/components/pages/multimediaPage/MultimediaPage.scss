@@ -22,44 +22,44 @@ $smallPhoneDua : 400px;
         padding: 0 0 20px 0;
     }
 
-    .headerMedia {
-        background-size: cover;
-        height: 15vh;
-        background-position: bottom;
+    // .headerMedia {
+    //     background-size: cover;
+    //     height: 15vh;
+    //     background-position: bottom;
 
-        @include smallPhone() {
-            height: 15vh;
-        }
+    //     @include smallPhone() {
+    //         height: 15vh;
+    //     }
 
-        .textBannerMedia {
-                width: 30%;
-                height: 50%;
-                margin-left: 13rem;
-                color: #ffffff;
-                position: relative;
-                @include smallPhone() {
-                    width: auto;
-                    margin-left: 0;
-                    padding: 0 6%;
-                }
-                h2 {
-                    position: absolute;
-                    bottom: -70%;
-                    line-height: 1;
-                    text-transform: uppercase;
-                    font-family: 'Roboto';
+    //     .textBannerMedia {
+    //             width: 30%;
+    //             height: 50%;
+    //             margin-left: 13rem;
+    //             color: #ffffff;
+    //             position: relative;
+    //             @include smallPhone() {
+    //                 width: auto;
+    //                 margin-left: 0;
+    //                 padding: 0 6%;
+    //             }
+    //             h2 {
+    //                 position: absolute;
+    //                 bottom: -70%;
+    //                 line-height: 1;
+    //                 text-transform: uppercase;
+    //                 font-family: 'Roboto';
 
-                    @include smallPhone() {
-                        font-size: 15pt;
-                    }
+    //                 @include smallPhone() {
+    //                     font-size: 15pt;
+    //                 }
 
-                    @include smallPhoneDua() {
-                        font-size: 14pt;
-                        position: inherit;
-                    }
-                }
-        }
-    }
+    //                 @include smallPhoneDua() {
+    //                     font-size: 14pt;
+    //                     position: inherit;
+    //                 }
+    //             }
+    //     }
+    // }
     .linkedMedia {
         display: flex;
         align-items: center;

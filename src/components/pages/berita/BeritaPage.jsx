@@ -8,12 +8,20 @@ import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import CarouselBerita from "../../carouselBerita/CarouselBerita";
 import Cards from "../../cards/MainCards";
 import Wait from "../../wait/Wait";
+import megawati5 from '../../../img/megawati5.jpg'
+import megawati6 from '../../../img/megawati6.jpg'
+import megawati7 from '../../../img/megawati7.jpg'
 
-import CardInformasi from "../../cardInformasi/CardInformasi";
-import BeritaEmpat from "../../../img/berita4.png";
-import MainButton from "../../buttons/MainButton";
-import MainDivider from "../../divider/MainDivider";
-import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
+import CardInformasi from '../../cardInformasi/CardInformasi'
+
+import BeritaSatu from '../../../img/berita1.png'
+import BeritaDua from '../../../img/berita2.png'
+import BeritaTiga from '../../../img/berita3.png'
+import BeritaEmpat from '../../../img/berita4.png'
+import MainButton from '../../buttons/MainButton'
+import MainDivider from '../../divider/MainDivider'
+import { CarouselDuelBerita } from '../../carouselDualBerita/CarouselDuelBerita'
+import CardHeader from '../../cardheader/CardHeader'
 import CarouselKetuaUmumPage from "../../carouselKetuaUmumPage/CarouselKetuaUmumPage";
 
 // Create Component

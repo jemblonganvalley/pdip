@@ -7,6 +7,7 @@ import MainButton from "../../buttons/MainButton";
 import MainDivider from "../../divider/MainDivider";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import CardQuotes from "../../cardquotes/CardQuotes";
+import CardHeader from "../../cardheader/CardHeader";
 
 export const LighBox = ({ source }) => {
   return (
@@ -101,16 +102,9 @@ const BkbbPage = () => {
 
       {configHome.length > 0 ? (
         <div className="wrapperBkbbPage">
-          <div className="headers-bkbbPage">
-            <img
-              src={`https://atur.biar.pw/public/${configHome[0].value.image}`}
-              className="backgrounds-bkbb"
-            >
-              {/* <div className="textBackgroundPartai">
-                                <h2>Solid Bergerak Untuk<br/>Indonesia Raya </h2>
-                            </div> */}
-            </img>
-          </div>
+          {/* Card Header */}
+          <CardHeader/>
+          {/* END Card Header */}
 
           <div className="linkedBkbbPage">
             <BreadCrumbs link1="Home" to1="/" page2="Bung Karno Bapak Bangsa" />

@@ -10,6 +10,7 @@ import slider2 from "../../img/slider2.jpg";
 import pattern from '../../img/pattern.jpeg'
 import playstore from '../../img/playstore.svg'
 import appstore from '../../img/appstore.svg'
+import { Link } from "@material-ui/core";
 
 const MainSlider = ({ value, cls }) => {
   // let [slider, setSlider] = useState([
@@ -100,13 +101,17 @@ const MainSlider = ({ value, cls }) => {
 
                     {/* Box Iklan For Mobile */}
                       <p className="txt-info-iklan-mobile">
-                      Segera hadir aplikasi PINTAR PERJUANGAN untuk mendapatkan pengalaman
+                      Segera hadir aplikasi MEDIA PINTAR PERJUANGAN untuk mendapatkan pengalaman
                       dan informasi program serta kerja nyata Partai PDI Perjuangan.
                       </p>
 
-                      <img src={playstore} alt="" className="logoAppStoreMobile logoStoreMobile1"/>
-                      <img src={appstore} alt="" className="logoAppStoreMobile logoStoreMobile2"/>
-
+                      <Link href="http://play.google.com/store/apps/details?id=com.whatsapp">
+                        <img src={playstore} alt="" className="logoAppStoreMobile logoStoreMobile1"/>
+                      </Link>
+                      
+                      <Link href="https://apps.apple.com/id/app/whatsapp-messenger/id310633997?l=id">
+                        <img src={appstore} alt="" className="logoAppStoreMobile logoStoreMobile2"/>
+                      </Link>
                       {/* <div className="box-logo-apk-store-mobile">
                       
                       </div> */}
@@ -132,24 +137,31 @@ const MainSlider = ({ value, cls }) => {
           </div>
         ))}
 
+        {/* For Desktop */}
         {/* Info Iklan */}
         <div className="box-info-iklan">
             {/* Box Paragrap Iklan */}
             <div className="box-paragrap-info-iklan">
               <h6 className="txt-info-iklan">
-                Segera hadir aplikasi PINTAR PERJUANGAN untuk mendapatkan pengalaman
+                Segera hadir aplikasi MEDIA PINTAR PERJUANGAN untuk mendapatkan pengalaman
                 <br/>
                 dan informasi program serta kerja nyata Partai PDI Perjuangan.
               </h6>
 
               <div className="box-logo-info-iklan">
-                <img src={playstore} alt="" className="logo-play-store logoAppGroup"/>
-                <img src={appstore} alt="" className="logo-app-store logoAppGroup"/>
+                <Link href="http://play.google.com/store/apps/details?id=com.whatsapp">
+                  <img src={playstore} alt="" className="logo-play-store logoAppGroup"/>
+                </Link>
+                
+                <Link href="https://apps.apple.com/id/app/whatsapp-messenger/id310633997?l=id">
+                  <img src={appstore} alt="" className="logo-app-store logoAppGroup"/>
+                </Link>
               </div>
             </div>
             {/* END Box Paragrap Iklan */}
         </div>
         {/* END Info Iklan */}
+        {/* END For Desktop */}
       </div>
 
       <a
