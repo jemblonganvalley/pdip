@@ -243,77 +243,8 @@ const MusicMobile = ({data})=> {
                             </div>
                         </div>
                     </div>
-                    <div className="wrapperDownload">
-                        <Link
-                            as="a"
-                            to={play[indexPlay1].song}
-                            download
-                            target="_blank"
-                            style={{
-                                textDecoration: 'none'
-                            }}
-                        >
-                            <img src={downloadSatu} alt="" width="50" />
-                        </Link>
-                        <Link
-                            as="a"
-                            to={play[indexPlay1].minusOne}
-                            download
-                            target="_blank"
-                            style={{
-                                textDecoration: 'none'
-                            }}
-                        >
-                            <img src={downloadDua} alt="" width="50" />
-                        </Link>
-                        <Link
-                            as="a"
-                            to={play[indexPlay1].pdf}
-                            download
-                            target="_blank"
-                            style={{
-                                textDecoration: 'none'
-                            }}
-                        >
-                            <img src={downloadTiga} alt="" width="50" />
-                        </Link>
-                    </div>
-
                     
-
                     <div className="playlist">
-                        {/* Button Play Music Mobile1 */}
-                        <div className="playMusicMobile btnMusicMobile" style={{
-                                height: show1 ? '15vh' : '0.1px',
-                                // backgroundColor: show1 ? '#960001' : '#fff',
-                                transition: show1 ? '0.3s ease-in-out' : '0.3s ease-out',
-                            }}>
-                                <AudioPlayer
-                                    src={play[indexPlay1].song}
-                                    layout="horizontal"
-                                    header="Lagu Perjuangan"
-                                    showJumpControls={false}
-                                    customAdditionalControls={[]}
-                                    // onPlay={indexPlay1}
-                                    style={{
-                                        display: show1 ? 'flex' : 'none'
-                                    }}
-                                />
-
-
-                                {/* <div className="player-track">
-                                    <div className="time" ></div>
-                                    <div className="progress-bar">
-                                        <div className="fillBar" ></div>
-                                    </div>
-                                </div>
-                                <div className="playerControl">
-                                    <i class="fa fa-backward" id="prev"></i>
-                                    <i class="fa fa-play" id="play"></i>
-                                    <i class="fa fa-forward" id="next"></i>
-                                </div> */}
-                            </div>
-                            {/* END Button Play Music Mobile1 */}
                         <div className="playlistSatu playlistCustom"
                             onClick={()=>{
                                 setShow1(!show1);
@@ -325,10 +256,75 @@ const MusicMobile = ({data})=> {
 
                             {/* Modal Lirik Music 1 */}
                             <div className="modal-lirik-musicMobile lirikMusic1" style={{
-                                height: show1 ? '40vh' : '0.1px',
+                                height: show1 ? '60vh' : '0.1px',
                                 backgroundColor: show1 ? '#000' : '#fff',
                                 transition: show1 ? '0.3s ease-in-out' : '0.3s ease-out'
                             }}>
+                                {/* Download Music */}
+                                <div className="wrapperDownload">
+                                    <Link
+                                        as="a"
+                                        to={play[indexPlay1].song}
+                                        download
+                                        target="_blank"
+                                        style={{
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <img src={downloadSatu} alt="" width="50" />
+                                    </Link>
+                                    <Link
+                                        as="a"
+                                        to={play[indexPlay1].minusOne}
+                                        download
+                                        target="_blank"
+                                        style={{
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <img src={downloadDua} alt="" width="50" />
+                                    </Link>
+                                    <Link
+                                        as="a"
+                                        to={play[indexPlay1].pdf}
+                                        download
+                                        target="_blank"
+                                        style={{
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <img src={downloadTiga} alt="" width="50" />
+                                    </Link>
+                                </div>
+                                {/* END Download Music */}
+
+                                {/* Button Play Music Mobile1 */}
+                                <div className="playMusicMobile btnMusicMobile" style={{
+                                    }}>
+                                        <AudioPlayer
+                                            src={play[indexPlay1].song}
+                                            layout="horizontal"
+                                            header="Lagu Perjuangan"
+                                            showJumpControls={false}
+                                            customAdditionalControls={[]}
+                                            // onPlay={indexPlay1}
+                                        />
+
+
+                                        {/* <div className="player-track">
+                                            <div className="time" ></div>
+                                            <div className="progress-bar">
+                                                <div className="fillBar" ></div>
+                                            </div>
+                                        </div>
+                                        <div className="playerControl">
+                                            <i class="fa fa-backward" id="prev"></i>
+                                            <i class="fa fa-play" id="play"></i>
+                                            <i class="fa fa-forward" id="next"></i>
+                                        </div> */}
+                                    </div>
+                                    {/* END Button Play Music Mobile1 */}
+
                                 <p className="txt-lirik-musicMobile" dangerouslySetInnerHTML={{
                                         __html:play[indexPlay1].lyric
                                     }}>
@@ -338,38 +334,7 @@ const MusicMobile = ({data})=> {
                             {/* END Modal Lirik Music 1 */}
                         </div>
 
-                        {/* Button Play Music Mobile2 */}
-                        <div className="playMusicMobile btnMusicMobile" style={{
-                                 height: show2 ? '15vh' : '0.1px',
-                                 // backgroundColor: show1 ? '#960001' : '#fff',
-                                 transition: show2 ? '0.3s ease-in-out' : '0.3s ease-out',
-                            }}>
-                                <AudioPlayer
-                                    src={play[indexPlay2].song}
-                                    layout="horizontal"
-                                    header="Lagu Perjuangan"
-                                    showJumpControls={false}
-                                    customAdditionalControls={[]}
-                                    // onPlay={indexPlay1}
-                                    style={{
-                                        display: show2 ? 'flex' : 'none'
-                                    }}
-                                />
-
-
-                                {/* <div className="player-track">
-                                    <div className="time" ></div>
-                                    <div className="progress-bar">
-                                        <div className="fillBar" ></div>
-                                    </div>
-                                </div>
-                                <div className="playerControl">
-                                    <i class="fa fa-backward" id="prev"></i>
-                                    <i class="fa fa-play" id="play"></i>
-                                    <i class="fa fa-forward" id="next"></i>
-                                </div> */}
-                            </div>
-                            {/* END Button Play Music Mobile2 */}
+                        
                         <div className="playlistDua playlistCustom"
                             onClick={()=>{
                                 setShow2(!show2);
@@ -381,10 +346,75 @@ const MusicMobile = ({data})=> {
 
                             {/* Modal Lirik Music 2 */}
                             <div className="modal-lirik-musicMobile lirikMusic2" style={{
-                                height: show2 ? '40vh' : '0.1px',
+                                height: show2 ? '60vh' : '0.1px',
                                 backgroundColor: show2 ? '#000' : '#fff',
-                                transition: show2 ? '0.5s ease-in-out' : '0.5s ease-out'
+                                transition: show2 ? '0.3s ease-in-out' : '0.3s ease-out'
                             }}>
+                                {/* Download Music */}
+                                <div className="wrapperDownload">
+                                    <Link
+                                        as="a"
+                                        to={play[indexPlay2].song}
+                                        download
+                                        target="_blank"
+                                        style={{
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <img src={downloadSatu} alt="" width="50" />
+                                    </Link>
+                                    <Link
+                                        as="a"
+                                        to={play[indexPlay2].minusOne}
+                                        download
+                                        target="_blank"
+                                        style={{
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <img src={downloadDua} alt="" width="50" />
+                                    </Link>
+                                    <Link
+                                        as="a"
+                                        to={play[indexPlay2].pdf}
+                                        download
+                                        target="_blank"
+                                        style={{
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <img src={downloadTiga} alt="" width="50" />
+                                    </Link>
+                                </div>
+                                {/* END Download Music */}
+
+                                {/* Button Play Music Mobile2 */}
+                                <div className="playMusicMobile btnMusicMobile" style={{
+                                    }}>
+                                        <AudioPlayer
+                                            src={play[indexPlay2].song}
+                                            layout="horizontal"
+                                            header="Lagu Perjuangan"
+                                            showJumpControls={false}
+                                            customAdditionalControls={[]}
+                                            // onPlay={indexPlay1}
+                                        />
+
+
+                                        {/* <div className="player-track">
+                                            <div className="time" ></div>
+                                            <div className="progress-bar">
+                                                <div className="fillBar" ></div>
+                                            </div>
+                                        </div>
+                                        <div className="playerControl">
+                                            <i class="fa fa-backward" id="prev"></i>
+                                            <i class="fa fa-play" id="play"></i>
+                                            <i class="fa fa-forward" id="next"></i>
+                                        </div> */}
+                                    </div>
+                                    {/* END Button Play Music Mobile2 */}
+                                
                                 <p className="txt-lirik-musicMobile" dangerouslySetInnerHTML={{
                                         __html:play[indexPlay2].lyric
                                     }}>
@@ -394,38 +424,6 @@ const MusicMobile = ({data})=> {
                             {/* END Modal Lirik Music 2 */}
                         </div>
 
-                        {/* Button Play Music Mobile3 */}
-                        <div className="playMusicMobile btnMusicMobile" style={{
-                                height: show3 ? '15vh' : '0.1px',
-                                // backgroundColor: show1 ? '#960001' : '#fff',
-                                transition: show3 ? '0.3s ease-in-out' : '0.3s ease-out',
-                            }}>
-                                <AudioPlayer
-                                    src={play[indexPlay3].song}
-                                    layout="horizontal"
-                                    header="Lagu Perjuangan"
-                                    showJumpControls={false}
-                                    customAdditionalControls={[]}
-                                    // onPlay={indexPlay1}
-                                    style={{
-                                        display : show3 ? 'flex' : 'none'
-                                    }}
-                                />
-
-
-                                {/* <div className="player-track">
-                                    <div className="time" ></div>
-                                    <div className="progress-bar">
-                                        <div className="fillBar" ></div>
-                                    </div>
-                                </div>
-                                <div className="playerControl">
-                                    <i class="fa fa-backward" id="prev"></i>
-                                    <i class="fa fa-play" id="play"></i>
-                                    <i class="fa fa-forward" id="next"></i>
-                                </div> */}
-                            </div>
-                            {/* END Button Play Music Mobile3 */}
                         <div className="playlistTiga playlistCustom"
                             onClick={()=>{
                                 setShow3(!show3)
@@ -437,10 +435,75 @@ const MusicMobile = ({data})=> {
 
                             {/* Modal Lirik Music 3 */}
                             <div className="modal-lirik-musicMobile lirikMusic3" style={{
-                                height: show3 ? '40vh' : '0.1px',
+                                height: show3 ? '60vh' : '0.1px',
                                 backgroundColor: show3 ? '#000' : '#fff',
-                                transition: show3 ? '0.5s ease-in-out' : '0.5s ease-out'
+                                transition: show3 ? '0.3s ease-in-out' : '0.3s ease-out'
                             }}>
+                                {/* Download Music */}
+                                <div className="wrapperDownload">
+                                    <Link
+                                        as="a"
+                                        to={play[indexPlay3].song}
+                                        download
+                                        target="_blank"
+                                        style={{
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <img src={downloadSatu} alt="" width="50" />
+                                    </Link>
+                                    <Link
+                                        as="a"
+                                        to={play[indexPlay3].minusOne}
+                                        download
+                                        target="_blank"
+                                        style={{
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <img src={downloadDua} alt="" width="50" />
+                                    </Link>
+                                    <Link
+                                        as="a"
+                                        to={play[indexPlay3].pdf}
+                                        download
+                                        target="_blank"
+                                        style={{
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <img src={downloadTiga} alt="" width="50" />
+                                    </Link>
+                                </div>
+                                {/* END Download Music */}
+
+                                {/* Button Play Music Mobile3 */}
+                                <div className="playMusicMobile btnMusicMobile" style={{
+                                    }}>
+                                        <AudioPlayer
+                                            src={play[indexPlay3].song}
+                                            layout="horizontal"
+                                            header="Lagu Perjuangan"
+                                            showJumpControls={false}
+                                            customAdditionalControls={[]}
+                                            // onPlay={indexPlay1}
+                                        />
+
+
+                                        {/* <div className="player-track">
+                                            <div className="time" ></div>
+                                            <div className="progress-bar">
+                                                <div className="fillBar" ></div>
+                                            </div>
+                                        </div>
+                                        <div className="playerControl">
+                                            <i class="fa fa-backward" id="prev"></i>
+                                            <i class="fa fa-play" id="play"></i>
+                                            <i class="fa fa-forward" id="next"></i>
+                                        </div> */}
+                                    </div>
+                                    {/* END Button Play Music Mobile3 */}
+
                                 <p className="txt-lirik-musicMobile" dangerouslySetInnerHTML={{
                                         __html:play[indexPlay3].lyric
                                     }}>
@@ -450,39 +513,6 @@ const MusicMobile = ({data})=> {
                             {/* END Modal Lirik Music 3 */}
                         </div>
 
-
-                        {/* Button Play Music Mobile4 */}
-                        <div className="playMusicMobile btnMusicMobile" style={{
-                                 height: show4 ? '15vh' : '0.1px',
-                                 // backgroundColor: show1 ? '#960001' : '#fff',
-                                 transition: show4 ? '0.3s ease-in-out' : '0.3s ease-out',
-                            }}>
-                                <AudioPlayer
-                                    src={play[indexPlay4].song}
-                                    layout="horizontal"
-                                    header="Lagu Perjuangan"
-                                    showJumpControls={false}
-                                    customAdditionalControls={[]}
-                                    // onPlay={indexPlay1}
-                                    style={{
-                                        display : show4 ? 'flex' : 'none'
-                                    }}
-                                />
-
-
-                                {/* <div className="player-track">
-                                    <div className="time" ></div>
-                                    <div className="progress-bar">
-                                        <div className="fillBar" ></div>
-                                    </div>
-                                </div>
-                                <div className="playerControl">
-                                    <i class="fa fa-backward" id="prev"></i>
-                                    <i class="fa fa-play" id="play"></i>
-                                    <i class="fa fa-forward" id="next"></i>
-                                </div> */}
-                            </div>
-                            {/* END Button Play Music Mobile4 */}
                         <div className="playlistEmpat playlistCustom"
                             onClick={()=>{
                                 setShow4(!show4)
@@ -494,10 +524,75 @@ const MusicMobile = ({data})=> {
 
                             {/* Modal Lirik Music 4 */}
                             <div className="modal-lirik-musicMobile lirikMusic4" style={{
-                                height: show4 ? '40vh' : '0.1px',
+                                height: show4 ? '60vh' : '0.1px',
                                 backgroundColor: show4 ? '#000' : '#fff',
-                                transition: show4 ? '0.3s ease-in-out' : '0.2s ease-out'
+                                transition: show4 ? '0.3s ease-in-out' : '0.3s ease-out'
                             }}>
+                                {/* Download Music */}
+                                <div className="wrapperDownload">
+                                    <Link
+                                        as="a"
+                                        to={play[indexPlay4].song}
+                                        download
+                                        target="_blank"
+                                        style={{
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <img src={downloadSatu} alt="" width="50" />
+                                    </Link>
+                                    <Link
+                                        as="a"
+                                        to={play[indexPlay4].minusOne}
+                                        download
+                                        target="_blank"
+                                        style={{
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <img src={downloadDua} alt="" width="50" />
+                                    </Link>
+                                    <Link
+                                        as="a"
+                                        to={play[indexPlay4].pdf}
+                                        download
+                                        target="_blank"
+                                        style={{
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <img src={downloadTiga} alt="" width="50" />
+                                    </Link>
+                                </div>
+                                {/* END Download Music */}
+
+                                {/* Button Play Music Mobile4 */}
+                                <div className="playMusicMobile btnMusicMobile" style={{
+                                    }}>
+                                        <AudioPlayer
+                                            src={play[indexPlay4].song}
+                                            layout="horizontal"
+                                            header="Lagu Perjuangan"
+                                            showJumpControls={false}
+                                            customAdditionalControls={[]}
+                                            // onPlay={indexPlay1}
+                                        />
+
+
+                                        {/* <div className="player-track">
+                                            <div className="time" ></div>
+                                            <div className="progress-bar">
+                                                <div className="fillBar" ></div>
+                                            </div>
+                                        </div>
+                                        <div className="playerControl">
+                                            <i class="fa fa-backward" id="prev"></i>
+                                            <i class="fa fa-play" id="play"></i>
+                                            <i class="fa fa-forward" id="next"></i>
+                                        </div> */}
+                                    </div>
+                                    {/* END Button Play Music Mobile4 */}
+
                                 <p className="txt-lirik-musicMobile" dangerouslySetInnerHTML={{
                                         __html:play[indexPlay4].lyric
                                     }}>
