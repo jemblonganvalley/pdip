@@ -166,7 +166,7 @@ $secondary : #f3f3f3;
             display: flex;
             height: auto;
             width: 100%;
-            padding: 30px 0 0px 0;
+            padding: 20px 0 0px 0;
             overflow: hidden;
 
             @include smallPhone(){
@@ -199,9 +199,9 @@ $secondary : #f3f3f3;
                 overflow: hidden;
 
                 @include smallPhone(){
-                    height: auto;
+                    height: 15vh;
                     width: 100%;
-                    padding: 5px 0;
+                    padding: 0px 20px;
                     border-radius: 5px;
                 }
 
@@ -211,13 +211,15 @@ $secondary : #f3f3f3;
                     // width: 120px;
                     // object-fit: cover;
                     // overflow: hidden;
+                    width: 80px;
                     margin: 0 30px 0 0px;
     
                     @include smallPhone(){
                         // height: 100px;
                         // width: 130px;
+                        width: 70px;
                         object-fit: cover;
-                        margin: 0 20px 0 30px;
+                        margin: 0px;
                     }
                 }
 
@@ -231,12 +233,13 @@ $secondary : #f3f3f3;
                     overflow: hidden;
 
                     @include smallPhone(){
-                        padding: 5px 10px 5px 0px;
+                        width: 100%;
+                        padding: 0 0 0 1rem;
                     }
 
                     .txt-title{
                         display: flex;
-                        font-size: 18px;
+                        // font-size: 18px;
                         font-weight: bold;
                         color: #fff;
                         text-align: start;
@@ -244,7 +247,8 @@ $secondary : #f3f3f3;
                         overflow: hidden;
 
                         @include smallPhone(){
-                            font-size: 15px;
+                            // font-size: 15px;
+                            width: 100%;
                         }
                     }
 
@@ -258,7 +262,7 @@ $secondary : #f3f3f3;
                         overflow: hidden;
 
                         @include smallPhone(){
-                            font-size: 10px;
+                            // font-size: 10px;
                         }
                     }
                 }
@@ -274,10 +278,10 @@ $secondary : #f3f3f3;
                 overflow: hidden;
 
                 @include smallPhone(){
-                    height: auto;
+                    height: 15vh;
                     width: 100%;
                     margin: 10px 0 0 0;
-                    padding: 5px 0;
+                    padding: 0 20px;
                     border-radius: 5px;
                 }
 
@@ -287,13 +291,14 @@ $secondary : #f3f3f3;
                     // width: 120px;
                     // object-fit: cover;
                     // overflow: hidden;
+                    width: 70px;
                     margin: 0px 30px 0 0;
     
                     @include smallPhone(){
                         // height: 100px;
                         // width: 130px;
                         object-fit: cover;
-                        margin: 0 20px 0 30px;
+                        margin: 0px;
                     }
                 }     
 
@@ -308,12 +313,13 @@ $secondary : #f3f3f3;
                     overflow: hidden;
 
                     @include smallPhone(){
-                        padding: 5px 10px 5px 0px;
+                        width: 100%;
+                        padding: 0 0 0 1rem;
                     }
 
                     .txt-title{
                         display: flex;
-                        font-size: 18px;
+                        // font-size: 18px;
                         font-weight: bold;
                         color: #fff;
                         text-align: start;
@@ -321,7 +327,7 @@ $secondary : #f3f3f3;
                         overflow: hidden;
                         
                         @include smallPhone(){
-                            font-size: 15px;
+                            // font-size: 15px;
                         }
                     }
 
@@ -335,7 +341,7 @@ $secondary : #f3f3f3;
                         overflow: hidden;
 
                         @include smallPhone(){
-                            font-size: 10px;
+                            // font-size: 10px;
                         }
                     }
                 }

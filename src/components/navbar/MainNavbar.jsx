@@ -58,7 +58,7 @@ const MainNavbar = ({token})=> {
   })
 
   const isMobile = useMediaQuery({
-    query: '(max-device-width: 599px)'
+    query: '(max-device-width: 1224px)'
     })
 
     const handleShow = (e)=>{

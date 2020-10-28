@@ -8,9 +8,20 @@ $responsiveEmpat : 500px;
 $smallPhoneSatu : 500px;
 $smallPhoneDua : 400px;
 
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
 @import "../../../utilities/variable/variables.scss";
 
-
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
 
 @mixin smallPhone {
     @media (max-width : #{$smallPhoneSatu}) {

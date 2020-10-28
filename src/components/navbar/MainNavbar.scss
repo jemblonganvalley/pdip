@@ -4,7 +4,11 @@
 $responsiveSatu : 1085px;
 $responsiveDua : 1000px;
 $responsiveTiga : 991px;
-$responsiveEmpat : 719px;
+
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
 
 
 @mixin responSatu {
@@ -22,11 +26,14 @@ $responsiveEmpat : 719px;
         @content;
     }
 }
-@mixin responEmpat {
-    @media (max-width : #{$responsiveEmpat}) {
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
         @content;
     }
 }
+// END Min widht 500 and Max width 750
 
 $smallPhoneSatu : 500px;
 $smallPhoneDua : 400px;
@@ -63,9 +70,18 @@ $smallPhoneDua : 400px;
     @include responTiga() {
         padding: 10px 10%;
     }
+
+    // Respon 750
+    @include respon750(){
+        padding: 5px 5%;
+    }
+    // END Respon 750
+    
+    // Respon 500
     @include smallPhone() {
         padding: 5px 7% 5px 2%;
     }
+    // END Respon 500
 
     .navbar-collapse {
         
@@ -93,9 +109,17 @@ $smallPhoneDua : 400px;
                 width: 50px;
             }
 
+            // Respon 750
+            @include respon750(){
+                width: 200px;
+            }
+            // END Respon 750
+
+            // Respon 500px
             @include smallPhone() {
                 width: 150px;
             }
+            // END Respon 500px
         }
     }
     .navbar-nav {
@@ -119,12 +143,20 @@ $smallPhoneDua : 400px;
             @include responTiga() {
                 font-size: 10pt;
             }
-            @include responEmpat() {
-                font-size: 8pt;
+
+            // Respon 750
+            @include respon750() {
+                font-size: 10pt;
+                margin-left: 15px;
             }
+            // END Respon 750
+
+            // Respon 500
             @include smallPhone(){
                 font-size: 9pt;
+                margin-left: 15px;
             }
+            // END Respon 500
             a {
                 text-decoration: none;
                 color: rgba(255, 255, 255, .5);
@@ -149,9 +181,17 @@ $smallPhoneDua : 400px;
     form {
         position: relative;
 
-        @include smallPhone(){
+        // Min widht 500 and max widht 750
+        @include respon750(){
             margin: 0 0 30px 0;
         }
+        // END Min width 500 and max widht 750
+
+        // Max width 500
+        @include smallPhone(){
+            margin: 0 0 30px 15px;
+        }
+        // END Max widht 500
 
     }
 

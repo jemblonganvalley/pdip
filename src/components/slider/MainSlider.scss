@@ -66,7 +66,24 @@ $mobile700 : 700px;
         @content;
     }
 }
+
+// Min-height 750px
+$mobile750 : 750px;
+@mixin mobile750 {
+    @media(min-height: #{$mobile750}){
+        @content;
+    }
+}
 // END Min-height 650px
+
+// max height 750 max widht 716
+$minWidth716: 716px;
+$maxHeight750: 750px;
+@mixin maxHeight750 {
+    @media(max-height: #{$maxHeight750}) and (max-width: #{maxWidth716}){
+        @content;
+    }
+}
 
 // .carousel-fade{
 //     display: flex;
@@ -74,6 +91,19 @@ $mobile700 : 700px;
     
 //     padding: 10%;
 // }
+
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
 
 .image1 {
     display: flex;
@@ -83,13 +113,21 @@ $mobile700 : 700px;
     background-repeat: no-repeat;
     padding: 0px 0 0px 0;
     border-radius: 10px;
+
+    // Min widht 500 and max widh 750
+    @include respon750(){
+        border: 1px solid blue;
+    }
+    // END min width 500 and max width 750
     
+    // Max widht 500px
     @include smallPhone() {
         height: 70vh;
         width: 100%;
         padding: 0 0 5px 0;
         border-radius: 0;
     }
+    // END Max width 500px
 
     // Max height 600
     @include mobile600(){
@@ -105,6 +143,18 @@ $mobile700 : 700px;
     @include mobile700(){
         height: 60vh;
     }
+
+    // Min height 750
+    @include mobile750(){
+        height: 50vh;
+    }
+    // END Min Height 800
+
+    // max height 750 and max width 716
+    @include maxHeight750(){
+        border: 1px solid orange;
+    }
+    // END max height 750 and max width 716
 
     // img{
     //     width: 100%;
@@ -529,10 +579,20 @@ $mobile700 : 700px;
     padding: 0px 10% 0px 10%;
     position: relative;
 
+    // Min widht 500 and max width 750
+    @include respon750(){
+        height: 80vh;
+        padding: 0 5%;
+        border: 1px solid yellow;
+    }
+    // END Min width 500 and max widht 750
+
+    // Max widht 500
     @include smallPhone(){
         height: auto;
         padding: 0;
     }
+    // END max widht 500
 
     .carousel-inner {
         position: relative;

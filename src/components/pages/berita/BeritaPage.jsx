@@ -94,6 +94,7 @@ const BeritaPage = () => {
           <CarouselKetuaUmumPage data={configHome[1].value}/>
           {/* END Column1 */}
 
+          <div className="container-card-informasi">
           {/* INDEX 2 */}
           <CardInformasi
             to1="/article/190/nasional"
@@ -110,6 +111,8 @@ const BeritaPage = () => {
             text4="kegiatan partai"
           />
           {/* END Column2 */}
+
+          </div>
 
           <div className="cardContainer" id="card-berita">
             {configHome[7].value.map((e, i) => {

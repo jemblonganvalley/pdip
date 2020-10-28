@@ -147,10 +147,6 @@ const InformasiPage = () => {
               image3={`https://atur.biar.pw/public/${configHome[3].value[2].image}`}
               to4="/pidatohut"
               image4={`https://atur.biar.pw/public/${configHome[3].value[3].image}`}
-              width1="0"
-              width2="0"
-              width3="0"
-              width4="0"
               text="pidato kongres"
               text2="pidato rakernas"
               text3="pidato rakornas"
@@ -165,7 +161,6 @@ const InformasiPage = () => {
                 <img
                   src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
                   alt=""
-                  width="45"
                   className="imageHarta"
                 />
                 <div className="textHarta">
@@ -180,7 +175,6 @@ const InformasiPage = () => {
                 <img
                   src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
                   alt=""
-                  width="45"
                   className="imageHarta"
                 />
                 <div className="textHarta">
@@ -234,19 +228,19 @@ const InformasiPage = () => {
             {/* kolom formulir */}
             <div className="kolomFormulir kolomFormulirSatu">
               <img src={ConsentWhite} alt="" width="50" />
-              <h4 className="textFormulir">
+              <h6 className="textFormulir">
                 Formulir Permohonan
                 <br />
                 Informasi Publik
-              </h4>
+              </h6>
             </div>
             <div className="kolomFormulir kolomFormulirDua">
               <img src={ConsentWhite} alt="" width="50" />
-              <h4 className="textFormulir">
+              <h6 className="textFormulir">
                 Formulir Keberatan
                 <br />
                 atas Pelayanan Informasi
-              </h4>
+              </h6>
             </div>
             {/* END */}
           </div>

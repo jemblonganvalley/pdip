@@ -52,19 +52,20 @@ $deviceThree : 1200px;
 
         @include smallPhone() {
             width: 100%;
-            margin: .5rem 0;
-            height: 10vh;
+            margin: .5rem 0 0 0;
+            height: 15vh;
             background: $accent;
-            border-radius: 10px;
+            border-radius: 5px;
+            padding: 0 0 0 20px;
         }
 
         .smallCard {
             text-transform: uppercase;
             // font-weight: 700;
             font-family: 'Open Sans';
-            font-size: 9pt;
+            // font-size: 9pt;
             @include smallPhone() {
-                margin-right: 1rem;
+                margin-left: 1rem;
             }
         }
     }
@@ -80,10 +81,10 @@ $deviceThree : 1200px;
         }
 
         @include smallPhone() {
-            height: 30px;
-            width: 30px;
+            height: 60px;
+            width: 60px;
             // width: 30px;
-            margin-right: .5rem;
+            margin-right: 0;
         }
     }
 
@@ -92,29 +93,33 @@ $deviceThree : 1200px;
         justify-content: center;
         align-items: center;
 
-        
+        @include smallPhone(){
+            justify-content: flex-start;
+        }
     }
     .videoDokumentasi {
         display: flex;
         justify-content: center;
         align-items: center;
-        @include smallPhone() {
-            flex-direction: row-reverse;
+        @include smallPhone(){
+            justify-content: flex-start;
         }
     }
     .videoInteraktif {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        @include smallPhone(){
+            justify-content: flex-start;
+        }
     }
     .siaranPers {
         display: flex;
         justify-content: center;
         align-items: center;
         
-        @include smallPhone() {
-            flex-direction: row-reverse;
+        @include smallPhone(){
+            justify-content: flex-start;
         }
     }
 }

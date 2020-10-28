@@ -118,7 +118,6 @@ const PemiluPage = () => {
               <div className="row1-col2-pemiluPage pemilihan">
                 <img
                   src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
-                  width="75"
                   className="col1-row1-pemiluPage"
                 />
                 <div className="col2-row1-pemiluPage">
@@ -131,7 +130,6 @@ const PemiluPage = () => {
                 <a className="row2-col2-pemiluPage pemilihan" href='https://www.pdipkreatif.com/home' target='_blank'>
                   <img
                     src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
-                    width="75"
                     className="col1-row2-pemiluPage"
                   />
                   <div className="col2-row2-pemiluPage">

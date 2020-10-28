@@ -75,6 +75,16 @@ $smallPhoneDua : 400px;
             padding: 0;
         }
 
+        // Container card informasi
+        .container-card-informasi{
+            display: flex;
+
+            @include smallPhone(){
+                padding: 0 0 20px 0;
+            }
+        }
+        // END container card informasi
+
         .cardBerita{
             @include smallPhone(){
             display: flex;
@@ -481,6 +491,10 @@ $smallPhoneDua : 400px;
     flex-direction: row;
     flex-wrap: wrap;
     // margin-top: 15px;
+
+    @include smallPhone(){
+        margin-top: 0px;
+    }
 }
 
 #card-berita{
