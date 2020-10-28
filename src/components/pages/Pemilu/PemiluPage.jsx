@@ -70,7 +70,10 @@ const PemiluPage = () => {
           </div> */}
 
           {/* Card Header */}
-          <CardHeader/>
+          <CardHeader
+            backgroundHeader={`https://atur.biar.pw/public/${configHome[0].value.image}`}
+            titleHeader={configHome[2].value[0].title}
+          />
           {/* END Card Header */}
 
           <div className="linkedPemiluPage">

@@ -103,7 +103,10 @@ const BkbbPage = () => {
       {configHome.length > 0 ? (
         <div className="wrapperBkbbPage">
           {/* Card Header */}
-          <CardHeader/>
+          <CardHeader
+            backgroundHeader={`https://atur.biar.pw/public${configHome[0].value.image}`}
+            // title={configHome[1].value[0].titleHeader}
+          />
           {/* END Card Header */}
 
           <div className="linkedBkbbPage">
@@ -172,11 +175,12 @@ const BkbbPage = () => {
         /> */}
           </section>
 
+          <div className="divider-materi-pokok-bkbbPage">
           <MainDivider
             text="Materi Pokok Pendukung"
             garisMerah="8rem"
-            margin="40px 0"
           />
+          </div>
 
           <div className="wrapperCard">
             <div className="cardKolum">

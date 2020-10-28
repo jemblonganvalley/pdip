@@ -153,7 +153,7 @@ export const CarouselDuelBerita = ({
 
                         </span>
                         
-                        {/* 
+{/*                         
                         <span className="gradientOverlay" style={{
                             width : '100%',
                             height : '100%',

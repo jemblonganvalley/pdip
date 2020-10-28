@@ -64,7 +64,10 @@ const MultimediaPage = () => {
           </div> */}
 
           {/* Card Header */}
-          <CardHeader/>
+          <CardHeader
+            backgroundHeader={`https://atur.biar.pw/public${configHome[0].value.image}`}
+            titleHeader={configHome[1].value[0].title}
+          />
           {/* END Card Header */}
 
           <div className="linkedMedia">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './CardHeader.scss'
 
-const CardHeader = ()=>{
+const CardHeader = ({backgroundHeader, titleHeader})=>{
 
     const [config, setConfig] = useState([]);
   const getConfigHome = async () => {
@@ -46,12 +46,12 @@ const CardHeader = ()=>{
               <div
                 className={`headers ${config[0].value.class}`}
                 style={{
-                  backgroundImage: `url(https://atur.biar.pw/public/${config[0].value.image})`,
+                  backgroundImage: `url(${backgroundHeader})`,
                 }}
               >
                 <div className="backgrounds">
                   <div className="textBackgroundPartai">
-                    <h2>{config[0].value.title}</h2>
+                  <h3>{titleHeader}</h3>
                   </div>
                 </div>
               </div>

@@ -53,7 +53,10 @@ const PartaiPage = () => {
           {config.length > 0 && (
             <>
               {/* Card Header */}
-              <CardHeader/>
+              <CardHeader
+                backgroundHeader={`https://atur.biar.pw/public${config[0].value.image}`}
+                titleHeader={config[1].value[0].title}
+              />
               {/* END Card Header */}
 
               {/* LINK PARTAI */}

@@ -10,6 +10,7 @@ import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import MainButton from '../../buttons/MainButton'
 import CardSocialMedia from '../../cardsocialmedia/CardSocialMedia'
 import CardHeader from '../../cardheader/CardHeader'
+import bkbbH from '../../../img/BKBB.jpg'
 
 const BkbbWejangan = () => {
 
@@ -25,7 +26,10 @@ const BkbbWejangan = () => {
                 </div> */}
 
                 {/* Card Header */}
-                <CardHeader/>
+                <CardHeader
+                backgroundHeader={bkbbH}
+                // titleHeader={configHome[1].value[0].title}
+                />
                 {/* END Card Header */}
                 <div className="linkedBkbbWejangan">
                     <BreadCrumbs link1="home"

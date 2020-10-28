@@ -6,7 +6,7 @@ import DropDown from './DropDown'
 import {useMediaQuery} from 'react-responsive'
 import pdimobile from '../../img/pdimobile.svg'
 import { action, thunk, useStoreActions } from 'easy-peasy'
-import axios from 'axios'
+import '../../database/globalState'
 
 const MainNavbar = ({token})=> {
 
@@ -98,9 +98,27 @@ const MainNavbar = ({token})=> {
     // };
 
     // Onchange text input search to text input page search
-    const saveTodo = useStoreActions((actions)=> actions.saveTodo);
+    const addTodo = useStoreActions((actions) => actions.addTodo);
     const [value, setValue] = React.useState('');
    
+    // Save onchange text to page search
+    // constructor(props); {
+    //   super(props);
+    //   this.state = {
+    //     value: ''
+    //   }
+    // }
+
+    // handleChange(e);{
+    //   console.log('success')
+    // }
+    // handleClick();{
+    //   this.setState({value: ''})
+    //   var event = new Event('input', {bubbles: true});
+    //   this.myinput.dispatchEvent(event);
+    // }
+
+
 
     return (
       // START NAVBAR
@@ -151,9 +169,11 @@ const MainNavbar = ({token})=> {
                   display: 'flex'
                 }}>
                   <input className="form-control mr-2" type="text" placeholder="Cari Artikel" name="search"
-                      onChange={(e)=> setValue(e.target.value)} value={value}
+                    onChange={(e) => setValue(e.target.value)} value={value}
                   />
-                  <Link to='/search' name="submit" className="btn-next">
+                  <Link to='/search' name="submit" className="btn-next"
+                    onClick={() => addTodo(value)}
+                  >
                       <i class="fas fa-search" aria-hidden="true" name="icon" ></i>
                   </Link>
                 </form>

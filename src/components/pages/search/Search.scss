@@ -64,6 +64,22 @@ $smallPhoneDua : 400px;
             height: auto;
             width: auto;
             margin: 5px 0 0 50px;
+            z-index: 22;
+
+            // For Save Change Text
+            .box-change-text{
+                display: flex;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+
+                .txt-change-text-search{
+                    display: flex;
+                    color: #fff;
+                }
+            }
+            // END For Save Change Text
 
             @include smallPhone(){
                 position: absolute;

@@ -6,7 +6,8 @@ import img5 from '../../../img/img5.jpg'
 import kampanye from '../../../img/kampanye.jpg'
 import AngkaPaginationEvent from '../../paginationevent/AngkaPaginationEvent'
 import CardSearch from '../../cardsearch/CardSearch'
-import { useStoreActions } from 'easy-peasy'
+import { action, useStoreActions, useStoreState } from 'easy-peasy'
+import '../../../database/globalState'
 
 const Search = ()=>{
 
@@ -114,7 +115,11 @@ const Search = ()=>{
     const paginate = (pageNumber) => setCurrentPage2(pageNumber)
 
     // Onchange text from input search
-    const todos = useStoreActions((state)=> state.todos);
+    const todos = useStoreState((state) => state.todos);
+
+    const completedTodos = useStoreState((state)=> state.completedTodos);
+
+    let [show, setShow] = useState(false)
 
     return(
         <>
@@ -122,12 +127,23 @@ const Search = ()=>{
         <div className="modal-display-search">
                   {/* Bg Black Search */}
                   <form action="" className="background-black-search">
-                      <h6 className="txt-kata-yang-diCari" id="txtGroup">
-                        Kata yang dicari :
-                      </h6>
-
+                        <h6 className="txt-kata-yang-diCari" id="txtGroup">
+                          Kata yang dicari :
+                        </h6>
+                       
                       <div className="kolom-search-modal">
-                        <input type="text" className="input-search" id="txtGroup" autoFocus/>
+                          {/* For Save Change Text */}
+                          <div className="box-change-text" style={{
+                            display: show ? 'none' : 'flex'
+                          }}>
+                              {todos.map((todo)=>(
+                                <p className="txt-change-text-search">{todo.text}</p>
+                              ))}
+                          </div>
+                          {/* END For Save Change Text */}
+                          <input type="text" className="input-search" id="txtGroup" autoFocus
+                          />
+                
                         <button className="btn-icon-pageSearch">
                           <span class="material-icons" id="txtGroup">
                           search

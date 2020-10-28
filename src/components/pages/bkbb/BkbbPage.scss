@@ -362,6 +362,21 @@ $secondary : #f3f3f3;
             padding: 10px 10px 5px 10px;
         }
     }
+
+    // Divider materi pokok
+    .divider-materi-pokok-bkbbPage{
+        display: flex;
+        height: auto;
+        width: 100%;
+        align-items: center;
+        padding: 40px 20% 30px 20%;
+
+        @include smallPhone(){
+            padding: 40px 10px;
+            margin-top: 10px;
+        }
+    }
+    // END Divider materi pokok
     
     .wrapperCard {
         display: flex;
@@ -457,7 +472,7 @@ $secondary : #f3f3f3;
         h5{
             z-index: 1;
             @include smallPhone(){
-                font-size: 10pt;
+                font-size: 5pt;
             }
         }
 

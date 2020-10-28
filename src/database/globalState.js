@@ -1,4 +1,4 @@
-import {action, createStore, thunk} from 'easy-peasy'
+import {action, computed, createStore, thunk} from 'easy-peasy'
 
 export let globalState = createStore({
 
@@ -23,6 +23,22 @@ export let globalState = createStore({
 
     }),
     // END TOKEN AREA
+
+    // For Save Change Text to Page Search
+    todos: '',
+    addTodo: action((state, payload) => {
+        state.todos.push({ text: payload, done: false });
+    }),
+    // END For Save Change Text to Page Search
+
+    todos: [{ text: '', done: true }],
+    completedTodos: computed((state) => state.todos.filter((todo) => todo.done)),
+
+    // constructor(props){
+    //     super(props);
+    //     this.md = new Remarkable();
+    //     this.handleChange = this
+    // }
     
 
     

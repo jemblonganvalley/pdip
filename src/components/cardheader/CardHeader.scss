@@ -18,8 +18,8 @@ $smallPhoneDua : 400px;
 // START HEADERS
 .headers {
     background-size: cover;
-    height: 15vh;
     background-position: center;
+    height: 15vh;
 
     @include smallPhone() {
         height: 15vh;
@@ -27,7 +27,7 @@ $smallPhoneDua : 400px;
     // @include smallPhoneDua() {
     //     height: 15vh;
     // }
-
+    
     .backgrounds {
         // background-color: rgba(216, 0, 16, .8);
         width: 100%;
@@ -38,20 +38,22 @@ $smallPhoneDua : 400px;
         color: #ffffff;
 
         .textBackgroundPartai {
-            width: 30%;
-            height: 50%;
-            margin-left: 13rem;
+            display: flex;
+            width: 50%;
+            height: 100%;
+            padding: 0 10%;
+            align-items: center;
             @include smallPhone() {
                 width: auto;
                 margin-left: 0;
                 padding: 0 10%;
             }
 
-            h2 {
-                @include smallPhoneDua() {
-                    font-size: 15pt;                        
-                }
-            }
+            // h2 {
+            //     @include smallPhoneDua() {
+            //         font-size: 15pt;                        
+            //     }
+            // }
         }
     }
 }

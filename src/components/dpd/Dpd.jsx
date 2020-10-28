@@ -4,6 +4,7 @@ import image from '../../img/bali.png'
 import BreadCrumbs from '../breadcrumbs/BreadCrumbs'
 import MainDivider from '../divider/MainDivider'
 import CardHeader from '../cardheader/CardHeader'
+import kampanye from '../../img/kampanye.jpg'
 
 const Dpd = ()=> {
     return (
@@ -19,7 +20,10 @@ const Dpd = ()=> {
             {/* END */}
 
             {/* Card Header */}
-            <CardHeader/>
+            <CardHeader
+            backgroundHeader={kampanye}
+            // titleHeader={configHome[1].value[0].title}
+            />
             {/* END Card Header */}
 
             {/* LINK PARTAI */}

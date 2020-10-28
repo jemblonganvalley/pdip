@@ -67,7 +67,7 @@ const BeritaPage = () => {
 
       <div className="wrapperBerita">
         {/* INDEX 0 */}
-        <div className="headers">
+        {/* <div className="headers">
           <div className="backgrounds" style={{
               backgroundImage : `url(https://atur.biar.pw/public${configHome[0].value.image})`
           }}>
@@ -75,7 +75,15 @@ const BeritaPage = () => {
                 {configHome[1].value[0].title}
             </div>
           </div>
-        </div>
+        </div> */}
+
+        {/* Card Header */}
+        <CardHeader
+          backgroundHeader={`https://atur.biar.pw/public/${configHome[0].value.image}`}
+          titleHeader={configHome[1].value[0].title}
+        />
+        {/* END Card Header */}
+
         <div className="linkedBerita">
           <BreadCrumbs link1="Home" to1="/" page2="Berita" />
         </div>
