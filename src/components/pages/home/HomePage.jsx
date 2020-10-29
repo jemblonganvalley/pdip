@@ -142,7 +142,8 @@ const HomePage = () => {
               configHome[1].value.map((e, i) => (
                 <div className="col-lg-4 custom" key={i}>
                   {/* URUTAN LINK */}
-                  <a href={i === 0 ? '/' : i === 1 ? 'https://www.pdipkreatif.id' : '/event'} target={i == 1 ? '_blank' : ''}>
+                  <a href={i === 0 ? '/article/44' : i === 1 ? 'https://pdipkreatif.id/home' : 
+                  '/event' } target={i == 1 ? '_blank' : ''}>
                     <div className="customBorder">
                       <img
                         src={`https://atur.biar.pw/public/${e.image}`}
@@ -200,14 +201,16 @@ const HomePage = () => {
                 </div>
               ))}
 
-            {/* ONTAINER CARD GALLERY */}
+            {/* ONTAINER CARD blog */}
             <div className="cardContainer">
               {configHome.length > 0 &&
                 configHome[4].value.map((e, i) => {
                   return (
                     <Cards
-                      type={e.type}
+                    category='Multimedia'
+                      cardType='multimedia'
                       imageCard={e.path}
+                      fileType={e.fileType}
                       // textSmall={e.title}
                       title={e.title}
                       borderRadius="10px"
@@ -255,7 +258,7 @@ const HomePage = () => {
                     page='detail-article'
                     id={e.id}
                     imageCard={e.path}
-                    textCategoryChild={e.category_child_name}
+                    category="Berita"
                     author={e.author}
                     title={e.title}
                     dateTime={e.created_at}

@@ -7,7 +7,8 @@ const Cards = ({
   author,
   category,
   title,
-  type,
+  cardType,
+  fileType,
   margin,
   imageCard,
   borderRadius=10,
@@ -51,7 +52,7 @@ const Cards = ({
   return (
       <>
 
-      {type === 'image' ? (
+      {cardType === 'multimedia' || 'video' ? (
         <>
          <Link
         as='div'
@@ -66,7 +67,7 @@ const Cards = ({
           to={`${page}/${id}`}
           className="imageCard"
           style={{
-            backgroundImage: `url(${imageCard})`,
+            backgroundImage: `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)`,
             textDecoration: "none",
             backgroundPosition: "center",
           }}
@@ -143,7 +144,7 @@ const Cards = ({
           to={`${page}/${id}`}
           className="imageCard"
           style={{
-            backgroundImage: `url(https://atur.biar.pw/public/${imageCard})`,
+            backgroundImage: fileType === 'image' ? `url(https://atur.biar.pw/public${imageCard})` : `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)`,
             textDecoration: "none",
             backgroundPosition: "center",
           }}
