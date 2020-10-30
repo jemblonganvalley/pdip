@@ -93,18 +93,18 @@ const BeritaPage = () => {
             to2="/article/191/daerah"
             image2={`https://atur.biar.pw/public` + configHome[2].value[1].image}
             to3="/beritafoto"
-            image3={`https://atur.biar.pw/public` + configHome[2].value[3].image}
-            to4="/kegiatanpartai"
-            image4={BeritaEmpat}
-            text="berita nasional"
-            text2="berita daerah"
-            text3="berita foto"
-            text4="kegiatan partai"
+            image3={`https://atur.biar.pw/public` + configHome[2].value[2].image}
+            to4="/article/192/nuansa"
+            image4={`https://atur.biar.pw/public` + configHome[2].value[3].image}
+            text={configHome[2].value[0].title}
+            text2={configHome[2].value[1].title}
+            text3={configHome[2].value[2].title}
+            text4={configHome[2].value[3].title}
           />
           {/* END Column2 */}
 
           <div className="cardContainer" id="card-berita">
-            {configHome[7].value.map((e, i) => {
+            {configHome[3].value.map((e, i) => {
               return (
                 <Cards
                   id={e.id}
@@ -133,20 +133,23 @@ const BeritaPage = () => {
 
         {/* CAROUSEL DUAL BERITA */}
 
-        <CarouselDuelBerita cat1={45} cat2={44} totalPage={3} data={configHome[4].value} />
+        <CarouselDuelBerita cat1={configHome[4].value} cat2={configHome[4].value}  cat2={configHome[5].value} />
 
         {/* END Container1 */}
 
         {/* Container2 */}
-        <div className="container-2-beritaPage">
+        <div className="container-2-beritaPage" style={{
+            backgroundImage : `url(https://atur.biar.pw/public/${configHome[6].value.image})`
+          }}>
+
           {/* Column1 */}
-          <div className="col1-container-2-beritaPage banner-berita">
+          <div className="col1-container-2-beritaPage banner-berita" >
             <h2 className="txt-title-col1">
-              Ut enim ad minim veniam, quis nostrud
-              <br /> exercitation ullamco laboris
+              {configHome[6].value.title}
             </h2>
           </div>
           {/* END Column1 */}
+
           {/* Column2 */}
           <div className="col2-container-2-beritaPage">
             <MainButton name="LIHAT" />

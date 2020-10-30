@@ -201,25 +201,25 @@ const HomePage = () => {
                 </div>
               ))}
 
-            {/* ONTAINER CARD blog */}
+            {/* ONTAINER CARD VIDEO */}
             <div className="cardContainer">
               {configHome.length > 0 &&
                 configHome[4].value.map((e, i) => {
                   return (
                     <Cards
-                    category='Multimedia'
-                      cardType='multimedia'
                       imageCard={e.path}
-                      fileType={e.fileType}
+                      cardType='youtube'
                       // textSmall={e.title}
                       title={e.title}
                       borderRadius="10px"
                       key={i}
-                      page='/article'
+                      page={`/multimedia`}
+                      id={e.id}
                     />
                   );
                 })}
             </div>
+
 
             <div className="btn-lihatSemua-card">
             <MainButton
@@ -252,7 +252,7 @@ const HomePage = () => {
         <div className="cardContent">
           {configHome.length > 0 && (
             <>
-              {configHome[7].value.map((e, i) => {
+              {configHome[6].value.map((e, i) => {
                 return (
                   <Cards
                     page='detail-article'
@@ -263,12 +263,15 @@ const HomePage = () => {
                     title={e.title}
                     dateTime={e.created_at}
                     borderRadius="10px"
+                    cardType={e.filetype}
+
                   />
                 );
               })}
             </>
           )}
         </div>
+
 
         <span className="btnSize">
           <MainButton name="lihat semua" margin="1rem 0 0 0" pages="/berita" />
@@ -291,8 +294,9 @@ const HomePage = () => {
         >
           <MainDivider text="Foto Gallery" mrgn="40px 0"/>
         </div>
-        {gallery.length > 0 && (
-          <CarouselDuelBerita current_page={2} data={gallery} />
+
+        {configHome.length > 0 && (
+          <CarouselDuelBerita current_page={2} data={gallery} cat1={configHome[9].value} cat2={configHome[10].value} />
         )}
       </div>
     </>

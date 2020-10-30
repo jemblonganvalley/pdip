@@ -109,7 +109,7 @@ function App() {
           <Route path='/search'>
               <Search/>
           </Route>
-
+{/* 
           <Route path="/multimedia/wawancara">
             <Wawancara />
           </Route>
@@ -120,9 +120,9 @@ function App() {
 
           <Route path="/multimedia/dokumentasi">
             <VideoDokumen />
-          </Route>
+          </Route> */}
 
-          <Route path="/multimedia/siaran_langsung">
+          <Route path="/multimedia/:id">
             <SiaranLangsung />
           </Route>
 
