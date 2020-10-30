@@ -122,8 +122,8 @@ function App() {
             <VideoDokumen />
           </Route> */}
 
-          <Route path="/multimedia/:id">
-            <SiaranLangsung />
+          <Route path="/galery/:id">
+            <Page2 />
           </Route>
 
           <Route path="/event">
@@ -162,9 +162,9 @@ function App() {
             <StrukturPage />
           </Route>
 
-          <Route path="/page2">
+          {/* <Route path="/page2">
             <Page2 />
-          </Route>
+          </Route> */}
 
           {/* BLOG PAGE  */}
           <Route path="/detail-article/:id">

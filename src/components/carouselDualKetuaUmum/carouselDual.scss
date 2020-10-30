@@ -1,0 +1,54 @@
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+.mainCarouselDual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 40vh;
+    gap : 20px;
+    padding: 0 21% 0 20%;
+
+    @include smallPhone(){
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+
+    .mainCarouselDual_car1{
+        width: 30%;
+        height: 40vh;
+        // border: 1px solid blue;
+
+        @include smallPhone(){
+            height: 40vh;
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    .mainCarouselDual_car2{
+        width: 70%;
+        height: 40vh;
+
+        @include smallPhone(){
+            width: 100%;
+        }
+    }
+
+
+
+}

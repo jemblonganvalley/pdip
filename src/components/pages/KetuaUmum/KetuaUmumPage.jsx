@@ -1,9 +1,7 @@
 // Import to React
 import React, { useEffect, useState } from "react";
 // END Import to React
-import pemilu18 from "../../../img/pemilu18.jpg";
-import img5 from "../../../img/img5.jpg";
-import pemilu20 from "../../../img/pemilu20.jpg";
+
 import "./KetuaUmumPage.scss";
 
 // Import to CSS
@@ -12,8 +10,9 @@ import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import CarouselKetuaUmumPage from "../../carouselKetuaUmumPage/CarouselKetuaUmumPage";
 import Cards from "../../cards/MainCards";
 import CardInformasi from "../../cardInformasi/CardInformasi";
-import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
 import CardHeader from "../../cardheader/CardHeader";
+import CarouselDualKetuaumum from "../../carouselDualKetuaUmum/CarouselDualKetuaumum";
+import { Link } from "react-router-dom";
 // END Import to CSS
 
 // Create Component
@@ -103,7 +102,7 @@ const KetuaUmumPage = () => {
           </div> */}
 
           {/* Card Header */}
-          <CardHeader/>
+          <CardHeader />
           {/* END Card Header */}
 
           <div className="linkedKetuaumum">
@@ -142,9 +141,10 @@ const KetuaUmumPage = () => {
                 <Cards
                   imageCard={e.path}
                   title={e.title}
-                  page='detail-article'
+                  page="detail-article"
                   id={e.id}
                   borderRadius="10px"
+                  cardType={e.filetype}
                 />
               ))}
             </div>
@@ -157,8 +157,8 @@ const KetuaUmumPage = () => {
               marginTop: "20px",
             }}
           >
-            {gallery.length > 0 && (
-              <CarouselDuelBerita current_page={2} data={gallery} />
+            {configHome.length > 0 && (
+             <CarouselDualKetuaumum cat1={configHome[4].value[0]} cat2={configHome[5].value}/>
             )}
           </div>
 
@@ -176,8 +176,9 @@ const KetuaUmumPage = () => {
                 <Cards
                   imageCard={e.path}
                   title={e.title}
-                  page='detail-article'
+                  page="detail-article"
                   id={e.id}
+                  cardType={e.filetype}
                 />
               ))}
             </div>

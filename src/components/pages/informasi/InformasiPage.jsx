@@ -252,7 +252,7 @@ const InformasiPage = () => {
           {/* <CardMaps/> */}
 
           <div className="carousel-informasiPage">
-            <CarouselDuelBerita current_page={2} data={gallery} />
+            <CarouselDuelBerita cat1={configHome[8].value} cat2={configHome[9].value}/>
           </div>
 
           {/* <div className="widgetMobile">

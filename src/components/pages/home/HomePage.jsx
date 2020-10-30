@@ -142,7 +142,7 @@ const HomePage = () => {
               configHome[1].value.map((e, i) => (
                 <div className="col-lg-4 custom" key={i}>
                   {/* URUTAN LINK */}
-                  <a href={i === 0 ? '/article/44' : i === 1 ? 'https://pdipkreatif.id/home' : 
+                  <a href={i === 0 ? '/article/247/covid-19' : i === 1 ? 'https://pdipkreatif.id/home' : 
                   '/event' } target={i == 1 ? '_blank' : ''}>
                     <div className="customBorder">
                       <img
@@ -213,7 +213,7 @@ const HomePage = () => {
                       title={e.title}
                       borderRadius="10px"
                       key={i}
-                      page={`/multimedia`}
+                      page={`/galery`}
                       id={e.id}
                     />
                   );
@@ -296,7 +296,7 @@ const HomePage = () => {
         </div>
 
         {configHome.length > 0 && (
-          <CarouselDuelBerita current_page={2} data={gallery} cat1={configHome[9].value} cat2={configHome[10].value} />
+          <CarouselDuelBerita cat1={configHome[9].value} cat2={configHome[10].value} />
         )}
       </div>
     </>

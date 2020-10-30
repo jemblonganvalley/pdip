@@ -133,7 +133,7 @@ const BeritaPage = () => {
 
         {/* CAROUSEL DUAL BERITA */}
 
-        <CarouselDuelBerita cat1={configHome[4].value} cat2={configHome[4].value}  cat2={configHome[5].value} />
+        <CarouselDuelBerita cat1={configHome[4].value} cat2={configHome[5].value} />
 
         {/* END Container1 */}
 
@@ -152,7 +152,9 @@ const BeritaPage = () => {
 
           {/* Column2 */}
           <div className="col2-container-2-beritaPage">
-            <MainButton name="LIHAT" />
+            <Link to={configHome[6].value.link}>
+              <MainButton name="LIHAT" />
+            </Link>
           </div>
           {/* END Column2 */}
         </div>

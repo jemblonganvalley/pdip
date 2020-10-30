@@ -46,10 +46,12 @@ const ContainerCard = () => {
     getConfigHome();
     window.scrollTo(0, 0);
 
+
   }, [category_id]);
 
   return (
     <>
+    {console.log(configHome)}
       {configHome.length > 0 ? (
         <div className="wrapper-berita-nasional">
           <div className="linked-berita-nasional">

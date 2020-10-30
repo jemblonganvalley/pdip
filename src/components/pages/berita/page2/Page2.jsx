@@ -99,14 +99,14 @@ const Page2 = () => {
 
                     {/* Column2 */}
                     <div className="col2-container-1-beritaPage2">
-                        <Cards imageCard={detailartikel3} TextH6="Lorem ipsum dolor, sit amet consectetur adipisicing eliteiusmod tempor indicidunt"
+                        {/* <Cards imageCard={detailartikel3} TextH6="Lorem ipsum dolor, sit amet consectetur adipisicing eliteiusmod tempor indicidunt"
                             borderRadius="10px" />
                         <Cards imageCard={detailartikel4} TextH6="Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil"
                             borderRadius="10px" />
                         <Cards imageCard={detailartikel5} TextH6="Lorem ipsum dolor, sit amet consectetur adipisicing eliteiusmod tempor indicidunt"
                             borderRadius="10px" />
                         <Cards imageCard={detailartikel6} TextH6="Presiden ke-5 RI Megawati Soekarnoputri meresmikan patung Bung Karno di Akmil"
-                            borderRadius="10px" />
+                            borderRadius="10px" /> */}
                     </div>
                     {/* END Column2 */}
 
