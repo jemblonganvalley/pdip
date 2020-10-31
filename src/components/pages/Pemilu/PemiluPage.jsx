@@ -7,13 +7,8 @@ import CarouselPemilu1 from "../../carouselPemilu1/CarouselPemilu1";
 import CarouselPemilu2 from "../../carouselPemilu2/CarouselPemilu2";
 import Carousel3PemiluPage from "../../carousel3PemiluPage/Carousel3PemiluPage";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
-import MainButton from "../../buttons/MainButton";
-import IconHartaSatu from "../../../img/lh.png";
-import IconHartaDua from "../../../img/income.png";
-import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
-import illustrator from '../../../img/illustrator2.png'
+
 import CardHeader from "../../cardheader/CardHeader";
-import CarouselKM from "../../carouselKM/CarouselKM";
 import ParalaxBox from "../../paralaxBox/ParalaxBox";
 
 
