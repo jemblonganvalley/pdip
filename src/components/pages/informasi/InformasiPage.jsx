@@ -187,7 +187,6 @@ const InformasiPage = () => {
                     </h6>
               
                   </div>
-                </div>
               </Link>
 
             </div>

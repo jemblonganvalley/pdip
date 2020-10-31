@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { View, Text } from 'react-native'
 
-export default function globalMenu({children}) {
+export default function GlobalMenu({children}) {
 
     const [menu, setMenu] = useState([])
     useEffect(() => {
