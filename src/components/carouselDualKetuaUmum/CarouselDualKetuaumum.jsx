@@ -38,7 +38,7 @@ const CarouselDualKetuaumum = ({
       </Link>
 
       {/* CAROUSEL 2 */}
-    <iframe className='col-8' height='100%' src={`https://www.youtube.com/embed/${cat1.path}`} frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+    <iframe className='col-8' height='100%' src={`https://www.youtube.com/embed/${cat1.path}?rel=0`} frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
 
     </div>
   );

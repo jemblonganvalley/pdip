@@ -213,7 +213,7 @@ const HomePage = () => {
                       title={e.title}
                       borderRadius="10px"
                       key={i}
-                      page={`/galery`}
+                      page={`/detail-gallery`}
                       id={e.id}
                     />
                   );

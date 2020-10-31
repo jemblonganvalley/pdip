@@ -121,7 +121,7 @@ const MultimediaPage = () => {
             {configHome[4].value.map((e, i) => (
               <Cards
                 category = {configHome[4].slug} 
-                page="page"
+                page="detail-article"
                 id={e.id}
                 imageCard={e.path}
                 textCategoryChild={e.category_child_name}

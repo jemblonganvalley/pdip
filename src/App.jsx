@@ -31,25 +31,9 @@ import BgRed from "./components/bgRed/BgRed";
 import WejanganBungKarno from "./components/pages/bkbb/wejanganbungkarno/WejanganBungKarno";
 import { useStoreActions, useStoreState } from "easy-peasy";
 import EventPage from "./components/pages/events/EventPage";
-import PidatoKongres from "./components/pages/KetuaUmum/pidatokongres/PidatoKongres";
-import PidatoRakernas from "./components/pages/KetuaUmum/pidatorakernas/PidatoRakernas";
-import PidatoRakornas from "./components/pages/KetuaUmum/pidatorakornas/PidatoRakornas";
-import PidatoHut from "./components/pages/KetuaUmum/pidatohut/PidatoHut";
-import BeritaNasional from "./components/pages/berita/beritanasional/BeritaNasional";
-import BeritaDaerah from "./components/pages/berita/beritadaerah/BeritaDaerah";
-import BeritaFoto from "./components/pages/berita/beritafoto/BeritaFoto";
-import KegiatanPartai from "./components/pages/berita/kegiatanpartai/KegiatanPartai";
-import SiaranLangsung from "./components/pages/siaranlangsung/SiaranLangsung";
-import VideoDokumen from "./components/pages/videodokumen/VideoDokumen";
-import VideoTeaser from "./components/pages/videoteaser/VideoTeaser";
-import Wawancara from "./components/pages/wawancara/Wawancara";
-import StrukturPpdi from "./components/pages/strukturppdi/StrukturPpdi";
-import VisiMisi from "./components/pages/visimisi/VisiMisi";
-import Prosedur from "./components/pages/prosedur/Prosedur";
-import Regulasi from "./components/pages/regulasi/Regulasi";
-import ListBerita from "./components/pages/berita/listBerita/ListBerita";
 import ContainerCard from "./components/containerCard/ContainerCard";
 import Search from "./components/pages/search/Search";
+import ContainerCardGallery from './components/gallery/ContainerCardGallery'
 
 function App() {
   let [hide, setHide] = useState(true);
@@ -106,6 +90,15 @@ function App() {
             <ContainerCard />
           </Route>
 
+          {/* CONTAINER CARD GALLERY*/}
+          <Route path='/gallery/:id/:type'>
+            <ContainerCardGallery />
+          </Route>
+
+          <Route path="/detail-gallery/:id">
+            <Page2 />
+          </Route>
+
           <Route path='/search'>
               <Search/>
           </Route>
@@ -122,9 +115,8 @@ function App() {
             <VideoDokumen />
           </Route> */}
 
-          <Route path="/galery/:id">
-            <Page2 />
-          </Route>
+
+        
 
           <Route path="/event">
             <EventPage />

@@ -1,11 +1,5 @@
 import React, { useEffect } from 'react'
 
-import detailartikel3 from '../../../../img/detailartikel3.jpg'
-import detailartikel4 from '../../../../img/detailartikel4.jpg'
-import detailartikel5 from '../../../../img/detailartikel5.jpg'
-import detailartikel6 from '../../../../img/detailartikel6.jpg'
-
-
 import '../page2/Page2.scss'
 import BreadCrumbs from '../../../breadcrumbs/BreadCrumbs'
 import Cards from '../../../cards/MainCards'

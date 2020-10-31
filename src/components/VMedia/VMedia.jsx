@@ -25,7 +25,7 @@ const VMedia = ({source, headline, desc})=> {
                 </p>
                 <div className="share">
                     {/* Card Social Media */}
-                    <CardSocialMedia/>
+                    <CardSocialMedia />
                     {/* END Card Social Media */}
 
                     {/* <small className="marginShare">SHARE : </small>

@@ -34,6 +34,7 @@ const DropDown = ({menuItem, listIndex}) => {
                     e.params === 'dokumentasi' ? '/multimedia/dokumentasi' : 
                     e.params === 'teaser' ? '/multimedia/teaser' : 
                     e.params === 'wawancara' ? '/multimedia/wawancara' : 
+                    e.title === 'Lahirnya Pancasila 1 Juni 1945' ? '/detail-article/109/Lahirnya-Pancasila-1-Juni-1945' :
                     `/article/${e.params}/${e.title.replace(/\s/g, '-').toLowerCase()}`
                   }>{e.title}</Link>
             ))}
