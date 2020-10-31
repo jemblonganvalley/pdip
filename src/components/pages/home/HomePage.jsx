@@ -143,7 +143,7 @@ const HomePage = () => {
               configHome[1].value.map((e, i) => (
                 <div className="col-lg-4 custom" key={i}>
                   {/* URUTAN LINK */}
-                  <a href={i === 0 ? '/' : i === 1 ? 'https://www.pdipkreatif.id' : '/event'} target={i == 1 ? '_blank' : ''} className="btn-customBorder">
+                  <a href={i === 0 ? '/' : i === 1 ? 'https://pdipkreatif.id' : '/event'} target={i == 1 ? '_blank' : ''} className="btn-customBorder">
                     <div className="customBorder">
                       <img
                         src={`https://atur.biar.pw/public/${e.image}`}
@@ -249,7 +249,7 @@ const HomePage = () => {
             )}
           </div>
         </div>
-
+              
         {configHome.length > 0 && <CarouselKM data={configHome[6].value} />}
 
         {/* <KMobile /> */}
