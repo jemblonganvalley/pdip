@@ -143,7 +143,7 @@ const HomePage = () => {
               configHome[1].value.map((e, i) => (
                 <div className="col-lg-4 custom" key={i}>
                   {/* URUTAN LINK */}
-                  <a href={i === 0 ? '/' : i === 1 ? 'https://pdipkreatif.id' : '/event'} target={i == 1 ? '_blank' : ''} className="btn-customBorder">
+                     <a href={i === 0 ? '/article/247/covid-19' : i === 1 ? 'https://pdipkreatif.id/home' : '/event' } target={i == 1 ? '_blank' : ''}>
                     <div className="customBorder">
                       <img
                         src={`https://atur.biar.pw/public/${e.image}`}
