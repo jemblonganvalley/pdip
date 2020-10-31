@@ -219,8 +219,9 @@ const HomePage = () => {
                       title={e.title}
                       borderRadius="10px"
                       key={i}
-                      page={`/detail-gallery`}
+                      page={`/detail-multimedia`}
                       id={e.id}
+                      slug={e.title}
                     />
                   );
                 })}
@@ -267,6 +268,7 @@ const HomePage = () => {
                     category="Berita"
                     author={e.author}
                     title={e.title}
+                    slug={e.title}
                     dateTime={e.created_at}
                     borderRadius="10px"
                     cardType={e.filetype}

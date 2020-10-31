@@ -1,12 +1,13 @@
 import React from "react";
 import "./MainCards.scss";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 const Cards = ({
   page,
   author,
   category,
   title,
+  slug,
   cardType,
   fileType,
   margin,
@@ -41,6 +42,10 @@ const Cards = ({
     return string;
   };
 
+  const pageSLug = ()=>{
+    return slug.replaceAll(' ','-').toLowerCase()
+  }
+
   const getToday = ()=>{
     var today = new Date();
     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
@@ -53,16 +58,17 @@ const Cards = ({
       <>
 
          <Link
-        as='div'
+        component='a'
         className="col col-lg-3 cardCustom" id="cardCustom2"
         style={{
           borderRadius: borderRadius,
           marginTop: marginTop
         }}
-        to={`${page}/${id}`}
+        to={`${page}/${id}/${pageSLug()}`}
+      
       >
         <Link
-          to={`${page}/${id}`}
+          to={`${page}/${id}/${pageSLug()}`}
           className="imageCard"
           style={{
             backgroundImage: imageCard.includes('uploads') ? `url(https://atur.biar.pw/public/${imageCard})` : `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)` ,
@@ -72,7 +78,7 @@ const Cards = ({
         >
           {/* JIKA MAU DIPAKAI CLASS, PAKAI CLASS VBMusic */}
           <Link
-            as="a"
+            component="a"
             className={`${classIcon}`}
             to={href}
             style={{ textDecoration: "none" }}

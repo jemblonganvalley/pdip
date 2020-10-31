@@ -9,6 +9,8 @@ import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import CardQuotes from "../../cardquotes/CardQuotes";
 import CardHeader from "../../cardheader/CardHeader";
 import VMedia from "../../VMedia/VMedia";
+import Wait from '../../wait/Wait'
+import { Link } from "react-router-dom";
 
 export const LighBox = ({ source }) => {
   return (
@@ -88,7 +90,8 @@ const BkbbPage = () => {
             <BreadCrumbs link1="Home" to1="/" page2="Bung Karno Bapak Bangsa" />
           </div>
 
-          <section className="lahirnyaPancasila col mx-auto">
+          <section className="lahirnyaPancasila col mx-auto" >
+            <Link to='/detail-article/109/Lahirnya-Pancasila-1-Juni-1945' component='a'>
             <div
               className="box-lahirnyaPancasila "
               style={{
@@ -107,6 +110,7 @@ const BkbbPage = () => {
                 ></div>
               </div>
             </div>
+            </Link>
           </section>
 
           {configHome[2].value.map((e, i) => (
@@ -175,6 +179,7 @@ const BkbbPage = () => {
                       type={e.type}
                       imageCard={e.path}
                       title={e.title}
+                      slug={e.title}
                       borderRadius="10px"
                       key={i}
                       page='detail-article'
@@ -245,19 +250,7 @@ const BkbbPage = () => {
         </div>
       ) : (
         <>
-          <div
-            className="page"
-            id="wait"
-            style={{
-              width: "100vw",
-              height: "100vh",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            wait ..
-          </div>
+          <Wait />
         </>
       )}
     </>

@@ -11,6 +11,7 @@ import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
 import illustrator from '../../../img/illustrator2.png'
 import CardHeader from "../../cardheader/CardHeader";
 import { Link } from "react-router-dom";
+import Wait from "../../wait/Wait";
 
 const InformasiPage = () => {
   const [gallery, setGallery] = useState([]);
@@ -278,19 +279,7 @@ const InformasiPage = () => {
         </div>
       ) : (
         <>
-          <div
-            className="page"
-            id="wait"
-            style={{
-              width: "100vw",
-              height: "100vh",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            wait ..
-          </div>
+          <Wait />
         </>
       )}
     </>

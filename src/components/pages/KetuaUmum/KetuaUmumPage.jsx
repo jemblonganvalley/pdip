@@ -13,6 +13,7 @@ import CardInformasi from "../../cardInformasi/CardInformasi";
 import CardHeader from "../../cardheader/CardHeader";
 import CarouselDualKetuaumum from "../../carouselDualKetuaUmum/CarouselDualKetuaumum";
 import { Link } from "react-router-dom";
+import Wait from '../../wait/Wait'
 // END Import to CSS
 
 // Create Component
@@ -143,6 +144,7 @@ const KetuaUmumPage = () => {
                 <Cards
                   imageCard={e.path}
                   title={e.title}
+                  slug={e.title}
                   page="detail-article"
                   id={e.id}
                   borderRadius="10px"
@@ -160,12 +162,12 @@ const KetuaUmumPage = () => {
             }}
           >
             {configHome.length > 0 && (
-             <CarouselDualKetuaumum cat1={configHome[4].value[0]} cat2={configHome[5].value}/>
+              <CarouselDualKetuaumum cat1={configHome[4].value[0]} cat2={configHome[5].value}/>
             )}
           </div>
 
           {/* Container2 */}
-          <div className="container-2-ketuaumum">
+            <div className="container-2-ketuaumum">
             <MainDivider text="Berita Terkait" garisMerah="7rem" mrgn="0px 0" />
           </div>
           {/* END Container2 */}
@@ -178,6 +180,7 @@ const KetuaUmumPage = () => {
                 <Cards
                   imageCard={e.path}
                   title={e.title}
+                  slug={e.title}
                   page="detail-article"
                   id={e.id}
                   cardType={e.filetype}
@@ -189,19 +192,7 @@ const KetuaUmumPage = () => {
         </div>
       ) : (
         <>
-          <div
-            className="page"
-            id="wait"
-            style={{
-              width: "100vw",
-              height: "100vh",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            wait ..
-          </div>
+        <Wait />
         </>
       )}
     </>

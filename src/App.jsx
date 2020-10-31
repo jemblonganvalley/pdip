@@ -58,6 +58,7 @@ function App() {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     getGlobalToken();
     getToken();
     var prevScrollpos = window.pageYOffset;
@@ -71,7 +72,7 @@ function App() {
       }
       prevScrollpos = currentScrollPos;
     });
-  }, [hide]);
+  }, []);
 
   return (
     <Router>
@@ -95,7 +96,7 @@ function App() {
             <ContainerCardGallery />
           </Route>
 
-          <Route path="/detail-gallery/:id">
+          <Route path="/detail-multimedia/:id/:slug">
             <Page2 />
           </Route>
 
@@ -159,7 +160,7 @@ function App() {
           </Route> */}
 
           {/* BLOG PAGE  */}
-          <Route path="/detail-article/:id">
+          <Route path="/detail-article/:id/:slug">
             <Page1 />
           </Route>
 

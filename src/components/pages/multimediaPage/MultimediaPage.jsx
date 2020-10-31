@@ -121,12 +121,13 @@ const MultimediaPage = () => {
             {configHome[4].value.map((e, i) => (
               <Cards
                 category = {configHome[4].slug} 
-                page="detail-article"
+                page="detail-multimedia"
                 id={e.id}
                 imageCard={e.path}
                 textCategoryChild={e.category_child_name}
                 author={e.author}
                 title={e.title}
+                slug={e.title}
                 dateTime={e.created_at}
                 borderRadius="10px"
                 cardType={e.filetype}

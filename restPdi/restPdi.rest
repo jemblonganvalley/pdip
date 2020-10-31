@@ -94,7 +94,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 {
 	"order":{"key":"id","value":"desc"} ,
 	"where":{"key":"type", "value":"image"},
-	"limit" : 100
+	"limit" : 10
 }
 
 ###
@@ -105,7 +105,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 {
 	"order":{"key":"id","value":"desc"} ,
 	"where":{"key":"type", "value":"video"},
-	"limit" : 10
+	"limit" : 22
 }
 
 
@@ -118,7 +118,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 {
 	"order" : {"key":"id","value":"desc"} ,
 	"limit" : 9,
-    "where" : {"key":"category","value":"wawancara"} 
+    "where" : {"key":"category","value":"teaser"} 
 }
 
 ###
@@ -127,7 +127,7 @@ Content-Type: application/json
 Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjA0MTUwODQ5LCJleHAiOjE2MDQyMzcyNDksIm5iZiI6MTYwNDE1MDg0OSwianRpIjoid3VGa1d1ZTVld2tuUW5sSiIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.SiPxdLVH7G2RnX868_tp8gphz5opbcYJ6kvuOW7jsZU"
 
 {
-	"id" : 16
+	"id" : 28
 }
 
 ###

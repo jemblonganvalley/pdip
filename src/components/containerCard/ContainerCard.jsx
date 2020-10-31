@@ -83,6 +83,7 @@ const ContainerCard = () => {
                         category={e.category_name}
                         imageCard={e.path}
                         title={e.title}
+                        slug={e.title}
                         textSmall={e.author}
                         dateTime={e.created_at}
                         page={"/detail-article"}

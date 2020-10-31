@@ -111,6 +111,7 @@ const BeritaPage = () => {
                   dateTime={e.created_at}
                   borderRadius="10px"
                   page="detail-article"
+                  slug={e.title}
                 />
               );
             })}
@@ -182,6 +183,7 @@ const BeritaPage = () => {
                   dateTime={e.created_at}
                   borderRadius="10px"
                   page="detail-article"
+                  slug={e.title}
                 />
               );
             })}
@@ -212,6 +214,7 @@ const BeritaPage = () => {
                   dateTime={e.created_at}
                   borderRadius="10px"
                   page="detail-article"
+                  slug={e.title}
 
                 />
               );

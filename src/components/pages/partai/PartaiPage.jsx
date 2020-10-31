@@ -9,9 +9,8 @@ import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import MusicMobile from "../../musicPdiMobile/MusicMobile";
 import CardHeader from "../../cardheader/CardHeader";
 import CarouselKetuaUmumPage from "../../carouselKetuaUmumPage/CarouselKetuaUmumPage";
-import maps from '../../../img/peta.png'
 import Maps from "../../maps/Maps";
-import imgTes from '../../../img/pengurus.png'
+import Wait from '../../wait/Wait'
 
 const PartaiPage = () => {
   const [config, setConfig] = useState([]);
@@ -84,10 +83,10 @@ const PartaiPage = () => {
                           className="mobileRow"
                           as='div'
                           to={
-                            i == 0 ? `/detail-article/838/${e.title.replace(' ', '-')}` :
-                            i ==1 ? `/detail-article/839/${e.title.replace(' ', '-')}` : 
-                            i ==2 ? `/detail-article/844/${e.title.replace(' ', '-')}` : 
-                            i ==3 ? `/detail-article/847/${e.title.replace(' ', '-')}` : '/'
+                            i == 0 ? `/detail-article/838/${e.title.replaceAll(' ', '-')}` :
+                            i ==1 ? `/detail-article/839/${e.title.replaceAll(' ', '-')}` : 
+                            i ==2 ? `/detail-article/844/${e.title.replaceAll(' ', '-')}` : 
+                            i ==3 ? `/detail-article/847/${e.title.replaceAll(' ', '-')}` : '/'
                         }
                         >
                           <div className="box-mobileRow2">                         
@@ -179,7 +178,7 @@ const PartaiPage = () => {
               <MusicPdi />
               <MusicMobile />
 
-              {/* CONTAINER TIGA */}
+              {/* CONTAINER TIGA TATA KELOLA*/}
               <div className="containerTiga">
                 <div className="col-lg-3">
                   <img className="img-logo-bantengPdi" src={pdiLogo} alt="" width="180" />
@@ -284,19 +283,7 @@ const PartaiPage = () => {
         </div>
       ) : (
         <>
-          <div
-            className="page"
-            id="wait"
-            style={{
-              width: "100vw",
-              height: "100vh",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            Wait ...
-          </div>
+          <Wait />
         </>
       )}
     </>

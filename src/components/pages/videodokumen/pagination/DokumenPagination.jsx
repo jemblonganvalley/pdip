@@ -157,6 +157,7 @@ const DokumenPagination = ()=> {
                             type={e.type}
                             imageCard={e.path}
                             title={e.title}
+                            slug={e.title}
                             borderRadius="10px"
                             key={i}
                         />
