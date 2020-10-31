@@ -19,7 +19,7 @@ const Dpd = ()=> {
             {/* END */}
 
             {/* Card Header */}
-            <CardHeader/>
+            {/* <CardHeader /> */}
             {/* END Card Header */}
 
             {/* LINK PARTAI */}

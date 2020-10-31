@@ -150,7 +150,7 @@ function App() {
             <Dpd />
           </Route>
 
-          <Route path="/detailpengurus">
+          <Route path="/detailpengurus/:id/:name">
             <DetailPengurus />
           </Route>
 

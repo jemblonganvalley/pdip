@@ -66,16 +66,10 @@ const BeritaPage = () => {
     {configHome.length > 0 ? (
 
       <div className="wrapperBerita">
+
         {/* INDEX 0 */}
-        <div className="headers">
-          <div className="backgrounds" style={{
-              backgroundImage : `url(https://atur.biar.pw/public${configHome[0].value.image})`
-          }}>
-            <div className="textBackgroundBerita">
-                {configHome[1].value[0].title}
-            </div>
-          </div>
-        </div>
+       <CardHeader image={configHome[0].value.image} title={configHome[0].value.title} />
+
         <div className="linkedBerita">
           <BreadCrumbs link1="Home" to1="/" page2="Berita" />
         </div>

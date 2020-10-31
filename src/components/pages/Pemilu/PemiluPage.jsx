@@ -13,6 +13,8 @@ import IconHartaDua from "../../../img/income.png";
 import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
 import illustrator from '../../../img/illustrator2.png'
 import CardHeader from "../../cardheader/CardHeader";
+import CarouselKM from "../../carouselKM/CarouselKM";
+import ParalaxBox from "../../paralaxBox/ParalaxBox";
 
 
 // Create Component
@@ -70,7 +72,7 @@ const PemiluPage = () => {
           </div> */}
 
           {/* Card Header */}
-          <CardHeader/>
+          <CardHeader image={configHome[0].value.image} title={configHome[0].value.title}/>
           {/* END Card Header */}
 
           <div className="linkedPemiluPage">
@@ -144,14 +146,7 @@ const PemiluPage = () => {
           {/* Container2 */}
           <div className="container-2-pemiluPage">
             {/* Carousel Tata Cara */}
-            <CarouselTataCara
-            img1={illustrator}
-            img2={illustrator}
-            img3={illustrator}
-            paragrapOne="Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint neque, amet tempore sed atque maxime sapiente dolor similique rerum."
-            paragrapTwo="Lorem ipsum dolor elit. Soluta sint neque, amet tempore sed atque maxime sapiente dolor similique rerum."
-            paragrapThree="Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint neque, amet tempore sed atque maxi."
-          />
+              <ParalaxBox image={configHome[5].value.image} title={configHome[5].value.title} link={configHome[5].value.link} />
             {/* END Carousel Tata Cara */}
           </div>
           {/* END Container2 */}

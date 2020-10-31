@@ -12,7 +12,7 @@ const CardCircle = ({ strukturCard }) => {
         }}>
             {strukturCard.map((e) => {
                 return (
-                    <Link className="circleCard" to="/detailpengurus" key={e.id}>
+                    <Link className="circleCard" to={`/detailpengurus/${e.id}/${e.nama.replace(' ', '-')}`} key={e.id}>
                         <div className="imageCircle" style={{
                             background: `url(https://atur.biar.pw/public/${e.photo})`,
                             backgroundSize : 'cover'

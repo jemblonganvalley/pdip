@@ -64,7 +64,7 @@ const MultimediaPage = () => {
           </div> */}
 
           {/* Card Header */}
-          <CardHeader/>
+          <CardHeader image={configHome[0].value.image} title={configHome[0].value.title}/>
           {/* END Card Header */}
 
           <div className="linkedMedia">

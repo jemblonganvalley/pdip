@@ -264,7 +264,6 @@ const HomePage = () => {
                     dateTime={e.created_at}
                     borderRadius="10px"
                     cardType={e.filetype}
-
                   />
                 );
               })}
