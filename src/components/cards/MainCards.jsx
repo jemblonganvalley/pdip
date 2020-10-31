@@ -65,7 +65,7 @@ const Cards = ({
           to={`${page}/${id}`}
           className="imageCard"
           style={{
-            backgroundImage: cardType === 'youtube' ? `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)` : `url(https://atur.biar.pw/public/${imageCard})`,
+            backgroundImage: imageCard.includes('uploads') ? `url(https://atur.biar.pw/public/${imageCard})` : `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)` ,
             textDecoration: "none",
             backgroundPosition: "center",
           }}

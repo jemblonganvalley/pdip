@@ -68,7 +68,10 @@ const Page1 = () => {
               to1="/"
               link2={detailPage.category_name}
               to2={`/${detailPage.category_name}`}
-              page3={detailPage.category_child_name}
+              page3={detailPage.category_name}
+              link3={detailPage.category_child_name}
+              to3={`/article/${detailPage.id_category_child}/${detailPage.category_name}`}
+
             />
           </div>
 
@@ -134,21 +137,24 @@ const Page1 = () => {
               {/* END Section1 */}
 
               {/* Section2 */}
-              {detailPage.category_name !== "Berita_video" && (
-                <img
+              {detailPage.path.includes('uploads') ? (
+                    <img
                   className="img-beritaPage1"
-                  src={`https://atur.biar.pw/public/${detailPage.path}`}
+                  src={`https://atur.biar.pw/public/${detailPage.path}` }
                   alt={`${detailPage.path}`}
                   style={{
                     height: "40vh",
                     objectFit: "cover",
                   }}
                 />
+              ) : (
+                 <iframe className='col-12' height='500px' src={`https://www.youtube.com/embed/${detailPage.path}`} frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
               )}
+            
 
-              {detailPage.category_name == "Berita_video" && (
+              {/* {detailPage.category_name == "Berita_video" && (
                 <CarouselBeritaPage1 />
-              )}
+              )} */}
               {/* END Section2 */}
 
               {/* Section3 */}

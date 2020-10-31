@@ -169,7 +169,7 @@ const BeritaPage = () => {
 
           {/* Column2 */}
           <div className="cardContainer" id="card-berita">
-            {configHome[8].value.map((e, i) => {
+            {configHome[7].value.map((e, i) => {
               return (
                 <Cards
                   id={e.id}
@@ -188,7 +188,7 @@ const BeritaPage = () => {
           {/* Column3 */}
           <div className="divider-kegiatanPartai">
             <MainDivider
-              text="Kegiatan Partai"
+              text="Nuansa"
               garisMerah="7rem"
               mrgn="40px 0 0px 0"
             />

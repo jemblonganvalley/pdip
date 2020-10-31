@@ -129,6 +129,7 @@ const MultimediaPage = () => {
                 title={e.title}
                 dateTime={e.created_at}
                 borderRadius="10px"
+                cardType={e.filetype}
               />
             ))}
             </div>
