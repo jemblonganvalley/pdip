@@ -14,9 +14,8 @@ $smallPhoneDua : 400px;
 
 .container-carousel-ketuaUmumPage{
     display: flex;
-    height: 40vh;
+    height: 50vh;
     width: 100%;
-    background: #aaa;
 
     @include smallPhone(){
         height: 45vh;
@@ -40,7 +39,6 @@ $smallPhoneDua : 400px;
             flex-direction: column;
             height: auto;
             width: 100%;
-        
             background-position: center;
             background-size: cover;
             overflow: hidden;
@@ -48,7 +46,7 @@ $smallPhoneDua : 400px;
             .cont-img-col1{
                 display: flex;
                 flex-direction: column;
-                height: 40vh;
+                height: 50vh;
                 width: 100%;
                 overflow: hidden;
 
@@ -59,10 +57,14 @@ $smallPhoneDua : 400px;
                 // Column1
                 .col1-img{
                     display: flex;
-                    height: 60%;
+                    height: 70%;
                     width: 100%;
                     overflow: hidden;
                     border-bottom: 1px solid #fff;
+
+                    @include smallPhone(){
+                        height: 65%;
+                    }
 
                     .box-txt-title{
                         display: flex;
@@ -71,18 +73,6 @@ $smallPhoneDua : 400px;
                         justify-content: center;
                         align-items: center;
                         overflow: hidden;
-
-                        h1{
-                            display: flex;
-                            font-size: 30px;
-                            color: #fff;
-                            padding: 25% 20% 20% 20%;
-                            overflow: hidden;
-
-                            @include smallPhone(){
-                                font-size: 20px;
-                            }
-                        }
                     }  
                 }
                 // END Column1
@@ -91,7 +81,7 @@ $smallPhoneDua : 400px;
                 .col2-img{
                     display: flex;
                     flex-direction: column;
-                    height: 40%;
+                    height: 30%;
                     width: 100%;
                     background-color: rgba(255, 0, 8, 0.6);
                     overflow: hidden;
@@ -99,6 +89,10 @@ $smallPhoneDua : 400px;
 
                     &:hover{
                         background: #111;
+                    }
+                    
+                    @include smallPhone(){
+                        height: 35%;
                     }
 
                     .garis-strip-col2{
@@ -127,18 +121,31 @@ $smallPhoneDua : 400px;
 
                         @include smallPhone(){
                             height: auto;
-                            padding: 15px 30px 0 30px;
+                            padding: 20px 30px;
+                        }
+
+                        h4{
+                            display: flex;
+                            // font-size: 30px;
+                            color: #fff;
+                            padding: 0;
+                            overflow: hidden;
+
+                            @include smallPhone(){
+                                // font-size: 20px;
+                            }
                         }
 
                         .txt-admin{
                             display: flex;
-                            font-size: 12px;
+                            // font-size: 12px;
                             color: #fff;
                             overflow: hidden;
 
                             @include smallPhone(){
-                                font-size: 7px;
-                                padding: 2px 0;
+                                display: none;
+                                // font-size: 7px;
+                                padding: 10px 0;
                             }
                         }
 
@@ -150,7 +157,8 @@ $smallPhoneDua : 400px;
                             overflow: hidden;
 
                             @include smallPhone(){
-                                font-size: 10px;
+                                // font-size: 10px;
+                                display: none;
                             }
                         }
                     }

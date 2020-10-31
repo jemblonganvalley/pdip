@@ -67,9 +67,9 @@ const BkbbWejangan = () => {
 
                         {/* Row2 */}
                         <div className="row2-bkbbWejangan">
-                            <p className="txt1">
+                            <small className="txt1">
                                 Admin PDI Perjuangan | 1 Januari 2019
-                            </p>
+                            </small>
 
                             <h5 className="txt2">
                                 Barang siapa jang ingin mutiara harus berani terjun di lautan jang dalam. Janglah lembek, mohon pada Tuhan supaya bangsa Indonesia menjadi satu bangsa yang jaya di dunia, menjadi bangsa. Kuat dan tabah

@@ -7,8 +7,8 @@ const Subscribe =()=> {
         <div className="wrapperSubscribe">
             <div className="berita ikutiBerita">
                 <div className="wrapper">
-                    <h5>Ikuti Berita Terbaru</h5>
-                    <small>Get in touch with fresh news from our company and share it</small>
+                    <p>Ikuti Berita Terbaru</p>
+                    <small></small>
                     <form className="form-control" >
                         <i class="fa fa-envelope-o"></i>
                         <input type="email" placeholder="masukan email anda disini" />

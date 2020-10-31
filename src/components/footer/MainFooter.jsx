@@ -15,9 +15,9 @@ const MainFooter = ()=> {
                 />
 
                 <div className="textFooter">
-                    <span className="heads">situation room pdi perjuangan</span>
-                    <span className="body">Situs pdiperjuangan.id adalah situs resmi PDI Perjuangan. Situs ini<br/>dikelola oleh Pusat Analisa dan Pengendali Situasi (Situation Room)<br/>yang dikepalai oleh Prananda Prabowo.</span>
-                    <span className="foot">Untuk dukungan dan partisipasi, kirimkan naskah atau artikel beserta<br/>foto kegiatan anda ke email : redaksi@pdiperjuangan.id</span>
+                    <small className="heads">situation room pdi perjuangan</small>
+                    <small className="body">Situs pdiperjuangan.id adalah situs resmi PDI Perjuangan. Situs ini dikelola oleh Pusat Analisa dan Pengendali Situasi (Situation Room) yang dikepalai oleh Prananda Prabowo.</small>
+                    <small className="foot">Untuk dukungan dan partisipasi, kirimkan naskah atau artikel beserta foto kegiatan anda ke email : redaksi@pdiperjuangan.id</small>
                 </div>
                 </span>
                   <address className="contact " >

@@ -98,11 +98,9 @@ export const CarouselDuelBerita = ({
                         <span className="gradientOverlay" style={{
                             width : '100%',
                             height : '100%',
-                            backgroundColor : 'rgba(0,0,0,0.500)',
                             position : 'absolute',
-                            background: `linear-gradient(176deg, rgba(0,0,0,0.7147233893557423) 0%, rgba(255,0,0,1) 100%)`,
+                            background: `linear-gradient(rgba(0,0,0,0.200) 20%, rgba(0,0,0,0.700) 80%)`,
                             // backgroundBlendMode : 'multiply',
-                            
                         }}></span>
 
                         <img src={`https://www.pdiperjuangan.id/cms/${e.path}`} className="d-block w-100 carouselDual1Image" alt="..." key={i} style={{
@@ -162,6 +160,14 @@ export const CarouselDuelBerita = ({
                             background: `linear-gradient(176deg, rgba(0,0,0,0.28335084033613445) 0%, rgba(255,0,0,1) 100%)`,
                             
                         }}></span> */}
+
+                        <span className="gradientOverlay" style={{
+                            width : '100%',
+                            height : '100%',
+                            position : 'absolute',
+                            background: `linear-gradient(rgba(0,0,0,0.200) 20%, rgba(0,0,0,0.700) 80%)`,
+                            // backgroundBlendMode : 'multiply',
+                        }}></span>
 
                         <img src={`https://www.pdiperjuangan.id/cms/${e.path}`} className="d-block w-100 carouselDual1Image" alt="..." key={i} style={{
                             width : '100%',

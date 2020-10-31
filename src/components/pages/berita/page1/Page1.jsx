@@ -53,7 +53,9 @@ const Page1 = () => {
     <>
       {detailPage ? (
         <div className="wrapperBeritaPage1">
-          <div className="headers-BeritaPage1">
+          {/* Untuk page detail berita tidak memakai Headers */}
+
+          {/* <div className="headers-BeritaPage1">
             <div className="backgrounds">
               <div className="textBackgroundBerita">
                 <h2 className="txt-backg-beritaPage1">
@@ -61,7 +63,7 @@ const Page1 = () => {
                 </h2>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="linkedBeritaPage1">
             <BreadCrumbs
               link1="Home"
@@ -132,7 +134,7 @@ const Page1 = () => {
                             </h5>
                         </div> */}
               {/* END Section1 */}
-
+              
               {/* Section2 */}
               {detailPage.category_name !== "Berita_video" && (
                 <img
@@ -140,7 +142,7 @@ const Page1 = () => {
                   src={`https://atur.biar.pw/public/${detailPage.path}`}
                   alt={`${detailPage.path}`}
                   style={{
-                    height: "40vh",
+                    // height: "40vh",
                     objectFit: "cover",
                   }}
                 />

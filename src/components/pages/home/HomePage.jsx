@@ -11,6 +11,7 @@ import MusicMobile from "../../musicPdiMobile/MusicMobile";
 import KMobile from "../../carouselKMobile/KMobile";
 import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
 import { Link, Redirect } from "react-router-dom";
+import VMedia from "../../VMedia/VMedia";
 
 
 export const LighBox = ({source})=>{
@@ -142,7 +143,7 @@ const HomePage = () => {
               configHome[1].value.map((e, i) => (
                 <div className="col-lg-4 custom" key={i}>
                   {/* URUTAN LINK */}
-                  <a href={i === 0 ? '/' : i === 1 ? 'https://www.pdipkreatif.id' : '/event'} target={i == 1 ? '_blank' : ''}>
+                  <a href={i === 0 ? '/' : i === 1 ? 'https://www.pdipkreatif.id' : '/event'} target={i == 1 ? '_blank' : ''} className="btn-customBorder">
                     <div className="customBorder">
                       <img
                         src={`https://atur.biar.pw/public/${e.image}`}
@@ -171,19 +172,25 @@ const HomePage = () => {
             )}
 
             {configHome.length > 0 &&
-              configHome[3].value.map((e, i) => (
+              configHome[3].value.map((e, i,) => (
                 <div
-                  className="bannerYoutube"
-                  style={{
-                    backgroundImage: `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
-                  }}
-                  key={i}
-                  onClick={()=>{
-                              setShowVid(true)
-                            }}
+                  // style={{
+                  //   backgroundImage: `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
+                  // }}
+                  // key={i}
+                  // onClick={()=>{
+                  //             setShowVid(true)
+                  //           }}
                 >
+                  {/* Card VMEDIA */}
+                  <VMedia
+                    headline={e.title}
+                    source={`https://www.youtube.com/embed/${e.path}`}
+                    desc={e.description}
+                  />
+                  {/* end Card VMEDIA */}
 
-                  <div className="textYoutube">
+                  {/* <div className="textYoutube">
                     <div className="wrapperText">
                       <ul className="circleYoutube">
                         <li>
@@ -196,7 +203,7 @@ const HomePage = () => {
                         <h6 className="siaranHut">{e.description}</h6>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               ))}
 

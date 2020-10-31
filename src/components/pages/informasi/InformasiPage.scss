@@ -14,6 +14,32 @@ $smallPhoneDua : 400px;
     }
 }
 
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
+
 .wrapperInformasi {
     width: 100%;
     padding-bottom: 40px;
@@ -83,6 +109,13 @@ $smallPhoneDua : 400px;
             align-items: center;
             flex-direction: column;
             padding: 0 20% 5px 20%;
+
+            // min width 500px and max width 750px
+            @include respon750(){
+                padding: 0 15% 5px 15%;
+            }
+            // end min width 500px and max width 750px
+
             @include smallPhone() {
                 width: 100%;
                 padding: 0;
@@ -105,6 +138,17 @@ $smallPhoneDua : 400px;
                 margin-top: 0rem;
                 justify-content: center;
                 // position: relative;
+
+                @include respon950(){
+                    flex-direction: column;
+                }
+
+                // min width 500px and max width 750px
+                @include respon750(){
+                    flex-direction: column;
+                }
+                // end min width 500px and max width 750px
+
                 @include smallPhone() {
                     flex-direction: column;
                     position: inherit;
@@ -112,35 +156,88 @@ $smallPhoneDua : 400px;
 
                 .paragrapKiri {
                     display: flex;
+                    height: 45vh;
                     flex-direction: column;
                     font-family: 'Roboto';
-                    @include smallPhone() {
-                        justify-content: center;
-                        align-items: center;
-                        padding: 0 10%;
+                    overflow-y: scroll;
+
+                    @include respon950(){
+                        height: auto;
                     }
+
+                    // min width 500px and max width 750px
+                    @include respon750(){
+                        height: auto;
+                    }
+                    // end min width 500px and max width 750px
+
+                    @include smallPhone() {
+                        height: auto;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0 10px;
+                    }
+
                     .merdeka {
                         font-style: italic;
+
+                        @include respon750(){
+                            justify-content: center;
+                            text-align: center;
+                        }
+
+                        @include smallPhone(){
+                            padding: 0 10%;
+                        }
                     }
                     .solid {
                         font-style: italic;
+
+                        // min width 500px and max width 750px
+                        @include respon750(){
+                            text-align: center;
+                        }
+                        // end min width 500px and max width 750px
+
                         @include smallPhone() {
                             text-align: center;
+                            padding: 0 10%;
                         }
                     }
                     .textParagrap {
-                        font-size: 10pt;
+                        // font-size: 10pt;
                         // width: 37vw;
                         width: 100%;
                         padding: 0 4% 0 0;
+
+                        // min width 500px and max width 750px
+                        @include respon750(){
+                            margin-top: 20px;
+                        }
+                        // end min width 500px and max width 750px
+
                         @include smallPhone() {
                             width: auto;
-                            font-size: 9pt;
-                            text-align: center;
+                            // font-size: 9pt;
+                            text-align: start;
                             padding: 0 2%;
+                            margin-top: 10px;
                         }
                     }
+                }
 
+                .paragrapKiri::-webkit-scrollbar{
+                    width: 3px;
+                }
+
+                .paragrapKiri::-webkit-scrollbar-thumb{
+                    background-color: #555;
+                    border-radius: 10px;
+                }
+
+                .paragrapKiri::-webkit-scrollbar-track{
+                    background-color: #f3f3f3;
+                    border-radius: 10px;
                 }
             }
 
@@ -150,6 +247,17 @@ $smallPhoneDua : 400px;
                 // width: 100%;
                 height: 100%;
                 width: 50vw;
+
+                @include respon950(){
+                    width: 100%;
+                }
+
+                // min width 500px and max width 750px 
+                @include respon750(){
+                    width: 100%;
+                }
+                // end min width 500px and max width 750px
+
                 @include smallPhone() {
                     width: 100%;
                     justify-content: center;
@@ -171,6 +279,17 @@ $smallPhoneDua : 400px;
                     background-size: cover;
                     color: #ffffff;
                     font-family: 'Roboto';
+
+                    @include respon950(){
+                        width: 100%;
+                    }
+
+                    // min width 500px and max width 750px
+                    @include respon750(){
+                        width: 100%;
+                    }
+                    // end min width 500px and max width 750px
+
                     @include smallPhone() {
                         height: 50vh;
                         position: inherit;
@@ -179,7 +298,7 @@ $smallPhoneDua : 400px;
 
                     .textParagrapKanan {
                         margin-top: 1rem;
-                        font-size: 10pt;
+                        // font-size: 10pt;
                     }
                 }
             }
@@ -195,90 +314,6 @@ $smallPhoneDua : 400px;
                     }
                 }
             //  END
-
-            
-
-            
-
-            // CARD LAPORAN
-            .containerLaporan {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                // padding: 2rem;
-                @include smallPhone() {
-                    padding: 0 10px;
-                    flex-direction: column;
-                }
-
-                .cardLaporanSatu{
-                    margin-right: 20px;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .cardLaporan {
-                    width: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 15vh;
-                    flex-direction: row;
-                    // margin: 1rem 1rem;
-                    background: #e50209;
-                    // border: 1px solid crimson;
-                    transition: .3s;
-                    padding: 20px 10px 20px 10px;
-                    overflow: hidden;
-
-                    @include smallPhone() {
-                        height: 15vh;
-                        width: 100%;
-                        margin: .5rem 0 0 0;
-                        padding: 10px 0 10px 20px;
-                        border-radius: 5px;
-                        justify-content: flex-start;
-                        align-items: center;
-                    }
-
-                    &:hover {
-                        background: #2f3542;
-                    }
-
-                    .imageHarta {
-                        width: 45px;
-                        margin: 1rem;
-
-                        @include smallPhone(){
-                            width: 50px;
-                            margin: 0;
-                        }
-                    }
-
-                    .textHarta {
-                        display: flex;
-                        flex-direction: column;
-                        color: #ffffff;
-                        margin: 0 1rem;
-
-                        .h5Harta {
-                            text-transform: uppercase;
-
-                        }
-
-                        .paragrapHarta {
-                            font-size: 10pt;
-
-                            @include smallPhone(){
-                                font-size: 8pt;
-                            }
-                        }
-                    }
-
-                }
-            }
-            // END
         }
     // END
 
@@ -290,6 +325,14 @@ $smallPhoneDua : 400px;
         justify-content: center;
         align-items: center;
         width: 100%;
+
+        // min width 500px and max width 750px
+        @include respon750(){
+            padding: 10px 15% 0 15%;
+            margin-top: 1rem;
+        }
+        // end min width 500px and max width 750px
+
         @include smallPhone() {
             padding: 0 10px;
         }
@@ -300,6 +343,13 @@ $smallPhoneDua : 400px;
             height: 60vh;
             position: relative;
             // overflow: hidden;
+
+            // min width 500px and max width 750px
+            @include respon750(){
+                height: 40vh;
+            }
+            // end min width 500px and max width 750px
+
             @include smallPhoneDua() {
                 height: 40vh;
             }
@@ -330,6 +380,12 @@ $smallPhoneDua : 400px;
             align-items: center;
             flex-direction: column;
             padding: 0 20%;
+
+            // min width 500px and max width 750px
+            @include respon750(){
+                padding: 0 15%;
+            }
+            // end min width 500px and max width 750px
 
             @include smallPhone() {
                 padding: 0 10px;
@@ -439,6 +495,13 @@ $smallPhoneDua : 400px;
             align-items: center;
             margin: 20px 0 40px 0;
 
+            // min width 500px and max width 750px
+            @include respon750(){
+                flex-direction: column;
+                padding: 0 15%;
+            }
+            // end min width 500px and max width 750px
+
             @include smallPhone() {
                 flex-direction: column;
                 padding: 0 10px;
@@ -453,6 +516,15 @@ $smallPhoneDua : 400px;
                 align-items: center;
                 height: 15vh;
                 transition: .3s;
+
+                // min widht 500px and max width 750px
+                @include respon750(){
+                    width: 100%;
+                    margin: 0 0 .5rem 0;
+                    padding: 10px 30px;
+                    justify-content: flex-start;
+                }
+                // end min width 500px and max width 750px
 
                 @include smallPhone(){
                     height: 15vh;
@@ -477,6 +549,13 @@ $smallPhoneDua : 400px;
                 .textFormulir {
                     margin-left: 30px;
                     // font-family: 'Roboto';
+
+                    // min width 500px and max width 750px
+                    @include respon750(){
+                        margin-left: 1rem;
+                    }
+                    // end min width 500px and max width 750px
+
                     @include smallPhone() {
                         // font-size: 13pt;
                         margin-left: 1rem;
@@ -488,6 +567,12 @@ $smallPhoneDua : 400px;
                 background: $colors;
                 color: #ffffff;
                 margin-right: 20px;
+
+                // min width 500px and max width 750px
+                @include respon750(){
+                    margin-right: 0;
+                }
+                // end min width 500px and max width 750px
 
                 @include smallPhone(){
                     margin-right: 0;
@@ -520,4 +605,157 @@ $smallPhoneDua : 400px;
                 display: none;
             }
         }
+
+        // wrapper cardLaporan2
+        .wrapper-cardLaporan2{
+            display: flex;
+            padding: 0 20%;
+            margin-bottom: 20px;
+
+            @include respon750(){
+                padding: 0 15%;
+            }
+
+            @include smallPhone(){
+                padding: 0px;
+            }
+        }
+        // end wrapper cardLaporan2
+
+        // CARD LAPORAN
+        .containerLaporan {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            // padding: 2rem;
+
+            // min width 750px and max width 950px
+            @include respon950(){
+                flex-direction: column;
+            }
+            // end min width 750px and max width 950px
+
+            // min width 500px and max width 750px
+            @include respon750(){
+                flex-direction: column;
+            }
+            // end min width 500px and max width 750px
+
+            @include smallPhone() {
+                padding: 0 10px;
+                flex-direction: column;
+            }
+
+            .cardLaporanSatu{
+                margin-right: 20px;
+                justify-content: center;
+                align-items: center;
+
+                @include respon950(){
+                    margin-right: 0;
+                }
+
+                @include respon750(){
+                    margin-right: 0;
+                }
+            }
+
+            .cardLaporan {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 15vh;
+                flex-direction: row;
+                // margin: 1rem 1rem;
+                background: #e50209;
+                // border: 1px solid crimson;
+                transition: .3s;
+                overflow: hidden;
+
+                @include respon950(){
+                    width: 100%;
+                    margin: .5rem 0 0 0;
+                    padding: 20px 30px;
+                    border-radius: 5px;
+                    justify-content: center;
+                }
+
+                // min width 500px and max width 750px
+                @include respon750(){
+                    width: 100%;
+                    margin: .5rem 0 0 0;
+                    padding: 20px 30px;
+                    border-radius: 5px;
+                    justify-content: center;
+                }
+                // end min width 500px and max width 750px
+
+                @include smallPhone() {
+                    width: 100%;
+                    margin: .5rem 0 0 0;
+                    padding: 10px 0 10px 20px;
+                    border-radius: 5px;
+                    justify-content: center;
+                }
+
+                &:hover {
+                    background: #2f3542;
+                }
+
+                .box-card-laporan{
+                    display: flex;
+                    height: 100%;
+                    width: 50%;
+                    justify-content: center;
+                    align-items: center;
+
+                    @include respon750(){
+                        width: 70%;
+                    }
+
+                    @include smallPhone(){
+                        width: 80%;
+                    }
+
+                    .imageHarta {
+                        width: 45px;
+
+                        // min widht 500px and max widht 750px
+                        @include respon750(){
+                            margin: 0;
+                        }
+                        // end min width 500px and max width 750px
+
+                        @include smallPhone(){
+                            width: 50px;
+                            margin: 0;
+                        }
+                    }
+
+                    .textHarta {
+                        display: flex;
+                        flex-direction: column;
+                        color: #ffffff;
+                        margin: 0 1rem;
+
+                        .h5Harta {
+                            text-transform: uppercase;
+                        }
+
+                        .paragrapHarta {
+                            // font-size: 10pt;
+                            // border: 1px solid blue;
+
+                            @include smallPhone(){
+                                // font-size: 8pt;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        // END
 }

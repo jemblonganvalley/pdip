@@ -113,31 +113,72 @@ const PemiluPage = () => {
             {/* END Column1 */}
 
             {/* Column2 */}
-            <a className="col2-container-1-pemiluPage" href='/' >
+            {/* <a className="col2-container-1-pemiluPage" href='/' > */}
               {/* Row1 */}
-              <div className="row1-col2-pemiluPage pemilihan">
+              {/* <div className="row1-col2-pemiluPage pemilihan">
                 <img
                   src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
                   className="col1-row1-pemiluPage"
                 />
                 <div className="col2-row1-pemiluPage">
-                  <p className="txt-title">{configHome[4].value[0].title}</p>
+                  <h6 className="txt-title">{configHome[4].value[0].title}</h6>
                 </div>
-              </div>
+              </div> */}
               {/* END Row1 */}
 
               {/* Row2 */}
-                <a className="row2-col2-pemiluPage pemilihan" href='https://www.pdipkreatif.com/home' target='_blank'>
+                {/* <a className="row2-col2-pemiluPage pemilihan" href='https://www.pdipkreatif.com/home' target='_blank'>
                   <img
                     src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
                     className="col1-row2-pemiluPage"
                   />
                   <div className="col2-row2-pemiluPage">
-                    <p className="txt-title">{configHome[4].value[1].title}</p>
+                    <h6 className="txt-title">{configHome[4].value[1].title}</h6>
                   </div>
-                </a>
+                </a> */}
               {/* END Row2 */}
-            </a>
+            {/* </a> */}
+
+            {/* CARD LAPORAN */}
+            <div className="containerLaporan" style={{
+                marginTop : '10px'
+            }}>
+              
+              <div className="cardLaporan cardLaporanSatu">
+                <div className="box-card-laporan">
+                  <img
+                    src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
+                    alt=""
+                    className="imageHarta"
+                  />
+                  <div className="textHarta">
+                    <h6 className="hartaKekayaan h5Harta">
+                      {configHome[4].value[0].title}
+                    </h6>
+          
+                  </div>
+                </div>
+              </div>
+
+              
+              <div className="cardLaporan cardLaporanDua">
+                <div className="box-card-laporan">
+                <img
+                    src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
+                    alt=""
+                    className="imageHarta"
+                  />
+                  <div className="textHarta">
+                    <h6 className="keuangan h5Harta">
+                    {configHome[4].value[1].title}
+                    </h6>
+              
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            {/* END CARD LAPORAN */}
             {/* END Column2 */}
           </div>
           {/* END Container1 */}

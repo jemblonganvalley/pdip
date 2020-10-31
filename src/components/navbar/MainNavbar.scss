@@ -35,6 +35,19 @@ $respon500: 500px;
 }
 // END Min widht 500 and Max width 750
 
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
+
 $smallPhoneSatu : 500px;
 $smallPhoneDua : 400px;
 
@@ -109,6 +122,12 @@ $smallPhoneDua : 400px;
                 width: 50px;
             }
 
+            // min width 750px and max width 950px
+            @include respon950(){
+                width: 200px;
+            }
+            // end min width 750px and max width 950px
+
             // Respon 750
             @include respon750(){
                 width: 200px;
@@ -144,6 +163,12 @@ $smallPhoneDua : 400px;
                 font-size: 10pt;
             }
 
+            // min width 750px and max width 950px
+            @include respon950(){
+                margin-left: 15px;
+            }
+            // end min width 750px and max width 950px
+
             // Respon 750
             @include respon750() {
                 font-size: 10pt;
@@ -153,7 +178,7 @@ $smallPhoneDua : 400px;
 
             // Respon 500
             @include smallPhone(){
-                font-size: 9pt;
+                font-size: 10pt;
                 margin-left: 15px;
             }
             // END Respon 500
@@ -181,14 +206,23 @@ $smallPhoneDua : 400px;
     form {
         position: relative;
 
+        // min width 750px and max width 950px
+        @include respon950(){
+            margin: 0 0 30px 15px;
+            width: 100%;
+        }
+        // end min width 750px and max width 950px
+
         // Min widht 500 and max widht 750
         @include respon750(){
-            margin: 0 0 30px 0;
+            margin: 0 0 30px 15px;
+            width: 100%;
         }
         // END Min width 500 and max widht 750
 
         // Max width 500
         @include smallPhone(){
+            width: 100%;
             margin: 0 0 30px 15px;
         }
         // END Max widht 500
@@ -197,26 +231,47 @@ $smallPhoneDua : 400px;
 
     .form-control {
         border-radius: 25px;
-        font-size: 10px;
+        // font-size: 10px;
         font-weight: 500;
         font-style: italic;
         background-color: #fff;
         color: #000;
         width: 200px;
         border: none;
+        padding: 0 40px 0 10px;
 
         &:focus {
             box-shadow: 0 0 0 0.2rem rgba(237, 29, 36, 0.25);
             border-color: $colors;
+        }
+
+        // min widht 750px and max width 950px
+        @include respon950(){
+            width: 100%;
+            padding: 0 40px 0 10px;
+        }
+        // end min width 750px and max width 950px
+
+        // min widht 500px and max width 750px
+        @include respon750(){
+            width: 100%;
+            padding: 0 40px 0 10px;
+        }
+        // end min width 500px and max width 750px
+
+        @include smallPhone(){
+            width: 100%;
+            padding: 0 40px 0 10px;
         }
     }
     .btn-next {
         border: none;
         background: transparent;
         color: #000;
+        font-size: 15pt;
         
         // @include smallPhone(){
-        //     border: 1px solid yellow;
+        //     font-size: 14pt;
         // }
     }
 
@@ -224,6 +279,10 @@ $smallPhoneDua : 400px;
         position: absolute;
         right: 10%;
         bottom: 10%; 
+
+        @include smallPhone(){
+            right: 7%;
+        }
     }
 
     ::placeholder {

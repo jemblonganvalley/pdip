@@ -13,6 +13,32 @@ $smallPhoneDua : 400px;
     }
 }
 
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
+
 
 .wrapperBerita{
     width: 100%;
@@ -71,6 +97,12 @@ $smallPhoneDua : 400px;
         padding: 0 20%;
         overflow: hidden;
 
+        // min width 500px and max width 750px
+        @include respon750(){
+            padding: 0 15%;
+        }
+        // end min width 500px and max width 750px
+
         @include smallPhone(){
             padding: 0;
         }
@@ -80,7 +112,7 @@ $smallPhoneDua : 400px;
             display: flex;
 
             @include smallPhone(){
-                padding: 0 0 20px 0;
+                padding: 0 0 10px 0;
             }
         }
         // END container card informasi
@@ -313,6 +345,20 @@ $smallPhoneDua : 400px;
         margin: 20px 0 0px 0;
         overflow: hidden;
 
+        // min width 750px and max width 950px
+        @include respon950(){
+            background-size: cover;
+            background-attachment: inherit;
+        }
+        // end min width 750px and max width 950px
+
+        // min width 500px and max width 750px
+        @include respon750(){
+            background-size: cover;
+            background-attachment: inherit;
+        }
+        // end min width 500px and max width 750px
+
         @include smallPhone(){
             height: 40vh;
             background-size: cover;
@@ -364,6 +410,10 @@ $smallPhoneDua : 400px;
         width: 100%;
         padding: 0 20% 0px 20%;
 
+        @include respon750(){
+            padding: 0 15%;
+        }
+
         @include smallPhone(){
             padding: 0 0px;
         }
@@ -409,7 +459,6 @@ $smallPhoneDua : 400px;
                 padding: 30px 10px 0 10px;
                 justify-content: center;
                 align-items: center;
-                border: 1px solid red;
             }
         }
         // END Column1
@@ -491,6 +540,18 @@ $smallPhoneDua : 400px;
     flex-direction: row;
     flex-wrap: wrap;
     // margin-top: 15px;
+
+    // min width 750px and max width 950px
+    @include respon950(){
+        flex-direction: column;
+    }
+    // end min width 750px and max width 950px
+
+    // min width 500px and max width 750px
+    @include respon750(){
+        flex-direction: column;
+    }
+    // end min width 500px and max width 750px
 
     @include smallPhone(){
         margin-top: 0px;

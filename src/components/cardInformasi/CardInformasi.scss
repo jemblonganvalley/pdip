@@ -34,6 +34,32 @@ $deviceThree : 1200px;
     }
 }
 
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
+
 .cardMedia {
     width: 100%;
     padding: 20px 0 0 0;
@@ -41,85 +67,213 @@ $deviceThree : 1200px;
     justify-content: space-around;
     align-items: center;
 
-    @include smallPhone() {
+    // min width 750px and max width 950px
+    @include respon950(){
         flex-direction: column;
+        justify-content: center;
+        padding: 20px 0px 0 0px;
+    }
+    // end min width 750px and max width 950px
+
+    // min width 500px and max width 750px
+    @include respon750(){
+        flex-direction: column;
+        padding: 20px 0px 0 0px;
+    }
+    // end min width 500px and max width 750px
+
+    @include smallPhone() {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
         padding: 10px 10px 0 10px;
     }
 
-    .mediaCard {
-        text-decoration: none;
-        color: #000000;
+    .box-cardMedia{
+        display: flex;
 
-        @include smallPhone() {
-            width: 100%;
-            margin: .5rem 0 0 0;
+        @include respon950(){
+            display: flex;
             height: 15vh;
+            width: 100%;
             background: $accent;
+            margin: .5rem 0 0 0;
+            justify-content: center;
             border-radius: 5px;
-            padding: 0 0 0 20px;
         }
 
-        .smallCard {
-            text-transform: uppercase;
-            // font-weight: 700;
-            font-family: 'Open Sans';
-            // font-size: 9pt;
+        @include respon750(){
+            display: flex;
+            height: 15vh;
+            width: 100%;
+            background: $accent;
+            margin: .5rem 0 0 0;
+            justify-content: center;
+            border-radius: 5px;
+        }
+
+        @include smallPhone(){
+            display: flex;
+            height: 15vh;
+            width: 100%;
+            background: $accent;
+            margin: .5rem 0 0 0;
+            justify-content: center;
+            border-radius: 5px;
+        }
+        
+        .mediaCard {
+            text-decoration: none;
+            color: #000000;
+
+            // min width 750px and max width 950px
+            @include respon950(){
+                width: 50%;
+                padding: 0;
+                justify-content: flex-start;
+            }
+            // end min width 750px and max width 950px
+    
+            // min width 500px and max width 750px
+            @include respon750(){
+                width: 70%;
+                padding: 0;
+                justify-content: flex-start;
+            }
+            // end min width 500px and max width 750px
+    
             @include smallPhone() {
-                margin-left: 1rem;
+                width: 70%;
+                padding: 0px;
+            }
+    
+            .smallCard {
+                text-transform: uppercase;
+                // font-weight: 700;
+                font-family: 'Open Sans';
+                // font-size: 9pt;
+    
+                // min width 500px and max width 750px
+                @include respon750(){
+                    margin-left: 1rem;
+                }
+                // end min width 500px and max width 750px
+    
+                @include smallPhone() {
+                    margin-left: 1rem;
+                }
             }
         }
-    }
-    
-    .imgCards {
-        height: 75px;
-        width: 75px;
-        margin-right: 1rem;
-
-        @include deviceOne(){
-            height: 50px;
-            width: 50px;
-        }
-
-        @include smallPhone() {
-            height: 60px;
-            width: 60px;
-            // width: 30px;
-            margin-right: 0;
-        }
-    }
-
-    .siaranLangsung {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @include smallPhone(){
-            justify-content: flex-start;
-        }
-    }
-    .videoDokumentasi {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include smallPhone(){
-            justify-content: flex-start;
-        }
-    }
-    .videoInteraktif {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        @include smallPhone(){
-            justify-content: flex-start;
-        }
-    }
-    .siaranPers {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         
-        @include smallPhone(){
-            justify-content: flex-start;
+        .imgCards {
+            height: 75px;
+            width: 75px;
+            margin-right: 1rem;
+    
+            @include deviceOne(){
+                height: 50px;
+                width: 50px;
+            }
+    
+            // min width 500px and max width 750px
+            @include respon750(){
+                height: 60px;
+                width: 60px;
+                margin-right: 0;
+            }
+            // end min width 500px and max width 750px
+    
+            @include smallPhone() {
+                height: 60px;
+                width: 60px;
+                // width: 30px;
+                margin-right: 0;
+            }
+        }
+    
+        .siaranLangsung {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            // min width 750px and max width 950px
+            @include respon950(){
+                justify-content: flex-start;
+            }
+            // end min width 750px and max width 950px
+    
+            // min width 500px and max width 750px
+            @include respon750(){
+                justify-content: flex-start;
+            }
+            // end min width 500px and max width 750px
+    
+            @include smallPhone(){
+                justify-content: flex-start;
+            }
+        }
+        .videoDokumentasi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            // min width 750px and max width 950px
+            @include respon950(){
+                justify-content: flex-start;
+            }
+            // end min width 750px and max width 950px
+    
+            // min width 500px and max width 750px
+            @include respon750(){
+                justify-content: flex-start;
+            }
+            // end min width 500px and max width 750px
+    
+            @include smallPhone(){
+                justify-content: flex-start;
+            }
+        }
+        .videoInteraktif {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            // min width 750px and max width 950px
+            @include respon950(){
+                justify-content: flex-start;
+            }
+            // end min width 750px and max width 950px
+    
+            // min width 500px and max width 750px
+            @include respon750(){
+                justify-content: flex-start;
+            }
+            // end min width 500px and max width 750px
+    
+            @include smallPhone(){
+                justify-content: flex-start;
+            }
+        }
+        .siaranPers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            // min width 750px and max width 950px
+            @include respon950(){
+                justify-content: flex-start;
+            }
+            // end min width 750px and max width 950px
+    
+            // min width 500px and max width 750px
+            @include respon750(){
+                justify-content: flex-start;
+            }
+            // end min width 500px and max width 750px
+            
+            @include smallPhone(){
+                justify-content: flex-start;
+            }
         }
     }
 }

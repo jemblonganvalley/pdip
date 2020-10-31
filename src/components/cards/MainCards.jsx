@@ -90,7 +90,7 @@ const Cards = ({
           <small className="title-page-mainCards"
             style={{
               color: "red",
-              fontWeight: "800",
+              fontWeight: "bold",
               lineHeight: "0",
               padding: "0",
               margin: "10px 0 10px 0",
@@ -167,7 +167,7 @@ const Cards = ({
           <small className="title-page-mainCards"
             style={{
               color: "red",
-              fontWeight: "800",
+              fontWeight: "bold",
               lineHeight: "0",
               padding: "0",
               margin: "10px 0 10px 0",

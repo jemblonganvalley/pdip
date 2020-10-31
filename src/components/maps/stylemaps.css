@@ -1,0 +1,132 @@
+
+#banner-map{
+    width:100%;
+    padding:50px;
+    padding-top:100px;
+    text-align:center;
+    overflow: hidden;
+}
+.cover-imap{
+    height:370px;
+}
+#main-image-map{opacity: 0;}
+#map-loader{
+    opacity: 1;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+
+.map-default, .rmap{
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.map-default{
+    content: url(../../img/peta.png);
+}
+.map-aceh{
+    content:url(../../img/Aceh.png);
+}
+.map-bengkulu{
+    content:url(../../img/Bengkulu.png);
+}
+.map-jambi{
+    content:url(../../img/Jambi.png);
+}
+.map-bangka-belitung{
+    content:url(../../img/Bangka-Belitung.png);
+}
+.map-kepulauan-riau{
+    content:url(../../img/Kepulauan-Riau.png);
+}
+.map-lampung{
+    content:url(../../img/Lampung.png);
+}
+.map-riau{
+    content:url(../../img/Riau.png);
+}
+.map-sumatera-barat{
+    content:url(../../img/Sumatera-Barat.png);
+}
+.map-sumatera-selatan{
+    content:url(../../img/Sumatera-Selatan.png);
+}
+.map-sumatera-utara{
+    content:url(../../img/Sumatera-Utara.png);
+}
+.map-gorontalo{
+    content:url(../../img/Gorontalo.png);
+}
+.map-sulawesi-barat{
+    content:url(../../img/Sulawesi-Barat.png);
+}
+.map-sulawesi-selatan{
+    content:url(../../img/Sulawesi-Selatan.png);
+}
+.map-sulawesi-tengah{
+    content:url(../../img/Sulawesi-Tengah.png);
+}
+.map-sulawesi-tenggara{
+    content:url(../../img/Sulawesi-Tenggara.png);
+}
+.map-sulawesi-utara{
+    content:url(../../img/Sulawesi-Utara.png);
+}
+.map-papua{
+    content:url(../../img/Papua.png);
+}
+.map-papua-barat{
+    content:url(../../img/Papua-Barat.png);
+}
+.map-bali{
+    content:url(../../img/BaliMaps.png);
+}
+.map-nusa-tenggara-barat{
+    content:url(../../img/Nusa-Tenggara-Barat.png);
+}
+.map-nusa-tenggara-timur{
+    content:url(../../img/Nusa-Tenggara-Timur.png);
+}
+.map-maluku{
+    content:url(../../img/Maluku.png);
+}
+.map-maluku-utara{
+    content:url(../../img/Maluku-Utara.png);
+}
+.map-kalimantan-barat{
+    content:url(../../img/Kalimantan-Barat.png);
+}
+.map-kalimantan-selatan{
+    content:url(../../img/Kalimantan-Selatan.png);
+}
+.map-kalimantan-tengah{
+    content:url(../../img/Kalimantan-Tengah.png);
+}
+.map-kalimantan-timur{
+    content:url(../../img/Kalimantan-Timur.png);
+}
+.map-kalimantan-utara{
+    content:url(../../img/Kalimantan-utara.png);
+}
+.map-banten{
+    content:url(../../img/Banten.png);
+}
+.map-jakarta{
+    content:url(../../img/Jakarta.png);
+}
+.map-jawa-barat{
+    content:url(../../img/Jawa-Barat.png);
+}
+.map-jawa-tengah{
+    content:url(../../img/Jawa-Tengah.png);
+}
+.map-jawa-timur{
+    content:url(../../img/Jawa-Timur.png);
+}
+.map-yogyakarta{
+    content:url(../../img/Yogyakarta.png);
+}
+
+

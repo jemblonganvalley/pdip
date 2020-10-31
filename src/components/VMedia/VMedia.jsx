@@ -6,16 +6,16 @@ const VMedia = ({source, headline, desc})=> {
     return (
         <div className="wrapperPlayVid">
             <div className="kolumVideo">
-                <iframe width="560" height="315" src={source} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe className="iframe-Vmedia" src={source} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             
             <div className="descVideo">
                 <div className="textTop">
                     <small>Admin PDI Perjuangan | 1 Januari 2019</small>
-                    <div className="countLove">
+                    {/* <div className="countLove">
                         <i class="fa fa-heart" aria-hidden="true"></i>
                         <small>0</small>
-                    </div>
+                    </div> */}
                 </div>
                 
                 <h5 className="headline">{headline}</h5>

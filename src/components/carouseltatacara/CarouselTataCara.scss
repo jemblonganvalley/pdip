@@ -11,6 +11,32 @@ $smallPhoneDua : 400px;
     }
 }
 
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
+
 
 $secondary : #f3f3f3;
 @import "../../utilities/variable/variables.scss";
@@ -40,6 +66,18 @@ $secondary : #f3f3f3;
             background-position: center;
             border: none;
 
+            @include respon950(){
+                flex-direction: column;
+                background-size: auto;
+                background-position: left;
+            }
+
+            @include respon750(){
+                flex-direction: column;
+                background-size: auto;
+                background-position: left;
+            }
+
             @include smallPhone(){
                 flex-direction: column;
                 background-size: auto;
@@ -56,6 +94,18 @@ $secondary : #f3f3f3;
                 object-position: center;
                 border: none;
 
+                @include respon950(){
+                    height: 60%;
+                    object-fit: cover;
+                }
+
+                // min widht 500px and max width 750px
+                @include respon750(){
+                    height: 60%;
+                    object-fit: cover;
+                }
+                // end min width 500px and max width 750px
+
                 @include smallPhone(){
                     height: 60%;
                     object-fit: cover;
@@ -69,6 +119,18 @@ $secondary : #f3f3f3;
                 right: 10%;
                 font-weight: bold;
 
+                // min widht 750px and max width 950px
+                @include respon950(){
+                    display: none;
+                }
+                // end min width 750px and max width 950px
+
+                // min widht 500px and max width 750px
+                @include respon750(){
+                    display: none;
+                }
+                // end min width 500px and max width 750px
+
                 @include smallPhone(){
                     display: none;
                     top: 20px;
@@ -79,6 +141,30 @@ $secondary : #f3f3f3;
             // Box Red Paragrap For Mobile
             .box-red-mobile-sliderTataCara{
                 display: none;
+
+                @include respon950(){
+                    display: flex;
+                    height: 40%;
+                    width: 100%;
+                    background-color: $colors;
+                    color: #fff;
+                    padding: 10px 20px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                // min width 500px and max width 750px
+                @include respon750(){
+                    display: flex;
+                    height: 40%;
+                    width: 100%;
+                    background-color: $colors;
+                    color: #fff;
+                    padding: 10px 20px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                // end min width 500px and max width 750px
 
                 @include smallPhone(){
                     display: flex;
@@ -92,8 +178,14 @@ $secondary : #f3f3f3;
                 }
 
                 .pCarousel-for-mobile{
+                    // min width 500px and max width 750px
+                    @include respon750(){
+                        text-align: start;
+                    }
+                    // end min width 500px and max width 750px
+
                     @include smallPhone(){
-                        text-align: center;
+                        text-align: start;
                     }
                 }
             }

@@ -14,6 +14,32 @@ $smallPhoneDua : 400px;
     }
 }
 
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
+
 .wrapperFooter {
     width: 100%;
     height: 40vh;
@@ -25,11 +51,21 @@ $smallPhoneDua : 400px;
     flex-direction: row;
     padding: 40px 20%;
 
+    // Min width 500px and max width 750px
+    @include respon750(){
+        height: auto;
+        flex-direction: column;
+        padding: 40px 3%;
+    }
+    // END Min width 500px and max width 750px
+
+    // Max width 500px
     @include smallPhone() {
         height: auto;
         flex-direction: column;
         padding: 40px 5%;
     }
+    // END Max width
 
     .wrapperContent {
         // border: 1px solid blue;
@@ -42,20 +78,40 @@ $smallPhoneDua : 400px;
         color: #ffffff;
         gap : 20px;
 
+        @include respon750() {
+            flex-direction: column;
+            text-align: start;
+        }
+
         @include smallPhone() {
             flex-direction: column;
-            text-align: center;
+            text-align: start;
         }
 
         span{
+            @include respon750(){
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 5px 0 0;
+            }
+
             @include smallPhone(){
                 width: 100%;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                margin: 0 5px 0 0;
             }
 
             .logo-mainFooter{
+                @include respon750(){
+                    width: 130px;
+                    height: 130px;
+                    margin: 0 0 20px 0;
+                }
+
                 @include smallPhone(){
                     margin: 0 0 20px 0;
                 }
@@ -72,41 +128,56 @@ $smallPhoneDua : 400px;
             // padding: 0px 20px;
             // padding-right: 20px;
             box-sizing: border-box;
+            @include respon750() {
+                padding-right: 0;
+            }
+
             @include smallPhone() {
                 padding-right: 0;
             }
             .heads {
                 text-transform: uppercase;
-                font-size: 8pt;
+                // font-size: 8pt;
                 font-weight: 700;
                 @include smallPhone() {
-                    font-size: 10pt;
+                    // font-size: 10pt;
                 }
-                @include smallPhoneDua() {
-                    font-size: 9pt;
-                }
+                // @include smallPhoneDua() {
+                //     // font-size: 9pt;
+                // }
             }
             .body {
                 margin-top: 15px;
-                font-size: 7pt;
+                // font-size: 7pt;
                 letter-spacing: .3px;
+                @include respon750() {
+                    letter-spacing: 0;
+                    // font-size: 9pt;
+                }
+
                 @include smallPhone() {
                     letter-spacing: 0;
-                    font-size: 9pt;
+                    // font-size: 9pt;
                 }
-                @include smallPhoneDua() {
-                    letter-spacing: 0;
-                    font-size: 8pt;
-                }
+                // @include smallPhoneDua() {
+                //     letter-spacing: 0;
+                //     // font-size: 8pt;
+                // }
             }
             .foot {
-                font-size: 7pt;
+                // font-size: 7pt;
                 letter-spacing: .3px;
                 margin-top: 15px;
 
-                @include smallPhoneDua() {
+                @include respon750() {
                     letter-spacing: 0;
-                    font-size: 8pt;
+                    // font-size: 8pt;
+                    margin-top: 10px;
+                }
+
+                @include smallPhone() {
+                    letter-spacing: 0;
+                    // font-size: 8pt;
                     margin-top: 10px;
                 }
             }
@@ -115,13 +186,18 @@ $smallPhoneDua : 400px;
             display: inline;
             padding-right: 20px;
 
+            @include respon750() {
+                padding-right: 0;
+                margin-top: 10px;
+            }
+
             @include smallPhone() {
                 padding-right: 0;
                 margin-top: 10px;
             }
-            @include smallPhoneDua() {
-                padding-right: 0;
-            }
+            // @include smallPhoneDua() {
+            //     padding-right: 0;
+            // }
             
             i {
                 margin-bottom: 15px;
@@ -131,20 +207,29 @@ $smallPhoneDua : 400px;
             }
             span {
                 margin-bottom: 15px;
-                font-size: 8pt;
+                // font-size: 8pt;
                 @include smallPhone() {
                     margin-bottom: 0;
                 }
             }
-            small {
-                font-size: 8pt;
-            }
+            // small {
+            //     // font-size: 8pt;
+            // }
         }
         .contact{
             // border: 1px solid blue;
             display: flex;
             flex-direction: column;
             width: 300px;
+
+            @include respon750(){
+                padding: 0 0 0 22px;
+            }
+
+            @include smallPhone(){
+                padding: 0 0 0 22px;
+            }
+
             .emailFooter{
                 text-decoration: none;
                 color: #fff;
@@ -152,6 +237,9 @@ $smallPhoneDua : 400px;
 
                 &:hover{
                     color: $colors;
+                }
+
+                @include smallPhone(){
                 }
             }
         }

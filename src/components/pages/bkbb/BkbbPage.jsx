@@ -8,28 +8,14 @@ import MainDivider from "../../divider/MainDivider";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import CardQuotes from "../../cardquotes/CardQuotes";
 import CardHeader from "../../cardheader/CardHeader";
+import VMedia from "../../VMedia/VMedia";
 
 export const LighBox = ({ source }) => {
   return (
     <>
       <main
-        className="container_lightbox"
-        style={{
-          width: "100vw",
-          height: "100vh",
-          position: "fixed",
-          top: "0",
-          left: "0",
-          backgroundColor: "rgba(0,0,0,0.800)",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          zIndex: "2000",
-        }}
-      >
-        <iframe
-          width="800"
-          height="500"
+        className="container_lightbox-bkbbPage">
+        <iframe className="overlay-youtube-bkbbPage"
           src={`https://www.youtube.com/embed/${source}`}
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -83,18 +69,10 @@ const BkbbPage = () => {
       {showVid && (
         <>
           <span
-            style={{
-              position: "fixed",
-              top: "20vh",
-              right: "20vh",
-              color: "white",
-              zIndex: "6000",
-              fontSize: "2rem",
-            }}
             onClick={() => {
               setShowVid(false);
             }}
-            class="fa fa-close"
+            class="fa fa-close" id="btn-overlay-video-yt-bkbb"
           ></span>
           <LighBox source={configHome[2].value[0].path} />
         </>
@@ -134,19 +112,28 @@ const BkbbPage = () => {
             </div>
           </section>
 
-          <section className="videoBungKarno col">
-            {configHome[2].value.map((e, i) => (
-              <div
-                className="bannerYoutube"
-                style={{
-                  backgroundImage: `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
-                }}
-                key={i}
-                onClick={() => {
-                  setShowVid(true);
-                }}
+          {configHome[2].value.map((e, i) => (
+
+          <section className="videoBungKarno">
+                  <VMedia
+                  headline={e.title}
+                  source={`https://www.youtube.com/embed/${e.path}`}
+                  desc={e.description}
+                />
+          </section>
+
+          ))}   
+                {/* // className="bannerYoutube"
+                // style={{
+                //   backgroundImage: `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
+                // }}
+                // key={i}
+                // onClick={() => {
+                //   setShowVid(true);
+                // }}
               >
-                <div className="textYoutube">
+                
+                {/* <div className="textYoutube">
                   <div className="wrapperText">
                     <ul className="circleYoutube">
                       <li>
@@ -162,18 +149,18 @@ const BkbbPage = () => {
                       <h6 className="siaranHut">{e.description}</h6>
                     </div>
                   </div>
-                </div>
-              </div>
-            ))}
-            {/* <iframe
-          width="80%"
-          height="90%"
-          src={`https://www.youtube.com/embed/jY8tAjHtO44`}
-          frameBorder={0}
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        /> */}
-          </section>
+                </div> */}
+              {/* </div> */} 
+            
+             {/* <iframe
+        //   width="80%"
+        //   height="90%"
+        //   src={`https://www.youtube.com/embed/jY8tAjHtO44`}
+        //   frameBorder={0}
+        //   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        //   allowFullScreen
+        // /> */}
+          
 
           <div className="divider-materi-pokok-bkbbPage">
           <MainDivider

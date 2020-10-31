@@ -118,6 +118,7 @@ const KetuaUmumPage = () => {
             <CarouselKetuaUmumPage data={configHome[1].value} />
             {/* END Column1 */}
 
+            <div className="container-cardInfo-ketuaUmum">
             {/* Column2 */}
             <CardInformasi
               to1="/pidatokongres"
@@ -138,6 +139,7 @@ const KetuaUmumPage = () => {
               text4="pidato hut"
             />
             {/* END Column2 */}
+            </div>
 
             {/* Column3 */}
             <div className="cardKetuaUmum">
@@ -155,9 +157,9 @@ const KetuaUmumPage = () => {
           </div>
           {/* END Container1 */}
 
-          <div
+          <div className="box-carousel-duel-berita"
             style={{
-              marginTop: "20px",
+              marginTop: '20px'
             }}
           >
             {gallery.length > 0 && (

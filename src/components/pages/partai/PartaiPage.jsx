@@ -8,6 +8,10 @@ import MainDivider from "../../divider/MainDivider";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import MusicMobile from "../../musicPdiMobile/MusicMobile";
 import CardHeader from "../../cardheader/CardHeader";
+import CarouselKetuaUmumPage from "../../carouselKetuaUmumPage/CarouselKetuaUmumPage";
+import maps from '../../../img/peta.png'
+import Maps from "../../maps/Maps";
+import imgTes from '../../../img/pengurus.png'
 
 const PartaiPage = () => {
   const [config, setConfig] = useState([]);
@@ -73,7 +77,6 @@ const PartaiPage = () => {
                       className={`wrapperContentSatu`}
                       style={{
                         width: "100%",
-                        height: "50vh",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-between",
@@ -83,6 +86,7 @@ const PartaiPage = () => {
                         <div
                           className="mobileRow"
                         >
+                          <div className="box-mobileRow2">                         
                           <img
                             src={`https://atur.biar.pw/public/${e.image}`}
                             alt=""
@@ -98,12 +102,19 @@ const PartaiPage = () => {
                           elit. Molestias inventore nobis doloremque.
                         </p> */}
                           </div>
+                          </div>
                         </div>
                       ))}
                     </div>
                   </div>
 
-                  <div className="col col-lg-8 parentCarousel">
+                  {/* Card Carousel */}
+                  <div className="container-carousel-partaiPage">
+                  <CarouselKetuaUmumPage data={config[2].value}/>
+                  </div>
+                  {/* END Card Carousel */}
+
+                  {/* <div className="col col-lg-8 parentCarousel">
                     <div className="wrapperCarousel">
                       <div
                         id="carouselExampleIndicators"
@@ -156,7 +167,7 @@ const PartaiPage = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               {/* END */}
@@ -167,10 +178,15 @@ const PartaiPage = () => {
               {/* CONTAINER TIGA */}
               <div className="containerTiga">
                 <div className="col-lg-3">
-                  <img src={pdiLogo} alt="" width="180" />
+                  <img className="img-logo-bantengPdi" src={pdiLogo} alt="" width="180" />
                 </div>
                 <div className="col-lg-9 textBanteng">
                   <h1>TATA KELOLA PDI PERJUANGAN</h1>
+                  {/* for min width 500px and max width 750px */}
+                  <h3 className="text-banteng-maxWidth750">
+                    TATA KELOLA PDI PERJUANGAN
+                  </h3>
+                  {/* end for min width 500px and max width 750px */}
                   <ul>
                     <li>
                       Lambang PDI Perjuangan berupa gambar banteng hitam
@@ -232,7 +248,9 @@ const PartaiPage = () => {
               {/* MAPS */}
               <div className="maps">
                 <h5>dewan pimpinan daerah pdi perjuangan</h5>
-                <Link as="div" className="imageMaps" to="" to="/dpd"></Link>
+                {/* Component Maps */}
+                <Maps/>
+                {/* END Component Maps */}
               </div>
               {/* END */}
 

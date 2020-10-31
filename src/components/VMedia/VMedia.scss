@@ -13,12 +13,53 @@ $smallPhoneDua : 400px;
     }
 }
 
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
+
 .wrapperPlayVid {
     width: 100%;
     display: flex;
     flex-direction: row;
     height: 50vh;
     // margin-top: 1.5rem;
+
+    // min width 750px and max width 950px
+    @include respon950(){
+        height: auto;
+        flex-direction: column;
+    }
+    // end min widt 750px and max width 950px
+
+    // min width 500px and max width 750px
+    @include respon750(){
+        height: auto;
+        flex-direction: column;
+    }
+    // end min width 500px and max width 750px
+
     @include smallPhone() {
         flex-direction: column;
         height: auto;
@@ -31,12 +72,27 @@ $smallPhoneDua : 400px;
         display: flex;
         height: auto;
 
+        // min width 750px and max width 950px
+        @include respon950(){
+            height: 40vh;
+            width: 100%;
+        }
+        // end min width 750px and max width 950px
+
+        // min width 500px and max width 750px
+        @include respon750(){
+            height: 40vh;
+            width: 100%;
+        }
+        // end min width 500px and max width 750px
+
         @include smallPhone() {
             width: 100%;
             height: 50vh;
         }
         
-        iframe {
+        .iframe-Vmedia {
+            display: flex;
             width: 100%;
             height: 100%;
         }
@@ -49,8 +105,33 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         height: 50vh;
         // margin-left: 1rem;
-        padding : 0px 0 0 20px;
+        padding : 10px 0 10px 20px;
+        background-color: $darkRedTwo;
+        color: #fff;
         position: relative;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        // min width 750px and max width 950px
+        @include respon950(){
+            height: auto;
+            width: 100%;
+            padding: 10px 20px;
+            text-align: center;
+            justify-content: center;
+        }
+        // end min width 750px and max width 950px
+
+        // min width 500px and max width 750px
+        @include respon750(){
+            height: auto;
+            width: 100%;
+            padding: 10px 20px;
+            text-align: center;
+            justify-content: center;
+        }
+        // end min width 500px and max width 750px
+
         @include smallPhone() {
             width: auto;
             padding: 0;
@@ -62,11 +143,27 @@ $smallPhoneDua : 400px;
             display: flex;
             width: 100%;
             flex-direction: row;
-            font-size: 9pt;
+            // font-size: 9pt;
             align-items: center;
 
+            // min width 750px and max width 950px
+            @include respon950(){
+                justify-content: center;
+            }
+            // end min width 750px and max width 950px
+
+            // min width 500px and max width 750px
+            @include respon750(){
+                justify-content: center;
+            }
+            // end min width 500px and max width 750px
+
+            @include smallPhone(){
+                justify-content: center;
+            }
+
             small {
-                color: $colors;
+                color: #fff;
             }
 
             .countLove {
@@ -84,6 +181,12 @@ $smallPhoneDua : 400px;
             margin-top: 1rem;
             font-weight: bold;
 
+            // min width 500px and max width 750px
+            @include respon750(){
+                text-align: center;
+            }
+            // end min width 500px and max width 750px
+
             @include smallPhone() {
                 text-align: center;
             }
@@ -93,14 +196,21 @@ $smallPhoneDua : 400px;
             // font-size: 10pt;
             @include smallPhone() {
                 text-align: center;
-                font-size: 9pt;
-            }
-            @include smallPhoneDua() {
-                font-size: 8pt;
+                // font-size: 9pt;
             }
         }
-        .descline {
-            overflow-y: scroll;
+        // .descline {
+        //     overflow-y: scroll;
+        // }
+
+        @include respon950(){
+            justify-content: center;
+            text-align: center;
+        }
+
+        @include respon750(){
+            justify-content: center;
+            text-align: center;
         }
 
         .share {
@@ -108,6 +218,7 @@ $smallPhoneDua : 400px;
             // position: absolute;
             margin-top: auto;
             bottom: 0;
+
             @include smallPhone() {
                 position: inherit;
                 display: flex;
@@ -124,10 +235,24 @@ $smallPhoneDua : 400px;
                 cursor: pointer;
                 transition: .3s;
                 margin: 0 .5rem;
-                &:hover {
-                    color: $colors;
-                }
+                // &:hover {
+                //     color: $colors;
+                // }
             }
         }
+    }
+
+    .descVideo::-webkit-scrollbar{
+        width: 3px;
+    }
+
+    .descVideo::-webkit-scrollbar-thumb{
+        background-color: #f3f3f3;
+        border-radius: 3px;
+    }
+
+    .descVideo::-webkit-scrollbar-track{
+        background-color: $darkRedTwo;
+        border-radius: 3px;
     }
 }

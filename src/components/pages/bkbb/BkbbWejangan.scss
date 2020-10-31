@@ -1,3 +1,5 @@
+@import '../../../utilities/variable/variables.scss';
+
 $smallPhoneSatu : 500px;
 $smallPhoneDua : 400px;
 @mixin smallPhone {
@@ -16,7 +18,7 @@ $secondary : #f3f3f3;
 
 .wrapperBkbbWejangan{
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
 
     // .headersBkbbWejangan {
     //     background: url(../../../img/BKBB.jpg);
@@ -73,7 +75,7 @@ $secondary : #f3f3f3;
     .container-1-bkbbWejangan{
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: 45vh;
         width: 100%;
         padding: 0 20%;
 
@@ -84,7 +86,7 @@ $secondary : #f3f3f3;
         // Column1
         .col1-container-1-bkbbWejangan{
             display: flex;
-            height: auto;
+            height: 100%;
             width: 100%;
 
             @include smallPhone(){
@@ -96,7 +98,7 @@ $secondary : #f3f3f3;
             .row1-bkbbWejangan{
                 display: flex;
                 flex-direction: column;
-                height: auto;
+                height: 100%;
                 width: 40%;
                 background-image: url(../../../img/bkbb1.jpg);
                 justify-content: center;
@@ -166,8 +168,9 @@ $secondary : #f3f3f3;
             .row2-bkbbWejangan{
                 display: flex;
                 flex-direction: column;
-                height: auto;
+                height: 100%;
                 width: 60%;
+                overflow-y: scroll;
 
                 @include smallPhone(){
                     width: 100%;
@@ -179,7 +182,7 @@ $secondary : #f3f3f3;
 
                 .txt1{
                     display: flex;
-                    font-size: 11px;
+                    // font-size: 11px;
                     text-align: start;
                     color: #d80010 !important;
 
@@ -194,11 +197,12 @@ $secondary : #f3f3f3;
                     font-weight: 500;
                     text-align: start;
                     color: #000;
+                    margin-top: 1rem;
 
                     @include smallPhone(){
-                        font-size: 20px;
+                        // font-size: 20px;
                         font-weight: bold;
-                        margin: 10px 0 0 0;
+                        margin: 1rem 0 0 0;
                         justify-content: center;
                         align-items: center;
                         text-align: center;
@@ -212,7 +216,7 @@ $secondary : #f3f3f3;
                     color: #000;
 
                     @include smallPhone(){
-                        font-size: 12px;
+                        // font-size: 12px;
                         justify-content: center;
                         align-items: center;
                         text-align: center;
@@ -226,7 +230,7 @@ $secondary : #f3f3f3;
                     color: #000;
 
                     @include smallPhone(){
-                        font-size: 12px;
+                        // font-size: 12px;
                         justify-content: center;
                         align-items: center;
                         text-align: center;
@@ -278,6 +282,20 @@ $secondary : #f3f3f3;
                 }
             }
             // END Row1
+
+            .row2-bkbbWejangan::-webkit-scrollbar{
+                width: 3px;
+            }
+
+            .row2-bkbbWejangan::-webkit-scrollbar-thumb{
+                background-color: #555;
+                border-radius: 10px;
+            }
+
+            .row2-bkbbWejangan::-webkit-scrollbar-track{
+                background-color: #f3f3f3;
+                border-radius: 10px;
+            }
         }
         // END Column1
     }
@@ -289,13 +307,13 @@ $secondary : #f3f3f3;
         flex-direction: column;
         height: auto;
         width: 100%;
-        padding: 0 20% 0px 20%;
-        margin: 40px 0 0px 0;
+        padding: 0 20% 30px 20%;
+        margin: 60px 0 0px 0;
         background: #333;
 
         @include smallPhone(){
             height: auto;
-            padding: 0 10px;
+            padding: 0 10px 20px 10px;
         }
 
         // Column1

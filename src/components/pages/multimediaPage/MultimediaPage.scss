@@ -14,9 +14,40 @@ $smallPhoneDua : 400px;
     }
 }
 
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
 
 .wrapperMultimedia {
     width: 100%;
+
+    // min width 500px and max width 750px
+    @include respon750(){
+        padding: 0 0 40px 0;
+    }
+    // end min width 500px and max width 750px
 
     @include smallPhone(){
         padding: 0 0 20px 0;
@@ -85,6 +116,12 @@ $smallPhoneDua : 400px;
         align-items: center;
         height: auto;
 
+        // min width 500px and max width 750px
+        @include respon750(){
+            padding: 0 15%;
+        }
+        // end min width 500px and max width 750px
+
         @include smallPhone() {
             padding: 0 10px;
             height: auto;
@@ -150,6 +187,12 @@ $smallPhoneDua : 400px;
     .wrapperCardInfo {
         padding: 0 20%;
 
+        // min width 500px and max width 750px
+        @include respon750(){
+            padding: 0 15%;
+        }
+        // end min width 500px and max width 750px
+
         @include smallPhone() {
             padding: 0;
         }
@@ -167,6 +210,19 @@ $smallPhoneDua : 400px;
         justify-content: center;
         align-items: center;
         // padding: $padding;
+
+        // min width 750px and max width 950px
+        @include respon950(){
+            background-attachment: inherit;
+        }
+        // end min width 750px and max width 950px
+
+        // min width 500px and max width 750px
+        @include respon750(){
+            background-attachment: inherit;
+        }
+        // end min width 500px and max width 750px
+
         @include smallPhone() {
             height: 40vh;
             background-attachment: inherit;
@@ -200,6 +256,12 @@ $smallPhoneDua : 400px;
         width: 100%;
         padding: 40px 20% 20px 20%;
         align-items: center;
+
+        // min width 500px and max width 750px
+        @include respon750(){
+            padding: 40px 15% 20px 15%;
+        }
+        // end min width 500px and max width 750px
 
         @include smallPhone(){
             padding: 40px 10px;

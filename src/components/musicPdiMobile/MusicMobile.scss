@@ -3,8 +3,6 @@ $smallPhoneDua : 400px;
 
 @import "../../utilities/variable/variables.scss";
 
-
-
 @mixin smallPhone {
     @media (max-width : #{$smallPhoneSatu}) {
         @content;
@@ -15,11 +13,53 @@ $smallPhoneDua : 400px;
         @content;
     }
 }
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
+
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
  
  // MUSIC PDI MOBILE
  .musicPdiMobile {
     
     display: none;
+
+    // min width 7500px and max width 950px
+    @include respon950(){
+        display: flex;
+        flex-direction: column;
+        padding: 0 20%;
+    }
+    // end min width 500px and max width 750px
+
+    // min width 350px and max width 750px
+    @include respon750(){
+        display: flex;
+        flex-direction: column;
+        padding: 0 15%;
+    }
+    // end min width 500px and max width 750px
 
     @include smallPhone() {
         display: flex;
@@ -32,6 +72,34 @@ $smallPhoneDua : 400px;
     .wrapperMobileMusic {
 
         .headlineMusic {
+            // min width 750px and max width 950px
+            @include respon950(){
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                background: $darkRed;
+                padding: 20px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            // end min width 750px and max width 950px
+
+            // min width 500px and max width 750px
+            @include respon750(){
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                background: $darkRed;
+                padding: 10px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            // end min width 500px and max width 750px
+
             @include smallPhone() {
                 display: flex;
                 flex-direction: row;
@@ -45,6 +113,26 @@ $smallPhoneDua : 400px;
             }
     
             .headlineText {
+                // min width 750px and max width 950px
+                @include respon950(){
+                    width: min-content;
+                    color: $accent;
+                    font-weight: 500;
+                    font-size: 20pt;
+                    margin-left: 1rem;
+                }
+                // end min width 750px and max width 950px
+
+                // min width 500px and max width 750px
+                @include respon750(){
+                    width: min-content;
+                    color: $accent;
+                    font-weight: 500;
+                    font-size: 20pt;
+                    margin-left: 1rem;
+                }
+                // end min width 500px and max width 750px
+
                 @include smallPhone() {
                     width: min-content;
                     color: $accent;
@@ -84,6 +172,28 @@ $smallPhoneDua : 400px;
             }
         }
         .lirikMobile {
+            // min width 750px and max width 950px
+            @include respon950(){
+                background: $brown;
+                width: 100%;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 10%;
+            }
+            // end min width 750px and max width 950px
+
+            // min width 500px and max width 750px
+            @include respon750(){
+                background: $brown;
+                width: 100%;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 10%;
+            }
+            // end min width 500px and max width 750px
+
             @include smallPhone() {
                 background: $brown;
                 width: 100%;
@@ -100,7 +210,7 @@ $smallPhoneDua : 400px;
                 }
                 span {
                     font-weight: 300;
-                    font-size: 10pt;
+                    // font-size: 10pt;
                 }
                 .wrapperLirik {
                     display: flex;
@@ -224,7 +334,7 @@ $smallPhoneDua : 400px;
                 // END Button Play Music Mobile
 
                 .txt-lirik-musicMobile{
-                    padding: 0 5%;
+                    padding: 10px 5% 0 5%;
                     overflow-y: scroll;
                 }
 
@@ -249,19 +359,23 @@ $smallPhoneDua : 400px;
                 // color: $lightRed;
                 transition: 0.3s all ease-in-out;
 
+                @include respon950(){
+                    padding: 20px 0;
+                }
+
                 strong{
                     padding: 10px 5% 0 5%;
                 }
 
                 span {
-                    font-size: 10pt;
+                    // font-size: 10pt;
                     padding: 0 5% 10px 5%;
                 }
 
-                // &:hover {
-                //     background: $darkRed;
-                //     color: $accent;
-                // }
+                &:hover {
+                    background: $darkRed;
+                    color: $accent;
+                }
             }            
         }
     }

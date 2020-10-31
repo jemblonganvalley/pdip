@@ -157,37 +157,43 @@ const InformasiPage = () => {
             <div className="containerLaporan" style={{
                 marginTop : '20px'
             }}>
+              
               <div className="cardLaporan cardLaporanSatu">
-                <img
-                  src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
-                  alt=""
-                  className="imageHarta"
-                />
-                <div className="textHarta">
-                  <h6 className="hartaKekayaan h5Harta">
-                    {configHome[4].value[0].title}
-                  </h6>
-         
+                <div className="box-card-laporan">
+                  <img
+                    src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
+                    alt=""
+                    className="imageHarta"
+                  />
+                  <div className="textHarta">
+                    <h6 className="hartaKekayaan h5Harta">
+                      {configHome[4].value[0].title}
+                    </h6>
+          
+                  </div>
                 </div>
               </div>
 
+              
               <div className="cardLaporan cardLaporanDua">
+                <div className="box-card-laporan">
                 <img
-                  src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
-                  alt=""
-                  className="imageHarta"
-                />
-                <div className="textHarta">
-                  <h6 className="keuangan h5Harta">
-                    {configHome[4].value[1].title}
+                    src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
+                    alt=""
+                    className="imageHarta"
+                  />
+                  <div className="textHarta">
+                    <h6 className="keuangan h5Harta">
+                      {configHome[4].value[1].title}
 
-                  </h6>
-             
+                    </h6>
+              
+                  </div>
                 </div>
               </div>
 
             </div>
-            {/* END */}
+            {/* END CARD LAPORAN */}
           </div>
           {/* END */}
 
@@ -223,28 +229,51 @@ const InformasiPage = () => {
           {/* <CarouselKM data={configHome[6].value} /> */}
           {/* END */}
 
-          {/* Container dua */}
-          <div className="infoDua">
-            {/* kolom formulir */}
-            <div className="kolomFormulir kolomFormulirSatu">
-              <img src={ConsentWhite} alt="" width="50" />
-              <h6 className="textFormulir">
-                Formulir Permohonan
-                <br />
-                Informasi Publik
-              </h6>
+          {/* wrapper-cardLaporan2 */}
+          <div className="wrapper-cardLaporan2">
+
+          {/* CARD LAPORAN */}
+          <div className="containerLaporan" style={{
+                marginTop : '20px'
+            }}>
+              
+              <div className="cardLaporan cardLaporanSatu">
+                <div className="box-card-laporan">
+                  <img
+                    src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
+                    alt=""
+                    className="imageHarta"
+                  />
+                  <div className="textHarta">
+                    <h6 className="hartaKekayaan h5Harta">
+                      {configHome[4].value[0].title}
+                    </h6>
+          
+                  </div>
+                </div>
+              </div>
+
+              
+              <div className="cardLaporan cardLaporanDua">
+                <div className="box-card-laporan">
+                <img
+                    src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
+                    alt=""
+                    className="imageHarta"
+                  />
+                  <div className="textHarta">
+                    <h6 className="keuangan h5Harta">
+                      {configHome[4].value[1].title}
+                    </h6>
+              
+                  </div>
+                </div>
+              </div>
+
             </div>
-            <div className="kolomFormulir kolomFormulirDua">
-              <img src={ConsentWhite} alt="" width="50" />
-              <h6 className="textFormulir">
-                Formulir Keberatan
-                <br />
-                atas Pelayanan Informasi
-              </h6>
+            {/* END CARD LAPORAN */}
             </div>
-            {/* END */}
-          </div>
-          {/* END */}
+            {/* wrapper-cardLaporan2 */}
 
           {/* <CardMaps/> */}
 

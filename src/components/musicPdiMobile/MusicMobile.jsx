@@ -236,10 +236,10 @@ const MusicMobile = ({data})=> {
                         <img src={laguPerjuangan} alt="" width="70" />
                         <span className="headlineText">Lagu Perjuangan</span>
                     </div>
-                    <div className="judulMusic">
+                    {/* <div className="judulMusic">
                         <h6 className="judul" >Mars PDI Perjuangan</h6>
                         <span className="judulDesc" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, numquam?</span>
-                    </div>
+                    </div> */}
                     <div className="lirikMobile">
                         <div className="lirikMobileContainer">
                             <span>LIRIK</span>

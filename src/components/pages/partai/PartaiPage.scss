@@ -36,6 +36,32 @@ $deviceThree : 1200px;
     }
 }
 
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
+
     //START CSS
 
 .wrapperPartai {
@@ -70,35 +96,73 @@ $deviceThree : 1200px;
         justify-content: center;
         align-items: center;
         margin: 0px 0 40px 0;
-        
-        @include smallPhone() {
-            padding: 0 10px;
+
+        // Min width 500px and max width 750px
+        @include respon750(){
+            padding: 0 15%;
+            margin: 0;
         }
+        // END Min width 500px and max width 750px
+        
+        // Max width 500px
+        @include smallPhone() {
+            height: auto;
+            width: 100%;
+            position: relative;
+            padding: 0 10px;
+            margin: 0px 0 20px 0;
+        }
+        // END Max width 500px
 
         .contentSatu {
             display: flex;
+            flex-wrap: nowrap;
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            height: auto;
-            padding: 0;
+            padding: 0 0% 0 0;
+            
+            // min width 750px and max width 950px
+            @include respon950(){
+                flex-direction: column-reverse;
+            }
+            // end min width 750px and max width 950px
+
+            // min width 500px and max width 750px
+            @include respon750(){
+                flex-direction: column-reverse;
+            }
+            // end min width 500px and max width 750px
+
             @include smallPhone() {
                 flex-direction: column-reverse;
             }
 
-            @include smallPhone() {
-                flex-direction: column;
-            }
-
             .wrapperContentSatu {
-
                 display: flex;
+                height: 50vh;
                 justify-content: space-between;
                 align-items: space-between;
                 flex-direction: column;
                 width: 100%;
-                height: 100%;
                 // border: 1px solid red;
+
+                @include respon950(){
+                    height: auto;
+                    padding: 0px;
+                    margin: 20px 0;
+                }
+
+                @include respon750(){
+                    height: auto;
+                    padding: 0px;
+                    margin: 20px 0;
+                }
+
+                @include smallPhone(){
+                    height: auto;
+                    margin: 10px 0 0 0;
+                }
 
                 .mobileRow{
                     display: flex;
@@ -107,83 +171,150 @@ $deviceThree : 1200px;
                     align-items: center;
                     height: calc(100%/4);
                     gap: 40px;
+
+                    // Min width 750px and max width 950px
+                    @include respon950(){
+                        height: 15vh;
+                        background: #fff;
+                        margin: 0.5rem 0 0 0;
+                        padding: 0px;
+                        justify-content: center;
+                        border-radius: 5px;
+                    }
+                    // END Min width 750px and max width 950px
+
+                    // Min width 500px and max width 750px
+                    @include respon750(){
+                        height: 15vh;
+                        background: #fff;
+                        margin: 0.5rem 0 0 0;
+                        padding: 0px;
+                        border-radius: 5px;
+                        justify-content: center;
+                    }
+                    // END Min width 500px and max width 750px
+
+                    // Max width 500px
                     @include smallPhone(){
-                        padding: 0 5px;
+                        height: 15vh;
+                        background: #fff;
+                        margin: 0.5rem 0 0 0;
+                        padding: 0px;
+                        border-radius: 5px;
+                        justify-content: center;
                     }
+                    // END Max width 500px
 
-                    .imgMobilePartai{
-                        height: 75px;
-                        width: 75px;
-                        object-fit: cover;
-                        object-position: center;
-
-                        @include deviceOne(){
-                            height: 50px;
-                            width: 50px;
-                        }
-
-                        @include smallPhone(){
-                            height: 65px;
-                            width: 65px;
-                        }
-                    }
-                }
-
-                .textContentSatu {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-
-                    @include smallPhone(){
-                        margin: 0 0 0 10px;
-                    }
-                }
-                
-
-                .col-md-3 {
-                    // margin: 20px 0;
-                    display: flex;
-                    width: 25%;
-                    height: 100%;
-                    justify-content: center;
-                    align-items: center;
-
-                    @include smallPhone() {
-                        border-radius: 10px;
-                        background: $accent;
-                        margin: 8px 0;
-                        padding: .5rem 2rem;
-                        width: 100%;
-                        flex-direction: row;
-                    }
-                    .textContent {
-                        margin-left: 10px;
+                    .box-mobileRow2{
                         display: flex;
-                        padding: 1rem;
-                        flex-direction: column;
-                        @include smallPhone() {
+                        height: 100%;
+                        width: 100%;
+                        justify-content: flex-start;
+                        align-items: center;
 
-                            padding: .5rem;
-                            text-align: start;
-                            align-items: flex-start;
-                            
+                        // min width 750px and max width 950px
+                        @include respon950(){
+                            width: 50%;
                         }
+                        // end min width 750px and max width 950px
+
+                        // min width 500px and max width 750px
+                        @include respon750(){
+                            width: 70%;
+                        }
+                        // end min width 500px and max width 750px
+
+                        // max width 500px
+                        @include smallPhone(){
+                            width: 70%;
+                        }
+                        // max width 500px
+
+                        .imgMobilePartai{
+                            height: 75px;
+                            width: 75px;
+                            object-fit: cover;
+                            object-position: center;
     
-                        h4 {
-                            font-size: 11pt;
-                            @include smallPhone() {
-                                font-weight: 700;
+                            // Min width 500px and max width 750px
+                            @include respon750(){
+                                height: 60px;
+                                width: 60px;
+                            }
+                            // END Min width 500px and max width 750px
+    
+                            // Min width 1000px
+                            @include deviceOne(){
+                                height: 50px;
+                                width: 50px;
+                            }
+                            // END Min width 1000px
+    
+                            // Max width 500px
+                            @include smallPhone(){
+                                height: 60px;
+                                width: 60px;
+                            }
+                            // END Max width 500px
+                        }
+
+                        .textContentSatu {
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            margin-left: 1rem;
+        
+                            @include smallPhone(){
+                                margin: 0 0 0 1rem;
                             }
                         }
-    
-                        p {
-                            font-size: 10pt;
-                            line-height: 1.5;
-                            width: 20vw;
+                        
+        
+                        .col-md-3 {
+                            // margin: 20px 0;
+                            display: flex;
+                            width: 25%;
+                            height: 100%;
+                            justify-content: center;
+                            align-items: center;
+        
+                            @include smallPhone() {
+                                border-radius: 10px;
+                                background: $accent;
+                                margin: 8px 0;
+                                padding: .5rem 2rem;
+                                width: 100%;
+                                flex-direction: row;
+                            }
+                            .textContent {
+                                margin-left: 10px;
+                                display: flex;
+                                padding: 1rem;
+                                flex-direction: column;
+                                @include smallPhone() {
+        
+                                    padding: .5rem;
+                                    text-align: start;
+                                    align-items: flex-start;
+                                    
+                                }
+            
+                                h4 {
+                                    font-size: 11pt;
+                                    @include smallPhone() {
+                                        font-weight: 700;
+                                    }
+                                }
+            
+                                p {
+                                    font-size: 10pt;
+                                    line-height: 1.5;
+                                    width: 20vw;
+                                }
+                            }
                         }
                     }
-                }
-               
+                    }
             }
 
             .col-lg-4 {
@@ -193,6 +324,36 @@ $deviceThree : 1200px;
                     padding: 0;
                 }
             }
+
+            // Container Carousel
+            .container-carousel-partaiPage{
+                display: flex;
+                position: relative;
+                height: auto;
+                width: 100%;
+                padding: 0 33.5% 0 0;
+
+                // Min width 750px and max width 950px
+                @include respon950(){
+                    padding: 0;
+                }
+                // END Min width 750px and max width 950px
+
+                // Min width 500px and max width 750px
+                @include respon750(){
+                    padding: 0;
+                }
+                // END Min width 500px and max width 750px
+
+                // Max width 500px
+                @include smallPhone(){
+                    width: 100%;
+                    padding: 0;
+                }
+                // END Max width 500px
+            }
+            // END Container Carousel
+
             .parentCarousel {
                 height: 50vh;
                 padding: 0 0px 0 0px;
@@ -268,24 +429,25 @@ $deviceThree : 1200px;
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
-                            bottom: 5%;
-                            
+                            bottom: 0%;
+                            height: 100%;
+                            padding: 20px 0 0 0;
                         }
 
-                        h5 {
-                            font-style: italic;
-                            font-size: 10pt;
-                            font-weight: 300;
+                        // h5 {
+                        //     font-style: italic;
+                        //     font-size: 10pt;
+                        //     font-weight: 300;
 
-                            @include smallPhone() {
-                                font-size: 8pt;
+                        //     @include smallPhone() {
+                        //         font-size: 8pt;
                                 
-                            }
-                        }
+                        //     }
+                        // }
 
                         h3 {
                             @include smallPhone() {
-                                font-size: 15pt;
+                                // font-size: 15pt;
                             }
                         }
                     }
@@ -306,15 +468,56 @@ $deviceThree : 1200px;
         align-items: center;
         margin-top: 3rem;
         // height: 85vh;
+
+        // Min width 750px and max width 950px
+        @include respon950(){
+            flex-direction: column;
+            padding: 0 20%;
+        }
+        // END Min width 750px and max width 950px
+
+        // Min width 500px and max width 750px
+        @include respon750(){
+            flex-direction: column;
+            padding: 0 15%;
+        }
+        // END Min width 500px and max width 750px
+
+        // Max width 500px
         @include smallPhone() {
             flex-direction: column;
             padding: 0 10%;
             margin-top: 40px;
         }
+        // END Max width 500px
+
+        .img-logo-bantengPdi{
+            @include respon950(){
+                width: 130px;
+            }
+
+            @include respon750(){
+                width: 120px;
+            }
+        }
 
         .textBanteng {
             // border: 1px solid green;
             margin-left: 2rem;
+
+            // min width 750px and max width 950px
+            @include respon950(){
+                padding: 0 0 0 0px;
+                margin: 0;
+            }
+            // end min width 750px and max width 950px
+
+            // min width 500px and max width 750px
+            @include respon750(){
+                padding: 0 0 0 0px;
+                margin: 0;
+            }
+            // end min width 500px and max width 750px
 
             @include smallPhone() {
                 margin-left: 0;
@@ -326,12 +529,26 @@ $deviceThree : 1200px;
             }
 
             h1 {
-                font-size: 30pt;
+                // font-size: 30pt;
                 letter-spacing: 1px;
                 margin-bottom: 2rem;
                 font-weight: bold;
+
+                // min width 750px and max width 950px
+                @include respon950(){
+                    display: none;
+                }
+                // end min width 750px and max width 950px
+
+                // min width 500px and max width 750px
+                @include respon750(){
+                    display: none;
+                }
+                // end min width 500px and max width 750px
+
                 @include smallPhone() {
-                    font-size: 15pt;
+                    display: none;
+                    // font-size: 15pt;
                    margin: 1.5rem 0;
                    text-align: center;
                 }
@@ -341,12 +558,44 @@ $deviceThree : 1200px;
                 // }
             }
 
+            // title for min width 500px and max width 750px
+            .text-banteng-maxWidth750{
+                display: none;
+
+                @include respon950(){
+                    display: flex;
+                    letter-spacing: 1px;
+                    margin-top: 1.5rem;
+                    margin-bottom: 2rem;
+                    font-weight: bold;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                @include respon750(){
+                    display: flex;
+                    letter-spacing: 1px;
+                    margin-top: 1.5rem;
+                    margin-bottom: 2rem;
+                    font-weight: bold;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                @include smallPhone(){
+                    display: flex;
+                    margin: 1.5rem 0;
+                    text-align: center;
+                    font-weight: bold;
+                }
+            }
+            // end title for min width 500px and max width 750px
+
             ul {
-                font-size: 10pt;
+                // font-size: 10pt;
 
                 @include smallPhone() {
-                    font-size: 8pt;
-                    padding: 0 10px 0 10px;
+                    // font-size: 8pt;
                     margin: 0;
                     // border: 1px solid blue;
                 }
@@ -374,6 +623,12 @@ $deviceThree : 1200px;
         align-items: center;
         flex-direction: column;
         padding: 0px 20% 20px 20%;
+
+        // min width 500px and max width 750px
+        @include respon750(){
+            padding: 0 15% 20px 15%;
+        }
+        // end min width 500px and max width 750px
 
         @include smallPhone() {
             padding: 0 0 10px 0;
@@ -404,10 +659,10 @@ $deviceThree : 1200px;
             }
             
             p {
-                font-size: 14pt;
+                // font-size: 14pt;
                 letter-spacing: 1px;
                 @include smallPhone() {
-                    font-size: 10pt;
+                    // font-size: 10pt;
                     margin: 0;
                 }
             }
@@ -425,6 +680,19 @@ $deviceThree : 1200px;
         justify-content: center;
         align-items: center;
         color: #ffffff;
+        position: relative;
+
+        @include respon950() {
+            height: 40vh;
+            background-size: cover;
+            background-attachment: inherit;
+        }
+
+        @include respon750() {
+            height: 40vh;
+            background-size: cover;
+            background-attachment: inherit;
+        }
 
         @include smallPhone() {
             height: 40vh;
@@ -437,12 +705,18 @@ $deviceThree : 1200px;
             text-align: center;
             font-weight: bold;
 
+            // min width 500px and max width 750px
+            @include respon750(){
+                z-index: 11;
+            }
+            // end min width 500px and max width 750px
+
             @include smallPhone() {
                 font-size: 15pt;
             }
-            @include smallPhone() {
-                font-size: 12pt;
-            }
+            // @include smallPhone() {
+            //     font-size: 12pt;
+            // }
         }
 
         .btn {
@@ -477,6 +751,7 @@ $deviceThree : 1200px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: relative;
         @include smallPhone() {
             padding: 10px 0px 0 0px;
         }
@@ -495,19 +770,6 @@ $deviceThree : 1200px;
             //     text-align: center;
             // }
         }
-            .imageMaps {
-                background: url(../../../img/maps.jpg);
-                background-size: cover;
-                width: 100%;
-                height: 56vh;
-                // cursor: pointer;
-                @include smallPhone() {
-                    height: 30vh;
-                }
-                // @include smallPhoneDua() {
-                //     height: 20vh;
-                // }
-            }
     }
 
     .anggotaLegislatif {
@@ -518,6 +780,12 @@ $deviceThree : 1200px;
         flex-direction: column;
         margin-top: 40px;
         text-align: center;
+
+        // min widht 500px and max width 750px
+        @include respon750(){
+            padding: 20px 15% 0 15%;
+        }
+        // end min width 500px and max width 750px
 
         @include smallPhone() {
             padding: 0;
@@ -541,7 +809,7 @@ $deviceThree : 1200px;
             @include smallPhone() {
                 margin-top: 1.5rem;
                 padding: 0 10%;
-                font-size: 10pt;
+                // font-size: 10pt;
             }
         }
         .btnGroup {

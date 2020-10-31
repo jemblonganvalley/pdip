@@ -49,7 +49,7 @@ const StrukturPage = ({ slug }) => {
     {configHome.length > 0 ? (
          <div className="pageStruktur">
       {/* HEADERS */}
-      <div className="headers">
+      {/* <div className="headers">
         <div className="backgrounds">
           <div className="textBackgroundStruktur">
             <h2>
@@ -59,7 +59,7 @@ const StrukturPage = ({ slug }) => {
             </h2>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* END */}
 
       {/* LINK PARTAI */}

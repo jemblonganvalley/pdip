@@ -11,9 +11,85 @@ $smallPhoneDua : 400px;
     }
 }
 
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
+
 
 $secondary : #f3f3f3;
 @import "../../../utilities/variable/variables.scss";
+
+// Overlay video Youtube
+// Btn Close
+#btn-overlay-video-yt-bkbb{
+    display: flex;
+    position: fixed;
+    top: 20vh;
+    right: 20vh;
+    color: #fff;
+    z-index: 6000;
+    font-size: 2rem;
+    cursor: pointer;
+
+    @include smallPhone(){
+        flex-direction: row-reverse;
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 0 20px 0 0;
+    }
+}
+
+// Wrapper overlay For Mobile
+.container_lightbox-bkbbPage{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.800);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+
+    .overlay-youtube-bkbbPage{
+        display: flex;
+        height: 500px;
+        width: 800px;
+
+        @include smallPhone(){
+            height: 300px;
+            width: 90%;
+            margin: 50px 0 0 0;
+            box-shadow: 0 3px 8px -1px rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+// END Wrapper Overlay For Mobile
+// END Overlay Video Youtube
 
 
 .wrapperBkbbPage {
@@ -22,6 +98,12 @@ $secondary : #f3f3f3;
     // section lahirnya pancasil
     .lahirnyaPancasila{
         padding: 0px 20%;
+        
+        // min width 500px and max width 750px
+        @include respon750(){
+            padding: 0 15%;
+        }
+        // end min width 500px and max width 750px
 
         @include smallPhone(){
             padding: 0 10px;
@@ -33,6 +115,12 @@ $secondary : #f3f3f3;
             background-size: cover;
             padding: 0px;
             position: relative;
+
+            // min width 500px and max width 750px
+            @include respon750(){
+                height: 40vh;
+            }
+            // end min width 500px and max width 750px
 
             @include smallPhone(){
                 height: 40vh;
@@ -52,6 +140,7 @@ $secondary : #f3f3f3;
             color: #ffff;
             border-left: .2px solid white;
             transition: .3s;
+            overflow: hidden;
 
             @include smallPhone(){
                 height: 50%;
@@ -104,6 +193,7 @@ $secondary : #f3f3f3;
 
                 p{
                     // font-size: 15px;
+                    overflow: hidden;
 
                     @include smallPhone(){
                         font-size: 11px;
@@ -114,32 +204,44 @@ $secondary : #f3f3f3;
                 }
             }
         }
-        
-
-         
-
         }
     }
 
     //section Video Bung Karno
     .videoBungKarno{
+        height: auto;
         width: 100vw;
         // height: 100vh;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 20%;
+        padding: 0 20%;
+        margin-top: 40px;
+        overflow: hidden;
         // background-color: #bebebe;
 
+        // min width 500px and max width 750px
+        @include respon750(){
+            height: auto;
+            width: 100%;
+            padding: 0 15%;
+        }
+        // end min width 500px and max width 750px
+
         @include smallPhone(){
-            height: 40vh;
-            padding: 0;
-            margin: 0;
+            height: auto;
+            padding: 0 10px;
+            margin: 20px 0 0 0;
         }
     
         iframe{
             height: 80vh;
             width: 100%;
+            cursor: pointer;
+
+            // min width 500px and max width 750px
+            @include respon750(){
+                height: 40vh;
+            }
+            // end min width 500px and max width 750px
 
             @include smallPhone(){
                 height: 40vh;
@@ -158,6 +260,15 @@ $secondary : #f3f3f3;
             background-position-y: -150px;
             height: 40vh;
             margin-top: 40px;
+            cursor: pointer;
+
+            // min width 500px and max width 750px
+            @include respon750(){
+                margin-top: 20px;
+                background-position: center;
+            }
+            // end min width 500px and max width 750px
+
             @include smallPhone() {
                 background-size: cover;
                 background-position: center;
@@ -182,6 +293,13 @@ $secondary : #f3f3f3;
                     align-items: center;
                     width: 50%;
                     height: 90%;
+
+                    // min width 500px and max width 750px
+                    @include respon750(){
+                        width: 100%;
+                    }
+                    // end min width 500px and max width 750px
+
                     @include smallPhone() {
                         width: 100%;
                     }
@@ -369,10 +487,22 @@ $secondary : #f3f3f3;
         height: auto;
         width: 100%;
         align-items: center;
-        padding: 40px 20% 30px 20%;
+        padding: 30px 20% 30px 20%;
+
+        // min width 750px and max width 950px
+        @include respon950(){
+            padding: 40px 20% 20px 20%;
+        }
+        // end min width 750px and max width 950px
+
+        // min width 500px and max width 750px
+        @include respon750(){
+            padding: 40px 15% 20px 15%;
+        }
+        // end min width 500px and max width 750px
 
         @include smallPhone(){
-            padding: 40px 10px;
+            padding: 30px 10px 30px 10px;
             margin-top: 10px;
         }
     }
@@ -381,8 +511,16 @@ $secondary : #f3f3f3;
     .wrapperCard {
         display: flex;
         // flex-direction: row;
+        height: auto;
         width: 100%;
         padding: 0px 20%;
+        
+        // min width 500px and max width 750px
+        @include respon750(){
+            flex-direction: column;
+            padding: 0 15%;
+        }
+        // end min width 500px and max width 750px
 
         @include smallPhone(){
             height: auto;
@@ -503,6 +641,19 @@ $secondary : #f3f3f3;
         justify-content: center;
         padding: 20px 20% 0 20%;
 
+        // min width 750px and max width 950px
+        @include respon950(){
+            flex-direction: column;
+            padding: 20px 20% 0 20%;
+        }
+        // end min width 750px and max width 950px
+
+        // min width 500px and max width 750px
+        @include respon750(){
+            padding: 20px 15% 0 15%;
+        }
+        // end min width 500px and max width 750px
+
         @include smallPhone(){
             flex-direction: column;
             padding: 0 10px 5px 10px;
@@ -518,6 +669,12 @@ $secondary : #f3f3f3;
             flex-wrap: wrap;
             width: 100%;
             padding: 0px 0 0px 0;
+
+            // min width 500px and max widht 750px
+            @include respon750(){
+                flex-direction: column;
+            }
+            // end min width 500px and max width 750px
 
             @include smallPhone(){
                 flex-direction: column;

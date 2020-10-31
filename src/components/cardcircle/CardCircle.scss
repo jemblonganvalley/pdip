@@ -19,7 +19,7 @@ $smallPhoneDua : 400px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px 0px 0 0px;
+    margin: 0px 0px 0 0px;
     text-decoration: none;
     color: $colors;
     transition: .5s;
@@ -52,10 +52,9 @@ $smallPhoneDua : 400px;
 
     .jabatan {
         margin-top: 5px;
-        font-size: 7pt;
+        // font-size: 7pt;
         // color: $colors;
         font-weight: bold;
-    
     }
     .nama {
         text-align: center;
@@ -63,13 +62,13 @@ $smallPhoneDua : 400px;
         width: 56%;
         // border: 1px solid crimson;
         text-transform: uppercase;
-        margin-top: .5rem;
+        margin-top: .1rem;
         @include smallPhone() {
             width: auto;
-            font-size: 10pt;
+            // font-size: 10pt;
         }
-        @include smallPhoneDua() {
-            font-size: 12pt;
-        }
+        // @include smallPhoneDua() {
+        //     font-size: 12pt;
+        // }
     }
 }

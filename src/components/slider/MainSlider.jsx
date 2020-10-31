@@ -79,6 +79,11 @@ const MainSlider = ({ value, cls }) => {
                 {/* Box Paragrap */}
                 <div className="box-paragrap-mainSlider">
                   <h3>{e.title}</h3>
+
+                  {/* For min width 500px and max width 750px */}
+                  <h5 className="title-maxWidth750">{e.title}</h5>
+                  {/* END For min width 500px and max width 750px */}
+
                   <p dangerouslySetInnerHTML={{ __html: e.paragraph }}></p>
                 </div>
                 {/* END Box Paragrap */}

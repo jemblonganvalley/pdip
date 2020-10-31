@@ -17,8 +17,8 @@ const CardCircle = ({ strukturCard }) => {
                             background: `url(https://atur.biar.pw/public/${e.photo})`,
                             backgroundSize : 'cover'
                         }}></div>
-                        <small className="jabatan">{e.jabatan}</small>
-                        <h6 className="nama">{e.nama}</h6>
+                        <p className="jabatan">{e.jabatan}</p>
+                        <h5 className="nama">{e.nama}</h5>
                     </Link>
                 )
             })}

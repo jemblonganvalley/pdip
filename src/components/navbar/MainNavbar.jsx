@@ -174,7 +174,7 @@ const MainNavbar = ({token})=> {
                   <Link to='/search' name="submit" className="btn-next"
                     onClick={() => addTodo(value)}
                   >
-                      <i class="fas fa-search" aria-hidden="true" name="icon" ></i>
+                      <i class="fas fa-search" aria-hidden="true" name="icon"></i>
                   </Link>
                 </form>
               </div>

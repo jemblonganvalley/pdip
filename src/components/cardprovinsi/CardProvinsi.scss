@@ -1,0 +1,26 @@
+$secondary : #f3f3f3;
+@import "../../utilities/variable/variables.scss";
+
+$smallPhoneSatu : 500px;
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+
+.imgMaps{
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    height: auto;
+    width: 100%;
+    // cursor: pointer;
+    @include smallPhone() {
+        height: auto;
+        width: 100%;
+    }
+    // @include smallPhoneDua() {
+    //     height: 20vh;
+    // }
+}

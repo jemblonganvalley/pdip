@@ -12,7 +12,7 @@ const CardSocialMedia = ()=>{
     return(
         <>
         <div className="socialMedia">
-            <small>SHARE : </small>
+            <p className="share-socialMedia">SHARE : </p>
               {/* Facebook Share */}
               <FacebookShareButton
                 url={urlShare}
@@ -48,7 +48,7 @@ const CardSocialMedia = ()=>{
                 url={urlShare}
                 title={titleForWhatsapp}
               >
-                <i className="fa fa-whatsapp" ></i>
+                <i className="fa fa-whatsapp"></i>
               </WhatsappShareButton>
               {/* END WhatsApp Share */}
         </div>
