@@ -75,14 +75,14 @@ const StrukturPage = ({ slug }) => {
       {/* END */}
 
       <div className="pengurusPage">
-        <MainDivider text="pengurus" garisMerah="3rem" />
-        <div className="strukturTextHead">
+        <MainDivider text="Pengurus DPP PDI PERJUANGAN" garisMerah="3rem" />
+        {/* <div className="strukturTextHead">
           <h2>
             Struktur Pengurus Dewan Pimpinan Pusat
             <br />
             PDI Perjuangan
           </h2>
-        </div>
+        </div> */}
 
         <div className="pengurusList">
           <div className="listPengurus">

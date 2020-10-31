@@ -7,7 +7,8 @@ const Cards = ({
   author,
   category,
   title,
-  type,
+  cardType,
+  fileType,
   margin,
   imageCard,
   borderRadius=10,
@@ -51,8 +52,6 @@ const Cards = ({
   return (
       <>
 
-      {type === 'image' ? (
-        <>
          <Link
         as='div'
         className="col col-lg-3 cardCustom" id="cardCustom2"
@@ -66,7 +65,7 @@ const Cards = ({
           to={`${page}/${id}`}
           className="imageCard"
           style={{
-            backgroundImage: `url(${imageCard})`,
+            backgroundImage: imageCard.includes('uploads') ? `url(https://atur.biar.pw/public/${imageCard})` : `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)` ,
             textDecoration: "none",
             backgroundPosition: "center",
           }}
@@ -123,87 +122,8 @@ const Cards = ({
     
         </div>
       </Link>
-      </>
 
-      ) : (
-
-        // JIKA BUKAN GALLERY
-
-        <>
-         <Link
-        as='div'
-        className="col col-lg-3 cardCustom" id="cardCustom2"
-        style={{
-          borderRadius: borderRadius,
-          marginTop: marginTop
-        }}
-        to={`${page}/${id}`}
-      >
-        <Link
-          to={`${page}/${id}`}
-          className="imageCard"
-          style={{
-            backgroundImage: `url(https://atur.biar.pw/public/${imageCard})`,
-            textDecoration: "none",
-            backgroundPosition: "center",
-          }}
-        >
-          {/* JIKA MAU DIPAKAI CLASS, PAKAI CLASS VBMusic */}
-          <Link
-            as="a"
-            className={`${classIcon}`}
-            to={href}
-            style={{ textDecoration: "none" }}
-          >
-            <i
-              className={`${icons}`}
-              style={{
-                textDecoration: "none",
-              }}
-            ></i>
-          </Link>
-        </Link>
-        <div className="text">
-          <small className="title-page-mainCards"
-            style={{
-              color: "red",
-              fontWeight: "bold",
-              lineHeight: "0",
-              padding: "0",
-              margin: "10px 0 10px 0",
-            }}
-          >
-            {category || 'Berita'}
-          </small>
-
-          <br/>
-   
-          <small className="textSmall">
-            {author || 'PDI Perjuangan'}
-          </small>{" "}
-          | &nbsp;
-          <small className="textSmall">
-            {dateTime || getToday()}
-          </small>
-          <p
-            className="textH5"
-            style={{
-              fontSize: h5Font,
-              fontWeight: h5Weight,
-              // maxHeight : '50px',
-              // overflow : 'hidden',
-              // textOverflow : 'elipsis',
-            }}
-          >
-            <b>{add3Dots(title, 70)}</b>
-          </p>
     
-        </div>
-      </Link>
-      </>
-      )}
-
-     
       </>
   );
 };

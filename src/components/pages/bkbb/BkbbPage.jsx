@@ -81,10 +81,7 @@ const BkbbPage = () => {
       {configHome.length > 0 ? (
         <div className="wrapperBkbbPage">
           {/* Card Header */}
-          <CardHeader
-            backgroundHeader={`https://atur.biar.pw/public${configHome[0].value.image}`}
-            // title={configHome[1].value[0].titleHeader}
-          />
+          <CardHeader image={configHome[0].value.image} title={configHome[0].value.title}/>
           {/* END Card Header */}
 
           <div className="linkedBkbbPage">

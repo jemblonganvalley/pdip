@@ -57,10 +57,7 @@ const PartaiPage = () => {
           {config.length > 0 && (
             <>
               {/* Card Header */}
-              <CardHeader
-                backgroundHeader={`https://atur.biar.pw/public${config[0].value.image}`}
-                titleHeader={config[1].value[0].title}
-              />
+              <CardHeader image={config[0].value.image} title={config[0].value.title} />
               {/* END Card Header */}
 
               {/* LINK PARTAI */}
@@ -83,8 +80,15 @@ const PartaiPage = () => {
                       }}
                     >
                       {config[1].value.map((e, i) => (
-                        <div
+                        <Link
                           className="mobileRow"
+                          as='div'
+                          to={
+                            i == 0 ? `/detail-article/838/${e.title.replace(' ', '-')}` :
+                            i ==1 ? `/detail-article/839/${e.title.replace(' ', '-')}` : 
+                            i ==2 ? `/detail-article/844/${e.title.replace(' ', '-')}` : 
+                            i ==3 ? `/detail-article/847/${e.title.replace(' ', '-')}` : '/'
+                        }
                         >
                           <div className="box-mobileRow2">                         
                           <img
@@ -103,7 +107,7 @@ const PartaiPage = () => {
                         </p> */}
                           </div>
                           </div>
-                        </div>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -239,7 +243,7 @@ const PartaiPage = () => {
                 }}
               >
                 <h2>{config[6].value.title}</h2>
-                <Link className="btn lihat" to="/struktur">
+                <Link className="btn lihat" to="/struktur-dpp">
                   <span>lihat</span>
                 </Link>
               </div>

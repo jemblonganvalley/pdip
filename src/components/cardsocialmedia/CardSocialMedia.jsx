@@ -4,10 +4,12 @@ import { FacebookShareButton, InstapaperShareButton, TwitterShareButton, Whatsap
 
 const CardSocialMedia = ()=>{
 
-    let urlShare = "https://www.npmjs.com/package/react-share"
+    let urlShare = ()=>{
+      return window.location.hostname
+    }
     let quote ="PDI Perjuangan"
-    let hashtag = "#PPDI Perjuangan"
-    let titleForWhatsapp = "PPDI Perjuangan"
+    let hashtag = "#PDI Perjuangan"
+    let titleForWhatsapp = "PDI Perjuangan"
 
     return(
         <>
@@ -15,7 +17,7 @@ const CardSocialMedia = ()=>{
             <p className="share-socialMedia">SHARE : </p>
               {/* Facebook Share */}
               <FacebookShareButton
-                url={urlShare}
+                url={`https://pas.biar.pw/` + window.location.href}
                 quote={quote}
                 hashtag={hashtag}
               >

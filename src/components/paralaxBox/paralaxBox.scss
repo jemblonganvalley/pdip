@@ -1,0 +1,73 @@
+$smallPhoneSatu : 500px;
+$smallPhoneDua : 400px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+
+$secondary : #f3f3f3;
+@import "../../utilities/variable/variables.scss";
+
+.container_paralax {
+        width: 100%;
+        background-size: cover;
+        height: 40vh;
+        display: flex;
+        background-position: center;
+        // background-attachment: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+
+        @include smallPhone() {
+            height: 40vh;
+            background-size: cover;
+            background-attachment: inherit;
+        }
+
+        h2 {
+            margin-top: 6rem;
+            text-align: center;
+            font-weight: bold;
+
+            @include smallPhone() {
+                font-size: 15pt;
+            }
+            @include smallPhone() {
+                font-size: 12pt;
+            }
+        }
+
+        .btn {
+            color: #ffffff;
+            background: $colors;
+            border-radius: 25px;
+
+            width: 10vw;
+            font-size: 10pt;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 1.5rem;
+
+            @include smallPhone() {
+                width: 25vw;
+                font-size: 9pt;
+            }
+            @include smallPhoneDua() {
+                width: 30vw;
+                font-size: 9pt;
+            }
+
+            &:hover {
+                background: #2f3542;
+            }
+        }
+    }

@@ -10,6 +10,7 @@ import CarouselKM from "../../carouselKM/CarouselKM";
 import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
 import illustrator from '../../../img/illustrator2.png'
 import CardHeader from "../../cardheader/CardHeader";
+import { Link } from "react-router-dom";
 
 const InformasiPage = () => {
   const [gallery, setGallery] = useState([]);
@@ -97,10 +98,7 @@ const InformasiPage = () => {
           {/* END */}
 
           {/* Card Header */}
-          <CardHeader
-            backgroundHeader={`https://atur.biar.pw/public/${configHome[0].value.image}`}
-            titleHeader={configHome[1].value[0].title}
-          />
+          <CardHeader image={configHome[0].value.image} title={configHome[0].value.title}/>
           {/* END Card Header */}
 
           {/* START LINKED */}
@@ -139,7 +137,7 @@ const InformasiPage = () => {
             <div className="divider"></div>
             {/* divider */}
             <CardInformasi
-              to1="/pidatokongres"
+              to1="detail-article/656/struktur"
               image={`https://atur.biar.pw/public/${configHome[3].value[0].image}`}
               to2="/pidatorakernas"
               image2={`https://atur.biar.pw/public/${configHome[3].value[1].image}`}
@@ -147,36 +145,36 @@ const InformasiPage = () => {
               image3={`https://atur.biar.pw/public/${configHome[3].value[2].image}`}
               to4="/pidatohut"
               image4={`https://atur.biar.pw/public/${configHome[3].value[3].image}`}
-              text="pidato kongres"
-              text2="pidato rakernas"
-              text3="pidato rakornas"
-              text4="pidato hut"
+              width1="0"
+              width2="0"
+              width3="0"
+              width4="0"
+              text={`${configHome[3].value[0].title}`}
+              text2={`${configHome[3].value[1].title}`}
+              text3={`${configHome[3].value[2].title}`}
+              text4={`${configHome[3].value[3].title}`}
             />
 
             {/* CARD LAPORAN */}
             <div className="containerLaporan" style={{
                 marginTop : '20px'
             }}>
-              
-              <div className="cardLaporan cardLaporanSatu">
-                <div className="box-card-laporan">
-                  <img
-                    src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
-                    alt=""
-                    className="imageHarta"
-                  />
-                  <div className="textHarta">
-                    <h6 className="hartaKekayaan h5Harta">
-                      {configHome[4].value[0].title}
-                    </h6>
-          
-                  </div>
+              <Link className="cardLaporan cardLaporanSatu" as='div' to='detail-article/658/lhkpn'>
+                <img
+                  src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
+                  alt=""
+                  width="45"
+                  className="imageHarta"
+                />
+                <div className="textHarta" >
+                  <h6 className="hartaKekayaan h5Harta">
+                    {configHome[4].value[0].title}
+                  </h6>
+         
                 </div>
-              </div>
+              </Link>
 
-              
-              <div className="cardLaporan cardLaporanDua">
-                <div className="box-card-laporan">
+              <Link className="cardLaporan cardLaporanDua" as='div' to='article/227/laporan-keuangan'>
                 <img
                     src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
                     alt=""
@@ -190,7 +188,7 @@ const InformasiPage = () => {
               
                   </div>
                 </div>
-              </div>
+              </Link>
 
             </div>
             {/* END CARD LAPORAN */}
@@ -218,14 +216,7 @@ const InformasiPage = () => {
           {/* END */}
 
           {/* SLIDER TATA CARA */}
-          <CarouselTataCara
-            img1={illustrator}
-            img2={illustrator}
-            img3={illustrator}
-            paragrapOne="Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint neque, amet tempore sed atque maxime sapiente dolor similique rerum."
-            paragrapTwo="Lorem ipsum dolor elit. Soluta sint neque, amet tempore sed atque maxime sapiente dolor similique rerum."
-            paragrapThree="Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint neque, amet tempore sed atque maxi."
-          />
+          <CarouselTataCara data={configHome[6].value}/>
           {/* <CarouselKM data={configHome[6].value} /> */}
           {/* END */}
 
@@ -278,7 +269,7 @@ const InformasiPage = () => {
           {/* <CardMaps/> */}
 
           <div className="carousel-informasiPage">
-            <CarouselDuelBerita current_page={2} data={gallery} />
+            <CarouselDuelBerita cat1={configHome[8].value} cat2={configHome[9].value}/>
           </div>
 
           {/* <div className="widgetMobile">

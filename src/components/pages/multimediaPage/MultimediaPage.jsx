@@ -64,10 +64,7 @@ const MultimediaPage = () => {
           </div> */}
 
           {/* Card Header */}
-          <CardHeader
-            backgroundHeader={`https://atur.biar.pw/public${configHome[0].value.image}`}
-            titleHeader={configHome[1].value[0].title}
-          />
+          <CardHeader image={configHome[0].value.image} title={configHome[0].value.title}/>
           {/* END Card Header */}
 
           <div className="linkedMedia">
@@ -124,7 +121,7 @@ const MultimediaPage = () => {
             {configHome[4].value.map((e, i) => (
               <Cards
                 category = {configHome[4].slug} 
-                page="page"
+                page="detail-article"
                 id={e.id}
                 imageCard={e.path}
                 textCategoryChild={e.category_child_name}
@@ -132,6 +129,7 @@ const MultimediaPage = () => {
                 title={e.title}
                 dateTime={e.created_at}
                 borderRadius="10px"
+                cardType={e.filetype}
               />
             ))}
             </div>

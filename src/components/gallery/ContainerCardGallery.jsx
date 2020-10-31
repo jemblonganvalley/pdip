@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import "./containerCard.scss";
-import BreadCrumbs from "../../components/breadcrumbs/BreadCrumbs";
-import MainDivider from "../../components/divider/MainDivider";
+import BreadCrumbs from "../breadcrumbs/BreadCrumbs";
+import MainDivider from "../divider/MainDivider";
 import { useParams } from "react-router-dom";
 import Cards from "../cards/MainCards";
 import Wait from "../wait/Wait";
@@ -24,7 +24,7 @@ const ContainerCard = () => {
     });
     const data = await res.json();
 
-    const resConfigHome = await fetch("https://atur.biar.pw/api/blog/data/", {
+    const resConfigHome = await fetch("https://atur.biar.pw/api/multimedia/youtube-data", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -32,8 +32,8 @@ const ContainerCard = () => {
       },
       body: JSON.stringify({
         order: { key: "id", value: "desc" },
-        limit: 9,
-        where: { key: "blog.id_category_child", value: category_id },
+        limit : 9,
+        where : {"key":"category","value":"wawancara"} 
       }),
     });
 

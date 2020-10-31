@@ -20,10 +20,7 @@ const Dpd = ()=> {
             {/* END */}
 
             {/* Card Header */}
-            <CardHeader
-            backgroundHeader={kampanye}
-            // titleHeader={configHome[1].value[0].title}
-            />
+            {/* <CardHeader /> */}
             {/* END Card Header */}
 
             {/* LINK PARTAI */}
