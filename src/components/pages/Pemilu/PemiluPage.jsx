@@ -10,6 +10,7 @@ import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 
 import CardHeader from "../../cardheader/CardHeader";
 import ParalaxBox from "../../paralaxBox/ParalaxBox";
+import { Link } from "react-router-dom";
 
 
 // Create Component
@@ -138,7 +139,7 @@ const PemiluPage = () => {
                 marginTop : '10px'
             }}>
               
-              <div className="cardLaporan cardLaporanSatu">
+              <Link className="cardLaporan cardLaporanSatu" to='article/241/pemilian-kepala-daerah'>
                 <div className="box-card-laporan">
                   <img
                     src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
@@ -152,10 +153,10 @@ const PemiluPage = () => {
           
                   </div>
                 </div>
-              </div>
+              </Link>
 
               
-              <div className="cardLaporan cardLaporanDua">
+              <Link className="cardLaporan cardLaporanDua" to='detail-article/871/pemilihan--legislatif-2024'>
                 <div className="box-card-laporan">
                 <img
                     src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
@@ -169,7 +170,7 @@ const PemiluPage = () => {
               
                   </div>
                 </div>
-              </div>
+              </Link>
 
             </div>
             {/* END CARD LAPORAN */}

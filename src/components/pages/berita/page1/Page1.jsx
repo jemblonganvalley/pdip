@@ -6,8 +6,13 @@ import CarouselBeritaPage1 from "../../../carouselberitapage1/CarouselBeritaPage
 import MainDivider from "../../../divider/MainDivider";
 import { useParams } from "react-router-dom";
 import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
+import Wait from '../../../wait/Wait'
+import { useStoreState } from "easy-peasy";
 
 const Page1 = () => {
+
+  const refresher = useStoreState(state => state.refresher)
+
   let { id } = useParams();
   const [detailPage, setDetailPage] = useState();
   const [missing, setMissing] = useState(false);
@@ -47,7 +52,7 @@ const Page1 = () => {
     setTimeout(() => {
       setMissing(true);
     }, 5000);
-  }, []);
+  }, [refresher]);
 
   return (
     <>
@@ -236,19 +241,7 @@ const Page1 = () => {
         </div>
       ) : (
         <>
-          <div
-            className="page"
-            id="wait"
-            style={{
-              width: "100vw",
-              height: "100vh",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            {missing ? "page tidak ditemukan" : "wait"}
-          </div>
+          <Wait />
         </>
       )}
     </>

@@ -191,7 +191,7 @@ const BkbbPage = () => {
           </div>
 
           <div className="btnLihatSemua">
-            <MainButton name="lihat semua" margin="0" pages="/materipokok" />
+            <MainButton name="lihat semua" margin="0" pages="/article/236/materi-pokok-pendukung" />
           </div>
           <div
             className="bannerBkbb"

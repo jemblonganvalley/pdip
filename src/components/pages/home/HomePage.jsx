@@ -12,26 +12,29 @@ import KMobile from "../../carouselKMobile/KMobile";
 import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
 import { Link, Redirect } from "react-router-dom";
 import VMedia from "../../VMedia/VMedia";
+import Wait from "../../wait/Wait";
 
-
-export const LighBox = ({source})=>{
-
-
-  return(
+export const LighBox = ({ source }) => {
+  return (
     <>
       <main className="container_lightbox">
-        <iframe className="overlay-youtube-home" src={`https://www.youtube.com/embed/${source}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe
+          className="overlay-youtube-home"
+          src={`https://www.youtube.com/embed/${source}`}
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         {console.log(source)}
       </main>
     </>
-  )
-}
+  );
+};
 
 const HomePage = () => {
   const [configHome, setConfigHome] = useState([]);
   const [gallery, setGallery] = useState([]);
-  const [showVid, setShowVid] = useState(false)
-
+  const [showVid, setShowVid] = useState(false);
 
   const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
@@ -99,81 +102,106 @@ const HomePage = () => {
 
   return (
     <>
-      <div
-        className="homepage"
-        style={{
-          overflowX: "hidden",
-          paddingBottom: '40px'
-        }}
-      >
-        {configHome.length > 0 && (
-          <>
-          <MainSlider value={configHome[0].value} cls={configHome[0].class} />
-
-          {/* LIGHTBOX */}
-          {showVid && (
+      {configHome.length > 0 ? (
+        <div
+          className="homepage"
+          style={{
+            overflowX: "hidden",
+            paddingBottom: "40px",
+          }}
+        >
+          {configHome.length > 0 && (
             <>
-            <span onClick={()=>{
-              setShowVid(false)
-            }} class='fa fa-close' id="btn-overlay-video-yt"></span>
-            <LighBox source={configHome[3].value[0].path}/>
+              <MainSlider
+                value={configHome[0].value}
+                cls={configHome[0].class}
+              />
+
+              {/* LIGHTBOX */}
+              {showVid && (
+                <>
+                  <span
+                    onClick={() => {
+                      setShowVid(false);
+                    }}
+                    class="fa fa-close"
+                    id="btn-overlay-video-yt"
+                  ></span>
+                  <LighBox source={configHome[3].value[0].path} />
+                </>
+              )}
             </>
           )}
-          </>
-        )}
 
-        {/* STATISTIK INFO COVID */}
-        <div className="statistik-covid" style={{
-          backgroundColor: '#000'
-        }}>
-          <script src="https://apps.elfsight.com/p/platform.js" defer style={{
-            backgroundColor: '#000'
-          }}></script>
-          <div className="elfsight-app-b27c8ef3-b23c-490b-b273-df4e80eb8980" style={{
-            backgroundColor: '#000'
-          }}>
-
-          </div>
-        </div>
-        
-        {/* LOGO ICON COVID DAN LAIN LAIN */}
-        <div className="homePageTwo">
-          <div className="customRow">
-            {configHome.length > 0 &&
-              configHome[1].value.map((e, i) => (
-                <div className="col-lg-4 custom" key={i}>
-                  {/* URUTAN LINK */}
-                     <a href={i === 0 ? '/article/247/covid-19' : i === 1 ? 'https://pdipkreatif.id/home' : '/event' } target={i == 1 ? '_blank' : ''}>
-                    <div className="customBorder">
-                      <img
-                        src={`https://atur.biar.pw/public/${e.image}`}
-                        alt=""
-                        width="100"
-                        height="100"
-                      />
-                      <h4>{e.title}</h4>
-                    </div>
-                  </a>
-                </div>
-              ))}
+          {/* STATISTIK INFO COVID */}
+          <div
+            className="statistik-covid"
+            style={{
+              backgroundColor: "#000",
+            }}
+          >
+            <script
+              src="https://apps.elfsight.com/p/platform.js"
+              defer
+              style={{
+                backgroundColor: "#000",
+              }}
+            ></script>
+            <div
+              className="elfsight-app-b27c8ef3-b23c-490b-b273-df4e80eb8980"
+              style={{
+                backgroundColor: "#000",
+              }}
+            ></div>
           </div>
 
-          {/* SECTION VIDEO  */}
-          <div className="videoPage">
-            <div className="divider-video-home">
-            <MainDivider text="Video"/>
+          {/* LOGO ICON COVID DAN LAIN LAIN */}
+          <div className="homePageTwo">
+            <div className="customRow">
+              {configHome.length > 0 &&
+                configHome[1].value.map((e, i) => (
+                  <div className="col-lg-4 custom" key={i}>
+                    {/* URUTAN LINK */}
+                    <a
+                      href={
+                        i === 0
+                          ? "/article/247/covid-19"
+                          : i === 1
+                          ? "https://pdipkreatif.id/home"
+                          : "/event"
+                      }
+                      target={i == 1 ? "_blank" : ""}
+                    >
+                      <div className="customBorder">
+                        <img
+                          src={`https://atur.biar.pw/public/${e.image}`}
+                          alt=""
+                          width="100"
+                          height="100"
+                        />
+                        <h4>{e.title}</h4>
+                      </div>
+                    </a>
+                  </div>
+                ))}
             </div>
 
-            {configHome.length > 0 && (
-              <div
-                className="paragrapVideo"
-                dangerouslySetInnerHTML={{ __html: configHome[2].value }}
-              ></div>
-            )}
+            {/* SECTION VIDEO  */}
+            <div className="videoPage">
+              <div className="divider-video-home">
+                <MainDivider text="Video" />
+              </div>
 
-            {configHome.length > 0 &&
-              configHome[3].value.map((e, i,) => (
+              {configHome.length > 0 && (
                 <div
+                  className="paragrapVideo"
+                  dangerouslySetInnerHTML={{ __html: configHome[2].value }}
+                ></div>
+              )}
+
+              {configHome.length > 0 &&
+                configHome[3].value.map((e, i) => (
+                  <div
                   // style={{
                   //   backgroundImage: `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
                   // }}
@@ -181,16 +209,16 @@ const HomePage = () => {
                   // onClick={()=>{
                   //             setShowVid(true)
                   //           }}
-                >
-                  {/* Card VMEDIA */}
-                  <VMedia
-                    headline={e.title}
-                    source={`https://www.youtube.com/embed/${e.path}`}
-                    desc={e.description}
-                  />
-                  {/* end Card VMEDIA */}
+                  >
+                    {/* Card VMEDIA */}
+                    <VMedia
+                      headline={e.title}
+                      source={`https://www.youtube.com/embed/${e.path}`}
+                      desc={e.description}
+                    />
+                    {/* end Card VMEDIA */}
 
-                  {/* <div className="textYoutube">
+                    {/* <div className="textYoutube">
                     <div className="wrapperText">
                       <ul className="circleYoutube">
                         <li>
@@ -204,108 +232,116 @@ const HomePage = () => {
                       </div>
                     </div>
                   </div> */}
-                </div>
-              ))}
+                  </div>
+                ))}
 
-            {/* ONTAINER CARD VIDEO */}
-            <div className="cardContainer">
-              {configHome.length > 0 &&
-                configHome[4].value.map((e, i) => {
+              {/* ONTAINER CARD VIDEO */}
+              <div className="cardContainer">
+                {configHome.length > 0 &&
+                  configHome[4].value.map((e, i) => {
+                    return (
+                      <Cards
+                        imageCard={e.path}
+                        cardType="youtube"
+                        // textSmall={e.title}
+                        title={e.title}
+                        borderRadius="10px"
+                        key={i}
+                        page={`/detail-multimedia`}
+                        id={e.id}
+                        slug={e.title}
+                      />
+                    );
+                  })}
+              </div>
+
+              <div className="btn-lihatSemua-card">
+                <MainButton
+                  name="lihat semua"
+                  margin="0px 0 0 0"
+                  pages="multimedia"
+                />
+              </div>
+            </div>
+
+            <div className="beritaPage">
+              <div className="divider-berita">
+                <MainDivider text="berita" mrgn="40px 0" />
+              </div>
+
+              {configHome.length > 0 && (
+                <div
+                  className="paragrapBerita"
+                  dangerouslySetInnerHTML={{ __html: configHome[5].value }}
+                ></div>
+              )}
+            </div>
+          </div>
+
+          {configHome.length > 0 && <CarouselKM data={configHome[6].value} />}
+
+          {/* <KMobile /> */}
+          {configHome.length > 0 && <KMobile data={configHome[6].value} />}
+
+          <div className="cardContent">
+            {configHome.length > 0 && (
+              <>
+                {configHome[6].value.map((e, i) => {
                   return (
                     <Cards
-                      imageCard={e.path}
-                      cardType='youtube'
-                      // textSmall={e.title}
-                      title={e.title}
-                      borderRadius="10px"
-                      key={i}
-                      page={`/detail-multimedia`}
+                      page="detail-article"
                       id={e.id}
+                      imageCard={e.path}
+                      category="Berita"
+                      author={e.author}
+                      title={e.title}
                       slug={e.title}
+                      dateTime={e.created_at}
+                      borderRadius="10px"
+                      cardType={e.filetype}
                     />
                   );
                 })}
-            </div>
-
-
-            <div className="btn-lihatSemua-card">
-            <MainButton
-              name="lihat semua"
-              margin="0px 0 0 0"
-              pages="videomedia"
-            />
-            </div>
-          </div>
-
-          <div className="beritaPage">
-            <div className="divider-berita">
-              <MainDivider text="berita" mrgn="40px 0"/>
-            </div>
-
-            {configHome.length > 0 && (
-              <div
-                className="paragrapBerita"
-                dangerouslySetInnerHTML={{ __html: configHome[5].value }}
-              ></div>
+              </>
             )}
           </div>
-        </div>
-              
-        {configHome.length > 0 && <CarouselKM data={configHome[6].value} />}
 
-        {/* <KMobile /> */}
-        {configHome.length > 0 && <KMobile data={configHome[6].value} />}
+          <span className="btnSize">
+            <MainButton
+              name="lihat semua"
+              margin="1rem 0 0 0"
+              pages="/berita"
+            />
+          </span>
 
-        <div className="cardContent">
+          <div className="divider-laguPerjuangan">
+            <MainDivider text="Lagu Perjuangan" mrgn="0 0 40px 0" />
+          </div>
+
+          <MusicPdi />
+          <MusicMobile />
+
+          <div
+            className="beritaTerbaru"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <MainDivider text="Foto Gallery" mrgn="40px 0" />
+          </div>
+
           {configHome.length > 0 && (
-            <>
-              {configHome[6].value.map((e, i) => {
-                return (
-                  <Cards
-                    page='detail-article'
-                    id={e.id}
-                    imageCard={e.path}
-                    category="Berita"
-                    author={e.author}
-                    title={e.title}
-                    slug={e.title}
-                    dateTime={e.created_at}
-                    borderRadius="10px"
-                    cardType={e.filetype}
-                  />
-                );
-              })}
-            </>
+            <CarouselDuelBerita
+              cat1={configHome[9].value}
+              cat2={configHome[10].value}
+            />
           )}
         </div>
-
-
-        <span className="btnSize">
-          <MainButton name="lihat semua" margin="1rem 0 0 0" pages="/berita" />
-        </span>
-            
-        <div className="divider-laguPerjuangan">
-          <MainDivider text="Lagu Perjuangan" mrgn="0 0 40px 0"/>
-        </div>
-
-        <MusicPdi />
-        <MusicMobile />
-
-        <div
-          className="beritaTerbaru"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <MainDivider text="Foto Gallery" mrgn="40px 0"/>
-        </div>
-
-        {configHome.length > 0 && (
-          <CarouselDuelBerita cat1={configHome[9].value} cat2={configHome[10].value} />
-        )}
-      </div>
+      ) : (
+        <Wait />
+      )}
     </>
   );
 };

@@ -40,6 +40,10 @@ export let globalState = createStore({
     //     this.handleChange = this
     // }
     
+    refresher : false,
+    setRefresher : action((state, payload)=>{
+        state.refresher = !state.refresher
+    })
 
     
 

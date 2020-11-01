@@ -33,7 +33,7 @@ import { useStoreActions, useStoreState } from "easy-peasy";
 import EventPage from "./components/pages/events/EventPage";
 import ContainerCard from "./components/containerCard/ContainerCard";
 import Search from "./components/pages/search/Search";
-import ContainerCardGallery from './components/gallery/ContainerCardGallery'
+import ContainerCardGallery from "./components/gallery/ContainerCardGallery";
 
 function App() {
   let [hide, setHide] = useState(true);
@@ -85,14 +85,18 @@ function App() {
 
       <div className="App">
         <Switch>
+          {/* BLOG PAGE  */}
+          <Route path="/detail-article/:id">
+            <Page1 />
+          </Route>
 
           {/* CONTAINER CARD */}
-          <Route path='/article/:category_id'>
+          <Route path="/article/:category_id">
             <ContainerCard />
           </Route>
 
           {/* CONTAINER CARD GALLERY*/}
-          <Route path='/gallery/:id/:type'>
+          <Route path="/gallery/:id/:type">
             <ContainerCardGallery />
           </Route>
 
@@ -100,10 +104,10 @@ function App() {
             <Page2 />
           </Route>
 
-          <Route path='/search'>
-              <Search/>
+          <Route path="/search">
+            <Search />
           </Route>
-{/* 
+          {/* 
           <Route path="/multimedia/wawancara">
             <Wawancara />
           </Route>
@@ -115,9 +119,6 @@ function App() {
           <Route path="/multimedia/dokumentasi">
             <VideoDokumen />
           </Route> */}
-
-
-        
 
           <Route path="/event">
             <EventPage />
@@ -148,7 +149,7 @@ function App() {
           </Route>
 
           <Route path="/struktur-dpp">
-            <StrukturPage slug='struktur-dpp'/>
+            <StrukturPage slug="struktur-dpp" />
           </Route>
 
           <Route path="/anggota-legislatif">
@@ -160,9 +161,6 @@ function App() {
           </Route> */}
 
           {/* BLOG PAGE  */}
-          <Route path="/detail-article/:id/:slug">
-            <Page1 />
-          </Route>
 
           {/* MAIN PAGE */}
 
