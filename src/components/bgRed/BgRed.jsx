@@ -18,7 +18,7 @@ const BgRed = () => {
 
           <div className="holderFrame">
             <header className='holderFrame_header'>
-              <i class="fab fa-facebook-square" id="iconGroup"></i>
+              <i className="fab fa-facebook-square" id="iconGroup"></i>
               <h5>facebook</h5>
             </header>
 
@@ -29,7 +29,7 @@ const BgRed = () => {
 
           <div className="holderFrame">
              <header className='holderFrame_header'>
-             <i class="fab fa-twitter-square" id="iconGroup"></i>
+             <i className="fab fa-twitter-square" id="iconGroup"></i>
               <h5>twitter</h5>
             </header>
            <TwitterTimelineEmbed className="twitter-timeline"
@@ -46,7 +46,7 @@ const BgRed = () => {
 
             <div className="holderFrame">
              <header className='holderFrame_header'>
-              <i class="fab fa-instagram" id="iconGroup"></i>
+              <i className="fab fa-instagram" id="iconGroup"></i>
               <h5>instagram</h5>
             </header>
             {/* <InstagramEmbed

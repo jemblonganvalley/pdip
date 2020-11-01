@@ -27,7 +27,7 @@ const MainFooter = ()=> {
                             target="_blank"
                         >
                             <div className="col">
-                                <i class="fa fa-envelope-o"></i> 
+                                <i className="fa fa-envelope-o"></i> 
                                 <small className='ml-2'>
                                     <b>
                                         redaksi@pdiperjuangan.id
@@ -41,7 +41,7 @@ const MainFooter = ()=> {
                             target="_blank"
                          >
                             <div className="col">
-                                <i class="fa fa-phone"></i> 
+                                <i className="fa fa-phone"></i> 
                                 <small className='ml-2'>
                                     <b>
                                         021-3909925
@@ -55,7 +55,7 @@ const MainFooter = ()=> {
                             target="_blank"
                         >
                             <div className="col">
-                                <i class="fa fa-map-marker"></i> 
+                                <i className="fa fa-map-marker"></i> 
                                 <small className='ml-2'>
                                     <b>
                                         Jl. Diponegoro No. 58 Menteng Jakarta Pusat 10310

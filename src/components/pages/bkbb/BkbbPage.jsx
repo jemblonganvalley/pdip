@@ -74,7 +74,7 @@ const BkbbPage = () => {
             onClick={() => {
               setShowVid(false);
             }}
-            class="fa fa-close" id="btn-overlay-video-yt-bkbb"
+            className="fa fa-close" id="btn-overlay-video-yt-bkbb"
           ></span>
           <LighBox source={configHome[2].value[0].path} />
         </>

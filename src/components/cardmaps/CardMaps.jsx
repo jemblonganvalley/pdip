@@ -15,7 +15,7 @@ const CardMaps = ()=> {
                             <h5>Ikuti Berita Terbaru</h5>
                             <small>Get in touch with fresh news from our company and share it</small>
                             <form className="form-control" >
-                                <i class="fa fa-envelope-o"></i>
+                                <i className="fa fa-envelope-o"></i>
                                 <input type="email" placeholder="masukan email anda disini" />
                             </form>
                             <MainButton name="Subscribe"

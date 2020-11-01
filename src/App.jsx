@@ -144,16 +144,16 @@ function App() {
             <Dpd />
           </Route>
 
-          <Route path="/detailpengurus/:id/:name">
+          <Route path="/detailpengurus/:id/:name/:grade">
             <DetailPengurus />
           </Route>
 
           <Route path="/struktur-dpp">
-            <StrukturPage slug="struktur-dpp" />
+            <StrukturPage slug="struktur-dpp" grade='pengurus'/>
           </Route>
 
           <Route path="/anggota-legislatif">
-            <StrukturPage />
+            <StrukturPage slug='anggota-legislatif' grade='legislatif'/>
           </Route>
 
           {/* <Route path="/page2">

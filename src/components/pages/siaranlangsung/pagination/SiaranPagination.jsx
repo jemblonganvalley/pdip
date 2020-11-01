@@ -137,7 +137,6 @@ const SiaranPagination = ()=> {
         );
     
         const dataConfigHome = await resConfigHome.json();
-        console.log(dataConfigHome.query);
         setConfigHome(dataConfigHome.query);
       };
 

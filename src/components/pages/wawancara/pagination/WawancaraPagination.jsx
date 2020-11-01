@@ -138,7 +138,6 @@ const WawancaraPagination = () => {
         );
     
         const dataConfigHome = await resConfigHome.json();
-        console.log(dataConfigHome.query);
         setConfigHome(dataConfigHome.query);
       };
 

@@ -14,7 +14,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 
 #PAGES
 ###
-POST https://atur.biar.pw/api/web/pages/pemilu
+POST https://atur.biar.pw/api/web/pages/informasi
 Content-Type: application/json
 Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjA0MjM3Mjk3LCJleHAiOjE2MDQzMjM2OTcsIm5iZiI6MTYwNDIzNzI5NywianRpIjoiYkFIeGJ2UWFmc1lkUEFlciIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.mv_A7UHjllIYUAjDrGtcPOYwgEV9fAi5EBV61Ss8Ki8"
 

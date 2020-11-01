@@ -87,7 +87,7 @@ const EventPage = () => {
             <div className="paginationBulan" >
                 <div className="wrapperBulanItem">
                     <div className="bulan-item"><a href="#" className="customBulan">
-                        <i class="fa fa-arrow-left"></i>
+                        <i className="fa fa-arrow-left"></i>
                     </a></div>
 
                     <div className="bulan-item"><a href="#" className="customBulan">
@@ -95,7 +95,7 @@ const EventPage = () => {
                     </a></div>
 
                     <div className="bulan-item"><a href="#" className="customBulan">
-                        <i class="fa fa-arrow-right"></i>
+                        <i className="fa fa-arrow-right"></i>
                     </a></div>
                 </div>
             </div>

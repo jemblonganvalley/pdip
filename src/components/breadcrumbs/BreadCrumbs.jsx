@@ -18,19 +18,19 @@ const BreadCrumbs = ({
   return (
     <span className="wrapperBread">
       <ul
-        class="breadcrumb"
+        className="breadcrumb"
         style={{
           background: "none",
         }}
       >
         <li>
-          <i class="fa fa-home customBread"></i>
+          <i className="fa fa-home customBread"></i>
         </li>
-        <li class="breadcrumb-item customBread">
+        <li className="breadcrumb-item customBread">
           <Link to={to1}> {link1} </Link>
           {page1}
         </li>
-        <li class={`breadcrumb-item  customBread`}>
+        <li className={`breadcrumb-item  customBread`}>
           <Link to={to2}> {link2} </Link>
           {page2}
         </li>
@@ -39,9 +39,9 @@ const BreadCrumbs = ({
             style={{
               color: "#6c757d",
             }}
-            class={`breadcrumb-item ${active} customBread`}
+            className={`breadcrumb-item ${active} customBread`}
           >
-            <Link to={to3}> {link3} </Link> &nbsp; &nbsp; / &nbsp; {page3}
+            <Link to={to3}> {link3} </Link> 
           </li>
         )}
       </ul>

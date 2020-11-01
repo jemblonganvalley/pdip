@@ -42,7 +42,6 @@ const Page1 = () => {
     );
 
     const dataConfigHome = await resConfigHome.json();
-    console.log(dataConfigHome.query);
     setDetailPage(dataConfigHome.query);
   };
 

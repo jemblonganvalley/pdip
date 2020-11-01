@@ -13,8 +13,8 @@ export const Wait = () => {
         left : '0',
       }}
     >
-      <div class="spinner-border text-danger" role="status">
-        <span class="sr-only">Loading...</span>
+      <div className="spinner-border text-danger" role="status">
+        <span className="sr-only">Loading...</span>
       </div>
     </div>
   );

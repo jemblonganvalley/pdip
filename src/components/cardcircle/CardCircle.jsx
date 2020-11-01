@@ -2,7 +2,7 @@ import React from 'react'
 import './CardCircle.scss'
 import { Link } from 'react-router-dom'
 
-const CardCircle = ({ strukturCard }) => {
+const CardCircle = ({ strukturCard, grade }) => {
     return (
         <div className="wrapperCircle" style={{
             display: 'flex',
@@ -12,7 +12,7 @@ const CardCircle = ({ strukturCard }) => {
         }}>
             {strukturCard.map((e) => {
                 return (
-                    <Link className="circleCard" to={`/detailpengurus/${e.id}/${e.nama.replaceAll(' ', '-')}`} key={e.id}>
+                    <Link className="circleCard" to={`/detailpengurus/${e.id}/${e.nama.replaceAll(' ', '-')}/${grade.replaceAll(' ', '-')}`} key={e.id}>
                         <div className="imageCircle" style={{
                             background: `url(https://atur.biar.pw/public/${e.photo})`,
                             backgroundSize : 'cover'

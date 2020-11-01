@@ -137,7 +137,6 @@ const DokumenPagination = ()=> {
         );
     
         const dataConfigHome = await resConfigHome.json();
-        console.log(dataConfigHome.query);
         setConfigHome(dataConfigHome.query);
       };
 

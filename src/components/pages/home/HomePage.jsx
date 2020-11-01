@@ -61,7 +61,6 @@ const HomePage = () => {
     );
 
     const dataConfigHome = await resConfigHome.json();
-    console.log(dataConfigHome.query);
     setConfigHome(dataConfigHome.query);
   };
 
@@ -124,7 +123,7 @@ const HomePage = () => {
                     onClick={() => {
                       setShowVid(false);
                     }}
-                    class="fa fa-close"
+                    className="fa fa-close"
                     id="btn-overlay-video-yt"
                   ></span>
                   <LighBox source={configHome[3].value[0].path} />

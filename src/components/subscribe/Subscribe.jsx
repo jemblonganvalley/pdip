@@ -10,7 +10,7 @@ const Subscribe =()=> {
                     <p>Ikuti Berita Terbaru</p>
                     <small></small>
                     <form className="form-control" >
-                        <i class="fa fa-envelope-o"></i>
+                        <i className="fa fa-envelope-o"></i>
                         <input type="email" placeholder="masukan email anda disini" />
                     </form>
                     <MainButton name="Subscribe"

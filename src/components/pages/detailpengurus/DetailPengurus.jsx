@@ -8,7 +8,7 @@ import Wait from "../../wait/Wait";
 import parse from 'html-react-parser'
 
 const DetailPengurus = () => {
-  const { id, name } = useParams();
+  const { id, name, grade } = useParams();
   const [configHome, setConfigHome] = useState([]);
 
   const getConfigHome = async () => {
@@ -39,7 +39,6 @@ const DetailPengurus = () => {
     );
 
     const dataConfigHome = await resConfigHome.json();
-    console.log(dataConfigHome.query);
     setConfigHome(dataConfigHome.query);
   };
 
@@ -73,7 +72,8 @@ const DetailPengurus = () => {
               to1="/"
               link2="Partai"
               to2="/partai"
-              page3="Struktur Pengurus"
+              link3="Struktur Pengurus"
+              to3={grade === 'pengurus' ? '/struktur-dpp' : '/anggota-legislatif'}
             />
           </div>
           {/* END */}

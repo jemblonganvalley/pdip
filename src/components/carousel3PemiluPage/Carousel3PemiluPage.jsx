@@ -7,7 +7,6 @@ const Carousel3PemiluPage = ({ data }) => {
   return (
     <>
 
-        {console.log(data)}
       {/* Carousel */}
       <div
         id="pemilu3"

@@ -134,7 +134,7 @@ const MainNavbar = ({token})=> {
               <img src={logo} alt="" width="60" className="d-inline-block align-center active" loading="lazy"/>
             </NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" >
-              <i class="fa fa-bars" aria-hidden="true"></i>
+              <i className="fa fa-bars" aria-hidden="true"></i>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -174,7 +174,7 @@ const MainNavbar = ({token})=> {
                   <Link to='/search' name="submit" className="btn-next"
                     onClick={() => addTodo(value)}
                   >
-                      <i class="fas fa-search" aria-hidden="true" name="icon"></i>
+                      <i className="fas fa-search" aria-hidden="true" name="icon"></i>
                   </Link>
                 </form>
               </div>
@@ -200,7 +200,7 @@ const MainNavbar = ({token})=> {
             }} onClick={(()=>{
               setShow(!show)
             })}>
-              <i class="fa fa-bars" aria-hidden="true"></i>
+              <i className="fa fa-bars" aria-hidden="true"></i>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -222,13 +222,6 @@ const MainNavbar = ({token})=> {
                       
 
 
-                    {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown" expanded>
-                      {e.listItem.map((e)=>(
-                        <li><Link class="dropdown-item" to={e.listTo}>{e.listName}</Link></li>
-                        
-                      ))}
-                    </ul> */}
-
 
                   </li>
                 ))}
@@ -237,7 +230,7 @@ const MainNavbar = ({token})=> {
               <form className="d-inline-flex">
                 <input className="form-control mr-2" type="text" placeholder="cari artikel" name="search" />
                 <Link to='/search' name="submit" className="btn-next">
-                  <i class="fas fa-search" aria-hidden="true" name="icon" ></i>
+                  <i className="fas fa-search" aria-hidden="true" name="icon" ></i>
                 </Link>
               </form>
 

@@ -141,10 +141,10 @@ const Page2 = () => {
                     <div className="box-medsos-beritaPage2">
                       <div className="socialMedia">
                         <small>SHARE : </small>
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-instagram"></i>
-                        <i class="fa fa-whatsapp"></i>
+                        <i className="fa fa-facebook"></i>
+                        <i className="fa fa-twitter"></i>
+                        <i className="fa fa-instagram"></i>
+                        <i className="fa fa-whatsapp"></i>
                       </div>
                     </div>
                   </div>

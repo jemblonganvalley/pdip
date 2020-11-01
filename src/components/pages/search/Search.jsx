@@ -145,7 +145,7 @@ const Search = ()=>{
                           />
                 
                         <button className="btn-icon-pageSearch">
-                          <span class="material-icons" id="txtGroup">
+                          <span className="material-icons" id="txtGroup">
                           search
                           </span>
                         </button>
@@ -177,7 +177,7 @@ const Search = ()=>{
 
                       <div className="column-info-kanan">
                         <Link className="btn-info-kanan">
-                          <i class="fas fa-plus" id="fontGroup-info"></i>
+                          <i className="fas fa-plus" id="fontGroup-info"></i>
 
                           <p className="title-info" id="fontGroup-info">
                             partai
@@ -185,7 +185,7 @@ const Search = ()=>{
                         </Link>
 
                         <Link className="btn-info-kanan">
-                          <i class="fas fa-plus" id="fontGroup-info"></i>
+                          <i className="fas fa-plus" id="fontGroup-info"></i>
 
                           <p className="title-info" id="fontGroup-info">
                             bungkarno bapak bangsa

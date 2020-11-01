@@ -4,9 +4,11 @@ import StrukturPaginate from "../../pagination/StrukturPaginate";
 import MainDivider from "../../divider/MainDivider";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import Wait from "../../wait/Wait";
+import { useStoreState } from "easy-peasy";
 
-const StrukturPage = ({ slug }) => {
+const StrukturPage = ({ slug, grade }) => {
   const [configHome, setConfigHome] = useState([]);
+  const refresher = useStoreState(state => state.refresher)
 
   const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
@@ -21,7 +23,7 @@ const StrukturPage = ({ slug }) => {
     });
     const data = await res.json();
 
-    const resConfigHome = await fetch("https://atur.biar.pw/api/partai/pengurus/data", {
+    const resConfigHome = await fetch(`https://atur.biar.pw/api/partai/${grade}/data`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -41,7 +43,7 @@ const StrukturPage = ({ slug }) => {
   useEffect(() => {
     getConfigHome()
     window.scrollTo(0, 0);
-  }, []);
+  }, [refresher]);
 
   return (
     <>
@@ -69,7 +71,7 @@ const StrukturPage = ({ slug }) => {
           to1="/"
           link2="Partai"
           to2="/partai"
-          page3="Struktur Pengurus"
+          link3={slug}
         />
       </div>
       {/* END */}
@@ -86,7 +88,7 @@ const StrukturPage = ({ slug }) => {
 
         <div className="pengurusList">
           <div className="listPengurus">
-            <StrukturPaginate data={configHome}/>
+            <StrukturPaginate data={configHome} grade={grade}/>
           </div>
         </div>
       </div>

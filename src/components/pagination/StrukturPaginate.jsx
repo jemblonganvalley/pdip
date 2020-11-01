@@ -18,7 +18,7 @@ import eriko from '../../img/eriko.png'
 import './StrukturPaginate.scss'
 import AngkaPaginationEvent from '../paginationevent/AngkaPaginationEvent'
 
-const StrukturPaginate = ({data}) => {
+const StrukturPaginate = ({data, grade}) => {
 
     let [struktur, setStruktur] = useState(data)
 
@@ -36,7 +36,7 @@ const StrukturPaginate = ({data}) => {
     return (
         <div className="wrapperPaginate">
             <div className="card-strukturPaginate">
-            <CardCircle strukturCard={data} />
+            <CardCircle strukturCard={data} grade={grade}/>
             </div>
             
 
