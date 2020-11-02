@@ -1,212 +1,212 @@
 @import "../../../utilities/variable/variables.scss";
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+$smallPhoneSatu: 500px;
+$smallPhoneDua: 400px;
 
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
-
 .wrapperDetail {
-    // START HEADERS
-    .detailHead {
-        background: url(../../../img/kampanye.jpg);
-        background-size: cover;
-        height: 15vh;
-        background-position: center;
-        @include smallPhone() {
-            height: 15vh;
-        }
-        
-        .backHead {
-            background-color: rgba(216, 0, 16, .8);
-            width: 100%;
-            height: 100%;
-            display: flex;
-            // justify-content: center;
-            align-items: center;
-            color: #ffffff;
-        
-            .textBackHead {
-                width: 30%;
-                height: 50%;
-                margin-left: 13rem;
-                @include smallPhone() {
-                    width: auto;
-                    margin-left: 0;
-                    padding: 0 10%;
-                }
-
-                h2 {
-                    @include smallPhoneDua() {
-                        font-size: 15pt;                        
-                    }
-                }
-            }
-        }
-        }
-        // END HEADERS
-        // START LINK PARTAI
-        .linkedDetail {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        margin-top: 20px;
-        padding: $paddingTiny;
-        @include smallPhone() {
-            // border: 1px solid crimson;
-            width: 100%;
-            padding: $paddingMobile;
-        }
+  // START HEADERS
+  .detailHead {
+    background: url(../../../img/kampanye.jpg);
+    background-size: cover;
+    height: 15vh;
+    background-position: center;
+    @include smallPhone() {
+      height: 15vh;
     }
-    // END LINK PARTAI
 
-        .pengurus {
-            display: flex;
+    .backHead {
+      background-color: rgba(216, 0, 16, 0.8);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      color: #ffffff;
+
+      .textBackHead {
+        width: 30%;
+        height: 50%;
+        margin-left: 13rem;
+        @include smallPhone() {
+          width: auto;
+          margin-left: 0;
+          padding: 0 10%;
+        }
+
+        h2 {
+          @include smallPhoneDua() {
+            font-size: 15pt;
+          }
+        }
+      }
+    }
+  }
+  // END HEADERS
+  // START LINK PARTAI
+  .linkedDetail {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    padding: $paddingTiny;
+    @include smallPhone() {
+      // border: 1px solid crimson;
+      width: 100%;
+      padding: $paddingMobile;
+    }
+  }
+  // END LINK PARTAI
+
+  .pengurus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20%;
+    @include smallPhone() {
+      padding: 0 10px;
+    }
+    .bidangTextHead {
+      margin: 2rem 0;
+      text-align: center;
+      font-weight: bold;
+      color: #000000;
+      @include smallPhone() {
+        margin: 1rem 0;
+      }
+    }
+    .profilPengurus {
+      display: flex;
+      // flex-direction: column;
+      width: 100%;
+      height: auto;
+      min-height: 100vh;
+      padding: 0;
+      // border: 1px solid blue;
+      @include smallPhone() {
+        padding: $paddingMobile;
+        flex-direction: column;
+        height: auto;
+      }
+
+      .kolum1 {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        @include smallPhone() {
+          align-items: center;
+          width: 100%;
+        }
+        img {
+          height: 200px;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+          @include smallPhone() {
+            width: 180px;
+          }
+        }
+
+        .textProfil {
+          display: flex;
+          flex-direction: column;
+          position: static;
+          width: 70%;
+          @include smallPhone() {
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            padding: 0 20%;
-            @include smallPhone() {
-                padding: 0 10px;
-            }
-        .bidangTextHead {
-            margin: 2rem 0;
-            text-align: center;
-            font-weight: bold;
-            color: #000000;
-            @include smallPhone() {
-                margin: 1rem 0;
-            }
-        }
-        .profilPengurus {
-            display: flex;
-            // flex-direction: column;
             width: 100%;
-            height: 100vh;
-            padding: 0;
-            // border: 1px solid blue;
+            text-align: center;
+          }
+
+          .profilText {
+            height: auto;
+            margin: 10px 10px 10px 0;
             @include smallPhone() {
-                padding: $paddingMobile;
-                flex-direction: column;
-                height: auto;
+              margin: 5px;
             }
-            
-            .kolum1 {
-                width: 20%;
-                height: 100%;
-                display: flex;
-                align-items: flex-start;
-                flex-direction: column;
-                @include smallPhone() {
-                    align-items: center;
-                    width: 100%;
-                }
-                img {
-                    height: 200px;
-                    width: 100%;
-                    object-fit: cover;
-                    object-position: center;
-                    @include smallPhone() {
-                        width: 180px;
-                    }
-                }
 
-                .textProfil {
-                    display: flex;
-                    flex-direction: column;
-                    position: static;
-                    width: 70%;
-                    @include smallPhone() {
-                        justify-content: center;
-                        align-items: center;
-                        width: 100%;
-                        text-align: center;
-                    }
-
-                    .profilText {
-                        height: auto;
-                        margin: 10px 10px 10px 0;
-                        @include smallPhone() {
-                            margin: 5px;
-                        }
-
-                        small {
-                            color: $colors;
-                            // font-size: 8pt;
-                        }
-                        .namaProfil {
-                            text-transform: uppercase;
-                        }
-                        h6 {
-                            text-align: start;
-                            font-weight: bold;
-
-                            @include smallPhone(){
-                                text-align: center;
-                            }
-                        }
-                    }
-                }
+            small {
+              color: $colors;
+              // font-size: 8pt;
             }
-            .kolum2 {
-                display: flex;
-                // justify-content: center;
-                // align-items: center;
-                flex-direction: column;
-                width: 80%;
-                height: 100%;
-                margin: 0 0 0 30px;
-                // border: 1px solid blue;
-
-                @include smallPhone(){
-                    width: 100%;
-                    margin: 40px 0 0 0px;
-                    padding: 0px;
-                }
-
-                .descProfil {
-                    display: flex;
-                    flex-direction: column;
-                    @include smallPhone() {
-                        text-align: center;
-                    }
-
-                    .biografi {
-                        text-transform: uppercase;
-                    }
-
-                    p {
-                        margin-top: 1rem;
-                        // font-size: 10pt;
-                        @include smallPhone(){
-                            text-align: start;
-                        }
-                    }
-                    
-                    .descBidang {
-                        font-weight: bold;
-                        margin-top: 1.5rem;
-                    }
-                }
+            .namaProfil {
+              text-transform: uppercase;
             }
+            h6 {
+              text-align: start;
+              font-weight: bold;
+
+              @include smallPhone() {
+                text-align: center;
+              }
+            }
+          }
         }
-        // .borderBottom {
-        //     width: 10%;
-        //     height: 5px;
-        //     background-color: $colors;
-        //     position: absolute;
-        //     // top: 50%;
-        //     left: 50%;
-        //     transform: translate(-50%, -50%);
-        // }
+      }
+      .kolum2 {
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        margin: 0 0 0 30px;
+        // border: 1px solid blue;
+
+        @include smallPhone() {
+          width: 100%;
+          margin: 40px 0 0 0px;
+          padding: 0px;
+        }
+
+        .descProfil {
+          display: flex;
+          flex-direction: column;
+          @include smallPhone() {
+            text-align: center;
+          }
+
+          .biografi {
+            text-transform: uppercase;
+          }
+
+          p {
+            margin-top: 1rem;
+            // font-size: 10pt;
+            @include smallPhone() {
+              text-align: start;
+            }
+          }
+
+          .descBidang {
+            font-weight: bold;
+            margin-top: 1.5rem;
+          }
+        }
+      }
     }
+    // .borderBottom {
+    //     width: 10%;
+    //     height: 5px;
+    //     background-color: $colors;
+    //     position: absolute;
+    //     // top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    // }
+  }
 }

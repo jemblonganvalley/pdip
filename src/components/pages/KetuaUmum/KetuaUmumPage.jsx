@@ -13,7 +13,7 @@ import CardInformasi from "../../cardInformasi/CardInformasi";
 import CardHeader from "../../cardheader/CardHeader";
 import CarouselDualKetuaumum from "../../carouselDualKetuaUmum/CarouselDualKetuaumum";
 import { Link } from "react-router-dom";
-import Wait from '../../wait/Wait'
+import Wait from "../../wait/Wait";
 // END Import to CSS
 
 // Create Component
@@ -103,7 +103,10 @@ const KetuaUmumPage = () => {
           </div> */}
 
           {/* Card Header */}
-          <CardHeader image={configHome[0].value.image} title={configHome[0].value.title}/>
+          <CardHeader
+            image={configHome[0].value.image}
+            title={configHome[0].value.title}
+          />
           {/* END Card Header */}
 
           <div className="linkedKetuaumum">
@@ -116,26 +119,26 @@ const KetuaUmumPage = () => {
             {/* END Column1 */}
 
             <div className="container-cardInfo-ketuaUmum">
-            {/* Column2 */}
-            <CardInformasi
-              to1="/pidatokongres"
-              image={`https://atur.biar.pw/public/${configHome[2].value[0].image}`}
-              to2="/pidatorakernas"
-              image2={`https://atur.biar.pw/public/${configHome[2].value[1].image}`}
-              to3="/pidatorakornas"
-              image3={`https://atur.biar.pw/public/${configHome[2].value[2].image}`}
-              to4="/pidatohut"
-              image4={`https://atur.biar.pw/public/${configHome[2].value[3].image}`}
-              width1="0"
-              width2="0"
-              width3="0"
-              width4="0"
-              text="pidato kongres"
-              text2="pidato rakernas"
-              text3="pidato rakornas"
-              text4="pidato hut"
-            />
-            {/* END Column2 */}
+              {/* Column2 */}
+              <CardInformasi
+                to1="/article/233/pidato-kongres-pdi-perjuangan"
+                image={`https://atur.biar.pw/public/${configHome[2].value[0].image}`}
+                to2="/article/238/pidato-rakernas-pdi-perjuangan"
+                image2={`https://atur.biar.pw/public/${configHome[2].value[1].image}`}
+                to3="/article/239/pidato-rakornas-pdi-perjuangan"
+                image3={`https://atur.biar.pw/public/${configHome[2].value[2].image}`}
+                to4="/article/240/pidato-hut-pdi-perjuangan"
+                image4={`https://atur.biar.pw/public/${configHome[2].value[3].image}`}
+                width1="0"
+                width2="0"
+                width3="0"
+                width4="0"
+                text="pidato kongres"
+                text2="pidato rakernas"
+                text3="pidato rakornas"
+                text4="pidato hut"
+              />
+              {/* END Column2 */}
             </div>
 
             {/* Column3 */}
@@ -156,18 +159,22 @@ const KetuaUmumPage = () => {
           </div>
           {/* END Container1 */}
 
-          <div className="box-carousel-duel-berita"
+          <div
+            className="box-carousel-duel-berita"
             style={{
-              marginTop: '20px'
+              marginTop: "20px",
             }}
           >
             {configHome.length > 0 && (
-              <CarouselDualKetuaumum cat1={configHome[4].value[0]} cat2={configHome[5].value}/>
+              <CarouselDualKetuaumum
+                cat1={configHome[4].value[0]}
+                cat2={configHome[5].value}
+              />
             )}
           </div>
 
           {/* Container2 */}
-            <div className="container-2-ketuaumum">
+          <div className="container-2-ketuaumum">
             <MainDivider text="Berita Terkait" garisMerah="7rem" mrgn="0px 0" />
           </div>
           {/* END Container2 */}
@@ -192,7 +199,7 @@ const KetuaUmumPage = () => {
         </div>
       ) : (
         <>
-        <Wait />
+          <Wait />
         </>
       )}
     </>

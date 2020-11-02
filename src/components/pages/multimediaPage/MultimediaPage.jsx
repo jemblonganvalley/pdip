@@ -63,7 +63,10 @@ const MultimediaPage = () => {
           </div> */}
 
           {/* Card Header */}
-          <CardHeader image={configHome[0].value.image} title={configHome[0].value.title}/>
+          <CardHeader
+            image={configHome[0].value.image}
+            title={configHome[0].value.title}
+          />
           {/* END Card Header */}
 
           <div className="linkedMedia">
@@ -91,10 +94,10 @@ const MultimediaPage = () => {
               text2={`${configHome[2].value[1].title}`}
               text3={`${configHome[2].value[2].title}`}
               text4={`${configHome[2].value[3].title}`}
-              to1="/siaranlangsung"
-              to2="/videodokumen"
-              to3="/videoteaser"
-              to4="/wawancara"
+              to1="/multimedia/siaran_langsung"
+              to2="/multimedia/dokumentasi"
+              to3="/multimedia/teaser"
+              to4="/multimedia/wawancara"
               paddingBottom="20px"
             />
           </div>
@@ -111,15 +114,14 @@ const MultimediaPage = () => {
             </div>
           </div>
 
-            <div className="divider-video-terbaru">
-            <MainDivider text="Video Terbaru"/>
-            </div>
-          
-           <div className="cardContent">
+          <div className="divider-video-terbaru">
+            <MainDivider text="Video Terbaru" />
+          </div>
 
+          <div className="cardContent">
             {configHome[4].value.map((e, i) => (
               <Cards
-                category = {configHome[4].slug} 
+                category={configHome[4].slug}
                 page="detail-multimedia"
                 id={e.id}
                 imageCard={e.path}
@@ -132,8 +134,7 @@ const MultimediaPage = () => {
                 cardType={e.filetype}
               />
             ))}
-            </div>
-
+          </div>
         </div>
       ) : (
         <Wait />

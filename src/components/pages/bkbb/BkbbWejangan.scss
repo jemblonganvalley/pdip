@@ -1,349 +1,349 @@
-@import '../../../utilities/variable/variables.scss';
+@import "../../../utilities/variable/variables.scss";
 
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+$smallPhoneSatu: 500px;
+$smallPhoneDua: 400px;
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
+$secondary: #f3f3f3;
 
-$secondary : #f3f3f3;
+.wrapperBkbbWejangan {
+  width: 100%;
+  padding-bottom: 0px;
 
-.wrapperBkbbWejangan{
+  // .headersBkbbWejangan {
+  //     background: url(../../../img/BKBB.jpg);
+  //     background-size: cover;
+  //     height: 15vh;
+  //     background-position: center;
+
+  //     @include smallPhone(){
+  //         height: 20vh;
+  //     }
+
+  //     @include smallPhoneDua(){
+  //         height: 15vh;
+  //     }
+
+  //     .backgrounds {
+  //         width: 100%;
+  //         height: 100%;
+  //         display: flex;
+  //         // justify-content: center;
+  //         align-items: center;
+  //         color: #ffffff;
+
+  //         .textBackgroundBerita {
+  //             width: 30%;
+  //             height: 50%;
+  //             margin-left: 5rem;
+  //         }
+  //     }
+  // }
+  .linkedBkbbWejangan {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     width: 100%;
-    padding-bottom: 0px;
+    margin-top: 20px;
+    padding: 10px 10%;
 
-    // .headersBkbbWejangan {
-    //     background: url(../../../img/BKBB.jpg);
-    //     background-size: cover;
-    //     height: 15vh;
-    //     background-position: center;
+    @include smallPhone() {
+      width: 100%;
+      padding: 0 2%;
+    }
 
-    //     @include smallPhone(){
-    //         height: 20vh;
-    //     }
+    i {
+      span {
+        margin-left: 5px;
+        font-style: italic;
+        font-size: 8pt;
+      }
+    }
+  }
 
-    //     @include smallPhoneDua(){
-    //         height: 15vh;
-    //     }
+  // Container1
+  .container-1-bkbbWejangan {
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    width: 100%;
+    padding: 0 20%;
 
-    //     .backgrounds {
-    //         width: 100%;
-    //         height: 100%;
-    //         display: flex;
-    //         // justify-content: center;
-    //         align-items: center;
-    //         color: #ffffff;
+    @include smallPhone() {
+      padding: 0 0px;
+    }
 
-    //         .textBackgroundBerita {
-    //             width: 30%;
-    //             height: 50%;
-    //             margin-left: 5rem;
-    //         }
-    //     }
-    // }
-    .linkedBkbbWejangan {
+    // Column1
+    .col1-container-1-bkbbWejangan {
+      display: flex;
+      height: 100%;
+      width: 100%;
+
+      @include smallPhone() {
+        height: auto;
+        flex-direction: column;
+      }
+
+      // Row1
+      .row1-bkbbWejangan {
         display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 40%;
+        // background-image: url(../../../img/bkbb1.jpg);
+        background-size: cover;
+        justify-content: center;
         align-items: center;
-        flex-direction: row;
-        width: 100%;
-        margin-top: 20px;
-        padding: 10px 10%;
+        padding: 10px 15px 10px 15px;
+        margin: 0 20px 0 0;
+        color: #fff;
 
-        @include smallPhone(){
-            width: 100%;
-            padding: 0 2%;
-        }   
+        @include smallPhone() {
+          height: 50vh;
+          width: 100%;
+        }
 
         i {
-            span {
-                margin-left: 5px;
-                font-style: italic;
-                font-size: 8pt;
-            }
-        }
-    }
+          display: flex;
+          font-size: 20px;
+          color: #fff;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 0;
 
-    // Container1
-    .container-1-bkbbWejangan{
+          @include smallPhone() {
+            font-size: 18px;
+          }
+        }
+
+        .txt1 {
+          display: flex;
+          // font-size: 25px;
+          font-weight: 500;
+          margin: 1px;
+          text-align: center;
+
+          @include smallPhone() {
+            font-size: 20px;
+          }
+        }
+
+        .txt2 {
+          display: flex;
+          // font-size: 15px;
+          font-weight: 500;
+          margin: 1px;
+          text-align: center;
+
+          @include smallPhone() {
+            font-size: 13px;
+          }
+        }
+
+        .txt3 {
+          display: flex;
+          // font-size: 15px;
+          justify-content: center;
+          align-items: center;
+          margin: 20px 0 0 0;
+          text-align: center;
+
+          @include smallPhone() {
+            font-size: 13px;
+          }
+        }
+      }
+      // END Row1
+
+      // Row1
+      .row2-bkbbWejangan {
         display: flex;
         flex-direction: column;
-        height: 45vh;
-        width: 100%;
-        padding: 0 20%;
+        height: 100%;
+        width: 60%;
+        overflow-y: scroll;
 
-        @include smallPhone(){
-            padding: 0 0px;
+        @include smallPhone() {
+          width: 100%;
+          padding: 0 10%;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
         }
 
-        // Column1
-        .col1-container-1-bkbbWejangan{
-            display: flex;
-            height: 100%;
-            width: 100%;
+        .txt1 {
+          display: flex;
+          // font-size: 11px;
+          text-align: start;
+          color: #d80010 !important;
 
-            @include smallPhone(){
-                height: auto;
-                flex-direction: column;
-            }
-
-            // Row1
-            .row1-bkbbWejangan{
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                width: 40%;
-                background-image: url(../../../img/bkbb1.jpg);
-                justify-content: center;
-                align-items: center;
-                padding: 10px 15px 10px 15px;
-                margin: 0 20px 0 0;
-                color : #fff;
-
-                @include smallPhone(){
-                    height: 50vh;
-                    width: 100%;
-                }
-
-                i{
-                    display: flex;
-                    font-size: 20px;
-                    color: #fff;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 10px 0;
-
-                    @include smallPhone(){
-                        font-size: 18px;
-                    }
-                }
-
-                .txt1{
-                    display: flex;
-                    // font-size: 25px;
-                    font-weight: 500;
-                    margin: 1px;
-                    text-align: center;
-
-                    @include smallPhone(){
-                        font-size: 20px;
-                    }
-                }
-
-                .txt2{
-                    display: flex;
-                    // font-size: 15px;
-                    font-weight: 500;
-                    margin: 1px;
-                    text-align: center;
-
-                    @include smallPhone(){
-                        font-size: 13px;
-                    }
-                }
-
-                .txt3{
-                    display: flex;
-                    // font-size: 15px;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 20px 0 0 0;
-                    text-align: center;
-
-                    @include smallPhone(){
-                        font-size: 13px;
-                    }
-                }
-            }
-            // END Row1
-
-            // Row1
-            .row2-bkbbWejangan{
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                width: 60%;
-                overflow-y: scroll;
-
-                @include smallPhone(){
-                    width: 100%;
-                    padding: 0 10%;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                }
-
-                .txt1{
-                    display: flex;
-                    // font-size: 11px;
-                    text-align: start;
-                    color: #d80010 !important;
-
-                    @include smallPhone(){
-                        margin: 15px 0 0 0;
-                    }
-                }
-
-                .txt2{
-                    display: flex;
-                    // font-size: 18px;
-                    font-weight: 500;
-                    text-align: start;
-                    color: #000;
-                    margin-top: 1rem;
-
-                    @include smallPhone(){
-                        // font-size: 20px;
-                        font-weight: bold;
-                        margin: 1rem 0 0 0;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                    }
-                }
-
-                .txt3{
-                    display: flex;
-                    // font-size: 13px;
-                    text-align: start;
-                    color: #000;
-
-                    @include smallPhone(){
-                        // font-size: 12px;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                    }
-                }
-
-                .txt4{
-                    display: flex;
-                    // font-size: 13px;
-                    text-align: start;
-                    color: #000;
-
-                    @include smallPhone(){
-                        // font-size: 12px;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                    }
-                }
-
-                .box-medsos-bkbbWejangan{
-                    display: flex;
-                    flex-direction: column-reverse;
-                    height: 50%;
-                    width: 100%;
-
-                    @include smallPhone(){
-                        margin: 10px 0 0 0;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                    }
-
-                    // .socialMedia {
-                    //     margin: 0px 0 0 0;
-                    //     padding: 0 0px 0 0;
-                    //     display: flex;
-                    //     align-items: center;
-        
-                    //     small {
-                    //         color: #000000;
-                    //         margin-right: 10px;
-
-                    //         @include smallPhone(){
-                    //             font-size: 12px;
-                    //         }
-                    //     }
-
-                    //     i {
-                    //         margin: 0 10px;
-                    //         transition: .3s;
-
-                    //         @include smallPhone(){
-                    //             font-size: 13px;
-                    //         }
-        
-                    //         &:hover {
-                    //             color: #c70000;
-                    //             cursor: pointer;
-                    //         }
-                    //     }
-                    // }
-                }
-            }
-            // END Row1
-
-            .row2-bkbbWejangan::-webkit-scrollbar{
-                width: 3px;
-            }
-
-            .row2-bkbbWejangan::-webkit-scrollbar-thumb{
-                background-color: #555;
-                border-radius: 10px;
-            }
-
-            .row2-bkbbWejangan::-webkit-scrollbar-track{
-                background-color: #f3f3f3;
-                border-radius: 10px;
-            }
-        }
-        // END Column1
-    }
-    // END Container1
-
-    // Container2
-    .container-2-bkbbWejangan{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-        padding: 0 20% 30px 20%;
-        margin: 60px 0 0px 0;
-        background: #333;
-
-        @include smallPhone(){
-            height: auto;
-            padding: 0 10px 20px 10px;
+          @include smallPhone() {
+            margin: 15px 0 0 0;
+          }
         }
 
-        // Column1
-        .col1-container-2-bkbbWejangan{
-            display: flex;
-            height: 80%;
-            width: 100%;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            padding: 20px 0px 0px 0px;
-            align-items: center;
+        .txt2 {
+          display: flex;
+          // font-size: 18px;
+          font-weight: 500;
+          text-align: start;
+          color: #000;
+          margin-top: 1rem;
 
-            @include smallPhone(){
-                flex-direction: column;
-                height: auto;
-                padding: 10px 0 0 0;
-            }
-        }
-        // END Column1
-
-        // Column2
-        .col2-container-2{
-            display: flex;
-            height: 20%;
-            width: 100%;
+          @include smallPhone() {
+            // font-size: 20px;
+            font-weight: bold;
+            margin: 1rem 0 0 0;
             justify-content: center;
             align-items: center;
+            text-align: center;
+          }
         }
-        // END Column2
+
+        .txt3 {
+          display: flex;
+          // font-size: 13px;
+          text-align: start;
+          color: #000;
+
+          @include smallPhone() {
+            // font-size: 12px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+        }
+
+        .txt4 {
+          display: flex;
+          // font-size: 13px;
+          text-align: start;
+          color: #000;
+
+          @include smallPhone() {
+            // font-size: 12px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+        }
+
+        .box-medsos-bkbbWejangan {
+          display: flex;
+          flex-direction: column-reverse;
+          height: 50%;
+          width: 100%;
+
+          @include smallPhone() {
+            margin: 10px 0 0 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+
+          // .socialMedia {
+          //     margin: 0px 0 0 0;
+          //     padding: 0 0px 0 0;
+          //     display: flex;
+          //     align-items: center;
+
+          //     small {
+          //         color: #000000;
+          //         margin-right: 10px;
+
+          //         @include smallPhone(){
+          //             font-size: 12px;
+          //         }
+          //     }
+
+          //     i {
+          //         margin: 0 10px;
+          //         transition: .3s;
+
+          //         @include smallPhone(){
+          //             font-size: 13px;
+          //         }
+
+          //         &:hover {
+          //             color: #c70000;
+          //             cursor: pointer;
+          //         }
+          //     }
+          // }
+        }
+      }
+      // END Row1
+
+      .row2-bkbbWejangan::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      .row2-bkbbWejangan::-webkit-scrollbar-thumb {
+        background-color: #555;
+        border-radius: 10px;
+      }
+
+      .row2-bkbbWejangan::-webkit-scrollbar-track {
+        background-color: #f3f3f3;
+        border-radius: 10px;
+      }
     }
-    // END Container2
+    // END Column1
+  }
+  // END Container1
+
+  // Container2
+  .container-2-bkbbWejangan {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 0 20% 30px 20%;
+    margin: 60px 0 0px 0;
+    background: #333;
+
+    @include smallPhone() {
+      height: auto;
+      padding: 0 10px 20px 10px;
+    }
+
+    // Column1
+    .col1-container-2-bkbbWejangan {
+      display: flex;
+      height: 80%;
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 20px 0px 0px 0px;
+      align-items: center;
+
+      @include smallPhone() {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0 0 0;
+      }
+    }
+    // END Column1
+
+    // Column2
+    .col2-container-2 {
+      display: flex;
+      height: 20%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    // END Column2
+  }
+  // END Container2
 }

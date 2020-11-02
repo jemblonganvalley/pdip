@@ -9,15 +9,15 @@ import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import CardQuotes from "../../cardquotes/CardQuotes";
 import CardHeader from "../../cardheader/CardHeader";
 import VMedia from "../../VMedia/VMedia";
-import Wait from '../../wait/Wait'
+import Wait from "../../wait/Wait";
 import { Link } from "react-router-dom";
 
 export const LighBox = ({ source }) => {
   return (
     <>
-      <main
-        className="container_lightbox-bkbbPage">
-        <iframe className="overlay-youtube-bkbbPage"
+      <main className="container_lightbox-bkbbPage">
+        <iframe
+          className="overlay-youtube-bkbbPage"
           src={`https://www.youtube.com/embed/${source}`}
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -74,7 +74,8 @@ const BkbbPage = () => {
             onClick={() => {
               setShowVid(false);
             }}
-            className="fa fa-close" id="btn-overlay-video-yt-bkbb"
+            className="fa fa-close"
+            id="btn-overlay-video-yt-bkbb"
           ></span>
           <LighBox source={configHome[2].value[0].path} />
         </>
@@ -83,48 +84,52 @@ const BkbbPage = () => {
       {configHome.length > 0 ? (
         <div className="wrapperBkbbPage">
           {/* Card Header */}
-          <CardHeader image={configHome[0].value.image} title={configHome[0].value.title}/>
+          <CardHeader
+            image={configHome[0].value.image}
+            title={configHome[0].value.title}
+          />
           {/* END Card Header */}
 
           <div className="linkedBkbbPage">
             <BreadCrumbs link1="Home" to1="/" page2="Bung Karno Bapak Bangsa" />
           </div>
 
-          <section className="lahirnyaPancasila col mx-auto" >
-            <Link to='/detail-article/109/Lahirnya-Pancasila-1-Juni-1945' component='a'>
-            <div
-              className="box-lahirnyaPancasila "
-              style={{
-                backgroundImage: `url(https://atur.biar.pw/public/${configHome[1].value.image})`,
-              }}
+          <section className="lahirnyaPancasila col mx-auto">
+            <Link
+              to="/detail-article/109/Lahirnya-Pancasila-1-Juni-1945"
+              component="a"
             >
-              <div className="redBox mt-auto">
-                <div className="col col-lg-4 red-box-title ">
-                  <h3>{configHome[1].value.title}</h3>
+              <div
+                className="box-lahirnyaPancasila "
+                style={{
+                  backgroundImage: `url(https://atur.biar.pw/public/${configHome[1].value.image})`,
+                }}
+              >
+                <div className="redBox mt-auto">
+                  <div className="col col-lg-4 red-box-title ">
+                    <h3>{configHome[1].value.title}</h3>
+                  </div>
+                  <div
+                    className="txt2-redBox"
+                    dangerouslySetInnerHTML={{
+                      __html: configHome[1].value.paragraph,
+                    }}
+                  ></div>
                 </div>
-                <div
-                  className="txt2-redBox"
-                  dangerouslySetInnerHTML={{
-                    __html: configHome[1].value.paragraph,
-                  }}
-                ></div>
               </div>
-            </div>
             </Link>
           </section>
 
           {configHome[2].value.map((e, i) => (
-
-          <section className="videoBungKarno">
-                  <VMedia
-                  headline={e.title}
-                  source={`https://www.youtube.com/embed/${e.path}`}
-                  desc={e.description}
-                />
-          </section>
-
-          ))}   
-                {/* // className="bannerYoutube"
+            <section className="videoBungKarno">
+              <VMedia
+                headline={e.title}
+                source={`https://www.youtube.com/embed/${e.path}`}
+                desc={e.description}
+              />
+            </section>
+          ))}
+          {/* // className="bannerYoutube"
                 // style={{
                 //   backgroundImage: `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
                 // }}
@@ -151,9 +156,9 @@ const BkbbPage = () => {
                     </div>
                   </div>
                 </div> */}
-              {/* </div> */} 
-            
-             {/* <iframe
+          {/* </div> */}
+
+          {/* <iframe
         //   width="80%"
         //   height="90%"
         //   src={`https://www.youtube.com/embed/jY8tAjHtO44`}
@@ -161,13 +166,9 @@ const BkbbPage = () => {
         //   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         //   allowFullScreen
         // /> */}
-          
 
           <div className="divider-materi-pokok-bkbbPage">
-          <MainDivider
-            text="Materi Pokok Pendukung"
-            garisMerah="8rem"
-          />
+            <MainDivider text="Materi Pokok Pendukung" garisMerah="8rem" />
           </div>
 
           <div className="wrapperCard">
@@ -182,7 +183,7 @@ const BkbbPage = () => {
                       slug={e.title}
                       borderRadius="10px"
                       key={i}
-                      page='detail-article'
+                      page="detail-article"
                       id={e.id}
                     />
                   );
@@ -191,7 +192,11 @@ const BkbbPage = () => {
           </div>
 
           <div className="btnLihatSemua">
-            <MainButton name="lihat semua" margin="0" pages="/article/236/materi-pokok-pendukung" />
+            <MainButton
+              name="lihat semua"
+              margin="0"
+              pages="/article/236/materi-pokok-pendukung"
+            />
           </div>
           <div
             className="bannerBkbb"
@@ -214,9 +219,7 @@ const BkbbPage = () => {
             <small>Bung Karno, 17 Agustus 1946</small>
 
             {/* Background Black transparent */}
-            <div className="bg-black-transparent">
-              
-            </div>
+            <div className="bg-black-transparent"></div>
             {/* END Background black transparent */}
           </div>
 
@@ -226,7 +229,7 @@ const BkbbPage = () => {
             <div className="box1-image">
               {configHome[5].value.map((e, i) => (
                 <CardQuotes
-                  page="/quotes"
+                  page={`/quotes/${e.id}`}
                   img={`https://atur.biar.pw/public/${e.path}`}
                   icon1="fas fa-quote-right"
                   txt1={e.title}
@@ -242,7 +245,7 @@ const BkbbPage = () => {
             <MainButton
               name="lihat semua"
               margin="0rem 0 0 0"
-              pages="/wejanganbungkarno"
+              pages="/quotes/3"
             />
           </div>
 

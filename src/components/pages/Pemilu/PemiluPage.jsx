@@ -12,7 +12,6 @@ import CardHeader from "../../cardheader/CardHeader";
 import ParalaxBox from "../../paralaxBox/ParalaxBox";
 import { Link } from "react-router-dom";
 
-
 // Create Component
 const PemiluPage = () => {
   const [configHome, setConfigHome] = useState([]);
@@ -46,8 +45,8 @@ const PemiluPage = () => {
   };
 
   useEffect(() => {
-    getConfigHome();
     window.scrollTo(0, 0);
+    getConfigHome();
   }, []);
 
   return (
@@ -68,7 +67,10 @@ const PemiluPage = () => {
           </div> */}
 
           {/* Card Header */}
-          <CardHeader image={configHome[0].value.image} title={configHome[0].value.title}/>
+          <CardHeader
+            image={configHome[0].value.image}
+            title={configHome[0].value.title}
+          />
           {/* END Card Header */}
 
           <div className="linkedPemiluPage">
@@ -109,8 +111,8 @@ const PemiluPage = () => {
 
             {/* Column2 */}
             {/* <a className="col2-container-1-pemiluPage" href='/' > */}
-              {/* Row1 */}
-              {/* <div className="row1-col2-pemiluPage pemilihan">
+            {/* Row1 */}
+            {/* <div className="row1-col2-pemiluPage pemilihan">
                 <img
                   src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
                   className="col1-row1-pemiluPage"
@@ -119,10 +121,10 @@ const PemiluPage = () => {
                   <h6 className="txt-title">{configHome[4].value[0].title}</h6>
                 </div>
               </div> */}
-              {/* END Row1 */}
+            {/* END Row1 */}
 
-              {/* Row2 */}
-                {/* <a className="row2-col2-pemiluPage pemilihan" href='https://www.pdipkreatif.com/home' target='_blank'>
+            {/* Row2 */}
+            {/* <a className="row2-col2-pemiluPage pemilihan" href='https://www.pdipkreatif.com/home' target='_blank'>
                   <img
                     src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
                     className="col1-row2-pemiluPage"
@@ -131,15 +133,20 @@ const PemiluPage = () => {
                     <h6 className="txt-title">{configHome[4].value[1].title}</h6>
                   </div>
                 </a> */}
-              {/* END Row2 */}
+            {/* END Row2 */}
             {/* </a> */}
 
             {/* CARD LAPORAN */}
-            <div className="containerLaporan" style={{
-                marginTop : '10px'
-            }}>
-              
-              <Link className="cardLaporan cardLaporanSatu" to='article/241/pemilian-kepala-daerah'>
+            <div
+              className="containerLaporan"
+              style={{
+                marginTop: "10px",
+              }}
+            >
+              <Link
+                className="cardLaporan cardLaporanSatu"
+                to="article/241/pemilian-kepala-daerah"
+              >
                 <div className="box-card-laporan">
                   <img
                     src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
@@ -150,28 +157,27 @@ const PemiluPage = () => {
                     <h6 className="hartaKekayaan h5Harta">
                       {configHome[4].value[0].title}
                     </h6>
-          
                   </div>
                 </div>
               </Link>
 
-              
-              <Link className="cardLaporan cardLaporanDua" to='detail-article/871/pemilihan--legislatif-2024'>
+              <Link
+                className="cardLaporan cardLaporanDua"
+                to="detail-article/871/pemilihan--legislatif-2024"
+              >
                 <div className="box-card-laporan">
-                <img
+                  <img
                     src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
                     alt=""
                     className="imageHarta"
                   />
                   <div className="textHarta">
                     <h6 className="keuangan h5Harta">
-                    {configHome[4].value[1].title}
+                      {configHome[4].value[1].title}
                     </h6>
-              
                   </div>
                 </div>
               </Link>
-
             </div>
             {/* END CARD LAPORAN */}
             {/* END Column2 */}
@@ -181,12 +187,15 @@ const PemiluPage = () => {
           {/* Container2 */}
           <div className="container-2-pemiluPage">
             {/* Carousel Tata Cara */}
-              <ParalaxBox image={configHome[5].value.image} title={configHome[5].value.title} link={configHome[5].value.link} />
+            <ParalaxBox
+              image={configHome[5].value.image}
+              title={configHome[5].value.title}
+              link={configHome[5].value.link}
+            />
             {/* END Carousel Tata Cara */}
           </div>
           {/* END Container2 */}
 
-          
           {/* YOUTUBE PPDI */}
           <div className="ytProfil">
             <div className="ytIframe">
@@ -200,7 +209,6 @@ const PemiluPage = () => {
             </div>
           </div>
           {/* END */}
-
         </div>
       ) : (
         <Wait />

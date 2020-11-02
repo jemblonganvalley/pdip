@@ -34,6 +34,9 @@ import EventPage from "./components/pages/events/EventPage";
 import ContainerCard from "./components/containerCard/ContainerCard";
 import Search from "./components/pages/search/Search";
 import ContainerCardGallery from "./components/gallery/ContainerCardGallery";
+import BeritaFoto from "./components/pages/berita/beritafoto/BeritaFoto";
+import Gallery from "./components/pages/berita/gallery/Gallery";
+import ContainerCardMultimedia from "./components/multimedia/ContainerCardMultimedia";
 
 function App() {
   let [hide, setHide] = useState(true);
@@ -96,8 +99,18 @@ function App() {
           </Route>
 
           {/* CONTAINER CARD GALLERY*/}
-          <Route path="/gallery/:id/:type">
+          <Route path="/gallery/detail-gallery/:id/:slug">
+            <Gallery />
+          </Route>
+
+          {/* CONTAINER CARD GALLERY*/}
+          <Route path="/gallery">
             <ContainerCardGallery />
+          </Route>
+
+          {/* CONTAINER CARD MULTIMEDIA*/}
+          <Route path="/multimedia/:category">
+            <ContainerCardMultimedia />
           </Route>
 
           <Route path="/detail-multimedia/:id/:slug">
@@ -128,7 +141,7 @@ function App() {
             <WejanganBungKarno />
           </Route>
 
-          <Route path="/quotes">
+          <Route path="/quotes/:id">
             <BkbbWejangan />
           </Route>
 
@@ -149,11 +162,11 @@ function App() {
           </Route>
 
           <Route path="/struktur-dpp">
-            <StrukturPage slug="struktur-dpp" grade='pengurus'/>
+            <StrukturPage slug="struktur-dpp" grade="pengurus" />
           </Route>
 
           <Route path="/anggota-legislatif">
-            <StrukturPage slug='anggota-legislatif' grade='legislatif'/>
+            <StrukturPage slug="anggota-legislatif" grade="legislatif" />
           </Route>
 
           {/* <Route path="/page2">

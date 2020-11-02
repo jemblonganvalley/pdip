@@ -7,8 +7,8 @@ import { useParams } from "react-router-dom";
 import Cards from "../cards/MainCards";
 import Wait from "../wait/Wait";
 
-const ContainerCard = () => {
-  const { category_id } = useParams();
+const ContainerCardMultimedia = () => {
+  const { category } = useParams();
   const [configHome, setConfigHome] = useState([]);
 
   const getConfigHome = async () => {
@@ -25,7 +25,7 @@ const ContainerCard = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://atur.biar.pw/api/gallery/album",
+      "https://atur.biar.pw/api/multimedia/youtube-data",
       {
         method: "POST",
         headers: {
@@ -34,8 +34,8 @@ const ContainerCard = () => {
         },
         body: JSON.stringify({
           order: { key: "id", value: "desc" },
-          where: { key: "type", value: "image" },
-          limit: 10,
+          limit: 9,
+          where: { key: "category", value: `${category}` },
         }),
       }
     );
@@ -48,7 +48,7 @@ const ContainerCard = () => {
   useEffect(() => {
     getConfigHome();
     window.scrollTo(0, 0);
-  }, [category_id]);
+  }, [category]);
 
   return (
     <>
@@ -66,7 +66,7 @@ const ContainerCard = () => {
 
           {/* Container1 */}
           <span className="divider-page-berita-nasional">
-            <MainDivider text={`Gallery`} />
+            <MainDivider text={category} />
           </span>
           {/* END Container1 */}
           {/* Container2 */}
@@ -78,14 +78,14 @@ const ContainerCard = () => {
                   <>
                     {configHome.map((e, i) => (
                       <Cards
-                        category={e.type}
-                        imageCard={e.cover}
-                        title={e.album_name}
-                        slug={e.album_name}
-                        textSmall={e.album_description}
+                        category={e.category}
+                        imageCard={e.path}
+                        title={e.title}
+                        slug={e.title}
+                        textSmall={e.description}
                         // dateTime={e.created_at}
-                        page={`/gallery/detail-gallery`}
-                        id={e.id_album}
+                        page={`/detail-multimedia`}
+                        id={e.id}
                       />
                     ))}
                   </>
@@ -109,4 +109,4 @@ const ContainerCard = () => {
   );
 };
 
-export default ContainerCard;
+export default ContainerCardMultimedia;

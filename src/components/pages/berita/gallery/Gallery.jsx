@@ -10,7 +10,7 @@ import { colors } from "@material-ui/core";
 
 // READ BEFORE USE
 
-const Page2 = () => {
+const Gallery = () => {
   const [reload, setReload] = useState(false);
   const [configHome, setConfigHome] = useState();
   const [manyCard, setManyCard] = useState([]);
@@ -90,66 +90,57 @@ const Page2 = () => {
           <div className="container-1-beritaPage2">
             {/* Column1 */}
             <div className="col1-container-1-beritaPage2">
-              {/* JIKA VIDEO */}
-              {!configHome.path.includes("uploads") ? (
-                <VMedia
-                  headline={configHome.title}
-                  source={`https://www.youtube.com/embed/${configHome.path}`}
-                  desc={configHome.description}
-                />
-              ) : (
-                <>
-                  <CarouselBeritaPage2 />
-                  {/* Row2 */}
-                  <div className="row2-beritaPage2">
-                    <div className="jdl-row2-beritaPage2">
-                      {/* Column Txt Admin */}
-                      <div className="column-txt-admin">
-                        <p className="txt-admin">
-                          Admin PDI Perjuangan | 1 Januari 2019
-                        </p>
-                      </div>
-                      {/* END Column Txt Admin */}
-
-                      {/* Column Button Love */}
-                      <div className="column-txt-btn-heart">
-                        <a className="btn-fav">
-                          <i className="fas fa-heart"></i>
-                        </a>
-                        <p className="txt-jm-fav">0</p>
-                      </div>
-                      {/* END Column Button Love */}
+              <>
+                <CarouselBeritaPage2 />
+                {/* Row2 */}
+                <div className="row2-beritaPage2">
+                  <div className="jdl-row2-beritaPage2">
+                    {/* Column Txt Admin */}
+                    <div className="column-txt-admin">
+                      <p className="txt-admin">
+                        Admin PDI Perjuangan | 1 Januari 2019
+                      </p>
                     </div>
+                    {/* END Column Txt Admin */}
 
-                    <h5 className="title-2-beritaPage2">
-                      Ketua Umum PDI Perjuangan, Hj. Megawati Soekarnoputri
-                      Meresmikan 20 Kantor Partai
-                    </h5>
+                    {/* Column Button Love */}
+                    <div className="column-txt-btn-heart">
+                      <a className="btn-fav">
+                        <i className="fas fa-heart"></i>
+                      </a>
+                      <p className="txt-jm-fav">0</p>
+                    </div>
+                    {/* END Column Button Love */}
+                  </div>
 
-                    <p className="txt-desk1-beritaPage2">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Aliquam ad, ut corporis veniam consectetur officiis fuga
-                      voluptas porro veritatis aliquid?
-                      <br />
-                      <br />
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Aliquam ad, ut corporis veniam consectetur officiis fuga
-                      voluptas porro veritatis aliquid?
-                    </p>
+                  <h5 className="title-2-beritaPage2">
+                    Ketua Umum PDI Perjuangan, Hj. Megawati Soekarnoputri
+                    Meresmikan 20 Kantor Partai
+                  </h5>
 
-                    <div className="box-medsos-beritaPage2">
-                      <div className="socialMedia">
-                        <small>SHARE : </small>
-                        <i className="fa fa-facebook"></i>
-                        <i className="fa fa-twitter"></i>
-                        <i className="fa fa-instagram"></i>
-                        <i className="fa fa-whatsapp"></i>
-                      </div>
+                  <p className="txt-desk1-beritaPage2">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Aliquam ad, ut corporis veniam consectetur officiis fuga
+                    voluptas porro veritatis aliquid?
+                    <br />
+                    <br />
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Aliquam ad, ut corporis veniam consectetur officiis fuga
+                    voluptas porro veritatis aliquid?
+                  </p>
+
+                  <div className="box-medsos-beritaPage2">
+                    <div className="socialMedia">
+                      <small>SHARE : </small>
+                      <i className="fa fa-facebook"></i>
+                      <i className="fa fa-twitter"></i>
+                      <i className="fa fa-instagram"></i>
+                      <i className="fa fa-whatsapp"></i>
                     </div>
                   </div>
-                  {/* END Row2 */}
-                </>
-              )}
+                </div>
+                {/* END Row2 */}
+              </>
             </div>
             {/* END Column1 */}
 
@@ -191,4 +182,4 @@ const Page2 = () => {
   );
 };
 
-export default Page2;
+export default Gallery;
