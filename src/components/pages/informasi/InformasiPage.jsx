@@ -8,10 +8,28 @@ import CardInformasi from "../../cardInformasi/CardInformasi";
 import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
 import CarouselKM from "../../carouselKM/CarouselKM";
 import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
-import illustrator from '../../../img/illustrator2.png'
+import illustrator from "../../../img/illustrator2.png";
 import CardHeader from "../../cardheader/CardHeader";
 import { Link } from "react-router-dom";
 import Wait from "../../wait/Wait";
+import parse from "html-react-parser";
+
+const anchorLink = (props) => {
+  return (
+    <a
+      href={props.linkTo}
+      className="cardLaporan cardLaporanSatu"
+      style={{
+        padding: "0 20px",
+        gap: "10px",
+        color: "white",
+        fontSize: "1rem",
+      }}
+    >
+      {props.children}
+    </a>
+  );
+};
 
 const InformasiPage = () => {
   const [gallery, setGallery] = useState([]);
@@ -99,7 +117,10 @@ const InformasiPage = () => {
           {/* END */}
 
           {/* Card Header */}
-          <CardHeader image={configHome[0].value.image} title={configHome[0].value.title}/>
+          <CardHeader
+            image={configHome[0].value.image}
+            title={configHome[0].value.title}
+          />
           {/* END Card Header */}
 
           {/* START LINKED */}
@@ -127,9 +148,7 @@ const InformasiPage = () => {
                   }}
                 >
                   <h4 className="maklumat">{configHome[2].value.title}</h4>
-                  <p className="textParagrapKanan">
-                    {configHome[2].value.paragraph}
-                  </p>
+                  {parse(configHome[2].value.paragraph)}
                 </div>
               </div>
             </div>
@@ -157,39 +176,40 @@ const InformasiPage = () => {
             />
 
             {/* CARD LAPORAN */}
-            <div className="containerLaporan" style={{
-                marginTop : '20px'
-            }}>
-              <Link className="cardLaporan cardLaporanSatu" as='div' to='detail-article/658/lhkpn'>
+            <div
+              className="containerLaporan"
+              style={{
+                marginTop: "20px",
+              }}
+            >
+              <Link component={anchorLink} linkTo="detail-article/658/lhkpn">
                 <img
                   src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
                   alt=""
-                  width="45"
                   className="imageHarta"
                 />
-                <div className="textHarta" >
+                <div className="textHarta">
                   <h6 className="hartaKekayaan h5Harta">
                     {configHome[4].value[0].title}
                   </h6>
-         
                 </div>
               </Link>
 
-              <Link className="cardLaporan cardLaporanDua" as='div' to='article/227/laporan-keuangan'>
+              <Link
+                component={anchorLink}
+                linkTo="article/227/laporan-keuangan"
+              >
                 <img
-                    src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
-                    alt=""
-                    className="imageHarta"
-                  />
-                  <div className="textHarta">
-                    <h6 className="keuangan h5Harta">
-                      {configHome[4].value[1].title}
-
-                    </h6>
-              
-                  </div>
+                  src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
+                  alt=""
+                  className="imageHarta"
+                />
+                <div className="textHarta">
+                  <h6 className="keuangan h5Harta">
+                    {configHome[4].value[1].title}
+                  </h6>
+                </div>
               </Link>
-
             </div>
             {/* END CARD LAPORAN */}
           </div>
@@ -216,60 +236,63 @@ const InformasiPage = () => {
           {/* END */}
 
           {/* SLIDER TATA CARA */}
-          <CarouselTataCara data={configHome[6].value}/>
+          <CarouselTataCara data={configHome[6].value} />
           {/* <CarouselKM data={configHome[6].value} /> */}
           {/* END */}
 
           {/* wrapper-cardLaporan2 */}
           <div className="wrapper-cardLaporan2">
-
-          {/* CARD LAPORAN */}
-          <div className="containerLaporan" style={{
-                marginTop : '20px'
-            }}>
-              
-              <div className="cardLaporan cardLaporanSatu">
+            {/* CARD LAPORAN */}
+            <div
+              className="containerLaporan"
+              style={{
+                marginTop: "20px",
+              }}
+            >
+              <Link component={anchorLink} linkTo="/detail-article/658/lhkpn">
                 <div className="box-card-laporan">
                   <img
-                    src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
+                    src={`https://atur.biar.pw/public/${configHome[7].value[0].image}`}
                     alt=""
                     className="imageHarta"
                   />
                   <div className="textHarta">
                     <h6 className="hartaKekayaan h5Harta">
-                      {configHome[4].value[0].title}
+                      {configHome[7].value[0].title}
                     </h6>
-          
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              
-              <div className="cardLaporan cardLaporanDua">
+              <Link
+                component={anchorLink}
+                linkTo="/article/227/laporan-keuangan"
+              >
                 <div className="box-card-laporan">
-                <img
-                    src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
+                  <img
+                    src={`https://atur.biar.pw/public/${configHome[7].value[1].image}`}
                     alt=""
                     className="imageHarta"
                   />
                   <div className="textHarta">
                     <h6 className="keuangan h5Harta">
-                      {configHome[4].value[1].title}
+                      {configHome[7].value[1].title}
                     </h6>
-              
                   </div>
                 </div>
-              </div>
-
+              </Link>
             </div>
             {/* END CARD LAPORAN */}
-            </div>
-            {/* wrapper-cardLaporan2 */}
+          </div>
+          {/* wrapper-cardLaporan2 */}
 
           {/* <CardMaps/> */}
 
           <div className="carousel-informasiPage">
-            <CarouselDuelBerita cat1={configHome[8].value} cat2={configHome[9].value}/>
+            <CarouselDuelBerita
+              cat1={configHome[8].value}
+              cat2={configHome[9].value}
+            />
           </div>
 
           {/* <div className="widgetMobile">

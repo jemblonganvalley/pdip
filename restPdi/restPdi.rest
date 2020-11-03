@@ -14,7 +14,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 
 #PAGES
 ###
-POST https://atur.biar.pw/api/web/pages/bkbb
+POST https://atur.biar.pw/api/web/pages/informasi
 Content-Type: application/json
 Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjA0MzE4MTI1LCJleHAiOjE2MDQ0MDQ1MjUsIm5iZiI6MTYwNDMxODEyNSwianRpIjoiakZ6dUV4bjR4WHQ0Z3ZVSiIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.Dk5boAZkMe-kgL3Dsav5fUedDMwAoXxRKMzBzAG02AE"
 

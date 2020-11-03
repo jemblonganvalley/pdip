@@ -1,761 +1,756 @@
 @import "../../../utilities/variable/variables.scss";
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+$smallPhoneSatu: 500px;
+$smallPhoneDua: 400px;
 
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
 // Min widht 500 and Max width 750
-$respon750 : 750px;
+$respon750: 750px;
 $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 // Min widht 500 and Max width 750
 @mixin respon750 {
-    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
-        @content;
-    }
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
 }
 // END Min widht 500 and Max width 750
 
 // Min widht 750 and Max width 950
-$responMin750 : 750px;
+$responMin750: 750px;
 $responMax950: 950px;
 // END Min widht 750 and Max width 950
 
 // Min width 750 and max width 950
-@mixin respon950{
-    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
-        @content;
-    }
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
 }
 // END Min widht 750 and max width 950
 
 .wrapperInformasi {
+  width: 100%;
+  padding-bottom: 40px;
+
+  // START HEADER
+  // .headInformasi {
+  //     background: url(../../../img/mask.png);
+  //     background-size: cover;
+  //     height: 15vh;
+  //     background-position: center;
+  //     display: flex;
+  //     align-items: center;
+  //     // width: 100%;
+  //     @include smallPhone() {
+  //         height: 15vh;
+  //     }
+
+  //     .textHeadInformasi {
+  //             width: 100%;
+  //             // height: 50%;
+  //             display: flex;
+  //             // margin-left: 13rem;
+  //             padding: 0 10%;
+  //             // border: 1px solid blue;
+  //             color: #ffffff;
+
+  //             h2 {
+  //                 max-width: 500px;
+  //                 text-transform: uppercase;
+  //                 font-family: 'Roboto';
+
+  //                 @include smallPhone() {
+  //                     font-size: 15pt;
+  //                 }
+  //                 @include smallPhone() {
+  //                     font-size: 12pt;
+  //                 }
+
+  //                 .pdip {
+  //                     font-weight: 300;
+  //                 }
+  //             }
+  //     }
+  // }
+  // END HEADER
+
+  // START LINKED INFORMASI
+  .linkedInformasi {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     width: 100%;
-    padding-bottom: 40px;
+    margin-top: 15px;
+    padding: 10px 10%;
+    @include smallPhone() {
+      // border: 1px solid crimson;
+      width: 100%;
+      padding: $paddingMobile;
+    }
+  }
+  // END
 
-    // START HEADER
-    // .headInformasi {
-    //     background: url(../../../img/mask.png);
-    //     background-size: cover;
-    //     height: 15vh;
-    //     background-position: center;
-    //     display: flex;
-    //     align-items: center;
-    //     // width: 100%;
-    //     @include smallPhone() {
-    //         height: 15vh;
-    //     }
+  // START PROFIL
+  .profilContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20% 5px 20%;
 
-    //     .textHeadInformasi {
-    //             width: 100%;
-    //             // height: 50%;
-    //             display: flex;
-    //             // margin-left: 13rem;
-    //             padding: 0 10%;
-    //             // border: 1px solid blue;
-    //             color: #ffffff;
+    // min width 500px and max width 750px
+    @include respon750() {
+      padding: 0 15% 5px 15%;
+    }
+    // end min width 500px and max width 750px
 
-    //             h2 {
-    //                 max-width: 500px;
-    //                 text-transform: uppercase;
-    //                 font-family: 'Roboto';
-                    
-    //                 @include smallPhone() {
-    //                     font-size: 15pt;
-    //                 }
-    //                 @include smallPhone() {
-    //                     font-size: 12pt;
-    //                 }
+    @include smallPhone() {
+      width: 100%;
+      padding: 0;
+    }
 
-    //                 .pdip {
-    //                     font-weight: 300;
-    //                 }
-    //             }
-    //     }
-    // }
-    // END HEADER
+    .divider-profil {
+      display: flex;
+      height: auto;
+      width: 100%;
+      align-items: center;
 
-    // START LINKED INFORMASI
-        .linkedInformasi {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            width: 100%;
-            margin-top: 15px;
-            padding: 10px 10%;
-            @include smallPhone() {
-                // border: 1px solid crimson;
-                width: 100%;
-                padding: $paddingMobile;
-            }
-        }
-    // END
+      @include smallPhone() {
+        padding: 0 10px;
+      }
+    }
 
-    // START PROFIL
-        .profilContainer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 0 20% 5px 20%;
+    .paragrapProfil {
+      display: flex;
+      width: 100%;
+      margin-top: 0rem;
+      justify-content: center;
+      // position: relative;
 
-            // min width 500px and max width 750px
-            @include respon750(){
-                padding: 0 15% 5px 15%;
-            }
-            // end min width 500px and max width 750px
+      @include respon950() {
+        flex-direction: column;
+      }
 
-            @include smallPhone() {
-                width: 100%;
-                padding: 0;
-            }
+      // min width 500px and max width 750px
+      @include respon750() {
+        flex-direction: column;
+      }
+      // end min width 500px and max width 750px
 
-            .divider-profil{
-                display: flex;
-                height: auto;
-                width: 100%;
-                align-items: center;
+      @include smallPhone() {
+        flex-direction: column;
+        position: inherit;
+      }
 
-                @include smallPhone(){
-                    padding: 0 10px;
-                }
-            }
-            
-            .paragrapProfil {
-                display: flex;
-                width: 100%;
-                margin-top: 0rem;
-                justify-content: center;
-                // position: relative;
-
-                @include respon950(){
-                    flex-direction: column;
-                }
-
-                // min width 500px and max width 750px
-                @include respon750(){
-                    flex-direction: column;
-                }
-                // end min width 500px and max width 750px
-
-                @include smallPhone() {
-                    flex-direction: column;
-                    position: inherit;
-                }
-
-                .paragrapKiri {
-                    display: flex;
-                    height: 45vh;
-                    flex-direction: column;
-                    font-family: 'Roboto';
-                    overflow-y: scroll;
-
-                    @include respon950(){
-                        height: auto;
-                    }
-
-                    // min width 500px and max width 750px
-                    @include respon750(){
-                        height: auto;
-                    }
-                    // end min width 500px and max width 750px
-
-                    @include smallPhone() {
-                        height: auto;
-                        justify-content: flex-start;
-                        align-items: center;
-                        padding: 0 10px;
-                    }
-
-                    .merdeka {
-                        font-style: italic;
-
-                        @include respon750(){
-                            justify-content: center;
-                            text-align: center;
-                        }
-
-                        @include smallPhone(){
-                            padding: 0 10%;
-                        }
-                    }
-                    .solid {
-                        font-style: italic;
-
-                        // min width 500px and max width 750px
-                        @include respon750(){
-                            text-align: center;
-                        }
-                        // end min width 500px and max width 750px
-
-                        @include smallPhone() {
-                            text-align: center;
-                            padding: 0 10%;
-                        }
-                    }
-                    .textParagrap {
-                        // font-size: 10pt;
-                        // width: 37vw;
-                        width: 100%;
-                        padding: 0 4% 0 0;
-
-                        // min width 500px and max width 750px
-                        @include respon750(){
-                            margin-top: 20px;
-                        }
-                        // end min width 500px and max width 750px
-
-                        @include smallPhone() {
-                            width: auto;
-                            // font-size: 9pt;
-                            text-align: start;
-                            padding: 0 2%;
-                            margin-top: 10px;
-                        }
-                    }
-                }
-
-                .paragrapKiri::-webkit-scrollbar{
-                    width: 3px;
-                }
-
-                .paragrapKiri::-webkit-scrollbar-thumb{
-                    background-color: #555;
-                    border-radius: 10px;
-                }
-
-                .paragrapKiri::-webkit-scrollbar-track{
-                    background-color: #f3f3f3;
-                    border-radius: 10px;
-                }
-            }
-
-            .paragrapKanan {
-                display: flex;
-                flex-direction: column;
-                // width: 100%;
-                height: 100%;
-                width: 50vw;
-
-                @include respon950(){
-                    width: 100%;
-                }
-
-                // min width 500px and max width 750px 
-                @include respon750(){
-                    width: 100%;
-                }
-                // end min width 500px and max width 750px
-
-                @include smallPhone() {
-                    width: 100%;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .backgroundPK {
-                    padding: 20px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    flex-direction: column;
-                    // position: absolute;
-                    bottom: 0;
-                    width: 25vw;
-                    right: 0;
-                    height: 45vh;
-                    background-size: cover;
-                    color: #ffffff;
-                    font-family: 'Roboto';
-
-                    @include respon950(){
-                        width: 100%;
-                    }
-
-                    // min width 500px and max width 750px
-                    @include respon750(){
-                        width: 100%;
-                    }
-                    // end min width 500px and max width 750px
-
-                    @include smallPhone() {
-                        height: 50vh;
-                        position: inherit;
-                        width: 100%;
-                    }
-
-                    .textParagrapKanan {
-                        margin-top: 1rem;
-                        // font-size: 10pt;
-                    }
-                }
-            }
-
-            // divider
-                .divider {
-                    margin-top: 1rem;
-                    border: 1px solid #000000;
-                    height: 1px;
-                    width: 100%;
-                    @include smallPhone() {
-                        margin: 1rem 0 0 0;
-                    }
-                }
-            //  END
-        }
-    // END
-
-    // YOUTUBE PROFIL
-    .ytProfil {
-        margin-top: 2rem;
-        padding: 10px 20% 0 20%;
+      .paragrapKiri {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+        height: 45vh;
+        flex-direction: column;
+        font-family: "Roboto";
+        overflow-y: scroll;
+
+        @include respon950() {
+          height: auto;
+        }
 
         // min width 500px and max width 750px
-        @include respon750(){
-            padding: 10px 15% 0 15%;
-            margin-top: 1rem;
+        @include respon750() {
+          height: auto;
         }
         // end min width 500px and max width 750px
 
         @include smallPhone() {
-            padding: 0 10px;
+          height: auto;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 0 10px;
         }
 
-        .ytIframe {
-            width: 100%;
-            // border: 1px solid #48ff00;
-            height: 60vh;
-            position: relative;
-            // overflow: hidden;
+        .merdeka {
+          font-style: italic;
 
-            // min width 500px and max width 750px
-            @include respon750(){
-                height: 40vh;
-            }
-            // end min width 500px and max width 750px
+          @include respon750() {
+            justify-content: center;
+            text-align: center;
+          }
 
-            @include smallPhoneDua() {
-                height: 40vh;
-            }
-
-            .iframeProfil {
-                border: 0;
-                height: 100%;
-                width: 100%;
-                // border: 1px solid blue;
-                top: 0;
-                left: 0;
-                position: absolute;
-
-                @include smallPhoneDua() {
-                    position: inherit;
-                }
-
-            }
+          @include smallPhone() {
+            padding: 0 10%;
+          }
         }
+        .solid {
+          font-style: italic;
+
+          // min width 500px and max width 750px
+          @include respon750() {
+            text-align: center;
+          }
+          // end min width 500px and max width 750px
+
+          @include smallPhone() {
+            text-align: center;
+            padding: 0 10%;
+          }
+        }
+        .textParagrap {
+          // font-size: 10pt;
+          // width: 37vw;
+          width: 100%;
+          padding: 0 4% 0 0;
+
+          // min width 500px and max width 750px
+          @include respon750() {
+            margin-top: 20px;
+          }
+          // end min width 500px and max width 750px
+
+          @include smallPhone() {
+            width: auto;
+            // font-size: 9pt;
+            text-align: start;
+            padding: 0 2%;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .paragrapKiri::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      .paragrapKiri::-webkit-scrollbar-thumb {
+        background-color: #555;
+        border-radius: 10px;
+      }
+
+      .paragrapKiri::-webkit-scrollbar-track {
+        background-color: #f3f3f3;
+        border-radius: 10px;
+      }
     }
-    // END
 
-    // TATA CARA CONTAINER
-        .tataCaraContainer {
-            display: flex;
-            height: auto;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 0 20%;
+    .paragrapKanan {
+      display: flex;
+      flex-direction: column;
+      // width: 100%;
+      height: 100%;
+      width: 50vw;
 
-            // min width 500px and max width 750px
-            @include respon750(){
-                padding: 0 15%;
+      @include respon950() {
+        width: 100%;
+      }
+
+      // min width 500px and max width 750px
+      @include respon750() {
+        width: 100%;
+      }
+      // end min width 500px and max width 750px
+
+      @include smallPhone() {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .backgroundPK {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        // position: absolute;
+        bottom: 0;
+        width: 25vw;
+        right: 0;
+        height: 45vh;
+        background-size: cover;
+        color: #ffffff;
+        font-family: "Roboto";
+
+        @include respon950() {
+          width: 100%;
+        }
+
+        // min width 500px and max width 750px
+        @include respon750() {
+          width: 100%;
+        }
+        // end min width 500px and max width 750px
+
+        @include smallPhone() {
+          height: 50vh;
+          position: inherit;
+          width: 100%;
+        }
+
+        .textParagrapKanan {
+          margin-top: 1rem;
+          // font-size: 10pt;
+        }
+      }
+    }
+
+    // divider
+    .divider {
+      margin-top: 1rem;
+      border: 1px solid #000000;
+      height: 1px;
+      width: 100%;
+      @include smallPhone() {
+        margin: 1rem 0 0 0;
+      }
+    }
+    //  END
+  }
+  // END
+
+  // YOUTUBE PROFIL
+  .ytProfil {
+    margin-top: 2rem;
+    padding: 10px 20% 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    // min width 500px and max width 750px
+    @include respon750() {
+      padding: 10px 15% 0 15%;
+      margin-top: 1rem;
+    }
+    // end min width 500px and max width 750px
+
+    @include smallPhone() {
+      padding: 0 10px;
+    }
+
+    .ytIframe {
+      width: 100%;
+      // border: 1px solid #48ff00;
+      height: 60vh;
+      position: relative;
+      // overflow: hidden;
+
+      // min width 500px and max width 750px
+      @include respon750() {
+        height: 40vh;
+      }
+      // end min width 500px and max width 750px
+
+      @include smallPhoneDua() {
+        height: 40vh;
+      }
+
+      .iframeProfil {
+        border: 0;
+        height: 100%;
+        width: 100%;
+        // border: 1px solid blue;
+        top: 0;
+        left: 0;
+        position: absolute;
+
+        @include smallPhoneDua() {
+          position: inherit;
+        }
+      }
+    }
+  }
+  // END
+
+  // TATA CARA CONTAINER
+  .tataCaraContainer {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20%;
+
+    // min width 500px and max width 750px
+    @include respon750() {
+      padding: 0 15%;
+    }
+    // end min width 500px and max width 750px
+
+    @include smallPhone() {
+      padding: 0 10px;
+    }
+  }
+  // END
+
+  // CAROUSEL TATA CARA
+  .sliderTataCara {
+    // padding: 0px;
+    width: 100%;
+    display: flex;
+    // height: 50vh;
+    // margin-top: 1rem;
+
+    .carousel-item {
+      .imageTC {
+        // width: 100%;
+        width: 100%;
+        display: block;
+        height: 60vh;
+        // border: 1px solid crimson;
+        background: url(../../../img/illustrator2.png);
+        background-size: cover;
+        background-position: bottom;
+        position: relative;
+        @include smallPhone() {
+          height: 35vh;
+        }
+        @include smallPhoneDua() {
+          height: 30vh;
+        }
+
+        .textTC {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          .pCarousel {
+            width: 45%;
+            font-weight: 700;
+            @include smallPhone() {
+              // width: 50%;
+              font-size: 9pt;
+              text-align: center;
             }
-            // end min width 500px and max width 750px
+            @include smallPhoneDua() {
+              font-size: 7.5pt;
+            }
+          }
+        }
+        .kunjungi {
+          color: black;
+          width: 10vw;
+          border-radius: 25px;
+          position: absolute;
+          left: 60%;
+          bottom: 20%;
+          color: $colors;
+          border: 1px solid $colors;
+          font-size: 7pt;
+          text-transform: uppercase;
+          transition: 0.3s;
+
+          &:hover {
+            background: $colors;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .carousel-control-next-icon {
+      background: url(../../../img/right.png);
+      background-size: cover;
+    }
+    .carousel-control-prev-icon {
+      background: url(../../../img/left.png);
+      background-size: cover;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      width: 40px;
+      height: 40px;
+      @include smallPhone() {
+        width: 30px;
+        height: 30px;
+      }
+      @include smallPhoneDua() {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+  // END
+
+  // Container Dua
+  .infoDua {
+    padding: 0 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 40px 0;
+
+    // min width 500px and max width 750px
+    @include respon750() {
+      flex-direction: column;
+      padding: 0 15%;
+    }
+    // end min width 500px and max width 750px
+
+    @include smallPhone() {
+      flex-direction: column;
+      padding: 0 10px;
+      margin: 20px 0 20px 0;
+    }
+
+    .kolomFormulir {
+      width: 50%;
+      // border: 1px solid blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 15vh;
+      transition: 0.3s;
+
+      // min widht 500px and max width 750px
+      @include respon750() {
+        width: 100%;
+        margin: 0 0 0.5rem 0;
+        padding: 10px 30px;
+        justify-content: flex-start;
+      }
+      // end min width 500px and max width 750px
+
+      @include smallPhone() {
+        height: 15vh;
+        width: 100%;
+        margin: 0 0 0.5rem 0;
+        border-radius: 5px;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      &:hover {
+        background: #2f3542;
+      }
+
+      img {
+        @include smallPhone() {
+          width: 50px;
+        }
+      }
+
+      .textFormulir {
+        margin-left: 30px;
+        // font-family: 'Roboto';
+
+        // min width 500px and max width 750px
+        @include respon750() {
+          margin-left: 1rem;
+        }
+        // end min width 500px and max width 750px
+
+        @include smallPhone() {
+          // font-size: 13pt;
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    .kolomFormulirSatu {
+      background: $colors;
+      color: #ffffff;
+      margin-right: 20px;
+
+      // min width 500px and max width 750px
+      @include respon750() {
+        margin-right: 0;
+      }
+      // end min width 500px and max width 750px
+
+      @include smallPhone() {
+        margin-right: 0;
+      }
+    }
+    .kolomFormulirDua {
+      background: $colors;
+      color: #fff;
+    }
+  }
+  // END
+
+  .carousel-informasiPage {
+    display: flex;
+    height: auto;
+
+    @include smallPhone() {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .widgetDesktop {
+    display: flex;
+    justify-content: space-between;
+    padding: $padding;
+    width: 100%;
+
+    @include smallPhone() {
+      display: none;
+    }
+  }
+
+  // wrapper cardLaporan2
+  .wrapper-cardLaporan2 {
+    display: flex;
+    padding: 0 20%;
+    margin-bottom: 20px;
+
+    @include respon750() {
+      padding: 0 15%;
+    }
+
+    @include smallPhone() {
+      padding: 0px;
+    }
+  }
+  // end wrapper cardLaporan2
+
+  // CARD LAPORAN
+  .containerLaporan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    // padding: 2rem;
+
+    // min width 750px and max width 950px
+    @include respon950() {
+      flex-direction: column;
+    }
+    // end min width 750px and max width 950px
+
+    // min width 500px and max width 750px
+    @include respon750() {
+      flex-direction: column;
+    }
+    // end min width 500px and max width 750px
+
+    @include smallPhone() {
+      padding: 0 10px;
+      flex-direction: column;
+    }
+
+    .cardLaporanSatu {
+      margin-right: 20px;
+      justify-content: center;
+      align-items: center;
+
+      @include respon950() {
+        margin-right: 0;
+      }
+
+      @include respon750() {
+        margin-right: 0;
+      }
+    }
+
+    .cardLaporan {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 15vh;
+      flex-direction: row;
+      // margin: 1rem 1rem;
+      background: #e50209;
+      // border: 1px solid crimson;
+      transition: 0.3s;
+      overflow: hidden;
+
+      @include respon950() {
+        width: 100%;
+        margin: 0.5rem 0 0 0;
+        padding: 20px 30px;
+        border-radius: 5px;
+        justify-content: center;
+      }
+
+      // min width 500px and max width 750px
+      @include respon750() {
+        width: 100%;
+        margin: 0.5rem 0 0 0;
+        padding: 20px 30px;
+        border-radius: 5px;
+        justify-content: center;
+      }
+      // end min width 500px and max width 750px
+
+      @include smallPhone() {
+        width: 100%;
+        margin: 0.5rem 0 0 0;
+        padding: 10px 0 10px 20px;
+        border-radius: 5px;
+        justify-content: center;
+      }
+
+      &:hover {
+        background: #2f3542;
+      }
+
+      .box-card-laporan {
+        display: flex;
+        height: 100%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+
+        @include respon750() {
+          width: 70%;
+        }
+
+        @include smallPhone() {
+          width: 80%;
+        }
+
+        .imageHarta {
+          width: 45px;
+
+          // min widht 500px and max widht 750px
+          @include respon750() {
+            margin: 0;
+          }
+          // end min width 500px and max width 750px
+
+          @include smallPhone() {
+            width: 50px;
+            margin: 0;
+          }
+        }
+
+        .textHarta {
+          display: flex;
+          flex-direction: column;
+          color: #ffffff !important;
+          margin: 0 1rem;
+
+          .h5Harta {
+            text-transform: uppercase;
+            color: inherit;
+            color: #ffffff !important;
+          }
+
+          .paragrapHarta {
+            // font-size: 10pt;
+            // border: 1px solid blue;
 
             @include smallPhone() {
-                padding: 0 10px;
+              // font-size: 8pt;
             }
+          }
         }
-        // END
-        
-        // CAROUSEL TATA CARA
-        .sliderTataCara {
-            // padding: 0px;
-            width: 100%;
-            display: flex;
-            // height: 50vh;
-            // margin-top: 1rem;
-            
-            
-
-            .carousel-item {
-                .imageTC {
-                    // width: 100%;
-                    width: 100%;
-                    display: block;
-                    height: 60vh;
-                    // border: 1px solid crimson;
-                    background: url(../../../img/illustrator2.png);
-                    background-size: cover;
-                    background-position: bottom;
-                    position: relative;
-                    @include smallPhone() {
-                        height: 35vh;
-                    }
-                    @include smallPhoneDua() {
-                        height: 30vh;
-                    }
-
-                    .textTC {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        height: 100%;
-                        .pCarousel {
-                            width: 45%;
-                            font-weight: 700;
-                            @include smallPhone() {
-                                // width: 50%;
-                                font-size: 9pt;
-                                text-align: center;
-                            }
-                            @include smallPhoneDua() {
-                                font-size: 7.5pt;
-                            }
-                        }
-                    }
-                    .kunjungi {
-                        color: black;
-                        width: 10vw;
-                        border-radius: 25px;
-                        position: absolute;
-                        left: 60%;
-                        bottom: 20%;
-                        color: $colors;
-                        border: 1px solid $colors;
-                        font-size: 7pt;
-                        text-transform: uppercase;
-                        transition: .3s;
-
-                        &:hover {
-                            background: $colors;
-                            color: #ffffff;
-
-                        }
-                    }
-                }
-            }
-            .carousel-control-next-icon {
-                background: url(../../../img/right.png);
-                background-size: cover;
-            }
-            .carousel-control-prev-icon {
-                background: url(../../../img/left.png);
-                background-size: cover;
-
-            }
-            .carousel-control-next-icon,
-            .carousel-control-prev-icon {
-                width: 40px;
-                height: 40px;
-                @include smallPhone() {
-                    width: 30px;
-                    height: 30px;
-                }
-                @include smallPhoneDua() {
-                    width: 25px;
-                    height: 25px;
-                }
-            }
-            
-        }
-        // END
-
-        // Container Dua
-        .infoDua {
-            padding: 0 20%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 20px 0 40px 0;
-
-            // min width 500px and max width 750px
-            @include respon750(){
-                flex-direction: column;
-                padding: 0 15%;
-            }
-            // end min width 500px and max width 750px
-
-            @include smallPhone() {
-                flex-direction: column;
-                padding: 0 10px;
-                margin: 20px 0 20px 0;
-            }
-
-            .kolomFormulir {
-                width: 50%;
-                // border: 1px solid blue;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 15vh;
-                transition: .3s;
-
-                // min widht 500px and max width 750px
-                @include respon750(){
-                    width: 100%;
-                    margin: 0 0 .5rem 0;
-                    padding: 10px 30px;
-                    justify-content: flex-start;
-                }
-                // end min width 500px and max width 750px
-
-                @include smallPhone(){
-                    height: 15vh;
-                    width: 100%;
-                    margin: 0 0 .5rem 0;
-                    border-radius: 5px;
-                    justify-content: flex-start;
-                    align-items: center;
-                    padding: 10px 20px;
-                }
-
-                &:hover{
-                    background: #2f3542;
-                }
-
-                img {
-                    @include smallPhone() {
-                        width: 50px;
-                    }
-                }
-
-                .textFormulir {
-                    margin-left: 30px;
-                    // font-family: 'Roboto';
-
-                    // min width 500px and max width 750px
-                    @include respon750(){
-                        margin-left: 1rem;
-                    }
-                    // end min width 500px and max width 750px
-
-                    @include smallPhone() {
-                        // font-size: 13pt;
-                        margin-left: 1rem;
-                    }
-                }
-            }
-
-            .kolomFormulirSatu {
-                background: $colors;
-                color: #ffffff;
-                margin-right: 20px;
-
-                // min width 500px and max width 750px
-                @include respon750(){
-                    margin-right: 0;
-                }
-                // end min width 500px and max width 750px
-
-                @include smallPhone(){
-                    margin-right: 0;
-                }
-            }
-            .kolomFormulirDua {
-                background: $colors;
-                color: #fff;
-            }
-        }
-        // END
-
-        .carousel-informasiPage{
-            display: flex;
-            height: auto;
-            
-            @include smallPhone(){
-                margin: 0;
-                padding: 0;
-            }
-        }
-
-        .widgetDesktop {
-            display: flex;
-            justify-content: space-between;
-            padding: $padding;
-            width: 100%;
-
-            @include smallPhone() {
-                display: none;
-            }
-        }
-
-        // wrapper cardLaporan2
-        .wrapper-cardLaporan2{
-            display: flex;
-            padding: 0 20%;
-            margin-bottom: 20px;
-
-            @include respon750(){
-                padding: 0 15%;
-            }
-
-            @include smallPhone(){
-                padding: 0px;
-            }
-        }
-        // end wrapper cardLaporan2
-
-        // CARD LAPORAN
-        .containerLaporan {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            // padding: 2rem;
-
-            // min width 750px and max width 950px
-            @include respon950(){
-                flex-direction: column;
-            }
-            // end min width 750px and max width 950px
-
-            // min width 500px and max width 750px
-            @include respon750(){
-                flex-direction: column;
-            }
-            // end min width 500px and max width 750px
-
-            @include smallPhone() {
-                padding: 0 10px;
-                flex-direction: column;
-            }
-
-            .cardLaporanSatu{
-                margin-right: 20px;
-                justify-content: center;
-                align-items: center;
-
-                @include respon950(){
-                    margin-right: 0;
-                }
-
-                @include respon750(){
-                    margin-right: 0;
-                }
-            }
-
-            .cardLaporan {
-                width: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 15vh;
-                flex-direction: row;
-                // margin: 1rem 1rem;
-                background: #e50209;
-                // border: 1px solid crimson;
-                transition: .3s;
-                overflow: hidden;
-
-                @include respon950(){
-                    width: 100%;
-                    margin: .5rem 0 0 0;
-                    padding: 20px 30px;
-                    border-radius: 5px;
-                    justify-content: center;
-                }
-
-                // min width 500px and max width 750px
-                @include respon750(){
-                    width: 100%;
-                    margin: .5rem 0 0 0;
-                    padding: 20px 30px;
-                    border-radius: 5px;
-                    justify-content: center;
-                }
-                // end min width 500px and max width 750px
-
-                @include smallPhone() {
-                    width: 100%;
-                    margin: .5rem 0 0 0;
-                    padding: 10px 0 10px 20px;
-                    border-radius: 5px;
-                    justify-content: center;
-                }
-
-                &:hover {
-                    background: #2f3542;
-                }
-
-                .box-card-laporan{
-                    display: flex;
-                    height: 100%;
-                    width: 50%;
-                    justify-content: center;
-                    align-items: center;
-
-                    @include respon750(){
-                        width: 70%;
-                    }
-
-                    @include smallPhone(){
-                        width: 80%;
-                    }
-
-                    .imageHarta {
-                        width: 45px;
-
-                        // min widht 500px and max widht 750px
-                        @include respon750(){
-                            margin: 0;
-                        }
-                        // end min width 500px and max width 750px
-
-                        @include smallPhone(){
-                            width: 50px;
-                            margin: 0;
-                        }
-                    }
-
-                    .textHarta {
-                        display: flex;
-                        flex-direction: column;
-                        color: #ffffff;
-                        margin: 0 1rem;
-
-                        .h5Harta {
-                            text-transform: uppercase;
-                        }
-
-                        .paragrapHarta {
-                            // font-size: 10pt;
-                            // border: 1px solid blue;
-
-                            @include smallPhone(){
-                                // font-size: 8pt;
-                            }
-                        }
-                    }
-                }
-
-            }
-        }
-        // END
+      }
+    }
+  }
+  // END
 }
