@@ -37,6 +37,7 @@ const MusicPdi = ({
   const [play, setPlay] = useState([
     {
       song: hymne,
+      title: "HYME PDI PERJUANGAN",
       minusOne: hymne_mo,
       pdf: hymne_pdf,
       lyric: `
@@ -87,6 +88,7 @@ const MusicPdi = ({
     },
     {
       song: mars,
+      title: "MARS PDI PERJUANGAN",
       minusOne: mars_mo,
       pdf: mars_pdf,
       lyric: `
@@ -112,6 +114,7 @@ const MusicPdi = ({
     },
     {
       song: allForOne,
+      title: "ONE FOR ALL AND ALL FOR ONE",
       minusOne: allForOne_mo,
       pdf: allForOne_pdf,
       lyric: `
@@ -144,6 +147,7 @@ const MusicPdi = ({
     },
     {
       song: solid,
+      title: "SOLID BERGERAK",
       minusOne: solid_mo,
       pdf: solid_pdf,
       lyric: `
@@ -184,7 +188,7 @@ const MusicPdi = ({
           {/* MUSIC */}
           <div className="col col-md-8 musicPlayer">
             <div className="wrapperContentMusic">
-              <div className="contentMusic">
+              <div className="contentMusic" style={{ height: "100%" }}>
                 <div className="col-sm-4">
                   <div
                     className="plyr"
@@ -243,7 +247,7 @@ const MusicPdi = ({
                   <div className="containerLirik">
                     <small>lagu perjuangan</small>
                     <span className="judulLagu" id="songTitle">
-                      mars pdi perjuangan
+                      {play[indexPlay].title}
                     </span>
                     <span className="lirik">lirik</span>
                     <p
@@ -253,6 +257,7 @@ const MusicPdi = ({
                       }}
                       style={{
                         width: "80%",
+                        height: "100%",
                       }}
                     ></p>
                   </div>
@@ -295,8 +300,9 @@ const MusicPdi = ({
               >
                 <h6 className="judulList">Hymne PDI Perjuangan</h6>
                 <small>
-                  Lorem ipsum, dolor sit amet consectetur disin asekuma one
-                  direct
+                  Api perjuangan harus tetap dinyalakan dan selalu bangkit
+                  bergerak berjuang bersama,PDI Perjuangan selalu bersama rakyat
+                  dalam satu barisan.
                 </small>
               </div>
 
@@ -308,7 +314,8 @@ const MusicPdi = ({
               >
                 <h6 className="judulList">Mars PDI Perjuangan</h6>
                 <small>
-                  Lorem ipsum, dolor sit amet consectetur disin asekuma one
+                  Tak ada yang tak mungkin jika Tuhan sudah berkehendak,Begitu
+                  pula dengan PDI Perjuangan.
                 </small>
               </div>
 
@@ -319,7 +326,11 @@ const MusicPdi = ({
                 }}
               >
                 <h6 className="judulList">One For All All For One</h6>
-                <small>Lorem ipsum, dolor sit amet consectetur</small>
+                <small>
+                  Dibalut dengan musik yang sangat enerjik memperkuat maksud dan
+                  tujuan dari terciptanya lagu ini untuk menggalang kebersamaan
+                  dalam menghadapi semua masalah yang terjadi.
+                </small>
               </div>
 
               <div
@@ -329,7 +340,10 @@ const MusicPdi = ({
                 }}
               >
                 <h6 className="judulList">Solid Bergerak</h6>
-                <small>Lorem ipsum, dolor sit amet consectetur</small>
+                <small>
+                  Satukan misi,satukan fisi rapatkan barisan bergerak dengan
+                  satu semangat mengabdi kepada bangsa dan Negara.
+                </small>
               </div>
             </div>
           </div>

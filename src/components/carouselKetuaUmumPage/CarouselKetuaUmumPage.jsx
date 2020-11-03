@@ -11,48 +11,48 @@ const CarouselKetuaUmumPage = ({ data }) => {
         data-ride="carousel"
       >
         <div className="carousel-inner carousel-ketuaUmumPage">
-            {data.length > 0 ? (
-                <>
-                {data.map((e,i)=>(
-                        <div className={i == 0 ? `carousel-item active` : `carousel-item`}>
-            <div className="col1-container-1-carousel-ketuaUmumPage" style={{
-                backgroundImage : `url(https://atur.biar.pw/public/${e.image})`
-            }}>
-              <div className="cont-img-col1">
-                <div className="col1-img">
-                  <div className="box-txt-title">
-                    
-                  </div>
-                </div>
-                <div className="col2-img">
-                  <div className="garis-strip-col2"></div>
-                  <div className="box-txt-desk-col2">
-                    <h4>
-                      {e.title}
-                    </h4>
+          {data.length > 0 ? (
+            <>
+              {data.map((e, i) => (
+                <div
+                  className={i == 0 ? `carousel-item active` : `carousel-item`}
+                  onClick={() => {
+                    window.location.href = e.link;
+                  }}
+                >
+                  <div
+                    className="col1-container-1-carousel-ketuaUmumPage"
+                    style={{
+                      backgroundImage: `url(https://atur.biar.pw/public/${e.image})`,
+                    }}
+                  >
+                    <div className="cont-img-col1">
+                      <div className="col1-img">
+                        <div className="box-txt-title"></div>
+                      </div>
+                      <div className="col2-img">
+                        <div className="garis-strip-col2"></div>
+                        <div className="box-txt-desk-col2">
+                          <h4>{e.title}</h4>
 
-                    {/* <small className="txt-admin">
+                          {/* <small className="txt-admin">
                       Admin PDI Perjuangan | 1 Januari
                     </small> */}
 
-                    <p className="txt-desk-col2" dangerouslySetInnerHTML={{__html : e.paragraph}}>
-                   
-                    </p>
+                          <p
+                            className="txt-desk-col2"
+                            dangerouslySetInnerHTML={{ __html: e.paragraph }}
+                          ></p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-                ))}
-            
-          </>
-            ) : (
-                <div className="wait">Wait</div>
-            )}
-          
-
-    
-
+              ))}
+            </>
+          ) : (
+            <div className="wait">Wait</div>
+          )}
         </div>
         <a
           className="carousel-control-prev"
