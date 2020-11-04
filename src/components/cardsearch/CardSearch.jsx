@@ -7,7 +7,10 @@ const CardSearch = ({ cardSearchItem }) => {
     <>
       {cardSearchItem.map((e) => {
         return (
-          <Link className="card-hasil-pencarian" to={"/berita"}>
+          <Link
+            className="card-hasil-pencarian"
+            to={`/detail-article/${e.id_category_child}/`}
+          >
             <img
               src={`https://atur.biar.pw/public/${e.path}`}
               alt=""
