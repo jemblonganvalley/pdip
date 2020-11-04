@@ -239,7 +239,7 @@ const PartaiPage = () => {
                 </div>
               </div>
               {/* END */}
-              <a className="btnUnduh">
+              <a className="btnUnduh" href={pdiLogo} download>
                 <MainButton name="Unduh Lambang" />
               </a>
 
@@ -265,7 +265,7 @@ const PartaiPage = () => {
                 }}
               >
                 <h2>{config[6].value.title}</h2>
-                <Link className="btn lihat" to="/struktur-dpp">
+                <Link className="btn lihat">
                   <span>lihat</span>
                 </Link>
               </div>
