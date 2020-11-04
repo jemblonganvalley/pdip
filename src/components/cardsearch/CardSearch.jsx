@@ -9,7 +9,7 @@ const CardSearch = ({ cardSearchItem }) => {
         return (
           <Link
             className="card-hasil-pencarian"
-            to={`/detail-article/${e.id_category_child}/`}
+            to={`/detail-article/${e.id}/`}
           >
             <img
               src={`https://atur.biar.pw/public/${e.path}`}
