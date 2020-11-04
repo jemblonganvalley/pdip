@@ -10,7 +10,8 @@ import MusicMobile from "../../musicPdiMobile/MusicMobile";
 import CardHeader from "../../cardheader/CardHeader";
 import CarouselKetuaUmumPage from "../../carouselKetuaUmumPage/CarouselKetuaUmumPage";
 import Maps from "../../maps/Maps";
-import Wait from '../../wait/Wait'
+import Wait from "../../wait/Wait";
+import parse from "html-react-parser";
 
 const PartaiPage = () => {
   const [config, setConfig] = useState([]);
@@ -56,7 +57,10 @@ const PartaiPage = () => {
           {config.length > 0 && (
             <>
               {/* Card Header */}
-              <CardHeader image={config[0].value.image} title={config[0].value.title} />
+              <CardHeader
+                image={config[0].value.image}
+                title={config[0].value.title}
+              />
               {/* END Card Header */}
 
               {/* LINK PARTAI */}
@@ -81,30 +85,44 @@ const PartaiPage = () => {
                       {config[1].value.map((e, i) => (
                         <Link
                           className="mobileRow"
-                          as='div'
+                          as="div"
                           to={
-                            i == 0 ? `/detail-article/838/${e.title.replaceAll(' ', '-')}` :
-                            i ==1 ? `/detail-article/839/${e.title.replaceAll(' ', '-')}` : 
-                            i ==2 ? `/detail-article/844/${e.title.replaceAll(' ', '-')}` : 
-                            i ==3 ? `/detail-article/847/${e.title.replaceAll(' ', '-')}` : '/'
-                        }
+                            i == 0
+                              ? `/detail-article/838/${e.title.replaceAll(
+                                  " ",
+                                  "-"
+                                )}`
+                              : i == 1
+                              ? `/detail-article/839/${e.title.replaceAll(
+                                  " ",
+                                  "-"
+                                )}`
+                              : i == 2
+                              ? `/detail-article/844/${e.title.replaceAll(
+                                  " ",
+                                  "-"
+                                )}`
+                              : i == 3
+                              ? `/detail-article/847/${e.title.replaceAll(
+                                  " ",
+                                  "-"
+                                )}`
+                              : "/"
+                          }
                         >
-                          <div className="box-mobileRow2">                         
-                          <img
-                            src={`https://atur.biar.pw/public/${e.image}`}
-                            alt=""
-                            className="imgMobilePartai"
-                          />
-                          <div
-                            className="textContent textContentSatu"
-                            style={{}}
-                          >
-                            <h5>{e.title}</h5>
-                            {/* <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Molestias inventore nobis doloremque.
-                        </p> */}
-                          </div>
+                          <div className="box-mobileRow2">
+                            <img
+                              src={`https://atur.biar.pw/public/${e.image}`}
+                              alt=""
+                              className="imgMobilePartai"
+                            />
+                            <div
+                              className="textContent textContentSatu"
+                              style={{}}
+                            >
+                              <h5>{e.title}</h5>
+                              {parse(e.paragraph)}
+                            </div>
                           </div>
                         </Link>
                       ))}
@@ -113,7 +131,7 @@ const PartaiPage = () => {
 
                   {/* Card Carousel */}
                   <div className="container-carousel-partaiPage">
-                  <CarouselKetuaUmumPage data={config[2].value}/>
+                    <CarouselKetuaUmumPage data={config[2].value} />
                   </div>
                   {/* END Card Carousel */}
 
@@ -181,7 +199,12 @@ const PartaiPage = () => {
               {/* CONTAINER TIGA TATA KELOLA*/}
               <div className="containerTiga">
                 <div className="col-lg-3">
-                  <img className="img-logo-bantengPdi" src={pdiLogo} alt="" width="180" />
+                  <img
+                    className="img-logo-bantengPdi"
+                    src={pdiLogo}
+                    alt=""
+                    width="180"
+                  />
                 </div>
                 <div className="col-lg-9 textBanteng">
                   <h1>TATA KELOLA PDI PERJUANGAN</h1>
@@ -216,9 +239,9 @@ const PartaiPage = () => {
                 </div>
               </div>
               {/* END */}
-              <div className="btnUnduh">
+              <a className="btnUnduh">
                 <MainButton name="Unduh Lambang" />
-              </div>
+              </a>
 
               {/* PENGURUS */}
               <div className="pengurusPage">
@@ -252,7 +275,7 @@ const PartaiPage = () => {
               <div className="maps">
                 <h5>dewan pimpinan daerah pdi perjuangan</h5>
                 {/* Component Maps */}
-                <Maps/>
+                <Maps />
                 {/* END Component Maps */}
               </div>
               {/* END */}
@@ -264,17 +287,16 @@ const PartaiPage = () => {
                 ></span>
                 <div className="btnGroup">
                   <div className="btn-dprRi" id="btnGroup">
-                  <MainButton name="DPR RI" margin="0 10px" />
+                    <MainButton name="DPR RI" margin="0 10px" />
                   </div>
-                  
+
                   <div className="btn-dprd-provinsi" id="btnGroup">
-                  <MainButton name="DPRD Provinsi" margin="0 10px" />
+                    <MainButton name="DPRD Provinsi" margin="0 10px" />
                   </div>
-                  
+
                   <div className="btn-dprd-kab" id="btnGroup">
-                  <MainButton name="DPRD Kabupaten Kota" margin="0 10px" />
+                    <MainButton name="DPRD Kabupaten Kota" margin="0 10px" />
                   </div>
-                  
                 </div>
               </div>
               {/* END */}

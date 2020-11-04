@@ -1,5 +1,5 @@
 {
-  "short_name": "PDIP",
+  "short_name": "PDI Perjuangan",
   "name": "PDI Perjuangan",
   "icons": [
     {
@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "pdip192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "pdip512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
