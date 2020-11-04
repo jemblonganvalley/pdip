@@ -7,12 +7,13 @@ import VMedia from "../../../VMedia/VMedia";
 import { Link, useParams } from "react-router-dom";
 import Wait from "../../../wait/Wait";
 import { colors } from "@material-ui/core";
+import parse from "html-react-parser";
 
 // READ BEFORE USE
 
 const Gallery = () => {
   const [reload, setReload] = useState(false);
-  const [configHome, setConfigHome] = useState();
+  const [configHome, setConfigHome] = useState([]);
   const [manyCard, setManyCard] = useState([]);
 
   const id = useParams("id");
@@ -31,24 +32,7 @@ const Gallery = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://atur.biar.pw/api/multimedia/youtube-find",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${data.token}`,
-        },
-        body: JSON.stringify({
-          id: id,
-        }),
-      }
-    );
-
-    const dataConfigHome = await resConfigHome.json();
-    setConfigHome(dataConfigHome);
-
-    const resManyCard = await fetch(
-      "https://atur.biar.pw/api/multimedia/youtube-data",
+      "https://atur.biar.pw/api/gallery/data?page=1",
       {
         method: "POST",
         headers: {
@@ -57,11 +41,27 @@ const Gallery = () => {
         },
         body: JSON.stringify({
           order: { key: "id", value: "desc" },
-          limit: 9,
-          where: { key: "category", value: `${dataConfigHome.category}` },
+          where: { key: "id_album", value: id },
+          limit: 22,
         }),
       }
     );
+
+    const dataConfigHome = await resConfigHome.json();
+    setConfigHome(dataConfigHome.query.data);
+
+    const resManyCard = await fetch("https://atur.biar.pw/api/gallery/album", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${data.token}`,
+      },
+      body: JSON.stringify({
+        order: { key: "id", value: "desc" },
+        where: { key: "type", value: "image" },
+        limit: null,
+      }),
+    });
 
     const dataManyCard = await resManyCard.json();
     setManyCard(dataManyCard.query.data);
@@ -91,43 +91,37 @@ const Gallery = () => {
             {/* Column1 */}
             <div className="col1-container-1-beritaPage2">
               <>
-                <CarouselBeritaPage2 />
+                {configHome.length > 0 && (
+                  <CarouselBeritaPage2 data={configHome} />
+                )}
+
                 {/* Row2 */}
                 <div className="row2-beritaPage2">
                   <div className="jdl-row2-beritaPage2">
                     {/* Column Txt Admin */}
                     <div className="column-txt-admin">
                       <p className="txt-admin">
-                        Admin PDI Perjuangan | 1 Januari 2019
+                        {configHome[0].author} |{" "}
+                        {configHome[0].created_at.split(" ")[0]}
                       </p>
                     </div>
                     {/* END Column Txt Admin */}
 
                     {/* Column Button Love */}
-                    <div className="column-txt-btn-heart">
+                    {/* <div className="column-txt-btn-heart">
                       <a className="btn-fav">
                         <i className="fas fa-heart"></i>
                       </a>
                       <p className="txt-jm-fav">0</p>
-                    </div>
+                    </div> */}
                     {/* END Column Button Love */}
                   </div>
 
-                  <h5 className="title-2-beritaPage2">
-                    Ketua Umum PDI Perjuangan, Hj. Megawati Soekarnoputri
-                    Meresmikan 20 Kantor Partai
-                  </h5>
+                  <h5 className="title-2-beritaPage2">{configHome[0].title}</h5>
 
-                  <p className="txt-desk1-beritaPage2">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquam ad, ut corporis veniam consectetur officiis fuga
-                    voluptas porro veritatis aliquid?
-                    <br />
-                    <br />
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aliquam ad, ut corporis veniam consectetur officiis fuga
-                    voluptas porro veritatis aliquid?
-                  </p>
+                  <div className="txt-desk1-beritaPage2">
+                    {parse(configHome[0].description)}
+                  </div>
 
                   <div className="box-medsos-beritaPage2">
                     <div className="socialMedia">
@@ -159,15 +153,14 @@ const Gallery = () => {
             >
               {manyCard.map((e, i) => (
                 <Cards
-                  imageCard={e.path}
-                  cardType="youtube"
-                  // textSmall={e.title}
-                  title={e.title}
-                  borderRadius="10px"
-                  key={i}
-                  page={`/detail-multimedia`}
-                  id={e.id}
-                  slug={e.title}
+                  category={e.type}
+                  imageCard={e.cover}
+                  title={e.album_name}
+                  slug={e.album_name}
+                  textSmall={e.album_description}
+                  // dateTime={e.created_at}
+                  page={`/gallery/detail-gallery`}
+                  id={e.id_album}
                 />
               ))}
             </div>

@@ -35,7 +35,7 @@ const ContainerCard = () => {
         body: JSON.stringify({
           order: { key: "id", value: "desc" },
           where: { key: "type", value: "image" },
-          limit: 10,
+          limit: null,
         }),
       }
     );

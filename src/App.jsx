@@ -118,7 +118,7 @@ function App() {
             <Page2 />
           </Route>
 
-          <Route path="/search">
+          <Route path="/search/:par">
             <Search />
           </Route>
           {/* 

@@ -1,247 +1,311 @@
-import React, {Component, useEffect, useState} from 'react'
-import logo from '../../img/pdiperjuangan02.svg'
-import './MainNavbar.scss'
-import {Link, NavLink, Redirect} from 'react-router-dom'
-import DropDown from './DropDown'
-import {useMediaQuery} from 'react-responsive'
-import pdimobile from '../../img/pdimobile.svg'
-import { action, thunk, useStoreActions } from 'easy-peasy'
-import '../../database/globalState'
+import React, { Component, useEffect, useState } from "react";
+import logo from "../../img/pdiperjuangan02.svg";
+import "./MainNavbar.scss";
+import { Link, NavLink, Redirect } from "react-router-dom";
+import DropDown from "./DropDown";
+import { useMediaQuery } from "react-responsive";
+import pdimobile from "../../img/pdimobile.svg";
+import { action, thunk, useStoreActions, useStoreState } from "easy-peasy";
+import "../../database/globalState";
 
-const MainNavbar = ({token})=> {
+const MainNavbar = ({ token }) => {
+  let [show, setShow] = useState(false);
+  let [menu, setMenu] = useState([]);
+  let [scroll, setScroll] = useState(false);
 
-    let [show, setShow] = useState(false)
-    let [menu, setMenu] = useState([])
-    let [scroll, setScroll] = useState(false)
+  // let pageSearch = window.location.href='/search'
 
-    // let pageSearch = window.location.href='/search'
+  // onSubmit = ()=>{
+  //   if(userFound){
+  //     return <Redirect to
+  //   }
+  // }]
 
-    // onSubmit = ()=>{
-    //   if(userFound){
-    //     return <Redirect to
-    //   }
-    // }]
+  // Onscroll
+  // let [shadow, setShadow] = useState(true)
 
-    // Onscroll
-    // let [shadow, setShadow] = useState(true)
+  // END onScroll
 
-    // END onScroll
+  // OnScroll Navbar
+  /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+  // var prevScrollpos = window.pageYOffset;
+  // window.onscroll = function() {
+  //   var currentScrollPos = window.pageYOffset;
+  //   if (prevScrollpos > currentScrollPos) {
+  //     document.getElementById("navbar").style.top = "0";
+  //   } else {
+  //     document.getElementById("navbar").style.top = "-200px";
+  //   }
+  //   prevScrollpos = currentScrollPos;
+  // }
+  // END OnScroll Navbar
 
-    // OnScroll Navbar
-    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-      // var prevScrollpos = window.pageYOffset;
-      // window.onscroll = function() {
-      //   var currentScrollPos = window.pageYOffset;
-      //   if (prevScrollpos > currentScrollPos) {
-      //     document.getElementById("navbar").style.top = "0";
-      //   } else {
-      //     document.getElementById("navbar").style.top = "-200px";
-      //   }
-      //   prevScrollpos = currentScrollPos;
-      // }
-    // END OnScroll Navbar
-    
-    const getDataMenu = async function(){
-    const res = await fetch('https://atur.biar.pw/api/web/config/home', {
-      method : "POST",
-      headers : {
-        "Content-Type" : "application/json",
-        Authorization : `Bearer ${token}`
-      }
-    })
-    const data = await res.json()
-    setMenu(data.query.nav)
-  }
+  const getDataMenu = async function () {
+    const res = await fetch("https://atur.biar.pw/api/web/config/home", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    const data = await res.json();
+    setMenu(data.query.nav);
+  };
 
   const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-device-width: 1224px)'
-  })
+    query: "(min-device-width: 1224px)",
+  });
 
   const isMobile = useMediaQuery({
-    query: '(max-device-width: 1224px)'
-    })
+    query: "(max-device-width: 1224px)",
+  });
 
-    const handleShow = (e)=>{
-      setShow(e.target.value)
-    }
+  const handleShow = (e) => {
+    setShow(e.target.value);
+  };
 
-    
-    useEffect(()=>{
-      getDataMenu()
+  useEffect(() => {
+    getDataMenu();
 
-      // onScroll BoxShadow
-      // window.addEventListener('scroll', handleScroll)
-      // return () => {
-      //     window.removeEventListener('scroll', handleScroll)
-      // }
-      // END onScroll BoxShadow
-    },[])
-
-    // const handleScroll = () => {
-    //   if (window.scrollY > 50) {
-    //     document.querySelector('.navbar').className = 'navbar muncul'
-    //   } else {
-    //     document.querySelector('.navbar').className = 'navbar'
-    //   }
+    // onScroll BoxShadow
+    // window.addEventListener('scroll', handleScroll)
+    // return () => {
+    //     window.removeEventListener('scroll', handleScroll)
     // }
+    // END onScroll BoxShadow
+  }, []);
 
-    // Global State
-    // const model = {
-    //   todos: [],
-    //   addTodo: action((state, payload) => {
-    //     state.todos.push(payload);
-    //   }),
-    //   saveTodo: thunk(async (actions, payload) => {
-    //     const { data } = await axios.post('/todos', payload);
-    //     actions.addTodo(data);
-    //   }),
-    // };
+  // const handleScroll = () => {
+  //   if (window.scrollY > 50) {
+  //     document.querySelector('.navbar').className = 'navbar muncul'
+  //   } else {
+  //     document.querySelector('.navbar').className = 'navbar'
+  //   }
+  // }
 
-    // Onchange text input search to text input page search
-    const addTodo = useStoreActions((actions) => actions.addTodo);
-    const [value, setValue] = React.useState('');
-   
-    // Save onchange text to page search
-    // constructor(props); {
-    //   super(props);
-    //   this.state = {
-    //     value: ''
-    //   }
-    // }
+  // Global State
+  // const model = {
+  //   todos: [],
+  //   addTodo: action((state, payload) => {
+  //     state.todos.push(payload);
+  //   }),
+  //   saveTodo: thunk(async (actions, payload) => {
+  //     const { data } = await axios.post('/todos', payload);
+  //     actions.addTodo(data);
+  //   }),
+  // };
 
-    // handleChange(e);{
-    //   console.log('success')
-    // }
-    // handleClick();{
-    //   this.setState({value: ''})
-    //   var event = new Event('input', {bubbles: true});
-    //   this.myinput.dispatchEvent(event);
-    // }
+  // Onchange text input search to text input page search
+  const [value, setValue] = useState();
+  const setSearch = useStoreActions((action) => action.setSearch);
+  const search = useStoreState((state) => state.search);
 
+  // Save onchange text to page search
+  // constructor(props); {
+  //   super(props);
+  //   this.state = {
+  //     value: ''
+  //   }
+  // }
 
+  // handleChange(e);{
+  //   console.log('success')
+  // }
+  // handleClick();{
+  //   this.setState({value: ''})
+  //   var event = new Event('input', {bubbles: true});
+  //   this.myinput.dispatchEvent(event);
+  // }
 
-    return (
-      // START NAVBAR
-      <>
-        {/* DESKTOP SIZE */}
-        {isDesktopOrLaptop && (
-
-        <nav className="navbar navbar-expand-lg sticky-top" id="navbar" style={{
-          boxShadow : window.scrollY > 1 ? '-1px 7px 30px -12px rgba(0,0,0,0.75)' : 'none'
-        }}>
+  return (
+    // START NAVBAR
+    <>
+      {/* DESKTOP SIZE */}
+      {isDesktopOrLaptop && (
+        <nav
+          className="navbar navbar-expand-lg sticky-top"
+          id="navbar"
+          style={{
+            boxShadow:
+              window.scrollY > 1
+                ? "-1px 7px 30px -12px rgba(0,0,0,0.75)"
+                : "none",
+          }}
+        >
           <div className="container-fluid">
-            <NavLink className="navbar-brand" to="/" activeClassName="brand" >
-              <img src={logo} alt="" width="60" className="d-inline-block align-center active" loading="lazy"/>
+            <NavLink className="navbar-brand" to="/" activeClassName="brand">
+              <img
+                src={logo}
+                alt=""
+                width="60"
+                className="d-inline-block align-center active"
+                loading="lazy"
+              />
             </NavLink>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" >
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-label="Toggle navigation"
+            >
               <i className="fa fa-bars" aria-hidden="true"></i>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
               <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-
                 {/* MAPPING MENU */}
-                 {Object.keys(menu).map((e, i)=>(
-                    <li className="nav-item" style={{
-                    position : 'relative'
-                  }} 
+                {Object.keys(menu).map((e, i) => (
+                  <li
+                    className="nav-item"
+                    style={{
+                      position: "relative",
+                    }}
                     key={i}
-                    onMouseOver={()=>{
-                      setShow(e)
+                    onMouseOver={() => {
+                      setShow(e);
                       // console.log(show);
                     }}
-
                     onMouseLeave={() => {
-                      setShow('')
+                      setShow("");
                     }}
-
                   >
-                    <NavLink className="nav-link" to={'/' + e.replace(/\s/g, '-').toLowerCase()} activeClassName='active'>{e}</NavLink>
+                    <NavLink
+                      className="nav-link"
+                      to={"/" + e.replace(/\s/g, "-").toLowerCase()}
+                      activeClassName="active"
+                    >
+                      {e}
+                    </NavLink>
 
-                      {show === e && (
-                          <DropDown menuItem={Object.values(menu)} listIndex={i}/>
-                      )}
-                      
+                    {show === e && (
+                      <DropDown menuItem={Object.values(menu)} listIndex={i} />
+                    )}
                   </li>
-                 ))}
-
-                </ul>
-                <form className="d-inline-flex" style={{
-                  display: 'flex'
-                }}>
-                  <input className="form-control mr-2" type="text" placeholder="Cari Artikel" name="search"
-                    onChange={(e) => setValue(e.target.value)} value={value}
-                  />
-                  <Link to='/search' name="submit" className="btn-next"
-                    onClick={() => addTodo(value)}
-                  >
-                      <i className="fas fa-search" aria-hidden="true" name="icon"></i>
-                  </Link>
-                </form>
-              </div>
-              
+                ))}
+              </ul>
+              <form
+                className="d-inline-flex"
+                style={{
+                  display: "flex",
+                }}
+              >
+                <input
+                  className="form-control mr-2"
+                  type="text"
+                  placeholder="Cari Artikel"
+                  name="search"
+                  onChange={(e) => setSearch(e.target.value)}
+                  value={search}
+                />
+                <Link
+                  to={`/search/${search}`}
+                  name="submit"
+                  className="btn-next"
+                >
+                  <i
+                    className="fas fa-search"
+                    aria-hidden="true"
+                    name="icon"
+                  ></i>
+                </Link>
+              </form>
             </div>
-
-            
+          </div>
         </nav>
-
       )}
 
       {isMobile && (
-
-        <nav className="navbar navbar-expand-lg sticky-top" id="navbar" style={{
-          boxShadow : window.scrollY > 1 ? '-1px 7px 30px -12px rgba(0,0,0,0.75)' : 'none'
-        }}>
+        <nav
+          className="navbar navbar-expand-lg sticky-top"
+          id="navbar"
+          style={{
+            boxShadow:
+              window.scrollY > 1
+                ? "-1px 7px 30px -12px rgba(0,0,0,0.75)"
+                : "none",
+          }}
+        >
           <div className="container-fluid">
-            <NavLink className="navbar-brand" to="/" activeClassName="brand" >
-              <img src={pdimobile} alt="" width="60" className="d-inline-block align-center active" loading="lazy"/>
+            <NavLink className="navbar-brand" to="/" activeClassName="brand">
+              <img
+                src={pdimobile}
+                alt=""
+                width="60"
+                className="d-inline-block align-center active"
+                loading="lazy"
+              />
             </NavLink>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" style={{
-              color: '#fff'
-            }} onClick={(()=>{
-              setShow(!show)
-            })}>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-label="Toggle navigation"
+              style={{
+                color: "#fff",
+              }}
+              onClick={() => {
+                setShow(!show);
+              }}
+            >
               <i className="fa fa-bars" aria-hidden="true"></i>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
               <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-
                 {Object.keys(menu).map((e, i) => (
-                  <li className="nav-item" style={{
-                    position: 'relative'
-                  }}
+                  <li
+                    className="nav-item"
+                    style={{
+                      position: "relative",
+                    }}
                     key={e.id}
                     onClick={() => {
-                      setShow(e.name)
+                      setShow(e.name);
                     }}
                   >
-                      <NavLink className="nav-link" to={'/' + e.replace(/\s/g, '-').toLowerCase()} activeClassName='active'>{e}</NavLink>
+                    <NavLink
+                      className="nav-link"
+                      to={"/" + e.replace(/\s/g, "-").toLowerCase()}
+                      activeClassName="active"
+                    >
+                      {e}
+                    </NavLink>
 
-                      {show === e && (
-                          <DropDown menuItem={Object.values(menu)} listIndex={i}/>
-                      )}
-                      
-
-
-
+                    {show === e && (
+                      <DropDown menuItem={Object.values(menu)} listIndex={i} />
+                    )}
                   </li>
                 ))}
-
               </ul>
               <form className="d-inline-flex">
-                <input className="form-control mr-2" type="text" placeholder="cari artikel" name="search" />
-                <Link to='/search' name="submit" className="btn-next">
-                  <i className="fas fa-search" aria-hidden="true" name="icon" ></i>
+                <input
+                  className="form-control mr-2"
+                  type="text"
+                  placeholder="cari artikel"
+                  name="search"
+                />
+                <Link to="/search" name="submit" className="btn-next">
+                  <i
+                    className="fas fa-search"
+                    aria-hidden="true"
+                    name="icon"
+                  ></i>
                 </Link>
               </form>
-
-              
             </div>
           </div>
-          </nav>
+        </nav>
       )}
     </>
+  );
+};
 
-    )
-}
-
-export default MainNavbar
+export default MainNavbar;
