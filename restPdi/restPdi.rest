@@ -14,7 +14,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 
 #PAGES
 ###
-POST https://atur.biar.pw/api/web/pages/partai
+POST https://atur.biar.pw/api/web/pages/home
 Content-Type: application/json
 Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjA0NDg1MTMwLCJleHAiOjE2MDQ1NzE1MzAsIm5iZiI6MTYwNDQ4NTEzMCwianRpIjoibjNiZDd3aUZJMjVNaTNsUSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.Bb4CX7LNE79aiG9p1Vl-0Rdp5ZfIDpu9KBuDzqAwutI"
 
@@ -61,7 +61,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 {
 	"order":{"key":"id","value":"desc"} ,
 	"limit" : 3,
-    "where" : {"key":"blog.category_name","value":"ppid"} 
+    "where" : {"key":"blog.id_category","value":"44"} 
 }
 
 # BLOG DATA by CATEGORY CHILD ID - PAKE YANG INI -
@@ -73,7 +73,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 {
 	"order":{"key":"id","value":"desc"} ,
 	# "limit" : 3,
-    "where" : {"key":"blog.id_category_child", "value":"656"} 
+    "where" : {"key":"blog.id_category_child", "value":"253"} 
 }
 
 

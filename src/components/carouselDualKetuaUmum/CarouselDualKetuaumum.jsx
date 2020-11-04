@@ -10,39 +10,51 @@ const CarouselDualKetuaumum = ({
   current_page = null,
 }) => {
   return (
-    <div className="mainCarouselDual row" style={{
-      height : '40vh',
-      // border : '1px solid blue',
-      padding : '0 20%',
-    }}> 
+    <div
+      className="mainCarouselDual row"
+      style={{
+        height: "40vh",
+        // border : '1px solid blue',
+        padding: "0 20%",
+      }}
+    >
       {/* Carousel 1 */}
       <Link
-        as='div'
+        as="div"
         id="carouselone"
         className="col"
-        to={'/'}
+        to={"/detail-article/982/satyam-eva-jayate"}
         style={{
-          height : '40vh',
-          padding : '30px',
+          height: "40vh",
+          padding: "30px",
           // border : '1px solid red',
-          backgroundImage : `url(https://atur.biar.pw/public/${cat2.image})`,
-          position : 'relative'
+          backgroundImage: `url(https://atur.biar.pw/public/${cat2.image})`,
+          position: "relative",
         }}
       >
-          <h4 style={{
-            color : 'white',
-            position : 'absolute',
-            bottom : '30px',
-            left : '30px'
-          }}>{cat2.title}</h4>
+        <h4
+          style={{
+            color: "white",
+            position: "absolute",
+            bottom: "30px",
+            left: "30px",
+          }}
+        >
+          {cat2.title}
+        </h4>
       </Link>
 
       {/* CAROUSEL 2 */}
-    <iframe className='col-8' height='100%' src={`https://www.youtube.com/embed/${cat1.path}?rel=0`} frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-
+      <iframe
+        className="col-8"
+        height="100%"
+        src={`https://www.youtube.com/embed/${cat1.path}?rel=0`}
+        frameBorder={0}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
     </div>
   );
 };
 
-
-export default CarouselDualKetuaumum
+export default CarouselDualKetuaumum;

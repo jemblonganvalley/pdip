@@ -37,6 +37,7 @@ import ContainerCardGallery from "./components/gallery/ContainerCardGallery";
 import BeritaFoto from "./components/pages/berita/beritafoto/BeritaFoto";
 import Gallery from "./components/pages/berita/gallery/Gallery";
 import ContainerCardMultimedia from "./components/multimedia/ContainerCardMultimedia";
+import CardBkbbQuotes2 from "./components/cardbkbbquotes2/CardBkbbQuotes2";
 
 function App() {
   let [hide, setHide] = useState(true);
@@ -195,6 +196,12 @@ function App() {
 
           <Route path="/ketua-umum">
             <KetuaUmumPage />
+          </Route>
+
+          {/* BUNG KARNO BAPAK BANGSA */}
+
+          <Route path="/bung-karno-bapak-bangsa/quotes/all">
+            <WejanganBungKarno />
           </Route>
 
           <Route path="/bung-karno-bapak-bangsa">

@@ -177,6 +177,7 @@ const Page2 = () => {
                   page={`/detail-multimedia`}
                   id={e.id}
                   slug={e.title}
+                  category="Multimedia"
                 />
               ))}
             </div>

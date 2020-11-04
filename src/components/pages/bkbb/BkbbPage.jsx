@@ -185,6 +185,7 @@ const BkbbPage = () => {
                       key={i}
                       page="detail-article"
                       id={e.id}
+                      category="Bung Karno Bapak Bangsa"
                     />
                   );
                 })}
@@ -198,6 +199,7 @@ const BkbbPage = () => {
               pages="/article/236/materi-pokok-pendukung"
             />
           </div>
+
           <div
             className="bannerBkbb"
             style={{
@@ -205,18 +207,24 @@ const BkbbPage = () => {
               backgroundAttachment: "fixed",
               backgroundSize: "auto",
               backgroundPosition: "center",
+              padding: "0 20%",
             }}
           >
             <i className="fas fa-quote-right"></i>
+
             <h4 className="custom">{configHome[4].value.title}</h4>
-            <h5
+            <i className="fas fa-quote-right"></i>
+
+            <small
               className="custom"
               dangerouslySetInnerHTML={{
                 __html: configHome[4].value.paragraph,
               }}
-            ></h5>
-            <i className="fas fa-quote-right"></i>
-            <small>Bung Karno, 17 Agustus 1946</small>
+              style={{
+                padding: "0",
+                margin: "20px 0",
+              }}
+            ></small>
 
             {/* Background Black transparent */}
             <div className="bg-black-transparent"></div>
@@ -245,7 +253,7 @@ const BkbbPage = () => {
             <MainButton
               name="lihat semua"
               margin="0rem 0 0 0"
-              pages="/quotes/3"
+              pages="/bung-karno-bapak-bangsa/quotes/all"
             />
           </div>
 

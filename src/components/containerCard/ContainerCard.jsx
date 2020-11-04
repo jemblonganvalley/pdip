@@ -45,13 +45,10 @@ const ContainerCard = () => {
   useEffect(() => {
     getConfigHome();
     window.scrollTo(0, 0);
-
-
   }, [category_id]);
 
   return (
     <>
-    {console.log(configHome)}
       {configHome.length > 0 ? (
         <div className="wrapper-berita-nasional">
           <div className="linked-berita-nasional">
@@ -59,23 +56,23 @@ const ContainerCard = () => {
               link1="Home"
               to1="/"
               link2={`${configHome[0].category_name}`}
-              to2={`/${configHome[0].category_name.replace(/\s/g, '-').toLowerCase()}`}
+              to2={`/${configHome[0].category_name
+                .replace(/\s/g, "-")
+                .toLowerCase()}`}
               page3={configHome[0].category_child_name}
             />
           </div>
 
           {/* Container1 */}
           <span className="divider-page-berita-nasional">
-          <MainDivider text={configHome[0].category_child_name}/>
+            <MainDivider text={configHome[0].category_child_name} />
           </span>
           {/* END Container1 */}
           {/* Container2 */}
           <div className="container2-berita-nasional">
             {/* Column Card */}
             <div className="column-card-berita-nasional">
-              <div
-                className="containerCard-berita-nasional"
-              >
+              <div className="containerCard-berita-nasional">
                 {configHome.length > 0 && (
                   <>
                     {configHome.map((e, i) => (
