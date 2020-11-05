@@ -14,28 +14,28 @@ $smallPhoneDua: 400px;
 }
 
 // Min widht 750 and Max width 950
-$responMin750 : 750px;
+$responMin750: 750px;
 $responMax950: 950px;
 // END Min widht 750 and Max width 950
 
 // Min width 750 and max width 950
-@mixin respon950{
-    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
-        @content;
-    }
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
 }
 // END Min widht 750 and max width 950
 
 // Min widht 500 and Max width 750
-$respon750 : 750px;
+$respon750: 750px;
 $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 // Min widht 500 and Max width 750
 @mixin respon750 {
-    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
-        @content;
-    }
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
 }
 // END Min widht 500 and Max width 750
 
@@ -43,10 +43,10 @@ $respon500: 500px;
 $responMin951: 951px;
 $responMax1360: 1360px;
 
-@mixin respon1360{
-    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
-        @content;
-    }
+@mixin respon1360 {
+  @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}) {
+    @content;
+  }
 }
 // end min width 951 and max width 1360px
 
@@ -54,422 +54,412 @@ $responMax1360: 1360px;
 $responMin1361: 1361px;
 $responMax1440: 1440px;
 
-@mixin respon1440{
-    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
-        @content;
-    }
+@mixin respon1440 {
+  @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}) {
+    @content;
+  }
 }
 // end min width 1361px and max width 1440px
 
-    i {
-      span {
-        margin-left: 5px;
-        font-style: italic;
-        font-size: 8pt;
-      }
-    }
+i {
+  span {
+    margin-left: 5px;
+    font-style: italic;
+    font-size: 8pt;
+  }
+}
 
-  // Container1
-  .container-1-bkbbWejangan {
+.wrapperBkbbWejangan {
+  // Column1
+  .col1-container-1-bkbbWejangan {
     display: flex;
-    flex-direction: column;
     height: 45vh;
     width: 100%;
     padding: 0 20%;
 
     @include smallPhone() {
-      padding: 0 0px;
+      height: auto;
+      flex-direction: column;
     }
 
-    // Column1
-    .col1-container-1-bkbbWejangan {
+    // Row1
+    .row1-bkbbWejangan {
       display: flex;
+      flex-direction: column;
       height: 100%;
       width: 100%;
+      // background-image: url(../../../img/bkbb1.jpg);
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+      // padding: 10px 15px 10px 15px;
+      margin: 0 20px 0 0;
+      color: #fff;
 
-      @include smallPhone() {
-        height: auto;
-        flex-direction: column;
+      @include respon1360() {
+        padding: 10px 5%;
       }
 
-      // Row1
-      .row1-bkbbWejangan {
+      @include respon950() {
+        padding: 10px 5%;
+      }
+
+      @include respon750() {
+        padding: 10px 5%;
+      }
+
+      @include smallPhone() {
+        width: 100%;
+        padding: 0 2%;
+      }
+
+      i {
         display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 40%;
-        // background-image: url(../../../img/bkbb1.jpg);
-        background-size: cover;
+        font-size: 20px;
+        color: #fff;
         justify-content: center;
         align-items: center;
-        padding: 10px 15px 10px 15px;
-        margin: 0 20px 0 0;
-        color: #fff;
+        margin: 10px 0;
 
-        @include respon1360(){
-            padding: 10px 5%;
+        @include smallPhone() {
+          font-size: 18px;
+        }
+      }
+
+      .txt1 {
+        display: flex;
+        // font-size: 25px;
+        font-weight: 500;
+        margin: 1px;
+        text-align: center;
+
+        @include respon1440() {
+          padding: 0px 10%;
         }
 
-        @include respon950(){
-            padding: 10px 5%;
+        @include respon1360() {
+          padding: 0px 5%;
         }
 
-        @include respon750(){
-            padding: 10px 5%;
+        @include respon950() {
+          height: 45vh;
+          padding: 0 2%;
         }
 
-        @include smallPhone(){
-            width: 100%;
-            padding: 0 2%;
-        }   
-
-        i {
-          display: flex;
-          font-size: 20px;
-          color: #fff;
-          justify-content: center;
-          align-items: center;
-          margin: 10px 0;
-
-          @include smallPhone() {
-            font-size: 18px;
-          }
+        @include respon750() {
+          height: auto;
+          padding: 0;
         }
 
-        .txt1 {
-          display: flex;
-          // font-size: 25px;
-          font-weight: 500;
-          margin: 1px;
-          text-align: center;
-
-        @include respon1440(){
-            padding: 0px 10%;
-        }
-
-        @include respon1360(){
-            padding: 0px 5%;
-        }
-
-        @include respon950(){
-            height: 45vh;
-            padding: 0 2%;
-        }
-
-        @include respon750(){
-            height: auto;
-            padding: 0;
-        }
-
-        @include smallPhone(){
-            height: auto;
-            padding: 0 0px;
+        @include smallPhone() {
+          height: auto;
+          padding: 0 0px;
         }
 
         // Column1
-        .col1-container-1-bkbbWejangan{
-            display: flex;
+        .col1-container-1-bkbbWejangan {
+          display: flex;
+          height: 100%;
+          width: 100%;
+
+          @include respon950() {
             height: 100%;
-            width: 100%;
+          }
 
-            @include respon950(){
-                height: 100%;
+          @include respon750() {
+            height: auto;
+            flex-direction: column;
+          }
+
+          @include smallPhone() {
+            height: auto;
+            flex-direction: column;
+          }
+
+          // Row1
+          .row1-bkbbWejangan {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 40%;
+            // background-image: url(../../../img/bkbb1.jpg);
+            object-fit: cover;
+            object-position: center;
+            justify-content: center;
+            align-items: center;
+            // padding: 10px 15px 10px 15px;
+            margin: 0 20px 0 0;
+            color: #fff;
+
+            @include respon950() {
+              height: auto;
+              width: 40%;
             }
 
-            @include respon750(){
-                height: auto;
-                flex-direction: column;
+            @include respon750() {
+              height: 50vh;
+              width: 100%;
             }
 
-            @include smallPhone(){
-                height: auto;
-                flex-direction: column;
+            @include smallPhone() {
+              height: 50vh;
+              width: 100%;
             }
 
-            // Row1
-            .row1-bkbbWejangan{
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                width: 40%;
-                // background-image: url(../../../img/bkbb1.jpg);
-                object-fit: cover;
-                object-position: center;
-                justify-content: center;
+            i {
+              display: flex;
+              font-size: 20px;
+              color: #fff;
+              justify-content: center;
+              align-items: center;
+              margin: 10px 0;
+
+              @include smallPhone() {
+                font-size: 18px;
+              }
+            }
+
+            .txt1 {
+              display: flex;
+              // font-size: 25px;
+              font-weight: 500;
+              margin: 1px;
+              text-align: center;
+
+              @include smallPhone() {
+                // font-size: 20px;
+              }
+            }
+
+            .txt2 {
+              display: flex;
+              // font-size: 15px;
+              font-weight: 500;
+              margin: 1px;
+              text-align: center;
+
+              @include smallPhone() {
+                font-size: 13px;
+              }
+            }
+
+            .txt3 {
+              display: flex;
+              // font-size: 15px;
+              justify-content: center;
+              align-items: center;
+              margin: 20px 0 0 0;
+              text-align: center;
+
+              @include smallPhone() {
+                // font-size: 13px;
+              }
+            }
+          }
+          // END Row1
+
+          // Row1
+          .row2-bkbbWejangan {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            height: 100%;
+            width: 60%;
+            overflow: hidden;
+
+            @include respon950() {
+              width: 60%;
+              padding: 0 0%;
+              // justify-content: start;
+              // align-items: flex-start;
+              // text-align: start;
+            }
+
+            @include respon750() {
+              width: 100%;
+              padding: 0 15%;
+              justify-content: start;
+              align-items: flex-start;
+              text-align: start;
+            }
+
+            @include smallPhone() {
+              width: 100%;
+              padding: 0 10px;
+              justify-content: start;
+              align-items: flex-start;
+              text-align: start;
+            }
+
+            .txt1 {
+              display: flex;
+              // font-size: 11px;
+              text-align: start;
+              color: #d80010 !important;
+
+              @include respon950() {
+                margin: 0px 0 0 0;
+                // justify-content: start;
+                // align-items: center;
+                // text-align: start;
+              }
+
+              @include respon750() {
+                margin: 15px 0 0 0;
+                justify-content: start;
                 align-items: center;
-                // padding: 10px 15px 10px 15px;
-                margin: 0 20px 0 0;
-                color : #fff;
+                text-align: start;
+              }
 
-                @include respon950(){
-                    height: auto;
-                    width: 40%;
-                }
-
-                @include respon750(){
-                    height: 50vh;
-                    width: 100%;
-                }
-
-                @include smallPhone(){
-                    height: 50vh;
-                    width: 100%;
-                }
-
-                i{
-                    display: flex;
-                    font-size: 20px;
-                    color: #fff;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 10px 0;
-
-                    @include smallPhone(){
-                        font-size: 18px;
-                    }
-                }
-
-                .txt1{
-                    display: flex;
-                    // font-size: 25px;
-                    font-weight: 500;
-                    margin: 1px;
-                    text-align: center;
-
-                    @include smallPhone(){
-                        // font-size: 20px;
-                    }
-                }
-
-                .txt2{
-                    display: flex;
-                    // font-size: 15px;
-                    font-weight: 500;
-                    margin: 1px;
-                    text-align: center;
-
-                    @include smallPhone(){
-                        font-size: 13px;
-                    }
-                }
-
-                .txt3{
-                    display: flex;
-                    // font-size: 15px;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 20px 0 0 0;
-                    text-align: center;
-
-                    @include smallPhone(){
-                        // font-size: 13px;
-                    }
-                }
+              @include smallPhone() {
+                margin: 15px 0 0 10px;
+                justify-content: start;
+                align-items: center;
+                text-align: start;
+              }
             }
-            // END Row1
 
-            // Row1
-            .row2-bkbbWejangan{
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                height: 100%;
-                width: 60%;
-                overflow: hidden;
+            .txt2 {
+              display: flex;
+              // font-size: 18px;
+              font-weight: 500;
+              text-align: start;
+              color: #000;
+              margin-top: 1rem;
 
-                @include respon950(){
-                    width: 60%;
-                    padding: 0 0%;
-                    // justify-content: start;
-                    // align-items: flex-start;
-                    // text-align: start;
-                }
+              @include respon750() {
+                // font-size: 20px;
+                font-weight: bold;
+                margin: 1rem 0 0 0;
+                justify-content: start;
+                align-items: center;
+                text-align: start;
+                padding: 0 0%;
+              }
 
-                @include respon750(){
-                    width: 100%;
-                    padding: 0 15%;
-                    justify-content: start;
-                    align-items: flex-start;
-                    text-align: start;
-                }
-
-                @include smallPhone(){
-                    width: 100%;
-                    padding: 0 10px;
-                    justify-content: start;
-                    align-items: flex-start;
-                    text-align: start;
-                }
-
-                .txt1{
-                    display: flex;
-                    // font-size: 11px;
-                    text-align: start;
-                    color: #d80010 !important;
-
-                    @include respon950(){
-                        margin: 0px 0 0 0;
-                        // justify-content: start;
-                        // align-items: center;
-                        // text-align: start;
-                    }
-
-                    @include respon750(){
-                        margin: 15px 0 0 0;
-                        justify-content: start;
-                        align-items: center;
-                        text-align: start;
-                    }
-
-                    @include smallPhone(){
-                        margin: 15px 0 0 10px;
-                        justify-content: start;
-                        align-items: center;
-                        text-align: start;
-                    }
-                }
-
-                .txt2{
-                    display: flex;
-                    // font-size: 18px;
-                    font-weight: 500;
-                    text-align: start;
-                    color: #000;
-                    margin-top: 1rem;
-
-                    @include respon750(){
-                        // font-size: 20px;
-                        font-weight: bold;
-                        margin: 1rem 0 0 0;
-                        justify-content: start;
-                        align-items: center;
-                        text-align: start;
-                        padding: 0 0%;
-                    }
-
-                    @include smallPhone(){
-                        // font-size: 20px;
-                        font-weight: bold;
-                        margin: 1rem 0 0 0;
-                        justify-content: start;
-                        align-items: center;
-                        text-align: start;
-                        padding: 0 10px;
-                    }
-                }
-
-                .txt3{
-                    display: flex;
-                    // font-size: 13px;
-                    text-align: start;
-                    color: #000;
-                    overflow-y: scroll;
-                    padding: 0 20px 0px 0;
-                    margin-bottom: 40px;
-
-                    @include smallPhone(){
-                        // font-size: 12px;
-                        justify-content: flex-start;
-                        align-items: flex-start;
-                        text-align: start;
-                        padding: 0 10px;
-                    }
-                }
-
-                .txt3::-webkit-scrollbar{
-                    width: 3px;
-                }
-    
-                .txt3::-webkit-scrollbar-thumb{
-                    background-color: #555;
-                    border-radius: 10px;
-                }
-    
-                .txt3::-webkit-scrollbar-track{
-                    background-color: #f3f3f3;
-                    border-radius: 10px;
-                }
-
-                // .txt4{
-                //     display: none;
-                //     // font-size: 13px;
-                //     text-align: start;
-                //     color: #000;
-
-                //     @include smallPhone(){
-                //         display: none;
-                //         // font-size: 12px;
-                //         justify-content: flex-start;
-                //         align-items: flex-start;
-                //         text-align: start;
-                //         padding: 0 10px;
-                //     }
-                // }
-
-                .box-medsos-bkbbWejangan{
-                    display: flex;
-                    position: absolute;
-                    flex-direction: column-reverse;
-                    height: auto;
-                    width: 100%;
-                    bottom: 0;
-
-                    @include respon950(){
-                        margin: 10px 0 0 0;
-                        justify-content: flex-start;
-                        align-items: flex-start;
-                        text-align: start;
-                        padding: 0px;
-                    }
-
-                    @include respon750(){
-                        margin: 10px 0 0 0;
-                        justify-content: flex-start;
-                        align-items: flex-start;
-                        text-align: start;
-                        padding: 0px;
-                    }
-
-                    @include smallPhone(){
-                        margin: 10px 0 0 0;
-                        justify-content: flex-start;
-                        align-items: flex-start;
-                        text-align: start;
-                        padding: 0 10px;
-                    }
-
-                    // .socialMedia {
-                    //     margin: 0px 0 0 0;
-                    //     padding: 0 0px 0 0;
-                    //     display: flex;
-                    //     align-items: center;
-        
-                    //     small {
-                    //         color: #000000;
-                    //         margin-right: 10px;
-
-                    //         @include smallPhone(){
-                    //             font-size: 12px;
-                    //         }
-                    //     }
-
-                    //     i {
-                    //         margin: 0 10px;
-                    //         transition: .3s;
-
-                    //         @include smallPhone(){
-                    //             font-size: 13px;
-                    //         }
-        
-                    //         &:hover {
-                    //             color: #c70000;
-                    //             cursor: pointer;
-                    //         }
-                    //     }
-                    // }
-                }
+              @include smallPhone() {
+                // font-size: 20px;
+                font-weight: bold;
+                margin: 1rem 0 0 0;
+                justify-content: start;
+                align-items: center;
+                text-align: start;
+                padding: 0 10px;
+              }
             }
-            // END Row1
+
+            .txt3 {
+              display: flex;
+              // font-size: 13px;
+              text-align: start;
+              color: #000;
+              overflow-y: scroll;
+              padding: 0 20px 0px 0;
+              margin-bottom: 40px;
+
+              @include smallPhone() {
+                // font-size: 12px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-align: start;
+                padding: 0 10px;
+              }
+            }
+
+            .txt3::-webkit-scrollbar {
+              width: 3px;
+            }
+
+            .txt3::-webkit-scrollbar-thumb {
+              background-color: #555;
+              border-radius: 10px;
+            }
+
+            .txt3::-webkit-scrollbar-track {
+              background-color: #f3f3f3;
+              border-radius: 10px;
+            }
+
+            // .txt4{
+            //     display: none;
+            //     // font-size: 13px;
+            //     text-align: start;
+            //     color: #000;
+
+            //     @include smallPhone(){
+            //         display: none;
+            //         // font-size: 12px;
+            //         justify-content: flex-start;
+            //         align-items: flex-start;
+            //         text-align: start;
+            //         padding: 0 10px;
+            //     }
+            // }
+
+            .box-medsos-bkbbWejangan {
+              display: flex;
+              position: absolute;
+              flex-direction: column-reverse;
+              height: auto;
+              width: 100%;
+              bottom: 0;
+
+              @include respon950() {
+                margin: 10px 0 0 0;
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-align: start;
+                padding: 0px;
+              }
+
+              @include respon750() {
+                margin: 10px 0 0 0;
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-align: start;
+                padding: 0px;
+              }
+
+              @include smallPhone() {
+                margin: 10px 0 0 0;
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-align: start;
+                padding: 0 10px;
+              }
+
+              // .socialMedia {
+              //     margin: 0px 0 0 0;
+              //     padding: 0 0px 0 0;
+              //     display: flex;
+              //     align-items: center;
+
+              //     small {
+              //         color: #000000;
+              //         margin-right: 10px;
+
+              //         @include smallPhone(){
+              //             font-size: 12px;
+              //         }
+              //     }
+
+              //     i {
+              //         margin: 0 10px;
+              //         transition: .3s;
+
+              //         @include smallPhone(){
+              //             font-size: 13px;
+              //         }
+
+              //         &:hover {
+              //             color: #c70000;
+              //             cursor: pointer;
+              //         }
+              //     }
+              // }
+            }
+          }
+          // END Row1
         }
 
         .txt3 {
@@ -497,27 +487,27 @@ $responMax1440: 1440px;
         margin: 60px 0 0px 0;
         background: #333;
 
-        @include respon1440(){
-            padding: 0 10% 30px 10%;
+        @include respon1440() {
+          padding: 0 10% 30px 10%;
         }
 
-        @include respon1360(){
-            padding: 0 5% 30px 5%;
+        @include respon1360() {
+          padding: 0 5% 30px 5%;
         }
 
-        @include respon950(){
-            height: auto;
-            padding: 0 2% 20px 2%;
+        @include respon950() {
+          height: auto;
+          padding: 0 2% 20px 2%;
         }
 
-        @include respon750(){
-            height: auto;
-            padding: 0 15% 20px 15%;
+        @include respon750() {
+          height: auto;
+          padding: 0 15% 20px 15%;
         }
 
-        @include smallPhone(){
-            height: auto;
-            padding: 0 10px 20px 10px;
+        @include smallPhone() {
+          height: auto;
+          padding: 0 10px 20px 10px;
         }
 
         .txt1 {
@@ -555,16 +545,16 @@ $responMax1440: 1440px;
           text-align: start;
           color: #000;
 
-            @include respon950(){
-                height: 80%;
-                flex-wrap: nowrap;
-            }
+          @include respon950() {
+            height: 80%;
+            flex-wrap: nowrap;
+          }
 
-            @include smallPhone(){
-                flex-direction: column;
-                height: auto;
-                padding: 10px 0 0 0;
-            }
+          @include smallPhone() {
+            flex-direction: column;
+            height: auto;
+            padding: 10px 0 0 0;
+          }
         }
 
         .txt4 {

@@ -1,20 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
-import bkbb2 from '../../../img/bkbb2.jpg'
-import bkbb3 from '../../../img/bkbb3.jpg'
-import bkbb4 from '../../../img/bkbb4.jpg'
-
-import './BkbbWejangan.scss'
-import CardQuotes from '../../cardquotes/CardQuotes'
-import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
-import MainButton from '../../buttons/MainButton'
-import CardSocialMedia from '../../cardsocialmedia/CardSocialMedia'
-import CardHeader from '../../cardheader/CardHeader'
-import bkbbH from '../../../img/BKBB.jpg'
-import bkbb1 from '../../../img/bkbb1.jpg'
-import { useStoreActions, useStoreState } from 'easy-peasy'
-import { useParams } from 'react-router-dom'
-import Wait from '../../wait/Wait'
+import "./BkbbWejangan.scss";
+import CardQuotes from "../../cardquotes/CardQuotes";
+import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
+import CardSocialMedia from "../../cardsocialmedia/CardSocialMedia";
+import CardHeader from "../../cardheader/CardHeader";
+import { useStoreActions, useStoreState } from "easy-peasy";
+import { useParams } from "react-router-dom";
+import Wait from "../../wait/Wait";
 
 const BkbbWejangan = () => {
   const setRefresher = useStoreActions((action) => action.setRefresher);
