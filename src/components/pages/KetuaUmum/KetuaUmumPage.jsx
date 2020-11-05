@@ -201,7 +201,11 @@ const KetuaUmumPage = () => {
 
               {/* /* Button View All */}
               <div className="button2-cardBerita">
-                <MainButton name="lihat semua" margin="0px 0 0 0" pages="" />
+                <MainButton
+                  name="lihat semua"
+                  margin="0px 0 0 0"
+                  pages="/berita"
+                />
               </div>
               {/* END Button View All */}
             </div>
