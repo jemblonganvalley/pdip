@@ -1,15 +1,67 @@
 import React, { useEffect, useState } from "react";
 
 import "./containerCard.scss";
+import "../paginationevent/AngkaPaginationEvent.scss";
 import BreadCrumbs from "../../components/breadcrumbs/BreadCrumbs";
 import MainDivider from "../../components/divider/MainDivider";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import Cards from "../cards/MainCards";
 import Wait from "../wait/Wait";
+// import AngkaPaginationEvent from "../paginationevent/AngkaPaginationEvent";
 
 const ContainerCard = () => {
   const { category_id } = useParams();
+  const [numPage, setNumPage] = useState(1);
   const [configHome, setConfigHome] = useState([]);
+  const [pag, setPag] = useState();
+  const [defaultUrl, setDefaultUrl] = useState(
+    `https://atur.biar.pw/api/blog/data?page=${numPage}`
+  );
+
+  const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
+    let [active, setActive] = useState(false);
+
+    const pageNumbers = [];
+    for (let i = 1; i <= Math.ceil(totalPosts / itemEventPerPage); i++) {
+      pageNumbers.push(i);
+    }
+
+    return (
+      <>
+        <div className="container-angka-pagination">
+          <div className="col-angka-pagination">
+            {pageNumbers.map((number) => (
+              <div
+                key={number}
+                className="angka-pagination"
+                onClick={() => {
+                  setNumPage(number);
+                }}
+              >
+                <NavLink
+                  className="paginationLink"
+                  to="#"
+                  activeClassName="active"
+                  style={
+                    number === numPage
+                      ? {
+                          backgroundColor: "#d80010",
+                          borderRadius: "100px",
+                          padding: ".2px",
+                          color: "#fff",
+                        }
+                      : null
+                  }
+                >
+                  {number}
+                </NavLink>
+              </div>
+            ))}
+          </div>
+        </div>
+      </>
+    );
+  };
 
   const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
@@ -24,28 +76,32 @@ const ContainerCard = () => {
     });
     const data = await res.json();
 
-    const resConfigHome = await fetch("https://atur.biar.pw/api/blog/data/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${data.token}`,
-      },
-      body: JSON.stringify({
-        order: { key: "id", value: "desc" },
-        limit: 9,
-        where: { key: "blog.id_category_child", value: category_id },
-      }),
-    });
+    const resConfigHome = await fetch(
+      `https://atur.biar.pw/api/blog/data?page=${numPage}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+        body: JSON.stringify({
+          order: { key: "id", value: "desc" },
+          where: { key: "blog.id_category_child", value: category_id },
+          limit: 9,
+        }),
+      }
+    );
 
     const dataConfigHome = await resConfigHome.json();
     // console.log(dataConfigHome.query);
     setConfigHome(dataConfigHome.query.data);
+    setPag(dataConfigHome.query);
   };
 
   useEffect(() => {
     getConfigHome();
     window.scrollTo(0, 0);
-  }, [category_id]);
+  }, [category_id, numPage]);
 
   return (
     <>
@@ -94,9 +150,15 @@ const ContainerCard = () => {
             {/* END Column Card */}
 
             {/* Column Pagination */}
-            <div className="column-pagination-berita-nasional">
-                {/* <AngkaPaginationEvent itemEventPerPage={itemEventPerPage} totalPosts={cardBeritaNasional.length} paginate={paginate} /> */}
-            </div>
+            {pag && (
+              <div className="column-pagination-berita-nasional">
+                <AngkaPaginationEvent
+                  itemEventPerPage={pag.per_page}
+                  totalPosts={pag.total}
+                />
+              </div>
+            )}
+
             {/* END Column Pagination */}
           </div>
           {/* END Container2 */}

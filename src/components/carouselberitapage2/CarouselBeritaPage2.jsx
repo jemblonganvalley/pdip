@@ -1,9 +1,12 @@
 import React from "react";
+import { useState } from "react";
 import { useEffect } from "react";
 
 import "./CarouselBeritaPage2.scss";
 
 const CarouselBeritaPage2 = ({ id, data }) => {
+  const [slideIndex, setSlideIndex] = useState(1);
+
   useEffect(() => {
     console.log(data);
   }, []);
@@ -17,12 +20,14 @@ const CarouselBeritaPage2 = ({ id, data }) => {
       >
         <div className="carousel-inner">
           {data.map((e, i) => (
-            <div
-              className={i === 1 ? "carousel-item active" : "carousel-item"}
-              style={{
-                backgroundImage: `url(https://atur.biar.pw/public/${e.path})`,
-              }}
-            ></div>
+            <>
+              <img
+                src={`https://atur.biar.pw/public/${e.path}`}
+                alt={e.title}
+                key={i}
+                className={i === 1 ? "carousel-item active" : "carousel-item"}
+              />
+            </>
           ))}
         </div>
 
@@ -34,29 +39,49 @@ const CarouselBeritaPage2 = ({ id, data }) => {
               className="carousel-control-prev"
               href="#page2"
               role="button"
-              data-slide="prev"
+              data-slide="next"
               id="btn-left-page2"
             >
               <span className="carousel-control" aria-hidden="true" />
-              <div className="btn-arrow-left-page2"></div>
+              <div
+                className="btn-arrow-left-page2"
+                onClick={() => {
+                  if (slideIndex === data.length) {
+                    setSlideIndex(1);
+                  } else {
+                    setSlideIndex(slideIndex + 1);
+                  }
+                }}
+              ></div>
               <span className="sr-only">Previous</span>
             </a>
             <a
               className="carousel-control-next"
               href="#page2"
               role="button"
-              data-slide="next"
+              data-slide="prev"
               id="btn-right-page2"
             >
               <span className="carousel-control" aria-hidden="true" />
-              <div className="btn-arrow-right-page2"></div>
+              <div
+                className="btn-arrow-right-page2"
+                onClick={() => {
+                  if (slideIndex === 1) {
+                    setSlideIndex(data.length);
+                  } else {
+                    setSlideIndex(slideIndex - 1);
+                  }
+                }}
+              ></div>
               <span className="sr-only">Next</span>
             </a>
             {/* Box Indicator Number */}
             <div className="box-indicator-number-page2">
-              <p className="txt-nomer-utama">2</p>
+              <p className="txt-nomer-utama" style={{ color: "#fff" }}>
+                {slideIndex}
+              </p>
 
-              <p className="txt-nomer-target-total">/ 34</p>
+              <p className="txt-nomer-target-total">/ {data.length}</p>
             </div>
             {/* END Box Indicator Number */}
           </div>

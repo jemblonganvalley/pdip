@@ -42,7 +42,7 @@ const Gallery = () => {
         body: JSON.stringify({
           order: { key: "id", value: "desc" },
           where: { key: "id_album", value: id },
-          limit: 22,
+          limit: null,
         }),
       }
     );

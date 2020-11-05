@@ -198,10 +198,7 @@ const PartaiPage = () => {
 
               {/* divider tata kelola */}
               <div className="divider-tata-kelolaPdi">
-                <MainDivider
-                    text="TATA KELOLA PDI PERJUANGAN"
-                    mrgn="40px 0"
-                />
+                <MainDivider text="TATA KELOLA PDI PERJUANGAN" mrgn="40px 0" />
               </div>
               {/* end divider tata kelola */}
 
@@ -215,42 +212,18 @@ const PartaiPage = () => {
                     width="180"
                   />
                 </div>
+                {/* TATA CARA */}
                 <div className="col-lg-9 textBanteng">
-                  <h1>TATA KELOLA PDI PERJUANGAN</h1>
-                  {/* for min width 500px and max width 750px */}
-                  <h3 className="text-banteng-maxWidth750">
-                    TATA KELOLA PDI PERJUANGAN
-                  </h3>
-                  {/* end for min width 500px and max width 750px */}
-                  <ul>
-                    <li>
-                      Lambang PDI Perjuangan berupa gambar banteng hitam
-                      bermoncong putih dengan latar merah di dalam lingkaran
-                      bergaris hitam dan putih.
-                    </li>
-                    <li>
-                      Warna dasar merah melambangkan berani mengambil resiko
-                      dalam memperjuangkan keadilan dan kebenaran untuk rakyat.
-                    </li>
-                    <li>
-                      Mata merah dengan pandangan tajam melambangkan selalu
-                      waspada terhadap ancaman dalam berjuang.
-                    </li>
-                    <li>
-                      Moncong putih melambangkan dapat dipercaya dan berkomitmen
-                      dalam memperjuangkan keadilan dan kebenaran
-                    </li>
-                    <li>
-                      Lingkaran melambangkan tekad yang bulat dan perjuangan
-                      yang terus-menerus tanpa terputus
-                    </li>
-                  </ul>
+                  {parse(config[4].value)}
                 </div>
               </div>
               {/* END */}
-              <a className="btnUnduh" href={pdiLogo} download>
-                <MainButton name="Unduh Lambang" />
-              </a>
+              <span className="btnUnduh">
+                <MainButton
+                  name="Lihat"
+                  pages="/detail-article/841/tata-kelola-partai"
+                />
+              </span>
 
               {/* PENGURUS */}
               <div className="pengurusPage">
@@ -258,11 +231,7 @@ const PartaiPage = () => {
                   <MainDivider text="pengurus" mrgn="0px 0" />
                 </div>
 
-                <div className="paragrapPengurus">
-                  <span
-                    dangerouslySetInnerHTML={{ __html: config[5].value }}
-                  ></span>
-                </div>
+                <div className="paragrapPengurus">{parse(config[5].value)}</div>
               </div>
               {/* END */}
 

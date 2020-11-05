@@ -1,134 +1,134 @@
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+$smallPhoneSatu: 500px;
+$smallPhoneDua: 400px;
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
-
 // Row1
-.carousel-berita-page2{
-    display: flex;
+.carousel-berita-page2 {
+  display: flex;
+  position: relative;
+  height: auto;
+  width: 70%;
+  background: #555;
+  margin: 0px 20px 0px 0;
+  overflow: hidden;
+
+  @include smallPhone() {
+    height: 40vh;
+    width: 100%;
+  }
+
+  .carousel-inner {
     position: relative;
-    height: auto;
-    width: 70%;
-    background: #555;
-    margin: 0px 20px 0px 0;
-    overflow: hidden;
+    height: 50vh;
+    width: 100%;
 
-    @include smallPhone(){
-        height: 40vh;
-        width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      object-fit: cover;
+      object-position: center;
     }
 
-    .carousel-inner{
-        position: relative;
-        height: 100%;
-        width: 100%;
-
-        .img1{
-            height: 100%;
-            width: 100%;
-            background-image: url(../../img/detailartikel7.jpg);
-            background-size: cover;
-        }
-
-        .img2{
-            height: 100%;
-            width: 100%;
-            background: #555;
-        }
-
-        .img3{
-            height: 100%;
-            width: 100%;
-            background: #aaa;
-        }
+    .img2 {
+      height: 100%;
+      width: 100%;
+      background: #555;
     }
-    // END Carousel
 
-    // Container Box Indicator Carousel
-    .container-box-indicator-page2{
+    .img3 {
+      height: 100%;
+      width: 100%;
+      background: #aaa;
+    }
+  }
+  // END Carousel
+
+  // Container Box Indicator Carousel
+  .container-box-indicator-page2 {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    // Box Indicator
+    .box-tombol-carousel-page2 {
+      display: flex;
+      flex-direction: row-reverse;
+      height: auto;
+      width: 100%;
+
+      #btn-left-page2 {
         display: flex;
-        flex-direction: column-reverse;
-        position: absolute;
-        height: 100%;
-        width: 100%;
+        position: static;
+        height: 50px;
+        width: 50px;
+        margin: 0 0px 0 0;
 
-        // Box Indicator
-        .box-tombol-carousel-page2{
-            display: flex;
-            flex-direction: row-reverse;
-            height: auto;
-            width: 100%;
-
-            #btn-left-page2{
-                display: flex;
-                position: static;
-                height: 50px;
-                width: 50px;
-                margin: 0 0px 0 0;
-
-                .btn-arrow-left-page2{
-                    display: flex;
-                    height: 100%;
-                    width: 100%;
-                    background-image: url(../../img/detailartikel8.jpg);
-                    background-position: center;
-                    background-size: cover;
-                }
-            }
-
-            #btn-right-page2{
-                display: flex;
-                position: static;
-                height: 50px;
-                width: 50px;
-                margin: 0 1px 0 0;
-
-                .btn-arrow-right-page2{
-                    display: flex;
-                    height: 100%;
-                    width: 100%;
-                    background-image: url(../../img/detailartikel9.jpg);
-                    background-position: center;
-                    background-size: cover;
-                }
-            }
-
-            // Box Indicator Number
-            .box-indicator-number-page2{
-                display: flex;
-                height: 50px;
-                width: 100px;
-                background: rgba(255, 0, 8, 0.5);
-                justify-content: center;
-                align-items: center;
-
-                .txt-nomer-utama{
-                    display: flex;
-                    font-size: 11px;
-                    color: blue;
-                    margin: 1px;
-                }
-
-                .txt-nomer-target-total{
-                    display: flex;
-                    font-size: 11px;
-                    margin: 1px;
-                    color: #fff;
-                }
-            }
-            // END Box Indicator Number
+        .btn-arrow-left-page2 {
+          display: flex;
+          height: 100%;
+          width: 100%;
+          background-image: url(../../img/detailartikel8.jpg);
+          background-position: center;
+          background-size: cover;
         }
-        // END Box Indicator
+      }
+
+      #btn-right-page2 {
+        display: flex;
+        position: static;
+        height: 50px;
+        width: 50px;
+        margin: 0 1px 0 0;
+
+        .btn-arrow-right-page2 {
+          display: flex;
+          height: 100%;
+          width: 100%;
+          background-image: url(../../img/detailartikel9.jpg);
+          background-position: center;
+          background-size: cover;
+        }
+      }
+
+      // Box Indicator Number
+      .box-indicator-number-page2 {
+        display: flex;
+        height: 50px;
+        width: 100px;
+        background: rgba(255, 0, 8, 0.5);
+        justify-content: center;
+        align-items: center;
+
+        .txt-nomer-utama {
+          display: flex;
+          font-size: 11px;
+          color: blue;
+          margin: 1px;
+        }
+
+        .txt-nomer-target-total {
+          display: flex;
+          font-size: 11px;
+          margin: 1px;
+          color: #fff;
+        }
+      }
+      // END Box Indicator Number
     }
-    // END Container Box Indicator Carousel
+    // END Box Indicator
+  }
+  // END Container Box Indicator Carousel
 }
 // END Row1

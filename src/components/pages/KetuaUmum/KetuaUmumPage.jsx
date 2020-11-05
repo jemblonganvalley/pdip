@@ -131,10 +131,6 @@ const KetuaUmumPage = () => {
                 image3={`https://atur.biar.pw/public/${configHome[2].value[2].image}`}
                 to4="/article/240/pidato-hut-pdi-perjuangan"
                 image4={`https://atur.biar.pw/public/${configHome[2].value[3].image}`}
-                width1="0"
-                width2="0"
-                width3="0"
-                width4="0"
                 text="pidato kongres"
                 text2="pidato rakernas"
                 text3="pidato rakornas"
@@ -157,16 +153,11 @@ const KetuaUmumPage = () => {
                 />
               ))}
 
-            {/* Button View All */}
-            <div className="button1-cardBerita">
-            <MainButton
-              name="lihat semua"
-              margin="0px 0 0 0"
-              pages=""
-            />
-            </div>
-            {/* END Button View All */}
-
+              {/* Button View All */}
+              <div className="button1-cardBerita">
+                <MainButton name="lihat semua" margin="0px 0 0 0" pages="" />
+              </div>
+              {/* END Button View All */}
             </div>
             {/* END Column3 */}
           </div>
@@ -209,14 +200,10 @@ const KetuaUmumPage = () => {
               ))}
 
               {/* /* Button View All */}
-            <div className="button2-cardBerita">
-            <MainButton
-              name="lihat semua"
-              margin="0px 0 0 0"
-              pages=""
-            />
-            </div>
-            {/* END Button View All */}
+              <div className="button2-cardBerita">
+                <MainButton name="lihat semua" margin="0px 0 0 0" pages="" />
+              </div>
+              {/* END Button View All */}
             </div>
             {/* END Column6 */}
           </div>

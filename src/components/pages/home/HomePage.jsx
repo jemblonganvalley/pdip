@@ -178,7 +178,7 @@ const HomePage = () => {
                           width="100"
                           height="100"
                         />
-                        <h4>{e.title}</h4>
+                        <h4 style={{ color: "#fff" }}>{e.title}</h4>
                       </div>
                     </a>
                   </div>

@@ -1,4 +1,6 @@
+import { useStoreState } from "easy-peasy";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./carouselDual.scss";
 
 export const CarouselDuelBerita = ({
@@ -8,6 +10,29 @@ export const CarouselDuelBerita = ({
   data = null,
   current_page = null,
 }) => {
+  const token = useStoreState((state) => state.token);
+  const getALbumId = async (e) => {
+    const res = await fetch("https://atur.biar.pw/api/gallery/data", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify({
+        order: { key: "id", value: "desc" },
+        where: { key: "id", value: e },
+      }),
+    });
+    const data = await res.json();
+    window.location.href = `/gallery/detail-gallery/${
+      data.query.data[0].id_album
+    }/${data.query.data[0].title.replace(/\s/g, "-") || "detail-gallery"}`;
+  };
+
+  useEffect(() => {
+    // getALbumId();
+  }, []);
+
   return (
     <div className="mainCarouselDual">
       {/* Carousel 1 */}
@@ -18,7 +43,10 @@ export const CarouselDuelBerita = ({
       >
         <div className="carousel-inner">
           {cat1.map((e, i) => (
-            <div className={`carousel-item ${i == 1 && "active"}`}>
+            <div
+              className={`carousel-item ${i == 1 && "active"}`}
+              style={{ position: "relative", cursor: "pointer" }}
+            >
               <span
                 className="carouselDual_title"
                 style={{
@@ -51,7 +79,7 @@ export const CarouselDuelBerita = ({
                   backgroundColor: "rgba(0,0,0,0.500)",
                   position: "absolute",
                   background: `linear-gradient(176deg, rgba(0,0,0,0.7147233893557423) 0%, rgba(255,0,0,1) 100%)`,
-                  // backgroundBlendMode : 'multiply',
+                  backgroundBlendMode: "multiply",
                 }}
               ></span>
 
@@ -98,7 +126,14 @@ export const CarouselDuelBerita = ({
       >
         <div className="carousel-inner">
           {cat2.map((e, i) => (
-            <div className={`carousel-item ${i == 1 && "active"}`}>
+            <div
+              className={`carousel-item ${i == 1 && "active"}`}
+              // to={`/gallery/detail-gallery/${e.id}/${e.title}`}
+              onClick={() => {
+                getALbumId(e.id);
+              }}
+              style={{ cursor: "pointer" }}
+            >
               <span
                 className="carouselDual_title"
                 style={{
@@ -118,22 +153,27 @@ export const CarouselDuelBerita = ({
                                 }}>{e.title}</p> */}
 
                 {/* <small style={{padding : '0'}}>{e.author}</small> | &nbsp; */}
-                <small
+
+                {/* DESCRIPTION */}
+                {/* <small
                   style={{ padding: "0" }}
                   dangerouslySetInnerHTML={{ __html: e.description }}
-                ></small>
+                ></small> */}
+
+                {/* TITLE */}
                 <h4>{e.title}</h4>
               </span>
 
-              {/* 
-                        <span className="gradientOverlay" style={{
-                            width : '100%',
-                            height : '100%',
-                            backgroundColor : 'rgba(0,0,0,0.500)',
-                            position : 'absolute',
-                            background: `linear-gradient(176deg, rgba(0,0,0,0.28335084033613445) 0%, rgba(255,0,0,1) 100%)`,
-                            
-                        }}></span> */}
+              <span
+                className="gradientOverlay"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  backgroundColor: "rgba(0,0,0,0.500)",
+                  position: "absolute",
+                  background: `linear-gradient(176deg, rgba(0,0,0,0.28335084033613445) 0%, rgba(0,0,0,1) 100%)`,
+                }}
+              ></span>
 
               <img
                 src={

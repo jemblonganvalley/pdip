@@ -5,19 +5,18 @@ import playstore from "../../img/playstore.svg";
 import appstore from "../../img/appstore.svg";
 import { Link } from "@material-ui/core";
 import { Redirect } from "react-router-dom";
+import parse from "html-react-parser";
 
 const MainSlider = ({ value, cls }) => {
   let slider = value;
 
-  const [direct, setDirect] = useState(false)
+  const [direct, setDirect] = useState(false);
 
   const redir = (args) => {
-    return window.location.href = `${args}`
+    return (window.location.href = `${args}`);
   };
 
-  useEffect(()=>{
-    
-  }, [direct])
+  useEffect(() => {}, [direct]);
 
   return (
     <>
@@ -35,9 +34,9 @@ const MainSlider = ({ value, cls }) => {
               <div
                 data-target="#carouselExampleIndicators"
                 data-slide-to={i}
-                className={i == 0 ? "active indikator" : "indikator"}
+                className={i === 1 ? "active indikator" : "indikator"}
               >
-                <small className="indicatorText">{i}</small>
+                <small className="indicatorText">{i + 1}</small>
               </div>
             </>
           ))}
@@ -47,7 +46,7 @@ const MainSlider = ({ value, cls }) => {
           {slider.map((e, i) => (
             <div
               className={
-                i == 1
+                i === 1
                   ? `carousel-item ${cls} active`
                   : `carousel-item ${e.class}`
               }
@@ -55,7 +54,7 @@ const MainSlider = ({ value, cls }) => {
                 redir(`${e.link}`);
               }}
               style={{
-                cursor : 'pointer',
+                cursor: "pointer",
               }}
             >
               <div className="rowMainSlider image1 images">
@@ -78,7 +77,7 @@ const MainSlider = ({ value, cls }) => {
                     <h5 className="title-maxWidth750">{e.title}</h5>
                     {/* END For min width 500px and max width 750px */}
 
-                    <p dangerouslySetInnerHTML={{ __html: e.paragraph }}></p>
+                    {e.paragraph ? parse(e.paragraph) : null}
                   </div>
                   {/* END Box Paragrap */}
 
@@ -106,11 +105,19 @@ const MainSlider = ({ value, cls }) => {
                       </p>
 
                       <Link href="">
-                        <img src={playstore} alt="" className="logoAppStoreMobile logoStoreMobile1"/>
+                        <img
+                          src={playstore}
+                          alt=""
+                          className="logoAppStoreMobile logoStoreMobile1"
+                        />
                       </Link>
-                      
+
                       <Link href="">
-                        <img src={appstore} alt="" className="logoAppStoreMobile logoStoreMobile2"/>
+                        <img
+                          src={appstore}
+                          alt=""
+                          className="logoAppStoreMobile logoStoreMobile2"
+                        />
                       </Link>
                       {/* <div className="box-logo-apk-store-mobile">
                       
@@ -149,11 +156,19 @@ const MainSlider = ({ value, cls }) => {
 
               <div className="box-logo-info-iklan">
                 <Link href="">
-                  <img src={playstore} alt="" className="logo-play-store logoAppGroup"/>
+                  <img
+                    src={playstore}
+                    alt=""
+                    className="logo-play-store logoAppGroup"
+                  />
                 </Link>
-                
+
                 <Link href="">
-                  <img src={appstore} alt="" className="logo-app-store logoAppGroup"/>
+                  <img
+                    src={appstore}
+                    alt=""
+                    className="logo-app-store logoAppGroup"
+                  />
                 </Link>
               </div>
             </div>

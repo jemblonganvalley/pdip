@@ -165,10 +165,6 @@ const InformasiPage = () => {
               image3={`https://atur.biar.pw/public/${configHome[3].value[2].image}`}
               to4="/pidatohut"
               image4={`https://atur.biar.pw/public/${configHome[3].value[3].image}`}
-              width1="0"
-              width2="0"
-              width3="0"
-              width4="0"
               text={`${configHome[3].value[0].title}`}
               text2={`${configHome[3].value[1].title}`}
               text3={`${configHome[3].value[2].title}`}
@@ -187,6 +183,9 @@ const InformasiPage = () => {
                   src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
                   alt=""
                   className="imageHarta"
+                  style={{
+                    height: "50%",
+                  }}
                 />
                 <div className="textHarta">
                   <h6 className="hartaKekayaan h5Harta">
@@ -203,6 +202,9 @@ const InformasiPage = () => {
                   src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
                   alt=""
                   className="imageHarta"
+                  style={{
+                    height: "50%",
+                  }}
                 />
                 <div className="textHarta">
                   <h6 className="keuangan h5Harta">
@@ -255,6 +257,10 @@ const InformasiPage = () => {
                     src={`https://atur.biar.pw/public/${configHome[7].value[0].image}`}
                     alt=""
                     className="imageHarta"
+                    style={{
+                      height: "50%",
+                      objectFit: "cover",
+                    }}
                   />
                   <div className="textHarta">
                     <h6 className="hartaKekayaan h5Harta">
@@ -273,6 +279,10 @@ const InformasiPage = () => {
                     src={`https://atur.biar.pw/public/${configHome[7].value[1].image}`}
                     alt=""
                     className="imageHarta"
+                    style={{
+                      height: "50%",
+                      objectFit: "cover",
+                    }}
                   />
                   <div className="textHarta">
                     <h6 className="keuangan h5Harta">
