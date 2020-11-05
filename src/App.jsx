@@ -50,6 +50,8 @@ import Regulasi from "./components/pages/regulasi/Regulasi";
 import ListBerita from "./components/pages/berita/listBerita/ListBerita";
 import ContainerCard from "./components/containerCard/ContainerCard";
 import Search from "./components/pages/search/Search";
+import FormPdi from "./components/pages/informasi/formpdi/FormPdi";
+import FormKeluhan from "./components/pages/informasi/formkeluhan/FormKeluhan";
 
 function App() {
   let [hide, setHide] = useState(true);
@@ -104,6 +106,14 @@ function App() {
           {/* CONTAINER CARD */}
           <Route path='/article/:category_id'>
             <ContainerCard />
+          </Route>
+
+          <Route path='/formkeluhan'>
+            <FormKeluhan/>
+          </Route>
+
+          <Route path='/formpdi'>
+            <FormPdi/>
           </Route>
 
           <Route path='/search'>

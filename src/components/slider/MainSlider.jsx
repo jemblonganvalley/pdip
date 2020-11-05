@@ -110,11 +110,11 @@ const MainSlider = ({ value, cls }) => {
                       dan informasi program serta kerja nyata Partai PDI Perjuangan.
                       </p>
 
-                      <Link href="http://play.google.com/store/apps/details?id=com.whatsapp">
+                      <Link href="">
                         <img src={playstore} alt="" className="logoAppStoreMobile logoStoreMobile1"/>
                       </Link>
                       
-                      <Link href="https://apps.apple.com/id/app/whatsapp-messenger/id310633997?l=id">
+                      <Link href="">
                         <img src={appstore} alt="" className="logoAppStoreMobile logoStoreMobile2"/>
                       </Link>
                       {/* <div className="box-logo-apk-store-mobile">
@@ -154,11 +154,11 @@ const MainSlider = ({ value, cls }) => {
               </h6>
 
               <div className="box-logo-info-iklan">
-                <Link href="http://play.google.com/store/apps/details?id=com.whatsapp">
+                <Link href="">
                   <img src={playstore} alt="" className="logo-play-store logoAppGroup"/>
                 </Link>
                 
-                <Link href="https://apps.apple.com/id/app/whatsapp-messenger/id310633997?l=id">
+                <Link href="">
                   <img src={appstore} alt="" className="logo-app-store logoAppGroup"/>
                 </Link>
               </div>

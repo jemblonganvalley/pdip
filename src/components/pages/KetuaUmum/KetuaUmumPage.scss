@@ -41,6 +41,28 @@ $responMax950: 950px;
 }
 // END Min widht 750 and max width 950
 
+// min width 951 and max width 1360px
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+// end min width 951 and max width 1360px
+
+// min width 1361px and max width 1440px
+$responMin1361: 1361px;
+$responMax1440: 1440px;
+
+@mixin respon1440{
+    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
+        @content;
+    }
+}
+// end min width 1361px and max width 1440px
+
 .wrapperKetuaUmum{
     width: 100%;
     padding-bottom: 40px;
@@ -79,6 +101,18 @@ $responMax950: 950px;
         margin-top: 15px;
         padding: 10px 10%;
 
+        @include respon1360(){
+            padding: 10px 5%;
+        }
+
+        @include respon950(){
+            padding: 10px 5%;
+        }
+
+        @include respon750(){
+            padding: 10px 5%;
+        }
+
         @include smallPhone(){
             width: 100%;
             padding: 0 2%;
@@ -94,9 +128,17 @@ $responMax950: 950px;
         padding: 0 20%;
         overflow: hidden;
 
+        @include respon1440(){
+            padding: 0 10%;
+        }
+
+        @include respon1360(){
+            padding: 0 5%;
+        }
+
         // min width 750px and max width 950px
         @include respon950(){
-            padding: 0 20%;
+            padding: 0 2%;
         }
         // end min width 750px and max width 950px
 
@@ -217,6 +259,10 @@ $responMax950: 950px;
             flex-wrap: wrap;
             margin: 0px 0 0 0;
 
+            @include respon950(){
+                flex-direction: row;
+            }
+
             // min width 500px and max widht 750px
             @include respon750(){
                 flex-direction: column;
@@ -228,6 +274,14 @@ $responMax950: 950px;
                 padding: 0px 10px;
                 margin: 0;
                 // border: 1px solid blue;
+            }
+
+            .button1-cardBerita{
+                display: flex;
+                height: auto;
+                width: 100%;
+                padding: 20px 0;
+                justify-content: center;
             }
         }
         // END Column3
@@ -327,6 +381,18 @@ $responMax950: 950px;
         justify-content: center;
         align-items: center;
 
+        @include respon1440(){
+            padding: 0 10%;
+        }
+
+        @include respon1360(){
+            padding: 0 5%;
+        }
+
+        @include respon950(){
+            padding: 0 2%;
+        }
+
         // min width 500px and max width 750px
         @include respon750(){
             padding: 0 15%;
@@ -352,6 +418,18 @@ $responMax950: 950px;
         width: 100%;
         padding: 0px 20% 0px 20%;
 
+        @include respon1440(){
+            padding: 0 10%;
+        }
+
+        @include respon1360(){
+            padding: 0 5%;
+        }
+
+        @include respon950(){
+            padding: 0 2%;
+        }
+
         // min width 500px and max width 750px
         @include respon750(){
             padding: 0 15%;
@@ -375,7 +453,7 @@ $responMax950: 950px;
 
             // min width 750px and max width 950px
             @include respon950(){
-                flex-direction: column;
+                flex-direction: row;
             }
             // end min width 750px and max width 950px
 
@@ -388,6 +466,18 @@ $responMax950: 950px;
             @include smallPhone(){
                 flex-direction: column;
                 padding: 0 10px;
+            }
+
+            .button2-cardBerita{
+                display: flex;
+                height: auto;
+                width: 100%;
+                padding: 20px 0;
+                justify-content: center;
+
+                @include smallPhone(){
+                    padding: 20px 0 0 0;
+                }
             }
         }
         // END Column4

@@ -20,7 +20,7 @@ $smallPhoneDua : 400px;
 			position: relative;
 			width: 3px;
 			padding-top: 50px;
-			max-height: 50vh;
+			max-height: 60vh;
 			background: $darkRed;
 
 			@include smallPhone() {
@@ -70,6 +70,7 @@ $smallPhoneDua : 400px;
 				.timelineContent {
 					width: 100%;
 					display: flex;
+					flex-direction: column;
 					@include smallPhone() {
 						flex-direction: column;
 						justify-content: center;
@@ -78,9 +79,9 @@ $smallPhoneDua : 400px;
 					
 					
 					.imgContent {
-						width: 40%;
+						width: 100%;
 						height: 35vh;
-						border-top-right-radius: 10px;
+						border-top-right-radius: 0px;
 						// background-position: center center;
 
 						@include smallPhone() {
@@ -93,8 +94,8 @@ $smallPhoneDua : 400px;
 					.isiTimeline {
 						display: flex;
 						flex-direction: column;
-						width: 60%;
-						padding: 10px 5%;
+						width: 100%;
+						padding: 10px 0% 10px 0;
 						text-align: left;
 
 						@include smallPhone() {

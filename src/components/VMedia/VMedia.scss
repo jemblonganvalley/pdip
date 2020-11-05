@@ -48,8 +48,8 @@ $responMax950: 950px;
 
     // min width 750px and max width 950px
     @include respon950(){
-        height: auto;
-        flex-direction: column;
+        height: 50vh;
+        flex-direction: row;
     }
     // end min widt 750px and max width 950px
 
@@ -74,8 +74,8 @@ $responMax950: 950px;
 
         // min width 750px and max width 950px
         @include respon950(){
-            height: 40vh;
-            width: 100%;
+            height: auto;
+            width: 65%;
         }
         // end min width 750px and max width 950px
 
@@ -105,20 +105,20 @@ $responMax950: 950px;
         flex-direction: column;
         height: 50vh;
         // margin-left: 1rem;
-        padding : 10px 0 10px 20px;
+        padding: 25px 5px 25px 25px;
         background-color: $darkRedTwo;
         color: #fff;
         position: relative;
-        overflow-y: scroll;
-        overflow-x: hidden;
+        justify-content: flex-start;
+        align-items: flex-start;
 
         // min width 750px and max width 950px
         @include respon950(){
             height: auto;
-            width: 100%;
+            width: 35%;
             padding: 10px 20px;
-            text-align: center;
-            justify-content: center;
+            justify-content: flex-start;
+            align-items: flex-start;
         }
         // end min width 750px and max width 950px
 
@@ -127,8 +127,8 @@ $responMax950: 950px;
             height: auto;
             width: 100%;
             padding: 10px 20px;
-            text-align: center;
-            justify-content: center;
+            justify-content: start;
+            text-align: start;
         }
         // end min width 500px and max width 750px
 
@@ -137,6 +137,8 @@ $responMax950: 950px;
             padding: 0;
             height: auto;
             padding: 10px 20px;
+            justify-content: flex-start;
+            text-align: start;
         }
 
         .textTop {
@@ -144,26 +146,39 @@ $responMax950: 950px;
             width: 100%;
             flex-direction: row;
             // font-size: 9pt;
-            align-items: center;
+            // align-items: center;
 
             // min width 750px and max width 950px
-            @include respon950(){
-                justify-content: center;
-            }
+            // @include respon950(){
+            //     justify-content: center;
+            // }
             // end min width 750px and max width 950px
 
             // min width 500px and max width 750px
-            @include respon750(){
-                justify-content: center;
-            }
+            // @include respon750(){
+            //     justify-content: center;
+            // }
             // end min width 500px and max width 750px
 
-            @include smallPhone(){
-                justify-content: center;
-            }
+            // @include smallPhone(){
+                
+            // }
 
             small {
                 color: #fff;
+                margin-right: 20px;
+
+                @include respon950(){
+                    margin-right: 20px;
+                }
+
+                @include respon750(){
+                    margin-right: 20px;
+                }
+
+                @include smallPhone(){
+                    margin-right: 20px;
+                }
             }
 
             .countLove {
@@ -179,39 +194,63 @@ $responMax950: 950px;
         }
         .headline {
             margin-top: 1rem;
+            margin-right: 20px;
             font-weight: bold;
 
-            // min width 500px and max width 750px
-            @include respon750(){
-                text-align: center;
+            @include smallPhone(){
+                margin-right: 0;
             }
+
+            // min width 500px and max width 750px
+            // @include respon750(){
+            //     text-align: center;
+            // }
             // end min width 500px and max width 750px
 
-            @include smallPhone() {
-                text-align: center;
+            // @include smallPhone() {
+            //     text-align: center;
+            // }
+        }
+
+        // p {
+        //     // font-size: 10pt;
+        //     // @include smallPhone() {
+        //     //     text-align: center;
+        //     //     // font-size: 9pt;
+        //     // }
+        // }
+        .descline {
+            overflow-y: scroll;
+            padding: 0 10px 0 0;
+
+            @include smallPhone(){
+                padding: 0;
             }
         }
 
-        p {
-            // font-size: 10pt;
-            @include smallPhone() {
-                text-align: center;
-                // font-size: 9pt;
-            }
+        .descline::-webkit-scrollbar{
+            width: 3px;
         }
-        // .descline {
-        //     overflow-y: scroll;
+    
+        .descline::-webkit-scrollbar-thumb{
+            background-color: #f3f3f3;
+            border-radius: 3px;
+        }
+    
+        .descline::-webkit-scrollbar-track{
+            background-color: $darkRedTwo;
+            border-radius: 3px;
+        }
+
+        // @include respon950(){
+        //     justify-content: center;
+        //     text-align: center;
         // }
 
-        @include respon950(){
-            justify-content: center;
-            text-align: center;
-        }
-
-        @include respon750(){
-            justify-content: center;
-            text-align: center;
-        }
+        // @include respon750(){
+        //     justify-content: center;
+        //     text-align: center;
+        // }
 
         .share {
             // font-size: 10pt;
@@ -219,13 +258,13 @@ $responMax950: 950px;
             margin-top: auto;
             bottom: 0;
 
-            @include smallPhone() {
-                position: inherit;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 9pt;
-            }
+            // @include smallPhone() {
+            //     position: inherit;
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            //     font-size: 9pt;
+            // }
 
             .marginShare {
                 // margin: 0 .5rem;
@@ -240,19 +279,5 @@ $responMax950: 950px;
                 // }
             }
         }
-    }
-
-    .descVideo::-webkit-scrollbar{
-        width: 3px;
-    }
-
-    .descVideo::-webkit-scrollbar-thumb{
-        background-color: #f3f3f3;
-        border-radius: 3px;
-    }
-
-    .descVideo::-webkit-scrollbar-track{
-        background-color: $darkRedTwo;
-        border-radius: 3px;
     }
 }

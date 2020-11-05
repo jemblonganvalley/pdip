@@ -14,6 +14,8 @@ import Cards from "../../cards/MainCards";
 import CardInformasi from "../../cardInformasi/CardInformasi";
 import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
 import CardHeader from "../../cardheader/CardHeader";
+import { Button } from "@material-ui/core";
+import MainButton from "../../buttons/MainButton";
 // END Import to CSS
 
 // Create Component
@@ -152,6 +154,17 @@ const KetuaUmumPage = () => {
                   borderRadius="10px"
                 />
               ))}
+
+            {/* Button View All */}
+            <div className="button1-cardBerita">
+            <MainButton
+              name="lihat semua"
+              margin="0px 0 0 0"
+              pages=""
+            />
+            </div>
+            {/* END Button View All */}
+
             </div>
             {/* END Column3 */}
           </div>
@@ -185,6 +198,16 @@ const KetuaUmumPage = () => {
                   id={e.id}
                 />
               ))}
+
+              {/* /* Button View All */}
+            <div className="button2-cardBerita">
+            <MainButton
+              name="lihat semua"
+              margin="0px 0 0 0"
+              pages=""
+            />
+            </div>
+            {/* END Button View All */}
             </div>
             {/* END Column6 */}
           </div>

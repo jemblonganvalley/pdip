@@ -42,16 +42,6 @@ $respon500: 500px;
 
 .KMobile {
     display: none;
-
-    // min width 750px and max width 950px
-    @include respon950(){
-        width: 100%;
-        box-sizing: content-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    // end min width 750px and max width 950px
     
     // min width 500px and max width 750px
     @include respon750(){
@@ -64,6 +54,7 @@ $respon500: 500px;
     // end min width 500px and max width 750px
 
     @include smallPhone() {
+        display: flex;
         width: 100%;
         box-sizing: content-box;
         display: flex;
@@ -95,13 +86,11 @@ $respon500: 500px;
         height: 100%;
 
         @include smallPhone() {
-            
             // border: 1px solid green;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 0 1rem;
-            
         }
         
     }
@@ -170,11 +159,12 @@ $respon500: 500px;
 
                     @include smallPhone() {
                         height: 45vh;
-
                     }
                 }
 
                 .carousel-item {
+                    position: relative;
+                    flex-direction: column;
                     text-align: center;
                     width: 100%;
 
@@ -182,7 +172,7 @@ $respon500: 500px;
 
                         // min width 750px and max width 950px
                         @include respon950(){
-                            height: 60%;
+                            height: 65%;
                         }
                         // end min width 750px and max width 950px
 
@@ -201,13 +191,17 @@ $respon500: 500px;
 
                         // min width 750px and max width 950px
                         @include respon950(){
-                            height: 40%;
+                            height: 30%;
                         }
                         // end min width 750px and max width 950px
 
                         // min width 500px and max width 750px
                         @include respon750(){
+                            display: flex;
                             height: 40%;
+                            padding: 0 50px;
+                            justify-content: center;
+                            align-items: center;
                         }
                         // end min width 500px and max width 750px
                         
@@ -220,12 +214,26 @@ $respon500: 500px;
                             padding: 10px;
                         }
                         .textCarousel {
+
+                            // min width 500px and max width 750px
+                            @include respon750(){
+                                height: 40%;
+                                padding: 0 50px;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            // end min width 500px and max width 750px
+
                             @include smallPhone() {
                                 margin: 0;
                             }
                         }
                         
-                        h5 {
+                        h6 {
+                            @include respon750(){
+                                display: none;
+                            }
+
                             @include smallPhone() {
                                 font-size: 8pt;
                             }
@@ -238,6 +246,17 @@ $respon500: 500px;
                         h3 {
                             font-size: 15pt;
                             font-weight: 300;
+
+                            // min width 500px and max width 750px
+                            @include respon750(){
+                                display: flex;
+                                height: 100%;
+                                padding: 0 50px;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                            }
+                            // end min width 500px and max width 750px
 
                             @include smallPhone(){
                                 padding: 0 5%;

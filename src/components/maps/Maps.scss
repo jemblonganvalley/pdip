@@ -27,13 +27,66 @@ $deviceMax1500: 1500px;
     }
 }
 
+// min width 951 and max width 1360px
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+// end min width 951 and max width 1360px
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
+
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
+
 // For Position Hover ALL Pulau
 .container-position-pulau-inMaps{
     display: flex;
     height: 370px;
-    width: 100%;
+    width: 1000px;
     justify-content: center;
     position: relative;
+    margin-top: 20px;
+
+    @include respon1360(){
+        height: 260px;
+        width: 700px;
+    }
+
+    @include respon950(){
+        height: 260px;
+        width: 700px;
+    }
+
+    @include respon750(){
+        height: 185px;
+        width: 500px;
+    }
 
     #mapsDefault{
         z-index: -1;
@@ -43,10 +96,24 @@ $deviceMax1500: 1500px;
         position: absolute;
         object-fit: cover;
         object-position: center;
-        height: 370px;
+        height: auto;
         width: 1000px;
-        max-width: 100%;
         // cursor: pointer;
+
+        @include respon1360() {
+            height: auto;
+            width: 700px;
+        }
+
+        @include respon950() {
+            height: auto;
+            width: 700px;
+        }
+
+        @include respon750(){
+            width: 500px;
+        }
+
         @include smallPhone() {
             height: auto;
             width: 100%;
@@ -130,18 +197,70 @@ $deviceMax1500: 1500px;
     }
     // END Target Mouse 3
 
-    map{
-        display: flex;
-        height: 100%;
-        width: 1000px;
+    // map{
+    //     display: flex;
+    //     height: 100%;
+    //     width: 1000px;
 
-        area{
-            width: 100%;
-        }
-    }
+    //     area{
+    //         width: 100%;
+    //     }
+    // }
 }
 // END For Position Hover ALL Pulau
 
+// Title PETA PDIP
+// .column-title-petaPDIP{
+//     display: flex;
+//     height: auto;
+//     width: 1000px;
+//     justify-content: flex-start;
+//     padding: 20px 0 40px 0;
+//     margin-top: 20px;
+
+//     .title-petaPDIP{
+//         display: flex;
+//         margin: 0;
+//         font-weight: bold;
+//     }
+// }
+// END Title PETA PDIP
+
+// For Botton Name Provinsi For on off Display Image Provinsi
+.container-btn-name-provinsi{
+    display: flex;
+    height: auto;
+    width: 1000px;
+    margin-top: 40px;
+
+    @include respon950(){
+        width: 100%;
+    }
+
+    @include respon750(){
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .box-btn-name-provinsi{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: calc(100%/4);
+
+        @include respon950(){
+            width: 100%;
+            margin: 0 20px 0 0;
+        }
+
+        @include respon750(){
+            height: calc(100%/4);
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+// END For Botton Name Provinsi For on off Display Image Provinsi
 
 
 // .aceh{

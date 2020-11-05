@@ -175,6 +175,15 @@ const PartaiPage = () => {
               <MusicPdi />
               <MusicMobile />
 
+              {/* divider tata kelola */}
+              <div className="divider-tata-kelolaPdi">
+                <MainDivider
+                    text="TATA KELOLA PDI PERJUANGAN"
+                    mrgn="40px 0"
+                />
+              </div>
+              {/* end divider tata kelola */}
+
               {/* CONTAINER TIGA */}
               <div className="containerTiga">
                 <div className="col-lg-3">
@@ -247,7 +256,7 @@ const PartaiPage = () => {
 
               {/* MAPS */}
               <div className="maps">
-                <h5>dewan pimpinan daerah pdi perjuangan</h5>
+                {/* <h5>dewan pimpinan daerah pdi perjuangan</h5> */}
                 {/* Component Maps */}
                 <Maps/>
                 {/* END Component Maps */}
@@ -255,7 +264,7 @@ const PartaiPage = () => {
               {/* END */}
 
               {/* ANGGOTA LEGISLATIF */}
-              <div className="anggotaLegislatif">
+              {/* <div className="anggotaLegislatif">
                 <span
                   dangerouslySetInnerHTML={{ __html: config[7].value }}
                 ></span>
@@ -273,7 +282,7 @@ const PartaiPage = () => {
                   </div>
                   
                 </div>
-              </div>
+              </div> */}
               {/* END */}
             </>
           )}

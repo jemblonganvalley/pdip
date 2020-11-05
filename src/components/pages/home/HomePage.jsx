@@ -148,10 +148,8 @@ const HomePage = () => {
                       <img
                         src={`https://atur.biar.pw/public/${e.image}`}
                         alt=""
-                        width="100"
-                        height="100"
                       />
-                      <h4>{e.title}</h4>
+                      <h5>{e.title}</h5>
                     </div>
                   </a>
                 </div>

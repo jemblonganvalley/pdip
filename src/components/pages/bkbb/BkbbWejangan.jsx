@@ -11,6 +11,7 @@ import MainButton from '../../buttons/MainButton'
 import CardSocialMedia from '../../cardsocialmedia/CardSocialMedia'
 import CardHeader from '../../cardheader/CardHeader'
 import bkbbH from '../../../img/BKBB.jpg'
+import bkbb1 from '../../../img/bkbb1.jpg'
 
 const BkbbWejangan = () => {
 
@@ -42,7 +43,7 @@ const BkbbWejangan = () => {
                     {/* Column1 */}
                     <div className="col1-container-1-bkbbWejangan">
                         {/* Row1 */}
-                        <div className="row1-bkbbWejangan">
+                        <img src={bkbb1} className="row1-bkbbWejangan" />
                             <div className="box-quotes-bkbbWejangan">
                                 {/* <i className="fas fa-quote-right"></i>
 
@@ -62,7 +63,6 @@ const BkbbWejangan = () => {
                                     Bung Karno, 17 Agustus 1946
                                 </small> */}
                             </div>
-                        </div>
                         {/* END Row1 */}
 
                         {/* Row2 */}
@@ -79,11 +79,13 @@ const BkbbWejangan = () => {
 
                             <p className="txt3">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis rerum esse nihil. Reiciendis illum et voluptate quisquam, consequatur id laudantium?
-                            </p>
-
-                            <p className="txt4">
+                                <br/> <br/>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eligendi neque saepe cupiditate, porro maiores officia, sequi voluptate, amet exercitationem incidunt veniam. Mollitia soluta laborum quae quisquam aliquam neque illum. Dolores incidunt quos iure nobis rem laborum doloremque quasi beatae ad natus! Sequi, quos doloribus. Quod sequi animi illum numquam?
                             </p>
+
+                            {/* <p className="txt4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eligendi neque saepe cupiditate, porro maiores officia, sequi voluptate, amet exercitationem incidunt veniam. Mollitia soluta laborum quae quisquam aliquam neque illum. Dolores incidunt quos iure nobis rem laborum doloremque quasi beatae ad natus! Sequi, quos doloribus. Quod sequi animi illum numquam?
+                            </p> */}
 
                             <div className="box-medsos-bkbbWejangan">
                                 {/* Card Social Media */}

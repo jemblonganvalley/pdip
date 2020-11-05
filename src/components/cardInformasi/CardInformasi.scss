@@ -60,18 +60,30 @@ $responMax950: 950px;
 }
 // END Min widht 750 and max width 950
 
+// for icon customRow
+// min height 800 and max width 750px
+$minHeight800: 800px;
+$maxWidth750: 750px;
+
+@mixin minHeight800{
+    @media (min-height: #{$minHeight800}) and (max-width: #{$maxWidth750}) {
+        @content;
+    }
+}
+// min height 800 and max width 750px
+// end for icon customRow
+
 .cardMedia {
     width: 100%;
-    padding: 20px 0 0 0;
+    padding: 20px 0 0px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
     // min width 750px and max width 950px
     @include respon950(){
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px 0px 0 0px;
+        // flex-direction: column;
+        padding: 20px 0 0 0;
     }
     // end min width 750px and max width 950px
 
@@ -96,8 +108,8 @@ $responMax950: 950px;
             display: flex;
             height: 15vh;
             width: 100%;
-            background: $accent;
-            margin: .5rem 0 0 0;
+            // background: $accent;
+            margin: 0rem 0 0 0;
             justify-content: center;
             border-radius: 5px;
         }
@@ -123,14 +135,15 @@ $responMax950: 950px;
         }
         
         .mediaCard {
+            height: auto;
             text-decoration: none;
             color: #000000;
 
             // min width 750px and max width 950px
             @include respon950(){
-                width: 50%;
+                width: 100%;
                 padding: 0;
-                justify-content: flex-start;
+                justify-content: center;
             }
             // end min width 750px and max width 950px
     
@@ -166,26 +179,36 @@ $responMax950: 950px;
         }
         
         .imgCards {
-            height: 75px;
-            width: 75px;
+            height: 70%;
             margin-right: 1rem;
     
             @include deviceOne(){
-                height: 50px;
-                width: 50px;
+                // height: 50px;
+                // width: 50px;
+            }
+
+            @include respon950(){
+                height: 30%;
             }
     
             // min width 500px and max width 750px
             @include respon750(){
-                height: 60px;
-                width: 60px;
+                // height: 60px;
+                // width: 60px;
                 margin-right: 0;
             }
             // end min width 500px and max width 750px
+
+            // min height 800 and max width 750px
+            @include minHeight800(){
+                height: 45%;
+            }
+            // end min height 800 and max width 750px
     
             @include smallPhone() {
-                height: 60px;
-                width: 60px;
+                height: 50%;
+                // height: 60px;
+                // width: 60px;
                 // width: 30px;
                 margin-right: 0;
             }
@@ -198,7 +221,7 @@ $responMax950: 950px;
 
             // min width 750px and max width 950px
             @include respon950(){
-                justify-content: flex-start;
+                justify-content: center;
             }
             // end min width 750px and max width 950px
     
@@ -219,7 +242,7 @@ $responMax950: 950px;
 
             // min width 750px and max width 950px
             @include respon950(){
-                justify-content: flex-start;
+                justify-content: center;
             }
             // end min width 750px and max width 950px
     
@@ -240,7 +263,7 @@ $responMax950: 950px;
 
             // min width 750px and max width 950px
             @include respon950(){
-                justify-content: flex-start;
+                justify-content: center;
             }
             // end min width 750px and max width 950px
     
@@ -261,7 +284,7 @@ $responMax950: 950px;
 
             // min width 750px and max width 950px
             @include respon950(){
-                justify-content: flex-start;
+                justify-content: center;
             }
             // end min width 750px and max width 950px
     

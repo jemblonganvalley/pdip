@@ -40,6 +40,67 @@ $responMax950: 950px;
 }
 // END Min widht 750 and max width 950
 
+// For Card info
+// min height 700px and min width 1300px
+$minHeight680: 680px;
+$minWidth1300: 1300px;
+
+@mixin minHeight680{
+    @media(min-height: #{$minHeight680}) and (min-width: #{$minWidth1300}) {
+        @content;
+    }
+}
+// min height 700px and min width 1300px
+// END For Card Info
+
+// for icon customRow
+// min height 800 and max width 750px
+$minHeight800: 800px;
+$maxWidth750: 750px;
+
+@mixin minHeight800{
+    @media (min-height: #{$minHeight800}) and (max-width: #{$maxWidth750}) {
+        @content;
+    }
+}
+// min height 800 and max width 750px
+// end for icon customRow
+
+// for icon customRow
+// min height 0 and max width 750px
+$minHeight580: 580px;
+$maxWidth750: 750px;
+
+@mixin minHeight580{
+    @media (min-height: #{$minHeight580}) and (max-width: #{$maxWidth750}) {
+        @content;
+    }
+}
+// min height 800 and max width 750px
+// end for icon customRow
+
+// min width 951 and max width 1360px
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+// end min width 951 and max width 1360px
+
+// min width 1361px and max width 1440px
+$responMin1361: 1361px;
+$responMax1440: 1440px;
+
+@mixin respon1440{
+    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
+        @content;
+    }
+}
+// end min width 1361px and max width 1440px
+
 .wrapperInformasi {
     width: 100%;
     padding-bottom: 40px;
@@ -94,6 +155,19 @@ $responMax950: 950px;
             width: 100%;
             margin-top: 15px;
             padding: 10px 10%;
+
+            @include respon1360(){
+                padding: 10px 5%;
+            }
+    
+            @include respon950(){
+                padding: 10px 5%;
+            }
+    
+            @include respon750(){
+                padding: 10px 5%;
+            }
+
             @include smallPhone() {
                 // border: 1px solid crimson;
                 width: 100%;
@@ -109,6 +183,19 @@ $responMax950: 950px;
             align-items: center;
             flex-direction: column;
             padding: 0 20% 5px 20%;
+
+            @include respon1440(){
+                padding: 0 10% 5px 10%;
+            }
+
+
+            @include respon1360(){
+                padding: 0 5% 5px 5%;
+            }
+
+            @include respon950(){
+                padding: 0 2% 5px 2%;
+            }
 
             // min width 500px and max width 750px
             @include respon750(){
@@ -140,7 +227,7 @@ $responMax950: 950px;
                 // position: relative;
 
                 @include respon950(){
-                    flex-direction: column;
+                    flex-direction: row;
                 }
 
                 // min width 500px and max width 750px
@@ -160,9 +247,21 @@ $responMax950: 950px;
                     flex-direction: column;
                     font-family: 'Roboto';
                     overflow-y: scroll;
+                    margin-right: 10px;
+
+                    @include respon1440(){
+                        width: 80%;
+                        height: 45vh;
+                    }
+
+                    @include respon1360(){
+                        width: 60%;
+                        height: 45vh;
+                    }
 
                     @include respon950(){
-                        height: auto;
+                        width: 50%;
+                        height: 45vh;
                     }
 
                     // min width 500px and max width 750px
@@ -176,6 +275,7 @@ $responMax950: 950px;
                         justify-content: flex-start;
                         align-items: center;
                         padding: 0 10px;
+                        margin-right: 0;
                     }
 
                     .merdeka {
@@ -248,8 +348,12 @@ $responMax950: 950px;
                 height: 100%;
                 width: 50vw;
 
+                @include respon1360(){
+                    width: 50vw;
+                }
+
                 @include respon950(){
-                    width: 100%;
+                    width: 50vw;
                 }
 
                 // min width 500px and max width 750px 
@@ -279,6 +383,15 @@ $responMax950: 950px;
                     background-size: cover;
                     color: #ffffff;
                     font-family: 'Roboto';
+                    overflow: hidden;
+
+                    @include respon1440(){
+                        width: 100%;
+                    }
+
+                    @include respon1360(){
+                        width: 100%;
+                    }
 
                     @include respon950(){
                         width: 100%;
@@ -326,6 +439,21 @@ $responMax950: 950px;
         align-items: center;
         width: 100%;
 
+        @include respon1440(){
+            padding: 10px 10% 0 10%;
+            margin-top: 1rem;
+        }
+
+        @include respon1360(){
+            padding: 10px 5% 0 5%;
+            margin-top: 1rem;
+        }
+
+        @include respon950(){
+            padding: 10px 2% 0 2%;
+            margin-top: 1rem;
+        }
+
         // min width 500px and max width 750px
         @include respon750(){
             padding: 10px 15% 0 15%;
@@ -343,6 +471,14 @@ $responMax950: 950px;
             height: 60vh;
             position: relative;
             // overflow: hidden;
+
+            @include respon1360(){
+                height: 50vh;
+            }
+
+            @include respon950(){
+                height: 45vh;
+            }
 
             // min width 500px and max width 750px
             @include respon750(){
@@ -380,6 +516,18 @@ $responMax950: 950px;
             align-items: center;
             flex-direction: column;
             padding: 0 20%;
+
+            @include respon1440(){
+                padding: 0 10%;
+            }
+
+            @include respon1360(){
+                padding: 0 5%;
+            }
+
+            @include respon950(){
+                padding: 0 2%;
+            }
 
             // min width 500px and max width 750px
             @include respon750(){
@@ -609,8 +757,20 @@ $responMax950: 950px;
         // wrapper cardLaporan2
         .wrapper-cardLaporan2{
             display: flex;
-            padding: 0 20%;
+            padding: 10px 20%;
             margin-bottom: 20px;
+
+            @include respon1440(){
+                padding: 0 10%;
+            }
+
+            @include respon1360(){
+                padding: 0 5%;
+            }
+
+            @include respon950(){
+                padding: 0 2%;
+            }
 
             @include respon750(){
                 padding: 0 15%;
@@ -629,10 +789,12 @@ $responMax950: 950px;
             align-items: center;
             width: 100%;
             // padding: 2rem;
+            margin-top: 20px;
 
             // min width 750px and max width 950px
             @include respon950(){
-                flex-direction: column;
+                margin-top: 0;
+                flex-direction: row;
             }
             // end min width 750px and max width 950px
 
@@ -653,7 +815,7 @@ $responMax950: 950px;
                 align-items: center;
 
                 @include respon950(){
-                    margin-right: 0;
+                    margin-right: 20px;
                 }
 
                 @include respon750(){
@@ -674,9 +836,15 @@ $responMax950: 950px;
                 transition: .3s;
                 overflow: hidden;
 
+                // min height 680px and min width 1300px
+                // @include minHeight680(){
+                //     height: 10vh;
+                // }
+                // end min height 680px and min width 1300px
+
                 @include respon950(){
                     width: 100%;
-                    margin: .5rem 0 0 0;
+                    // margin: .5rem 20px 0 0;
                     padding: 20px 30px;
                     border-radius: 5px;
                     justify-content: center;
@@ -711,6 +879,10 @@ $responMax950: 950px;
                     justify-content: center;
                     align-items: center;
 
+                    @include respon950(){
+                        width: 80%;
+                    }
+
                     @include respon750(){
                         width: 70%;
                     }
@@ -720,7 +892,7 @@ $responMax950: 950px;
                     }
 
                     .imageHarta {
-                        width: 45px;
+                        height: 50%;
 
                         // min widht 500px and max widht 750px
                         @include respon750(){
@@ -728,8 +900,20 @@ $responMax950: 950px;
                         }
                         // end min width 500px and max width 750px
 
+                        // min height 580 and max width 750px
+                        @include minHeight580(){
+                            height: 60%;
+                        }
+                        // end min height 580 and max width 750px
+
+                        // min height 800 and max width 750px
+                        @include minHeight800(){
+                            height: 50%;
+                        }
+                        // end min height 800 and max width 750px
+
                         @include smallPhone(){
-                            width: 50px;
+                            // width: 50px;
                             margin: 0;
                         }
                     }

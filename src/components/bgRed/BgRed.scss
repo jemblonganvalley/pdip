@@ -38,6 +38,28 @@ $responMax950: 950px;
 }
 // END Min widht 750 and max width 950
 
+// min width 951 and max width 1360px
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+// end min width 951 and max width 1360px
+
+// min width 1361px and max width 1440px
+$responMin1361: 1361px;
+$responMax1440: 1440px;
+
+@mixin respon1440{
+    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
+        @content;
+    }
+}
+// end min width 1361px and max width 1440px
+
 .backgroundRed {
     background: url(../../img/pattern-01.svg);
     margin-top: 20px;
@@ -46,10 +68,19 @@ $responMax950: 950px;
     padding: 0 20%;
     // justify-content: center;
 
-    @include respon950(){
-        flex-direction: column;
+    @include respon1440(){
         height: auto;
-        padding: 0 20% 40px 20%;
+        padding: 0 10% 40px 10%;
+    }
+    
+    @include respon1360(){
+        height: auto;
+        padding: 0 5% 40px 5%;
+    }
+
+    @include respon950(){
+        height: auto;
+        padding: 0 2% 40px 2%;
     }
 
     // Min width 500px and max width 750px

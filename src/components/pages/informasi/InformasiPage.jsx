@@ -10,6 +10,7 @@ import CarouselKM from "../../carouselKM/CarouselKM";
 import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
 import illustrator from '../../../img/illustrator2.png'
 import CardHeader from "../../cardheader/CardHeader";
+import { Link } from "react-router-dom";
 
 const InformasiPage = () => {
   const [gallery, setGallery] = useState([]);
@@ -154,9 +155,7 @@ const InformasiPage = () => {
             />
 
             {/* CARD LAPORAN */}
-            <div className="containerLaporan" style={{
-                marginTop : '20px'
-            }}>
+            <div className="containerLaporan">
               
               <div className="cardLaporan cardLaporanSatu">
                 <div className="box-card-laporan">
@@ -237,7 +236,7 @@ const InformasiPage = () => {
                 marginTop : '20px'
             }}>
               
-              <div className="cardLaporan cardLaporanSatu">
+              <Link to="/formpdi" className="cardLaporan cardLaporanSatu">
                 <div className="box-card-laporan">
                   <img
                     src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
@@ -251,10 +250,9 @@ const InformasiPage = () => {
           
                   </div>
                 </div>
-              </div>
-
+              </Link>
               
-              <div className="cardLaporan cardLaporanDua">
+              <Link to="/formkeluhan" className="cardLaporan cardLaporanDua">
                 <div className="box-card-laporan">
                 <img
                     src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
@@ -268,7 +266,7 @@ const InformasiPage = () => {
               
                   </div>
                 </div>
-              </div>
+              </Link>
 
             </div>
             {/* END CARD LAPORAN */}

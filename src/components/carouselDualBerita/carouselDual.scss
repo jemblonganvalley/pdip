@@ -38,6 +38,28 @@ $responMax950: 950px;
 }
 // END Min widht 750 and max width 950
 
+// min width 951 and max width 1360px
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+// end min width 951 and max width 1360px
+
+// min width 1361px and max width 1440px
+$responMin1361: 1361px;
+$responMax1440: 1440px;
+
+@mixin respon1440{
+    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
+        @content;
+    }
+}
+// end min width 1361px and max width 1440px
+
 .mainCarouselDual{
     display: flex;
     justify-content: center;
@@ -45,14 +67,24 @@ $responMax950: 950px;
     width: 100vw;
     height: 40vh;
     gap : 20px;
-    padding: 0 21% 0 20%;
+    padding: 0 20% 0 20%;
+
+    @include respon1440(){
+        padding: 0px 10%;
+    }
+
+    // Min widht 951px and max width 1360px
+    @include respon1360(){
+        padding: 0px 5%;
+    }
+    // Min widht 951px and max width 1360px
 
     // Min width 750px and max width 950px
     @include respon950(){
         height: auto;
         width: 100%;
-        flex-direction: column;
-        padding: 0 20%;
+        flex-direction: row;
+        padding: 0 2%;
     }
     // END Min width 750px and max width 950px
 
@@ -81,7 +113,7 @@ $responMax950: 950px;
 
         // min width 750px and max width 950px
         @include respon950(){
-            width: 100%;
+            width: 40%;
         }
         // end min width 750px and max width 950px
 
@@ -104,7 +136,9 @@ $responMax950: 950px;
 
         // min width 750px and max width 950px
         @include respon950(){
-            width: 100%;
+            width: 60%;
+            margin-left: 15px;
+            margin-top: 0px;
         }
         // end min width 750px and max widht 950px
 

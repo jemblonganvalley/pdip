@@ -6,7 +6,7 @@ const CarouselKetuaUmumPage = ({ data }) => {
   return (
     <>
       <div
-        id="carouselExampleIndicators"
+        id="carouselKetuaUmum"
         className="carousel container-carousel-ketuaUmumPage slide"
         data-ride="carousel"
       >
@@ -56,7 +56,7 @@ const CarouselKetuaUmumPage = ({ data }) => {
         </div>
         <a
           className="carousel-control-prev"
-          href="#carouselExampleIndicators"
+          href="#carouselKetuaUmum"
           role="button"
           data-slide="prev"
         >
@@ -65,7 +65,7 @@ const CarouselKetuaUmumPage = ({ data }) => {
         </a>
         <a
           className="carousel-control-next"
-          href="#carouselExampleIndicators"
+          href="#carouselKetuaUmum"
           role="button"
           data-slide="next"
         >

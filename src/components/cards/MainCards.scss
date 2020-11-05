@@ -40,27 +40,49 @@ $responMax950: 950px;
 }
 // END Min widht 750 and max width 950
 
+// min width 951 and max width 1360px
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+// end min width 951 and max width 1360px
+
 @import "../../utilities/variable/variables.scss";
 
 
     .cardCustom {
-        height: auto;
-        min-height: 100px;
         height: 300px;
+        max-height: 300px;
+        // height: 300px;
         width: calc(90%/3);
         background: #ffffff;
         transition: .5s;
-        margin: 20px 0px 0 0px;
+        margin: 20px 10px 0 10px;
         // margin: 40px auto;
         display: flex;
         flex-direction: column;
+
+        // Min width 951px and max width 1360px
+        @include respon1360(){
+            height: 350px;
+            max-height: 400px;
+            margin: 20px 10px 0 10px;
+            width: calc(90%/3);
+            flex: 1 1 auto;
+        }
+        // END Min width 951px and max width 1360px
 
         // Min width 750px and max width 950px
         @include respon950(){
             height: 350px;
             max-height: 400px;
-            margin: 20px 0px 0 0px;
-            width: 100%;
+            margin: 20px 5px 0 5px;
+            width: calc(90%/3);
+            flex: 1 1 auto;
         }
         // END Min width 750px and max width 950px
 
@@ -75,9 +97,9 @@ $responMax950: 950px;
         // Max width 500px
         @include smallPhone() {
             // flex-direction: row;
-            height: 300px;
+            height: 350px;
             width: 100%;
-            margin: .5rem 0 0 0;
+            margin: 1rem 0 0 0;
         }
         // END Max width 500px
         
@@ -112,7 +134,7 @@ $responMax950: 950px;
 
             @include smallPhone() {
                 border-radius: 10px;
-                height: 150px;
+                height: 200px;
                 width: 100%;
                 border-bottom-left-radius: 0;
                 border-bottom-right-radius: 0;
@@ -145,7 +167,7 @@ $responMax950: 950px;
             padding: 10px 20px;
             @include smallPhone() {
                 width: 100%;
-                flex: 1;
+                // flex: 1;
                 // padding: 0px;
             }
             

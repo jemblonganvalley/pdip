@@ -47,9 +47,9 @@ $respon500: 500px;
 
     // min width 7500px and max width 950px
     @include respon950(){
-        display: flex;
+        display: none;
         flex-direction: column;
-        padding: 0 20%;
+        padding: 0 15%;
     }
     // end min width 500px and max width 750px
 

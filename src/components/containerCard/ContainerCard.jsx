@@ -94,9 +94,9 @@ const ContainerCard = () => {
             {/* END Column Card */}
 
             {/* Column Pagination */}
-            {/* <div className="column-pagination-berita-nasional">
-                        <AngkaPaginationEvent itemEventPerPage={itemEventPerPage} totalPosts={cardBeritaNasional.length} paginate={paginate} />
-                    </div> */}
+            <div className="column-pagination-berita-nasional">
+                {/* <AngkaPaginationEvent itemEventPerPage={itemEventPerPage} totalPosts={cardBeritaNasional.length} paginate={paginate} /> */}
+            </div>
             {/* END Column Pagination */}
           </div>
           {/* END Container2 */}
