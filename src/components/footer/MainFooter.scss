@@ -40,6 +40,28 @@ $responMax950: 950px;
 }
 // END Min widht 750 and max width 950
 
+// min width 951 and max width 1360px
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+// end min width 951 and max width 1360px
+
+// min width 1361px and max width 1440px
+$responMin1361: 1361px;
+$responMax1440: 1440px;
+
+@mixin respon1440{
+    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
+        @content;
+    }
+}
+// end min width 1361px and max width 1440px
+
 .wrapperFooter {
     width: 100%;
     height: 40vh;
@@ -50,6 +72,26 @@ $responMax950: 950px;
     align-items: center;
     flex-direction: row;
     padding: 40px 20%;
+
+    @include respon1440(){
+        height: auto;
+        flex-direction: column;
+        padding: 40px 10%;
+    }
+
+    @include respon1360(){
+        height: auto;
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+
+    // Min width 500px and max width 750px
+    @include respon950(){
+        height: auto;
+        flex-direction: column;
+        padding: 40px 2%;
+    }
+    // END Min width 500px and max width 750px
 
     // Min width 500px and max width 750px
     @include respon750(){
@@ -78,6 +120,11 @@ $responMax950: 950px;
         color: #ffffff;
         gap : 20px;
 
+        @include respon950() {
+            gap: 10px;
+            text-align: start;
+        }
+
         @include respon750() {
             flex-direction: column;
             text-align: start;
@@ -89,6 +136,15 @@ $responMax950: 950px;
         }
 
         span{
+
+            @include respon950(){
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0px 0 0;
+            }
+
             @include respon750(){
                 width: 100%;
                 flex-direction: column;
@@ -106,6 +162,11 @@ $responMax950: 950px;
             }
 
             .logo-mainFooter{
+
+                @include respon950(){
+
+                }
+
                 @include respon750(){
                     width: 130px;
                     height: 130px;
@@ -221,6 +282,10 @@ $responMax950: 950px;
             display: flex;
             flex-direction: column;
             width: 300px;
+
+            @include respon950(){
+                margin-top: 40px;
+            }
 
             @include respon750(){
                 padding: 0 0 0 22px;

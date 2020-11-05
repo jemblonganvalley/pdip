@@ -39,6 +39,28 @@ $responMax950: 950px;
 }
 // END Min widht 750 and max width 950
 
+// min width 951 and max width 1360px
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+// end min width 951 and max width 1360px
+
+// min width 1361px and max width 1440px
+$responMin1361: 1361px;
+$responMax1440: 1440px;
+
+@mixin respon1440{
+    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
+        @content;
+    }
+}
+// end min width 1361px and max width 1440px
+
 
 .wrapperBerita{
     width: 100%;
@@ -82,6 +104,18 @@ $responMax950: 950px;
         margin-top: 15px;
         padding: 10px 10%;
 
+        @include respon1360(){
+            padding: 10px 5%;
+        }
+
+        @include respon950(){
+            padding: 10px 5%;
+        }
+
+        @include respon750(){
+            padding: 10px 5%;
+        }
+
         @include smallPhone(){
             width: 100%;
             padding: 0 2%;
@@ -96,6 +130,18 @@ $responMax950: 950px;
         width: 100%;
         padding: 0 20%;
         overflow: hidden;
+
+        @include respon1440(){
+            padding: 0 10%;
+        }
+
+        @include respon1360(){
+            padding: 0 5%;
+        }
+
+        @include respon950(){
+            padding: 0 2%;
+        }
 
         // min width 500px and max width 750px
         @include respon750(){
@@ -345,6 +391,11 @@ $responMax950: 950px;
         margin: 20px 0 0px 0;
         overflow: hidden;
 
+        @include respon1360(){
+            background-size: cover;
+            background-attachment: inherit;
+        }
+
         // min width 750px and max width 950px
         @include respon950(){
             background-size: cover;
@@ -369,7 +420,7 @@ $responMax950: 950px;
         .col1-container-2-beritaPage{
             display: flex;
             flex-direction: column-reverse;
-            height: 60%;
+            height: 75%;
             width: 100%;
             align-items: center;
             overflow: hidden;
@@ -392,7 +443,7 @@ $responMax950: 950px;
         // Column2
         .col2-container-2-beritaPage{
             display: flex;
-            height: 40%;
+            height: 25%;
             width: 100%;
             justify-content: center;
             align-items: center;
@@ -409,6 +460,18 @@ $responMax950: 950px;
         height: auto;
         width: 100%;
         padding: 0 20% 0px 20%;
+
+        @include respon1440(){
+            padding: 0 10%;
+        }
+
+        @include respon1360(){
+            padding: 0 5%;
+        }
+
+        @include respon950(){
+            padding: 0 2%;
+        }
 
         @include respon750(){
             padding: 0 15%;
@@ -541,9 +604,15 @@ $responMax950: 950px;
     flex-wrap: wrap;
     // margin-top: 15px;
 
+    @include respon1360(){
+        // flex-wrap: nowrap;
+        
+    }
+
     // min width 750px and max width 950px
     @include respon950(){
-        flex-direction: column;
+        flex-direction: row;
+        width: auto;
     }
     // end min width 750px and max width 950px
 
@@ -556,9 +625,20 @@ $responMax950: 950px;
     @include smallPhone(){
         margin-top: 0px;
     }
+
+    // for btn view all
+    .btn1-beritaPage{
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        padding: 20px 0 0 0;
+    }
 }
 
 #card-berita{
+    margin-top: 0;
+
     @include smallPhone(){
         display: flex;
         flex-direction: column;

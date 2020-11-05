@@ -118,6 +118,25 @@ const MainNavbar = ({token})=> {
     //   this.myinput.dispatchEvent(event);
     // }
 
+    // For Trigger menu dropdown (Mobile)
+    let [trigger1, setTrigger1] = useState(false)
+    let [trigger2, setTrigger2] = useState(false)
+    let [trigger3, setTrigger3] = useState(false)
+    let [trigger4, setTrigger4] = useState(false)
+    let [trigger5, setTrigger5] = useState(false)
+    let [trigger6, setTrigger6] = useState(false)
+    let [trigger7, setTrigger7] = useState(false)
+    // end For Trigger menu dropdown (Mobile)
+
+    // For Button page menu mobile (collapse navbar)
+    let [collapse1, setCollapse1] = useState(false)
+    let [collapse2, setCollapse2] = useState(false)
+    let [collapse3, setCollapse3] = useState(false)
+    let [collapse4, setCollapse4] = useState(false)
+    let [collapse5, setCollapse5] = useState(false)
+    let [collapse6, setCollapse6] = useState(false)
+    let [collapse7, setCollapse7] = useState(false)
+    // END For Button page menu mobile (collapse navbar)
 
 
     return (
@@ -191,19 +210,27 @@ const MainNavbar = ({token})=> {
         <nav className="navbar navbar-expand-lg sticky-top" id="navbar" style={{
           boxShadow : window.scrollY > 1 ? '-1px 7px 30px -12px rgba(0,0,0,0.75)' : 'none'
         }}>
-          <div className="container-fluid">
+          <div className="container-fluid"
+          >
             <NavLink className="navbar-brand" to="/" activeClassName="brand" >
-              <img src={pdimobile} alt="" width="60" className="d-inline-block align-center active" loading="lazy"/>
+              <img src={pdimobile} alt="" width="60" className="d-inline-block align-center active" loading="lazy"
+                onClick={(()=>{
+                  setCollapse1(false)
+                })}
+              />
             </NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" style={{
-              color: '#fff'
+              color: '#fff',
             }} onClick={(()=>{
-              setShow(!show)
+              setCollapse1(!collapse1)
             })}>
               <i className="fa fa-bars" aria-hidden="true"></i>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent"             style={{
+              display: collapse1 ? 'block' : 'none',
+            }}>
+              <ul className="navbar-nav mx-auto mb-2 mb-lg-0"
+              >
 
                 {Object.keys(menu).map((e, i) => (
                   <li className="nav-item" style={{
@@ -214,17 +241,90 @@ const MainNavbar = ({token})=> {
                       setShow(e.name)
                     }}
                   >
-                      <NavLink className="nav-link" to={'/' + e.replace(/\s/g, '-').toLowerCase()} activeClassName='active'>{e}</NavLink>
+                      <NavLink className="nav-link" to={'/' + e.replace(/\s/g, '-').toLowerCase()} activeClassName='active'
+                        onClick={(()=>{
+                          setCollapse1(!collapse1)
+                        })}
+                      >{e}</NavLink>
 
                       {show === e && (
                           <DropDown menuItem={Object.values(menu)} listIndex={i}/>
                       )}
-                      
 
-
-
+                        {/* Container Dropdown menu mobile */}
+                        <div className="dropdown-menu-mobile"
+                            style={{
+                              height: trigger1 ? '50px' : '0',
+                              transition: trigger1 ? '0.5s ease-in-out' : '0.3s ease-in'
+                            }}
+                        >
+                            <Link className="page-menu-drop-mobile"
+                              style={{
+                                color: '#f3f3f3',
+                              }}
+                            >
+                              Menu Partai
+                            </Link>
+                        </div>
+                        {/* end Container Dropdown menu mobile */}
                   </li>
                 ))}
+
+                {/* Trigger For Menu Dropdown menu mobile */}
+                <div className="btn-menu-drop-mobile">
+                    {/* btn drop 1 */}
+                    <li className="list-btn-menu-drop">
+                      <i className="fas fa-angle-down" id="icon-menuDrop"
+                        onClick={(()=>{
+                          setTrigger1(!trigger1)
+                        })}
+                        style={{
+                          transform: trigger1 ? 'rotate(-180deg)' : 'rotate(0)',
+                          color : trigger1 ? '#333' : '#f3f3f3',
+                          fontSize: trigger1 ? '20pt' : '13pt',
+                          transition: trigger1 ? '0.5s ease-in-out' : '0.3s ease-in'
+                        }}
+                      ></i>
+                    </li>
+
+                    {/* btn drop 2 */}
+                    <li className="list-btn-menu-drop">
+                      <i className="fas fa-angle-down" id="icon-menuDrop"></i>
+                    </li>
+
+                    {/* btn drop 3 */}
+                    <li className="list-btn-menu-drop">
+                      <i className="fas fa-angle-down" id="icon-menuDrop"></i>
+                    </li>
+
+                    {/* btn drop 4 */}
+                    <li className="list-btn-menu-drop">
+                      <i className="fas fa-angle-down" id="icon-menuDrop"></i>
+                    </li>
+
+                    {/* btn drop 5 */}
+                    <li className="list-btn-menu-drop">
+                      <i className="fas fa-angle-down" id="icon-menuDrop"></i>
+                    </li>
+
+                    {/* btn drop 6 */}
+                    <li className="list-btn-menu-drop">
+                      <i className="fas fa-angle-down" id="icon-menuDrop"></i>
+                    </li>
+
+                    {/* btn drop 7 */}
+                    <li className="list-btn-menu-drop">
+                      <i className="fas fa-angle-down" id="icon-menuDrop"></i>
+                    </li>
+                </div>
+                {/* END Trigger For Menu Dropdown menu mobile */}
+
+                    {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown" expanded>
+                      {e.listItem.map((e)=>(
+                        <li><Link class="dropdown-item" to={e.listTo}>{e.listName}</Link></li>
+                        
+                      ))}
+                    </ul> */}
 
               </ul>
               <form className="d-inline-flex">

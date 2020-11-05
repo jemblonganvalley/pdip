@@ -24,7 +24,6 @@ const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
                     ))}
                 </div>
             </div>
-
         </>
     )
 }

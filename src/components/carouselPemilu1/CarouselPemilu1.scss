@@ -1,8 +1,21 @@
 // Responsive Max Width 500px
-@media screen and (max-width: 500px){
+// @media screen and (max-width: 500px){
     
-}
+// }
 // END Responsive Max Width 500px
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
 
 // Carousel
 .carousel1-pemiluPage{
@@ -51,6 +64,10 @@
         width: 100%;
         justify-content: center;
         align-items: center;
+        
+        @include respon950(){
+            height: 100px;
+        }
 
         #btn-left-carousel1{
             display: flex;
@@ -66,6 +83,13 @@
             &:hover{
                 opacity: 1;
             }
+            
+            @include respon950(){
+                height: 50px;
+                width: 50px;
+                margin: 0 30px 0 0;
+                font-size: 18pt;
+            }
         }
         
         #btn-right-carousel1{
@@ -77,9 +101,15 @@
             color: #000;
             border-radius: 500px;
             transition: .5s;
-    
+
             &:hover{
                 opacity: 1;
+            }
+
+            @include respon950(){
+                height: 50px;
+                width: 50px;
+                font-size: 18pt;
             }
         }
     }

@@ -11,11 +11,27 @@ $smallPhoneDua : 400px;
     }
 }
 
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
+
 
 .container-carousel-ketuaUmumPage{
-    display: flex;
     height: 50vh;
     width: 100%;
+
+    @include respon950(){
+        height: 45vh;
+    }
 
     @include smallPhone(){
         height: 45vh;
@@ -30,18 +46,20 @@ $smallPhoneDua : 400px;
     }
 
     .carousel-ketuaUmumPage{
-        display: flex;
+        height: 100%;
         width: 100%;
         overflow: hidden;
 
         .col1-container-1-carousel-ketuaUmumPage{
-            display: flex;
-            flex-direction: column;
-            height: auto;
+            height: 50vh;
             width: 100%;
             background-position: center;
             background-size: cover;
             overflow: hidden;
+            
+            @include respon950(){
+                height: 45vh;
+            }
 
             .cont-img-col1{
                 display: flex;
@@ -50,6 +68,10 @@ $smallPhoneDua : 400px;
                 width: 100%;
                 overflow: hidden;
 
+                @include respon950(){
+                    height: 55vh;
+                }
+
                 @include smallPhone(){
                     height: 45vh;
                 }
@@ -57,19 +79,24 @@ $smallPhoneDua : 400px;
                 // Column1
                 .col1-img{
                     display: flex;
+                    flex-direction: column;
                     height: 70%;
                     width: 100%;
                     overflow: hidden;
                     border-bottom: 1px solid #fff;
+
+                    @include respon950(){
+                        height: 55%;
+                    }
 
                     @include smallPhone(){
                         height: 65%;
                     }
 
                     .box-txt-title{
-                        display: flex;
+                        display: none;
                         height: 100%;
-                        width: auto;
+                        width: 100%;
                         justify-content: center;
                         align-items: center;
                         overflow: hidden;
@@ -89,6 +116,10 @@ $smallPhoneDua : 400px;
 
                     &:hover{
                         background: #111;
+                    }
+
+                    @include respon950(){
+                        height: 45%;
                     }
                     
                     @include smallPhone(){

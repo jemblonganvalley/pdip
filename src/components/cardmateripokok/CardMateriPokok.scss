@@ -13,6 +13,54 @@ $smallPhoneDua : 400px;
     }
 }
 
+// min width 1361px and max width 1440px
+$responMin1361: 1361px;
+$responMax1440: 1440px;
+
+@mixin respon1440{
+    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
+        @content;
+    }
+}
+// end min width 1361px and max width 1440px
+
+// min width 951 and max width 1360px
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+// end min width 951 and max width 1360px
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950
+
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max width 750
+
 .cont-card-materi-pk{
     display: flex;
     flex-direction: column;
@@ -29,6 +77,34 @@ $smallPhoneDua : 400px;
         background: $darkRedTwo;
         color: #fff;
     }
+
+    // Min width 951px and max width 1360px
+    @include respon1360(){
+        height: 350px;
+        max-height: 400px;
+        margin: 20px 10px 0 10px;
+        width: calc(90%/3);
+        flex: 1 1 auto;
+    }
+    // END Min width 951px and max width 1360px
+
+    // Min width 750px and max width 950px
+    @include respon950(){
+        height: 350px;
+        max-height: 400px;
+        margin: 20px 5px 0 5px;
+        width: calc(90%/3);
+        flex: 1 1 auto;
+    }
+    // END Min width 750px and max width 950px
+
+    // Min width 500px and max width 750px
+    @include respon750(){
+        height: 350px;
+        margin: 20px 0px 0 0px;
+        width: 100%;
+    }
+    // END Min width 500px and max width 750px
 
     @include smallPhone(){
         height: auto;

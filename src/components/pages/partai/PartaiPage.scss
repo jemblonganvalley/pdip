@@ -62,6 +62,28 @@ $responMax950: 950px;
 }
 // END Min widht 750 and max width 950
 
+// min width 951 and max width 1360px
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+// end min width 951 and max width 1360px
+
+// min width 1361px and max width 1440px
+$responMin1361: 1361px;
+$responMax1440: 1440px;
+
+@mixin respon1440{
+    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
+        @content;
+    }
+}
+// end min width 1361px and max width 1440px
+
     //START CSS
 
 .wrapperPartai {
@@ -81,6 +103,18 @@ $responMax950: 950px;
         margin-top: 15px;
         padding: 10px 10%;
 
+        @include respon1360(){
+            padding: 10px 5%;
+        }
+
+        @include respon950(){
+            padding: 10px 5%;
+        }
+
+        @include respon750(){
+            padding: 10px 5%;
+        }
+
         @include smallPhone() {
             // border: 1px solid crimson;
             width: 100%;
@@ -96,6 +130,21 @@ $responMax950: 950px;
         justify-content: center;
         align-items: center;
         margin: 0px 0 40px 0;
+
+        @include respon1440(){
+            padding: 0px 10%;
+        }
+
+        // Min widht 951px and max width 1360px
+        @include respon1360(){
+            padding: 0px 5%;
+        }
+        // Min widht 951px and max width 1360px
+
+        @include respon950(){
+            padding: 0 2%;
+            margin: 0px 0 20px 0;
+        }
 
         // Min width 500px and max width 750px
         @include respon750(){
@@ -124,7 +173,7 @@ $responMax950: 950px;
             
             // min width 750px and max width 950px
             @include respon950(){
-                flex-direction: column-reverse;
+                // flex-direction: column-reverse;
             }
             // end min width 750px and max width 950px
 
@@ -148,9 +197,9 @@ $responMax950: 950px;
                 // border: 1px solid red;
 
                 @include respon950(){
-                    height: auto;
+                    height: 50vh;
                     padding: 0px;
-                    margin: 20px 0;
+                    margin: 20px 0 10px 0;
                 }
 
                 @include respon750(){
@@ -174,12 +223,12 @@ $responMax950: 950px;
 
                     // Min width 750px and max width 950px
                     @include respon950(){
-                        height: 15vh;
-                        background: #fff;
-                        margin: 0.5rem 0 0 0;
+                        height: calc(100%/4);
+                        // background: #fff;
+                        gap: 40px;
                         padding: 0px;
-                        justify-content: center;
-                        border-radius: 5px;
+                        justify-content: flex-start;
+                        // border-radius: 5px;
                     }
                     // END Min width 750px and max width 950px
 
@@ -214,13 +263,13 @@ $responMax950: 950px;
 
                         // min width 750px and max width 950px
                         @include respon950(){
-                            width: 50%;
+                            // width: 50%;
                         }
                         // end min width 750px and max width 950px
 
                         // min width 500px and max width 750px
                         @include respon750(){
-                            width: 70%;
+                            width: 60%;
                         }
                         // end min width 500px and max width 750px
 
@@ -231,29 +280,27 @@ $responMax950: 950px;
                         // max width 500px
 
                         .imgMobilePartai{
-                            height: 75px;
-                            width: 75px;
+                            height: 50%;
                             object-fit: cover;
                             object-position: center;
     
                             // Min width 500px and max width 750px
-                            @include respon750(){
-                                height: 60px;
-                                width: 60px;
+                            @include respon950(){
+                                height: 55%;
                             }
                             // END Min width 500px and max width 750px
     
                             // Min width 1000px
                             @include deviceOne(){
-                                height: 50px;
-                                width: 50px;
+                                // height: 50px;
+                                // width: 50px;
                             }
                             // END Min width 1000px
     
                             // Max width 500px
                             @include smallPhone(){
-                                height: 60px;
-                                width: 60px;
+                                // height: 60px;
+                                // width: 60px;
                             }
                             // END Max width 500px
                         }
@@ -333,9 +380,15 @@ $responMax950: 950px;
                 width: 100%;
                 padding: 0 33.5% 0 0;
 
+                // @include respon1360(){
+                //     padding: 0 205px 0 0;
+                //     margin: 0 0 0 20px;
+                // }
+
                 // Min width 750px and max width 950px
                 @include respon950(){
-                    padding: 0;
+                    padding: 0 205px 0 0;
+                    margin: 0 0 0 20px;
                 }
                 // END Min width 750px and max width 950px
 
@@ -459,20 +512,58 @@ $responMax950: 950px;
     }
     // END CONTAINER SATU
 
-    
+    // divider tata kelola
+    .divider-tata-kelolaPdi{
+        display: flex;
+        height: auto;
+        width: 100%;
+        padding: 0 20%;
+        align-items: center;
+
+        @include respon1440(){
+            padding: 0 10%;
+        }
+
+        @include respon1360(){
+            padding: 0 5%;
+        }
+
+        @include respon950(){
+            padding: 0 2%;
+        }
+        
+        @include respon750(){
+            padding: 0 15%;
+        }
+
+        @include smallPhone(){
+            padding: 0 10px;
+        }
+    }
+    // end divider tata kelola
 
     .containerTiga {
         padding: 0 20%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 3rem;
+        margin-top: 0rem;
         // height: 85vh;
+
+        @include respon1440(){
+            flex-direction: row;
+            padding: 0 10%;
+        }
+
+        @include respon1360(){
+            flex-direction: row;
+            padding: 0 5%;
+        }
 
         // Min width 750px and max width 950px
         @include respon950(){
-            flex-direction: column;
-            padding: 0 20%;
+            flex-direction: row;
+            padding: 0 2%;
         }
         // END Min width 750px and max width 950px
 
@@ -487,7 +578,7 @@ $responMax950: 950px;
         @include smallPhone() {
             flex-direction: column;
             padding: 0 10%;
-            margin-top: 40px;
+            margin-top: 10px;
         }
         // END Max width 500px
 
@@ -508,7 +599,7 @@ $responMax950: 950px;
             // min width 750px and max width 950px
             @include respon950(){
                 padding: 0 0 0 0px;
-                margin: 0;
+                margin-left: 2rem;
             }
             // end min width 750px and max width 950px
 
@@ -566,9 +657,10 @@ $responMax950: 950px;
                     display: flex;
                     letter-spacing: 1px;
                     margin-top: 1.5rem;
+                    margin-left: 2rem;
                     margin-bottom: 2rem;
                     font-weight: bold;
-                    justify-content: center;
+                    justify-content: flex-start;
                     text-align: center;
                 }
 
@@ -623,6 +715,18 @@ $responMax950: 950px;
         align-items: center;
         flex-direction: column;
         padding: 0px 20% 20px 20%;
+
+        @include respon1440(){
+            padding: 0 10% 20px 10%;
+        }
+
+        @include respon1360(){
+            padding: 0 5% 20px 5%;
+        }
+
+        @include respon950(){
+            padding: 0 2% 20px 2%;
+        }
 
         // min width 500px and max width 750px
         @include respon750(){
@@ -681,6 +785,7 @@ $responMax950: 950px;
         align-items: center;
         color: #ffffff;
         position: relative;
+        padding: 0 50px;
 
         @include respon950() {
             height: 40vh;
@@ -701,7 +806,7 @@ $responMax950: 950px;
         }
 
         h2 {
-            margin-top: 6rem;
+            margin-top: 10rem;
             text-align: center;
             font-weight: bold;
 
@@ -746,14 +851,31 @@ $responMax950: 950px;
     }
 
     .maps {
-        padding: 20px 10% 0px 10%;
+        padding: 40px 10% 0px 10%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         position: relative;
+
+        @include respon1440(){
+            padding: 40px 10%;
+        }
+
+        @include respon1360(){
+            padding: 40px 5%;
+        }
+
+        @include respon950(){
+            padding: 40px 2%;
+        }
+
+        @include respon750(){
+            padding: 40px 15% 0 15%;
+        }
+
         @include smallPhone() {
-            padding: 10px 0px 0 0px;
+            padding: 20px 0px 0 0px;
         }
 
         h5 {

@@ -86,10 +86,6 @@ const MultimediaPage = () => {
               image2={`https://atur.biar.pw/public/${configHome[2].value[1].image}`}
               image3={`https://atur.biar.pw/public/${configHome[2].value[2].image}`}
               image4={`https://atur.biar.pw/public/${configHome[2].value[3].image}`}
-              width1="35"
-              width2="35"
-              width3="35"
-              width4="35"
               text={`${configHome[2].value[0].title}`}
               text2={`${configHome[2].value[1].title}`}
               text3={`${configHome[2].value[2].title}`}
@@ -134,7 +130,17 @@ const MultimediaPage = () => {
                 cardType={e.filetype}
               />
             ))}
-          </div>
+
+              <div className="button-cardBerita">
+                <MainButton
+                name="lihat semua"
+                margin="0px 0 0 0"
+                pages=""
+              />
+              </div>
+  
+            </div>
+
         </div>
       ) : (
         <Wait />

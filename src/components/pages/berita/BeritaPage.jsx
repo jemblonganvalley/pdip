@@ -13,7 +13,7 @@ import megawati6 from '../../../img/megawati6.jpg'
 import megawati7 from '../../../img/megawati7.jpg'
 
 import CardInformasi from '../../cardInformasi/CardInformasi'
-
+import ketuaUmum7 from '../../../img/ketuaumum7.jpg'
 import BeritaSatu from '../../../img/berita1.png'
 import BeritaDua from '../../../img/berita2.png'
 import BeritaTiga from '../../../img/berita3.png'
@@ -115,6 +115,14 @@ const BeritaPage = () => {
                 />
               );
             })}
+
+            <div className="btn1-beritaPage">
+              <MainButton
+                name="lihat semua"
+                margin="0px 0 0 0"
+                pages=""
+              />
+            </div>
           </div>
 
           {/* END Column3 */}
@@ -136,10 +144,11 @@ const BeritaPage = () => {
         {/* END Container1 */}
 
         {/* Container2 */}
-        <div className="container-2-beritaPage" style={{
-            backgroundImage : `url(https://atur.biar.pw/public/${configHome[6].value.image})`
-          }}>
-
+        <div className="container-2-beritaPage"
+            style={{
+              backgroundImage: `url(${ketuaUmum7})`
+            }}
+        >
           {/* Column1 */}
           <div className="col1-container-2-beritaPage banner-berita" >
             <h2 className="txt-title-col1">
@@ -187,6 +196,14 @@ const BeritaPage = () => {
                 />
               );
             })}
+
+            <div className="btn1-beritaPage">
+              <MainButton
+                name="lihat semua"
+                margin="0px 0 0 0"
+                pages=""
+              />
+            </div>
           </div>
           {/* END Column2 */}
 
@@ -219,6 +236,14 @@ const BeritaPage = () => {
                 />
               );
             })}
+
+            <div className="btn1-beritaPage">
+              <MainButton
+                name="lihat semua"
+                margin="0px 0 0 0"
+                pages=""
+              />
+            </div>
           </div>
 
           {/* END Column4 */}

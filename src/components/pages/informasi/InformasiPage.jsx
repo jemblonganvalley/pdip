@@ -11,6 +11,7 @@ import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
 import illustrator from "../../../img/illustrator2.png";
 import CardHeader from "../../cardheader/CardHeader";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import Wait from "../../wait/Wait";
 import parse from "html-react-parser";
 
@@ -30,6 +31,8 @@ const anchorLink = (props) => {
     </a>
   );
 };
+=======
+>>>>>>> ridwan_style12
 
 const InformasiPage = () => {
   const [gallery, setGallery] = useState([]);
@@ -176,6 +179,7 @@ const InformasiPage = () => {
             />
 
             {/* CARD LAPORAN */}
+<<<<<<< HEAD
             <div
               className="containerLaporan"
               style={{
@@ -192,6 +196,23 @@ const InformasiPage = () => {
                   <h6 className="hartaKekayaan h5Harta">
                     {configHome[4].value[0].title}
                   </h6>
+=======
+            <div className="containerLaporan">
+              
+              <div className="cardLaporan cardLaporanSatu">
+                <div className="box-card-laporan">
+                  <img
+                    src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
+                    alt=""
+                    className="imageHarta"
+                  />
+                  <div className="textHarta">
+                    <h6 className="hartaKekayaan h5Harta">
+                      {configHome[4].value[0].title}
+                    </h6>
+          
+                  </div>
+>>>>>>> ridwan_style12
                 </div>
               </Link>
 
@@ -242,6 +263,7 @@ const InformasiPage = () => {
 
           {/* wrapper-cardLaporan2 */}
           <div className="wrapper-cardLaporan2">
+<<<<<<< HEAD
             {/* CARD LAPORAN */}
             <div
               className="containerLaporan"
@@ -250,6 +272,15 @@ const InformasiPage = () => {
               }}
             >
               <Link component={anchorLink} linkTo="/detail-article/658/lhkpn">
+=======
+
+          {/* CARD LAPORAN */}
+          <div className="containerLaporan" style={{
+                marginTop : '20px'
+            }}>
+              
+              <Link to="/formpdi" className="cardLaporan cardLaporanSatu">
+>>>>>>> ridwan_style12
                 <div className="box-card-laporan">
                   <img
                     src={`https://atur.biar.pw/public/${configHome[7].value[0].image}`}
@@ -263,11 +294,16 @@ const InformasiPage = () => {
                   </div>
                 </div>
               </Link>
+<<<<<<< HEAD
 
               <Link
                 component={anchorLink}
                 linkTo="/article/227/laporan-keuangan"
               >
+=======
+              
+              <Link to="/formkeluhan" className="cardLaporan cardLaporanDua">
+>>>>>>> ridwan_style12
                 <div className="box-card-laporan">
                   <img
                     src={`https://atur.biar.pw/public/${configHome[7].value[1].image}`}
@@ -281,6 +317,10 @@ const InformasiPage = () => {
                   </div>
                 </div>
               </Link>
+<<<<<<< HEAD
+=======
+
+>>>>>>> ridwan_style12
             </div>
             {/* END CARD LAPORAN */}
           </div>

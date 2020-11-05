@@ -41,23 +41,33 @@ $deviceFour : 1300px;
     }
 }
 
-// Max-height 600px
+// Max-height 600px and max width 500px
 $mobile600 : 600px;
 @mixin mobile600 {
-    @media(max-height: #{$mobile600}){
+    @media(max-height: #{$mobile600}) and (max-width: #{$maxWidth500px}){
         @content;
     }
 }
-// END Max-height 600px
+// END Max-height 600px and max width 500px
 
-// Min-height 650px
-$mobile650 : 650px;
-@mixin mobile650 {
-    @media(min-height: #{$mobile650}){
+// min height 500px and max width 500px
+$minHeight500: 500px;
+@mixin minHeight500 {
+    @media (min-height: #{$minHeight500}) and (max-width: #{$maxWidth500px}) {
         @content;
     }
 }
-// END Min-height 650px
+// end min height 500px and max width 500px
+
+// Min-height 650px and max width 500px
+$mobile650 : 650px;
+$maxWidth500px: 500px;
+@mixin mobile650 {
+    @media(min-height: #{$mobile650}) and (max-width: #{$maxWidth500px}){
+        @content;
+    }
+}
+// END Min-height 650px and max width 500px
 
 // Min-height 700px
 $mobile700 : 700px;
@@ -66,6 +76,19 @@ $mobile700 : 700px;
         @content;
     }
 }
+
+// max height 691 and max width 500px
+// end max height 691 and max width 500px
+
+// min height 700 and max width 500px
+$minHeight700: 700px;
+
+@mixin minHeight700 {
+    @media (min-height: #{$minHeight700}) and (max-width: #{$maxWidth500px}) {
+        @content;
+    }
+}
+// end min height 700 and max width 500px
 
 // Min-height 750px
 $mobile750 : 750px;
@@ -105,6 +128,84 @@ $respon500: 500px;
 }
 // END Min widht 500 and Max height 900
 
+// min height 400 and max width 500px
+$minHeight400: 400px;
+
+@mixin minHeight400 {
+    @media (min-height: #{$minHeight400}) and (max-width: #{$maxWidth500px}) {
+        @content;
+    }
+}
+// end min height 400 and max width 500px
+
+// max height 1280 and max width 750px
+$maxHeight1280: 1280px;
+$maxWidth750: 750px;
+
+@mixin maxHeight1280 {
+    @media (max-height: #{$maxHeight1280}) and (max-width: #{$maxWidth750}) {
+        @content;
+    }
+}
+// end max height 1280 and max width 750px
+
+// max heigth 690px and max width 500px
+$maxHeight690: 690px;
+$maxWidth500px: 500px;
+// max heigth 690px and max width 500px
+
+// max heigth 690px and max width 500px
+@mixin maxHeihgt690{
+    @media(max-height: #{$maxHeight690}) and (max-width: #{$maxWidth500px}){
+        @content;
+    }
+}
+// max heigth 690px and max width 500px
+
+// min height 770px and min width 500px
+$minHeight770px: 770px;
+$minWidth500px: 500px;
+
+@mixin minHeight770{
+    @media (min-height: #{$minHeight770px}) and (min-width: #{$minWidth500px}) {
+        @content;
+    }
+}
+// end min height 770px and min width 500px
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950 
+
+// min height 901 and max width 1360
+$minHeight901: 901px;
+
+@mixin minHeight901 {
+    @media (min-height: #{$minHeight901}) and (max-width : #{$responMax950}) {
+        @content;
+    }
+}
+// end min height 901 and max width 1360
+
+// min height 700 and min width 1361
+$minWidth1360: 1360px;
+@mixin minHeight700Desktop {
+    @media (min-height: #{$minHeight700}) and (min-width: #{$minWidth1360}) {
+        @content;
+    }
+}
+// end min height 700 and min width 1361
+
+
 .image1 {
     display: flex;
     height: 100%;
@@ -114,16 +215,25 @@ $respon500: 500px;
     padding: 0px 0 0px 0;
     border-radius: 10px;
 
+    @include respon950(){
+        height: auto;
+        width: 100%;
+        padding: 0 0 5px 0;
+        border-radius: 0;
+    }
+
     // Min widht 500 and max height 900
     @include respon750(){
-        height: 40vh;
-        max-height: 40vh;
+        height: auto;
+        width: 100%;
+        padding: 0 0 5px 0;
+        border-radius: 0;
     }
     // END min width 500 and max height 900
     
     // Max widht 500px
     @include smallPhone() {
-        height: 70vh;
+        height: auto;
         width: 100%;
         padding: 0 0 5px 0;
         border-radius: 0;
@@ -137,13 +247,30 @@ $respon500: 500px;
 
     // Min height 650
     @include mobile650(){
-        height: 65vh;
+        height: 85vh;
     }
 
     // Min height 700
     @include mobile700(){
         height: 60vh;
     }
+
+    // min height 700 and max width 500px
+    @include minHeight700(){
+        height: 80vh;
+    }
+    // end min height 700 and max width 500px
+
+    // max height 690px max width 500px
+    @include maxHeihgt690(){
+        height: 75vh;
+    }
+
+    // max height 1280 and max width 750
+    @include maxHeight1280(){
+        height: 75vh;
+    }
+    // end max height 1280 and max width 750
 
     // Min height 750
     // @include mobile750(){
@@ -243,12 +370,43 @@ $respon500: 500px;
             width: 80%;
         }
 
+        // min height 901 and max width 1360
+        @include minHeight901(){
+            flex-direction: column-reverse;
+            box-shadow: none;
+        }
+        // end min height 901 and max width 1360
+
+        @include respon750() {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background-size: cover;
+            height: 80vh;
+            width: 100%;
+            background: none;
+            background-repeat: no-repeat;
+            align-items: flex-start;
+            text-align: center;
+            opacity: 1;
+            padding: 0 0 45px 0;
+            overflow: hidden;
+            background-color: $colors;
+            border-radius: 0;
+        }
+
+        // max height 1280 and max width 750px
+        // @include maxHeight1280(){
+        //     height: 80vh;
+        // }
+        // end max height 1280 and max width 750px
+
         @include smallPhone() {
             display: flex;
             flex-direction: column;
             position: relative;
             background-size: cover;
-            height: 100%;
+            height: auto;
             width: 100%;
             background: none;
             background-repeat: no-repeat;
@@ -276,11 +434,28 @@ $respon500: 500px;
             // box-shadow: 2px 0px 5px -2px rgba(0, 0, 0, 0.3);
             z-index: 10;
 
+            // min height 901 and max width 1360
+            @include minHeight901(){
+                display: flex;
+                height: 43%;
+                width: 100%;
+                padding: 30px 50px;
+                background-color: transparent;
+            }
+            // end min height 901 and max width 1360
+
             // Min widht 500 and max height 900
             @include respon750(){
-                width: 40%;
+                display: none;
+                // width: 40%;
             }
             // END Min width 500 and max height 900
+
+            // max height 1280 and max width 750
+            @include maxHeight1280(){
+                display: none;
+            }
+            // end max height 1280 and max width 750
 
             // max widht 500px
             @include smallPhone(){
@@ -295,11 +470,29 @@ $respon500: 500px;
             height: 100%;
             width: 70%;
 
+            // min height 901 and max width 1360
+            @include minHeight901(){
+                display: flex;
+                height: 70%;
+                width: 100%;
+            }
+            // end min height 901 and max width 1360
+
             // min width 500px and max heigth 900px
             @include respon750(){
-                width: 60%;
+                display: flex;
+                height: 50%;
+                width: 100%;
+                z-index: 8;
             }
             // END min width 500px and max height 900px
+
+            // max height 1280 and max width 750px
+            @include maxHeight1280(){
+                height: 50%;
+                width: 100%;
+            }
+            // end max height 1280 and max width 750px
 
             // max widht 500px
             @include smallPhone(){
@@ -309,6 +502,12 @@ $respon500: 500px;
                 z-index: 8;
             }
             // END max width 500px
+
+            // min height 700px and max width 500px
+            @include minHeight700(){
+                height: 50%;
+            }
+            // end min height 700px and max width 500px
 
             .img-home-mainSlider{
                 display: flex;
@@ -326,6 +525,11 @@ $respon500: 500px;
                 }
                 // END Responsive Max Width 1300px
 
+                @include respon750(){
+                    display: flex;
+                    height: 100%;
+                }
+
                 @include smallPhone(){
                     display: flex;
                 }
@@ -342,11 +546,12 @@ $respon500: 500px;
             color: rgb(170, 5, 5);
             font-weight: bold;
             
-            // min width 500px and max width 750px
-            @include respon750(){
-                display: none;
+            // min height 901 and max width 1360
+            @include minHeight901(){
+                text-align: center;
+                color: #fff;
             }
-            // end min width 500px and max width 750px
+            // end min height 901 and max width 1360
             
             // max width 500px
             @include smallPhone() {
@@ -392,6 +597,12 @@ $respon500: 500px;
             color: #000;
             margin: 10px 0 0 0;
 
+            // min height 901 and max width 1360
+            @include minHeight901(){
+                display: none;
+            }
+            // end min height 901 and max width 1360
+
             @include respon750(){
                 display: none;
             }
@@ -408,20 +619,54 @@ $respon500: 500px;
         .box-paragrap-mobile-mainSlider{
             display: none;
 
-            @include smallPhone(){
+            @include respon750(){
                 display: flex;
                 position: absolute;
-                height: 60%;
+                height: 55%;
                 width: 100%;
                 bottom: 0;
                 // box-shadow: 0 3px 7px -1px rgba(0,0,0,0.7);
             }
 
-            // Max height
+            // max height 1280 and max width 750px
+            @include maxHeight1280(){
+                display: flex;
+                position: absolute;
+                height: 55%;
+                width: 100%;
+                bottom: 0;
+            }
+            // end max height 1280 and max width 750px
+
+            @include smallPhone(){
+                display: flex;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                bottom: 0;
+                // box-shadow: 0 3px 7px -1px rgba(0,0,0,0.7);
+            }
+
+            // Min height 500px and max width 500px
+            @include mobile650(){
+                height: 60%;
+                max-height: 60%;
+            }
+            // end Min height 500px and max width 500px
+
+            // Min height 600px and max width 500px
+            @include mobile650(){
+                height: 60%;
+                max-height: 60%;
+            }
+            // end Min height 650px and max width 500px
+
+            // Max height 600px and max width 500px
             @include mobile600(){
                 height: 60%;
                 max-height: 60%;
             }
+            // end Max height 600px and max width 500px
 
             // Title For Mobile
             .box-red-mobile-mainSlider{
@@ -436,6 +681,38 @@ $respon500: 500px;
                 padding: 0;
 
                 h1{
+                    // min heigth 650px and max width 500px
+                    @include respon750(){
+                        display: flex;
+                        position: static;
+                        height: auto;
+                        max-height: 50%;
+                        width: 100%;
+                        font-size: 10pt;
+                        justify-content: center;
+                        text-align: center;
+                        margin: 0;
+                        overflow: hidden;
+                        color: #fff;
+                        padding: 20px 20px;
+                    }
+                    // end min heigth 650px and max width 500px
+
+                    @include maxHeight1280(){
+                        display: flex;
+                        position: static;
+                        height: auto;
+                        max-height: 50%;
+                        width: 100%;
+                        font-size: 15pt;
+                        justify-content: center;
+                        text-align: center;
+                        margin: 0;
+                        overflow: hidden;
+                        color: #fff;
+                        padding: 20px 20px;
+                    }
+
                     @include smallPhone(){
                         display: flex;
                         position: static;
@@ -450,15 +727,47 @@ $respon500: 500px;
                         color: #fff;
                         padding: 20px 20px;
                     }
+
+                    // min height 700px and max width 500px
+                    @include minHeight700(){
+                        margin-top: 60px;
+                        max-height: 80%;
+                    }
+                    // end min height 700px and max width 500px
                 }
 
                 .txt-info-iklan-mobile{
                     display: flex;
                     position: absolute;
+                    font-size: 9pt;
                     width: 100%;
                     color: #fff;
                     padding: 0 20px;
-                    bottom: 70px;
+                    bottom: 65px;
+                    text-align: center;
+
+                    // min height 400 and max width 500
+                    @include minHeight400(){
+                        top: 130px;
+                    }
+                    // end min height 400 and max width 500
+
+                    // min height 700 and max width 500px
+                    @include minHeight700(){
+                        bottom: 120px;
+                    }
+                    // end min height 700 and max width 500px
+
+                    // max height 1280 and max width 750px
+                    @include maxHeight1280(){
+                        bottom: 120px;
+                    }
+
+                    // min width 500px and max width 750px
+                    @include respon750(){
+                        bottom: 110px;
+                    }
+                    // end min width 500px and max width 750px
                 }
 
                 .logoAppStoreMobile{
@@ -478,12 +787,56 @@ $respon500: 500px;
                 // logo play store
                 .logoStoreMobile1{
                     bottom: 30px;
+
+                    // min height 400 and max width 500
+                    @include minHeight400(){
+                        top: 200px;
+                    }
+                    // end min height 400 and max width 500
+
+                    // min height 700 and max width 500px
+                    @include minHeight700(){
+                        bottom: 70px;
+                    }
+                    // end min height 700 and max width 500px
+                    
+                    // min height 1280 and max width 750px
+                    @include maxHeight1280(){
+                        bottom: 60px;
+                    }
+                    // end min height 1280 and max width 750px
+
+                    @include respon750(){
+                        bottom: 50px;
+                    }
                 }
                 // END Logo play store
 
                 // logo apps store
                 .logoStoreMobile2{
                     bottom: 0%;
+
+                    // min height 400 and max width 500
+                    @include minHeight400(){
+                        top: 230px;
+                    }
+                    // end min height 400 and max width 500
+
+                    // min height 700 and max width 500px
+                    @include minHeight700(){
+                        bottom: 30px;
+                    }
+                    // end min height 700 and max width 500px
+
+                    // min height 1280 and max width 500px
+                    @include maxHeight1280(){
+                        bottom: 20px;
+                    }
+                    // end min height 1280 and max width 500px
+
+                    @include respon750(){
+                        bottom: 10px;
+                    }
                 }
                 // END Logo apps store
 
@@ -624,12 +977,34 @@ $respon500: 500px;
     padding: 0px 10% 0px 10%;
     position: relative;
 
+    // min height 901 and max width 1360px
+    @include minHeight901(){
+        padding: 0;
+    }
+    // end min height 901 and max width 1360px
+
     // Min widht 500 and max height 950
     @include respon750(){
-        height: 65vh;
-        padding: 0 8%;
+        height: 80vh;
+        padding: 0;
     }
     // END Min width 500 and max height 950
+
+    // max height 1280 and max width 750px
+    @include maxHeight1280(){
+        height: 75vh;
+        padding: 0;
+    }
+    // end max height 1280 and max width 750
+
+    // for ketinggian carousel
+    // min height 770 and min width 500
+    // @include minHeight770(){
+    //     height: 75vh;
+    //     border: 1px solid yellow;
+    // }
+    // end min height 770 and min width 500
+    // end for ketinggian carousel
 
     // Max widht 500
     @include smallPhone(){
@@ -652,9 +1027,15 @@ $respon500: 500px;
 
             // Min width 500px and max height 900px
             @include respon750(){
-                height: 21vh;
+                display: none;
             }
             // END Min width 500px and max heigth 900px
+
+            // max height 1280 and max width 750px
+            @include maxHeight1280(){
+                display: none;
+            }
+            // end max height 1280 and max width 750
 
             // Respon max width 500
             @include smallPhone(){
@@ -673,6 +1054,14 @@ $respon500: 500px;
                 font-weight: normal;
                 color: #fff;
                 padding: 30px 0;
+
+                @include respon750(){
+                    display: none;
+                }
+
+                @include maxHeight1280(){
+                    display: none;
+                }
 
                 // Box Logo
                 .box-logo-info-iklan{
@@ -726,15 +1115,33 @@ $respon500: 500px;
 
         @include smallPhone() {
             margin-bottom: 0;
-            bottom: 125px;
+            bottom: 130px;
         }
+
+        // min height 400 and max width 500
+        @include minHeight400(){
+            top: 310px;
+        }
+        // end min height 400 and max width 500
+
+        // min height 700 and max width 500px
+        @include minHeight700(){
+            bottom: 200px;
+        }
+        // end min height 700 and max width 500px
 
         // Min widht 500 and max height 900
         @include respon750(){
             margin-bottom: 0;
-            bottom: 29%;
+            bottom: 160px;
         }
         // END Min width 500 and max height 900
+
+        // max height 1280 and max width 750px
+        @include maxHeight1280(){
+            bottom: 200px;
+        }
+        // end max height 1280 and max width 750px
         
             .indikator {
                 border-radius: 50%;
@@ -835,14 +1242,41 @@ $respon500: 500px;
         width: 30px;
     }
 
+    // min height 700 and max width 500px
+    @include minHeight700(){
+        height: 45px;
+        width: 45px;
+    }
+    // end min height 700 and max width 500px
+
     // Min widht 500 and max height 900
     @include respon750(){
-        left: 10px;
+        left: 20px;
         height: 40px;
         width: 40px;
+        top: -80px;
     }
     // END Min width 500 and max height 900
+
+    // min height 901 and max width 1360
+    @include minHeight901(){
+        top: -120px;
+    }
+    // end min height 901 and max width 1360
     
+    // max height 1280 and max width 750px
+    @include maxHeight1280(){
+        left: 20px;
+        height: 40px;
+        width: 40px;
+        top: -110px;
+    }
+
+    // min height 400 and max width 500
+    @include minHeight400(){
+        top: -60px;
+    }
+    // end min height 400 and max width 500
 }
 
 
@@ -886,12 +1320,39 @@ $respon500: 500px;
         width: 30px;
     }
 
+    // min height 700 and max width 500px
+    @include minHeight700(){
+        height: 45px;
+        width: 45px;
+    }
+    // end min height 700 and max width 500px
+
     // Min widht 500 and max height 900
     @include respon750(){
-        right: 10px;
+        right: 20px;
         height: 40px;
         width: 40px;
+        top: -80px;
     }
     // END Min width 500 and max height 900
+
+    // min height 901 and max width 1360
+    @include minHeight901(){
+        top: -120px;
+    }
+    // end min height 901 and max width 1360
     
+    // max height 1280 and max width 750px
+    @include maxHeight1280(){
+        right: 20px;
+        height: 40px;
+        width: 40px;
+        top: -110px;
+    }
+
+    // min height 400 and max width 500
+    @include minHeight400(){
+        top: -60px;
+    }
+    // end min height 400 and max width 500
 }

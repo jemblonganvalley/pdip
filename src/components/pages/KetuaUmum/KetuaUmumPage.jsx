@@ -14,6 +14,8 @@ import CardHeader from "../../cardheader/CardHeader";
 import CarouselDualKetuaumum from "../../carouselDualKetuaUmum/CarouselDualKetuaumum";
 import { Link } from "react-router-dom";
 import Wait from "../../wait/Wait";
+import { Button } from "@material-ui/core";
+import MainButton from "../../buttons/MainButton";
 // END Import to CSS
 
 // Create Component
@@ -154,6 +156,17 @@ const KetuaUmumPage = () => {
                   cardType={e.filetype}
                 />
               ))}
+
+            {/* Button View All */}
+            <div className="button1-cardBerita">
+            <MainButton
+              name="lihat semua"
+              margin="0px 0 0 0"
+              pages=""
+            />
+            </div>
+            {/* END Button View All */}
+
             </div>
             {/* END Column3 */}
           </div>
@@ -193,6 +206,16 @@ const KetuaUmumPage = () => {
                   cardType={e.filetype}
                 />
               ))}
+
+              {/* /* Button View All */}
+            <div className="button2-cardBerita">
+            <MainButton
+              name="lihat semua"
+              margin="0px 0 0 0"
+              pages=""
+            />
+            </div>
+            {/* END Button View All */}
             </div>
             {/* END Column6 */}
           </div>

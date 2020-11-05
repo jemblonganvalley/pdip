@@ -1,21 +1,17 @@
-import React from "react";
+import React from 'react'
 
-import bkbb2 from "../../../img/bkbb2.jpg";
-import bkbb3 from "../../../img/bkbb3.jpg";
-import bkbb4 from "../../../img/bkbb4.jpg";
+import bkbb2 from '../../../img/bkbb2.jpg'
+import bkbb3 from '../../../img/bkbb3.jpg'
+import bkbb4 from '../../../img/bkbb4.jpg'
 
-import "./BkbbWejangan.scss";
-import CardQuotes from "../../cardquotes/CardQuotes";
-import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
-import MainButton from "../../buttons/MainButton";
-import CardSocialMedia from "../../cardsocialmedia/CardSocialMedia";
-import CardHeader from "../../cardheader/CardHeader";
-import bkbbH from "../../../img/BKBB.jpg";
-import { Link, useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import Wait from "../../wait/Wait";
-import parser from "html-react-parser";
-import { useStoreActions, useStoreState } from "easy-peasy";
+import './BkbbWejangan.scss'
+import CardQuotes from '../../cardquotes/CardQuotes'
+import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
+import MainButton from '../../buttons/MainButton'
+import CardSocialMedia from '../../cardsocialmedia/CardSocialMedia'
+import CardHeader from '../../cardheader/CardHeader'
+import bkbbH from '../../../img/BKBB.jpg'
+import bkbb1 from '../../../img/bkbb1.jpg'
 
 const BkbbWejangan = () => {
   const setRefresher = useStoreActions((action) => action.setRefresher);

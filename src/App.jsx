@@ -37,6 +37,8 @@ import ContainerCardGallery from "./components/gallery/ContainerCardGallery";
 import BeritaFoto from "./components/pages/berita/beritafoto/BeritaFoto";
 import Gallery from "./components/pages/berita/gallery/Gallery";
 import ContainerCardMultimedia from "./components/multimedia/ContainerCardMultimedia";
+import FormPdi from "./components/pages/informasi/formpdi/FormPdi";
+import FormKeluhan from "./components/pages/informasi/formkeluhan/FormKeluhan";
 
 function App() {
   let [hide, setHide] = useState(true);
@@ -101,6 +103,17 @@ function App() {
           {/* CONTAINER CARD GALLERY*/}
           <Route path="/gallery/detail-gallery/:id/:slug">
             <Gallery />
+            </Route>
+          <Route path='/formkeluhan'>
+            <FormKeluhan/>
+          </Route>
+
+          <Route path='/formpdi'>
+            <FormPdi/>
+          </Route>
+
+          <Route path='/search'>
+              <Search/>
           </Route>
 
           {/* CONTAINER CARD GALLERY*/}

@@ -40,6 +40,67 @@ $responMax950: 950px;
 }
 // END Min widht 750 and max width 950
 
+// For Card info
+// min height 700px and min width 1300px
+$minHeight680: 680px;
+$minWidth1300: 1300px;
+
+@mixin minHeight680{
+    @media(min-height: #{$minHeight680}) and (min-width: #{$minWidth1300}) {
+        @content;
+    }
+}
+// min height 700px and min width 1300px
+// END For Card Info
+
+// for icon customRow
+// min height 800 and max width 750px
+$minHeight800: 800px;
+$maxWidth750: 750px;
+
+@mixin minHeight800{
+    @media (min-height: #{$minHeight800}) and (max-width: #{$maxWidth750}) {
+        @content;
+    }
+}
+// min height 800 and max width 750px
+// end for icon customRow
+
+// for icon customRow
+// min height 0 and max width 750px
+$minHeight580: 580px;
+$maxWidth750: 750px;
+
+@mixin minHeight580{
+    @media (min-height: #{$minHeight580}) and (max-width: #{$maxWidth750}) {
+        @content;
+    }
+}
+// min height 800 and max width 750px
+// end for icon customRow
+
+// min width 951 and max width 1360px
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+// end min width 951 and max width 1360px
+
+// min width 1361px and max width 1440px
+$responMin1361: 1361px;
+$responMax1440: 1440px;
+
+@mixin respon1440{
+    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
+        @content;
+    }
+}
+// end min width 1361px and max width 1440px
+
 .wrapperInformasi {
   width: 100%;
   padding-bottom: 40px;
@@ -282,6 +343,21 @@ $responMax950: 950px;
 
         @include respon950() {
           width: 100%;
+        }
+
+        @include respon1440(){
+            padding: 10px 10% 0 10%;
+            margin-top: 1rem;
+        }
+
+        @include respon1360(){
+            padding: 10px 5% 0 5%;
+            margin-top: 1rem;
+        }
+
+        @include respon950(){
+            padding: 10px 2% 0 2%;
+            margin-top: 1rem;
         }
 
         // min width 500px and max width 750px

@@ -62,7 +62,7 @@ $secondary : #f3f3f3;
         margin-bottom: 0;
 
         @include smallPhone(){
-            font-size: 12pt;
+            font-size: 14pt;
             // border: 1px solid blue;
         }
     }
@@ -72,7 +72,7 @@ $secondary : #f3f3f3;
         transition: .3s;
 
         @include smallPhone(){
-            font-size: 12pt;
+            font-size: 14pt;
         }
 
         // &:hover {

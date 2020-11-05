@@ -39,7 +39,6 @@ const StrukturPaginate = ({data, grade}) => {
             <CardCircle strukturCard={data} grade={grade}/>
             </div>
             
-
             <nav aria-label="Page navigation example" style={{
                 marginTop: '10px',
                 width: '100%',

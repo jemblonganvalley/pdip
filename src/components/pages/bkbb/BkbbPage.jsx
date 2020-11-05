@@ -209,14 +209,15 @@ const BkbbPage = () => {
           >
             <i className="fas fa-quote-right"></i>
             <h4 className="custom">{configHome[4].value.title}</h4>
-            <h5
+            <i className="fas fa-quote-right"></i>
+            <small
               className="custom"
               dangerouslySetInnerHTML={{
                 __html: configHome[4].value.paragraph,
               }}
-            ></h5>
-            <i className="fas fa-quote-right"></i>
-            <small>Bung Karno, 17 Agustus 1946</small>
+            ></small>
+            
+            {/* <small>Bung Karno, 17 Agustus 1946</small> */}
 
             {/* Background Black transparent */}
             <div className="bg-black-transparent"></div>
