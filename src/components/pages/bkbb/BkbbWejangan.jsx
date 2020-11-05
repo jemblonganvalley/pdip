@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import bkbb2 from '../../../img/bkbb2.jpg'
 import bkbb3 from '../../../img/bkbb3.jpg'
@@ -12,6 +12,9 @@ import CardSocialMedia from '../../cardsocialmedia/CardSocialMedia'
 import CardHeader from '../../cardheader/CardHeader'
 import bkbbH from '../../../img/BKBB.jpg'
 import bkbb1 from '../../../img/bkbb1.jpg'
+import { useStoreActions, useStoreState } from 'easy-peasy'
+import { useParams } from 'react-router-dom'
+import Wait from '../../wait/Wait'
 
 const BkbbWejangan = () => {
   const setRefresher = useStoreActions((action) => action.setRefresher);
@@ -136,7 +139,7 @@ const BkbbWejangan = () => {
                 <h5 className="txt2">{configHome.title}</h5>
 
                 {/* DESCRIPTION RIGHT */}
-                {parser(configHome.description)}
+                {/* {parser(configHome.description)} */}
 
                 <div className="box-medsos-bkbbWejangan">
                   {/* Card Social Media */}

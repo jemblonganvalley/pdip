@@ -40,7 +40,6 @@ export const CarouselDuelBerita = ({
                 {/* <small style={{padding : '0'}}>{e.author}</small> | &nbsp;
                             <small style={{padding : '0'}}>{e.created_at}</small> */}
 
-<<<<<<< HEAD
                 <h4>{e.title}</h4>
               </span>
 
@@ -68,30 +67,6 @@ export const CarouselDuelBerita = ({
                   objectPosition: "center",
                 }}
               />
-=======
-                            <h4>{e.title}</h4>
-
-                        </span>
-
-                        <span className="gradientOverlay" style={{
-                            width : '100%',
-                            height : '100%',
-                            position : 'absolute',
-                            background: `linear-gradient(rgba(255, 255, 255, 0) 60%, rgba(0,0,0,0.900) 90%)`,
-                            // backgroundBlendMode : 'multiply',
-                        }}></span>
-
-                        <img src={`https://www.pdiperjuangan.id/cms/${e.path}`} className="d-block w-100 carouselDual1Image" alt="..." key={i} style={{
-                            width : '100%',
-                            height : '40vh',
-                            objectFit : 'cover',
-                            objectPosition : 'center',
-
-                        }}/>
-                    </div>
-                ))}
-
->>>>>>> ridwan_style12
             </div>
           ))}
         </div>
@@ -160,7 +135,6 @@ export const CarouselDuelBerita = ({
                             
                         }}></span> */}
 
-<<<<<<< HEAD
               <img
                 src={
                   e.type === "youtube"
@@ -177,28 +151,6 @@ export const CarouselDuelBerita = ({
                   objectPosition: "center",
                 }}
               />
-=======
-                        <span className="gradientOverlay" style={{
-                            width : '100%',
-                            height : '100%',
-                            position : 'absolute',
-                            background: `linear-gradient(rgba(255, 255, 255, 0) 60%, rgba(0,0,0,0.900) 90%)`,
-                            // backgroundBlendMode : 'multiply',
-                        }}></span>
-
-                        <img src={`https://www.pdiperjuangan.id/cms/${e.path}`} className="d-block w-100 carouselDual1Image" alt="..." key={i} style={{
-                            width : '100%',
-                            height : '40vh',
-                            objectFit : 'cover',
-                            objectPosition : 'center',
-
-                        }}/>
-                    </div>
-                ))}
-
-
-
->>>>>>> ridwan_style12
             </div>
           ))}
         </div>
