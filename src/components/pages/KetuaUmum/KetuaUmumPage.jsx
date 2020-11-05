@@ -188,7 +188,7 @@ const KetuaUmumPage = () => {
 
           {/* Container2 */}
           <div className="container-2-ketuaumum">
-            <MainDivider text="Berita Terkait" garisMerah="7rem" mrgn="0px 0" />
+            <MainDivider text="Berita Terbaru" garisMerah="7rem" mrgn="0px 0" />
           </div>
           {/* END Container2 */}
 
@@ -204,6 +204,7 @@ const KetuaUmumPage = () => {
                   page="detail-article"
                   id={e.id}
                   cardType={e.filetype}
+                  category="Berita"
                 />
               ))}
 

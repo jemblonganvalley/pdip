@@ -249,6 +249,7 @@ const HomePage = () => {
                         page={`/detail-multimedia`}
                         id={e.id}
                         slug={e.title}
+                        category="Multimedia"
                       />
                     );
                   })}

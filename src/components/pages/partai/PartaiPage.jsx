@@ -274,7 +274,7 @@ const PartaiPage = () => {
                 }}
               >
                 <h2>{config[6].value.title}</h2>
-                <Link className="btn lihat">
+                <Link className="btn lihat" to={"/struktur-dpp"}>
                   <span>lihat</span>
                 </Link>
               </div>

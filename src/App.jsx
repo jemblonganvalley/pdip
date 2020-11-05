@@ -39,6 +39,7 @@ import Gallery from "./components/pages/berita/gallery/Gallery";
 import ContainerCardMultimedia from "./components/multimedia/ContainerCardMultimedia";
 import FormPdi from "./components/pages/informasi/formpdi/FormPdi";
 import FormKeluhan from "./components/pages/informasi/formkeluhan/FormKeluhan";
+import CardBkbbQuotes2 from "./components/cardbkbbquotes2/CardBkbbQuotes2";
 
 function App() {
   let [hide, setHide] = useState(true);
@@ -103,17 +104,17 @@ function App() {
           {/* CONTAINER CARD GALLERY*/}
           <Route path="/gallery/detail-gallery/:id/:slug">
             <Gallery />
-            </Route>
-          <Route path='/formkeluhan'>
-            <FormKeluhan/>
+          </Route>
+          <Route path="/formkeluhan">
+            <FormKeluhan />
           </Route>
 
-          <Route path='/formpdi'>
-            <FormPdi/>
+          <Route path="/formpdi">
+            <FormPdi />
           </Route>
 
-          <Route path='/search'>
-              <Search/>
+          <Route path="/search">
+            <Search />
           </Route>
 
           {/* CONTAINER CARD GALLERY*/}
@@ -130,7 +131,7 @@ function App() {
             <Page2 />
           </Route>
 
-          <Route path="/search">
+          <Route path="/search/:par">
             <Search />
           </Route>
           {/* 
@@ -208,6 +209,12 @@ function App() {
 
           <Route path="/ketua-umum">
             <KetuaUmumPage />
+          </Route>
+
+          {/* BUNG KARNO BAPAK BANGSA */}
+
+          <Route path="/bung-karno-bapak-bangsa/quotes/all">
+            <WejanganBungKarno />
           </Route>
 
           <Route path="/bung-karno-bapak-bangsa">
