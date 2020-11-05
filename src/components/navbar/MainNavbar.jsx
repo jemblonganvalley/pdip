@@ -188,6 +188,7 @@ const MainNavbar = ({ token }) => {
                 ))}
               </ul>
               <form
+                action={`/search/${search}`}
                 className="d-inline-flex"
                 style={{
                   display: "flex",
@@ -197,9 +198,9 @@ const MainNavbar = ({ token }) => {
                   className="form-control mr-2"
                   type="text"
                   placeholder="Cari Artikel"
-                  name="search"
+                  // name="search"
                   onChange={(e) => setSearch(e.target.value)}
-                  value={search}
+                  type="text"
                 />
                 <Link
                   to={`/search/${search}`}
