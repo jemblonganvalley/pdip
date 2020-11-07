@@ -110,7 +110,7 @@ const BkbbWejangan = () => {
               <VMedia
                 displayIframe={"none"}
                 displayImage={"flex"}
-                backgroundImage={`url(https://atur.biar.pw/public/${configHome.path})`}
+                backgroundImage={`https://atur.biar.pw/public${configHome.path}`}
                 headline2={`${configHome.created_at}`}
                 desc={`${configHome.title}`}
                 customBackgroundColor={"transparent"}
