@@ -15,6 +15,7 @@ import bkbb1 from '../../../img/bkbb1.jpg'
 import { useStoreActions, useStoreState } from 'easy-peasy'
 import { useParams } from 'react-router-dom'
 import Wait from '../../wait/Wait'
+import VMedia from '../../VMedia/VMedia'
 
 const BkbbWejangan = () => {
   const setRefresher = useStoreActions((action) => action.setRefresher);
@@ -87,7 +88,9 @@ const BkbbWejangan = () => {
           // titleHeader={configHome[1].value[0].title}
         /> */}
           {/* END Card Header */}
-          <div className="linkedBkbbWejangan">
+          <div className="linkedBkbbWejangan" style={{
+            padding : '0 20%'
+          }}>
             <BreadCrumbs
               link1="home"
               to1="/"
@@ -101,77 +104,36 @@ const BkbbWejangan = () => {
           <div className="container-1-bkbbWejangan">
             {/* Column1 */}
             <div className="col1-container-1-bkbbWejangan">
-              {/* Row1 */}
-              <div
-                className="row1-bkbbWejangan"
-                style={{
-                  backgroundImage: `url(https://atur.biar.pw/public/${configHome.path})`,
-                }}
-              >
-                <div className="box-quotes-bkbbWejangan">
-                  {/* <i className="fas fa-quote-right"></i> */}
 
-                  {/* <h5 className="txt1">{configHome.title}</h5> */}
+              <VMedia 
+              displayIframe={'none'} 
+              displayImage={'flex'} 
+              backgroundImage={`url(https://atur.biar.pw/public/${configHome.path})`}
+              headline2={`${configHome.created_at}`}
+              desc={`${configHome.title}`}
+              customBackgroundColor={'transparent'}
+              descColor={'#000'}
+              customWidth='70%'
+              kolumWidth='30%' />
 
-                  {/* <br /> */}
-
-                  {/* <p className="txt2">
-                    JANGANLAH LEMBEK, MOHON PADA TUHAN SUPAYA BANGSA INDONESIA
-                    MENJADI SATU BANGSA YANG JAYA DI DUNIA, MENJADI BANGSA. KUAT
-                    DAN TABAH
-                  </p> */}
-
-                  {/* <i className="fas fa-quote-right"></i> */}
-
-                  {/* <small className="txt3">
-                    Bung Karno, {configHome.quotes_date}
-                  </small> */}
-                </div>
-              </div>
-              {/* END Row1 */}
-
-              {/* Row2 */}
-              <div className="row2-bkbbWejangan">
-                <small className="txt1">
-                  PDI Perjuangan | {configHome.created_at}
-                </small>
-
-                <h5 className="txt2">{configHome.title}</h5>
-
-                {/* DESCRIPTION RIGHT */}
-                {/* {parser(configHome.description)} */}
-
-                <div className="box-medsos-bkbbWejangan">
-                  {/* Card Social Media */}
-                  <CardSocialMedia />
-                  {/* END Card Social Media */}
-
-                  {/* <div className="socialMedia">
-                                    <small>SHARE : </small>  
-                                    <i className="fa fa-facebook"></i>
-                                    <i className="fa fa-twitter"></i>
-                                    <i className="fa fa-instagram"></i>
-                                    <i className="fa fa-whatsapp" ></i>
-                                </div> */}
-                </div>
-              </div>
-              {/* END Row2 */}
             </div>
             {/* END Column1 */}
           </div>
           {/* END Container1 */}
 
           {/* Container2 */}
-          <div className="container-2-bkbbWejangan">
-            {/* Column1 */}
+          {/* <div className="container-2-bkbbWejangan">
             <div
-              className="col1-container-2-bkbbWejangan"
+              className="CardBkbbWejangan"
               onClick={() => {
                 setRefresher();
               }}
+              style={{
+                display : 'flex',
+                justifyContent : 'space-between',
+                padding : '0 20% 0 20%'
+              }}
             >
-              {/* CardQuotes */}
-
               {manyCard.map((e, i) => (
                 <CardQuotes
                   page={`/quotes/${e.id}`}
@@ -182,20 +144,8 @@ const BkbbWejangan = () => {
                   txt2={`Soekarno, ${e.quotes_date}`}
                 />
               ))}
-              {/* END CardQuotes */}
             </div>
-            {/* END Column1 */}
-
-            {/* Column2 */}
-            {/* <div className="col2-container-2">
-              <MainButton
-                pages="/wejanganbungkarno"
-                name="LIHAT SEMUA"
-                margin="1rem 0"
-              />
-            </div> */}
-            {/* END Column2 */}
-          </div>
+          </div> */}
           {/* END Container2 */}
         </div>
       ) : (
