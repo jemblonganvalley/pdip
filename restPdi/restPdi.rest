@@ -73,7 +73,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 {
 	"order":{"key":"id","value":"desc"} ,
 	# "limit" : 3,
-    "where" : {"key":"blog.id_category_child", "value":"253"} 
+    "where" : {"key":"blog.id_category_child", "value":"262"} 
 }
 
 
@@ -113,6 +113,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 	"limit" : null
 }
 
+#SEARCH BY ID
 ###
 POST https://atur.biar.pw/api/gallery/data?page=1
 Content-Type: application/json
@@ -120,7 +121,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 
 {
 	"order":{"key":"id","value":"desc"} ,
-	"where":{"key":"type", "value":"image"},
+	"where":{"key":"id", "value":"126"},
 	"limit" : 22
 }
 
@@ -132,7 +133,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 
 {
 	"order":{"key":"id","value":"desc"} ,
-	"where":{"key":"id_album", "value":"190"},
+	"where":{"key":"id_album", "value":"185"},
 	"limit" : 22
 }
 

@@ -12,7 +12,7 @@ const Cards = ({
   fileType,
   margin,
   imageCard,
-  borderRadius=10,
+  borderRadius = 10,
   paragrap,
   icons,
   classIcon,
@@ -28,7 +28,7 @@ const Cards = ({
   marginTop,
   dataVideo,
   siaran,
-  paginateCard
+  paginateCard,
 }) => {
   let dt = toString(dateTime);
   let dtt = dt.split(" ");
@@ -42,36 +42,43 @@ const Cards = ({
     return string;
   };
 
-  const pageSLug = ()=>{
-    return slug.replaceAll(' ','-').toLowerCase()
-  }
+  const pageSLug = () => {
+    return slug.replaceAll(" ", "-").toLowerCase();
+  };
 
-  const getToday = ()=>{
+  const getToday = () => {
     var today = new Date();
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var date =
+      today.getFullYear() +
+      "-" +
+      (today.getMonth() + 1) +
+      "-" +
+      today.getDate();
+    var time =
+      today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     var dateTime = date;
-    return dateTime
-  }
+    return dateTime;
+  };
 
   return (
-      <>
-
-         <Link
-        component='a'
-        className="col col-lg-3 cardCustom" id="cardCustom2"
+    <>
+      <Link
+        component="a"
+        className="col col-lg-3 cardCustom"
+        id="cardCustom2"
         style={{
           borderRadius: borderRadius,
-          marginTop: marginTop
+          marginTop: marginTop,
         }}
         to={`${page}/${id}/${pageSLug()}`}
-      
       >
         <Link
           to={`${page}/${id}/${pageSLug()}`}
           className="imageCard"
           style={{
-            backgroundImage: imageCard.includes('uploads') ? `url(https://atur.biar.pw/public/${imageCard})` : `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)` ,
+            backgroundImage: imageCard.includes("/uploads")
+              ? `url(https://atur.biar.pw/public/${imageCard})`
+              : `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)`,
             textDecoration: "none",
             backgroundPosition: "center",
           }}
@@ -92,7 +99,8 @@ const Cards = ({
           </Link>
         </Link>
         <div className="text">
-          <small className="title-page-mainCards"
+          <small
+            className="title-page-mainCards"
             style={{
               color: "red",
               fontWeight: "bold",
@@ -101,18 +109,12 @@ const Cards = ({
               margin: "10px 0 10px 0",
             }}
           >
-            {category || 'Gallery'}
+            {category || "Gallery"}
           </small>
-            
-            <br/>
-
-          <small className="textSmall">
-            {author || 'PDI Perjuangan'}
-          </small>{" "}
-          | &nbsp;
-          <small className="textSmall">
-            {dateTime || getToday()}
-          </small>
+          <br />
+          <small className="textSmall">{author || "PDI Perjuangan"}</small> |
+          &nbsp;
+          <small className="textSmall">{dateTime || getToday()}</small>
           <p
             className="textH5"
             style={{
@@ -125,12 +127,9 @@ const Cards = ({
           >
             <b>{add3Dots(title, 70)}</b>
           </p>
-    
         </div>
       </Link>
-
-    
-      </>
+    </>
   );
 };
 
