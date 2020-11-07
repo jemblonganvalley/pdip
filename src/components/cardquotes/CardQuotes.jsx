@@ -1,37 +1,46 @@
-import React from 'react'
+import React from "react";
 
-import './CardQuotes.scss'
-import { Link } from 'react-router-dom'
+import "./CardQuotes.scss";
+import { Link } from "react-router-dom";
+import { useStoreActions } from "easy-peasy";
+import { useState } from "react";
+import { useEffect } from "react";
 
-const CardQuotes = ({ page, img, icon1, txt1, icon2, txt2 }) => {
-    return (
-        <>
-            {/* Img */}
-            <Link to={page} className="imgQuotes" style={{
-                backgroundImage: `url(${img})`,
-                textDecoration: 'none'
-            }}>
-                <i className={icon1}></i>
+const CardQuotes = ({ page, img, icon1, txt1, icon2, txt2, children }) => {
+  const setRefresher = useStoreActions((action) => action.setRefresher);
+  const [reload, setReload] = useState(false);
 
-                <p className="txt1">
-                    {txt1}
-                </p>
+  return (
+    <>
+      {/* Img */}
+      <Link
+        onClick={() => {
+          setRefresher();
+        }}
+        to={page}
+        className="imgQuotes"
+        style={{
+          backgroundImage: `url(${img})`,
+          textDecoration: "none",
+          position: "relative",
+        }}
+      >
+        <i className={icon1}></i>
 
-                <i className={icon2}></i>
+        <p className="txt1">{txt1}</p>
 
-                <small className="txt2">
-                    {txt2}
-                </small>
+        <i className={icon2}></i>
 
-                {/* Background Black Transparant */}
-                <div className="background-black-transparent">
-                    
-                </div>
-                {/* END Background Black Transparant */}
-            </Link>
-            {/* Img */}
-        </>
-    )
-}
+        <small className="txt2">{txt2}</small>
 
-export default CardQuotes
+        {/* Background Black Transparant */}
+        <div className="background-black-transparent"></div>
+        {/* END Background Black Transparant */}
+      </Link>
+      {/* Img */}
+      {children}
+    </>
+  );
+};
+
+export default CardQuotes;

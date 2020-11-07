@@ -236,7 +236,7 @@ const BkbbPage = () => {
             <div className="box1-image">
               {configHome[5].value.map((e, i) => (
                 <CardQuotes
-                  page={`/quotes/${e.id}`}
+                  page={`/bung-karno-bapak-bangsa/quotes/${e.id}`}
                   img={`https://atur.biar.pw/public/${e.path}`}
                   icon1="fas fa-quote-right"
                   txt1={e.title}
@@ -252,7 +252,7 @@ const BkbbPage = () => {
             <MainButton
               name="lihat semua"
               margin="0rem 0 0 0"
-              pages="/bung-karno-bapak-bangsa/quotes/all"
+              pages="/bung-karno-bapak-bangsa/quotes/9"
             />
           </div>
 

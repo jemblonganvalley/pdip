@@ -83,7 +83,7 @@ const BeritaPage = () => {
                 image2={
                   `https://atur.biar.pw/public` + configHome[2].value[1].image
                 }
-                to3="/beritafoto"
+                to3="/gallery"
                 image3={
                   `https://atur.biar.pw/public` + configHome[2].value[2].image
                 }

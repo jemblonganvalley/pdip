@@ -48,4 +48,9 @@ export let globalState = createStore({
   setSearch: action((state, payload) => {
     state.search = payload;
   }),
+
+  quotesMedia: 3,
+  setQuotesMedia: action((state, payload) => {
+    state.quotesMedia = payload;
+  }),
 });

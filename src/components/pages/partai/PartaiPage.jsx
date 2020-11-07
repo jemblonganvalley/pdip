@@ -215,6 +215,7 @@ const PartaiPage = () => {
                 {/* TATA CARA */}
                 <div className="col-lg-9 textBanteng">
                   {parse(config[4].value)}
+                  {parse(config[5].value)}
                 </div>
               </div>
               {/* END */}
@@ -231,7 +232,7 @@ const PartaiPage = () => {
                   <MainDivider text="pengurus" mrgn="0px 0" />
                 </div>
 
-                <div className="paragrapPengurus">{parse(config[5].value)}</div>
+                {/* <div className="paragrapPengurus">{parse(config[5].value)}</div> */}
               </div>
               {/* END */}
 

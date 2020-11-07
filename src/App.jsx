@@ -155,10 +155,6 @@ function App() {
             <WejanganBungKarno />
           </Route>
 
-          <Route path="/quotes/:id">
-            <BkbbWejangan />
-          </Route>
-
           <Route path="/materipokok">
             <MateriPokok />
           </Route>
@@ -213,9 +209,13 @@ function App() {
 
           {/* BUNG KARNO BAPAK BANGSA */}
 
-          <Route path="/bung-karno-bapak-bangsa/quotes/all">
+          <Route path="/bung-karno-bapak-bangsa/quotes/:id">
             <WejanganBungKarno />
           </Route>
+
+          {/* <Route path="/quotes/:id">
+            <BkbbWejangan />
+          </Route> */}
 
           <Route path="/bung-karno-bapak-bangsa">
             <BkbbPage />

@@ -78,7 +78,7 @@ const DropDown = ({ menuItem, listIndex }) => {
                   .replace(/\s/g, "-")
                   .toLowerCase()}`
               : e.params === "237"
-              ? `/quotes/3/${e.title.replace(/\s/g, "-").toLowerCase()}`
+              ? `/bung-karno-bapak-bangsa/quotes/3`
               : e.params === "28"
               ? `detail-article/838/${e.title
                   .replace(/\s/g, "-")

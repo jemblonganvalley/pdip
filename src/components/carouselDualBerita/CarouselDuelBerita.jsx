@@ -59,11 +59,15 @@ export const CarouselDuelBerita = ({
                   wordWrap: "break-word",
                 }}
               >
-                {/* <p style={{
-                                padding : '0',
-                                margin : '0',
-                                fontWeight : '600',
-                                }}>{e.title}</p> */}
+                {/* <p
+                  style={{
+                    padding: "0",
+                    margin: "0",
+                    fontWeight: "600",
+                  }}
+                >
+                  {e.title}
+                </p> */}
 
                 {/* <small style={{padding : '0'}}>{e.author}</small> | &nbsp;
                             <small style={{padding : '0'}}>{e.created_at}</small> */}
