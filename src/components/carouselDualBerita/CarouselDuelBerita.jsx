@@ -10,27 +10,44 @@ export const CarouselDuelBerita = ({
   data = null,
   current_page = null,
 }) => {
-  const token = useStoreState((state) => state.token);
-  const getALbumId = async (e) => {
-    const res = await fetch("https://atur.biar.pw/api/gallery/data", {
+  const getALbumId = async (args) => {
+    const resToken = await fetch("https://atur.biar.pw/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify({
+        app_id: "1555309664580",
+        api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
+      }),
+    });
+    const token = await resToken.json();
+
+    const resGallery = await fetch("https://atur.biar.pw/api/gallery/data", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token.token}`,
       },
       body: JSON.stringify({
         order: { key: "id", value: "desc" },
-        where: { key: "id", value: e },
+        where: { key: "id", value: args },
+        limit: 1,
       }),
     });
-    const data = await res.json();
+
+    const galData = await resGallery.json();
+    // console.log(dataGallery);
+    // console.log(dataGallery)
+    // console.log(galData);
     window.location.href = `/gallery/detail-gallery/${
-      data.query.data[0].id_album
-    }/${data.query.data[0].title.replace(/\s/g, "-") || "detail-gallery"}`;
+      galData.query.data[0].id_album
+    }/${galData.query.data[0].title.replace(/\s/g, "-") || "detail-gallery"}`;
   };
 
   useEffect(() => {
     // getALbumId();
+    console.log(cat2);
   }, []);
 
   return (
@@ -43,9 +60,11 @@ export const CarouselDuelBerita = ({
       >
         <div className="carousel-inner">
           {cat1.map((e, i) => (
-            <div
+            <a
               className={`carousel-item ${i == 1 && "active"}`}
               style={{ position: "relative", cursor: "pointer" }}
+              href={e.link}
+              target="_blank"
             >
               <span
                 className="carouselDual_title"
@@ -90,7 +109,7 @@ export const CarouselDuelBerita = ({
               <img
                 src={`https://atur.biar.pw/public/${e.image}`}
                 className="d-block w-100 carouselDual1Image"
-                alt="..."
+                alt={e.title}
                 key={i}
                 style={{
                   width: "100%",
@@ -99,7 +118,7 @@ export const CarouselDuelBerita = ({
                   objectPosition: "center",
                 }}
               />
-            </div>
+            </a>
           ))}
         </div>
         <a
@@ -134,7 +153,7 @@ export const CarouselDuelBerita = ({
               className={`carousel-item ${i == 1 && "active"}`}
               // to={`/gallery/detail-gallery/${e.id}/${e.title}`}
               onClick={() => {
-                getALbumId(e.id);
+                window.location.href = "/gallery";
               }}
               style={{ cursor: "pointer" }}
             >

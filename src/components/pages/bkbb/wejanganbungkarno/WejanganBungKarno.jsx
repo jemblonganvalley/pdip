@@ -86,7 +86,7 @@ const WejanganBungKarno = () => {
                 link1="Home"
                 to1="/"
                 link2="Bungkarno Bapak Bangsa"
-                to2="/bungkarno"
+                to2="/bung-karno-bapak-bangsa"
                 page3="Wejangan Bung Karno"
               />
             </div>
@@ -97,7 +97,7 @@ const WejanganBungKarno = () => {
             style={{
               width: "100%",
               padding: "0 20%",
-              margin: "40px",
+              margin: "40px 0",
             }}
           >
             {configHome && (

@@ -147,6 +147,9 @@ const BeritaPage = () => {
           >
             {/* Column1 */}
             <div className="col1-container-2-beritaPage banner-berita">
+              <p className="txt-title-col1">
+                {configHome[6].value.description}
+              </p>
               <h2 className="txt-title-col1">{configHome[6].value.title}</h2>
             </div>
             {/* END Column1 */}
