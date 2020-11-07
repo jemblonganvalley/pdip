@@ -13,6 +13,8 @@ import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita"
 import { Link, Redirect } from "react-router-dom";
 import VMedia from "../../VMedia/VMedia";
 import Wait from "../../wait/Wait";
+import SliderBrand from "../../sliderbrand/SliderBrand";
+import BMKG from '../../../img/bmkg.png'
 
 export const LighBox = ({ source }) => {
   return (
@@ -106,7 +108,8 @@ const HomePage = () => {
           className="homepage"
           style={{
             overflowX: "hidden",
-            paddingBottom: "40px",
+            justifyContent : 'center',
+            alignItems : 'center'
           }}
         >
           {configHome.length > 0 && (
@@ -159,7 +162,7 @@ const HomePage = () => {
             <div className="customRow">
               {configHome.length > 0 &&
                 configHome[1].value.map((e, i) => (
-                  <div className="col-lg-4 custom" key={i}>
+                    <div className="col-lg-4 custom" key={i}>
                     {/* URUTAN LINK */}
                     <a
                       href={
@@ -182,6 +185,7 @@ const HomePage = () => {
                       </div>
                     </a>
                   </div>
+                  
                 ))}
             </div>
 
@@ -338,6 +342,9 @@ const HomePage = () => {
               cat2={configHome[10].value}
             />
           )}
+          <div className="sliderBrand">
+          <SliderBrand />
+          </div>
         </div>
       ) : (
         <Wait />

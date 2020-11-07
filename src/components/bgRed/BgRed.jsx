@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './BgRed.scss'
 import {TwitterTimelineEmbed} from 'react-twitter-embed'
-import InstagramEmbed from 'react-instagram-embed';
-
+// import InstagramEmbed from 'react-instagram-embed';
+import InstaFeedCustom from '../../components/instafeed/InstaFeedCustom'
 const BgRed = () => {
 
   return (
@@ -22,8 +22,8 @@ const BgRed = () => {
               <h5>facebook</h5>
             </header>
 
-           <iframe className="widgetFb" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPDIPerjuangan%2F&tabs=timeline&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" height={300} style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder={0} allowTransparency="true" allow="encrypted-media"/>
-
+           {/* <iframe className="widgetFb" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPDIPerjuangan%2F&tabs=timeline&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" height={300} style={{border: 'none', overflow: 'hidden'}} scrolling="no" frameBorder={0} allowTransparency="true" allow="encrypted-media"/> */}
+           <div class="fb-page" data-href="https://www.facebook.com/PDIPerjuangan" data-tabs="timeline" data-width="" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/PDIPerjuangan" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PDIPerjuangan">PDI Perjuangan</a></blockquote></div>
 
           </div>
 
@@ -37,7 +37,7 @@ const BgRed = () => {
             screenName = 'pdi_perjuangan'
             options={{
               width : '100%',
-              height : 300,
+              height : '500px',
               margin : 0,
               padding : 0,
             }}
@@ -49,28 +49,12 @@ const BgRed = () => {
               <i className="fab fa-instagram" id="iconGroup"></i>
               <h5>instagram</h5>
             </header>
-            {/* <InstagramEmbed
-              url='https://www.instagram.com/p/CGUueFxg69i/?__a=1'
-              hideCaption={false}
-              containerTagName='div'
-              screenName='pdi_perjuangan'
-              protocol=''
-              injectScript
-              onLoading={() => {}}
-              onSuccess={() => {}}
-              onAfterRender={() => {}}
-              onFailure={() => {}}
-              style={{
-                height: 50,
-                border: '1px solid blue'
-              }}
-            /> */}
-
-            <iframe src="https://api.instagram.com/v1/users/pdiperjuangan/media/recent/?access_token=fb2e77d.47a0479900504cb3ab4a1f626d174d2d" height="300" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-
-           {/* <div class="elfsight-app-d9bdc03f-58ca-4000-b6ee-f3b1f267801f" style={{
-             height: 300
-           }}></div> */}
+              <div className="containerInsta" style={{
+                backgroundColor : '#fff',
+                borderRadius : '5px'
+              }}>
+                <insta-feed-custom username='pdiperjuangan'></insta-feed-custom>
+              </div>
            </div>
 
       

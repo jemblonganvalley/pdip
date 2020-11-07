@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './Maps.scss'
 import 'gsap'
-import $ from 'jquery'
 import gsap from 'gsap/gsap-core'
 import { Sine, Power2 } from 'gsap/gsap-core'
 import maps from '../../img/peta.png'
