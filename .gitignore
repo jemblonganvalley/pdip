@@ -25,3 +25,4 @@ yarn-debug.log*
 yarn-error.log*
 test.rest
 .gitignore
+package-lock.json
