@@ -79,6 +79,7 @@ const Cards = ({
             backgroundImage: imageCard.includes("uploads")
               ? `url(https://atur.biar.pw/public/${imageCard})`
               : `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)`,
+
             textDecoration: "none",
             backgroundPosition: "center",
           }}

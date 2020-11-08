@@ -56,19 +56,17 @@ const PartaiPage = () => {
         <div className="wrapperPartai">
           {config.length > 0 && (
             <>
-              {/* Card Header */}
+              {/* 0 r-banner-image */}
               <CardHeader
                 image={config[0].value.image}
                 title={config[0].value.title}
               />
               {/* END Card Header */}
-
               {/* LINK PARTAI */}
               <div className="linkedPartai">
                 <BreadCrumbs link1="Home" to1="/" page2="Partai" />
               </div>
               {/* END */}
-
               {/* CONTAINER SATU */}
               <div className="containerSatu row ">
                 <div className="contentSatu row">
@@ -82,9 +80,10 @@ const PartaiPage = () => {
                         justifyContent: "space-between",
                       }}
                     >
+                      {/* 1 r-group-text-image */}
                       {config[1].value.map((e, i) => (
                         <Link
-                          className="mobileRow"
+                          className="mobileRow "
                           as="div"
                           to={
                             i == 0
@@ -129,12 +128,12 @@ const PartaiPage = () => {
                     </div>
                   </div>
 
+                  {/* 2 r-carousel */}
                   {/* Card Carousel */}
                   <div className="container-carousel-partaiPage">
                     <CarouselKetuaUmumPage data={config[2].value} />
                   </div>
                   {/* END Card Carousel */}
-
                   {/* <div className="col col-lg-8 parentCarousel">
                     <div className="wrapperCarousel">
                       <div
@@ -192,16 +191,14 @@ const PartaiPage = () => {
                 </div>
               </div>
               {/* END */}
-
+              {/* 3 r-sync-song */}
               <MusicPdi />
               <MusicMobile />
-
               {/* divider tata kelola */}
               <div className="divider-tata-kelolaPdi">
                 <MainDivider text="TATA KELOLA PDI PERJUANGAN" mrgn="40px 0" />
               </div>
               {/* end divider tata kelola */}
-
               {/* CONTAINER TIGA */}
               <div className="containerTiga">
                 <div className="col-lg-3">
@@ -213,9 +210,9 @@ const PartaiPage = () => {
                   />
                 </div>
                 {/* TATA CARA */}
+                {/* 4r-text-html */}
                 <div className="col-lg-9 textBanteng">
-                  {parse(config[4].value)}
-                  {parse(config[5].value)}
+                  <h1>{parse(config[4].value)}</h1>
                 </div>
               </div>
               {/* END */}
@@ -225,17 +222,15 @@ const PartaiPage = () => {
                   pages="/detail-article/841/tata-kelola-partai"
                 />
               </span>
-
               {/* PENGURUS */}
               <div className="pengurusPage">
                 <div className="divider-pengurusPage">
                   <MainDivider text="pengurus" mrgn="0px 0" />
                 </div>
 
-                {/* <div className="paragrapPengurus">{parse(config[5].value)}</div> */}
+                <div className="paragrapPengurus">{parse(config[5].value)}</div>
               </div>
               {/* END */}
-
               {/* PHOTO PENGURUS */}
               <div
                 className="photoPengurus"
@@ -249,7 +244,6 @@ const PartaiPage = () => {
                 </Link>
               </div>
               {/* END */}
-
               {/* MAPS */}
               <div className="maps">
                 {/* <h5>dewan pimpinan daerah pdi perjuangan</h5> */}
@@ -258,7 +252,6 @@ const PartaiPage = () => {
                 {/* END Component Maps */}
               </div>
               {/* END */}
-
               {/* ANGGOTA LEGISLATIF */}
               {/* <div className="anggotaLegislatif">
                 <span

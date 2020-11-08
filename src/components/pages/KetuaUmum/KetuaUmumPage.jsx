@@ -106,6 +106,7 @@ const KetuaUmumPage = () => {
 
           {/* Card Header */}
           <CardHeader
+            // 0 r-banner-image
             image={configHome[0].value.image}
             title={configHome[0].value.title}
           />
@@ -117,11 +118,12 @@ const KetuaUmumPage = () => {
           {/* Container1 */}
           <div className="container-1-ketuaUmum">
             {/* Column1 */}
+            {/* 1 r-carousel */}
             <CarouselKetuaUmumPage data={configHome[1].value} />
             {/* END Column1 */}
-
             <div className="container-cardInfo-ketuaUmum">
               {/* Column2 */}
+              {/* 2 r-group-text-image" */}
               <CardInformasi
                 to1="/article/233/pidato-kongres-pdi-perjuangan"
                 image={`https://atur.biar.pw/public/${configHome[2].value[0].image}`}
@@ -138,9 +140,9 @@ const KetuaUmumPage = () => {
               />
               {/* END Column2 */}
             </div>
-
             {/* Column3 */}
             <div className="cardKetuaUmum">
+              {/* 3 r-sync-blog */}
               {configHome[3].value.map((e, i) => (
                 <Cards
                   imageCard={e.path}
@@ -150,13 +152,17 @@ const KetuaUmumPage = () => {
                   id={e.id}
                   borderRadius="10px"
                   cardType={e.filetype}
+                  category="Pidato Ketua Umum"
                 />
               ))}
-
               {/* Button View All */}
-              <div className="button1-cardBerita">
-                <MainButton name="lihat semua" margin="0px 0 0 0" pages="" />
-              </div>
+              {/* <div className="button1-cardBerita">
+                <MainButton
+                  name="lihat semua"
+                  margin="0px 0 0 0"
+                  pages="/ketua-umum/pidato/all"
+                />
+              </div> */}
               {/* END Button View All */}
             </div>
             {/* END Column3 */}
@@ -171,7 +177,9 @@ const KetuaUmumPage = () => {
           >
             {configHome.length > 0 && (
               <CarouselDualKetuaumum
+                // 4 r-sync-video
                 cat1={configHome[4].value[0]}
+                // 5 r-banner-image
                 cat2={configHome[5].value}
               />
             )}
@@ -179,7 +187,11 @@ const KetuaUmumPage = () => {
 
           {/* Container2 */}
           <div className="container-2-ketuaumum">
-            <MainDivider text="Berita Terbaru" garisMerah="7rem" mrgn="0px 0" />
+            <MainDivider
+              text="Pidato KETUA UMUM"
+              garisMerah="7rem"
+              mrgn="0px 0"
+            />
           </div>
           {/* END Container2 */}
 
@@ -187,6 +199,7 @@ const KetuaUmumPage = () => {
           <div className="container-3-ketuaumum">
             {/* Column4 */}
             <div className="col4-cardContent-container-3">
+              {/* 6 r-sync-blog */}
               {configHome[6].value.map((e, i) => (
                 <Cards
                   imageCard={e.path}
@@ -195,16 +208,15 @@ const KetuaUmumPage = () => {
                   page="detail-article"
                   id={e.id}
                   cardType={e.filetype}
-                  category="Berita"
+                  category="Pidato Ketua Umum"
                 />
               ))}
-
               {/* /* Button View All */}
               <div className="button2-cardBerita">
                 <MainButton
                   name="lihat semua"
                   margin="0px 0 0 0"
-                  pages="/berita"
+                  pages="/ketua-umum/pidato/all"
                 />
               </div>
               {/* END Button View All */}

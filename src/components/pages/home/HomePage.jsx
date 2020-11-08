@@ -14,7 +14,7 @@ import { Link, Redirect } from "react-router-dom";
 import VMedia from "../../VMedia/VMedia";
 import Wait from "../../wait/Wait";
 import SliderBrand from "../../sliderbrand/SliderBrand";
-import BMKG from '../../../img/bmkg.png'
+import BMKG from "../../../img/bmkg.png";
 
 export const LighBox = ({ source }) => {
   return (
@@ -108,17 +108,17 @@ const HomePage = () => {
           className="homepage"
           style={{
             overflowX: "hidden",
-            justifyContent : 'center',
-            alignItems : 'center'
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
           {configHome.length > 0 && (
             <>
+              {/* 0 r-carousel */}
               <MainSlider
                 value={configHome[0].value}
                 cls={configHome[0].class}
               />
-
               {/* LIGHTBOX */}
               {showVid && (
                 <>
@@ -134,7 +134,6 @@ const HomePage = () => {
               )}
             </>
           )}
-
           {/* STATISTIK INFO COVID */}
           <div
             className="statistik-covid"
@@ -156,13 +155,13 @@ const HomePage = () => {
               }}
             ></div>
           </div>
-
           {/* LOGO ICON COVID DAN LAIN LAIN */}
           <div className="homePageTwo">
             <div className="customRow">
               {configHome.length > 0 &&
+                // 1 r-group-text-image
                 configHome[1].value.map((e, i) => (
-                    <div className="col-lg-4 custom" key={i}>
+                  <div className="col-lg-4 custom r-group-text-image" key={i}>
                     {/* URUTAN LINK */}
                     <a
                       href={
@@ -185,7 +184,6 @@ const HomePage = () => {
                       </div>
                     </a>
                   </div>
-                  
                 ))}
             </div>
 
@@ -194,24 +192,26 @@ const HomePage = () => {
               <div className="divider-video-home">
                 <MainDivider text="Video" />
               </div>
-
+              {/* 2 r-text-html */}
               {configHome.length > 0 && (
                 <div
-                  className="paragrapVideo"
+                  className="paragrapVideo r-text-html"
                   dangerouslySetInnerHTML={{ __html: configHome[2].value }}
                 ></div>
               )}
 
+              {/* 3 r-sync-video */}
               {configHome.length > 0 &&
                 configHome[3].value.map((e, i) => (
                   <div
-                  // style={{
-                  //   backgroundImage: `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
-                  // }}
-                  // key={i}
-                  // onClick={()=>{
-                  //             setShowVid(true)
-                  //           }}
+                    // style={{
+                    //   backgroundImage: `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
+                    // }}
+                    // key={i}
+                    // onClick={()=>{
+                    //             setShowVid(true)
+                    //           }}
+                    className="r-sync-video"
                   >
                     {/* Card VMEDIA */}
                     <VMedia
@@ -237,9 +237,9 @@ const HomePage = () => {
                   </div> */}
                   </div>
                 ))}
-
               {/* ONTAINER CARD VIDEO */}
               <div className="cardContainer">
+                {/* 4 r-sync-video */}
                 {configHome.length > 0 &&
                   configHome[4].value.map((e, i) => {
                     return (
@@ -258,7 +258,6 @@ const HomePage = () => {
                     );
                   })}
               </div>
-
               <div className="btn-lihatSemua-card">
                 <MainButton
                   name="lihat semua"
@@ -273,24 +272,24 @@ const HomePage = () => {
                 <MainDivider text="berita" mrgn="40px 0" />
               </div>
 
+              {/* 5 r-text-html */}
               {configHome.length > 0 && (
                 <div
-                  className="paragrapBerita"
+                  className="paragrapBerita r-text-html"
                   dangerouslySetInnerHTML={{ __html: configHome[5].value }}
                 ></div>
               )}
             </div>
           </div>
-
+          {/* 6 r-sync-blog */}
           {configHome.length > 0 && <CarouselKM data={configHome[6].value} />}
-
           {/* <KMobile /> */}
           {configHome.length > 0 && <KMobile data={configHome[6].value} />}
-
           <div className="cardContent">
+            {/* 7 r-sync-blog */}
             {configHome.length > 0 && (
               <>
-                {configHome[6].value.map((e, i) => {
+                {configHome[7].value.map((e, i) => {
                   return (
                     <Cards
                       page="detail-article"
@@ -309,7 +308,6 @@ const HomePage = () => {
               </>
             )}
           </div>
-
           <span className="btnSize">
             <MainButton
               name="lihat semua"
@@ -318,13 +316,12 @@ const HomePage = () => {
             />
           </span>
 
-          <div className="divider-laguPerjuangan">
+          {/* 8 r-sync-song */}
+          <div className="divider-laguPerjuangan r-sync-song">
             <MainDivider text="Lagu Perjuangan" mrgn="0 0 40px 0" />
           </div>
-
           <MusicPdi />
           <MusicMobile />
-
           <div
             className="beritaTerbaru"
             style={{
@@ -336,6 +333,7 @@ const HomePage = () => {
             <MainDivider text="Foto Gallery" mrgn="40px 0" />
           </div>
 
+          {/* 9 and 10 */}
           {configHome.length > 0 && (
             <CarouselDuelBerita
               cat1={configHome[9].value}
@@ -343,7 +341,7 @@ const HomePage = () => {
             />
           )}
           <div className="sliderBrand">
-          <SliderBrand />
+            <SliderBrand />
           </div>
         </div>
       ) : (

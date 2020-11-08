@@ -159,11 +159,11 @@ const InformasiPage = () => {
             <CardInformasi
               to1="detail-article/656/struktur"
               image={`https://atur.biar.pw/public/${configHome[3].value[0].image}`}
-              to2="/pidatorakernas"
+              to2="/article/231/visi-dan-misi-ppid"
               image2={`https://atur.biar.pw/public/${configHome[3].value[1].image}`}
-              to3="/pidatorakornas"
+              to3="/detail-article/624/prosedur-pelayanan-ppid"
               image3={`https://atur.biar.pw/public/${configHome[3].value[2].image}`}
-              to4="/pidatohut"
+              to4="/detail-article/623/regulasi-ppd"
               image4={`https://atur.biar.pw/public/${configHome[3].value[3].image}`}
               text={`${configHome[3].value[0].title}`}
               text2={`${configHome[3].value[1].title}`}

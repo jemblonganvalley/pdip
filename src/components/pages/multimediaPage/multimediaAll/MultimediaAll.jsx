@@ -1,17 +1,22 @@
 import React, { useEffect, useState } from "react";
 
-import "./containerCard.scss";
-import BreadCrumbs from "../breadcrumbs/BreadCrumbs";
-import MainDivider from "../divider/MainDivider";
+import "./MultimediaAll.scss";
 import { NavLink, useParams } from "react-router-dom";
-import Cards from "../cards/MainCards";
-import Wait from "../wait/Wait";
+import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
+import MainDivider from "../../../divider/MainDivider";
+import Cards from "../../../cards/MainCards";
+import Wait from "../../../wait/Wait";
+import { SideMenu } from "../../../sidemenu/SideMenu";
 
-const ContainerCard = () => {
-  const { category_id } = useParams();
+const MultimediaAll = () => {
+  const [category_id, setCategory_id] = useState(44);
   const [configHome, setConfigHome] = useState([]);
   const [numPage, setNumPage] = useState(1);
   const [pag, setPag] = useState();
+  const [defaultUrl, setDefaultUrl] = useState(
+    `https://atur.biar.pw/api/blog/data?page=${numPage}`
+  );
+
   const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
     let [active, setActive] = useState(false);
 
@@ -71,7 +76,7 @@ const ContainerCard = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `https://atur.biar.pw/api/gallery/album?page=${numPage}`,
+      `https://atur.biar.pw/api/multimedia/youtube-data?page=${numPage}`,
       {
         method: "POST",
         headers: {
@@ -80,7 +85,6 @@ const ContainerCard = () => {
         },
         body: JSON.stringify({
           order: { key: "id", value: "desc" },
-          where: { key: "type", value: "image" },
           limit: 9,
         }),
       }
@@ -99,21 +103,23 @@ const ContainerCard = () => {
 
   return (
     <>
+      {/* <SideMenu /> */}
+
       {configHome.length > 0 ? (
         <div className="wrapper-berita-nasional">
           <div className="linked-berita-nasional">
             <BreadCrumbs
               link1="Home"
               to1="/"
-              link2={`/berita`}
-              to2={`/berita`}
-              page3={"gallery"}
+              link2={`Multimedia`}
+              to2={`/multimedia`}
+              page3={configHome[0].category_child_name}
             />
           </div>
 
           {/* Container1 */}
           <span className="divider-page-berita-nasional">
-            <MainDivider text={`Gallery`} />
+            <MainDivider text="MULTIMEDIA" />
           </span>
           {/* END Container1 */}
           {/* Container2 */}
@@ -126,13 +132,13 @@ const ContainerCard = () => {
                     {configHome.map((e, i) => (
                       <Cards
                         category={e.category}
-                        imageCard={e.cover}
-                        title={e.album_name}
-                        slug={e.album_name}
-                        textSmall={e.album_description}
-                        // dateTime={e.created_at}
-                        page={`/gallery/detail-gallery`}
-                        id={e.id_album}
+                        imageCard={e.path}
+                        title={e.title}
+                        slug={e.title}
+                        textSmall={e.author}
+                        dateTime={e.created_at}
+                        page={"/detail-multimedia"}
+                        id={e.id}
                       />
                     ))}
                   </>
@@ -142,20 +148,18 @@ const ContainerCard = () => {
             {/* END Column Card */}
 
             {/* Column Pagination */}
-            {/* <div className="column-pagination-berita-nasional">
-                        <AngkaPaginationEvent itemEventPerPage={itemEventPerPage} totalPosts={cardBeritaNasional.length} paginate={paginate} />
-                    </div> */}
+            {pag && (
+              <div className="column-pagination-berita-nasional">
+                <AngkaPaginationEvent
+                  itemEventPerPage={pag.per_page}
+                  totalPosts={pag.total}
+                />
+              </div>
+            )}
+
             {/* END Column Pagination */}
           </div>
           {/* END Container2 */}
-          {pag && (
-            <div className="column-pagination-berita-nasional">
-              <AngkaPaginationEvent
-                itemEventPerPage={pag.per_page}
-                totalPosts={pag.total}
-              />
-            </div>
-          )}
         </div>
       ) : (
         <Wait />
@@ -164,4 +168,4 @@ const ContainerCard = () => {
   );
 };
 
-export default ContainerCard;
+export default MultimediaAll;

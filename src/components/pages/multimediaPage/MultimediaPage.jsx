@@ -131,16 +131,14 @@ const MultimediaPage = () => {
               />
             ))}
 
-              <div className="button-cardBerita">
-                <MainButton
+            <div className="button-cardBerita">
+              <MainButton
                 name="lihat semua"
                 margin="0px 0 0 0"
-                pages=""
+                pages="/multimedia/all"
               />
-              </div>
-  
             </div>
-
+          </div>
         </div>
       ) : (
         <Wait />

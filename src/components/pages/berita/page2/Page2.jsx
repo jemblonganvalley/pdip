@@ -7,6 +7,7 @@ import VMedia from "../../../VMedia/VMedia";
 import { Link, useParams } from "react-router-dom";
 import Wait from "../../../wait/Wait";
 import { colors } from "@material-ui/core";
+import MainDivider from "../../../divider/MainDivider";
 
 // READ BEFORE USE
 
@@ -152,11 +153,8 @@ const Page2 = () => {
               )}
             </div>
             {/* END Column1 */}
-
             <div className="container-garis-vertical">
-              <div className="garis-vertical-tipis">
-                <div className="garis-merah-tebal"></div>
-              </div>
+              <MainDivider text={manyCard[0].category} mrgn="40px 0" />
             </div>
 
             {/* Column2 */}
@@ -177,7 +175,7 @@ const Page2 = () => {
                   page={`/detail-multimedia`}
                   id={e.id}
                   slug={e.title}
-                  category="Multimedia"
+                  category={e.category}
                 />
               ))}
             </div>

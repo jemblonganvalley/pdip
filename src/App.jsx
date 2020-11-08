@@ -40,6 +40,8 @@ import ContainerCardMultimedia from "./components/multimedia/ContainerCardMultim
 import FormPdi from "./components/pages/informasi/formpdi/FormPdi";
 import FormKeluhan from "./components/pages/informasi/formkeluhan/FormKeluhan";
 import CardBkbbQuotes2 from "./components/cardbkbbquotes2/CardBkbbQuotes2";
+import PidatoAll from "./components/pages/KetuaUmum/pidatoAll/PidatoAll";
+import MultimediaAll from "./components/pages/multimediaPage/multimediaAll/MultimediaAll";
 
 function App() {
   let [hide, setHide] = useState(true);
@@ -96,6 +98,14 @@ function App() {
             <Page1 />
           </Route>
 
+          <Route path="/ketua-umum/pidato/all">
+            <PidatoAll />
+          </Route>
+
+          <Route path="/pidato-ketua-umum">
+            <PidatoAll />
+          </Route>
+
           {/* CONTAINER CARD */}
           <Route path="/article/:category_id">
             <ContainerCard />
@@ -105,6 +115,7 @@ function App() {
           <Route path="/gallery/detail-gallery/:id/:slug">
             <Gallery />
           </Route>
+
           <Route path="/formkeluhan">
             <FormKeluhan />
           </Route>
@@ -120,6 +131,10 @@ function App() {
           {/* CONTAINER CARD GALLERY*/}
           <Route path="/gallery">
             <ContainerCardGallery />
+          </Route>
+
+          <Route path="/multimedia/all">
+            <MultimediaAll />
           </Route>
 
           {/* CONTAINER CARD MULTIMEDIA*/}

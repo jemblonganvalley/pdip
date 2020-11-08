@@ -1,41 +1,41 @@
 @import "../../../utilities/variable/variables.scss";
 
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+$smallPhoneSatu: 500px;
+$smallPhoneDua: 400px;
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
 // Min widht 500 and Max width 750
-$respon750 : 750px;
+$respon750: 750px;
 $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 // Min widht 500 and Max width 750
 @mixin respon750 {
-    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
-        @content;
-    }
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
 }
 // END Min widht 500 and Max width 750
 
 // Min widht 750 and Max width 950
-$responMin750 : 750px;
+$responMin750: 750px;
 $responMax950: 950px;
 // END Min widht 750 and Max width 950
 
 // Min width 750 and max width 950
-@mixin respon950{
-    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
-        @content;
-    }
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
 }
 // END Min widht 750 and max width 950
 
@@ -43,10 +43,10 @@ $responMax950: 950px;
 $responMin951: 951px;
 $responMax1360: 1360px;
 
-@mixin respon1360{
-    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
-        @content;
-    }
+@mixin respon1360 {
+  @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}) {
+    @content;
+  }
 }
 // end min width 951 and max width 1360px
 
@@ -54,594 +54,592 @@ $responMax1360: 1360px;
 $responMin1361: 1361px;
 $responMax1440: 1440px;
 
-@mixin respon1440{
-    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
-        @content;
-    }
+@mixin respon1440 {
+  @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}) {
+    @content;
+  }
 }
 // end min width 1361px and max width 1440px
 
+.wrapperBerita {
+  width: 100%;
+  padding: 0 0 40px 0;
 
-.wrapperBerita{
+  // .headers {
+  //     background: url(../../../img/pemilu8.jpg);
+  //     background-size: cover;
+  //     height: 15vh;
+  //     background-position: center;
+
+  //     @include smallPhone(){
+  //         height: 20vh;
+  //     }
+
+  //     @include smallPhone(){
+  //         height: 15vh;
+  //     }
+
+  //     .backgrounds {
+  //         // background-color: rgba(255, 0, 8, 0.1);
+  //         width: 100%;
+  //         height: 100%;
+  //         display: flex;
+  //         // justify-content: center;
+  //         align-items: center;
+  //         color: #ffffff;
+
+  //         .textBackgroundBerita {
+  //             width: 30%;
+  //             height: 50%;
+  //             margin-left: 5rem;
+  //         }
+  //     }
+  // }
+  .linkedBerita {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     width: 100%;
-    padding: 0 0 40px 0;
+    margin-top: 15px;
+    padding: 10px 10%;
 
-    // .headers {
-    //     background: url(../../../img/pemilu8.jpg);
-    //     background-size: cover;
-    //     height: 15vh;
-    //     background-position: center;
+    @include respon1360() {
+      padding: 10px 5%;
+    }
+
+    @include respon950() {
+      padding: 10px 5%;
+    }
+
+    @include respon750() {
+      padding: 10px 5%;
+    }
+
+    @include smallPhone() {
+      width: 100%;
+      padding: 0 2%;
+    }
+  }
+
+  // Container1
+  .container-1-beritaPage {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 0 20%;
+    overflow: hidden;
+
+    @include respon1440() {
+      padding: 0 10%;
+    }
+
+    @include respon1360() {
+      padding: 0 5%;
+    }
+
+    @include respon950() {
+      padding: 0 2%;
+    }
+
+    // min width 500px and max width 750px
+    @include respon750() {
+      padding: 0 15%;
+    }
+    // end min width 500px and max width 750px
+
+    @include smallPhone() {
+      padding: 0;
+    }
+
+    // Container card informasi
+    .container-card-informasi {
+      display: flex;
+
+      @include smallPhone() {
+        padding: 0 0 10px 0;
+      }
+    }
+    // END container card informasi
+
+    .cardBerita {
+      @include smallPhone() {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 0 10px;
+      }
+    }
+
+    // Column3
+    .cardBerita1-col3-container-1 {
+      display: flex;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      cursor: pointer;
+      margin: 0;
+      padding: 0px 0 0 0%;
+
+      @include smallPhone() {
+        height: auto;
+        flex-direction: column;
+      }
+    }
+    // END Column3
+
+    // Column4
+    .col4-container-1-beritaPage {
+      display: flex;
+      height: auto;
+      width: 100%;
+      background: #f3f3f3;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 0 0 0;
+      margin: 40px 0;
+      overflow: hidden;
+
+      @include smallPhone() {
+        height: auto;
+        margin: 40px 0 50px 0;
+        padding: 0px 10px 0 10px;
+      }
+    }
+    // END Column4
+
+    // Column5
+    // .col5-container-1-beritaPage{
+    //     display: flex;
+    //     height: auto;
+    //     width: 100%;
+    //     overflow: hidden;
+    //     border: 1px solid blue;
 
     //     @include smallPhone(){
-    //         height: 20vh;
+    //         height: auto;
+    //         flex-direction: column;
+    //         padding: 0 5px;
     //     }
 
-    //     @include smallPhone(){
-    //         height: 15vh;
-    //     }
-
-    //     .backgrounds {
-    //         // background-color: rgba(255, 0, 8, 0.1);
-    //         width: 100%;
-    //         height: 100%;
+    //     // Row1
+    //     .row1-col5-beritaPage{
     //         display: flex;
-    //         // justify-content: center;
-    //         align-items: center;
-    //         color: #ffffff;
+    //         flex-direction: column;
+    //         position: relative;
+    //         height: auto;
+    //         width: 30%;
+    //         background-color: #d80010;
+    //         color: #fff;
+    //         background-size: cover;
+    //         overflow: hidden;
+    //         transition: .5s;
 
-    //         .textBackgroundBerita {
-    //             width: 30%;
-    //             height: 50%;
-    //             margin-left: 5rem;
+    //         @include smallPhone(){
+    //             height: auto;
+    //             width: 100%;
+    //             margin: 0 0 10px 0;
+    //         }
+
+    //         &:hover{
+    //             background: #fff;
+    //             color: #000;
+    //         }
+
+    //         .box-img{
+    //             display: flex;
+    //             height: 50vh;
+    //             width: 100%;
+    //             background-image: url(../../../img/pemilu16.jpg);
+    //             background-size: cover;
+    //             overflow: hidden;
+
+    //             @include smallPhone(){
+    //                 height: 40vh;
+    //                 background-position: inherit;
+    //             }
+    //         }
+
+    //         .box-jdl-row1{
+    //             display: flex;
+    //             height: auto;
+    //             width: 100%;
+    //             justify-content: center;
+    //             align-items: center;
+    //             overflow: hidden;
+
+    //             h1{
+    //                 display: flex;
+    //                 font-size: 20px;
+    //                 padding: 20px;
+    //                 overflow: hidden;
+
+    //                 @include smallPhone(){
+    //                     font-size: 15px;
+    //                     margin: 1px;
+    //                     padding: 20px;
+    //                 }
+    //             }
     //         }
     //     }
+    //     // END Row1
+
+    //     // Row2
+    //     .row2-col5-beritaPage{
+    //         display: flex;
+    //         flex-direction: column;
+    //         height: 100%;
+    //         width: 70%;
+    //         background: #fff;
+    //         color: #000;
+    //         margin: 0 0 0 20px;
+    //         text-decoration: none;
+    //         transition: .5s;
+    //         overflow: hidden;
+
+    //         @include smallPhone(){
+    //             height: auto;
+    //             width: 100%;
+    //             margin: 0;
+    //         }
+
+    //         &:hover{
+    //             background: #d80010;
+    //             color: #fff;
+    //         }
+
+    //         // Column1
+    //         .col1-row2-beritaPage{
+    //             display: flex;
+    //             height: 50vh;
+    //             width: 100%;
+    //             background: url(../../../img/pemilu17.jpg);
+    //             background-size: cover;
+    //             background-position: center;
+    //             overflow: hidden;
+
+    //             @include smallPhone(){
+    //                 height: 40vh;
+    //             }
+    //         }
+    //         // END Column1
+
+    //         // Column2
+    //         .col2-row2-beritaPage{
+    //             display: flex;
+    //             flex-direction: column;
+    //             height: 30%;
+    //             width: 100%;
+    //             padding: 20px 35px 5px 35px;
+    //             overflow: hidden;
+
+    //             @include smallPhone(){
+    //                 height: 40%;
+    //                 padding: 20px;
+    //             }
+
+    //             .txt-jdl-col2{
+    //                 display: flex;
+    //                 font-size: 20px;
+    //                 font-weight: 500;
+    //                 text-align: start;
+    //                 margin: 0 0 5px 0;
+    //                 padding: 0 0 2px 0;
+    //                 overflow: hidden;
+
+    //                 @include smallPhone(){
+    //                     font-size: 15px;
+    //                 }
+    //             }
+
+    //             .txt-desk-col2{
+    //                 display: flex;
+    //                 // font-size: 12px;
+    //                 text-align: start;
+    //                 padding: 0 0 10px 0;
+    //                 overflow: hidden;
+
+    //                 @include smallPhone(){
+    //                     font-size: 10px;
+    //                     padding: 0;
+    //                 }
+    //             }
+    //         }
+    //         // END Column2
+    //     }
+    //     // END Row2
     // }
-    .linkedBerita {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-        margin-top: 15px;
-        padding: 10px 10%;
-
-        @include respon1360(){
-            padding: 10px 5%;
-        }
-
-        @include respon950(){
-            padding: 10px 5%;
-        }
-
-        @include respon750(){
-            padding: 10px 5%;
-        }
-
-        @include smallPhone(){
-            width: 100%;
-            padding: 0 2%;
-        }
-    }
-
-    // Container1
-    .container-1-beritaPage{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-        padding: 0 20%;
-        overflow: hidden;
-
-        @include respon1440(){
-            padding: 0 10%;
-        }
-
-        @include respon1360(){
-            padding: 0 5%;
-        }
-
-        @include respon950(){
-            padding: 0 2%;
-        }
-
-        // min width 500px and max width 750px
-        @include respon750(){
-            padding: 0 15%;
-        }
-        // end min width 500px and max width 750px
-
-        @include smallPhone(){
-            padding: 0;
-        }
-
-        // Container card informasi
-        .container-card-informasi{
-            display: flex;
-
-            @include smallPhone(){
-                padding: 0 0 10px 0;
-            }
-        }
-        // END container card informasi
-
-        .cardBerita{
-            @include smallPhone(){
-            display: flex;
-            flex-direction: column;
-            height: auto;
-            width: 100%;
-            padding: 0 10px;
-        }
-        }
-
-        // Column3
-        .cardBerita1-col3-container-1 {
-            display: flex;
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            cursor: pointer;
-            margin: 0;
-            padding: 0px 0 0 0%;
-
-            @include smallPhone(){
-                height: auto;
-                flex-direction: column;
-            }
-        }
-        // END Column3
-
-        // Column4
-        .col4-container-1-beritaPage{
-            display: flex;
-            height: auto;
-            width: 100%;
-            background: #f3f3f3;
-            align-items: center;
-            justify-content: center;
-            padding: 0px 0 0 0;
-            margin: 40px 0;
-            overflow: hidden;
-
-            @include smallPhone(){
-                height: auto;
-                margin: 40px 0 50px 0;
-                padding: 0px 10px 0 10px;
-            }
-        }
-        // END Column4
-
-        // Column5
-        // .col5-container-1-beritaPage{
-        //     display: flex;
-        //     height: auto;
-        //     width: 100%;
-        //     overflow: hidden;
-        //     border: 1px solid blue;
-
-        //     @include smallPhone(){
-        //         height: auto;
-        //         flex-direction: column;
-        //         padding: 0 5px;
-        //     }
-
-        //     // Row1
-        //     .row1-col5-beritaPage{
-        //         display: flex;
-        //         flex-direction: column;
-        //         position: relative;
-        //         height: auto;
-        //         width: 30%;
-        //         background-color: #d80010;
-        //         color: #fff;
-        //         background-size: cover;
-        //         overflow: hidden;
-        //         transition: .5s;
-
-        //         @include smallPhone(){
-        //             height: auto;
-        //             width: 100%;
-        //             margin: 0 0 10px 0;
-        //         }
-
-        //         &:hover{
-        //             background: #fff;
-        //             color: #000;
-        //         }
-
-        //         .box-img{
-        //             display: flex;
-        //             height: 50vh;
-        //             width: 100%;
-        //             background-image: url(../../../img/pemilu16.jpg);
-        //             background-size: cover;
-        //             overflow: hidden;
-
-        //             @include smallPhone(){
-        //                 height: 40vh;
-        //                 background-position: inherit;
-        //             }
-        //         }
-
-        //         .box-jdl-row1{
-        //             display: flex;
-        //             height: auto;
-        //             width: 100%;
-        //             justify-content: center;
-        //             align-items: center;
-        //             overflow: hidden;
-
-        //             h1{
-        //                 display: flex;
-        //                 font-size: 20px;
-        //                 padding: 20px;
-        //                 overflow: hidden;
-
-        //                 @include smallPhone(){
-        //                     font-size: 15px;
-        //                     margin: 1px;
-        //                     padding: 20px;
-        //                 }
-        //             }
-        //         }
-        //     }
-        //     // END Row1
-
-        //     // Row2
-        //     .row2-col5-beritaPage{
-        //         display: flex;
-        //         flex-direction: column;
-        //         height: 100%;
-        //         width: 70%;
-        //         background: #fff;
-        //         color: #000;
-        //         margin: 0 0 0 20px;
-        //         text-decoration: none;
-        //         transition: .5s;
-        //         overflow: hidden;
-
-        //         @include smallPhone(){
-        //             height: auto;
-        //             width: 100%;
-        //             margin: 0;
-        //         }
-                
-        //         &:hover{
-        //             background: #d80010;
-        //             color: #fff;
-        //         }
-
-        //         // Column1
-        //         .col1-row2-beritaPage{
-        //             display: flex;
-        //             height: 50vh;
-        //             width: 100%;
-        //             background: url(../../../img/pemilu17.jpg);
-        //             background-size: cover;
-        //             background-position: center;
-        //             overflow: hidden;
-
-        //             @include smallPhone(){
-        //                 height: 40vh;
-        //             }
-        //         }
-        //         // END Column1
-
-        //         // Column2
-        //         .col2-row2-beritaPage{
-        //             display: flex;
-        //             flex-direction: column;
-        //             height: 30%;
-        //             width: 100%;
-        //             padding: 20px 35px 5px 35px;
-        //             overflow: hidden;
-
-        //             @include smallPhone(){
-        //                 height: 40%;
-        //                 padding: 20px;
-        //             }
-
-        //             .txt-jdl-col2{
-        //                 display: flex;
-        //                 font-size: 20px;
-        //                 font-weight: 500;
-        //                 text-align: start;
-        //                 margin: 0 0 5px 0;
-        //                 padding: 0 0 2px 0;
-        //                 overflow: hidden;
-
-        //                 @include smallPhone(){
-        //                     font-size: 15px;
-        //                 }
-        //             }
-
-        //             .txt-desk-col2{
-        //                 display: flex;
-        //                 // font-size: 12px;
-        //                 text-align: start;
-        //                 padding: 0 0 10px 0;
-        //                 overflow: hidden;
-
-        //                 @include smallPhone(){
-        //                     font-size: 10px;
-        //                     padding: 0;
-        //                 }
-        //             }
-        //         }
-        //         // END Column2
-        //     }
-        //     // END Row2
-        // }
-        // END Column5
-    }
-    // END Container1
-
-    // Container2
-    .container-2-beritaPage{
-        display: flex;
-        flex-direction: column;
-        height: 40vh;
-        width: 100%;
-        // background-image: url(../../../img/ketuaumum7.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-size: auto;
-        margin: 20px 0 0px 0;
-        overflow: hidden;
-
-        @include respon1360(){
-            background-size: cover;
-            background-attachment: inherit;
-        }
-
-        // min width 750px and max width 950px
-        @include respon950(){
-            background-size: cover;
-            background-attachment: inherit;
-        }
-        // end min width 750px and max width 950px
-
-        // min width 500px and max width 750px
-        @include respon750(){
-            background-size: cover;
-            background-attachment: inherit;
-        }
-        // end min width 500px and max width 750px
-
-        @include smallPhone(){
-            height: 40vh;
-            background-size: cover;
-            background-attachment: inherit;
-        }
-
-        // Column1
-        .col1-container-2-beritaPage{
-            display: flex;
-            flex-direction: column-reverse;
-            height: 75%;
-            width: 100%;
-            align-items: center;
-            overflow: hidden;
-
-            .txt-title-col1{
-                display: flex;
-                // font-size: 30px;
-                font-weight: bold;
-                color: #fff;
-                text-align: center;
-                overflow: hidden;
-
-                @include smallPhone(){
-                    font-size: 16px;
-                }
-            }
-        }
-        // END Column1
-
-        // Column2
-        .col2-container-2-beritaPage{
-            display: flex;
-            height: 25%;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-        // END Column2
-    }
-    // END Container2
-
-    // Container3
-    .container-3-beritaPage{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-        padding: 0 20% 0px 20%;
-
-        @include respon1440(){
-            padding: 0 10%;
-        }
-
-        @include respon1360(){
-            padding: 0 5%;
-        }
-
-        @include respon950(){
-            padding: 0 2%;
-        }
-
-        @include respon750(){
-            padding: 0 15%;
-        }
-
-        @include smallPhone(){
-            padding: 0 0px;
-        }
-
-        .divider-beritaDaerah{
-            display: flex;
-            height: auto;
-            width: 100%;
-            margin: 0 0 35px 0;
-            align-items: center;
-
-            @include smallPhone(){
-                margin: 0 0 40px 0;
-                padding: 0 10px;
-            }
-        }
-
-        .divider-kegiatanPartai{
-            display: flex;
-            height: auto;
-            width: 100%;
-            margin: 0 0 35px 0;
-            align-items: center;
-
-            @include smallPhone(){
-                padding: 0 10px;
-                margin: 0 0 40px 0;
-            }
-        }
-        
-        // Column1
-        .col1-container-3-beritaPage{
-            display: flex;
-            height: 20vh;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 0 0 0;
-            overflow: hidden;
-
-            @include smallPhone(){
-                height: auto;
-                padding: 30px 10px 0 10px;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-        // END Column1
-
-        // Column2
-        .col2-cardContent-container-3-beritaPage {
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            margin-top: 0;
-            padding: 0px 0%;
-        
-            @include smallPhone(){
-                height: auto;
-                flex-direction: column;
-                padding: 0;
-            }
-        }
-        // END Column2
-
-        // Column3
-        .col3-container-3-beritaPage{
-            display: flex;
-            height: 20vh;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 0 0 0;
-            overflow: hidden;
-
-            @include smallPhone(){
-                height: auto;
-                padding: 30px 10px 0 10px;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-        // END Column3
-
-        // Column4
-        .col4-cardContent-container-3-beritaPage {
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 0;
-            padding: 0px 0%;
-            overflow: hidden;
-
-            @include smallPhone(){
-                height: auto;
-            }
-
-            .col2-cardContent-container-3-beritaPage{
-                display: flex;
-
-                @include smallPhone(){
-                    flex-direction: column;
-                }
-            }
-        }
-        // END Column4
-        
-    }
-    // END Container3
-}
-
-.cardContainer {
-    width: 100%;
-    height: auto;
-    min-height: 50vh;
+    // END Column5
+  }
+  // END Container1
+
+  // Container2
+  .container-2-beritaPage {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    // margin-top: 15px;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    // background-image: url(../../../img/ketuaumum7.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+    margin: 20px 0 0px 0;
+    overflow: hidden;
+    justify-content: center;
 
-    @include respon1360(){
-        // flex-wrap: nowrap;
-        
+    @include respon1360() {
+      background-size: cover;
+      background-attachment: inherit;
     }
 
     // min width 750px and max width 950px
-    @include respon950(){
-        flex-direction: row;
-        width: auto;
+    @include respon950() {
+      background-size: cover;
+      background-attachment: inherit;
     }
     // end min width 750px and max width 950px
 
     // min width 500px and max width 750px
-    @include respon750(){
-        flex-direction: column;
+    @include respon750() {
+      background-size: cover;
+      background-attachment: inherit;
     }
     // end min width 500px and max width 750px
 
-    @include smallPhone(){
-        margin-top: 0px;
+    @include smallPhone() {
+      height: 40vh;
+      background-size: cover;
+      background-attachment: inherit;
     }
 
-    // for btn view all
-    .btn1-beritaPage{
+    // Column1
+    .col1-container-2-beritaPage {
+      display: flex;
+      flex-direction: column-reverse;
+      //   height: 75%;
+      width: 100%;
+      align-items: center;
+      overflow: hidden;
+
+      .txt-title-col1 {
         display: flex;
-        height: auto;
-        width: 100%;
-        justify-content: center;
-        padding: 20px 0 0 0;
+        // font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+
+        @include smallPhone() {
+          font-size: 16px;
+        }
+      }
     }
+    // END Column1
+
+    // Column2
+    .col2-container-2-beritaPage {
+      display: flex;
+      height: 25%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    // END Column2
+  }
+  // END Container2
+
+  // Container3
+  .container-3-beritaPage {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 0 20% 0px 20%;
+
+    @include respon1440() {
+      padding: 0 10%;
+    }
+
+    @include respon1360() {
+      padding: 0 5%;
+    }
+
+    @include respon950() {
+      padding: 0 2%;
+    }
+
+    @include respon750() {
+      padding: 0 15%;
+    }
+
+    @include smallPhone() {
+      padding: 0 0px;
+    }
+
+    .divider-beritaDaerah {
+      display: flex;
+      height: auto;
+      width: 100%;
+      margin: 0 0 35px 0;
+      align-items: center;
+
+      @include smallPhone() {
+        margin: 0 0 40px 0;
+        padding: 0 10px;
+      }
+    }
+
+    .divider-kegiatanPartai {
+      display: flex;
+      height: auto;
+      width: 100%;
+      margin: 0 0 35px 0;
+      align-items: center;
+
+      @include smallPhone() {
+        padding: 0 10px;
+        margin: 0 0 40px 0;
+      }
+    }
+
+    // Column1
+    .col1-container-3-beritaPage {
+      display: flex;
+      height: 20vh;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0 0 0;
+      overflow: hidden;
+
+      @include smallPhone() {
+        height: auto;
+        padding: 30px 10px 0 10px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    // END Column1
+
+    // Column2
+    .col2-cardContent-container-3-beritaPage {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 0;
+      padding: 0px 0%;
+
+      @include smallPhone() {
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+      }
+    }
+    // END Column2
+
+    // Column3
+    .col3-container-3-beritaPage {
+      display: flex;
+      height: 20vh;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0 0 0;
+      overflow: hidden;
+
+      @include smallPhone() {
+        height: auto;
+        padding: 30px 10px 0 10px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    // END Column3
+
+    // Column4
+    .col4-cardContent-container-3-beritaPage {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+      padding: 0px 0%;
+      overflow: hidden;
+
+      @include smallPhone() {
+        height: auto;
+      }
+
+      .col2-cardContent-container-3-beritaPage {
+        display: flex;
+
+        @include smallPhone() {
+          flex-direction: column;
+        }
+      }
+    }
+    // END Column4
+  }
+  // END Container3
 }
 
-#card-berita{
-    margin-top: 0;
+.cardContainer {
+  width: 100%;
+  height: auto;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // margin-top: 15px;
 
-    @include smallPhone(){
-        display: flex;
-        flex-direction: column;
-        padding: 0 10px;
-    }
+  @include respon1360() {
+    // flex-wrap: nowrap;
+  }
+
+  // min width 750px and max width 950px
+  @include respon950() {
+    flex-direction: row;
+    width: auto;
+  }
+  // end min width 750px and max width 950px
+
+  // min width 500px and max width 750px
+  @include respon750() {
+    flex-direction: column;
+  }
+  // end min width 500px and max width 750px
+
+  @include smallPhone() {
+    margin-top: 0px;
+  }
+
+  // for btn view all
+  .btn1-beritaPage {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 0 0 0;
+  }
+}
+
+#card-berita {
+  margin-top: 0;
+
+  @include smallPhone() {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
 }

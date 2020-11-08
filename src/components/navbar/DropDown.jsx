@@ -57,6 +57,10 @@ const DropDown = ({ menuItem, listIndex }) => {
               ? `/detail-article/630/${e.title
                   .replace(/\s/g, "-")
                   .toLowerCase()}`
+              : e.params === "229"
+              ? `/detail-article/657/${e.title
+                  .replace(/\s/g, "-")
+                  .toLowerCase()}`
               : e.params === "230"
               ? `/detail-article/658/${e.title
                   .replace(/\s/g, "-")
@@ -84,7 +88,7 @@ const DropDown = ({ menuItem, listIndex }) => {
               : e.params === "237"
               ? `/bung-karno-bapak-bangsa/quotes/3`
               : e.params === "28"
-              ? `detail-article/838/${e.title
+              ? `/detail-article/838/${e.title
                   .replace(/\s/g, "-")
                   .toLowerCase()}`
               : e.params === "all"

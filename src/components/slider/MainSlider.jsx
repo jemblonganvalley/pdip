@@ -6,6 +6,7 @@ import appstore from "../../img/appstore.svg";
 import { Link } from "@material-ui/core";
 import { Redirect } from "react-router-dom";
 import parse from "html-react-parser";
+import { Markup } from "interweave";
 
 const MainSlider = ({ value, cls }) => {
   let slider = value;
@@ -77,7 +78,7 @@ const MainSlider = ({ value, cls }) => {
                     <h5 className="title-maxWidth750">{e.title}</h5>
                     {/* END For min width 500px and max width 750px */}
 
-                    {e.paragraph ? parse(e.paragraph) : null}
+                    <Markup content={e.paragraph} />
                   </div>
                   {/* END Box Paragrap */}
 

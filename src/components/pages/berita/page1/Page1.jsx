@@ -6,12 +6,11 @@ import CarouselBeritaPage1 from "../../../carouselberitapage1/CarouselBeritaPage
 import MainDivider from "../../../divider/MainDivider";
 import { useParams } from "react-router-dom";
 import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
-import Wait from '../../../wait/Wait'
+import Wait from "../../../wait/Wait";
 import { useStoreState } from "easy-peasy";
 
 const Page1 = () => {
-
-  const refresher = useStoreState(state => state.refresher)
+  const refresher = useStoreState((state) => state.refresher);
 
   let { id } = useParams();
   const [detailPage, setDetailPage] = useState();
@@ -73,11 +72,14 @@ const Page1 = () => {
               link1="Home"
               to1="/"
               link2={detailPage.category_name}
-              to2={`/${detailPage.category_name}`}
+              to2={`/${detailPage.category_name
+                .replace(/\s/g, "-")
+                .toLowerCase()}`}
               page3={detailPage.category_name}
               link3={detailPage.category_child_name}
-              to3={`/article/${detailPage.id_category_child}/${detailPage.category_name}`}
-
+              to3={`/article/${
+                detailPage.id_category_child
+              }/${detailPage.category_name.replace(/\s/g, "-").toLowerCase()}`}
             />
           </div>
 
@@ -141,12 +143,12 @@ const Page1 = () => {
                             </h5>
                         </div> */}
               {/* END Section1 */}
-              
+
               {/* Section2 */}
-              {detailPage.path.includes('uploads') ? (
-                    <img
+              {detailPage.path.includes("uploads") ? (
+                <img
                   className="img-beritaPage1"
-                  src={`https://atur.biar.pw/public/${detailPage.path}` }
+                  src={`https://atur.biar.pw/public/${detailPage.path}`}
                   alt={`${detailPage.path}`}
                   style={{
                     // height: "40vh",
@@ -154,9 +156,15 @@ const Page1 = () => {
                   }}
                 />
               ) : (
-                 <iframe className='col-12' height='500px' src={`https://www.youtube.com/embed/${detailPage.path}`} frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+                <iframe
+                  className="col-12"
+                  height="500px"
+                  src={`https://www.youtube.com/embed/${detailPage.path}`}
+                  frameBorder={0}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
               )}
-            
 
               {/* {detailPage.category_name == "Berita_video" && (
                 <CarouselBeritaPage1 />
@@ -187,7 +195,7 @@ const Page1 = () => {
                 <div className="garis-panjang"></div>
 
                 <div className="box-medsos-beritaPage1">
-                  <CardSocialMedia/>
+                  <CardSocialMedia />
 
                   {/* <div className="socialMedia">
                     <small>SHARE : </small>
