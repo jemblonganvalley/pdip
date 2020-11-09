@@ -4,7 +4,7 @@ import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
 import Cards from "../../../cards/MainCards";
 import CarouselBeritaPage2 from "../../../carouselberitapage2/CarouselBeritaPage2";
 import VMedia from "../../../VMedia/VMedia";
-import { Link, useParams } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 import Wait from "../../../wait/Wait";
 import { colors } from "@material-ui/core";
 import parse from "html-react-parser";
@@ -15,6 +15,53 @@ const Gallery = () => {
   const [reload, setReload] = useState(false);
   const [configHome, setConfigHome] = useState([]);
   const [manyCard, setManyCard] = useState([]);
+  const [numPage, setNumPage] = useState(1);
+  const [pag, setPag] = useState();
+
+  const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
+    let [active, setActive] = useState(false);
+
+    const pageNumbers = [];
+    for (let i = 1; i <= Math.ceil(totalPosts / itemEventPerPage); i++) {
+      pageNumbers.push(i);
+    }
+
+    return (
+      <>
+        <div className="container-angka-pagination">
+          <div className="col-angka-pagination">
+            {pageNumbers.map((number) => (
+              <div
+                key={number}
+                className="angka-pagination"
+                onClick={() => {
+                  setNumPage(number);
+                }}
+              >
+                <NavLink
+                  className="paginationLink"
+                  to="#"
+                  activeClassName="active"
+                  style={
+                    number === numPage
+                      ? {
+                          backgroundColor: "#d80010",
+                          borderRadius: "100px",
+                          padding: ".2px",
+                          color: "#fff",
+                        }
+                      : null
+                  }
+                >
+                  {number}
+                </NavLink>
+              </div>
+            ))}
+          </div>
+        </div>
+      </>
+    );
+  };
 
   const id = useParams("id");
 
@@ -50,18 +97,20 @@ const Gallery = () => {
     const dataConfigHome = await resConfigHome.json();
     setConfigHome(dataConfigHome.query.data);
 
-    const resManyCard = await fetch("https://atur.biar.pw/api/gallery/album", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${data.token}`,
-      },
-      body: JSON.stringify({
-        order: { key: "id", value: "desc" },
-        where: { key: "type", value: "image" },
-        limit: null,
-      }),
-    });
+    const resManyCard = await fetch(
+      `https://atur.biar.pw/api/gallery/album?page=${numPage}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+        body: JSON.stringify({
+          where: { key: "type", value: "image" },
+          limit: null,
+        }),
+      }
+    );
 
     const dataManyCard = await resManyCard.json();
     setManyCard(dataManyCard.query.data);
@@ -167,6 +216,14 @@ const Gallery = () => {
             {/* END Column2 */}
           </div>
           {/* END Container */}
+          {pag && (
+            <div className="column-pagination-berita-nasional my-5">
+              <AngkaPaginationEvent
+                itemEventPerPage={pag.per_page}
+                totalPosts={pag.total}
+              />
+            </div>
+          )}
         </div>
       ) : (
         <Wait />

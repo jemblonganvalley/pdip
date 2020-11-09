@@ -57,7 +57,7 @@ const MainNavbar = ({ token }) => {
   });
 
   const isMobile = useMediaQuery({
-    query: "(max-device-width: 1224px)",
+    query: "(max-device-width: 600px)",
   });
 
   const handleShow = (e) => {
@@ -313,24 +313,27 @@ const MainNavbar = ({ token }) => {
                     )}
 
                     {/* Container Dropdown menu mobile */}
-                    <div
-                      className="dropdown-menu-mobile"
-                      style={{
-                        height: trigger1 ? "50px" : "0",
-                        transition: trigger1
-                          ? "0.5s ease-in-out"
-                          : "0.3s ease-in",
-                      }}
-                    >
-                      <Link
-                        className="page-menu-drop-mobile"
+                    {Object.values(menu)[i].map((e) => (
+                      <div
+                        className="dropdown-menu-mobile"
                         style={{
-                          color: "#f3f3f3",
+                          height: trigger1 ? "50px" : "0",
+                          transition: trigger1
+                            ? "0.5s ease-in-out"
+                            : "0.3s ease-in",
                         }}
                       >
-                        Menu Partai
-                      </Link>
-                    </div>
+                        <Link
+                          className="page-menu-drop-mobile"
+                          style={{
+                            color: "#f3f3f3",
+                          }}
+                        >
+                          {e.title}
+                        </Link>
+                      </div>
+                    ))}
+
                     {/* end Container Dropdown menu mobile */}
                   </li>
                 ))}
@@ -354,36 +357,6 @@ const MainNavbar = ({ token }) => {
                           : "0.3s ease-in",
                       }}
                     ></i>
-                  </li>
-
-                  {/* btn drop 2 */}
-                  <li className="list-btn-menu-drop">
-                    <i className="fas fa-angle-down" id="icon-menuDrop"></i>
-                  </li>
-
-                  {/* btn drop 3 */}
-                  <li className="list-btn-menu-drop">
-                    <i className="fas fa-angle-down" id="icon-menuDrop"></i>
-                  </li>
-
-                  {/* btn drop 4 */}
-                  <li className="list-btn-menu-drop">
-                    <i className="fas fa-angle-down" id="icon-menuDrop"></i>
-                  </li>
-
-                  {/* btn drop 5 */}
-                  <li className="list-btn-menu-drop">
-                    <i className="fas fa-angle-down" id="icon-menuDrop"></i>
-                  </li>
-
-                  {/* btn drop 6 */}
-                  <li className="list-btn-menu-drop">
-                    <i className="fas fa-angle-down" id="icon-menuDrop"></i>
-                  </li>
-
-                  {/* btn drop 7 */}
-                  <li className="list-btn-menu-drop">
-                    <i className="fas fa-angle-down" id="icon-menuDrop"></i>
                   </li>
                 </div>
                 {/* END Trigger For Menu Dropdown menu mobile */}

@@ -149,7 +149,7 @@ const ContainerCard = () => {
           </div>
           {/* END Container2 */}
           {pag && (
-            <div className="column-pagination-berita-nasional">
+            <div className="column-pagination-berita-nasional my-5">
               <AngkaPaginationEvent
                 itemEventPerPage={pag.per_page}
                 totalPosts={pag.total}

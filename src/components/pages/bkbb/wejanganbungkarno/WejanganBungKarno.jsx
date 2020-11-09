@@ -105,12 +105,13 @@ const WejanganBungKarno = () => {
                 displayIframe={"none"}
                 displayImage={"flex"}
                 backgroundImage={`https://atur.biar.pw/public${configHome.path}`}
-                headline2={`${configHome.created_at}`}
-                desc={`${configHome.title}`}
+                headline={configHome.title}
+                desc={`${configHome.description}`}
                 customBackgroundColor={"transparent"}
                 descColor={"#000"}
                 customWidth="70%"
                 kolumWidth="30%"
+                date={configHome.created_at}
               />
             )}
           </div>

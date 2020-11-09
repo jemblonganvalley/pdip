@@ -2,7 +2,14 @@ import React from "react";
 import CardSocialMedia from "../cardsocialmedia/CardSocialMedia";
 import "./VMedia.scss";
 
-const VMedia = ({ source, headline, desc, backgroundImage, descColor }) => {
+const VMedia = ({
+  source,
+  headline,
+  desc,
+  backgroundImage,
+  descColor,
+  date,
+}) => {
   return (
     <div className="wrapperPlayVid">
       <div className="kolumVideo">
@@ -36,7 +43,7 @@ const VMedia = ({ source, headline, desc, backgroundImage, descColor }) => {
         }}
       >
         <div className="textTop">
-          <small>Admin PDI Perjuangan | 1 Januari 2019</small>
+          <small>Admin PDI Perjuangan {date && "|" + date.split(" ")[0]}</small>
           {/* <div className="countLove">
                         <i class="fa fa-heart" aria-hidden="true"></i>
                         <small>0</small>
