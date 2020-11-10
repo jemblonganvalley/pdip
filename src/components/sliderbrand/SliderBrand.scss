@@ -58,10 +58,215 @@ $responMax1440: 1440px;
         @content;
     }
 }
+@import "../../utilities/variable/variables.scss";
+
+$smallPhoneSatu : 500px;
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+$smallPhoneDua : 400px;
+@mixin smallPhoneDua {
+    @media (max-width : #{$smallPhoneDua}) {
+        @content;
+    }
+}
+
+$deviceOne : 1000px;
+@mixin deviceOne {
+    @media (min-width : #{$deviceOne}) {
+        @content;
+    }
+}
+
+$deviceTwo : 1500px;
+@mixin deviceTwo {
+    @media (max-width : #{$deviceTwo}) {
+        @content;
+    }
+}
+
+$deviceThree : 1200px;
+@mixin deviceThree {
+    @media (max-width : #{$deviceThree}) {
+        @content;
+    }
+}
+
+$deviceFour : 1300px;
+@mixin deviceFour {
+    @media (max-width: #{$deviceFour}){
+        @content;
+    }
+}
+
+// Max-height 600px and max width 500px
+$mobile600 : 600px;
+@mixin mobile600 {
+    @media(max-height: #{$mobile600}) and (max-width: #{$maxWidth500px}){
+        @content;
+    }
+}
+// END Max-height 600px and max width 500px
+
+// min height 500px and max width 500px
+$minHeight500: 500px;
+@mixin minHeight500 {
+    @media (min-height: #{$minHeight500}) and (max-width: #{$maxWidth500px}) {
+        @content;
+    }
+}
+// end min height 500px and max width 500px
+
+// Min-height 650px and max width 500px
+$mobile650 : 650px;
+$maxWidth500px: 500px;
+@mixin mobile650 {
+    @media(min-height: #{$mobile650}) and (max-width: #{$maxWidth500px}){
+        @content;
+    }
+}
+// END Min-height 650px and max width 500px
+
+// Min-height 700px
+$mobile700 : 700px;
+@mixin mobile700 {
+    @media(min-height: #{$mobile700}){
+        @content;
+    }
+}
+
+// max height 691 and max width 500px
+// end max height 691 and max width 500px
+
+// min height 700 and max width 500px
+$minHeight700: 700px;
+
+@mixin minHeight700 {
+    @media (min-height: #{$minHeight700}) and (max-width: #{$maxWidth500px}) {
+        @content;
+    }
+}
+// end min height 700 and max width 500px
+
+// Min-height 750px
+$mobile750 : 750px;
+@mixin mobile750 {
+    @media(min-height: #{$mobile750}){
+        @content;
+    }
+}
+// END Min-height 650px
+
+// max height 750 max widht 716
+$minWidth716: 716px;
+$maxHeight750: 750px;
+@mixin maxHeight750 {
+    @media(max-height: #{$maxHeight750}) and (max-width: #{maxWidth716}){
+        @content;
+    }
+}
+
+// .carousel-fade{
+//     display: flex;
+//     position: relative;
+    
+//     padding: 10%;
+// }
+
+// Min widht 500 and Max height 900
+$respon900 : 900px;
+$respon500: 500px;
+// END Min widht 500 and Max height 900
+
+// Min widht 500 and Max height 900
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-height: #{$respon900}) {
+        @content;
+    }
+}
+// END Min widht 500 and Max height 900
+
+// min height 400 and max width 500px
+$minHeight400: 400px;
+
+@mixin minHeight400 {
+    @media (min-height: #{$minHeight400}) and (max-width: #{$maxWidth500px}) {
+        @content;
+    }
+}
+// end min height 400 and max width 500px
+
+// max height 1280 and max width 750px
+$maxHeight1280: 1280px;
+$maxWidth750: 750px;
+
+@mixin maxHeight1280 {
+    @media (max-height: #{$maxHeight1280}) and (max-width: #{$maxWidth750}) {
+        @content;
+    }
+}
+// end max height 1280 and max width 750px
+
+// max heigth 690px and max width 500px
+$maxHeight690: 690px;
+$maxWidth500px: 500px;
+// max heigth 690px and max width 500px
+
+// max heigth 690px and max width 500px
+@mixin maxHeihgt690{
+    @media(max-height: #{$maxHeight690}) and (max-width: #{$maxWidth500px}){
+        @content;
+    }
+}
+// max heigth 690px and max width 500px
+
+// min height 770px and min width 500px
+$minHeight770px: 770px;
+$minWidth500px: 500px;
+
+@mixin minHeight770{
+    @media (min-height: #{$minHeight770px}) and (min-width: #{$minWidth500px}) {
+        @content;
+    }
+}
+// end min height 770px and min width 500px
+
+// Min widht 750 and Max width 950
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+// END Min widht 750 and max width 950 
+
+// min height 901 and max width 1360
+$minHeight901: 901px;
+
+@mixin minHeight901 {
+    @media (min-height: #{$minHeight901}) and (max-width : #{$responMax950}) {
+        @content;
+    }
+}
+// end min height 901 and max width 1360
+
+// min height 700 and min width 1361
+$minWidth1360: 1360px;
+@mixin minHeight700Desktop {
+    @media (min-height: #{$minHeight700}) and (min-width: #{$minWidth1360}) {
+        @content;
+    }
+}
+// end min height 700 and min width 1361
 
 .container {
     width: 100%;
-    height: 200px;
     margin: 5%;
   }
 
@@ -158,6 +363,45 @@ $responMax1440: 1440px;
     }
     @include smallPhoneDua(){
         margin: 0 -55%;
+
+    }
+  }
+
+  .customSize {
+      height: 100px;
+
+      @include respon1440(){
+        
+    }
+
+    // Min widht 951px and max width 1360px
+    @include respon1360(){
+        
+        
+    }
+    // Min widht 951px and max width 1360px
+
+    // Min width 750px and max width 950px
+    @include respon950(){
+        margin: 0 -50%;
+        
+        
+    }
+    // END Min width 750px and max width 950px
+
+    // Min width 500px and max width 750px
+    @include respon750(){
+        
+        
+    }
+    // END Min width 500px and max width 750px
+
+    // Max width 500px
+    @include smallPhone(){
+
+    }
+    @include smallPhoneDua(){
+        height: 60px;
 
     }
   }

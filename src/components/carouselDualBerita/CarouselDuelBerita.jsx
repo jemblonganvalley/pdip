@@ -99,10 +99,10 @@ export const CarouselDuelBerita = ({
                 style={{
                   width: "100%",
                   height: "100%",
-                  backgroundColor: "rgba(0,0,0,0.500)",
                   position: "absolute",
-                  background: `linear-gradient(176deg, rgba(0,0,0,0.7147233893557423) 0%, rgba(255,0,0,1) 100%)`,
+                  background: `linear-gradient(180deg, rgba(0, 0, 0, .1) 0%, rgba(255,0,0,.5) 100%)`,
                   backgroundBlendMode: "multiply",
+                  bottom : '0'
                 }}
               ></span>
 
@@ -194,7 +194,7 @@ export const CarouselDuelBerita = ({
                   height: "100%",
                   backgroundColor: "rgba(0,0,0,0.500)",
                   position: "absolute",
-                  background: `linear-gradient(176deg, rgba(0,0,0,0.28335084033613445) 0%, rgba(0,0,0,1) 100%)`,
+                  background: `linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%)`,
                 }}
               ></span>
 

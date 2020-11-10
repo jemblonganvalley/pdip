@@ -196,23 +196,21 @@ $maxHeight800: 800px;
     // END Max width 500px
 
         .customRow {
-            height: 15vh;
             background-color: #2d3436;
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             // padding: 3rem;
             flex-direction: row;
-
             // @include respon750(){
             //     justify-content: center;
             //     align-items: center;
             // }
+            padding: 20px 0;
 
             // min width 750px and max width 950px
             @include respon950(){
-                height: 15vh;
                 flex-direction: row;
                 position: relative;
             }
@@ -235,194 +233,98 @@ $maxHeight800: 800px;
                 // align-items: center;
                 flex-direction: column;
             }
-            
-            .custom {
-                display: flex;
+
+            .groupArticleUtama {
+                width: 100%;
+                height: 100%;
+                margin: 0 10px;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                border-right: 1px solid #f3f3f3;
-
-                // Min width 750px and max width 950px
-                @include respon950(){
-                    height: 15vh;
-                    width: 100%;
-                    flex-direction: row;
-                    padding: 0px 0 0 0;
-                    flex: 1;
-                    justify-content: center;
-                    align-items: center;
-                    border-right: 1px solid #f3f3f3;
-                    // justify-content: flex-start;
-                }
-                // END Min width 750px and max width 950px
-
-                // Min width 500px and max width 750px
-                @include respon750(){
-                    height: 15vh;
-                    width: 100%;
-                    flex-direction: column;
-                    padding: 0px 0 0 0;
-                    flex: 1;
-                    border-right: none;
-                    justify-content: center;
-                    align-items: center;
-                    border-bottom: 1px solid #f3f3f3;
-                    // justify-content: flex-start;
-                }
-                // END Min width 500px and max width 750px
-            
-                // Max width 500px
-                @include smallPhone() {
-                    position: relative;
-                    height: 15vh;
-                    width: 100%;
-                    flex-direction: column;
-                    padding: 0px 10px 0 10px;
-                    flex: 1;
-                    border-right: none;
-                    justify-content: center;
-                    align-items: center;
-                    border-bottom: 1px solid #f3f3f3;
-                }
-                // END Max width 500px
-
-                .btn-customBorder{
-                    // min width 750px and max width 950px
-                    @include respon950(){
-                        width: 90%;
-                    }
-                    // end min width 750px and max width 950px
-
-                    // min width 500px and max width 750px
-                    @include respon750(){
-                        width: 60%;
-                    }
-                    // end min width 500px and max width 750px
-
-                    // max width 500px
-                    @include smallPhone(){
-                        width: 70%;
-                    }
-                    // end max width 500px
-                }
-
-                img {
-                    height: 100%;
-                    margin: 0 10px;
-
-                    // min height 600 and max height 800 for min width 951 and max width 1360
-                    @include iconMinHeight600(){
-                        height: 100%;
-                    }
-                    // END min height 600 and max height 800 for min width 951 and max width 1360
-
-                    // Min width 750px and max width 950px
-                    @include respon950(){
-                        height: 50%;
-                        // width: 80px;
-                        margin: 0;
-                    }
-                    // END Min width 750px and max width 950px
-
-                    // Min width 500px and max width 750px
-                    @include respon750(){
-                        // height: 80px;
-                        // width: 80px;
-                        height: 75%;
-                        margin: 0;
-                    }
-                    // END Min width 500px and max width 750px
-
-                    // min height 800 and max width 750px
-                    @include minHeight800(){
-                        height: 60%;
-                    }
-                    // end min height 800 and max width 750px
-
-                    // max width 500px
-                    @include smallPhone() {
-                        height: 60%;
-                        // width: 65px;
-                        // height: 65px;
-                        margin: 0;
-                    }
-                    // END Max width 500px
-                
-
-                }
-
-                h5 {
-                    text-transform: uppercase;
-                    // font-size: 13pt;
-                    color: #ffffff;
-                    margin: 0 10px;
-                    line-height: 1.3;
-                    letter-spacing: 1px;
-
-                    // Min width 500px and max max width 750px
-                    @include respon750(){
-                        // font-size: 12pt;
-                        margin: 0 0 0 10px;
-                    }
-                    // END Min width 500px and max width 750px
-
-                    // Max widht 500px
-                    @include smallPhone() {
-                        // margin-top: 1rem;
-                        // // justify-content: center;
-                        // text-align: center;
-                        // font-size: 13pt;
-                        // width: 100%;
-                        font-family: 'Josefin Sans';
-                        margin: 0 0px 0 10px;
-                    }
-                    // END Max width 500px
-                    
-                    // @include smallPhoneDua() {
-                    //     font-size: 5pt;
-                    // }
-                }
+            }
 
                 .customBorder {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 100%;
-                    height: 15vh;
-                    padding: 2rem;
-                    // border-right: 1px solid #f3f3f3;
 
                     // Min width 750px and max width 950px
                     @include respon950(){
                         width: 100%;
-                        padding: 0rem;
-                        justify-content: flex-start;
                     }
                     // END Min width 750px and max width 950px
 
                     // Min width 500px and max width 750px
                     @include respon750(){
                         width: 100%;
-                        padding: 0rem;
-                        justify-content: flex-start;
                     }
                     // END Min width 500px and max width 750px
 
                     // max width 500px
                     @include smallPhone() {
-                        height: 15vh;
-                        // padding: 1rem;
-                        // padding: 4rem;
-                        padding: 0;
-                        border: none;
-                        justify-content: flex-start;
+
                     }
                     // END Max width 500px
+
+                    .itemImageCovid {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50%;
+                        .imageCovid {
+                            height: 100px;
+                            margin: 0 10px;
+        
+                            // min height 600 and max height 800 for min width 951 and max width 1360
+                            @include iconMinHeight600(){
+                                height: 100%;
+                            }
+                            // END min height 600 and max height 800 for min width 951 and max width 1360
+        
+                            // Min width 750px and max width 950px
+                            @include respon950(){
+                                height: 80px;
+                                // width: 80px;
+                                margin: 0;
+                            }
+                            // END Min width 750px and max width 950px
+        
+                            // Min width 500px and max width 750px
+                            @include respon750(){
+                                height: 75%;
+                                margin: 0;
+                            }
+                            // END Min width 500px and max width 750px
+        
+                            // min height 800 and max width 750px
+                            @include minHeight800(){
+                                height: 60%;
+                            }
+                            // end min height 800 and max width 750px
+        
+                            // max width 500px
+                            @include smallPhone() {
+                                height: 80px;
+                                margin: 0;
+                            }
+                            // END Max width 500px
+                        
+        
+                        }
+                    }
+                    .itemTextCovid {
+                        width: 50%;
+
+                        h4 {
+                            @include respon950(){
+                                font-size: 15pt;
+                            }
+                        }
+                    }
             }
             .calendar {
                 border: none;
             }
-        } 
     }
 
     .videoPage {

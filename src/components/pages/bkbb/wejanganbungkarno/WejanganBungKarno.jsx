@@ -10,6 +10,7 @@ import { useParams } from "react-router-dom";
 import VMedia from "../../../VMedia/VMedia";
 import CardQuotes from "../../../cardquotes/CardQuotes";
 import { useStoreState } from "easy-peasy";
+import QuotesBkbb from "../../../quotesbkbb/QuotesBkbb";
 
 const WejanganBungKarno = () => {
   // Create Database Card Item
@@ -94,14 +95,9 @@ const WejanganBungKarno = () => {
 
           <div
             className="col1-container-1-bkbbWejangan"
-            style={{
-              width: "100%",
-              padding: "0 20%",
-              margin: "40px 0",
-            }}
           >
             {configHome && (
-              <VMedia
+              <QuotesBkbb
                 displayIframe={"none"}
                 displayImage={"flex"}
                 backgroundImage={`https://atur.biar.pw/public${configHome.path}`}
@@ -112,6 +108,8 @@ const WejanganBungKarno = () => {
                 customWidth="70%"
                 kolumWidth="30%"
                 date={configHome.created_at}
+                widthCustom={'50%'}
+                widthCustomDesc={'50%'}
               />
             )}
           </div>
@@ -125,7 +123,7 @@ const WejanganBungKarno = () => {
           {/* END Container1 */}
 
           {/* Container2 */}
-          <div className="container2-wejanganThumbnail">
+          <div className="container2-wejanganThumbnail" >
             {/* Column Card Wejangan Bungkarno */}
             {/* <CardWejangan cardWejanganBkItem={cardWejanganBkItem} /> */}
             {cardWejanganBkItem.map((e, i) => (
