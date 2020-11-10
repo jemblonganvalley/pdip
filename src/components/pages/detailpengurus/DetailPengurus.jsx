@@ -111,17 +111,20 @@ const DetailPengurus = () => {
                    */}
 
                   <div className="email profilText">
-                    <small className="emailHead">Social Media</small>
+                    <small className="emailHead">Email</small>
                     <h6 className="emailText">{configHome.email}</h6>
                   </div>
                 </div>
               </div>
               <div className="kolum2">
                 <div className="descProfil">
-                  <h6 className="biografi">biografi singkat</h6>
-                  <p
+                  {/* <h6 className="biografi">biografi singkat</h6> */}
+                  <div
                     dangerouslySetInnerHTML={{ __html: configHome.biografi }}
-                  ></p>
+                    style={{
+                      marginBottom: "1rem",
+                    }}
+                  ></div>
                 </div>
               </div>
             </div>
