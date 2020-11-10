@@ -27,11 +27,29 @@ $deviceMax1500: 1500px;
     }
 }
 
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+
+
+$smallPhoneSatu : 500px;
+
+@mixin smallPhone {
+    @media (max-width : #{$smallPhoneSatu}) {
+        @content;
+    }
+}
+
 // For Botton Name Provinsi For on off Display Image Provinsi
     .btn-name-prov{
         display: flex;
-        height: auto;
-        width: auto;
         font-weight: bold;
         text-decoration: none;
         padding: 5px 0;

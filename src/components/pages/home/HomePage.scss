@@ -270,7 +270,6 @@ $maxHeight800: 800px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width: 50%;
                         .imageCovid {
                             height: 100px;
                             margin: 0 10px;
@@ -298,7 +297,7 @@ $maxHeight800: 800px;
         
                             // min height 800 and max width 750px
                             @include minHeight800(){
-                                height: 60%;
+                                height: 80px;
                             }
                             // end min height 800 and max width 750px
         
@@ -314,6 +313,7 @@ $maxHeight800: 800px;
                     }
                     .itemTextCovid {
                         width: 50%;
+                        margin-left: 1rem;
 
                         h4 {
                             @include respon950(){

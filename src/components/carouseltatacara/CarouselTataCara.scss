@@ -52,19 +52,21 @@ $secondary : #f3f3f3;
     position: relative;
     border: none;
     
-    .carousel{
+    #carouselTataCara{
         display: flex;
         position: relative;
         height: 40vh;
         width: 100%;
         border: none;
     
-        .carousel-item {
+        .carousel-item-tatacara {
             height: 40vh;
             width: 100%;
             background-size: cover;
             background-position: center;
             border: none;
+            background-image: none;
+            position: relative;
 
             @include respon950(){
                 flex-direction: column;
@@ -90,51 +92,38 @@ $secondary : #f3f3f3;
                 width: 100%;
                 max-width: 100%;
                 display: flex;
-                object-fit: cover;
-                object-position: center;
-                border: none;
+                background-position: center;
 
                 @include respon950(){
                     height: 60%;
-                    object-fit: cover;
                 }
 
                 // min widht 500px and max width 750px
                 @include respon750(){
                     height: 60%;
-                    object-fit: cover;
                 }
                 // end min width 500px and max width 750px
 
                 @include smallPhone(){
-                    height: 60%;
-                    object-fit: cover;
+                    height: 50%;
                 }
             }
 
-            .pCarousel {
-                position: absolute;
-                width: 30%;
-                bottom: 40%;
-                right: 10%;
-                font-weight: bold;
-
-                // min widht 750px and max width 950px
-                @include respon950(){
+            .container_text_carousel {
+                margin-left: auto;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                @include respon950() {
                     display: none;
                 }
-                // end min width 750px and max width 950px
-
-                // min widht 500px and max width 750px
-                @include respon750(){
+                @include smallPhone() {
                     display: none;
                 }
-                // end min width 500px and max width 750px
 
-                @include smallPhone(){
-                    display: none;
-                    top: 20px;
-                    right: 20px;
+                .textPTataCara {
+                    width: 50%;
                 }
             }
 
@@ -144,19 +133,18 @@ $secondary : #f3f3f3;
 
                 @include respon950(){
                     display: flex;
-                    height: 40%;
                     width: 100%;
                     background-color: $colors;
                     color: #fff;
                     padding: 10px 20px;
                     justify-content: center;
                     align-items: center;
+                    flex-direction: column;
                 }
 
                 // min width 500px and max width 750px
                 @include respon750(){
                     display: flex;
-                    height: 40%;
                     width: 100%;
                     background-color: $colors;
                     color: #fff;
@@ -168,24 +156,24 @@ $secondary : #f3f3f3;
 
                 @include smallPhone(){
                     display: flex;
-                    height: 40%;
                     width: 100%;
                     background-color: $colors;
                     color: #fff;
-                    padding: 10px 20px;
                     justify-content: center;
                     align-items: center;
+                    flex-direction: column;
+                    padding: 0 10px;
                 }
 
                 .pCarousel-for-mobile{
                     // min width 500px and max width 750px
                     @include respon750(){
-                        text-align: start;
+                        text-align: center;
                     }
                     // end min width 500px and max width 750px
 
                     @include smallPhone(){
-                        text-align: start;
+                        text-align: center;
                     }
                 }
             }

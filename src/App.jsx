@@ -42,6 +42,7 @@ import FormKeluhan from "./components/pages/informasi/formkeluhan/FormKeluhan";
 import CardBkbbQuotes2 from "./components/cardbkbbquotes2/CardBkbbQuotes2";
 import PidatoAll from "./components/pages/KetuaUmum/pidatoAll/PidatoAll";
 import MultimediaAll from "./components/pages/multimediaPage/multimediaAll/MultimediaAll";
+import NewNavbar from "./components/newnavbar/NewNavbar";
 
 function App() {
   let [hide, setHide] = useState(true);
@@ -89,8 +90,8 @@ function App() {
         ${token}
       `)} */}
 
-      {tkn && <MainNavbar hide={hide} token={tkn} />}
-
+      {/* {tkn && <MainNavbar hide={hide} token={tkn} />} */}
+      {tkn && <NewNavbar hide={hide} token={tkn} />}
       <div className="App">
         <Switch>
           {/* BLOG PAGE  */}
