@@ -107,10 +107,24 @@ const Dpd = () => {
                   <div className="alamat dpdText">
                     <small className="alamatText text-danger">Alamat </small>
                     <p className="namaProfil">{configHome.address}</p>
+                    <a
+                      href={`https://www.google.com/maps/search/?api=1&query=dpd+pdip+provinsi+${nameProv}`}
+                      target="_blank"
+                    >
+                      <button type="button" class="btn btn-danger rounded">
+                        <i class="fas fa-map pr-2" aria-hidden="true"></i>Map
+                      </button>
+                    </a>
                   </div>
                   <div className="telpon dpdText">
                     <small className="smallTanggal text-danger">Telepon</small>
                     <p className="tanggal">{configHome.phone}</p>
+                    <a href={`tel:+62${configHome.phone}`}>
+                      <button type="button" class="btn btn-danger rounded">
+                        <i class="fas fa-phone pr-2" aria-hidden="true"></i>
+                        Hubungi
+                      </button>
+                    </a>
                   </div>
                   <div className="ketua dpdText">
                     <small className="agamaHead text-danger">Ketua</small>

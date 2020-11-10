@@ -309,6 +309,7 @@ const Maps = () => {
 
           {/* Btn Bengkulu */}
           <BtnProvinsi
+            id="28"
             pageProv=""
             nameProv="Bengkulu"
             color={show5 ? "red" : "#000"}
@@ -324,6 +325,7 @@ const Maps = () => {
 
           {/* Btn Jambi */}
           <BtnProvinsi
+            id="19"
             pageProv=""
             nameProv="Jambi"
             color={show8 ? "red" : "#000"}
@@ -339,6 +341,7 @@ const Maps = () => {
 
           {/* Btn Bangka Belitung */}
           <BtnProvinsi
+            id="31"
             pageProv=""
             nameProv="Bangka Belitung"
             color={show3 ? "red" : "#000"}
@@ -354,7 +357,7 @@ const Maps = () => {
 
           {/* Btn Kepulauan Riau */}
           <BtnProvinsi
-            pageProv=""
+            pageProv="16"
             nameProv="Kepulauan Riau"
             color={show17 ? "red" : "#000"}
             transisi={show17 ? "0.2s all ease-in-out" : "0.2s all ease-in-out"}
@@ -369,6 +372,7 @@ const Maps = () => {
 
           {/* Btn Lampung */}
           <BtnProvinsi
+            id="25"
             pageProv=""
             nameProv="Lampung"
             color={show18 ? "red" : "#000"}
@@ -414,6 +418,7 @@ const Maps = () => {
 
           {/* Btn Sumatera Selatan */}
           <BtnProvinsi
+            id="22"
             pageProv=""
             nameProv="Sumatera Selatan"
             color={show32 ? "red" : "#000"}
@@ -573,6 +578,7 @@ const Maps = () => {
         <div className="box-btn-name-provinsi">
           {/* Btn Bali */}
           <BtnProvinsi
+            id="13"
             pageProv=""
             nameProv="Bali"
             color={show2 ? "red" : "#000"}
