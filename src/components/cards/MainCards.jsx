@@ -70,10 +70,10 @@ const Cards = ({
           borderRadius: borderRadius,
           marginTop: marginTop,
         }}
-        to={`${page}/${id}/${pageSLug()}`}
+        to={`${page}/${id}/${slug ? pageSLug() : null}`}
       >
         <Link
-          to={`${page}/${id}/${pageSLug()}`}
+          to={`${page}/${id}/${slug ? pageSLug() : null}`}
           className="imageCard"
           style={{
             backgroundImage: imageCard.includes("uploads")

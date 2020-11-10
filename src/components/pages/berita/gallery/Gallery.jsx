@@ -79,7 +79,7 @@ const Gallery = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://atur.biar.pw/api/gallery/data?page=1",
+      `https://atur.biar.pw/api/gallery/data?page=${numPage}`,
       {
         method: "POST",
         headers: {
@@ -107,6 +107,7 @@ const Gallery = () => {
         },
         body: JSON.stringify({
           where: { key: "type", value: "image" },
+          order: { key: "id", value: "desc" },
           limit: null,
         }),
       }
@@ -114,6 +115,7 @@ const Gallery = () => {
 
     const dataManyCard = await resManyCard.json();
     setManyCard(dataManyCard.query.data);
+    // console.log(manyCard);
   };
 
   useEffect(() => {
@@ -200,18 +202,22 @@ const Gallery = () => {
                 setReload(!reload);
               }}
             >
-              {manyCard.map((e, i) => (
-                <Cards
-                  category={e.type}
-                  imageCard={e.cover}
-                  title={e.album_name}
-                  slug={e.album_name}
-                  textSmall={e.album_description}
-                  // dateTime={e.created_at}
-                  page={`/gallery/detail-gallery`}
-                  id={e.id_album}
-                />
-              ))}
+              {manyCard.length > 0 && (
+                <>
+                  {manyCard.map((e, i) => (
+                    <Cards
+                      category={"Gallery"}
+                      imageCard={e.cover}
+                      title={e.album_name}
+                      // slug={e.album_name}
+                      textSmall={e.album_description}
+                      // dateTime={e.created_at}
+                      page={`/gallery/detail-gallery`}
+                      id={e.id_album}
+                    />
+                  ))}
+                </>
+              )}
             </div>
             {/* END Column2 */}
           </div>

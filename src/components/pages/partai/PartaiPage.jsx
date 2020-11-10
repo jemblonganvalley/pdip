@@ -87,12 +87,12 @@ const PartaiPage = () => {
                           as="div"
                           to={
                             i == 0
-                              ? `/detail-article/838/${e.title.replaceAll(
+                              ? `/detail-article/1015/${e.title.replaceAll(
                                   " ",
                                   "-"
                                 )}`
                               : i == 1
-                              ? `/detail-article/839/${e.title.replaceAll(
+                              ? `/detail-article/838/${e.title.replaceAll(
                                   " ",
                                   "-"
                                 )}`
