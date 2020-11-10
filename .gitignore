@@ -26,3 +26,4 @@ yarn-error.log*
 test.rest
 .gitignore
 package-lock.json
+restPdi.rest

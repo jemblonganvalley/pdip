@@ -15,7 +15,7 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 
 #PAGES
 ###
-POST https://atur.biar.pw/api/web/pages/ketua-umum
+POST https://atur.biar.pw/api/web/pages/home
 Content-Type: application/json
 Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjA0OTY5NzA2LCJleHAiOjE2MDUwNTYxMDYsIm5iZiI6MTYwNDk2OTcwNiwianRpIjoiV2ZuOU5YTU1CWkNGc1lYcCIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.TFpaeNESnSFT3hsq3nk8Cg3BCQXsxM31LiN8mDW81CM"
 
@@ -198,6 +198,25 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 {
 	"id" : 9
 }
+
+###
+POST https://atur.biar.pw/api/partai/dpd/data
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjA0OTY5NzA2LCJleHAiOjE2MDUwNTYxMDYsIm5iZiI6MTYwNDk2OTcwNiwianRpIjoiV2ZuOU5YTU1CWkNGc1lYcCIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.TFpaeNESnSFT3hsq3nk8Cg3BCQXsxM31LiN8mDW81CM"
+
+
+###
+POST https://atur.biar.pw/api/partai/dpd/find
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjA0OTY5NzA2LCJleHAiOjE2MDUwNTYxMDYsIm5iZiI6MTYwNDk2OTcwNiwianRpIjoiV2ZuOU5YTU1CWkNGc1lYcCIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.TFpaeNESnSFT3hsq3nk8Cg3BCQXsxM31LiN8mDW81CM"
+
+{
+	"id" : 4
+}
+
+
+
+
 
 # TRACK NOMER KTA
 ###
