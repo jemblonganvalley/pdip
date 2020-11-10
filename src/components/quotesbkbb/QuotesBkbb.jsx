@@ -1,20 +1,19 @@
 import React from "react";
 import CardSocialMedia from "../cardsocialmedia/CardSocialMedia";
-import "./VMedia.scss";
+import "./QuotesBkbb.scss";
 
-const VMedia = ({
+const QuotesBkbb = ({
   source,
   headline,
   desc,
   backgroundImage,
   descColor,
-  date,
+  date
 }) => {
   return (
-    <div className="wrapperPlayVid">
-      <div className="kolumVideo" >
-        {backgroundImage ? (
-          <img
+    <div className="wrapperQuotesBkbb">
+      <div className="kolumQuotesBkbb">
+        <img
             src={backgroundImage}
             alt=""
             width="100%"
@@ -25,32 +24,21 @@ const VMedia = ({
             }}
             alt={desc}
           />
-        ) : (
-          <iframe
-            className="iframe-Vmedia"
-            src={source}
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        )}
       </div>
 
       <div
-        className="descVideo"
+        className="descQuotesBkbb"
         style={{
           backgroundColor: descColor && `${descColor}`
         }}
       >
         <div className="textTop">
           <small>Admin PDI Perjuangan {date && "|" + date.split(" ")[0]}</small>
-          {/* <div className="countLove">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                        <small>0</small>
-                    </div> */}
         </div>
 
+        <div className="wrapperHeadlineBkbb">
         <h5 className="headline">{headline}</h5>
+        </div>
         <p className="descline">{desc}</p>
         <div className="share">
           {/* Card Social Media */}
@@ -68,4 +56,4 @@ const VMedia = ({
   );
 };
 
-export default VMedia;
+export default QuotesBkbb

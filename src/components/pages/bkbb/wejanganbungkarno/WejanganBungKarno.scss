@@ -158,35 +158,36 @@ $respon500: 500px;
 .container2-wejanganThumbnail {
   display: flex;
   //   flex-direction: column;
-  height: auto;
   width: 100%;
   margin: 0px 0 20px 0;
   padding: 0 20%;
   justify-content: space-between;
+  flex-direction: row;
 
   @include respon1440() {
     padding: 0px 10%;
   }
 
   @include respon1360() {
-    flex-direction: column;
+    flex-direction: row;
     padding: 0 5%;
   }
 
   @include respon950() {
-    flex-direction: column;
+    flex-direction: row;
     padding: 0 2%;
   }
 
   @include respon750() {
-    flex-direction: column;
+    flex-direction: row;
     padding: 0 15%;
   }
 
   @include smallPhone() {
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
+    padding: 0 10px;
   }
+}
 
   // Column Card Wejangan Bungkarno
   .col-card-wejanganThumbnail {
@@ -229,4 +230,23 @@ $respon500: 500px;
     }
   }
   // END Column Pagination
+
+
+.col1-container-1-bkbbWejangan {
+  width: 100%;
+  padding: 0 10%;
+  margin: 40px 0;
+
+  @include smallPhone() {
+    padding: 0;
+    margin: 10px 0;
+  }
+  @include respon950() {
+    padding: 0 20px;
+    margin: 10px 0;
+  }
+
+  @include respon750() {
+
+  }
 }

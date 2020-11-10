@@ -46,15 +46,15 @@ const SliderBrand = () => {
             {
                 breakpoint : 480,
                 settings : {
-                    slidesToShow : 1,
-                    slidesToScroll : 1
+                    slidesToShow : 2,
+                    slidesToScroll : 2
                 }
             },
             {
                 breakpoint : 300,
                 settings : {
-                    slidesToShow : 1,
-                    slidesToScroll : 1
+                    slidesToShow : 2,
+                    slidesToScroll : 2
                 }
             },
             
@@ -65,13 +65,13 @@ const SliderBrand = () => {
         <div className="container">
             <Slider {...settings}>
 
-                <div className='containerImg' ><img src={Bspn} alt="" className='hover' /></div>
-                <div className='containerImg' ><img src={BMI} alt="" className='hover' /></div>
-                <div className='containerImg' ><img src={Baguna} alt="" className='hover' /></div>
-                <div className='containerImg' ><img src={BKN} alt="" className='hover' /></div>
-                <div className='containerImg' ><img src={Bamusi} alt="" className='hover' /></div>
-                <div className='containerImg' ><img src={repdem} alt="" className='hover' /></div>
-                <div className='containerImg' ><img src={TMP} alt="" className='hover' /></div>
+                <div className='containerImg' ><img src={Bspn} alt="" className='hover customSize' /></div>
+                <div className='containerImg' ><img src={BMI} alt="" className='hover customSize' /></div>
+                <div className='containerImg' ><img src={Baguna} alt="" className='hover customSize' /></div>
+                <div className='containerImg' ><img src={BKN} alt="" className='hover customSize' /></div>
+                <div className='containerImg' ><img src={Bamusi} alt="" className='hover customSize' /></div>
+                <div className='containerImg' ><img src={repdem} alt="" className='hover customSize' /></div>
+                <div className='containerImg' ><img src={TMP} alt="" className='hover customSize' /></div>
             </Slider>
         </div>
     )

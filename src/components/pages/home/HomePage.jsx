@@ -158,11 +158,37 @@ const HomePage = () => {
           {/* LOGO ICON COVID DAN LAIN LAIN */}
           <div className="homePageTwo">
             <div className="customRow">
-              {configHome.length > 0 &&
-                // 1 r-group-text-image
+              {configHome.length > 0 && configHome[1].value.map((e, i) => (
+                <div className="groupArticleUtama" key={i}>
+                  <a
+                    href={
+                      i === 0
+                        ? "/article/247/covid-19"
+                        : i === 1
+                        ? "https://pdipkreatif.id/home"
+                        : "/event"
+                    }
+                    target={i == 1 ? "_blank" : ""}
+                  >
+                    <div className="customBorder">
+                        <div className="itemImageCovid">
+                        <img
+                          src={`https://atur.biar.pw/public/${e.image}`}
+                          alt=""
+                          className='imageCovid'
+                        />
+                        </div>
+                        <div className="itemTextCovid">
+                          <h4 style={{ color: "#fff" }}>{e.title}</h4>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+              ))}
+
+              {/* {configHome.length > 0 &&
                 configHome[1].value.map((e, i) => (
                   <div className="col-lg-4 custom r-group-text-image" key={i}>
-                    {/* URUTAN LINK */}
                     <a
                       href={
                         i === 0
@@ -174,17 +200,20 @@ const HomePage = () => {
                       target={i == 1 ? "_blank" : ""}
                     >
                       <div className="customBorder">
+                        <div className="itemImageCovid">
                         <img
                           src={`https://atur.biar.pw/public/${e.image}`}
                           alt=""
-                          width="100"
-                          height="100"
+                          className='imageCovid'
                         />
-                        <h4 style={{ color: "#fff" }}>{e.title}</h4>
+                        </div>
+                        <div className="itemTextCovid">
+                          <h4 style={{ color: "#fff" }}>{e.title}</h4>
+                        </div>
                       </div>
                     </a>
                   </div>
-                ))}
+                ))} */}
             </div>
 
             {/* SECTION VIDEO  */}

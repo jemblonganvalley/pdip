@@ -39,7 +39,7 @@ $responMax950: 950px;
 }
 // END Min widht 750 and max width 950
 
-.wrapperPlayVid {
+.wrapperQuotesBkbb {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -66,16 +66,16 @@ $responMax950: 950px;
         margin-top: 0;
     }
 
-    .kolumVideo {
+    .kolumQuotesBkbb {
         // border: 1px solid blue;
         display: flex;
         height: auto;
-        width: 70%;
+        width: 50%;
 
         // min width 750px and max width 950px
         @include respon950(){
             height: auto;
-            width: 65%;
+            width: 50%;
         }
         // end min width 750px and max width 950px
 
@@ -98,8 +98,8 @@ $responMax950: 950px;
         }
     }
 
-    .descVideo {
-        width: 30%;
+    .descQuotesBkbb {
+        
         // border: 1px solid crimson;
         display: flex;
         flex-direction: column;
@@ -111,11 +111,12 @@ $responMax950: 950px;
         position: relative;
         justify-content: flex-start;
         align-items: flex-start;
+        width: 50%;
 
         // min width 750px and max width 950px
         @include respon950(){
             height: auto;
-            width: 35%;
+            width: 50%;
             padding: 10px 20px;
             justify-content: flex-start;
             align-items: flex-start;
@@ -145,138 +146,92 @@ $responMax950: 950px;
             display: flex;
             width: 100%;
             flex-direction: row;
-            // font-size: 9pt;
-            // align-items: center;
-
-            // min width 750px and max width 950px
-            // @include respon950(){
-            //     justify-content: center;
-            // }
-            // end min width 750px and max width 950px
-
-            // min width 500px and max width 750px
-            // @include respon750(){
-            //     justify-content: center;
-            // }
-            // end min width 500px and max width 750px
-
-            // @include smallPhone(){
-                
-            // }
 
             small {
                 color: #fff;
                 margin-right: 20px;
 
                 @include respon950(){
-                    margin-right: 20px;
+
+                }
+                // end min width 750px and max width 950px
+        
+                // min width 500px and max width 750px
+                @include respon750(){
+
+                }
+                // end min width 500px and max width 750px
+        
+                @include smallPhone() {
+
+                }
+            }
+        }
+        .wrapperHeadlineBkbb {
+            .headline {
+                margin-top: 1rem;
+                margin-right: 20px;
+                font-weight: bold;
+
+                @include respon950(){
+
                 }
 
                 @include respon750(){
-                    margin-right: 20px;
-                }
 
+                }
+    
                 @include smallPhone(){
-                    margin-right: 20px;
+                    margin-right: 0;
                 }
             }
-
-            .countLove {
-                margin-left: auto;
-                i {
-                    margin-right: .5rem;
-                    color: $colors;
-                }
-                small {
-                    color: #818181;
-                }
-            }
+    
         }
-        .headline {
-            margin-top: 1rem;
-            margin-right: 20px;
-            font-weight: bold;
-
-            @include smallPhone(){
-                margin-right: 0;
-            }
-
-            // min width 500px and max width 750px
-            // @include respon750(){
-            //     text-align: center;
-            // }
-            // end min width 500px and max width 750px
-
-            // @include smallPhone() {
-            //     text-align: center;
-            // }
-        }
-
-        // p {
-        //     // font-size: 10pt;
-        //     // @include smallPhone() {
-        //     //     text-align: center;
-        //     //     // font-size: 9pt;
-        //     // }
-        // }
         .descline {
             overflow-y: scroll;
             padding: 0 10px 0 0;
 
+            &::-webkit-scrollbar {
+                width: 3px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #f3f3f3;
+                border-radius: 3px;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: $darkRedTwo;
+            border-radius: 3px;
+            }
+
             @include smallPhone(){
                 padding: 0;
+
+                &::-webkit-scrollbar {
+                    width: 0;
+                }
+    
+                &::-webkit-scrollbar-thumb {
+                    background-color: transparent;
+                    border-radius: 0;
+                }
+                &::-webkit-scrollbar-track {
+                    background-color: transparent;
+                border-radius: 0;
+                }
             }
         }
-
-        .descline::-webkit-scrollbar{
-            width: 3px;
-        }
-    
-        .descline::-webkit-scrollbar-thumb{
-            background-color: #f3f3f3;
-            border-radius: 3px;
-        }
-    
-        .descline::-webkit-scrollbar-track{
-            background-color: $darkRedTwo;
-            border-radius: 3px;
-        }
-
-        // @include respon950(){
-        //     justify-content: center;
-        //     text-align: center;
-        // }
-
-        // @include respon750(){
-        //     justify-content: center;
-        //     text-align: center;
-        // }
-
         .share {
-            // font-size: 10pt;
-            // position: absolute;
             margin-top: auto;
             bottom: 0;
 
-            // @include smallPhone() {
-            //     position: inherit;
-            //     display: flex;
-            //     justify-content: center;
-            //     align-items: center;
-            //     font-size: 9pt;
-            // }
-
             .marginShare {
-                // margin: 0 .5rem;
                 align-items: center;
             }
             i {
                 cursor: pointer;
                 transition: .3s;
                 margin: 0 .5rem;
-                // &:hover {
-                //     color: $colors;
-                // }
             }
         }
     }

@@ -18,6 +18,7 @@ const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
               id="carouselnih"
               className="carousel slide kmCarousel"
               data-ride="carousel"
+              data-interval='2000'
             >
               <ol className="carousel-indicators">
                 <li

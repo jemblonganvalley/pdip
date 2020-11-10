@@ -60,6 +60,13 @@ const MainNavbar = ({ token }) => {
     query: "(max-device-width: 600px)",
   });
 
+  const Tablet = ({ children }) => {
+    const isTablet = useMediaQuery({ minDeviceWidth: 750, maxDeviceWidth: 1000 })
+    return isTablet ? children : null
+  }
+
+  const isLandscape = useMediaQuery({ query: '(orientation: landscape)' })
+
   const handleShow = (e) => {
     setShow(e.target.value);
   };
@@ -238,6 +245,105 @@ const MainNavbar = ({ token }) => {
         </nav>
       )}
 
+      {isLandscape && (
+        <nav
+          className="navbar navbar-expand-lg sticky-top"
+          id="navbar"
+          style={{
+            boxShadow:
+              window.scrollY > 1
+                ? "-1px 7px 30px -12px rgba(0,0,0,0.75)"
+                : "none",
+          }}
+        >
+          <div className="container-fluid">
+            <NavLink className="navbar-brand" to="/" activeClassName="brand">
+              <img
+                src={logo}
+                alt=""
+                width="60"
+                className="d-inline-block align-center active"
+                loading="lazy"
+              />
+            </NavLink>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-label="Toggle navigation"
+            >
+              <i className="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                {/* MAPPING MENU */}
+                {Object.keys(menu).map((e, i) => (
+                  <li
+                    className="nav-item"
+                    style={{
+                      position: "relative",
+                    }}
+                    key={i}
+                    onMouseOver={() => {
+                      setShow(e);
+                      // console.log(show);
+                    }}
+                    onMouseLeave={() => {
+                      setShow("");
+                    }}
+                  >
+                    <NavLink
+                      className="nav-link"
+                      to={"/" + e.replace(/\s/g, "-").toLowerCase()}
+                      activeClassName="active"
+                    >
+                      {e}
+                    </NavLink>
+
+                    {show === e && (
+                      <DropDown menuItem={Object.values(menu)} listIndex={i} />
+                    )}
+                  </li>
+                ))}
+              </ul>
+              <form
+                action={`/search/${search}`}
+                className="d-inline-flex"
+                style={{
+                  display: "flex",
+                }}
+              >
+                <input
+                  className="form-control mr-2"
+                  type="text"
+                  placeholder="Cari Artikel"
+                  // name="search"
+                  onChange={(e) => setSearch(e.target.value)}
+                  type="text"
+                />
+                <Link
+                  to={`/search/${search}`}
+                  name="submit"
+                  className="btn-next"
+                >
+                  <i
+                    className="fas fa-search"
+                    aria-hidden="true"
+                    name="icon"
+                  ></i>
+                </Link>
+              </form>
+            </div>
+          </div>
+        </nav>
+      )}
+
+
       {isMobile && (
         <nav
           className="navbar navbar-expand-lg sticky-top"
@@ -387,6 +493,156 @@ const MainNavbar = ({ token }) => {
           </div>
         </nav>
       )}
+      <Tablet>
+        <nav
+          className="navbar navbar-expand-lg sticky-top"
+          id="navbar"
+          style={{
+            boxShadow:
+              window.scrollY > 1
+                ? "-1px 7px 30px -12px rgba(0,0,0,0.75)"
+                : "none",
+          }}
+        >
+          <div className="container-fluid">
+            <NavLink className="navbar-brand" to="/" activeClassName="brand">
+              <img
+                src={pdimobile}
+                alt=""
+                width="60"
+                className="d-inline-block align-center active"
+                loading="lazy"
+                onClick={() => {
+                  setCollapse1(false);
+                }}
+              />
+            </NavLink>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-label="Toggle navigation"
+              style={{
+                color: "#fff",
+              }}
+              onClick={() => {
+                setCollapse1(!collapse1);
+              }}
+            >
+              <i className="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+              style={{
+                display: collapse1 ? "block" : "none",
+              }}
+            >
+              <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                {Object.keys(menu).map((e, i) => (
+                  <li
+                    className="nav-item"
+                    style={{
+                      position: "relative",
+                    }}
+                    key={e.id}
+                    onClick={() => {
+                      setShow(e.name);
+                    }}
+                  >
+                    <NavLink
+                      className="nav-link"
+                      to={"/" + e.replace(/\s/g, "-").toLowerCase()}
+                      activeClassName="active"
+                      onClick={() => {
+                        setCollapse1(!collapse1);
+                      }}
+                    >
+                      {e}
+                    </NavLink>
+
+                    {show === e && (
+                      <DropDown menuItem={Object.values(menu)} listIndex={i} />
+                    )}
+
+                    {/* Container Dropdown menu mobile */}
+                    {Object.values(menu)[i].map((e) => (
+                      <div
+                        className="dropdown-menu-mobile"
+                        style={{
+                          height: trigger1 ? "50px" : "0",
+                          transition: trigger1
+                            ? "0.5s ease-in-out"
+                            : "0.3s ease-in",
+                        }}
+                      >
+                        <Link
+                          className="page-menu-drop-mobile"
+                          style={{
+                            color: "#f3f3f3",
+                          }}
+                        >
+                          {e.title}
+                        </Link>
+                      </div>
+                    ))}
+
+                    {/* end Container Dropdown menu mobile */}
+                  </li>
+                ))}
+
+                {/* Trigger For Menu Dropdown menu mobile */}
+                <div className="btn-menu-drop-mobile">
+                  {/* btn drop 1 */}
+                  <li className="list-btn-menu-drop">
+                    <i
+                      className="fas fa-angle-down"
+                      id="icon-menuDrop"
+                      onClick={() => {
+                        setTrigger1(!trigger1);
+                      }}
+                      style={{
+                        transform: trigger1 ? "rotate(-180deg)" : "rotate(0)",
+                        color: trigger1 ? "#333" : "#f3f3f3",
+                        fontSize: trigger1 ? "20pt" : "13pt",
+                        transition: trigger1
+                          ? "0.5s ease-in-out"
+                          : "0.3s ease-in",
+                      }}
+                    ></i>
+                  </li>
+                </div>
+                {/* END Trigger For Menu Dropdown menu mobile */}
+
+                {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown" expanded>
+                      {e.listItem.map((e)=>(
+                        <li><Link class="dropdown-item" to={e.listTo}>{e.listName}</Link></li>
+                        
+                      ))}
+                    </ul> */}
+              </ul>
+              <form className="d-inline-flex">
+                <input
+                  className="form-control mr-2"
+                  type="text"
+                  placeholder="cari artikel"
+                  name="search"
+                />
+                <Link to="/search" name="submit" className="btn-next">
+                  <i
+                    className="fas fa-search"
+                    aria-hidden="true"
+                    name="icon"
+                  ></i>
+                </Link>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </Tablet>
+      
     </>
   );
 };

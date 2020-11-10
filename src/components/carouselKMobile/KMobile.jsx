@@ -11,7 +11,7 @@ const KMobile = ({cat=44, totalPage=3, data=data}) => {
         <div className="KMobile">
                 <div className="row rowCustomMobile">
                     <div className="carousels">
-                    <div id="carouselnih" className="carousel slide kmCarousel" data-ride="carousel">
+                    <div id="carouselnih" className="carousel slide kmCarousel" data-ride="carousel" data-interval='1000'>
                             <ol className="carousel-indicators">
                                 <li data-target="#carouselnih" data-slide-to={0} className="active" />
                                 <li data-target="#carouselnih" data-slide-to={1} />
@@ -19,7 +19,11 @@ const KMobile = ({cat=44, totalPage=3, data=data}) => {
                             </ol>
                             <div className="carousel-inner">
                                 {data.map((e,i)=>(
-                                    <div className={`carousel-item ${i == 1 && 'active'} itemKMobile`}>
+                                    <div className={`carousel-item ${i == 1 && 'active'} itemKMobile`} onClick={() => {
+                                        window.location.href = `/detail-article/${
+                                          e.id
+                                        }/${e.title.replace(/\s/g, "-").toLowerCase()}`;
+                                      }}>
                                     <div className="col-lg-6 bannerMobile" style={{
                                         backgroundImage : `url(https://atur.biar.pw/public/${e.path})`,
                                         backgroundSize: 'cover'
