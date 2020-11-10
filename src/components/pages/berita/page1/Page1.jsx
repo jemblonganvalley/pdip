@@ -225,13 +225,13 @@ const Page1 = () => {
           </div>
           {/* END Container1 */}
 
-          <div className="col1-section6-beritaPage1">
+          {/* <div className="col1-section6-beritaPage1">
             <MainDivider
               text="Berita Terbaru"
               garisMerah="7rem"
               mrgn="0rem 0"
             />
-          </div>
+          </div> */}
 
           {/* CARD BERITA LAINNYA */}
           {/* <div className="col2-section6-beritaPage1">

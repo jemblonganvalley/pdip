@@ -212,7 +212,7 @@ const PartaiPage = () => {
                 {/* TATA CARA */}
                 {/* 4r-text-html */}
                 <div className="col-lg-9 textBanteng">
-                  <h1>{parse(config[4].value)}</h1>
+                  <p>{parse(config[4].value)}</p>
                 </div>
               </div>
               {/* END */}
