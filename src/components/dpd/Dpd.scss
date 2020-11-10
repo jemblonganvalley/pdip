@@ -1,218 +1,215 @@
 // $padding : 20px 8%;
 @import "../../utilities/variable/variables.scss";
 
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+$smallPhoneSatu: 500px;
+$smallPhoneDua: 400px;
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
-
 .dpdWrapper {
-    // .dpdHead {
-    //     background: url(../../img/kampanye.jpg);
-    //     background-size: cover;
-    //     height: 25vh;
-    //     background-position: center;
-    //     border: 1px solid blue;
-    //     @include smallPhone() {
-    //         height: 20vh;
-    //     }
-    //     @include smallPhoneDua() {
-    //         height: 15vh;
-    //     }
+  // .dpdHead {
+  //     background: url(../../img/kampanye.jpg);
+  //     background-size: cover;
+  //     height: 25vh;
+  //     background-position: center;
+  //     border: 1px solid blue;
+  //     @include smallPhone() {
+  //         height: 20vh;
+  //     }
+  //     @include smallPhoneDua() {
+  //         height: 15vh;
+  //     }
 
-        
-    //     .backDpd {
-    //         background-color: rgba(255, 0, 8, 0.8);
-    //         width: 100%;
-    //         height: 100%;
-    //         display: flex;
-    //         // justify-content: center;
-    //         align-items: center;
-    //         color: #ffffff;
-        
-    //         .textDpdHead {
-    //             width: 30%;
-    //             height: 50%;
-    //             margin-left: 13rem;
-    //             @include smallPhone() {
-    //                 width: auto;
-    //                 margin-left: 0;
-    //                 padding: 0 10%;
-    //             }
-    //             h2 {
-    //                 @include smallPhoneDua() {
-    //                     font-size: 15pt;                        
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-        // START LINK PARTAI
-        .linkedDetail {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            width: 40%;
-            margin-top: 20px;
-            padding: $padding;
-            @include smallPhone() {
-                // border: 1px solid crimson;
-                width: 100%;
-                padding: $paddingMobile;
-            }
-        }
-    // END LINK PARTAI
+  //     .backDpd {
+  //         background-color: rgba(255, 0, 8, 0.8);
+  //         width: 100%;
+  //         height: 100%;
+  //         display: flex;
+  //         // justify-content: center;
+  //         align-items: center;
+  //         color: #ffffff;
 
-    .pengurus {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 0 0 30px 0;
-        @include smallPhone() {
-            padding: 0 0 20px 0;
-        }
-
-        // Divider
-        .divider-dewan-pimpinan{
-            display: flex;
-            height: auto;
-            width: 100%;
-            margin: 0;
-            padding: 0 20%;
-            align-items: center;
-
-            @include smallPhone(){
-                padding: 0 10px;
-            }
-        }
-        // END Divider
-
-        
-        .dpdTextHead {
-            margin: 2rem 0;
-            text-align: center;
-            font-weight: bold;
-            color: #000000;
-
-            @include smallPhone(){
-                margin: 2rem 0 1rem 0;
-            }
-
-            h1 {
-                @include smallPhone() {
-                    font-size: 15pt;
-                }
-                @include smallPhoneDua() {
-                    font-size: 13pt;
-                }
-            }
-        }
-
-        .profilDpd {
-            display: flex;
-            width: 100%;
-            padding: 0 20%;
-            @include smallPhone() {
-                padding: 0 10px;
-                flex-direction: column;
-            }
-
-            .kolum1 {
-                // border: 1px solid crimson;
-                width: 25vw;
-                height: 100%;
-                display: flex;
-                align-items: flex-start;
-                flex-direction: column;
-                margin: 0 30px 0 0;
-
-                @include smallPhone() {
-                    width: 100%;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .textDpd {
-                    display: flex;
-                    flex-direction: column;
-                    width: 70%;
-                    // height: 100%;
-
-                    // border: 1px solid green;
-                    @include smallPhone() {
-                        text-align: center;
-                    }
-
-                    .dpdText {
-                        margin: 10px 10px 10px 0;
-                        @include smallPhone() {
-                            margin: 5px;
-                        }
-
-                        small {
-                            color: $colors;
-                            font-size: 8pt;
-                        }
-                        h6 {
-                        font-weight: bold;
-                        font-size: 10pt;
-                        text-transform: uppercase;
-                        }
-                    }
-                }
-            }
-            .kolum2 {
-                display: flex;
-                // justify-content: center;
-                // align-items: center;
-                flex-direction: column;
-                width: 100%;
-                height: 100%;
-                // border: 1px solid blue;
-                .peta {
-                    width: 100%;
-                    height: 37vh;
-                    border-radius: 10px;
-                    background-color: #a0000b;
-                }
-                .descPeta {
-                    width: 100%;
-                    display: flex;
-                    // align-items: center;
-                    flex-direction: column;
-                    align-items: center;
-                    @include smallPhone() {
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                    }
-
-                    .dpc {
-                        text-transform: uppercase;
-                        font-weight: bold;
-                        margin-top: 1rem;
-                    }
-                    small {
-                        font-size: 8pt;
-                    }
-                    .small {
-                        margin-bottom: 1rem;
-                        // font-weight: 500;
-                        text-transform: uppercase;
-                    }
-                }
-            }
-        }
+  //         .textDpdHead {
+  //             width: 30%;
+  //             height: 50%;
+  //             margin-left: 13rem;
+  //             @include smallPhone() {
+  //                 width: auto;
+  //                 margin-left: 0;
+  //                 padding: 0 10%;
+  //             }
+  //             h2 {
+  //                 @include smallPhoneDua() {
+  //                     font-size: 15pt;
+  //                 }
+  //             }
+  //         }
+  //     }
+  // }
+  // START LINK PARTAI
+  .linkedDetail {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 40%;
+    // margin-top: 20px;
+    // padding: $padding;
+    @include smallPhone() {
+      // border: 1px solid crimson;
+      width: 100%;
+      padding: $paddingMobile;
     }
+  }
+  // END LINK PARTAI
+
+  .pengurus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0 30px 0;
+    @include smallPhone() {
+      padding: 0 0 20px 0;
+    }
+
+    // Divider
+    .divider-dewan-pimpinan {
+      display: flex;
+      height: auto;
+      width: 100%;
+      margin: 0;
+      padding: 0 20%;
+      align-items: center;
+
+      @include smallPhone() {
+        padding: 0 10px;
+      }
+    }
+    // END Divider
+
+    .dpdTextHead {
+      margin: 2rem 0;
+      text-align: center;
+      font-weight: bold;
+      color: #000000;
+
+      @include smallPhone() {
+        margin: 2rem 0 1rem 0;
+      }
+
+      h1 {
+        @include smallPhone() {
+          //   font-size: 15pt;
+        }
+        @include smallPhoneDua() {
+          //   font-size: 13pt;
+        }
+      }
+    }
+
+    .profilDpd {
+      display: flex;
+      width: 100%;
+      padding: 0 20%;
+      @include smallPhone() {
+        padding: 0 10px;
+        flex-direction: column;
+      }
+
+      .kolum1 {
+        // border: 1px solid crimson;
+        width: 25vw;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0 30px 0 0;
+
+        @include smallPhone() {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .textDpd {
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          // height: 100%;
+
+          // border: 1px solid green;
+          @include smallPhone() {
+            text-align: center;
+          }
+
+          .dpdText {
+            margin: 10px 10px 10px 0;
+            @include smallPhone() {
+              margin: 5px;
+            }
+
+            small {
+              color: $colors;
+              //   font-size: 8pt;
+            }
+            h6 {
+              font-weight: bold;
+              //   font-size: 10pt;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+      .kolum2 {
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        // border: 1px solid blue;
+        .peta {
+          width: 100%;
+          height: 37vh;
+          border-radius: 10px;
+          background-color: #a0000b;
+        }
+        .descPeta {
+          width: 100%;
+          // display: flex;
+          // align-items: center;
+          // flex-direction: column;
+          // align-items: center;
+          @include smallPhone() {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+
+          .dpc {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 1rem;
+          }
+          small {
+            // font-size: 8pt;
+          }
+          .small {
+            margin-bottom: 1rem;
+            // font-weight: 500;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
 }

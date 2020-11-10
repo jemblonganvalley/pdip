@@ -107,6 +107,7 @@ $respon500: 500px;
   align-items: center;
   flex-direction: column;
   padding: 0 20%;
+  margin-bottom: 2rem;
   @include smallPhone() {
     padding: 0 10px;
   }
@@ -244,6 +245,7 @@ $respon500: 500px;
         .descProfil {
           display: flex;
           flex-direction: column;
+          margin-bottom: 1rem;
           @include smallPhone() {
             text-align: center;
           }

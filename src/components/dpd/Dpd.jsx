@@ -88,11 +88,7 @@ const Dpd = () => {
             {/* END Divider */}
 
             <div className="dpdTextHead">
-              <h1>
-                Dewan Pimpinan Daerah PDI Perjuangan
-                <br />
-                Provinsi {nameProv}
-              </h1>
+              <h1>{configHome.name}</h1>
             </div>
             <div className="profilDpd">
               <div className="kolum1">
@@ -100,27 +96,33 @@ const Dpd = () => {
                   src={`https://atur.biar.pw/public/${configHome.photo_one}`}
                   alt=""
                   width="250"
+                  style={{
+                    height: "37vh",
+                    objectFit: "cover",
+                    objectPosition: "center",
+                    borderRadius: "10px",
+                  }}
                 />
                 <div className="textDpd">
                   <div className="alamat dpdText">
-                    <small className="alamatText">Alamat</small>
-                    <h6 className="namaProfil">{configHome.address}</h6>
+                    <small className="alamatText text-danger">Alamat </small>
+                    <p className="namaProfil">{configHome.address}</p>
                   </div>
                   <div className="telpon dpdText">
-                    <small className="smallTanggal">Telepon</small>
-                    <h6 className="tanggal">{configHome.phone}</h6>
+                    <small className="smallTanggal text-danger">Telepon</small>
+                    <p className="tanggal">{configHome.phone}</p>
                   </div>
                   <div className="ketua dpdText">
-                    <small className="agamaHead">Ketua</small>
-                    <h6 className="text">{configHome.ketua}</h6>
+                    <small className="agamaHead text-danger">Ketua</small>
+                    <p className="text">{configHome.ketua}</p>
                   </div>
                   <div className="sekretaris dpdText">
-                    <small className="emailHead">Sekretaris</small>
-                    <h6 className="emailText">{configHome.sekretaris}</h6>
+                    <small className="emailHead text-danger">Sekretaris</small>
+                    <p className="emailText">{configHome.sekretaris}</p>
                   </div>
                   <div className="bendahara dpdText">
-                    <small className="emailHead">Bendahara</small>
-                    <h6 className="emailText">{configHome.bendahara}</h6>
+                    <small className="emailHead text-danger">Bendahara</small>
+                    <p className="emailText">{configHome.bendahara}</p>
                   </div>
                 </div>
               </div>
@@ -135,8 +137,8 @@ const Dpd = () => {
                   }}
                 ></div>
                 <div className="descPeta">
-                  <h6 className="dpc">DPC PDI perjuangan kota {nameProv}</h6>
-                  <div>{parse(configHome.description)}</div>
+                  <h5 className="dpc">{`DPC PDI Perjuangan ` + nameProv}</h5>
+                  {parse(configHome.description)}
                 </div>
               </div>
             </div>
