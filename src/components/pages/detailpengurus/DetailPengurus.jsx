@@ -5,7 +5,7 @@ import MainDivider from "../../divider/MainDivider";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import { useParams } from "react-router-dom";
 import Wait from "../../wait/Wait";
-import parse from 'html-react-parser'
+import parse from "html-react-parser";
 
 const DetailPengurus = () => {
   const { id, name, grade } = useParams();
@@ -73,7 +73,9 @@ const DetailPengurus = () => {
               link2="Partai"
               to2="/partai"
               link3="Struktur Pengurus"
-              to3={grade === 'pengurus' ? '/struktur-dpp' : '/anggota-legislatif'}
+              to3={
+                grade === "pengurus" ? "/struktur-dpp" : "/anggota-legislatif"
+              }
             />
           </div>
           {/* END */}
@@ -81,15 +83,15 @@ const DetailPengurus = () => {
           <div className="pengurus">
             <MainDivider text="Pengurus DPP PDI PERJUANGAN" garisMerah="4rem" />
             <div className="bidangTextHead">
-              <h2>
-                {configHome.jabatan}
-              </h2>
+              <h2>{configHome.jabatan}</h2>
             </div>
             <div className="profilPengurus">
               <div className="kolum1">
-                <img src={`https://atur.biar.pw/public/` + configHome.photo} alt="" />
+                <img
+                  src={`https://atur.biar.pw/public/` + configHome.photo}
+                  alt="photo pengurus"
+                />
                 <div className="textProfil">
-
                   <div className="ketua profilText">
                     <small className="ketuaText">Nama</small>
                     <h6 className="namaProfil">{configHome.nama}</h6>
@@ -110,14 +112,16 @@ const DetailPengurus = () => {
 
                   <div className="email profilText">
                     <small className="emailHead">Social Media</small>
-                <h6 className="emailText">{configHome.email}</h6>
+                    <h6 className="emailText">{configHome.email}</h6>
                   </div>
                 </div>
               </div>
               <div className="kolum2">
                 <div className="descProfil">
                   <h6 className="biografi">biografi singkat</h6>
-                <p dangerouslySetInnerHTML={{__html : configHome.biografi}}></p>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: configHome.biografi }}
+                  ></p>
                 </div>
               </div>
             </div>

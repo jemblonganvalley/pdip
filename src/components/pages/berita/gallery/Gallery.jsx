@@ -89,7 +89,7 @@ const Gallery = () => {
         body: JSON.stringify({
           order: { key: "id", value: "desc" },
           where: { key: "id_album", value: id },
-          limit: null,
+          // limit: 9,
         }),
       }
     );
@@ -108,20 +108,21 @@ const Gallery = () => {
         body: JSON.stringify({
           where: { key: "type", value: "image" },
           order: { key: "id", value: "desc" },
-          limit: null,
+          limit: 9,
         }),
       }
     );
 
     const dataManyCard = await resManyCard.json();
     setManyCard(dataManyCard.query.data);
-    // console.log(manyCard);
+    setPag(manyCard.query);
+    console.log(manyCard);
   };
 
   useEffect(() => {
     getConfigHome();
     window.scrollTo(0, 0);
-  }, [reload]);
+  }, [reload, numPage]);
 
   return (
     <>
@@ -131,8 +132,8 @@ const Gallery = () => {
             <BreadCrumbs
               link1="Home"
               to1="/"
-              link2="Berita"
-              to2="/berita"
+              link2="Gallery"
+              to2="/gallery"
               page3="Berita Foto"
             />
           </div>
@@ -209,7 +210,7 @@ const Gallery = () => {
                       category={"Gallery"}
                       imageCard={e.cover}
                       title={e.album_name}
-                      // slug={e.album_name}
+                      slug={e.album_name}
                       textSmall={e.album_description}
                       // dateTime={e.created_at}
                       page={`/gallery/detail-gallery`}
