@@ -178,7 +178,7 @@ function App() {
             <VideoMedia />
           </Route>
 
-          <Route path="/dpd">
+          <Route path="/dpd/:id/:nameProv">
             <Dpd />
           </Route>
 
