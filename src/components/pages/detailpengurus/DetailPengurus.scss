@@ -18,10 +18,10 @@ $smallPhoneDua: 400px;
 $responMin1361: 1361px;
 $responMax1440: 1440px;
 
-@mixin respon1440{
-    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
-        @content;
-    }
+@mixin respon1440 {
+  @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}) {
+    @content;
+  }
 }
 // end min width 1361px and max width 1440px
 
@@ -29,173 +29,173 @@ $responMax1440: 1440px;
 $responMin951: 951px;
 $responMax1360: 1360px;
 
-@mixin respon1360{
-    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
-        @content;
-    }
+@mixin respon1360 {
+  @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}) {
+    @content;
+  }
 }
 // end min width 951 and max width 1360px
 
 // Min widht 750 and Max width 950
-$responMin750 : 750px;
+$responMin750: 750px;
 $responMax950: 950px;
 // END Min widht 750 and Max width 950
 
 // Min width 750 and max width 950
-@mixin respon950{
-    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
-        @content;
-    }
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
 }
 // END Min widht 750 and max width 950
 
 // Min widht 500 and Max width 750
-$respon750 : 750px;
+$respon750: 750px;
 $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 // Min widht 500 and Max width 750
 @mixin respon750 {
-    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
-        @content;
-    }
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
 }
 // END Min widht 500 and Max width 750
 
-
 .wrapperDetail {
-    @include smallPhone(){
-        padding: 0 0 20px 0;
-    }
-    // START HEADERS
-    .detailHead {
-        background: url(../../../img/kampanye.jpg);
-        background-size: cover;
-        height: 15vh;
-        background-position: center;
-        @include smallPhone() {
-          width: auto;
-          margin-left: 0;
-          padding: 0 10%;
-        }
-
-        h2 {
-          @include smallPhoneDua() {
-            font-size: 15pt;
-          }
-        }
-      }
-    }
-  // END HEADERS
-  // START LINK PARTAI
-  .linkedDetail {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 20px;
-    padding: $paddingTiny;
+  @include smallPhone() {
+    padding: 0 0 20px 0;
+  }
+  // START HEADERS
+  .detailHead {
+    background: url(../../../img/kampanye.jpg);
+    background-size: cover;
+    height: 15vh;
+    background-position: center;
     @include smallPhone() {
-      // border: 1px solid crimson;
-      width: 100%;
-      padding: $paddingMobile;
+      width: auto;
+      margin-left: 0;
+      padding: 0 10%;
+    }
+
+    h2 {
+      @include smallPhoneDua() {
+        font-size: 15pt;
+      }
     }
   }
-  // END LINK PARTAI
+}
+// END HEADERS
+// START LINK PARTAI
+.linkedDetail {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+  padding: $paddingTiny;
+  @include smallPhone() {
+    // border: 1px solid crimson;
+    width: 100%;
+    padding: $paddingMobile;
+  }
+}
+// END LINK PARTAI
 
-  .pengurus {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 20%;
+.pengurus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20%;
+  @include smallPhone() {
+    padding: 0 10px;
+  }
+  .bidangTextHead {
+    margin: 2rem 0;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
     @include smallPhone() {
-      padding: 0 10px;
+      margin: 1rem 0;
     }
-    .bidangTextHead {
-      margin: 2rem 0;
-      text-align: center;
-      font-weight: bold;
-      color: #000000;
-      @include smallPhone() {
-        margin: 1rem 0;
-      }
-    }
-    .profilPengurus {
-      display: flex;
-      // flex-direction: column;
-      width: 100%;
+  }
+  .profilPengurus {
+    display: flex;
+    // flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 0;
+    // border: 1px solid blue;
+    @include smallPhone() {
+      padding: $paddingMobile;
+      flex-direction: column;
       height: auto;
-      min-height: 100vh;
-      padding: 0;
-      // border: 1px solid blue;
-      @include smallPhone() {
-        padding: $paddingMobile;
-        flex-direction: column;
-        height: auto;
+    }
+
+    .kolum1 {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+      padding: $paddingTiny;
+
+      @include respon950() {
+        padding: 10px 5%;
       }
 
-      .kolum1 {
-        width: 20%;
-        height: 100%;
-        display: flex;
+      @include respon750() {
+        padding: 10px 10%;
+      }
+
+      @include smallPhone() {
         align-items: center;
-        flex-direction: row;
-        margin-top: 20px;
-        padding: $paddingTiny;
-
-        @include respon950(){
-            padding: 10px 5%;
-        }
-
-        @include respon750(){
-            padding: 10px 10%;
-        }
-            
+        width: 100%;
+      }
+      img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
         @include smallPhone() {
+          width: 180px;
+        }
+      }
+
+      .textProfil {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+        @include smallPhone() {
+          justify-content: center;
           align-items: center;
-          width: 100%;
-        }
-        img {
-          height: 200px;
-          width: 100%;
-          object-fit: cover;
-          object-position: center;
-          @include smallPhone() {
-            width: 180px;
-          }
-        }
-
-        .textProfil {
-          display: flex;
           flex-direction: column;
-          position: static;
-          width: 70%;
+          padding: 0 20%;
+
+          @include respon1440() {
+            padding: 0 10%;
+          }
+
+          @include respon1360() {
+            padding: 0 5%;
+          }
+
+          @include respon950() {
+            padding: 0 2%;
+          }
+
+          @include respon750() {
+            padding: 0 15%;
+          }
+
           @include smallPhone() {
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 0 20%;
-
-            @include respon1440(){
-                padding: 0 10%;
-            }
-
-            @include respon1360(){
-                padding: 0 5%;
-            }
-
-            @include respon950(){
-                padding: 0 2%;
-            }
-
-            @include respon750(){
-                padding: 0 15%;
-            }
-
-            @include smallPhone() {
-                padding: 0 10px;
-            }
-        .bidangTextHead {
+            padding: 0 10px;
+          }
+          .bidangTextHead {
             margin: 2rem 0;
             text-align: center;
           }
