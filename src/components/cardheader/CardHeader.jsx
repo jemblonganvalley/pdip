@@ -16,7 +16,7 @@ const CardHeader = ({image, title})=>{
                 <div className="backgrounds">
                   <div className="textBackgroundPartai">
                     {title !== 'disable' && (
-                      <h2>{title}</h2>
+                      <h2 className='headerHeadline'>{title}</h2>
                     )}
                   </div>
                 </div>

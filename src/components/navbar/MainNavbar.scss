@@ -119,16 +119,12 @@ $smallPhoneDua : 400px;
     @include responSatu() {
         padding: 10px 5%;
     }
-    @include responDua() {
-        padding: 20px 10%;
-    }
     @include responTiga() {
         padding: 10px 10%;
     }
 
     // Respon 991
     @include respon991(){
-        padding: 5px 0%;
     }
     // END Respon 991
 
@@ -152,8 +148,6 @@ $smallPhoneDua : 400px;
         }
         
         @include respon991(){
-            padding-left: 0;
-            padding-right: 0;
         }
 
         @include respon750(){
@@ -199,14 +193,10 @@ $smallPhoneDua : 400px;
                 // width: 150px;
                 margin: 10px 0;
             }
-            @include responDua() {
-                width: 50px;
-            }
 
             // min width 750px and max width 991px
             @include respon991(){
-                width: 250px;
-                margin: 10px 0 10px 50px;
+
             }
             // end min width 750px and max width 991px
 
@@ -229,8 +219,6 @@ $smallPhoneDua : 400px;
     .navbar-toggler{
 
         @include respon991(){
-            margin: 0 7% 0 0;
-            font-size: 18pt;
         }
 
         @include respon750(){
@@ -266,17 +254,12 @@ $smallPhoneDua : 400px;
             @include responSatu() {
                 font-size: 8pt;
             }
-            @include responDua() {
-                font-size: 5pt;
-            }
             @include responTiga() {
                 font-size: 10pt;
             }
 
             // min width 750px and max width 991px
             @include respon991(){
-                font-size: 12pt;
-                margin-left: 0px;
             }
             // end min width 750px and max width 991px
 
@@ -305,7 +288,6 @@ $smallPhoneDua : 400px;
                 }
 
                 @include respon991(){
-                    margin: 0 5% 0 60px;
                 }
 
                 @include respon750(){
@@ -333,7 +315,6 @@ $smallPhoneDua : 400px;
             overflow: hidden;
 
             @include respon991(){
-                display: flex;
             }
 
             @include respon750(){
@@ -355,7 +336,6 @@ $smallPhoneDua : 400px;
                 overflow: hidden;
 
                 @include respon991(){
-                    padding: 10px 3%;
                 }
 
                 @include respon750(){
@@ -387,7 +367,6 @@ $smallPhoneDua : 400px;
             right: 0;
 
             @include respon991(){
-                display: flex;
             }
 
             @include respon750(){
@@ -422,8 +401,6 @@ $smallPhoneDua : 400px;
 
         // min width 750px and max width 991px
         @include respon991(){
-            margin: 15px 0 30px 15px;
-            width: 100%;
         }
         // end min width 750px and max width 991px
 
@@ -469,9 +446,6 @@ $smallPhoneDua : 400px;
 
         // min widht 750px and max width 991px
         @include respon991(){
-            width: 85%;
-            padding: 10px 40px 10px 10px;
-            margin: 0 0px 0 40px;
         }
         // end min width 750px and max width 950px
 
@@ -505,9 +479,6 @@ $smallPhoneDua : 400px;
         bottom: 10%; 
         
         @include respon991(){
-            position: relative;
-            right: 40px;
-            top: 5px;
         }
 
         @include respon750(){

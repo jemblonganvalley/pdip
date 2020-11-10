@@ -43,28 +43,6 @@ import { Link } from 'react-router-dom'
 import BtnProvinsi from './btnprovinsi/BtnProvinsi'
 
 const Maps =()=>{
-
-    // gsap.set(".tes", {autoAlpha: 10, display: 'none'})
-
-    // var $page = $('.tes'),
-    //     $oke = $('.oke'),
-    //     $targetMous = $('.target-mous');
-
-    // $targetMous.on('mouseenter', function(e){
-    //     var $thisTes = $(this).attr('id');
-    //     console.log($thisTes);
-
-    //     gsap.to($thisTes, 0, {display: 'flex', ease: Sine.easeInOut});
-    // });
-
-    // $targetMous.on('mouseleave', function(e){
-    //     gsap.to($page, 0, {display : 'none', ease: Power2.easeIn})
-    // })
-
-    // $targetMous.on('mouseleave', function(e){
-    //     gsap.to($oke, 0, {display : 'none', ease: Power2.easeIn})
-    // })
-
     // For Condition Maps Provinsi ketika di arahkan ke masing2 button
     let [show1, setShow1] = useState(false)
     let [show2, setShow2] = useState(false)
@@ -105,6 +83,7 @@ const Maps =()=>{
     return(
         <>
         {/* For Position Hover ALL Pulau */}
+        <div className="containerMapsNusantara">
         <div className="container-position-pulau-inMaps">
             {/* Maps Default */}
             <img src={maps} alt="" className="imgMaps" id="mapsDefault" 
@@ -357,9 +336,7 @@ const Maps =()=>{
         {/* For Botton Name Provinsi For on off Display Image Provinsi */}
         <div className="container-btn-name-provinsi">
             {/* Row1 */}
-            <div className="box-btn-name-provinsi">
-                {/* Btn Aceh */}
-                <BtnProvinsi
+            <BtnProvinsi
                     pageProv=""
                     nameProv="Aceh"
                     color={show1 ? 'red' : '#000'}
@@ -490,15 +467,11 @@ const Maps =()=>{
                     mouseLeave={(() => {
                         setShow32(false)
                     })}
-                />
-                {/* END Btn Sumatera Selatan */}
-            </div>  
+                /> 
             {/* END Row1 */}
 
             {/* Row2 */}
-            <div className="box-btn-name-provinsi">
-                {/* Btn Sumatera Utara */}
-                <BtnProvinsi
+            <BtnProvinsi
                     pageProv=""
                     nameProv="Sumatera Utara"
                     color={show33 ? 'red' : '#000'}
@@ -630,14 +603,10 @@ const Maps =()=>{
                         setShow24(false)
                     })}
                 />
-                {/* END Papua Barat  */}
-            </div>
             {/* END Row2 */}
 
             {/* Row3 */}
-            <div className="box-btn-name-provinsi">
-                {/* Btn Bali */}
-                <BtnProvinsi
+            <BtnProvinsi
                     pageProv=""
                     nameProv="Bali"
                     color={show2 ? 'red' : '#000'}
@@ -769,14 +738,8 @@ const Maps =()=>{
                         setShow15(false)
                     })}
                 />
-                {/* END Btn Kalimantan Timur */}
-            </div>
-            {/* END Row3 */}
 
-            {/* Row4 */}
-            <div className="box-btn-name-provinsi">
-                {/* Btn Kalimantan Utara */}
-                <BtnProvinsi
+            <BtnProvinsi
                     pageProv=""
                     nameProv="Kalimantan Utara"
                     color={show16 ? 'red' : '#000'}
@@ -878,9 +841,8 @@ const Maps =()=>{
                         setShow34(false)
                     })}
                 />
-                {/* END Btn Yogyakarta */}
-            </div>
             {/* END Row4 */}
+        </div>
         </div>
         {/* END For Botton Name Provinsi For on off Display Image Provinsi */}
         </>

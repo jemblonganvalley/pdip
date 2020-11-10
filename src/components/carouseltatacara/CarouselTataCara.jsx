@@ -16,34 +16,27 @@ const CarouselTataCara = ({ data }) => {
           <div className="carousel-inner">
             {data.map((e, i) => (
               <Link
-                className={ i == 1 ? "carousel-item active" : "carousel-item" }
+                className={i == 1 ? "carousel-item active carousel-item-tatacara" : "carousel-item carousel-item-tatacara"}
                 as="div"
-                style={{
-                  backgroundImage: "none",
-                  position : 'relative',
-            
-                }}
               >
-                <img src={`https://atur.biar.pw/public/${e.image}`} className="imageTC" />
-                <div className="container_text_carousel" style={{
-                    position : 'absolute',
-                    right : '20%',
-                    width : '25%',
-                    height : '100%',
-                    top : '0',
-                    // border : '1px solid blue',
-                    display : 'flex',
-                    flexDirection : 'column',
-                    justifyContent : 'center',
-                    
+                {/* <img src={`https://atur.biar.pw/public/${e.image}`} className="imageTC" /> */}
+                <div className="imageTC" style={{
+                  background: `url(https://atur.biar.pw/public/${e.image})`,
+                  backgroundSize: 'cover'
                 }}>
 
+                  <div className="container_text_carousel">
+
                     <h4 >{e.title}</h4>
-                    <p>{parse(e.paragraph)}</p>
+                    <p className='textPTataCara'>{parse(e.paragraph)}</p>
+                  </div>
+
                 </div>
+
 
                 {/* For Mobile */}
                 <div className="box-red-mobile-sliderTataCara">
+                  <h4 >{e.title}</h4>
                   <p className="pCarousel-for-mobile">{parse(e.paragraph)}</p>
                 </div>
                 {/* END For Mobile */}

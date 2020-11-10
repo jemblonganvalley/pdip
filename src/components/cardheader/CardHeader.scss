@@ -49,7 +49,7 @@ $responMax950: 950px;
 
     @include smallPhone() {
         height: 15vh;
-        background-position: right;
+        background-position: center;
     }
     // @include smallPhoneDua() {
     //     height: 15vh;
@@ -94,6 +94,12 @@ $responMax950: 950px;
             //         font-size: 15pt;                        
             //     }
             // }
+
+            .headerHeadline {
+                @include smallPhone() {
+                    font-size: 15pt;
+                }
+            }
         }
     }
 }

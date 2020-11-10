@@ -205,9 +205,8 @@ const BkbbPage = () => {
             style={{
               background: `url(https://atur.biar.pw/public/${configHome[4].value.image})`,
               backgroundAttachment: "fixed",
-              backgroundSize: "auto",
+              backgroundSize: "cover",
               backgroundPosition: "center",
-              padding: "0 20%",
             }}
           >
             <i className="fas fa-quote-right"></i>

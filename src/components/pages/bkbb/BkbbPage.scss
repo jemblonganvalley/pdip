@@ -693,6 +693,7 @@ $secondary : #f3f3f3;
         // font-family: 'Josefin Sans';
         z-index: 100000;
         margin: 40px 0 0 0;
+        padding: 0 20%;
 
         // Background black transparent
         .bg-black-transparent{
@@ -708,7 +709,6 @@ $secondary : #f3f3f3;
         // END Background black transparent
 
         @include smallPhone(){
-            height: 40vh;
             background-size: cover;
             background-attachment: inherit;
             padding: 10px 0 0 0;
@@ -728,7 +728,7 @@ $secondary : #f3f3f3;
         h4{
             z-index: 1;
             @include smallPhone(){
-                // font-size: 10pt;
+                font-size: 10pt;
             }
         }
 

@@ -15,7 +15,9 @@ const BtnProvinsi = ({pageProv, nameProv, mouseOver, mouseLeave, color, transisi
                 transition: `${transisi}`
             }}
         >
+            <small className="DPDText">
             DPD {nameProv}
+            </small>
         </Link>
         {/* END For Botton Name Provinsi For on off Display Image Provinsi */}
         </>

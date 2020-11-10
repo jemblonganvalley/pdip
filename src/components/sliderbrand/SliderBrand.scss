@@ -182,7 +182,7 @@ $respon500: 500px;
 
 // Min widht 500 and Max height 900
 @mixin respon750 {
-    @media (min-width : #{$respon500}) and (max-height: #{$respon900}) {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon900}) {
         @content;
     }
 }
@@ -317,7 +317,7 @@ $minWidth1360: 1360px;
   }
 
   .sliderBrand {
-    padding: 0 20% 0 20%;    
+    padding: 0 20% 0 10%;    
     justify-content: center;
     align-items:  center;
     display: flex;
@@ -351,6 +351,7 @@ $minWidth1360: 1360px;
 
     // Min width 500px and max width 750px
     @include respon750(){
+        margin: 0 -50%;
         
         
     }
@@ -364,6 +365,11 @@ $minWidth1360: 1360px;
     @include smallPhoneDua(){
         margin: 0 -55%;
 
+    }
+
+    .slick-slide {
+        width: 100px;
+        box-sizing: border-box;
     }
   }
 
@@ -383,14 +389,13 @@ $minWidth1360: 1360px;
 
     // Min width 750px and max width 950px
     @include respon950(){
-        margin: 0 -50%;
-        
-        
+        height: 80px;
     }
     // END Min width 750px and max width 950px
 
     // Min width 500px and max width 750px
     @include respon750(){
+        height: 80px;
         
         
     }
@@ -398,6 +403,7 @@ $minWidth1360: 1360px;
 
     // Max width 500px
     @include smallPhone(){
+        height: 60px;
 
     }
     @include smallPhoneDua(){
