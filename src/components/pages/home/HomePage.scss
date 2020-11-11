@@ -270,14 +270,14 @@ $maxHeight800: 800px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width: 50%;
+                        // width: 50%;
                         .imageCovid {
                             height: 100px;
                             margin: 0 10px;
         
                             // min height 600 and max height 800 for min width 951 and max width 1360
                             @include iconMinHeight600(){
-                                height: 100%;
+                                height:90px;
                             }
                             // END min height 600 and max height 800 for min width 951 and max width 1360
         
@@ -298,7 +298,7 @@ $maxHeight800: 800px;
         
                             // min height 800 and max width 750px
                             @include minHeight800(){
-                                height: 60%;
+                                height:90px ;
                             }
                             // end min height 800 and max width 750px
         
