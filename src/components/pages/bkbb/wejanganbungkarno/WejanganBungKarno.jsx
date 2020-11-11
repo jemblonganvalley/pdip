@@ -70,6 +70,7 @@ const WejanganBungKarno = () => {
 
     const dataVcard = await resVcard.json();
     setConfigHome(dataVcard.query);
+    console.log(dataVcard.query);
   };
 
   useEffect(() => {
@@ -93,9 +94,7 @@ const WejanganBungKarno = () => {
             </div>
           </div>
 
-          <div
-            className="col1-container-1-bkbbWejangan"
-          >
+          <div className="col1-container-1-bkbbWejangan">
             {configHome && (
               <QuotesBkbb
                 displayIframe={"none"}
@@ -108,8 +107,9 @@ const WejanganBungKarno = () => {
                 customWidth="70%"
                 kolumWidth="30%"
                 date={configHome.created_at}
-                widthCustom={'50%'}
-                widthCustomDesc={'50%'}
+                widthCustom={"50%"}
+                widthCustomDesc={"50%"}
+                quotesDate={configHome.quotes_date}
               />
             )}
           </div>
@@ -123,7 +123,7 @@ const WejanganBungKarno = () => {
           {/* END Container1 */}
 
           {/* Container2 */}
-          <div className="container2-wejanganThumbnail" >
+          <div className="container2-wejanganThumbnail">
             {/* Column Card Wejangan Bungkarno */}
             {/* <CardWejangan cardWejanganBkItem={cardWejanganBkItem} /> */}
             {cardWejanganBkItem.map((e, i) => (

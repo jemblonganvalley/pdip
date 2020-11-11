@@ -1,240 +1,233 @@
 @import "../../utilities/variable/variables.scss";
 
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+$smallPhoneSatu: 500px;
+$smallPhoneDua: 400px;
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
 // Min widht 500 and Max width 750
-$respon750 : 750px;
+$respon750: 750px;
 $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 // Min widht 500 and Max width 750
 @mixin respon750 {
-    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
-        @content;
-    }
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
 }
 // END Min widht 500 and Max width 750
 
 // Min widht 750 and Max width 950
-$responMin750 : 750px;
+$responMin750: 750px;
 $responMax950: 950px;
 // END Min widht 750 and Max width 950
 
 // Min width 750 and max width 950
-@mixin respon950{
-    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
-        @content;
-    }
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
 }
 // END Min widht 750 and max width 950
 
 .wrapperQuotesBkbb {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  // margin-top: 1.5rem;
+
+  // min width 750px and max width 950px
+  @include respon950() {
+    height: 50vh;
     flex-direction: row;
-    height: 60vh;
-    // margin-top: 1.5rem;
+  }
+  // end min widt 750px and max width 950px
+
+  // min width 500px and max width 750px
+  @include respon750() {
+    height: auto;
+    flex-direction: column;
+  }
+  // end min width 500px and max width 750px
+
+  @include smallPhone() {
+    flex-direction: column;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .kolumQuotesBkbb {
+    // border: 1px solid blue;
+    display: flex;
+    height: auto;
+    width: 50%;
 
     // min width 750px and max width 950px
-    @include respon950(){
-        height: 50vh;
-        flex-direction: row;
+    @include respon950() {
+      height: auto;
+      width: 50%;
     }
-    // end min widt 750px and max width 950px
+    // end min width 750px and max width 950px
 
     // min width 500px and max width 750px
-    @include respon750(){
-        height: auto;
-        flex-direction: column;
+    @include respon750() {
+      height: 40vh;
+      width: 100%;
     }
     // end min width 500px and max width 750px
 
     @include smallPhone() {
-        flex-direction: column;
-        height: auto;
-        margin-top: 0;
+      width: 100%;
+      height: 50vh;
     }
 
-    .kolumQuotesBkbb {
-        // border: 1px solid blue;
-        display: flex;
-        height: auto;
-        width: 50%;
+    .iframe-Vmedia {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+  }
 
-        // min width 750px and max width 950px
-        @include respon950(){
-            height: auto;
-            width: 50%;
-        }
-        // end min width 750px and max width 950px
+  .descQuotesBkbb {
+    // border: 1px solid crimson;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    // margin-left: 1rem;
+    padding: 25px 5px 25px 25px;
+    background-color: $darkRedTwo;
+    color: #fff;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
 
-        // min width 500px and max width 750px
-        @include respon750(){
-            height: 40vh;
-            width: 100%;
-        }
-        // end min width 500px and max width 750px
+    // min width 750px and max width 950px
+    @include respon950() {
+      height: auto;
+      width: 50%;
+      padding: 10px 20px;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    // end min width 750px and max width 950px
 
-        @include smallPhone() {
-            width: 100%;
-            height: 50vh;
-        }
-        
-        .iframe-Vmedia {
-            display: flex;
-            width: 100%;
-            height: 100%;
-        }
+    // min width 500px and max width 750px
+    @include respon750() {
+      height: auto;
+      width: 100%;
+      padding: 10px 20px;
+      justify-content: start;
+      text-align: start;
+    }
+    // end min width 500px and max width 750px
+
+    @include smallPhone() {
+      width: auto;
+      padding: 0;
+      height: auto;
+      padding: 10px 20px;
+      justify-content: flex-start;
+      text-align: start;
     }
 
-    .descQuotesBkbb {
-        
-        // border: 1px solid crimson;
-        display: flex;
-        flex-direction: column;
-        height: 60vh;
-        // margin-left: 1rem;
-        padding: 25px 5px 25px 25px;
-        background-color: $darkRedTwo;
+    .textTop {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+
+      small {
         color: #fff;
-        position: relative;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 50%;
+        margin-right: 20px;
 
-        // min width 750px and max width 950px
-        @include respon950(){
-            height: auto;
-            width: 50%;
-            padding: 10px 20px;
-            justify-content: flex-start;
-            align-items: flex-start;
+        @include respon950() {
         }
         // end min width 750px and max width 950px
 
         // min width 500px and max width 750px
-        @include respon750(){
-            height: auto;
-            width: 100%;
-            padding: 10px 20px;
-            justify-content: start;
-            text-align: start;
+        @include respon750() {
         }
         // end min width 500px and max width 750px
 
         @include smallPhone() {
-            width: auto;
-            padding: 0;
-            height: auto;
-            padding: 10px 20px;
-            justify-content: flex-start;
-            text-align: start;
         }
-
-        .textTop {
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-
-            small {
-                color: #fff;
-                margin-right: 20px;
-
-                @include respon950(){
-
-                }
-                // end min width 750px and max width 950px
-        
-                // min width 500px and max width 750px
-                @include respon750(){
-
-                }
-                // end min width 500px and max width 750px
-        
-                @include smallPhone() {
-
-                }
-            }
-        }
-        .wrapperHeadlineBkbb {
-            .headline {
-                margin-top: 1rem;
-                margin-right: 20px;
-                font-weight: bold;
-                font-size: 10pt;
-
-                @include respon950(){
-
-                }
-
-                @include respon750(){
-
-                }
-    
-                @include smallPhone(){
-                    margin-right: 0;
-                }
-            }
-    
-        }
-        .descline {
-            overflow-y: scroll;
-            padding: 0 10px 0 0;
-            font-size: 8pt;
-
-            &::-webkit-scrollbar {
-                width: 3px;
-            }
-
-            &::-webkit-scrollbar-thumb {
-                background-color: #f3f3f3;
-                border-radius: 3px;
-            }
-            &::-webkit-scrollbar-track {
-                background-color: #000;
-            border-radius: 3px;
-            }
-
-            @include smallPhone(){
-                padding: 0;
-
-                &::-webkit-scrollbar {
-                    width: 0;
-                }
-    
-                &::-webkit-scrollbar-thumb {
-                    background-color: transparent;
-                    border-radius: 0;
-                }
-                &::-webkit-scrollbar-track {
-                    background-color: transparent;
-                border-radius: 0;
-                }
-            }
-        }
-        .share {
-            margin-top: auto;
-            bottom: 0;
-
-            .marginShare {
-                align-items: center;
-            }
-            i {
-                cursor: pointer;
-                transition: .3s;
-                margin: 0 .5rem;
-            }
-        }
+      }
     }
+    .wrapperHeadlineBkbb {
+      .headline {
+        margin-top: 1rem;
+        margin-right: 20px;
+        font-weight: bold;
+        // font-size: 10pt;
+
+        @include respon950() {
+        }
+
+        @include respon750() {
+        }
+
+        @include smallPhone() {
+          margin-right: 0;
+        }
+      }
+    }
+    .descline {
+      overflow-y: scroll;
+      padding: 0 10px 0 0;
+      font-size: 8pt;
+
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #f3f3f3;
+        border-radius: 3px;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: #000;
+        border-radius: 3px;
+      }
+
+      @include smallPhone() {
+        padding: 0;
+
+        &::-webkit-scrollbar {
+          width: 0;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: transparent;
+          border-radius: 0;
+        }
+        &::-webkit-scrollbar-track {
+          background-color: transparent;
+          border-radius: 0;
+        }
+      }
+    }
+    .share {
+      margin-top: auto;
+      bottom: 0;
+
+      .marginShare {
+        align-items: center;
+      }
+      i {
+        cursor: pointer;
+        transition: 0.3s;
+        margin: 0 0.5rem;
+      }
+    }
+  }
 }

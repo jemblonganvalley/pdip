@@ -9,28 +9,29 @@ const QuotesBkbb = ({
   desc,
   backgroundImage,
   descColor,
-  date
+  date,
+  quotesDate,
 }) => {
   return (
     <div className="wrapperQuotesBkbb">
       <div className="kolumQuotesBkbb">
         <img
-            src={backgroundImage}
-            alt=""
-            width="100%"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
-            alt={desc}
-          />
+          src={backgroundImage}
+          alt=""
+          width="100%"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+          }}
+          alt={desc}
+        />
       </div>
 
       <div
         className="descQuotesBkbb"
         style={{
-          backgroundColor: descColor && `${descColor}`
+          backgroundColor: descColor && `${descColor}`,
         }}
       >
         <div className="textTop">
@@ -38,7 +39,10 @@ const QuotesBkbb = ({
         </div>
 
         <div className="wrapperHeadlineBkbb">
-        <strong className="headline">{headline}</strong>
+          <strong className="headline">{`" ` + headline + ` "`}</strong>
+        </div>
+        <div>
+          <i>{quotesDate}</i>
         </div>
         {/* <p className="descline">{desc}</p> */}
         <div className="descline">{parse(`${desc}`)}</div>
@@ -52,4 +56,4 @@ const QuotesBkbb = ({
   );
 };
 
-export default QuotesBkbb
+export default QuotesBkbb;
