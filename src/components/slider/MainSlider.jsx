@@ -80,57 +80,6 @@ const MainSlider = ({ value, cls }) => {
                     />
                     {/* END Box Image */}
                   </div>
-
-                  {/* For Responsive Mobile */}
-                  <div className="box-paragrap-mobile-mainSlider">
-                    {/* Title For Mobile */}
-                    <div className="box-red-mobile-mainSlider">
-                      <h1>{e.title}</h1>
-
-                      {/* Box Iklan For Mobile */}
-                      
-
-                      <div className="mobileStore">
-                      <p className="txt-info-iklan-mobile">
-                        Segera hadir aplikasi MEDIA PINTAR PERJUANGAN untuk
-                        mendapatkan pengalaman dan informasi program serta kerja
-                        nyata Partai PDI Perjuangan.
-                      </p>
-                      <div className="storeMobile">
-                        <Link href="">
-                          <img
-                            src={playstore}
-                            alt=""
-                            className="logoAppStoreMobile logoStoreMobile1"
-                          />
-                        </Link>
-
-                        <Link href="">
-                          <img
-                            src={appstore}
-                            alt=""
-                            className="logoAppStoreMobile logoStoreMobile2"
-                          />
-                        </Link>
-                      </div>
-                      </div>
-                      {/* <div className="box-logo-apk-store-mobile">
-                      
-                      </div> */}
-                      {/* END Box Iklan For Mobile */}
-                    </div>
-                    {/* END Title For Mobile */}
-
-                    {/* Paragrap For Mobile */}
-                    {/* <div className="box-white-mobile-mainSlider">
-                    <p dangerouslySetInnerHTML={{ __html: e.paragraph }}></p>
-                  </div> */}
-                    {/* END Paragrap For Mobile */}
-
-                    {/* Cukup Titlenya Saja */}
-
-                    {/* <p dangerouslySetInnerHTML={{ __html: e.paragraph }}></p> */}
-                  </div>
                   {/* END For Responsive Mobile */}
                 </div>
               </div>
@@ -142,12 +91,12 @@ const MainSlider = ({ value, cls }) => {
           <div className="box-info-iklan">
             {/* Box Paragrap Iklan */}
             <div className="box-paragrap-info-iklan">
-              <h6 className="txt-info-iklan">
+              <strong className="txt-info-iklan">
                 Segera hadir aplikasi MEDIA PINTAR PERJUANGAN untuk mendapatkan
                 pengalaman
                 <br />
                 dan informasi program serta kerja nyata Partai PDI Perjuangan.
-              </h6>
+              </strong>
 
               <div className="box-logo-info-iklan">
                 <Link href="">
@@ -174,24 +123,24 @@ const MainSlider = ({ value, cls }) => {
         </div>
 
         <a
-          className="carousel-control-prev"
+          className="carousel-control-prev control-desktop-prev"
           href="#carouselExampleIndicators"
           role="button"
           data-slide="prev"
         >
-          <div className="arrowsLeft">
+          <div className="arrowsLeftDesktop">
             {/* <img src={arrowsLeft} alt="" /> */}
             <i className="fas fa-angle-left"></i>
           </div>
         </a>
 
         <a
-          className="carousel-control-next"
+          className="carousel-control-next control-desktop-next"
           href="#carouselExampleIndicators"
           role="button"
           data-slide="next"
         >
-          <div className="arrowsRight">
+          <div className="arrowsRightDesktop">
             {/* <img src={arrows} alt="" /> */}
             <i className="fas fa-angle-right"></i>
           </div>

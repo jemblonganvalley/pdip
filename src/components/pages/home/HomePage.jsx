@@ -216,35 +216,27 @@ const HomePage = () => {
                   </a>
                 </div>
               ))}
-
-              {/* {configHome.length > 0 &&
-                configHome[1].value.map((e, i) => (
-                  <div className="col-lg-4 custom r-group-text-image" key={i}>
-                    <a
-                      href={
-                        i === 0
-                          ? "/article/247/covid-19"
-                          : i === 1
-                          ? "https://pdipkreatif.id/home"
-                          : "/event"
-                      }
-                      target={i == 1 ? "_blank" : ""}
-                    >
-                      <div className="customBorder">
-                        <div className="itemImageCovid">
-                        <img
-                          src={`https://atur.biar.pw/public/${e.image}`}
-                          alt=""
-                          className='imageCovid'
-                        />
-                        </div>
-                        <div className="itemTextCovid">
-                          <h4 style={{ color: "#fff" }}>{e.title}</h4>
-                        </div>
-                      </div>
-                    </a>
+              <div className="groupArticleUtama">
+              <a
+                href='https://www.bmkg.go.id/'
+                target='#blank'
+              >
+                <div className="customBorder">
+                  <div className="itemImageCovid">
+                    <img
+                      src={BMKG}
+                      alt=""
+                      className='imageCovid'
+                    />
                   </div>
-                ))} */}
+                  <div className="itemTextCovid">
+                    <h4 style={{ color: "#fff" }}>
+                      BMKG
+                    </h4>
+                  </div>
+                </div>
+              </a>
+              </div>
             </div>
 
             {/* SECTION VIDEO  */}
