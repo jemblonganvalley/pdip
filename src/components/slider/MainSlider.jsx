@@ -66,7 +66,8 @@ const MainSlider = ({ value, cls }) => {
                     <h3>{e.title}</h3>
                     <h5 className="title-maxWidth750">{e.title}</h5>
 
-                    <Markup content={e.paragraph} />
+                    {/* <Markup content={e.paragraph} /> */}
+                    <p>{parse(`${e.paragraph}`)}</p>
                   </div>
                   {/* END Box Paragrap */}
 
