@@ -15,6 +15,9 @@ import VMedia from "../../VMedia/VMedia";
 import Wait from "../../wait/Wait";
 import SliderBrand from "../../sliderbrand/SliderBrand";
 import BMKG from "../../../img/bmkg.png";
+import { useMediaQuery } from 'react-responsive'
+import MainSliderTablet from "../../slider/tablet/MainSliderTablet";
+import MainSliderMobile from "../../slider/mobile/MainSliderMobile";
 
 export const LighBox = ({ source }) => {
   return (
@@ -37,6 +40,22 @@ const HomePage = () => {
   const [configHome, setConfigHome] = useState([]);
   const [gallery, setGallery] = useState([]);
   const [showVid, setShowVid] = useState(false);
+
+  const Desktop = ({ children }) => {
+    const isDesktop = useMediaQuery({ minWidth: 992 })
+    return isDesktop ? children : null
+  }
+
+  const Tablet = ({ children }) => {
+    const isTablet = useMediaQuery({ minWidth: 751, maxWidth: 991 })
+    return isTablet ? children : null
+  }
+
+
+  const Mobile = ({ children }) => {
+    const isMobile = useMediaQuery({ maxWidth: 767 })
+    return isMobile ? children : null
+  }
 
   const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
@@ -115,10 +134,22 @@ const HomePage = () => {
           {configHome.length > 0 && (
             <>
               {/* 0 r-carousel */}
+              <Desktop>
               <MainSlider
                 value={configHome[0].value}
                 cls={configHome[0].class}
               />
+              </Desktop>
+              <Tablet>
+                <MainSliderTablet
+                  value={configHome[0].value}
+                  cls={configHome[0].class} />
+              </Tablet>
+              <Mobile>
+                <MainSliderMobile
+                  value={configHome[0].value}
+                  cls={configHome[0].class} />
+              </Mobile>
               {/* LIGHTBOX */}
               {showVid && (
                 <>
@@ -165,23 +196,23 @@ const HomePage = () => {
                       i === 0
                         ? "/article/247/covid-19"
                         : i === 1
-                        ? "https://pdipkreatif.id/home"
-                        : "/event"
+                          ? "https://pdipkreatif.id/home"
+                          : "/event"
                     }
                     target={i == 1 ? "_blank" : ""}
                   >
                     <div className="customBorder">
-                        <div className="itemImageCovid">
+                      <div className="itemImageCovid">
                         <img
                           src={`https://atur.biar.pw/public/${e.image}`}
                           alt=""
                           className='imageCovid'
                         />
-                        </div>
-                        <div className="itemTextCovid">
-                          <h4 style={{ color: "#fff" }}>{e.title}</h4>
-                        </div>
                       </div>
+                      <div className="itemTextCovid">
+                        <h4 style={{ color: "#fff" }}>{e.title}</h4>
+                      </div>
+                    </div>
                   </a>
                 </div>
               ))}
@@ -374,8 +405,8 @@ const HomePage = () => {
           </div>
         </div>
       ) : (
-        <Wait />
-      )}
+          <Wait />
+        )}
     </>
   );
 };

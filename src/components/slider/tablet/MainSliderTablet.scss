@@ -1,4 +1,4 @@
-@import "../../utilities/variable/variables.scss";
+@import "../../../utilities/variable/variables.scss";
 
 $smallPhoneSatu : 500px;
 @mixin smallPhone {
@@ -44,15 +44,14 @@ $res1240 : 1350px;
     }
     // END Tes BgRed Carousel
 
-    .text1 {
+    .wrapperBoxTablet {
         display: flex;
         height: 100%;
         width: 100%;
         color: #ffffff;
         // border: 1px solid green;
-        box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.6);
         left: 0;
-        
+        flex-direction: column;
         border-radius: 5px;
 
         // Box Paragrap mainSlider
@@ -72,9 +71,9 @@ $res1240 : 1350px;
         // END Box paragrap mainSlider
 
         // Box Img
-        .box-img-mainSlider{
+        .box-img-mainSlider-tablet{
             height: 100%;
-            width: 70%;
+            width: 100%;
 
             .img-home-mainSlider{
                 display: flex;
@@ -112,7 +111,6 @@ $res1240 : 1350px;
         p {
             // font-size: 13pt;
             width: 100%;
-            color: #000;
             margin: 10px 0 0 0;
             @include respon1240() {
             font-size: 10pt;
@@ -122,204 +120,99 @@ $res1240 : 1350px;
 
 
         // For Mobile
-        .box-paragrap-mobile-mainSlider{
-            display: none;
+        .box-paragrap-tablet-mainSlider{
             // Title For Mobile
-            .box-red-mobile-mainSlider{
+            .box-red-tablet-mainSlider{
                 display: flex;
                 flex-direction: column;
                 position: relative;
                 height: auto;
                 width: 100%;
-                background-image: linear-gradient(to top, black, #720000 60%, #aa0000);
                 color: #fff;
                 align-items: center;
-                padding: 0;
+                padding: 1rem 2rem;
+                text-align: center;
 
-                h1{
-                    
+
+                strong {
+                    font-size: 16pt;
+                    color : #fff;
                 }
 
-                .mobileStore {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    position: absolute;
-                    bottom: 0;
-                    margin-bottom: 10px;
-
-                    .txt-info-iklan-mobile{
-                        display: flex;
-                        font-size: 9pt;
-                        width: 100%;
-                        color: #fff;
-                        padding: 0 20px;
-                        bottom: 65px;
-                        text-align: center;
-                        
-                    }
-    
-                    .storeMobile {
-                        display: flex;
-                        flex-direction: row;
-
-                        .logoAppStoreMobile{
-                            display: flex;
-                            height: auto;
-                            opacity: 0.7;
-                            transition: 0.3s;
-                            width: 100px;
-                            &:hover{
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
                 // END Logo apps store
                 
                 // END Box iklan for mobile
             }
-            // END Title For Mobile
-
-            // Paragrap For Mobile
-            .box-white-mobile-mainSlider{
-                display: none;
-                height: 100%;
-                width: 50%;
-                background-color: #fff;
-                color: #000;
-
-                p{
-                    display: flex;
-                }
-            }
-            // END Paragrap For Mobile
         }
         // END For Mobile
     }
+    
+    
 
     
 }
 
-.image2 {
-    height: 100vh;
-    width: 100%;
-    background-image: url(../../img/slider2.jpg);
-    background-size: cover;
 
-
-    .text1 {
-        height: 100%;
-        
-        color: #ffffff;
-        // border: 1px solid green;
-        background: url(../../img/bgTextMobilez-01.svg);
-        background-size: cover;
-        opacity: 0.8;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        h1 {
-            width: 50%;
-            font-size: 20pt;
-            text-transform: uppercase;
-            margin-bottom: 2em;
-            
-
-        }
-        p {
-            font-size: 10pt;
-            width: 50%;
-        }
-    }
-    
-}
-
-.carousel-mainSlider {
+.carousel-mainSlider-tablet {
     width: 100%;
     display: flex;
     height: 90vh;
     background-image: linear-gradient(to top, black, #720000, #aa0000);
-    padding: 0px 10% 0px 10%;
     position: relative;
-
+    flex-direction: column;
     .carousel-inner {
         position: relative;
-
-        // Info Iklan
-        .box-info-iklan{
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-
-            .box-paragrap-info-iklan{
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                width: 100%;
-                align-items: center;
-                text-align: center;
-                font-weight: normal;
-                color: #fff;
-                padding: 30px 0;
-
-                // Box Logo
-                .box-logo-info-iklan{
-                    display: flex;
-                    width: 100%;
-                    justify-content: center;
-                    margin: 10px 0 0 0;
-
-                    // Logo App store (GROUP)
-                    .logoAppGroup{
-                        display: flex;
-                        height: 60px;
-                        width: auto;
-                        object-fit: cover;
-                        object-position: center;
-                        opacity: 0.7;
-                        cursor: pointer;
-                        transition: 0.5s;
-
-                        &:hover{
-                            opacity: 1;
-                        }
-                    }
-                    // END logo app store (GROUP)
-
-                    // app store
-                    .logo-app-store{
-                        margin: 0 0 0px 50px;
-                    }
-                    // END Play Store
-                }
-                // END Box Logo
-            }
-            // box-paragrap-info-iklan
-        }
+        
+        
         // END Info Iklan
 
         .carousel-item {
             position: relative;
             width: 100%;
         }
+        
+    }
+
+    .tabletStore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: 1rem;
+        .txt-info-iklan-tablet{
+            display: flex;
+            font-size: 12pt;
+            width: 50%;
+            color: #fff;
+            justify-content: center;
+            text-align: center;
+            
+        }
+    
+        .storeTablet {
+            display: flex;
+            flex-direction: row;
+    
+            .logoStoreTablet{
+                display: flex;
+                height: auto;
+                opacity: 0.7;
+                transition: 0.3s;
+                width: 100px;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
     }
     
     .carousel-indicators {
-        right: 0;
-        left: 0;
-        bottom: 27%;
         justify-content: center;
         align-items: center;
         position: absolute;
-        margin: 0;
-        
+        bottom: 10rem;
             .indikator {
                 border-radius: 50%;
                 width: 20px;
@@ -356,7 +249,7 @@ $res1240 : 1350px;
     width: 7%;
     text-decoration: none;
     height: 0;
-    top: 30%;
+    top: 25%;
 }
 }
 
