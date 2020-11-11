@@ -1,6 +1,7 @@
 import React from "react";
 import CardSocialMedia from "../cardsocialmedia/CardSocialMedia";
 import "./QuotesBkbb.scss";
+import parse from "html-react-parser";
 
 const QuotesBkbb = ({
   source,
@@ -40,7 +41,7 @@ const QuotesBkbb = ({
         <h5 className="headline">{headline}</h5>
         </div>
         {/* <p className="descline">{desc}</p> */}
-        <div className="descline">{desc}</div>
+        <div className="descline">{parse(`${desc}`)}</div>
         <div className="share">
           {/* Card Social Media */}
           <CardSocialMedia />
