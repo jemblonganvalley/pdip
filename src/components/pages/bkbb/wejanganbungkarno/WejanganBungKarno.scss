@@ -134,7 +134,7 @@ $respon500: 500px;
 
   @include respon1360() {
     flex-direction: column;
-    padding: 0 5%;
+    padding: 0 10%;
   }
 
   @include respon950() {
@@ -161,8 +161,9 @@ $respon500: 500px;
   width: 100%;
   margin: 0px 0 20px 0;
   padding: 0 20%;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: row;
+  flex-wrap: wrap;
 
   @include respon1440() {
     padding: 0px 10%;
@@ -170,7 +171,7 @@ $respon500: 500px;
 
   @include respon1360() {
     flex-direction: row;
-    padding: 0 5%;
+    padding: 0 10%;
   }
 
   @include respon950() {
@@ -234,7 +235,7 @@ $respon500: 500px;
 
 .col1-container-1-bkbbWejangan {
   width: 100%;
-  padding: 0 10%;
+  padding: 0 20%;
   margin: 40px 0;
 
   @include smallPhone() {

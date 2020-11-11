@@ -39,17 +39,12 @@ const QuotesBkbb = ({
         <div className="wrapperHeadlineBkbb">
         <h5 className="headline">{headline}</h5>
         </div>
-        <p className="descline">{desc}</p>
+        {/* <p className="descline">{desc}</p> */}
+        <div className="descline">{desc}</div>
         <div className="share">
           {/* Card Social Media */}
           <CardSocialMedia />
           {/* END Card Social Media */}
-
-          {/* <small className="marginShare">SHARE : </small>
-                    <i class="fa fa-facebook marginShare" aria-hidden="true"></i>
-                    <i class="fa fa-twitter marginShare" aria-hidden="true"></i>
-                    <i class="fa fa-instagram marginShare" aria-hidden="true"></i>
-                    <i class="fa fa-whatsapp marginShare" aria-hidden="true"></i> */}
         </div>
       </div>
     </div>

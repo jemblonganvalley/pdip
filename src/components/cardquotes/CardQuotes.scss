@@ -58,7 +58,7 @@ $responMax1360: 1360px;
     background-size: cover;
     justify-content: center;
     align-items: center;
-    margin: 0px 10px 0 10px;
+    margin: 10px;
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -78,11 +78,7 @@ $responMax1360: 1360px;
     // END Background black transparet
 
     @include respon1360(){
-        height: 350px;
-        max-height: 400px;
-        width: calc(90%/3);
-        margin: 20px 10px 0 10px;
-        flex: 1 1 auto;
+        margin: 10px;
     }
 
     // min width 750px and max width 950px

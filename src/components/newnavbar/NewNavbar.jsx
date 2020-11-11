@@ -21,7 +21,7 @@ const NewNavbar = ({ token }) => {
     }
 
     const Tablet = ({ children }) => {
-        const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
+        const isTablet = useMediaQuery({ minWidth: 751, maxWidth: 991 })
         return isTablet ? children : null
     }
 
@@ -64,6 +64,10 @@ const NewNavbar = ({ token }) => {
     useEffect(() => {
         getDataMenu();
     }, []);
+
+    const triggerDropdown = () => {
+        setTrigger1(!trigger1)
+    }
 
     // Onchange text input search to text input page search
     const [value, setValue] = useState();
@@ -216,7 +220,9 @@ const NewNavbar = ({ token }) => {
                                 display: collapse1 ? "block" : "none",
                             }}
                         >
-                            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <ul className="navbar-nav mx-auto mb-2 mb-lg-0" style={{
+                                overflow : 'scroll',
+                            }}>
                                 {Object.keys(menu).map((e, i) => (
                                     <li
                                         className="nav-item"
@@ -228,6 +234,17 @@ const NewNavbar = ({ token }) => {
                                             setShow(e.name);
                                         }}
                                     >
+                                        <div className="triggerMobile" style={{
+                                            display : 'flex',
+                                            padding : '0 10%',
+                                            flexDirection : 'column'
+                                        }}>
+                                        <div className="triggerDropdown" style={{
+                                            display : 'flex',
+                                            justifyContent : 'space-between',
+                                            flexDirection : 'row',
+                                            alignItems :'center'
+                                        }}>
                                         <NavLink
                                             className="nav-link"
                                             to={"/" + e.replace(/\s/g, "-").toLowerCase()}
@@ -238,10 +255,25 @@ const NewNavbar = ({ token }) => {
                                         >
                                             {e}
                                         </NavLink>
-
-                                        {show === e && (
-                                            <DropDown menuItem={Object.values(menu)} listIndex={i} />
-                                        )}
+                                        <i
+                                            className="fas fa-angle-down"
+                                            id="icon-menuDrop"
+                                            onClick={() => {
+                                                triggerDropdown
+                                            }}
+                                            style={{
+                                                transform: trigger1 ? "rotate(-180deg)" : "rotate(0)",
+                                                color: trigger1 ? "#333" : "#f3f3f3",
+                                                fontSize: trigger1 ? "20pt" : "13pt",
+                                                transition: trigger1
+                                                    ? "0.5s ease-in-out"
+                                                    : "0.3s ease-in",
+                                            }}
+                                        ></i>
+                                        </div>
+                                        
+                                        </div>
+                                        <div className="dropdownCollapsed">
 
                                         {/* Container Dropdown menu mobile */}
                                         {Object.values(menu)[i].map((e) => (
@@ -253,7 +285,7 @@ const NewNavbar = ({ token }) => {
                                                         ? "0.5s ease-in-out"
                                                         : "0.3s ease-in",
                                                 }}
-                                            >
+                                            key={e.key}>
                                                 <Link
                                                     className="page-menu-drop-mobile"
                                                     style={{
@@ -264,32 +296,13 @@ const NewNavbar = ({ token }) => {
                                                 </Link>
                                             </div>
                                         ))}
+                                        </div>
+
+                                        
 
                                         {/* end Container Dropdown menu mobile */}
                                     </li>
                                 ))}
-
-                                {/* Trigger For Menu Dropdown menu mobile */}
-                                <div className="btn-menu-drop-mobile">
-                                    {/* btn drop 1 */}
-                                    <li className="list-btn-menu-drop">
-                                        <i
-                                            className="fas fa-angle-down"
-                                            id="icon-menuDrop"
-                                            onClick={() => {
-                                                setTrigger1(!trigger1);
-                                            }}
-                                            style={{
-                                                transform: trigger1 ? "rotate(-180deg)" : "rotate(0)",
-                                                color: trigger1 ? "#333" : "#f3f3f3",
-                                                fontSize: trigger1 ? "20pt" : "13pt",
-                                                transition: trigger1
-                                                    ? "0.5s ease-in-out"
-                                                    : "0.3s ease-in",
-                                            }}
-                                        ></i>
-                                    </li>
-                                </div>
                                 {/* END Trigger For Menu Dropdown menu mobile */}
 
                                 {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown" expanded>
@@ -335,7 +348,7 @@ const NewNavbar = ({ token }) => {
                             <img
                                 src={pdimobile}
                                 alt=""
-                                width="60"
+                                width='250'
                                 className="d-inline-block align-center active"
                                 loading="lazy"
                                 onClick={() => {

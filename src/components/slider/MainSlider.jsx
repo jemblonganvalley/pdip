@@ -59,24 +59,12 @@ const MainSlider = ({ value, cls }) => {
               }}
             >
               <div className="rowMainSlider image1 images">
-                {/* <img
-                src={`http://atur.biar.pw/public${e.image}`}
-                alt={e.title}/> */}
-
-                {/* Background Red Carousel (Desktop) */}
-                {/* <div className="bgRed-carousel-desktop">
-                  
-                </div> */}
-                {/* END Backround Red Carousel (Desktop) */}
 
                 <div className="col text1">
                   {/* Box Paragrap */}
                   <div className="box-paragrap-mainSlider">
                     <h3>{e.title}</h3>
-
-                    {/* For min width 500px and max width 750px */}
                     <h5 className="title-maxWidth750">{e.title}</h5>
-                    {/* END For min width 500px and max width 750px */}
 
                     <Markup content={e.paragraph} />
                   </div>
@@ -99,27 +87,32 @@ const MainSlider = ({ value, cls }) => {
                       <h1>{e.title}</h1>
 
                       {/* Box Iklan For Mobile */}
+                      
+
+                      <div className="mobileStore">
                       <p className="txt-info-iklan-mobile">
                         Segera hadir aplikasi MEDIA PINTAR PERJUANGAN untuk
                         mendapatkan pengalaman dan informasi program serta kerja
                         nyata Partai PDI Perjuangan.
                       </p>
+                      <div className="storeMobile">
+                        <Link href="">
+                          <img
+                            src={playstore}
+                            alt=""
+                            className="logoAppStoreMobile logoStoreMobile1"
+                          />
+                        </Link>
 
-                      <Link href="">
-                        <img
-                          src={playstore}
-                          alt=""
-                          className="logoAppStoreMobile logoStoreMobile1"
-                        />
-                      </Link>
-
-                      <Link href="">
-                        <img
-                          src={appstore}
-                          alt=""
-                          className="logoAppStoreMobile logoStoreMobile2"
-                        />
-                      </Link>
+                        <Link href="">
+                          <img
+                            src={appstore}
+                            alt=""
+                            className="logoAppStoreMobile logoStoreMobile2"
+                          />
+                        </Link>
+                      </div>
+                      </div>
                       {/* <div className="box-logo-apk-store-mobile">
                       
                       </div> */}

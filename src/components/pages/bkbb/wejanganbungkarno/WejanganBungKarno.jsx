@@ -102,7 +102,7 @@ const WejanganBungKarno = () => {
                 displayImage={"flex"}
                 backgroundImage={`https://atur.biar.pw/public${configHome.path}`}
                 headline={configHome.title}
-                desc={`${configHome.description}`}
+                desc={configHome.description}
                 customBackgroundColor={"transparent"}
                 descColor={"#000"}
                 customWidth="70%"

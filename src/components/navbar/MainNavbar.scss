@@ -295,7 +295,7 @@ $smallPhoneDua : 400px;
                 }
 
                 @include smallPhone(){
-                    margin: 0 5% 0 30px;
+
                 }
             }
             .active{
@@ -306,11 +306,10 @@ $smallPhoneDua : 400px;
 
         // dropdown menu mobile
         .dropdown-menu-mobile{
-            display: none;
+            display: flex;
             flex-direction: column;
             width: 100%;
             background: #333;
-            border-radius: 3px;
             z-index: 1111;
             overflow: hidden;
 
@@ -343,7 +342,7 @@ $smallPhoneDua : 400px;
                 }
 
                 @include smallPhone(){
-                    padding: 10px 3%;
+                    padding: 10px 10%;
                 }
             }
         }

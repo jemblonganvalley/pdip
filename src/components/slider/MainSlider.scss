@@ -34,6 +34,13 @@ $deviceThree : 1200px;
     }
 }
 
+$res800 : 800px;
+@mixin resolution1200 {
+    @media (min-width : #{$res800}) and (max-width : #{$deviceFour}) {
+        @content;
+    }
+}
+
 $deviceFour : 1300px;
 @mixin deviceFour {
     @media (max-width: #{$deviceFour}){
@@ -172,7 +179,11 @@ $minWidth500px: 500px;
     }
 }
 // end min height 770px and min width 500px
-
+@mixin min500750 {
+    @media (min-width : #{$minWidth500px}) and (max-width : #{$responMin750}) {
+        @content;
+    }
+}
 // Min widht 750 and Max width 950
 $responMin750 : 750px;
 $responMax950: 950px;
@@ -270,67 +281,6 @@ $minWidth1360: 1360px;
     @include maxHeight1280(){
         height: 75vh;
     }
-    // end max height 1280 and max width 750
-
-    // Min height 750
-    // @include mobile750(){
-    //     height: 50vh;
-    // }
-    // END Min Height 800
-
-    // max height 750 and max width 716
-    // @include maxHeight750(){
-    //     border: 1px solid green;
-    // }
-    // END max height 750 and max width 716
-
-    // img{
-    //     width: 100%;
-    //     height: auto;
-    //     // position: absolute;
-    //     object-fit: cover;
-    //     object-position: center;
-
-    //     @include smallPhone(){
-    //         height: 55%;
-    //         width: 100%;
-    //         object-fit: cover;
-    //     }
-    // }
-
-    // Background Red Carousel (Desktop)
-    // .bgRed-carousel-desktop{
-    //     display: flex;
-    //     position: absolute;
-    //     height: 1100px;
-    //     min-height: 750px;
-    //     width: 1200px;
-    //     background-color: $colors;
-    //     opacity: 0.8;
-    //     border-radius: 0px 0px 1800px 2000px;
-    //     transform: rotate(-120deg);
-    //     top: -100px;
-    //     left: -230px;
-
-    //     // For Mobile
-    //     @include smallPhone(){
-    //         display: none;
-    //     }
-    //     // END For Mobile
-
-    //     // For Device 1300px
-    //     @include deviceFour(){
-    //         height: 1200px;
-    //         max-height: 100%;
-    //         width: 1000px;
-    //         transform: rotate(-90deg);
-    //         top: 0;
-    //         left: -180px;
-    //     }
-    //     // END For Device 1300px
-    // }
-    // END Background Red Carousel (Desktop)
-
     // Tes BgRed Carousel
     .bgRed-carousel-desktop{
         display: flex;
@@ -379,7 +329,6 @@ $minWidth1360: 1360px;
 
         @include respon750() {
             display: flex;
-            flex-direction: column;
             position: relative;
             background-size: cover;
             height: 80vh;
@@ -391,7 +340,6 @@ $minWidth1360: 1360px;
             opacity: 1;
             padding: 0 0 45px 0;
             overflow: hidden;
-            background-color: $colors;
             border-radius: 0;
         }
 
@@ -461,6 +409,10 @@ $minWidth1360: 1360px;
             @include smallPhone(){
                 display: none;
             }
+            @include resolution1200() {
+                display: flex;
+                width: 50%;
+            }
             // END max width 500px
         }
         // END Box paragrap mainSlider
@@ -481,7 +433,7 @@ $minWidth1360: 1360px;
             // min width 500px and max heigth 900px
             @include respon750(){
                 display: flex;
-                height: 50%;
+                height: 80%;
                 width: 100%;
                 z-index: 8;
             }
@@ -504,6 +456,10 @@ $minWidth1360: 1360px;
             // min height 700px and max width 500px
             @include minHeight700(){
 
+            }
+
+            @include resolution1200() {
+                width: 50%;
             }
             // end min height 700px and max width 500px
 
@@ -586,6 +542,10 @@ $minWidth1360: 1360px;
                 color: rgb(170, 5, 5);
                 font-weight: bold;
             }
+
+            @include resolution1200() {
+                display: none;
+            }
         }
         // end for min width 500px and max width 750px
 
@@ -609,6 +569,9 @@ $minWidth1360: 1360px;
                 display: none;
                 // font-size: 8pt;
                 width: 50%;
+            }
+            @include resolution1200() {
+                display: flex;
             }
         }
 
@@ -663,6 +626,10 @@ $minWidth1360: 1360px;
             @include mobile600(){
                 height: 60%;
                 max-height: 60%;
+            }
+
+            @include resolution1200() {
+                display: none;
             }
             // end Max height 600px and max width 500px
 
@@ -731,121 +698,143 @@ $minWidth1360: 1360px;
                         max-height: 80%;
                     }
                     // end min height 700px and max width 500px
+                    @include resolution1200() {
+                        font-size: 14pt;
+                    }
                 }
 
-                .txt-info-iklan-mobile{
+                .mobileStore {
                     display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
                     position: absolute;
-                    font-size: 9pt;
-                    width: 100%;
-                    color: #fff;
-                    padding: 0 20px;
-                    bottom: 65px;
-                    text-align: center;
-
-                    // min height 400 and max width 500
-                    @include minHeight400(){
-
+                    bottom: 0;
+                    margin-bottom: 10px;
+                    @include smallPhone() {
                     }
-                    // end min height 400 and max width 500
-
-                    // min height 700 and max width 500px
-                    @include minHeight700(){
-                        bottom: 120px;
-                    }
-                    // end min height 700 and max width 500px
-
-                    // max height 1280 and max width 750px
-                    @include maxHeight1280(){
-                        bottom: 120px;
-                    }
-
-                    // min width 500px and max width 750px
-                    @include respon750(){
-                        bottom: 110px;
-                    }
-                    // end min width 500px and max width 750px
-                }
-
-                .logoAppStoreMobile{
-                    display: flex;
-                    position: absolute;
-                    height: auto;
-                    width: 30%;
-                    opacity: 0.7;
-                    transition: 0.3s;
-                    left: 35%;
-
-                    &:hover{
-                        opacity: 1;
-                    }
-                }
-
-                // logo play store
-                .logoStoreMobile1{
-                    bottom: 30px;
-
-                    // min height 400 and max width 500
-                    @include minHeight400(){
-                    }
-                    // end min height 400 and max width 500
-
-                    // min height 700 and max width 500px
-                    @include minHeight700(){
-                        bottom: 70px;
-                    }
-                    // end min height 700 and max width 500px
                     
-                    // min height 1280 and max width 750px
-                    @include maxHeight1280(){
-                        bottom: 60px;
+                    @include resolution1200() {
                     }
-                    // end min height 1280 and max width 750px
 
-                    @include respon750(){
-                        bottom: 50px;
+                    .txt-info-iklan-mobile{
+                        display: flex;
+                        font-size: 9pt;
+                        width: 100%;
+                        color: #fff;
+                        padding: 0 20px;
+                        bottom: 65px;
+                        text-align: center;
+    
+                        // min height 400 and max width 500
+                        @include minHeight400(){
+                            
+                        }
+                        // end min height 400 and max width 500
+    
+                        // min height 700 and max width 500px
+                        @include minHeight700(){
+                        }
+                        // end min height 700 and max width 500px
+    
+                        // max height 1280 and max width 750px
+                        @include maxHeight1280(){
+                            bottom: 120px;
+                        }
+    
+                        // min width 500px and max width 750px
+                        @include respon750(){
+                            bottom: 110px;
+                        }
+                        // end min width 500px and max width 750px
+                        @include resolution1200() {
+                            font-size: 13pt;
+                            width: 50%;
+                        }
+
+                        @include smallPhone() {
+                            margin-bottom: 10px;
+                        }
+                        
                     }
-                }
-                // END Logo play store
+    
+                    .storeMobile {
+                        display: flex;
+                        flex-direction: row;
 
-                // logo apps store
-                .logoStoreMobile2{
-                    bottom: 0%;
+                        @include smallPhone() {
+                            flex-direction: column;
+                        }
+                        .logoAppStoreMobile{
+                            display: flex;
+                            height: auto;
+                            opacity: 0.7;
+                            transition: 0.3s;
+                            width: 100px;
+                            &:hover{
+                                opacity: 1;
+                            }
 
-                    // min height 400 and max width 500
-                    @include minHeight400(){
-                    }
-                    // end min height 400 and max width 500
-
-                    // min height 700 and max width 500px
-                    @include minHeight700(){
-                        bottom: 30px;
-                    }
-                    // end min height 700 and max width 500px
-
-                    // min height 1280 and max width 500px
-                    @include maxHeight1280(){
-                        bottom: 20px;
-                    }
-                    // end min height 1280 and max width 500px
-
-                    @include respon750(){
-                        bottom: 10px;
+                            @include resolution1200() {
+                                width: 130px;
+                                margin: 1rem 0;
+                            }
+                        }
+        
+                        // logo play store
+                        .logoStoreMobile1{
+                            
+        
+                            // min height 400 and max width 500
+                            @include minHeight400(){
+                            }
+                            // end min height 400 and max width 500
+        
+                            // min height 700 and max width 500px
+                            @include minHeight700(){
+                                bottom: 70px;
+                            }
+                            // end min height 700 and max width 500px
+                            
+                            // min height 1280 and max width 750px
+                            @include maxHeight1280(){
+                                bottom: 60px;
+                            }
+                            // end min height 1280 and max width 750px
+        
+                            @include respon750(){
+                                bottom: 50px;
+                            }
+                        }
+                        // END Logo play store
+        
+                        // logo apps store
+                        .logoStoreMobile2{
+        
+                            // min height 400 and max width 500
+                            @include minHeight400(){
+                            }
+                            // end min height 400 and max width 500
+        
+                            // min height 700 and max width 500px
+                            @include minHeight700(){
+                                bottom: 30px;
+                            }
+                            // end min height 700 and max width 500px
+        
+                            // min height 1280 and max width 500px
+                            @include maxHeight1280(){
+                                bottom: 20px;
+                            }
+                            // end min height 1280 and max width 500px
+        
+                            @include respon750(){
+                                bottom: 10px;
+                            }
+                        }
                     }
                 }
                 // END Logo apps store
-
-                    // .box-logo-apk-store-mobile{
-                    //     display: flex;
-                    //     flex-direction: column;
-                    //     position: relative;
-                    //     height: auto;
-                    //     width: 100%;
-                    //     justify-content: center;
-                    //     align-items: center;
-                    //     margin: 0px 0 0 0;
-                    //     border: 1px solid yellow;
-                    // }
                 
                 // END Box iklan for mobile
             }
@@ -980,31 +969,17 @@ $minWidth1360: 1360px;
 
     // Min widht 500 and max height 950
     @include respon750(){
-        height: 80vh;
         padding: 0;
     }
-    // END Min width 500 and max height 950
-
-    // max height 1280 and max width 750px
-    @include maxHeight1280(){
-        height: 75vh;
-        padding: 0;
-    }
-    // end max height 1280 and max width 750
-
-    // for ketinggian carousel
-    // min height 770 and min width 500
-    // @include minHeight770(){
-    //     height: 75vh;
-    //     border: 1px solid yellow;
-    // }
-    // end min height 770 and min width 500
-    // end for ketinggian carousel
 
     // Max widht 500
     @include smallPhone(){
         height: auto;
         padding: 0;
+    }
+
+    @include resolution1200() {
+        padding: 0 10%;
     }
     // END max widht 500
 
@@ -1055,6 +1030,9 @@ $minWidth1360: 1360px;
 
                 @include maxHeight1280(){
                     display: none;
+                }
+                @include resolution1200() {
+                    display: flex;
                 }
 
                 // Box Logo
@@ -1137,6 +1115,10 @@ $minWidth1360: 1360px;
         @include maxHeight1280(){
             bottom: 200px;
         }
+
+        @include min500750() {
+            bottom: 100px;
+        }
         // end max height 1280 and max width 750px
         
             .indikator {
@@ -1162,6 +1144,12 @@ $minWidth1360: 1360px;
                     width: 7px;
                     height: 7px;
                     padding: 8px;
+                }
+
+                @include resolution1200() {
+                    width: 15px;
+                    height: 15px;
+                    padding: 15px;
                 }
                 
 
@@ -1265,7 +1253,6 @@ $minWidth1360: 1360px;
         left: 20px;
         height: 40px;
         width: 40px;
-        top: -110px;
     }
 
     // min height 400 and max width 500
@@ -1343,7 +1330,6 @@ $minWidth1360: 1360px;
         right: 20px;
         height: 40px;
         width: 40px;
-        top: -110px;
     }
 
     // min height 400 and max width 500
