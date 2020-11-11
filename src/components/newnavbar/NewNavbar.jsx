@@ -258,9 +258,7 @@ const NewNavbar = ({ token }) => {
                                         <i
                                             className="fas fa-angle-down"
                                             id="icon-menuDrop"
-                                            onClick={() => {
-                                                triggerDropdown
-                                            }}
+                                            onClick={triggerDropdown}
                                             style={{
                                                 transform: trigger1 ? "rotate(-180deg)" : "rotate(0)",
                                                 color: trigger1 ? "#333" : "#f3f3f3",
