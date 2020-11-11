@@ -68,11 +68,9 @@ $responMax1360: 1360px;
 
         // Min width 951px and max width 1360px
         @include respon1360(){
-            height: 350px;
-            max-height: 400px;
+            height: 50%;
             margin: 20px 10px 0 10px;
             width: calc(90%/3);
-            flex: 1 1 auto;
         }
         // END Min width 951px and max width 1360px
 

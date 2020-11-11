@@ -273,11 +273,6 @@ $maxHeight800: 800px;
                         .imageCovid {
                             height: 100px;
                             margin: 0 10px;
-        
-                            // min height 600 and max height 800 for min width 951 and max width 1360
-                            @include iconMinHeight600(){
-                                height: 100%;
-                            }
                             // END min height 600 and max height 800 for min width 951 and max width 1360
         
                             // Min width 750px and max width 950px
@@ -682,10 +677,8 @@ $maxHeight800: 800px;
 .cardContent {
     width: 100%;
     height: auto;
-    min-height: 0vh;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     // margin-top: 10px;
