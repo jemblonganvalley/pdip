@@ -38,7 +38,7 @@ const QuotesBkbb = ({
         </div>
 
         <div className="wrapperHeadlineBkbb">
-        <h5 className="headline">{headline}</h5>
+        <strong className="headline">{headline}</strong>
         </div>
         {/* <p className="descline">{desc}</p> */}
         <div className="descline">{parse(`${desc}`)}</div>

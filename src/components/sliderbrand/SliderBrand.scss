@@ -266,8 +266,8 @@ $minWidth1360: 1360px;
 // end min height 700 and min width 1361
 
 .container {
-    width: 100%;
-    margin: 5%;
+    width: 50%;
+    margin: 2%;
   }
 
   
@@ -317,7 +317,7 @@ $minWidth1360: 1360px;
   }
 
   .sliderBrand {
-    padding: 0 20% 0 10%;    
+    padding: 0% 0% 0 0%;    
     justify-content: center;
     align-items:  center;
     display: flex;
@@ -363,7 +363,7 @@ $minWidth1360: 1360px;
         
     }
     @include smallPhoneDua(){
-        margin: 0 -55%;
+        margin: 0 0%;
 
     }
 

@@ -43,7 +43,7 @@ $responMax950: 950px;
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 50vh;
+    height: 60vh;
     // margin-top: 1.5rem;
 
     // min width 750px and max width 950px
@@ -103,7 +103,7 @@ $responMax950: 950px;
         // border: 1px solid crimson;
         display: flex;
         flex-direction: column;
-        height: 50vh;
+        height: 60vh;
         // margin-left: 1rem;
         padding: 25px 5px 25px 25px;
         background-color: $darkRedTwo;
@@ -172,6 +172,7 @@ $responMax950: 950px;
                 margin-top: 1rem;
                 margin-right: 20px;
                 font-weight: bold;
+                font-size: 10pt;
 
                 @include respon950(){
 
@@ -190,6 +191,7 @@ $responMax950: 950px;
         .descline {
             overflow-y: scroll;
             padding: 0 10px 0 0;
+            font-size: 8pt;
 
             &::-webkit-scrollbar {
                 width: 3px;
