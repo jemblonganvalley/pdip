@@ -43,6 +43,7 @@ import CardBkbbQuotes2 from "./components/cardbkbbquotes2/CardBkbbQuotes2";
 import PidatoAll from "./components/pages/KetuaUmum/pidatoAll/PidatoAll";
 import MultimediaAll from "./components/pages/multimediaPage/multimediaAll/MultimediaAll";
 import NewNavbar from "./components/newnavbar/NewNavbar";
+import DpdDpc from "./components/pages/dpddpc/DpdDpc";
 
 function App() {
   let [hide, setHide] = useState(true);
@@ -181,6 +182,10 @@ function App() {
 
           <Route path="/dpd/:id/:nameProv">
             <Dpd />
+          </Route>
+
+          <Route path="/partai/dpd-dpc">
+            <DpdDpc />
           </Route>
 
           <Route path="/detailpengurus/:id/:name/:grade">
