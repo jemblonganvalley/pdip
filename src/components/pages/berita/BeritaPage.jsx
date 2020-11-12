@@ -143,6 +143,7 @@ const BeritaPage = () => {
             className="container-2-beritaPage"
             style={{
               backgroundImage: `url(https://atur.biar.pw/public/${configHome[6].value.image})`,
+              backgroundAttachment : 'fixed'
             }}
           >
             {/* Column1 */}
@@ -150,7 +151,7 @@ const BeritaPage = () => {
               <p className="txt-title-col1">
                 {configHome[6].value.description}
               </p>
-              <h2 className="txt-title-col1">{configHome[6].value.title}</h2>
+              <h3 className="txt-title-col1">{configHome[6].value.title}</h3>
             </div>
             {/* END Column1 */}
 

@@ -155,7 +155,7 @@ $responMax1440: 1440px;
         }
 
         @include respon1360(){
-            padding: 0 5%;
+            padding: 0 10%;
         }
 
         @include respon950(){
@@ -238,7 +238,7 @@ $responMax1440: 1440px;
         }
 
         @include respon1360(){
-            padding: 0 5%;
+            padding: 0 10%;
         }
 
         @include respon950(){
@@ -301,17 +301,6 @@ $responMax1440: 1440px;
             color: #ffffff;
             text-align: center;
             flex-direction: column;
-
-            // @include smallPhone(){
-            //     border: 1px solid blue;
-            // }
-            
-            .panggungH1 {
-                margin-top: 2rem;
-                @include smallPhone() {
-                    font-size: 14pt;
-                }
-            }
             
         }
     }
@@ -328,7 +317,7 @@ $responMax1440: 1440px;
         }
 
         @include respon1360(){
-            padding: 40px 5% 20px 5%;
+            padding: 40px 10%;
         }
 
         @include respon950(){
@@ -415,7 +404,7 @@ $responMax1440: 1440px;
         }
 
         @include respon1360(){
-            padding: 0 5%;
+            padding: 0 10%;
             justify-content: space-between;
         }
         

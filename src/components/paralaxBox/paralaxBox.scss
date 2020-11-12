@@ -33,17 +33,9 @@ $secondary : #f3f3f3;
             background-attachment: inherit;
         }
 
-        h2 {
-            margin-top: 6rem;
+        h3 {
             text-align: center;
             font-weight: bold;
-
-            @include smallPhone() {
-                font-size: 15pt;
-            }
-            @include smallPhone() {
-                font-size: 12pt;
-            }
         }
 
         .btn {

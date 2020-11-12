@@ -135,7 +135,7 @@ $responMax1440: 1440px;
     }
 
     @include respon1360() {
-      padding: 0 5%;
+      padding: 0 10%;
     }
 
     @include respon950() {
@@ -432,10 +432,6 @@ $responMax1440: 1440px;
         color: #fff;
         text-align: center;
         overflow: hidden;
-
-        @include smallPhone() {
-          font-size: 16px;
-        }
       }
     }
     // END Column1
@@ -466,7 +462,7 @@ $responMax1440: 1440px;
     }
 
     @include respon1360() {
-      padding: 0 5%;
+      padding: 0 10%;
     }
 
     @include respon950() {

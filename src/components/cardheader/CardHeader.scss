@@ -95,11 +95,6 @@ $responMax950: 950px;
             //     }
             // }
 
-            .headerHeadline {
-                @include smallPhone() {
-                    font-size: 15pt;
-                }
-            }
         }
     }
 }

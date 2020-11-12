@@ -15,7 +15,6 @@ const CarouselDualKetuaumum = ({
       style={{
         height: "40vh",
         // border : '1px solid blue',
-        padding: "0 20%",
       }}
     >
       {/* Carousel 1 */}
@@ -30,6 +29,7 @@ const CarouselDualKetuaumum = ({
           // border : '1px solid red',
           backgroundImage: `url(https://atur.biar.pw/public/${cat2.image})`,
           position: "relative",
+          backgroundSize : 'cover'
         }}
       >
         <h4

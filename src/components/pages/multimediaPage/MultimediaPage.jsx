@@ -102,10 +102,11 @@ const MultimediaPage = () => {
             className="panggung"
             style={{
               backgroundImage: `url(https://atur.biar.pw/public/${configHome[3].value.image})`,
+              backgroundAttachment : 'fixed'
             }}
           >
             <div className="textPanggung">
-              <h1 className="panggungH1">{configHome[3].value.title}</h1>
+              <h3 className="panggungH1">{configHome[3].value.title}</h3>
               <MainButton name="kunjungi" />
             </div>
           </div>

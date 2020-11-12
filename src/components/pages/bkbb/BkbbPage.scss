@@ -126,7 +126,7 @@ $secondary : #f3f3f3;
         }
 
         @include respon1360(){
-            padding: 0 5%;
+            padding: 0 10%;
         }
 
         @include respon950(){
@@ -145,7 +145,7 @@ $secondary : #f3f3f3;
       
         .box-lahirnyaPancasila{
             // height: 75.1vh;
-            height: 50vh;
+            height: 60vh;
             background-size: cover;
             padding: 0px;
             position: relative;
@@ -289,7 +289,7 @@ $secondary : #f3f3f3;
         @include respon1360(){
             height: auto;
             width: 100%;
-            padding: 0 5%;
+            padding: 0 10%;
         }
 
         @include respon950(){
@@ -586,7 +586,7 @@ $secondary : #f3f3f3;
         }
         
         @include respon1360(){
-            padding: 40px 5% 20px 5%;
+            padding: 40px 10%;
         }
 
         // min width 750px and max width 950px
@@ -620,7 +620,7 @@ $secondary : #f3f3f3;
         }
 
         @include respon1360(){
-            padding: 0 5%;
+            padding: 0 10%;
         }
         
         @include respon950(){
@@ -774,7 +774,7 @@ $secondary : #f3f3f3;
 
         @include respon1360(){
             flex-direction: row;
-            padding: 20px 5% 0 5%;
+            padding: 20px 10%;
         }
 
         // min width 750px and max width 950px

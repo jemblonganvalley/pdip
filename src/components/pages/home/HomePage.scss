@@ -171,7 +171,7 @@ $maxHeight800: 800px;
 
     // Min widht 951px and max width 1360px
     @include respon1360(){
-        padding: 20px 5%;
+        padding: 20px 10%;
     }
     // Min widht 951px and max width 1360px
 
@@ -237,7 +237,7 @@ $maxHeight800: 800px;
             .groupArticleUtama {
                 width: 100%;
                 height: 100%;
-                margin: 0 10px;
+                margin: .5rem 10px;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
@@ -285,7 +285,7 @@ $maxHeight800: 800px;
         
                             // Min width 500px and max width 750px
                             @include respon750(){
-                                height: 75%;
+                                height: 70px;
                                 margin: 0;
                             }
                             // END Min width 500px and max width 750px
@@ -298,11 +298,13 @@ $maxHeight800: 800px;
         
                             // max width 500px
                             @include smallPhone() {
-                                height: 80px;
+                                height: 70px;
                                 margin: 0;
                             }
                             // END Max width 500px
-                        
+                            @include respon1360() {
+                                height: 80px;
+                            }
         
                         }
                     }
@@ -314,6 +316,8 @@ $maxHeight800: 800px;
                             @include respon950(){
                                 font-size: 15pt;
                             }
+
+                            
                         }
                     }
             }
@@ -615,7 +619,7 @@ $maxHeight800: 800px;
 
     // min width 950 and max width 1360px
     @include respon1360(){
-        padding: 0px 5%;
+        padding: 0px 10%;
     }
     // end min width 950 and max width 1360px
 
@@ -650,7 +654,7 @@ $maxHeight800: 800px;
 
     // Min widht 951px and max width 1360px
     @include respon1360(){
-        padding: 0px 5%;
+        padding: 0px 10%;
     }
     // Min widht 951px and max width 1360px
 
@@ -690,7 +694,7 @@ $maxHeight800: 800px;
 
     // min width 950 and max width 1360px
     @include respon1360(){
-        padding: 20px 5%;
+        padding: 20px 10%;
     }
     // end min width 950 and max width 1360px
 
