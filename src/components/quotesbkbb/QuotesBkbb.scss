@@ -149,6 +149,7 @@ $responMax950: 950px;
       small {
         color: #fff;
         margin-right: 20px;
+        margin-bottom: 20px;
 
         @include respon950() {
         }
