@@ -61,7 +61,7 @@ const SliderBrand = () => {
   };
 
   return (
-    <div className="container">
+    <div className="containerSliderBrand">
       <Slider {...settings}>
         <Link
           className="containerImg"

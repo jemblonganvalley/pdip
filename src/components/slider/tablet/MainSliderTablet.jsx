@@ -29,19 +29,6 @@ const MainSliderTablet = ({ value, cls }) => {
                     overflow: "hidden",
                 }}
             >
-                <div className="carousel-indicators">
-                    {slider.map((e, i) => (
-                        <>
-                            <div
-                                data-target="#carouselExampleIndicators"
-                                data-slide-to={i}
-                                className={i === 1 ? "active indikator" : "indikator"}
-                            >
-                                <small className="indicatorText">{i + 1}</small>
-                            </div>
-                        </>
-                    ))}
-                </div>
 
                 <div className="carousel-inner">
                     {slider.map((e, i) => (
@@ -83,7 +70,7 @@ const MainSliderTablet = ({ value, cls }) => {
                                     <div className="box-paragrap-tablet-mainSlider">
                                         {/* Title For Mobile */}
                                         <div className="box-red-tablet-mainSlider">
-                                            <strong>{e.title}</strong>
+                                            <h2>{e.title}</h2>
                                             <p style={{
                                                 color : '#fff'
                                             }}>{parse(`${e.paragraph}`)}</p>

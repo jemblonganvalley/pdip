@@ -41,7 +41,11 @@ const QuotesBkbb = ({
         <div className="wrapperHeadlineBkbb">
           <strong className="headline">{`" ` + headline + ` "`}</strong>
         </div>
-        <div>
+        <div
+          style={{
+            margin: "20px 0",
+          }}
+        >
           <i>{quotesDate}</i>
         </div>
         {/* <p className="descline">{desc}</p> */}

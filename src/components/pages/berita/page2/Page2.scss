@@ -10,7 +10,34 @@ $smallPhoneDua : 400px;
         @content;
     }
 }
+$responMin951: 951px;
+$responMax1360: 1360px;
 
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+
+$responMin500 : 500px;
+$responMax750 : 749px;
+
+@mixin respon500700 {
+    @media (min-width : #{$responMin500}) and (max-width : #{$responMax750}) {
+        @content;
+    }
+}
 @import "../../../../utilities/variable/variables.scss";
 
 
@@ -94,6 +121,18 @@ $secondary : #f3f3f3;
 
         @include smallPhone(){
             padding: 0%;
+        }
+
+        @include respon1360() {
+            padding: 0 10% 40px 10%;
+        }
+
+        @include respon950() {
+            padding: 0 10% 40px 10%;
+        }
+
+        @include respon500700() {
+            padding: 0 10% 40px 10%;
         }
 
         // Column1

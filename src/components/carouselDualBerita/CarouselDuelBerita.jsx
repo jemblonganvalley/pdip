@@ -91,7 +91,7 @@ export const CarouselDuelBerita = ({
                 {/* <small style={{padding : '0'}}>{e.author}</small> | &nbsp;
                             <small style={{padding : '0'}}>{e.created_at}</small> */}
 
-                <h4>{e.title}</h4>
+                <h5>{e.title}</h5>
               </span>
 
               <span
@@ -100,7 +100,7 @@ export const CarouselDuelBerita = ({
                   width: "100%",
                   height: "100%",
                   position: "absolute",
-                  background: `linear-gradient(180deg, rgba(0, 0, 0, .1) 0%, rgba(255,0,0,.5) 100%)`,
+                  background: `linear-gradient(#21252900, #21252900, #212529)`,
                   backgroundBlendMode: "multiply",
                   bottom : '0'
                 }}
@@ -113,7 +113,7 @@ export const CarouselDuelBerita = ({
                 key={i}
                 style={{
                   width: "100%",
-                  height: "40vh",
+                  height: "50vh",
                   objectFit: "cover",
                   objectPosition: "center",
                 }}
@@ -184,7 +184,7 @@ export const CarouselDuelBerita = ({
                 ></small> */}
 
                 {/* TITLE */}
-                <h4>{e.title}</h4>
+                <h5>{e.title}</h5>
               </span>
 
               <span
@@ -194,7 +194,7 @@ export const CarouselDuelBerita = ({
                   height: "100%",
                   backgroundColor: "rgba(0,0,0,0.500)",
                   position: "absolute",
-                  background: `linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,1) 100%)`,
+                  background: `linear-gradient(rgba(33, 37, 41, 0), rgb(33 37 41 / 0.20), rgb(33, 37, 41))`,
                 }}
               ></span>
 
@@ -209,7 +209,7 @@ export const CarouselDuelBerita = ({
                 key={i}
                 style={{
                   width: "100%",
-                  height: "40vh",
+                  height: "50vh",
                   objectFit: "cover",
                   objectPosition: "center",
                 }}

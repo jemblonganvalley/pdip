@@ -80,7 +80,7 @@ $res1240 : 1350px;
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
-                object-position: right;
+                object-position: center;
                 border-radius: 0 5px 5px 0px;
                 overflow: hidden;
             }
@@ -192,6 +192,8 @@ $res1240 : 1350px;
         .storeMobile {
             display: flex;
             flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
     
             .logoStoreMobile{
                 display: flex;

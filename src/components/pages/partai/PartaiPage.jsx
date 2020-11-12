@@ -236,9 +236,10 @@ const PartaiPage = () => {
                 className="photoPengurus"
                 style={{
                   backgroundImage: `url(https://atur.biar.pw/public/${config[6].value.image})`,
+                  backgroundAttachment : 'fixed'
                 }}
               >
-                <h2>{config[6].value.title}</h2>
+                <h3>{config[6].value.title}</h3>
                 <Link className="btn lihat" to={"/struktur-dpp"}>
                   <span>lihat</span>
                 </Link>

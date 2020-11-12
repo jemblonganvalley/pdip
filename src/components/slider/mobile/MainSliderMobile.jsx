@@ -29,19 +29,6 @@ const MainSliderMobile = ({ value, cls }) => {
                     overflow: "hidden",
                 }}
             >
-                <div className="carousel-indicators">
-                    {slider.map((e, i) => (
-                        <>
-                            <div
-                                data-target="#carouselExampleIndicators"
-                                data-slide-to={i}
-                                className={i === 1 ? "active indikator" : "indikator"}
-                            >
-                                <small className="indicatorText">{i + 1}</small>
-                            </div>
-                        </>
-                    ))}
-                </div>
 
                 <div className="carousel-inner">
                     {slider.map((e, i) => (

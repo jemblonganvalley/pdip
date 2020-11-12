@@ -145,7 +145,7 @@ $secondary : #f3f3f3;
     }
 
     // Container1
-    .container-1-beritaPage1{
+    .containerPage1Article{
         display: flex;
         flex-direction: column;
         height: auto;
@@ -161,7 +161,7 @@ $secondary : #f3f3f3;
 
         // Min widht 951px and max width 1360px
         @include respon1360(){
-            padding: 0px 5%;
+            padding: 0px 20%;
         }
         // Min widht 951px and max width 1360px
 
@@ -540,7 +540,7 @@ $secondary : #f3f3f3;
                     height: auto;
                     width: 100%;
                     align-items: center;
-                    padding: 20px 0 0 0;
+                    padding: 20px 0 20px 0;
 
                     @include smallPhone(){
                         padding: 15px 0;

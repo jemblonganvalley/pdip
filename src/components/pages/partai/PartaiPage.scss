@@ -137,7 +137,7 @@ $responMax1440: 1440px;
 
     // Min widht 951px and max width 1360px
     @include respon1360() {
-      padding: 0px 5%;
+      padding: 0px 10%;
     }
     // Min widht 951px and max width 1360px
 
@@ -519,7 +519,7 @@ $responMax1440: 1440px;
     }
 
     @include respon1360() {
-      padding: 0 5%;
+      padding: 0 10%;
     }
 
     @include respon950() {
@@ -551,7 +551,7 @@ $responMax1440: 1440px;
 
     @include respon1360() {
       flex-direction: row;
-      padding: 0 5%;
+      padding: 0 10%;
     }
 
     // Min width 750px and max width 950px
@@ -713,7 +713,7 @@ $responMax1440: 1440px;
     }
 
     @include respon1360() {
-      padding: 0 5% 20px 5%;
+      padding: 0 10%;
     }
 
     @include respon950() {
@@ -796,7 +796,7 @@ $responMax1440: 1440px;
       background-attachment: inherit;
     }
 
-    h2 {
+    h3 {
       margin-top: 10rem;
       text-align: center;
       font-weight: bold;
@@ -854,7 +854,7 @@ $responMax1440: 1440px;
     }
 
     @include respon1360() {
-      padding: 40px 5%;
+      padding: 40px 10%;
     }
 
     @include respon950() {

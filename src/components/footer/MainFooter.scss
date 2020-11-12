@@ -82,7 +82,7 @@ $responMax1440: 1440px;
     @include respon1360(){
         height: auto;
         flex-direction: column;
-        padding: 40px 5%;
+        padding: 40px 10%;
     }
 
     // Min width 500px and max width 750px

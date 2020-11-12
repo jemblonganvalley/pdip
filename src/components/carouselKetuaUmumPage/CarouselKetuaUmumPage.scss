@@ -26,7 +26,7 @@ $responMax950: 950px;
 
 
 .container-carousel-ketuaUmumPage{
-    height: 50vh;
+    height: 60vh;
     width: 100%;
 
     @include respon950(){
@@ -51,7 +51,7 @@ $responMax950: 950px;
         overflow: hidden;
 
         .col1-container-1-carousel-ketuaUmumPage{
-            height: 50vh;
+            height: 60vh;
             width: 100%;
             background-position: center;
             background-size: cover;
@@ -64,7 +64,7 @@ $responMax950: 950px;
             .cont-img-col1{
                 display: flex;
                 flex-direction: column;
-                height: 50vh;
+                height: 60vh;
                 width: 100%;
                 overflow: hidden;
 
@@ -80,7 +80,7 @@ $responMax950: 950px;
                 .col1-img{
                     display: flex;
                     flex-direction: column;
-                    height: 70%;
+                    height: 75%;
                     width: 100%;
                     overflow: hidden;
                     border-bottom: 1px solid #fff;
@@ -108,7 +108,6 @@ $responMax950: 950px;
                 .col2-img{
                     display: flex;
                     flex-direction: column;
-                    height: 30%;
                     width: 100%;
                     background-color: rgba(255, 0, 8, 0.6);
                     overflow: hidden;
@@ -145,10 +144,10 @@ $responMax950: 950px;
                     .box-txt-desk-col2{
                         display: flex;
                         flex-direction: column;
-                        height: 100%;
-                        width: 100%;
-                        padding: 20px 65px 0 65px;
-                        overflow: hidden;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        padding: 1rem 1rem;
 
                         @include smallPhone(){
                             height: auto;
@@ -160,7 +159,6 @@ $responMax950: 950px;
                             // font-size: 30px;
                             color: #fff;
                             padding: 0;
-                            overflow: hidden;
 
                             @include smallPhone(){
                                 // font-size: 20px;
