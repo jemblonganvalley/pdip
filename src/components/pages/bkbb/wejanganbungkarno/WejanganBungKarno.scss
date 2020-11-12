@@ -34,6 +34,17 @@ $responMax1360: 1360px;
 }
 // end min width 951 and max width 1360px
 
+// min width 1200 and max width 1360px
+$responMin1200: 1200px;
+$responMax1360: 1360px;
+
+@mixin respon1200 {
+  @media (min-width: #{$responMin1200}) and (max-width: #{$responMax1360}) {
+    @content;
+  }
+}
+// end min width 951 and max width 1360px
+
 // Min widht 750 and Max width 950
 $responMin750: 750px;
 $responMax950: 950px;
@@ -166,7 +177,7 @@ $respon500: 500px;
   flex-wrap: wrap;
 
   @include respon1440() {
-    padding: 0px 10%;
+    padding: 0px 20%;
   }
 
   @include respon1360() {
@@ -190,53 +201,52 @@ $respon500: 500px;
   }
 }
 
-  // Column Card Wejangan Bungkarno
-  .col-card-wejanganThumbnail {
-    display: flex;
+// Column Card Wejangan Bungkarno
+.col-card-wejanganThumbnail {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 0% 0px 0;
+
+  @include smallPhone() {
+    position: relative;
+    padding: 0 10px 0px 10px;
+  }
+}
+// END Column Card Wejangan Bungkarno
+
+// Column Pagination
+.col-pagination-wejanganThumbnail {
+  display: flex;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0 40px 0;
+
+  @include respon950() {
+    padding: 20px 0 40px 0;
+  }
+
+  @include respon750() {
     flex-direction: column;
-    flex-wrap: wrap;
-    height: auto;
-    width: 100%;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0px 0% 0px 0;
-
-    @include smallPhone() {
-      position: relative;
-      padding: 0 10px 0px 10px;
-    }
+    padding: 20px 0 40px 0;
   }
-  // END Column Card Wejangan Bungkarno
 
-  // Column Pagination
-  .col-pagination-wejanganThumbnail {
-    display: flex;
-    height: auto;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0 40px 0;
-
-    @include respon950() {
-      padding: 20px 0 40px 0;
-    }
-
-    @include respon750() {
-      flex-direction: column;
-      padding: 20px 0 40px 0;
-    }
-
-    @include smallPhone() {
-      padding: 20px 0 40px 0;
-    }
+  @include smallPhone() {
+    padding: 20px 0 40px 0;
   }
-  // END Column Pagination
-
+}
+// END Column Pagination
 
 .col1-container-1-bkbbWejangan {
   width: 100%;
   padding: 0 20%;
-  margin: 40px 0;
+  margin-bottom: 40px;
 
   @include smallPhone() {
     padding: 0;
@@ -248,6 +258,10 @@ $respon500: 500px;
   }
 
   @include respon750() {
+  }
 
+  @include respon1360() {
+    flex-direction: row;
+    padding: 0 10%;
   }
 }
