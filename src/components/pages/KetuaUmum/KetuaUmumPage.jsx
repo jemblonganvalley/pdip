@@ -187,11 +187,7 @@ const KetuaUmumPage = () => {
 
           {/* Container2 */}
           <div className="container-2-ketuaumum">
-            <MainDivider
-              text="Pidato KETUA UMUM"
-              garisMerah="7rem"
-              mrgn="0px 0"
-            />
+            <MainDivider text="Pidato KHUSUS" garisMerah="7rem" mrgn="0px 0" />
           </div>
           {/* END Container2 */}
 
@@ -216,7 +212,7 @@ const KetuaUmumPage = () => {
                 <MainButton
                   name="lihat semua"
                   margin="0px 0 0 0"
-                  pages="/ketua-umum/pidato/all"
+                  pages="/article/259/pidato-khusus"
                 />
               </div>
               {/* END Button View All */}
