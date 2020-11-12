@@ -113,7 +113,7 @@ export const CarouselDuelBerita = ({
                 key={i}
                 style={{
                   width: "100%",
-                  height: "40vh",
+                  height: "50vh",
                   objectFit: "cover",
                   objectPosition: "center",
                 }}
@@ -209,7 +209,7 @@ export const CarouselDuelBerita = ({
                 key={i}
                 style={{
                   width: "100%",
-                  height: "40vh",
+                  height: "50vh",
                   objectFit: "cover",
                   objectPosition: "center",
                 }}
