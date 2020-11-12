@@ -55,8 +55,6 @@ $responMax1360: 1360px;
 
 
     .cardCustom {
-        height: 300px;
-        max-height: 300px;
         // height: 300px;
         width: calc(90%/3);
         background: #ffffff;
@@ -68,19 +66,15 @@ $responMax1360: 1360px;
 
         // Min width 951px and max width 1360px
         @include respon1360(){
-            height: 50%;
             margin: 20px 10px 0 10px;
             width: calc(90%/3);
+
         }
         // END Min width 951px and max width 1360px
 
         // Min width 750px and max width 950px
         @include respon950(){
-            height: 350px;
-            max-height: 400px;
-            margin: 20px 5px 0 5px;
-            width: calc(90%/3);
-            flex: 1 1 auto;
+            width: calc(90%/2);
         }
         // END Min width 750px and max width 950px
 
@@ -94,8 +88,7 @@ $responMax1360: 1360px;
 
         // Max width 500px
         @include smallPhone() {
-            // flex-direction: row;
-            height: 350px;
+            height: 300px;
             width: 100%;
             margin: 1rem 0 0 0;
         }

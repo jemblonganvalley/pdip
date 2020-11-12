@@ -134,8 +134,7 @@ $res1240 : 1350px;
                 text-align: center;
 
 
-                strong {
-                    font-size: 16pt;
+                h2 {
                     color : #fff;
                 }
 
@@ -194,13 +193,14 @@ $res1240 : 1350px;
         .storeTablet {
             display: flex;
             flex-direction: row;
-    
+            width: 100%;
+            justify-content: space-evenly;
             .logoStoreTablet{
                 display: flex;
                 height: auto;
                 opacity: 0.7;
                 transition: 0.3s;
-                width: 100px;
+                width: 150px;
                 &:hover{
                     opacity: 1;
                 }

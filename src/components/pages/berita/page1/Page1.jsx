@@ -84,7 +84,7 @@ const Page1 = () => {
           </div>
 
           {/* Container1 */}
-          <div className="container-1-beritaPage1">
+          <div className="containerPage1Article">
             {/* Column1 */}
             <div className="col1-container-1-beritaPage1">
               {/* Section1 */}

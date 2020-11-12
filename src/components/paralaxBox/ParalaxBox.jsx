@@ -9,10 +9,10 @@ const ParalaxBox = ({image, title, link, paralax = false}) => {
                 className="container_paralax"
                 style={{
                   backgroundImage: `url(https://atur.biar.pw/public/${image})`,
-                  backgroundAttachment : paralax ? 'fixed' : 'unset',
+                  backgroundPosition : 'center'
                 }}
               >
-                <h2>{title}</h2>
+                <h3>{title}</h3>
                 <Link className="btn lihat" to={link}>
                   <span>lihat</span>
                 </Link>

@@ -265,9 +265,24 @@ $minWidth1360: 1360px;
 }
 // end min height 700 and min width 1361
 
-.container {
+$res992 : 992px;
+$res1240 : 1350px;
+
+@mixin respon1240 {
+    @media (min-width : #{$res992}) and (max-width : #{$res1240}) {
+        @content;
+    }
+}
+
+
+.containerSliderBrand {
     width: 50%;
     margin: 2%;
+
+    @include respon1240() {
+        width: 100%;
+
+    }
   }
 
   
@@ -366,6 +381,10 @@ $minWidth1360: 1360px;
 
     }
 
+    @include respon1240() {
+        margin: 0;
+    }
+
     .slick-slide {
         width: 100px;
         box-sizing: border-box;
@@ -409,5 +428,11 @@ $minWidth1360: 1360px;
         height: 60px;
 
     }
+
+    @include respon1240() {
+        height: 70px;
+    }
+
+    
   }
 

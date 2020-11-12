@@ -192,6 +192,8 @@ $res1240 : 1350px;
         .storeMobile {
             display: flex;
             flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
     
             .logoStoreMobile{
                 display: flex;

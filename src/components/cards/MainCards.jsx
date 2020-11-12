@@ -64,7 +64,7 @@ const Cards = ({
     <>
       <Link
         component="a"
-        className="col col-lg-3 cardCustom"
+        className="col-lg-3 cardCustom"
         id="cardCustom2"
         style={{
           borderRadius: borderRadius,
