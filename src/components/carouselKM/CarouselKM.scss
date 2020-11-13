@@ -1,278 +1,269 @@
-@import '../../utilities/variable/variables.scss';
+@import "../../utilities/variable/variables.scss";
 
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+$smallPhoneSatu: 500px;
+$smallPhoneDua: 400px;
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
 // min width 951 and max width 1360px
 $responMin951: 951px;
 $responMax1360: 1360px;
 
-@mixin respon1360{
-    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
-        @content;
-    }
+@mixin respon1360 {
+  @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}) {
+    @content;
+  }
 }
 // end min width 951 and max width 1360px
 
 // Min widht 750 and Max width 950
-$responMin750 : 750px;
+$responMin750: 750px;
 $responMax950: 950px;
 // END Min widht 750 and Max width 950
 
 // Min width 750 and max width 950
-@mixin respon950{
-    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
-        @content;
-    }
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
 }
 // END Min widht 750 and max width 950
 
 // Min widht 500 and Max width 750
-$respon750 : 750px;
+$respon750: 750px;
 $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 // Min widht 500 and Max width 750
 @mixin respon750 {
-    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
-        @content;
-    }
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
 }
 // END Min widht 500 and Max width 750
 
 .KM {
-    width: 100%;
-    height: 40vh;
-    box-sizing: content-box;
+  width: 100%;
+  height: 40vh;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // min width 750px and max width 950px
+  @include respon950() {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 20vh;
+  }
+  // end min width 750px and max width 950px
 
-    // min width 750px and max width 950px
-    @include respon950(){
-        display: flex;
-    }
-    // end min width 750px and max width 950px
+  // min width 500px and max width 750px
+  @include respon750() {
+    display: none;
+  }
+  // end min width 500px and max width 750px
 
-    // min width 500px and max width 750px
-    @include respon750(){
-        display: none;
-    }
-    // end min width 500px and max width 750px
+  @include smallPhone() {
+    display: none;
+  }
+
+  .row > * {
+    padding-right: 0;
 
     @include smallPhone() {
-        display: none;
+      // padding: auto;
+      // padding-right: 10px;
     }
+  }
 
-    .row>* {
-        padding-right: 0;
+  .row {
+    --bs-gutter-x: 0;
 
-        @include smallPhone() {
-            // padding: auto;
-            // padding-right: 10px;
+    // bs-gutter-x: 1.5rem;
+    @include smallPhone() {
+    }
+  }
+
+  .rowCustom {
+    width: 100%;
+    height: 100%;
+
+    @include smallPhone() {
+      // border: 1px solid green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 1rem;
+    }
+  }
+
+  .carousels {
+    .kmCarousel {
+      width: 100%;
+      height: 100%;
+      background: $darkRed;
+
+      @include smallPhone() {
+        height: 40vh;
+      }
+
+      // @include smallPhone() {
+      //     height: auto;
+      //     border-bottom-left-radius: 10px;
+      //     border-bottom-right-radius: 10px;
+      // }
+
+      .carousel-indicators {
+        right: calc(100% / 2);
+        position: absolute;
+
+        li {
+          border: none;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
         }
-    }
+      }
 
-    .row {
-        --bs-gutter-x : 0;
-
-        // bs-gutter-x: 1.5rem;
-        @include smallPhone() {
-        }
-    }
-    
-    .rowCustom {
-        width: 100%;
+      .carousel-inner {
+        // border: 1px solid blue;
         height: 100%;
+        // background: #d80010;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #ffffff;
 
         @include smallPhone() {
-            // border: 1px solid green;
+          border: 1px solid red;
+        }
+
+        .itemKM {
+          height: 100%;
+
+          position: relative;
+
+          @include smallPhone() {
+            padding: 10px;
+          }
+          // @include smallPhone() {
+          //     padding: 1rem;
+          // }
+        }
+
+        .carousel-item {
+          text-align: center;
+          width: 100%;
+
+          @include smallPhone() {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+          }
+
+          .textKM {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 1rem;
-            
-        }
-        
-    }
-
-    
-
-    .carousels {
-        .kmCarousel {
-            width: 100%;
+            flex-direction: column;
             height: 100%;
-            background: $darkRed;
+
+            @include respon1360() {
+              width: 50% !important;
+            }
+
+            @include respon950() {
+              width: 50% !important;
+            }
 
             @include smallPhone() {
-                height: 40vh;
+              display: none;
+              height: 100%;
             }
+            .textCarousel {
+              margin: 1rem 0;
+              word-break: break-word;
+              width: 80%;
 
-            // @include smallPhone() {
-            //     height: auto;
-            //     border-bottom-left-radius: 10px;
-            //     border-bottom-right-radius: 10px;
-            // }
-            
-            
-        .carousel-indicators {
-
-            right: calc(100%/2);
-            position: absolute;
-
-            li {
-                border: none;
-                width: 8px;
-                height: 8px;
-                border-radius: 50%;
-            }
-        }
-
-            
-            
-
-            .carousel-inner {
-                // border: 1px solid blue;
-                height: 100%;
-                // background: #d80010;
+              @include smallPhone() {
+                margin: 0.8rem 0;
                 display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                color: #ffffff;
-
-                @include smallPhone(){
-                    border: 1px solid red;
-                }
-
-                .itemKM {
-                    height: 100%;
-
-                    position: relative;
-
-                    @include smallPhone() {
-                        padding: 10px;
-                    }
-                    // @include smallPhone() {
-                    //     padding: 1rem;
-                    // }
-                }
-
-                .carousel-item {
-                    text-align: center;
-                    width: 100%;
-
-                    @include smallPhone(){
-                        display: flex;
-                        flex-direction: column;
-                        height: 100%;
-                    }
-
-                    .textKM {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: column;
-                        height: 100%;
-
-                        @include respon1360(){
-                            width: 50% !important;
-                        }
-                        
-                        @include respon950(){
-                            width: 50% !important;
-                        }
-
-                        @include smallPhone(){
-                            display: none;
-                            height: 100%;
-                        }
-                        .textCarousel {
-                            margin: 1rem 0; 
-                            word-break: break-word;
-                            width: 80%;
-
-                            @include smallPhone() {
-                                margin: .8rem 0;
-                                display: flex;
-                            }
-                        }
-                        
-                        h5 {
-                            font-weight: 400;
-                            // font-size: 10pt;
-    
-                            @include smallPhone() {
-                                display: none;
-                                font-size: 8pt;
-                            }
-    
-                            // @include smallPhoneDua() {
-                            //     font-size: 8pt;
-                            // }
-                        }
-    
-                        h1 {
-                            // font-size: 15pt;
-                            word-wrap: break-word;
-                            width: 80%;
-                            font-weight: 300;
-                        }
-    
-                        p {
-                            // font-size: 8pt;
-                            width: 70%;
-                            
-    
-                            @include smallPhone() {
-                                display: none;
-                            }
-    
-                            // @include smallPhoneDua() {
-                            //     display: none;
-                            // }
-                        }
-                    }
-                    .banner {
-                        position: absolute;
-                        float: right;
-                        height: 100%;
-                        top: 0;
-                        right: 0;
-                        background-position: center;
-
-                        @include respon1360(){
-                            width: 50% !important;
-                        }
-
-                        @include respon950(){
-                            width: 50%;
-                        }
-
-                        @include smallPhone() {
-                            display: none;
-                            height: 60%;
-                            width: 100%;
-                            position: inherit;
-                            position: static;
-                        }
-
-                        // @include smallPhoneDua() {
-                        //     position: initial;
-                        // }
-                    }
-                }
+              }
             }
+
+            h5 {
+              font-weight: 400;
+              // font-size: 10pt;
+
+              @include smallPhone() {
+                display: none;
+                font-size: 8pt;
+              }
+
+              // @include smallPhoneDua() {
+              //     font-size: 8pt;
+              // }
+            }
+
+            h1 {
+              // font-size: 15pt;
+              word-wrap: break-word;
+              width: 80%;
+              font-weight: 300;
+            }
+
+            p {
+              // font-size: 8pt;
+              width: 70%;
+
+              @include smallPhone() {
+                display: none;
+              }
+
+              // @include smallPhoneDua() {
+              //     display: none;
+              // }
+            }
+          }
+          .banner {
+            position: absolute;
+            float: right;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background-position: center;
+
+            @include respon1360() {
+              width: 50% !important;
+            }
+
+            @include respon950() {
+              width: 50%;
+            }
+
+            @include smallPhone() {
+              display: none;
+              height: 60%;
+              width: 100%;
+              position: inherit;
+              position: static;
+            }
+
+            // @include smallPhoneDua() {
+            //     position: initial;
+            // }
+          }
         }
+      }
     }
+  }
 }
