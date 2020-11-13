@@ -165,7 +165,7 @@ $maxHeight800: 800px;
 
     // Min widht 1361px and max width 1440px
     @include respon1440(){
-        padding: 20px 10%;
+        padding: 20px 20%;
     }
     // END Min widht 1361px and max width 1440px
 
@@ -305,6 +305,10 @@ $maxHeight800: 800px;
                             @include respon1360() {
                                 height: 80px;
                             }
+
+                            @include respon1440() {
+                                height: 65px;
+                            }
         
                         }
                     }
@@ -315,6 +319,10 @@ $maxHeight800: 800px;
                         h4 {
                             @include respon950(){
                                 font-size: 15pt;
+                            }
+
+                            @include respon1440() {
+                                font-size: 13pt;
                             }
 
                             
@@ -614,7 +622,7 @@ $maxHeight800: 800px;
     margin: 40px 0 0 0;
 
     @include respon1440(){
-        padding: 0px 10%;
+        padding: 0px 20%;
     }
 
     // min width 950 and max width 1360px
@@ -649,7 +657,7 @@ $maxHeight800: 800px;
     padding: 0px 20% 0 20%;
 
     @include respon1440(){
-        padding: 0px 10%;
+        padding: 0px 20%;
     }
 
     // Min widht 951px and max width 1360px
@@ -689,7 +697,7 @@ $maxHeight800: 800px;
     padding: 20px 20% 0px 20%;
 
     @include respon1440(){
-        padding: 20px 10%;
+        padding: 20px 20%;
     }
 
     // min width 950 and max width 1360px

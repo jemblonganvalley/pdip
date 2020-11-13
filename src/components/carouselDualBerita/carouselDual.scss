@@ -69,7 +69,7 @@ $responMax1440: 1440px;
     padding: 0 20% 0 20%;
 
     @include respon1440(){
-        padding: 0px 10%;
+        padding: 0px 20%;
     }
 
     // Min widht 951px and max width 1360px
@@ -122,7 +122,6 @@ $responMax1440: 1440px;
         // end min width 500px and max width 750px
 
         @include smallPhone(){
-            height: 40vh;
             width: 100%;
             margin: 0 0 10px 0;
         }

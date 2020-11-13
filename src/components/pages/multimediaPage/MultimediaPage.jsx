@@ -10,6 +10,8 @@ import MainDivider from "../../divider/MainDivider";
 import CardInformasi from "../../cardInformasi/CardInformasi";
 import VMedia from "../../VMedia/VMedia";
 import CardHeader from "../../cardheader/CardHeader";
+import Subscribe from '../../../img/subscribe.png'
+import { Link } from "react-router-dom";
 
 const MultimediaPage = () => {
   const [configHome, setConfigHome] = useState([]);
@@ -107,7 +109,9 @@ const MultimediaPage = () => {
           >
             <div className="textPanggung">
               <h3 className="panggungH1">{configHome[3].value.title}</h3>
-              <MainButton name="kunjungi" />
+              <a className="buttonSubscribe" href='https://www.youtube.com/user/DPPPDIPerjuangan?sub_confirmation=1'>
+                <img src={Subscribe} alt="" width='150' />
+              </a>
             </div>
           </div>
 

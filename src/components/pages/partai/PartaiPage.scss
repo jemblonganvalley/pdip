@@ -132,7 +132,7 @@ $responMax1440: 1440px;
     margin: 0px 0 40px 0;
 
     @include respon1440() {
-      padding: 0px 10%;
+      padding: 0px 20%;
     }
 
     // Min widht 951px and max width 1360px
@@ -224,11 +224,9 @@ $responMax1440: 1440px;
           // Min width 750px and max width 950px
           @include respon950() {
             height: calc(100% / 4);
-            // background: #fff;
             gap: 40px;
             padding: 0px;
             justify-content: flex-start;
-            // border-radius: 5px;
           }
           // END Min width 750px and max width 950px
 
@@ -515,7 +513,7 @@ $responMax1440: 1440px;
     align-items: center;
 
     @include respon1440() {
-      padding: 0 10%;
+      padding: 0 20%;
     }
 
     @include respon1360() {
@@ -546,7 +544,7 @@ $responMax1440: 1440px;
 
     @include respon1440() {
       flex-direction: row;
-      padding: 0 10%;
+      padding: 0 20%;
     }
 
     @include respon1360() {
@@ -709,7 +707,7 @@ $responMax1440: 1440px;
     padding: 0px 20% 20px 20%;
 
     @include respon1440() {
-      padding: 0 10% 20px 10%;
+      padding: 0 20% 20px 20%;
     }
 
     @include respon1360() {

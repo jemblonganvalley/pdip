@@ -129,7 +129,7 @@ $responMax1440: 1440px;
         overflow: hidden;
 
         @include respon1440(){
-            padding: 0 10%;
+            padding: 0 20%;
         }
 
         @include respon1360(){
@@ -382,7 +382,7 @@ $responMax1440: 1440px;
         align-items: center;
 
         @include respon1440(){
-            padding: 0 10%;
+            padding: 0 20%;
         }
 
         @include respon1360(){
@@ -419,7 +419,7 @@ $responMax1440: 1440px;
         padding: 0px 20% 0px 20%;
 
         @include respon1440(){
-            padding: 0 10%;
+            padding: 0 20%;
         }
 
         @include respon1360(){
