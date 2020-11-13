@@ -29,10 +29,7 @@ const CarouselBeritaPage2 = ({ id, data }) => {
               />
             </>
           ))}
-        </div>
-
-        {/* Container Box Indicator Carousel */}
-        <div className="container-box-indicator-page2">
+          <div className="container-box-indicator-page2">
           {/* Box Indicator */}
           <div className="box-tombol-carousel-page2">
             <a
@@ -87,6 +84,10 @@ const CarouselBeritaPage2 = ({ id, data }) => {
           </div>
           {/* END Box Indicator */}
         </div>
+        </div>
+
+        {/* Container Box Indicator Carousel */}
+        
         {/* END Container Box Indicator Carousel */}
       </div>
       {/* END Carousel Page2 */}
