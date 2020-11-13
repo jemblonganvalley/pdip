@@ -66,6 +66,10 @@ $secondary: #f3f3f3;
 .wrapperBeritaPage1 {
   width: 100%;
 
+  .maps {
+    padding: 0 20%;
+  }
+
   @include smallPhone() {
     padding: 0 0 40px 0;
   }

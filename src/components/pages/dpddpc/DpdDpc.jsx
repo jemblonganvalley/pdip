@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 import CardSocialMedia from "../../cardsocialmedia/CardSocialMedia";
 import Wait from "../../wait/Wait";
 import { useStoreState } from "easy-peasy";
+import Maps from "../../maps/Maps";
 
 const DpdDpc = () => {
   const refresher = useStoreState((state) => state.refresher);
@@ -53,15 +54,10 @@ const DpdDpc = () => {
     <>
       <div className="wrapperBeritaPage1">
         <div className="linkedBeritaPage1">
-          <BreadCrumbs
-            link1="Home"
-            to1="/"
-            link2="/"
-            to2="/"
-            page3="/"
-            link3="/"
-            to3="/"
-          />
+          <BreadCrumbs link1="Home" to1="/" link2="/Partai" to2="/partai" />
+        </div>
+        <div className="maps">
+          <Maps />
         </div>
       </div>
     </>

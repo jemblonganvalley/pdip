@@ -22,14 +22,14 @@ const CarouselDualKetuaumum = ({
         as="div"
         id="carouselone"
         className="col"
-        to={"/detail-article/982/satyam-eva-jayate"}
+        to={"/detail-article/622/satyam-eva-jayate"}
         style={{
           height: "40vh",
           padding: "30px",
           // border : '1px solid red',
           backgroundImage: `url(https://atur.biar.pw/public/${cat2.image})`,
           position: "relative",
-          backgroundSize : 'cover'
+          backgroundSize: "cover",
         }}
       >
         <h4
