@@ -141,6 +141,10 @@ $secondary : #f3f3f3;
             height: auto;
             width: 100%;
 
+            @include respon950() {
+                flex-direction: column;
+            }
+
             @include smallPhone(){
                 height: auto;
                 flex-direction: column;
@@ -152,6 +156,10 @@ $secondary : #f3f3f3;
                 flex-direction: column;
                 height: 100%;
                 width: 30%;
+
+                @include respon950() {
+                    width: 100%;
+                }
 
                 @include smallPhone(){
                     height: auto;
@@ -175,6 +183,11 @@ $secondary : #f3f3f3;
                         display: flex;
                         height: auto;
                         width: 90%;
+
+                        @include respon950() {
+                            justify-content: center;
+                            width: 100%;
+                        }
 
                         .txt-admin{
                             display: flex;
@@ -230,6 +243,10 @@ $secondary : #f3f3f3;
                     text-align: start;
                     margin: 20px 0 0 0;
 
+                    @include respon950() {
+                        text-align: center;
+                    }
+
                     @include smallPhone(){
                         font-size: 20px;
                         font-weight: bold;
@@ -246,6 +263,10 @@ $secondary : #f3f3f3;
                     color: #000;
                     text-align: start;
                     margin: 25px 0 0 0;
+
+                    @include respon950() {
+                        text-align: center;
+                    }
 
                     @include smallPhone(){
                         margin: 15px 0 0 0;
