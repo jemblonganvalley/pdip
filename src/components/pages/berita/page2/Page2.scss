@@ -150,6 +150,10 @@ $secondary : #f3f3f3;
                 flex-direction: column;
             }
 
+            @include respon500700() {
+                flex-direction: column;
+            }
+
             // Row2
             .row2-beritaPage2{
                 display: flex;
@@ -166,6 +170,10 @@ $secondary : #f3f3f3;
                     width: 100%;
                     padding: 0 20px;
                     overflow: hidden;
+                }
+
+                @include respon500700() {
+                    width: 100%;
                 }
 
                 .jdl-row2-beritaPage2{
@@ -187,6 +195,16 @@ $secondary : #f3f3f3;
                         @include respon950() {
                             justify-content: center;
                             width: 100%;
+                        }
+
+                        @include smallPhone() {
+                            width: 100%;
+                            justify-content: center;
+                        }
+
+                        @include respon500700() {
+                            width: 100%;
+                            justify-content: center;
                         }
 
                         .txt-admin{
@@ -255,6 +273,9 @@ $secondary : #f3f3f3;
                         justify-content: center;
                         align-items: center;
                     }
+                    @include respon500700() {
+                        text-align: center;
+                    }
                 }
 
                 .txt-desk1-beritaPage2{
@@ -273,6 +294,10 @@ $secondary : #f3f3f3;
                         text-align: center;
                         justify-content: center;
                         align-items: center;
+                    }
+
+                    @include respon500700() {
+                        text-align: center;
                     }
                 }
 
