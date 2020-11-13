@@ -277,6 +277,8 @@ $responMax1440: 1440px;
         @include respon950(){
             background-position: center;
             background-size: center;
+            justify-content: center;
+            align-items: center;
         }
         // end min width 750px and max width 950px
 
