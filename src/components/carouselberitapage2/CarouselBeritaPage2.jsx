@@ -49,7 +49,9 @@ const CarouselBeritaPage2 = ({ id, data }) => {
                     setSlideIndex(slideIndex + 1);
                   }
                 }}
-              ></div>
+              >
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </div>
               <span className="sr-only">Previous</span>
             </a>
             <a
@@ -69,7 +71,9 @@ const CarouselBeritaPage2 = ({ id, data }) => {
                     setSlideIndex(slideIndex - 1);
                   }
                 }}
-              ></div>
+              >
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+              </div>
               <span className="sr-only">Next</span>
             </a>
             {/* Box Indicator Number */}

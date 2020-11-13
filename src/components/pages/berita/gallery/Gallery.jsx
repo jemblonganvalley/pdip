@@ -169,7 +169,7 @@ const Gallery = () => {
                     {/* END Column Button Love */}
                   </div>
 
-                  <h5 className="title-2-beritaPage2">{configHome[0].title}</h5>
+                  <h4 className="title-2-beritaPage2">{configHome[0].title}</h4>
 
                   <div className="txt-desk1-beritaPage2">
                     {parse(configHome[0].description)}
