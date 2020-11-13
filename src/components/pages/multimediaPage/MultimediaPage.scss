@@ -151,7 +151,7 @@ $responMax1440: 1440px;
         height: auto;
 
         @include respon1440(){
-            padding: 0 10%;
+            padding: 0 20%;
         }
 
         @include respon1360(){
@@ -234,7 +234,7 @@ $responMax1440: 1440px;
         padding: 0 20%;
 
         @include respon1440(){
-            padding: 0 10%;
+            padding: 0 20%;
         }
 
         @include respon1360(){
@@ -313,7 +313,7 @@ $responMax1440: 1440px;
         align-items: center;
 
         @include respon1440(){
-            padding: 40px 10% 20px 10%;
+            padding: 40px 20% 20px 20%;
         }
 
         @include respon1360(){
@@ -399,7 +399,7 @@ $responMax1440: 1440px;
         flex-wrap: wrap;
 
         @include respon1440(){
-            padding: 0 10%;
+            padding: 0 20%;
             justify-content: space-between;
         }
 
