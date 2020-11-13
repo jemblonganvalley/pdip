@@ -156,7 +156,7 @@ $secondary : #f3f3f3;
         overflow: hidden;
 
         @include respon1440(){
-            padding: 0 10%;
+            padding: 0 20%;
         }
 
         @include respon1360(){
@@ -793,7 +793,7 @@ $secondary : #f3f3f3;
         width: 100%;
 
         @include respon1440(){
-            padding: 10px 10% 0 10%;
+            padding: 10px 20% 0 20%;
         }
 
         @include respon1360(){

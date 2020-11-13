@@ -63,6 +63,7 @@ $responMax1360: 1360px;
         // margin: 40px auto;
         display: flex;
         flex-direction: column;
+        max-height: 50vh;
 
         // Min width 951px and max width 1360px
         @include respon1360(){

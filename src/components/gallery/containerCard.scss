@@ -91,7 +91,6 @@ $smallPhoneDua : 400px;
                 width: 100%;
                 min-height: 100vh;
                 flex-wrap: wrap;
-                justify-content: space-between;
 
                 @include smallPhone(){
                     flex-direction: column;

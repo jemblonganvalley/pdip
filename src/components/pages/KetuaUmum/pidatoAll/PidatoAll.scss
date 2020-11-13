@@ -179,7 +179,6 @@ $respon500: 500px;
         width: 100%;
         min-height: 100vh;
         flex-wrap: wrap;
-        justify-content: space-evenly;
 
         @include respon750() {
           flex-direction: column;
