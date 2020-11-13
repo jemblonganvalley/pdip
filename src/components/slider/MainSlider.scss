@@ -99,10 +99,10 @@ $res1240 : 1350px;
             color: rgb(170, 5, 5);
             font-weight: bold;
 
-            font-size: 15pt;
+            font-size: 17pt;
             
             @include respon1240() {
-                font-size: 15pt;
+                font-size: 17pt;
             }
 
         }
