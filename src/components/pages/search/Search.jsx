@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 import "../search/Search.scss";
 import img from "../../../img/profil.png";
 import img5 from "../../../img/img5.jpg";
 import kampanye from "../../../img/kampanye.jpg";
-import AngkaPaginationEvent from "../../paginationevent/AngkaPaginationEvent";
 import CardSearch from "../../cardsearch/CardSearch";
 import { action, useStoreActions, useStoreState } from "easy-peasy";
 import "../../../database/globalState";
@@ -12,122 +11,6 @@ import { useEffect } from "react";
 import Wait from "../../wait/Wait";
 
 const Search = () => {
-  let [cardSearch, setCardSearch] = useState([
-    {
-      page: "/",
-      img: img5,
-      title1: "Berita |",
-      title2: "Nasional",
-      paragrap:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!",
-    },
-    {
-      page: "/",
-      img: img5,
-      title1: "Berita |",
-      title2: "Nasional",
-      paragrap:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!",
-    },
-    {
-      page: "/",
-      img: img5,
-      title1: "Berita |",
-      title2: "Nasional",
-      paragrap:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!",
-    },
-    {
-      page: "/",
-      img: img5,
-      title1: "Berita |",
-      title2: "Nasional",
-      paragrap:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!",
-    },
-    {
-      page: "/",
-      img: img5,
-      title1: "Berita |",
-      title2: "Nasional",
-      paragrap:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!",
-    },
-    {
-      page: "/",
-      img: img5,
-      title1: "Berita |",
-      title2: "Nasional",
-      paragrap:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!",
-    },
-    {
-      page: "/",
-      img: img5,
-      title1: "Berita |",
-      title2: "Nasional",
-      paragrap:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!",
-    },
-    {
-      page: "/",
-      img: img5,
-      title1: "Berita |",
-      title2: "Nasional",
-      paragrap:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!",
-    },
-    {
-      page: "/",
-      img: img5,
-      title1: "Berita |",
-      title2: "Nasional",
-      paragrap:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!",
-    },
-    {
-      page: "/",
-      img: img5,
-      title1: "Berita |",
-      title2: "Nasional",
-      paragrap:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!",
-    },
-    {
-      page: "/",
-      img: img5,
-      title1: "Berita |",
-      title2: "Nasional",
-      paragrap:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!",
-    },
-    {
-      page: "/",
-      img: img5,
-      title1: "Berita |",
-      title2: "Nasional",
-      paragrap:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!",
-    },
-    {
-      page: "/",
-      img: img5,
-      title1: "Berita |",
-      title2: "Nasional",
-      paragrap:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, dolorem!",
-    },
-  ]);
-
-  let [currentPage2, setCurrentPage2] = useState(1);
-  let [itemEventPerPage] = useState(9);
-
-  const indexOfLastPost = currentPage2 * itemEventPerPage;
-  const indexOfFirstPost = indexOfLastPost - itemEventPerPage;
-  const currentPosts = cardSearch.slice(indexOfFirstPost, indexOfLastPost);
-
-  const paginate = (pageNumber) => setCurrentPage2(pageNumber);
-
   // Onchange text from input search
   const search = useStoreState((state) => state.search);
   const setSearch = useStoreActions((action) => action.setSearch);
@@ -135,6 +18,53 @@ const Search = () => {
   let [show, setShow] = useState(false);
 
   const [configHome, setConfigHome] = useState([]);
+  const [pag, setPag] = useState();
+  const [numPage, setNumPage] = useState(1);
+
+  const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
+    let [active, setActive] = useState(false);
+
+    const pageNumbers = [];
+    for (let i = 1; i <= Math.ceil(totalPosts / itemEventPerPage); i++) {
+      pageNumbers.push(i);
+    }
+
+    return (
+      <>
+        <div className="container-angka-pagination">
+          <div className="col-angka-pagination">
+            {pageNumbers.slice(0, 10).map((number) => (
+              <div
+                key={number}
+                className="angka-pagination"
+                onClick={() => {
+                  setNumPage(number);
+                }}
+              >
+                <NavLink
+                  className="paginationLink"
+                  to="#"
+                  activeClassName="active"
+                  style={
+                    number === numPage
+                      ? {
+                          backgroundColor: "#d80010",
+                          borderRadius: "100px",
+                          padding: ".2px",
+                          color: "#fff",
+                        }
+                      : null
+                  }
+                >
+                  {number}
+                </NavLink>
+              </div>
+            ))}
+          </div>
+        </div>
+      </>
+    );
+  };
 
   const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
@@ -149,25 +79,29 @@ const Search = () => {
     });
     const data = await res.json();
 
-    const resConfigHome = await fetch("https://atur.biar.pw/api/blog/search", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${data.token}`,
-      },
-      body: JSON.stringify({
-        limit: 10,
-        keyword: search,
-      }),
-    });
+    const resConfigHome = await fetch(
+      `https://atur.biar.pw/api/blog/search?page=${numPage}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+        body: JSON.stringify({
+          limit: 10,
+          keyword: search,
+        }),
+      }
+    );
 
     const dataConfigHome = await resConfigHome.json();
     setConfigHome(dataConfigHome.query.data);
+    setPag(dataConfigHome.query);
   };
 
   useEffect(() => {
     getConfigHome();
-  }, [search]);
+  }, [search, numPage]);
 
   return (
     <>
@@ -223,12 +157,10 @@ const Search = () => {
               {/* Column2 */}
               <div className="column2-hasil-pencarian">
                 <div className="column-info-kiri">
-                  {/* Card Search */}
                   <CardSearch cardSearchItem={configHome} />
-                  {/* END Card Search */}
                 </div>
 
-                <div className="column-info-kanan">
+                {/* <div className="column-info-kanan">
                   <Link className="btn-info-kanan">
                     <i className="fas fa-plus" id="fontGroup-info"></i>
 
@@ -244,17 +176,20 @@ const Search = () => {
                       bungkarno bapak bangsa
                     </p>
                   </Link>
-                </div>
+                </div> */}
               </div>
               {/* END Column2 */}
 
               {/* Column3 Paginate */}
               <div className="column3-pagination-pencarian">
-                <AngkaPaginationEvent
-                  itemEventPerPage={itemEventPerPage}
-                  totalPosts={cardSearch.length}
-                  paginate={paginate}
-                />
+                {pag && (
+                  <div className="column-pagination-berita-nasional">
+                    <AngkaPaginationEvent
+                      itemEventPerPage={pag.per_page}
+                      totalPosts={pag.total}
+                    />
+                  </div>
+                )}
               </div>
               {/* END Column3 Paginate */}
               {/* END Container Hasil Pencarian */}

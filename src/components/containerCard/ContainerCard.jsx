@@ -150,14 +150,6 @@ const ContainerCard = () => {
             {/* END Column Card */}
 
             {/* Column Pagination */}
-            {pag && (
-              <div className="column-pagination-berita-nasional">
-                <AngkaPaginationEvent
-                  itemEventPerPage={pag.per_page}
-                  totalPosts={pag.total}
-                />
-              </div>
-            )}
 
             {/* END Column Pagination */}
           </div>
