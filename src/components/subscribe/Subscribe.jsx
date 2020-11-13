@@ -21,14 +21,7 @@ const Subscribe = () => {
                                 btnIcons="fa fa-check"
                                 mr=".5rem" /> */}
           <Link to="/">
-            <img
-              src={subscribe}
-              alt=""
-              width="95%"
-              style={{
-                margin: "20px 0",
-              }}
-            />
+            <button className="btn btn-danger w-100 mt-2">Subscribe</button>
           </Link>
         </div>
       </div>

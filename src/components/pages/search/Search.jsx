@@ -129,10 +129,9 @@ const Search = () => {
   const paginate = (pageNumber) => setCurrentPage2(pageNumber);
 
   // Onchange text from input search
-  const todos = useStoreState((state) => state.todos);
   const search = useStoreState((state) => state.search);
   const setSearch = useStoreActions((action) => action.setSearch);
-
+  // const querySearch = useQuery("search");
   let [show, setShow] = useState(false);
 
   const [configHome, setConfigHome] = useState([]);
@@ -196,7 +195,7 @@ const Search = () => {
                   className="input-search"
                   id="txtGroup"
                   autoFocus
-                  value={search}
+                  value={search ? search : ""}
                   onChange={(e) => {
                     setSearch(e.target.value);
                   }}
