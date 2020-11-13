@@ -11,6 +11,15 @@ $smallPhoneDua: 400px;
   }
 }
 
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+
 // Row1
 .carousel-berita-page2 {
   // display: flex;
@@ -24,7 +33,6 @@ $smallPhoneDua: 400px;
   height: 100%;
 
   @include smallPhone() {
-    height: 40vh;
     width: 100%;
   }
 
@@ -69,6 +77,8 @@ $smallPhoneDua: 400px;
       flex-direction: row-reverse;
       height: auto;
       width: 100%;
+      position: absolute;
+      bottom: 0;
 
       #btn-left-page2 {
         display: flex;
