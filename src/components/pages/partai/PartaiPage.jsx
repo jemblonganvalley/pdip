@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./PartaiPage.scss";
 import { Link } from "react-router-dom";
-import pdiLogo from "../../../img/pdibanteng.png";
+import pdiLogo from "../../../img/logo-tatakelola.png";
 import MusicPdi from "../../musicpdi/MusicPdi";
 import MainButton from "../../buttons/MainButton";
 import MainDivider from "../../divider/MainDivider";
@@ -236,7 +236,7 @@ const PartaiPage = () => {
                 className="photoPengurus"
                 style={{
                   backgroundImage: `url(https://atur.biar.pw/public/${config[6].value.image})`,
-                  backgroundAttachment : 'fixed'
+                  backgroundAttachment: "fixed",
                 }}
               >
                 <h3>{config[6].value.title}</h3>
