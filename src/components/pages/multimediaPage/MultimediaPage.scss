@@ -259,7 +259,6 @@ $responMax1440: 1440px;
 
     .panggung {
         width: 100%;
-        background-size: cover;
         background-repeat: no-repeat;
         height: 40vh;
         display: flex;
@@ -276,8 +275,8 @@ $responMax1440: 1440px;
 
         // min width 750px and max width 950px
         @include respon950(){
-            background-attachment: inherit;
-            margin-top: 0px;
+            background-position: center;
+            background-size: center;
         }
         // end min width 750px and max width 950px
 

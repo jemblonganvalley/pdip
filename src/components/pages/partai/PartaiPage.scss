@@ -778,8 +778,7 @@ $responMax1440: 1440px;
 
     @include respon950() {
       height: 40vh;
-      background-size: cover;
-      background-attachment: inherit;
+      background-position: bottom;
     }
 
     @include respon750() {
