@@ -33,6 +33,17 @@ $responMax1360: 1360px;
 }
 // end min width 951 and max width 1360px
 
+// min width 951 and max width 1360px
+$responMin1200: 1200px;
+$responMax1360: 1360px;
+
+@mixin respon1200 {
+  @media (min-width: #{$responMin1200}) and (max-width: #{$responMax1360}) {
+    @content;
+  }
+}
+// end min width 951 and max width 1360px
+
 // Min widht 750 and Max width 950
 $responMin750: 750px;
 $responMax950: 950px;
@@ -68,6 +79,9 @@ $secondary: #f3f3f3;
 
   .maps {
     padding: 0 20%;
+    @include respon1200() {
+      padding: 0 10%;
+    }
   }
 
   @include smallPhone() {
