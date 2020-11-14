@@ -403,7 +403,7 @@ const NewNavbar = ({ token }) => {
                 <img
                   src={pdimobile}
                   alt=""
-                  width="250"
+                  width="100"
                   className="d-inline-block align-center active"
                   loading="lazy"
                   onClick={() => {
@@ -432,9 +432,15 @@ const NewNavbar = ({ token }) => {
                 id="navbarSupportedContent"
                 style={{
                   display: collapse1 ? "block" : "none",
+                  paddingBottom: "20px",
                 }}
               >
-                <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+                <ul
+                  className="navbar-nav mb-2 mb-lg-0"
+                  style={{
+                    overflow: "scroll",
+                  }}
+                >
                   {Object.keys(menu).map((e, i) => (
                     <li
                       className="nav-item"
@@ -446,71 +452,96 @@ const NewNavbar = ({ token }) => {
                         setShow(e.name);
                       }}
                     >
-                      <NavLink
-                        className="nav-link"
-                        to={"/" + e.replace(/\s/g, "-").toLowerCase()}
-                        activeClassName="active"
-                        onClick={() => {
-                          setCollapse1(!collapse1);
+                      <div
+                        className="triggerMobile"
+                        style={{
+                          display: "flex",
+                          padding: "0 10%",
+                          flexDirection: "column",
                         }}
                       >
-                        {e}
-                      </NavLink>
-
-                      {show === e && (
-                        <DropDown
-                          menuItem={Object.values(menu)}
-                          listIndex={i}
-                        />
-                      )}
-
-                      {/* Container Dropdown menu mobile */}
-                      {Object.values(menu)[i].map((e) => (
                         <div
-                          className="dropdown-menu-mobile"
+                          className="triggerDropdown"
                           style={{
-                            height: trigger1 ? "50px" : "0",
-                            transition: trigger1
-                              ? "0.5s ease-in-out"
-                              : "0.3s ease-in",
+                            display: "flex",
+                            justifyContent: "space-between",
+                            flexDirection: "row",
+                            alignItems: "center",
                           }}
                         >
-                          <Link
-                            className="page-menu-drop-mobile"
-                            style={{
-                              color: "#f3f3f3",
+                          <NavLink
+                            className="nav-link"
+                            to={"/" + e.replace(/\s/g, "-").toLowerCase()}
+                            activeClassName="active"
+                            onClick={() => {
+                              setCollapse1(!collapse1);
                             }}
                           >
-                            {e.title}
-                          </Link>
+                            {e}
+                          </NavLink>
+                          <i
+                            className="fas fa-angle-down"
+                            data-toggle="collapse"
+                            data-target={`#collapseExample${i}`}
+                            aria-expanded="false"
+                            aria-controls={`collapseExample${i}`}
+                            id="icon-menuDrop"
+                            onClick={() => {
+                              if (iconRotate != null) {
+                                setIconRotate(null);
+                              } else {
+                                setIconRotate(i);
+                              }
+                            }}
+                            style={{
+                              transform:
+                                iconRotate == i
+                                  ? "rotate(-180deg)"
+                                  : "rotate(0)",
+                              color: iconRotate == i ? "#333" : "#f3f3f3",
+                              fontSize: iconRotate == i ? "20pt" : "13pt",
+                              transition:
+                                iconRotate == i
+                                  ? "0.5s ease-in-out"
+                                  : "0.3s ease-in",
+                            }}
+                          ></i>
                         </div>
-                      ))}
+                      </div>
+                      <div
+                        className="dropdownCollapsed collapse mx-auto"
+                        id={`collapseExample${i}`}
+                        style={{
+                          backgroundColor: "#333333",
+                          width: "80%",
+                          padding: "0 20px",
+                        }}
+                      >
+                        {/* Container Dropdown menu mobile */}
+                        {Object.values(menu)[i].map((e) => (
+                          <div
+                            className="dropdown-menu-mobile "
+                            style={{
+                              height: "50px",
+                              transition: "0.5s ease-in-out",
+                            }}
+                            key={e.key}
+                          >
+                            <Link
+                              className="page-menu-drop-mobile"
+                              style={{
+                                color: "#f3f3f3",
+                              }}
+                            >
+                              {e.title}
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
 
                       {/* end Container Dropdown menu mobile */}
                     </li>
                   ))}
-
-                  {/* Trigger For Menu Dropdown menu mobile */}
-                  <div className="btn-menu-drop-mobile">
-                    {/* btn drop 1 */}
-                    <li className="list-btn-menu-drop">
-                      <i
-                        className="fas fa-angle-down"
-                        id="icon-menuDrop"
-                        onClick={() => {
-                          setTrigger1(!trigger1);
-                        }}
-                        style={{
-                          transform: trigger1 ? "rotate(-180deg)" : "rotate(0)",
-                          color: trigger1 ? "#333" : "#f3f3f3",
-                          fontSize: trigger1 ? "20pt" : "13pt",
-                          transition: trigger1
-                            ? "0.5s ease-in-out"
-                            : "0.3s ease-in",
-                        }}
-                      ></i>
-                    </li>
-                  </div>
                   {/* END Trigger For Menu Dropdown menu mobile */}
 
                   {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown" expanded>
