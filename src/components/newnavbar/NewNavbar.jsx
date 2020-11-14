@@ -476,12 +476,14 @@ const NewNavbar = ({ token }) => {
                 aria-label="Toggle navigation"
                 style={{
                   color: "#fff",
+                  margin : '0 65px'
                 }}
                 onClick={() => {
                   setCollapse1(!collapse1);
                 }}
               >
-                <i className="fa fa-bars" aria-hidden="true"></i>
+                <i className="fa fa-bars" aria-hidden="true" style={{
+                }}></i>
               </button>
               <div
                 className="collapse navbar-collapse"
@@ -512,6 +514,7 @@ const NewNavbar = ({ token }) => {
                         style={{
                           display: "flex",
                           flexDirection: "column",
+                          padding : '10px 10%'
                         }}
                       >
                         <div
@@ -576,6 +579,7 @@ const NewNavbar = ({ token }) => {
                             style={{
                               height: "50px",
                               transition: "0.5s ease-in-out",
+                              padding : '0 10%'
                             }}
                             key={e.key}
                           >
