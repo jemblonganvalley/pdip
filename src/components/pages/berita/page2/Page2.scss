@@ -128,7 +128,7 @@ $secondary : #f3f3f3;
         }
 
         @include respon950() {
-            padding: 0 10% 40px 10%;
+            padding: 0 2% 40px 2%;
         }
 
         @include respon500700() {
@@ -140,6 +140,7 @@ $secondary : #f3f3f3;
             display: flex;
             height: auto;
             width: 100%;
+            flex-direction: column;
 
             @include respon950() {
                 flex-direction: column;
@@ -159,7 +160,7 @@ $secondary : #f3f3f3;
                 display: flex;
                 flex-direction: column;
                 height: 100%;
-                width: 30%;
+                margin-top: 1rem;
 
                 @include respon950() {
                     width: 100%;
@@ -181,6 +182,7 @@ $secondary : #f3f3f3;
                     height: auto;
                     width: 100%;
                     align-items: center;
+                    justify-content: center;
 
                     @include smallPhone(){
                         margin: 10px 0 0 0;
@@ -190,7 +192,6 @@ $secondary : #f3f3f3;
                     .column-txt-admin{
                         display: flex;
                         height: auto;
-                        width: 90%;
 
                         @include respon950() {
                             justify-content: center;
@@ -258,8 +259,10 @@ $secondary : #f3f3f3;
                     // font-size: 20px;
                     font-weight: 500;
                     color: #000;
-                    text-align: start;
+                    text-align: center;
                     margin: 20px 0 0 0;
+                    justify-content: center;
+                    font-weight: bold;
 
                     @include respon950() {
                         text-align: center;
@@ -303,10 +306,10 @@ $secondary : #f3f3f3;
 
                 .box-medsos-beritaPage2{
                     display: flex;
-                    flex-direction: column-reverse;
                     height: 50%;
                     width: 100%;
                     margin: 30px 0 0 0;
+                    justify-content: center;
 
                     @include smallPhone(){
                         margin: 20px 0 0 0;
@@ -359,7 +362,7 @@ $secondary : #f3f3f3;
                 width: 100%;
                 background: #aaa;
                 justify-content: center;
-                margin: 60px 0 30px 0;
+                margin: 30px 0 30px 0;
     
                 .garis-merah-tebal{
                     display: flex;

@@ -122,10 +122,10 @@ const Page2 = () => {
                       {/* END Column Button Love */}
                     </div>
 
-                    <h5 className="title-2-beritaPage2">
+                    <h3 className="title-2-beritaPage2">
                       Ketua Umum PDI Perjuangan, Hj. Megawati Soekarnoputri
                       Meresmikan 20 Kantor Partai
-                    </h5>
+                    </h3>
 
                     <p className="txt-desk1-beritaPage2">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
