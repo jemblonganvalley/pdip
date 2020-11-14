@@ -58,7 +58,25 @@ img {
 
 @media only screen and (min-width: 750px) and (max-width: 991px) {
   body {
-    margin-top: 7.5vh;
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  body {
+    margin-top: 15vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  body {
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  body {
+    margin-top: 10vh;
   }
 }
 

@@ -63,7 +63,7 @@ const NewNavbar = ({ token }) => {
       {isDesktop && (
         <>
           <nav
-            className="navbar navbar-expand-lg sticky-top"
+            className="navbar navbar-expand-lg fixed-top"
             id="navbar"
             style={{
               boxShadow:
@@ -199,7 +199,7 @@ const NewNavbar = ({ token }) => {
       {isMobile && (
         <>
           <nav
-            className="navbar navbar-expand-lg sticky-top"
+            className="navbar navbar-expand-lg fixed-top"
             id="navbar"
             style={{
               boxShadow:
@@ -459,7 +459,7 @@ const NewNavbar = ({ token }) => {
       {isTablet && (
         <>
           <nav
-            className="navbar navbar-expand-lg sticky-top"
+            className="navbar navbar-expand-lg fixed-top"
             id="navbar"
             style={{
               boxShadow:
