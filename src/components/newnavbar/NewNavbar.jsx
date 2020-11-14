@@ -297,8 +297,10 @@ const NewNavbar = ({ token }) => {
                           </NavLink>
                           <i
                             className="fas fa-angle-down"
+                            data-togle="colapse"
+                            data-target={i}
                             id="icon-menuDrop"
-                            onClick={triggerDropdown}
+                            // onClick={triggerDropdown}
                             style={{
                               transform: trigger1
                                 ? "rotate(-180deg)"
@@ -326,6 +328,7 @@ const NewNavbar = ({ token }) => {
                             key={e.key}
                           >
                             <Link
+                              id={i}
                               className="page-menu-drop-mobile"
                               style={{
                                 color: "#f3f3f3",
