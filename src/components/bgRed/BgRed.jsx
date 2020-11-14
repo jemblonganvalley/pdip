@@ -64,7 +64,7 @@ const BgRed = () => {
               style={{
                 backgroundColor: "#fff",
                 borderRadius: "5px",
-                margin: "0 10px",
+                // margin: "0 10px",
               }}
             >
               <insta-feed-custom username="pdiperjuangan"></insta-feed-custom>

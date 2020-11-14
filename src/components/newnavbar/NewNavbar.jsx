@@ -50,14 +50,20 @@ const NewNavbar = ({ token }) => {
   const setSearch = useStoreActions((action) => action.setSearch);
   const inputSearch = useRef();
   const search = useStoreState((state) => state.search);
-  const getNavHeight = () => {
-    const ht = document.getElementById("navbar").offsetHeight;
-    setNavHeight(ht);
+  const getNavHeight = async () => {
+    const ht = await document.getElementById("navbar").offsetHeight;
+    await setNavHeight(ht);
   };
 
   useEffect(() => {
     getDataMenu();
-    getNavHeight();
+    window.addEventListener("load", () => {
+      getNavHeight();
+    });
+
+    window.resize = () => {
+      getNavHeight();
+    };
   }, [isDesktop, isTablet, isMobile]);
   return (
     <>

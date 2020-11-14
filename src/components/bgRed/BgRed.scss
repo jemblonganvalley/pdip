@@ -1,40 +1,40 @@
-$smallPhoneDua : 400px;
-$smallPhoneSatu : 500px;
+$smallPhoneDua: 400px;
+$smallPhoneSatu: 500px;
 
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
 // Min widht 500 and Max width 750
-$respon750 : 750px;
+$respon750: 750px;
 $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 // Min widht 500 and Max width 750
 @mixin respon750 {
-    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
-        @content;
-    }
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
 }
 // END Min widht 500 and Max width 750
 
 // Min widht 750 and Max width 950
-$responMin750 : 750px;
+$responMin750: 750px;
 $responMax950: 950px;
 // END Min widht 750 and Max width 950
 
 // Min width 750 and max width 950
-@mixin respon950{
-    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
-        @content;
-    }
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
 }
 // END Min widht 750 and max width 950
 
@@ -42,10 +42,10 @@ $responMax950: 950px;
 $responMin951: 951px;
 $responMax1360: 1360px;
 
-@mixin respon1360{
-    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
-        @content;
-    }
+@mixin respon1360 {
+  @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}) {
+    @content;
+  }
 }
 // end min width 951 and max width 1360px
 
@@ -53,135 +53,125 @@ $responMax1360: 1360px;
 $responMin1361: 1361px;
 $responMax1440: 1440px;
 
-@mixin respon1440{
-    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
-        @content;
-    }
+@mixin respon1440 {
+  @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}) {
+    @content;
+  }
 }
 // end min width 1361px and max width 1440px
 
 .backgroundRed {
-    background: url(../../img/pattern-01.svg);
-    width: 100%;
-    padding: 0 10%;
+  background: url(../../img/pattern-01.svg);
+  width: 100%;
+  padding: 0 10%;
+  justify-content: center;
+  display: flex;
+  // justify-content: center;
+
+  @include respon1440() {
+  }
+
+  @include respon1360() {
+  }
+
+  @include respon950() {
+    height: auto;
+    align-items: center;
     justify-content: center;
-    display: flex;
-    // justify-content: center;
+    padding: 0;
+  }
 
-    @include respon1440(){
+  // Min width 500px and max width 750px
+  @include respon750() {
+    flex-direction: column;
+    height: auto;
+  }
+  // END Min width 500px and max width 750px
+
+  // Max width 500px
+  @include smallPhone() {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 20px;
+  }
+  // END Max width 500px
+
+  .holderFrame {
+    flex: 1;
+    margin: 40px 20px;
+    width: 100%;
+    // max-height: 750px;
+    height: auto;
+    // margin: 0 10px 0 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    position: relative;
+
+    @include respon950() {
+      margin: 40px 0 0 0;
     }
-    
-    @include respon1360(){
+
+    @include respon750() {
+      margin: 40px 0 0 0;
     }
 
-    @include respon950(){
-        height: auto;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-
+    @include smallPhone() {
+      margin: 10px 0;
     }
 
-    // Min width 500px and max width 750px
-    @include respon750(){
-        flex-direction: column;
-        height: auto;
-    }
-    // END Min width 500px and max width 750px
+    .widgetFb {
+      //   width: 100%;
+      justify-content: center;
 
-    // Max width 500px
-    @include smallPhone(){
-        flex-direction: column;
-        height: auto;
-        padding: 20px 20px;
+      //   @include smallPhoneDua() {
+      //     width: 100%;
+      //   }
     }
-    // END Max width 500px
-    
-    .holderFrame{
-        margin: 40px 20px;
-        width: 100%;
-        // min-width: 270px;
-        height: auto;
-        // margin: 0 10px 0 0px;
-        background-color: rgba(0,0,0,0.300);
-        border-radius: 8px;
-        position: relative;
+    // }
+    .holderFrame_header {
+      width: 100%;
+      // min-width: 270px;
+      height: 50px;
+      background-color: rgba(216, 0, 16, 0.5);
+      color: white;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      justify-content: center;
 
-        @include respon950(){
-            margin: 40px 0 0 0;
+      #iconGroup {
+        display: flex;
+        font-size: 20px;
+        margin: 0 20px 0 0;
+        left: 20px;
+
+        @include smallPhoneDua() {
+          font-size: 25px;
+        }
+      }
+
+      h5 {
+        margin: unset;
+        @include smallPhoneDua() {
+          font-size: 15px;
+        }
+        @include respon950() {
+          margin: unset;
         }
 
-        @include respon750(){
-            margin: 40px 0 0 0;
+        @include respon750() {
+          margin: unset;
         }
 
-        @include smallPhone(){
-            margin: 10px 0;
+        @include smallPhone() {
+          margin: unset;
         }
-
-        .widgetFb{
-            width: 100%;
-            justify-content: center;
-
-            @include smallPhoneDua(){
-                width: 100%;
-            }
-        }
-        // }
-        .holderFrame_header{
-            width: 100%;
-            // min-width: 270px;
-            height: 50px;
-            background-color: rgba(216, 0, 16, 0.500);
-            color: white;
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            justify-content: center;
-
-            #iconGroup{
-                display: flex;
-                font-size: 20px;
-                margin: 0 20px 0 0;
-                left: 20px;
-    
-                @include smallPhoneDua(){
-                    font-size: 25px;
-                }
-            }
-    
-            h5{
-                margin: unset;
-                @include smallPhoneDua(){
-                    font-size: 15px;
-                }
-                @include respon950(){
-                    margin: unset;
-
-                }
-        
-                @include respon750(){
-                    margin: unset;
-                    
-                }
-        
-                @include smallPhone(){
-                    margin: unset;
-
-                }
-            }
-        }
-
-
-
+      }
     }
+  }
 
-    .insta-feed {
-        background-color: #ffffff;
-        border: none;
-    }
-
-
-
-
+  .insta-feed {
+    background-color: #ffffff;
+    border: none;
+  }
 }
