@@ -1,13 +1,16 @@
-
 body {
   /* margin: 0; */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f3f3f3;
   user-select: none;
   overflow-x: hidden;
-  margin-top: 117px;
+  min-height: 100vh;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  /* margin-top: 117px; */
 }
 
 * {
@@ -22,7 +25,7 @@ html {
   scroll-behavior: smooth;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
@@ -32,38 +35,36 @@ a{
 } */
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-img{
+img {
   object-fit: cover;
   object-position: center;
 }
 
-
 @media only screen and (max-width: 500px) {
-  body{
+  body {
     margin-top: 78px;
   }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 750px) {
-  body{
+  body {
     margin-top: 91px;
   }
 }
 
 @media only screen and (min-width: 750px) and (max-width: 991px) {
-  body{
-    margin-top: 104px;
+  body {
+    margin-top: 7.5vh;
   }
 }
 
-@media only screen and (max-height: 720px) and (min-width: 1200px){
-  body{
+@media only screen and (max-height: 720px) and (min-width: 1200px) {
+  body {
     margin-top: 87px;
     overflow-y: hidden;
   }
 }
-
