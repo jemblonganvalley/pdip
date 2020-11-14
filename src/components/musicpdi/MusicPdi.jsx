@@ -301,8 +301,8 @@ const MusicPdi = ({
                 <h6 className="judulList">Hymne PDI Perjuangan</h6>
                 <small>
                   Api perjuangan harus tetap dinyalakan dan selalu bangkit
-                  bergerak berjuang bersama,PDI Perjuangan selalu bersama rakyat
-                  dalam satu barisan.
+                  bergerak berjuang bersama, PDI Perjuangan selalu bersama
+                  rakyat dalam satu barisan.
                 </small>
               </div>
 
@@ -314,7 +314,7 @@ const MusicPdi = ({
               >
                 <h6 className="judulList">Mars PDI Perjuangan</h6>
                 <small>
-                  Tak ada yang tak mungkin jika Tuhan sudah berkehendak,Begitu
+                  Tak ada yang tak mungkin jika Tuhan sudah berkehendak, Begitu
                   pula dengan PDI Perjuangan.
                 </small>
               </div>
@@ -341,7 +341,7 @@ const MusicPdi = ({
               >
                 <h6 className="judulList">Solid Bergerak</h6>
                 <small>
-                  Satukan misi,satukan fisi rapatkan barisan bergerak dengan
+                  Satukan Misi, satukan Visi rapatkan barisan bergerak dengan
                   satu semangat mengabdi kepada bangsa dan Negara.
                 </small>
               </div>

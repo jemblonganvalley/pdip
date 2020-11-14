@@ -276,7 +276,7 @@ const MusicMobile = ({ data }) => {
             <span>
               {" "}
               Api perjuangan harus tetap dinyalakan dan selalu bangkit bergerak
-              berjuang bersama,PDI Perjuangan selalu bersama rakyat dalam satu
+              berjuang bersama, PDI Perjuangan selalu bersama rakyat dalam satu
               barisan.
             </span>
           </div>
@@ -585,7 +585,7 @@ const MusicMobile = ({ data }) => {
           >
             <strong>Solid Bergerak</strong>
             <span>
-              Satukan misi,satukan fisi rapatkan barisan bergerak dengan satu
+              Satukan Misi, satukan Visi rapatkan barisan bergerak dengan satu
               semangat mengabdi kepada bangsa dan Negara.
             </span>
           </div>
