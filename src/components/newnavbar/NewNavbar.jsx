@@ -13,7 +13,7 @@ const NewNavbar = ({ token }) => {
   const [show, setShow] = useState(false);
   const [menu, setMenu] = useState([]);
   const [scroll, setScroll] = useState(false);
-
+  const [iconRotate, setIconRotate] = useState(null);
   const isDesktop = useMediaQuery({ minWidth: 992 });
 
   const isTablet = useMediaQuery({ minWidth: 751, maxWidth: 991 });
@@ -297,38 +297,51 @@ const NewNavbar = ({ token }) => {
                           </NavLink>
                           <i
                             className="fas fa-angle-down"
-                            data-togle="colapse"
-                            data-target={i}
+                            data-toggle="collapse"
+                            data-target={`#collapseExample${i}`}
+                            aria-expanded="false"
+                            aria-controls={`collapseExample${i}`}
                             id="icon-menuDrop"
-                            // onClick={triggerDropdown}
+                            onClick={() => {
+                              if (iconRotate != null) {
+                                setIconRotate(null);
+                              } else {
+                                setIconRotate(i);
+                              }
+                            }}
                             style={{
-                              transform: trigger1
-                                ? "rotate(-180deg)"
-                                : "rotate(0)",
-                              color: trigger1 ? "#333" : "#f3f3f3",
-                              fontSize: trigger1 ? "20pt" : "13pt",
-                              transition: trigger1
-                                ? "0.5s ease-in-out"
-                                : "0.3s ease-in",
+                              transform:
+                                iconRotate == i
+                                  ? "rotate(-180deg)"
+                                  : "rotate(0)",
+                              color: iconRotate == i ? "#333" : "#f3f3f3",
+                              fontSize: iconRotate == i ? "20pt" : "13pt",
+                              transition:
+                                iconRotate == i
+                                  ? "0.5s ease-in-out"
+                                  : "0.3s ease-in",
                             }}
                           ></i>
                         </div>
                       </div>
-                      <div className="dropdownCollapsed">
+                      <div
+                        className="dropdownCollapsed collapse"
+                        id={`collapseExample${i}`}
+                        style={{
+                          backgroundColor: "#333333",
+                        }}
+                      >
                         {/* Container Dropdown menu mobile */}
                         {Object.values(menu)[i].map((e) => (
                           <div
-                            className="dropdown-menu-mobile"
+                            className="dropdown-menu-mobile "
                             style={{
-                              height: trigger1 ? "50px" : "0",
-                              transition: trigger1
-                                ? "0.5s ease-in-out"
-                                : "0.3s ease-in",
+                              height: "50px",
+                              transition: "0.5s ease-in-out",
                             }}
                             key={e.key}
                           >
                             <Link
-                              id={i}
                               className="page-menu-drop-mobile"
                               style={{
                                 color: "#f3f3f3",
