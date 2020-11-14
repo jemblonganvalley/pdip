@@ -432,11 +432,10 @@ const NewNavbar = ({ token }) => {
                 id="navbarSupportedContent"
                 style={{
                   display: collapse1 ? "block" : "none",
-                  paddingBottom: "20px",
                 }}
               >
                 <ul
-                  className="navbar-nav mb-2 mb-lg-0"
+                  className="navbar-nav mx-auto mb-2 mb-lg-0"
                   style={{
                     overflow: "scroll",
                   }}
@@ -509,12 +508,10 @@ const NewNavbar = ({ token }) => {
                         </div>
                       </div>
                       <div
-                        className="dropdownCollapsed collapse mx-auto"
+                        className="dropdownCollapsed collapse"
                         id={`collapseExample${i}`}
                         style={{
                           backgroundColor: "#333333",
-                          width: "80%",
-                          padding: "0 20px",
                         }}
                       >
                         {/* Container Dropdown menu mobile */}
