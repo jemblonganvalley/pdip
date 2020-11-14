@@ -424,18 +424,8 @@ const NewNavbar = ({ token }) => {
                           </div>
                         ))}
                       </div>
-
-                      {/* end Container Dropdown menu mobile */}
                     </li>
                   ))}
-                  {/* END Trigger For Menu Dropdown menu mobile */}
-
-                  {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown" expanded>
-                      {e.listItem.map((e)=>(
-                        <li><Link class="dropdown-item" to={e.listTo}>{e.listName}</Link></li>
-                        
-                      ))}
-                    </ul> */}
                 </ul>
                 <form className="d-inline-flex">
                   <input
@@ -475,7 +465,7 @@ const NewNavbar = ({ token }) => {
                 <img
                   src={pdimobile}
                   alt=""
-                  width="100"
+                  width="200"
                   className="d-inline-block align-center active"
                   loading="lazy"
                   onClick={() => {
@@ -492,12 +482,14 @@ const NewNavbar = ({ token }) => {
                 aria-label="Toggle navigation"
                 style={{
                   color: "#fff",
+                  margin : '0 65px'
                 }}
                 onClick={() => {
                   setCollapse1(!collapse1);
                 }}
               >
-                <i className="fa fa-bars" aria-hidden="true"></i>
+                <i className="fa fa-bars" aria-hidden="true" style={{
+                }}></i>
               </button>
               <div
                 className="collapse navbar-collapse"
@@ -527,8 +519,8 @@ const NewNavbar = ({ token }) => {
                         className="triggerMobile"
                         style={{
                           display: "flex",
-                          padding: "0 10%",
                           flexDirection: "column",
+                          padding : '10px 10%'
                         }}
                       >
                         <div
@@ -593,6 +585,7 @@ const NewNavbar = ({ token }) => {
                             style={{
                               height: "50px",
                               transition: "0.5s ease-in-out",
+                              padding : '0 10%'
                             }}
                             key={e.key}
                           >

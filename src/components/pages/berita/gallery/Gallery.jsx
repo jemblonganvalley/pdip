@@ -143,6 +143,7 @@ const Gallery = () => {
             {/* Column1 */}
             <div className="col1-container-1-beritaPage2">
               <>
+                
                 {configHome.length > 0 && (
                   <CarouselBeritaPage2 data={configHome} />
                 )}
