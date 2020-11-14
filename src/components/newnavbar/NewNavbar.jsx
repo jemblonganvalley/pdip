@@ -422,18 +422,8 @@ const NewNavbar = ({ token }) => {
                           </div>
                         ))}
                       </div>
-
-                      {/* end Container Dropdown menu mobile */}
                     </li>
                   ))}
-                  {/* END Trigger For Menu Dropdown menu mobile */}
-
-                  {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown" expanded>
-                      {e.listItem.map((e)=>(
-                        <li><Link class="dropdown-item" to={e.listTo}>{e.listName}</Link></li>
-                        
-                      ))}
-                    </ul> */}
                 </ul>
                 <form className="d-inline-flex">
                   <input
@@ -473,7 +463,7 @@ const NewNavbar = ({ token }) => {
                 <img
                   src={pdimobile}
                   alt=""
-                  width="100"
+                  width="200"
                   className="d-inline-block align-center active"
                   loading="lazy"
                   onClick={() => {
@@ -525,7 +515,6 @@ const NewNavbar = ({ token }) => {
                         className="triggerMobile"
                         style={{
                           display: "flex",
-                          padding: "0 10%",
                           flexDirection: "column",
                         }}
                       >

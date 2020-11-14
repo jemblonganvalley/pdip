@@ -7,7 +7,7 @@ const MainFooter = ()=> {
     return (
         <div className="wrapperFooter">
             <div className="wrapperContent">
-                <span style={{display: 'flex', gap: '20px', width : '400px'}}>
+                <span  className='wrapperSituation'>
                 <img src={Logo} alt="" width="100" height="100" className="logo-mainFooter"
                     style={{
                         objectFit: 'fill'
