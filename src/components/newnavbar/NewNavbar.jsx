@@ -10,6 +10,9 @@ import { Link, NavLink } from "react-router-dom";
 import { Table } from "@material-ui/core";
 
 const NewNavbar = ({ token }) => {
+  const setRefresher = useStoreActions((action) => action.setRefresher);
+  const refresher = useStoreState((state) => state.refresher);
+
   const [show, setShow] = useState(false);
   const [menu, setMenu] = useState([]);
   const [scroll, setScroll] = useState(false);
@@ -34,22 +37,12 @@ const NewNavbar = ({ token }) => {
 
   // For Trigger menu dropdown (Mobile)
   let [trigger1, setTrigger1] = useState(false);
-  let [trigger2, setTrigger2] = useState(false);
-  let [trigger3, setTrigger3] = useState(false);
-  let [trigger4, setTrigger4] = useState(false);
-  let [trigger5, setTrigger5] = useState(false);
-  let [trigger6, setTrigger6] = useState(false);
-  let [trigger7, setTrigger7] = useState(false);
+
   // end For Trigger menu dropdown (Mobile)
 
   // For Button page menu mobile (collapse navbar)
   let [collapse1, setCollapse1] = useState(false);
-  let [collapse2, setCollapse2] = useState(false);
-  let [collapse3, setCollapse3] = useState(false);
-  let [collapse4, setCollapse4] = useState(false);
-  let [collapse5, setCollapse5] = useState(false);
-  let [collapse6, setCollapse6] = useState(false);
-  let [collapse7, setCollapse7] = useState(false);
+
   // END For Button page menu mobile (collapse navbar)
 
   const triggerDropdown = () => {
@@ -346,6 +339,83 @@ const NewNavbar = ({ token }) => {
                               style={{
                                 color: "#f3f3f3",
                               }}
+                              onClick={() => {
+                                setCollapse1(!collapse1);
+                                setRefresher();
+                              }}
+                              to={
+                                e.params === "siaran_langsung"
+                                  ? "/multimedia/siaran_langsung"
+                                  : e.params === "dokumentasi"
+                                  ? "/multimedia/dokumentasi"
+                                  : e.params === "teaser"
+                                  ? "/multimedia/teaser"
+                                  : e.params === "wawancara"
+                                  ? "/multimedia/wawancara"
+                                  : e.title === "Lagu Perjuangan"
+                                  ? `/article/250/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.title === "Lahirnya Pancasila 1 Juni 1945"
+                                  ? "/detail-article/109/Lahirnya-Pancasila-1-Juni-1945"
+                                  : e.title === "Foto/Gallery"
+                                  ? "/gallery"
+                                  : e.params === "222"
+                                  ? `/detail-article/656/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "220"
+                                  ? `/detail-article/624/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "216"
+                                  ? `/detail-article/623/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "224"
+                                  ? `/detail-article/630/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "229"
+                                  ? `/partai/dpd-dpc`
+                                  : e.params === "230"
+                                  ? `/detail-article/658/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "234"
+                                  ? `/detail-article/841/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "235"
+                                  ? `/detail-article/1012/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "27"
+                                  ? `/detail-article/107/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "242"
+                                  ? `/detail-article/871/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "243"
+                                  ? `/detail-article/865/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "237"
+                                  ? `/bung-karno-bapak-bangsa/quotes/3`
+                                  : e.params === "28"
+                                  ? `/detail-article/838/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "all"
+                                  ? `/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : `/article/${e.params}/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                              }
                             >
                               {e.title}
                             </Link>
@@ -529,6 +599,83 @@ const NewNavbar = ({ token }) => {
                               style={{
                                 color: "#f3f3f3",
                               }}
+                              onClick={() => {
+                                setCollapse1(!collapse1);
+                                setRefresher();
+                              }}
+                              to={
+                                e.params === "siaran_langsung"
+                                  ? "/multimedia/siaran_langsung"
+                                  : e.params === "dokumentasi"
+                                  ? "/multimedia/dokumentasi"
+                                  : e.params === "teaser"
+                                  ? "/multimedia/teaser"
+                                  : e.params === "wawancara"
+                                  ? "/multimedia/wawancara"
+                                  : e.title === "Lagu Perjuangan"
+                                  ? `/article/250/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.title === "Lahirnya Pancasila 1 Juni 1945"
+                                  ? "/detail-article/109/Lahirnya-Pancasila-1-Juni-1945"
+                                  : e.title === "Foto/Gallery"
+                                  ? "/gallery"
+                                  : e.params === "222"
+                                  ? `/detail-article/656/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "220"
+                                  ? `/detail-article/624/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "216"
+                                  ? `/detail-article/623/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "224"
+                                  ? `/detail-article/630/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "229"
+                                  ? `/partai/dpd-dpc`
+                                  : e.params === "230"
+                                  ? `/detail-article/658/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "234"
+                                  ? `/detail-article/841/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "235"
+                                  ? `/detail-article/1012/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "27"
+                                  ? `/detail-article/107/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "242"
+                                  ? `/detail-article/871/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "243"
+                                  ? `/detail-article/865/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "237"
+                                  ? `/bung-karno-bapak-bangsa/quotes/3`
+                                  : e.params === "28"
+                                  ? `/detail-article/838/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : e.params === "all"
+                                  ? `/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                                  : `/article/${e.params}/${e.title
+                                      .replace(/\s/g, "-")
+                                      .toLowerCase()}`
+                              }
                             >
                               {e.title}
                             </Link>
