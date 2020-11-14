@@ -44,45 +44,8 @@ img {
   object-position: center;
 }
 
-@media only screen and (max-width: 500px) {
-  body {
-    margin-top: 78px;
-  }
-}
-
-@media only screen and (min-width: 500px) and (max-width: 750px) {
-  body {
-    margin-top: 91px;
-  }
-}
-
-@media only screen and (min-width: 750px) and (max-width: 991px) {
-  body {
-    margin-top: 10vh;
-  }
-}
-
-@media only screen and (min-width: 991px) and (max-width: 1200px) {
-  body {
-    margin-top: 15vh;
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
-  body {
-    margin-top: 10vh;
-  }
-}
-
-@media only screen and (min-width: 1400px) and (max-width: 1600px) {
-  body {
-    margin-top: 10vh;
-  }
-}
-
 @media only screen and (max-height: 720px) and (min-width: 1200px) {
   body {
-    margin-top: 87px;
     overflow-y: hidden;
   }
 }

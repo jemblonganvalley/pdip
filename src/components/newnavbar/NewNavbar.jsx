@@ -12,7 +12,7 @@ import { Table } from "@material-ui/core";
 const NewNavbar = ({ token }) => {
   const setRefresher = useStoreActions((action) => action.setRefresher);
   const refresher = useStoreState((state) => state.refresher);
-
+  const setNavHeight = useStoreActions((action) => action.setNavHeight);
   const [show, setShow] = useState(false);
   const [menu, setMenu] = useState([]);
   const [scroll, setScroll] = useState(false);
@@ -45,19 +45,20 @@ const NewNavbar = ({ token }) => {
 
   // END For Button page menu mobile (collapse navbar)
 
-  const triggerDropdown = () => {
-    setTrigger1(!trigger1);
-  };
-
   // Onchange text input search to text input page search
   const [value, setValue] = useState();
   const setSearch = useStoreActions((action) => action.setSearch);
   const inputSearch = useRef();
   const search = useStoreState((state) => state.search);
+  const getNavHeight = () => {
+    const ht = document.getElementById("navbar").offsetHeight;
+    setNavHeight(ht);
+  };
 
   useEffect(() => {
     getDataMenu();
-  }, []);
+    getNavHeight();
+  }, [isDesktop, isTablet, isMobile]);
   return (
     <>
       {isDesktop && (
@@ -244,12 +245,7 @@ const NewNavbar = ({ token }) => {
                   display: collapse1 ? "block" : "none",
                 }}
               >
-                <ul
-                  className="navbar-nav mx-auto mb-2 mb-lg-0"
-                  style={{
-                    overflow: "scroll",
-                  }}
-                >
+                <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                   {Object.keys(menu).map((e, i) => (
                     <li
                       className="nav-item"

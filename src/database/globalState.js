@@ -53,4 +53,9 @@ export let globalState = createStore({
   setQuotesMedia: action((state, payload) => {
     state.quotesMedia = payload;
   }),
+
+  navHeight: 0,
+  setNavHeight: action((state, payload) => {
+    state.navHeight = payload;
+  }),
 });

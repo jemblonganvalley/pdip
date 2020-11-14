@@ -51,7 +51,7 @@ function App() {
   const getGlobalToken = useStoreActions((action) => action.setToken);
   let [dataMenu, setDataMenu] = useState();
   let [tkn, setTkn] = useState();
-
+  const navHeight = useStoreState((state) => state.navHeight);
   const getToken = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
       method: "POST",
@@ -85,69 +85,73 @@ function App() {
   }, []);
 
   return (
-    <main className="top_container">
-      <Router>
-        {/* {tkn && <MainNavbar hide={hide} token={tkn} />} */}
-        {tkn && <NewNavbar hide={hide} token={tkn} />}
-        <div className="App">
-          <Switch>
-            {/* BLOG PAGE  */}
-            <Route path="/detail-article/:id">
-              <Page1 />
-            </Route>
+    <Router>
+      {/* {tkn && <MainNavbar hide={hide} token={tkn} />} */}
+      {tkn && <NewNavbar hide={hide} token={tkn} />}
+      <div
+        className="App"
+        style={{
+          marginTop: `${navHeight}px`,
+        }}
+      >
+        <Switch>
+          {/* BLOG PAGE  */}
+          <Route path="/detail-article/:id">
+            <Page1 />
+          </Route>
 
-            <Route path="/ketua-umum/pidato/all">
-              <PidatoAll />
-            </Route>
+          <Route path="/ketua-umum/pidato/all">
+            <PidatoAll />
+          </Route>
 
-            <Route path="/pidato-ketua-umum">
-              <PidatoAll />
-            </Route>
+          <Route path="/pidato-ketua-umum">
+            <PidatoAll />
+          </Route>
 
-            {/* CONTAINER CARD */}
-            <Route path="/article/:category_id">
-              <ContainerCard />
-            </Route>
+          {/* CONTAINER CARD */}
+          <Route path="/article/:category_id">
+            <ContainerCard />
+          </Route>
 
-            {/* CONTAINER CARD GALLERY*/}
-            <Route path="/gallery/detail-gallery/:id/:slug">
-              <Gallery />
-            </Route>
+          {/* CONTAINER CARD GALLERY*/}
+          <Route path="/gallery/detail-gallery/:id/:slug">
+            <Gallery />
+          </Route>
 
-            <Route path="/formkeluhan">
-              <FormKeluhan />
-            </Route>
+          <Route path="/formkeluhan">
+            <FormKeluhan />
+          </Route>
 
-            <Route path="/formpdi">
-              <FormPdi />
-            </Route>
+          <Route path="/formpdi">
+            <FormPdi />
+          </Route>
 
-            <Route path="/search">
-              <Search />
-            </Route>
+          <Route path="/search">
+            <Search />
+          </Route>
 
-            {/* CONTAINER CARD GALLERY*/}
-            <Route path="/gallery">
-              <ContainerCardGallery />
-            </Route>
+          {/* CONTAINER CARD GALLERY*/}
+          <Route path="/gallery">
+            <ContainerCardGallery />
+          </Route>
 
-            <Route path="/multimedia/all">
-              <MultimediaAll />
-            </Route>
+          <Route path="/multimedia/all">
+            <MultimediaAll />
+          </Route>
 
-            {/* CONTAINER CARD MULTIMEDIA*/}
-            <Route path="/multimedia/:category">
-              <ContainerCardMultimedia />
-            </Route>
+          {/* CONTAINER CARD MULTIMEDIA*/}
+          <Route path="/multimedia/:category">
+            <ContainerCardMultimedia />
+          </Route>
 
-            <Route path="/detail-multimedia/:id/:slug">
-              <Page2 />
-            </Route>
+          <Route path="/detail-multimedia/:id/:slug">
+            <Page2 />
+          </Route>
 
-            <Route path="/search/:par">
-              <Search />
-            </Route>
-            {/* 
+          <Route path="/search/:par">
+            <Search />
+          </Route>
+          {/* 
           <Route path="/multimedia/wawancara">
             <Wawancara />
           </Route>
@@ -160,101 +164,100 @@ function App() {
             <VideoDokumen />
           </Route> */}
 
-            <Route path="/event">
-              <EventPage />
-            </Route>
+          <Route path="/event">
+            <EventPage />
+          </Route>
 
-            <Route path="/wejanganbungkarno">
-              <WejanganBungKarno />
-            </Route>
+          <Route path="/wejanganbungkarno">
+            <WejanganBungKarno />
+          </Route>
 
-            <Route path="/materipokok">
-              <MateriPokok />
-            </Route>
+          <Route path="/materipokok">
+            <MateriPokok />
+          </Route>
 
-            <Route path="/videomedia">
-              <VideoMedia />
-            </Route>
+          <Route path="/videomedia">
+            <VideoMedia />
+          </Route>
 
-            <Route path="/dpd/:id/:nameProv">
-              <Dpd />
-            </Route>
+          <Route path="/dpd/:id/:nameProv">
+            <Dpd />
+          </Route>
 
-            <Route path="/partai/dpd-dpc">
-              <DpdDpc />
-            </Route>
+          <Route path="/partai/dpd-dpc">
+            <DpdDpc />
+          </Route>
 
-            <Route path="/detailpengurus/:id/:name/:grade">
-              <DetailPengurus />
-            </Route>
+          <Route path="/detailpengurus/:id/:name/:grade">
+            <DetailPengurus />
+          </Route>
 
-            <Route path="/struktur-dpp">
-              <StrukturPage slug="struktur-dpp" grade="pengurus" />
-            </Route>
+          <Route path="/struktur-dpp">
+            <StrukturPage slug="struktur-dpp" grade="pengurus" />
+          </Route>
 
-            <Route path="/anggota-legislatif">
-              <StrukturPage slug="anggota-legislatif" grade="legislatif" />
-            </Route>
+          <Route path="/anggota-legislatif">
+            <StrukturPage slug="anggota-legislatif" grade="legislatif" />
+          </Route>
 
-            {/* <Route path="/page2">
+          {/* <Route path="/page2">
             <Page2 />
           </Route> */}
 
-            {/* BLOG PAGE  */}
+          {/* BLOG PAGE  */}
 
-            {/* MAIN PAGE */}
+          {/* MAIN PAGE */}
 
-            <Route path="/pemilu">
-              <PemiluPage />
-            </Route>
+          <Route path="/pemilu">
+            <PemiluPage />
+          </Route>
 
-            <Route path="/informasi-publik">
-              <InformasiPage />
-            </Route>
+          <Route path="/informasi-publik">
+            <InformasiPage />
+          </Route>
 
-            <Route path="/berita">
-              <BeritaPage />
-            </Route>
+          <Route path="/berita">
+            <BeritaPage />
+          </Route>
 
-            <Route path="/multimedia">
-              <MultimediaPage />
-            </Route>
+          <Route path="/multimedia">
+            <MultimediaPage />
+          </Route>
 
-            <Route path="/ketua-umum">
-              <KetuaUmumPage />
-            </Route>
+          <Route path="/ketua-umum">
+            <KetuaUmumPage />
+          </Route>
 
-            {/* BUNG KARNO BAPAK BANGSA */}
+          {/* BUNG KARNO BAPAK BANGSA */}
 
-            <Route path="/bung-karno-bapak-bangsa/quotes/:id">
-              <WejanganBungKarno />
-            </Route>
+          <Route path="/bung-karno-bapak-bangsa/quotes/:id">
+            <WejanganBungKarno />
+          </Route>
 
-            {/* <Route path="/quotes/:id">
+          {/* <Route path="/quotes/:id">
             <BkbbWejangan />
           </Route> */}
 
-            <Route path="/bung-karno-bapak-bangsa">
-              <BkbbPage />
-            </Route>
+          <Route path="/bung-karno-bapak-bangsa">
+            <BkbbPage />
+          </Route>
 
-            <Route path="/partai">
-              <PartaiPage />
-            </Route>
+          <Route path="/partai">
+            <PartaiPage />
+          </Route>
 
-            <Route path="/home">
-              <HomePage />
-            </Route>
+          <Route path="/home">
+            <HomePage />
+          </Route>
 
-            <Route path="*">
-              <HomePage />
-            </Route>
-          </Switch>
-        </div>
-        <BgRed />
-        <MainFooter />
-      </Router>
-    </main>
+          <Route path="*">
+            <HomePage />
+          </Route>
+        </Switch>
+      </div>
+      <BgRed />
+      <MainFooter />
+    </Router>
   );
 }
 
