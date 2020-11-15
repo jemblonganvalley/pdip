@@ -112,6 +112,7 @@ $res1240 : 1350px;
             // font-size: 13pt;
             width: 100%;
             margin: 10px 0 0 0;
+            text-align: center;
             @include respon1240() {
             font-size: 10pt;
 
@@ -130,11 +131,12 @@ $res1240 : 1350px;
                 width: 100%;
                 color: #fff;
                 align-items: center;
-                padding: 1rem 2rem;
+                padding: 1.5rem 1rem;
                 strong {
                     font-size: 13pt;
                     color : #fff;
                     text-align: center;
+                    text-transform: uppercase;
                 }
 
                 // END Logo apps store
@@ -154,10 +156,10 @@ $res1240 : 1350px;
 .carousel-mainSlider-mobile {
     width: 100%;
     display: flex;
-    height: 80vh;
     background-image: linear-gradient(to top, black, #720000, #aa0000);
     position: relative;
     flex-direction: column;
+    height: 80vh;
     .carousel-inner {
         position: relative;
         
@@ -181,9 +183,9 @@ $res1240 : 1350px;
         margin-bottom: 1rem;
         .txt-info-iklan-mobile{
             display: flex;
-            font-size: 10pt;
+            font-size: 8pt;
             padding: 0 1rem;
-            color: #fff;
+            color: rgba(255, 255, 255, 0.685);
             justify-content: center;
             text-align: center;
             
@@ -250,6 +252,7 @@ $res1240 : 1350px;
     text-decoration: none;
     height: 0;
     top: 15%;
+    position: absolute;
 }
 }
 

@@ -18,7 +18,7 @@ const Cards = ({
   classIcon,
   href,
   h5Font,
-  h5Weight,
+  h5Weight = 'bold',
   TextH6,
   paragrapSize,
   width,
@@ -126,7 +126,7 @@ const Cards = ({
               // textOverflow : 'elipsis',
             }}
           >
-            <b>{add3Dots(title, 70)}</b>
+            {add3Dots(title, 70)}
           </p>
         </div>
       </Link>

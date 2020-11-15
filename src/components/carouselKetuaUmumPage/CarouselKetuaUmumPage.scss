@@ -61,6 +61,10 @@ $responMax950: 950px;
                 height: 45vh;
             }
 
+            @include smallPhone() {
+                height: auto;
+            }
+
             .cont-img-col1{
                 display: flex;
                 flex-direction: column;
@@ -83,8 +87,6 @@ $responMax950: 950px;
                     height: 75%;
                     width: 100%;
                     overflow: hidden;
-                    border-bottom: 1px solid #fff;
-
                     @include respon950(){
                         height: 55%;
                     }
@@ -112,6 +114,9 @@ $responMax950: 950px;
                     background-color: rgba(255, 0, 8, 0.6);
                     overflow: hidden;
                     transition: .3s;
+                    margin-top: auto;
+                    border-top: 1px solid #fff;
+                    height: 25%;
 
                     &:hover{
                         background: #111;

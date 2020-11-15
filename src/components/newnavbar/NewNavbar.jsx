@@ -77,6 +77,7 @@ const NewNavbar = ({ token }) => {
                 window.scrollY > 1
                   ? "-1px 7px 30px -12px rgba(0,0,0,0.75)"
                   : "none",
+              height : '10vh'
             }}
           >
             <div className="container-fluid">
