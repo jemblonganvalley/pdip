@@ -91,7 +91,7 @@ function App() {
       <div
         className="App"
         style={{
-          marginTop: navHeight ? `${navHeight}px` : "auto",
+          marginTop: "9.5vh",
         }}
       >
         <Switch>
