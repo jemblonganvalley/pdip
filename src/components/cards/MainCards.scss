@@ -89,6 +89,8 @@ $responMax1360: 1360px;
         @include smallPhone() {
             width: 100%;
             margin: 1rem 0 0 0;
+
+            height: auto;
         }
         // END Max width 500px
         
@@ -183,7 +185,7 @@ $responMax1360: 1360px;
             .textH5 {
                 margin-top: 1rem;
                 display: -webkit-box;
-                -webkit-line-clamp: 3;
+                -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;  
                 overflow: hidden;
                 @include smallPhone() {
