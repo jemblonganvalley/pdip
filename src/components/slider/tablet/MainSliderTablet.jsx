@@ -70,7 +70,9 @@ const MainSliderTablet = ({ value, cls }) => {
                                     <div className="box-paragrap-tablet-mainSlider">
                                         {/* Title For Mobile */}
                                         <div className="box-red-tablet-mainSlider">
-                                            <h2>{e.title}</h2>
+                                            <h2 style={{
+                                                textTransform : 'uppercase'
+                                            }}>{e.title}</h2>
                                             <p style={{
                                                 color : '#fff'
                                             }}>{parse(`${e.paragraph}`)}</p>

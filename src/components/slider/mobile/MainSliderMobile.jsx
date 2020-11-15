@@ -70,7 +70,9 @@ const MainSliderMobile = ({ value, cls }) => {
                                     <div className="box-paragrap-mobile-mainSlider">
                                         {/* Title For Mobile */}
                                         <div className="box-red-mobile-mainSlider">
-                                            <strong>{e.title}</strong>
+                                            <strong style={{
+                                                textTransform : 'uppercase'
+                                            }}>{e.title}</strong>
                                             <small style={{
                                                 color : '#fff',
                                                 overflow : 'scroll'

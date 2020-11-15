@@ -177,7 +177,6 @@ $respon500: 500px;
         display: flex;
         height: auto;
         width: 100%;
-        min-height: 100vh;
         flex-wrap: wrap;
 
         @include respon750() {

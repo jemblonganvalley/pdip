@@ -55,15 +55,13 @@ $responMax1360: 1360px;
 
 
     .cardCustom {
-        // height: 300px;
         width: calc(90%/3);
         background: #ffffff;
         transition: .5s;
         margin: 20px 10px 0 10px;
-        // margin: 40px auto;
         display: flex;
         flex-direction: column;
-        max-height: 50vh;
+        height: 35vh;
 
         // Min width 951px and max width 1360px
         @include respon1360(){
@@ -184,7 +182,10 @@ $responMax1360: 1360px;
 
             .textH5 {
                 margin-top: 1rem;
-
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;  
+                overflow: hidden;
                 @include smallPhone() {
                     // font-size: 12pt;
                     margin-top: .5rem;
