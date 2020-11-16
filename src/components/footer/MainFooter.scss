@@ -117,7 +117,7 @@ $responMax1440: 1440px;
     flex-direction: row;
     // border: 1px solid crimson;
     color: #ffffff;
-    gap: 200px;
+    gap: 100px;
 
     @include respon950() {
       gap: 10px;
@@ -146,6 +146,23 @@ $responMax1440: 1440px;
       gap: 40px;
     }
 
+    .logo-mainFooter {
+      @include respon950() {
+        width: 150px;
+        height: 150px;
+      }
+
+      @include respon750() {
+        width: 130px;
+        height: 130px;
+        margin: 0 0 20px 0;
+      }
+
+      @include smallPhone() {
+        margin: 0 0 20px 0;
+      }
+    }
+
     .wrapperSituation {
       display: flex;
       flex-direction: row;
@@ -172,22 +189,7 @@ $responMax1440: 1440px;
         margin: 0 5px 0 0;
       }
 
-      .logo-mainFooter {
-        @include respon950() {
-          width: 150px;
-          height: 150px;
-        }
-
-        @include respon750() {
-          width: 130px;
-          height: 130px;
-          margin: 0 0 20px 0;
-        }
-
-        @include smallPhone() {
-          margin: 0 0 20px 0;
-        }
-      }
+      
     }
 
     .textFooter {
@@ -299,7 +301,6 @@ $responMax1440: 1440px;
       justify-content: flex-start;
       @include respon950() {
         margin-top: 40px;
-        flex-direction: row;
         justify-content: center;
       }
 
