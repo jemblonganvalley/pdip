@@ -71,7 +71,6 @@ $responMax1440: 1440px;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  padding: 40px 20%;
 
   @include respon1440() {
     height: auto;
@@ -118,7 +117,7 @@ $responMax1440: 1440px;
     flex-direction: row;
     // border: 1px solid crimson;
     color: #ffffff;
-    gap: 100px;
+    gap: 200px;
 
     @include respon950() {
       gap: 10px;
@@ -132,6 +131,7 @@ $responMax1440: 1440px;
       text-align: center;
       justify-content: center;
       align-items: center;
+      gap: 20px;
     }
 
     @include smallPhone() {
@@ -139,9 +139,16 @@ $responMax1440: 1440px;
       justify-content: center;
       align-items: center;
       text-align: center;
+      gap: 20px;
+    }
+
+    @include respon1360() {
+      gap: 40px;
     }
 
     .wrapperSituation {
+      display: flex;
+      flex-direction: row;
       
       @include respon950() {
         flex-direction: column;
