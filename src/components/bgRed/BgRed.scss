@@ -27,7 +27,7 @@ $respon500: 500px;
 
 // Min widht 750 and Max width 950
 $responMin750: 750px;
-$responMax950: 950px;
+$responMax950: 990px;
 // END Min widht 750 and Max width 950
 
 // Min width 750 and max width 950
@@ -39,7 +39,7 @@ $responMax950: 950px;
 // END Min widht 750 and max width 950
 
 // min width 951 and max width 1360px
-$responMin951: 951px;
+$responMin951: 991px;
 $responMax1360: 1360px;
 
 @mixin respon1360 {
@@ -82,7 +82,7 @@ $responMax1440: 1440px;
     align-items: center;
     justify-content: center;
     padding: 0;
-    padding: 0 10%;
+    padding: 20px 10%;
     flex-direction: column;
   }
 
