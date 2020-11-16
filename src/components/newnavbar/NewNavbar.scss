@@ -96,13 +96,13 @@ $smallPhoneDua: 400px;
   }
 }
 
-$tabletWidth : 751px;
-$tabletWidthMax : 991px;
+$tabletWidth: 751px;
+$tabletWidthMax: 991px;
 
 @mixin ResponsiveTablet {
-    @media (min-width : #{$tabletWidth}) and (max-width : #{$tabletWidthMax}) {
-        @content;
-    }
+  @media (min-width : #{$tabletWidth}) and (max-width : #{$tabletWidthMax}) {
+    @content;
+  }
 }
 
 .navbar {
@@ -125,7 +125,7 @@ $tabletWidthMax : 991px;
 
   // Respon 991
   @include respon991() {
-      padding: 10px 0;
+    padding: 10px 0;
   }
   // END Respon 991
 
@@ -187,7 +187,7 @@ $tabletWidthMax : 991px;
 
       // min width 750px and max width 991px
       @include respon991() {
-          margin: 10px 0 10px 65px;
+        margin: 10px 0 10px 65px;
       }
       // end min width 750px and max width 991px
 
@@ -201,7 +201,7 @@ $tabletWidthMax : 991px;
       // Respon 500px
       @include smallPhone() {
         width: 150px;
-        margin: 10px 0 10px 40px;
+        margin: 10px 0 10px 20px;
       }
       // END Respon 500px
     }
@@ -216,7 +216,7 @@ $tabletWidthMax : 991px;
     }
 
     @include smallPhone() {
-      margin: 0 7% 0 0;
+      margin: 0 20px 0 0;
     }
   }
 
@@ -386,8 +386,8 @@ $tabletWidthMax : 991px;
 
     // min width 750px and max width 991px
     @include respon991() {
-        padding: 0px 25px 30px 30px;
-        width: 100%;
+      padding: 0px 25px 30px 30px;
+      width: 100%;
     }
     // end min width 750px and max width 991px
 
@@ -432,7 +432,7 @@ $tabletWidthMax : 991px;
 
     // min widht 750px and max width 991px
     @include respon991() {
-        width: 100%;
+      width: 100%;
     }
     // end min width 750px and max width 950px
 
@@ -466,9 +466,9 @@ $tabletWidthMax : 991px;
     bottom: 10%;
 
     @include respon991() {
-        right: 6%;
-        bottom: 15%;
-        position: relative;
+      right: 6%;
+      bottom: 15%;
+      position: relative;
     }
 
     @include respon750() {

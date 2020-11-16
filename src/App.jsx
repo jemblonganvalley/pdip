@@ -83,8 +83,6 @@ function App() {
     });
   }, []);
 
-  
-
   return (
     <Router>
       {/* {tkn && <MainNavbar hide={hide} token={tkn} />} */}
@@ -92,7 +90,7 @@ function App() {
       <div
         className="App"
         style={{
-          marginTop: navHeight ? `${navHeight}px` : "none",
+          marginTop: "9vh",
         }}
       >
         <Switch>

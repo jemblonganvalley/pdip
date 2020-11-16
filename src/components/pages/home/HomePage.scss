@@ -1,15 +1,15 @@
-$table : 1261px;
+$table: 1261px;
 
-$responsiveSatu : 1085px;
-$responsiveDua : 1000px;
-$responsiveTiga : 728px;
-$responsiveEmpat : 500px;
+$responsiveSatu: 1085px;
+$responsiveDua: 1000px;
+$responsiveTiga: 728px;
+$responsiveEmpat: 500px;
 
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+$smallPhoneSatu: 500px;
+$smallPhoneDua: 400px;
 
 // Min widht 500 and Max width 750
-$respon750 : 750px;
+$respon750: 750px;
 $respon500: 500px;
 // END Min widht 500 and Max width 750
 
@@ -17,22 +17,22 @@ $respon500: 500px;
 
 // Min widht 500 and Max width 750
 @mixin respon750 {
-    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
-        @content;
-    }
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
 }
 // END Min widht 500 and Max width 750
 
 // Min widht 750 and Max width 950
-$responMin750 : 750px;
+$responMin750: 750px;
 $responMax950: 950px;
 // END Min widht 750 and Max width 950
 
 // Min width 750 and max width 950
-@mixin respon950{
-    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
-        @content;
-    }
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
 }
 // END Min widht 750 and max width 950
 
@@ -40,10 +40,10 @@ $responMax950: 950px;
 $responMin951: 951px;
 $responMax1360: 1360px;
 
-@mixin respon1360{
-    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
-        @content;
-    }
+@mixin respon1360 {
+  @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}) {
+    @content;
+  }
 }
 // end min width 951 and max width 1360px
 
@@ -51,22 +51,22 @@ $responMax1360: 1360px;
 $responMin1361: 1361px;
 $responMax1440: 1440px;
 
-@mixin respon1440{
-    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
-        @content;
-    }
+@mixin respon1440 {
+  @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}) {
+    @content;
+  }
 }
 // end min width 1361px and max width 1440px
 
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
 // for icon customRow
@@ -74,19 +74,19 @@ $responMax1440: 1440px;
 $minHeight800: 800px;
 $maxWidth750: 750px;
 
-@mixin minHeight800{
-    @media (min-height: #{$minHeight800}) and (max-width: #{$maxWidth750}) {
-        @content;
-    }
+@mixin minHeight800 {
+  @media (min-height: #{$minHeight800}) and (max-width: #{$maxWidth750}) {
+    @content;
+  }
 }
 
 // min height 600px and max height 800 and min width 951 and max width 1360
 $minHeight600: 600px;
 $maxHeight800: 800px;
 @mixin iconMinHeight600 {
-    @media (min-height: #{$minHeight600}) and (max-height: #{$maxHeight800}) and (min-width: #{$responMin951}) and (max-width: #{$responMax1360}) {
-        @content;
-    }
+  @media (min-height: #{$minHeight600}) and (max-height: #{$maxHeight800}) and (min-width: #{$responMin951}) and (max-width: #{$responMax1360}) {
+    @content;
+  }
 }
 // END min height 600px and max height 800 and min width 951 and max width 1360
 
@@ -106,483 +106,476 @@ $maxHeight800: 800px;
 // min height 800 and max width 750px
 // end for icon customRow
 
-
 // Overlay video Youtube
 // Btn Close
-#btn-overlay-video-yt{
-    display: flex;
-    position: fixed;
-    top: 20vh;
-    right: 20vh;
-    color: #fff;
-    z-index: 6000;
-    font-size: 2rem;
-    cursor: pointer;
+#btn-overlay-video-yt {
+  display: flex;
+  position: fixed;
+  top: 20vh;
+  right: 20vh;
+  color: #fff;
+  z-index: 6000;
+  font-size: 2rem;
+  cursor: pointer;
 
-    @include smallPhone(){
-        flex-direction: row-reverse;
-        width: 100%;
-        left: 0;
-        right: 0;
-        padding: 0 20px 0 0;
-    }
+  @include smallPhone() {
+    flex-direction: row-reverse;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 0 20px 0 0;
+  }
 }
 
 // Wrapper overlay For Mobile
-.container_lightbox{
+.container_lightbox {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+
+  .overlay-youtube-home {
     display: flex;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.800);
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
+    height: 500px;
+    width: 800px;
 
-    .overlay-youtube-home{
-        display: flex;
-        height: 500px;
-        width: 800px;
-
-        @include smallPhone(){
-            height: 300px;
-            width: 90%;
-            margin: 50px 0 0 0;
-            box-shadow: 0 3px 8px -1px rgba(255, 255, 255, 0.3);
-        }
+    @include smallPhone() {
+      height: 300px;
+      width: 90%;
+      margin: 50px 0 0 0;
+      box-shadow: 0 3px 8px -1px rgba(255, 255, 255, 0.3);
     }
+  }
 }
 // END Wrapper Overlay For Mobile
 // END Overlay Video Youtube
 
 .homePageTwo {
-    width: 100vw;
-    // margin-top: 40px;
-    padding: 20px 20% 0 20%;
-    // margin-top: 600px;
+  width: 100vw;
+  // margin-top: 40px;
+  padding: 20px 20% 0 20%;
+  // margin-top: 600px;
 
-    // Min widht 1361px and max width 1440px
-    @include respon1440(){
-        padding: 20px 20%;
+  // Min widht 1361px and max width 1440px
+  @include respon1440() {
+    padding: 20px 20%;
+  }
+  // END Min widht 1361px and max width 1440px
+
+  // Min widht 951px and max width 1360px
+  @include respon1360() {
+    padding: 20px 10%;
+  }
+  // Min widht 951px and max width 1360px
+
+  // Min widht 750px and max width 950px
+  @include respon950() {
+    padding: 20px 2%;
+  }
+  // END Min width 750px and max width 950px
+
+  // Min widht 500px and max width 750px
+  @include respon750() {
+    padding: 20px 15%;
+  }
+  // END Min width 500px and max width 750px
+
+  // Max width 500px
+  @include smallPhone() {
+    padding: 0;
+    overflow-x: hidden;
+    // padding: 10px 0 0 0;
+  }
+  // END Max width 500px
+
+  .customRow {
+    background-color: #2d3436;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 3rem;
+    flex-direction: row;
+    // @include respon750(){
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+    padding: 20px 0;
+
+    // min width 750px and max width 950px
+    @include respon950() {
+      flex-direction: row;
+      position: relative;
     }
-    // END Min widht 1361px and max width 1440px
+    // min width 750px and max width 950px
 
-    // Min widht 951px and max width 1360px
-    @include respon1360(){
-        padding: 20px 10%;
+    // min width 500px and max width 750px
+    @include respon750() {
+      height: auto;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: relative;
     }
-    // Min widht 951px and max width 1360px
+    // min width 500px and max width 750px
 
-    // Min widht 750px and max width 950px
-    @include respon950(){
-        padding: 20px 2%
-    }
-    // END Min width 750px and max width 950px
-
-    // Min widht 500px and max width 750px
-    @include respon750(){
-        padding: 20px 15%;
-    }
-    // END Min width 500px and max width 750px
-
-    // Max width 500px
     @include smallPhone() {
+      height: auto;
+      width: auto;
+      display: flex;
+      // justify-content: center;
+      // align-items: center;
+      flex-direction: column;
+    }
+
+    .groupArticleUtama {
+      width: 100%;
+      height: 100%;
+      margin: 0.5rem 10px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .customBorder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // Min width 750px and max width 950px
+      @include respon950() {
+        width: 100%;
+      }
+      // END Min width 750px and max width 950px
+
+      // Min width 500px and max width 750px
+      @include respon750() {
+        width: 100%;
+      }
+      // END Min width 500px and max width 750px
+
+      // max width 500px
+      @include smallPhone() {
+      }
+      // END Max width 500px
+
+      .itemImageCovid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .imageCovid {
+          height: 100px;
+          margin: 0 10px;
+          // END min height 600 and max height 800 for min width 951 and max width 1360
+
+          // Min width 750px and max width 950px
+          @include respon950() {
+            height: 80px;
+            // width: 80px;
+            margin: 0;
+          }
+          // END Min width 750px and max width 950px
+
+          // Min width 500px and max width 750px
+          @include respon750() {
+            height: 70px;
+            margin: 0;
+          }
+          // END Min width 500px and max width 750px
+
+          // min height 800 and max width 750px
+          @include minHeight800() {
+            height: 80px;
+          }
+          // end min height 800 and max width 750px
+
+          // max width 500px
+          @include smallPhone() {
+            height: 70px;
+            margin: 0;
+          }
+          // END Max width 500px
+          @include respon1360() {
+            height: 80px;
+          }
+
+          @include respon1440() {
+            height: 65px;
+          }
+        }
+      }
+      .itemTextCovid {
+        width: 50%;
+        margin-left: 1rem;
+
+        h4 {
+          @include respon950() {
+            font-size: 15pt;
+          }
+
+          @include respon1440() {
+            font-size: 13pt;
+          }
+        }
+      }
+    }
+    .calendar {
+      border: none;
+    }
+  }
+
+  .videoPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .divider-video-home {
+      display: flex;
+      position: relative;
+      align-items: center;
+      height: auto;
+      width: 100%;
+      margin: 40px 0;
+
+      @include smallPhone() {
+        padding: 0 10px;
+        margin: 30px 0 40px 0;
+      }
+    }
+
+    .paragrapVideo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: center;
+
+      @include smallPhone() {
+        margin: 0;
+        padding: 0 10% 10px 10%;
+      }
+
+      p {
+        // font-size: 14pt;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+
+        @include smallPhone() {
+          // font-size: 10pt;
+        }
+      }
+    }
+
+    .bannerYoutube {
+      width: 100%;
+      // background: url(../../../img/image-1.jpg);
+      // background-size: cover;
+      // background-repeat: no-repeat;
+      // background-position-y: -150px;
+      margin-top: 20px;
+      height: 50vh;
+      overflow: hidden;
+
+      // Min width 750px and max width 950px
+      @include respon950() {
+        height: 40vh;
+        background-position-y: 0;
+        background-position: center;
+        overflow: hidden;
+      }
+      // END Min width 750px and max width 950px
+
+      // Min width 500px and max width 750px
+      @include respon750() {
+        height: 40vh;
+        background-position-y: 0;
+        background-position: center;
+        overflow: hidden;
+      }
+      // END Min width 500px and max width 750px
+
+      // Max width 500px
+      @include smallPhone() {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        margin: 0;
+        height: 40vh;
+      }
+      // END Max widht 500px
+
+      .textYoutube {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid blue;
+        background: rgba(0, 0, 0, 0.7);
+
+        .wrapperText {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50%;
+          height: 90%;
+
+          // Min width 750px and max width 950px
+          @include respon950() {
+            width: 90%;
+          }
+          // END Min width 750px and max width 950px
+
+          // Min width 500px and max width 750px
+          @include respon750() {
+            width: 100%;
+          }
+          // END Min width 500px and max width 750px
+
+          // Max width 500px
+          @include smallPhone() {
+            width: 100%;
+          }
+          // END Max widht 500px
+
+          ul {
+            list-style: none;
+
+            li {
+              display: table-cell;
+              background-color: $darkRed;
+              border-radius: 50%;
+              height: 50px;
+              width: 50px;
+              vertical-align: middle;
+              text-align: center;
+              cursor: pointer;
+
+              @include smallPhone() {
+                height: 2.3rem;
+                width: 2.3rem;
+              }
+
+              a {
+                text-decoration: none;
+                color: #ffffff;
+                @include smallPhone() {
+                }
+
+                i {
+                  font-size: 20pt;
+                  margin-left: 5px;
+                  margin-top: 5px;
+                  @include smallPhone() {
+                    font-size: 12pt;
+                    margin: 0;
+                  }
+                }
+              }
+            }
+          }
+
+          .textInfoYT {
+            width: 60%;
+            height: 60%;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            color: #ffffff;
+            margin-left: 20px;
+            @include smallPhone() {
+              height: auto;
+              line-height: 0.5;
+            }
+
+            .videoTerbaru {
+              @include smallPhone() {
+                font-size: 15pt;
+              }
+            }
+            .siaranHut {
+              @include smallPhone() {
+                font-size: 10pt;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .btn-lihatSemua-card {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+
+    @include smallPhone() {
+      margin: 10px 0 0 0;
+    }
+  }
+
+  .beritaPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .divider-berita {
+      display: flex;
+      position: relative;
+      height: auto;
+      width: 100%;
+      align-items: center;
+      padding: 0 10px;
+
+      @include respon950() {
         padding: 0;
-        overflow-x: hidden;
-        padding: 10px 0 0 0;
-    }
-    // END Max width 500px
+      }
 
-        .customRow {
-            background-color: #2d3436;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            // padding: 3rem;
-            flex-direction: row;
-            // @include respon750(){
-            //     justify-content: center;
-            //     align-items: center;
-            // }
-            padding: 20px 0;
-
-            // min width 750px and max width 950px
-            @include respon950(){
-                flex-direction: row;
-                position: relative;
-            }
-            // min width 750px and max width 950px
-
-            // min width 500px and max width 750px
-            @include respon750(){
-                height: auto;
-                flex-direction: column;
-                justify-content: flex-start;
-                position: relative;
-            }
-            // min width 500px and max width 750px
-
-            @include smallPhone() {
-                height: auto;
-                width: auto;
-                display: flex;
-                // justify-content: center;
-                // align-items: center;
-                flex-direction: column;
-            }
-
-            .groupArticleUtama {
-                width: 100%;
-                height: 100%;
-                margin: .5rem 10px;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-            }
-
-                .customBorder {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    // Min width 750px and max width 950px
-                    @include respon950(){
-                        width: 100%;
-                    }
-                    // END Min width 750px and max width 950px
-
-                    // Min width 500px and max width 750px
-                    @include respon750(){
-                        width: 100%;
-                    }
-                    // END Min width 500px and max width 750px
-
-                    // max width 500px
-                    @include smallPhone() {
-
-                    }
-                    // END Max width 500px
-
-                    .itemImageCovid {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        .imageCovid {
-                            height: 100px;
-                            margin: 0 10px;
-                            // END min height 600 and max height 800 for min width 951 and max width 1360
-        
-                            // Min width 750px and max width 950px
-                            @include respon950(){
-                                height: 80px;
-                                // width: 80px;
-                                margin: 0;
-                            }
-                            // END Min width 750px and max width 950px
-        
-                            // Min width 500px and max width 750px
-                            @include respon750(){
-                                height: 70px;
-                                margin: 0;
-                            }
-                            // END Min width 500px and max width 750px
-        
-                            // min height 800 and max width 750px
-                            @include minHeight800(){
-                                height: 80px;
-                            }
-                            // end min height 800 and max width 750px
-        
-                            // max width 500px
-                            @include smallPhone() {
-                                height: 70px;
-                                margin: 0;
-                            }
-                            // END Max width 500px
-                            @include respon1360() {
-                                height: 80px;
-                            }
-
-                            @include respon1440() {
-                                height: 65px;
-                            }
-        
-                        }
-                    }
-                    .itemTextCovid {
-                        width: 50%;
-                        margin-left: 1rem;
-
-                        h4 {
-                            @include respon950(){
-                                font-size: 15pt;
-                            }
-
-                            @include respon1440() {
-                                font-size: 13pt;
-                            }
-
-                            
-                        }
-                    }
-            }
-            .calendar {
-                border: none;
-            }
+      @include respon750() {
+        padding: 0;
+      }
     }
 
-    .videoPage {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    .paragrapBerita {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      // margin-top: 20px;
+      width: 100%;
+      text-align: center;
+      // border: 1px solid blue;
 
-        .divider-video-home{
-            display: flex;
-            position: relative;
-            align-items: center;
-            height: auto;
-            width: 100%;
-            margin: 40px 0;
+      @include smallPhone() {
+        margin: 0;
+        padding: 0px 10% 0 10%;
+      }
 
-            @include smallPhone(){
-                padding: 0 10px;
-                margin: 30px 0 40px 0;
-            }
+      p {
+        // font-size: 14pt;
+        letter-spacing: 1px;
+
+        @include smallPhone() {
+          // font-size: 10pt;
         }
-
-        .paragrapVideo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-top: 0px;
-            margin-bottom: 20px;
-            width: 100%;
-            text-align: center;
-
-            @include smallPhone() {
-                margin: 0;
-                padding: 0 10% 10px 10%;
-            }
-            
-            p {
-                // font-size: 14pt;
-                letter-spacing: 1px;
-                margin-bottom: 0;
-
-                @include smallPhone() {
-                    // font-size: 10pt;
-                }
-            }
-        }
-
-        .bannerYoutube {
-            width: 100%;
-            // background: url(../../../img/image-1.jpg);
-            // background-size: cover;
-            // background-repeat: no-repeat;
-            // background-position-y: -150px;
-            margin-top: 20px;
-            height: 50vh;
-            overflow: hidden;
-
-            // Min width 750px and max width 950px
-            @include respon950(){
-                height: 40vh;
-                background-position-y: 0;
-                background-position: center;
-                overflow: hidden;
-            }
-            // END Min width 750px and max width 950px
-
-            // Min width 500px and max width 750px
-            @include respon750(){
-                height: 40vh;
-                background-position-y: 0;
-                background-position: center;
-                overflow: hidden;
-            }
-            // END Min width 500px and max width 750px
-
-            // Max width 500px
-            @include smallPhone() {
-                background-size: cover;
-                background-position: center;
-                width: 100%;
-                margin: 0;
-                height: 40vh;
-            }
-            // END Max widht 500px
-                        
-
-            .textYoutube {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                // border: 1px solid blue;
-                background: rgba(0, 0, 0, 0.7);
-
-                .wrapperText {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 50%;
-                    height: 90%;
-
-                    // Min width 750px and max width 950px
-                    @include respon950(){
-                        width: 90%;
-                    }
-                    // END Min width 750px and max width 950px
-
-                    // Min width 500px and max width 750px
-                    @include respon750(){
-                        width: 100%;
-                    }
-                    // END Min width 500px and max width 750px
-
-                    // Max width 500px
-                    @include smallPhone() {
-                        width: 100%;
-                    }
-                    // END Max widht 500px
-
-                    ul {
-                        list-style: none;
-
-                        li {
-                            display: table-cell;
-                            background-color: $darkRed;
-                            border-radius: 50%;
-                            height: 50px;
-                            width: 50px;
-                            vertical-align: middle;
-                            text-align: center;
-                            cursor: pointer;
-
-                            @include smallPhone() {
-                                height: 2.3rem;
-                                width: 2.3rem;
-                            }
-
-                            a {
-                                text-decoration: none;
-                                color: #ffffff;
-                                @include smallPhone() {
-                                }
-
-                                i {
-                                    font-size: 20pt;
-                                    margin-left: 5px;
-                                    margin-top: 5px;
-                                    @include smallPhone() {
-                                        font-size: 12pt;
-                                        margin: 0;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .textInfoYT {
-                        width: 60%;
-                        height: 60%;
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: flex-start;
-                        flex-direction: column;
-                        color: #ffffff;
-                        margin-left: 20px;
-                        @include smallPhone() {
-                            height: auto;
-                            line-height: .5;
-                        }
-
-                        .videoTerbaru {
-                            @include smallPhone() {
-                                font-size: 15pt;
-                            }
-                        }
-                        .siaranHut {
-                            @include smallPhone() {
-                                font-size: 10pt;
-                                font-weight: 400;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
-    
-    .btn-lihatSemua-card{
-        display: flex;
-        justify-content: center;
-        margin: 20px 0 0 0;
+  }
 
-        @include smallPhone(){
-            margin: 10px 0 0 0;
-        }
-    }
-
-    .beritaPage {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        .divider-berita{
-            display: flex;
-            position: relative;
-            height: auto;
-            width: 100%;
-            align-items: center;
-            padding: 0 10px;
-
-            @include respon950(){
-                padding: 0;
-            }
-
-            @include respon750(){
-                padding: 0;
-            }
-        }
-        
-        .paragrapBerita {
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            // margin-top: 20px;
-            width: 100%;
-            text-align: center;
-            // border: 1px solid blue;
-
-            @include smallPhone() {
-                margin: 0;
-                padding: 0px 10% 0 10%;
-            }
-            
-            p {
-                // font-size: 14pt;
-                letter-spacing: 1px;
-
-                @include smallPhone() {
-                    // font-size: 10pt;
-                }
-            }
-        }
-    }
-
-    .cardContainer {
+  .cardContainer {
     width: 100%;
     height: auto;
     min-height: 0vh;
@@ -594,335 +587,332 @@ $maxHeight800: 800px;
     margin-top: 20px;
 
     // min width 750px and max width 950px
-    @include respon950(){
-        flex-direction: row;
+    @include respon950() {
+      flex-direction: row;
     }
     // end min width 750px and max width 950px
 
     // min width 500px and max width 750px
-    @include respon750(){
-        flex-direction: column;
+    @include respon750() {
+      flex-direction: column;
     }
     // end min width 500px and max width 750px
-    
-        @include smallPhone() {
-            flex-direction: column;
-            padding: 0 10px;
-            margin: 10px 0 0 0;
-            // justify-content: space-between;
-            // min-height: 40vh;
-        }
-        
+
+    @include smallPhone() {
+      flex-direction: column;
+      padding: 0 10px;
+      margin: 10px 0 0 0;
+      // justify-content: space-between;
+      // min-height: 40vh;
     }
+  }
 }
 
-.divider-laguPerjuangan{
-    position: relative;
-    padding: 0 20% 0 20%;
-    margin: 40px 0 0 0;
+.divider-laguPerjuangan {
+  position: relative;
+  padding: 0 20% 0 20%;
+  margin: 40px 0 0 0;
 
-    @include respon1440(){
-        padding: 0px 20%;
-    }
+  @include respon1440() {
+    padding: 0px 20%;
+  }
 
-    // min width 950 and max width 1360px
-    @include respon1360(){
-        padding: 0px 10%;
-    }
-    // end min width 950 and max width 1360px
+  // min width 950 and max width 1360px
+  @include respon1360() {
+    padding: 0px 10%;
+  }
+  // end min width 950 and max width 1360px
 
-    // Min width 750px and max width 950px
-    @include respon950(){
-        padding: 0px 2%;
-    }
-    // END Min width 750px and max width 950px
+  // Min width 750px and max width 950px
+  @include respon950() {
+    padding: 0px 2%;
+  }
+  // END Min width 750px and max width 950px
 
-    // Min width 500px and max width 750px
-    @include respon750(){
-        padding: 0 15% 0 15%;
-    }
-    // END Min width 500px and max width 750px
+  // Min width 500px and max width 750px
+  @include respon750() {
+    padding: 0 15% 0 15%;
+  }
+  // END Min width 500px and max width 750px
 
-    // Max width 500px
-    @include smallPhone(){
-        padding: 0 10px;
-    }
-    // END Max width 500px
+  // Max width 500px
+  @include smallPhone() {
+    padding: 0 10px;
+  }
+  // END Max width 500px
 }
 
 .beritaTerbaru {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 0px 20% 0 20%;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0px 20% 0 20%;
 
-    @include respon1440(){
-        padding: 0px 20%;
-    }
+  @include respon1440() {
+    padding: 0px 20%;
+  }
 
-    // Min widht 951px and max width 1360px
-    @include respon1360(){
-        padding: 0px 10%;
-    }
-    // Min widht 951px and max width 1360px
+  // Min widht 951px and max width 1360px
+  @include respon1360() {
+    padding: 0px 10%;
+  }
+  // Min widht 951px and max width 1360px
 
+  // Min witdth 750px and max width 950px
+  @include respon950() {
+    padding: 0 2%;
+  }
+  // END Min width 750px and max width 950px
 
-    // Min witdth 750px and max width 950px
-    @include respon950(){
-        padding: 0 2%;
-    }
-    // END Min width 750px and max width 950px
-    
-    // Min witdth 500px and max width 750px
-    @include respon750(){
-        padding: 0 15%;
-    }
-    // END Min width 500px and max width 750px
+  // Min witdth 500px and max width 750px
+  @include respon750() {
+    padding: 0 15%;
+  }
+  // END Min width 500px and max width 750px
 
-    // Max width 500px
-    @include smallPhone(){
-        padding: 0 10px;
-    }
-    // END Max width 500px
+  // Max width 500px
+  @include smallPhone() {
+    padding: 0 10px;
+  }
+  // END Max width 500px
 }
 
 .cardContent {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // margin-top: 10px;
+  padding: 20px 20% 0px 20%;
+
+  @include respon1440() {
+    padding: 20px 20%;
+  }
+
+  // min width 950 and max width 1360px
+  @include respon1360() {
+    padding: 20px 10%;
+  }
+  // end min width 950 and max width 1360px
+
+  // Min width 750px and max height 950px
+  @include respon950() {
     flex-direction: row;
-    flex-wrap: wrap;
-    // margin-top: 10px;
-    padding: 20px 20% 0px 20%;
+    padding: 20px 2%;
+  }
+  // END Min width 750px and max heigth 950px
 
-    @include respon1440(){
-        padding: 20px 20%;
-    }
+  // Min width 500px and max height 900px
+  @include respon750() {
+    flex-direction: column;
+    padding: 20px 15% 0 15%;
+  }
+  // END Min width 500px and max heigth 900px
 
-    // min width 950 and max width 1360px
-    @include respon1360(){
-        padding: 20px 10%;
-    }
-    // end min width 950 and max width 1360px
-
-    // Min width 750px and max height 950px
-     @include respon950(){
-        flex-direction: row;
-        padding: 20px 2%;
-    }
-    // END Min width 750px and max heigth 950px
-
-    // Min width 500px and max height 900px
-    @include respon750(){
-        flex-direction: column;
-        padding: 20px 15% 0 15%;
-    }
-    // END Min width 500px and max heigth 900px
-
-    // Max width 500px
-    @include smallPhone() {
-        flex-direction: column;
-        margin: 5px 0 0 0;
-        padding: 10px 10px 0 10px;
-    }
-    // END Max width 500px
+  // Max width 500px
+  @include smallPhone() {
+    flex-direction: column;
+    margin: 5px 0 0 0;
+    padding: 10px 10px 0 10px;
+  }
+  // END Max width 500px
 }
 
 .btnSize {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 0 40px 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0 40px 0;
 
-    @include smallPhone(){
-        margin: 0;
-    }
+  @include smallPhone() {
+    margin: 0;
+  }
 }
 
 .widgetHome {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10% 40px 10%;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10% 40px 10%;
+  width: 100%;
 
-    @include smallPhone() {
-        display: none;
-    }
+  @include smallPhone() {
+    display: none;
+  }
 }
 
 .widgetMobile {
-    display: none;
-    @include smallPhone() {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: $paddingMobile;
-        flex-direction: column;
-        width: 100%;
-    }
+  display: none;
+  @include smallPhone() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $paddingMobile;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
-        // Column5
-        .col5-container-1-beritaPage{
-            display: flex;
-            height: auto;
-            width: 100%;
-            overflow: hidden;
+// Column5
+.col5-container-1-beritaPage {
+  display: flex;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
 
-            @include smallPhone(){
-                height: auto;
-                flex-direction: column;
-                padding: 0 5px;
-            }
+  @include smallPhone() {
+    height: auto;
+    flex-direction: column;
+    padding: 0 5px;
+  }
 
-            // Row1
-            .row1-col5-beritaPage{
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                height: auto;
-                width: 30%;
-                background-color: #d80010;
-                color: #fff;
-                background-size: cover;
-                overflow: hidden;
-                transition: .5s;
+  // Row1
+  .row1-col5-beritaPage {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    width: 30%;
+    background-color: #d80010;
+    color: #fff;
+    background-size: cover;
+    overflow: hidden;
+    transition: 0.5s;
 
-                @include smallPhone(){
-                    height: auto;
-                    width: 100%;
-                    margin: 0 0 10px 0;
-                }
+    @include smallPhone() {
+      height: auto;
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
 
-                &:hover{
-                    background: #fff;
-                    color: #000;
-                }
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
 
-                .box-img{
-                    display: flex;
-                    height: 50vh;
-                    width: 100%;
-                    background-image: url(../../../img/pemilu16.jpg);
-                    background-size: cover;
-                    overflow: hidden;
+    .box-img {
+      display: flex;
+      height: 50vh;
+      width: 100%;
+      background-image: url(../../../img/pemilu16.jpg);
+      background-size: cover;
+      overflow: hidden;
 
-                    @include smallPhone(){
-                        height: 40vh;
-                        background-position: inherit;
-                    }
-                }
+      @include smallPhone() {
+        height: 40vh;
+        background-position: inherit;
+      }
+    }
 
-                .box-jdl-row1{
-                    display: flex;
-                    height: auto;
-                    width: 100%;
-                    justify-content: center;
-                    align-items: center;
-                    overflow: hidden;
+    .box-jdl-row1 {
+      display: flex;
+      height: auto;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
 
-                    h1{
-                        display: flex;
-                        font-size: 20px;
-                        padding: 20px;
-                        overflow: hidden;
+      h1 {
+        display: flex;
+        font-size: 20px;
+        padding: 20px;
+        overflow: hidden;
 
-                        @include smallPhone(){
-                            font-size: 15px;
-                            margin: 1px;
-                            padding: 20px;
-                        }
-                    }
-                }
-            }
-            // END Row1
-
-            // Row2
-            .row2-col5-beritaPage{
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                width: 70%;
-                background: #fff;
-                color: #000;
-                margin: 0 0 0 20px;
-                text-decoration: none;
-                transition: .5s;
-                overflow: hidden;
-
-                @include smallPhone(){
-                    height: auto;
-                    width: 100%;
-                    margin: 0;
-                }
-                
-                &:hover{
-                    background: #d80010;
-                    color: #fff;
-                }
-
-                // Column1
-                .col1-row2-beritaPage{
-                    display: flex;
-                    height: 50vh;
-                    width: 100%;
-                    background: url(../../../img/pemilu17.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    overflow: hidden;
-
-                    @include smallPhone(){
-                        height: 40vh;
-                    }
-                }
-                // END Column1
-
-                // Column2
-                .col2-row2-beritaPage{
-                    display: flex;
-                    flex-direction: column;
-                    height: 30%;
-                    width: 100%;
-                    padding: 20px 35px 5px 35px;
-                    overflow: hidden;
-
-                    @include smallPhone(){
-                        height: 40%;
-                        padding: 20px;
-                    }
-
-                    .txt-jdl-col2{
-                        display: flex;
-                        font-size: 20px;
-                        font-weight: 500;
-                        text-align: start;
-                        margin: 0 0 5px 0;
-                        padding: 0 0 2px 0;
-                        overflow: hidden;
-
-                        @include smallPhone(){
-                            font-size: 15px;
-                        }
-                    }
-
-                    .txt-desk-col2{
-                        display: flex;
-                        // font-size: 12px;
-                        text-align: start;
-                        padding: 0 0 10px 0;
-                        overflow: hidden;
-
-                        @include smallPhone(){
-                            font-size: 10px;
-                            padding: 0;
-                        }
-                    }
-                }
-                // END Column2
-            }
-            // END Row2
+        @include smallPhone() {
+          font-size: 15px;
+          margin: 1px;
+          padding: 20px;
         }
-        // END Column5
+      }
+    }
+  }
+  // END Row1
 
+  // Row2
+  .row2-col5-beritaPage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    background: #fff;
+    color: #000;
+    margin: 0 0 0 20px;
+    text-decoration: none;
+    transition: 0.5s;
+    overflow: hidden;
+
+    @include smallPhone() {
+      height: auto;
+      width: 100%;
+      margin: 0;
+    }
+
+    &:hover {
+      background: #d80010;
+      color: #fff;
+    }
+
+    // Column1
+    .col1-row2-beritaPage {
+      display: flex;
+      height: 50vh;
+      width: 100%;
+      background: url(../../../img/pemilu17.jpg);
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+
+      @include smallPhone() {
+        height: 40vh;
+      }
+    }
+    // END Column1
+
+    // Column2
+    .col2-row2-beritaPage {
+      display: flex;
+      flex-direction: column;
+      height: 30%;
+      width: 100%;
+      padding: 20px 35px 5px 35px;
+      overflow: hidden;
+
+      @include smallPhone() {
+        height: 40%;
+        padding: 20px;
+      }
+
+      .txt-jdl-col2 {
+        display: flex;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: start;
+        margin: 0 0 5px 0;
+        padding: 0 0 2px 0;
+        overflow: hidden;
+
+        @include smallPhone() {
+          font-size: 15px;
+        }
+      }
+
+      .txt-desk-col2 {
+        display: flex;
+        // font-size: 12px;
+        text-align: start;
+        padding: 0 0 10px 0;
+        overflow: hidden;
+
+        @include smallPhone() {
+          font-size: 10px;
+          padding: 0;
+        }
+      }
+    }
+    // END Column2
+  }
+  // END Row2
+}
+// END Column5
