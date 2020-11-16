@@ -66,7 +66,7 @@ $responMax1440: 1440px;
   justify-content: space-between;
   display: flex;
   gap: 20px;
-  padding: 0 5%;
+  padding: 0 20%;
   // justify-content: center;
 
   @include respon1440() {
@@ -104,7 +104,7 @@ $responMax1440: 1440px;
   .holderFrame {
     flex: 1;
     margin: 40px 0;
-    // width: 100%;
+    width: 100%;
     // max-height: 750px;
     height: auto;
     // margin: 0 10px 0 0px;
@@ -122,15 +122,6 @@ $responMax1440: 1440px;
 
     @include smallPhone() {
       margin: 10px 0;
-    }
-
-    .widgetFb {
-      //   width: 100%;
-      justify-content: center;
-
-      //   @include smallPhoneDua() {
-      //     width: 100%;
-      //   }
     }
     // }
     .holderFrame_header {

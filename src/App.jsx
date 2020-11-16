@@ -44,7 +44,6 @@ import PidatoAll from "./components/pages/KetuaUmum/pidatoAll/PidatoAll";
 import MultimediaAll from "./components/pages/multimediaPage/multimediaAll/MultimediaAll";
 import NewNavbar from "./components/newnavbar/NewNavbar";
 import DpdDpc from "./components/pages/dpddpc/DpdDpc";
-
 function App() {
   let [hide, setHide] = useState(true);
   let token = useStoreState((state) => state.token);
@@ -83,6 +82,8 @@ function App() {
       prevScrollpos = currentScrollPos;
     });
   }, []);
+
+  
 
   return (
     <Router>
@@ -256,6 +257,7 @@ function App() {
         </Switch>
       </div>
       <BgRed />
+
       <MainFooter />
     </Router>
   );

@@ -1,6 +1,5 @@
 const css = /* Css */`
 .insta-feed {
-  max-width: 400px;
   width: 100%;
   /* background-color: gray; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",sans-serif;

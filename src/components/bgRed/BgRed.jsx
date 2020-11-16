@@ -1,9 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./BgRed.scss";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 // import InstagramEmbed from 'react-instagram-embed';
 import InstaFeedCustom from "../../components/instafeed/InstaFeedCustom";
+import {useMediaQuery} from 'react-responsive'
+
+
 const BgRed = () => {
+
+
+  const Desktop = ({ children }) => {
+    const isDesktop = useMediaQuery({ minWidth: 992 });
+    return isDesktop ? children : null;
+  };
+
+  const Tablet = ({ children }) => {
+    const isTablet = useMediaQuery({ minWidth: 751, maxWidth: 991 });
+    return isTablet ? children : null;
+  };
+
+  const Mobile = ({ children }) => {
+    const isMobile = useMediaQuery({ maxWidth: 767 });
+    return isMobile ? children : null;
+  };
+  
   return (
     <>
       <div>
@@ -14,26 +34,10 @@ const BgRed = () => {
               <h5>facebook</h5>
             </header>
 
-            <div
-              class="fb-page widgetFb"
-              data-href="https://www.facebook.com/PDIPerjuangan/"
-              data-tabs="timeline"
-              // data-width="180"
-              data-height=""
-              data-small-header="false"
-              data-adapt-container-width="true"
-              data-hide-cover="false"
-              data-adapt-container-width="true"
-              data-show-facepile="true"
-            >
-              <blockquote
-                cite="https://www.facebook.com/PDIPerjuangan/"
-                class="fb-xfbml-parse-ignore"
-              >
-                <a href="https://www.facebook.com/PDIPerjuangan/">
-                  PDI Perjuangan
-                </a>
-              </blockquote>
+            <div className="containerFacebook" id='pageContainer'>
+            <div class="fb-page" data-href="https://www.facebook.com/PDIPerjuangan/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+            <div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/PDIPerjuangan"><a href="https://www.facebook.com/PDIPerjuangan">PDI PERJUANGAN</a></blockquote></div>
+            </div>
             </div>
           </div>
 
@@ -42,16 +46,19 @@ const BgRed = () => {
               <i className="fab fa-twitter-square" id="iconGroup"></i>
               <h5>twitter</h5>
             </header>
-            <TwitterTimelineEmbed
-              className="twitter-timeline"
-              sourceType="profile"
-              screenName="pdi_perjuangan"
-              options={{
-                height: "500px",
-                margin: 0,
-                padding: 0,
-              }}
-            />
+            <div className="containerTwitter">
+              <TwitterTimelineEmbed
+                className="twitter-timeline"
+                sourceType="profile"
+                screenName="pdi_perjuangan"
+                options={{
+                  height: "500px",
+                  margin: 0,
+                  padding: 0,
+                  // width: '600px',
+                }}
+              />
+            </div>
           </div>
 
           <div className="holderFrame">
@@ -64,6 +71,9 @@ const BgRed = () => {
               style={{
                 backgroundColor: "#fff",
                 borderRadius: "5px",
+                display : 'flex',
+                justifyContent : 'center',
+                alignItems : 'center'
                 // margin: "0 10px",
               }}
             >

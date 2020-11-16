@@ -66,7 +66,6 @@ const MainFooter = ()=> {
 
                         
                 </address>
-                <span style={{flex : '1',}}></span>
                     <Subscribe />
             </div>
         </div>
