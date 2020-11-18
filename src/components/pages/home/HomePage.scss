@@ -210,7 +210,7 @@ $maxHeight800: 800px;
 
     // min width 750px and max width 950px
     @include respon950() {
-      flex-direction: row;
+      flex-direction: column;
       position: relative;
     }
     // min width 750px and max width 950px
@@ -240,6 +240,8 @@ $maxHeight800: 800px;
       flex-direction: row;
       justify-content: center;
       align-items: center;
+
+      
     }
 
     .customBorder {
@@ -275,7 +277,7 @@ $maxHeight800: 800px;
 
           // Min width 750px and max width 950px
           @include respon950() {
-            height: 80px;
+            height: 120px;
             // width: 80px;
             margin: 0;
           }
