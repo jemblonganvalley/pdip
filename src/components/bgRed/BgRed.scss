@@ -77,6 +77,8 @@ $responMax1440: 1440px;
     padding: 0 10%;
   }
 
+  
+
   @include respon950() {
     height: auto;
     align-items: center;
@@ -90,6 +92,9 @@ $responMax1440: 1440px;
   @include respon750() {
     flex-direction: column;
     height: auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
   }
   // END Min width 500px and max width 750px
 
@@ -112,12 +117,15 @@ $responMax1440: 1440px;
     border-radius: 8px;
     position: relative;
 
+
+
     @include respon950() {
       margin: 40px 0 0 0;
     }
 
     @include respon750() {
       margin: 40px 0 0 0;
+      width: 55%;
     }
 
     @include smallPhone() {
