@@ -19,7 +19,6 @@ const MainFooter = () => {
         />
         <span className="wrapperSituation">
           <div className="textFooter">
-            <small className="heads">situation room pdi perjuangan</small>
             <small className="body">
               pdiperjuangan.id merupakan situs (website) resmi Dewan Pimpinan
               Pusat Partai Demokrasi Indonesia Perjuangan (DPP PDI Perjuangan).
@@ -27,10 +26,6 @@ const MainFooter = () => {
               induk dari media sosial resmi Partai, di antaranya Facebook,
               Twitter, Instagram dan Youtube, dan merupakan satu kesatuan dengan
               aplikasi Media Pintar Perjuangan.
-            </small>
-            <small className="foot">
-              Untuk dukungan dan partisipasi, kirimkan naskah atau artikel
-              beserta foto kegiatan anda ke email : redaksi@pdiperjuangan.id
             </small>
           </div>
         </span>
