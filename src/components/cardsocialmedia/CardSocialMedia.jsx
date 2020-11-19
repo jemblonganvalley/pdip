@@ -4,11 +4,9 @@ import { FacebookShareButton, InstapaperShareButton, TwitterShareButton, Whatsap
 
 const CardSocialMedia = ()=>{
 
-    let urlShare = ()=>{
-      return window.location.hostname
-    }
+    
     let quote ="PDI Perjuangan"
-    let hashtag = "#PDI Perjuangan"
+    let hashtag = "#PDIPERJUANGAN"
     let titleForWhatsapp = "PDI Perjuangan"
 
     return(
@@ -17,7 +15,7 @@ const CardSocialMedia = ()=>{
             <p className="share-socialMedia">SHARE : </p>
               {/* Facebook Share */}
               <FacebookShareButton
-                url={`https://pas.biar.pw/` + window.location.href}
+                url={`https://pas.biar.pw/` + window.location.hostname}
                 quote={quote}
                 hashtag={hashtag}
               >
@@ -27,7 +25,7 @@ const CardSocialMedia = ()=>{
 
               {/* Twitter Share */}
               <TwitterShareButton
-                url={urlShare}
+                url={window.location.href}
                 quote={quote}
                 hashtag={hashtag}
               >
@@ -35,19 +33,9 @@ const CardSocialMedia = ()=>{
               </TwitterShareButton>
               {/* END Twitter Share */}
 
-              {/* Instagram Share */}
-              <InstapaperShareButton
-                url={urlShare}
-                quote={quote}
-                hashtag={hashtag}
-              >
-                <i className="fa fa-instagram"></i>
-              </InstapaperShareButton>
-              {/* END Instagram Share */}
-
               {/* WhatsApp Share */}
               <WhatsappShareButton
-                url={urlShare}
+                url={`https://pas.biar.pw/` + window.location.href}
                 title={titleForWhatsapp}
               >
                 <i className="fa fa-whatsapp"></i>
