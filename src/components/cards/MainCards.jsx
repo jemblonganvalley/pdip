@@ -18,7 +18,7 @@ const Cards = ({
   classIcon,
   href,
   h5Font,
-  h5Weight = 'bold',
+  h5Weight = "bold",
   TextH6,
   paragrapSize,
   width,
@@ -31,7 +31,7 @@ const Cards = ({
   paginateCard,
 }) => {
   let dt = toString(dateTime);
-  let dtt = dt.split(" ");
+  let dtt = dt.split(" ")[0];
 
   const add3Dots = (string, limit) => {
     var dots = "...";
@@ -115,7 +115,9 @@ const Cards = ({
           <br />
           <small className="textSmall">{author || "PDI Perjuangan"}</small> |
           &nbsp;
-          <small className="textSmall">{dateTime || getToday()}</small>
+          <small className="textSmall">
+            {(dateTime && dateTime.split(" ")[0]) || getToday()}
+          </small>
           <p
             className="textH5"
             style={{
