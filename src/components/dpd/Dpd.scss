@@ -15,46 +15,27 @@ $smallPhoneDua: 400px;
   }
 }
 
+$responMin750: 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
+}
+$respon750: 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
+}
 .dpdWrapper {
-  // .dpdHead {
-  //     background: url(../../img/kampanye.jpg);
-  //     background-size: cover;
-  //     height: 25vh;
-  //     background-position: center;
-  //     border: 1px solid blue;
-  //     @include smallPhone() {
-  //         height: 20vh;
-  //     }
-  //     @include smallPhoneDua() {
-  //         height: 15vh;
-  //     }
-
-  //     .backDpd {
-  //         background-color: rgba(255, 0, 8, 0.8);
-  //         width: 100%;
-  //         height: 100%;
-  //         display: flex;
-  //         // justify-content: center;
-  //         align-items: center;
-  //         color: #ffffff;
-
-  //         .textDpdHead {
-  //             width: 30%;
-  //             height: 50%;
-  //             margin-left: 13rem;
-  //             @include smallPhone() {
-  //                 width: auto;
-  //                 margin-left: 0;
-  //                 padding: 0 10%;
-  //             }
-  //             h2 {
-  //                 @include smallPhoneDua() {
-  //                     font-size: 15pt;
-  //                 }
-  //             }
-  //         }
-  //     }
-  // }
   // START LINK PARTAI
   .linkedDetail {
     display: flex;
@@ -93,6 +74,10 @@ $smallPhoneDua: 400px;
       @include smallPhone() {
         padding: 0 10px;
       }
+
+      @include respon750() {
+        padding: 0 10%;
+      }
     }
     // END Divider
 
@@ -124,6 +109,14 @@ $smallPhoneDua: 400px;
         padding: 0 10px;
         flex-direction: column;
       }
+      @include respon950() {
+        flex-direction: column;
+        align-items: center;
+      }
+      @include respon750() {
+        flex-direction: column;
+        align-items: center;
+      }
 
       .kolum1 {
         // border: 1px solid crimson;
@@ -139,6 +132,16 @@ $smallPhoneDua: 400px;
           justify-content: center;
           align-items: center;
         }
+        @include respon950() {
+          width: 100%;
+          align-items:center;
+          margin: 0;
+        }
+        @include respon750() {
+          width: 100%;
+          align-items: center;
+          margin: 0;
+        }
 
         .textDpd {
           display: flex;
@@ -148,6 +151,16 @@ $smallPhoneDua: 400px;
 
           // border: 1px solid green;
           @include smallPhone() {
+            text-align: center;
+          }
+
+          @include respon950() {
+            width: 100%;
+            text-align: center;
+          }
+
+          @include respon750() {
+            width: 100%;
             text-align: center;
           }
 
@@ -192,6 +205,14 @@ $smallPhoneDua: 400px;
           @include smallPhone() {
             justify-content: center;
             align-items: center;
+            text-align: center;
+          }
+
+          @include respon950() {
+            text-align: center;
+          }
+
+          @include respon750() {
             text-align: center;
           }
 
