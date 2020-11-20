@@ -1,63 +1,70 @@
 @import "../../utilities/variable/variables.scss";
 
 // Angka Pagination
-.container-angka-pagination{
+.container-angka-pagination {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+  .col-angka-pagination {
     display: flex;
     height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin: 1px;
 
-    .col-angka-pagination{
+    .angka-pagination {
+      display: flex;
+      list-style: none;
+      cursor: pointer;
+
+      .paginationLink {
         display: flex;
-        height: 100%;
-        width: 100%;
+        height: 26px;
+        width: 26px;
+        background: transparent;
+        border-radius: 500px;
+        color: #d80010;
+        font-size: 10.3pt;
+        font-weight: 500;
+        text-decoration: none;
+        margin: 0 10px 0 0;
         justify-content: center;
         align-items: center;
-        margin: 1px;
+        transition: 0.2s;
 
-        .angka-pagination{
-            display: flex;
-            list-style: none;
-            cursor: pointer;
-
-            .paginationLink{
-                display: flex;
-                height: 26px;
-                width: 26px;
-                background: transparent;
-                border-radius: 500px;
-                color: #d80010;
-                font-size: 10.3pt;
-                font-weight: 500;
-                text-decoration: none;
-                margin: 0 10px 0 0;
-                justify-content: center;
-                align-items: center;
-                transition: .20s;
-
-                &:hover{
-                    background: #d80010;
-                    color: #fff;
-                    font-size: 12pt;
-                }
-            }
-
-            .paginationLink.active {
-
-                &:focus {
-                color: $accent;
-                background: $colors;
-                }
-            }
+        &:hover {
+          background: #d80010;
+          color: #fff;
+          font-size: 12pt;
         }
+        .activePagination a {
+          background-color: "#d80010";
+          border-radius: "100px";
+          padding: ".2px";
+          color: "#fff";
+        }
+      }
+
+      .paginationLink.active {
+        &:focus {
+          color: $accent;
+          background: $colors;
+        }
+      }
     }
+
+    .prev,
+    .next {
+      color: #d80010;
+    }
+  }
 }
 // END Angka Pagination
-
-
-
-
 
 // // Angka Pagination
 // .angka-paginationEvent{
@@ -75,7 +82,7 @@
 //         margin: 0 10px 0 0;
 //         height: 26px;
 //         width: 26px;
-        
+
 //         // &:hover{
 //         //     background: #fff;
 //         //     color: #fff;

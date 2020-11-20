@@ -1,27 +1,27 @@
-$secondary : #f3f3f3;
+$secondary: #f3f3f3;
 @import "../../utilities/variable/variables.scss";
 
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+$smallPhoneSatu: 500px;
+$smallPhoneDua: 400px;
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
 // min width 1361px and max width 1440px
 $responMin1361: 1361px;
 $responMax1440: 1440px;
 
-@mixin respon1440{
-    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
-        @content;
-    }
+@mixin respon1440 {
+  @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}) {
+    @content;
+  }
 }
 // end min width 1361px and max width 1440px
 
@@ -29,179 +29,186 @@ $responMax1440: 1440px;
 $responMin951: 951px;
 $responMax1360: 1360px;
 
-@mixin respon1360{
-    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
-        @content;
-    }
+@mixin respon1360 {
+  @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}) {
+    @content;
+  }
 }
 // end min width 951 and max width 1360px
 
 // Min widht 750 and Max width 950
-$responMin750 : 750px;
+$responMin750: 750px;
 $responMax950: 950px;
 // END Min widht 750 and Max width 950
 
 // Min width 750 and max width 950
-@mixin respon950{
-    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
-        @content;
-    }
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
 }
 // END Min widht 750 and max width 950
 
 // Min widht 500 and Max width 750
-$respon750 : 750px;
+$respon750: 750px;
 $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 // Min widht 500 and Max width 750
 @mixin respon750 {
-    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
-        @content;
-    }
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
 }
 // END Min widht 500 and Max width 750
 
-.wrapper-berita-nasional{
+.wrapper-berita-nasional {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding-bottom: 40px;
+
+  .linked-berita-nasional {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 10%;
+
+    @include respon950() {
+      padding: 10px 2%;
+    }
+
+    @include smallPhone() {
+      width: 100%;
+      padding: 0 2%;
+    }
+  }
+
+  .activePagination {
+    background-color: "#d80010";
+    border-radius: "100px";
+    padding: ".2px";
+    color: "#fff";
+  }
+
+  // Divider
+  .divider-page-berita-nasional {
+    display: flex;
+    height: auto;
+    align-items: center;
+    margin: 0 0 10px 0;
+    padding: 0px 20% 20px 20%;
+
+    @include respon1440 {
+      padding: 0 10% 20px 10%;
+    }
+
+    @include respon1360 {
+      padding: 0 5% 20px 5%;
+    }
+
+    @include respon950() {
+      padding: 0 2% 20px 2%;
+    }
+
+    @include respon750() {
+      padding: 0 15% 20px 15%;
+    }
+
+    @include smallPhone() {
+      padding: 0 10px 30px 10px;
+      margin: 0;
+    }
+  }
+  // END Divider
+
+  // Container1
+  .container1-berita-nasional {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20% 0 20%;
+
+    @include respon750() {
+      padding: 20px 15% 0px 15%;
+    }
+
+    @include smallPhone() {
+      padding: 0px 10px;
+      height: auto;
+    }
+  }
+  // END Container1
+
+  // Container2
+  .container2-berita-nasional {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
-    padding-bottom: 40px;
+    padding: 0 20%;
 
-    .linked-berita-nasional {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-        margin-top: 15px;
-        padding: 10px 10%;
-
-        @include respon950(){
-            padding: 10px 2%;
-        }
-
-        @include smallPhone(){
-            width: 100%;
-            padding: 0 2%;
-        }
+    @include respon1440 {
+      padding: 0 10% 0px 10%;
     }
 
-    // Divider
-    .divider-page-berita-nasional{
+    @include respon1360 {
+      padding: 0px 5% 0px 5%;
+    }
+
+    @include respon950() {
+      padding: 0 2% 0px 2%;
+    }
+
+    @include respon750() {
+      padding: 0 15%;
+    }
+
+    @include smallPhone() {
+      padding: 0px;
+    }
+
+    // Column Card
+    .column-card-berita-nasional {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+
+      // Container Card
+      .containerCard-berita-nasional {
         display: flex;
         height: auto;
-        align-items: center;
-        margin: 0 0 10px 0;
-        padding: 0px 20% 20px 20%;
-
-        @include respon1440{
-            padding: 0 10% 20px 10%;
-        }
-
-        @include respon1360{
-            padding: 0 5% 20px 5%;
-        }
-
-        @include respon950(){
-            padding: 0 2% 20px 2%;
-        }
-
-        @include respon750(){
-            padding: 0 15% 20px 15%;
-        }
-
-        @include smallPhone(){
-            padding: 0 10px 30px 10px;
-            margin: 0;
-        }
-    }
-    // END Divider
-
-    // Container1
-    .container1-berita-nasional{
-        display: flex;
         width: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 20px 20% 0 20%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
 
-        @include respon750(){
-            padding: 20px 15% 0px 15%;
+        @include respon750() {
+          flex-direction: column;
         }
 
-        @include smallPhone(){
-            padding: 0px 10px;
-            height: auto;
+        @include smallPhone() {
+          flex-direction: column;
+          padding: 0 10px;
         }
+      }
+      // END Container Card
     }
-    // END Container1
+    // END Column Card
 
-    // Container2
-    .container2-berita-nasional{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-        padding: 0 20%;
-
-        @include respon1440{
-            padding: 0 10% 0px 10%;
-        }
-
-        @include respon1360{
-            padding: 0px 5% 0px 5%;
-        }
-
-        @include respon950(){
-            padding: 0 2% 0px 2%;
-        }
-
-        @include respon750(){
-            padding: 0 15%;
-        }
-
-        @include smallPhone(){
-            padding: 0px;
-        }
-
-        // Column Card
-        .column-card-berita-nasional{
-            display: flex;
-            flex-direction: column;
-            height: auto;
-            width: 100%;
-
-            // Container Card
-            .containerCard-berita-nasional{
-                display: flex;
-                height: auto;
-                width: 100%;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-
-                @include respon750(){
-                    flex-direction: column;
-                }
-
-                @include smallPhone(){
-                    flex-direction: column;
-                    padding: 0 10px;
-                }
-            }
-            // END Container Card
-        }
-        // END Column Card
-
-        // Column Pagination
-        .column-pagination-berita-nasional{
-            display: flex;
-            height: 10vh;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-        }
-        // END Column Pagination
+    // Column Pagination
+    .column-pagination-berita-nasional {
+      display: flex;
+      height: 10vh;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
     }
-    // END Container2
+    // END Column Pagination
+  }
+  // END Container2
 }
