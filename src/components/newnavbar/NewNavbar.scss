@@ -125,13 +125,13 @@ $tabletWidthMax: 991px;
 
   // Respon 991
   @include respon991() {
-    padding: 10px 0;
+    padding: 1rem 0;
   }
   // END Respon 991
 
   // Respon 750
   @include respon750() {
-    padding: 5px 0%;
+    padding: 10px 0%;
   }
   // END Respon 750
 

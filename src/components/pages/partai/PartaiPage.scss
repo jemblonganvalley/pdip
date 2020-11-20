@@ -173,7 +173,7 @@ $responMax1440: 1440px;
 
       // min width 750px and max width 950px
       @include respon950() {
-        // flex-direction: column-reverse;
+        flex-direction: column-reverse;
       }
       // end min width 750px and max width 950px
 
@@ -197,7 +197,6 @@ $responMax1440: 1440px;
         // border: 1px solid red;
 
         @include respon950() {
-          height: 50vh;
           padding: 0px;
           margin: 20px 0 10px 0;
         }
@@ -223,10 +222,12 @@ $responMax1440: 1440px;
 
           // Min width 750px and max width 950px
           @include respon950() {
-            height: calc(100% / 4);
             gap: 40px;
             padding: 0px;
-            justify-content: flex-start;
+            justify-content: center;
+            background: #fff;
+            margin: 0.5rem 0 0 0;
+
           }
           // END Min width 750px and max width 950px
 
@@ -243,7 +244,6 @@ $responMax1440: 1440px;
 
           // Max width 500px
           @include smallPhone() {
-            height: 15vh;
             background: #fff;
             margin: 0.5rem 0 0 0;
             padding: 0px;
@@ -261,7 +261,7 @@ $responMax1440: 1440px;
 
             // min width 750px and max width 950px
             @include respon950() {
-              // width: 50%;
+              width: 50%;
             }
             // end min width 750px and max width 950px
 
@@ -274,6 +274,7 @@ $responMax1440: 1440px;
             // max width 500px
             @include smallPhone() {
               width: 70%;
+              flex-direction: column;
             }
             // max width 500px
 
@@ -310,7 +311,15 @@ $responMax1440: 1440px;
               margin-left: 1rem;
 
               @include smallPhone() {
-                margin: 0 0 0 1rem;
+                margin: 1rem 0 0 1rem;
+                align-items: center;
+              }
+
+              small {
+                @include smallPhone() {
+                text-align: center;
+
+                }
               }
             }
 
@@ -382,8 +391,7 @@ $responMax1440: 1440px;
 
         // Min width 750px and max width 950px
         @include respon950() {
-          padding: 0 205px 0 0;
-          margin: 0 0 0 20px;
+          padding: 0;
         }
         // END Min width 750px and max width 950px
 

@@ -120,7 +120,7 @@ const PartaiPage = () => {
                               style={{}}
                             >
                               <h5>{e.title}</h5>
-                              {parse(e.paragraph)}
+                              <small>{parse(e.paragraph)}</small>
                             </div>
                           </div>
                         </Link>
