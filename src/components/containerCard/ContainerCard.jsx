@@ -150,13 +150,13 @@ const ContainerCard = () => {
             </div>
             {/* END Column Card */}
 
-            {/* Column Pagination */}
             {/* END Container2 */}
+            {/* Column Pagination */}
             {pag && (
               <div className="container-angka-pagination">
                 <div className="col-angka-pagination">
                   <ReactPaginate
-                    initialPage={numPage}
+                    initialPage={1}
                     pageCount={pag.total / pag.per_page}
                     pageRangeDisplayed={9}
                     marginPagesDisplayed={0}
@@ -170,7 +170,7 @@ const ContainerCard = () => {
                     eventListener="onClick"
                     onPageChange={(e) => {
                       // console.log(e);
-                      setNumPage(e.selected);
+                      setNumPage(e.selected + 1);
                     }}
                   />
                 </div>

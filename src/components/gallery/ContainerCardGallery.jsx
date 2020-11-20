@@ -6,6 +6,7 @@ import MainDivider from "../divider/MainDivider";
 import { NavLink, useParams } from "react-router-dom";
 import Cards from "../cards/MainCards";
 import Wait from "../wait/Wait";
+import ReactPaginate from "react-paginate";
 
 const ContainerCard = () => {
   const { category_id } = useParams();
@@ -148,14 +149,32 @@ const ContainerCard = () => {
             {/* END Column Pagination */}
           </div>
           {/* END Container2 */}
+          {/* Column Pagination */}
           {pag && (
-            <div className="column-pagination-berita-nasional my-5">
-              <AngkaPaginationEvent
-                itemEventPerPage={pag.per_page}
-                totalPosts={pag.total}
-              />
+            <div className="container-angka-pagination">
+              <div className="col-angka-pagination">
+                <ReactPaginate
+                  initialPage={1}
+                  pageCount={pag.total / pag.per_page}
+                  pageRangeDisplayed={9}
+                  marginPagesDisplayed={0}
+                  previousLabel={"<<"}
+                  previousClassName="prev"
+                  nextLabel={">>"}
+                  nextClassName="next"
+                  containerClassName="angka-pagination"
+                  pageClassName="paginationLink"
+                  activeClassName="activePagination"
+                  eventListener="onClick"
+                  onPageChange={(e) => {
+                    // console.log(e);
+                    setNumPage(e.selected + 1);
+                  }}
+                />
+              </div>
             </div>
           )}
+          {/* END Column Pagination */}
         </div>
       ) : (
         <Wait />
