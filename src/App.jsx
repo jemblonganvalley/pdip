@@ -67,7 +67,7 @@ function App() {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 1)
     getGlobalToken();
     getToken();
     var prevScrollpos = window.pageYOffset;

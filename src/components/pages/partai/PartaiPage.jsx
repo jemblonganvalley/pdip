@@ -87,22 +87,22 @@ const PartaiPage = () => {
                           as="div"
                           to={
                             i == 0
-                              ? `/detail-article/1015/${e.title.replaceAll(
+                              ? `/detail-article/1015/${e.title.replace(
                                   " ",
                                   "-"
                                 )}`
                               : i == 1
-                              ? `/detail-article/838/${e.title.replaceAll(
+                              ? `/detail-article/838/${e.title.replace(
                                   " ",
                                   "-"
                                 )}`
                               : i == 2
-                              ? `/detail-article/844/${e.title.replaceAll(
+                              ? `/detail-article/844/${e.title.replace(
                                   " ",
                                   "-"
                                 )}`
                               : i == 3
-                              ? `/detail-article/847/${e.title.replaceAll(
+                              ? `/detail-article/847/${e.title.replace(
                                   " ",
                                   "-"
                                 )}`
