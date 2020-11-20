@@ -156,7 +156,7 @@ const ContainerCard = () => {
               <div className="container-angka-pagination">
                 <div className="col-angka-pagination">
                   <ReactPaginate
-                    initialPage={1}
+                    initialPage={0}
                     pageCount={pag.total / pag.per_page}
                     pageRangeDisplayed={9}
                     marginPagesDisplayed={0}
