@@ -17,10 +17,54 @@ $smallPhoneDua : 400px;
 .wrapperEvent {
     width: 100%;
     padding: 0 0 30px 0;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
     @include smallPhone(){
         padding: 0 0 30px 0;
     }
+
+    #notfound {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+
+        .notfound {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            .notfound-404 {
+                img  {
+                    width: 50vw;
+                }
+            }
+
+            .wrappertext {
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                a {
+                    font-family: 'Montserrat' sans-serif;
+                    font-size: 14px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    background: #0046d5;
+                    padding: 15px 30px;
+                    border-radius: 40px;
+                    color: #fff;
+                    font-weight: 700;
+                    -webkit-box-shadow: 0px 4px 15px -5px #0046d5;
+              box-shadow: 0px 4px 15px -5px #0046d5;
+                }
+            }
+        }
+    }
+
+    
 
     .headEvent {
         background: url(../../../img/pattern-05.svg);
