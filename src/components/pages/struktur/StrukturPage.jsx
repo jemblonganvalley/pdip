@@ -5,6 +5,7 @@ import MainDivider from "../../divider/MainDivider";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import Wait from "../../wait/Wait";
 import { useStoreState } from "easy-peasy";
+import NotFound from "../../notFound/NotFound";
 
 const StrukturPage = ({ slug, grade }) => {
   const [configHome, setConfigHome] = useState([]);
@@ -95,7 +96,8 @@ const StrukturPage = ({ slug, grade }) => {
       {/* END */}
     </div>
     ) : (
-        <Wait />
+        // <Wait />
+        <NotFound notFoundDisplay={'none'} />
     )}
    
     </>

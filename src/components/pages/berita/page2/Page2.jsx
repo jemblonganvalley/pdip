@@ -8,6 +8,7 @@ import { Link, useParams } from "react-router-dom";
 import Wait from "../../../wait/Wait";
 import { colors } from "@material-ui/core";
 import MainDivider from "../../../divider/MainDivider";
+import NotFound from "../../../notFound/NotFound";
 
 // READ BEFORE USE
 

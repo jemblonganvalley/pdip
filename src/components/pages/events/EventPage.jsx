@@ -4,9 +4,9 @@ import BreadCrumbs from '../../breadcrumbs/BreadCrumbs'
 import Timeline from '../../timeline/Timeline'
 import megawatisatu from '../../../img/megawati1.jpg'
 import megawatidua from '../../../img/megawati2.jpg'
-import notFound from '../../../img/kalender.svg'
 
 import AngkaPaginationEvent from '../../paginationevent/AngkaPaginationEvent'
+import NotFound from '../../notFound/NotFound'
 
 
 const EventPage = () => {
@@ -72,22 +72,8 @@ const EventPage = () => {
     return (
         <div className="wrapperEvent">
 
-            <div id="notfound">
-                <div className="notfound">
-                    <div className="notfound-404">
-                        <img src={notFound} />
-                        {/* <h1>OOPS</h1> */}
-                    </div>
-                    <div className="wrappertext">
-                    <h2 style={{
-                        textAlign : 'center'
-                    }}>404  belum Ada </h2>
-                    <p>PAGE YANG DI TUJU SEDANG DALAM PENGEMBANGAN </p>
-                    <a href="#">Go To Homepage</a>
-                    </div>
-                </div>
-            </div>
-
+            
+            <NotFound pengembanganDisplay={'none'} />
             {/* <div className="headEvent">
                 <div className="textHeadEvent">
                     <h2>Timeline Event </h2>

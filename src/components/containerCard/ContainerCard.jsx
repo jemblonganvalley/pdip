@@ -8,6 +8,7 @@ import { NavLink, useParams } from "react-router-dom";
 import Cards from "../cards/MainCards";
 import Wait from "../wait/Wait";
 import ReactPaginate from "react-paginate";
+import NotFound from "../notFound/NotFound";
 // import AngkaPaginationEvent from "../paginationevent/AngkaPaginationEvent";
 
 const ContainerCard = () => {
@@ -181,7 +182,8 @@ const ContainerCard = () => {
           {/* END Container2 */}
         </div>
       ) : (
-        <Wait />
+        // <Wait />
+        <NotFound notFoundDisplay={'none'} />
       )}
     </>
   );

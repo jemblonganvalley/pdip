@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
 import Wait from "../../../wait/Wait";
 import { useStoreState } from "easy-peasy";
+import NotFound from "../../../notFound/NotFound";
 
 const Page1 = () => {
   const refresher = useStoreState((state) => state.refresher);

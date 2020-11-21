@@ -1,0 +1,43 @@
+
+
+#notfound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+
+    .notfound {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        .notfound-404 {
+            img  {
+                height: 50vh;
+            }
+        }
+
+        .wrappertext {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            a {
+                margin-top: 1rem;
+                font-family: 'Montserrat' sans-serif;
+                font-size: 14px;
+                text-decoration: none;
+                text-transform: uppercase;
+                background: #C10909;
+                padding: 15px 30px;
+                border-radius: 40px;
+                color: #fff;
+                font-weight: 700;
+                -webkit-box-shadow: 0px 4px 15px -5px #C10909;
+                box-shadow: 0px 4px 15px -5px #C10909;
+            }
+        }
+    }
+}
