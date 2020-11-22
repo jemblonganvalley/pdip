@@ -182,8 +182,8 @@ const ContainerCard = () => {
           {/* END Container2 */}
         </div>
       ) : (
-        // <Wait />
-        <NotFound notFoundDisplay={'none'} />
+        <Wait />
+        // <NotFound notFoundDisplay={'none'} />
       )}
     </>
   );

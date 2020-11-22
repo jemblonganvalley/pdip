@@ -251,7 +251,7 @@ const InformasiPage = () => {
                 marginTop: "20px",
               }}
             >
-              <Link component={anchorLink} linkTo="/detail-article/658/lhkpn">
+              <Link component={anchorLink} linkTo="/not-found">
                 <div className="box-card-laporan">
                   <img
                     src={`https://atur.biar.pw/public/${configHome[7].value[0].image}`}
@@ -270,10 +270,7 @@ const InformasiPage = () => {
                 </div>
               </Link>
 
-              <Link
-                component={anchorLink}
-                linkTo="/article/227/laporan-keuangan"
-              >
+              <Link component={anchorLink} linkTo="/not-found">
                 <div className="box-card-laporan">
                   <img
                     src={`https://atur.biar.pw/public/${configHome[7].value[1].image}`}

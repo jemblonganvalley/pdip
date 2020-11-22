@@ -44,6 +44,7 @@ import PidatoAll from "./components/pages/KetuaUmum/pidatoAll/PidatoAll";
 import MultimediaAll from "./components/pages/multimediaPage/multimediaAll/MultimediaAll";
 import NewNavbar from "./components/newnavbar/NewNavbar";
 import DpdDpc from "./components/pages/dpddpc/DpdDpc";
+import NotFound from "./components/notFound/NotFound";
 function App() {
   let [hide, setHide] = useState(true);
   let token = useStoreState((state) => state.token);
@@ -67,7 +68,7 @@ function App() {
   };
 
   useEffect(() => {
-    window.scrollTo(0, 1)
+    window.scrollTo(0, 1);
     getGlobalToken();
     getToken();
     var prevScrollpos = window.pageYOffset;
@@ -196,7 +197,8 @@ function App() {
           </Route>
 
           <Route path="/anggota-legislatif">
-            <StrukturPage slug="anggota-legislatif" grade="legislatif" />
+            {/* <StrukturPage slug="anggota-legislatif" grade="legislatif" /> */}
+            <NotFound pengembanganDisplay="none" />
           </Route>
 
           {/* <Route path="/page2">
@@ -249,8 +251,12 @@ function App() {
             <HomePage />
           </Route>
 
-          <Route path="*">
+          <Route path="/" exact={true}>
             <HomePage />
+          </Route>
+
+          <Route path="*" exact={true}>
+            <NotFound />
           </Route>
         </Switch>
       </div>
