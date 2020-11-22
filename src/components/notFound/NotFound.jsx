@@ -5,13 +5,7 @@ import { Link } from "react-router-dom";
 import "./NotFound.scss";
 const NotFound = ({ imgSource, notFoundDisplay, pengembanganDisplay }) => {
   return (
-    <div
-      id="notfound"
-      style={{
-        marginTop: "20vh",
-        marginBottom: "10vh",
-      }}
-    >
+    <div id="notfound">
       <div className="notfound">
         <div className="notfound-404">
           <img
@@ -38,7 +32,7 @@ const NotFound = ({ imgSource, notFoundDisplay, pengembanganDisplay }) => {
           >
             halaman yang anda tuju belum tersedia
           </h2>
-          <Link to="/*">Halaman utama</Link>
+          <Link to="/">Halaman utama</Link>
         </div>
       </div>
     </div>

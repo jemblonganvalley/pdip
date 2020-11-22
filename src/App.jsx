@@ -196,10 +196,10 @@ function App() {
             <StrukturPage slug="struktur-dpp" grade="pengurus" />
           </Route>
 
-          <Route path="/anggota-legislatif">
-            {/* <StrukturPage slug="anggota-legislatif" grade="legislatif" /> */}
-            <NotFound pengembanganDisplay="none" />
-          </Route>
+          {/* <Route path="/anggota-legislatif">
+            <StrukturPage slug="anggota-legislatif" grade="legislatif" />
+    
+          </Route> */}
 
           {/* <Route path="/page2">
             <Page2 />
@@ -256,7 +256,7 @@ function App() {
           </Route>
 
           <Route path="*" exact={true}>
-            <NotFound />
+            <NotFound notFoundDisplay="none" />
           </Route>
         </Switch>
       </div>
