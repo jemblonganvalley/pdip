@@ -47,11 +47,11 @@ const ContainerCard = () => {
                   style={
                     number === numPage
                       ? {
-                          backgroundColor: "#d80010",
-                          borderRadius: "100px",
-                          padding: ".2px",
-                          color: "#fff",
-                        }
+                        backgroundColor: "#d80010",
+                        borderRadius: "100px",
+                        padding: ".2px",
+                        color: "#fff",
+                      }
                       : null
                   }
                 >
@@ -182,9 +182,11 @@ const ContainerCard = () => {
           {/* END Container2 */}
         </div>
       ) : (
-        <Wait />
-        // <NotFound notFoundDisplay={'none'} />
-      )}
+          <>
+            {/* <Wait /> */}
+            <NotFound notFoundDisplay={'none'} />
+          </>
+        )}
     </>
   );
 };

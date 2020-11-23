@@ -250,6 +250,7 @@ const Page1 = () => {
       ) : (
         <>
           <Wait />
+          {/* <NotFound pengembanganDisplay={'none'} /> */}
         </>
       )}
     </>
