@@ -180,7 +180,6 @@ $secondary : #f3f3f3;
         // Column1
         .col1-container-1-pemiluPage{
             display: flex;
-            height: 60vh;
             width: 100%;
             margin: 0 0 10px 0;
             overflow: hidden;
@@ -208,7 +207,7 @@ $secondary : #f3f3f3;
                 display: flex;
                 flex-direction: column;
                 height: 100%;
-                width: 35%;
+                width: 30%;
                 overflow: hidden;
 
                 @include respon950(){
@@ -233,12 +232,7 @@ $secondary : #f3f3f3;
                     width: 100%;
                     margin: 0 0 20px 0;
 
-                    @include respon950(){
-                        height: 45vh;
-                    }
-
                     @include smallPhone(){
-                        height: 40vh;
                         width: 100%;
                         margin: 0 0 10px 0;
                     }
@@ -251,12 +245,7 @@ $secondary : #f3f3f3;
                     height: 50%;
                     width: 100%;
 
-                    @include respon950(){
-                        height: 45vh;
-                    }
-
                     @include smallPhone(){
-                        height: 40vh;
                         width: 100%;
                     }
                 }
@@ -267,15 +256,13 @@ $secondary : #f3f3f3;
             // Row2
             .row2-col1-pemiluPage{
                 display: flex;
-                height: 100%;
-                width: 65%;
+                width: 70%;
                 background: #fff;
                 margin: 0px 0px 0 20px;
                 padding: 0px 0 0px 0;
                 overflow: hidden;
 
                 @include respon950(){
-                    height: 45vh;
                     width: 100%;
                     margin: 20px 0 0 0;
                 }
@@ -288,7 +275,6 @@ $secondary : #f3f3f3;
                 // end min width 500px and max width 750px
 
                 @include smallPhone(){
-                    height: 40vh;
                     width: 100%;
                     margin: 10px 0 0 0;
                 }
