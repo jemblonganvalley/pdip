@@ -9,6 +9,8 @@ import { action, useStoreActions, useStoreState } from "easy-peasy";
 import "../../../database/globalState";
 import { useEffect } from "react";
 import Wait from "../../wait/Wait";
+import ReactPaginate from "react-paginate";
+
 
 const Search = () => {
   // Onchange text from input search
@@ -182,12 +184,34 @@ const Search = () => {
 
               {/* Column3 Paginate */}
               <div className="column3-pagination-pencarian">
-                {pag && (
+                {/* {pag && (
                   <div className="column-pagination-berita-nasional">
                     <AngkaPaginationEvent
                       itemEventPerPage={pag.per_page}
                       totalPosts={pag.total}
                     />
+                  </div>
+                )} */}
+                {pag && (
+                  <div className="container-angka-pagination">
+                    <div className="col-angka-pagination">
+                      <ReactPaginate
+                        initialPage={0}
+                        pageCount={pag.total / pag.per_page}
+                        pageRangeDisplayed={9}
+                        marginPagesDisplayed={0}
+                        previousLabel={'<<'}
+                        previousClassName='prev'
+                        nextLabel={'>>'}
+                        nextLinkClassName='next'
+                        containerClassName='angka-pagination'
+                        pageClassName='paginationLink'
+                        activeClassName='activePagination'
+                        eventListener='onClick'
+                        onPageChange={(e) => {
+                          setNumPage(e.selected + 1)
+                        }} />
+                    </div>
                   </div>
                 )}
               </div>

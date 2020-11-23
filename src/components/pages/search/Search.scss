@@ -1,7 +1,7 @@
 @import "../../../utilities/variable/variables.scss";
 
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+$smallPhoneSatu: 500px;
+$smallPhoneDua: 400px;
 
 @mixin smallPhone {
     @media (max-width : #{$smallPhoneSatu}) {
@@ -14,8 +14,26 @@ $smallPhoneDua : 400px;
     }
 }
 
+$res501: 501px;
+$res750: 750px;
+
+@mixin respo501750 {
+    @media (min-width : #{$res501}) and (max-width : #{$res750}) {
+        @content;
+    }
+}
+
+$res751: 751px;
+$res990: 990px;
+
+@mixin resp990 {
+    @media (min-width : #{$res751}) and (max-width : #{$res990}) {
+        @content;
+    }
+}
+
 // Modal Display Search
-.modal-display-search{
+.modal-display-search {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -24,13 +42,13 @@ $smallPhoneDua : 400px;
     margin: 0 0 40px 0;
     padding: 0 0 20px 0;
 
-    @include smallPhone(){
+    @include smallPhone() {
         padding: 0 0 20px 0;
         height: auto;
     }
 
     // Bg Black Search
-    .background-black-search{
+    .background-black-search {
         display: flex;
         position: relative;
         height: 10vh;
@@ -39,14 +57,24 @@ $smallPhoneDua : 400px;
         padding: 0 0 0 20%;
         align-items: center;
 
-        @include smallPhone(){
+        @include smallPhone() {
             padding: 0 10px;
         }
 
-        .txt-kata-yang-diCari{
+        @include respo501750() {
+            justify-content: center;
+            padding: 0;
+        }
+
+        @include resp990() {
+            justify-content: center;
+            padding: 0;
+        }
+
+        .txt-kata-yang-diCari {
             margin: 0;
 
-            @include smallPhone(){
+            @include smallPhone() {
                 display: none;
                 font-size: 10pt;
                 margin: 0;
@@ -54,11 +82,11 @@ $smallPhoneDua : 400px;
         }
 
         // Txt Group
-        #txtGroup{
+        #txtGroup {
             color: #fff;
         }
 
-        .kolom-search-modal{
+        .kolom-search-modal {
             display: flex;
             position: relative;
             height: auto;
@@ -67,28 +95,28 @@ $smallPhoneDua : 400px;
             z-index: 22;
 
             // For Save Change Text
-            .box-change-text{
+            .box-change-text {
                 display: flex;
                 position: absolute;
                 height: 100%;
                 width: 100%;
                 z-index: -1;
 
-                .txt-change-text-search{
+                .txt-change-text-search {
                     display: flex;
                     color: #fff;
                 }
             }
             // END For Save Change Text
 
-            @include smallPhone(){
+            @include smallPhone() {
                 position: absolute;
                 margin: 0 0 0 10px;
                 left: 50px;
                 right: 50px;
             }
 
-            .input-search{
+            .input-search {
                 height: 3vh;
                 width: 100%;
                 background: none;
@@ -99,14 +127,14 @@ $smallPhoneDua : 400px;
                 font-size: 20px;
                 font-weight: 500;
 
-                @include smallPhone(){
+                @include smallPhone() {
                     height: auto;
                     font-size: 13pt;
                     padding: 0 30px 0px 0;
                 }
             }
 
-            .btn-icon-pageSearch{
+            .btn-icon-pageSearch {
                 position: absolute;
                 top: -5px;
                 right: -5px;
@@ -119,79 +147,95 @@ $smallPhoneDua : 400px;
     // END Bg Black Search
 
     // Container Hasil Pencarian
-    .container-hasil-pencarian{
+    .container-hasil-pencarian {
         display: flex;
         flex-direction: column;
         height: auto;
         width: 100%;
         padding: 0 20% 0px 20%;
 
-        @include smallPhone(){
+        @include smallPhone() {
             padding: 0 10px;
         }
 
+        @include respo501750() {
+            padding: 0 5%;
+        }
+
+        @include resp990() {
+            padding: 0 10%;
+        }
+
         // Column1
-        .column1-hasil-pencarian{
+        .column1-hasil-pencarian {
             display: flex;
             position: relative;
             height: 10vh;
             width: 100%;
             align-items: center;
 
-            @include smallPhone(){
+            @include smallPhone() {
                 height: 15vh;
                 flex-direction: column;
                 justify-content: center;
                 padding: 0px 0 0 0;
             }
 
-            .txt-hasil-pencarian{
+            .txt-hasil-pencarian {
                 display: flex;
                 // font-size: 15px;
                 margin: 0 10px 0 0;
                 position: absolute;
 
-                @include smallPhone(){
+                @include smallPhone() {
                     position: static;
                 }
             }
 
-            .garis-abu-abu{
+            .garis-abu-abu {
                 display: flex;
                 height: 3px;
                 width: 100%;
                 margin: 0 0 0 130px;
                 background: #bbb;
 
-                @include smallPhone(){
+                @include smallPhone() {
                     margin: 10px 0 0 0;
                 }
             }
-
         }
         // END Column1
 
         // Column2
         // Card hasil pencarian
-        .column2-hasil-pencarian{
+        .column2-hasil-pencarian {
             display: flex;
             height: auto;
             width: 100%;
-            margin-top: 0px; 
+            margin-top: 0px;
 
-            @include smallPhone(){
+            @include smallPhone() {
                 flex-direction: column;
             }
 
             // Info kiri
-            .column-info-kiri{
+            .column-info-kiri {
                 display: flex;
                 flex-direction: column;
                 height: auto;
-                width: 75%;
-                margin: 0 80px 0px 0;
+                width: 100%;
 
-                @include smallPhone(){
+                @include smallPhone() {
+                    width: 100%;
+                }
+
+                @include respo501750() {
+                    width: 100%;
+                    margin: 0;
+                }
+
+                @include resp990() {
+                    margin: 0;
                     width: 100%;
                 }
 
@@ -267,7 +311,7 @@ $smallPhoneDua : 400px;
                 //             width: 100%;
                 //             text-align: start;
                 //             margin: 10px 0 0 0;
-                            
+
                 //             @include smallPhone(){
                 //                 font-size: 10pt;
                 //                 margin: 5px 0 0 0;
@@ -280,19 +324,19 @@ $smallPhoneDua : 400px;
             // END Info kiri
 
             // Info kanan
-            .column-info-kanan{
+            .column-info-kanan {
                 display: flex;
                 flex-direction: column;
                 height: auto;
                 width: 25%;
 
-                @include smallPhone(){
+                @include smallPhone() {
                     display: none;
                     width: 100%;
                     margin: 10px 0 0 0;
                 }
 
-                .btn-info-kanan{
+                .btn-info-kanan {
                     display: flex;
                     height: 3vh;
                     width: 100%;
@@ -300,18 +344,18 @@ $smallPhoneDua : 400px;
                     margin: 0 0 10px 0;
                     color: #000;
                     text-decoration: none;
-                    transition: .3s;
+                    transition: 0.3s;
 
-                    &:hover{
+                    &:hover {
                         color: $colors;
                     }
 
-                    i{
+                    i {
                         font-size: 15px;
                     }
                 }
 
-                .title-info{
+                .title-info {
                     display: flex;
                     font-weight: 500;
                     text-transform: uppercase;
@@ -319,13 +363,12 @@ $smallPhoneDua : 400px;
                 }
             }
             // END Info kanan
-
         }
         // END Card hasil pencarian
         // END Column2
 
         // Column3 Paginate
-        .column3-pagination-pencarian{
+        .column3-pagination-pencarian {
             display: flex;
             height: auto;
             width: 100%;
@@ -333,12 +376,85 @@ $smallPhoneDua : 400px;
             align-items: center;
             margin: 0px 0 0 0;
 
-            @include smallPhone(){
+            @include smallPhone() {
                 margin: 0;
+            }
+
+            .container-angka-pagination {
+                display: flex;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+                .col-angka-pagination {
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    .angka-pagination {
+                        display: flex;
+                        list-style: none;
+                        cursor: pointer;
+                        padding: 0;
+
+                        .paginationLink {
+                            display: flex;
+                            height: 26px;
+                            width: 26px;
+                            background: transparent;
+                            border-radius: 100%;
+                            color: #d80010;
+                            font-size: 10.3pt;
+                            font-weight: 500;
+                            text-decoration: none;
+                            margin: 0 10px;
+                            justify-content: center;
+                            align-items: center;
+                            transition: 0.2s;
+
+                            &:hover {
+                                background: #d80010;
+                                color: #fff;
+                                font-size: 12pt;
+                            }
+
+                            &.activePagination {
+                                background-color: #d80010;
+                                border-radius: 100px;
+                                padding: 0.2px;
+                                color: #fff;
+                            }
+
+                            @include smallPhone() {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    .prev,
+                    .next {
+                        color: #d80010;
+                        transition: .2s;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
+                        width: 26px;
+                        height: 26px;
+                        &:hover {
+                            color: #fff;
+                            background-color: #d80010;
+                            border-radius: 100%;
+                            border-radius: 50px;
+                            
+                        }
+                    }
+                }
             }
         }
         // END Column3 Paginate
-
     }
     // END Container Hasil pencarian
 }

@@ -11,6 +11,7 @@ import VMedia from "../../../VMedia/VMedia";
 import CardQuotes from "../../../cardquotes/CardQuotes";
 import { useStoreState } from "easy-peasy";
 import QuotesBkbb from "../../../quotesbkbb/QuotesBkbb";
+import ReactPaginate from "react-paginate";
 
 const WejanganBungKarno = () => {
   // Create Database Card Item
