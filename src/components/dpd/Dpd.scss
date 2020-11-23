@@ -44,10 +44,15 @@ $respon500: 500px;
     width: 40%;
     // margin-top: 20px;
     // padding: $padding;
+    padding: 40px 10%;
     @include smallPhone() {
       // border: 1px solid crimson;
       width: 100%;
       padding: $paddingMobile;
+    }
+
+    @include respon950() {
+      padding: 10px 5%;
     }
   }
   // END LINK PARTAI

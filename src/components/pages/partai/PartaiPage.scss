@@ -369,8 +369,6 @@ $responMax1440: 1440px;
       }
 
       .col-lg-4 {
-        padding: 0px;
-
         @include smallPhone() {
           padding: 0;
         }
