@@ -8,6 +8,8 @@ import { Link, NavLink, useParams } from "react-router-dom";
 import Wait from "../../../wait/Wait";
 import { colors } from "@material-ui/core";
 import parse from "html-react-parser";
+import ReactPaginate from "react-paginate";
+
 
 // READ BEFORE USE
 
@@ -224,12 +226,34 @@ const Gallery = () => {
             {/* END Column2 */}
           </div>
           {/* END Container */}
-          {pag && (
+          {/* {pag && (
             <div className="column-pagination-berita-nasional my-5">
               <AngkaPaginationEvent
                 itemEventPerPage={pag.per_page}
                 totalPosts={pag.total}
               />
+            </div>
+          )} */}
+          {pag && (
+            <div className="container-angka-pagination">
+              <div className="col-angka-pagination">
+                <ReactPaginate
+                  initialPage={0}
+                  pageCount={pag.total / pag.per_page}
+                  pageRangeDisplayed={9}
+                  marginPagesDisplayed={0}
+                  previousLabel={'<<'}
+                  previousLinkClassName='prev'
+                  nextLabel={'>>'}
+                  nextLinkClassName='next'
+                  containerClassName='angka-pagination'
+                  pageClassName='paginationLink'
+                  activeClassName='activePagination'
+                  eventListener='onClick'
+                  onPageChange={(e) => {
+                    setNumPage(e.selected + 1)
+                  }} />
+              </div>
             </div>
           )}
         </div>

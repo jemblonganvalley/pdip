@@ -7,6 +7,7 @@ import MainDivider from "../../../divider/MainDivider";
 import Cards from "../../../cards/MainCards";
 import Wait from "../../../wait/Wait";
 import { SideMenu } from "../../../sidemenu/SideMenu";
+import ReactPaginate from "react-paginate";
 
 const PidatoAll = () => {
   const [category_id, setCategory_id] = useState(44);
@@ -151,12 +152,34 @@ const PidatoAll = () => {
             {/* END Column Card */}
 
             {/* Column Pagination */}
-            {pag && (
+            {/* {pag && (
               <div className="column-pagination-berita-nasional">
                 <AngkaPaginationEvent
                   itemEventPerPage={pag.per_page}
                   totalPosts={pag.total}
                 />
+              </div>
+            )} */}
+            {pag && (
+              <div className="container-angka-pagination">
+                <div className="col-angka-pagination">
+                  <ReactPaginate
+                    initialPage={0}
+                    pageCount={pag.total / pag.per_page}
+                    pageRangeDisplayed={9}
+                    marginPagesDisplayed={0}
+                    previousLabel={'<<'}
+                    previousClassName='prev'
+                    nextLabel={'>>'}
+                    nextClassName='next'
+                    containerClassName='angka-pagination'
+                    pageClassName='paginationLink'
+                    activeClassName='activePagination'
+                    eventListener='onClick'
+                    onPageChange={(e) => {
+                      setNumPage(e.selected + 1)
+                    }} />
+                </div>
               </div>
             )}
 

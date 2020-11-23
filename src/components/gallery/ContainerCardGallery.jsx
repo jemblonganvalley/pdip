@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import "./containerCard.scss";
+import "./containerCardGallery.scss";
 import BreadCrumbs from "../breadcrumbs/BreadCrumbs";
 import MainDivider from "../divider/MainDivider";
 import { NavLink, useParams } from "react-router-dom";
