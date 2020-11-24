@@ -5,6 +5,7 @@ import {
   Link,
   Switch,
   NavLink,
+  useParams,
 } from "react-router-dom";
 import MainNavbar from "./components/navbar/MainNavbar";
 import HomePage from "./components/pages/home/HomePage";
@@ -126,7 +127,7 @@ function App() {
             <FormPdi />
           </Route>
 
-          <Route path="/search">
+          <Route path="/search/:keyword">
             <Search />
           </Route>
 

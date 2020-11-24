@@ -77,7 +77,7 @@ const NewNavbar = ({ token }) => {
                 window.scrollY > 1
                   ? "-1px 7px 30px -12px rgba(0,0,0,0.75)"
                   : "none",
-              height : '10vh'
+              height: "10vh",
             }}
           >
             <div className="container-fluid">
@@ -175,6 +175,7 @@ const NewNavbar = ({ token }) => {
                   style={{
                     display: "flex",
                   }}
+                  method="get"
                 >
                   <input
                     className="form-control mr-2"
@@ -483,14 +484,13 @@ const NewNavbar = ({ token }) => {
                 aria-label="Toggle navigation"
                 style={{
                   color: "#fff",
-                  margin : '0 65px'
+                  margin: "0 65px",
                 }}
                 onClick={() => {
                   setCollapse1(!collapse1);
                 }}
               >
-                <i className="fa fa-bars" aria-hidden="true" style={{
-                }}></i>
+                <i className="fa fa-bars" aria-hidden="true" style={{}}></i>
               </button>
               <div
                 className="collapse navbar-collapse"
@@ -521,7 +521,7 @@ const NewNavbar = ({ token }) => {
                         style={{
                           display: "flex",
                           flexDirection: "column",
-                          padding : '10px 10%'
+                          padding: "10px 10%",
                         }}
                       >
                         <div
@@ -586,7 +586,7 @@ const NewNavbar = ({ token }) => {
                             style={{
                               height: "50px",
                               transition: "0.5s ease-in-out",
-                              padding : '0 10%'
+                              padding: "0 10%",
                             }}
                             key={e.key}
                           >

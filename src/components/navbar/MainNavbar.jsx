@@ -34,11 +34,14 @@ const MainNavbar = ({ token }) => {
   });
 
   const Tablet = ({ children }) => {
-    const isTablet = useMediaQuery({ minDeviceWidth: 750, maxDeviceWidth: 1000 })
-    return isTablet ? children : null
-  }
+    const isTablet = useMediaQuery({
+      minDeviceWidth: 750,
+      maxDeviceWidth: 1000,
+    });
+    return isTablet ? children : null;
+  };
 
-  const isLandscape = useMediaQuery({ query: '(orientation: landscape)' })
+  const isLandscape = useMediaQuery({ query: "(orientation: landscape)" });
 
   const handleShow = (e) => {
     setShow(e.target.value);
@@ -46,22 +49,12 @@ const MainNavbar = ({ token }) => {
 
   // For Trigger menu dropdown (Mobile)
   let [trigger1, setTrigger1] = useState(false);
-  let [trigger2, setTrigger2] = useState(false);
-  let [trigger3, setTrigger3] = useState(false);
-  let [trigger4, setTrigger4] = useState(false);
-  let [trigger5, setTrigger5] = useState(false);
-  let [trigger6, setTrigger6] = useState(false);
-  let [trigger7, setTrigger7] = useState(false);
+
   // end For Trigger menu dropdown (Mobile)
 
   // For Button page menu mobile (collapse navbar)
   let [collapse1, setCollapse1] = useState(false);
-  let [collapse2, setCollapse2] = useState(false);
-  let [collapse3, setCollapse3] = useState(false);
-  let [collapse4, setCollapse4] = useState(false);
-  let [collapse5, setCollapse5] = useState(false);
-  let [collapse6, setCollapse6] = useState(false);
-  let [collapse7, setCollapse7] = useState(false);
+
   // END For Button page menu mobile (collapse navbar)
   useEffect(() => {
     getDataMenu();
@@ -142,8 +135,8 @@ const MainNavbar = ({ token }) => {
                   </li>
                 ))}
               </ul>
-              <form
-                action={`/search/${search}`}
+              <div
+                // action={`/search/${search}`}
                 className="d-inline-flex"
                 style={{
                   display: "flex",
@@ -153,8 +146,11 @@ const MainNavbar = ({ token }) => {
                   className="form-control mr-2"
                   type="text"
                   placeholder="Cari Artikel"
-                  // name="search"
-                  onChange={(e) => setSearch(e.target.value)}
+                  //
+                  onChange={(e) => {
+                    e.preventDefault();
+                    setSearch(e.target.value);
+                  }}
                   type="text"
                 />
                 <Link
@@ -168,7 +164,7 @@ const MainNavbar = ({ token }) => {
                     name="icon"
                   ></i>
                 </Link>
-              </form>
+              </div>
             </div>
           </div>
         </nav>
@@ -240,7 +236,7 @@ const MainNavbar = ({ token }) => {
                   </li>
                 ))}
               </ul>
-              <form
+              <div
                 action={`/search/${search}`}
                 className="d-inline-flex"
                 style={{
@@ -251,7 +247,7 @@ const MainNavbar = ({ token }) => {
                   className="form-control mr-2"
                   type="text"
                   placeholder="Cari Artikel"
-                  // name="search"
+                  //
                   onChange={(e) => setSearch(e.target.value)}
                   type="text"
                 />
@@ -266,12 +262,11 @@ const MainNavbar = ({ token }) => {
                     name="icon"
                   ></i>
                 </Link>
-              </form>
+              </div>
             </div>
           </div>
         </nav>
       )}
-
 
       {isMobile && (
         <nav
@@ -403,12 +398,11 @@ const MainNavbar = ({ token }) => {
                       ))}
                     </ul> */}
               </ul>
-              <form className="d-inline-flex">
+              <div className="d-inline-flex">
                 <input
                   className="form-control mr-2"
                   type="text"
                   placeholder="cari artikel"
-                  name="search"
                 />
                 <Link to="/search" name="submit" className="btn-next">
                   <i
@@ -417,13 +411,11 @@ const MainNavbar = ({ token }) => {
                     name="icon"
                   ></i>
                 </Link>
-              </form>
+              </div>
             </div>
           </div>
         </nav>
       )}
-      
-      
     </>
   );
 };
