@@ -4,7 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f3f3f3;
-  user-select: none;
+  /* user-select: none; */
   overflow-x: hidden;
   min-height: 100vh;
   height: auto;

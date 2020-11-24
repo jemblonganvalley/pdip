@@ -17,7 +17,7 @@ $rhap_font-family: inherit !default;
   background-color: $rhap_background-color;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
   outline: none;
-  color : #fff !important;
+  color: #fff !important;
   border-radius: 8px;
   &:focus:not(:focus-visible) {
     outline: 0;
@@ -86,7 +86,7 @@ $rhap_font-family: inherit !default;
   align-self: center;
   margin: 0 calc(10px + 1%);
   cursor: pointer;
-  -webkit-user-select: none; 
+  -webkit-user-select: none;
 
   &:focus:not(:focus-visible) {
     outline: 0;
@@ -97,7 +97,7 @@ $rhap_font-family: inherit !default;
   color: $rhap_time-color;
   font-size: 16px;
   user-select: none;
-  -webkit-user-select: none; 
+  -webkit-user-select: none;
 }
 
 .rhap_progress-bar {
@@ -138,9 +138,9 @@ $rhap_font-family: inherit !default;
   height: 20px;
   margin-left: -10px;
   top: -8px;
-  background:#dc3545;
+  background: #dc3545;
   border-radius: 50px;
-  box-shadow: rgba($rhap_theme-color, .5) 0 0 5px;
+  box-shadow: rgba($rhap_theme-color, 0.5) 0 0 5px;
 }
 
 .rhap_controls-section {
@@ -206,7 +206,7 @@ $rhap_font-family: inherit !default;
   display: flex;
   align-items: center;
   flex: 0 1 100px;
-  -webkit-user-select: none; 
+  -webkit-user-select: none;
 }
 
 .rhap_volume-bar-area {
@@ -241,11 +241,11 @@ $rhap_font-family: inherit !default;
   background: $rhap_theme-color;
   opacity: 0.9;
   border-radius: 50px;
-  box-shadow: rgba($rhap_theme-color, .5) 0 0 3px;
+  box-shadow: rgba($rhap_theme-color, 0.5) 0 0 3px;
   cursor: pointer;
 
   &:hover {
-    opacity: .9;
+    opacity: 0.9;
   }
 }
 
@@ -258,12 +258,12 @@ $rhap_font-family: inherit !default;
   cursor: pointer;
 
   &:hover {
-    opacity: .9;
-    transition-duration: .2s;
+    opacity: 0.9;
+    transition-duration: 0.2s;
   }
 
   &:active {
-    opacity: .95;
+    opacity: 0.95;
   }
 
   &:focus:not(:focus-visible) {
