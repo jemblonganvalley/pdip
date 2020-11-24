@@ -252,15 +252,19 @@ $responMax1440: 1440px;
                     margin-top: 1rem;
 
                 }
-                p {
+                .isiLirik {
                     letter-spacing: .8px;
                     margin-top: 1rem;
                     height: 30vh;
                     overflow: scroll;
                     color: #ffffff;
                     overflow-x: hidden;
+
+                    @include respon1440() {
+                        height: 70vh;
+                    }
                 }
-                p::-webkit-scrollbar {
+                .isiLirik::-webkit-scrollbar {
                     display: none;
                 }
             }

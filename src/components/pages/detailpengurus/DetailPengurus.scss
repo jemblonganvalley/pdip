@@ -93,7 +93,7 @@ $respon500: 500px;
   align-items: center;
   flex-direction: row;
   margin-top: 20px;
-  padding: $paddingTiny;
+  padding: 40px 10%;
   @include smallPhone() {
     // border: 1px solid crimson;
     width: 100%;

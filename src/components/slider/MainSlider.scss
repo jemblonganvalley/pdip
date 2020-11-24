@@ -22,6 +22,15 @@ $res1240 : 1350px;
     }
 }
 
+$res1351 : 1351px;
+$res1400 : 1400px;
+
+@mixin respon1400 {
+    @media (min-width : #{$res1351}) and (max-width : #{$res1400}) {
+        @content;
+    }
+}
+
 
 .image1 {
     display: flex;
@@ -238,6 +247,10 @@ $res1240 : 1350px;
 
                 @include respon1240() {
                     padding: 10px 0;
+                }
+
+                @include respon1400() {
+                    padding: 0;
                 }
 
                 .txt-info-iklan {

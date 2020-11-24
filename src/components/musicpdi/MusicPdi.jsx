@@ -257,7 +257,6 @@ const MusicPdi = ({
                       }}
                       style={{
                         width: "80%",
-                        height: "100%",
                       }}
                     ></p>
                   </div>

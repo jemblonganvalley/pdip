@@ -23,6 +23,15 @@ $responMax950: 950px;
     }
 }
 // END Min widht 750 and max width 950
+$responMin1361: 1361px;
+$responMax1440: 1440px;
+
+@mixin respon1440{
+    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
+        @content;
+    }
+}
+
 
 
 .container-carousel-ketuaUmumPage{
@@ -130,6 +139,10 @@ $responMax950: 950px;
                         height: 35%;
                     }
 
+                    @include respon1440() {
+                        height: auto;
+                    }
+
                     .garis-strip-col2{
                         display: flex;
                         position: absolute;
@@ -152,8 +165,7 @@ $responMax950: 950px;
                         justify-content: center;
                         align-items: center;
                         text-align: center;
-                        padding: 1rem 1rem;
-
+                        padding: 1rem;
                         @include smallPhone(){
                             height: auto;
                             padding: 20px 30px;
