@@ -102,7 +102,7 @@ export const CarouselDuelBerita = ({
                   position: "absolute",
                   background: `linear-gradient(#21252900, #21252900, #212529)`,
                   backgroundBlendMode: "multiply",
-                  bottom : '0'
+                  bottom: "0",
                 }}
               ></span>
 
@@ -149,12 +149,12 @@ export const CarouselDuelBerita = ({
       >
         <div className="carousel-inner">
           {cat2.map((e, i) => (
-            <div
+            <Link
               className={`carousel-item ${i == 1 && "active"}`}
-              // to={`/gallery/detail-gallery/${e.id}/${e.title}`}
-              onClick={() => {
-                window.location.href = "/gallery";
-              }}
+              to={"/gallery"}
+              // onClick={() => {
+              //   window.location.href = "/gallery";
+              // }}
               style={{ cursor: "pointer" }}
             >
               <span
@@ -214,7 +214,7 @@ export const CarouselDuelBerita = ({
                   objectPosition: "center",
                 }}
               />
-            </div>
+            </Link>
           ))}
         </div>
         <a

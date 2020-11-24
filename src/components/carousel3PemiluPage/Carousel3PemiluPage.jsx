@@ -4,9 +4,12 @@ import "../carousel3PemiluPage/Carousel3PemiluPage.scss";
 import pemilu2 from "../../img/pemilu2.jpg";
 
 const Carousel3PemiluPage = ({ data }) => {
+  const redir = (args) => {
+    window.location.href = `${args}`;
+  };
+
   return (
     <>
-
       {/* Carousel */}
       <div
         id="pemilu3"
@@ -16,12 +19,25 @@ const Carousel3PemiluPage = ({ data }) => {
         <div className="carousel-inner box-carousel3-pemiluPage">
           {data.map((e, i) => (
             <div className={i === 0 ? "carousel-item active" : "carousel-item"}>
-              <img src={`https://atur.biar.pw/public/${e.image}`} className="img1" />
+              <img
+                src={`https://atur.biar.pw/public/${e.image}`}
+                className="img1"
+                onClick={() => {
+                  redir(`${e.link}`);
+                }}
+              />
             </div>
           ))}
         </div>
         {/* Container Box Indicator Carousel */}
-        <div className="container-box-indicator-pemilu3">
+        <div
+          className="container-box-indicator-pemilu3"
+          style={{
+            // border: "1px solid blue",
+            height: "20%",
+            bottom: "0",
+          }}
+        >
           {/* Box Indicator */}
           <div className="box-indicator-carousel-pemilu3">
             <a

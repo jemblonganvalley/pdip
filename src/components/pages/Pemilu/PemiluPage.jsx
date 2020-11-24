@@ -190,7 +190,7 @@ const PemiluPage = () => {
             <ParalaxBox
               image={configHome[5].value.image}
               title={configHome[5].value.title}
-              link={configHome[5].value.link}
+              link={"/article/274/pemilu"}
             />
             {/* END Carousel Tata Cara */}
           </div>
