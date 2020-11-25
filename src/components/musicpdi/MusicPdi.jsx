@@ -255,9 +255,6 @@ const MusicPdi = ({
                       dangerouslySetInnerHTML={{
                         __html: play[indexPlay].lyric,
                       }}
-                      style={{
-                        width: "80%",
-                      }}
                     ></p>
                   </div>
                 </div>
