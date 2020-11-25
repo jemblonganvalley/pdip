@@ -411,13 +411,14 @@ $tabletWidthMax: 991px;
   .form-control {
     border-radius: 25px;
     // font-size: 10px;
-    font-weight: 500;
+    font-weight: 300;
     font-style: italic;
     background-color: #fff;
     color: #000;
     width: 200px;
     border: none;
     padding: 0 40px 0 10px;
+    font-size: small;
 
     &:focus {
       box-shadow: 0 0 0 0.2rem rgba(237, 29, 36, 0.25);

@@ -5,6 +5,7 @@ import {
   Link,
   Switch,
   NavLink,
+  useParams,
 } from "react-router-dom";
 import MainNavbar from "./components/navbar/MainNavbar";
 import HomePage from "./components/pages/home/HomePage";

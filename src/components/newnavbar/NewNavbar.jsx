@@ -6,8 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import pdimobile from "../../img/pdimobile.svg";
 import { useStoreActions, useStoreState } from "easy-peasy";
 import "../../database/globalState";
-import { Link, NavLink } from "react-router-dom";
-import { Table } from "@material-ui/core";
+import { Link, NavLink, Redirect } from "react-router-dom";
 
 const NewNavbar = ({ token }) => {
   const setRefresher = useStoreActions((action) => action.setRefresher);
@@ -55,6 +54,12 @@ const NewNavbar = ({ token }) => {
     await setNavHeight(ht);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    window.location.href = `/search/${search}`;
+    sessionStorage.setItem("search", search);
+  };
+
   useEffect(() => {
     getDataMenu();
     window.addEventListener("load", () => {
@@ -77,7 +82,7 @@ const NewNavbar = ({ token }) => {
                 window.scrollY > 1
                   ? "-1px 7px 30px -12px rgba(0,0,0,0.75)"
                   : "none",
-              height : '10vh'
+              height: "10vh",
             }}
           >
             <div className="container-fluid">
@@ -170,7 +175,8 @@ const NewNavbar = ({ token }) => {
               </form> */}
 
                 <form
-                  action={`/search/${search}`}
+                  onSubmit={handleSubmit}
+                  // action={`/search/${search}`}
                   className="d-inline-flex"
                   style={{
                     display: "flex",
@@ -428,18 +434,24 @@ const NewNavbar = ({ token }) => {
                     </li>
                   ))}
                 </ul>
-                <form className="d-inline-flex">
+                <form className="d-inline-flex" onSubmit={handleSubmit}>
                   <input
                     className="form-control mr-2"
                     type="text"
                     placeholder="cari artikel"
                     name="search"
+                    onChange={function (e) {
+                      setSearch(e.target.value);
+                    }}
                   />
                   <Link to="/search" name="submit" className="btn-next">
                     <i
                       className="fas fa-search"
                       aria-hidden="true"
                       name="icon"
+                      onClick={() => {
+                        setCollapse1(!collapse1);
+                      }}
                     ></i>
                   </Link>
                 </form>
@@ -483,14 +495,13 @@ const NewNavbar = ({ token }) => {
                 aria-label="Toggle navigation"
                 style={{
                   color: "#fff",
-                  margin : '0 65px'
+                  margin: "0 65px",
                 }}
                 onClick={() => {
                   setCollapse1(!collapse1);
                 }}
               >
-                <i className="fa fa-bars" aria-hidden="true" style={{
-                }}></i>
+                <i className="fa fa-bars" aria-hidden="true" style={{}}></i>
               </button>
               <div
                 className="collapse navbar-collapse"
@@ -521,7 +532,7 @@ const NewNavbar = ({ token }) => {
                         style={{
                           display: "flex",
                           flexDirection: "column",
-                          padding : '10px 10%'
+                          padding: "10px 10%",
                         }}
                       >
                         <div
@@ -586,7 +597,7 @@ const NewNavbar = ({ token }) => {
                             style={{
                               height: "50px",
                               transition: "0.5s ease-in-out",
-                              padding : '0 10%'
+                              padding: "0 10%",
                             }}
                             key={e.key}
                           >
@@ -691,18 +702,24 @@ const NewNavbar = ({ token }) => {
                       ))}
                     </ul> */}
                 </ul>
-                <form className="d-inline-flex">
+                <form className="d-inline-flex" onSubmit={handleSubmit}>
                   <input
                     className="form-control mr-2"
                     type="text"
                     placeholder="cari artikel"
                     name="search"
+                    onChange={function (e) {
+                      setSearch(e.target.value);
+                    }}
                   />
                   <Link to="/search" name="submit" className="btn-next">
                     <i
                       className="fas fa-search"
                       aria-hidden="true"
                       name="icon"
+                      onClick={() => {
+                        setCollapse1(!collapse1);
+                      }}
                     ></i>
                   </Link>
                 </form>

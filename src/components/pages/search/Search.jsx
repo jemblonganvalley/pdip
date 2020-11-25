@@ -11,13 +11,14 @@ import { useEffect } from "react";
 import Wait from "../../wait/Wait";
 import ReactPaginate from "react-paginate";
 
-
 const Search = () => {
   // Onchange text from input search
   const search = useStoreState((state) => state.search);
   const setSearch = useStoreActions((action) => action.setSearch);
   // const querySearch = useQuery("search");
   let [show, setShow] = useState(false);
+
+  // const keyword = useParams("keyword");
 
   const [configHome, setConfigHome] = useState([]);
   const [pag, setPag] = useState();
@@ -68,6 +69,11 @@ const Search = () => {
     );
   };
 
+  const getSessionStoreage = async () => {
+    const ss = await sessionStorage.getItem("search");
+    await setSearch(ss);
+  };
+
   const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
       method: "POST",
@@ -91,7 +97,7 @@ const Search = () => {
         },
         body: JSON.stringify({
           limit: 10,
-          keyword: search,
+          keyword: search || "megawati",
         }),
       }
     );
@@ -105,48 +111,52 @@ const Search = () => {
     getConfigHome();
   }, [search, numPage]);
 
+  useEffect(() => {
+    getSessionStoreage();
+  }, []);
+
   return (
     <>
       {/* Modal Display Search */}
-      {configHome.length > 0 ? (
-        <>
-          <div className="modal-display-search">
-            {/* Bg Black Search */}
-            <form action="" className="background-black-search">
-              <h6 className="txt-kata-yang-diCari" id="txtGroup">
-                Kata yang dicari :
-              </h6>
+      <>
+        <div className="modal-display-search">
+          {/* Bg Black Search */}
+          <div className="background-black-search">
+            <h6 className="txt-kata-yang-diCari" id="txtGroup">
+              Kata yang dicari :
+            </h6>
 
-              <div className="kolom-search-modal">
-                {/* For Save Change Text */}
-                <div
-                  className="box-change-text"
-                  style={{
-                    display: show ? "none" : "flex",
-                  }}
-                ></div>
-                {/* END For Save Change Text */}
-                <input
-                  type="text"
-                  className="input-search"
-                  id="txtGroup"
-                  autoFocus
-                  value={search ? search : ""}
-                  onChange={(e) => {
-                    setSearch(e.target.value);
-                  }}
-                />
+            <div className="kolom-search-modal">
+              {/* For Save Change Text */}
+              <div
+                className="box-change-text"
+                style={{
+                  display: show ? "none" : "flex",
+                }}
+              ></div>
+              {/* END For Save Change Text */}
+              <input
+                type="text"
+                className="input-search"
+                id="txtGroup"
+                autoFocus
+                value={search ? search : ""}
+                onChange={(e) => {
+                  setSearch(e.target.value);
+                }}
+              />
 
-                <button className="btn-icon-pageSearch">
-                  <span className="material-icons" id="txtGroup">
-                    search
-                  </span>
-                </button>
-              </div>
-            </form>
-            {/* END Bg Black Search */}
+              <button className="btn-icon-pageSearch">
+                <span className="material-icons" id="txtGroup">
+                  search
+                </span>
+              </button>
+            </div>
+          </div>
+          {/* END Bg Black Search */}
 
-            {/* Container Hasil Pencarian */}
+          {/* Container Hasil Pencarian */}
+          {configHome.length > 0 ? (
             <div className="container-hasil-pencarian">
               {/* Column1 */}
               <div className="column1-hasil-pencarian">
@@ -154,44 +164,16 @@ const Search = () => {
 
                 <div className="garis-abu-abu"></div>
               </div>
-              {/* END Column1 */}
 
-              {/* Column2 */}
               <div className="column2-hasil-pencarian">
-                <div className="column-info-kiri">
-                  <CardSearch cardSearchItem={configHome} />
-                </div>
-
-                {/* <div className="column-info-kanan">
-                  <Link className="btn-info-kanan">
-                    <i className="fas fa-plus" id="fontGroup-info"></i>
-
-                    <p className="title-info" id="fontGroup-info">
-                      partai
-                    </p>
-                  </Link>
-
-                  <Link className="btn-info-kanan">
-                    <i className="fas fa-plus" id="fontGroup-info"></i>
-
-                    <p className="title-info" id="fontGroup-info">
-                      bungkarno bapak bangsa
-                    </p>
-                  </Link>
-                </div> */}
-              </div>
-              {/* END Column2 */}
-
-              {/* Column3 Paginate */}
-              <div className="column3-pagination-pencarian">
-                {/* {pag && (
-                  <div className="column-pagination-berita-nasional">
-                    <AngkaPaginationEvent
-                      itemEventPerPage={pag.per_page}
-                      totalPosts={pag.total}
-                    />
+                {search && (
+                  <div className="column-info-kiri">
+                    <CardSearch cardSearchItem={configHome} />
                   </div>
-                )} */}
+                )}
+              </div>
+
+              <div className="column3-pagination-pencarian">
                 {pag && (
                   <div className="container-angka-pagination">
                     <div className="col-angka-pagination">
@@ -200,33 +182,30 @@ const Search = () => {
                         pageCount={pag.total / pag.per_page}
                         pageRangeDisplayed={9}
                         marginPagesDisplayed={0}
-                        previousLabel={'<<'}
-                        previousClassName='prev'
-                        nextLabel={'>>'}
-                        nextLinkClassName='next'
-                        containerClassName='angka-pagination'
-                        pageClassName='paginationLink'
-                        activeClassName='activePagination'
-                        eventListener='onClick'
+                        previousLabel={"<<"}
+                        previousClassName="prev"
+                        nextLabel={">>"}
+                        nextLinkClassName="next"
+                        containerClassName="angka-pagination"
+                        pageClassName="paginationLink"
+                        activeClassName="activePagination"
+                        eventListener="onClick"
                         onPageChange={(e) => {
-                          setNumPage(e.selected + 1)
-                        }} />
+                          setNumPage(e.selected + 1);
+                        }}
+                      />
                     </div>
                   </div>
                 )}
               </div>
-              {/* END Column3 Paginate */}
-              {/* END Container Hasil Pencarian */}
             </div>
-            {/* END Container Hasil Pencarian */}
-          </div>
-          {/* END Modal Display Search */}
-        </>
-      ) : (
-        <>
-          <Wait />
-        </>
-      )}
+          ) : (
+            <>
+              <Wait />
+            </>
+          )}
+        </div>
+      </>
     </>
   );
 };
