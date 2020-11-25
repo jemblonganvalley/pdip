@@ -127,7 +127,7 @@ function App() {
             <FormPdi />
           </Route>
 
-          <Route path="/search/:keyword">
+          <Route path="/search">
             <Search />
           </Route>
 

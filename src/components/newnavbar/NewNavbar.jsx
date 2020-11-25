@@ -6,8 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import pdimobile from "../../img/pdimobile.svg";
 import { useStoreActions, useStoreState } from "easy-peasy";
 import "../../database/globalState";
-import { Link, NavLink } from "react-router-dom";
-import { Table } from "@material-ui/core";
+import { Link, NavLink, Redirect } from "react-router-dom";
 
 const NewNavbar = ({ token }) => {
   const setRefresher = useStoreActions((action) => action.setRefresher);
@@ -53,6 +52,12 @@ const NewNavbar = ({ token }) => {
   const getNavHeight = async () => {
     const ht = await document.getElementById("navbar").offsetHeight;
     await setNavHeight(ht);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    window.location.href = `/search/${search}`;
+    sessionStorage.setItem("search", search);
   };
 
   useEffect(() => {
@@ -170,12 +175,12 @@ const NewNavbar = ({ token }) => {
               </form> */}
 
                 <form
-                  action={`/search/${search}`}
+                  onSubmit={handleSubmit}
+                  // action={`/search/${search}`}
                   className="d-inline-flex"
                   style={{
                     display: "flex",
                   }}
-                  method="get"
                 >
                   <input
                     className="form-control mr-2"

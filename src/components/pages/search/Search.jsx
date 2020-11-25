@@ -69,6 +69,11 @@ const Search = () => {
     );
   };
 
+  const getSessionStoreage = async () => {
+    const ss = await sessionStorage.getItem("search");
+    await setSearch(ss);
+  };
+
   const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
       method: "POST",
@@ -92,7 +97,7 @@ const Search = () => {
         },
         body: JSON.stringify({
           limit: 10,
-          keyword: search,
+          keyword: search || "megawati",
         }),
       }
     );
@@ -105,6 +110,10 @@ const Search = () => {
   useEffect(() => {
     getConfigHome();
   }, [search, numPage]);
+
+  useEffect(() => {
+    getSessionStoreage();
+  }, []);
 
   return (
     <>
