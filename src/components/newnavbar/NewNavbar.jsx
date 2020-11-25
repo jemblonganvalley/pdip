@@ -434,18 +434,24 @@ const NewNavbar = ({ token }) => {
                     </li>
                   ))}
                 </ul>
-                <form className="d-inline-flex">
+                <form className="d-inline-flex" onSubmit={handleSubmit}>
                   <input
                     className="form-control mr-2"
                     type="text"
                     placeholder="cari artikel"
                     name="search"
+                    onChange={function (e) {
+                      setSearch(e.target.value);
+                    }}
                   />
                   <Link to="/search" name="submit" className="btn-next">
                     <i
                       className="fas fa-search"
                       aria-hidden="true"
                       name="icon"
+                      onClick={() => {
+                        setCollapse1(!collapse1);
+                      }}
                     ></i>
                   </Link>
                 </form>
@@ -696,18 +702,24 @@ const NewNavbar = ({ token }) => {
                       ))}
                     </ul> */}
                 </ul>
-                <form className="d-inline-flex">
+                <form className="d-inline-flex" onSubmit={handleSubmit}>
                   <input
                     className="form-control mr-2"
                     type="text"
                     placeholder="cari artikel"
                     name="search"
+                    onChange={function (e) {
+                      setSearch(e.target.value);
+                    }}
                   />
                   <Link to="/search" name="submit" className="btn-next">
                     <i
                       className="fas fa-search"
                       aria-hidden="true"
                       name="icon"
+                      onClick={() => {
+                        setCollapse1(!collapse1);
+                      }}
                     ></i>
                   </Link>
                 </form>
