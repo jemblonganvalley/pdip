@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./CarouselTataCara.scss";
-import parse from 'html-react-parser'
+import parse from "html-react-parser";
 
 const CarouselTataCara = ({ data }) => {
   return (
@@ -16,29 +16,34 @@ const CarouselTataCara = ({ data }) => {
           <div className="carousel-inner">
             {data.map((e, i) => (
               <Link
-                className={i == 1 ? "carousel-item active carousel-item-tatacara" : "carousel-item carousel-item-tatacara"}
+                className={
+                  i == 1
+                    ? "carousel-item active carousel-item-tatacara"
+                    : "carousel-item carousel-item-tatacara"
+                }
                 as="div"
+                to={e.link}
               >
                 {/* <img src={`https://atur.biar.pw/public/${e.image}`} className="imageTC" /> */}
-                <div className="imageTC" style={{
-                  background: `url(https://atur.biar.pw/public/${e.image})`,
-                  backgroundSize: 'cover'
-                }}>
-
-                  <div className="container_text_carousel">
+                <div
+                  className="imageTC"
+                  style={{
+                    background: `url(https://atur.biar.pw/public/${e.image})`,
+                    backgroundSize: "cover",
+                  }}
+                >
+                  {/* <div className="container_text_carousel">
 
                     <h4 >{e.title}</h4>
                     <p className='textPTataCara'>{parse(e.paragraph)}</p>
-                  </div>
-
+                  </div> */}
                 </div>
-
 
                 {/* For Mobile */}
-                <div className="box-red-mobile-sliderTataCara">
+                {/* <div className="box-red-mobile-sliderTataCara">
                   <h4 >{e.title}</h4>
                   <p className="pCarousel-for-mobile">{parse(e.paragraph)}</p>
-                </div>
+                </div> */}
                 {/* END For Mobile */}
               </Link>
             ))}
