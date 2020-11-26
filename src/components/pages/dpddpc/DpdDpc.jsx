@@ -54,7 +54,7 @@ const DpdDpc = () => {
     <>
       <div className="wrapperBeritaPage1">
         <div className="linkedBeritaPage1">
-          <BreadCrumbs link1="Home" to1="/" link2="/Partai" to2="/partai" />
+          <BreadCrumbs link1="Home" to1="/" link2="Partai" to2="/partai" link3='dpd-dpc' />
         </div>
         <div className="maps">
           <Maps />

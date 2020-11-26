@@ -239,10 +239,10 @@ $respon500: 500px;
         display: flex;
         height: 40vh;
         width: 100%;
-        margin-top: 40px;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-start;
+        margin: 3rem 0;
     
         @include respon950(){
             width: 100%;
