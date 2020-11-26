@@ -225,7 +225,7 @@ const HomePage = () => {
                       <img src={BMKG} alt="" className="imageCovid" />
                     </div>
                     <div className="itemTextCovid">
-                      <h4 style={{ color: "#fff" }}>BMKG</h4>
+                      <h4 style={{ color: "#fff" }}>INFO BMKG</h4>
                     </div>
                   </div>
                 </a>
