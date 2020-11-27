@@ -42,8 +42,8 @@ const Cards = ({
     return string;
   };
 
-  const pageSLug = () => {
-    return slug.toString().replace(" ", "-").toLowerCase()
+  const pageSLug = (args) => {
+    return args.replaceAll(" ", "-").toLowerCase();
   };
 
   const getToday = () => {
@@ -70,10 +70,10 @@ const Cards = ({
           borderRadius: borderRadius,
           marginTop: marginTop,
         }}
-        to={`${page}/${id}/${slug ? pageSLug() : null}`}
+        to={`${page}/${id}/${slug ? pageSLug(slug) : null}`}
       >
         <Link
-          to={`${page}/${id}/${slug ? pageSLug() : null}`}
+          to={`${page}/${id}/${slug ? pageSLug(slug) : null}`}
           className="imageCard"
           style={{
             backgroundImage: imageCard.includes("uploads")

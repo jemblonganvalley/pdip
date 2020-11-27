@@ -196,7 +196,7 @@ const Page1 = () => {
                 <div className="garis-panjang"></div>
 
                 <div className="box-medsos-beritaPage1">
-                  <CardSocialMedia />
+                  <CardSocialMedia title={detailPage.title} />
 
                   {/* <div className="socialMedia">
                     <small>SHARE : </small>
