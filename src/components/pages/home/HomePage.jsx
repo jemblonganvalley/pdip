@@ -18,6 +18,7 @@ import BMKG from "../../../img/replace_bmkg.png";
 import { useMediaQuery } from "react-responsive";
 import MainSliderTablet from "../../slider/tablet/MainSliderTablet";
 import MainSliderMobile from "../../slider/mobile/MainSliderMobile";
+import Slidercom from "../../slidercom/Slidercom";
 
 export const LighBox = ({ source }) => {
   return (
@@ -385,8 +386,8 @@ const HomePage = () => {
               cat2={configHome[10].value}
             />
           )}
-          <div className="sliderBrand">
-            <SliderBrand />
+          <div className="slidercom">
+            <Slidercom />
           </div>
         </div>
       ) : (

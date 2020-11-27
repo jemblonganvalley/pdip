@@ -4,9 +4,9 @@ $responsiveSatu: 1085px;
 $responsiveDua: 1000px;
 $responsiveTiga: 728px;
 $responsiveEmpat: 500px;
-
-$smallPhoneSatu: 500px;
 $smallPhoneDua: 400px;
+$smallPhoneSatu : 500px;
+$smallPhoneTiga : 200px;
 
 // Min widht 500 and Max width 750
 $respon750: 750px;
@@ -14,7 +14,6 @@ $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 @import "../../../utilities/variable/variables.scss";
-
 // Min widht 500 and Max width 750
 @mixin respon750 {
   @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
@@ -22,7 +21,11 @@ $respon500: 500px;
   }
 }
 // END Min widht 500 and Max width 750
-
+@mixin respon500 {
+  @media (min-width : #{$smallPhoneTiga}) and (max-width: #{$smallPhoneSatu}) {
+    @content;
+  }
+}
 // Min widht 750 and Max width 950
 $responMin750: 750px;
 $responMax950: 950px;
@@ -918,3 +921,23 @@ $maxHeight800: 800px;
   // END Row2
 }
 // END Column5
+
+.slidercom {
+  padding: 0 19% 0 20%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+
+  @include respon1360() {
+    padding: 0 10%;
+  }
+
+  @include respon950() {
+    padding: 0 5%;
+  }
+
+  @include respon500() {
+    padding: 0%;
+  }
+}
