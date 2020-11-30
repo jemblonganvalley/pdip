@@ -13,7 +13,7 @@ import Maps from "../../maps/Maps";
 import Wait from "../../wait/Wait";
 import parse from "html-react-parser";
 
-const PartaiPage = () => {
+const PartaiPage = ({ redirect }) => {
   const [config, setConfig] = useState([]);
   const getConfigHome = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
@@ -47,6 +47,9 @@ const PartaiPage = () => {
   useEffect(() => {
     getConfigHome();
     window.scrollTo(0, 0);
+    if (redirect) {
+      window.open(redirect);
+    }
   }, []);
 
   return (

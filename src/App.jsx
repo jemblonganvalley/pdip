@@ -6,6 +6,7 @@ import {
   Switch,
   NavLink,
   useParams,
+  Redirect,
 } from "react-router-dom";
 import MainNavbar from "./components/navbar/MainNavbar";
 import HomePage from "./components/pages/home/HomePage";
@@ -96,6 +97,10 @@ function App() {
         }}
       >
         <Switch>
+          {/* BLOG PAGE  */}
+          <Route path="/anggota-legislatif">
+            <PartaiPage redirect="https://www.dpr.go.id/anggota/index/fraksi/3" />
+          </Route>
           {/* BLOG PAGE  */}
           <Route path="/detail-article/:id">
             <Page1 />

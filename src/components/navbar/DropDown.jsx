@@ -89,6 +89,8 @@ const DropDown = ({ menuItem, listIndex }) => {
               ? `/detail-article/838/${e.title
                   .replace(/\s/g, "-")
                   .toLowerCase()}`
+              : e.params === "Anggota Legislatif"
+              ? `http://www.dpr.go.id/anggota/index/fraksi/3`
               : e.params === "all"
               ? `/${e.title.replace(/\s/g, "-").toLowerCase()}`
               : `/article/${e.params}/${e.title
