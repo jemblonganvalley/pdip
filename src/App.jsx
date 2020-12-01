@@ -98,7 +98,7 @@ function App() {
       >
         <Switch>
           {/* BLOG PAGE  */}
-          <Route path="/anggota-legislatif">
+          <Route path="/Fraksi-Pdi-Perjuangan">
             <PartaiPage redirect="https://www.dpr.go.id/anggota/index/fraksi/3" />
           </Route>
           {/* BLOG PAGE  */}
