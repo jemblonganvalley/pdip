@@ -2,6 +2,8 @@ $table: 1261px;
 
 $responsiveSatu: 1085px;
 $responsiveDua: 1000px;
+$res1151px: 1151px;
+$res980 : 951px;
 $responsiveTiga: 728px;
 $responsiveEmpat: 500px;
 $smallPhoneDua: 400px;
@@ -14,6 +16,12 @@ $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 @import "../../../utilities/variable/variables.scss";
+
+@mixin respon981 {
+  @media (min-width : #{$res980}) and (max-width: #{$res1151px}) {
+    @content;
+  }
+}
 // Min widht 500 and Max width 750
 @mixin respon750 {
   @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
@@ -237,13 +245,29 @@ $maxHeight800: 800px;
     }
 
     .groupArticleUtama {
-      width: 100%;
-      height: 100%;
-      margin: 0.5rem 10px;
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      margin: 0.5rem 10px;
 
+
+      @include respon950() {
+        width: 100%;
+        margin: 0.5rem 10px;
+
+      }
+
+      @include respon750() {
+        width: 100%;
+        margin: 0.5rem 10px;
+        
+      }
+
+      @include smallPhone() {
+        width: 100%;
+        margin: 0.5rem 10px;
+
+      }
       
     }
 
@@ -312,6 +336,9 @@ $maxHeight800: 800px;
           @include respon1440() {
             height: 65px;
           }
+          @include respon981() {
+            height: 60px;
+          }
         }
       }
       .itemTextCovid {
@@ -325,6 +352,9 @@ $maxHeight800: 800px;
 
           @include respon1440() {
             font-size: 13pt;
+          }
+          @include respon981() {
+            font-size: 10pt;
           }
         }
       }
