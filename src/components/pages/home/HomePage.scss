@@ -9,6 +9,8 @@ $responsiveEmpat: 500px;
 $smallPhoneDua: 400px;
 $smallPhoneSatu : 500px;
 $smallPhoneTiga : 200px;
+$res1441 : 1441px;
+$res1700 : 1700px;
 
 // Min widht 500 and Max width 750
 $respon750: 750px;
@@ -16,6 +18,12 @@ $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 @import "../../../utilities/variable/variables.scss";
+
+@mixin respon1600 {
+  @media (min-width : #{$res1441}) and (max-width: #{$res1700}) {
+    @content;
+  }
+}
 
 @mixin respon981 {
   @media (min-width : #{$res980}) and (max-width: #{$res1151px}) {
@@ -338,6 +346,9 @@ $maxHeight800: 800px;
           }
           @include respon981() {
             height: 60px;
+          }
+          @include respon1600() {
+            height: 70px;
           }
         }
       }
