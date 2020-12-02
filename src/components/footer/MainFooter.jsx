@@ -21,12 +21,12 @@ const MainFooter = () => {
           <div className="textFooter">
             {/* <small className="heads">situation room pdi perjuangan</small> */}
             <small className="body">
-              Situs pdiperjuangan.id merupakan website resmi Dewan Pimpinan
-              Pusat Partai Demokrasi Indonesia Perjuangan (DPP PDI Perjuangan).
-              Situs yang digagas oleh Muhammad Prananda Prabowo ini merupakan
+              pdiperjuangan.id merupakan situs web resmi Dewan Pimpinan Pusat
+              Partai Demokrasi Indonesia Perjuangan (DPP PDI Perjuangan). Situs
+              yang dikendalikan oleh Muhammad Prananda Prabowo ini merupakan
               induk dari media sosial resmi Partai, di antaranya Facebook,
-              Twitter, Instagram dan Youtube, dan merupakan satu kesatuan dengan
-              aplikasi Media Pintar Perjuangan
+              Twitter, Instagram, dan Youtube, serta satu kesatuan dengan
+              aplikasi Media Pintar Perjuangan.
             </small>
             {/* <small className="foot">
               Untuk dukungan dan partisipasi, kirimkan naskah atau artikel
