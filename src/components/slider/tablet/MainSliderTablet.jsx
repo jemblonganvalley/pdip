@@ -98,9 +98,7 @@ const MainSliderTablet = ({ value, cls }) => {
                     <p className="txt-info-iklan-tablet" style={{
                         textAlign: 'center'
                     }}>
-                        Segera hadir aplikasi MEDIA PINTAR PERJUANGAN untuk
-                        mendapatkan pengalaman dan informasi program serta kerja
-                        nyata Partai PDI Perjuangan.
+                        Segera hadir aplikasi MEDIA PINTAR PERJUANGAN untuk mendapatkan pengetahuan, pengalaman dan informasi program serta kerja nyata PDI Perjuangan.
                       </p>
                     <div className="storeTablet">
                         <Link href="">

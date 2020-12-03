@@ -79,10 +79,9 @@ const MainSlider = ({ value, cls }) => {
             {/* Box Paragrap Iklan */}
             <div className="box-paragrap-info-iklan">
               <strong className="txt-info-iklan">
-                Segera hadir aplikasi MEDIA PINTAR PERJUANGAN untuk mendapatkan
-                pengalaman
-                <br />
-                dan informasi program serta kerja nyata Partai PDI Perjuangan.
+              Segera hadir aplikasi MEDIA PINTAR PERJUANGAN untuk mendapatkan pengetahuan, 
+              <br/>
+              pengalaman dan informasi program serta kerja nyata PDI Perjuangan.
               </strong>
 
               <div className="box-logo-info-iklan">
