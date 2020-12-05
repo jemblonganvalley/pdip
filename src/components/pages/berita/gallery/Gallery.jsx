@@ -10,7 +10,6 @@ import { colors } from "@material-ui/core";
 import parse from "html-react-parser";
 import ReactPaginate from "react-paginate";
 
-
 // READ BEFORE USE
 
 const Gallery = () => {
@@ -145,7 +144,6 @@ const Gallery = () => {
             {/* Column1 */}
             <div className="col1-container-1-beritaPage2">
               <>
-                
                 {configHome.length > 0 && (
                   <CarouselBeritaPage2 data={configHome} />
                 )}
@@ -156,7 +154,7 @@ const Gallery = () => {
                     {/* Column Txt Admin */}
                     <div className="column-txt-admin">
                       <p className="txt-admin">
-                        {configHome[0].author} |{" "}
+                        {configHome[0].author_name} |{" "}
                         {configHome[0].created_at.split(" ")[0]}
                       </p>
                     </div>
@@ -242,17 +240,18 @@ const Gallery = () => {
                   pageCount={pag.total / pag.per_page}
                   pageRangeDisplayed={9}
                   marginPagesDisplayed={0}
-                  previousLabel={'<<'}
-                  previousLinkClassName='prev'
-                  nextLabel={'>>'}
-                  nextLinkClassName='next'
-                  containerClassName='angka-pagination'
-                  pageClassName='paginationLink'
-                  activeClassName='activePagination'
-                  eventListener='onClick'
+                  previousLabel={"<<"}
+                  previousLinkClassName="prev"
+                  nextLabel={">>"}
+                  nextLinkClassName="next"
+                  containerClassName="angka-pagination"
+                  pageClassName="paginationLink"
+                  activeClassName="activePagination"
+                  eventListener="onClick"
                   onPageChange={(e) => {
-                    setNumPage(e.selected + 1)
-                  }} />
+                    setNumPage(e.selected + 1);
+                  }}
+                />
               </div>
             </div>
           )}

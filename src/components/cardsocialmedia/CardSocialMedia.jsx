@@ -1,49 +1,52 @@
-import React from 'react'
-import './CardSocialMedia.scss'
-import { FacebookShareButton, InstapaperShareButton, TwitterShareButton, WhatsappShareButton } from 'react-share'
+import React from "react";
+import "./CardSocialMedia.scss";
+import {
+  FacebookShareButton,
+  InstapaperShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+} from "react-share";
 
-const CardSocialMedia = ()=>{
+const CardSocialMedia = () => {
+  let quote = "PDI Perjuangan";
+  let hashtag = "#PDIPERJUANGAN";
+  let titleForWhatsapp = "PDI Perjuangan";
 
-    
-    let quote ="PDI Perjuangan"
-    let hashtag = "#PDIPERJUANGAN"
-    let titleForWhatsapp = "PDI Perjuangan"
+  return (
+    <>
+      <div className="socialMedia">
+        <p className="share-socialMedia">SHARE : </p>
+        {/* Facebook Share */}
+        <FacebookShareButton
+          url={`https://pas.biar.pw/` + window.location.hostname}
+          quote={quote}
+          hashtag={hashtag}
+        >
+          <i className="fa fa-facebook"></i>
+        </FacebookShareButton>
+        {/* END Facebook Share */}
 
-    return(
-        <>
-        <div className="socialMedia">
-            <p className="share-socialMedia">SHARE : </p>
-              {/* Facebook Share */}
-              <FacebookShareButton
-                url={`https://pas.biar.pw/` + window.location.hostname}
-                quote={quote}
-                hashtag={hashtag}
-              >
-                <i className="fa fa-facebook"></i>
-              </FacebookShareButton>
-              {/* END Facebook Share */}
+        {/* Twitter Share */}
+        <TwitterShareButton
+          url={window.location.href}
+          quote={quote}
+          hashtag={hashtag}
+        >
+          <i className="fa fa-twitter"></i>
+        </TwitterShareButton>
+        {/* END Twitter Share */}
 
-              {/* Twitter Share */}
-              <TwitterShareButton
-                url={window.location.href}
-                quote={quote}
-                hashtag={hashtag}
-              >
-                <i className="fa fa-twitter"></i>
-              </TwitterShareButton>
-              {/* END Twitter Share */}
+        {/* WhatsApp Share */}
+        <WhatsappShareButton
+          url={window.location.href}
+          title={titleForWhatsapp}
+        >
+          <i className="fa fa-whatsapp"></i>
+        </WhatsappShareButton>
+        {/* END WhatsApp Share */}
+      </div>
+    </>
+  );
+};
 
-              {/* WhatsApp Share */}
-              <WhatsappShareButton
-                url={`https://pas.biar.pw/` + window.location.href}
-                title={titleForWhatsapp}
-              >
-                <i className="fa fa-whatsapp"></i>
-              </WhatsappShareButton>
-              {/* END WhatsApp Share */}
-        </div>
-        </>
-    )
-}
-
-export default CardSocialMedia
+export default CardSocialMedia;
