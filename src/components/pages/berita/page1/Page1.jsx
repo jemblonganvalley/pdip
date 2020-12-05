@@ -62,12 +62,16 @@ const Page1 = () => {
         <>
           <MetaTags>
             <meta name="description" content={detailPage.title} />
+            <meta property="og:url" content={`https://pas.biar.pw`} />
             <meta property="og:title" content={detailPage.title} />
             <meta property="og:description" content={detailPage.title} />
             <meta
               property="og:image"
               content={`https://atur.biar.pw/public${detailPage.path}`}
             />
+
+            <meta property="og:type" content="website" />
+            <meta content="image/*" property="og:image:type" />
           </MetaTags>
           <div className="wrapperBeritaPage1">
             {/* Untuk page detail berita tidak memakai Headers */}
@@ -214,7 +218,10 @@ const Page1 = () => {
                   <div className="garis-panjang"></div>
 
                   <div className="box-medsos-beritaPage1">
-                    <CardSocialMedia imageUrl={detailPage.path} />
+                    <CardSocialMedia
+                      imageUrl={detailPage.path}
+                      title={detailPage.title}
+                    />
 
                     {/* <div className="socialMedia">
                     <small>SHARE : </small>
