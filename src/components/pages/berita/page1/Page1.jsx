@@ -10,6 +10,7 @@ import Wait from "../../../wait/Wait";
 import { useStoreState } from "easy-peasy";
 import NotFound from "../../../notFound/NotFound";
 import { Helmet } from "react-helmet";
+import MetaTags from "react-meta-tags";
 import { parse } from "html-react-parser";
 
 const Page1 = () => {
@@ -59,9 +60,15 @@ const Page1 = () => {
     <>
       {detailPage ? (
         <>
-          <Helmet>
+          <MetaTags>
             <meta name="description" content={detailPage.title} />
-          </Helmet>
+            <meta property="og:title" content={detailPage.title} />
+            <meta property="og:description" content={detailPage.title} />
+            <meta
+              property="og:image"
+              content={`https://atur.biar.pw/public${detailPage.path}`}
+            />
+          </MetaTags>
           <div className="wrapperBeritaPage1">
             {/* Untuk page detail berita tidak memakai Headers */}
 
@@ -207,7 +214,7 @@ const Page1 = () => {
                   <div className="garis-panjang"></div>
 
                   <div className="box-medsos-beritaPage1">
-                    <CardSocialMedia />
+                    <CardSocialMedia imageUrl={detailPage.path} />
 
                     {/* <div className="socialMedia">
                     <small>SHARE : </small>

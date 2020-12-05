@@ -7,7 +7,7 @@ import {
   WhatsappShareButton,
 } from "react-share";
 
-const CardSocialMedia = () => {
+const CardSocialMedia = ({ imageUrl }) => {
   let quote = "PDI Perjuangan";
   let hashtag = "#PDIPERJUANGAN";
   let titleForWhatsapp = "PDI Perjuangan";
@@ -19,6 +19,7 @@ const CardSocialMedia = () => {
         {/* Facebook Share */}
         <FacebookShareButton
           url={`https://pas.biar.pw/` + window.location.hostname}
+          imageUrl={`https://pas.biar.pw/public/${imageUrl}`}
           quote={quote}
           hashtag={hashtag}
         >
@@ -39,6 +40,7 @@ const CardSocialMedia = () => {
         {/* WhatsApp Share */}
         <WhatsappShareButton
           url={window.location.href}
+          imageUrl={`https://pas.biar.pw/public/${imageUrl}`}
           title={titleForWhatsapp}
         >
           <i className="fa fa-whatsapp"></i>
