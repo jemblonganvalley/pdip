@@ -17,7 +17,6 @@ const QuotesBkbb = ({
       <div className="kolumQuotesBkbb">
         <img
           src={backgroundImage}
-          alt=""
           width="100%"
           style={{
             width: "100%",

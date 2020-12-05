@@ -16,7 +16,6 @@ const VMedia = ({
         {backgroundImage ? (
           <img
             src={backgroundImage}
-            alt=""
             width="100%"
             style={{
               width: "100%",
@@ -27,11 +26,12 @@ const VMedia = ({
           />
         ) : (
           <iframe
+            title="iframe"
             className="iframe-Vmedia"
             src={source}
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         )}
       </div>

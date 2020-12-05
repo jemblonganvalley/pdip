@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  NavLink,
-  useParams,
-  Redirect,
-} from "react-router-dom";
-import MainNavbar from "./components/navbar/MainNavbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./components/pages/home/HomePage";
 import MainFooter from "./components/footer/MainFooter";
 import PartaiPage from "./components/pages/partai/PartaiPage";
@@ -27,21 +18,18 @@ import VideoMedia from "./components/pages/videomedia/VideoMedia";
 import Page1 from "./components/pages/berita/page1/Page1";
 import Page2 from "./components/pages/berita/page2/Page2";
 import MateriPokok from "./components/pages/materipokok/MateriPokok";
-import BkbbWejangan from "./components/pages/bkbb/BkbbWejangan";
-import AllComponent from "./components/allcomponent/AllComponent";
+
 import BgRed from "./components/bgRed/BgRed";
 import WejanganBungKarno from "./components/pages/bkbb/wejanganbungkarno/WejanganBungKarno";
-import { useStoreActions, useStoreState } from "easy-peasy";
+import { useStoreActions } from "easy-peasy";
 import EventPage from "./components/pages/events/EventPage";
 import ContainerCard from "./components/containerCard/ContainerCard";
 import Search from "./components/pages/search/Search";
 import ContainerCardGallery from "./components/gallery/ContainerCardGallery";
-import BeritaFoto from "./components/pages/berita/beritafoto/BeritaFoto";
 import Gallery from "./components/pages/berita/gallery/Gallery";
 import ContainerCardMultimedia from "./components/multimedia/ContainerCardMultimedia";
 import FormPdi from "./components/pages/informasi/formpdi/FormPdi";
 import FormKeluhan from "./components/pages/informasi/formkeluhan/FormKeluhan";
-import CardBkbbQuotes2 from "./components/cardbkbbquotes2/CardBkbbQuotes2";
 import PidatoAll from "./components/pages/KetuaUmum/pidatoAll/PidatoAll";
 import MultimediaAll from "./components/pages/multimediaPage/multimediaAll/MultimediaAll";
 import NewNavbar from "./components/newnavbar/NewNavbar";
@@ -49,11 +37,8 @@ import DpdDpc from "./components/pages/dpddpc/DpdDpc";
 import NotFound from "./components/notFound/NotFound";
 function App() {
   let [hide, setHide] = useState(true);
-  let token = useStoreState((state) => state.token);
   const getGlobalToken = useStoreActions((action) => action.setToken);
-  let [dataMenu, setDataMenu] = useState();
   let [tkn, setTkn] = useState();
-  const navHeight = useStoreState((state) => state.navHeight);
   const getToken = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
       method: "POST",

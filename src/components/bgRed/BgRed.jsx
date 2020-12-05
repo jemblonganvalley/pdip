@@ -1,25 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./BgRed.scss";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 // import InstagramEmbed from 'react-instagram-embed';
-import InstaFeedCustom from "../../components/instafeed/InstaFeedCustom";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 
 const BgRed = () => {
-  const Desktop = ({ children }) => {
-    const isDesktop = useMediaQuery({ minWidth: 992 });
-    return isDesktop ? children : null;
-  };
+  // const Desktop = ({ children }) => {
+  //   const isDesktop = useMediaQuery({ minWidth: 992 });
+  //   return isDesktop ? children : null;
+  // };
 
-  const Tablet = ({ children }) => {
-    const isTablet = useMediaQuery({ minWidth: 751, maxWidth: 991 });
-    return isTablet ? children : null;
-  };
+  // const Tablet = ({ children }) => {
+  //   const isTablet = useMediaQuery({ minWidth: 751, maxWidth: 991 });
+  //   return isTablet ? children : null;
+  // };
 
-  const Mobile = ({ children }) => {
-    const isMobile = useMediaQuery({ maxWidth: 767 });
-    return isMobile ? children : null;
-  };
+  // const Mobile = ({ children }) => {
+  //   const isMobile = useMediaQuery({ maxWidth: 767 });
+  //   return isMobile ? children : null;
+  // };
 
   return (
     <>

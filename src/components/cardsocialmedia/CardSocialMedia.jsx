@@ -19,7 +19,6 @@ const CardSocialMedia = ({ imageUrl, title }) => {
         {/* Facebook Share */}
         <FacebookShareButton
           url={window.location.href}
-          imageUrl={`https://pas.biar.pw/public${imageUrl}`}
           quote={title}
           hashtag={hashtag}
         >
@@ -38,11 +37,7 @@ const CardSocialMedia = ({ imageUrl, title }) => {
         {/* END Twitter Share */}
 
         {/* WhatsApp Share */}
-        <WhatsappShareButton
-          url={window.location.href}
-          imageUrl={`https://pas.biar.pw/public${imageUrl}`}
-          title={title}
-        >
+        <WhatsappShareButton url={window.location.href} title={title}>
           <i className="fa fa-whatsapp"></i>
         </WhatsappShareButton>
         {/* END WhatsApp Share */}

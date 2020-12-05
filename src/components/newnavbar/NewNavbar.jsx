@@ -334,14 +334,14 @@ const NewNavbar = ({ token }) => {
                         }}
                       >
                         {/* Container Dropdown menu mobile */}
-                        {Object.values(menu)[i].map((e) => (
+                        {Object.values(menu)[i].map((e, i) => (
                           <div
+                            key={i}
                             className="dropdown-menu-mobile "
                             style={{
                               height: "50px",
                               transition: "0.5s ease-in-out",
                             }}
-                            key={e.key}
                           >
                             <Link
                               className="page-menu-drop-mobile"
@@ -591,8 +591,9 @@ const NewNavbar = ({ token }) => {
                         }}
                       >
                         {/* Container Dropdown menu mobile */}
-                        {Object.values(menu)[i].map((e) => (
+                        {Object.values(menu)[i].map((e, i) => (
                           <div
+                            key={i}
                             className="dropdown-menu-mobile "
                             style={{
                               height: "50px",
