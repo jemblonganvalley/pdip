@@ -137,60 +137,6 @@ const PartaiPage = ({ redirect }) => {
                     <CarouselKetuaUmumPage data={config[2].value} />
                   </div>
                   {/* END Card Carousel */}
-                  {/* <div className="col col-lg-8 parentCarousel">
-                    <div className="wrapperCarousel">
-                      <div
-                        id="carouselExampleIndicators"
-                        className="carousel slide"
-                        data-ride="carousel"
-                      >
-                        <ol className="carousel-indicators carouselPartai">
-                          <li
-                            data-target="#carouselExampleIndicators"
-                            data-slide-to={0}
-                            className="active"
-                          />
-                          <li
-                            data-target="#carouselExampleIndicators"
-                            data-slide-to={1}
-                          />
-                          <li
-                            data-target="#carouselExampleIndicators"
-                            data-slide-to={2}
-                          />
-                        </ol>
-
-                        <div className="carousel-inner">
-                          {config[2].value.map((e, i) => (
-                            <div
-                              className={
-                                i === 0
-                                  ? `carousel-item active`
-                                  : "carousel-item"
-                              }
-                              key={i}
-                            >
-                              <div
-                                className="carouselImgSatu"
-                                style={{
-                                  backgroundImage: `url(https://atur.biar.pw/public/${e.image})`,
-                                }}
-                              ></div>
-
-                              <div class="carousel-caption  d-md-block">
-                                <h3>{e.title}</h3>
-                                <p
-                                  dangerouslySetInnerHTML={{
-                                    __html: e.paragraph,
-                                  }}
-                                ></p>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
               </div>
               {/* END */}

@@ -12,7 +12,7 @@ const VMedia = ({
 }) => {
   return (
     <div className="wrapperPlayVid">
-      <div className="kolumVideo" >
+      <div className="kolumVideo">
         {backgroundImage ? (
           <img
             src={backgroundImage}
@@ -39,15 +39,11 @@ const VMedia = ({
       <div
         className="descVideo"
         style={{
-          backgroundColor: descColor && `${descColor}`
+          backgroundColor: descColor && `${descColor}`,
         }}
       >
         <div className="textTop">
           <small>Admin PDI Perjuangan {date && "|" + date.split(" ")[0]}</small>
-          {/* <div className="countLove">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                        <small>0</small>
-                    </div> */}
         </div>
 
         <h5 className="headline">{headline}</h5>
@@ -56,12 +52,6 @@ const VMedia = ({
           {/* Card Social Media */}
           <CardSocialMedia />
           {/* END Card Social Media */}
-
-          {/* <small className="marginShare">SHARE : </small>
-                    <i class="fa fa-facebook marginShare" aria-hidden="true"></i>
-                    <i class="fa fa-twitter marginShare" aria-hidden="true"></i>
-                    <i class="fa fa-instagram marginShare" aria-hidden="true"></i>
-                    <i class="fa fa-whatsapp marginShare" aria-hidden="true"></i> */}
         </div>
       </div>
     </div>

@@ -390,13 +390,6 @@ const MainNavbar = ({ token }) => {
                   </li>
                 </div>
                 {/* END Trigger For Menu Dropdown menu mobile */}
-
-                {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown" expanded>
-                      {e.listItem.map((e)=>(
-                        <li><Link class="dropdown-item" to={e.listTo}>{e.listName}</Link></li>
-                        
-                      ))}
-                    </ul> */}
               </ul>
               <div className="d-inline-flex">
                 <input

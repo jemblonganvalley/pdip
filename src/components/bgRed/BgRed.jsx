@@ -3,12 +3,9 @@ import "./BgRed.scss";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 // import InstagramEmbed from 'react-instagram-embed';
 import InstaFeedCustom from "../../components/instafeed/InstaFeedCustom";
-import {useMediaQuery} from 'react-responsive'
-
+import { useMediaQuery } from "react-responsive";
 
 const BgRed = () => {
-
-
   const Desktop = ({ children }) => {
     const isDesktop = useMediaQuery({ minWidth: 992 });
     return isDesktop ? children : null;
@@ -23,7 +20,7 @@ const BgRed = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 });
     return isMobile ? children : null;
   };
-  
+
   return (
     <>
       <div>
@@ -34,10 +31,24 @@ const BgRed = () => {
               <h5>facebook</h5>
             </header>
 
-            <div className="containerFacebook" id='pageContainer'>
-            <div class="fb-page" data-href="https://www.facebook.com/PDIPerjuangan/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
-            <div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/PDIPerjuangan"><a href="https://www.facebook.com/PDIPerjuangan">PDI PERJUANGAN</a></blockquote></div>
-            </div>
+            <div className="containerFacebook" id="pageContainer">
+              <div
+                className="fb-page"
+                data-href="https://www.facebook.com/PDIPerjuangan/"
+                data-tabs="timeline"
+                data-small-header="false"
+                data-adapt-container-width="true"
+                data-hide-cover="false"
+                data-show-facepile="false"
+              >
+                <div className="fb-xfbml-parse-ignore">
+                  <blockquote cite="https://www.facebook.com/PDIPerjuangan">
+                    <a href="https://www.facebook.com/PDIPerjuangan">
+                      PDI PERJUANGAN
+                    </a>
+                  </blockquote>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -71,9 +82,9 @@ const BgRed = () => {
               style={{
                 backgroundColor: "#fff",
                 borderRadius: "5px",
-                display : 'flex',
-                justifyContent : 'center',
-                alignItems : 'center'
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
                 // margin: "0 10px",
               }}
             >
