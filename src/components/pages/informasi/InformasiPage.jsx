@@ -16,8 +16,8 @@ import parse from "html-react-parser";
 
 const anchorLink = (props) => {
   return (
-    <a
-      href={props.linkTo}
+    <Link
+      to={props.linkTo}
       className="cardLaporan cardLaporanSatu"
       style={{
         padding: "0 20px",
@@ -27,7 +27,7 @@ const anchorLink = (props) => {
       }}
     >
       {props.children}
-    </a>
+    </Link>
   );
 };
 
@@ -251,7 +251,7 @@ const InformasiPage = () => {
                 marginTop: "20px",
               }}
             >
-              <Link component={anchorLink} linkTo="/not-found">
+              <Link component={anchorLink} linkTo="/formpdi">
                 <div className="box-card-laporan">
                   <img
                     src={`https://atur.biar.pw/public/${configHome[7].value[0].image}`}
@@ -270,7 +270,7 @@ const InformasiPage = () => {
                 </div>
               </Link>
 
-              <Link component={anchorLink} linkTo="/not-found">
+              <Link component={anchorLink} linkTo="/formkeluhan">
                 <div className="box-card-laporan">
                   <img
                     src={`https://atur.biar.pw/public/${configHome[7].value[1].image}`}

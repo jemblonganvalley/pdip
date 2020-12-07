@@ -43,7 +43,7 @@ const Cards = ({
   };
 
   const pageSLug = () => {
-    return slug.toString().replace(" ", "-").toLowerCase()
+    return slug.toString().replaceAll(" ", "-").toLowerCase();
   };
 
   const getToday = () => {

@@ -1,42 +1,42 @@
-@import '../../../../utilities/variable/variables.scss';
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+@import "../../../../utilities/variable/variables.scss";
+$smallPhoneSatu: 500px;
+$smallPhoneDua: 400px;
 
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
 // Min widht 500 and Max width 750
-$respon750 : 750px;
+$respon750: 750px;
 $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 // Min widht 500 and Max width 750
 @mixin respon750 {
-    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
-        @content;
-    }
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
 }
 // END Min widht 500 and Max width 750
 
 // Min widht 750 and Max width 950
-$responMin750 : 750px;
+$responMin750: 750px;
 $responMax950: 950px;
 // END Min widht 750 and Max width 950
 
 // Min width 750 and max width 950
-@mixin respon950{
-    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
-        @content;
-    }
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
 }
 // END Min widht 750 and max width 950
 
@@ -44,10 +44,10 @@ $responMax950: 950px;
 $responMin951: 951px;
 $responMax1360: 1360px;
 
-@mixin respon1360{
-    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
-        @content;
-    }
+@mixin respon1360 {
+  @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}) {
+    @content;
+  }
 }
 // end min width 951 and max width 1360px
 
@@ -55,86 +55,81 @@ $responMax1360: 1360px;
 $responMin1361: 1361px;
 $responMax1440: 1440px;
 
-@mixin respon1440{
-    @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}){
-        @content;
-    }
+@mixin respon1440 {
+  @media (min-width: #{$responMin1361}) and (max-width: #{$responMax1440}) {
+    @content;
+  }
 }
 // end min width 1361px and max width 1440px
 
+.wrapper-formPDI {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  padding-bottom: 40px;
+  padding: 0 20%;
+  margin-bottom: 40px;
 
-.wrapper-formPDI{
+  // START LINKED INFORMASI
+  .linked-formPdi {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 10%;
+
+    @include respon1360() {
+      padding: 10px 5%;
+    }
+
+    @include respon950() {
+      padding: 10px 5%;
+    }
+
+    @include respon750() {
+      padding: 10px 5%;
+    }
+
+    @include smallPhone() {
+      // border: 1px solid crimson;
+      width: 100%;
+      padding: $paddingMobile;
+    }
+  }
+  // END
+
+  .container-formulirPdi {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
-    padding-bottom: 40px; 
-.formpdigaris {
-    padding: 25px 10% ;
-}
-.form-control-sm{
-    border-radius: 25rem;
-}
-.form-check-input:checked{
-    background-color: #fd0d0d;
-    border-color: #fd0d0d !important;
-}
+    padding: 0 20%;
 
-    // START LINKED INFORMASI
-    .linked-formPdi {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        height: auto;
-        width: 100%;
-        margin-top: 15px;
-        padding: 10px 10%;
-
-        @include respon1360(){
-            padding: 10px 5%;
-        }
-
-        @include respon950(){
-            padding: 10px 5%;
-        }
-
-        @include respon750(){
-            padding: 10px 5%;
-        }
-
-        @include smallPhone() {
-            // border: 1px solid crimson;
-            width: 100%;
-            padding: $paddingMobile;
-        }
-        }
-    // END
-
-    .container-formulirPdi{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-        padding: 0 20%;
-
-        @include respon1440(){
-            padding: 0 10%;
-        }
-
-        @include respon1360(){
-            padding: 0 5%;
-        }
-
-        @include respon950(){
-            padding: 0 0%;
-        }
-
-        @include respon750(){
-            padding: 0 15%;
-        }
-
-        @include smallPhone(){
-            padding: 0;
-        }
+    .form-group {
+      margin: 20px 0px;
     }
+
+    @include respon1440() {
+      padding: 0 10%;
+    }
+
+    @include respon1360() {
+      padding: 0 5%;
+    }
+
+    @include respon950() {
+      padding: 0 0%;
+    }
+
+    @include respon750() {
+      padding: 0 15%;
+    }
+
+    @include smallPhone() {
+      padding: 0;
+    }
+  }
 }
