@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
 import "./FormPdi.scss";
+import MainDivider from "../../../divider/MainDivider"
 
 const FormPdi = () => {
   useEffect(() => {
@@ -25,24 +26,33 @@ const FormPdi = () => {
         {/* Container Formulir PDI */}
         <div className="container-formulirPdi">
           <div className="container">
-            <h1>FORMULIR PERMOHONAN INFORMASI PUBLIK</h1>
-            <label htmlFor="basic-url">Jenis identitas</label>
+            <div className="formgaris"> 
+            <MainDivider
+            text=" FORMULIR PERMOHONAN INFORMASI PUBLIK
+            Jenis identitas  " />
+            </div>
+
             <select className="form-control form-control-sm">
               <option>KTP</option>
               <option>KTA</option>
               <option>SIM C</option>
             </select>
             <label htmlFor="basic-url">Upload photo identitas</label>
+            <br/>
+              <label className="custom-file-label" htmlFor="customFileLang">
+                pilih photo
+              </label>
             <div className="custom-file">
               <input
                 type="file"
                 className="custom-file-input"
                 id="customFileLang"
                 lang="es"
+                style={{
+                  borderRadius : '100px',
+                  border : 'none'
+                }}
               />
-              <label className="custom-file-label" htmlFor="customFileLang">
-                pilih photo
-              </label>
             </div>
             <label htmlFor="basic-url">NIK Nomor Identitas </label>
             <input

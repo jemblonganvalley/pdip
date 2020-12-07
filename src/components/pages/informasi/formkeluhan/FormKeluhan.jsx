@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
 import "./FormKeluhan.scss";
+import MainDivider from "../../../divider/MainDivider"
 
 const FormKeluhan = () => {
   useEffect(() => {
@@ -23,9 +24,13 @@ const FormKeluhan = () => {
         </div>
         {/* END */}
 
+        <div className="formgaris">
+          <MainDivider
+            text="FORMULIR KEBERATAN INFORMASI PUBLIK" />
+        </div>
+
         {/* Container form keluhan */}
         <div className="container-formKeluhan">
-          <h1>FORMULIR KEBERATAN INFORMASI PUBLIK</h1>
 
           <div className="col-md-12 col-sm-12 col-xs-12">
             <form
