@@ -68,7 +68,17 @@ $responMax1440: 1440px;
     flex-direction: column;
     height: auto;
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 40px; 
+.formpdigaris {
+    padding: 25px 10% ;
+}
+.form-control-sm{
+    border-radius: 25rem;
+}
+.form-check-input:checked{
+    background-color: #fd0d0d;
+    border-color: #fd0d0d !important;
+}
 
     // START LINKED INFORMASI
     .linked-formPdi {

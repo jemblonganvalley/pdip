@@ -1,6 +1,7 @@
 import React from 'react'
 import BreadCrumbs from '../../../breadcrumbs/BreadCrumbs'
 import './FormPdi.scss'
+import MainDivider from '../../../divider/MainDivider'
 
 const FormPdi = ()=>{
     return(
@@ -11,11 +12,15 @@ const FormPdi = ()=>{
             <BreadCrumbs link1="Home" to1="/" link2="Informasi" to2="/informasi-publik" page3="Formulir PDI"/>
           </div>
           {/* END */}
+          <div className= "formpdigaris">
+          <MainDivider
+            text='Form PDIP' />
+          </div>
 
           {/* Container Formulir PDI */}
-          <div className="container-formulirPdi">
+          {/* <div className="container-formulirPdi"> */}
   <div className="container">
-    <h1>form PDI</h1>
+    {/* <h1>form PDI</h1> */}
     <label htmlFor="basic-url">Jenis identitas</label>
     <select className="form-control form-control-sm">
       <option>KTP</option>
@@ -24,8 +29,10 @@ const FormPdi = ()=>{
     </select>
     <label htmlFor="basic-url">Upload photo identitas</label>
     <div className="custom-file">
-      <input type="file" className="custom-file-input" id="customFileLang" lang="es" />
+      
       <label className="custom-file-label" htmlFor="customFileLang">pilih photo</label>
+      <br/>
+      <input type="file" className="custom-file-input" id="customFileLang" lang="es" />
     </div>
     <label htmlFor="basic-url">NIK Nomor Identitas </label>
     <input className="form-control form-control-sm" type="text" placeholder="Masukan NIK disni " />
@@ -135,7 +142,7 @@ const FormPdi = ()=>{
 </div>
 
           {/* END Container Formulir PDI */}
-        </div>
+        {/* </div> */}
         </>
     )
 }
