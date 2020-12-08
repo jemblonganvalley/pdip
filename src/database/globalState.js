@@ -18,12 +18,10 @@ export let globalState = createStore({
       }),
     });
     let data = await res.json();
-    let ps = await act.pushToken(data.token);
   }),
   // END TOKEN AREA
 
   // For Save Change Text to Page Search
-  todos: "",
   addTodo: action((state, payload) => {
     state.todos.push({ text: payload, done: false });
   }),

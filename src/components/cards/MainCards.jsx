@@ -86,7 +86,6 @@ const Cards = ({
         >
           {/* JIKA MAU DIPAKAI CLASS, PAKAI CLASS VBMusic */}
           <Link
-            component="a"
             className={`${classIcon}`}
             to={href}
             style={{ textDecoration: "none" }}

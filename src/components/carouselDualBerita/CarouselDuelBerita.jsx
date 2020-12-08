@@ -45,11 +45,6 @@ export const CarouselDuelBerita = ({
     }/${galData.query.data[0].title.replace(/\s/g, "-") || "detail-gallery"}`;
   };
 
-  useEffect(() => {
-    // getALbumId();
-    console.log(cat2);
-  }, []);
-
   return (
     <div className="mainCarouselDual">
       {/* Carousel 1 */}

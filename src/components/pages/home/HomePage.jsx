@@ -258,6 +258,7 @@ const HomePage = () => {
                     //             setShowVid(true)
                     //           }}
                     className="r-sync-video"
+                    key={i}
                   >
                     {/* Card VMEDIA */}
                     <VMedia

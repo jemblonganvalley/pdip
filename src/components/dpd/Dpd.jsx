@@ -111,8 +111,9 @@ const Dpd = () => {
                       href={`https://www.google.com/maps/search/?api=1&query=dpd+pdip+provinsi+${nameProv}`}
                       target="_blank"
                     >
-                      <button type="button" class="btn btn-danger rounded">
-                        <i class="fas fa-map pr-2" aria-hidden="true"></i>Map
+                      <button type="button" className="btn btn-danger rounded">
+                        <i className="fas fa-map pr-2" aria-hidden="true"></i>
+                        Map
                       </button>
                     </a>
                   </div>
@@ -120,8 +121,8 @@ const Dpd = () => {
                     <small className="smallTanggal text-danger">Telepon</small>
                     <p className="tanggal">{configHome.phone}</p>
                     <a href={`tel:+62${configHome.phone}`}>
-                      <button type="button" class="btn btn-danger rounded">
-                        <i class="fas fa-phone pr-2" aria-hidden="true"></i>
+                      <button type="button" className="btn btn-danger rounded">
+                        <i className="fas fa-phone pr-2" aria-hidden="true"></i>
                         Hubungi
                       </button>
                     </a>

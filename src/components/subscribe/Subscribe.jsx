@@ -1,7 +1,5 @@
 import React from "react";
 import "./Subscribe.scss";
-import MainButton from "../buttons/MainButton";
-import subscribe from "../../img/subscribe.png";
 import { Link } from "react-router-dom";
 
 const Subscribe = () => {

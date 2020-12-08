@@ -125,6 +125,7 @@ const MultimediaPage = () => {
           <div className="cardContent">
             {configHome[4].value.map((e, i) => (
               <Cards
+                key={i}
                 category={"Multimedia"}
                 page="detail-multimedia"
                 id={e.id}
