@@ -28,60 +28,68 @@ const FormPdi = () => {
           <div className="container">
             <div className="formgaris"> 
             <MainDivider
-            text=" FORMULIR PERMOHONAN INFORMASI PUBLIK
-            Jenis identitas  " />
+            text=" FORMULIR PERMOHONAN INFORMASI PUBLIK" />
             </div>
 
-            <div className="ktpWrapper" style={{
-              margin : '20px 0'
-            }}>
-            <label htmlFor="basic-url">Upload photo identitas</label>
+            
+            </div>
+            <div className="nikWrapper">
+            <label htmlFor="basic-url">Upload identitas</label>
             <select className="form-control form-control-sm">
               <option>KTP</option>
               <option>KTA</option>
               <option>SIM C</option>
             </select>
-            <label className="custom-file-label" htmlFor="customFileLang">
-                pilih photo
-              </label>
-            <div className="custom-file">
-              <input
-                type="file"
-                className="custom-file-input"
-                id="customFileLang"
-                lang="es"
-                style={{
-                  borderRadius : '100px',
-                  border : 'none'
-                }}
-              />
-            </div>
-            </div>
-            <div className="nikWrapper" style={{
-              margin : '20px 0'
-            }}>
-            <label htmlFor="basic-url">NIK Nomor Identitas </label>
+            
+            <br/>
+            <label>
+                  Upload Photo Identitas <small className="strict">*</small>
+            </label>
             <input
-              className="form-control form-control-sm"
-              type="text"
-              placeholder="Masukan NIK disni "
+                  type="file"
+                  accept="image/*"
+                  className="form-control"
+                  name="fileupl"
+                
             />
+             <small className="error-msg" />
             </div>
-            <label htmlFor="basic-url">Nama </label>
-            <input
-              className="form-control form-control-sm"
-              type="text"
-              placeholder="isikan nama "
-            />
+            <div className="nikWrapper">
             <div className="form-group">
-              <label htmlFor="exampleFormControlTextarea1">Alamat</label>
-              <textarea
-                className="form-control"
-                id="exampleFormControlTextarea1"
-                rows={3}
-                defaultValue={""}
-              />
-            </div>
+                <label>
+                  NIK / Nomor Identitas <small className="strict">*</small>
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="nomor_identitas"
+                  defaultValue={""}
+                />
+                <small className="error-msg" />
+              </div>
+              <div className="form-group">
+                <label>
+                  Nama <small className="strict">*</small>
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="nama"
+                  defaultValue
+                />
+                <small className="error-msg" />
+              </div>
+              <div className="form-group">
+                <label>
+                  Alamat <small className="strict">*</small>
+                </label>
+                <textarea
+                  className="form-control"
+                  name="alamat"
+                  defaultValue={""}
+                />
+                <small className="error-msg" />
+              </div>
             <label htmlFor="basic-url">Pekerjaan </label>
             <input
               className="form-control form-control-sm"
