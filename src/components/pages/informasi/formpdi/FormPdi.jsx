@@ -32,14 +32,16 @@ const FormPdi = () => {
             Jenis identitas  " />
             </div>
 
+            <div className="ktpWrapper" style={{
+              margin : '20px 0'
+            }}>
+            <label htmlFor="basic-url">Upload photo identitas</label>
             <select className="form-control form-control-sm">
               <option>KTP</option>
               <option>KTA</option>
               <option>SIM C</option>
             </select>
-            <label htmlFor="basic-url">Upload photo identitas</label>
-            <br/>
-              <label className="custom-file-label" htmlFor="customFileLang">
+            <label className="custom-file-label" htmlFor="customFileLang">
                 pilih photo
               </label>
             <div className="custom-file">
@@ -54,12 +56,17 @@ const FormPdi = () => {
                 }}
               />
             </div>
+            </div>
+            <div className="nikWrapper" style={{
+              margin : '20px 0'
+            }}>
             <label htmlFor="basic-url">NIK Nomor Identitas </label>
             <input
               className="form-control form-control-sm"
               type="text"
               placeholder="Masukan NIK disni "
             />
+            </div>
             <label htmlFor="basic-url">Nama </label>
             <input
               className="form-control form-control-sm"
@@ -222,8 +229,7 @@ const FormPdi = () => {
             <div className="col-auto">
               <button
                 type="submit"
-                className="btn btn-primary mb-3"
-                style={{ backgroundColor: "red" }}
+                className="btn btn-danger mb-3"
               >
                 Kirimi Data
               </button>
