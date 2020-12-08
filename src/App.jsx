@@ -37,7 +37,6 @@ import DpdDpc from "./components/pages/dpddpc/DpdDpc";
 import NotFound from "./components/notFound/NotFound";
 function App() {
   let [hide, setHide] = useState(true);
-  const getGlobalToken = useStoreActions((action) => action.setToken);
   let [tkn, setTkn] = useState();
   const getToken = async () => {
     const res = await fetch("https://atur.biar.pw/api/auth/app", {
@@ -56,7 +55,6 @@ function App() {
 
   useEffect(() => {
     window.scrollTo(0, 1);
-    getGlobalToken();
     getToken();
     var prevScrollpos = window.pageYOffset;
     window.addEventListener("scroll", function () {
