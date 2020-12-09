@@ -6,9 +6,9 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
 } from "react-share";
-import FacebookButton from '../../img/facebook.svg'
-import TwitterButton from '../../img/twitter.svg'
-import WhatsappButton from '../../img/whatsapp.svg'
+import FacebookButton from '../../img/facebookicon.svg'
+import TwitterButton from '../../img/twittericon.svg'
+import WhatsappButton from '../../img/whatsappicon.svg'
 
 const CardSocialMedia = ({ imageUrl, title }) => {
   let quote = "PDI Perjuangan";
@@ -20,7 +20,7 @@ const CardSocialMedia = ({ imageUrl, title }) => {
   return (
     <>
       <div className="socialMedia">
-        <p className="share-socialMedia">SHARE : </p>
+        <p className="share-socialMedia">Share : </p>
         {/* Facebook Share */}
         <FacebookShareButton 
         url={window.location.href}
@@ -28,7 +28,7 @@ const CardSocialMedia = ({ imageUrl, title }) => {
         hashtag={hashtag}
         title={title}
           >
-          <img src={FacebookButton} alt="" width='25' height='25' />
+          <img src={FacebookButton} alt="" width='20' height='20' />
         </FacebookShareButton>
         {/* END Facebook Share */}
 
@@ -39,17 +39,17 @@ const CardSocialMedia = ({ imageUrl, title }) => {
           hashtag={hashtag}
           title={title}
           style={{
-            marginLeft : '10px',
-            marginRight : '10px'
+            marginLeft : '40px',
+            marginRight : '40px'
           }}
         >
-          <img src={TwitterButton} alt="" width='25' height='25' />
+          <img src={TwitterButton} alt="" width='20' height='20' />
         </TwitterShareButton>
         {/* END Twitter Share */}
 
         {/* WhatsApp Share */}
         <WhatsappShareButton url={window.location.href} title={title}>
-        <img src={WhatsappButton} alt="" width='25' height='25' />
+        <img src={WhatsappButton} alt="" width='20' height='20' />
           
         </WhatsappShareButton>
         {/* END WhatsApp Share */}

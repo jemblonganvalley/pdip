@@ -95,13 +95,13 @@ const Dpd = () => {
                 <img
                   src={`https://atur.biar.pw/public/${configHome.photo_one}`}
                   alt=""
-                  width="250"
                   style={{
-                    height: "37vh",
                     objectFit: "cover",
                     objectPosition: "center",
                     borderRadius: "10px",
+
                   }}
+                  className='imagePertamaDPD'
                 />
                 <div className="textDpd">
                   <div className="alamat dpdText">
