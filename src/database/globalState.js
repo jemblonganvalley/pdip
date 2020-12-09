@@ -7,7 +7,7 @@ export let globalState = createStore({
     state.token = payload;
   }),
   setToken: thunk(async (act) => {
-    let res = await fetch("https://atur.biar.pw/api/auth/app", {
+    let res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -68,7 +68,7 @@ const Gallery = () => {
   const id = useParams("id");
 
   const getConfigHome = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -81,7 +81,7 @@ const Gallery = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `https://atur.biar.pw/api/gallery/data?page=${numPage}`,
+      `https://data.pdiperjuangan.id/api/gallery/data?page=${numPage}`,
       {
         method: "POST",
         headers: {
@@ -100,7 +100,7 @@ const Gallery = () => {
     setConfigHome(dataConfigHome.query.data);
 
     const resManyCard = await fetch(
-      `https://atur.biar.pw/api/gallery/album?page=${numPage}`,
+      `https://data.pdiperjuangan.id/api/gallery/album?page=${numPage}`,
       {
         method: "POST",
         headers: {
@@ -180,7 +180,8 @@ const Gallery = () => {
                   <div className="box-medsos-beritaPage2">
                     <CardSocialMedia
                       title={configHome.title}
-                      imageUrl={configHome.path} />
+                      imageUrl={configHome.path}
+                    />
                   </div>
                 </div>
                 {/* END Row2 */}

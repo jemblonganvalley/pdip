@@ -22,7 +22,7 @@ const CardWejangan = ({ cardWejanganBkItem }) => {
             to={e.pageWejanganBk}
             className="imgWejangan"
             style={{
-              backgroundImage: `url(https://atur.biar.pw/public/${e.path})`,
+              backgroundImage: `url(https://data.pdiperjuangan.id/public/${e.path})`,
             }}
           >
             <i className="fas fa-quote-right"></i>

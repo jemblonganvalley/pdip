@@ -18,7 +18,7 @@ const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
               id="carouselnih"
               className="carousel slide kmCarousel"
               data-ride="carousel"
-              data-interval='2000'
+              data-interval="2000"
             >
               <ol className="carousel-indicators">
                 <li
@@ -52,7 +52,7 @@ const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
                     <div
                       className="col-lg-6 banner"
                       style={{
-                        backgroundImage: `url(https://atur.biar.pw/public/${e.path})`,
+                        backgroundImage: `url(https://data.pdiperjuangan.id/public/${e.path})`,
                         backgroundSize: "cover",
                       }}
                     ></div>

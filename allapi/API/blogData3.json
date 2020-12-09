@@ -1,15 +1,14 @@
-
 {
   "result": true,
   "query": {
     "current_page": 1,
     "data": [],
-    "first_page_url": "http:\/\/atur.biar.pw\/api\/blog\/data?page=1",
+    "first_page_url": "http://data.pdiperjuangan.id/api/blog/data?page=1",
     "from": null,
     "last_page": 1,
-    "last_page_url": "http:\/\/atur.biar.pw\/api\/blog\/data?page=1",
+    "last_page_url": "http://data.pdiperjuangan.id/api/blog/data?page=1",
     "next_page_url": null,
-    "path": "http:\/\/atur.biar.pw\/api\/blog\/data",
+    "path": "http://data.pdiperjuangan.id/api/blog/data",
     "per_page": 3,
     "prev_page_url": null,
     "to": null,

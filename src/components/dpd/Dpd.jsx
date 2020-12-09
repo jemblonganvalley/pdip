@@ -14,7 +14,7 @@ const Dpd = () => {
   const [configHome, setConfigHome] = useState();
 
   const getConfigHome = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -27,7 +27,7 @@ const Dpd = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://atur.biar.pw/api/partai/dpd/find",
+      "https://data.pdiperjuangan.id/api/partai/dpd/find",
       {
         method: "POST",
         headers: {
@@ -93,15 +93,14 @@ const Dpd = () => {
             <div className="profilDpd">
               <div className="kolum1">
                 <img
-                  src={`https://atur.biar.pw/public/${configHome.photo_one}`}
+                  src={`https://data.pdiperjuangan.id/public/${configHome.photo_one}`}
                   alt=""
                   style={{
                     objectFit: "cover",
                     objectPosition: "center",
                     borderRadius: "10px",
-
                   }}
-                  className='imagePertamaDPD'
+                  className="imagePertamaDPD"
                 />
                 <div className="textDpd">
                   <div className="alamat dpdText">
@@ -146,7 +145,7 @@ const Dpd = () => {
                 <div
                   className="peta"
                   style={{
-                    backgroundImage: `url(https://atur.biar.pw/public/${configHome.photo_two})`,
+                    backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome.photo_two})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

@@ -22,7 +22,7 @@ const CarouselBeritaPage2 = ({ id, data }) => {
           {data.map((e, i) => (
             <>
               <img
-                src={`https://atur.biar.pw/public/${e.path}`}
+                src={`https://data.pdiperjuangan.id/public/${e.path}`}
                 alt={e.title}
                 key={i}
                 className={i === 1 ? "carousel-item active" : "carousel-item"}

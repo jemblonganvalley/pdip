@@ -18,7 +18,7 @@ const DpdDpc = () => {
   const [missing, setMissing] = useState(false);
 
   const getDetailPage = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ const DpdDpc = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `https://atur.biar.pw/api/blog/find/?id=${id}`,
+      `https://data.pdiperjuangan.id/api/blog/find/?id=${id}`,
       {
         method: "POST",
         headers: {
@@ -54,7 +54,13 @@ const DpdDpc = () => {
     <>
       <div className="wrapperBeritaPage1">
         <div className="linkedBeritaPage1">
-          <BreadCrumbs link1="Home" to1="/" link2="Partai" to2="/partai" link3='dpd-dpc' />
+          <BreadCrumbs
+            link1="Home"
+            to1="/"
+            link2="Partai"
+            to2="/partai"
+            link3="dpd-dpc"
+          />
         </div>
         <div className="maps">
           <Maps />

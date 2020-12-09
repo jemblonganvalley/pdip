@@ -11,7 +11,7 @@ export const CarouselDuelBerita = ({
   current_page = null,
 }) => {
   const getALbumId = async (args) => {
-    const resToken = await fetch("https://atur.biar.pw/api/auth/app", {
+    const resToken = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -23,18 +23,21 @@ export const CarouselDuelBerita = ({
     });
     const token = await resToken.json();
 
-    const resGallery = await fetch("https://atur.biar.pw/api/gallery/data", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token.token}`,
-      },
-      body: JSON.stringify({
-        order: { key: "id", value: "desc" },
-        where: { key: "id", value: args },
-        limit: 1,
-      }),
-    });
+    const resGallery = await fetch(
+      "https://data.pdiperjuangan.id/api/gallery/data",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token.token}`,
+        },
+        body: JSON.stringify({
+          order: { key: "id", value: "desc" },
+          where: { key: "id", value: args },
+          limit: 1,
+        }),
+      }
+    );
 
     const galData = await resGallery.json();
     // console.log(dataGallery);
@@ -102,7 +105,7 @@ export const CarouselDuelBerita = ({
               ></span>
 
               <img
-                src={`https://atur.biar.pw/public/${e.image}`}
+                src={`https://data.pdiperjuangan.id/public/${e.image}`}
                 className="d-block w-100 carouselDual1Image"
                 alt={e.title}
                 key={i}
@@ -197,7 +200,7 @@ export const CarouselDuelBerita = ({
                 src={
                   e.type === "youtube"
                     ? `https://i.ytimg.com/vi/${e.path}/hqdefault.jpg`
-                    : `https://atur.biar.pw/public/${e.path}`
+                    : `https://data.pdiperjuangan.id/public/${e.path}`
                 }
                 className="d-block w-100 carouselDual1Image"
                 alt="..."

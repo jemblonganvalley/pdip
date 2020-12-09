@@ -75,7 +75,7 @@ const Search = () => {
   };
 
   const getConfigHome = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -88,7 +88,7 @@ const Search = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `https://atur.biar.pw/api/blog/search?page=${numPage}`,
+      `https://data.pdiperjuangan.id/api/blog/search?page=${numPage}`,
       {
         method: "POST",
         headers: {

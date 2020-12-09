@@ -12,7 +12,7 @@ const CardSearch = ({ cardSearchItem }) => {
             to={`/detail-article/${e.id}/`}
           >
             <img
-              src={`https://atur.biar.pw/public/${e.path}`}
+              src={`https://data.pdiperjuangan.id/public/${e.path}`}
               alt=""
               className="img-card"
             />
