@@ -240,6 +240,11 @@ $res1240 : 1350px;
         flex-direction: column;
         font-family: "Roboto";
         overflow-y: scroll;
+        padding-right: 1.5rem;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
 
         @include respon950() {
           height: auto;

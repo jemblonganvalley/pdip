@@ -58,6 +58,10 @@ $secondary : #f3f3f3;
         height: 40vh;
         width: 100%;
         border: none;
+
+        @include smallPhone() {
+            height: 20vh;
+        }
     
         .carousel-item-tatacara {
             height: 40vh;
@@ -72,12 +76,14 @@ $secondary : #f3f3f3;
                 flex-direction: column;
                 background-size: auto;
                 background-position: left;
+                height: 70vh;
             }
 
             @include respon750(){
                 flex-direction: column;
                 background-size: auto;
                 background-position: left;
+                height: 70vh;
             }
 
             @include smallPhone(){

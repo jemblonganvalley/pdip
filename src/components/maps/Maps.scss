@@ -258,8 +258,8 @@ $respon500: 500px;
 
         @include smallPhone() {
             height: auto;
-            align-items: center;
             width: 100%;
+            margin-left: 2rem;
         }
         
         // .box-btn-name-provinsi{
