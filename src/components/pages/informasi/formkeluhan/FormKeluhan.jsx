@@ -70,14 +70,14 @@ const FormKeluhan = () => {
               </div>
               <div className="form-group">
                 <label>
-                  Tanggal Pemohonan Informasi{" "}
+                  Tanggal Pemohonan Informasi
                   <small className="strict">*</small>
                 </label>
                 <input
                   type="date"
                   className="form-control"
                   name="tanggal_pemohon"
-                  defaultValue
+                  
                 />
                 <small className="error-msg" />
               </div>
@@ -130,7 +130,7 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="nomor_identitas"
-                  defau
+                  
                 />
                 <small className="error-msg" />
               </div>
@@ -305,8 +305,8 @@ const FormKeluhan = () => {
                     id="lain-lain"
                     className="form-control"
                     name="alasan_pengajuan_lain"
-                    placeholder="Mohon isikan dengan alasan lain......."
-                    defaultValue={""}
+                    
+                  
                   />
                 </div>
               </div>

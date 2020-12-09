@@ -46,11 +46,9 @@ const FormPdi = () => {
                   Upload Photo Identitas <small className="strict">*</small>
             </label>
             <input
-                  type="file"
-                  accept="image/*"
-                  className="form-control"
-                  name="fileupl"
-                
+              className="form-control form-control-sm"
+              type="text"
+              
             />
              <small className="error-msg" />
             </div>
@@ -95,7 +93,7 @@ const FormPdi = () => {
             <input
               className="form-control"
               type="text"
-              placeholder
+              
             />
             <br/>
             <label htmlFor="exampleFormControlInput1">Email</label>
@@ -103,7 +101,7 @@ const FormPdi = () => {
               type="email"
               className="form-control"
               id="exampleFormControlInput1"
-              placeholder="@Pdiperjuangan.com"
+              
             />
             <br />
             <br />
