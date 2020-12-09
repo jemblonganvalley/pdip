@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>test</title>
     <style>
-        body{background-color: ghostwhite;}
+      body {
+        background-color: ghostwhite;
+      }
     </style>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <script>
+      const test = async () => {
+        const res = await fetch(
+          "https://data.pdiperjuangan.id/api/web/config",
+          {
+            method: "POST",
+            mode: "cors",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization:
+                "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAwOTMzODc0LCJleHAiOjE2MDEwMjAyNzQsIm5iZiI6MTYwMDkzMzg3NCwianRpIjoiaXlsbkE1TGt6SEZGcGFKOCIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.KxFv6Kb0iqE8ALCFT_eK-ly7-80Cyw2fENiHxti8Et8",
+            },
+          }
+        );
+        const data = await res.json();
+      };
 
-
-<script>
-
-    const test = async()=>{
-        const res = await fetch('https://atur.biar.pw/api/web/config', {
-            method : 'POST',
-            mode : 'cors',
-            headers : {
-                "Content-Type" : "application/json",
-                "Authorization" : "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAwOTMzODc0LCJleHAiOjE2MDEwMjAyNzQsIm5iZiI6MTYwMDkzMzg3NCwianRpIjoiaXlsbkE1TGt6SEZGcGFKOCIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.KxFv6Kb0iqE8ALCFT_eK-ly7-80Cyw2fENiHxti8Et8"
-            }
-
-        })
-        const data = await res.json()
-    }
-
-    test()
-
-</script>
-</body>
+      test();
+    </script>
+  </body>
 </html>

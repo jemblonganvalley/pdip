@@ -24,7 +24,7 @@ const CarouselPemilu2 = ({ data }) => {
             <div className={i === 0 ? "carousel-item active" : "carousel-item"}>
               {/* Image2 */}
               <img
-                src={`https://atur.biar.pw/public/${e.image}`}
+                src={`https://data.pdiperjuangan.id/public/${e.image}`}
                 className="img-2"
                 onClick={() => {
                   redir(`${e.link}`);

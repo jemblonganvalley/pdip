@@ -6,7 +6,7 @@ Connection: close
 Cache-Control: no-cache, private
 X-RateLimit-Limit: 60
 X-RateLimit-Remaining: 58
-X-Served-By: atur.biar.pw
+X-Served-By: data.pdiperjuangan.id
 CF-Cache-Status: DYNAMIC
 cf-request-id: 060644b96a0000db30c5888000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"

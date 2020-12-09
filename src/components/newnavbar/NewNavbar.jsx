@@ -23,13 +23,16 @@ const NewNavbar = ({ token }) => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const getDataMenu = async function () {
-    const res = await fetch("https://atur.biar.pw/api/web/config/home", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-    });
+    const res = await fetch(
+      "https://data.pdiperjuangan.id/api/web/config/home",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
     const data = await res.json();
     setMenu(data.query.nav);
   };

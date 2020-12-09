@@ -17,7 +17,7 @@ const ContainerCard = () => {
   const [configHome, setConfigHome] = useState([]);
   const [pag, setPag] = useState();
   const [defaultUrl, setDefaultUrl] = useState(
-    `https://atur.biar.pw/api/blog/data?page=${numPage}`
+    `https://data.pdiperjuangan.id/api/blog/data?page=${numPage}`
   );
 
   const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
@@ -66,7 +66,7 @@ const ContainerCard = () => {
   };
 
   const getConfigHome = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -79,7 +79,7 @@ const ContainerCard = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `https://atur.biar.pw/api/blog/data?page=${numPage}`,
+      `https://data.pdiperjuangan.id/api/blog/data?page=${numPage}`,
       {
         method: "POST",
         headers: {

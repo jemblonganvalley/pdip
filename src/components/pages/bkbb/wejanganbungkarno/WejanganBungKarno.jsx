@@ -34,7 +34,7 @@ const WejanganBungKarno = () => {
 
   const refresher = useStoreState((state) => state.refresher);
   const getConfigHome = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -46,28 +46,34 @@ const WejanganBungKarno = () => {
     });
     const data = await res.json();
 
-    const resConfigHome = await fetch("https://atur.biar.pw/api/quotes/data", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${data.token}`,
-      },
-    });
+    const resConfigHome = await fetch(
+      "https://data.pdiperjuangan.id/api/quotes/data",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+      }
+    );
 
     const dataConfigHome = await resConfigHome.json();
     setCardWejanganBk(dataConfigHome.query.data);
 
     // FETCH FIND CARD QUOTES
-    const resVcard = await fetch("https://atur.biar.pw/api/quotes/find", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${data.token}`,
-      },
-      body: JSON.stringify({
-        id: id,
-      }),
-    });
+    const resVcard = await fetch(
+      "https://data.pdiperjuangan.id/api/quotes/find",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+        body: JSON.stringify({
+          id: id,
+        }),
+      }
+    );
 
     const dataVcard = await resVcard.json();
     setConfigHome(dataVcard.query);
@@ -100,7 +106,7 @@ const WejanganBungKarno = () => {
               <QuotesBkbb
                 displayIframe={"none"}
                 displayImage={"flex"}
-                backgroundImage={`https://atur.biar.pw/public${configHome.path}`}
+                backgroundImage={`https://data.pdiperjuangan.id/public${configHome.path}`}
                 headline={configHome.title}
                 desc={configHome.description}
                 customBackgroundColor={"transparent"}
@@ -130,7 +136,7 @@ const WejanganBungKarno = () => {
             {cardWejanganBkItem.map((e, i) => (
               <CardQuotes
                 page={`/bung-karno-bapak-bangsa/quotes/${e.id}`}
-                img={`https://atur.biar.pw/public/${e.path}`}
+                img={`https://data.pdiperjuangan.id/public/${e.path}`}
                 icon1="fas fa-quote-right"
                 txt1={e.title}
                 icon2="fas fa-quote-right"

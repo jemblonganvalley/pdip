@@ -16,7 +16,7 @@ import parse from "html-react-parser";
 const PartaiPage = ({ redirect }) => {
   const [config, setConfig] = useState([]);
   const getConfigHome = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -29,7 +29,7 @@ const PartaiPage = ({ redirect }) => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://atur.biar.pw/api/web/pages/partai",
+      "https://data.pdiperjuangan.id/api/web/pages/partai",
       {
         method: "POST",
         headers: {
@@ -114,7 +114,7 @@ const PartaiPage = ({ redirect }) => {
                         >
                           <div className="box-mobileRow2">
                             <img
-                              src={`https://atur.biar.pw/public/${e.image}`}
+                              src={`https://data.pdiperjuangan.id/public/${e.image}`}
                               alt=""
                               className="imgMobilePartai"
                             />
@@ -184,7 +184,7 @@ const PartaiPage = ({ redirect }) => {
               <div
                 className="photoPengurus"
                 style={{
-                  backgroundImage: `url(https://atur.biar.pw/public/${config[6].value.image})`,
+                  backgroundImage: `url(https://data.pdiperjuangan.id/public/${config[6].value.image})`,
                   backgroundAttachment: "fixed",
                 }}
               >

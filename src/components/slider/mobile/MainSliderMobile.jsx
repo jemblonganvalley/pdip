@@ -55,7 +55,7 @@ const MainSliderMobile = ({ value, cls }) => {
                   {/* Box Image */}
                   <div className="box-img-mainSlider-tablet">
                     <img
-                      src={`http://atur.biar.pw/public${e.image}`}
+                      src={`http://data.pdiperjuangan.id/public${e.image}`}
                       alt={e.title}
                       className="img-home-mainSlider"
                     />
