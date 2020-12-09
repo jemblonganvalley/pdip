@@ -125,7 +125,7 @@ const InformasiPage = () => {
 
           {/* START LINKED */}
           <div className="linkedInformasi">
-            <BreadCrumbs link1="Home" to1="/" page2="Informasi" />
+            <BreadCrumbs link1="Home" to1="/" page2="Informasi Publik" />
           </div>
           {/* END */}
 
