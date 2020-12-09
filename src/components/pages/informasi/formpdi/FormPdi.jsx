@@ -54,7 +54,7 @@ const FormPdi = () => {
             <input
               className="form-control form-control-sm"
               type="text"
-              placeholder="isikan nama "
+              
             />
             <div className="form-group">
               <label htmlFor="exampleFormControlTextarea1">Alamat</label>
