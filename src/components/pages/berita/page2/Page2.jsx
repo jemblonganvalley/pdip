@@ -9,6 +9,7 @@ import Wait from "../../../wait/Wait";
 import { colors } from "@material-ui/core";
 import MainDivider from "../../../divider/MainDivider";
 import NotFound from "../../../notFound/NotFound";
+import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
 
 // READ BEFORE USE
 
@@ -139,15 +140,7 @@ const Page2 = () => {
                       voluptas porro veritatis aliquid?
                     </p>
 
-                    <div className="box-medsos-beritaPage2">
-                      <div className="socialMedia">
-                        <small>SHARE : </small>
-                        <i className="fa fa-facebook"></i>
-                        <i className="fa fa-twitter"></i>
-                        <i className="fa fa-instagram"></i>
-                        <i className="fa fa-whatsapp"></i>
-                      </div>
-                    </div>
+                    <CardSocialMedia imageUrl={configHome.path} />
                   </div>
                   {/* END Row2 */}
                 </>

@@ -9,6 +9,7 @@ import Wait from "../../../wait/Wait";
 import { colors } from "@material-ui/core";
 import parse from "html-react-parser";
 import ReactPaginate from "react-paginate";
+import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
 
 // READ BEFORE USE
 
@@ -177,13 +178,9 @@ const Gallery = () => {
                   </div>
 
                   <div className="box-medsos-beritaPage2">
-                    <div className="socialMedia">
-                      <small>SHARE : </small>
-                      <i className="fa fa-facebook"></i>
-                      <i className="fa fa-twitter"></i>
-                      <i className="fa fa-instagram"></i>
-                      <i className="fa fa-whatsapp"></i>
-                    </div>
+                    <CardSocialMedia
+                      title={configHome.title}
+                      imageUrl={configHome.path} />
                   </div>
                 </div>
                 {/* END Row2 */}
