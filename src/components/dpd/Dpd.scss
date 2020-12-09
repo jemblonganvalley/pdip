@@ -51,9 +51,6 @@ $respon500: 500px;
       padding: $paddingMobile;
     }
 
-    @include respon950() {
-      padding: 10px 5%;
-    }
   }
   // END LINK PARTAI
 
@@ -148,25 +145,37 @@ $respon500: 500px;
           margin: 0;
         }
 
-        .textDpd {
-          display: flex;
-          flex-direction: column;
-          width: 70%;
-          // height: 100%;
-
-          // border: 1px solid green;
-          @include smallPhone() {
-            text-align: center;
-          }
-
+        .imagePertamaDPD {
+          height: 37vh;
           @include respon950() {
             width: 100%;
-            text-align: center;
+            height: inherit;
           }
 
           @include respon750() {
             width: 100%;
-            text-align: center;
+          }
+
+          @include smallPhone() {
+            width: 100%;
+          }
+        }
+
+        .textDpd {
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+
+          @include respon950() {
+            width: 100%;
+          }
+
+          @include respon750() {
+            width: 100%;
+          }
+
+          @include smallPhone() {
+            width: 100%;
           }
 
           .dpdText {
@@ -210,24 +219,12 @@ $respon500: 500px;
           @include smallPhone() {
             justify-content: center;
             align-items: center;
-            text-align: center;
-          }
-
-          @include respon950() {
-            text-align: center;
-          }
-
-          @include respon750() {
-            text-align: center;
           }
 
           .dpc {
             text-transform: uppercase;
             font-weight: bold;
             margin-top: 1rem;
-          }
-          small {
-            // font-size: 8pt;
           }
           .small {
             margin-bottom: 1rem;
