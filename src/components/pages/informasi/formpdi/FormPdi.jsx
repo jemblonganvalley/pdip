@@ -35,7 +35,7 @@ const FormPdi = () => {
             </div>
             <div className="nikWrapper">
             <label htmlFor="basic-url">Upload identitas</label>
-            <select className="form-control form-control-sm">
+            <select className="form-control">
               <option>KTP</option>
               <option>KTA</option>
               <option>SIM C</option>
@@ -75,7 +75,7 @@ const FormPdi = () => {
                   type="text"
                   className="form-control"
                   name="nama"
-                  defaultValue
+                
                 />
                 <small className="error-msg" />
               </div>
@@ -90,12 +90,14 @@ const FormPdi = () => {
                 />
                 <small className="error-msg" />
               </div>
+              <br/>
             <label htmlFor="basic-url">Pekerjaan </label>
             <input
-              className="form-control form-control-sm"
+              className="form-control"
               type="text"
               placeholder
             />
+            <br/>
             <label htmlFor="exampleFormControlInput1">Email</label>
             <input
               type="email"
@@ -107,15 +109,14 @@ const FormPdi = () => {
             <br />
             <h6>
               {" "}
-              <span className="badge badge-secondary">informasi</span>
+              <span>Informasi</span>
             </h6>
             <br />
             <br />
             <label htmlFor="basic-url">Informasi dibutuhkan</label>
             <input
-              className="form-control form-control-sm"
+             className="form-control"
               type="text"
-              placeholder="isikan nama "
             />
             <div className="form-group">
               <label htmlFor="exampleFormControlTextarea1">

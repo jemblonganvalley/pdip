@@ -52,7 +52,7 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="nomor_registrasi"
-                  defaultValue
+                  
                 />
                 <small className="error-msg" />
               </div>
@@ -64,7 +64,7 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="nomor_pemohon"
-                  defaultValue
+                  
                 />
                 <small className="error-msg" />
               </div>
@@ -90,7 +90,7 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="tujuan_informasi"
-                  defaultValue={""}
+                  
                 />
                 <small className="error-msg" />
               </div>
@@ -130,7 +130,7 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="nomor_identitas"
-                  defaultValue
+                  defau
                 />
                 <small className="error-msg" />
               </div>
@@ -142,7 +142,6 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="nama"
-                  defaultValue
                 />
                 <small className="error-msg" />
               </div>
@@ -153,7 +152,7 @@ const FormKeluhan = () => {
                 <textarea
                   className="form-control"
                   name="alamat"
-                  defaultValue={""}
+                  
                 />
                 <small className="error-msg" />
               </div>
@@ -165,7 +164,6 @@ const FormKeluhan = () => {
                   type="number"
                   className="form-control"
                   name="no_telepon"
-                  defaultValue
                 />
                 <small className="error-msg" />
               </div>
@@ -177,7 +175,6 @@ const FormKeluhan = () => {
                   type="email"
                   className="form-control"
                   name="email"
-                  defaultValue
                 />
                 <small className="error-msg" />
               </div>
@@ -189,7 +186,6 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="pekerjaan"
-                  defaultValue
                 />
                 <small className="error-msg" />
               </div>
@@ -201,7 +197,6 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="instansi"
-                  defaultValue
                 />
                 <small className="error-msg" />
               </div>
