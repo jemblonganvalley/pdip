@@ -30,6 +30,7 @@ const CarouselTataCara = ({ data }) => {
                   style={{
                     background: `url(https://data.pdiperjuangan.id/public/${e.image})`,
                     backgroundSize: "cover",
+                    backgroundPosition : 'center'
                   }}
                 >
                   {/* <div className="container_text_carousel">

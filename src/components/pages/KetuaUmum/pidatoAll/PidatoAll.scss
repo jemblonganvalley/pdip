@@ -77,7 +77,7 @@ $respon500: 500px;
     padding: 10px 10%;
 
     @include respon950() {
-      padding: 10px 2%;
+      padding: 40px 0;
     }
 
     @include smallPhone() {

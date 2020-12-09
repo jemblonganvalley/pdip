@@ -133,11 +133,11 @@ $secondary: #f3f3f3;
     }
 
     @include respon950() {
-      padding: 10px 5%;
+      padding: 40px 0;
     }
 
     @include respon750() {
-      padding: 10px 5%;
+      padding: 40px 0;
     }
 
     @include smallPhone() {

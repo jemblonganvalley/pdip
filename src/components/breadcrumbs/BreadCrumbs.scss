@@ -33,7 +33,9 @@ $responMax950: 950px;
 
     ul {
         list-style: none;
-        
+        @include smallPhone() {
+            padding: 2rem 1rem;
+        }
         li {
             margin: .1rem;
             font-size: 8pt;

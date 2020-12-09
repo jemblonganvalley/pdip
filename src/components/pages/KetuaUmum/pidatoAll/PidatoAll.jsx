@@ -166,7 +166,7 @@ const PidatoAll = () => {
                   <ReactPaginate
                     initialPage={0}
                     pageCount={pag.total / pag.per_page}
-                    pageRangeDisplayed={9}
+                    pageRangeDisplayed={4}
                     marginPagesDisplayed={0}
                     previousLabel={"<<"}
                     previousClassName="prev"
