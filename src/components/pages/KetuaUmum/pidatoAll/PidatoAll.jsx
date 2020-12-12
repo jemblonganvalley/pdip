@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 
 import "./PidatoAll.scss";
 import { NavLink, useParams } from "react-router-dom";
-import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
-import MainDivider from "../../../divider/MainDivider";
-import Cards from "../../../cards/MainCards";
-import Wait from "../../../wait/Wait";
-import { SideMenu } from "../../../sidemenu/SideMenu";
 import ReactPaginate from "react-paginate";
+import { lazy } from "react";
+import { Suspense } from "react";
+
+const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
+const MainDivider = lazy(() => import("../../../divider/MainDivider"));
+const Cards = lazy(() => import("../../../cards/MainCards"));
+const Wait = lazy(() => import("../../../wait/Wait"));
 
 const PidatoAll = () => {
   const [category_id, setCategory_id] = useState(44);
@@ -27,7 +29,13 @@ const PidatoAll = () => {
     }
 
     return (
-      <>
+      <Suspense
+        fallback={
+          <div>
+            <Wait />
+          </div>
+        }
+      >
         <div className="container-angka-pagination">
           <div className="col-angka-pagination">
             {pageNumbers.map((number) => (
@@ -59,7 +67,7 @@ const PidatoAll = () => {
             ))}
           </div>
         </div>
-      </>
+      </Suspense>
     );
   };
 

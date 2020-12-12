@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from "react";
 import "../page2/Page2.scss";
-import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
-import Cards from "../../../cards/MainCards";
-import CarouselBeritaPage2 from "../../../carouselberitapage2/CarouselBeritaPage2";
-import VMedia from "../../../VMedia/VMedia";
 import { Link, NavLink, useParams } from "react-router-dom";
-import Wait from "../../../wait/Wait";
-import { colors } from "@material-ui/core";
 import parse from "html-react-parser";
 import ReactPaginate from "react-paginate";
-import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
+import { lazy } from "react";
+import { Suspense } from "react";
+
+const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
+const Cards = lazy(() => import("../../../cards/MainCards"));
+const CarouselBeritaPage2 = lazy(() =>
+  import("../../../carouselberitapage2/CarouselBeritaPage2")
+);
+const Wait = lazy(() => import("../../../wait/Wait"));
+const CardSocialMedia = lazy(() =>
+  import("../../../cardsocialmedia/CardSocialMedia")
+);
 
 // READ BEFORE USE
 
@@ -29,7 +34,13 @@ const Gallery = () => {
     }
 
     return (
-      <>
+      <Suspense
+        fallback={
+          <div>
+            <Wait />
+          </div>
+        }
+      >
         <div className="container-angka-pagination">
           <div className="col-angka-pagination">
             {pageNumbers.map((number) => (
@@ -61,7 +72,7 @@ const Gallery = () => {
             ))}
           </div>
         </div>
-      </>
+      </Suspense>
     );
   };
 

@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
-
 import "./containerCardGallery.scss";
-import BreadCrumbs from "../breadcrumbs/BreadCrumbs";
-import MainDivider from "../divider/MainDivider";
 import { NavLink, useParams } from "react-router-dom";
-import Cards from "../cards/MainCards";
-import Wait from "../wait/Wait";
 import ReactPaginate from "react-paginate";
+import { lazy } from "react";
+import { Suspense } from "react";
+
+const BreadCrumbs = lazy(() => import("../breadcrumbs/BreadCrumbs"));
+const MainDivider = lazy(() => import("../divider/MainDivider"));
+const Cards = lazy(() => import("../cards/MainCards"));
+const Wait = lazy(() => import("../wait/Wait"));
 
 const ContainerCard = () => {
   const { category_id } = useParams();
@@ -22,7 +24,13 @@ const ContainerCard = () => {
     }
 
     return (
-      <>
+      <Suspense
+        fallback={
+          <div>
+            <Wait />
+          </div>
+        }
+      >
         <div className="container-angka-pagination">
           <div className="col-angka-pagination">
             {pageNumbers.map((number) => (
@@ -54,7 +62,7 @@ const ContainerCard = () => {
             ))}
           </div>
         </div>
-      </>
+      </Suspense>
     );
   };
 

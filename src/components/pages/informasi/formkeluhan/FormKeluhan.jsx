@@ -1,8 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
-import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
 import "./FormKeluhan.scss";
-import MainDivider from "../../../divider/MainDivider"
+
+import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
+import MainDivider from "../../../divider/MainDivider";
 
 const FormKeluhan = () => {
   useEffect(() => {
@@ -25,13 +26,11 @@ const FormKeluhan = () => {
         {/* END */}
 
         <div className="formgaris">
-          <MainDivider
-            text="FORMULIR KEBERATAN INFORMASI PUBLIK" />
+          <MainDivider text="FORMULIR KEBERATAN INFORMASI PUBLIK" />
         </div>
 
         {/* Container form keluhan */}
         <div className="container-formKeluhan">
-
           <div className="col-md-12 col-sm-12 col-xs-12">
             <form
               action
@@ -52,7 +51,6 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="nomor_registrasi"
-                  
                 />
                 <small className="error-msg" />
               </div>
@@ -64,7 +62,6 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="nomor_pemohon"
-                  
                 />
                 <small className="error-msg" />
               </div>
@@ -77,7 +74,6 @@ const FormKeluhan = () => {
                   type="date"
                   className="form-control"
                   name="tanggal_pemohon"
-                  
                 />
                 <small className="error-msg" />
               </div>
@@ -90,7 +86,6 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="tujuan_informasi"
-                  
                 />
                 <small className="error-msg" />
               </div>
@@ -130,7 +125,6 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="nomor_identitas"
-                  
                 />
                 <small className="error-msg" />
               </div>
@@ -138,22 +132,14 @@ const FormKeluhan = () => {
                 <label>
                   Nama <small className="strict">*</small>
                 </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="nama"
-                />
+                <input type="text" className="form-control" name="nama" />
                 <small className="error-msg" />
               </div>
               <div className="form-group">
                 <label>
                   Alamat <small className="strict">*</small>
                 </label>
-                <textarea
-                  className="form-control"
-                  name="alamat"
-                  
-                />
+                <textarea className="form-control" name="alamat" />
                 <small className="error-msg" />
               </div>
               <div className="form-group">
@@ -171,33 +157,21 @@ const FormKeluhan = () => {
                 <label>
                   Alamat Email <small className="strict">*</small>
                 </label>
-                <input
-                  type="email"
-                  className="form-control"
-                  name="email"
-                />
+                <input type="email" className="form-control" name="email" />
                 <small className="error-msg" />
               </div>
               <div className="form-group">
                 <label>
                   Pekerjaan <small className="strict">*</small>
                 </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="pekerjaan"
-                />
+                <input type="text" className="form-control" name="pekerjaan" />
                 <small className="error-msg" />
               </div>
               <div className="form-group">
                 <label>
                   Instansi/Lembaga <small className="strict">*</small>
                 </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="instansi"
-                />
+                <input type="text" className="form-control" name="instansi" />
                 <small className="error-msg" />
               </div>
               <div className="form-group">
@@ -305,8 +279,6 @@ const FormKeluhan = () => {
                     id="lain-lain"
                     className="form-control"
                     name="alasan_pengajuan_lain"
-                    
-                  
                   />
                 </div>
               </div>

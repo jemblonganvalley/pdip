@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 
 import "./DpdDpc.scss";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
-import CarouselBeritaPage1 from "../../carouselberitapage1/CarouselBeritaPage1";
-import MainDivider from "../../divider/MainDivider";
-import { useParams } from "react-router-dom";
-import CardSocialMedia from "../../cardsocialmedia/CardSocialMedia";
-import Wait from "../../wait/Wait";
 import { useStoreState } from "easy-peasy";
-import Maps from "../../maps/Maps";
+import { useParams } from "react-router-dom";
+import { lazy } from "react";
+import { Suspense } from "react";
+
+const Wait = lazy(() => import("../../wait/Wait"));
+const Maps = lazy(() => import("../../maps/Maps"));
 
 const DpdDpc = () => {
   const refresher = useStoreState((state) => state.refresher);
@@ -51,7 +51,13 @@ const DpdDpc = () => {
   }, [refresher]);
 
   return (
-    <>
+    <Suspense
+      fallback={
+        <div>
+          <Wait />
+        </div>
+      }
+    >
       <div className="wrapperBeritaPage1">
         <div className="linkedBeritaPage1">
           <BreadCrumbs
@@ -66,7 +72,7 @@ const DpdDpc = () => {
           <Maps />
         </div>
       </div>
-    </>
+    </Suspense>
   );
 };
 

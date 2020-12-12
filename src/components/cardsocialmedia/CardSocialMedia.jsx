@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import "./CardSocialMedia.scss";
 import {
   FacebookShareButton,
@@ -6,9 +6,12 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
 } from "react-share";
-import FacebookButton from '../../img/facebookicon.svg'
-import TwitterButton from '../../img/twittericon.svg'
-import WhatsappButton from '../../img/whatsappicon.svg'
+import { lazy } from "react";
+import { Suspense } from "react";
+
+const FacebookButton = lazy(() => import("../../img/facebookicon.svg"));
+const TwitterButton = lazy(() => import("../../img/twittericon.svg"));
+const WhatsappButton = lazy(() => import("../../img/whatsappicon.svg"));
 
 const CardSocialMedia = ({ imageUrl, title }) => {
   let quote = "PDI Perjuangan";
@@ -18,17 +21,17 @@ const CardSocialMedia = ({ imageUrl, title }) => {
   // const share
 
   return (
-    <>
+    <Suspense fallback={<div>loading ...</div>}>
       <div className="socialMedia">
         <p className="share-socialMedia">Share : </p>
         {/* Facebook Share */}
-        <FacebookShareButton 
-        url={window.location.href}
-        quote={imageUrl}
-        hashtag={hashtag}
-        title={title}
-          >
-          <img src={FacebookButton} alt="" width='20' height='20' />
+        <FacebookShareButton
+          url={window.location.href}
+          quote={imageUrl}
+          hashtag={hashtag}
+          title={title}
+        >
+          <img src={FacebookButton} alt="" width="20" height="20" />
         </FacebookShareButton>
         {/* END Facebook Share */}
 
@@ -39,22 +42,21 @@ const CardSocialMedia = ({ imageUrl, title }) => {
           hashtag={hashtag}
           title={title}
           style={{
-            marginLeft : '40px',
-            marginRight : '40px'
+            marginLeft: "40px",
+            marginRight: "40px",
           }}
         >
-          <img src={TwitterButton} alt="" width='20' height='20' />
+          <img src={TwitterButton} alt="" width="20" height="20" />
         </TwitterShareButton>
         {/* END Twitter Share */}
 
         {/* WhatsApp Share */}
         <WhatsappShareButton url={window.location.href} title={title}>
-        <img src={WhatsappButton} alt="" width='20' height='20' />
-          
+          <img src={WhatsappButton} alt="" width="20" height="20" />
         </WhatsappShareButton>
         {/* END WhatsApp Share */}
       </div>
-    </>
+    </Suspense>
   );
 };
 

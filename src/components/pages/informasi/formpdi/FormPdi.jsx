@@ -1,15 +1,25 @@
 import React from "react";
+import { Suspense } from "react";
+import { lazy } from "react";
 import { useEffect } from "react";
-import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
 import "./FormPdi.scss";
-import MainDivider from "../../../divider/MainDivider"
+
+const Wait = lazy(() => import("../../../wait/Wait"));
+const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
+const MainDivider = lazy(() => import("../../../divider/MainDivider"));
 
 const FormPdi = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <>
+    <Suspense
+      fallback={
+        <div>
+          <Wait />
+        </div>
+      }
+    >
       <div className="wrapper-formPDI">
         {/* START LINKED */}
         <div className="linked-formPdi">
@@ -26,82 +36,65 @@ const FormPdi = () => {
         {/* Container Formulir PDI */}
         <div className="container-formulirPdi">
           <div className="container">
-            <div className="formgaris"> 
-            <MainDivider
-            text=" FORMULIR PERMOHONAN INFORMASI PUBLIK" />
+            <div className="formgaris">
+              <MainDivider text=" FORMULIR PERMOHONAN INFORMASI PUBLIK" />
             </div>
-
-            
-            </div>
-            <div className="nikWrapper">
+          </div>
+          <div className="nikWrapper">
             <label htmlFor="basic-url">Upload identitas</label>
             <select className="form-control">
               <option>KTP</option>
               <option>KTA</option>
               <option>SIM C</option>
             </select>
-            
-            <br/>
+
+            <br />
             <label>
-                  Upload Photo Identitas <small className="strict">*</small>
+              Upload Photo Identitas <small className="strict">*</small>
             </label>
-            <input
-              className="form-control form-control-sm"
-              type="text"
-              
-            />
-             <small className="error-msg" />
-            </div>
-            <div className="nikWrapper">
+            <input className="form-control form-control-sm" type="text" />
+            <small className="error-msg" />
+          </div>
+          <div className="nikWrapper">
             <div className="form-group">
-                <label>
-                  NIK / Nomor Identitas <small className="strict">*</small>
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="nomor_identitas"
-                  defaultValue={""}
-                />
-                <small className="error-msg" />
-              </div>
-              <div className="form-group">
-                <label>
-                  Nama <small className="strict">*</small>
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="nama"
-                
-                />
-                <small className="error-msg" />
-              </div>
-              <div className="form-group">
-                <label>
-                  Alamat <small className="strict">*</small>
-                </label>
-                <textarea
-                  className="form-control"
-                  name="alamat"
-                  defaultValue={""}
-                />
-                <small className="error-msg" />
-              </div>
-              <br/>
+              <label>
+                NIK / Nomor Identitas <small className="strict">*</small>
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                name="nomor_identitas"
+                defaultValue={""}
+              />
+              <small className="error-msg" />
+            </div>
+            <div className="form-group">
+              <label>
+                Nama <small className="strict">*</small>
+              </label>
+              <input type="text" className="form-control" name="nama" />
+              <small className="error-msg" />
+            </div>
+            <div className="form-group">
+              <label>
+                Alamat <small className="strict">*</small>
+              </label>
+              <textarea
+                className="form-control"
+                name="alamat"
+                defaultValue={""}
+              />
+              <small className="error-msg" />
+            </div>
+            <br />
             <label htmlFor="basic-url">Pekerjaan </label>
-            <input
-              className="form-control"
-              type="text"
-              
-            />
-            <br/>
+            <input className="form-control" type="text" />
+            <br />
             <label htmlFor="exampleFormControlInput1">Email</label>
             <input
               type="email"
               className="form-control"
               id="exampleFormControlInput1"
-              
             />
             <br />
             <br />
@@ -112,10 +105,7 @@ const FormPdi = () => {
             <br />
             <br />
             <label htmlFor="basic-url">Informasi dibutuhkan</label>
-            <input
-             className="form-control"
-              type="text"
-            />
+            <input className="form-control" type="text" />
             <div className="form-group">
               <label htmlFor="exampleFormControlTextarea1">
                 Tujuan pengguna informasi{" "}
@@ -234,10 +224,7 @@ const FormPdi = () => {
             <br />
             <br />
             <div className="col-auto">
-              <button
-                type="submit"
-                className="btn btn-danger mb-3"
-              >
+              <button type="submit" className="btn btn-danger mb-3">
                 Kirimi Data
               </button>
             </div>
@@ -330,7 +317,7 @@ const FormPdi = () => {
 
         {/* END Container Formulir PDI */}
       </div>
-    </>
+    </Suspense>
   );
 };
 

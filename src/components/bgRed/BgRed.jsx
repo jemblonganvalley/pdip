@@ -1,9 +1,6 @@
 import React from "react";
 import "./BgRed.scss";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
-import InstaFeedCustom from '../instafeed/InstaFeedCustom'
-// import InstagramEmbed from 'react-instagram-embed';
-// import { useMediaQuery } from "react-responsive";
 
 const BgRed = () => {
   // const Desktop = ({ children }) => {

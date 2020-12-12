@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { Link, NavLink, useParams } from "react-router-dom";
 import "../search/Search.scss";
-import img from "../../../img/profil.png";
-import img5 from "../../../img/img5.jpg";
-import kampanye from "../../../img/kampanye.jpg";
-import CardSearch from "../../cardsearch/CardSearch";
-import { action, useStoreActions, useStoreState } from "easy-peasy";
-import "../../../database/globalState";
-import { useEffect } from "react";
-import Wait from "../../wait/Wait";
 import ReactPaginate from "react-paginate";
+import { useEffect } from "react";
+import "../../../database/globalState";
+import { action, useStoreActions, useStoreState } from "easy-peasy";
+import { lazy } from "react";
+import { Suspense } from "react";
+
+const CardSearch = lazy(() => import("../../cardsearch/CardSearch"));
+const Wait = lazy(() => import("../../wait/Wait"));
 
 const Search = () => {
   // Onchange text from input search
@@ -33,7 +33,13 @@ const Search = () => {
     }
 
     return (
-      <>
+      <Suspense
+        fallback={
+          <div>
+            <Wait />
+          </div>
+        }
+      >
         <div className="container-angka-pagination">
           <div className="col-angka-pagination">
             {pageNumbers.slice(0, 10).map((number) => (
@@ -65,7 +71,7 @@ const Search = () => {
             ))}
           </div>
         </div>
-      </>
+      </Suspense>
     );
   };
 
@@ -166,16 +172,22 @@ const Search = () => {
               </div>
 
               <div className="column2-hasil-pencarian">
-              {search && (
+                {search && (
                   <div className="column-info-kiri">
-                    {configHome.map((e, i) =>{
-                      <CardSearch 
-                      key={i}
-                      id={e.id}
-                      path={e.path}
-                      title={e.title}
-                      paragrap={e.paragrap} />
+                    {configHome.map((e, i) => {
+                      return (
+                        <>
+                          <CardSearch
+                            key={i}
+                            id={e.id}
+                            path={e.path}
+                            title={e.title}
+                            paragrap={e.description}
+                          />
+                        </>
+                      );
                     })}
+                    {console.log(configHome)}
                   </div>
                 )}
               </div>

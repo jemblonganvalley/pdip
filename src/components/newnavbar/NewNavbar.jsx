@@ -1,12 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
 import logo from "../../img/pdiperjuangan02.svg";
 import "./NewNavbar.scss";
-import DropDown from "../navbar/DropDown";
 import { useMediaQuery } from "react-responsive";
-import pdimobile from "../../img/pdimobile.svg";
 import { useStoreActions, useStoreState } from "easy-peasy";
 import "../../database/globalState";
 import { Link, NavLink, Redirect } from "react-router-dom";
+import { lazy } from "react";
+
+const DropDown = lazy(() => import("../navbar/DropDown"));
+const pdimobile = lazy(() => import("../../img/pdimobile.svg"));
 
 const NewNavbar = ({ token }) => {
   const setRefresher = useStoreActions((action) => action.setRefresher);
