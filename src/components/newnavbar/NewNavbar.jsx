@@ -8,7 +8,7 @@ import { Link, NavLink, Redirect } from "react-router-dom";
 import { lazy } from "react";
 
 const DropDown = lazy(() => import("../navbar/DropDown"));
-const pdimobile = lazy(() => import("../../img/pdimobile.svg"));
+import pdimobile from "../../img/pdimobile.svg";
 
 const NewNavbar = ({ token }) => {
   const setRefresher = useStoreActions((action) => action.setRefresher);

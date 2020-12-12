@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import { Suspense } from "react";
 import { lazy } from "react";
 import "./VideoMedia.scss";
+import megawati from "../../../img/megawati1.jpg";
 
 import Wait from "../../wait/Wait";
 const Cards = lazy(() => import("../../cards/MainCards"));
-const megawati = lazy(() => import("../../../img/megawati1.jpg"));
 const VMedia = lazy(() => import("../../VMedia/VMedia"));
 const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
 

@@ -2,6 +2,8 @@ import "./HomePage.scss";
 import React, { useEffect, useState, lazy, Suspense } from "react";
 import { useMediaQuery } from "react-responsive";
 import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
+import BMKG from "../../../img/replace_bmkg.png";
+
 const MainSlider = lazy(() => import("../../slider/MainSlider"));
 const MusicPdi = lazy(() => import("../../musicpdi/MusicPdi"));
 const Cards = lazy(() => import("../../cards/MainCards"));
@@ -12,7 +14,6 @@ const MusicMobile = lazy(() => import("../../musicPdiMobile/MusicMobile"));
 const KMobile = lazy(() => import("../../carouselKMobile/KMobile"));
 const VMedia = lazy(() => import("../../VMedia/VMedia"));
 const Wait = lazy(() => import("../../wait/Wait"));
-const BMKG = lazy(() => import("../../../img/replace_bmkg.png"));
 const MainSliderTablet = lazy(() =>
   import("../../slider/tablet/MainSliderTablet")
 );

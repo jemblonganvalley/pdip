@@ -9,11 +9,11 @@ import {
 import { lazy } from "react";
 import { Suspense } from "react";
 
-const FacebookButton = lazy(() => import("../../img/facebookicon.svg"));
-const TwitterButton = lazy(() => import("../../img/twittericon.svg"));
-const WhatsappButton = lazy(() => import("../../img/whatsappicon.svg"));
+import FacebookButton from "../../img/facebookicon.svg";
+import TwitterButton from "../../img/twittericon.svg";
+import WhatsappButton from "../../img/whatsappicon.svg";
 
-const CardSocialMedia = ({ imageUrl, title }) => {
+const CardSocialMedia = ({ imageUrl, title, url }) => {
   let quote = "PDI Perjuangan";
   let hashtag = "#PDIPERJUANGAN";
   let titleForWhatsapp = "PDI Perjuangan";
@@ -26,8 +26,8 @@ const CardSocialMedia = ({ imageUrl, title }) => {
         <p className="share-socialMedia">Share : </p>
         {/* Facebook Share */}
         <FacebookShareButton
-          url={window.location.href}
-          quote={imageUrl}
+          url={url}
+          quote={title}
           hashtag={hashtag}
           title={title}
         >

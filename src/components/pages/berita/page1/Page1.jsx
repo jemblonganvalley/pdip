@@ -67,7 +67,7 @@ const Page1 = () => {
         <>
           <MetaTags>
             <meta name="description" content={detailPage.title} />
-            <meta property="og:url" content={`https://pas.biar.pw`} />
+            <meta property="og:url" content={`https://pdiperjuangan.id`} />
             <meta property="og:title" content={detailPage.title} />
             <meta property="og:description" content={detailPage.title} />
             <meta
@@ -226,6 +226,7 @@ const Page1 = () => {
                     <CardSocialMedia
                       imageUrl={detailPage.path}
                       title={detailPage.title}
+                      url={window.location.href}
                     />
                   </div>
                 </div>
