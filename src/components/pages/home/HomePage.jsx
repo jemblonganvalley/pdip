@@ -122,7 +122,13 @@ const HomePage = () => {
   }, []);
 
   return (
-    <Suspense fallback={<div>loading..</div>}>
+    <Suspense
+      fallback={
+        <div>
+          <Wait />
+        </div>
+      }
+    >
       {configHome.length > 0 ? (
         <div
           className="homepage"
