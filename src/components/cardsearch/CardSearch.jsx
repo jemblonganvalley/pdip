@@ -2,35 +2,36 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./CardSearch.scss";
 
-const CardSearch = ({ cardSearchItem }) => {
+const CardSearch = ({ cardSearchItem, id, path, title, paragrap }) => {
   return (
     <>
-      {cardSearchItem.map((e) => {
+      {/* {cardSearchItem.map((e) => {
         return (
-          <Link
+          
+        );
+      })} */}
+      <Link
             className="card-hasil-pencarian"
-            to={`/detail-article/${e.id}/`}
+            to={`/detail-article/${id}/`}
           >
             <img
-              src={`https://data.pdiperjuangan.id/public/${e.path}`}
+              src={`https://data.pdiperjuangan.id/public/${path}`}
               alt=""
               className="img-card"
             />
 
             <div className="column-content-card">
               <div className="column-title-card">
-                <small className="title1-card">{e.title}</small>
+                <small className="title1-card">{title}</small>
                 {/* 
                                   <small className="title2-card">
-                                    {e.title2}
+                                    {title2}
                                   </small> */}
               </div>
 
-              <h6 className="txt-paragrap-card">{e.paragrap}</h6>
+              <h6 className="txt-paragrap-card">{paragrap}</h6>
             </div>
           </Link>
-        );
-      })}
     </>
   );
 };

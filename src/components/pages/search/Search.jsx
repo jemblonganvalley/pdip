@@ -166,9 +166,16 @@ const Search = () => {
               </div>
 
               <div className="column2-hasil-pencarian">
-                {search && (
+              {search && (
                   <div className="column-info-kiri">
-                    <CardSearch cardSearchItem={configHome} />
+                    {configHome.map((e, i) =>{
+                      <CardSearch 
+                      key={i}
+                      id={e.id}
+                      path={e.path}
+                      title={e.title}
+                      paragrap={e.paragrap} />
+                    })}
                   </div>
                 )}
               </div>
