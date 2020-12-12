@@ -1,4 +1,4 @@
-const css = /* Css */`
+const css = `
 .insta-feed {
   width: 100%;
   /* background-color: gray; */
@@ -100,10 +100,10 @@ const css = /* Css */`
 .insta-feed-user-post-single:hover:after {
   opacity: 0.6;
 }
-`
+`;
 
-const template = document.createElement('template')
-template.innerHTML = /* html */ `
+const template = document.createElement("template");
+template.innerHTML = `
 <style>
 ${css}
 </style>
@@ -117,54 +117,54 @@ ${css}
   <div class="insta-feed-user-stats"></div>
   <div class="insta-feed-user-posts"></div>
 </div>
-`
+`;
 
 class InstaFeedCustom extends HTMLElement {
-    constructor() {
-        super();
-        // element created
-        this._shadowRoot = this.attachShadow({mode: 'open'})
-        this._shadowRoot.appendChild(template.content.cloneNode(true))
-    }
+  constructor() {
+    super();
+    // element created
+    this._shadowRoot = this.attachShadow({ mode: "open" });
+    this._shadowRoot.appendChild(template.content.cloneNode(true));
+  }
 
-    connectedCallback() {
-        // browser calls this method when the element is added to the document
-        // (can be called many times if an element is repeatedly added/removed)
-        this.username = this.getAttribute('username')
-        this.render()
-    }
+  connectedCallback() {
+    // browser calls this method when the element is added to the document
+    // (can be called many times if an element is repeatedly added/removed)
+    this.username = this.getAttribute("username");
+    this.render();
+  }
 
-    async fetchData(username){
-        const res = await fetch(`https://www.instagram.com/${username}/?__a=1`)
-        const data = await res.json()
-        // this.data = data;
-        return data
-    }
+  async fetchData(username) {
+    const res = await fetch(`https://www.instagram.com/${username}/?__a=1`);
+    const data = await res.json();
+    // this.data = data;
+    return data;
+  }
 
-    renderPosts(arr = []){
-        arr.forEach((data,index)=>{
-            this._shadowRoot.querySelector(".insta-feed-user-posts").innerHTML += `
+  renderPosts(arr = []) {
+    arr.forEach((data, index) => {
+      this._shadowRoot.querySelector(".insta-feed-user-posts").innerHTML += `
             <a href="https://instagram.com/p/${data.node.shortcode}" target="_blank" class="insta-feed-user-post-single">        
               <div>
                 <img src="${data.node.display_url}"/>
               </div>
-            </a>`
-        })
-    }
+            </a>`;
+    });
+  }
 
-    renderInformation(user){
-        this._shadowRoot.querySelector('.insta-feed-user-img').innerHTML = `
+  renderInformation(user) {
+    this._shadowRoot.querySelector(".insta-feed-user-img").innerHTML = `
         <img
             src="${user.profile_pic_url}"
             alt="${user.full_name}"
           />
-        `
-        this._shadowRoot.querySelector('.insta-feed-user-info').innerHTML = `
+        `;
+    this._shadowRoot.querySelector(".insta-feed-user-info").innerHTML = `
             <h3>${user.full_name}</h3>
             <p>@${user.username}</p>
             <a class="insta-feed-follow-button" target="_blank" href="https://instagram.com/${user.username}"><button>Follow</button></a>
-        `
-        this._shadowRoot.querySelector('.insta-feed-user-stats').innerHTML = `
+        `;
+    this._shadowRoot.querySelector(".insta-feed-user-stats").innerHTML = `
         <div class="insta-feed-user-post-count">
           <h3>${user.edge_owner_to_timeline_media.count.toLocaleString()}</h3>
           <p>Posts</p>
@@ -177,24 +177,24 @@ class InstaFeedCustom extends HTMLElement {
           <h3>${user.edge_follow.count.toLocaleString()}</h3>
           <p>Following</p>
         </div>
-        `
-    }
+        `;
+  }
 
-    renderError(err){
-      this._shadowRoot.querySelector('.insta-feed-user-img').innerHTML = `
+  renderError(err) {
+    this._shadowRoot.querySelector(".insta-feed-user-img").innerHTML = `
       <h3>404 Not Found</h3>
-      `
-    }
+      `;
+  }
 
-    async render(){
-      try {
-        const {graphql} = await this.fetchData(this.username)
-        this.renderInformation(graphql.user)
-        this.renderPosts(graphql.user.edge_owner_to_timeline_media.edges)   
-      } catch (err) {
-        this.renderError(err)
-      }
+  async render() {
+    try {
+      const { graphql } = await this.fetchData(this.username);
+      this.renderInformation(graphql.user);
+      this.renderPosts(graphql.user.edge_owner_to_timeline_media.edges);
+    } catch (err) {
+      this.renderError(err);
     }
+  }
 }
 
-customElements.define("insta-feed-custom", InstaFeedCustom)
+customElements.define("insta-feed-custom", InstaFeedCustom);

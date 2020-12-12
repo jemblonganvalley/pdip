@@ -19,7 +19,9 @@ const Subscribe = () => {
                                 btnIcons="fa fa-check"
                                 mr=".5rem" /> */}
           <Link to="/">
-            <button className="btn btn-danger w-100 mt-2">Subscribe</button>
+            <button className="btn btn-danger w-100 mt-2" name="btn_subscribe">
+              Subscribe
+            </button>
           </Link>
         </div>
       </div>

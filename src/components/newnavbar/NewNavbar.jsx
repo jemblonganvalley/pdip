@@ -101,6 +101,7 @@ const NewNavbar = ({ token }) => {
                 />
               </NavLink>
               <button
+                name="btn_menu"
                 className="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
@@ -492,6 +493,7 @@ const NewNavbar = ({ token }) => {
                 />
               </NavLink>
               <button
+                name="btn_menu"
                 className="navbar-toggler"
                 type="button"
                 data-toggle="collapse"

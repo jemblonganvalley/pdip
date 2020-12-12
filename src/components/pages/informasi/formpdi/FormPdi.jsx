@@ -224,7 +224,11 @@ const FormPdi = () => {
             <br />
             <br />
             <div className="col-auto">
-              <button type="submit" className="btn btn-danger mb-3">
+              <button
+                type="submit"
+                className="btn btn-danger mb-3"
+                name="btn_kirim_data"
+              >
                 Kirimi Data
               </button>
             </div>

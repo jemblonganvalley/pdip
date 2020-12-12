@@ -152,7 +152,7 @@ const Search = () => {
                 }}
               />
 
-              <button className="btn-icon-pageSearch">
+              <button className="btn-icon-pageSearch" name="btn_search">
                 <span className="material-icons" id="txtGroup">
                   search
                 </span>

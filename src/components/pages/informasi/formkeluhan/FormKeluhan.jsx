@@ -284,7 +284,11 @@ const FormKeluhan = () => {
               </div>
               <div className="form-group" style={{ marginTop: 20 }}>
                 <hr />
-                <button type="submit" className="btn btn-danger pull-right">
+                <button
+                  type="submit"
+                  className="btn btn-danger pull-right"
+                  name="btn_submit_data"
+                >
                   Submit Data
                 </button>
               </div>
