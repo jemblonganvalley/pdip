@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
-
-import "../page1/Page1.scss";
-import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
-import CarouselBeritaPage1 from "../../../carouselberitapage1/CarouselBeritaPage1";
-import MainDivider from "../../../divider/MainDivider";
-import { useParams } from "react-router-dom";
-import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
-import Wait from "../../../wait/Wait";
-import { useStoreState } from "easy-peasy";
-import NotFound from "../../../notFound/NotFound";
-import { Helmet } from "react-helmet";
 import MetaTags from "react-meta-tags";
-import { parse } from "html-react-parser";
+import { useParams } from "react-router-dom";
+import { useStoreState } from "easy-peasy";
+import "../page1/Page1.scss";
+import { lazy } from "react";
+import { Suspense } from "react";
+
+const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
+const CardSocialMedia = lazy(() =>
+  import("../../../cardsocialmedia/CardSocialMedia")
+);
+const Wait = lazy(() => import("../../../wait/Wait"));
 
 const Page1 = () => {
   const refresher = useStoreState((state) => state.refresher);
@@ -57,7 +56,13 @@ const Page1 = () => {
   }, [refresher]);
 
   return (
-    <>
+    <Suspense
+      fallback={
+        <div>
+          <Wait />
+        </div>
+      }
+    >
       {detailPage ? (
         <>
           <MetaTags>
@@ -271,7 +276,7 @@ const Page1 = () => {
           {/* <NotFound pengembanganDisplay={'none'} /> */}
         </>
       )}
-    </>
+    </Suspense>
   );
 };
 

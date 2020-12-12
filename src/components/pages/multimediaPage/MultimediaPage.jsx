@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
+import { Suspense } from "react";
+import { lazy } from "react";
 import "./MultimediaPage.scss";
-import Wait from "../../wait/Wait";
 
-import Cards from "../../cards/MainCards";
-import perempuan from "../../../img/ig-perempuan.png";
-import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
-import MainButton from "../../buttons/MainButton";
-import MainDivider from "../../divider/MainDivider";
-import CardInformasi from "../../cardInformasi/CardInformasi";
-import VMedia from "../../VMedia/VMedia";
-import CardHeader from "../../cardheader/CardHeader";
-import Subscribe from "../../../img/subscribe.png";
-import { Link } from "react-router-dom";
+const Wait = lazy(() => import("../../wait/Wait"));
+const Cards = lazy(() => import("../../cards/MainCards"));
+const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
+const MainButton = lazy(() => import("../../buttons/MainButton"));
+const MainDivider = lazy(() => import("../../divider/MainDivider"));
+const CardInformasi = lazy(() => import("../../cardInformasi/CardInformasi"));
+const VMedia = lazy(() => import("../../VMedia/VMedia"));
+const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
+const Subscribe = lazy(() => import("../../../img/subscribe.png"));
 
 const MultimediaPage = () => {
   const [configHome, setConfigHome] = useState([]);
@@ -50,7 +50,7 @@ const MultimediaPage = () => {
   }, []);
 
   return (
-    <>
+    <Suspense fallback={<Wait />}>
       {configHome.length > 0 ? (
         <div className="wrapperMultimedia">
           {/* <div
@@ -152,7 +152,7 @@ const MultimediaPage = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </Suspense>
   );
 };
 

@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from "react";
 
+import { NavLink, useParams } from "react-router-dom";
 import "./containerCard.scss";
 import "../paginationevent/AngkaPaginationEvent.scss";
-import BreadCrumbs from "../../components/breadcrumbs/BreadCrumbs";
-import MainDivider from "../../components/divider/MainDivider";
-import { NavLink, useParams } from "react-router-dom";
-import Cards from "../cards/MainCards";
-import Wait from "../wait/Wait";
 import ReactPaginate from "react-paginate";
-import NotFound from "../notFound/NotFound";
+import { lazy } from "react";
+import { Suspense } from "react";
+
+const BreadCrumbs = lazy(() =>
+  import("../../components/breadcrumbs/BreadCrumbs")
+);
+const MainDivider = lazy(() => import("../../components/divider/MainDivider"));
+const Cards = lazy(() => import("../cards/MainCards"));
+const Wait = lazy(() => import("../wait/Wait"));
 // import AngkaPaginationEvent from "../paginationevent/AngkaPaginationEvent";
 
 const ContainerCard = () => {
@@ -29,7 +33,13 @@ const ContainerCard = () => {
     }
 
     return (
-      <>
+      <Suspense
+        fallback={
+          <div>
+            <Wait />
+          </div>
+        }
+      >
         <div className="container-angka-pagination">
           <div className="col-angka-pagination">
             {pageNumbers.map((number) => (
@@ -61,7 +71,7 @@ const ContainerCard = () => {
             ))}
           </div>
         </div>
-      </>
+      </Suspense>
     );
   };
 

@@ -1,16 +1,24 @@
 // Import to React
 import React, { useEffect, useState } from "react";
-// END Import to React
-import Wait from "../../wait/Wait";
 import "./PemiluPage.scss";
-import CarouselPemilu1 from "../../carouselPemilu1/CarouselPemilu1";
-import CarouselPemilu2 from "../../carouselPemilu2/CarouselPemilu2";
-import Carousel3PemiluPage from "../../carousel3PemiluPage/Carousel3PemiluPage";
-import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
-
-import CardHeader from "../../cardheader/CardHeader";
-import ParalaxBox from "../../paralaxBox/ParalaxBox";
 import { Link } from "react-router-dom";
+import { lazy } from "react";
+import { Suspense } from "react";
+// END Import to React
+
+const Wait = lazy(() => import("../../wait/Wait"));
+const CarouselPemilu1 = lazy(() =>
+  import("../../carouselPemilu1/CarouselPemilu1")
+);
+const CarouselPemilu2 = lazy(() =>
+  import("../../carouselPemilu2/CarouselPemilu2")
+);
+const Carousel3PemiluPage = lazy(() =>
+  import("../../carousel3PemiluPage/Carousel3PemiluPage")
+);
+const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
+const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
+const ParalaxBox = lazy(() => import("../../paralaxBox/ParalaxBox"));
 
 // Create Component
 const PemiluPage = () => {
@@ -50,7 +58,13 @@ const PemiluPage = () => {
   }, []);
 
   return (
-    <>
+    <Suspense
+      fallback={
+        <div>
+          <Wait />
+        </div>
+      }
+    >
       {configHome.length > 0 ? (
         <div className="wrapperPemiluPage">
           {/* <div
@@ -213,7 +227,7 @@ const PemiluPage = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </Suspense>
   );
 };
 // END Create Component

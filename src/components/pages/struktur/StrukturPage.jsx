@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./StrukturPage.scss";
-import StrukturPaginate from "../../pagination/StrukturPaginate";
-import MainDivider from "../../divider/MainDivider";
-import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
-import Wait from "../../wait/Wait";
 import { useStoreState } from "easy-peasy";
-import NotFound from "../../notFound/NotFound";
+import { lazy } from "react";
+import { Suspense } from "react";
+
+const StrukturPaginate = lazy(() =>
+  import("../../pagination/StrukturPaginate")
+);
+const MainDivider = lazy(() => import("../../divider/MainDivider"));
+const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
+const Wait = lazy(() => import("../../wait/Wait"));
 
 const StrukturPage = ({ slug, grade }) => {
   const [configHome, setConfigHome] = useState([]);
@@ -50,7 +54,13 @@ const StrukturPage = ({ slug, grade }) => {
   }, [refresher]);
 
   return (
-    <>
+    <Suspense
+      fallback={
+        <div>
+          <Wait />
+        </div>
+      }
+    >
       {configHome.length > 0 ? (
         <div className="pageStruktur">
           {/* HEADERS */}
@@ -101,7 +111,7 @@ const StrukturPage = ({ slug, grade }) => {
         <Wait />
         // <NotFound notFoundDisplay={"none"} />
       )}
-    </>
+    </Suspense>
   );
 };
 

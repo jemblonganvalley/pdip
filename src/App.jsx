@@ -1,40 +1,69 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import HomePage from "./components/pages/home/HomePage";
-import MainFooter from "./components/footer/MainFooter";
-import PartaiPage from "./components/pages/partai/PartaiPage";
-import MultimediaPage from "./components/pages/multimediaPage/MultimediaPage";
-import BkbbPage from "./components/pages/bkbb/BkbbPage";
-import InformasiPage from "./components/pages/informasi/InformasiPage";
-import PemiluPage from "./components/pages/Pemilu/PemiluPage";
 import { useState } from "react";
 import { useEffect } from "react";
-import BeritaPage from "./components/pages/berita/BeritaPage";
-import KetuaUmumPage from "./components/pages/KetuaUmum/KetuaUmumPage";
-import StrukturPage from "./components/pages/struktur/StrukturPage";
-import DetailPengurus from "./components/pages/detailpengurus/DetailPengurus";
-import Dpd from "./components/dpd/Dpd";
-import VideoMedia from "./components/pages/videomedia/VideoMedia";
-import Page1 from "./components/pages/berita/page1/Page1";
-import Page2 from "./components/pages/berita/page2/Page2";
-import MateriPokok from "./components/pages/materipokok/MateriPokok";
+import Wait from "./components/wait/Wait";
 
-import BgRed from "./components/bgRed/BgRed";
-import WejanganBungKarno from "./components/pages/bkbb/wejanganbungkarno/WejanganBungKarno";
-import { useStoreActions } from "easy-peasy";
-import EventPage from "./components/pages/events/EventPage";
-import ContainerCard from "./components/containerCard/ContainerCard";
-import Search from "./components/pages/search/Search";
-import ContainerCardGallery from "./components/gallery/ContainerCardGallery";
-import Gallery from "./components/pages/berita/gallery/Gallery";
-import ContainerCardMultimedia from "./components/multimedia/ContainerCardMultimedia";
-import FormPdi from "./components/pages/informasi/formpdi/FormPdi";
-import FormKeluhan from "./components/pages/informasi/formkeluhan/FormKeluhan";
-import PidatoAll from "./components/pages/KetuaUmum/pidatoAll/PidatoAll";
-import MultimediaAll from "./components/pages/multimediaPage/multimediaAll/MultimediaAll";
-import NewNavbar from "./components/newnavbar/NewNavbar";
-import DpdDpc from "./components/pages/dpddpc/DpdDpc";
-import NotFound from "./components/notFound/NotFound";
+const HomePage = lazy(() => import("./components/pages/home/HomePage"));
+const MainFooter = lazy(() => import("./components/footer/MainFooter"));
+const PartaiPage = lazy(() => import("./components/pages/partai/PartaiPage"));
+const MultimediaPage = lazy(() =>
+  import("./components/pages/multimediaPage/MultimediaPage")
+);
+const BkbbPage = lazy(() => import("./components/pages/bkbb/BkbbPage"));
+const InformasiPage = lazy(() =>
+  import("./components/pages/informasi/InformasiPage")
+);
+const PemiluPage = lazy(() => import("./components/pages/Pemilu/PemiluPage"));
+const BeritaPage = lazy(() => import("./components/pages/berita/BeritaPage"));
+const KetuaUmumPage = lazy(() =>
+  import("./components/pages/KetuaUmum/KetuaUmumPage")
+);
+const StrukturPage = lazy(() =>
+  import("./components/pages/struktur/StrukturPage")
+);
+const DetailPengurus = lazy(() =>
+  import("./components/pages/detailpengurus/DetailPengurus")
+);
+const Dpd = lazy(() => import("./components/dpd/Dpd"));
+const VideoMedia = lazy(() =>
+  import("./components/pages/videomedia/VideoMedia")
+);
+const Page1 = lazy(() => import("./components/pages/berita/page1/Page1"));
+const Page2 = lazy(() => import("./components/pages/berita/page2/Page2"));
+
+const BgRed = lazy(() => import("./components/bgRed/BgRed"));
+const WejanganBungKarno = lazy(() =>
+  import("./components/pages/bkbb/wejanganbungkarno/WejanganBungKarno")
+);
+const EventPage = lazy(() => import("./components/pages/events/EventPage"));
+const ContainerCard = lazy(() =>
+  import("./components/containerCard/ContainerCard")
+);
+const Search = lazy(() => import("./components/pages/search/Search"));
+const ContainerCardGallery = lazy(() =>
+  import("./components/gallery/ContainerCardGallery")
+);
+const Gallery = lazy(() => import("./components/pages/berita/gallery/Gallery"));
+const ContainerCardMultimedia = lazy(() =>
+  import("./components/multimedia/ContainerCardMultimedia")
+);
+const FormPdi = lazy(() =>
+  import("./components/pages/informasi/formpdi/FormPdi")
+);
+const FormKeluhan = lazy(() =>
+  import("./components/pages/informasi/formkeluhan/FormKeluhan")
+);
+const PidatoAll = lazy(() =>
+  import("./components/pages/KetuaUmum/pidatoAll/PidatoAll")
+);
+const MultimediaAll = lazy(() =>
+  import("./components/pages/multimediaPage/multimediaAll/MultimediaAll")
+);
+const NewNavbar = lazy(() => import("./components/newnavbar/NewNavbar"));
+const DpdDpc = lazy(() => import("./components/pages/dpddpc/DpdDpc"));
+const NotFound = lazy(() => import("./components/notFound/NotFound"));
+
 function App() {
   let [hide, setHide] = useState(true);
   let [tkn, setTkn] = useState();
@@ -71,76 +100,83 @@ function App() {
 
   return (
     <Router>
-      {/* {tkn && <MainNavbar hide={hide} token={tkn} />} */}
-      {tkn && <NewNavbar hide={hide} token={tkn} />}
-      <div
-        className="App"
-        style={{
-          marginTop: "9vh",
-        }}
+      <Suspense
+        fallback={
+          <div>
+            <Wait />
+          </div>
+        }
       >
-        <Switch>
-          {/* BLOG PAGE  */}
-          <Route path="/Fraksi-Pdi-Perjuangan">
-            <PartaiPage redirect="https://www.dpr.go.id/anggota/index/fraksi/3" />
-          </Route>
-          {/* BLOG PAGE  */}
-          <Route path="/detail-article/:id">
-            <Page1 />
-          </Route>
+        {/* {tkn && <MainNavbar hide={hide} token={tkn} />} */}
+        {tkn && <NewNavbar hide={hide} token={tkn} />}
+        <div
+          className="App"
+          style={{
+            marginTop: "9vh",
+          }}
+        >
+          <Switch>
+            {/* BLOG PAGE  */}
+            <Route path="/Fraksi-Pdi-Perjuangan">
+              <PartaiPage redirect="https://www.dpr.go.id/anggota/index/fraksi/3" />
+            </Route>
+            {/* BLOG PAGE  */}
+            <Route path="/detail-article/:id">
+              <Page1 />
+            </Route>
 
-          <Route path="/ketua-umum/pidato/all">
-            <PidatoAll />
-          </Route>
+            <Route path="/ketua-umum/pidato/all">
+              <PidatoAll />
+            </Route>
 
-          <Route path="/pidato-ketua-umum">
-            <PidatoAll />
-          </Route>
+            <Route path="/pidato-ketua-umum">
+              <PidatoAll />
+            </Route>
 
-          {/* CONTAINER CARD */}
-          <Route path="/article/:category_id">
-            <ContainerCard />
-          </Route>
+            {/* CONTAINER CARD */}
+            <Route path="/article/:category_id">
+              <ContainerCard />
+            </Route>
 
-          {/* CONTAINER CARD GALLERY*/}
-          <Route path="/gallery/detail-gallery/:id/:slug">
-            <Gallery />
-          </Route>
+            {/* CONTAINER CARD GALLERY*/}
+            <Route path="/gallery/detail-gallery/:id/:slug">
+              <Gallery />
+            </Route>
 
-          <Route path="/formkeluhan">
-            <FormKeluhan />
-          </Route>
+            <Route path="/formkeluhan">
+              <FormKeluhan />
+            </Route>
 
-          <Route path="/formpdi">
-            <FormPdi />
-          </Route>
+            <Route path="/formpdi">
+              <FormPdi />
+            </Route>
 
-          <Route path="/search">
-            <Search />
-          </Route>
+            <Route path="/search">
+              <Search />
+            </Route>
 
-          {/* CONTAINER CARD GALLERY*/}
-          <Route path="/gallery">
-            <ContainerCardGallery />
-          </Route>
+            {/* CONTAINER CARD GALLERY*/}
+            <Route path="/gallery">
+              <ContainerCardGallery />
+            </Route>
 
-          <Route path="/multimedia/all">
-            <MultimediaAll />
-          </Route>
+            <Route path="/multimedia/all">
+              <MultimediaAll />
+            </Route>
 
-          {/* CONTAINER CARD MULTIMEDIA*/}
-          <Route path="/multimedia/:category">
-            <ContainerCardMultimedia />
-          </Route>
+            {/* CONTAINER CARD MULTIMEDIA*/}
+            <Route path="/multimedia/:category">
+              <ContainerCardMultimedia />
+            </Route>
 
-          <Route path="/detail-multimedia/:id/:slug">
-            <Page2 />
-          </Route>
+            <Route path="/detail-multimedia/:id/:slug">
+              <Page2 />
+            </Route>
 
-          <Route path="/search/:par">
-            <Search />
-          </Route>
-          {/* 
+            <Route path="/search/:par">
+              <Search />
+            </Route>
+            {/* 
           <Route path="/multimedia/wawancara">
             <Wawancara />
           </Route>
@@ -153,105 +189,102 @@ function App() {
             <VideoDokumen />
           </Route> */}
 
-          <Route path="/event">
-            <EventPage />
-          </Route>
+            <Route path="/event">
+              <EventPage />
+            </Route>
 
-          <Route path="/wejanganbungkarno">
-            <WejanganBungKarno />
-          </Route>
+            <Route path="/wejanganbungkarno">
+              <WejanganBungKarno />
+            </Route>
 
-          <Route path="/materipokok">
-            <MateriPokok />
-          </Route>
+            <Route path="/videomedia">
+              <VideoMedia />
+            </Route>
 
-          <Route path="/videomedia">
-            <VideoMedia />
-          </Route>
+            <Route path="/dpd/:id/:nameProv">
+              <Dpd />
+            </Route>
 
-          <Route path="/dpd/:id/:nameProv">
-            <Dpd />
-          </Route>
+            <Route path="/partai/dpd-dpc">
+              <DpdDpc />
+            </Route>
 
-          <Route path="/partai/dpd-dpc">
-            <DpdDpc />
-          </Route>
+            <Route path="/detailpengurus/:id/:name/:grade">
+              <DetailPengurus />
+            </Route>
 
-          <Route path="/detailpengurus/:id/:name/:grade">
-            <DetailPengurus />
-          </Route>
+            <Route path="/struktur-dpp">
+              <StrukturPage slug="struktur-dpp" grade="pengurus" />
+            </Route>
 
-          <Route path="/struktur-dpp">
-            <StrukturPage slug="struktur-dpp" grade="pengurus" />
-          </Route>
-
-          {/* <Route path="/anggota-legislatif">
+            {/* <Route path="/anggota-legislatif">
             <StrukturPage slug="anggota-legislatif" grade="legislatif" />
     
           </Route> */}
 
-          {/* <Route path="/page2">
+            {/* <Route path="/page2">
             <Page2 />
           </Route> */}
 
-          {/* BLOG PAGE  */}
+            {/* BLOG PAGE  */}
 
-          {/* MAIN PAGE */}
+            {/* MAIN PAGE */}
 
-          <Route path="/pemilu">
-            <PemiluPage />
-          </Route>
+            <Route path="/pemilu">
+              <PemiluPage />
+            </Route>
 
-          <Route path="/informasi-publik">
-            <InformasiPage />
-          </Route>
+            <Route path="/informasi-publik">
+              <InformasiPage />
+            </Route>
 
-          <Route path="/berita">
-            <BeritaPage />
-          </Route>
+            <Route path="/berita">
+              <BeritaPage />
+            </Route>
 
-          <Route path="/multimedia">
-            <MultimediaPage />
-          </Route>
+            <Route path="/multimedia">
+              <MultimediaPage />
+            </Route>
 
-          <Route path="/ketua-umum">
-            <KetuaUmumPage />
-          </Route>
+            <Route path="/ketua-umum">
+              <KetuaUmumPage />
+            </Route>
 
-          {/* BUNG KARNO BAPAK BANGSA */}
+            {/* BUNG KARNO BAPAK BANGSA */}
 
-          <Route path="/bung-karno-bapak-bangsa/quotes/:id">
-            <WejanganBungKarno />
-          </Route>
+            <Route path="/bung-karno-bapak-bangsa/quotes/:id">
+              <WejanganBungKarno />
+            </Route>
 
-          {/* <Route path="/quotes/:id">
+            {/* <Route path="/quotes/:id">
             <BkbbWejangan />
           </Route> */}
 
-          <Route path="/bung-karno-bapak-bangsa">
-            <BkbbPage />
-          </Route>
+            <Route path="/bung-karno-bapak-bangsa">
+              <BkbbPage />
+            </Route>
 
-          <Route path="/partai">
-            <PartaiPage />
-          </Route>
+            <Route path="/partai">
+              <PartaiPage />
+            </Route>
 
-          <Route path="/home">
-            <HomePage />
-          </Route>
+            <Route path="/home">
+              <HomePage />
+            </Route>
 
-          <Route path="/" exact={true}>
-            <HomePage />
-          </Route>
+            <Route path="/" exact={true}>
+              <HomePage />
+            </Route>
 
-          <Route path="*" exact={true}>
-            <NotFound notFoundDisplay="none" />
-          </Route>
-        </Switch>
-      </div>
-      <BgRed />
+            <Route path="*" exact={true}>
+              <NotFound notFoundDisplay="none" />
+            </Route>
+          </Switch>
+        </div>
+        <BgRed />
 
-      <MainFooter />
+        <MainFooter />
+      </Suspense>
     </Router>
   );
 }

@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "./InformasiPage.scss";
-
-import ConsentWhite from "../../../img/consentwhite.png";
-import MainDivider from "../../divider/MainDivider";
-import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
-import CardInformasi from "../../cardInformasi/CardInformasi";
-import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
-import CarouselKM from "../../carouselKM/CarouselKM";
-import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
-import illustrator from "../../../img/illustrator2.png";
-import CardHeader from "../../cardheader/CardHeader";
-import { Link } from "react-router-dom";
-import Wait from "../../wait/Wait";
 import parse from "html-react-parser";
+import { Link } from "react-router-dom";
+import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
+import { lazy } from "react";
+import { Suspense } from "react";
+
+const MainDivider = lazy(() => import("../../divider/MainDivider"));
+const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
+const CardInformasi = lazy(() => import("../../cardInformasi/CardInformasi"));
+const CarouselTataCara = lazy(() =>
+  import("../../carouseltatacara/CarouselTataCara")
+);
+const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
+const Wait = lazy(() => import("../../wait/Wait"));
 
 const anchorLink = (props) => {
   return (
@@ -99,7 +100,13 @@ const InformasiPage = () => {
   }, []);
 
   return (
-    <>
+    <Suspense
+      fallback={
+        <div>
+          <Wait />
+        </div>
+      }
+    >
       {configHome.length > 0 ? (
         // START INFORMASI
         <div className="wrapperInformasi">
@@ -312,7 +319,7 @@ const InformasiPage = () => {
           <Wait />
         </>
       )}
-    </>
+    </Suspense>
   );
 };
 

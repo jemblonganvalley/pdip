@@ -1,7 +1,9 @@
 import React from "react";
+import { Suspense } from "react";
+import { lazy } from "react";
 import Logo from "../../img/pdiperjuangan02.svg";
 import "./MainFooter.scss";
-import Subscribe from "../subscribe/Subscribe";
+const Subscribe = lazy(() => import("../subscribe/Subscribe"));
 
 const MainFooter = () => {
   return (
@@ -70,7 +72,9 @@ const MainFooter = () => {
             </div>
           </a>
         </address>
-        <Subscribe />
+        <Suspense fallback={<div>loading</div>}>
+          <Subscribe />
+        </Suspense>
       </div>
     </div>
   );

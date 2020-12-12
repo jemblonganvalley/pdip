@@ -1,24 +1,25 @@
-import React, { useEffect, useState } from "react";
-// import './HomePage.css'
 import "./HomePage.scss";
-import MainSlider from "../../slider/MainSlider";
-import MusicPdi from "../../musicpdi/MusicPdi";
-import Cards from "../../cards/MainCards";
-import MainButton from "../../buttons/MainButton";
-import MainDivider from "../../divider/MainDivider";
-import CarouselKM from "../../carouselKM/CarouselKM";
-import MusicMobile from "../../musicPdiMobile/MusicMobile";
-import KMobile from "../../carouselKMobile/KMobile";
-import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
-import { Link, Redirect } from "react-router-dom";
-import VMedia from "../../VMedia/VMedia";
-import Wait from "../../wait/Wait";
-import SliderBrand from "../../sliderbrand/SliderBrand";
-import BMKG from "../../../img/replace_bmkg.png";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import { useMediaQuery } from "react-responsive";
-import MainSliderTablet from "../../slider/tablet/MainSliderTablet";
-import MainSliderMobile from "../../slider/mobile/MainSliderMobile";
-import Slidercom from "../../slidercom/Slidercom";
+import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
+const MainSlider = lazy(() => import("../../slider/MainSlider"));
+const MusicPdi = lazy(() => import("../../musicpdi/MusicPdi"));
+const Cards = lazy(() => import("../../cards/MainCards"));
+const MainButton = lazy(() => import("../../buttons/MainButton"));
+const MainDivider = lazy(() => import("../../divider/MainDivider"));
+const CarouselKM = lazy(() => import("../../carouselKM/CarouselKM"));
+const MusicMobile = lazy(() => import("../../musicPdiMobile/MusicMobile"));
+const KMobile = lazy(() => import("../../carouselKMobile/KMobile"));
+const VMedia = lazy(() => import("../../VMedia/VMedia"));
+const Wait = lazy(() => import("../../wait/Wait"));
+const BMKG = lazy(() => import("../../../img/replace_bmkg.png"));
+const MainSliderTablet = lazy(() =>
+  import("../../slider/tablet/MainSliderTablet")
+);
+const MainSliderMobile = lazy(() =>
+  import("../../slider/mobile/MainSliderMobile")
+);
+const Slidercom = lazy(() => import("../../slidercom/Slidercom"));
 
 export const LighBox = ({ source }) => {
   return (
@@ -121,7 +122,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <>
+    <Suspense fallback={<div>loading..</div>}>
       {configHome.length > 0 ? (
         <div
           className="homepage"
@@ -394,7 +395,7 @@ const HomePage = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </Suspense>
   );
 };
 

@@ -1,16 +1,18 @@
 import React, { useEffect } from "react";
 import "./BkbbPage.scss";
-
-import { useState } from "react";
-import Cards from "../../cards/MainCards";
-import MainButton from "../../buttons/MainButton";
-import MainDivider from "../../divider/MainDivider";
-import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
-import CardQuotes from "../../cardquotes/CardQuotes";
-import CardHeader from "../../cardheader/CardHeader";
-import VMedia from "../../VMedia/VMedia";
-import Wait from "../../wait/Wait";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { lazy } from "react";
+import { Suspense } from "react";
+
+const Cards = lazy(() => import("../../cards/MainCards"));
+const MainButton = lazy(() => import("../../buttons/MainButton"));
+const MainDivider = lazy(() => import("../../divider/MainDivider"));
+const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
+const CardQuotes = lazy(() => import("../../cardquotes/CardQuotes"));
+const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
+const VMedia = lazy(() => import("../../VMedia/VMedia"));
+const Wait = lazy(() => import("../../wait/Wait"));
 
 export const LighBox = ({ source }) => {
   return (
@@ -67,7 +69,13 @@ const BkbbPage = () => {
   }, []);
 
   return (
-    <>
+    <Suspense
+      fallback={
+        <div>
+          <Wait />
+        </div>
+      }
+    >
       {showVid && (
         <>
           <span
@@ -129,43 +137,6 @@ const BkbbPage = () => {
               />
             </section>
           ))}
-          {/* // className="bannerYoutube"
-                // style={{
-                //   backgroundImage: `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
-                // }}
-                // key={i}
-                // onClick={() => {
-                //   setShowVid(true);
-                // }}
-              >
-                
-                {/* <div className="textYoutube">
-                  <div className="wrapperText">
-                    <ul className="circleYoutube">
-                      <li>
-                        <i
-                          className="fa fa-play"
-                          style={{ color: "white" }}
-                        ></i>
-                      </li>
-                    </ul>
-                    <div className="textInfoYT">
-                      <h3 className="videoTerbaru">{e.title}</h3>
-                      <br />
-                      <h6 className="siaranHut">{e.description}</h6>
-                    </div>
-                  </div>
-                </div> */}
-          {/* </div> */}
-
-          {/* <iframe
-        //   width="80%"
-        //   height="90%"
-        //   src={`https://www.youtube.com/embed/jY8tAjHtO44`}
-        //   frameBorder={0}
-        //   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        //   allowFullScreen
-        // /> */}
 
           <div className="divider-materi-pokok-bkbbPage">
             <MainDivider text="Materi Pokok Pendukung" garisMerah="8rem" />
@@ -259,7 +230,7 @@ const BkbbPage = () => {
           <Wait />
         </>
       )}
-    </>
+    </Suspense>
   );
 };
 

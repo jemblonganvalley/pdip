@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./DetailPengurus.scss";
-import profil from "../../../img/profil.png";
-import MainDivider from "../../divider/MainDivider";
-import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
+import { Suspense } from "react";
+import { lazy } from "react";
 import { useParams } from "react-router-dom";
-import Wait from "../../wait/Wait";
-import parse from "html-react-parser";
+import "./DetailPengurus.scss";
+
+const MainDivider = lazy(() => import("../../divider/MainDivider"));
+const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
+const Wait = lazy(() => import("../../wait/Wait"));
 
 const DetailPengurus = () => {
   const { id, name, grade } = useParams();
@@ -48,7 +49,13 @@ const DetailPengurus = () => {
   }, []);
 
   return (
-    <>
+    <Suspense
+      fallback={
+        <div>
+          <Wait />
+        </div>
+      }
+    >
       {configHome ? (
         <div className="wrapperDetail">
           {/* HEADERS */}
@@ -138,7 +145,7 @@ const DetailPengurus = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </Suspense>
   );
 };
 

@@ -1,17 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import "./PartaiPage.scss";
+import parse from "html-react-parser";
 import { Link } from "react-router-dom";
 import pdiLogo from "../../../img/logo-tatakelola.png";
-import MusicPdi from "../../musicpdi/MusicPdi";
-import MainButton from "../../buttons/MainButton";
-import MainDivider from "../../divider/MainDivider";
-import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
-import MusicMobile from "../../musicPdiMobile/MusicMobile";
-import CardHeader from "../../cardheader/CardHeader";
-import CarouselKetuaUmumPage from "../../carouselKetuaUmumPage/CarouselKetuaUmumPage";
-import Maps from "../../maps/Maps";
-import Wait from "../../wait/Wait";
-import parse from "html-react-parser";
+const MusicPdi = lazy(() => import("../../musicpdi/MusicPdi"));
+const MainButton = lazy(() => import("../../buttons/MainButton"));
+const MainDivider = lazy(() => import("../../divider/MainDivider"));
+const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
+const MusicMobile = lazy(() => import("../../musicPdiMobile/MusicMobile"));
+const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
+const CarouselKetuaUmumPage = lazy(() =>
+  import("../../carouselKetuaUmumPage/CarouselKetuaUmumPage")
+);
+const Maps = lazy(() => import("../../maps/Maps"));
+const Wait = lazy(() => import("../../wait/Wait"));
 
 const PartaiPage = ({ redirect }) => {
   const [config, setConfig] = useState([]);
@@ -54,7 +56,7 @@ const PartaiPage = ({ redirect }) => {
 
   return (
     // START PARTAI
-    <>
+    <Suspense fallback={<Wait />}>
       {config.length > 0 ? (
         <div className="wrapperPartai">
           {config.length > 0 && (
@@ -230,7 +232,7 @@ const PartaiPage = ({ redirect }) => {
           <Wait />
         </>
       )}
-    </>
+    </Suspense>
   );
 };
 
