@@ -44,7 +44,7 @@ const FormKeluhan = () => {
                 </label>
               </div>
               <div className="form-group">
-                <label>
+                <label htmlFor="nomor_registrasi">
                   Nomor Registrasi Keberatan <small className="strict">*</small>
                 </label>
                 <input
@@ -55,7 +55,7 @@ const FormKeluhan = () => {
                 <small className="error-msg" />
               </div>
               <div className="form-group">
-                <label>
+                <label htmlFor="nomor_pemohon">
                   Nomor Pemohonan Infomasi <small className="strict">*</small>
                 </label>
                 <input
@@ -66,7 +66,7 @@ const FormKeluhan = () => {
                 <small className="error-msg" />
               </div>
               <div className="form-group">
-                <label>
+                <label htmlFor="tanggal_pemohon">
                   Tanggal Pemohonan Informasi
                   <small className="strict">*</small>
                 </label>
@@ -106,7 +106,7 @@ const FormKeluhan = () => {
                 <small className="error-msg" />
               </div>
               <div className="form-group">
-                <label>
+                <label htmlFor="fileupl">
                   Upload Photo Identitas <small className="strict">*</small>
                 </label>
                 <input
@@ -118,7 +118,7 @@ const FormKeluhan = () => {
                 <small className="error-msg" />
               </div>
               <div className="form-group">
-                <label>
+                <label htmlFor="nomor_identitas">
                   NIK / Nomor Identitas <small className="strict">*</small>
                 </label>
                 <input
@@ -129,7 +129,7 @@ const FormKeluhan = () => {
                 <small className="error-msg" />
               </div>
               <div className="form-group">
-                <label>
+                <label htmlFor="nama">
                   Nama <small className="strict">*</small>
                 </label>
                 <input type="text" className="form-control" name="nama" />
@@ -143,7 +143,7 @@ const FormKeluhan = () => {
                 <small className="error-msg" />
               </div>
               <div className="form-group">
-                <label>
+                <label htmlFor="no_telepon">
                   Nomor Telepon <small className="strict">*</small>
                 </label>
                 <input
@@ -154,21 +154,21 @@ const FormKeluhan = () => {
                 <small className="error-msg" />
               </div>
               <div className="form-group">
-                <label>
+                <label htmlFor="email">
                   Alamat Email <small className="strict">*</small>
                 </label>
                 <input type="email" className="form-control" name="email" />
                 <small className="error-msg" />
               </div>
               <div className="form-group">
-                <label>
+                <label htmlFor="pekerjaan">
                   Pekerjaan <small className="strict">*</small>
                 </label>
                 <input type="text" className="form-control" name="pekerjaan" />
                 <small className="error-msg" />
               </div>
               <div className="form-group">
-                <label>
+                <label htmlFor="instansi">
                   Instansi/Lembaga <small className="strict">*</small>
                 </label>
                 <input type="text" className="form-control" name="instansi" />

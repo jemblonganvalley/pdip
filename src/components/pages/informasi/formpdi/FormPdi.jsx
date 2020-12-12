@@ -49,15 +49,19 @@ const FormPdi = () => {
             </select>
 
             <br />
-            <label>
+            <label htmlFor="photo_identitas">
               Upload Photo Identitas <small className="strict">*</small>
             </label>
-            <input className="form-control form-control-sm" type="text" />
+            <input
+              className="form-control form-control-sm"
+              type="text"
+              name="photo_identitas"
+            />
             <small className="error-msg" />
           </div>
           <div className="nikWrapper">
             <div className="form-group">
-              <label>
+              <label htmlFor="nomor_identitas">
                 NIK / Nomor Identitas <small className="strict">*</small>
               </label>
               <input
@@ -69,14 +73,14 @@ const FormPdi = () => {
               <small className="error-msg" />
             </div>
             <div className="form-group">
-              <label>
+              <label htmlFor="nama">
                 Nama <small className="strict">*</small>
               </label>
               <input type="text" className="form-control" name="nama" />
               <small className="error-msg" />
             </div>
             <div className="form-group">
-              <label>
+              <label htmlFor="alamat">
                 Alamat <small className="strict">*</small>
               </label>
               <textarea
