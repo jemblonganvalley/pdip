@@ -3,16 +3,16 @@ import "../page2/Page2.scss";
 import { Link, NavLink, useParams } from "react-router-dom";
 import parse from "html-react-parser";
 import ReactPaginate from "react-paginate";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
-const Cards = lazy(() => import("../../../cards/MainCards"));
-const CarouselBeritaPage2 = lazy(() =>
+const BreadCrumbs = loadable(() => import("../../../breadcrumbs/BreadCrumbs"));
+const Cards = loadable(() => import("../../../cards/MainCards"));
+const CarouselBeritaPage2 = loadable(() =>
   import("../../../carouselberitapage2/CarouselBeritaPage2")
 );
-const Wait = lazy(() => import("../../../wait/Wait"));
-const CardSocialMedia = lazy(() =>
+const Wait = loadable(() => import("../../../wait/Wait"));
+const CardSocialMedia = loadable(() =>
   import("../../../cardsocialmedia/CardSocialMedia")
 );
 

@@ -1,12 +1,12 @@
 import React from "react";
 import { Suspense } from "react";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { useEffect } from "react";
 import "./FormPdi.scss";
 
-const Wait = lazy(() => import("../../../wait/Wait"));
-const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
-const MainDivider = lazy(() => import("../../../divider/MainDivider"));
+const Wait = loadable(() => import("../../../wait/Wait"));
+const BreadCrumbs = loadable(() => import("../../../breadcrumbs/BreadCrumbs"));
+const MainDivider = loadable(() => import("../../../divider/MainDivider"));
 
 const FormPdi = () => {
   useEffect(() => {

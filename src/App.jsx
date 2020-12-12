@@ -1,68 +1,77 @@
-import React, { lazy, Suspense } from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 import Wait from "./components/wait/Wait";
+import loadable from "@loadable/component";
 
-const HomePage = lazy(() => import("./components/pages/home/HomePage"));
-const MainFooter = lazy(() => import("./components/footer/MainFooter"));
-const PartaiPage = lazy(() => import("./components/pages/partai/PartaiPage"));
-const MultimediaPage = lazy(() =>
+const HomePage = loadable(() => import("./components/pages/home/HomePage"));
+const MainFooter = loadable(() => import("./components/footer/MainFooter"));
+const PartaiPage = loadable(() =>
+  import("./components/pages/partai/PartaiPage")
+);
+const MultimediaPage = loadable(() =>
   import("./components/pages/multimediaPage/MultimediaPage")
 );
-const BkbbPage = lazy(() => import("./components/pages/bkbb/BkbbPage"));
-const InformasiPage = lazy(() =>
+const BkbbPage = loadable(() => import("./components/pages/bkbb/BkbbPage"));
+const InformasiPage = loadable(() =>
   import("./components/pages/informasi/InformasiPage")
 );
-const PemiluPage = lazy(() => import("./components/pages/Pemilu/PemiluPage"));
-const BeritaPage = lazy(() => import("./components/pages/berita/BeritaPage"));
-const KetuaUmumPage = lazy(() =>
+const PemiluPage = loadable(() =>
+  import("./components/pages/Pemilu/PemiluPage")
+);
+const BeritaPage = loadable(() =>
+  import("./components/pages/berita/BeritaPage")
+);
+const KetuaUmumPage = loadable(() =>
   import("./components/pages/KetuaUmum/KetuaUmumPage")
 );
-const StrukturPage = lazy(() =>
+const StrukturPage = loadable(() =>
   import("./components/pages/struktur/StrukturPage")
 );
-const DetailPengurus = lazy(() =>
+const DetailPengurus = loadable(() =>
   import("./components/pages/detailpengurus/DetailPengurus")
 );
-const Dpd = lazy(() => import("./components/dpd/Dpd"));
-const VideoMedia = lazy(() =>
+const Dpd = loadable(() => import("./components/dpd/Dpd"));
+const VideoMedia = loadable(() =>
   import("./components/pages/videomedia/VideoMedia")
 );
-const Page1 = lazy(() => import("./components/pages/berita/page1/Page1"));
-const Page2 = lazy(() => import("./components/pages/berita/page2/Page2"));
+const Page1 = loadable(() => import("./components/pages/berita/page1/Page1"));
+const Page2 = loadable(() => import("./components/pages/berita/page2/Page2"));
 
-const BgRed = lazy(() => import("./components/bgRed/BgRed"));
-const WejanganBungKarno = lazy(() =>
+const BgRed = loadable(() => import("./components/bgRed/BgRed"));
+const WejanganBungKarno = loadable(() =>
   import("./components/pages/bkbb/wejanganbungkarno/WejanganBungKarno")
 );
-const EventPage = lazy(() => import("./components/pages/events/EventPage"));
-const ContainerCard = lazy(() =>
+const EventPage = loadable(() => import("./components/pages/events/EventPage"));
+const ContainerCard = loadable(() =>
   import("./components/containerCard/ContainerCard")
 );
-const Search = lazy(() => import("./components/pages/search/Search"));
-const ContainerCardGallery = lazy(() =>
+const Search = loadable(() => import("./components/pages/search/Search"));
+const ContainerCardGallery = loadable(() =>
   import("./components/gallery/ContainerCardGallery")
 );
-const Gallery = lazy(() => import("./components/pages/berita/gallery/Gallery"));
-const ContainerCardMultimedia = lazy(() =>
+const Gallery = loadable(() =>
+  import("./components/pages/berita/gallery/Gallery")
+);
+const ContainerCardMultimedia = loadable(() =>
   import("./components/multimedia/ContainerCardMultimedia")
 );
-const FormPdi = lazy(() =>
+const FormPdi = loadable(() =>
   import("./components/pages/informasi/formpdi/FormPdi")
 );
-const FormKeluhan = lazy(() =>
+const FormKeluhan = loadable(() =>
   import("./components/pages/informasi/formkeluhan/FormKeluhan")
 );
-const PidatoAll = lazy(() =>
+const PidatoAll = loadable(() =>
   import("./components/pages/KetuaUmum/pidatoAll/PidatoAll")
 );
-const MultimediaAll = lazy(() =>
+const MultimediaAll = loadable(() =>
   import("./components/pages/multimediaPage/multimediaAll/MultimediaAll")
 );
-const NewNavbar = lazy(() => import("./components/newnavbar/NewNavbar"));
-const DpdDpc = lazy(() => import("./components/pages/dpddpc/DpdDpc"));
-const NotFound = lazy(() => import("./components/notFound/NotFound"));
+const NewNavbar = loadable(() => import("./components/newnavbar/NewNavbar"));
+const DpdDpc = loadable(() => import("./components/pages/dpddpc/DpdDpc"));
+const NotFound = loadable(() => import("./components/notFound/NotFound"));
 
 function App() {
   let [hide, setHide] = useState(true);

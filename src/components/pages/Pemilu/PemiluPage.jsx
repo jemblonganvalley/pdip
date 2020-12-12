@@ -2,23 +2,23 @@
 import React, { useEffect, useState } from "react";
 import "./PemiluPage.scss";
 import { Link } from "react-router-dom";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 // END Import to React
 
-const Wait = lazy(() => import("../../wait/Wait"));
-const CarouselPemilu1 = lazy(() =>
+const Wait = loadable(() => import("../../wait/Wait"));
+const CarouselPemilu1 = loadable(() =>
   import("../../carouselPemilu1/CarouselPemilu1")
 );
-const CarouselPemilu2 = lazy(() =>
+const CarouselPemilu2 = loadable(() =>
   import("../../carouselPemilu2/CarouselPemilu2")
 );
-const Carousel3PemiluPage = lazy(() =>
+const Carousel3PemiluPage = loadable(() =>
   import("../../carousel3PemiluPage/Carousel3PemiluPage")
 );
-const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
-const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
-const ParalaxBox = lazy(() => import("../../paralaxBox/ParalaxBox"));
+const BreadCrumbs = loadable(() => import("../../breadcrumbs/BreadCrumbs"));
+const CardHeader = loadable(() => import("../../cardheader/CardHeader"));
+const ParalaxBox = loadable(() => import("../../paralaxBox/ParalaxBox"));
 
 // Create Component
 const PemiluPage = () => {

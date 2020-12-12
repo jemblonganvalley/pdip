@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Suspense } from "react";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { useParams } from "react-router-dom";
 import "./DetailPengurus.scss";
 
-const MainDivider = lazy(() => import("../../divider/MainDivider"));
-const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
-const Wait = lazy(() => import("../../wait/Wait"));
+const MainDivider = loadable(() => import("../../divider/MainDivider"));
+const BreadCrumbs = loadable(() => import("../../breadcrumbs/BreadCrumbs"));
+const Wait = loadable(() => import("../../wait/Wait"));
 
 const DetailPengurus = () => {
   const { id, name, grade } = useParams();

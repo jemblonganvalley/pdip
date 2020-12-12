@@ -4,11 +4,11 @@ import "./DpdDpc.scss";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import { useStoreState } from "easy-peasy";
 import { useParams } from "react-router-dom";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const Wait = lazy(() => import("../../wait/Wait"));
-const Maps = lazy(() => import("../../maps/Maps"));
+const Wait = loadable(() => import("../../wait/Wait"));
+const Maps = loadable(() => import("../../maps/Maps"));
 
 const DpdDpc = () => {
   const refresher = useStoreState((state) => state.refresher);

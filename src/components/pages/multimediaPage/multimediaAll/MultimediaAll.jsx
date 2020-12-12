@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import "./MultimediaAll.scss";
 import ReactPaginate from "react-paginate";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
-const MainDivider = lazy(() => import("../../../divider/MainDivider"));
-const Cards = lazy(() => import("../../../cards/MainCards"));
-const Wait = lazy(() => import("../../../wait/Wait"));
+const BreadCrumbs = loadable(() => import("../../../breadcrumbs/BreadCrumbs"));
+const MainDivider = loadable(() => import("../../../divider/MainDivider"));
+const Cards = loadable(() => import("../../../cards/MainCards"));
+const Wait = loadable(() => import("../../../wait/Wait"));
 
 const MultimediaAll = () => {
   const [category_id, setCategory_id] = useState(44);

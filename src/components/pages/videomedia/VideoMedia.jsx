@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { Suspense } from "react";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import "./VideoMedia.scss";
 
 import Wait from "../../wait/Wait";
-const Cards = lazy(() => import("../../cards/MainCards"));
-const megawati = lazy(() => import("../../../img/megawati1.jpg"));
-const VMedia = lazy(() => import("../../VMedia/VMedia"));
-const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
+const Cards = loadable(() => import("../../cards/MainCards"));
+const megawati = loadable(() => import("../../../img/megawati1.jpg"));
+const VMedia = loadable(() => import("../../VMedia/VMedia"));
+const BreadCrumbs = loadable(() => import("../../breadcrumbs/BreadCrumbs"));
 
 const VideoMedia = () => {
   useEffect(() => {

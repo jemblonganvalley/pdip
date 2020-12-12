@@ -6,12 +6,12 @@ import {
   TwitterShareButton,
   WhatsappShareButton,
 } from "react-share";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const FacebookButton = lazy(() => import("../../img/facebookicon.svg"));
-const TwitterButton = lazy(() => import("../../img/twittericon.svg"));
-const WhatsappButton = lazy(() => import("../../img/whatsappicon.svg"));
+const FacebookButton = loadable(() => import("../../img/facebookicon.svg"));
+const TwitterButton = loadable(() => import("../../img/twittericon.svg"));
+const WhatsappButton = loadable(() => import("../../img/whatsappicon.svg"));
 
 const CardSocialMedia = ({ imageUrl, title }) => {
   let quote = "PDI Perjuangan";

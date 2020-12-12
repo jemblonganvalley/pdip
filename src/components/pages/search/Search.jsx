@@ -5,11 +5,11 @@ import ReactPaginate from "react-paginate";
 import { useEffect } from "react";
 import "../../../database/globalState";
 import { action, useStoreActions, useStoreState } from "easy-peasy";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const CardSearch = lazy(() => import("../../cardsearch/CardSearch"));
-const Wait = lazy(() => import("../../wait/Wait"));
+const CardSearch = loadable(() => import("../../cardsearch/CardSearch"));
+const Wait = loadable(() => import("../../wait/Wait"));
 
 const Search = () => {
   // Onchange text from input search

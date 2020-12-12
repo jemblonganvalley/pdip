@@ -3,17 +3,17 @@ import ReactPaginate from "react-paginate";
 import "./WejanganBungKarno.scss";
 import { useParams } from "react-router-dom";
 import { useStoreState } from "easy-peasy";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
-const MainDivider = lazy(() => import("../../../divider/MainDivider"));
-const AngkaPaginationEvent = lazy(() =>
+const BreadCrumbs = loadable(() => import("../../../breadcrumbs/BreadCrumbs"));
+const MainDivider = loadable(() => import("../../../divider/MainDivider"));
+const AngkaPaginationEvent = loadable(() =>
   import("../../../paginationevent/AngkaPaginationEvent")
 );
-const Wait = lazy(() => import("../../../wait/Wait"));
-const CardQuotes = lazy(() => import("../../../cardquotes/CardQuotes"));
-const QuotesBkbb = lazy(() => import("../../../quotesbkbb/QuotesBkbb"));
+const Wait = loadable(() => import("../../../wait/Wait"));
+const CardQuotes = loadable(() => import("../../../cardquotes/CardQuotes"));
+const QuotesBkbb = loadable(() => import("../../../quotesbkbb/QuotesBkbb"));
 
 const WejanganBungKarno = () => {
   // Create Database Card Item

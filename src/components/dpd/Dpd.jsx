@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./Dpd.scss";
 import { useParams } from "react-router-dom";
 import parse from "html-react-parser";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const BreadCrumbs = lazy(() => import("../breadcrumbs/BreadCrumbs"));
-const MainDivider = lazy(() => import("../divider/MainDivider"));
-const Wait = lazy(() => import("../wait/Wait"));
+const BreadCrumbs = loadable(() => import("../breadcrumbs/BreadCrumbs"));
+const MainDivider = loadable(() => import("../divider/MainDivider"));
+const Wait = loadable(() => import("../wait/Wait"));
 
 const Dpd = () => {
   const { id, nameProv } = useParams();

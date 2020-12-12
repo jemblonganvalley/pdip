@@ -1,25 +1,26 @@
 import "./HomePage.scss";
-import React, { useEffect, useState, lazy, Suspense } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import { useMediaQuery } from "react-responsive";
 import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
-const MainSlider = lazy(() => import("../../slider/MainSlider"));
-const MusicPdi = lazy(() => import("../../musicpdi/MusicPdi"));
-const Cards = lazy(() => import("../../cards/MainCards"));
-const MainButton = lazy(() => import("../../buttons/MainButton"));
-const MainDivider = lazy(() => import("../../divider/MainDivider"));
-const CarouselKM = lazy(() => import("../../carouselKM/CarouselKM"));
-const MusicMobile = lazy(() => import("../../musicPdiMobile/MusicMobile"));
-const KMobile = lazy(() => import("../../carouselKMobile/KMobile"));
-const VMedia = lazy(() => import("../../VMedia/VMedia"));
-const Wait = lazy(() => import("../../wait/Wait"));
-const BMKG = lazy(() => import("../../../img/replace_bmkg.png"));
-const MainSliderTablet = lazy(() =>
+import loadable from "@loadable/component";
+const MainSlider = loadable(() => import("../../slider/MainSlider"));
+const MusicPdi = loadable(() => import("../../musicpdi/MusicPdi"));
+const Cards = loadable(() => import("../../cards/MainCards"));
+const MainButton = loadable(() => import("../../buttons/MainButton"));
+const MainDivider = loadable(() => import("../../divider/MainDivider"));
+const CarouselKM = loadable(() => import("../../carouselKM/CarouselKM"));
+const MusicMobile = loadable(() => import("../../musicPdiMobile/MusicMobile"));
+const KMobile = loadable(() => import("../../carouselKMobile/KMobile"));
+const VMedia = loadable(() => import("../../VMedia/VMedia"));
+const Wait = loadable(() => import("../../wait/Wait"));
+const BMKG = loadable(() => import("../../../img/replace_bmkg.png"));
+const MainSliderTablet = loadable(() =>
   import("../../slider/tablet/MainSliderTablet")
 );
-const MainSliderMobile = lazy(() =>
+const MainSliderMobile = loadable(() =>
   import("../../slider/mobile/MainSliderMobile")
 );
-const Slidercom = lazy(() => import("../../slidercom/Slidercom"));
+const Slidercom = loadable(() => import("../../slidercom/Slidercom"));
 
 export const LighBox = ({ source }) => {
   return (

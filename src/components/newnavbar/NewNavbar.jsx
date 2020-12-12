@@ -5,10 +5,10 @@ import { useMediaQuery } from "react-responsive";
 import { useStoreActions, useStoreState } from "easy-peasy";
 import "../../database/globalState";
 import { Link, NavLink, Redirect } from "react-router-dom";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 
-const DropDown = lazy(() => import("../navbar/DropDown"));
-const pdimobile = lazy(() => import("../../img/pdimobile.svg"));
+const DropDown = loadable(() => import("../navbar/DropDown"));
+const pdimobile = loadable(() => import("../../img/pdimobile.svg"));
 
 const NewNavbar = ({ token }) => {
   const setRefresher = useStoreActions((action) => action.setRefresher);

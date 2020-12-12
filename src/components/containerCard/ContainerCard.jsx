@@ -4,15 +4,17 @@ import { NavLink, useParams } from "react-router-dom";
 import "./containerCard.scss";
 import "../paginationevent/AngkaPaginationEvent.scss";
 import ReactPaginate from "react-paginate";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const BreadCrumbs = lazy(() =>
+const BreadCrumbs = loadable(() =>
   import("../../components/breadcrumbs/BreadCrumbs")
 );
-const MainDivider = lazy(() => import("../../components/divider/MainDivider"));
-const Cards = lazy(() => import("../cards/MainCards"));
-const Wait = lazy(() => import("../wait/Wait"));
+const MainDivider = loadable(() =>
+  import("../../components/divider/MainDivider")
+);
+const Cards = loadable(() => import("../cards/MainCards"));
+const Wait = loadable(() => import("../wait/Wait"));
 // import AngkaPaginationEvent from "../paginationevent/AngkaPaginationEvent";
 
 const ContainerCard = () => {

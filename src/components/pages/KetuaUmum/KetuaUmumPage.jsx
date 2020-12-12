@@ -1,25 +1,27 @@
 // Import to React
 import React, { useEffect, useState } from "react";
 import { Suspense } from "react";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 // END Import to React
 
 import "./KetuaUmumPage.scss";
 
 // Import to CSS
-const MainDivider = lazy(() => import("../../divider/MainDivider"));
-const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
-const CarouselKetuaUmumPage = lazy(() =>
+const MainDivider = loadable(() => import("../../divider/MainDivider"));
+const BreadCrumbs = loadable(() => import("../../breadcrumbs/BreadCrumbs"));
+const CarouselKetuaUmumPage = loadable(() =>
   import("../../carouselKetuaUmumPage/CarouselKetuaUmumPage")
 );
-const Cards = lazy(() => import("../../cards/MainCards"));
-const CardInformasi = lazy(() => import("../../cardInformasi/CardInformasi"));
-const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
-const CarouselDualKetuaumum = lazy(() =>
+const Cards = loadable(() => import("../../cards/MainCards"));
+const CardInformasi = loadable(() =>
+  import("../../cardInformasi/CardInformasi")
+);
+const CardHeader = loadable(() => import("../../cardheader/CardHeader"));
+const CarouselDualKetuaumum = loadable(() =>
   import("../../carouselDualKetuaUmum/CarouselDualKetuaumum")
 );
-const Wait = lazy(() => import("../../wait/Wait"));
-const MainButton = lazy(() => import("../../buttons/MainButton"));
+const Wait = loadable(() => import("../../wait/Wait"));
+const MainButton = loadable(() => import("../../buttons/MainButton"));
 // END Import to CSS
 
 // Create Component

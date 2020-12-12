@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./StrukturPage.scss";
 import { useStoreState } from "easy-peasy";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const StrukturPaginate = lazy(() =>
+const StrukturPaginate = loadable(() =>
   import("../../pagination/StrukturPaginate")
 );
-const MainDivider = lazy(() => import("../../divider/MainDivider"));
-const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
-const Wait = lazy(() => import("../../wait/Wait"));
+const MainDivider = loadable(() => import("../../divider/MainDivider"));
+const BreadCrumbs = loadable(() => import("../../breadcrumbs/BreadCrumbs"));
+const Wait = loadable(() => import("../../wait/Wait"));
 
 const StrukturPage = ({ slug, grade }) => {
   const [configHome, setConfigHome] = useState([]);

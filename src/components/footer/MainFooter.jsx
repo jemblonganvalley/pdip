@@ -1,9 +1,9 @@
 import React from "react";
 import { Suspense } from "react";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import Logo from "../../img/pdiperjuangan02.svg";
 import "./MainFooter.scss";
-const Subscribe = lazy(() => import("../subscribe/Subscribe"));
+const Subscribe = loadable(() => import("../subscribe/Subscribe"));
 
 const MainFooter = () => {
   return (

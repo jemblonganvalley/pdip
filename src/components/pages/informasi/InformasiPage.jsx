@@ -3,17 +3,19 @@ import "./InformasiPage.scss";
 import parse from "html-react-parser";
 import { Link } from "react-router-dom";
 import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const MainDivider = lazy(() => import("../../divider/MainDivider"));
-const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
-const CardInformasi = lazy(() => import("../../cardInformasi/CardInformasi"));
-const CarouselTataCara = lazy(() =>
+const MainDivider = loadable(() => import("../../divider/MainDivider"));
+const BreadCrumbs = loadable(() => import("../../breadcrumbs/BreadCrumbs"));
+const CardInformasi = loadable(() =>
+  import("../../cardInformasi/CardInformasi")
+);
+const CarouselTataCara = loadable(() =>
   import("../../carouseltatacara/CarouselTataCara")
 );
-const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
-const Wait = lazy(() => import("../../wait/Wait"));
+const CardHeader = loadable(() => import("../../cardheader/CardHeader"));
+const Wait = loadable(() => import("../../wait/Wait"));
 
 const anchorLink = (props) => {
   return (

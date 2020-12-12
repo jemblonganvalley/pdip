@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "../page2/Page2.scss";
 import { Link, useParams } from "react-router-dom";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
-const Cards = lazy(() => import("../../../cards/MainCards"));
-const CarouselBeritaPage2 = lazy(() =>
+const BreadCrumbs = loadable(() => import("../../../breadcrumbs/BreadCrumbs"));
+const Cards = loadable(() => import("../../../cards/MainCards"));
+const CarouselBeritaPage2 = loadable(() =>
   import("../../../carouselberitapage2/CarouselBeritaPage2")
 );
-const VMedia = lazy(() => import("../../../VMedia/VMedia"));
-const Wait = lazy(() => import("../../../wait/Wait"));
-const MainDivider = lazy(() => import("../../../divider/MainDivider"));
-const CardSocialMedia = lazy(() =>
+const VMedia = loadable(() => import("../../../VMedia/VMedia"));
+const Wait = loadable(() => import("../../../wait/Wait"));
+const MainDivider = loadable(() => import("../../../divider/MainDivider"));
+const CardSocialMedia = loadable(() =>
   import("../../../cardsocialmedia/CardSocialMedia")
 );
 

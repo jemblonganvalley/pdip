@@ -3,14 +3,14 @@ import MetaTags from "react-meta-tags";
 import { useParams } from "react-router-dom";
 import { useStoreState } from "easy-peasy";
 import "../page1/Page1.scss";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
-const CardSocialMedia = lazy(() =>
+const BreadCrumbs = loadable(() => import("../../../breadcrumbs/BreadCrumbs"));
+const CardSocialMedia = loadable(() =>
   import("../../../cardsocialmedia/CardSocialMedia")
 );
-const Wait = lazy(() => import("../../../wait/Wait"));
+const Wait = loadable(() => import("../../../wait/Wait"));
 
 const Page1 = () => {
   const refresher = useStoreState((state) => state.refresher);

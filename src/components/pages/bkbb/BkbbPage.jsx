@@ -2,17 +2,17 @@ import React, { useEffect } from "react";
 import "./BkbbPage.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const Cards = lazy(() => import("../../cards/MainCards"));
-const MainButton = lazy(() => import("../../buttons/MainButton"));
-const MainDivider = lazy(() => import("../../divider/MainDivider"));
-const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
-const CardQuotes = lazy(() => import("../../cardquotes/CardQuotes"));
-const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
-const VMedia = lazy(() => import("../../VMedia/VMedia"));
-const Wait = lazy(() => import("../../wait/Wait"));
+const Cards = loadable(() => import("../../cards/MainCards"));
+const MainButton = loadable(() => import("../../buttons/MainButton"));
+const MainDivider = loadable(() => import("../../divider/MainDivider"));
+const BreadCrumbs = loadable(() => import("../../breadcrumbs/BreadCrumbs"));
+const CardQuotes = loadable(() => import("../../cardquotes/CardQuotes"));
+const CardHeader = loadable(() => import("../../cardheader/CardHeader"));
+const VMedia = loadable(() => import("../../VMedia/VMedia"));
+const Wait = loadable(() => import("../../wait/Wait"));
 
 export const LighBox = ({ source }) => {
   return (

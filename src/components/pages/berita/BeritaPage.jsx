@@ -5,17 +5,19 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./BeritaPage.scss";
 import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
-import { lazy } from "react";
+import loadable from "@loadable/component";
 import { Suspense } from "react";
 
-const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
-const Cards = lazy(() => import("../../cards/MainCards"));
-const Wait = lazy(() => import("../../wait/Wait"));
-const CardInformasi = lazy(() => import("../../cardInformasi/CardInformasi"));
-const MainButton = lazy(() => import("../../buttons/MainButton"));
-const MainDivider = lazy(() => import("../../divider/MainDivider"));
-const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
-const CarouselKetuaUmumPage = lazy(() =>
+const BreadCrumbs = loadable(() => import("../../breadcrumbs/BreadCrumbs"));
+const Cards = loadable(() => import("../../cards/MainCards"));
+const Wait = loadable(() => import("../../wait/Wait"));
+const CardInformasi = loadable(() =>
+  import("../../cardInformasi/CardInformasi")
+);
+const MainButton = loadable(() => import("../../buttons/MainButton"));
+const MainDivider = loadable(() => import("../../divider/MainDivider"));
+const CardHeader = loadable(() => import("../../cardheader/CardHeader"));
+const CarouselKetuaUmumPage = loadable(() =>
   import("../../carouselKetuaUmumPage/CarouselKetuaUmumPage")
 );
 
