@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Suspense } from "react";
 import { lazy } from "react";
 import "./MultimediaPage.scss";
+import Subscribe from "../../../img/subscribe.png";
 
 const Wait = lazy(() => import("../../wait/Wait"));
 const Cards = lazy(() => import("../../cards/MainCards"));
@@ -11,7 +12,6 @@ const MainDivider = lazy(() => import("../../divider/MainDivider"));
 const CardInformasi = lazy(() => import("../../cardInformasi/CardInformasi"));
 const VMedia = lazy(() => import("../../VMedia/VMedia"));
 const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
-import Subscribe from "../../../img/subscribe.png";
 
 const MultimediaPage = () => {
   const [configHome, setConfigHome] = useState([]);

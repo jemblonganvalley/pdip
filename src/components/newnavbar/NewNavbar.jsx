@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import pdimobile from "../../img/pdimobile.svg";
 import logo from "../../img/pdiperjuangan02.svg";
 import "./NewNavbar.scss";
 import { useMediaQuery } from "react-responsive";
@@ -6,11 +7,11 @@ import { useStoreActions, useStoreState } from "easy-peasy";
 import "../../database/globalState";
 import { Link, NavLink, Redirect } from "react-router-dom";
 import { lazy } from "react";
+import { Suspense } from "react";
 
 const DropDown = lazy(() => import("../navbar/DropDown"));
-import pdimobile from "../../img/pdimobile.svg";
 
-const NewNavbar = ({ token }) => {
+function NewNavbar({ token }) {
   const setRefresher = useStoreActions((action) => action.setRefresher);
   const refresher = useStoreState((state) => state.refresher);
   const setNavHeight = useStoreActions((action) => action.setNavHeight);
@@ -43,12 +44,10 @@ const NewNavbar = ({ token }) => {
   let [trigger1, setTrigger1] = useState(false);
 
   // end For Trigger menu dropdown (Mobile)
-
   // For Button page menu mobile (collapse navbar)
   let [collapse1, setCollapse1] = useState(false);
 
   // END For Button page menu mobile (collapse navbar)
-
   // Onchange text input search to text input page search
   const [value, setValue] = useState();
   const setSearch = useStoreActions((action) => action.setSearch);
@@ -76,7 +75,7 @@ const NewNavbar = ({ token }) => {
     };
   }, [isDesktop, isTablet, isMobile]);
   return (
-    <>
+    <Suspense fallback={<div>wait..</div>}>
       {isDesktop && (
         <>
           <nav
@@ -116,7 +115,6 @@ const NewNavbar = ({ token }) => {
                 id="navbarSupportedContent"
               >
                 <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-                  {/* MAPPING MENU */}
                   {Object.keys(menu).map((e, i) => (
                     <li
                       className="nav-item"
@@ -149,36 +147,6 @@ const NewNavbar = ({ token }) => {
                     </li>
                   ))}
                 </ul>
-                {/* <form
-                action="/search"
-                className="d-inline-flex"
-                style={{
-                  display: "flex",
-                }}
-                ref={inputSearch}
-                // onSubmit={handleSubmit}
-              >
-                <input
-                  className="form-control mr-2"
-                  type="text"
-                  placeholder="Cari Artikel"
-                  name="search"
-                  id="search"
-                  type="text"
-                  onChange={handleChange}
-                />
-                <Link
-                  to={`/search/${search}`}
-                  name="submit"
-                  className="btn-next"
-                >
-                  <i
-                    className="fas fa-search"
-                    aria-hidden="true"
-                    name="icon"
-                  ></i>
-                </Link>
-              </form> */}
 
                 <form
                   onSubmit={handleSubmit}
@@ -339,7 +307,6 @@ const NewNavbar = ({ token }) => {
                           backgroundColor: "#333333",
                         }}
                       >
-                        {/* Container Dropdown menu mobile */}
                         {Object.values(menu)[i].map((e, i) => (
                           <div
                             key={i}
@@ -597,7 +564,6 @@ const NewNavbar = ({ token }) => {
                           backgroundColor: "#333333",
                         }}
                       >
-                        {/* Container Dropdown menu mobile */}
                         {Object.values(menu)[i].map((e, i) => (
                           <div
                             key={i}
@@ -697,11 +663,8 @@ const NewNavbar = ({ token }) => {
                           </div>
                         ))}
                       </div>
-
-                      {/* end Container Dropdown menu mobile */}
                     </li>
                   ))}
-                  {/* END Trigger For Menu Dropdown menu mobile */}
                 </ul>
                 <form className="d-inline-flex" onSubmit={handleSubmit}>
                   <input
@@ -729,8 +692,8 @@ const NewNavbar = ({ token }) => {
           </nav>
         </>
       )}
-    </>
+    </Suspense>
   );
-};
+}
 
 export default NewNavbar;
