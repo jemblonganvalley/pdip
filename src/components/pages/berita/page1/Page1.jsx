@@ -69,6 +69,10 @@ const Page1 = () => {
               property="og:image"
               content={`https://atur.biar.pw/public${detailPage.path}`}
             />
+            <meta
+              property="image"
+              content={`https://atur.biar.pw/public${detailPage.path}`}
+            />
 
             <meta property="og:type" content="website" />
             <meta content="image/*" property="og:image:type" />

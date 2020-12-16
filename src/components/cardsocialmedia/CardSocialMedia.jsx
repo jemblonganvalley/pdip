@@ -19,7 +19,6 @@ const CardSocialMedia = ({ imageUrl, title }) => {
         {/* Facebook Share */}
         <FacebookShareButton
           url={window.location.href}
-          imageUrl={`https://pas.biar.pw/public${imageUrl}`}
           quote={title}
           hashtag={hashtag}
         >
