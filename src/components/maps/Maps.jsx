@@ -756,7 +756,7 @@ const Maps = () => {
           <BtnProvinsi
             id={10}
             pageProv=""
-            nameProv="Jakarta"
+            nameProv="DKI Jakarta"
             color={show7 ? "red" : "#000"}
             transisi={show7 ? "0.2s all ease-in-out" : "0.2s all ease-in-out"}
             mouseOver={() => {
@@ -820,7 +820,7 @@ const Maps = () => {
           <BtnProvinsi
             id={46}
             pageProv=""
-            nameProv="Yogyakarta"
+            nameProv="DI Yogyakarta"
             color={show34 ? "red" : "#000"}
             transisi={show34 ? "0.2s all ease-in-out" : "0.2s all ease-in-out"}
             mouseOver={() => {
