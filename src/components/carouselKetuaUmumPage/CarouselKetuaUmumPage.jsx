@@ -9,6 +9,7 @@ const CarouselKetuaUmumPage = ({ data }) => {
         id="carouselKetuaUmum"
         className="carousel container-carousel-ketuaUmumPage slide"
         data-ride="carousel"
+        data-interval={2000}
       >
         <div className="carousel-inner carousel-ketuaUmumPage">
           {data.length > 0 ? (

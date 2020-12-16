@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { lazy } from "react";
 import { Suspense } from "react";
+// import { parse } from "dotenv/types";
+import parse from 'html-react-parser'
 
 const Cards = lazy(() => import("../../cards/MainCards"));
 const MainButton = lazy(() => import("../../buttons/MainButton"));
@@ -175,22 +177,30 @@ const BkbbPage = () => {
             className="bannerBkbb"
             style={{
               background: `url(https://data.pdiperjuangan.id/public/${configHome[4].value.image})`,
+              backgroundAttachment: 'fixed',
+              backgroundSize: 'cover'
             }}
           >
-            <i className="fas fa-quote-right"></i>
+            <div className="wrapperIsiBkbbBanner" style={{
+              zIndex : 1
+            }}>
+              <i className="fas fa-quote-right"></i>
 
-            <h4 className="custom">{configHome[4].value.title}</h4>
-            <i className="fas fa-quote-right"></i>
-            <small
-              className="custom"
-              dangerouslySetInnerHTML={{
-                __html: configHome[4].value.paragraph,
-              }}
-              style={{
-                padding: "0",
-                margin: "20px 0",
-              }}
-            ></small>
+              <h4 className="custom">{configHome[4].value.title}</h4>
+              <i className="fas fa-quote-right"></i>
+              <small
+                className="custom"
+                // dangerouslySetInnerHTML={{
+                //   __html: ,
+                // }}
+                style={{
+                  padding: "0",
+                  margin: "20px 0",
+                }}
+              >
+                {parse(configHome[4].value.paragraph)}
+              </small>
+            </div>
 
             {/* Background Black transparent */}
             <div className="bg-black-transparent"></div>
@@ -226,10 +236,10 @@ const BkbbPage = () => {
           <div className="backGroundGray"></div>
         </div>
       ) : (
-        <>
-          <Wait />
-        </>
-      )}
+          <>
+            <Wait />
+          </>
+        )}
     </Suspense>
   );
 };
