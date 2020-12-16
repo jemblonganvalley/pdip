@@ -56,7 +56,7 @@ const Page1 = () => {
     <>
       {detailPage ? (
         <>
-          <MetaTags>
+          <Helmet>
             <meta name="description" content={detailPage.title} />
             <meta property="og:url" content={`https://pdiperjuangan.id`} />
             <meta property="og:title" content={detailPage.title} />
@@ -72,7 +72,7 @@ const Page1 = () => {
 
             <meta property="og:type" content="website" />
             <meta content="image/*" property="og:image:type" />
-          </MetaTags>
+          </Helmet>
           <div className="wrapperBeritaPage1">
             {/* Untuk page detail berita tidak memakai Headers */}
 
