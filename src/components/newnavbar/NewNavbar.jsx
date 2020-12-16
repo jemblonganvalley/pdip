@@ -23,13 +23,16 @@ const NewNavbar = ({ token }) => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const getDataMenu = async function () {
-    const res = await fetch("https://atur.biar.pw/api/web/config/home", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-    });
+    const res = await fetch(
+      "https://data.pdiperjuangan.id/api/web/config/home",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
     const data = await res.json();
     setMenu(data.query.nav);
   };
@@ -334,14 +337,14 @@ const NewNavbar = ({ token }) => {
                         }}
                       >
                         {/* Container Dropdown menu mobile */}
-                        {Object.values(menu)[i].map((e) => (
+                        {Object.values(menu)[i].map((e, i) => (
                           <div
+                            key={i}
                             className="dropdown-menu-mobile "
                             style={{
                               height: "50px",
                               transition: "0.5s ease-in-out",
                             }}
-                            key={e.key}
                           >
                             <Link
                               className="page-menu-drop-mobile"
@@ -591,8 +594,9 @@ const NewNavbar = ({ token }) => {
                         }}
                       >
                         {/* Container Dropdown menu mobile */}
-                        {Object.values(menu)[i].map((e) => (
+                        {Object.values(menu)[i].map((e, i) => (
                           <div
+                            key={i}
                             className="dropdown-menu-mobile "
                             style={{
                               height: "50px",
@@ -694,13 +698,6 @@ const NewNavbar = ({ token }) => {
                     </li>
                   ))}
                   {/* END Trigger For Menu Dropdown menu mobile */}
-
-                  {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown" expanded>
-                      {e.listItem.map((e)=>(
-                        <li><Link class="dropdown-item" to={e.listTo}>{e.listName}</Link></li>
-                        
-                      ))}
-                    </ul> */}
                 </ul>
                 <form className="d-inline-flex" onSubmit={handleSubmit}>
                   <input

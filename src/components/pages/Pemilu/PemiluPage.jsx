@@ -17,7 +17,7 @@ const PemiluPage = () => {
   const [configHome, setConfigHome] = useState([]);
 
   const getConfigHome = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +30,7 @@ const PemiluPage = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://atur.biar.pw/api/web/pages/pemilu",
+      "https://data.pdiperjuangan.id/api/web/pages/pemilu",
       {
         method: "POST",
         headers: {
@@ -56,7 +56,7 @@ const PemiluPage = () => {
           {/* <div
             className="headers-pemiluPage"
             style={{
-              backgroundImage: `url(https://atur.biar.pw/public/${configHome[0].value.image})`,
+              backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome[0].value.image})`,
             }}
           >
             <div className="backgrounds">
@@ -114,7 +114,7 @@ const PemiluPage = () => {
             {/* Row1 */}
             {/* <div className="row1-col2-pemiluPage pemilihan">
                 <img
-                  src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
+                  src={`https://data.pdiperjuangan.id/public/${configHome[4].value[0].image}`}
                   className="col1-row1-pemiluPage"
                 />
                 <div className="col2-row1-pemiluPage">
@@ -126,7 +126,7 @@ const PemiluPage = () => {
             {/* Row2 */}
             {/* <a className="row2-col2-pemiluPage pemilihan" href='https://www.pdipkreatif.com/home' target='_blank'>
                   <img
-                    src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
+                    src={`https://data.pdiperjuangan.id/public/${configHome[4].value[1].image}`}
                     className="col1-row2-pemiluPage"
                   />
                   <div className="col2-row2-pemiluPage">
@@ -149,7 +149,7 @@ const PemiluPage = () => {
               >
                 <div className="box-card-laporan">
                   <img
-                    src={`https://atur.biar.pw/public/${configHome[4].value[0].image}`}
+                    src={`https://data.pdiperjuangan.id/public/${configHome[4].value[0].image}`}
                     alt=""
                     className="imageHarta"
                   />
@@ -167,7 +167,7 @@ const PemiluPage = () => {
               >
                 <div className="box-card-laporan">
                   <img
-                    src={`https://atur.biar.pw/public/${configHome[4].value[1].image}`}
+                    src={`https://data.pdiperjuangan.id/public/${configHome[4].value[1].image}`}
                     alt=""
                     className="imageHarta"
                   />

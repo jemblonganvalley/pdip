@@ -9,6 +9,7 @@ import Wait from "../../../wait/Wait";
 import { colors } from "@material-ui/core";
 import parse from "html-react-parser";
 import ReactPaginate from "react-paginate";
+import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
 
 // READ BEFORE USE
 
@@ -67,7 +68,7 @@ const Gallery = () => {
   const id = useParams("id");
 
   const getConfigHome = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -80,7 +81,7 @@ const Gallery = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `https://atur.biar.pw/api/gallery/data?page=${numPage}`,
+      `https://data.pdiperjuangan.id/api/gallery/data?page=${numPage}`,
       {
         method: "POST",
         headers: {
@@ -99,7 +100,7 @@ const Gallery = () => {
     setConfigHome(dataConfigHome.query.data);
 
     const resManyCard = await fetch(
-      `https://atur.biar.pw/api/gallery/album?page=${numPage}`,
+      `https://data.pdiperjuangan.id/api/gallery/album?page=${numPage}`,
       {
         method: "POST",
         headers: {
@@ -177,13 +178,10 @@ const Gallery = () => {
                   </div>
 
                   <div className="box-medsos-beritaPage2">
-                    <div className="socialMedia">
-                      <small>SHARE : </small>
-                      <i className="fa fa-facebook"></i>
-                      <i className="fa fa-twitter"></i>
-                      <i className="fa fa-instagram"></i>
-                      <i className="fa fa-whatsapp"></i>
-                    </div>
+                    <CardSocialMedia
+                      title={configHome.title}
+                      imageUrl={configHome.path}
+                    />
                   </div>
                 </div>
                 {/* END Row2 */}

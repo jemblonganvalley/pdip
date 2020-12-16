@@ -67,9 +67,38 @@ $responMax1440: 1440px;
   flex-direction: column;
   height: auto;
   width: 100%;
-  padding-bottom: 40px;
-  padding: 0 20%;
+//   padding-bottom: 40px;
+//   padding: 0 20%;
   margin-bottom: 40px;
+.form-control-sm {  
+    border-radius: 3.2rem;
+    border: none;
+}
+.form-control {
+   border: none;
+    border-radius: 1.25rem;
+
+}
+.wrapper-formPDI .form-control {
+    border-radius: 1.25rem;
+    border: none !important;
+}
+ 
+
+.formgaris{
+    padding: 45px 10% ;
+}
+
+.form-check-input:checked {
+    background-color: red;
+      border-color: red;
+  }
+
+  .form-check-input:focus {
+    border-color: #fe8b8b;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(253, 13, 13, 0.25);
+  }
 
   // START LINKED INFORMASI
   .linked-formPdi {

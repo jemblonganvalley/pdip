@@ -9,6 +9,7 @@ import Wait from "../../../wait/Wait";
 import { colors } from "@material-ui/core";
 import MainDivider from "../../../divider/MainDivider";
 import NotFound from "../../../notFound/NotFound";
+import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
 
 // READ BEFORE USE
 
@@ -20,7 +21,7 @@ const Page2 = () => {
   const id = useParams("id");
 
   const getConfigHome = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -33,7 +34,7 @@ const Page2 = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://atur.biar.pw/api/multimedia/youtube-find",
+      "https://data.pdiperjuangan.id/api/multimedia/youtube-find",
       {
         method: "POST",
         headers: {
@@ -50,7 +51,7 @@ const Page2 = () => {
     setConfigHome(dataConfigHome);
 
     const resManyCard = await fetch(
-      "https://atur.biar.pw/api/multimedia/youtube-data",
+      "https://data.pdiperjuangan.id/api/multimedia/youtube-data",
       {
         method: "POST",
         headers: {
@@ -139,15 +140,7 @@ const Page2 = () => {
                       voluptas porro veritatis aliquid?
                     </p>
 
-                    <div className="box-medsos-beritaPage2">
-                      <div className="socialMedia">
-                        <small>SHARE : </small>
-                        <i className="fa fa-facebook"></i>
-                        <i className="fa fa-twitter"></i>
-                        <i className="fa fa-instagram"></i>
-                        <i className="fa fa-whatsapp"></i>
-                      </div>
-                    </div>
+                    <CardSocialMedia imageUrl={configHome.path} />
                   </div>
                   {/* END Row2 */}
                 </>

@@ -9,7 +9,10 @@ const CarouselPemilu1 = ({ data }) => {
   const WrapperImage = ({ img, link }) => {
     return (
       <NavLink to={link}>
-        <img src={`https://atur.biar.pw/public/${img}`} className="img-1" />
+        <img
+          src={`https://data.pdiperjuangan.id/public/${img}`}
+          className="img-1"
+        />
       </NavLink>
     );
   };
@@ -44,7 +47,7 @@ const CarouselPemilu1 = ({ data }) => {
                   {/* Image1 */}
                   {/* <WrapperImage img={e.image} link={"/"} /> */}
                   <img
-                    src={`https://atur.biar.pw/public/${e.image}`}
+                    src={`https://data.pdiperjuangan.id/public/${e.image}`}
                     className="img-1"
                     href={e.link}
                     onClick={() => {

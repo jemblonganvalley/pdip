@@ -14,7 +14,7 @@ const Dpd = () => {
   const [configHome, setConfigHome] = useState();
 
   const getConfigHome = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -27,7 +27,7 @@ const Dpd = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://atur.biar.pw/api/partai/dpd/find",
+      "https://data.pdiperjuangan.id/api/partai/dpd/find",
       {
         method: "POST",
         headers: {
@@ -93,15 +93,14 @@ const Dpd = () => {
             <div className="profilDpd">
               <div className="kolum1">
                 <img
-                  src={`https://atur.biar.pw/public/${configHome.photo_one}`}
+                  src={`https://data.pdiperjuangan.id/public/${configHome.photo_one}`}
                   alt=""
-                  width="250"
                   style={{
-                    height: "37vh",
                     objectFit: "cover",
                     objectPosition: "center",
                     borderRadius: "10px",
                   }}
+                  className="imagePertamaDPD"
                 />
                 <div className="textDpd">
                   <div className="alamat dpdText">
@@ -111,8 +110,9 @@ const Dpd = () => {
                       href={`https://www.google.com/maps/search/?api=1&query=dpd+pdip+provinsi+${nameProv}`}
                       target="_blank"
                     >
-                      <button type="button" class="btn btn-danger rounded">
-                        <i class="fas fa-map pr-2" aria-hidden="true"></i>Map
+                      <button type="button" className="btn btn-danger rounded">
+                        <i className="fas fa-map pr-2" aria-hidden="true"></i>
+                        Map
                       </button>
                     </a>
                   </div>
@@ -120,8 +120,8 @@ const Dpd = () => {
                     <small className="smallTanggal text-danger">Telepon</small>
                     <p className="tanggal">{configHome.phone}</p>
                     <a href={`tel:+62${configHome.phone}`}>
-                      <button type="button" class="btn btn-danger rounded">
-                        <i class="fas fa-phone pr-2" aria-hidden="true"></i>
+                      <button type="button" className="btn btn-danger rounded">
+                        <i className="fas fa-phone pr-2" aria-hidden="true"></i>
                         Hubungi
                       </button>
                     </a>
@@ -145,7 +145,7 @@ const Dpd = () => {
                 <div
                   className="peta"
                   style={{
-                    backgroundImage: `url(https://atur.biar.pw/public/${configHome.photo_two})`,
+                    backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome.photo_two})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

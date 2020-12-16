@@ -27,7 +27,7 @@ const CarouselDualKetuaumum = ({
           height: "40vh",
           padding: "30px",
           // border : '1px solid red',
-          backgroundImage: `url(https://atur.biar.pw/public/${cat2.image})`,
+          backgroundImage: `url(https://data.pdiperjuangan.id/public/${cat2.image})`,
           position: "relative",
           backgroundSize: "cover",
         }}

@@ -58,7 +58,7 @@ const HomePage = () => {
   };
 
   const getConfigHome = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -71,7 +71,7 @@ const HomePage = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://atur.biar.pw/api/web/pages/home",
+      "https://data.pdiperjuangan.id/api/web/pages/home",
       {
         method: "POST",
         headers: {
@@ -86,7 +86,7 @@ const HomePage = () => {
   };
 
   const getGallery = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -99,7 +99,7 @@ const HomePage = () => {
     const data = await res.json();
 
     const resGallery = await fetch(
-      "https://atur.biar.pw/api/gallery/data?page=2",
+      "https://data.pdiperjuangan.id/api/gallery/data?page=2",
       {
         method: "POST",
         headers: {
@@ -207,7 +207,7 @@ const HomePage = () => {
                       <div className="customBorder">
                         <div className="itemImageCovid">
                           <img
-                            src={`https://atur.biar.pw/public/${e.image}`}
+                            src={`https://data.pdiperjuangan.id/public/${e.image}`}
                             alt=""
                             className="imageCovid"
                           />
@@ -258,6 +258,7 @@ const HomePage = () => {
                     //             setShowVid(true)
                     //           }}
                     className="r-sync-video"
+                    key={i}
                   >
                     {/* Card VMEDIA */}
                     <VMedia

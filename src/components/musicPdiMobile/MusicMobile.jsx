@@ -339,18 +339,6 @@ const MusicMobile = ({ data }) => {
                 customAdditionalControls={[]}
                 // onPlay={indexPlay1}
               />
-
-              {/* <div className="player-track">
-                                            <div className="time" ></div>
-                                            <div className="progress-bar">
-                                                <div className="fillBar" ></div>
-                                            </div>
-                                        </div>
-                                        <div className="playerControl">
-                                            <i class="fa fa-backward" id="prev"></i>
-                                            <i class="fa fa-play" id="play"></i>
-                                            <i class="fa fa-forward" id="next"></i>
-                                        </div> */}
             </div>
             {/* END Button Play Music Mobile1 */}
 
@@ -445,18 +433,6 @@ const MusicMobile = ({ data }) => {
                 customAdditionalControls={[]}
                 // onPlay={indexPlay1}
               />
-
-              {/* <div className="player-track">
-                                            <div className="time" ></div>
-                                            <div className="progress-bar">
-                                                <div className="fillBar" ></div>
-                                            </div>
-                                        </div>
-                                        <div className="playerControl">
-                                            <i class="fa fa-backward" id="prev"></i>
-                                            <i class="fa fa-play" id="play"></i>
-                                            <i class="fa fa-forward" id="next"></i>
-                                        </div> */}
             </div>
             {/* END Button Play Music Mobile2 */}
 
@@ -547,18 +523,6 @@ const MusicMobile = ({ data }) => {
                 customAdditionalControls={[]}
                 // onPlay={indexPlay1}
               />
-
-              {/* <div className="player-track">
-                                            <div className="time" ></div>
-                                            <div className="progress-bar">
-                                                <div className="fillBar" ></div>
-                                            </div>
-                                        </div>
-                                        <div className="playerControl">
-                                            <i class="fa fa-backward" id="prev"></i>
-                                            <i class="fa fa-play" id="play"></i>
-                                            <i class="fa fa-forward" id="next"></i>
-                                        </div> */}
             </div>
             {/* END Button Play Music Mobile3 */}
 
@@ -648,18 +612,6 @@ const MusicMobile = ({ data }) => {
                 customAdditionalControls={[]}
                 // onPlay={indexPlay1}
               />
-
-              {/* <div className="player-track">
-                                            <div className="time" ></div>
-                                            <div className="progress-bar">
-                                                <div className="fillBar" ></div>
-                                            </div>
-                                        </div>
-                                        <div className="playerControl">
-                                            <i class="fa fa-backward" id="prev"></i>
-                                            <i class="fa fa-play" id="play"></i>
-                                            <i class="fa fa-forward" id="next"></i>
-                                        </div> */}
             </div>
             {/* END Button Play Music Mobile4 */}
 

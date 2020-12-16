@@ -4,9 +4,7 @@ import "./MainSlider.scss";
 import playstore from "../../img/playstore.svg";
 import appstore from "../../img/appstore.svg";
 import { Link } from "@material-ui/core";
-import { Redirect } from "react-router-dom";
 import parse from "html-react-parser";
-import { Markup } from "interweave";
 
 const MainSlider = ({ value, cls }) => {
   let slider = value;
@@ -29,7 +27,6 @@ const MainSlider = ({ value, cls }) => {
           overflow: "hidden",
         }}
       >
-
         <div className="carousel-inner">
           {slider.map((e, i) => (
             <div
@@ -46,7 +43,6 @@ const MainSlider = ({ value, cls }) => {
               }}
             >
               <div className="rowMainSlider image1 images">
-
                 <div className="col text1">
                   {/* Box Paragrap */}
                   <div className="box-paragrap-mainSlider">
@@ -61,7 +57,7 @@ const MainSlider = ({ value, cls }) => {
                   {/* Box Image */}
                   <div className="box-img-mainSlider">
                     <img
-                      src={`http://atur.biar.pw/public${e.image}`}
+                      src={`http://data.pdiperjuangan.id/public${e.image}`}
                       alt={e.title}
                       className="img-home-mainSlider"
                     />
@@ -79,9 +75,11 @@ const MainSlider = ({ value, cls }) => {
             {/* Box Paragrap Iklan */}
             <div className="box-paragrap-info-iklan">
               <strong className="txt-info-iklan">
-              Segera hadir aplikasi MEDIA PINTAR PERJUANGAN untuk mendapatkan pengetahuan, 
-              <br/>
-              pengalaman dan informasi program serta kerja nyata PDI Perjuangan.
+                Segera hadir aplikasi MEDIA PINTAR PERJUANGAN untuk mendapatkan
+                pengetahuan,
+                <br />
+                pengalaman dan informasi program serta kerja nyata PDI
+                Perjuangan.
               </strong>
 
               <div className="box-logo-info-iklan">

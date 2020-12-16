@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
 import "./FormKeluhan.scss";
+import MainDivider from "../../../divider/MainDivider"
 
 const FormKeluhan = () => {
   useEffect(() => {
@@ -23,9 +24,13 @@ const FormKeluhan = () => {
         </div>
         {/* END */}
 
+        <div className="formgaris">
+          <MainDivider
+            text="FORMULIR KEBERATAN INFORMASI PUBLIK" />
+        </div>
+
         {/* Container form keluhan */}
         <div className="container-formKeluhan">
-          <h1>FORMULIR KEBERATAN INFORMASI PUBLIK</h1>
 
           <div className="col-md-12 col-sm-12 col-xs-12">
             <form
@@ -47,7 +52,7 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="nomor_registrasi"
-                  defaultValue
+                  
                 />
                 <small className="error-msg" />
               </div>
@@ -59,7 +64,7 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="nomor_pemohon"
-                  defaultValue
+                  
                 />
                 <small className="error-msg" />
               </div>
@@ -85,7 +90,7 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="tujuan_informasi"
-                  defaultValue={""}
+                  
                 />
                 <small className="error-msg" />
               </div>
@@ -125,7 +130,7 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="nomor_identitas"
-                  defaultValue
+                  defau
                 />
                 <small className="error-msg" />
               </div>
@@ -137,7 +142,6 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="nama"
-                  defaultValue
                 />
                 <small className="error-msg" />
               </div>
@@ -148,7 +152,7 @@ const FormKeluhan = () => {
                 <textarea
                   className="form-control"
                   name="alamat"
-                  defaultValue={""}
+                  
                 />
                 <small className="error-msg" />
               </div>
@@ -160,7 +164,6 @@ const FormKeluhan = () => {
                   type="number"
                   className="form-control"
                   name="no_telepon"
-                  defaultValue
                 />
                 <small className="error-msg" />
               </div>
@@ -172,7 +175,6 @@ const FormKeluhan = () => {
                   type="email"
                   className="form-control"
                   name="email"
-                  defaultValue
                 />
                 <small className="error-msg" />
               </div>
@@ -184,7 +186,6 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="pekerjaan"
-                  defaultValue
                 />
                 <small className="error-msg" />
               </div>
@@ -196,7 +197,6 @@ const FormKeluhan = () => {
                   type="text"
                   className="form-control"
                   name="instansi"
-                  defaultValue
                 />
                 <small className="error-msg" />
               </div>

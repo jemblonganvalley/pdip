@@ -14,13 +14,16 @@ const MainNavbar = ({ token }) => {
   let [scroll, setScroll] = useState(false);
 
   const getDataMenu = async function () {
-    const res = await fetch("https://atur.biar.pw/api/web/config/home", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
-      },
-    });
+    const res = await fetch(
+      "https://data.pdiperjuangan.id/api/web/config/home",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
     const data = await res.json();
     setMenu(data.query.nav);
   };
@@ -390,13 +393,6 @@ const MainNavbar = ({ token }) => {
                   </li>
                 </div>
                 {/* END Trigger For Menu Dropdown menu mobile */}
-
-                {/* <ul className="dropdown-menu" aria-labelledby="navbarDropdown" expanded>
-                      {e.listItem.map((e)=>(
-                        <li><Link class="dropdown-item" to={e.listTo}>{e.listName}</Link></li>
-                        
-                      ))}
-                    </ul> */}
               </ul>
               <div className="d-inline-flex">
                 <input

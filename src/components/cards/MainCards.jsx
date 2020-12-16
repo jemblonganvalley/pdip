@@ -43,7 +43,7 @@ const Cards = ({
   };
 
   const pageSLug = () => {
-    return slug.toString().replaceAll(" ", "-").toLowerCase();
+    return slug.toString().replace(/ /g, "-").toLowerCase();
   };
 
   const getToday = () => {
@@ -77,7 +77,7 @@ const Cards = ({
           className="imageCard"
           style={{
             backgroundImage: imageCard.includes("uploads")
-              ? `url(https://atur.biar.pw/public/${imageCard})`
+              ? `url(https://data.pdiperjuangan.id/public/${imageCard})`
               : `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)`,
 
             textDecoration: "none",
@@ -86,7 +86,6 @@ const Cards = ({
         >
           {/* JIKA MAU DIPAKAI CLASS, PAKAI CLASS VBMusic */}
           <Link
-            component="a"
             className={`${classIcon}`}
             to={href}
             style={{ textDecoration: "none" }}

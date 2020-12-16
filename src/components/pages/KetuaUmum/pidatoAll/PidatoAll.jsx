@@ -15,7 +15,7 @@ const PidatoAll = () => {
   const [configHome, setConfigHome] = useState([]);
   const [pag, setPag] = useState();
   const [defaultUrl, setDefaultUrl] = useState(
-    `https://atur.biar.pw/api/blog/data?page=${numPage}`
+    `https://data.pdiperjuangan.id/api/blog/data?page=${numPage}`
   );
 
   const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
@@ -64,7 +64,7 @@ const PidatoAll = () => {
   };
 
   const getConfigHome = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -77,7 +77,7 @@ const PidatoAll = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `https://atur.biar.pw/api/blog/data?page=${numPage}`,
+      `https://data.pdiperjuangan.id/api/blog/data?page=${numPage}`,
       {
         method: "POST",
         headers: {
@@ -168,17 +168,18 @@ const PidatoAll = () => {
                     pageCount={pag.total / pag.per_page}
                     pageRangeDisplayed={9}
                     marginPagesDisplayed={0}
-                    previousLabel={'<<'}
-                    previousClassName='prev'
-                    nextLabel={'>>'}
-                    nextClassName='next'
-                    containerClassName='angka-pagination'
-                    pageClassName='paginationLink'
-                    activeClassName='activePagination'
-                    eventListener='onClick'
+                    previousLabel={"<<"}
+                    previousClassName="prev"
+                    nextLabel={">>"}
+                    nextClassName="next"
+                    containerClassName="angka-pagination"
+                    pageClassName="paginationLink"
+                    activeClassName="activePagination"
+                    eventListener="onClick"
                     onPageChange={(e) => {
-                      setNumPage(e.selected + 1)
-                    }} />
+                      setNumPage(e.selected + 1);
+                    }}
+                  />
                 </div>
               </div>
             )}

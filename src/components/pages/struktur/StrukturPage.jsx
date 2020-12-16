@@ -12,7 +12,7 @@ const StrukturPage = ({ slug, grade }) => {
   const refresher = useStoreState((state) => state.refresher);
 
   const getConfigHome = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -25,7 +25,7 @@ const StrukturPage = ({ slug, grade }) => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `https://atur.biar.pw/api/partai/${grade}/data`,
+      `https://data.pdiperjuangan.id/api/partai/${grade}/data`,
       {
         method: "POST",
         headers: {

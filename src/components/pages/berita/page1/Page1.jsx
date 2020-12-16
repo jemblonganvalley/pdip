@@ -21,7 +21,7 @@ const Page1 = () => {
   const [missing, setMissing] = useState(false);
 
   const getDetailPage = async () => {
-    const res = await fetch("https://atur.biar.pw/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +34,7 @@ const Page1 = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `https://atur.biar.pw/api/blog/find/?id=${id}`,
+      `https://data.pdiperjuangan.id/api/blog/find/?id=${id}`,
       {
         method: "POST",
         headers: {
@@ -67,11 +67,11 @@ const Page1 = () => {
             <meta property="og:description" content={detailPage.title} />
             <meta
               property="og:image"
-              content={`https://atur.biar.pw/public${detailPage.path}`}
+              content={`https://data.pdiperjuangan.id/public${detailPage.path}`}
             />
             <meta
               property="image"
-              content={`https://atur.biar.pw/public${detailPage.path}`}
+              content={`https://data.pdiperjuangan.id/public${detailPage.path}`}
             />
 
             <meta property="og:type" content="website" />
@@ -175,7 +175,7 @@ const Page1 = () => {
                 {detailPage.path.includes("uploads") ? (
                   <img
                     className="img-beritaPage1"
-                    src={`https://atur.biar.pw/public/${detailPage.path}`}
+                    src={`https://data.pdiperjuangan.id/public/${detailPage.path}`}
                     alt={`${detailPage.path}`}
                     style={{
                       // height: "40vh",
@@ -226,14 +226,6 @@ const Page1 = () => {
                       imageUrl={detailPage.path}
                       title={detailPage.title}
                     />
-
-                    {/* <div className="socialMedia">
-                    <small>SHARE : </small>
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-instagram"></i>
-                    <i class="fa fa-whatsapp"></i>
-                  </div> */}
                   </div>
                 </div>
                 {/* END Section5 */}

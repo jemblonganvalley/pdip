@@ -22,7 +22,7 @@ const CarouselBeritaPage2 = ({ id, data }) => {
           {data.map((e, i) => (
             <>
               <img
-                src={`https://atur.biar.pw/public/${e.path}`}
+                src={`https://data.pdiperjuangan.id/public/${e.path}`}
                 alt={e.title}
                 key={i}
                 className={i === 1 ? "carousel-item active" : "carousel-item"}
@@ -30,68 +30,68 @@ const CarouselBeritaPage2 = ({ id, data }) => {
             </>
           ))}
           <div className="container-box-indicator-page2">
-          {/* Box Indicator */}
-          <div className="box-tombol-carousel-page2">
-            <a
-              className="carousel-control-prev"
-              href="#page2"
-              role="button"
-              data-slide="next"
-              id="btn-left-page2"
-            >
-              <span className="carousel-control" aria-hidden="true" />
-              <div
-                className="btn-arrow-left-page2"
-                onClick={() => {
-                  if (slideIndex === data.length) {
-                    setSlideIndex(1);
-                  } else {
-                    setSlideIndex(slideIndex + 1);
-                  }
-                }}
+            {/* Box Indicator */}
+            <div className="box-tombol-carousel-page2">
+              <a
+                className="carousel-control-prev"
+                href="#page2"
+                role="button"
+                data-slide="next"
+                id="btn-left-page2"
               >
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-              </div>
-              <span className="sr-only">Previous</span>
-            </a>
-            <a
-              className="carousel-control-next"
-              href="#page2"
-              role="button"
-              data-slide="prev"
-              id="btn-right-page2"
-            >
-              <span className="carousel-control" aria-hidden="true" />
-              <div
-                className="btn-arrow-right-page2"
-                onClick={() => {
-                  if (slideIndex === 1) {
-                    setSlideIndex(data.length);
-                  } else {
-                    setSlideIndex(slideIndex - 1);
-                  }
-                }}
+                <span className="carousel-control" aria-hidden="true" />
+                <div
+                  className="btn-arrow-left-page2"
+                  onClick={() => {
+                    if (slideIndex === data.length) {
+                      setSlideIndex(1);
+                    } else {
+                      setSlideIndex(slideIndex + 1);
+                    }
+                  }}
+                >
+                  <i className="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+                <span className="sr-only">Previous</span>
+              </a>
+              <a
+                className="carousel-control-next"
+                href="#page2"
+                role="button"
+                data-slide="prev"
+                id="btn-right-page2"
               >
-                <i class="fa fa-chevron-left" aria-hidden="true"></i>
-              </div>
-              <span className="sr-only">Next</span>
-            </a>
-            {/* Box Indicator Number */}
-            <div className="box-indicator-number-page2">
-              <p className="txt-nomer-utama" style={{ color: "#fff" }}>
-                {slideIndex}
-              </p>
+                <span className="carousel-control" aria-hidden="true" />
+                <div
+                  className="btn-arrow-right-page2"
+                  onClick={() => {
+                    if (slideIndex === 1) {
+                      setSlideIndex(data.length);
+                    } else {
+                      setSlideIndex(slideIndex - 1);
+                    }
+                  }}
+                >
+                  <i className="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                <span className="sr-only">Next</span>
+              </a>
+              {/* Box Indicator Number */}
+              <div className="box-indicator-number-page2">
+                <p className="txt-nomer-utama" style={{ color: "#fff" }}>
+                  {slideIndex}
+                </p>
 
-              <p className="txt-nomer-target-total">/ {data.length}</p>
+                <p className="txt-nomer-target-total">/ {data.length}</p>
+              </div>
+              {/* END Box Indicator Number */}
             </div>
-            {/* END Box Indicator Number */}
+            {/* END Box Indicator */}
           </div>
-          {/* END Box Indicator */}
-        </div>
         </div>
 
         {/* Container Box Indicator Carousel */}
-        
+
         {/* END Container Box Indicator Carousel */}
       </div>
       {/* END Carousel Page2 */}

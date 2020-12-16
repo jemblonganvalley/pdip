@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./AngkaPaginationEvent.scss";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
-  let [active, setActive] = useState(false);
-
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(totalPosts / itemEventPerPage); i++) {
     pageNumbers.push(i);

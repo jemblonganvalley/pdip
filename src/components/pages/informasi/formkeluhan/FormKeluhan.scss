@@ -68,9 +68,18 @@ $responMax1440: 1440px;
   flex-direction: column;
   height: auto;
   width: 100%;
-  // padding-bottom: 40px;
-  padding: 0 20%;
+  // padding-bottom: 40px; 
   margin-bottom: 40px;
+
+  .formgaris{
+    padding: 45px 10%;
+}
+
+.form-control {
+  border-radius: 3rem;
+}
+
+
 
   // START LINKED INFORMASI
   .linked-formKeluhan {
@@ -102,6 +111,20 @@ $responMax1440: 1440px;
   }
   // END
 
+  .form-check-input:checked {
+    background-color: red;
+      border-color: red;
+  }
+
+  .form-check-input:focus {
+    border-color: #fe8b8b;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(253, 13, 13, 0.25);
+  }
+  .wrapper-formPDI .form-control-sm {
+    border-radius: 3.2rem;
+    border: none !important;
+}
   // Container form keluhan
   .container-formKeluhan {
     display: flex;

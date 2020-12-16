@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
 import "./FormPdi.scss";
+import MainDivider from "../../../divider/MainDivider";
 
 const FormPdi = () => {
   useEffect(() => {
@@ -25,52 +26,65 @@ const FormPdi = () => {
         {/* Container Formulir PDI */}
         <div className="container-formulirPdi">
           <div className="container">
-            <h1>FORMULIR PERMOHONAN INFORMASI PUBLIK</h1>
-            <label htmlFor="basic-url">Jenis identitas</label>
-            <select className="form-control form-control-sm">
+            <div className="formgaris">
+              <MainDivider text=" FORMULIR PERMOHONAN INFORMASI PUBLIK" />
+            </div>
+          </div>
+          <div className="nikWrapper">
+            <label htmlFor="basic-url">Upload identitas</label>
+            <select className="form-control">
               <option>KTP</option>
               <option>KTA</option>
               <option>SIM C</option>
             </select>
-            <label htmlFor="basic-url">Upload photo identitas</label>
-            <div className="custom-file">
-              <input
-                type="file"
-                className="custom-file-input"
-                id="customFileLang"
-                lang="es"
-              />
-              <label className="custom-file-label" htmlFor="customFileLang">
-                pilih photo
-              </label>
-            </div>
-            <label htmlFor="basic-url">NIK Nomor Identitas </label>
+
+            <br />
+            <label>
+              Upload Photo Identitas <small className="strict">*</small>
+            </label>
             <input
-              className="form-control form-control-sm"
-              type="text"
-              placeholder="Masukan NIK disni "
+              type="file"
+              accept="image/*"
+              className="form-control"
+              name="fileupl"
             />
-            <label htmlFor="basic-url">Nama </label>
-            <input
-              className="form-control form-control-sm"
-              type="text"
-              
-            />
+            <small className="error-msg" />
+          </div>
+          <div className="nikWrapper">
             <div className="form-group">
-              <label htmlFor="exampleFormControlTextarea1">Alamat</label>
-              <textarea
+              <label>
+                NIK / Nomor Identitas <small className="strict">*</small>
+              </label>
+              <input
+                type="text"
                 className="form-control"
-                id="exampleFormControlTextarea1"
-                rows={3}
+                name="nomor_identitas"
                 defaultValue={""}
               />
+              <small className="error-msg" />
             </div>
+            <div className="form-group">
+              <label>
+                Nama <small className="strict">*</small>
+              </label>
+              <input type="text" className="form-control" name="nama" />
+              <small className="error-msg" />
+            </div>
+            <div className="form-group">
+              <label>
+                Alamat <small className="strict">*</small>
+              </label>
+              <textarea
+                className="form-control"
+                name="alamat"
+                defaultValue={""}
+              />
+              <small className="error-msg" />
+            </div>
+            <br />
             <label htmlFor="basic-url">Pekerjaan </label>
-            <input
-              className="form-control form-control-sm"
-              type="text"
-              placeholder
-            />
+            <input className="form-control" type="text" placeholder />
+            <br />
             <label htmlFor="exampleFormControlInput1">Email</label>
             <input
               type="email"
@@ -82,16 +96,12 @@ const FormPdi = () => {
             <br />
             <h6>
               {" "}
-              <span className="badge badge-secondary">informasi</span>
+              <span>Informasi</span>
             </h6>
             <br />
             <br />
             <label htmlFor="basic-url">Informasi dibutuhkan</label>
-            <input
-              className="form-control form-control-sm"
-              type="text"
-              placeholder="isikan nama "
-            />
+            <input className="form-control" type="text" />
             <div className="form-group">
               <label htmlFor="exampleFormControlTextarea1">
                 Tujuan pengguna informasi{" "}
@@ -210,11 +220,7 @@ const FormPdi = () => {
             <br />
             <br />
             <div className="col-auto">
-              <button
-                type="submit"
-                className="btn btn-primary mb-3"
-                style={{ backgroundColor: "red" }}
-              >
+              <button type="submit" className="btn btn-danger mb-3">
                 Kirimi Data
               </button>
             </div>
