@@ -58,7 +58,7 @@ const Page1 = () => {
         <>
           <MetaTags>
             <meta name="description" content={detailPage.title} />
-            <meta property="og:url" content={`https://pas.biar.pw`} />
+            <meta property="og:url" content={`https://pdiperjuangan.id`} />
             <meta property="og:title" content={detailPage.title} />
             <meta property="og:description" content={detailPage.title} />
             <meta

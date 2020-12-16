@@ -24,7 +24,10 @@ const CardSocialMedia = ({ imageUrl, title }) => {
         {/* Facebook Share */}
         <FacebookShareButton
           url={window.location.href}
-          quote={title}
+          quote={`
+            ${title}
+            https://data.pdiperjuangan.id/public/${imageUrl}
+          `}
           hashtag={hashtag}
           title={title}
         >
