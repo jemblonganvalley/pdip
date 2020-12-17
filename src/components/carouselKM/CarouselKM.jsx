@@ -58,24 +58,24 @@ const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
                   </div>
                 ))}
                 <a
-                  className="carousel-control-prev control-desktop-prev"
+                  className="carousel-kontrol-prev kontrol-desktop-prev"
                   href="#KMCarousel"
                   role="button"
                   data-slide="prev"
                 >
-                  <div className="arrowsLeftDesktop">
+                  <div className="arrowsLeftKM">
                     {/* <img src={arrowsLeft} alt="" /> */}
                     <i className="fas fa-angle-left"></i>
                   </div>
                 </a>
 
                 <a
-                  className="carousel-control-next control-desktop-next"
+                  className="carousel-kontrol-next kontrol-desktop-next"
                   href="#KMCarousel"
                   role="button"
                   data-slide="next"
                 >
-                  <div className="arrowsRightDesktop">
+                  <div className="arrowsRightKM">
                     {/* <img src={arrows} alt="" /> */}
                     <i className="fas fa-angle-right"></i>
                   </div>
