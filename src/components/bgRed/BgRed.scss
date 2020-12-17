@@ -67,6 +67,7 @@ $responMax1440: 1440px;
   display: flex;
   gap: 20px;
   padding: 0 20%;
+  background-size: 10rem;
   // justify-content: center;
 
   @include respon1440() {

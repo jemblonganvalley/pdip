@@ -14,7 +14,7 @@ const KMobile = ({ cat = 44, totalPage = 3, data = data }) => {
               id="carouselnih"
               className="carousel slide kmCarousel"
               data-ride="carousel"
-              data-interval="1000"
+              data-interval="3000"
             >
               <ol className="carousel-indicators">
                 <li
@@ -50,6 +50,7 @@ const KMobile = ({ cat = 44, totalPage = 3, data = data }) => {
                     </div>
                   </div>
                 ))}
+                
               </div>
             </div>
           </div>

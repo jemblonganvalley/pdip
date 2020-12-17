@@ -15,19 +15,19 @@ const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
         <div className="row rowCustom">
           <div className="carousels">
             <div
-              id="carouselnih"
+              id="KMCarousel"
               className="carousel slide kmCarousel"
               data-ride="carousel"
               data-interval="2000"
             >
               <ol className="carousel-indicators">
                 <li
-                  data-target="#carouselnih"
+                  data-target="#KMCarousel"
                   data-slide-to={0}
                   className="active"
                 />
-                <li data-target="#carouselnih" data-slide-to={1} />
-                <li data-target="#carouselnih" data-slide-to={2} />
+                <li data-target="#KMCarousel" data-slide-to={1} />
+                <li data-target="#KMCarousel" data-slide-to={2} />
               </ol>
 
               <div className="carousel-inner">
@@ -35,9 +35,8 @@ const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
                   <div
                     className={`carousel-item ${i == 1 && "active"} itemKM`}
                     onClick={() => {
-                      window.location.href = `/detail-article/${
-                        e.id
-                      }/${e.title.replace(/\s/g, "-").toLowerCase()}`;
+                      window.location.href = `/detail-article/${e.id
+                        }/${e.title.replace(/\s/g, "-").toLowerCase()}`;
                     }}
                   >
                     <div className="col-lg-6 textKM">
@@ -58,6 +57,29 @@ const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
                     ></div>
                   </div>
                 ))}
+                <a
+                  className="carousel-control-prev control-desktop-prev"
+                  href="#KMCarousel"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <div className="arrowsLeftDesktop">
+                    {/* <img src={arrowsLeft} alt="" /> */}
+                    <i className="fas fa-angle-left"></i>
+                  </div>
+                </a>
+
+                <a
+                  className="carousel-control-next control-desktop-next"
+                  href="#KMCarousel"
+                  role="button"
+                  data-slide="next"
+                >
+                  <div className="arrowsRightDesktop">
+                    {/* <img src={arrows} alt="" /> */}
+                    <i className="fas fa-angle-right"></i>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
