@@ -18,61 +18,58 @@ const Page1 = () => {
 
   let { id } = useParams();
   const [detailPage, setDetailPage] = useState();
+  const [data, setData] = useState([]);
 
-  const getDetailPage = async () => {
-    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        app_id: "1555309664580",
-        api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
-      }),
-    });
-    const data = await res.json();
+  fetch("https://data.pdiperjuangan.id/api/auth/app", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      app_id: "1555309664580",
+      api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
+    }),
+  })
+    .then((res) => res.json())
+    .then((data) => setData(data));
 
-    const resConfigHome = await fetch(
-      `https://data.pdiperjuangan.id/api/blog/find/?id=${id}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${data.token}`,
-        },
-      }
-    );
-
-    const dataConfigHome = await resConfigHome.json();
-    setDetailPage(dataConfigHome.query);
-  };
+  fetch(`https://data.pdiperjuangan.id/api/blog/find/?id=${id}`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${data.token}`,
+    },
+  })
+    .then((res2) => res2.json())
+    .then((data2) => setDetailPage(data2.query));
 
   useEffect(() => {
-    getDetailPage();
     window.scrollTo(0, 0);
   }, [refresher]);
 
   return (
     <>
-      {detailPage ? (
-        <>
-          <Helmet>
-            <meta name="description" content={detailPage.title} />
-            <meta property="og:url" content={`https://pdiperjuangan.id`} />
-            <meta property="og:title" content={detailPage.title} />
-            <meta property="og:description" content={detailPage.title} />
-            <meta
-              property="og:image"
-              content={`https://data.pdiperjuangan.id/public${detailPage.path}`}
-            />
-            <meta
-              property="image"
-              content={`https://data.pdiperjuangan.id/public${detailPage.path}`}
-            />
+      {detailPage && (
+        <Helmet>
+          <meta name="description" content={detailPage.title} />
+          <meta property="og:url" content={`https://pdiperjuangan.id`} />
+          <meta property="og:title" content={detailPage.title} />
+          <meta property="og:description" content={detailPage.title} />
+          <meta
+            property="og:image"
+            content={`https://data.pdiperjuangan.id/public${detailPage.path}`}
+          />
+          <meta
+            property="image"
+            content={`https://data.pdiperjuangan.id/public${detailPage.path}`}
+          />
 
-            <meta property="og:type" content="website" />
-            <meta content="image/*" property="og:image:type" />
-          </Helmet>
+          <meta property="og:type" content="website" />
+          <meta content="image/*" property="og:image:type" />
+        </Helmet>
+      )}
+      {detailPage && (
+        <>
           <div className="wrapperBeritaPage1">
             {/* Untuk page detail berita tidak memakai Headers */}
 
@@ -264,11 +261,6 @@ const Page1 = () => {
                         borderRadius="10px" />
                 </div> */}
           </div>
-        </>
-      ) : (
-        <>
-          <Wait />
-          {/* <NotFound pengembanganDisplay={'none'} /> */}
         </>
       )}
     </>
