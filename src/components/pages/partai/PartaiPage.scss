@@ -194,6 +194,7 @@ $responMax1440: 1440px;
         align-items: space-between;
         flex-direction: column;
         width: 100%;
+        padding-right: 25px;
         // border: 1px solid red;
 
         @include respon950() {
