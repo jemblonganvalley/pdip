@@ -57,7 +57,7 @@ const MainSlider = ({ value, cls }) => {
                   {/* Box Image */}
                   <div className="box-img-mainSlider">
                     <img
-                      src={`http://data.pdiperjuangan.id/public${e.image}`}
+                      src={`https://data.pdiperjuangan.id/public/${e.image}`}
                       alt={e.title}
                       className="img-home-mainSlider"
                     />
