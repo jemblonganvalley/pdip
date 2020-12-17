@@ -26,7 +26,7 @@ const CardSocialMedia = ({ imageUrl, title, url }) => {
         <p className="share-socialMedia">Share : </p>
         {/* Facebook Share */}
         <FacebookShareButton
-          url={url}
+          url={window.location.href}
           quote={title}
           hashtag={hashtag}
           title={title}
