@@ -276,19 +276,23 @@ $smallPhoneDua : 400px;
 
 	
 	&::after {
-			bottom: 395px;
+			// bottom: 395px;
+			top: -6.5rem;
 			@include smallPhone() {
-				bottom: 91%;
+				// bottom: 91%;
+				top: 25pxc;
 			}
 	}
 }
 
 .wrapperTimeline .pembungkusLine .timeline-item:nth-child(odd) {
 	&::after {
-			bottom: 280px;
+			// bottom: 280px;
+			top: 10px;
 
 			@include smallPhone() {
-				bottom: 91%;
+				// bottom: 91%;
+				top: 20px;
 			}
 	}
 }

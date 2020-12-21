@@ -73,8 +73,8 @@ const EventPage = () => {
         <div className="wrapperEvent">
 
             
-            <NotFound pengembanganDisplay={'none'} />
-            {/* <div className="headEvent">
+            {/* <NotFound pengembanganDisplay={'none'} /> */}
+            <div className="headEvent">
                 <div className="textHeadEvent">
                     <h2>Timeline Event </h2>
                 </div>
@@ -111,7 +111,7 @@ const EventPage = () => {
             <div className="timeline">
                 <Timeline timeline={currentPosts} />
             </div>
-        </div> */}
+        </div>
         </div>
 
     )

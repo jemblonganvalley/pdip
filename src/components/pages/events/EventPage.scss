@@ -35,6 +35,7 @@ $smallPhoneDua : 400px;
         background-position: center;
         display: flex;
         align-items: center;
+        background-size: 10rem;
         // width: 100%;
         @include smallPhone() {
             height: 15vh;
