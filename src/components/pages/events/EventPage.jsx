@@ -62,6 +62,7 @@ const EventPage = () => {
     let [loading, setLoading] = useState(false)
     let [currentPage2, setCurrentPage2] = useState(1)
     let [itemEventPerPage] = useState(4)
+    const [dataTimeline, setDataTimeline] = useState([])
 
     const indexOfLastPost = currentPage2 * itemEventPerPage
     const indexOfFirstPost = indexOfLastPost - itemEventPerPage
@@ -75,11 +76,7 @@ const EventPage = () => {
             mode : 'cors',
             headers : {
                 'Content-Type' : 'application/json'
-            },
-            body: JSON.stringify({
-                app_id: "1555309664580",
-                api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
-            }),
+            }
         })
         const data = await res.json()
 
@@ -94,6 +91,8 @@ const EventPage = () => {
                 "id" : 13
             })
         })
+        const dataConfigTimeline = await resConfigEvent.json()
+        setDataTimeline(dataConfigTimeline)
     }
 
     useEffect(() => {
