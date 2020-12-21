@@ -5,11 +5,9 @@ import ReactPaginate from "react-paginate";
 import { useEffect } from "react";
 import "../../../database/globalState";
 import { action, useStoreActions, useStoreState } from "easy-peasy";
-import { lazy } from "react";
-import { Suspense } from "react";
 
-const CardSearch = lazy(() => import("../../cardsearch/CardSearch"));
-const Wait = lazy(() => import("../../wait/Wait"));
+import CardSearch from "../../cardsearch/CardSearch";
+import Wait from "../../wait/Wait";
 
 const Search = () => {
   // Onchange text from input search
@@ -33,45 +31,37 @@ const Search = () => {
     }
 
     return (
-      <Suspense
-        fallback={
-          <div>
-            <Wait />
-          </div>
-        }
-      >
-        <div className="container-angka-pagination">
-          <div className="col-angka-pagination">
-            {pageNumbers.slice(0, 10).map((number) => (
-              <div
-                key={number}
-                className="angka-pagination"
-                onClick={() => {
-                  setNumPage(number);
-                }}
+      <div className="container-angka-pagination">
+        <div className="col-angka-pagination">
+          {pageNumbers.slice(0, 10).map((number) => (
+            <div
+              key={number}
+              className="angka-pagination"
+              onClick={() => {
+                setNumPage(number);
+              }}
+            >
+              <NavLink
+                className="paginationLink"
+                to="#"
+                activeClassName="active"
+                style={
+                  number === numPage
+                    ? {
+                        backgroundColor: "#d80010",
+                        borderRadius: "100px",
+                        padding: ".2px",
+                        color: "#fff",
+                      }
+                    : null
+                }
               >
-                <NavLink
-                  className="paginationLink"
-                  to="#"
-                  activeClassName="active"
-                  style={
-                    number === numPage
-                      ? {
-                          backgroundColor: "#d80010",
-                          borderRadius: "100px",
-                          padding: ".2px",
-                          color: "#fff",
-                        }
-                      : null
-                  }
-                >
-                  {number}
-                </NavLink>
-              </div>
-            ))}
-          </div>
+                {number}
+              </NavLink>
+            </div>
+          ))}
         </div>
-      </Suspense>
+      </div>
     );
   };
 

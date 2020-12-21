@@ -1,20 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "../page2/Page2.scss";
 import { Link, useParams } from "react-router-dom";
-import { lazy } from "react";
-import { Suspense } from "react";
 
-const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
-const Cards = lazy(() => import("../../../cards/MainCards"));
-const CarouselBeritaPage2 = lazy(() =>
-  import("../../../carouselberitapage2/CarouselBeritaPage2")
-);
-const VMedia = lazy(() => import("../../../VMedia/VMedia"));
-const Wait = lazy(() => import("../../../wait/Wait"));
-const MainDivider = lazy(() => import("../../../divider/MainDivider"));
-const CardSocialMedia = lazy(() =>
-  import("../../../cardsocialmedia/CardSocialMedia")
-);
+import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
+import Cards from "../../../cards/MainCards";
+import CarouselBeritaPage2 from "../../../carouselberitapage2/CarouselBeritaPage2";
+import VMedia from "../../../VMedia/VMedia";
+import Wait from "../../../wait/Wait";
+import MainDivider from "../../../divider/MainDivider";
+import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
 
 // READ BEFORE USE
 
@@ -81,13 +75,7 @@ const Page2 = () => {
   }, [reload]);
 
   return (
-    <Suspense
-      fallback={
-        <div>
-          <Wait />
-        </div>
-      }
-    >
+    <>
       {manyCard.length > 0 ? (
         <div className="wrapperBeritaPage2">
           <div className="linkedBeritaPage2">
@@ -191,7 +179,7 @@ const Page2 = () => {
       ) : (
         <Wait />
       )}
-    </Suspense>
+    </>
   );
 };
 

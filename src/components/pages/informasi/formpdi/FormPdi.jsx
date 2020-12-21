@@ -1,25 +1,16 @@
 import React from "react";
-import { Suspense } from "react";
-import { lazy } from "react";
 import { useEffect } from "react";
 import "./FormPdi.scss";
 
-const Wait = lazy(() => import("../../../wait/Wait"));
-const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
-const MainDivider = lazy(() => import("../../../divider/MainDivider"));
+import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
+import MainDivider from "../../../divider/MainDivider";
 
 const FormPdi = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <Suspense
-      fallback={
-        <div>
-          <Wait />
-        </div>
-      }
-    >
+    <>
       <div className="wrapper-formPDI">
         {/* START LINKED */}
         <div className="linked-formPdi">
@@ -325,7 +316,7 @@ const FormPdi = () => {
 
         {/* END Container Formulir PDI */}
       </div>
-    </Suspense>
+    </>
   );
 };
 

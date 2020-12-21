@@ -3,15 +3,12 @@ import MetaTags from "react-meta-tags";
 import { useParams } from "react-router-dom";
 import { useStoreState } from "easy-peasy";
 import "../page1/Page1.scss";
-import { lazy } from "react";
-import { Suspense } from "react";
-import Helmet from 'react-helmet'
 
-const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
-const CardSocialMedia = lazy(() =>
-  import("../../../cardsocialmedia/CardSocialMedia")
-);
-const Wait = lazy(() => import("../../../wait/Wait"));
+import Helmet from "react-helmet";
+
+import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
+import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
+import Wait from "../../../wait/Wait";
 
 const Page1 = () => {
   const refresher = useStoreState((state) => state.refresher);
@@ -57,13 +54,7 @@ const Page1 = () => {
   }, [refresher]);
 
   return (
-    <Suspense
-      fallback={
-        <div>
-          <Wait />
-        </div>
-      }
-    >
+    <>
       {detailPage ? (
         <>
           <Helmet>
@@ -282,7 +273,7 @@ const Page1 = () => {
           {/* <NotFound pengembanganDisplay={'none'} /> */}
         </>
       )}
-    </Suspense>
+    </>
   );
 };
 

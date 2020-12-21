@@ -3,17 +3,13 @@ import ReactPaginate from "react-paginate";
 import "./WejanganBungKarno.scss";
 import { useParams } from "react-router-dom";
 import { useStoreState } from "easy-peasy";
-import { lazy } from "react";
-import { Suspense } from "react";
 
-const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
-const MainDivider = lazy(() => import("../../../divider/MainDivider"));
-const AngkaPaginationEvent = lazy(() =>
-  import("../../../paginationevent/AngkaPaginationEvent")
-);
-const Wait = lazy(() => import("../../../wait/Wait"));
-const CardQuotes = lazy(() => import("../../../cardquotes/CardQuotes"));
-const QuotesBkbb = lazy(() => import("../../../quotesbkbb/QuotesBkbb"));
+import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
+import MainDivider from "../../../divider/MainDivider";
+import AngkaPaginationEvent from "../../../paginationevent/AngkaPaginationEvent";
+import Wait from "../../../wait/Wait";
+import CardQuotes from "../../../cardquotes/CardQuotes";
+import QuotesBkbb from "../../../quotesbkbb/QuotesBkbb";
 
 const WejanganBungKarno = () => {
   // Create Database Card Item
@@ -88,13 +84,7 @@ const WejanganBungKarno = () => {
   }, [refresher]);
 
   return (
-    <Suspense
-      fallback={
-        <div>
-          <Wait />
-        </div>
-      }
-    >
+    <>
       {cardWejanganBkItem.length > 0 ? (
         <>
           <div className="wrapperWejanganThumbnail">
@@ -167,7 +157,7 @@ const WejanganBungKarno = () => {
       ) : (
         <Wait />
       )}
-    </Suspense>
+    </>
   );
 };
 

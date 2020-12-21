@@ -4,15 +4,11 @@ import { NavLink, useParams } from "react-router-dom";
 import "./containerCard.scss";
 import "../paginationevent/AngkaPaginationEvent.scss";
 import ReactPaginate from "react-paginate";
-import { lazy } from "react";
-import { Suspense } from "react";
 
-const BreadCrumbs = lazy(() =>
-  import("../../components/breadcrumbs/BreadCrumbs")
-);
-const MainDivider = lazy(() => import("../../components/divider/MainDivider"));
-const Cards = lazy(() => import("../cards/MainCards"));
-const Wait = lazy(() => import("../wait/Wait"));
+import BreadCrumbs from "../../components/breadcrumbs/BreadCrumbs";
+import MainDivider from "../../components/divider/MainDivider";
+import Cards from "../cards/MainCards";
+import Wait from "../wait/Wait";
 // import AngkaPaginationEvent from "../paginationevent/AngkaPaginationEvent";
 
 const ContainerCard = () => {
@@ -33,45 +29,37 @@ const ContainerCard = () => {
     }
 
     return (
-      <Suspense
-        fallback={
-          <div>
-            <Wait />
-          </div>
-        }
-      >
-        <div className="container-angka-pagination">
-          <div className="col-angka-pagination">
-            {pageNumbers.map((number) => (
-              <div
-                key={number}
-                className="angka-pagination"
-                onClick={() => {
-                  setNumPage(number);
-                }}
+      <div className="container-angka-pagination">
+        <div className="col-angka-pagination">
+          {pageNumbers.map((number) => (
+            <div
+              key={number}
+              className="angka-pagination"
+              onClick={() => {
+                setNumPage(number);
+              }}
+            >
+              <NavLink
+                className="paginationLink"
+                to="#"
+                activeClassName="active"
+                style={
+                  number === numPage
+                    ? {
+                        backgroundColor: "#d80010",
+                        borderRadius: "100px",
+                        padding: ".2px",
+                        color: "#fff",
+                      }
+                    : null
+                }
               >
-                <NavLink
-                  className="paginationLink"
-                  to="#"
-                  activeClassName="active"
-                  style={
-                    number === numPage
-                      ? {
-                          backgroundColor: "#d80010",
-                          borderRadius: "100px",
-                          padding: ".2px",
-                          color: "#fff",
-                        }
-                      : null
-                  }
-                >
-                  {number}
-                </NavLink>
-              </div>
-            ))}
-          </div>
+                {number}
+              </NavLink>
+            </div>
+          ))}
         </div>
-      </Suspense>
+      </div>
     );
   };
 

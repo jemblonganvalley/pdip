@@ -5,19 +5,15 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./BeritaPage.scss";
 import { CarouselDuelBerita } from "../../carouselDualBerita/CarouselDuelBerita";
-import { lazy } from "react";
-import { Suspense } from "react";
 
-const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
-const Cards = lazy(() => import("../../cards/MainCards"));
-const Wait = lazy(() => import("../../wait/Wait"));
-const CardInformasi = lazy(() => import("../../cardInformasi/CardInformasi"));
-const MainButton = lazy(() => import("../../buttons/MainButton"));
-const MainDivider = lazy(() => import("../../divider/MainDivider"));
-const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
-const CarouselKetuaUmumPage = lazy(() =>
-  import("../../carouselKetuaUmumPage/CarouselKetuaUmumPage")
-);
+import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
+import Cards from "../../cards/MainCards";
+import Wait from "../../wait/Wait";
+import CardInformasi from "../../cardInformasi/CardInformasi";
+import MainButton from "../../buttons/MainButton";
+import MainDivider from "../../divider/MainDivider";
+import CardHeader from "../../cardheader/CardHeader";
+import CarouselKetuaUmumPage from "../../carouselKetuaUmumPage/CarouselKetuaUmumPage";
 
 // Create Component
 const BeritaPage = () => {
@@ -57,13 +53,7 @@ const BeritaPage = () => {
   }, []);
 
   return (
-    <Suspense
-      fallback={
-        <div>
-          <Wait />
-        </div>
-      }
-    >
+    <>
       {configHome.length > 0 ? (
         <div className="wrapperBerita">
           {/* INDEX 0 */}
@@ -250,7 +240,7 @@ const BeritaPage = () => {
       ) : (
         <Wait />
       )}
-    </Suspense>
+    </>
   );
 };
 // END Create Component
