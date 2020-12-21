@@ -13,6 +13,38 @@ $smallPhoneDua : 400px;
     }
 }
 
+// Min widht 500 and Max width 750
+$respon750 : 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+        @content;
+    }
+}
+
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360{
+    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
+        @content;
+    }
+}
+
 .wrapperTimeline {
 	.pembungkusLine {
 		.timeline-item {
@@ -27,6 +59,11 @@ $smallPhoneDua : 400px;
 				// max-width: 100vh;
 				max-height: 100vh;
 				// padding-top: 0;
+				padding-top: 1px;
+			}
+
+			@include respon750() {
+				max-height: 100vh;
 				padding-top: 1px;
 			}
 
@@ -60,6 +97,19 @@ $smallPhoneDua : 400px;
 					margin-top: 1rem;
 				}
 
+				@include respon750() {
+					width: 430px;
+					margin-top: 1rem;
+				}
+
+				@include respon1360() {
+					width: 400px;
+				}
+
+				@include respon950() {
+					width: 300px;
+				}
+
 				.titleline {
 					// float: right;
 					// text-align: start;
@@ -76,6 +126,11 @@ $smallPhoneDua : 400px;
 						justify-content: center;
 						align-items: center;
 					}
+					@include respon750() {
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+					}
 					
 					
 					.imgContent {
@@ -88,6 +143,14 @@ $smallPhoneDua : 400px;
 							height: 20vh;
 							width: 100%;
 						}
+
+						@include respon750() {
+							height: 20vh;
+						}
+
+						@include respon950() {
+							height: 17vh;
+						}
 		
 					}
 					
@@ -99,6 +162,11 @@ $smallPhoneDua : 400px;
 						text-align: left;
 
 						@include smallPhone() {
+							text-align: center;
+							width: 100%;
+						}
+
+						@include respon750() {
 							text-align: center;
 							width: 100%;
 						}
@@ -129,6 +197,10 @@ $smallPhoneDua : 400px;
 						flex-direction: row;
 						margin-top: 0;
 					}
+					@include respon750() {
+						flex-direction: row;
+						margin-top: 0;
+					}
 
 					.tanggal {
 						
@@ -142,6 +214,12 @@ $smallPhoneDua : 400px;
 						@include smallPhone() {
 							padding: 0;
 							
+							width: 30%;
+							text-align: center;
+						}
+
+						@include respon750() {
+							padding: 0;
 							width: 30%;
 							text-align: center;
 						}
@@ -254,6 +332,12 @@ $smallPhoneDua : 400px;
 		bottom: 5px;
 		text-align: start;
 	}
+
+	@include respon750() {
+		left: 30px;
+		bottom: 5px;
+		text-align: center;
+	}
 	
 }
 
@@ -261,7 +345,7 @@ $smallPhoneDua : 400px;
 	left: -539px;
 	text-align: end;
 	// bottom: 300px;
-	bottom: 165px;
+	bottom: 500px;
 	@include smallPhone() {
 		left: 30px;
 		text-align: start;
@@ -269,21 +353,80 @@ $smallPhoneDua : 400px;
 		// top: 5px;
 
 	}
+
+	@include respon750() {
+		left: 30px;
+		bottom: 0;
+		text-align: center;
+	}
+
+	@include respon1360() {
+		left: -440px;
+		bottom: 490px;
+	}
+
+	@include respon950() {
+		left: -340px;
+		bottom: 410px;
+	}
 	
 }
+
+.wrapperTimeline .pembungkusLine .timeline-item:nth-child(3n) .kosong {
+	left: 45px;
+	bottom: 30rem;
+
+
+	@include smallPhone() {
+		left: 30px;
+		bottom: 5px;
+		text-align: start;
+	}
+
+	@include respon750() {
+		left: 30px;
+		bottom: 5px;
+		text-align: center;
+	}
+	
+}
+
+
+// INDICATOR
 
 .wrapperTimeline .pembungkusLine .timeline-item:nth-child(even) {
 
 	
 	&::after {
 			// bottom: 395px;
-			top: -6.5rem;
+			top: -27rem;
 			@include smallPhone() {
 				// bottom: 91%;
-				top: 25pxc;
+				top: 25px;
+			}
+
+			@include respon750() {
+				top: 25px;
+			}
+
+			@include respon950() {
+				top: -22rem;
 			}
 	}
 }
+
+// .wrapperTimeline .pembungkusLine .timeline-item:nth-child(4n) {
+
+	
+// 	&::after {
+// 			// bottom: 395px;
+// 			top: -27rem;
+// 			@include smallPhone() {
+// 				// bottom: 91%;
+// 				top: 25px;
+// 			}
+// 	}
+// }
 
 .wrapperTimeline .pembungkusLine .timeline-item:nth-child(odd) {
 	&::after {
@@ -292,6 +435,26 @@ $smallPhoneDua : 400px;
 
 			@include smallPhone() {
 				// bottom: 91%;
+				top: 20px;
+			}
+
+			@include respon750() {
+				top: 20px;
+			}
+	}
+}
+
+.wrapperTimeline .pembungkusLine .timeline-item:nth-child(3n) {
+	&::after {
+			// bottom: 280px;
+			top: -26.4rem;
+
+			@include smallPhone() {
+				// bottom: 91%;
+				top: 20px;
+			}
+
+			@include respon750() {
 				top: 20px;
 			}
 	}

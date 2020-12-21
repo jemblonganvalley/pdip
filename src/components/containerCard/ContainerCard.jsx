@@ -20,48 +20,48 @@ const ContainerCard = () => {
     `https://data.pdiperjuangan.id/api/blog/data?page=${numPage}`
   );
 
-  const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
-    let [active, setActive] = useState(false);
+  // const AngkaPaginationEvent = ({itemEventPerPage, totalPosts, paginate }) => {
+  //   let [active, setActive] = useState(false);
 
-    const pageNumbers = [];
-    for (let i = 1; i <= Math.ceil(totalPosts / itemEventPerPage); i++) {
-      pageNumbers.push(i);
-    }
+  //   const pageNumbers = [];
+  //   for (let i = 1; i <= Math.ceil(totalPosts / itemEventPerPage); i++) {
+  //     pageNumbers.push(i);
+  //   }
 
-    return (
-      <div className="container-angka-pagination">
-        <div className="col-angka-pagination">
-          {pageNumbers.map((number) => (
-            <div
-              key={number}
-              className="angka-pagination"
-              onClick={() => {
-                setNumPage(number);
-              }}
-            >
-              <NavLink
-                className="paginationLink"
-                to="#"
-                activeClassName="active"
-                style={
-                  number === numPage
-                    ? {
-                        backgroundColor: "#d80010",
-                        borderRadius: "100px",
-                        padding: ".2px",
-                        color: "#fff",
-                      }
-                    : null
-                }
-              >
-                {number}
-              </NavLink>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  };
+  //   return (
+  //     <div className="container-angka-pagination">
+  //       <div className="col-angka-pagination">
+  //         {pageNumbers.map((number) => (
+  //           <div
+  //             key={number}
+  //             className="angka-pagination"
+  //             onClick={() => {
+  //               setNumPage(number);
+  //             }}
+  //           >
+  //             <NavLink
+  //               className="paginationLink"
+  //               to="#"
+  //               activeClassName="active"
+  //               style={
+  //                 number === numPage
+  //                   ? {
+  //                       backgroundColor: "#d80010",
+  //                       borderRadius: "100px",
+  //                       padding: ".2px",
+  //                       color: "#fff",
+  //                     }
+  //                   : null
+  //               }
+  //             >
+  //               {number}
+  //             </NavLink>
+  //           </div>
+  //         ))}
+  //       </div>
+  //     </div>
+  //   );
+  // };
 
   const getConfigHome = async () => {
     const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
