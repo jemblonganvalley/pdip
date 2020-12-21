@@ -5,6 +5,7 @@ import { useStoreState } from "easy-peasy";
 import "../page1/Page1.scss";
 import { lazy } from "react";
 import { Suspense } from "react";
+import Helmet from 'react-helmet'
 
 const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
 const CardSocialMedia = lazy(() =>
@@ -65,7 +66,7 @@ const Page1 = () => {
     >
       {detailPage ? (
         <>
-          <MetaTags>
+          <Helmet>
             <meta name="description" content={detailPage.title} />
             <meta property="og:url" content={`https://pdiperjuangan.id`} />
             <meta property="og:title" content={detailPage.title} />
@@ -79,9 +80,9 @@ const Page1 = () => {
               content={`https://atur.biar.pw/public${detailPage.path}`}
             />
 
-            <meta property="og:type" content="website" />
+            <meta property="og:type" content="article" />
             <meta content="image/*" property="og:image:type" />
-          </MetaTags>
+          </Helmet>
           <div className="wrapperBeritaPage1">
             {/* Untuk page detail berita tidak memakai Headers */}
 
