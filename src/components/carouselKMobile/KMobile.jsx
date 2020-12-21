@@ -28,13 +28,11 @@ const KMobile = ({ cat = 44, totalPage = 3, data = data }) => {
               <div className="carousel-inner">
                 {data.map((e, i) => (
                   <div
-                    className={`carousel-item ${
-                      i == 1 && "active"
-                    } itemKMobile`}
+                    className={`carousel-item ${i == 1 && "active"
+                      } itemKMobile`}
                     onClick={() => {
-                      window.location.href = `/detail-article/${
-                        e.id
-                      }/${e.title.replace(/\s/g, "-").toLowerCase()}`;
+                      window.location.href = `/detail-article/${e.id
+                        }/${e.title.replace(/\s/g, "-").toLowerCase()}`;
                     }}
                   >
                     <div
@@ -50,7 +48,31 @@ const KMobile = ({ cat = 44, totalPage = 3, data = data }) => {
                     </div>
                   </div>
                 ))}
-                
+
+                <a
+                  className="carousel-kontrol-prev-mobile kontrol-desktop-prev-mobile"
+                  href="#carouselnih"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <div className="arrowsLeftKMobile">
+                    {/* <img src={arrowsLeft} alt="" /> */}
+                    <i className="fas fa-angle-left"></i>
+                  </div>
+                </a>
+
+                <a
+                  className="carousel-kontrol-next-mobile kontrol-desktop-next-mobile"
+                  href="#carouselnih"
+                  role="button"
+                  data-slide="next"
+                >
+                  <div className="arrowsRightKMobile">
+                    {/* <img src={arrows} alt="" /> */}
+                    <i className="fas fa-angle-right"></i>
+                  </div>
+                </a>
+
               </div>
             </div>
           </div>

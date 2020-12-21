@@ -19,7 +19,7 @@ $smallPhoneDua : 400px;
     width: 100vw;
     height: 40vh;
     gap : 20px;
-    padding: 0 21% 0 20%;
+    padding: 0 20% 0 20%;
 
     @include smallPhone(){
         height: auto;
