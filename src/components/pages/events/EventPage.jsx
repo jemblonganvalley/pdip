@@ -69,6 +69,37 @@ const EventPage = () => {
 
     const paginate = (pageNumber) => setCurrentPage2(pageNumber)
 
+    async function getApiData() {
+        const res = await fetch('https://data.pdiperjuangan.id/api/event/data', {
+            method : 'POST',
+            mode : 'cors',
+            headers : {
+                'Content-Type' : 'application/json'
+            },
+            body: JSON.stringify({
+                app_id: "1555309664580",
+                api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
+            }),
+        })
+        const data = await res.json()
+
+        const resConfigEvent = await fetch('https://data.pdiperjuangan.id/api/event/find', {
+            method : 'POST',
+            mode : 'cors',
+            headers : {
+                'Content-Type' : 'application/json',
+                Authorization : `Bearer ${data.token}`
+            },
+            body : JSON.stringify({
+                "id" : 13
+            })
+        })
+    }
+
+    useEffect(() => {
+        getApiData()
+    },[])
+
     return (
         <div className="wrapperEvent">
 
