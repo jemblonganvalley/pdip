@@ -230,6 +230,13 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 
 }
 
+###
+POST https://data.pdiperjuangan.id/api/agendapartai
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjA3NTQxNDg3LCJleHAiOjE2MDc2Mjc4ODcsIm5iZiI6MTYwNzU0MTQ4NywianRpIjoiMmNoVjBOaDBoYjFPRFFRSyIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.C3Bq3oZfDl2JNgixudeNBczedBYyzyWxbzG2xMcvLn8"
+
+
+
 # TRACK NOMER KTA
 ###
 GET http://101.255.87.186/anggota/lib/mpp.api.php?nokta=32760510100111730001&key=2
