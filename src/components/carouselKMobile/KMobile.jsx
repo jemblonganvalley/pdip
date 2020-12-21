@@ -50,24 +50,24 @@ const KMobile = ({ cat = 44, totalPage = 3, data = data }) => {
                 ))}
 
                 <a
-                  className="carousel-kontrol-prev kontrol-desktop-prev"
+                  className="carousel-kontrol-prev-mobile kontrol-desktop-prev-mobile"
                   href="#carouselnih"
                   role="button"
                   data-slide="prev"
                 >
-                  <div className="arrowsLeftKM">
+                  <div className="arrowsLeftKMobile">
                     {/* <img src={arrowsLeft} alt="" /> */}
                     <i className="fas fa-angle-left"></i>
                   </div>
                 </a>
 
                 <a
-                  className="carousel-kontrol-next kontrol-desktop-next"
+                  className="carousel-kontrol-next-mobile kontrol-desktop-next-mobile"
                   href="#carouselnih"
                   role="button"
                   data-slide="next"
                 >
-                  <div className="arrowsRightKM">
+                  <div className="arrowsRightKMobile">
                     {/* <img src={arrows} alt="" /> */}
                     <i className="fas fa-angle-right"></i>
                   </div>

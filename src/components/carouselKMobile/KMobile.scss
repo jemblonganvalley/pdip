@@ -114,9 +114,6 @@ $respon500: 500px;
                 height: auto;
                 padding: 0 0 20px 0;
             }
-            @include respon750() {
-                height: 500px;
-            }
 
             @include respon950() {
                 height: 700px;
@@ -212,7 +209,7 @@ $respon500: 500px;
                         // min width 750px and max width 950px
                         @include respon950(){
                             height: 30%;
-                            padding: 1rem 50px;
+                            padding: 2rem 50px;
 
                         }
                         // end min width 750px and max width 950px
@@ -292,31 +289,35 @@ $respon500: 500px;
         height: 0;
         }
 
-        .carousel-kontrol-next:focus, .carousel-kontrol-next:hover,
-        .carousel-kontrol-prev:focus, .carousel-kontrol-next:hover {
-          color: #fff;
-          text-decoration: none;
-          outline: 0;
-          opacity: 0.9;
-        }
+                .carousel-kontrol-next-mobile:focus, .carousel-kontrol-next-mobile:hover,
+                .carousel-kontrol-prev-mobile:focus, .carousel-kontrol-next-mobile:hover {
+                color: #fff;
+                text-decoration: none;
+                outline: 0;
+                opacity: 0.9;
+                }
 
-        .kontrol-desktop-prev,
-        .kontrol-desktop-next {
-            top:-20%;
-        }
+                .kontrol-desktop-prev-mobile,
+                .kontrol-desktop-next-mobile {
+                    top:-50%;
+                }
             }
         }
     }
 }
 
-.arrowsLeftKM {
+.arrowsLeftKMobile {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 500px;
     left: 2rem;
-  
+    
+    @include respon950() {
+    top: 300px;
+
+    }
     
   
     i{
@@ -326,14 +327,18 @@ $respon500: 500px;
   }
   
   
-  .arrowsRightKM {
+  .arrowsRightKMobile {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 500px;
     right: 2rem;
-  
+
+    @include respon950() {
+        top: 300px;
+
+    }
     i{
         font-size: 35pt;
         color: rgb(252, 252, 252);
