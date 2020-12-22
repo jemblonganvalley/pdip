@@ -307,7 +307,6 @@ $maxHeight800: 800px;
         align-items: center;
         .imageCovid {
           height: 100px;
-          margin: 0 10px;
           // END min height 600 and max height 800 for min width 951 and max width 1360
 
           // Min width 750px and max width 950px
@@ -354,9 +353,9 @@ $maxHeight800: 800px;
       }
       .itemTextCovid {
         width: 50%;
-        margin-left: 1rem;
 
         h4 {
+          text-transform: lowercase;
           @include respon950() {
             font-size: 15pt;
           }

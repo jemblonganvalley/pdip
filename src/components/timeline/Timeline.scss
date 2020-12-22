@@ -85,6 +85,13 @@ $responMax768 : 770px;
 				padding-top: 1px;
 			}
 
+			@include respon950() {
+				max-height: inherit;
+				padding-top: 1px;
+				height: 100vh;
+
+			}
+
 			&::after {
 				content: '';
 				position: absolute;
@@ -110,14 +117,16 @@ $responMax768 : 770px;
 				border-radius: 10px;
 				box-shadow: 0px 6px 21px -5px rgba(0,0,0,0.49);
 				@include smallPhone() {
-					width: 280px;
+					width: 80vw;
 					// padding: 15px;
 					margin-top: 1rem;
+					text-align: start;
 				}
 
 				@include respon750() {
-					width: 430px;
+					width: 85vw;
 					margin-top: 1rem;
+					text-align: start;
 				}
 
 				@include respon1360() {
@@ -125,7 +134,8 @@ $responMax768 : 770px;
 				}
 
 				@include respon950() {
-					width: 300px;
+					width: 90vw;
+					text-align: start;
 				}
 
 				.titleline {
@@ -149,6 +159,12 @@ $responMax768 : 770px;
 						justify-content: center;
 						align-items: center;
 					}
+
+					@include respon950() {
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+					}
 					
 					
 					.imgContent {
@@ -164,11 +180,11 @@ $responMax768 : 770px;
 						}
 
 						@include respon750() {
-							height: 20vh;
+							height: 35vh;
 						}
 
 						@include respon950() {
-							height: 17vh;
+							height: 40vh;
 						}
 		
 					}
@@ -181,12 +197,17 @@ $responMax768 : 770px;
 						text-align: left;
 
 						@include smallPhone() {
-							text-align: center;
+							text-align: start;
 							width: 100%;
 						}
 
 						@include respon750() {
-							text-align: center;
+							text-align: start;
+							width: 100%;
+						}
+
+						@include respon950() {
+							text-align: start;
 							width: 100%;
 						}
 
@@ -275,11 +296,17 @@ $responMax768 : 770px;
 					height: 100px;
 
 					@include smallPhone() {
-						flex-direction: row;
+						flex-direction: column;
 						margin-top: 0;
+						margin: 1rem 0;
+						height: auto;
 					}
 					@include respon750() {
-						flex-direction: row;
+						flex-direction: column;
+						margin-top: 0;
+					}
+					@include respon950() {
+						flex-direction: column;
 						margin-top: 0;
 					}
 
@@ -292,22 +319,20 @@ $responMax768 : 770px;
 						@include smallPhone() {
 							padding: 0;
 							
-							width: 30%;
 							text-align: center;
 						}
 
 						@include respon750() {
 							padding: 0;
-							width: 30%;
+							text-align: center;
+						}
+						@include respon950() {
+							padding: 0;
 							text-align: center;
 						}
 
 						.bulan {
-							font-size: 8pt;
 							margin-left: 1rem;
-							@include smallPhone() {
-								font-size: 6pt;
-							}
 						}
 						
 						.waktu {
@@ -327,18 +352,16 @@ $responMax768 : 770px;
 
 						@include smallPhone() {
 							padding: 0;
-							
+							margin: 5px 0;
 						}
 
 						
 
 						.nomor {
-							font-size: 8pt;
 							margin-left: 1rem;
 
 							@include smallPhone() {
-								font-size: 6pt;
-								text-align: center;
+								text-align: start;
 							}
 						}
 					}
@@ -351,16 +374,14 @@ $responMax768 : 770px;
 
 						@include smallPhone() {
 							padding: 0;
-							
+							margin: 5px 0;
 						}
 
 						.kota {
-							font-size: 8pt;
 							margin-left: 1rem;
 							text-align: start;
 							@include smallPhone() {
-								text-align: center;
-								font-size: 6pt;
+								text-align: start;
 							}
 						}
 					}
@@ -385,7 +406,12 @@ $responMax768 : 770px;
 	@include respon750() {
 		left: 30px;
 		bottom: 5px;
-		text-align: center;
+		text-align: start;
+	}
+	@include respon950() {
+		left: 30px;
+		bottom: 5px;
+		text-align: start;
 	}
 	
 }
@@ -403,24 +429,27 @@ $responMax768 : 770px;
 
 	}
 
-	@include respon1600900() {
-		bottom: 24rem;
-	}
+	// @include respon1600900() {
+	// 	bottom: 24rem;
+	// 	text-align: start;
+	// }
 
 	@include respon750() {
 		left: 30px;
 		bottom: 0;
-		text-align: center;
+		text-align: start;
 	}
 
 	@include respon1360() {
 		left: -440px;
 		bottom: 23.5rem;
+		
 	}
 
 	@include respon950() {
-		left: -340px;
-		bottom: 410px;
+		left: 30px;
+		bottom: -18px;
+		text-align: start;
 	}
 	
 }
@@ -439,12 +468,16 @@ $responMax768 : 770px;
 	@include respon750() {
 		left: 30px;
 		bottom: 5px;
-		text-align: center;
+		text-align: start;
 	}
 
-	@include respon1400768() {
-		bottom: 4rem;
+	@include respon950() {
+		left: 30px;
+		bottom: -46px;
+		text-align: start;
 	}
+
+	
 	
 }
 
@@ -459,6 +492,24 @@ $responMax768 : 770px;
 
 	@include respon1360() {
 		left: -27.5rem;
+	}
+
+	@include respon950() {
+		left: 30px;
+		bottom: -66px;
+		text-align: start;
+	}
+
+	@include respon750() {
+		bottom: 0rem;
+		left: 1.8rem;
+		text-align: start;
+	}
+
+	@include smallPhone() {
+		left: 30px;
+		text-align: start;
+		bottom: 0rem;
 	}
 	// @include smallPhone() {
 	// 	left: 30px;
@@ -504,11 +555,11 @@ $responMax768 : 770px;
 			}
 
 			@include respon950() {
-				top: -22rem;
+				top: 2rem;
 			}
-			@include respon1600900() {
-				top: -20rem;
-			}
+			// @include respon1600900() {
+			// 	top: -20rem;
+			// }
 	}
 }
 
@@ -548,15 +599,19 @@ $responMax768 : 770px;
 
 			@include smallPhone() {
 				// bottom: 91%;
-				top: 20px;
+				top: 1.6rem;
 			}
 
 			@include respon750() {
 				top: 20px;
 			}
 
-			@include respon1400768() {
-				top: -0.4rem;
+			// @include respon1400768() {
+			// 	top: -0.4rem;
+			// }
+
+			@include respon950() {
+				top: 3.6rem;
 			}
 	}
 }
@@ -570,6 +625,17 @@ $responMax768 : 770px;
 
 			@include respon1400768() {
 				top: -20rem;
+			}
+
+			@include respon950() {
+				top: 5rem;
+			}
+			@include respon750() {
+				top: 2rem;
+			}
+
+			@include smallPhone() {
+				top: 1.8rem;
 			}
 			// @include smallPhone() {
 			// 	// bottom: 91%;

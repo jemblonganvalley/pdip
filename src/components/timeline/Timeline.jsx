@@ -102,18 +102,20 @@ useEffect(() => {
                 <div className="timelineInfo">
                   <div className="tanggal">
                     <i className="fa fa-calendar-check-o"></i>
-                    <span className="bulan">{e.date}</span>
-                    <span className="waktu">{e.time}</span>
+                    <small className="bulan">
+                    {e.date} | {e.time}
+                    </small>
+                    {/* <small className="waktu">{e.time}</small> */}
                   </div>
 
                   <div className="telphone">
                     <i className="fa fa-phone"></i>
-                    <span className="nomor">081 289 376 201</span>
+                    <small className="nomor">081 289 376 201</small>
                   </div>
 
                   <div className="lokasi">
                     <i className="fa fa-map-marker" aria-hidden="true"></i>
-                    <span className="kota">{e.location}</span>
+                    <small className="kota">{e.location}</small>
                   </div>
                 </div>
               </div>
