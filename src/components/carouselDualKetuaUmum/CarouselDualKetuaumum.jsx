@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import "./carouselDual.scss";
+import "./carouselDual.scss"
 
 const CarouselDualKetuaumum = ({
   cat1 = 45,

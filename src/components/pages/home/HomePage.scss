@@ -307,7 +307,6 @@ $maxHeight800: 800px;
         align-items: center;
         .imageCovid {
           height: 100px;
-          margin: 0 10px;
           // END min height 600 and max height 800 for min width 951 and max width 1360
 
           // Min width 750px and max width 950px
@@ -333,7 +332,7 @@ $maxHeight800: 800px;
 
           // max width 500px
           @include smallPhone() {
-            height: 70px;
+            height: 50px;
             margin: 0;
           }
           // END Max width 500px
@@ -354,18 +353,32 @@ $maxHeight800: 800px;
       }
       .itemTextCovid {
         width: 50%;
-        margin-left: 1rem;
-
+        
+        @include smallPhone() {
+          display: flex;
+          align-items: center;
+          margin-left: 1rem;
+        }
         h4 {
+          text-transform: lowercase;
           @include respon950() {
             font-size: 15pt;
+          text-transform: lowercase;
+
           }
 
           @include respon1440() {
             font-size: 13pt;
+          text-transform: lowercase;
+
           }
           @include respon981() {
             font-size: 10pt;
+          }
+          @include smallPhone() {
+          text-transform: lowercase;
+          font-size: 13pt;
+          justify-content: c;
           }
         }
       }

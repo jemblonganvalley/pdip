@@ -294,7 +294,7 @@ const Maps = () => {
           <BtnProvinsi
             id="4"
             pageProv=""
-            nameProv="Aceh"
+            nameProv="DI Aceh"
             color={show1 ? "red" : "#000"}
             transisi={show1 ? "0.2s all ease-in-out" : "0.2s all ease-in-out"}
             mouseOver={() => {

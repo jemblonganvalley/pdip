@@ -34,7 +34,7 @@ const CarouselKetuaUmumPage = ({ data }) => {
                       <div className="col2-img">
                         <div className="garis-strip-col2"></div>
                         <div className="box-txt-desk-col2">
-                          <h4>{e.title}</h4>
+                          <h5>{e.title}</h5>
 
                           {/* <small className="txt-admin">
                       Admin PDI Perjuangan | 1 Januari

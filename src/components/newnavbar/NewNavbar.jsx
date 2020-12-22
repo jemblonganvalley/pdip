@@ -6,10 +6,8 @@ import { useMediaQuery } from "react-responsive";
 import { useStoreActions, useStoreState } from "easy-peasy";
 import "../../database/globalState";
 import { Link, NavLink, Redirect } from "react-router-dom";
-import { lazy } from "react";
-import { Suspense } from "react";
 
-const DropDown = lazy(() => import("../navbar/DropDown"));
+import DropDown from "../navbar/DropDown";
 
 function NewNavbar({ token }) {
   const setRefresher = useStoreActions((action) => action.setRefresher);
@@ -74,8 +72,9 @@ function NewNavbar({ token }) {
       getNavHeight();
     };
   }, [isDesktop, isTablet, isMobile]);
+
   return (
-    <Suspense fallback={<div>wait..</div>}>
+    <>
       {isDesktop && (
         <>
           <nav
@@ -692,7 +691,7 @@ function NewNavbar({ token }) {
           </nav>
         </>
       )}
-    </Suspense>
+    </>
   );
 }
 

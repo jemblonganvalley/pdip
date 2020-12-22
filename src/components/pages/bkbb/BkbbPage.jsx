@@ -2,19 +2,18 @@ import React, { useEffect } from "react";
 import "./BkbbPage.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { lazy } from "react";
-import { Suspense } from "react";
-// import { parse } from "dotenv/types";
-import parse from 'html-react-parser'
 
-const Cards = lazy(() => import("../../cards/MainCards"));
-const MainButton = lazy(() => import("../../buttons/MainButton"));
-const MainDivider = lazy(() => import("../../divider/MainDivider"));
-const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
-const CardQuotes = lazy(() => import("../../cardquotes/CardQuotes"));
-const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
-const VMedia = lazy(() => import("../../VMedia/VMedia"));
-const Wait = lazy(() => import("../../wait/Wait"));
+// import { parse } from "dotenv/types";
+import parse from "html-react-parser";
+
+import Cards from "../../cards/MainCards";
+import MainButton from "../../buttons/MainButton";
+import MainDivider from "../../divider/MainDivider";
+import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
+import CardQuotes from "../../cardquotes/CardQuotes";
+import CardHeader from "../../cardheader/CardHeader";
+import VMedia from "../../VMedia/VMedia";
+import Wait from "../../wait/Wait";
 
 export const LighBox = ({ source }) => {
   return (
@@ -71,13 +70,7 @@ const BkbbPage = () => {
   }, []);
 
   return (
-    <Suspense
-      fallback={
-        <div>
-          <Wait />
-        </div>
-      }
-    >
+    <>
       {showVid && (
         <>
           <span
@@ -141,7 +134,7 @@ const BkbbPage = () => {
           ))}
 
           <div className="divider-materi-pokok-bkbbPage">
-            <MainDivider text="Materi Pokok Pendukung" garisMerah="8rem" />
+            <MainDivider text="Materi Pokok Pembelajaran" garisMerah="8rem" />
           </div>
 
           <div className="wrapperCard">
@@ -177,13 +170,16 @@ const BkbbPage = () => {
             className="bannerBkbb"
             style={{
               background: `url(https://data.pdiperjuangan.id/public/${configHome[4].value.image})`,
-              backgroundAttachment: 'fixed',
-              backgroundSize: 'cover'
+              backgroundAttachment: "fixed",
+              backgroundSize: "cover",
             }}
           >
-            <div className="wrapperIsiBkbbBanner" style={{
-              zIndex : 1
-            }}>
+            <div
+              className="wrapperIsiBkbbBanner"
+              style={{
+                zIndex: 1,
+              }}
+            >
               <i className="fas fa-quote-right"></i>
 
               <h4 className="custom">{configHome[4].value.title}</h4>
@@ -236,11 +232,11 @@ const BkbbPage = () => {
           <div className="backGroundGray"></div>
         </div>
       ) : (
-          <>
-            <Wait />
-          </>
-        )}
-    </Suspense>
+        <>
+          <Wait />
+        </>
+      )}
+    </>
   );
 };
 

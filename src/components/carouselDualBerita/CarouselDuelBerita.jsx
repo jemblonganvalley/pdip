@@ -1,7 +1,7 @@
 import { useStoreState } from "easy-peasy";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./carouselDual.scss";
+import "./carouselDualBerita.scss";
 
 export const CarouselDuelBerita = ({
   cat1 = 45,
@@ -49,11 +49,11 @@ export const CarouselDuelBerita = ({
   };
 
   return (
-    <div className="mainCarouselDual">
+    <div className="mainCarouselDualBerita">
       {/* Carousel 1 */}
       <div
         id="carouselone"
-        className="carousel slide mainCarouselDual_car1"
+        className="carousel slide mainCarouselDual_car1_berita"
         data-ride="carousel"
       >
         <div className="carousel-inner">

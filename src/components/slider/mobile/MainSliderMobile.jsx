@@ -55,7 +55,7 @@ const MainSliderMobile = ({ value, cls }) => {
                   {/* Box Image */}
                   <div className="box-img-mainSlider-tablet">
                     <img
-                      src={`http://data.pdiperjuangan.id/public${e.image}`}
+                      src={`https://data.pdiperjuangan.id/public/${e.image}`}
                       alt={e.title}
                       className="img-home-mainSlider"
                     />
@@ -66,11 +66,7 @@ const MainSliderMobile = ({ value, cls }) => {
                   <div className="box-paragrap-mobile-mainSlider">
                     {/* Title For Mobile */}
                     <div className="box-red-mobile-mainSlider">
-                      <strong
-                        style={{
-                          textTransform: "uppercase",
-                        }}
-                      >
+                      <strong>
                         {e.title}
                       </strong>
                       <small

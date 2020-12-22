@@ -4,11 +4,9 @@ import "./DpdDpc.scss";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import { useStoreState } from "easy-peasy";
 import { useParams } from "react-router-dom";
-import { lazy } from "react";
-import { Suspense } from "react";
 
-const Wait = lazy(() => import("../../wait/Wait"));
-const Maps = lazy(() => import("../../maps/Maps"));
+import Wait from "../../wait/Wait";
+import Maps from "../../maps/Maps";
 
 const DpdDpc = () => {
   const refresher = useStoreState((state) => state.refresher);
@@ -51,28 +49,20 @@ const DpdDpc = () => {
   }, [refresher]);
 
   return (
-    <Suspense
-      fallback={
-        <div>
-          <Wait />
-        </div>
-      }
-    >
-      <div className="wrapperBeritaPage1">
-        <div className="linkedBeritaPage1">
-          <BreadCrumbs
-            link1="Home"
-            to1="/"
-            link2="Partai"
-            to2="/partai"
-            link3="dpd-dpc"
-          />
-        </div>
-        <div className="maps">
-          <Maps />
-        </div>
+    <div className="wrapperBeritaPage1">
+      <div className="linkedBeritaPage1">
+        <BreadCrumbs
+          link1="Home"
+          to1="/"
+          link2="Partai"
+          to2="/partai"
+          link3="dpd-dpc"
+        />
       </div>
-    </Suspense>
+      <div className="maps">
+        <Maps />
+      </div>
+    </div>
   );
 };
 

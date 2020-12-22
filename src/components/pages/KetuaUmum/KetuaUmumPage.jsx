@@ -1,25 +1,20 @@
 // Import to React
 import React, { useEffect, useState } from "react";
-import { Suspense } from "react";
-import { lazy } from "react";
+
 // END Import to React
 
 import "./KetuaUmumPage.scss";
 
 // Import to CSS
-const MainDivider = lazy(() => import("../../divider/MainDivider"));
-const BreadCrumbs = lazy(() => import("../../breadcrumbs/BreadCrumbs"));
-const CarouselKetuaUmumPage = lazy(() =>
-  import("../../carouselKetuaUmumPage/CarouselKetuaUmumPage")
-);
-const Cards = lazy(() => import("../../cards/MainCards"));
-const CardInformasi = lazy(() => import("../../cardInformasi/CardInformasi"));
-const CardHeader = lazy(() => import("../../cardheader/CardHeader"));
-const CarouselDualKetuaumum = lazy(() =>
-  import("../../carouselDualKetuaUmum/CarouselDualKetuaumum")
-);
-const Wait = lazy(() => import("../../wait/Wait"));
-const MainButton = lazy(() => import("../../buttons/MainButton"));
+import MainDivider from "../../divider/MainDivider";
+import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
+import CarouselKetuaUmumPage from "../../carouselKetuaUmumPage/CarouselKetuaUmumPage";
+import Cards from "../../cards/MainCards";
+import CardInformasi from "../../cardInformasi/CardInformasi";
+import CardHeader from "../../cardheader/CardHeader";
+import CarouselDualKetuaumum from "../../carouselDualKetuaUmum/CarouselDualKetuaumum";
+import Wait from "../../wait/Wait";
+import MainButton from "../../buttons/MainButton";
 // END Import to CSS
 
 // Create Component
@@ -92,13 +87,7 @@ const KetuaUmumPage = () => {
   }, []);
 
   return (
-    <Suspense
-      fallback={
-        <div>
-          <Wait />
-        </div>
-      }
-    >
+    <>
       {configHome.length > 0 ? (
         <div className="wrapperKetuaUmum">
           {/* <div
@@ -235,7 +224,7 @@ const KetuaUmumPage = () => {
           <Wait />
         </>
       )}
-    </Suspense>
+    </>
   );
 };
 // END Create Component

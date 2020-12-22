@@ -3,14 +3,12 @@ import MetaTags from "react-meta-tags";
 import { useParams } from "react-router-dom";
 import { useStoreState } from "easy-peasy";
 import "../page1/Page1.scss";
-import { lazy } from "react";
-import { Suspense } from "react";
 
-const BreadCrumbs = lazy(() => import("../../../breadcrumbs/BreadCrumbs"));
-const CardSocialMedia = lazy(() =>
-  import("../../../cardsocialmedia/CardSocialMedia")
-);
-const Wait = lazy(() => import("../../../wait/Wait"));
+import Helmet from "react-helmet";
+
+import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
+import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
+import Wait from "../../../wait/Wait";
 
 const Page1 = () => {
   const refresher = useStoreState((state) => state.refresher);
@@ -56,16 +54,10 @@ const Page1 = () => {
   }, [refresher]);
 
   return (
-    <Suspense
-      fallback={
-        <div>
-          <Wait />
-        </div>
-      }
-    >
+    <>
       {detailPage ? (
         <>
-          <MetaTags>
+          <Helmet>
             <meta name="description" content={detailPage.title} />
             <meta property="og:url" content={`https://pdiperjuangan.id`} />
             <meta property="og:title" content={detailPage.title} />
@@ -74,10 +66,14 @@ const Page1 = () => {
               property="og:image"
               content={`https://data.pdiperjuangan.id/public${detailPage.path}`}
             />
+            <meta
+              property="image"
+              content={`https://atur.biar.pw/public${detailPage.path}`}
+            />
 
-            <meta property="og:type" content="website" />
+            <meta property="og:type" content="article" />
             <meta content="image/*" property="og:image:type" />
-          </MetaTags>
+          </Helmet>
           <div className="wrapperBeritaPage1">
             {/* Untuk page detail berita tidak memakai Headers */}
 
@@ -277,7 +273,7 @@ const Page1 = () => {
           {/* <NotFound pengembanganDisplay={'none'} /> */}
         </>
       )}
-    </Suspense>
+    </>
   );
 };
 
