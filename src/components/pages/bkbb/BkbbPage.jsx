@@ -134,7 +134,7 @@ const BkbbPage = () => {
           ))}
 
           <div className="divider-materi-pokok-bkbbPage">
-            <MainDivider text="Materi Pokok Pendukung" garisMerah="8rem" />
+            <MainDivider text="Materi Pokok Pembelajaran" garisMerah="8rem" />
           </div>
 
           <div className="wrapperCard">
