@@ -81,7 +81,7 @@ useEffect(() => {
                   <div
                     className="imgContent"
                     style={{
-                      background: `url(${e.path})`,
+                      background: `url(https://data.pdiperjuangan.id/public/${e.path})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center center",
                     }}
@@ -113,9 +113,6 @@ useEffect(() => {
 
                   <div className="lokasi">
                     <i className="fa fa-map-marker" aria-hidden="true"></i>
-                    <span className="tempat">
-                      Hall B Jakarta International Expo
-                    </span>
                     <span className="kota">{e.location}</span>
                   </div>
                 </div>

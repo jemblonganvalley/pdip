@@ -45,6 +45,24 @@ $responMax1360: 1360px;
     }
 }
 
+$responMax1600 : 1650px;
+$responMax900 : 950px;
+
+@mixin respon1600900 {
+	@media (max-width : #{$responMax1600}) and (max-height : #{$responMax900}) {
+		@content;
+	}
+}
+
+$responMax1400 : 1440px;
+$responMax768 : 770px;
+
+@mixin respon1400768 {
+	@media (max-width : #{$responMax1400}) and (max-height : #{$responMax768}) {
+		@content;
+	}
+}
+
 .wrapperTimeline {
 	.pembungkusLine {
 		.timeline-item {
@@ -52,7 +70,7 @@ $responMax1360: 1360px;
 			position: relative;
 			width: 3px;
 			padding-top: 50px;
-			max-height: 60vh;
+			max-height: 50vh;
 			background: $darkRed;
 
 			@include smallPhone() {
@@ -86,7 +104,7 @@ $responMax1360: 1360px;
 			.kosong {
 				position: relative;
 				bottom: 0;
-				width: 500px;
+				width: 600px;
 				padding: 15px;
 				background: #ffffff;
 				border-radius: 10px;
@@ -137,7 +155,8 @@ $responMax1360: 1360px;
 						width: 100%;
 						height: 35vh;
 						border-top-right-radius: 0px;
-						// background-position: center center;
+						background-position: center center;
+						background-size: cover;
 
 						@include smallPhone() {
 							height: 20vh;
@@ -183,15 +202,77 @@ $responMax1360: 1360px;
 
 						.paragrapTimeline {
 							margin-top: 1rem;
+							height: 200px;
+							overflow: scroll;
+							overflow-x: hidden;
+							padding-right: 1rem;
+							@include respon1360() {
+								overflow: scroll;
+								overflow-x: hidden;
+								height: 200px;
+							}
 						}
+						.paragrapTimeline::-webkit-scrollbar {
+							width: 4px;
+							height: 4px;
+						}
+		
+						.paragrapTimeline::-webkit-scrollbar-button {
+							width: 0;
+							height: 0;
+						}
+						.paragrapTimeline::-webkit-scrollbar-thumb {
+							background-color: #960001;
+							border: none;
+							border-radius: 50px;
+						}
+		
+						.paragrapTimeline::-webkit-scrollbar-thumb:hover {
+							background: #ffffff;
+						}
+						.paragrapTimeline::-webkit-scrollbar {
+							width: 4px;
+							height: 4px;
+							}
+						.paragrapTimeline::-webkit-scrollbar-button {
+							width: 0px;
+							height: 0px;
+							}
+						.paragrapTimeline::-webkit-scrollbar-thumb {
+							background: #ff0000;
+							border: 0px none #ffffff;
+							border-radius: 50px;
+							}
+						.paragrapTimeline::-webkit-scrollbar-thumb:hover {
+							background: #ffffff;
+							}
+						.paragrapTimeline::-webkit-scrollbar-thumb:active {
+							background: #000000;
+							}
+						.paragrapTimeline::-webkit-scrollbar-track {
+							background: #000000;
+							border: 0px none #ffffff;
+							border-radius: 20px;
+							}
+						.paragrapTimeline::-webkit-scrollbar-track:hover {
+							background: #e60a0a;
+							}
+						.paragrapTimeline::-webkit-scrollbar-track:active {
+							background: #960001;
+							}
+						.paragrapTimeline::-webkit-scrollbar-corner {
+							background: transparent;
+							}
 					}
 				}
 				.timelineInfo {
 					width: 100%;
 					display: flex;
 					justify-content: space-between;
-					align-items: center;
+					align-items: flex-start;
 					margin-top: 1rem;
+					flex-direction: column;
+					height: 100px;
 
 					@include smallPhone() {
 						flex-direction: row;
@@ -205,11 +286,8 @@ $responMax1360: 1360px;
 					.tanggal {
 						
 						display: flex;
-						flex-direction: column;
 						justify-content: center;
 						// padding: 10px 3%;
-						align-items: center;
-						width: 33.33%;
 
 						@include smallPhone() {
 							padding: 0;
@@ -224,12 +302,9 @@ $responMax1360: 1360px;
 							text-align: center;
 						}
 
-						i {
-							margin-bottom: 10px;
-						}
-
 						.bulan {
 							font-size: 8pt;
+							margin-left: 1rem;
 							@include smallPhone() {
 								font-size: 6pt;
 							}
@@ -246,11 +321,8 @@ $responMax1360: 1360px;
 
 					.telphone {
 						display: flex;
-						flex-direction: column;
 						justify-content: center;
-						align-items: center;
 						// padding: 10px 3%;
-						width: 33.33%;
 
 
 						@include smallPhone() {
@@ -258,17 +330,12 @@ $responMax1360: 1360px;
 							
 						}
 
-						i {
-							margin-bottom: 1.5rem;
-
-							@include smallPhone() {
-								
-							}
-
-						}
+						
 
 						.nomor {
 							font-size: 8pt;
+							margin-left: 1rem;
+
 							@include smallPhone() {
 								font-size: 6pt;
 								text-align: center;
@@ -278,11 +345,8 @@ $responMax1360: 1360px;
 
 					.lokasi {
 						display: flex;
-						flex-direction: column;
 						justify-content: center;
-						align-items: center;
 						// padding: 10px 3%;
-						width: 33.33%;
 
 
 						@include smallPhone() {
@@ -290,25 +354,10 @@ $responMax1360: 1360px;
 							
 						}
 
-						i {
-							margin-bottom: 10px;
-							@include smallPhone() {
-								margin-bottom: 0;
-							}
-						}
-
-						.tempat {
-							font-size: 8pt;
-							text-align: center;
-
-							@include smallPhone() {
-								text-align: center;
-								font-size: 6pt;
-							}
-						}
-
 						.kota {
 							font-size: 8pt;
+							margin-left: 1rem;
+							text-align: start;
 							@include smallPhone() {
 								text-align: center;
 								font-size: 6pt;
@@ -342,16 +391,20 @@ $responMax1360: 1360px;
 }
 
 .wrapperTimeline .pembungkusLine .timeline-item:nth-child(even) .kosong {
-	left: -539px;
+	left: -638px;
 	text-align: end;
 	// bottom: 300px;
-	bottom: 500px;
+	bottom: 24.5rem;
 	@include smallPhone() {
 		left: 30px;
 		text-align: start;
 		bottom: 0;
 		// top: 5px;
 
+	}
+
+	@include respon1600900() {
+		bottom: 24rem;
 	}
 
 	@include respon750() {
@@ -362,7 +415,7 @@ $responMax1360: 1360px;
 
 	@include respon1360() {
 		left: -440px;
-		bottom: 490px;
+		bottom: 23.5rem;
 	}
 
 	@include respon950() {
@@ -374,7 +427,7 @@ $responMax1360: 1360px;
 
 .wrapperTimeline .pembungkusLine .timeline-item:nth-child(3n) .kosong {
 	left: 45px;
-	bottom: 30rem;
+	bottom: 7rem;
 
 
 	@include smallPhone() {
@@ -388,9 +441,50 @@ $responMax1360: 1360px;
 		bottom: 5px;
 		text-align: center;
 	}
+
+	@include respon1400768() {
+		bottom: 4rem;
+	}
 	
 }
 
+.wrapperTimeline .pembungkusLine .timeline-item:nth-child(4n) .kosong {
+	left: -638px;
+	text-align: end;
+	// bottom: 300px;
+	bottom: 27rem;
+	@include respon1400768() {
+		bottom: 23.8rem;
+	}
+
+	@include respon1360() {
+		left: -27.5rem;
+	}
+	// @include smallPhone() {
+	// 	left: 30px;
+	// 	text-align: start;
+	// 	bottom: 0;
+	// 	// top: 5px;
+
+	// }
+
+	// @include respon750() {
+	// 	left: 30px;
+	// 	bottom: 0;
+	// 	text-align: center;
+	// }
+
+	// @include respon1360() {
+	// 	left: -440px;
+	// 	bottom: 490px;
+	// }
+
+	// @include respon950() {
+	// 	left: -340px;
+	// 	bottom: 410px;
+	// }
+	
+}
 
 // INDICATOR
 
@@ -399,7 +493,7 @@ $responMax1360: 1360px;
 	
 	&::after {
 			// bottom: 395px;
-			top: -27rem;
+			top: -21rem;
 			@include smallPhone() {
 				// bottom: 91%;
 				top: 25px;
@@ -411,6 +505,9 @@ $responMax1360: 1360px;
 
 			@include respon950() {
 				top: -22rem;
+			}
+			@include respon1600900() {
+				top: -20rem;
 			}
 	}
 }
@@ -447,7 +544,7 @@ $responMax1360: 1360px;
 .wrapperTimeline .pembungkusLine .timeline-item:nth-child(3n) {
 	&::after {
 			// bottom: 280px;
-			top: -26.4rem;
+			top: -3.4rem;
 
 			@include smallPhone() {
 				// bottom: 91%;
@@ -457,9 +554,37 @@ $responMax1360: 1360px;
 			@include respon750() {
 				top: 20px;
 			}
+
+			@include respon1400768() {
+				top: -0.4rem;
+			}
 	}
 }
 
+.wrapperTimeline .pembungkusLine .timeline-item:nth-child(4n) {
+
+	
+	&::after {
+			// bottom: 395px;
+			top: -23rem;
+
+			@include respon1400768() {
+				top: -20rem;
+			}
+			// @include smallPhone() {
+			// 	// bottom: 91%;
+			// 	top: 25px;
+			// }
+
+			// @include respon750() {
+			// 	top: 25px;
+			// }
+
+			// @include respon950() {
+			// 	top: -22rem;
+			// }
+	}
+}
 
 
 
