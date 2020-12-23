@@ -360,25 +360,20 @@ $maxHeight800: 800px;
           margin-left: 1rem;
         }
         h4 {
-          text-transform: lowercase;
           @include respon950() {
             font-size: 15pt;
-          text-transform: lowercase;
 
           }
 
           @include respon1440() {
             font-size: 13pt;
-          text-transform: lowercase;
 
           }
           @include respon981() {
             font-size: 10pt;
           }
           @include smallPhone() {
-          text-transform: lowercase;
           font-size: 13pt;
-          justify-content: c;
           }
         }
       }
