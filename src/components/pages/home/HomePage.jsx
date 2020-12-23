@@ -211,7 +211,7 @@ const HomePage = () => {
                           />
                         </div>
                         <div className="itemTextCovid">
-                          <h4 style={{ color: "#fff" }}>{e.title}</h4>
+                          <h5 style={{ color: "#fff" }}>{e.title}</h5>
                         </div>
                       </div>
                     </a>
@@ -224,7 +224,7 @@ const HomePage = () => {
                       <img src={BMKG} alt="" className="imageCovid" />
                     </div>
                     <div className="itemTextCovid">
-                      <h4 style={{ color: "#fff" }}>Info BMKG</h4>
+                      <h5 style={{ color: "#fff" }}>Info BMKG</h5>
                     </div>
                   </div>
                 </a>

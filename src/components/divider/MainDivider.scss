@@ -32,9 +32,9 @@ $smallPhoneSatu : 600px;
             overflow: hidden;
             text-transform: uppercase;
 
-            @include smallPhone() {
-                font-size: 8pt;
-            }
+            // @include smallPhone() {
+            //     font-size: 8pt;
+            // }
         }
     }
 

@@ -11,9 +11,9 @@ const MainDivider = ({ text, garisMerah, mrgn }) => {
             margin : mrgn
         }}>
             <div className="box-jdl-col3">
-                <p className="txt-jdl-col3">
+                <h5 className="txt-jdl-col3">
                     {text}
-                </p>
+                </h5>
             </div>
             <div className="box-garis-lurus-col3">
                 <div className="garis-merah" style={{
