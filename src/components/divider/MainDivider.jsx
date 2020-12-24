@@ -17,7 +17,7 @@ const MainDivider = ({ text, garisMerah, mrgn }) => {
             </div>
             <div className="box-garis-lurus-col3">
                 <div className="garis-merah" style={{
-                    width: lenText.length * pt
+                    width: lenText != null && lenText.length * pt
                 }}>
 
                 </div>
