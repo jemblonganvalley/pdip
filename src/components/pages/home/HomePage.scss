@@ -306,12 +306,12 @@ $maxHeight800: 800px;
         justify-content: center;
         align-items: center;
         .imageCovid {
-          height: 100px;
+          height: 70px;
           // END min height 600 and max height 800 for min width 951 and max width 1360
 
           // Min width 750px and max width 950px
           @include respon950() {
-            height: 120px;
+            height: 50px;
             // width: 80px;
             margin: 0;
           }
@@ -319,14 +319,14 @@ $maxHeight800: 800px;
 
           // Min width 500px and max width 750px
           @include respon750() {
-            height: 70px;
+            height: 50px;
             margin: 0;
           }
           // END Min width 500px and max width 750px
 
           // min height 800 and max width 750px
           @include minHeight800() {
-            height: 80px;
+            height: 50px;
           }
           // end min height 800 and max width 750px
 
@@ -337,7 +337,7 @@ $maxHeight800: 800px;
           }
           // END Max width 500px
           @include respon1360() {
-            height: 80px;
+            height: 70px;
           }
 
           @include respon1440() {
@@ -353,25 +353,16 @@ $maxHeight800: 800px;
       }
       .itemTextCovid {
         width: 50%;
-        
+        @include respon950() {
+          margin-left: 1rem;
+        }
         @include smallPhone() {
           display: flex;
           align-items: center;
           margin-left: 1rem;
         }
-        h4 {
-          @include respon950() {
-            font-size: 15pt;
-
-          }
-
-          @include respon1440() {
-            font-size: 13pt;
-
-          }
-          @include respon981() {
-            font-size: 10pt;
-          }
+        h5 {
+          
           @include smallPhone() {
           font-size: 13pt;
           }
