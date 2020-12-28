@@ -136,11 +136,11 @@ $secondary: #f3f3f3;
     padding: 40px 10%;
 
     @include respon1360() {
-      padding: 10px 5%;
+      padding: 30px 5%;
     }
 
     @include respon950() {
-      padding: 10px 5%;
+      padding: 40px 5%;
     }
 
     @include respon750() {
@@ -183,9 +183,7 @@ $secondary: #f3f3f3;
     // Min widht 951px and max width 1360px
 
     // Min widht 750px and max width 950px
-    @include respon950() {
-      // padding: 0px 2%;
-    }
+    
     // END Min width 750px and max width 950px
 
     // Min widht 500px and max width 750px

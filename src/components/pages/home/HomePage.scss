@@ -231,7 +231,8 @@ $maxHeight800: 800px;
     @include respon950() {
       flex-direction: row;
       position: relative;
-      flex-wrap:wrap ;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
     // min width 750px and max width 950px
 
@@ -261,7 +262,7 @@ $maxHeight800: 800px;
 
 
       @include respon950() {
-        width: 46%;
+        width: 40%;
         margin: 0.5rem 10px;
 
       }
