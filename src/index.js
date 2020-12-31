@@ -1,17 +1,20 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM, { hydrate, render } from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { StoreProvider } from "easy-peasy";
-import { globalState } from "./database/globalState";
+
+// const rootElement = document.getElementById("root");
+// if (rootElement.hasChildNodes()) {
+//   hydrate(<App />, rootElement);
+// } else {
+//   render(<App />, rootElement);
+// }
 
 ReactDOM.render(
-  <StoreProvider store={globalState}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </StoreProvider>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
