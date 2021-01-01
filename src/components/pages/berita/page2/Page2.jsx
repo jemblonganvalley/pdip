@@ -75,7 +75,7 @@ const Page2 = () => {
   }, [reload]);
 
   return (
-    <>
+    <React.Fragment>
       {manyCard.length > 0 ? (
         <div className="wrapperBeritaPage2">
           <div className="linkedBeritaPage2">
@@ -100,7 +100,7 @@ const Page2 = () => {
                   desc={configHome.description}
                 />
               ) : (
-                <>
+                <React.Fragment>
                   <CarouselBeritaPage2 />
                   {/* Row2 */}
                   <div className="row2-beritaPage2">
@@ -142,7 +142,7 @@ const Page2 = () => {
                     <CardSocialMedia imageUrl={configHome.path} />
                   </div>
                   {/* END Row2 */}
-                </>
+                </React.Fragment>
               )}
             </div>
             {/* END Column1 */}
@@ -179,7 +179,7 @@ const Page2 = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </React.Fragment>
   );
 };
 

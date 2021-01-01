@@ -54,9 +54,9 @@ const Page1 = () => {
   }, [refresher]);
 
   return (
-    <>
+    <React.Fragment>
       {detailPage ? (
-        <>
+        <React.Fragment>
           <Helmet>
             <meta name="description" content={detailPage.title} />
             <meta property="og:url" content={`https://pdiperjuangan.id`} />
@@ -222,7 +222,7 @@ const Page1 = () => {
                     <CardSocialMedia
                       imageUrl={detailPage.path}
                       title={detailPage.title}
-                      url={window.location.href}
+                      url={`https://next-pdip.vercel.app/berita/${id}`}
                     />
                   </div>
                 </div>
@@ -266,14 +266,14 @@ const Page1 = () => {
                         borderRadius="10px" />
                 </div> */}
           </div>
-        </>
+        </React.Fragment>
       ) : (
-        <>
+        <React.Fragment>
           <Wait />
           {/* <NotFound pengembanganDisplay={'none'} /> */}
-        </>
+        </React.Fragment>
       )}
-    </>
+    </React.Fragment>
   );
 };
 

@@ -9,7 +9,7 @@ const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
   }
 
   return (
-    <>
+    <React.Fragment>
       <div className="container-angka-pagination">
         <div className="col-angka-pagination">
           {pageNumbers.map((number) => (
@@ -25,7 +25,7 @@ const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
           ))}
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

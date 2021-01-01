@@ -1,18 +1,22 @@
-import React from 'react'
-import './CardProvinsi.scss'
+import React from "react";
+import "./CardProvinsi.scss";
 
-const CardProvinsi = ({img, display})=>{
-    return(
-        <>
-        {/* Aceh */}
-        <img src={img} alt="" className="imgMaps" id="map-aceh"
+const CardProvinsi = ({ img, display }) => {
+  return (
+    <React.Fragment>
+      {/* Aceh */}
+      <img
+        src={img}
+        alt=""
+        className="imgMaps"
+        id="map-aceh"
         style={{
-            display: `${display}`
+          display: `${display}`,
         }}
-    />
-    {/* END Aceh */}
-    </>
-    )
-}
+      />
+      {/* END Aceh */}
+    </React.Fragment>
+  );
+};
 
-export default CardProvinsi
+export default CardProvinsi;

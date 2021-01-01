@@ -97,7 +97,7 @@ const ContainerCard = () => {
   }, [category_id, numPage]);
 
   return (
-    <>
+    <React.Fragment>
       {configHome.length > 0 ? (
         <div className="wrapper-berita-nasional">
           <div className="linked-berita-nasional">
@@ -121,7 +121,7 @@ const ContainerCard = () => {
             <div className="column-card-berita-nasional">
               <div className="containerCard-berita-nasional">
                 {configHome.length > 0 && (
-                  <>
+                  <React.Fragment>
                     {configHome.map((e, i) => (
                       <Cards
                         category={e.category}
@@ -134,7 +134,7 @@ const ContainerCard = () => {
                         id={e.id_album}
                       />
                     ))}
-                  </>
+                  </React.Fragment>
                 )}
               </div>
             </div>
@@ -177,7 +177,7 @@ const ContainerCard = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </React.Fragment>
   );
 };
 

@@ -5,7 +5,7 @@ import parse from "html-react-parser";
 
 const CarouselTataCara = ({ data }) => {
   return (
-    <>
+    <React.Fragment>
       {/* SLIDER TATA CARA */}
       <div className="sliderTataCara">
         <div
@@ -30,7 +30,7 @@ const CarouselTataCara = ({ data }) => {
                   style={{
                     background: `url(https://data.pdiperjuangan.id/public/${e.image})`,
                     backgroundSize: "cover",
-                    backgroundPosition : 'center'
+                    backgroundPosition: "center",
                   }}
                 >
                   {/* <div className="container_text_carousel">
@@ -76,7 +76,7 @@ const CarouselTataCara = ({ data }) => {
         </div>
       </div>
       {/* END SLIDER TATA CARA */}
-    </>
+    </React.Fragment>
   );
 };
 

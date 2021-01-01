@@ -19,7 +19,7 @@ const BgRed = () => {
   // };
 
   return (
-    <>
+    <React.Fragment>
       <div>
         <div className="backgroundRed">
           <div className="holderFrame">
@@ -90,7 +90,7 @@ const BgRed = () => {
           </div>
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

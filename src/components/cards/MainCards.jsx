@@ -61,7 +61,7 @@ const Cards = ({
   };
 
   return (
-    <>
+    <React.Fragment>
       <Link
         component="a"
         className="col-lg-3 cardCustom"
@@ -131,7 +131,7 @@ const Cards = ({
           </p>
         </div>
       </Link>
-    </>
+    </React.Fragment>
   );
 };
 

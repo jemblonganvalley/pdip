@@ -4,7 +4,7 @@ import "../carouselKetuaUmumPage/CarouselKetuaUmumPage.scss";
 
 const CarouselKetuaUmumPage = ({ data }) => {
   return (
-    <>
+    <React.Fragment>
       <div
         id="carouselKetuaUmum"
         className="carousel container-carousel-ketuaUmumPage slide"
@@ -13,7 +13,7 @@ const CarouselKetuaUmumPage = ({ data }) => {
       >
         <div className="carousel-inner carousel-ketuaUmumPage">
           {data.length > 0 ? (
-            <>
+            <React.Fragment>
               {data.map((e, i) => (
                 <div
                   className={i == 0 ? `carousel-item active` : `carousel-item`}
@@ -50,7 +50,7 @@ const CarouselKetuaUmumPage = ({ data }) => {
                   </div>
                 </div>
               ))}
-            </>
+            </React.Fragment>
           ) : (
             <div className="wait">Wait</div>
           )}
@@ -74,7 +74,7 @@ const CarouselKetuaUmumPage = ({ data }) => {
           <span className="sr-only">Next</span>
         </a>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

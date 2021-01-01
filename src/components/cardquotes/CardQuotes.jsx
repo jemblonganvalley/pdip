@@ -11,7 +11,7 @@ const CardQuotes = ({ page, img, icon1, txt1, icon2, txt2, children }) => {
   const [reload, setReload] = useState(false);
 
   return (
-    <>
+    <React.Fragment>
       {/* Img */}
       <Link
         onClick={() => {
@@ -39,7 +39,7 @@ const CardQuotes = ({ page, img, icon1, txt1, icon2, txt2, children }) => {
       </Link>
       {/* Img */}
       {children}
-    </>
+    </React.Fragment>
   );
 };
 

@@ -11,7 +11,7 @@ const CarouselBeritaPage2 = ({ id, data }) => {
     console.log(data);
   }, []);
   return (
-    <>
+    <React.Fragment>
       {/* Carousel Page2 */}
       <div
         id="page2"
@@ -20,14 +20,14 @@ const CarouselBeritaPage2 = ({ id, data }) => {
       >
         <div className="carousel-inner">
           {data.map((e, i) => (
-            <>
+            <React.Fragment>
               <img
                 src={`https://data.pdiperjuangan.id/public/${e.path}`}
                 alt={e.title}
                 key={i}
                 className={i === 1 ? "carousel-item active" : "carousel-item"}
               />
-            </>
+            </React.Fragment>
           ))}
           <div className="container-box-indicator-page2">
             {/* Box Indicator */}
@@ -95,7 +95,7 @@ const CarouselBeritaPage2 = ({ id, data }) => {
         {/* END Container Box Indicator Carousel */}
       </div>
       {/* END Carousel Page2 */}
-    </>
+    </React.Fragment>
   );
 };
 

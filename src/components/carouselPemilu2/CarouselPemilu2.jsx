@@ -9,7 +9,7 @@ const CarouselPemilu2 = ({ data }) => {
   };
 
   return (
-    <>
+    <React.Fragment>
       {/* Carousel */}
       <div
         id="pemilu2"
@@ -74,7 +74,7 @@ const CarouselPemilu2 = ({ data }) => {
       {/* END Container Box Indicator Carousel */}
 
       {/* END Carousel */}
-    </>
+    </React.Fragment>
   );
 };
 

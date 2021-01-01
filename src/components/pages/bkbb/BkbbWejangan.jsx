@@ -77,7 +77,7 @@ const BkbbWejangan = () => {
     window.scrollTo(0, 0);
   }, [refresher]);
   return (
-    <>
+    <React.Fragment>
       {configHome ? (
         <div className="wrapperBkbbWejangan">
           {/* <div className="headersBkbbWejangan">
@@ -159,7 +159,7 @@ const BkbbWejangan = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </React.Fragment>
   );
 };
 

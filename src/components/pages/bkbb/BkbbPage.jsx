@@ -17,7 +17,7 @@ import Wait from "../../wait/Wait";
 
 export const LighBox = ({ source }) => {
   return (
-    <>
+    <React.Fragment>
       <main className="container_lightbox-bkbbPage">
         <iframe
           className="overlay-youtube-bkbbPage"
@@ -28,7 +28,7 @@ export const LighBox = ({ source }) => {
         ></iframe>
         {console.log(source)}
       </main>
-    </>
+    </React.Fragment>
   );
 };
 
@@ -70,9 +70,9 @@ const BkbbPage = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       {showVid && (
-        <>
+        <React.Fragment>
           <span
             onClick={() => {
               setShowVid(false);
@@ -81,7 +81,7 @@ const BkbbPage = () => {
             id="btn-overlay-video-yt-bkbb"
           ></span>
           <LighBox source={configHome[2].value[0].path} />
-        </>
+        </React.Fragment>
       )}
 
       {configHome.length > 0 ? (
@@ -232,11 +232,11 @@ const BkbbPage = () => {
           <div className="backGroundGray"></div>
         </div>
       ) : (
-        <>
+        <React.Fragment>
           <Wait />
-        </>
+        </React.Fragment>
       )}
-    </>
+    </React.Fragment>
   );
 };
 

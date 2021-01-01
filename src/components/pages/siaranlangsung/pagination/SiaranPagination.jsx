@@ -145,7 +145,7 @@ const SiaranPagination = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       <div className="wrapperSiaran">
         {/* <CardMultimedia siaran={currentPosts} /> */}
 
@@ -176,7 +176,7 @@ const SiaranPagination = () => {
       >
         {/* <AngkaPaginationEvent itemEventPerPage={itemSiaran} totalPosts={siaran.length} paginate={paginate} /> */}
       </nav>
-    </>
+    </React.Fragment>
   );
 };
 

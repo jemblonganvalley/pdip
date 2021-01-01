@@ -145,7 +145,7 @@ const WawancaraPagination = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       <div className="wrapperWawancara">
         {/* <CardMateriPokok cardMateriPokokItem={currentPosts} /> */}
 
@@ -175,7 +175,7 @@ const WawancaraPagination = () => {
       >
         {/* <AngkaPaginationEvent itemEventPerPage={itemWawancara} totalPosts={siaran.length} paginate={paginate} /> */}
       </nav>
-    </>
+    </React.Fragment>
   );
 };
 

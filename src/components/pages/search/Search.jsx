@@ -112,9 +112,9 @@ const Search = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       {/* Modal Display Search */}
-      <>
+      <React.Fragment>
         <div className="modal-display-search">
           {/* Bg Black Search */}
           <div className="background-black-search">
@@ -166,7 +166,7 @@ const Search = () => {
                   <div className="column-info-kiri">
                     {configHome.map((e, i) => {
                       return (
-                        <>
+                        <React.Fragment>
                           <CardSearch
                             key={i}
                             id={e.id}
@@ -174,7 +174,7 @@ const Search = () => {
                             title={e.title}
                             paragrap={e.description}
                           />
-                        </>
+                        </React.Fragment>
                       );
                     })}
                     {console.log(configHome)}
@@ -209,13 +209,13 @@ const Search = () => {
               </div>
             </div>
           ) : (
-            <>
+            <React.Fragment>
               <Wait />
-            </>
+            </React.Fragment>
           )}
         </div>
-      </>
-    </>
+      </React.Fragment>
+    </React.Fragment>
   );
 };
 

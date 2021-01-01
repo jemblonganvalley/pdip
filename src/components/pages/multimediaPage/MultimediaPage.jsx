@@ -48,7 +48,7 @@ const MultimediaPage = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       {configHome.length > 0 ? (
         <div className="wrapperMultimedia">
           {/* <div
@@ -150,7 +150,7 @@ const MultimediaPage = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </React.Fragment>
   );
 };
 

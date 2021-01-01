@@ -74,9 +74,9 @@ function NewNavbar({ token }) {
   }, [isDesktop, isTablet, isMobile]);
 
   return (
-    <>
+    <React.Fragment>
       {isDesktop && (
-        <>
+        <React.Fragment>
           <nav
             className="navbar navbar-expand-lg fixed-top"
             id="navbar"
@@ -180,11 +180,11 @@ function NewNavbar({ token }) {
               </div>
             </div>
           </nav>
-        </>
+        </React.Fragment>
       )}
 
       {isMobile && (
-        <>
+        <React.Fragment>
           <nav
             className="navbar navbar-expand-lg fixed-top"
             id="navbar"
@@ -430,11 +430,11 @@ function NewNavbar({ token }) {
               </div>
             </div>
           </nav>
-        </>
+        </React.Fragment>
       )}
 
       {isTablet && (
-        <>
+        <React.Fragment>
           <nav
             className="navbar navbar-expand-lg fixed-top"
             id="navbar"
@@ -689,9 +689,9 @@ function NewNavbar({ token }) {
               </div>
             </div>
           </nav>
-        </>
+        </React.Fragment>
       )}
-    </>
+    </React.Fragment>
   );
 }
 

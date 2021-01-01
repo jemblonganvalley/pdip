@@ -18,7 +18,7 @@ const MainSlider = ({ value, cls }) => {
   useEffect(() => {}, [direct]);
 
   return (
-    <>
+    <React.Fragment>
       <div
         id="carouselExampleIndicators"
         className="carousel slide carousel-fade carousel-mainSlider"
@@ -131,7 +131,7 @@ const MainSlider = ({ value, cls }) => {
         </a>
       </div>
       {/* END Wrapper Carousel */}
-    </>
+    </React.Fragment>
   );
 };
 

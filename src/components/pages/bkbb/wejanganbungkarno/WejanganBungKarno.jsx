@@ -84,9 +84,9 @@ const WejanganBungKarno = () => {
   }, [refresher]);
 
   return (
-    <>
+    <React.Fragment>
       {cardWejanganBkItem.length > 0 ? (
-        <>
+        <React.Fragment>
           <div className="wrapperWejanganThumbnail">
             <div className="linkedBkbbWBK">
               <BreadCrumbs
@@ -153,11 +153,11 @@ const WejanganBungKarno = () => {
             />
           </div>
           {/* END Column Pagination */}
-        </>
+        </React.Fragment>
       ) : (
         <Wait />
       )}
-    </>
+    </React.Fragment>
   );
 };
 

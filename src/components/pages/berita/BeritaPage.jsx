@@ -53,7 +53,7 @@ const BeritaPage = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       {configHome.length > 0 ? (
         <div className="wrapperBerita">
           {/* INDEX 0 */}
@@ -240,7 +240,7 @@ const BeritaPage = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </React.Fragment>
   );
 };
 // END Create Component

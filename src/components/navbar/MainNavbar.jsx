@@ -70,7 +70,7 @@ const MainNavbar = ({ token }) => {
 
   return (
     // START NAVBAR
-    <>
+    <React.Fragment>
       {/* DESKTOP SIZE */}
       {isDesktopOrLaptop && (
         <nav
@@ -415,7 +415,7 @@ const MainNavbar = ({ token }) => {
           </div>
         </nav>
       )}
-    </>
+    </React.Fragment>
   );
 };
 

@@ -18,7 +18,7 @@ const MainSliderMobile = ({ value, cls }) => {
   useEffect(() => {}, [direct]);
 
   return (
-    <>
+    <React.Fragment>
       <div
         id="carouselExampleIndicators"
         className="carousel slide carousel-fade carousel-mainSlider-mobile"
@@ -66,9 +66,7 @@ const MainSliderMobile = ({ value, cls }) => {
                   <div className="box-paragrap-mobile-mainSlider">
                     {/* Title For Mobile */}
                     <div className="box-red-mobile-mainSlider">
-                      <strong>
-                        {e.title}
-                      </strong>
+                      <strong>{e.title}</strong>
                       <small
                         style={{
                           color: "#fff",
@@ -145,7 +143,7 @@ const MainSliderMobile = ({ value, cls }) => {
         </a>
       </div>
       {/* END Wrapper Carousel */}
-    </>
+    </React.Fragment>
   );
 };
 

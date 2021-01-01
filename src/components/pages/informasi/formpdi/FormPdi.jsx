@@ -10,7 +10,7 @@ const FormPdi = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <>
+    <React.Fragment>
       <div className="wrapper-formPDI">
         {/* START LINKED */}
         <div className="linked-formPdi">
@@ -316,7 +316,7 @@ const FormPdi = () => {
 
         {/* END Container Formulir PDI */}
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

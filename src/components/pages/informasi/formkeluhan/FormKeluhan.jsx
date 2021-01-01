@@ -11,7 +11,7 @@ const FormKeluhan = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       <div className="wrapper-formKeluhan">
         {/* START LINKED */}
         <div className="linked-formKeluhan">
@@ -297,7 +297,7 @@ const FormKeluhan = () => {
         </div>
         {/* end Container form keluhan */}
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

@@ -163,7 +163,7 @@ const ListBerita = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       <div className="wrapper-berita-daerah">
         <div className="linked-berita-daerah">
           <BreadCrumbs
@@ -217,7 +217,7 @@ const ListBerita = () => {
         </div>
         {/* END Container2 */}
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

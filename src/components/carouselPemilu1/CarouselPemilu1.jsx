@@ -22,9 +22,9 @@ const CarouselPemilu1 = ({ data }) => {
   };
 
   return (
-    <>
+    <React.Fragment>
       {data.length > 0 ? (
-        <>
+        <React.Fragment>
           <div
             id="pemilu1"
             className="carousel carousel1-pemiluPage slide"
@@ -96,14 +96,14 @@ const CarouselPemilu1 = ({ data }) => {
             </div>
             {/* Container Box Indicator Carousel */}
           </div>
-        </>
+        </React.Fragment>
       ) : (
         <Wait />
       )}
       {/* Carousel */}
 
       {/* END Carousel */}
-    </>
+    </React.Fragment>
   );
 };
 

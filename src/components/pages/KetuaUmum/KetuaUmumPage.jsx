@@ -87,7 +87,7 @@ const KetuaUmumPage = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       {configHome.length > 0 ? (
         <div className="wrapperKetuaUmum">
           {/* <div
@@ -220,11 +220,11 @@ const KetuaUmumPage = () => {
           </div>
         </div>
       ) : (
-        <>
+        <React.Fragment>
           <Wait />
-        </>
+        </React.Fragment>
       )}
-    </>
+    </React.Fragment>
   );
 };
 // END Create Component

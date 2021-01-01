@@ -20,7 +20,7 @@ import Slidercom from "../../slidercom/Slidercom";
 
 export const LighBox = ({ source }) => {
   return (
-    <>
+    <React.Fragment>
       <main className="container_lightbox">
         <iframe
           className="overlay-youtube-home"
@@ -31,7 +31,7 @@ export const LighBox = ({ source }) => {
         ></iframe>
         {console.log(source)}
       </main>
-    </>
+    </React.Fragment>
   );
 };
 
@@ -119,7 +119,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       {configHome.length > 0 ? (
         <div
           className="homepage"
@@ -130,7 +130,7 @@ const HomePage = () => {
           }}
         >
           {configHome.length > 0 && (
-            <>
+            <React.Fragment>
               {/* 0 r-carousel */}
               <Desktop>
                 <MainSlider
@@ -152,7 +152,7 @@ const HomePage = () => {
               </Mobile>
               {/* LIGHTBOX */}
               {showVid && (
-                <>
+                <React.Fragment>
                   <span
                     onClick={() => {
                       setShowVid(false);
@@ -161,9 +161,9 @@ const HomePage = () => {
                     id="btn-overlay-video-yt"
                   ></span>
                   <LighBox source={configHome[3].value[0].path} />
-                </>
+                </React.Fragment>
               )}
-            </>
+            </React.Fragment>
           )}
           {/* STATISTIK INFO COVID */}
           <div
@@ -333,7 +333,7 @@ const HomePage = () => {
           <div className="cardContent">
             {/* 7 r-sync-blog */}
             {configHome.length > 0 && (
-              <>
+              <React.Fragment>
                 {configHome[7].value.map((e, i) => {
                   return (
                     <Cards
@@ -350,7 +350,7 @@ const HomePage = () => {
                     />
                   );
                 })}
-              </>
+              </React.Fragment>
             )}
           </div>
           <span className="btnSize">
@@ -392,7 +392,7 @@ const HomePage = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </React.Fragment>
   );
 };
 

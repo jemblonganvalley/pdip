@@ -145,7 +145,7 @@ const DokumenPagination = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       <div className="wrapperDokumen">
         {configHome.length > 0 &&
           configHome[4].value.map((e, i) => {
@@ -173,7 +173,7 @@ const DokumenPagination = () => {
       >
         {/* <AngkaPaginationEvent itemEventPerPage={itemDokumen} totalPosts={siaran.length} paginate={paginate} /> */}
       </nav>
-    </>
+    </React.Fragment>
   );
 };
 

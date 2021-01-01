@@ -48,7 +48,7 @@ const DetailPengurus = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       {configHome ? (
         <div className="wrapperDetail">
           {/* HEADERS */}
@@ -138,7 +138,7 @@ const DetailPengurus = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </React.Fragment>
   );
 };
 

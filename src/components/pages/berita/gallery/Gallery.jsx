@@ -124,7 +124,7 @@ const Gallery = () => {
   }, [reload, numPage]);
 
   return (
-    <>
+    <React.Fragment>
       {manyCard.length > 0 ? (
         <div className="wrapperBeritaPage2">
           <div className="linkedBeritaPage2">
@@ -141,7 +141,7 @@ const Gallery = () => {
           <div className="container-1-beritaPage2">
             {/* Column1 */}
             <div className="col1-container-1-beritaPage2">
-              <>
+              <React.Fragment>
                 {configHome.length > 0 && (
                   <CarouselBeritaPage2 data={configHome} />
                 )}
@@ -182,7 +182,7 @@ const Gallery = () => {
                   </div>
                 </div>
                 {/* END Row2 */}
-              </>
+              </React.Fragment>
             </div>
             {/* END Column1 */}
 
@@ -200,7 +200,7 @@ const Gallery = () => {
               }}
             >
               {manyCard.length > 0 && (
-                <>
+                <React.Fragment>
                   {manyCard.map((e, i) => (
                     <Cards
                       category={"Gallery"}
@@ -213,7 +213,7 @@ const Gallery = () => {
                       id={e.id_album}
                     />
                   ))}
-                </>
+                </React.Fragment>
               )}
             </div>
             {/* END Column2 */}
@@ -254,7 +254,7 @@ const Gallery = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </React.Fragment>
   );
 };
 

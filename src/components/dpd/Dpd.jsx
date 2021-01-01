@@ -49,7 +49,7 @@ const Dpd = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       {configHome ? (
         <div className="dpdWrapper">
           {/* HEADERS */}
@@ -167,7 +167,7 @@ const Dpd = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </React.Fragment>
   );
 };
 

@@ -51,7 +51,7 @@ const PemiluPage = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       {configHome.length > 0 ? (
         <div className="wrapperPemiluPage">
           {/* <div
@@ -214,7 +214,7 @@ const PemiluPage = () => {
       ) : (
         <Wait />
       )}
-    </>
+    </React.Fragment>
   );
 };
 // END Create Component

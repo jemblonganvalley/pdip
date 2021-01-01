@@ -4,7 +4,7 @@ import "./paralaxBox.scss";
 
 const ParalaxBox = ({ image, title, link, paralax = false }) => {
   return (
-    <>
+    <React.Fragment>
       <div
         className="container_paralax"
         style={{
@@ -17,7 +17,7 @@ const ParalaxBox = ({ image, title, link, paralax = false }) => {
           <span>lihat</span>
         </Link>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

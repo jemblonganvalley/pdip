@@ -9,7 +9,7 @@ const Carousel3PemiluPage = ({ data }) => {
   };
 
   return (
-    <>
+    <React.Fragment>
       {/* Carousel */}
       <div
         id="pemilu3"
@@ -69,7 +69,7 @@ const Carousel3PemiluPage = ({ data }) => {
       </div>
 
       {/* END Carousel */}
-    </>
+    </React.Fragment>
   );
 };
 

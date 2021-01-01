@@ -96,7 +96,7 @@ const InformasiPage = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       {configHome.length > 0 ? (
         // START INFORMASI
         <div className="wrapperInformasi">
@@ -305,11 +305,11 @@ const InformasiPage = () => {
             </div> */}
         </div>
       ) : (
-        <>
+        <React.Fragment>
           <Wait />
-        </>
+        </React.Fragment>
       )}
-    </>
+    </React.Fragment>
   );
 };
 

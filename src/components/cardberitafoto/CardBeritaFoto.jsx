@@ -11,7 +11,7 @@ const CardBeritaFoto = ({
   paragraph2,
 }) => {
   return (
-    <>
+    <React.Fragment>
       {/* Column5 */}
       <div className="wrapper-cardBerFoto">
         {/* Row1 */}
@@ -41,7 +41,7 @@ const CardBeritaFoto = ({
         {/* END Row2 */}
       </div>
       {/* END Column5 */}
-    </>
+    </React.Fragment>
   );
 };
 

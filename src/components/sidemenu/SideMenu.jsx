@@ -22,7 +22,7 @@ export const SideMenu = () => {
       });
   }, [token]);
   return (
-    <>
+    <React.Fragment>
       {menu && (
         <aside
           className="sideMenu"
@@ -41,6 +41,6 @@ export const SideMenu = () => {
           <DropDown menuItem={Object.values(menu)} listIndex={1} />
         </aside>
       )}
-    </>
+    </React.Fragment>
   );
 };

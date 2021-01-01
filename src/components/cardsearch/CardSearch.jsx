@@ -13,7 +13,7 @@ const CardSearch = ({ cardSearchItem, id, path, title, paragrap }) => {
   };
 
   return (
-    <>
+    <React.Fragment>
       {/* {cardSearchItem.map((e) => {
         return (
           
@@ -43,7 +43,7 @@ const CardSearch = ({ cardSearchItem, id, path, title, paragrap }) => {
           </p>
         </div>
       </Link>
-    </>
+    </React.Fragment>
   );
 };
 

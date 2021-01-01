@@ -55,11 +55,11 @@ const PartaiPage = ({ redirect }) => {
 
   return (
     // START PARTAI
-    <>
+    <React.Fragment>
       {config.length > 0 ? (
         <div className="wrapperPartai">
           {config.length > 0 && (
-            <>
+            <React.Fragment>
               {/* 0 r-banner-image */}
               <CardHeader
                 image={config[0].value.image}
@@ -223,15 +223,15 @@ const PartaiPage = ({ redirect }) => {
                 </div>
               </div> */}
               {/* END */}
-            </>
+            </React.Fragment>
           )}
         </div>
       ) : (
-        <>
+        <React.Fragment>
           <Wait />
-        </>
+        </React.Fragment>
       )}
-    </>
+    </React.Fragment>
   );
 };
 

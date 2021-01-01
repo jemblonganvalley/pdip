@@ -145,7 +145,7 @@ const TeaserPagination = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       <div className="wrapperTeaser-paginate">
         {/* <CardMateriPokok cardMateriPokokItem={currentPosts} /> */}
 
@@ -175,7 +175,7 @@ const TeaserPagination = () => {
       >
         {/* <AngkaPaginationEvent itemEventPerPage={itemTeaser} totalPosts={siaran.length} paginate={paginate} /> */}
       </nav>
-    </>
+    </React.Fragment>
   );
 };
 

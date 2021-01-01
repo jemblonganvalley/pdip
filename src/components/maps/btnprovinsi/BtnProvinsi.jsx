@@ -12,7 +12,7 @@ const BtnProvinsi = ({
   id,
 }) => {
   return (
-    <>
+    <React.Fragment>
       {/* For Botton Name Provinsi For on off Display Image Provinsi */}
       <Link
         to={`/dpd/${id}/${nameProv}`}
@@ -24,12 +24,10 @@ const BtnProvinsi = ({
           transition: `${transisi}`,
         }}
       >
-        <small className="DPDText">
-          DPD {nameProv}
-        </small>
+        <small className="DPDText">DPD {nameProv}</small>
       </Link>
       {/* END For Botton Name Provinsi For on off Display Image Provinsi */}
-    </>
+    </React.Fragment>
   );
 };
 

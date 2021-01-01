@@ -50,7 +50,7 @@ const StrukturPage = ({ slug, grade }) => {
   }, [refresher]);
 
   return (
-    <>
+    <React.Fragment>
       {configHome.length > 0 ? (
         <div className="pageStruktur">
           {/* HEADERS */}
@@ -101,7 +101,7 @@ const StrukturPage = ({ slug, grade }) => {
         <Wait />
         // <NotFound notFoundDisplay={"none"} />
       )}
-    </>
+    </React.Fragment>
   );
 };
 
