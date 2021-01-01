@@ -23,7 +23,7 @@ const CardSocialMedia = ({ imageUrl, title, url }) => {
       <p className="share-socialMedia">Share : </p>
       {/* Facebook Share */}
       <FacebookShareButton
-        url={`https://next-pdip.vercel.app/berita/${id}`}
+        url={url}
         quote={title}
         hashtag={hashtag}
         title={title}
@@ -34,7 +34,7 @@ const CardSocialMedia = ({ imageUrl, title, url }) => {
 
       {/* Twitter Share */}
       <TwitterShareButton
-        url={`https://next-pdip.vercel.app/berita/${id}`}
+        url={url}
         quote={imageUrl}
         hashtag={hashtag}
         title={title}
@@ -48,10 +48,7 @@ const CardSocialMedia = ({ imageUrl, title, url }) => {
       {/* END Twitter Share */}
 
       {/* WhatsApp Share */}
-      <WhatsappShareButton
-        url={`https://next-pdip.vercel.app/berita/${id}`}
-        title={title}
-      >
+      <WhatsappShareButton url={url} title={title}>
         <img src={WhatsappButton} alt="" width="20" height="20" />
       </WhatsappShareButton>
       {/* END WhatsApp Share */}

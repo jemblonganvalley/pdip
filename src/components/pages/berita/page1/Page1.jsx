@@ -222,7 +222,7 @@ const Page1 = () => {
                     <CardSocialMedia
                       imageUrl={detailPage.path}
                       title={detailPage.title}
-                      url={window.location.href}
+                      url={`https://next-pdip.vercel.app/berita/${id}`}
                     />
                   </div>
                 </div>
