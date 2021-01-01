@@ -222,7 +222,11 @@ const Page1 = () => {
                     <CardSocialMedia
                       imageUrl={detailPage.path}
                       title={detailPage.title}
-                      url={`https://next-pdip.vercel.app/berita/${id}`}
+                      url={
+                        detailPage.path.includes("uploads")
+                          ? `https://next-pdip.vercel.app/berita/${id}`
+                          : `https://youtu.be/${detailPage.path}`
+                      }
                     />
                   </div>
                 </div>
