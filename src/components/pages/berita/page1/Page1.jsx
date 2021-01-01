@@ -72,7 +72,7 @@ const Page1 = () => {
             />
 
             <meta property="og:type" content="article" />
-            <meta content="image/*" property="og:image:type" />
+            <meta content="og:image:type" property="image/*" />
           </Helmet>
           <div className="wrapperBeritaPage1">
             {/* Untuk page detail berita tidak memakai Headers */}
