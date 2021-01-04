@@ -177,11 +177,10 @@ $secondary: #f3f3f3;
     @include respon1360() {
       padding: 0px 20%;
     }
-    // Min widht 951px and max width 1360px
 
-    // Min widht 750px and max width 950px
-    
-    // END Min width 750px and max width 950px
+    @include respon950() {
+      padding: 0;
+    }
 
     // Min widht 500px and max width 750px
     @include respon750() {
@@ -204,6 +203,10 @@ $secondary: #f3f3f3;
 
       @include smallPhone() {
         margin: 0px 0 20px 0;
+      }
+
+      @include respon950() {
+        padding: 0 10%;
       }
 
       // Section1
@@ -444,6 +447,9 @@ $secondary: #f3f3f3;
         @include smallPhone() {
           padding: 0 10px;
           margin: 20px 0 0 0;
+        }
+        @include respon950() {
+          padding: 0 10%;
         }
 
         .txt-desk-section3-beritaPage1 {

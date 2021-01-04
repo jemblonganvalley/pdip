@@ -18,6 +18,8 @@ const CardSocialMedia = ({ imageUrl, title, url }) => {
 
   // const share
 
+  
+
   return (
     <div className="socialMedia">
       <p className="share-socialMedia">Share : </p>
@@ -27,6 +29,7 @@ const CardSocialMedia = ({ imageUrl, title, url }) => {
         quote={title}
         hashtag={hashtag}
         title={title}
+        
       >
         <img src={FacebookButton} alt="" width="20" height="20" />
       </FacebookShareButton>
@@ -42,6 +45,7 @@ const CardSocialMedia = ({ imageUrl, title, url }) => {
           marginLeft: "40px",
           marginRight: "40px",
         }}
+        
       >
         <img src={TwitterButton} alt="" width="20" height="20" />
       </TwitterShareButton>
