@@ -12,6 +12,17 @@ $smallPhoneDua : 400px;
     }
 }
 
+$responMin750 : 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950{
+    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
+        @content;
+    }
+}
+
 .mainCarouselDual{
     display: flex;
     justify-content: center;
@@ -26,6 +37,11 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         padding: 0;
         gap: 0;
+    }
+
+    @include respon950() {
+        padding: 0 2%;
+        width: auto;
     }
 
     .mainCarouselDual_car1{

@@ -104,8 +104,8 @@ const ContainerCard = () => {
             <BreadCrumbs
               link1="Home"
               to1="/"
-              link2={`/berita`}
-              to2={`/berita`}
+              link2={`Gallery`}
+              to2={`/gallery`}
               page3={"gallery"}
             />
           </div>
