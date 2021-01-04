@@ -64,6 +64,7 @@ const Page1 = () => {
             <meta property="og:description" content={detailPage.title} />
             <meta
               property="og:image"
+              itemprop="image"
               content={`https://data.pdiperjuangan.id/public${detailPage.path}`}
             />
             <meta
@@ -74,6 +75,7 @@ const Page1 = () => {
             <meta property="og:type" content="article" />
             <meta content="og:image:type" property="image/*" />
           </Helmet>
+
           <div className="wrapperBeritaPage1">
             {/* Untuk page detail berita tidak memakai Headers */}
 
@@ -224,7 +226,7 @@ const Page1 = () => {
                       title={detailPage.title}
                       url={
                         detailPage.path.includes("uploads")
-                          ? `https://next-pdip.vercel.app/berita/${id}`
+                          ? `https://article.pdiperjuangan.id/berita/${id}`
                           : `https://youtu.be/${detailPage.path}`
                       }
                     />
