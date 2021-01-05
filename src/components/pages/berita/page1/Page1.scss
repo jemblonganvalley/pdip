@@ -74,11 +74,18 @@ $respon500: 500px;
 
 $secondary: #f3f3f3;
 
+
+
+
 .wrapperBeritaPage1 {
   width: 100%;
 
   @include smallPhone() {
     padding: 0 0 40px 0;
+  }
+
+  a:hover {
+    color: #d80010;
   }
 
   .headers-BeritaPage1 {
