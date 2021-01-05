@@ -9,6 +9,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
+    "babel-register": "^6.26.0",
     "bootstrap": "^4.5.0",
     "dotenv": "^8.2.0",
     "easy-peasy": "^3.3.1",
@@ -30,6 +31,7 @@
     "react-responsive": "^8.1.0",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.0.0",
+    "react-router-sitemap": "^1.2.0",
     "react-scripts": "^4.0.0",
     "react-share": "^4.3.1",
     "react-slick": "^0.27.12",
@@ -45,7 +47,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build && cp .htaccess build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sitemap": "node src/sitemapBuilder.js"
   },
   "eslintConfig": {
     "extends": "react-app"
