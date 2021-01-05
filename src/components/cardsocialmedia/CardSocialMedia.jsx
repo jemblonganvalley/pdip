@@ -21,6 +21,7 @@ const CardSocialMedia = ({ imageUrl, title, url }) => {
   
 
   return (
+<<<<<<< HEAD
     <div className="socialMedia">
       <p className="share-socialMedia">Share : </p>
       {/* Facebook Share */}
@@ -50,13 +51,47 @@ const CardSocialMedia = ({ imageUrl, title, url }) => {
         <img src={TwitterButton} alt="" width="20" height="20" />
       </TwitterShareButton>
       {/* END Twitter Share */}
+=======
+    <>
+      <div className="socialMedia">
+        <p className="share-socialMedia">Share : </p>
+        {/* Facebook Share */}
+        <FacebookShareButton
+          url={window.location.href}
+          quote={`
+            ${title}
+            https://data.pdiperjuangan.id/public/${imageUrl}
+          `}
+          hashtag={hashtag}
+          title={title}
+        >
+          <img src={FacebookButton} alt="" width="20" height="20" />
+        </FacebookShareButton>
+        {/* END Facebook Share */}
 
-      {/* WhatsApp Share */}
-      <WhatsappShareButton url={window.location.href} title={title}>
-        <img src={WhatsappButton} alt="" width="20" height="20" />
-      </WhatsappShareButton>
-      {/* END WhatsApp Share */}
-    </div>
+        {/* Twitter Share */}
+        <TwitterShareButton
+          url={window.location.href}
+          quote={imageUrl}
+          hashtag={hashtag}
+          title={title}
+          style={{
+            marginLeft: "40px",
+            marginRight: "40px",
+          }}
+        >
+          <img src={TwitterButton} alt="" width="20" height="20" />
+        </TwitterShareButton>
+        {/* END Twitter Share */}
+>>>>>>> 1debec46fb0811c6e853bf2aa992e9b4e39b38ed
+
+        {/* WhatsApp Share */}
+        <WhatsappShareButton url={window.location.href} title={title}>
+          <img src={WhatsappButton} alt="" width="20" height="20" />
+        </WhatsappShareButton>
+        {/* END WhatsApp Share */}
+      </div>
+    </>
   );
 };
 
