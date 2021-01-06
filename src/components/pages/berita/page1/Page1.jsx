@@ -227,7 +227,7 @@ const Page1 = () => {
                       url={
                         detailPage.path.includes("uploads")
                           ? `https://article.pdiperjuangan.id/berita/${id}`
-                          : `https://i.ytimg.com/vi/${detailPage.path}/hqdefault.jpg`
+                          : `https://article.pdiperjuangan.id/video/${id}`
                       }
                     />
                   </div>
