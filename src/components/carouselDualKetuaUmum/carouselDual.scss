@@ -12,11 +12,41 @@ $smallPhoneDua : 400px;
     }
 }
 
+$responMin951: 951px;
+$responMax1360: 1360px;
+
+@mixin respon1360 {
+  @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}) {
+    @content;
+  }
+}
+
+$responMin750: 750px;
+$responMax950: 950px;
+// END Min widht 750 and Max width 950
+
+// Min width 750 and max width 950
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
+}
+
+$respon750: 750px;
+$respon500: 500px;
+// END Min widht 500 and Max width 750
+
+// Min widht 500 and Max width 750
+@mixin respon750 {
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
+}
+
 .mainCarouselDual{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 40vh;
     gap : 20px;
     padding: 0 20% 0 20%;
@@ -26,6 +56,18 @@ $smallPhoneDua : 400px;
         flex-direction: column;
         padding: 0;
         gap: 0;
+    }
+
+    @include respon1360() {
+        padding: 0 10%;
+    }
+
+    @include respon950() {
+        padding: 0 2%;
+    }
+
+    @include respon750() {
+        padding: 0 5%;
     }
 
     .mainCarouselDual_car1{
