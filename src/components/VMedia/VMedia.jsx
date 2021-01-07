@@ -9,6 +9,7 @@ const VMedia = ({
   backgroundImage,
   descColor,
   date,
+  videoPath,
 }) => {
   return (
     <div className="wrapperPlayVid">
@@ -50,7 +51,7 @@ const VMedia = ({
         <p className="descline">{desc}</p>
         <div className="share">
           {/* Card Social Media */}
-          <CardSocialMedia />
+          <CardSocialMedia url={window.location.href} title={headline} />
           {/* END Card Social Media */}
         </div>
       </div>
