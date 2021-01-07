@@ -53,7 +53,7 @@ const VMedia = ({
         <div className="share">
           {/* Card Social Media */}
           <CardSocialMedia
-            url={`article.pdiperjuangan.id/multimedia/${youtubePath}`}
+            url={`https://article.pdiperjuangan.id/multimedia/${youtubePath}`}
             title={headline}
           />
           {/* END Card Social Media */}
