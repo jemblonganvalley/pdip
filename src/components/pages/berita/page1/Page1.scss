@@ -75,7 +75,15 @@ $respon500: 500px;
 $secondary: #f3f3f3;
 
 .wrapperBeritaPage1 {
+  
   width: 100%;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $lightRed;
+    }
+  }
 
   @include smallPhone() {
     padding: 0 0 40px 0;
