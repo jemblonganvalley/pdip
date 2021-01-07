@@ -54,7 +54,7 @@ const VMedia = ({
           {/* Card Social Media */}
           <CardSocialMedia
             url={`https://article.pdiperjuangan.id/multimedia/${youtubePath}`}
-            title={headline}
+            title={desc}
           />
           {/* END Card Social Media */}
         </div>
