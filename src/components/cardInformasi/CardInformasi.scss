@@ -84,6 +84,8 @@ $maxWidth750: 750px;
     @include respon950(){
         // flex-direction: column;
         padding: 20px 0 0 0;
+        flex-wrap: wrap;
+        width: 70%;
     }
     // end min width 750px and max width 950px
 
@@ -107,10 +109,10 @@ $maxWidth750: 750px;
         @include respon950(){
             display: flex;
             height: 15vh;
-            width: 100%;
+            width: 50%;
             // background: $accent;
             margin: 0rem 0 0 0;
-            justify-content: center;
+            // justify-content: center;
             border-radius: 5px;
         }
 
@@ -143,7 +145,7 @@ $maxWidth750: 750px;
             @include respon950(){
                 width: 100%;
                 padding: 0;
-                justify-content: center;
+                // justify-content: center;
             }
             // end min width 750px and max width 950px
     
@@ -216,12 +218,12 @@ $maxWidth750: 750px;
     
         .siaranLangsung {
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
 
             // min width 750px and max width 950px
             @include respon950(){
-                justify-content: center;
+                // justify-content: center;
             }
             // end min width 750px and max width 950px
     
@@ -237,12 +239,12 @@ $maxWidth750: 750px;
         }
         .videoDokumentasi {
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
 
             // min width 750px and max width 950px
             @include respon950(){
-                justify-content: center;
+                // justify-content: center;
             }
             // end min width 750px and max width 950px
     
@@ -258,12 +260,12 @@ $maxWidth750: 750px;
         }
         .videoInteraktif {
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
 
             // min width 750px and max width 950px
             @include respon950(){
-                justify-content: center;
+                // justify-content: center;
             }
             // end min width 750px and max width 950px
     
@@ -279,12 +281,12 @@ $maxWidth750: 750px;
         }
         .siaranPers {
             display: flex;
-            justify-content: center;
+            // justify-content: center;
             align-items: center;
 
             // min width 750px and max width 950px
             @include respon950(){
-                justify-content: center;
+                // justify-content: center;
             }
             // end min width 750px and max width 950px
     

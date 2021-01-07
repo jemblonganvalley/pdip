@@ -144,7 +144,7 @@ $responMax1440: 1440px;
 
     // min width 500px and max width 750px
     @include respon750() {
-      padding: 0 15%;
+      padding: 0 5%;
     }
     // end min width 500px and max width 750px
 
@@ -469,7 +469,7 @@ $responMax1440: 1440px;
     }
 
     @include respon750() {
-      padding: 0 15%;
+      padding: 0 5%;
     }
 
     @include smallPhone() {
