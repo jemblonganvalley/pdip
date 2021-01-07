@@ -68,6 +68,34 @@ $respon500: 500px;
 
     @include respon750() {
         padding: 0 5%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .satyam {
+        padding: 30px;
+        
+        @include respon750() {
+            padding: 300px;
+        }
+        @include smallPhone() {
+            padding: 200px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .satyamIframe {
+        height: 100%;
+
+        @include respon750() {
+            width: 100%;
+            height: 500px;
+        }
+        @include smallPhone() {
+            width: 100%;
+            height: 300px;
+        }
+        
     }
 
     .mainCarouselDual_car1{
