@@ -99,7 +99,7 @@ const Page2 = () => {
                   source={`https://www.youtube.com/embed/${configHome.path}`}
                   desc={configHome.description}
                   youtubePath={configHome.path}
-                  detailMultimediaId={id}
+                  detailMultimediaId={configHome.id}
                 />
               ) : (
                 <>
