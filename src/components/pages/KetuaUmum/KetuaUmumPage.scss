@@ -159,9 +159,6 @@ $responMax1440: 1440px;
             @include smallPhone(){
                 padding: 0 0 10px 0;
             }
-            @include respon950() {
-                justify-content: center;
-            }
             @include respon750() {
                 justify-content: center;
             }

@@ -85,7 +85,7 @@ $maxWidth750: 750px;
         // flex-direction: column;
         padding: 20px 0 0 0;
         flex-wrap: wrap;
-        width: 70%;
+        width: 100%;
     }
     // end min width 750px and max width 950px
 
@@ -112,7 +112,7 @@ $maxWidth750: 750px;
             width: 50%;
             // background: $accent;
             margin: 0rem 0 0 0;
-            // justify-content: center;
+            justify-content: center;
             border-radius: 5px;
         }
 
@@ -161,6 +161,7 @@ $maxWidth750: 750px;
                 width: 70%;
                 padding: 0px;
             }
+
     
             .smallCard {
                 text-transform: uppercase;
@@ -182,7 +183,7 @@ $maxWidth750: 750px;
         
         .imgCards {
             height: 70%;
-            margin-right: 1rem;
+            // margin-right: 1rem;
     
             @include deviceOne(){
                 // height: 50px;
@@ -224,6 +225,8 @@ $maxWidth750: 750px;
             // min width 750px and max width 950px
             @include respon950(){
                 // justify-content: center;
+                display: flex;
+                justify-content: center;
             }
             // end min width 750px and max width 950px
     
@@ -236,6 +239,8 @@ $maxWidth750: 750px;
             @include smallPhone(){
                 justify-content: flex-start;
             }
+
+            
         }
         .videoDokumentasi {
             display: flex;
@@ -245,6 +250,8 @@ $maxWidth750: 750px;
             // min width 750px and max width 950px
             @include respon950(){
                 // justify-content: center;
+                display: flex;
+                justify-content: center;
             }
             // end min width 750px and max width 950px
     
@@ -266,6 +273,8 @@ $maxWidth750: 750px;
             // min width 750px and max width 950px
             @include respon950(){
                 // justify-content: center;
+                display: flex;
+                justify-content: center;
             }
             // end min width 750px and max width 950px
     
@@ -287,6 +296,8 @@ $maxWidth750: 750px;
             // min width 750px and max width 950px
             @include respon950(){
                 // justify-content: center;
+                display: flex;
+                justify-content: center;
             }
             // end min width 750px and max width 950px
     
