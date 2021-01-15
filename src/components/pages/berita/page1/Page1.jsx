@@ -15,7 +15,6 @@ const Page1 = () => {
 
   let { id } = useParams();
   const [detailPage, setDetailPage] = useState();
-  const [missing, setMissing] = useState(false);
 
   const getDetailPage = async () => {
     const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
@@ -48,9 +47,6 @@ const Page1 = () => {
   useEffect(() => {
     getDetailPage();
     window.scrollTo(0, 0);
-    setTimeout(() => {
-      setMissing(true);
-    }, 5000);
   }, [refresher]);
 
   return (
@@ -69,7 +65,7 @@ const Page1 = () => {
             />
             <meta
               property="image"
-              content={`https://atur.biar.pw/public${detailPage.path}`}
+              content={`https://data.pdiperjuangan.id/public${detailPage.path}`}
             />
 
             <meta property="og:type" content="article" />
@@ -227,7 +223,7 @@ const Page1 = () => {
                       url={
                         detailPage.path.includes("uploads")
                           ? `https://article.pdiperjuangan.id/berita/${id}`
-                          : `https://youtu.be/${detailPage.path}`
+                          : `https://i.ytimg.com/vi/${detailPage.path}/hqdefault.jpg`
                       }
                     />
                   </div>

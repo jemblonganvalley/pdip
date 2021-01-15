@@ -78,7 +78,15 @@ $secondary: #f3f3f3;
 
 
 .wrapperBeritaPage1 {
+  
   width: 100%;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $lightRed;
+    }
+  }
 
   @include smallPhone() {
     padding: 0 0 40px 0;
@@ -195,6 +203,9 @@ $secondary: #f3f3f3;
     }
     // END Min width 500px and max width 750px
 
+    @include respon950() {
+      padding: 0;
+    }
     @include smallPhone() {
       padding: 0;
     }
@@ -567,6 +578,9 @@ $secondary: #f3f3f3;
 
           @include smallPhone() {
             padding: 15px 0;
+          }
+          @include respon950() {
+            padding-right: 1rem;
           }
 
           // .socialMedia {

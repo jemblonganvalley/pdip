@@ -28,9 +28,10 @@ const VMedia = ({
           <iframe
             title="iframe"
             className="iframe-Vmedia"
-            src={source}
+            src={`${source}?rel=0`}
             frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            disabled="autoplay; encrypted-media;"
+            allow="accelerometer; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
         )}

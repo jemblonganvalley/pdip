@@ -12,20 +12,16 @@ const CarouselDualKetuaumum = ({
   return (
     <div
       className="mainCarouselDual row"
-      style={{
-        height: "40vh",
-        // border : '1px solid blue',
-      }}
+      
     >
       {/* Carousel 1 */}
       <Link
         as="div"
         id="carouselone"
-        className="col"
+        className="col satyam"
         to={"/detail-article/622/satyam-eva-jayate"}
         style={{
           height: "40vh",
-          padding: "30px",
           // border : '1px solid red',
           backgroundImage: `url(https://data.pdiperjuangan.id/public/${cat2.image})`,
           position: "relative",
@@ -46,8 +42,7 @@ const CarouselDualKetuaumum = ({
 
       {/* CAROUSEL 2 */}
       <iframe
-        className="col-8"
-        height="100%"
+        className="col-8 satyamIframe"
         src={`https://www.youtube.com/embed/${cat1.path}?rel=0`}
         frameBorder={0}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

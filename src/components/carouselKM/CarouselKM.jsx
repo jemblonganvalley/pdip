@@ -3,7 +3,7 @@ import "./CarouselKM.scss";
 
 const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
   const [berita, setBerita] = useState(data);
-
+  console.log(berita)
   return (
     <div
       className="wrapperKM"
@@ -51,7 +51,7 @@ const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
                     <div
                       className="col-lg-6 banner"
                       style={{
-                        backgroundImage: `url(https://data.pdiperjuangan.id/public/${e.path})`,
+                        backgroundImage: e.path.includes("uploads") ? `url(https://data.pdiperjuangan.id/public/${e.path})` : `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
                         backgroundSize: "cover",
                       }}
                     ></div>
