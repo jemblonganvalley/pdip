@@ -98,6 +98,8 @@ const Page2 = () => {
                   headline={configHome.title}
                   source={`https://www.youtube.com/embed/${configHome.path}`}
                   desc={configHome.description}
+                  youtubePath={configHome.path}
+                  detailMultimediaId={configHome.id}
                 />
               ) : (
                 <>

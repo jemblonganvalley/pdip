@@ -77,6 +77,7 @@ const MultimediaPage = () => {
               headline={configHome[1].value[0].title}
               source={`https://www.youtube.com/embed/${configHome[1].value[0].path}`}
               desc={configHome[1].value[0].description}
+              youtubePath={configHome[1].value[0].path}
             />
           </div>
 

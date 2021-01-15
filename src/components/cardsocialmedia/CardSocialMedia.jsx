@@ -37,7 +37,7 @@ const CardSocialMedia = ({ imageUrl, title, url }) => {
       {/* Twitter Share */}
       <TwitterShareButton
         url={url}
-        quote={imageUrl}
+        quote={title}
         hashtag={hashtag}
         title={title}
         style={{
