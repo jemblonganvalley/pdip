@@ -102,6 +102,7 @@ const WejanganBungKarno = () => {
           <div className="col1-container-1-bkbbWejangan">
             {configHome && (
               <QuotesBkbb
+                id={configHome.id}
                 displayIframe={"none"}
                 displayImage={"flex"}
                 backgroundImage={`https://data.pdiperjuangan.id/public${configHome.path}`}

@@ -4,6 +4,7 @@ import "./QuotesBkbb.scss";
 import parse from "html-react-parser";
 
 const QuotesBkbb = ({
+  id,
   source,
   headline,
   desc,
@@ -51,7 +52,10 @@ const QuotesBkbb = ({
         <div className="descline">{parse(`${desc}`)}</div>
         <div className="share">
           {/* Card Social Media */}
-          <CardSocialMedia />
+          <CardSocialMedia
+            title={headline}
+            url={`https://article.pdiperjuangan.id/wejangan/${id}`}
+          />
           {/* END Card Social Media */}
         </div>
       </div>
