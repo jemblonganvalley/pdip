@@ -45,6 +45,11 @@ img {
   object-position: center;
 }
 
+button {
+  border: none;
+  outline: none;
+}
+
 @media only screen and (max-height: 720px) and (min-width: 1200px) {
   body {
     overflow-y: hidden;
