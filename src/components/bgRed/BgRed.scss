@@ -173,8 +173,22 @@ $responMax1440: 1440px;
         }
       }
     }
+    .containerFacebook {
+      margin-top: 50px;
+    }
+    .containerTwitter {
+      margin-top: 50px;
+    }
     .instagramWidget {
       width: 100%;
+      padding: 0;
+      flex-direction: row;
+      .wx-widget-container {
+        padding: 0;
+      }
+      .css-1lpjr6z {
+        padding: 0;
+      }
     }
     
   }
