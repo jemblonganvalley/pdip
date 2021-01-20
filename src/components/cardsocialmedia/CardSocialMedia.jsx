@@ -25,12 +25,14 @@ const CardSocialMedia = ({ imageUrl, title, url, top }) => {
           className="socialMedia"
           style={{
             // border: "1px solid red",
-            justifyContent: "flex-end",
-            marginTop: "-20px",
+            justifyContent: "center",
+            marginTop: "20px",
             marginBottom: "10px",
             gap: "0",
           }}
         >
+          <p className="share-socialMedia">Share : </p>
+
           {/* Facebook Share */}
           <FacebookShareButton
             url={url}

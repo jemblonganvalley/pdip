@@ -151,10 +151,10 @@ const Gallery = () => {
                   <div className="jdl-row2-beritaPage2">
                     {/* Column Txt Admin */}
                     <div className="column-txt-admin">
-                      <p className="txt-admin">
+                      <small className="txt-admin" style={{ fontSize: "14px" }}>
                         {configHome[0].author_name} |{" "}
                         {configHome[0].created_at.split(" ")[0]}
-                      </p>
+                      </small>
                     </div>
                     {/* END Column Txt Admin */}
 

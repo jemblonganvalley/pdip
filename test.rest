@@ -8,13 +8,13 @@ Content-Type: application/json
 
 # CONFIG UNTUK MENU
 ###
-POST https://data.pdiperjuangan.id/api/web/config/partai
+POST https://data.pdiperjuangan.id/api/web/config/berita
 Content-Type: application/json
 Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kYXRhLnBkaXBlcmp1YW5nYW4uaWRcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjExMDEwNzE4LCJleHAiOjE2MTEwOTcxMTgsIm5iZiI6MTYxMTAxMDcxOCwianRpIjoiNTl4ZWFXRFYwOW5USXAxUSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.bg4l_GHJus7b1Z9LtsInMZwC_8G5FmE3DMi47i39x9c"
 
 #PAGES
 ###
-POST https://data.pdiperjuangan.id/api/web/pages/multimedia
+POST https://data.pdiperjuangan.id/api/web/pages/berita
 Content-Type: application/json
 Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kYXRhLnBkaXBlcmp1YW5nYW4uaWRcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjExMDEwNzE4LCJleHAiOjE2MTEwOTcxMTgsIm5iZiI6MTYxMTAxMDcxOCwianRpIjoiNTl4ZWFXRFYwOW5USXAxUSIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.bg4l_GHJus7b1Z9LtsInMZwC_8G5FmE3DMi47i39x9c"
 

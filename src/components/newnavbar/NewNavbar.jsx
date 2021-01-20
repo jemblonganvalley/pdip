@@ -547,6 +547,10 @@ function NewNavbar({ token }) {
                             aria-controls={`collapseExample${i}`}
                             id="icon-menuDrop"
                             onClick={() => {
+                              setLast(`collapseExample${i}`);
+                              if (last) {
+                                removeClass(last);
+                              }
                               if (iconRotate != null) {
                                 setIconRotate(null);
                               } else {

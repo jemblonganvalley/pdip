@@ -88,6 +88,7 @@ const ContainerCard = () => {
           order: { key: "id", value: "desc" },
           where: { key: "blog.id_category_child", value: category_id },
           limit: 9,
+          filter: [{ key: "blog.status", val: "publish" }],
         }),
       }
     );

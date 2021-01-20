@@ -138,6 +138,21 @@ const Page1 = () => {
                       {detailPage.author} |{" "}
                       {detailPage.created_at.split(" ")[0]}
                     </small>
+                    {/* SOCIAL MEDIA ATAS */}
+                    <div className="box-medsos-beritaPage1">
+                      <CardSocialMedia
+                        top
+                        imageUrl={detailPage.path}
+                        title={detailPage.title}
+                        url={
+                          detailPage.path.includes("uploads")
+                            ? `https://article.pdiperjuangan.id/berita/${id}`
+                            : `https://article.pdiperjuangan.id/video/${id}`
+                        }
+                      />
+                    </div>
+                    {/* END SOCIAL MEDIA ATAS */}
+
                     <div className="garis-panjang-tipis">
                       <div className="garis-merah-tebal"></div>
                     </div>
@@ -161,20 +176,6 @@ const Page1 = () => {
               </div>
               {/* END Column1 */}
 
-              {/* SOCIAL MEDIA ATAS */}
-              <div className="box-medsos-beritaPage1">
-                <CardSocialMedia
-                  top
-                  imageUrl={detailPage.path}
-                  title={detailPage.title}
-                  url={
-                    detailPage.path.includes("uploads")
-                      ? `https://article.pdiperjuangan.id/berita/${id}`
-                      : `https://article.pdiperjuangan.id/video/${id}`
-                  }
-                />
-              </div>
-              {/* END SOCIAL MEDIA ATAS */}
               {/* Column2 */}
               <div className="col2-container-1-beritaPage1">
                 {/* Section1 */}
