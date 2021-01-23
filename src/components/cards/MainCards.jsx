@@ -124,10 +124,11 @@ const Cards = ({
               fontWeight: h5Weight,
               // maxHeight : '50px',
               // overflow : 'hidden',
-              // textOverflow : 'elipsis',
+              textOverflow: "elipsis",
             }}
           >
-            {add3Dots(title, 70)}
+            {/* {add3Dots(title, 70)} */}
+            {title}
           </p>
         </div>
       </Link>

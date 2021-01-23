@@ -14,6 +14,7 @@ const Page1 = () => {
   const refresher = useStoreState((state) => state.refresher);
 
   let { id } = useParams();
+  window.location.href = `https://article.pdiperjuangan.id/berita/article/${id}`;
   const [detailPage, setDetailPage] = useState();
   const [missing, setMissing] = useState(false);
 
@@ -46,11 +47,11 @@ const Page1 = () => {
   };
 
   useEffect(() => {
-    getDetailPage();
-    window.scrollTo(0, 0);
-    setTimeout(() => {
-      setMissing(true);
-    }, 5000);
+    // getDetailPage();
+    // window.scrollTo(0, 0);
+    // setTimeout(() => {
+    //   setMissing(true);
+    // }, 5000);
   }, [refresher]);
 
   return (

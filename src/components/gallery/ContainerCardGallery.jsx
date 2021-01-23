@@ -86,7 +86,7 @@ const ContainerCard = () => {
     );
 
     const dataConfigHome = await resConfigHome.json();
-    // console.log(dataConfigHome.query);
+    console.log(dataConfigHome.query);
     setConfigHome(dataConfigHome.query.data);
     setPag(dataConfigHome.query);
   };
@@ -98,6 +98,7 @@ const ContainerCard = () => {
 
   return (
     <>
+      {console.log(configHome)}
       {configHome.length > 0 ? (
         <div className="wrapper-berita-nasional">
           <div className="linked-berita-nasional">

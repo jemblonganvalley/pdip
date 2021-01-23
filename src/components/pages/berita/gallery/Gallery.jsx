@@ -152,8 +152,9 @@ const Gallery = () => {
                     {/* Column Txt Admin */}
                     <div className="column-txt-admin">
                       <small className="txt-admin" style={{ fontSize: "14px" }}>
-                        {configHome[0].author_name} |{" "}
+                        {configHome[0].author_name}
                         {configHome[0].created_at.split(" ")[0]}
+                        {/* {configHome[0].created_at} */}
                       </small>
                     </div>
                     {/* END Column Txt Admin */}
