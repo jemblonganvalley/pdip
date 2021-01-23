@@ -87,7 +87,7 @@ const Cards = ({
           {/* JIKA MAU DIPAKAI CLASS, PAKAI CLASS VBMusic */}
           <Link
             className={`${classIcon}`}
-            to={href}
+            to={`${page}/${id}/${slug ? pageSLug() : null}`}
             style={{ textDecoration: "none" }}
           >
             <i

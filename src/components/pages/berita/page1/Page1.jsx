@@ -48,7 +48,7 @@ const Page1 = () => {
 
   useEffect(() => {
     // getDetailPage();
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     // setTimeout(() => {
     //   setMissing(true);
     // }, 5000);
