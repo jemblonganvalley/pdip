@@ -9,7 +9,7 @@ import Cards from "../cards/MainCards";
 import Wait from "../wait/Wait";
 
 const ContainerCard = () => {
-  const { category_id } = useParams();
+  const { id, album_id } = useParams();
   const [configHome, setConfigHome] = useState([]);
   const [numPage, setNumPage] = useState(1);
   const [pag, setPag] = useState();
@@ -78,7 +78,7 @@ const ContainerCard = () => {
           Authorization: `Bearer ${data.token}`,
         },
         body: JSON.stringify({
-          order: { key: "id", value: "desc" },
+          order: { key: "id_album", value: "desc" },
           where: { key: "type", value: "image" },
           limit: 9,
         }),
@@ -86,7 +86,7 @@ const ContainerCard = () => {
     );
 
     const dataConfigHome = await resConfigHome.json();
-    console.log(dataConfigHome.query);
+    // console.log(dataConfigHome.query);
     setConfigHome(dataConfigHome.query.data);
     setPag(dataConfigHome.query);
   };
@@ -94,7 +94,7 @@ const ContainerCard = () => {
   useEffect(() => {
     getConfigHome();
     window.scrollTo(0, 0);
-  }, [category_id, numPage]);
+  }, [id, numPage]);
 
   return (
     <>
@@ -133,6 +133,7 @@ const ContainerCard = () => {
                         dateTime={e.created_at}
                         page={`/gallery/detail-gallery`}
                         id={e.id_album}
+                        album_id={album_id}
                       />
                     ))}
                   </>
