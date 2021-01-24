@@ -130,7 +130,7 @@ const ContainerCard = () => {
                         title={e.album_name}
                         slug={e.album_name}
                         textSmall={e.album_description}
-                        // dateTime={e.created_at}
+                        dateTime={e.created_at}
                         page={`/gallery/detail-gallery`}
                         id={e.id_album}
                       />
