@@ -152,6 +152,7 @@ const KetuaUmumPage = () => {
                   borderRadius="10px"
                   cardType={e.filetype}
                   category="Pidato Ketua Umum"
+                  dateTime={e.created_at}
                 />
               ))}
               {/* Button View All */}

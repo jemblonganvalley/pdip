@@ -108,7 +108,7 @@ const Gallery = () => {
         body: JSON.stringify({
           where: { key: "type", value: "image" },
           order: { key: "id", value: "desc" },
-          limit: 9,
+          limit: 3,
         }),
       }
     );
@@ -128,7 +128,7 @@ const Gallery = () => {
         },
         body: JSON.stringify({
           order: { key: "id", value: "desc" },
-          where: { key: "id", value: id },
+          where: { key: "id_album", value: id },
           limit: 9,
         }),
       }
@@ -230,7 +230,7 @@ const Gallery = () => {
                       title={e.album_name}
                       slug={e.album_name}
                       textSmall={e.album_description}
-                      // dateTime={e.created_at}
+                      dateTime={e.created_at}
                       page={`/gallery/detail-gallery`}
                       id={e.id_album}
                     />

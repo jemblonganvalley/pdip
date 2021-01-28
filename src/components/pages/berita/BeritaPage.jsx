@@ -223,6 +223,7 @@ const BeritaPage = () => {
 
               {/* Column2 CARD BERITA DAERAH*/}
               <div className="cardContainer" id="card-berita">
+                {console.log(configHome[7].value)}
                 {configHome[7].value.map((e, i) => {
                   return (
                     <Cards

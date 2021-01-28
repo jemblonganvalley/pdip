@@ -152,6 +152,7 @@ const BkbbPage = () => {
                       page="detail-article"
                       id={e.id}
                       category="Bung Karno Bapak Bangsa"
+                      dateTime={e.created_at}
                     />
                   );
                 })}

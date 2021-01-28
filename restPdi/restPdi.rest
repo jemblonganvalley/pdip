@@ -9,7 +9,7 @@ Content-Type: application/json
 
 # CONFIG UNTUK MENU
 ###
-POST https://data.pdiperjuangan.id/api/web/config/home
+POST https://data.pdiperjuangan.id/api/web/config/ketua-umum
 Content-Type: application/json
 Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kYXRhLnBkaXBlcmp1YW5nYW4uaWRcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjExNDQ2MzQyLCJleHAiOjE2MTE1MzI3NDIsIm5iZiI6MTYxMTQ0NjM0MiwianRpIjoiZEpPZGRXS0xTODJacWV5ZCIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.qEwkWfD-Wz4C8KungWo07FV0xkeItzmRxSFQvW7Q168"
 
@@ -62,7 +62,9 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 {
 	"order":{"key":"id","value":"desc"} ,
 	"limit" : 3,
-    "where" : {"key":"blog.id","value":"1183"} 
+    "where" : {"key":"blog.id","value":"1183"} ,
+	# "filter": { "key": "blog.status", "val" : "publish" }
+	
 }
 
 # BLOG DATA by CATEGORY CHILD ID - PAKE YANG INI -
@@ -110,6 +112,18 @@ Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwv
 
 {
 	"order":{"key":"id","value":"desc"} ,
+	"where":{"key":"type", "value":"image"},
+	"limit" : 9
+}
+
+# GALLERY ALBUM
+###
+POST https://data.pdiperjuangan.id/api/gallery/album?page=1
+Content-Type: application/json
+Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kYXRhLnBkaXBlcmp1YW5nYW4uaWRcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjExNDQ2MzQyLCJleHAiOjE2MTE1MzI3NDIsIm5iZiI6MTYxMTQ0NjM0MiwianRpIjoiZEpPZGRXS0xTODJacWV5ZCIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.qEwkWfD-Wz4C8KungWo07FV0xkeItzmRxSFQvW7Q168"
+
+{
+	"order":{"key":"id_album","value":"desc"} ,
 	"where":{"key":"type", "value":"image"},
 	"limit" : 9
 }

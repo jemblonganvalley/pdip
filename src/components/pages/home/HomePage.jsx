@@ -299,6 +299,7 @@ const HomePage = () => {
                         id={e.id}
                         slug={e.title}
                         category="Multimedia"
+                        dateTime={e.created_at}
                       />
                     );
                   })}
