@@ -147,8 +147,8 @@ const Page1 = () => {
                         title={detailPage.title}
                         url={
                           detailPage.path.includes("uploads")
-                            ? `https://article.pdiperjuangan.id/berita/${id}`
-                            : `https://article.pdiperjuangan.id/video/${id}`
+                            ? `https://artikel.pdiperjuangan.id/berita/${id}`
+                            : `https://artikel.pdiperjuangan.id/video/${id}`
                         }
                       />
                     </div>
@@ -243,8 +243,8 @@ const Page1 = () => {
                       title={detailPage.title}
                       url={
                         detailPage.path.includes("uploads")
-                          ? `https://article.pdiperjuangan.id/berita/${id}`
-                          : `https://article.pdiperjuangan.id/video/${id}`
+                          ? `https://artikel.pdiperjuangan.id/berita/${id}`
+                          : `https://artikel.pdiperjuangan.id/video/${id}`
                       }
                     />
                   </div>

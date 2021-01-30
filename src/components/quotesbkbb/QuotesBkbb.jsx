@@ -54,7 +54,7 @@ const QuotesBkbb = ({
           {/* Card Social Media */}
           <CardSocialMedia
             title={headline}
-            url={`https://article.pdiperjuangan.id/wejangan/${id}`}
+            url={`https://artikel.pdiperjuangan.id/wejangan/${id}`}
           />
           {/* END Card Social Media */}
         </div>
