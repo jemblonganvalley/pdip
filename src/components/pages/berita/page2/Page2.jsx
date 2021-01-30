@@ -82,8 +82,8 @@ const Page2 = () => {
             <BreadCrumbs
               link1="Home"
               to1="/"
-              link2="Berita"
-              to2="/berita"
+              link2="Multimedia"
+              to2="/multimedia"
               page3="Berita Foto"
             />
           </div>
@@ -141,7 +141,10 @@ const Page2 = () => {
                       voluptas porro veritatis aliquid?
                     </p>
 
-                    <CardSocialMedia imageUrl={configHome.path} />
+                    <CardSocialMedia
+                      imageUrl={configHome.path}
+                      url={configHome.path}
+                    />
                   </div>
                   {/* END Row2 */}
                 </>

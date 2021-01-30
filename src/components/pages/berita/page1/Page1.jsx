@@ -12,9 +12,9 @@ import Wait from "../../../wait/Wait";
 
 const Page1 = () => {
   const refresher = useStoreState((state) => state.refresher);
-  const webUrl = "https://artikel.perjuangan.id";
-  let { id } = useParams();
-  window.location.href = `${webUrl}/berita/article/${id}`;
+  const webUrl = "https://article.pdiperjuangan.id";
+  let { id, slug } = useParams();
+  window.location.href = `${webUrl}/detail-article/${slug}/${id}`;
   const [detailPage, setDetailPage] = useState();
   const [missing, setMissing] = useState(false);
 
