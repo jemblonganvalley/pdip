@@ -56,8 +56,8 @@ const VMedia = ({
           <CardSocialMedia
             url={
               detailMultimediaId != null
-                ? `https://artikel.pdiperjuangan.id/detail-multimedia/${detailMultimediaId}`
-                : `https://artikel.pdiperjuangan.id/multimedia/${youtubePath}`
+                ? `https://pdiperjuangan.id/detail-multimedia/${detailMultimediaId}`
+                : `https://pdiperjuangan.id/multimedia/${youtubePath}`
             }
             title={desc}
           />
