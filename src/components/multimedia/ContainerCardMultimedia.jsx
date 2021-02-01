@@ -134,6 +134,7 @@ const ContainerCardMultimedia = () => {
                         // dateTime={e.created_at}
                         page={`/detail-multimedia`}
                         id={e.id}
+                        dateTime={e.created_at}
                       />
                     ))}
                   </>
