@@ -174,6 +174,7 @@ const Page2 = () => {
                   id={e.id}
                   slug={e.title}
                   category={e.category}
+                  dateTime={e.created_at}
                 />
               ))}
             </div>
