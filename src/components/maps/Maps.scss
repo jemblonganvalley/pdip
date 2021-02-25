@@ -1,301 +1,310 @@
-$secondary : #f3f3f3;
+$secondary: #f3f3f3;
 @import "../../utilities/variable/variables.scss";
 
-$smallPhoneSatu : 500px;
+$smallPhoneSatu: 500px;
 
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 
 $device1100: 1100px;
 $device1300: 1300px;
 
 @mixin device1300 {
-    @media (min-width: #{$device1100}) and (max-width: #{$device1300}) {
-        @content;
-    }
+  @media (min-width: #{$device1100}) and (max-width: #{$device1300}) {
+    @content;
+  }
 }
 
 $deviceMin1300: 1300px;
 $deviceMax1500: 1500px;
 
 @mixin device1500 {
-    @media (min-width: #{$deviceMin1300}) and (max-width: #{$deviceMax1500}) {
-        @content;
-    }
+  @media (min-width: #{$deviceMin1300}) and (max-width: #{$deviceMax1500}) {
+    @content;
+  }
 }
 
 // min width 951 and max width 1360px
 $responMin951: 951px;
 $responMax1360: 1360px;
 
-@mixin respon1360{
-    @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}){
-        @content;
-    }
+@mixin respon1360 {
+  @media (min-width: #{$responMin951}) and (max-width: #{$responMax1360}) {
+    @content;
+  }
 }
 // end min width 951 and max width 1360px
 
 // Min widht 750 and Max width 950
-$responMin750 : 750px;
+$responMin750: 750px;
 $responMax950: 950px;
 // END Min widht 750 and Max width 950
 
 // Min width 750 and max width 950
-@mixin respon950{
-    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
-        @content;
-    }
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
 }
 // END Min widht 750 and max width 950
 
 // Min widht 500 and Max width 750
-$respon750 : 750px;
+$respon750: 750px;
 $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 // Min widht 500 and Max width 750
 @mixin respon750 {
-    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
-        @content;
-    }
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
 }
 // END Min widht 500 and Max width 750
 
 // For Position Hover ALL Pulau
 .containerMapsNusantara {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .container-position-pulau-inMaps {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    height: 370px;
+    width: 1000px;
+    justify-content: center;
+    position: relative;
 
-    .container-position-pulau-inMaps{
-        display: flex;
-        height: 370px;
-        width: 1000px;
-        justify-content: center;
-        position: relative;
-    
-        @include respon1360(){
-            height: 260px;
-        }
-    
-        @include respon950(){
-            height: 260px;
-            width: 700px;
-        }
-    
-        @include respon750(){
-            height: 185px;
-            width: 500px;
-        }
-
-        @include smallPhone() {
-            width: 100vw;
-            height: 20vh;
-        }
-    
-        #mapsDefault{
-            z-index: -1;
-        }
-    
-        .imgMaps{
-            position: absolute;
-            object-fit: cover;
-            object-position: center;
-            height: auto;
-            // cursor: pointer;
-    
-            @include respon1360() {
-                height: auto;
-                width: 700px;
-            }
-    
-            @include respon950() {
-                height: auto;
-                width: 700px;
-            }
-    
-            @include respon750(){
-                width: 500px;
-            }
-    
-            @include smallPhone() {
-                height: auto;
-                width: 100%;
-            }
-            // @include smallPhoneDua() {
-            //     height: 20vh;
-            // }
-        }
-    
-        // Target Mouse 1
-        .target-mouse-1{
-            display: flex;
-            position: absolute;
-            height: 70px;
-            width: 70px;
-            background-color: transparent;
-            top: 20px;
-            left: 20px;
-            z-index: 111;
-            border-radius: 500px;
-            cursor: pointer;
-            text-decoration: none;
-    
-            @include device1300(){
-                height: 50px;
-                width: 50px;
-                left: 5px;
-                top: 10px;
-            }
-    
-            @include device1500(){
-                height: 60px;
-                width: 60px;
-                left: 10px;
-                top: 10px;
-            }
-        }
-        // END Target Mouse 1
-    
-        // Target Mouse 2
-        .target-mouse-2{
-            display: flex;
-            position: absolute;
-            height: 70px;
-            width: 70px;
-            background-color: transparent;
-            border-radius: 500px;
-            top: 90px;
-            left: 100px;
-            z-index: 111;
-            cursor: pointer;
-            text-decoration: none;
-    
-            @include device1300(){
-                height: 50px;
-                width: 50px;
-                left: 60px;
-                top: 50px;
-            }
-    
-            @include device1500(){
-                height: 60px;
-                width: 60px;
-                left: 70px;
-                top: 50px;
-            }
-        }
-        // END Target Mouse 2
-    
-        // Target Mouse 3
-        .target-mouse-3{
-            display: flex;
-            position: absolute;
-            height: 50px;
-            width: 50px;
-            background-color: transparent;
-            border-radius: 500px;
-            top: 20px;
-            left: 200px;
-            z-index: 111;
-        }
-        // END Target Mouse 3
-    
-        // map{
-        //     display: flex;
-        //     height: 100%;
-        //     width: 1000px;
-    
-        //     area{
-        //         width: 100%;
-        //     }
-        // }
+    @include respon1360() {
+      height: 260px;
     }
-    // END For Position Hover ALL Pulau
-    
-    // Title PETA PDIP
-    // .column-title-petaPDIP{
-    //     display: flex;
-    //     height: auto;
-    //     width: 1000px;
-    //     justify-content: flex-start;
-    //     padding: 20px 0 40px 0;
-    //     margin-top: 20px;
-    
-    //     .title-petaPDIP{
-    //         display: flex;
-    //         margin: 0;
-    //         font-weight: bold;
-    //     }
-    // }
-    // END Title PETA PDIP
-    
-    // For Botton Name Provinsi For on off Display Image Provinsi
-    .container-btn-name-provinsi{
-        display: flex;
-        height: 40vh;
+
+    @include respon950() {
+      height: 260px;
+      width: 700px;
+    }
+
+    @include respon750() {
+      height: 185px;
+      width: 500px;
+    }
+
+    @include smallPhone() {
+      width: 100vw;
+      height: 20vh;
+    }
+
+    #mapsDefault {
+      z-index: -1;
+    }
+
+    .imgMaps {
+      position: absolute;
+      object-fit: cover;
+      object-position: center;
+      height: auto;
+      width: 100%;
+      // cursor: pointer;
+
+      @include respon1360() {
+        height: auto;
+        width: 700px;
+      }
+
+      @include respon950() {
+        height: auto;
+        width: 700px;
+      }
+
+      @include respon750() {
+        width: 500px;
+      }
+
+      @include smallPhone() {
+        height: auto;
         width: 100%;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        margin: 3rem 0;
-    
-        @include respon950(){
-            width: 100%;
-            align-items: flex-start;
-            justify-content: flex-start;
-        }
-    
-        @include respon750(){
-            align-items: flex-start;
-            justify-content: flex-start;
-            height: 50vh;
-        }
-
-        @include smallPhone() {
-            height: auto;
-            width: 100%;
-            margin-left: 2rem;
-        }
-        
-        // .box-btn-name-provinsi{
-        //     display: flex;
-        //     flex-direction: column;
-        //     height: auto;
-    
-        //     @include respon950(){
-        //         width: 100%;
-        //         margin: 0 20px 0 0;
-        //         align-items: center;
-        //     }
-    
-        //     @include respon750(){
-        //         width: 100%;
-        //         margin-top: 20px;
-        //     }
-
-        //     @include smallPhone() {
-        //         align-items: center;
-        //         flex-direction: column;
-        //         flex-wrap: wrap;
-        //         padding: 0 2rem;
-        //     }
-
-            
-        // }
+      }
+      // @include smallPhoneDua() {
+      //     height: 20vh;
+      // }
     }
-    // END For Botton Name Provinsi For on off Display Image Provinsi
-    
-    
-    // .aceh{
+
+    // Target Mouse 1
+    .target-mouse-1 {
+      display: flex;
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      background-color: transparent;
+      border: 1px solid blue;
+      top: 1%;
+      left: 0%;
+      z-index: 111;
+      border-radius: 500px;
+      cursor: pointer;
+      text-decoration: none;
+
+      //   @include device1300() {
+      //     height: 50px;
+      //     width: 50px;
+      //     left: 5px;
+      //     top: 10px;
+      //   }
+
+      //   @include device1500() {
+      //     height: 60px;
+      //     width: 60px;
+      //     left: 10px;
+      //     top: 10px;
+      //   }
+    }
+    // END Target Mouse 1
+
+    // Target Mouse 2
+    .target-mouse-2 {
+      display: flex;
+      position: absolute;
+      height: 70px;
+      width: 70px;
+      background-color: transparent;
+      border-radius: 500px;
+      top: 10%;
+      left: 5%;
+      z-index: 111;
+      cursor: pointer;
+      text-decoration: none;
+      border: 1px solid blue;
+
+      //   @include device1300() {
+      //     height: 50px;
+      //     width: 50px;
+      //     left: 60px;
+      //     top: 50px;
+      //   }
+
+      //   @include device1500() {
+      //     height: 60px;
+      //     width: 60px;
+      //     left: 70px;
+      //     top: 50px;
+      //   }
+    }
+    // END Target Mouse 2
+    .target-mouse-3 {
+      display: flex;
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      background-color: transparent;
+      border-radius: 500px;
+      top: 25%;
+      left: 18%;
+      z-index: 111;
+      cursor: pointer;
+      text-decoration: none;
+      border: 1px solid blue;
+
+      //   @include device1300() {
+      //     height: 50px;
+      //     width: 50px;
+      //     left: 60px;
+      //     top: 50px;
+      //   }
+
+      //   @include device1500() {
+      //     height: 60px;
+      //     width: 60px;
+      //     left: 70px;
+      //     top: 50px;
+      //   }
+    }
+    // Target Mouse 3
+
+    // END Target Mouse 3
+  }
+  // END For Position Hover ALL Pulau
+
+  // Title PETA PDIP
+  // .column-title-petaPDIP{
+  //     display: flex;
+  //     height: auto;
+  //     width: 1000px;
+  //     justify-content: flex-start;
+  //     padding: 20px 0 40px 0;
+  //     margin-top: 20px;
+
+  //     .title-petaPDIP{
+  //         display: flex;
+  //         margin: 0;
+  //         font-weight: bold;
+  //     }
+  // }
+  // END Title PETA PDIP
+
+  // For Botton Name Provinsi For on off Display Image Provinsi
+  .container-btn-name-provinsi {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 3rem 0;
+
+    @include respon950() {
+      width: 100%;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    @include respon750() {
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 50vh;
+    }
+
+    @include smallPhone() {
+      height: auto;
+      width: 100%;
+      margin-left: 2rem;
+    }
+
+    // .box-btn-name-provinsi{
+    //     display: flex;
+    //     flex-direction: column;
     //     height: auto;
-    //     object-fit: cover;
-    //     object-position: center;
-    //     position: absolute;
+
+    //     @include respon950(){
+    //         width: 100%;
+    //         margin: 0 20px 0 0;
+    //         align-items: center;
+    //     }
+
+    //     @include respon750(){
+    //         width: 100%;
+    //         margin-top: 20px;
+    //     }
+
+    //     @include smallPhone() {
+    //         align-items: center;
+    //         flex-direction: column;
+    //         flex-wrap: wrap;
+    //         padding: 0 2rem;
+    //     }
+
     // }
-    
+  }
+  // END For Botton Name Provinsi For on off Display Image Provinsi
+
+  // .aceh{
+  //     height: auto;
+  //     object-fit: cover;
+  //     object-position: center;
+  //     position: absolute;
+  // }
 }
