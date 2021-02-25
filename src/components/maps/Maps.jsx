@@ -288,6 +288,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow17(false);
             }}
+            to="/dpd/34/kepulauanRiau"
           ></Link>
 
           {/* Btn RIAU */}
