@@ -24,21 +24,27 @@ const KMobile = ({ cat = 44, totalPage = 3, data = data }) => {
                 />
                 <li data-target="#carouselnih" data-slide-to={1} />
                 <li data-target="#carouselnih" data-slide-to={2} />
+                <li data-target="#carouselnih" data-slide-to={3} />
+                <li data-target="#carouselnih" data-slide-to={4} />
               </ol>
               <div className="carousel-inner">
                 {data.map((e, i) => (
                   <div
-                    className={`carousel-item ${i == 1 && "active"
-                      } itemKMobile`}
+                    className={`carousel-item ${
+                      i == 1 && "active"
+                    } itemKMobile`}
                     onClick={() => {
-                      window.location.href = `/detail-article/${e.id
-                        }/${e.title.replace(/\s/g, "-").toLowerCase()}`;
+                      window.location.href = `/detail-article/${
+                        e.id
+                      }/${e.title.replace(/\s/g, "-").toLowerCase()}`;
                     }}
                   >
                     <div
                       className="col-lg-6 bannerMobile"
                       style={{
-                        backgroundImage: e.path.includes("uploads") ? `url(https://data.pdiperjuangan.id/public/${e.path})` : `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
+                        backgroundImage: e.path.includes("uploads")
+                          ? `url(https://data.pdiperjuangan.id/public/${e.path})`
+                          : `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
                         backgroundSize: "cover",
                       }}
                     ></div>
@@ -72,7 +78,6 @@ const KMobile = ({ cat = 44, totalPage = 3, data = data }) => {
                     <i className="fas fa-angle-right"></i>
                   </div>
                 </a>
-
               </div>
             </div>
           </div>
