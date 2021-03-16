@@ -275,7 +275,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow33(false);
             }}
-            to="/dpd/7/SumateraUtara"
+            to="/dpd/7/Sumatera Utara"
           ></Link>
 
           {/* Btn KEP RIAU */}
@@ -288,7 +288,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow17(false);
             }}
-            to="/dpd/34/kepulauanRiau"
+            to="/dpd/34/kepulauan Riau"
           ></Link>
 
           {/* Btn RIAU */}
@@ -326,7 +326,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow31(false);
             }}
-            to="/dpd/100/sumateraBarat"
+            to="/dpd/100/sumatera Barat"
           ></Link>
 
           {/* Btn sumatera barat 2*/}
@@ -345,7 +345,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow31(false);
             }}
-            to="/dpd/100/sumateraBarat"
+            to="/dpd/100/sumatera Barat"
           ></Link>
 
           {/* Btn Jambi */}
@@ -383,7 +383,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow32(false);
             }}
-            to="/dpd/22/sumateraSelatan"
+            to="/dpd/22/sumatera Selatan"
           ></Link>
 
           {/* Btn bengkulu */}
@@ -423,7 +423,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow3(false);
             }}
-            to="/dpd/31/bangkaBelitung"
+            to="/dpd/31/bangka Belitung"
           ></Link>
 
           {/* Btn lampung */}
@@ -500,7 +500,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow9(false);
             }}
-            to="/dpd/37/jawaBarat"
+            to="/dpd/37/jawa Barat"
           ></Link>
 
           {/* Btn jawaTengah */}
@@ -520,7 +520,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow10(false);
             }}
-            to="/dpd/37/jawaTengah"
+            to="/dpd/37/jawa Tengah"
           ></Link>
 
           {/* Btn yogya */}
@@ -560,7 +560,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow11(false);
             }}
-            to="/dpd/43/jawaTimur"
+            to="/dpd/43/jawa Timur"
           ></Link>
 
           {/* Btn bali */}
@@ -600,7 +600,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow21(false);
             }}
-            to="/dpd/52/nusatengaraBarat"
+            to="/dpd/52/nusatengara Barat"
           ></Link>
 
           {/* Btn nusatengaraTimur */}
@@ -620,7 +620,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow22(false);
             }}
-            to="/dpd/55/nusatengaraTimur"
+            to="/dpd/55/nusatengara Timur"
           ></Link>
 
           {/* Btn maluku */}
@@ -658,7 +658,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow20(false);
             }}
-            to="/dpd/91/malukuUtara"
+            to="/dpd/91/maluku Utara"
           ></Link>
 
           {/* Btn papuaBarat */}
@@ -677,7 +677,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow24(false);
             }}
-            to="/dpd/94/papuaBarat"
+            to="/dpd/94/papua Barat"
           ></Link>
 
           {/* Btn papua */}
@@ -716,7 +716,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow14(false);
             }}
-            to="/dpd/61/kalimantanTengah"
+            to="/dpd/61/kalimantan Tengah"
           ></Link>
 
           {/* Btn kalimantanTengah */}
@@ -736,7 +736,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow14(false);
             }}
-            to="/dpd/61/kalimantanTengah"
+            to="/dpd/61/kalimantan Tengah"
           ></Link>
 
           {/* Btn kalimantanBarat */}
@@ -756,7 +756,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow12(false);
             }}
-            to="/dpd/103/kalimantanBarat"
+            to="/dpd/103/kalimantan Barat"
           ></Link>
 
           {/* Btn kalimantanBarat2 */}
@@ -776,7 +776,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow12(false);
             }}
-            to="/dpd/103/kalimantanBarat"
+            to="/dpd/103/kalimantan Barat"
           ></Link>
 
           {/* Btn kalimantanBarat2 */}
@@ -796,7 +796,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow12(false);
             }}
-            to="/dpd/103/kalimantanBarat"
+            to="/dpd/103/kalimantan Barat"
           ></Link>
 
           {/* Btn kalimantanSelatan */}
@@ -816,7 +816,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow13(false);
             }}
-            to="/dpd/64/kalimantanSelatan"
+            to="/dpd/64/kalimantan Selatan"
           ></Link>
 
           {/* Btn kalimantanTimur */}
@@ -836,7 +836,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow15(false);
             }}
-            to="/dpd/58/kalimantanTimur"
+            to="/dpd/58/kalimantan Timur"
           ></Link>
 
           {/* Btn kalimantanTimur2 */}
@@ -856,7 +856,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow15(false);
             }}
-            to="/dpd/58/kalimantanTimur"
+            to="/dpd/58/kalimantan Timur"
           ></Link>
 
           {/* Btn kalimantanTimur2 */}
@@ -876,7 +876,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow15(false);
             }}
-            to="/dpd/58/kalimantanTimur"
+            to="/dpd/58/kalimantan Timur"
           ></Link>
 
           {/* Btn kalimantanUtara */}
@@ -896,7 +896,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow16(false);
             }}
-            to="/dpd/67/kalimantanUtara"
+            to="/dpd/67/kalimantan Utara"
           ></Link>
 
           {/* Btn sulawesiBarat */}
@@ -916,7 +916,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow26(false);
             }}
-            to="/dpd/85/sulawesiBarat"
+            to="/dpd/85/sulawesi Barat"
           ></Link>
 
           {/* Btn sulawesiSelatan */}
@@ -936,7 +936,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow27(false);
             }}
-            to="/dpd/76/sulawesiSelatan"
+            to="/dpd/76/sulawesi Selatan"
           ></Link>
 
           {/* Btn sulawesiTenggara */}
@@ -956,7 +956,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow29(false);
             }}
-            to="/dpd/79/sulawesiTenggara"
+            to="/dpd/79/sulawesi Tenggara"
           ></Link>
 
           {/* Btn sulawesiTengah */}
@@ -975,7 +975,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow28(false);
             }}
-            to="/dpd/88/sulawesiTengah"
+            to="/dpd/88/sulawesi Tengah"
           ></Link>
 
           {/* Btn gorontalo */}
@@ -1015,7 +1015,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow30(false);
             }}
-            to="/dpd/70/sulawesiUtara"
+            to="/dpd/70/sulawesi Utara"
           ></Link>
         </div>
 
