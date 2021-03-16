@@ -19,7 +19,7 @@ const CardSearch = ({ cardSearchItem, id, path, title, paragrap }) => {
           
         );
       })} */}
-      <Link className="card-hasil-pencarian" to={`/detail-article/${id}/`}>
+      <a className="card-hasil-pencarian" href={`https://article.pdiperjuangan.id/detail-article/${title.replace(/ /g, "-").toLowerCase()}/${id}/`}>
         <img
           src={`https://data.pdiperjuangan.id/public/${path}`}
           alt=""
@@ -28,21 +28,17 @@ const CardSearch = ({ cardSearchItem, id, path, title, paragrap }) => {
 
         <div className="column-content-card">
           <div className="column-title-card">
-            <small className="title1-card">{title}</small>
-            {/* 
-                                  <small className="title2-card">
-                                    {title2}
-                                  </small> */}
+            <h5 className="title1-card">{title}</h5>
           </div>
 
-          <p className="txt-paragrap-card">
+          <small className="txt-paragrap-card">
             {add3Dots(
               paragrap.replace(/(<([^>]+)>)/gi, "").replace("&nbsp", ""),
               150
             )}
-          </p>
+          </small>
         </div>
-      </Link>
+      </a>
     </>
   );
 };

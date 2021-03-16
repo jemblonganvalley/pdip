@@ -324,6 +324,10 @@ $responMax1440: 1440px;
               }
             }
 
+            .textContentSatu:hover{
+              color: black;
+            }
+
             .col-md-3 {
               // margin: 20px 0;
               display: flex;
@@ -366,6 +370,13 @@ $responMax1440: 1440px;
               }
             }
           }
+
+          .box-mobileRow2:hover{
+            h5{
+              color: $colors;
+            }
+          }
+
         }
       }
 

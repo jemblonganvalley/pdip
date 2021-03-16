@@ -520,7 +520,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow10(false);
             }}
-            to="/dpd/37/jawa Tengah"
+            to="/dpd/40/jawa Tengah"
           ></Link>
 
           {/* Btn yogya */}
@@ -696,7 +696,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow23(false);
             }}
-            to="/dpd/88/papua"
+            to="/dpd/97/papua"
           ></Link>
 
           {/* Btn kalimantanTengah */}
@@ -975,7 +975,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow28(false);
             }}
-            to="/dpd/88/sulawesi Tengah"
+            to="/dpd/73/sulawesi Tengah"
           ></Link>
 
           {/* Btn gorontalo */}
