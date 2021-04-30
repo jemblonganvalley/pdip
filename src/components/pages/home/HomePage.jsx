@@ -197,7 +197,7 @@ const HomePage = () => {
                         i === 0
                           ? "/article/247/covid-19"
                           : i === 1
-                          ? "https://pdipkreatif.id/home"
+                          ? "https://pdipkreatif.id/"
                           : "/event"
                       }
                       target={i == 1 ? "_blank" : ""}
