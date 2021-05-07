@@ -16,7 +16,12 @@ const CardBeritaFoto = ({
       <div className="wrapper-cardBerFoto">
         {/* Row1 */}
         <div className="row1-col5-cardBerFoto">
-          <img src={pemilu16} className="box-img" alt="pemilihan umum"></img>
+          <img
+            loading="lazy"
+            src={pemilu16}
+            className="box-img"
+            alt="pemilihan umum"
+          ></img>
           <div className="box-jdl-row1">
             <h1>{title}</h1>
           </div>
@@ -26,6 +31,7 @@ const CardBeritaFoto = ({
         <Link to="/page2" className="row2-col5-cardBerFoto">
           {/* Column1 */}
           <img
+            loading="lazy"
             src={pemilu17}
             className="col1-row2-cardBerFoto"
             alt="pemilihan umum"

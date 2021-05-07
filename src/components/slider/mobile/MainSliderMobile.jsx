@@ -55,6 +55,7 @@ const MainSliderMobile = ({ value, cls }) => {
                   {/* Box Image */}
                   <div className="box-img-mainSlider-tablet">
                     <img
+                      loading="lazy"
                       src={`https://data.pdiperjuangan.id/public/${e.image}`}
                       alt={e.title}
                       className="img-home-mainSlider"
@@ -66,9 +67,7 @@ const MainSliderMobile = ({ value, cls }) => {
                   <div className="box-paragrap-mobile-mainSlider">
                     {/* Title For Mobile */}
                     <div className="box-red-mobile-mainSlider">
-                      <strong>
-                        {e.title}
-                      </strong>
+                      <strong>{e.title}</strong>
                       <small
                         style={{
                           color: "#fff",
@@ -104,6 +103,7 @@ const MainSliderMobile = ({ value, cls }) => {
           <div className="storeMobile">
             <Link href="">
               <img
+                loading="lazy"
                 src={playstore}
                 alt=""
                 className="logoStoreMobile logoStoreTablet1"
@@ -112,6 +112,7 @@ const MainSliderMobile = ({ value, cls }) => {
 
             <Link href="">
               <img
+                loading="lazy"
                 src={appstore}
                 alt=""
                 className="logoStoreMobile logoStoreTablet2"
@@ -127,7 +128,7 @@ const MainSliderMobile = ({ value, cls }) => {
           data-slide="prev"
         >
           <div className="arrowsLeft">
-            {/* <img src={arrowsLeft} alt="" /> */}
+            {/* <img loading="lazy" src={arrowsLeft} alt="" /> */}
             <i className="fas fa-angle-left"></i>
           </div>
         </a>
@@ -139,7 +140,7 @@ const MainSliderMobile = ({ value, cls }) => {
           data-slide="next"
         >
           <div className="arrowsRight">
-            {/* <img src={arrows} alt="" /> */}
+            {/* <img loading="lazy" src={arrows} alt="" /> */}
             <i className="fas fa-angle-right"></i>
           </div>
         </a>

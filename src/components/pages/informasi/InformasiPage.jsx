@@ -180,6 +180,7 @@ const InformasiPage = () => {
             >
               <Link component={anchorLink} linkTo="detail-article/658/lhkpn">
                 <img
+                  loading="lazy"
                   src={`https://data.pdiperjuangan.id/public/${configHome[4].value[0].image}`}
                   alt=""
                   className="imageHarta"
@@ -199,6 +200,7 @@ const InformasiPage = () => {
                 linkTo="article/227/laporan-keuangan"
               >
                 <img
+                  loading="lazy"
                   src={`https://data.pdiperjuangan.id/public/${configHome[4].value[1].image}`}
                   alt=""
                   className="imageHarta"
@@ -254,6 +256,7 @@ const InformasiPage = () => {
               <Link component={anchorLink} linkTo="/formpdi">
                 <div className="box-card-laporan">
                   <img
+                    loading="lazy"
                     src={`https://data.pdiperjuangan.id/public/${configHome[7].value[0].image}`}
                     alt=""
                     className="imageHarta"
@@ -273,6 +276,7 @@ const InformasiPage = () => {
               <Link component={anchorLink} linkTo="/formkeluhan">
                 <div className="box-card-laporan">
                   <img
+                    loading="lazy"
                     src={`https://data.pdiperjuangan.id/public/${configHome[7].value[1].image}`}
                     alt=""
                     className="imageHarta"

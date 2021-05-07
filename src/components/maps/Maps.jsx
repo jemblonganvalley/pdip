@@ -87,6 +87,7 @@ const Maps = () => {
         <div className="container-position-pulau-inMaps">
           {/* Maps Default */}
           <img
+            loading="lazy"
             src={maps}
             alt=""
             className="imgMaps"

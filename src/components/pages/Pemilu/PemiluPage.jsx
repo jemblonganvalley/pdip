@@ -114,7 +114,7 @@ const PemiluPage = () => {
             {/* <a className="col2-container-1-pemiluPage" href='/' > */}
             {/* Row1 */}
             {/* <div className="row1-col2-pemiluPage pemilihan">
-                <img
+                <img loading="lazy"
                   src={`https://data.pdiperjuangan.id/public/${configHome[4].value[0].image}`}
                   className="col1-row1-pemiluPage"
                 />
@@ -126,7 +126,7 @@ const PemiluPage = () => {
 
             {/* Row2 */}
             {/* <a className="row2-col2-pemiluPage pemilihan" href='https://www.pdipkreatif.com/home' target='_blank'>
-                  <img
+                  <img loading="lazy"
                     src={`https://data.pdiperjuangan.id/public/${configHome[4].value[1].image}`}
                     className="col1-row2-pemiluPage"
                   />
@@ -150,6 +150,7 @@ const PemiluPage = () => {
               >
                 <div className="box-card-laporan">
                   <img
+                    loading="lazy"
                     src={`https://data.pdiperjuangan.id/public/${configHome[4].value[0].image}`}
                     alt=""
                     className="imageHarta"
@@ -168,6 +169,7 @@ const PemiluPage = () => {
               >
                 <div className="box-card-laporan">
                   <img
+                    loading="lazy"
                     src={`https://data.pdiperjuangan.id/public/${configHome[4].value[1].image}`}
                     alt=""
                     className="imageHarta"

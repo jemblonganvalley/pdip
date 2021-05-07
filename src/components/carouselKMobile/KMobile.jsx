@@ -62,7 +62,7 @@ const KMobile = ({ cat = 44, totalPage = 3, data = data }) => {
                   data-slide="prev"
                 >
                   <div className="arrowsLeftKMobile">
-                    {/* <img src={arrowsLeft} alt="" /> */}
+                    {/* <img loading="lazy" src={arrowsLeft} alt="" /> */}
                     <i className="fas fa-angle-left"></i>
                   </div>
                 </a>
@@ -74,7 +74,7 @@ const KMobile = ({ cat = 44, totalPage = 3, data = data }) => {
                   data-slide="next"
                 >
                   <div className="arrowsRightKMobile">
-                    {/* <img src={arrows} alt="" /> */}
+                    {/* <img loading="lazy" src={arrows} alt="" /> */}
                     <i className="fas fa-angle-right"></i>
                   </div>
                 </a>

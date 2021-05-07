@@ -99,6 +99,7 @@ function NewNavbar({ token }) {
             <div className="container-fluid">
               <NavLink className="navbar-brand" to="/" activeClassName="brand">
                 <img
+                  loading="lazy"
                   src={logo}
                   alt=""
                   width="60"
@@ -206,6 +207,7 @@ function NewNavbar({ token }) {
             <div className="container-fluid">
               <NavLink className="navbar-brand" to="/" activeClassName="brand">
                 <img
+                  loading="lazy"
                   src={pdimobile}
                   alt=""
                   width="100"
@@ -460,6 +462,7 @@ function NewNavbar({ token }) {
             <div className="container-fluid">
               <NavLink className="navbar-brand" to="/" activeClassName="brand">
                 <img
+                  loading="lazy"
                   src={pdimobile}
                   alt=""
                   width="200"

@@ -232,7 +232,7 @@ const MusicMobile = ({ data }) => {
     <div className="musicPdiMobile">
       <div className="wrapperMobileMusic">
         <div className="headlineMusic">
-          <img src={laguPerjuangan} alt="" width="70" />
+          <img loading="lazy" src={laguPerjuangan} alt="" width="70" />
           <span className="headlineText">Lagu Perjuangan</span>
         </div>
         {/* <div className="judulMusic">
@@ -302,7 +302,7 @@ const MusicMobile = ({ data }) => {
                   textDecoration: "none",
                 }}
               >
-                <img src={downloadSatu} alt="" width="50" />
+                <img loading="lazy" src={downloadSatu} alt="" width="50" />
               </Link>
               <Link
                 as="a"
@@ -313,7 +313,7 @@ const MusicMobile = ({ data }) => {
                   textDecoration: "none",
                 }}
               >
-                <img src={downloadDua} alt="" width="50" />
+                <img loading="lazy" src={downloadDua} alt="" width="50" />
               </Link>
               <Link
                 as="a"
@@ -324,7 +324,7 @@ const MusicMobile = ({ data }) => {
                   textDecoration: "none",
                 }}
               >
-                <img src={downloadTiga} alt="" width="50" />
+                <img loading="lazy" src={downloadTiga} alt="" width="50" />
               </Link>
             </div>
             {/* END Download Music */}
@@ -396,7 +396,7 @@ const MusicMobile = ({ data }) => {
                   textDecoration: "none",
                 }}
               >
-                <img src={downloadSatu} alt="" width="50" />
+                <img loading="lazy" src={downloadSatu} alt="" width="50" />
               </Link>
               <Link
                 as="a"
@@ -407,7 +407,7 @@ const MusicMobile = ({ data }) => {
                   textDecoration: "none",
                 }}
               >
-                <img src={downloadDua} alt="" width="50" />
+                <img loading="lazy" src={downloadDua} alt="" width="50" />
               </Link>
               <Link
                 as="a"
@@ -418,7 +418,7 @@ const MusicMobile = ({ data }) => {
                   textDecoration: "none",
                 }}
               >
-                <img src={downloadTiga} alt="" width="50" />
+                <img loading="lazy" src={downloadTiga} alt="" width="50" />
               </Link>
             </div>
             {/* END Download Music */}
@@ -486,7 +486,7 @@ const MusicMobile = ({ data }) => {
                   textDecoration: "none",
                 }}
               >
-                <img src={downloadSatu} alt="" width="50" />
+                <img loading="lazy" src={downloadSatu} alt="" width="50" />
               </Link>
               <Link
                 as="a"
@@ -497,7 +497,7 @@ const MusicMobile = ({ data }) => {
                   textDecoration: "none",
                 }}
               >
-                <img src={downloadDua} alt="" width="50" />
+                <img loading="lazy" src={downloadDua} alt="" width="50" />
               </Link>
               <Link
                 as="a"
@@ -508,7 +508,7 @@ const MusicMobile = ({ data }) => {
                   textDecoration: "none",
                 }}
               >
-                <img src={downloadTiga} alt="" width="50" />
+                <img loading="lazy" src={downloadTiga} alt="" width="50" />
               </Link>
             </div>
             {/* END Download Music */}
@@ -575,7 +575,7 @@ const MusicMobile = ({ data }) => {
                   textDecoration: "none",
                 }}
               >
-                <img src={downloadSatu} alt="" width="50" />
+                <img loading="lazy" src={downloadSatu} alt="" width="50" />
               </Link>
               <Link
                 as="a"
@@ -586,7 +586,7 @@ const MusicMobile = ({ data }) => {
                   textDecoration: "none",
                 }}
               >
-                <img src={downloadDua} alt="" width="50" />
+                <img loading="lazy" src={downloadDua} alt="" width="50" />
               </Link>
               <Link
                 as="a"
@@ -597,7 +597,7 @@ const MusicMobile = ({ data }) => {
                   textDecoration: "none",
                 }}
               >
-                <img src={downloadTiga} alt="" width="50" />
+                <img loading="lazy" src={downloadTiga} alt="" width="50" />
               </Link>
             </div>
             {/* END Download Music */}

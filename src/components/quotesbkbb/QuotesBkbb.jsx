@@ -32,6 +32,7 @@ const QuotesBkbb = ({
         <div className="wrapperQuotesBkbb">
           <div className="kolumQuotesBkbb">
             <img
+              loading="lazy"
               src={backgroundImage}
               width="100%"
               style={{

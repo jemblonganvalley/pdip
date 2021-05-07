@@ -40,7 +40,7 @@ const CardSocialMedia = ({ imageUrl, title, url, top }) => {
             hashtag={hashtag}
             title={title}
           >
-            {/* <img src={FacebookButton} alt="" width="20" height="20" /> */}
+            {/* <img loading="lazy" src={FacebookButton} alt="" width="20" height="20" /> */}
             <i
               className="fa fa-facebook"
               style={{
@@ -60,7 +60,7 @@ const CardSocialMedia = ({ imageUrl, title, url, top }) => {
             hashtag={hashtag}
             title={title}
           >
-            {/* <img src={TwitterButton} alt="" width="20" height="20" /> */}
+            {/* <img loading="lazy" src={TwitterButton} alt="" width="20" height="20" /> */}
             <i
               className="fa fa-twitter"
               style={{
@@ -75,7 +75,7 @@ const CardSocialMedia = ({ imageUrl, title, url, top }) => {
 
           {/* WhatsApp Share */}
           <WhatsappShareButton url={url} title={title}>
-            {/* <img src={WhatsappButton} alt="" width="20" height="20" /> */}
+            {/* <img loading="lazy" src={WhatsappButton} alt="" width="20" height="20" /> */}
             <i
               className="fa fa-whatsapp"
               style={{
@@ -98,7 +98,13 @@ const CardSocialMedia = ({ imageUrl, title, url, top }) => {
             hashtag={hashtag}
             title={title}
           >
-            <img src={FacebookButton} alt="" width="20" height="20" />
+            <img
+              loading="lazy"
+              src={FacebookButton}
+              alt=""
+              width="20"
+              height="20"
+            />
           </FacebookShareButton>
           {/* END Facebook Share */}
 
@@ -113,13 +119,25 @@ const CardSocialMedia = ({ imageUrl, title, url, top }) => {
               marginRight: "40px",
             }}
           >
-            <img src={TwitterButton} alt="" width="20" height="20" />
+            <img
+              loading="lazy"
+              src={TwitterButton}
+              alt=""
+              width="20"
+              height="20"
+            />
           </TwitterShareButton>
           {/* END Twitter Share */}
 
           {/* WhatsApp Share */}
           <WhatsappShareButton url={url} title={title}>
-            <img src={WhatsappButton} alt="" width="20" height="20" />
+            <img
+              loading="lazy"
+              src={WhatsappButton}
+              alt=""
+              width="20"
+              height="20"
+            />
           </WhatsappShareButton>
           {/* END WhatsApp Share */}
         </div>

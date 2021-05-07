@@ -19,8 +19,14 @@ const CardSearch = ({ cardSearchItem, id, path, title, paragrap }) => {
           
         );
       })} */}
-      <a className="card-hasil-pencarian" href={`https://article.pdiperjuangan.id/detail-article/${title.replace(/ /g, "-").toLowerCase()}/${id}/`}>
+      <a
+        className="card-hasil-pencarian"
+        href={`https://article.pdiperjuangan.id/detail-article/${title
+          .replace(/ /g, "-")
+          .toLowerCase()}/${id}/`}
+      >
         <img
+          loading="lazy"
           src={`https://data.pdiperjuangan.id/public/${path}`}
           alt=""
           className="img-card"

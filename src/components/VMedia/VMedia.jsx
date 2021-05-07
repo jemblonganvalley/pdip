@@ -17,6 +17,7 @@ const VMedia = ({
       <div className="kolumVideo">
         {backgroundImage ? (
           <img
+            loading="lazy"
             src={backgroundImage}
             width="100%"
             style={{

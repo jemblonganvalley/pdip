@@ -57,6 +57,7 @@ const MainSlider = ({ value, cls }) => {
                   {/* Box Image */}
                   <div className="box-img-mainSlider">
                     <img
+                      loading="lazy"
                       src={`https://data.pdiperjuangan.id/public/${e.image}`}
                       alt={e.title}
                       className="img-home-mainSlider"
@@ -85,6 +86,7 @@ const MainSlider = ({ value, cls }) => {
               <div className="box-logo-info-iklan">
                 <Link href="">
                   <img
+                    loading="lazy"
                     src={playstore}
                     alt=""
                     className="logo-play-store logoAppGroup"
@@ -93,6 +95,7 @@ const MainSlider = ({ value, cls }) => {
 
                 <Link href="">
                   <img
+                    loading="lazy"
                     src={appstore}
                     alt=""
                     className="logo-app-store logoAppGroup"
@@ -113,7 +116,7 @@ const MainSlider = ({ value, cls }) => {
           data-slide="prev"
         >
           <div className="arrowsLeftDesktop">
-            {/* <img src={arrowsLeft} alt="" /> */}
+            {/* <img loading="lazy" src={arrowsLeft} alt="" /> */}
             <i className="fas fa-angle-left"></i>
           </div>
         </a>
@@ -125,7 +128,7 @@ const MainSlider = ({ value, cls }) => {
           data-slide="next"
         >
           <div className="arrowsRightDesktop">
-            {/* <img src={arrows} alt="" /> */}
+            {/* <img loading="lazy" src={arrows} alt="" /> */}
             <i className="fas fa-angle-right"></i>
           </div>
         </a>

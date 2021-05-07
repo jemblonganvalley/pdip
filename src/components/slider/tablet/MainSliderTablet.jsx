@@ -55,6 +55,7 @@ const MainSliderTablet = ({ value, cls }) => {
                   {/* Box Image */}
                   <div className="box-img-mainSlider-tablet">
                     <img
+                      loading="lazy"
                       src={`https://data.pdiperjuangan.id/public/${e.image}`}
                       alt={e.title}
                       className="img-home-mainSlider"
@@ -107,6 +108,7 @@ const MainSliderTablet = ({ value, cls }) => {
           <div className="storeTablet">
             <Link href="">
               <img
+                loading="lazy"
                 src={playstore}
                 alt=""
                 className="logoStoreTablet logoStoreTablet1"
@@ -115,6 +117,7 @@ const MainSliderTablet = ({ value, cls }) => {
 
             <Link href="">
               <img
+                loading="lazy"
                 src={appstore}
                 alt=""
                 className="logoStoreTablet logoStoreTablet2"
@@ -130,7 +133,7 @@ const MainSliderTablet = ({ value, cls }) => {
           data-slide="prev"
         >
           <div className="arrowsLeft">
-            {/* <img src={arrowsLeft} alt="" /> */}
+            {/* <img loading="lazy" src={arrowsLeft} alt="" /> */}
             <i className="fas fa-angle-left"></i>
           </div>
         </a>
@@ -142,7 +145,7 @@ const MainSliderTablet = ({ value, cls }) => {
           data-slide="next"
         >
           <div className="arrowsRight">
-            {/* <img src={arrows} alt="" /> */}
+            {/* <img loading="lazy" src={arrows} alt="" /> */}
             <i className="fas fa-angle-right"></i>
           </div>
         </a>

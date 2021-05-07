@@ -88,6 +88,7 @@ const DetailPengurus = () => {
             <div className="profilPengurus">
               <div className="kolum1">
                 <img
+                  loading="lazy"
                   src={
                     `https://data.pdiperjuangan.id/public/` + configHome.photo
                   }

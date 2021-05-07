@@ -190,6 +190,7 @@ const Page1 = () => {
                 {/* Section2 */}
                 {detailPage.path.includes("uploads") ? (
                   <img
+                    loading="lazy"
                     className="img-beritaPage1"
                     src={`https://data.pdiperjuangan.id/public/${detailPage.path}`}
                     alt={`${detailPage.path}`}

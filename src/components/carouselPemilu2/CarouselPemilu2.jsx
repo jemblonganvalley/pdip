@@ -24,6 +24,7 @@ const CarouselPemilu2 = ({ data }) => {
             <div className={i === 0 ? "carousel-item active" : "carousel-item"}>
               {/* Image2 */}
               <img
+                loading="lazy"
                 src={`https://data.pdiperjuangan.id/public/${e.image}`}
                 className="img-2"
                 onClick={() => {

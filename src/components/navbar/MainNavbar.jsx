@@ -86,6 +86,7 @@ const MainNavbar = ({ token }) => {
           <div className="container-fluid">
             <NavLink className="navbar-brand" to="/" activeClassName="brand">
               <img
+                loading="lazy"
                 src={logo}
                 alt=""
                 width="60"
@@ -188,6 +189,7 @@ const MainNavbar = ({ token }) => {
           <div className="container-fluid">
             <NavLink className="navbar-brand" to="/" activeClassName="brand">
               <img
+                loading="lazy"
                 src={logo}
                 alt=""
                 width="60"
@@ -287,6 +289,7 @@ const MainNavbar = ({ token }) => {
           <div className="container-fluid">
             <NavLink className="navbar-brand" to="/" activeClassName="brand">
               <img
+                loading="lazy"
                 src={pdimobile}
                 alt=""
                 width="60"

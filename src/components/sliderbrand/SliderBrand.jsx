@@ -67,37 +67,52 @@ const SliderBrand = () => {
           className="containerImg"
           to="/detail-article/997/badan-saksi-pemilu-nasional"
         >
-          <img src={Bspn} alt="" className="hover customSize" />
+          <img loading="lazy" src={Bspn} alt="" className="hover customSize" />
         </Link>
         <Link
           className="containerImg"
           to="/detail-article/994/banteng-muda-indonesia"
         >
-          <img src={BMI} alt="" className="hover customSize" />
+          <img loading="lazy" src={BMI} alt="" className="hover customSize" />
         </Link>
         <Link
           className="containerImg"
           to="/detail-article/991/badan-penanggulangan-bencana"
         >
-          <img src={Baguna} alt="" className="hover customSize" />
+          <img
+            loading="lazy"
+            src={Baguna}
+            alt=""
+            className="hover customSize"
+          />
         </Link>
         <Link
           className="containerImg"
           to="/detail-article/988/badan-kebudayaan-nasional"
         >
-          <img src={BKN} alt="" className="hover customSize" />
+          <img loading="lazy" src={BKN} alt="" className="hover customSize" />
         </Link>
         <Link
           className="containerImg"
           to="/detail-article/985/baitul-muslimin-indonesia"
         >
-          <img src={Bamusi} alt="" className="hover customSize" />
+          <img
+            loading="lazy"
+            src={Bamusi}
+            alt=""
+            className="hover customSize"
+          />
         </Link>
         <Link className="containerImg" to="">
-          <img src={repdem} alt="" className="hover customSize" />
+          <img
+            loading="lazy"
+            src={repdem}
+            alt=""
+            className="hover customSize"
+          />
         </Link>
         <Link className="containerImg" to="">
-          <img src={TMP} alt="" className="hover customSize" />
+          <img loading="lazy" src={TMP} alt="" className="hover customSize" />
         </Link>
       </Slider>
     </div>

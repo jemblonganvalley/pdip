@@ -208,6 +208,7 @@ const HomePage = () => {
                       <div className="customBorder">
                         <div className="itemImageCovid">
                           <img
+                            loading="lazy"
                             src={`https://data.pdiperjuangan.id/public/${e.image}`}
                             alt=""
                             className="imageCovid"
@@ -224,7 +225,12 @@ const HomePage = () => {
                 <a href="https://www.bmkg.go.id/" target="#blank">
                   <div className="customBorder">
                     <div className="itemImageCovid">
-                      <img src={BMKG} alt="" className="imageCovid" />
+                      <img
+                        loading="lazy"
+                        src={BMKG}
+                        alt=""
+                        className="imageCovid"
+                      />
                     </div>
                     <div className="itemTextCovid">
                       <h5 style={{ color: "#fff" }}>Info BMKG</h5>
