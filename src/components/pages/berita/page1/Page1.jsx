@@ -14,7 +14,7 @@ const Page1 = () => {
   const refresher = useStoreState((state) => state.refresher);
   const webUrl = "https://article.pdiperjuangan.id";
   let { id, slug } = useParams();
-  window.location.href = `${webUrl}/detail-article/${slug}/${id}`;
+  // window.location.href = `${webUrl}/detail-article/${slug}/${id}`;
   const [detailPage, setDetailPage] = useState();
 
   const getDetailPage = async () => {
@@ -46,7 +46,7 @@ const Page1 = () => {
   };
 
   useEffect(() => {
-    // getDetailPage();
+    getDetailPage();
     window.scrollTo(0, 0);
     // setTimeout(() => {
     //   setMissing(true);

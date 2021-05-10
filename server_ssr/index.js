@@ -12,6 +12,7 @@ const multimedia = require("./controllers/multimedia_controller");
 const bkbb = require("./controllers/bkbb_controller");
 const informasi = require("./controllers/informasiPublik_controller");
 const pemilu = require("./controllers/pemilu_controller");
+const article = require("./controllers/article_controller");
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, "../build")));
@@ -37,6 +38,7 @@ app.use(multimedia);
 app.use(bkbb);
 app.use(informasi);
 app.use(pemilu);
+app.use(article);
 
 app.get("/test", (req, res) => {
   fetch("https://jsonplaceholder.typicode.com/users", {

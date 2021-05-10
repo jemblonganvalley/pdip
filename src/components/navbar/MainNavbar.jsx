@@ -7,6 +7,7 @@ import { useMediaQuery } from "react-responsive";
 import pdimobile from "../../img/pdimobile.svg";
 import { action, thunk, useStoreActions, useStoreState } from "easy-peasy";
 import "../../database/globalState";
+import { FakeNavLink } from "../fakeNavlink/FakeNavlink";
 
 const MainNavbar = ({ token }) => {
   let [show, setShow] = useState(false);
@@ -84,7 +85,11 @@ const MainNavbar = ({ token }) => {
           }}
         >
           <div className="container-fluid">
-            <NavLink className="navbar-brand" to="/" activeClassName="brand">
+            <FakeNavLink
+              className="navbar-brand"
+              to="/"
+              activeClassName="brand"
+            >
               <img
                 loading="lazy"
                 src={logo}
@@ -93,7 +98,7 @@ const MainNavbar = ({ token }) => {
                 className="d-inline-block align-center active"
                 loading="lazy"
               />
-            </NavLink>
+            </FakeNavLink>
             <button
               name="btn_menu"
               className="navbar-toggler"
@@ -126,13 +131,13 @@ const MainNavbar = ({ token }) => {
                       setShow("");
                     }}
                   >
-                    <NavLink
+                    <FakeNavLink
                       className="nav-link"
                       to={"/" + e.replace(/\s/g, "-").toLowerCase()}
                       activeClassName="active"
                     >
                       {e}
-                    </NavLink>
+                    </FakeNavLink>
 
                     {show === e && (
                       <DropDown menuItem={Object.values(menu)} listIndex={i} />
@@ -187,7 +192,11 @@ const MainNavbar = ({ token }) => {
           }}
         >
           <div className="container-fluid">
-            <NavLink className="navbar-brand" to="/" activeClassName="brand">
+            <FakeNavLink
+              className="navbar-brand"
+              to="/"
+              activeClassName="brand"
+            >
               <img
                 loading="lazy"
                 src={logo}
@@ -196,7 +205,7 @@ const MainNavbar = ({ token }) => {
                 className="d-inline-block align-center active"
                 loading="lazy"
               />
-            </NavLink>
+            </FakeNavLink>
             <button
               name="btn_menu"
               className="navbar-toggler"
@@ -229,13 +238,13 @@ const MainNavbar = ({ token }) => {
                       setShow("");
                     }}
                   >
-                    <NavLink
+                    <FakeNavLink
                       className="nav-link"
                       to={"/" + e.replace(/\s/g, "-").toLowerCase()}
                       activeClassName="active"
                     >
                       {e}
-                    </NavLink>
+                    </FakeNavLink>
 
                     {show === e && (
                       <DropDown menuItem={Object.values(menu)} listIndex={i} />
@@ -287,7 +296,11 @@ const MainNavbar = ({ token }) => {
           }}
         >
           <div className="container-fluid">
-            <NavLink className="navbar-brand" to="/" activeClassName="brand">
+            <FakeNavLink
+              className="navbar-brand"
+              to="/"
+              activeClassName="brand"
+            >
               <img
                 loading="lazy"
                 src={pdimobile}
@@ -299,7 +312,7 @@ const MainNavbar = ({ token }) => {
                   setCollapse1(false);
                 }}
               />
-            </NavLink>
+            </FakeNavLink>
             <button
               name="btn_menu"
               className="navbar-toggler"
@@ -336,7 +349,7 @@ const MainNavbar = ({ token }) => {
                       setShow(e.name);
                     }}
                   >
-                    <NavLink
+                    <FakeNavLink
                       className="nav-link"
                       to={"/" + e.replace(/\s/g, "-").toLowerCase()}
                       activeClassName="active"
@@ -345,7 +358,7 @@ const MainNavbar = ({ token }) => {
                       }}
                     >
                       {e}
-                    </NavLink>
+                    </FakeNavLink>
 
                     {show === e && (
                       <DropDown menuItem={Object.values(menu)} listIndex={i} />

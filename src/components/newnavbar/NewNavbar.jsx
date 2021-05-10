@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive";
 import { useStoreActions, useStoreState } from "easy-peasy";
 import "../../database/globalState";
 import { Link, NavLink, Redirect } from "react-router-dom";
+import { FakeNavLink } from "../fakeNavlink/FakeNavlink";
 
 import DropDown from "../navbar/DropDown";
 
@@ -97,7 +98,11 @@ function NewNavbar({ token }) {
             }}
           >
             <div className="container-fluid">
-              <NavLink className="navbar-brand" to="/" activeClassName="brand">
+              <FakeNavLink
+                className="navbar-brand"
+                to="/"
+                activeClassName="brand"
+              >
                 <img
                   loading="lazy"
                   src={logo}
@@ -106,7 +111,7 @@ function NewNavbar({ token }) {
                   className="d-inline-block align-center active"
                   loading="lazy"
                 />
-              </NavLink>
+              </FakeNavLink>
               <button
                 name="btn_menu"
                 className="navbar-toggler"
@@ -138,13 +143,13 @@ function NewNavbar({ token }) {
                         setShow("");
                       }}
                     >
-                      <NavLink
+                      <FakeNavLink
                         className="nav-link"
                         to={"/" + e.replace(/\s/g, "-").toLowerCase()}
                         activeClassName="active"
                       >
                         {e}
-                      </NavLink>
+                      </FakeNavLink>
 
                       {show === e && (
                         <DropDown
@@ -205,7 +210,11 @@ function NewNavbar({ token }) {
             }}
           >
             <div className="container-fluid">
-              <NavLink className="navbar-brand" to="/" activeClassName="brand">
+              <FakeNavLink
+                className="navbar-brand"
+                to="/"
+                activeClassName="brand"
+              >
                 <img
                   loading="lazy"
                   src={pdimobile}
@@ -217,7 +226,7 @@ function NewNavbar({ token }) {
                     setCollapse1(false);
                   }}
                 />
-              </NavLink>
+              </FakeNavLink>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -270,7 +279,7 @@ function NewNavbar({ token }) {
                             alignItems: "center",
                           }}
                         >
-                          <NavLink
+                          <FakeNavLink
                             className="nav-link"
                             to={"/" + e.replace(/\s/g, "-").toLowerCase()}
                             activeClassName="active"
@@ -279,7 +288,7 @@ function NewNavbar({ token }) {
                             }}
                           >
                             {e}
-                          </NavLink>
+                          </FakeNavLink>
                           <i
                             className="fas fa-angle-down"
                             data-toggle="collapse"
@@ -329,7 +338,7 @@ function NewNavbar({ token }) {
                               transition: "0.5s ease-in-out",
                             }}
                           >
-                            <Link
+                            <FakeNavLink
                               className="page-menu-drop-mobile"
                               style={{
                                 color: "#f3f3f3",
@@ -413,7 +422,7 @@ function NewNavbar({ token }) {
                               }
                             >
                               {e.title}
-                            </Link>
+                            </FakeNavLink>
                           </div>
                         ))}
                       </div>
@@ -460,7 +469,11 @@ function NewNavbar({ token }) {
             }}
           >
             <div className="container-fluid">
-              <NavLink className="navbar-brand" to="/" activeClassName="brand">
+              <FakeNavLink
+                className="navbar-brand"
+                to="/"
+                activeClassName="brand"
+              >
                 <img
                   loading="lazy"
                   src={pdimobile}
@@ -472,7 +485,7 @@ function NewNavbar({ token }) {
                     setCollapse1(false);
                   }}
                 />
-              </NavLink>
+              </FakeNavLink>
               <button
                 name="btn_menu"
                 className="navbar-toggler"
@@ -532,7 +545,7 @@ function NewNavbar({ token }) {
                             alignItems: "center",
                           }}
                         >
-                          <NavLink
+                          <FakeNavLink
                             className="nav-link"
                             to={"/" + e.replace(/\s/g, "-").toLowerCase()}
                             activeClassName="active"
@@ -541,7 +554,7 @@ function NewNavbar({ token }) {
                             }}
                           >
                             {e}
-                          </NavLink>
+                          </FakeNavLink>
                           <i
                             className="fas fa-angle-down"
                             data-toggle="collapse"

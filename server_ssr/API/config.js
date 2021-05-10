@@ -20,4 +20,23 @@ const config = async (page) => {
     });
 };
 
-module.exports = { config };
+const detailArticle = async (id, slug) => {
+  const tk = await token();
+  return await fetch(`https://data.pdiperjuangan.id/api/blog/find/?id=${id}`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+      Authorization: `Bearer ${tk}`,
+    },
+  })
+    .then((result) => result.json())
+    .then((data) => {
+      return data;
+    })
+    .catch((err) => {
+      return err;
+    });
+};
+
+module.exports = { config, detailArticle };

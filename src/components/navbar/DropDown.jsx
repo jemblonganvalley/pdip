@@ -2,6 +2,7 @@ import React from "react";
 import "./dropDown.scss";
 import { Link, NavLink } from "react-router-dom";
 import { useStoreActions } from "easy-peasy";
+import { FakeNavLink } from "../fakeNavlink/FakeNavlink";
 
 const DropDown = ({ menuItem, listIndex }) => {
   const setRefresher = useStoreActions((action) => action.setRefresher);
@@ -23,7 +24,7 @@ const DropDown = ({ menuItem, listIndex }) => {
 
       <span></span>
       {menuItem[listIndex].map((e, i) => (
-        <NavLink
+        <FakeNavLink
           className="list-group-item"
           key={i}
           to={
@@ -102,7 +103,7 @@ const DropDown = ({ menuItem, listIndex }) => {
           }}
         >
           {e.title}
-        </NavLink>
+        </FakeNavLink>
       ))}
 
       <div className="arrow"></div>
