@@ -12,7 +12,7 @@ import Wait from "../../../wait/Wait";
 
 const Page1 = () => {
   const refresher = useStoreState((state) => state.refresher);
-  const webUrl = "https://article.pdiperjuangan.id";
+  const webUrl = "debian.jvalleyserver.net";
   let { id, slug } = useParams();
   // window.location.href = `${webUrl}/detail-article/${slug}/${id}`;
   const [detailPage, setDetailPage] = useState();
@@ -146,8 +146,8 @@ const Page1 = () => {
                         title={detailPage.title}
                         url={
                           detailPage.path.includes("uploads")
-                            ? `https://article.pdiperjuangan.id/detail-article/${slug}/${id}`
-                            : `https://pdiperjuangan.id/video/${id}`
+                            ? `https://${webUrl}/detail-article/${slug}/${id}`
+                            : `https://${webUrl}/video/${id}`
                         }
                       />
                     </div>
