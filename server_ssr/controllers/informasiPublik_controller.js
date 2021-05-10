@@ -9,7 +9,8 @@ informasi.get("/informasi-publik", (req, res) => {
       meta_keyword: result.query.set.meta_keyword,
       meta_description: result.query.set.meta_description,
       meta_url: "https://pdiperjuangan.id/informasi-publik",
-      meta_image: "",
+      meta_image:
+        "https://data.pdiperjuangan.id/public//uploads/page/10122020060023NeR.jpeg",
     });
   });
 });
