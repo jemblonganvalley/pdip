@@ -34,7 +34,10 @@ const detailArticle = async (id, slug) => {
     .then((data) => {
       return {
         ...data.query,
-        description: data.query.description.substr(0, 200),
+        description: data.query.description
+          .split("\n")[0]
+          .replace("<p>", "")
+          .replace("</p>", ""),
       };
     })
     .catch((err) => {
