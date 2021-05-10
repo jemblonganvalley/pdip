@@ -12,8 +12,9 @@ import Wait from "../../../wait/Wait";
 
 const Page1 = () => {
   const refresher = useStoreState((state) => state.refresher);
-
-  let { id } = useParams();
+  const webUrl = "https://article.pdiperjuangan.id";
+  let { id, slug } = useParams();
+  window.location.href = `${webUrl}/detail-article/${slug}/${id}`;
   const [detailPage, setDetailPage] = useState();
 
   const getDetailPage = async () => {
@@ -45,8 +46,11 @@ const Page1 = () => {
   };
 
   useEffect(() => {
-    getDetailPage();
+    // getDetailPage();
     window.scrollTo(0, 0);
+    // setTimeout(() => {
+    //   setMissing(true);
+    // }, 5000);
   }, [refresher]);
 
   return (
@@ -110,6 +114,7 @@ const Page1 = () => {
                 <div className="section1-col1-beritaPage1">
                   <h2 className="txt-title">{detailPage.title}</h2>
                 </div>
+
                 {/* END Section1 */}
 
                 {/* Section2 */}
@@ -133,6 +138,21 @@ const Page1 = () => {
                       {detailPage.author} |{" "}
                       {detailPage.created_at.split(" ")[0]}
                     </small>
+                    {/* SOCIAL MEDIA ATAS */}
+                    <div className="box-medsos-beritaPage1">
+                      <CardSocialMedia
+                        top
+                        imageUrl={detailPage.path}
+                        title={detailPage.title}
+                        url={
+                          detailPage.path.includes("uploads")
+                            ? `https://article.pdiperjuangan.id/detail-article/${slug}/${id}`
+                            : `https://pdiperjuangan.id/video/${id}`
+                        }
+                      />
+                    </div>
+                    {/* END SOCIAL MEDIA ATAS */}
+
                     <div className="garis-panjang-tipis">
                       <div className="garis-merah-tebal"></div>
                     </div>
@@ -169,6 +189,7 @@ const Page1 = () => {
                 {/* Section2 */}
                 {detailPage.path.includes("uploads") ? (
                   <img
+                    loading="lazy"
                     className="img-beritaPage1"
                     src={`https://data.pdiperjuangan.id/public/${detailPage.path}`}
                     alt={`${detailPage.path}`}
@@ -222,8 +243,8 @@ const Page1 = () => {
                       title={detailPage.title}
                       url={
                         detailPage.path.includes("uploads")
-                          ? `https://article.pdiperjuangan.id/berita/${id}`
-                          : `https://article.pdiperjuangan.id/video/${id}`
+                          ? `https://article.pdiperjuangan.id/detail-article/${slug}/${id}`
+                          : `https://pdiperjuangan.id/multimedia/${id}/${slug}`
                       }
                     />
                   </div>

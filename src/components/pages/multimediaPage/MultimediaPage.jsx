@@ -35,6 +35,9 @@ const MultimediaPage = () => {
           "Content-Type": "application/json",
           Authorization: `Bearer ${data.token}`,
         },
+        body: JSON.stringify({
+          filter: [{ key: "blog.status", val: "publish" }],
+        }),
       }
     );
 
@@ -112,7 +115,7 @@ const MultimediaPage = () => {
                 className="buttonSubscribe"
                 href="https://www.youtube.com/user/DPPPDIPerjuangan?sub_confirmation=1"
               >
-                <img src={Subscribe} alt="" width="150" />
+                <img loading="lazy" src={Subscribe} alt="" width="150" />
               </a>
             </div>
           </div>

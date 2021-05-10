@@ -91,6 +91,7 @@ const Dpd = () => {
             <div className="profilDpd">
               <div className="kolum1">
                 <img
+                  loading="lazy"
                   src={`https://data.pdiperjuangan.id/public/${configHome.photo_one}`}
                   alt=""
                   style={{

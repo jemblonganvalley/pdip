@@ -212,7 +212,12 @@ const MusicPdi = ({
                       style={{ cursor: "pointer" }}
                     >
                       <div className="partitur downloadContent">
-                        <img src={downloadSatu} alt="" width="35" />
+                        <img
+                          loading="lazy"
+                          src={downloadSatu}
+                          alt=""
+                          width="35"
+                        />
                         <span className="downloadSpan">Unduh Lagu</span>
                       </div>
                     </Link>
@@ -224,7 +229,12 @@ const MusicPdi = ({
                       style={{ cursor: "pointer" }}
                     >
                       <div className="minusOn downloadContent">
-                        <img src={downloadDua} alt="" width="35" />
+                        <img
+                          loading="lazy"
+                          src={downloadDua}
+                          alt=""
+                          width="35"
+                        />
                         <span className="downloadSpan">Minus One</span>
                       </div>
                     </Link>
@@ -236,7 +246,12 @@ const MusicPdi = ({
                       style={{ cursor: "pointer" }}
                     >
                       <div className="minusOn downloadContent">
-                        <img src={downloadTiga} alt="" width="35" />
+                        <img
+                          loading="lazy"
+                          src={downloadTiga}
+                          alt=""
+                          width="35"
+                        />
                         <span className="downloadSpan">Partitur</span>
                       </div>
                     </Link>
@@ -278,7 +293,7 @@ const MusicPdi = ({
           {/* PLAYLIST */}
           <div className=" col-md-4 musicList">
             <div className="headersList">
-              <img src={laguPerjuangan} alt="" width="50" />
+              <img loading="lazy" src={laguPerjuangan} alt="" width="50" />
               <div className="textHeader">
                 <h4>
                   Lagu

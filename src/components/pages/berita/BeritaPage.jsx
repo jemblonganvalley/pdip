@@ -41,6 +41,9 @@ const BeritaPage = () => {
           "Content-Type": "application/json",
           Authorization: `Bearer ${data.token}`,
         },
+        body: JSON.stringify({
+          filter: [{ key: "blog.status", val: "publish" }],
+        }),
       }
     );
 
@@ -223,6 +226,7 @@ const BeritaPage = () => {
 
               {/* Column2 CARD BERITA DAERAH*/}
               <div className="cardContainer" id="card-berita">
+                {console.log(configHome[7].value)}
                 {configHome[7].value.map((e, i) => {
                   return (
                     <Cards

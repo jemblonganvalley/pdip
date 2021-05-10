@@ -87,6 +87,7 @@ const Maps = () => {
         <div className="container-position-pulau-inMaps">
           {/* Maps Default */}
           <img
+            loading="lazy"
             src={maps}
             alt=""
             className="imgMaps"
@@ -261,6 +262,7 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow1(false);
             }}
+            to={`/dpd/4/DI Aceh`}
           ></Link>
           {/* END Bali */}
 
@@ -274,19 +276,751 @@ const Maps = () => {
             onMouseLeave={() => {
               setShow33(false);
             }}
+            to="/dpd/7/Sumatera Utara"
           ></Link>
-          {/* END Bali */}
-          {/* For Button Trigger onMouse And OnMouseLeave to Provinsi */}
-        </div>
-        {/* END For Position Hover ALL Pulau */}
 
-        {/* Title PETA PDIP */}
-        {/* <div className="column-title-petaPDIP">
-            <h2 className="title-petaPDIP">
-                PETA PDIP KREATIF
-            </h2>
-        </div> */}
-        {/* EDN Title PETA PDIP */}
+          {/* Btn KEP RIAU */}
+          <Link
+            className="target-mouse-3"
+            id="btn-kepulauanRiau"
+            onMouseOver={() => {
+              setShow17(true);
+            }}
+            onMouseLeave={() => {
+              setShow17(false);
+            }}
+            to="/dpd/34/kepulauan Riau"
+          ></Link>
+
+          {/* Btn RIAU */}
+          <Link
+            style={{
+              top: "20%",
+              left: "11%",
+              width: "70px",
+              height: "70px",
+            }}
+            className="target-mouse-3"
+            id="btn-riau"
+            onMouseOver={() => {
+              setShow25(true);
+            }}
+            onMouseLeave={() => {
+              setShow25(false);
+            }}
+            to="/dpd/16/riau"
+          ></Link>
+
+          {/* Btn sumatera barat */}
+          <Link
+            style={{
+              top: "32%",
+              left: "8%",
+              width: "40px",
+              height: "40px",
+            }}
+            className="target-mouse-3"
+            id="btn-sumateraBarat"
+            onMouseOver={() => {
+              setShow31(true);
+            }}
+            onMouseLeave={() => {
+              setShow31(false);
+            }}
+            to="/dpd/100/sumatera Barat"
+          ></Link>
+
+          {/* Btn sumatera barat 2*/}
+          <Link
+            style={{
+              left: "11%",
+              top: "38%",
+              width: "40px",
+              height: "40px",
+            }}
+            className="target-mouse-3"
+            id="btn-sumateraBarat"
+            onMouseOver={() => {
+              setShow31(true);
+            }}
+            onMouseLeave={() => {
+              setShow31(false);
+            }}
+            to="/dpd/100/sumatera Barat"
+          ></Link>
+
+          {/* Btn Jambi */}
+          <Link
+            style={{
+              left: "15%",
+              top: "38%",
+              width: "60px",
+              height: "40px",
+            }}
+            className="target-mouse-3"
+            id="btn-jambi"
+            onMouseOver={() => {
+              setShow8(true);
+            }}
+            onMouseLeave={() => {
+              setShow8(false);
+            }}
+            to="/dpd/19/jambi"
+          ></Link>
+
+          {/* Btn sumateraSelatan */}
+          <Link
+            style={{
+              left: "17%",
+              top: "48%",
+              width: "70px",
+              height: "40px",
+            }}
+            className="target-mouse-3"
+            id="btn-sumateraSelatan"
+            onMouseOver={() => {
+              setShow32(true);
+            }}
+            onMouseLeave={() => {
+              setShow32(false);
+            }}
+            to="/dpd/22/sumatera Selatan"
+          ></Link>
+
+          {/* Btn bengkulu */}
+          <Link
+            style={{
+              left: "12.5%",
+              top: "56%",
+              width: "80px",
+              height: "15px",
+              transform: "rotate(45deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-bengkulu"
+            onMouseOver={() => {
+              setShow5(true);
+            }}
+            onMouseLeave={() => {
+              setShow5(false);
+            }}
+            to="/dpd/28/bengkulu"
+          ></Link>
+
+          {/* Btn bangkaBelitung */}
+          <Link
+            style={{
+              left: "21%",
+              top: "45%",
+              width: "80px",
+              height: "25px",
+              transform: "rotate(45deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-bangkaBelitung"
+            onMouseOver={() => {
+              setShow3(true);
+            }}
+            onMouseLeave={() => {
+              setShow3(false);
+            }}
+            to="/dpd/31/bangka Belitung"
+          ></Link>
+
+          {/* Btn lampung */}
+          <Link
+            style={{
+              left: "20%",
+              top: "59%",
+              width: "42px",
+              height: "42px",
+            }}
+            className="target-mouse-3"
+            id="btn-lampung"
+            onMouseOver={() => {
+              setShow18(true);
+            }}
+            onMouseLeave={() => {
+              setShow18(false);
+            }}
+            to="/dpd/25/lampung"
+          ></Link>
+
+          {/* Btn banten */}
+          <Link
+            style={{
+              left: "22%",
+              top: "69%",
+              width: "35px",
+              height: "35px",
+            }}
+            className="target-mouse-3"
+            id="btn-banten"
+            onMouseOver={() => {
+              setShow4(true);
+            }}
+            onMouseLeave={() => {
+              setShow4(false);
+            }}
+            to="/dpd/49/banten"
+          ></Link>
+
+          {/* Btn jakarta */}
+          <Link
+            style={{
+              left: "25%",
+              top: "68%",
+              width: "20px",
+              height: "20px",
+            }}
+            className="target-mouse-3"
+            id="btn-jakarta"
+            onMouseOver={() => {
+              setShow7(true);
+            }}
+            onMouseLeave={() => {
+              setShow7(false);
+            }}
+            to="/dpd/10/jakarta"
+          ></Link>
+
+          {/* Btn jawaBarat */}
+          <Link
+            style={{
+              left: "25%",
+              top: "72%",
+              width: "55px",
+              height: "35px",
+              transform: "rotate(15deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-jawaBarat"
+            onMouseOver={() => {
+              setShow9(true);
+            }}
+            onMouseLeave={() => {
+              setShow9(false);
+            }}
+            to="/dpd/37/jawa Barat"
+          ></Link>
+
+          {/* Btn jawaTengah */}
+          <Link
+            style={{
+              left: "30%",
+              top: "72%",
+              width: "55px",
+              height: "35px",
+              transform: "rotate(15deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-jawaTengah"
+            onMouseOver={() => {
+              setShow10(true);
+            }}
+            onMouseLeave={() => {
+              setShow10(false);
+            }}
+            to="/dpd/40/jawa Tengah"
+          ></Link>
+
+          {/* Btn yogya */}
+          <Link
+            style={{
+              left: "33%",
+              top: "80%",
+              width: "20px",
+              height: "20px",
+              transform: "rotate(15deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-yogya"
+            onMouseOver={() => {
+              setShow34(true);
+            }}
+            onMouseLeave={() => {
+              setShow34(false);
+            }}
+            to="/dpd/46/yogya"
+          ></Link>
+
+          {/* Btn jawaTimur */}
+          <Link
+            style={{
+              left: "35%",
+              top: "75%",
+              width: "74px",
+              height: "35px",
+              transform: "rotate(15deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-jawaTimur"
+            onMouseOver={() => {
+              setShow11(true);
+            }}
+            onMouseLeave={() => {
+              setShow11(false);
+            }}
+            to="/dpd/43/jawa Timur"
+          ></Link>
+
+          {/* Btn bali */}
+          <Link
+            style={{
+              left: "42.3%",
+              top: "82%",
+              width: "27px",
+              height: "20px",
+              transform: "rotate(15deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-bali"
+            onMouseOver={() => {
+              setShow2(true);
+            }}
+            onMouseLeave={() => {
+              setShow2(false);
+            }}
+            to="/dpd/13/bali"
+          ></Link>
+
+          {/* Btn nusatengaraBarat */}
+          <Link
+            style={{
+              left: "45%",
+              top: "80%",
+              width: "74px",
+              height: "35px",
+              transform: "rotate(8deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-nusatengaraBarat"
+            onMouseOver={() => {
+              setShow21(true);
+            }}
+            onMouseLeave={() => {
+              setShow21(false);
+            }}
+            to="/dpd/52/nusatengara Barat"
+          ></Link>
+
+          {/* Btn nusatengaraTimur */}
+          <Link
+            style={{
+              left: "53%",
+              top: "80%",
+              width: "130px",
+              height: "65px",
+              transform: "rotate(8deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-nusatengaraTimur"
+            onMouseOver={() => {
+              setShow22(true);
+            }}
+            onMouseLeave={() => {
+              setShow22(false);
+            }}
+            to="/dpd/55/nusatengara Timur"
+          ></Link>
+
+          {/* Btn maluku */}
+          <Link
+            style={{
+              left: "65%",
+              top: "48%",
+              width: "160px",
+              height: "150px",
+            }}
+            className="target-mouse-3"
+            id="btn-maluku"
+            onMouseOver={() => {
+              setShow19(true);
+            }}
+            onMouseLeave={() => {
+              setShow19(false);
+            }}
+            to="/dpd/88/maluku"
+          ></Link>
+
+          {/* Btn malukuUtara */}
+          <Link
+            style={{
+              left: "66%",
+              top: "20%",
+              width: "100px",
+              height: "100px",
+            }}
+            className="target-mouse-3"
+            id="btn-malukuUtara"
+            onMouseOver={() => {
+              setShow20(true);
+            }}
+            onMouseLeave={() => {
+              setShow20(false);
+            }}
+            to="/dpd/91/maluku Utara"
+          ></Link>
+
+          {/* Btn papuaBarat */}
+          <Link
+            style={{
+              left: "77%",
+              top: "30%",
+              width: "100px",
+              height: "100px",
+            }}
+            className="target-mouse-3"
+            id="btn-papuaBarat"
+            onMouseOver={() => {
+              setShow24(true);
+            }}
+            onMouseLeave={() => {
+              setShow24(false);
+            }}
+            to="/dpd/94/papua Barat"
+          ></Link>
+
+          {/* Btn papua */}
+          <Link
+            style={{
+              left: "87%",
+              top: "46%",
+              width: "140px",
+              height: "170px",
+            }}
+            className="target-mouse-3"
+            id="btn-papua"
+            onMouseOver={() => {
+              setShow23(true);
+            }}
+            onMouseLeave={() => {
+              setShow23(false);
+            }}
+            to="/dpd/97/papua"
+          ></Link>
+
+          {/* Btn kalimantanTengah */}
+          <Link
+            style={{
+              left: "35%",
+              top: "35%",
+              width: "107px",
+              height: "65px",
+              transform: "rotate(-28deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-kalimantanTengah"
+            onMouseOver={() => {
+              setShow14(true);
+            }}
+            onMouseLeave={() => {
+              setShow14(false);
+            }}
+            to="/dpd/61/kalimantan Tengah"
+          ></Link>
+
+          {/* Btn kalimantanTengah */}
+          <Link
+            style={{
+              left: "35%",
+              top: "35%",
+              width: "107px",
+              height: "65px",
+              transform: "rotate(-28deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-kalimantanTengah"
+            onMouseOver={() => {
+              setShow14(true);
+            }}
+            onMouseLeave={() => {
+              setShow14(false);
+            }}
+            to="/dpd/61/kalimantan Tengah"
+          ></Link>
+
+          {/* Btn kalimantanBarat */}
+          <Link
+            style={{
+              left: "30%",
+              top: "30%",
+              width: "107px",
+              height: "40px",
+              transform: "rotate(-28deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-kalimantanBarat"
+            onMouseOver={() => {
+              setShow12(true);
+            }}
+            onMouseLeave={() => {
+              setShow12(false);
+            }}
+            to="/dpd/103/kalimantan Barat"
+          ></Link>
+
+          {/* Btn kalimantanBarat2 */}
+          <Link
+            style={{
+              left: "30%",
+              top: "25%",
+              width: "40px",
+              height: "40px",
+              transform: "rotate(-28deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-kalimantanBarat"
+            onMouseOver={() => {
+              setShow12(true);
+            }}
+            onMouseLeave={() => {
+              setShow12(false);
+            }}
+            to="/dpd/103/kalimantan Barat"
+          ></Link>
+
+          {/* Btn kalimantanBarat2 */}
+          <Link
+            style={{
+              left: "32%",
+              top: "42%",
+              width: "40px",
+              height: "40px",
+              transform: "rotate(-28deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-kalimantanBarat"
+            onMouseOver={() => {
+              setShow12(true);
+            }}
+            onMouseLeave={() => {
+              setShow12(false);
+            }}
+            to="/dpd/103/kalimantan Barat"
+          ></Link>
+
+          {/* Btn kalimantanSelatan */}
+          <Link
+            style={{
+              left: "42%",
+              top: "48%",
+              width: "40px",
+              height: "40px",
+              transform: "rotate(-28deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-kalimantanSelatan"
+            onMouseOver={() => {
+              setShow13(true);
+            }}
+            onMouseLeave={() => {
+              setShow13(false);
+            }}
+            to="/dpd/64/kalimantan Selatan"
+          ></Link>
+
+          {/* Btn kalimantanTimur */}
+          <Link
+            style={{
+              left: "43%",
+              top: "22%",
+              width: "85px",
+              height: "55px",
+              transform: "rotate(-60deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-kalimantanTimur"
+            onMouseOver={() => {
+              setShow15(true);
+            }}
+            onMouseLeave={() => {
+              setShow15(false);
+            }}
+            to="/dpd/58/kalimantan Timur"
+          ></Link>
+
+          {/* Btn kalimantanTimur2 */}
+          <Link
+            style={{
+              left: "41%",
+              top: "26%",
+              width: "30px",
+              height: "30px",
+              transform: "rotate(-60deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-kalimantanTimur"
+            onMouseOver={() => {
+              setShow15(true);
+            }}
+            onMouseLeave={() => {
+              setShow15(false);
+            }}
+            to="/dpd/58/kalimantan Timur"
+          ></Link>
+
+          {/* Btn kalimantanTimur2 */}
+          <Link
+            style={{
+              left: "45%",
+              top: "39%",
+              width: "30px",
+              height: "30px",
+              transform: "rotate(-60deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-kalimantanTimur"
+            onMouseOver={() => {
+              setShow15(true);
+            }}
+            onMouseLeave={() => {
+              setShow15(false);
+            }}
+            to="/dpd/58/kalimantan Timur"
+          ></Link>
+
+          {/* Btn kalimantanUtara */}
+          <Link
+            style={{
+              left: "41%",
+              top: "14%",
+              width: "85px",
+              height: "30px",
+              transform: "rotate(-60deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-kalimantanUtara"
+            onMouseOver={() => {
+              setShow16(true);
+            }}
+            onMouseLeave={() => {
+              setShow16(false);
+            }}
+            to="/dpd/67/kalimantan Utara"
+          ></Link>
+
+          {/* Btn sulawesiBarat */}
+          <Link
+            style={{
+              left: "50%",
+              top: "46%",
+              width: "50px",
+              height: "20px",
+              transform: "rotate(-70deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-sulawesiBarat"
+            onMouseOver={() => {
+              setShow26(true);
+            }}
+            onMouseLeave={() => {
+              setShow26(false);
+            }}
+            to="/dpd/85/sulawesi Barat"
+          ></Link>
+
+          {/* Btn sulawesiSelatan */}
+          <Link
+            style={{
+              left: "50%",
+              top: "55%",
+              width: "80px",
+              height: "20px",
+              transform: "rotate(-80deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-sulawesiSelatan"
+            onMouseOver={() => {
+              setShow27(true);
+            }}
+            onMouseLeave={() => {
+              setShow27(false);
+            }}
+            to="/dpd/76/sulawesi Selatan"
+          ></Link>
+
+          {/* Btn sulawesiTenggara */}
+          <Link
+            style={{
+              left: "56%",
+              top: "52%",
+              width: "50px",
+              height: "50px",
+              transform: "rotate(-28deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-sulawesiTenggara"
+            onMouseOver={() => {
+              setShow29(true);
+            }}
+            onMouseLeave={() => {
+              setShow29(false);
+            }}
+            to="/dpd/79/sulawesi Tenggara"
+          ></Link>
+
+          {/* Btn sulawesiTengah */}
+          <Link
+            style={{
+              left: "53%",
+              top: "28%",
+              width: "80px",
+              height: "80px",
+            }}
+            className="target-mouse-3"
+            id="btn-sulawesiTengah"
+            onMouseOver={() => {
+              setShow28(true);
+            }}
+            onMouseLeave={() => {
+              setShow28(false);
+            }}
+            to="/dpd/73/sulawesi Tengah"
+          ></Link>
+
+          {/* Btn gorontalo */}
+          <Link
+            style={{
+              left: "57%",
+              top: "28%",
+              width: "50px",
+              height: "20px",
+              // transform: "rotate(-70deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-gorontalo"
+            onMouseOver={() => {
+              setShow6(true);
+            }}
+            onMouseLeave={() => {
+              setShow6(false);
+            }}
+            to="/dpd/82/gorontalo"
+          ></Link>
+
+          {/* Btn sulawesiUtara */}
+          <Link
+            style={{
+              left: "62%",
+              top: "28%",
+              width: "50px",
+              height: "20px",
+              // transform: "rotate(-70deg)",
+            }}
+            className="target-mouse-3"
+            id="btn-sulawesiUtara"
+            onMouseOver={() => {
+              setShow30(true);
+            }}
+            onMouseLeave={() => {
+              setShow30(false);
+            }}
+            to="/dpd/70/sulawesi Utara"
+          ></Link>
+        </div>
+
+        {/* END For Position Hover ALL Pulau */}
 
         {/* For Botton Name Provinsi For on off Display Image Provinsi */}
         <div className="container-btn-name-provinsi">

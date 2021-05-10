@@ -8,6 +8,7 @@ const MainFooter = () => {
     <div className="wrapperFooter">
       <div className="wrapperContent">
         <img
+          loading="lazy"
           src={Logo}
           alt=""
           width="100"

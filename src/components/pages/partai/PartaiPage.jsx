@@ -157,6 +157,7 @@ const PartaiPage = ({ redirect }) => {
                           >
                             <div className="box-mobileRow2">
                               <img
+                                loading="lazy"
                                 src={`https://data.pdiperjuangan.id/public/${e.image}`}
                                 alt=""
                                 className="imgMobilePartai"
@@ -198,6 +199,7 @@ const PartaiPage = ({ redirect }) => {
                 <div className="containerTiga">
                   <div className="col-lg-3">
                     <img
+                      loading="lazy"
                       className="img-logo-bantengPdi"
                       src={pdiLogo}
                       alt=""

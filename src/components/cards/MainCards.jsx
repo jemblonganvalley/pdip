@@ -87,7 +87,7 @@ const Cards = ({
           {/* JIKA MAU DIPAKAI CLASS, PAKAI CLASS VBMusic */}
           <Link
             className={`${classIcon}`}
-            to={href}
+            to={`${page}/${id}/${slug ? pageSLug() : null}`}
             style={{ textDecoration: "none" }}
           >
             <i
@@ -124,10 +124,11 @@ const Cards = ({
               fontWeight: h5Weight,
               // maxHeight : '50px',
               // overflow : 'hidden',
-              // textOverflow : 'elipsis',
+              textOverflow: "elipsis",
             }}
           >
-            {add3Dots(title, 70)}
+            {/* {add3Dots(title, 70)} */}
+            {title}
           </p>
         </div>
       </Link>

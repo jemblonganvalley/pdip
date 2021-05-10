@@ -84,7 +84,7 @@ function App() {
             <PartaiPage redirect="https://www.dpr.go.id/anggota/index/fraksi/3" />
           </Route>
           {/* BLOG PAGE  */}
-          <Route path="/detail-article/:id">
+          <Route path="/detail-article/:id/:slug">
             <Page1 />
           </Route>
 

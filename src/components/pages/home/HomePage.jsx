@@ -76,6 +76,9 @@ const HomePage = () => {
           "Content-Type": "application/json",
           Authorization: `Bearer ${data.token}`,
         },
+        body: JSON.stringify({
+          filter: [{ key: "blog.status", val: "publish" }],
+        }),
       }
     );
 
@@ -197,7 +200,7 @@ const HomePage = () => {
                         i === 0
                           ? "/article/247/covid-19"
                           : i === 1
-                          ? "https://pdipkreatif.id/home"
+                          ? "https://pdipkreatif.id/"
                           : "/event"
                       }
                       target={i == 1 ? "_blank" : ""}
@@ -205,6 +208,7 @@ const HomePage = () => {
                       <div className="customBorder">
                         <div className="itemImageCovid">
                           <img
+                            loading="lazy"
                             src={`https://data.pdiperjuangan.id/public/${e.image}`}
                             alt=""
                             className="imageCovid"
@@ -221,7 +225,12 @@ const HomePage = () => {
                 <a href="https://www.bmkg.go.id/" target="#blank">
                   <div className="customBorder">
                     <div className="itemImageCovid">
-                      <img src={BMKG} alt="" className="imageCovid" />
+                      <img
+                        loading="lazy"
+                        src={BMKG}
+                        alt=""
+                        className="imageCovid"
+                      />
                     </div>
                     <div className="itemTextCovid">
                       <h5 style={{ color: "#fff" }}>Info BMKG</h5>
@@ -299,6 +308,7 @@ const HomePage = () => {
                         id={e.id}
                         slug={e.title}
                         category="Multimedia"
+                        dateTime={e.created_at}
                       />
                     );
                   })}

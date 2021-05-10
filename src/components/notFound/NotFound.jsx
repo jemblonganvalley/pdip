@@ -9,12 +9,14 @@ const NotFound = ({ imgSource, notFoundDisplay, pengembanganDisplay }) => {
       <div className="notfound">
         <div className="notfound-404">
           <img
+            loading="lazy"
             src={notFound}
             style={{
               display: notFoundDisplay,
             }}
           />
           <img
+            loading="lazy"
             src={Pengembangan}
             style={{
               display: pengembanganDisplay,

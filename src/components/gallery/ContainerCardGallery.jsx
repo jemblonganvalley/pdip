@@ -9,7 +9,7 @@ import Cards from "../cards/MainCards";
 import Wait from "../wait/Wait";
 
 const ContainerCard = () => {
-  const { category_id } = useParams();
+  const { id, album_id } = useParams();
   const [configHome, setConfigHome] = useState([]);
   const [numPage, setNumPage] = useState(1);
   const [pag, setPag] = useState();
@@ -78,7 +78,7 @@ const ContainerCard = () => {
           Authorization: `Bearer ${data.token}`,
         },
         body: JSON.stringify({
-          order: { key: "id", value: "desc" },
+          order: { key: "id_album", value: "desc" },
           where: { key: "type", value: "image" },
           limit: 9,
         }),
@@ -94,10 +94,11 @@ const ContainerCard = () => {
   useEffect(() => {
     getConfigHome();
     window.scrollTo(0, 0);
-  }, [category_id, numPage]);
+  }, [id, numPage]);
 
   return (
     <>
+      {console.log(configHome)}
       {configHome.length > 0 ? (
         <div className="wrapper-berita-nasional">
           <div className="linked-berita-nasional">
@@ -129,9 +130,10 @@ const ContainerCard = () => {
                         title={e.album_name}
                         slug={e.album_name}
                         textSmall={e.album_description}
-                        // dateTime={e.created_at}
+                        dateTime={e.created_at}
                         page={`/gallery/detail-gallery`}
                         id={e.id_album}
+                        album_id={album_id}
                       />
                     ))}
                   </>

@@ -56,6 +56,14 @@ function NewNavbar({ token }) {
     await setNavHeight(ht);
   };
 
+  //lash hit dropdown
+  const [last, setLast] = useState();
+
+  //class remover
+  const removeClass = (elemId) => {
+    document.getElementById(elemId).classList.remove("show");
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     window.location.href = `/search/${search}`;
@@ -91,6 +99,7 @@ function NewNavbar({ token }) {
             <div className="container-fluid">
               <NavLink className="navbar-brand" to="/" activeClassName="brand">
                 <img
+                  loading="lazy"
                   src={logo}
                   alt=""
                   width="60"
@@ -198,6 +207,7 @@ function NewNavbar({ token }) {
             <div className="container-fluid">
               <NavLink className="navbar-brand" to="/" activeClassName="brand">
                 <img
+                  loading="lazy"
                   src={pdimobile}
                   alt=""
                   width="100"
@@ -274,10 +284,14 @@ function NewNavbar({ token }) {
                             className="fas fa-angle-down"
                             data-toggle="collapse"
                             data-target={`#collapseExample${i}`}
-                            aria-expanded="false"
+                            aria-expanded="true"
                             aria-controls={`collapseExample${i}`}
                             id="icon-menuDrop"
                             onClick={() => {
+                              setLast(`collapseExample${i}`);
+                              if (last) {
+                                removeClass(last);
+                              }
                               if (iconRotate != null) {
                                 setIconRotate(null);
                               } else {
@@ -448,6 +462,7 @@ function NewNavbar({ token }) {
             <div className="container-fluid">
               <NavLink className="navbar-brand" to="/" activeClassName="brand">
                 <img
+                  loading="lazy"
                   src={pdimobile}
                   alt=""
                   width="200"
@@ -535,6 +550,10 @@ function NewNavbar({ token }) {
                             aria-controls={`collapseExample${i}`}
                             id="icon-menuDrop"
                             onClick={() => {
+                              setLast(`collapseExample${i}`);
+                              if (last) {
+                                removeClass(last);
+                              }
                               if (iconRotate != null) {
                                 setIconRotate(null);
                               } else {

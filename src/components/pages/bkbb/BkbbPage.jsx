@@ -57,6 +57,9 @@ const BkbbPage = () => {
           "Content-Type": "application/json",
           Authorization: `Bearer ${data.token}`,
         },
+        body: JSON.stringify({
+          filter: [{ key: "blog.status", val: "publish" }],
+        }),
       }
     );
 
@@ -152,6 +155,7 @@ const BkbbPage = () => {
                       page="detail-article"
                       id={e.id}
                       category="Bung Karno Bapak Bangsa"
+                      dateTime={e.created_at}
                     />
                   );
                 })}

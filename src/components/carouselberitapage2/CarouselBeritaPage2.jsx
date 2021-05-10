@@ -22,6 +22,7 @@ const CarouselBeritaPage2 = ({ id, data }) => {
           {data.map((e, i) => (
             <>
               <img
+                loading="lazy"
                 src={`https://data.pdiperjuangan.id/public/${e.path}`}
                 alt={e.title}
                 key={i}

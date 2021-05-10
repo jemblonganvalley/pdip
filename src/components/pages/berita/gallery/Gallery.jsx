@@ -18,6 +18,7 @@ const Gallery = () => {
   const [manyCard, setManyCard] = useState([]);
   const [numPage, setNumPage] = useState(1);
   const [pag, setPag] = useState();
+  const [album, setAlbum] = useState([]);
 
   const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
     let [active, setActive] = useState(false);
@@ -62,7 +63,7 @@ const Gallery = () => {
     );
   };
 
-  const id = useParams("id");
+  const { id } = useParams();
 
   const getConfigHome = async () => {
     const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
@@ -107,7 +108,7 @@ const Gallery = () => {
         body: JSON.stringify({
           where: { key: "type", value: "image" },
           order: { key: "id", value: "desc" },
-          limit: 9,
+          limit: 3,
         }),
       }
     );
@@ -115,7 +116,26 @@ const Gallery = () => {
     const dataManyCard = await resManyCard.json();
     setManyCard(dataManyCard.query.data);
     setPag(manyCard.query);
-    console.log(manyCard);
+    // console.log(manyCard);
+
+    const getAlbum = await fetch(
+      `https://data.pdiperjuangan.id/api/gallery/album?page=${numPage}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+        body: JSON.stringify({
+          order: { key: "id", value: "desc" },
+          where: { key: "id_album", value: id },
+          limit: 9,
+        }),
+      }
+    );
+
+    const dataAlbum = await getAlbum.json();
+    setAlbum(dataAlbum.query.data);
   };
 
   useEffect(() => {
@@ -125,6 +145,7 @@ const Gallery = () => {
 
   return (
     <>
+      {console.log(album)}
       {manyCard.length > 0 ? (
         <div className="wrapperBeritaPage2">
           <div className="linkedBeritaPage2">
@@ -151,10 +172,11 @@ const Gallery = () => {
                   <div className="jdl-row2-beritaPage2">
                     {/* Column Txt Admin */}
                     <div className="column-txt-admin">
-                      <p className="txt-admin">
-                        {configHome[0].author_name} |{" "}
-                        {configHome[0].created_at.split(" ")[0]}
-                      </p>
+                      <small className="txt-admin" style={{ fontSize: "14px" }}>
+                        {"PDI Perjuangan | "}
+                        {album.length > 0 && album[0].created_at.split(" ")[0]}
+                        {/* {configHome[0].created_at} */}
+                      </small>
                     </div>
                     {/* END Column Txt Admin */}
 
@@ -208,7 +230,7 @@ const Gallery = () => {
                       title={e.album_name}
                       slug={e.album_name}
                       textSmall={e.album_description}
-                      // dateTime={e.created_at}
+                      dateTime={e.created_at}
                       page={`/gallery/detail-gallery`}
                       id={e.id_album}
                     />

@@ -77,7 +77,6 @@ const BgRed = () => {
             <div
               className="containerInsta"
               style={{
-                backgroundColor: "#fff",
                 borderRadius: "5px",
                 display: "flex",
                 justifyContent: "center",
@@ -85,11 +84,12 @@ const BgRed = () => {
                 // margin: "0 10px",
               }}
             >
-              <insta-feed-custom username="pdiperjuangan"></insta-feed-custom>
+              <div data-mc-src="fc7fcd48-efec-479d-8074-487fd9b5132a"  className='instagramWidget'></div>
             </div>
           </div>
         </div>
       </div>
+      
     </>
   );
 };

@@ -17,6 +17,7 @@ const Slidercom = () => {
           to="/detail-article/997/badan-saksi-pemilu-nasional"
         >
           <img
+            loading="lazy"
             src={Bspn}
             height="100"
             width="250"
@@ -25,13 +26,21 @@ const Slidercom = () => {
           />
         </Link>
         <Link className="slide" to="/detail-article/994/banteng-muda-indonesia">
-          <img src={BMI} height="100" width="250" alt="" className="hovercom" />
+          <img
+            loading="lazy"
+            src={BMI}
+            height="100"
+            width="250"
+            alt=""
+            className="hovercom"
+          />
         </Link>
         <Link
           className="slide"
           to="/detail-article/991/badan-penanggulangan-bencana"
         >
           <img
+            loading="lazy"
             src={Baguna}
             height="100"
             width="250"
@@ -43,13 +52,21 @@ const Slidercom = () => {
           className="slide"
           to="/detail-article/988/badan-kebudayaan-nasional"
         >
-          <img src={BKN} height="100" width="250" alt="" className="hovercom" />
+          <img
+            loading="lazy"
+            src={BKN}
+            height="100"
+            width="250"
+            alt=""
+            className="hovercom"
+          />
         </Link>
         <Link
           className="slide"
           to="/detail-article/985/baitul-muslimin-indonesia"
         >
           <img
+            loading="lazy"
             src={Bamusi}
             height="100"
             width="250"
@@ -59,6 +76,7 @@ const Slidercom = () => {
         </Link>
         <Link className="slide" to="">
           <img
+            loading="lazy"
             src={repdem}
             height="100"
             width="250"
@@ -68,13 +86,21 @@ const Slidercom = () => {
         </Link>
 
         <Link className="slide" to="">
-          <img src={TMP} height="100" width="250" alt="" className="hovercom" />
+          <img
+            loading="lazy"
+            src={TMP}
+            height="100"
+            width="250"
+            alt=""
+            className="hovercom"
+          />
         </Link>
         <Link
           className="slide"
           to="/detail-article/997/badan-saksi-pemilu-nasional"
         >
           <img
+            loading="lazy"
             src={Bspn}
             height="100"
             width="250"
@@ -83,13 +109,21 @@ const Slidercom = () => {
           />
         </Link>
         <Link className="slide" to="/detail-article/994/banteng-muda-indonesia">
-          <img src={BMI} height="100" width="250" alt="" className="hovercom" />
+          <img
+            loading="lazy"
+            src={BMI}
+            height="100"
+            width="250"
+            alt=""
+            className="hovercom"
+          />
         </Link>
         <Link
           className="slide"
           to="/detail-article/991/badan-penanggulangan-bencana"
         >
           <img
+            loading="lazy"
             src={Baguna}
             height="100"
             width="250"
@@ -101,13 +135,21 @@ const Slidercom = () => {
           className="slide"
           to="/detail-article/988/badan-kebudayaan-nasional"
         >
-          <img src={BKN} height="100" width="250" alt="" className="hovercom" />
+          <img
+            loading="lazy"
+            src={BKN}
+            height="100"
+            width="250"
+            alt=""
+            className="hovercom"
+          />
         </Link>
         <Link
           className="slide"
           to="/detail-article/985/baitul-muslimin-indonesia"
         >
           <img
+            loading="lazy"
             src={Bamusi}
             height="100"
             width="250"
@@ -117,6 +159,7 @@ const Slidercom = () => {
         </Link>
         <Link className="slide" to="">
           <img
+            loading="lazy"
             src={repdem}
             height="100"
             width="250"
@@ -126,7 +169,14 @@ const Slidercom = () => {
         </Link>
 
         <Link className="slide" to="">
-          <img src={TMP} height="100" width="250" alt="" className="hovercom" />
+          <img
+            loading="lazy"
+            src={TMP}
+            height="100"
+            width="250"
+            alt=""
+            className="hovercom"
+          />
         </Link>
       </div>
     </div>

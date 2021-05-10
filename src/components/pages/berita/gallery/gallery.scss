@@ -1,14 +1,14 @@
 $smallPhoneSatu: 500px;
 $smallPhoneDua: 400px;
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
 @import "../../../../utilities/variable/variables.scss";
@@ -16,361 +16,363 @@ $smallPhoneDua: 400px;
 $secondary: #f3f3f3;
 
 .wrapperBeritaPage2 {
+  width: 100%;
+
+  .cardContainer {
     width: 100%;
+    height: auto;
+    min-height: 0vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
 
-    .cardContainer {
-        width: 100%;
+  .headers-beritaPage2 {
+    background: url(../../../../img/detailartikel1.jpg);
+    background-size: cover;
+    height: 25vh;
+    background-position: center;
+
+    @include smallPhone() {
+      height: 20vh;
+    }
+
+    @include smallPhone() {
+      height: 15vh;
+    }
+
+    .backgrounds {
+      background-color: rgba(255, 0, 8, 0.1);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      color: #ffffff;
+
+      .textBackgroundBerita {
+        width: 30%;
+        height: 50%;
+        margin-left: 5rem;
+      }
+    }
+  }
+
+  .linkedBeritaPage2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 40px 10%;
+
+    @include smallPhone() {
+      width: 100%;
+      padding: 0 2%;
+    }
+
+    i {
+      span {
+        margin-left: 5px;
+        font-style: italic;
+        font-size: 8pt;
+      }
+    }
+  }
+
+  // Container1
+  .container-1-beritaPage2 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 0 20% 40px 20%;
+
+    @include smallPhone() {
+      padding: 0%;
+    }
+
+    // Column1
+    .col1-container-1-beritaPage2 {
+      display: flex;
+      height: auto;
+      width: 100%;
+
+      @include smallPhone() {
         height: auto;
-        min-height: 0vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
+        flex-direction: column;
+      }
 
-    .headers-beritaPage2 {
-        background: url(../../../../img/detailartikel1.jpg);
-        background-size: cover;
-        height: 25vh;
-        background-position: center;
-
-        @include smallPhone() {
-            height: 20vh;
-        }
-
-        @include smallPhone() {
-            height: 15vh;
-        }
-
-        .backgrounds {
-            background-color: rgba(255, 0, 8, 0.1);
-            width: 100%;
-            height: 100%;
-            display: flex;
-            // justify-content: center;
-            align-items: center;
-            color: #ffffff;
-
-            .textBackgroundBerita {
-                width: 30%;
-                height: 50%;
-                margin-left: 5rem;
-            }
-        }
-    }
-
-    .linkedBeritaPage2 {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        width: 100%;
-        padding: 40px 10%;
-
-        @include smallPhone() {
-            width: 100%;
-            padding: 0 2%;
-        }
-
-        i {
-            span {
-                margin-left: 5px;
-                font-style: italic;
-                font-size: 8pt;
-            }
-        }
-    }
-
-    // Container1
-    .container-1-beritaPage2 {
+      // Row2
+      .row2-beritaPage2 {
         display: flex;
         flex-direction: column;
-        height: auto;
-        width: 100%;
-        padding: 0 20% 40px 20%;
+        height: 100%;
+        margin-top: 1rem;
 
         @include smallPhone() {
-            padding: 0%;
+          height: auto;
+          width: 100%;
+          padding: 0 20px;
+          overflow: hidden;
         }
 
-        // Column1
-        .col1-container-1-beritaPage2 {
+        .jdl-row2-beritaPage2 {
+          display: flex;
+          height: auto;
+          width: 100%;
+          align-items: center;
+
+          @include smallPhone() {
+            margin: 10px 0 0 0;
+          }
+
+          // Column Txt Admin
+          .column-txt-admin {
             display: flex;
             height: auto;
-            width: 100%;
+            width: 90%;
 
-            @include smallPhone() {
-                height: auto;
-                flex-direction: column;
-            }
+            .txt-admin {
+              display: flex;
+              font-size: 14px;
+              color: #d80010;
+              margin: 1px;
 
-            // Row2
-            .row2-beritaPage2 {
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                margin-top: 1rem;
-
-                @include smallPhone() {
-                    height: auto;
-                    width: 100%;
-                    padding: 0 20px;
-                    overflow: hidden;
-                }
-
-                .jdl-row2-beritaPage2 {
-                    display: flex;
-                    height: auto;
-                    width: 100%;
-                    align-items: center;
-
-                    @include smallPhone() {
-                        margin: 10px 0 0 0;
-                    }
-
-                    // Column Txt Admin
-                    .column-txt-admin {
-                        display: flex;
-                        height: auto;
-                        width: 90%;
-
-                        .txt-admin {
-                            display: flex;
-                            font-size: 10px;
-                            color: #d80010;
-                            margin: 1px;
-
-                            @include smallPhone() {
-                                justify-content: center;
-                                align-items: center;
-                                text-align: center;
-                            }
-                        }
-                    }
-                    // END Column Txt Admin
-
-                    // Column Button Heart
-                    .column-txt-btn-heart {
-                        display: flex;
-                        height: auto;
-                        width: auto;
-                        align-items: center;
-
-                        .btn-fav {
-                            display: flex;
-                            cursor: pointer;
-                            text-decoration: none;
-
-                            i {
-                                display: flex;
-                                font-size: 12px;
-                                color: #d80010;
-                                margin: 0 5px 0 0px;
-                            }
-                        }
-
-                        .txt-jm-fav {
-                            display: flex;
-                            font-size: 12px;
-                            color: #555;
-                            text-align: start;
-                            margin: 1px;
-                        }
-                    }
-                    // END Column Button Love
-                }
-
-                .title-2-beritaPage2 {
-                    display: flex;
-                    // font-size: 20px;
-                    font-weight: 500;
-                    color: #000;
-                    text-align: start;
-                    margin: 20px 0 0 0;
-
-                    @include smallPhone() {
-                        font-size: 20px;
-                        font-weight: bold;
-                        margin: 10px 0 0 0;
-                        text-align: center;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                }
-
-                .txt-desk1-beritaPage2 {
-                    display: flex;
-                    // font-size: 13px;
-                    color: #000;
-                    text-align: start;
-                    margin: 25px 0 0 0;
-
-                    @include smallPhone() {
-                        margin: 15px 0 0 0;
-                        text-align: center;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                }
-
-                .box-medsos-beritaPage2 {
-                    display: flex;
-                    flex-direction: column-reverse;
-                    height: 50%;
-                    width: 100%;
-                    margin: 30px 0 0 0;
-
-                    @include smallPhone() {
-                        margin: 20px 0 0 0;
-                        text-align: center;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    .socialMedia {
-                        margin: 0px 0 0 0;
-                        padding: 0 0px 0 0;
-                        display: flex;
-
-                        small {
-                            color: #000000;
-                            margin-right: 10px;
-
-                            @include smallPhone() {
-                                font-size: 12px;
-                            }
-                        }
-
-                        i {
-                            margin: 0 10px;
-                            transition: 0.3s;
-
-                            @include smallPhone() {
-                                font-size: 13px;
-                            }
-
-                            &:hover {
-                                color: #c70000;
-                                cursor: pointer;
-                            }
-                        }
-                    }
-                }
-            }
-            // END Row2
-        }
-        // END Column1
-
-        .container-garis-vertical {
-            padding: 0 10px;
-            justify-content: center;
-
-            .garis-vertical-tipis {
-                display: flex;
-                height: 1px;
-                width: 100%;
-                background: #aaa;
-                justify-content: center;
-                margin: 60px 0 30px 0;
-
-                .garis-merah-tebal {
-                    display: flex;
-                    position: absolute;
-                    height: 5px;
-                    width: 50px;
-                    background: #d80010;
-                    justify-content: center;
-                    margin: -5px 0;
-                }
-            }
-        }
-
-        // Column2
-        .col2-container-1-beritaPage2 {
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            margin-top: 0;
-            padding: 10px 0%;
-
-            @include smallPhone() {
-                flex-direction: column;
-                height: auto;
-                padding: 0;
-            }
-        }
-        // END Column2
-    }
-    // END Container1s
-
-    .container-angka-pagination {
-        display: flex;
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-        .col-angka-pagination {
-            display: flex;
-            height: 100%;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            margin: 1px;
-            .angka-pagination {
-                display: flex;
-                list-style: none;
-                cursor: pointer;
-
-                .paginationLink {
-                    display: flex;
-                    height: 26px;
-                    width: 26px;
-                    background: transparent;
-                    border-radius: 100%;
-                    color: #d80010;
-                    font-size: 10.3pt;
-                    font-weight: 500;
-                    text-decoration: none;
-                    // margin: 0 10px;
-                    justify-content: center;
-                    align-items: center;
-                    transition: 0.2s;
-
-                    &:hover {
-                        background: #d80010;
-                        color: #fff;
-                        font-size: 12pt;
-                    }
-
-                    &.activePagination {
-                        background-color: #d80010;
-                        border-radius: 100px;
-                        padding: 0.2px;
-                        color: #fff;
-                    }
-                }
-            }
-            .prev,
-            .next {
-                color: #d80010;
-                transition: 0.2s;
-                display: flex;
+              @include smallPhone() {
                 justify-content: center;
                 align-items: center;
-                padding: 10px;
-                width: 26px;
-                height: 26px;
-                &:hover {
-                    color: #fff;
-                    background-color: #d80010;
-                    border-radius: 100%;
-                    border-radius: 50px;
-                }
+                text-align: center;
+              }
             }
+          }
+          // END Column Txt Admin
+
+          // Column Button Heart
+          .column-txt-btn-heart {
+            display: flex;
+            height: auto;
+            width: auto;
+            align-items: center;
+
+            .btn-fav {
+              display: flex;
+              cursor: pointer;
+              text-decoration: none;
+
+              i {
+                display: flex;
+                font-size: 12px;
+                color: #d80010;
+                margin: 0 5px 0 0px;
+              }
+            }
+
+            .txt-jm-fav {
+              display: flex;
+              font-size: 12px;
+              color: #555;
+              text-align: start;
+              margin: 1px;
+            }
+          }
+          // END Column Button Love
         }
+
+        .title-2-beritaPage2 {
+          display: flex;
+          // font-size: 20px;
+          font-weight: 500;
+          color: #000;
+          text-align: start;
+          margin: 20px 0 0 0;
+
+          @include smallPhone() {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0 0 0;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        .txt-desk1-beritaPage2 {
+          display: flex;
+          // font-size: 13px;
+          color: #000;
+          text-align: center;
+          margin: 25px 0 0 0;
+          margin-left: auto;
+          margin-right: auto;
+
+          @include smallPhone() {
+            margin: 15px 0 0 0;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        .box-medsos-beritaPage2 {
+          display: flex;
+          flex-direction: column-reverse;
+          height: 50%;
+          width: 100%;
+          margin: 30px 0 0 0;
+
+          @include smallPhone() {
+            margin: 20px 0 0 0;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .socialMedia {
+            margin: 0px 0 0 0;
+            padding: 0 0px 0 0;
+            display: flex;
+
+            small {
+              color: #000000;
+              margin-right: 10px;
+
+              @include smallPhone() {
+                font-size: 12px;
+              }
+            }
+
+            i {
+              margin: 0 10px;
+              transition: 0.3s;
+
+              @include smallPhone() {
+                font-size: 13px;
+              }
+
+              &:hover {
+                color: #c70000;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      // END Row2
     }
+    // END Column1
+
+    .container-garis-vertical {
+      padding: 0 10px;
+      justify-content: center;
+
+      .garis-vertical-tipis {
+        display: flex;
+        height: 1px;
+        width: 100%;
+        background: #aaa;
+        justify-content: center;
+        margin: 60px 0 30px 0;
+
+        .garis-merah-tebal {
+          display: flex;
+          position: absolute;
+          height: 5px;
+          width: 50px;
+          background: #d80010;
+          justify-content: center;
+          margin: -5px 0;
+        }
+      }
+    }
+
+    // Column2
+    .col2-container-1-beritaPage2 {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin-top: 0;
+      padding: 10px 0%;
+
+      @include smallPhone() {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+      }
+    }
+    // END Column2
+  }
+  // END Container1s
+
+  .container-angka-pagination {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    .col-angka-pagination {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 1px;
+      .angka-pagination {
+        display: flex;
+        list-style: none;
+        cursor: pointer;
+
+        .paginationLink {
+          display: flex;
+          height: 26px;
+          width: 26px;
+          background: transparent;
+          border-radius: 100%;
+          color: #d80010;
+          font-size: 10.3pt;
+          font-weight: 500;
+          text-decoration: none;
+          // margin: 0 10px;
+          justify-content: center;
+          align-items: center;
+          transition: 0.2s;
+
+          &:hover {
+            background: #d80010;
+            color: #fff;
+            font-size: 12pt;
+          }
+
+          &.activePagination {
+            background-color: #d80010;
+            border-radius: 100px;
+            padding: 0.2px;
+            color: #fff;
+          }
+        }
+      }
+      .prev,
+      .next {
+        color: #d80010;
+        transition: 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 26px;
+        height: 26px;
+        &:hover {
+          color: #fff;
+          background-color: #d80010;
+          border-radius: 100%;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
 }

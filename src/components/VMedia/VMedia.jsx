@@ -17,6 +17,7 @@ const VMedia = ({
       <div className="kolumVideo">
         {backgroundImage ? (
           <img
+            loading="lazy"
             src={backgroundImage}
             width="100%"
             style={{
@@ -56,8 +57,8 @@ const VMedia = ({
           <CardSocialMedia
             url={
               detailMultimediaId != null
-                ? `https://article.pdiperjuangan.id/detail-multimedia/${detailMultimediaId}`
-                : `https://article.pdiperjuangan.id/multimedia/${youtubePath}`
+                ? `https://pdiperjuangan.id/detail-multimedia/${detailMultimediaId}`
+                : `https://pdiperjuangan.id/multimedia/${youtubePath}`
             }
             title={desc}
           />

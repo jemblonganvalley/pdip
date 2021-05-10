@@ -105,6 +105,7 @@ export const CarouselDuelBerita = ({
               ></span>
 
               <img
+                loading="lazy"
                 src={`https://data.pdiperjuangan.id/public/${e.image}`}
                 className="d-block w-100 carouselDual1Image"
                 alt={e.title}
@@ -197,6 +198,7 @@ export const CarouselDuelBerita = ({
               ></span>
 
               <img
+                loading="lazy"
                 src={
                   e.type === "youtube"
                     ? `https://i.ytimg.com/vi/${e.path}/hqdefault.jpg`

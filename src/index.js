@@ -6,7 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import { StoreProvider } from "easy-peasy";
 import { globalState } from "./database/globalState";
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <StoreProvider store={globalState}>
     <React.StrictMode>
       <App />

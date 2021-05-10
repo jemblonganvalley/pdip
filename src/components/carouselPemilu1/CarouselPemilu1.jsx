@@ -10,6 +10,7 @@ const CarouselPemilu1 = ({ data }) => {
     return (
       <NavLink to={link}>
         <img
+          loading="lazy"
           src={`https://data.pdiperjuangan.id/public/${img}`}
           className="img-1"
         />
@@ -47,6 +48,7 @@ const CarouselPemilu1 = ({ data }) => {
                   {/* Image1 */}
                   {/* <WrapperImage img={e.image} link={"/"} /> */}
                   <img
+                    loading="lazy"
                     src={`https://data.pdiperjuangan.id/public/${e.image}`}
                     className="img-1"
                     href={e.link}

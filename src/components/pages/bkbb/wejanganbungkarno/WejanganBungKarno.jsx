@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import "./WejanganBungKarno.scss";
-import { useParams } from "react-router-dom";
+import { useParams, Redirect } from "react-router-dom";
 import { useStoreState } from "easy-peasy";
 
 import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
@@ -14,7 +14,7 @@ import QuotesBkbb from "../../../quotesbkbb/QuotesBkbb";
 const WejanganBungKarno = () => {
   // Create Database Card Item
   const id = useParams("id");
-
+  const [firstTime, setFirstTIme] = useState(true);
   let [cardWejanganBkItem, setCardWejanganBk] = useState([]);
   // END Create Databasae Card Item
 
@@ -52,6 +52,12 @@ const WejanganBungKarno = () => {
           "Content-Type": "application/json",
           Authorization: `Bearer ${data.token}`,
         },
+        body: JSON.stringify({
+          order: {
+            key: "id",
+            value: "desc",
+          },
+        }),
       }
     );
 
@@ -68,7 +74,7 @@ const WejanganBungKarno = () => {
           Authorization: `Bearer ${data.token}`,
         },
         body: JSON.stringify({
-          id: id,
+          id: firstTime ? dataConfigHome.query.data[0].id : id,
         }),
       }
     );
@@ -100,21 +106,42 @@ const WejanganBungKarno = () => {
           </div>
 
           <div className="col1-container-1-bkbbWejangan">
-            {configHome && (
+            {typeof configHome != undefined ? (
+              <>
+                <QuotesBkbb
+                  id={configHome.id}
+                  displayIframe={"none"}
+                  displayImage={"flex"}
+                  backgroundImage={`https://data.pdiperjuangan.id/public/${configHome.path}`}
+                  headline={configHome.title}
+                  desc={configHome.description}
+                  customBackgroundColor={"transparent"}
+                  descColor={"#000"}
+                  customWidth="70%"
+                  kolumWidth="30%"
+                  date={configHome.created_at}
+                  widthCustom={"50%"}
+                  widthCustomDesc={"50%"}
+                  quotesDate={configHome.quotes_date}
+                  wait
+                />
+              </>
+            ) : (
               <QuotesBkbb
+                id={3}
                 displayIframe={"none"}
                 displayImage={"flex"}
-                backgroundImage={`https://data.pdiperjuangan.id/public${configHome.path}`}
-                headline={configHome.title}
-                desc={configHome.description}
+                backgroundImage={`https://data.pdiperjuangan.id/public/uploads/blog/040520210419594Q1.jpeg`}
+                headline={`......`}
+                desc={`....`}
                 customBackgroundColor={"transparent"}
                 descColor={"#000"}
                 customWidth="70%"
                 kolumWidth="30%"
-                date={configHome.created_at}
+                date={`....`}
                 widthCustom={"50%"}
                 widthCustomDesc={"50%"}
-                quotesDate={configHome.quotes_date}
+                quotesDate={"....."}
               />
             )}
           </div>
@@ -128,7 +155,12 @@ const WejanganBungKarno = () => {
           {/* END Container1 */}
 
           {/* Container2 */}
-          <div className="container2-wejanganThumbnail">
+          <div
+            className="container2-wejanganThumbnail"
+            onClick={() => {
+              setFirstTIme(false);
+            }}
+          >
             {/* Column Card Wejangan Bungkarno */}
             {/* <CardWejangan cardWejanganBkItem={cardWejanganBkItem} /> */}
             {cardWejanganBkItem.map((e, i) => (

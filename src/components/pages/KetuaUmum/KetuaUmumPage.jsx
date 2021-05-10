@@ -43,6 +43,9 @@ const KetuaUmumPage = () => {
           "Content-Type": "application/json",
           Authorization: `Bearer ${data.token}`,
         },
+        body: JSON.stringify({
+          filter: [{ key: "blog.status", val: "publish" }],
+        }),
       }
     );
 
@@ -152,6 +155,7 @@ const KetuaUmumPage = () => {
                   borderRadius="10px"
                   cardType={e.filetype}
                   category="Pidato Ketua Umum"
+                  dateTime={e.created_at}
                 />
               ))}
               {/* Button View All */}
