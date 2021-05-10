@@ -146,7 +146,7 @@ const Page1 = () => {
                         title={detailPage.title}
                         url={
                           detailPage.path.includes("uploads")
-                            ? `https://${webUrl}/detail-article/${slug}/${id}`
+                            ? `https://${webUrl}/detail-article/${id}/${slug}`
                             : `https://${webUrl}/video/${id}`
                         }
                       />
