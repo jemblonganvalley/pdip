@@ -18,8 +18,7 @@ article.get("/detail-article/:id/:slug", (req, res) => {
   const { id, slug } = req.params;
   detailArticle(id, slug).then((result) => {
     res.render("main", {
-      page_title:
-        result.query.category_name + "-" + result.query.category_child_name,
+      page_title: slug.split("-").join(" "),
       meta_keyword: result.query.title,
       meta_description: result.query.title,
       meta_url: `https://pdiperjuangan.id/detail-article/${id}/${slug}`,
