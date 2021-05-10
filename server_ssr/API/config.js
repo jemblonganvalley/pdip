@@ -32,7 +32,10 @@ const detailArticle = async (id, slug) => {
   })
     .then((result) => result.json())
     .then((data) => {
-      return data;
+      return {
+        ...data.query,
+        description: data.query.description.substr(0, 200),
+      };
     })
     .catch((err) => {
       return err;

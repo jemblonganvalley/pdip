@@ -19,10 +19,10 @@ article.get("/detail-article/:id/:slug", (req, res) => {
   detailArticle(id, slug).then((result) => {
     res.render("main", {
       page_title: slug.split("-").join(" "),
-      meta_keyword: result.query.title,
-      meta_description: result.query.title,
+      meta_keyword: result.title,
+      meta_description: result.description,
       meta_url: `https://pdiperjuangan.id/detail-article/${id}/${slug}`,
-      meta_image: `https://data.pdiperjuangan.id/public/${result.query.path}`,
+      meta_image: `https://data.pdiperjuangan.id/public/${result.path}`,
     });
   });
 });
