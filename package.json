@@ -45,7 +45,7 @@
     "sass": "^1.26.10",
     "slick-carousel": "^1.8.1",
     "styled-jsx": "^3.3.1",
-    "swiper": "^6.1.2",
+    "swiper": "^6.5.1",
     "yarn": "^1.22.10"
   },
   "scripts": {
