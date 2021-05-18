@@ -28,4 +28,17 @@ article.get("/detail-article/:id/:slug", (req, res) => {
   });
 });
 
+article.get("/detail-article/:id/ad/-art", (req, res) => {
+  const { id, slug } = req.params;
+  detailArticle(id, slug).then((result) => {
+    res.render("main", {
+      page_title: "ADART PDI Perjuangan",
+      meta_keyword: result.title,
+      meta_description: result.description,
+      meta_url: `https://pdiperjuangan.id/detail-article/${id}/ad/-art`,
+      meta_image: `https://data.pdiperjuangan.id/public/${result.path}`,
+    });
+  });
+});
+
 module.exports = article;

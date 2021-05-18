@@ -1,5 +1,5 @@
 const express = require("express");
-const { config } = require("../API/config");
+const { config, quotes } = require("../API/config");
 const bkbb = express.Router();
 
 bkbb.get("/bung-karno-bapak-bangsa", (req, res) => {
@@ -10,7 +10,20 @@ bkbb.get("/bung-karno-bapak-bangsa", (req, res) => {
       meta_description: result.query.set.meta_description,
       meta_url: "https://pdiperjuangan.id/bung-karno-bapak-bangsa",
       meta_image:
-        "https://data.pdiperjuangan.id/public//uploads/page/10122020060023NeR.jpeg",
+        "https://data.pdiperjuangan.id/public/uploads/page/10122020060023NeR.jpeg",
+    });
+  });
+});
+
+bkbb.get("/bung-karno-bapak-bangsa/quotes/:id", (req, res) => {
+  const { id } = req.params;
+  quotes(id).then((result) => {
+    res.render("main", {
+      page_title: "Bung Karno Bapak Bangsa",
+      meta_keyword: result.title,
+      meta_description: result.description,
+      meta_url: `https://pdiperjuangan.id/bung-karno-bapak-bangsa/quotes/${id}`,
+      meta_image: `https://data.pdiperjuangan.id/public/${result.path}`,
     });
   });
 });
