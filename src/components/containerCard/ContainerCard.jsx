@@ -87,7 +87,7 @@ const ContainerCard = () => {
         body: JSON.stringify({
           order: { key: "id", value: "desc" },
           where: { key: "blog.id_category_child", value: category_id },
-          limit: 9,
+          limit: 12,
           filter: [{ key: "blog.status", val: "publish" }],
         }),
       }
