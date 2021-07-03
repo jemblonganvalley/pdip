@@ -70,10 +70,10 @@ const Cards = ({
           borderRadius: borderRadius,
           marginTop: marginTop,
         }}
-        to={`${page}/${id}/${slug ? pageSLug() : null}`}
+        to={`/${page}/${id}/${slug ? pageSLug() : null}`}
       >
         <Link
-          to={`${page}/${id}/${slug ? pageSLug() : null}`}
+          to={`/${page}/${id}/${slug ? pageSLug() : null}`}
           className="imageCard"
           style={{
             backgroundImage: imageCard.includes("uploads")
@@ -87,7 +87,7 @@ const Cards = ({
           {/* JIKA MAU DIPAKAI CLASS, PAKAI CLASS VBMusic */}
           <Link
             className={`${classIcon}`}
-            to={`${page}/${id}/${slug ? pageSLug() : null}`}
+            to={`/${page}/${id}/${slug ? pageSLug() : null}`}
             style={{ textDecoration: "none" }}
           >
             <i
