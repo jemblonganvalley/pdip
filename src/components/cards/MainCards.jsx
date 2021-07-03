@@ -1,6 +1,8 @@
 import React from "react";
 import "./MainCards.scss";
 import { Link, Redirect } from "react-router-dom";
+import { url, localUrl, localServerSide } from "../../config/main.json"
+
 
 const Cards = ({
   page,
@@ -63,17 +65,17 @@ const Cards = ({
   return (
     <>
       <Link
-        component="a"
         className="col-lg-3 cardCustom"
         id="cardCustom2"
         style={{
           borderRadius: borderRadius,
           marginTop: marginTop,
         }}
-        to={`/${page}/${id}/${slug ? pageSLug() : null}`}
+        to={`${page}/${id}/${slug ? pageSLug() : null}`}
       >
         <Link
-          to={`/${page}/${id}/${slug ? pageSLug() : null}`}
+
+          to={`${page}/${id}/${slug ? pageSLug() : null}`}
           className="imageCard"
           style={{
             backgroundImage: imageCard.includes("uploads")
@@ -87,7 +89,7 @@ const Cards = ({
           {/* JIKA MAU DIPAKAI CLASS, PAKAI CLASS VBMusic */}
           <Link
             className={`${classIcon}`}
-            to={`/${page}/${id}/${slug ? pageSLug() : null}`}
+            to={`${page}/${id}/${slug ? pageSLug() : null}`}
             style={{ textDecoration: "none" }}
           >
             <i
