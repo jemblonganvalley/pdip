@@ -1,8 +1,7 @@
 import React from "react";
 import "./MainCards.scss";
 import { Link, Redirect } from "react-router-dom";
-import { url, localUrl, localServerSide } from "../../config/main.json"
-
+import { url, localUrl, localServerSide } from "../../config/main.json";
 
 const Cards = ({
   page,
@@ -45,7 +44,10 @@ const Cards = ({
   };
 
   const pageSLug = () => {
-    return slug.toString().replace(/ /g, "-").toLowerCase();
+    return slug
+      .toString()
+      .replace(/[^\w-]+/g, "-")
+      .toLowerCase();
   };
 
   const getToday = () => {
@@ -74,7 +76,6 @@ const Cards = ({
         to={`${page}/${id}/${slug ? pageSLug() : null}`}
       >
         <Link
-
           to={`${page}/${id}/${slug ? pageSLug() : null}`}
           className="imageCard"
           style={{

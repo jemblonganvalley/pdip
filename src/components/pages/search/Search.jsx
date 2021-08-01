@@ -132,7 +132,7 @@ const Search = () => {
               ></div>
               {/* END For Save Change Text */}
               <input
-                type="text"
+                type="search"
                 className="input-search"
                 id="txtGroup"
                 autoFocus
@@ -173,6 +173,7 @@ const Search = () => {
                             path={e.path}
                             title={e.title}
                             paragrap={e.description}
+                            page="detail-article"
                           />
                         </>
                       );

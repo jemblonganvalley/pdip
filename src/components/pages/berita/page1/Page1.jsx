@@ -12,7 +12,7 @@ import Wait from "../../../wait/Wait";
 
 const Page1 = () => {
   const refresher = useStoreState((state) => state.refresher);
-  const webUrl = "debian.jvalleyserver.net";
+  const webUrl = "https://pdiperjuangan.id";
   let { id, slug } = useParams();
   // window.location.href = `${webUrl}/detail-article/${slug}/${id}`;
   const [detailPage, setDetailPage] = useState();

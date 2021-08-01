@@ -174,10 +174,11 @@ function NewNavbar({ token }) {
                     type="text"
                     placeholder="Cari Artikel"
                     // name="search"
+                    defaultValue={search ? search : ""}
                     onChange={function (e) {
                       setSearch(e.target.value);
                     }}
-                    type="text"
+                    type="search"
                   />
                   <Link
                     to={`/search/${search}`}

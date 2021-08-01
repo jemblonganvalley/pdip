@@ -222,7 +222,7 @@ const HomePage = () => {
                   </div>
                 ))}
               <div className="groupArticleUtama">
-                <a href="https://www.bmkg.go.id/" target="#blank">
+                <a href="https://baguna.pdiperjuangan.id/" target="#blank">
                   <div className="customBorder">
                     <div className="itemImageCovid">
                       <img
@@ -233,7 +233,7 @@ const HomePage = () => {
                       />
                     </div>
                     <div className="itemTextCovid">
-                      <h5 style={{ color: "#fff" }}>Info BMKG</h5>
+                      <h5 style={{ color: "#fff" }}>Baguna BMKG</h5>
                     </div>
                   </div>
                 </a>

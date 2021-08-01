@@ -2,7 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./CardSearch.scss";
 
-const CardSearch = ({ cardSearchItem, id, path, title, paragrap }) => {
+const CardSearch = ({ cardSearchItem, id, path, title, paragrap, page }) => {
+  const pageSLug = () => {
+    return title
+      .toString()
+      .replace(/[^\w-]+/g, "-")
+      .toLowerCase();
+  };
   const add3Dots = (string, limit) => {
     var dots = "...";
     if (string.length > limit) {
@@ -19,11 +25,16 @@ const CardSearch = ({ cardSearchItem, id, path, title, paragrap }) => {
           
         );
       })} */}
-      <a
+      {/* <a
         className="card-hasil-pencarian"
         href={`https://article.pdiperjuangan.id/detail-article/${title
           .replace(/ /g, "-")
           .toLowerCase()}/${id}/`}
+      > */}
+
+      <a
+        className="card-hasil-pencarian"
+        href={`https://pdiperjuangan.id/${page}/${id}/${pageSLug()}`}
       >
         <img
           loading="lazy"
