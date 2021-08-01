@@ -16,9 +16,10 @@ const CardSocialMedia = ({ imageUrl, title, url, top }) => {
   let hashtag = "#PDIPERJUANGAN";
   let titleForWhatsapp = "PDI Perjuangan";
 
+  useEffect(() => {
+    console.log(url);
+  }, []);
   // const share
-
-  
 
   return (
     <>
@@ -34,7 +35,7 @@ const CardSocialMedia = ({ imageUrl, title, url, top }) => {
           }}
         >
           <p className="share-socialMedia">Share : </p>
-
+          {console.log(url)}
           {/* Facebook Share */}
           <FacebookShareButton
             url={url}

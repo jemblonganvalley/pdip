@@ -27,4 +27,16 @@ berita.get("/gallery", (req, res) => {
   });
 });
 
+berita.get("/gallery/detail-gallery/:id/:slug", (req, res) => {
+  gallery("berita").then((result) => {
+    res.render("main", {
+      page_title: "Gallery PDI Perjuangan",
+      meta_keyword: result.query.data[0].description,
+      meta_description: result.query.data[0].description,
+      meta_url: "https://pdiperjuangan.id/gallery",
+      meta_image: `https://data.pdiperjuangan.id/${result.query.data[0].path}`,
+    });
+  });
+});
+
 module.exports = berita;

@@ -143,6 +143,13 @@ const Gallery = () => {
     window.scrollTo(0, 0);
   }, [reload, numPage]);
 
+  const pageSLug = (title) => {
+    return title
+      .toString()
+      .replace(/[^\w-]+/g, "-")
+      .toLowerCase();
+  };
+
   return (
     <>
       {console.log(album)}
@@ -196,12 +203,17 @@ const Gallery = () => {
                     {parse(configHome[0].description)}
                   </div>
 
-                  <div className="box-medsos-beritaPage2">
-                    <CardSocialMedia
-                      title={configHome.title}
-                      imageUrl={configHome.path}
-                    />
-                  </div>
+                  {configHome.length > 0 && (
+                    <div className="box-medsos-beritaPage2">
+                      <CardSocialMedia
+                        title={configHome.title}
+                        imageUrl={configHome.path}
+                        url={`https://pdiperjuangan.id/gallery/detail-gallery/${
+                          configHome[0].id_album
+                        }/${pageSLug(configHome[0].title)}`}
+                      />
+                    </div>
+                  )}
                 </div>
                 {/* END Row2 */}
               </>
