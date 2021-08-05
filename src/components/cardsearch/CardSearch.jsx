@@ -38,7 +38,7 @@ const CardSearch = ({ cardSearchItem, id, path, title, paragrap, page }) => {
       >
         <img
           loading="lazy"
-          src={`https://data.pdiperjuangan.id/public/${path}`}
+          src={`http://192.168.8.18/public/${path}`}
           alt=""
           className="img-card"
         />

@@ -21,7 +21,7 @@ const Carousel3PemiluPage = ({ data }) => {
             <div className={i === 0 ? "carousel-item active" : "carousel-item"}>
               <img
                 loading="lazy"
-                src={`https://data.pdiperjuangan.id/public/${e.image}`}
+                src={`http://192.168.8.18/public/${e.image}`}
                 className="img1"
                 onClick={() => {
                   redir(`${e.link}`);

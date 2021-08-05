@@ -11,7 +11,7 @@ const CarouselPemilu1 = ({ data }) => {
       <NavLink to={link}>
         <img
           loading="lazy"
-          src={`https://data.pdiperjuangan.id/public/${img}`}
+          src={`http://192.168.8.18/public/${img}`}
           className="img-1"
         />
       </NavLink>
@@ -49,7 +49,7 @@ const CarouselPemilu1 = ({ data }) => {
                   {/* <WrapperImage img={e.image} link={"/"} /> */}
                   <img
                     loading="lazy"
-                    src={`https://data.pdiperjuangan.id/public/${e.image}`}
+                    src={`http://192.168.8.18/public/${e.image}`}
                     className="img-1"
                     href={e.link}
                     onClick={() => {

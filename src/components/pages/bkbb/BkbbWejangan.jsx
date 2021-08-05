@@ -25,7 +25,7 @@ const BkbbWejangan = () => {
   const [configHome, setConfigHome] = useState();
   const [manyCard, setManycard] = useState([]);
   const getConfigHome = async () => {
-    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
+    const res = await fetch("http://192.168.8.18/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -38,34 +38,28 @@ const BkbbWejangan = () => {
     const data = await res.json();
 
     // FETCH FIND CARD QUOTES
-    const resConfigHome = await fetch(
-      "https://data.pdiperjuangan.id/api/quotes/find",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${data.token}`,
-        },
-        body: JSON.stringify({
-          id: id,
-        }),
-      }
-    );
+    const resConfigHome = await fetch("http://192.168.8.18/api/quotes/find", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${data.token}`,
+      },
+      body: JSON.stringify({
+        id: id,
+      }),
+    });
 
     const dataConfigHome = await resConfigHome.json();
     setConfigHome(dataConfigHome.query);
 
     // FETCH MANY CARD
-    const resManycard = await fetch(
-      "https://data.pdiperjuangan.id/api/quotes/data",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${data.token}`,
-        },
-      }
-    );
+    const resManycard = await fetch("http://192.168.8.18/api/quotes/data", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${data.token}`,
+      },
+    });
 
     const dataManycard = await resManycard.json();
     console.log(dataManycard.query.data);
@@ -116,7 +110,7 @@ const BkbbWejangan = () => {
               <VMedia
                 displayIframe={"none"}
                 displayImage={"flex"}
-                backgroundImage={`https://data.pdiperjuangan.id/public${configHome.path}`}
+                backgroundImage={`http://192.168.8.18/public${configHome.path}`}
                 headline2={`${configHome.created_at}`}
                 desc={`${configHome.title}`}
                 customBackgroundColor={"transparent"}
@@ -145,7 +139,7 @@ const BkbbWejangan = () => {
               {manyCard.map((e, i) => (
                 <CardQuotes
                   page={`/quotes/${e.id}`}
-                  img={`https://data.pdiperjuangan.id/public/${e.path}`}
+                  img={`http://192.168.8.18/public/${e.path}`}
                   icon1="fas fa-quote-right"
                   txt1={e.title}
                   icon2="fas fa-quote-right"

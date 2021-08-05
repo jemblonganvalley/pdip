@@ -3,7 +3,7 @@ import "./CarouselKM.scss";
 
 const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
   const [berita, setBerita] = useState(data);
-  console.log(berita)
+  console.log(berita);
   return (
     <div
       className="wrapperKM"
@@ -37,9 +37,9 @@ const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
                   <div
                     className={`carousel-item ${i == 1 && "active"} itemKM`}
                     onClick={() => {
-                      window.location.href = `/detail-article/${
-                        e.id
-                      }/${e.title.replace(/\s/g, "-").toLowerCase()}`;
+                      window.location.href = `/detail-article/${e.id}/${e.title
+                        .replace(/\s/g, "-")
+                        .toLowerCase()}`;
                     }}
                   >
                     <div className="col-lg-6 textKM">
@@ -55,7 +55,7 @@ const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
                       className="col-lg-6 banner"
                       style={{
                         backgroundImage: e.path.includes("uploads")
-                          ? `url(https://data.pdiperjuangan.id/public/${e.path})`
+                          ? `url(http://192.168.8.18/public/${e.path})`
                           : `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
                         backgroundSize: "cover",
                       }}

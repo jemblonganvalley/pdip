@@ -37,7 +37,7 @@ const BkbbPage = () => {
   const [showVid, setShowVid] = useState(false);
 
   const getConfigHome = async () => {
-    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
+    const res = await fetch("http://192.168.8.18/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -50,7 +50,7 @@ const BkbbPage = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://data.pdiperjuangan.id/api/web/pages/bkbb",
+      "http://192.168.8.18/api/web/pages/bkbb",
       {
         method: "POST",
         headers: {
@@ -108,7 +108,7 @@ const BkbbPage = () => {
               <div
                 className="box-lahirnyaPancasila "
                 style={{
-                  backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome[1].value.image})`,
+                  backgroundImage: `url(http://192.168.8.18/public/${configHome[1].value.image})`,
                 }}
               >
                 <div className="redBox mt-auto">
@@ -173,7 +173,7 @@ const BkbbPage = () => {
           <div
             className="bannerBkbb"
             style={{
-              background: `url(https://data.pdiperjuangan.id/public/${configHome[4].value.image})`,
+              background: `url(http://192.168.8.18/public/${configHome[4].value.image})`,
               backgroundAttachment: "fixed",
               backgroundSize: "cover",
             }}
@@ -214,7 +214,7 @@ const BkbbPage = () => {
               {configHome[5].value.map((e, i) => (
                 <CardQuotes
                   page={`/bung-karno-bapak-bangsa/quotes/${e.id}`}
-                  img={`https://data.pdiperjuangan.id/public/${e.path}`}
+                  img={`http://192.168.8.18/public/${e.path}`}
                   icon1="fas fa-quote-right"
                   txt1={e.title}
                   icon2="fas fa-quote-right"

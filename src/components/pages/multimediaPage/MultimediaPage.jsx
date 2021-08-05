@@ -15,7 +15,7 @@ const MultimediaPage = () => {
   const [configHome, setConfigHome] = useState([]);
 
   const getConfigHome = async () => {
-    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
+    const res = await fetch("http://192.168.8.18/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -28,7 +28,7 @@ const MultimediaPage = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://data.pdiperjuangan.id/api/web/pages/multimedia",
+      "http://192.168.8.18/api/web/pages/multimedia",
       {
         method: "POST",
         headers: {
@@ -57,7 +57,7 @@ const MultimediaPage = () => {
           {/* <div
             className="headerMedia"
             style={{
-              background: `url(https://data.pdiperjuangan.id/public/${configHome[0].value.image})`,
+              background: `url(http://192.168.8.18/public/${configHome[0].value.image})`,
             }}
           >
             <div className="textBannerMedia">
@@ -86,10 +86,10 @@ const MultimediaPage = () => {
 
           <div className="wrapperCardInfo">
             <CardInformasi
-              image={`https://data.pdiperjuangan.id/public/${configHome[2].value[0].image}`}
-              image2={`https://data.pdiperjuangan.id/public/${configHome[2].value[1].image}`}
-              image3={`https://data.pdiperjuangan.id/public/${configHome[2].value[2].image}`}
-              image4={`https://data.pdiperjuangan.id/public/${configHome[2].value[3].image}`}
+              image={`http://192.168.8.18/public/${configHome[2].value[0].image}`}
+              image2={`http://192.168.8.18/public/${configHome[2].value[1].image}`}
+              image3={`http://192.168.8.18/public/${configHome[2].value[2].image}`}
+              image4={`http://192.168.8.18/public/${configHome[2].value[3].image}`}
               text={`${configHome[2].value[0].title}`}
               text2={`${configHome[2].value[1].title}`}
               text3={`${configHome[2].value[2].title}`}
@@ -105,7 +105,7 @@ const MultimediaPage = () => {
           <div
             className="panggung"
             style={{
-              backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome[3].value.image})`,
+              backgroundImage: `url(http://192.168.8.18/public/${configHome[3].value.image})`,
               backgroundAttachment: "fixed",
             }}
           >

@@ -1,54 +1,53 @@
 import React, { useState, useEffect } from "react";
 import "./Timeline.scss";
-import parse from 'html-react-parser'
+import parse from "html-react-parser";
 
 const Timeline = ({ timeline }) => {
   let [hover, setHover] = useState();
-  const [dataAgenda, setDataAgenda] = useState([])
-  const [dataTimeline, setDataTimeline] = useState([])
+  const [dataAgenda, setDataAgenda] = useState([]);
+  const [dataTimeline, setDataTimeline] = useState([]);
 
   async function getApiData() {
+    const res = await fetch("http://192.168.8.18/api/auth/app", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        app_id: "1555309664580",
+        api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
+      }),
+    });
+    const data = await res.json();
 
-    const res = await fetch('https://data.pdiperjuangan.id/api/auth/app', {
-        method: 'POST',
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            app_id: "1555309664580",
-            api_secret: "4d672ce3-e422-4d8a-86ff-fabb1808a689",
-        })
-    })
-    const data = await res.json()
+    const resConfigAgenda = await fetch("http://192.168.8.18/api/event/data", {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    const dataAgenda = await resConfigAgenda.json();
+    setDataAgenda(dataAgenda.data);
 
-    const resConfigAgenda = await fetch('https://data.pdiperjuangan.id/api/event/data', {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    const dataAgenda = await resConfigAgenda.json()
-    setDataAgenda(dataAgenda.data)
+    const resConfigEvent = await fetch("http://192.168.8.18/api/event/find", {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${data.token}`,
+      },
+      body: JSON.stringify({
+        id: 13,
+      }),
+    });
+    const dataConfigTimeline = await resConfigEvent.json();
+    setDataTimeline(dataConfigTimeline.query);
+  }
 
-    const resConfigEvent = await fetch('https://data.pdiperjuangan.id/api/event/find', {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${data.token}`
-        },
-        body: JSON.stringify({
-            "id": 13
-        })
-    })
-    const dataConfigTimeline = await resConfigEvent.json()
-    setDataTimeline(dataConfigTimeline.query)
-}
-
-useEffect(() => {
-    getApiData()
-}, [])
+  useEffect(() => {
+    getApiData();
+  }, []);
 
   return (
     <section className="wrapperTimeline">
@@ -81,7 +80,7 @@ useEffect(() => {
                   <div
                     className="imgContent"
                     style={{
-                      background: `url(https://data.pdiperjuangan.id/public/${e.path})`,
+                      background: `url(http://192.168.8.18/public/${e.path})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center center",
                     }}
@@ -103,7 +102,7 @@ useEffect(() => {
                   <div className="tanggal">
                     <i className="fa fa-calendar-check-o"></i>
                     <small className="bulan">
-                    {e.date} | {e.time}
+                      {e.date} | {e.time}
                     </small>
                     {/* <small className="waktu">{e.time}</small> */}
                   </div>

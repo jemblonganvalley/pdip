@@ -26,7 +26,7 @@ const CardCircle = ({ strukturCard, grade }) => {
             <div
               className="imageCircle"
               style={{
-                background: `url(https://data.pdiperjuangan.id/public/${e.photo})`,
+                background: `url(http://192.168.8.18/public/${e.photo})`,
                 backgroundSize: "cover",
               }}
             ></div>

@@ -34,16 +34,16 @@ const KMobile = ({ cat = 44, totalPage = 3, data = data }) => {
                       i == 1 && "active"
                     } itemKMobile`}
                     onClick={() => {
-                      window.location.href = `/detail-article/${
-                        e.id
-                      }/${e.title.replace(/\s/g, "-").toLowerCase()}`;
+                      window.location.href = `/detail-article/${e.id}/${e.title
+                        .replace(/\s/g, "-")
+                        .toLowerCase()}`;
                     }}
                   >
                     <div
                       className="col-lg-6 bannerMobile"
                       style={{
                         backgroundImage: e.path.includes("uploads")
-                          ? `url(https://data.pdiperjuangan.id/public/${e.path})`
+                          ? `url(http://192.168.8.18/public/${e.path})`
                           : `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
                         backgroundSize: "cover",
                       }}

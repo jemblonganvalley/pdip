@@ -12,7 +12,7 @@ const DetailPengurus = () => {
   const [configHome, setConfigHome] = useState([]);
 
   const getConfigHome = async () => {
-    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
+    const res = await fetch("http://192.168.8.18/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -25,7 +25,7 @@ const DetailPengurus = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://data.pdiperjuangan.id/api/partai/pengurus/find",
+      "http://192.168.8.18/api/partai/pengurus/find",
       {
         method: "POST",
         headers: {
@@ -89,9 +89,7 @@ const DetailPengurus = () => {
               <div className="kolum1">
                 <img
                   loading="lazy"
-                  src={
-                    `https://data.pdiperjuangan.id/public/` + configHome.photo
-                  }
+                  src={`http://192.168.8.18/public/` + configHome.photo}
                   alt="photo pengurus"
                 />
                 <div className="textProfil">

@@ -25,7 +25,7 @@ const CarouselPemilu2 = ({ data }) => {
               {/* Image2 */}
               <img
                 loading="lazy"
-                src={`https://data.pdiperjuangan.id/public/${e.image}`}
+                src={`http://192.168.8.18/public/${e.image}`}
                 className="img-2"
                 onClick={() => {
                   redir(`${e.link}`);

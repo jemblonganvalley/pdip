@@ -24,11 +24,11 @@ const CarouselTataCara = ({ data }) => {
                 as="div"
                 to={e.link}
               >
-                {/* <img loading="lazy" src={`https://data.pdiperjuangan.id/public/${e.image}`} className="imageTC" /> */}
+                {/* <img loading="lazy" src={`http://192.168.8.18/public/${e.image}`} className="imageTC" /> */}
                 <div
                   className="imageTC"
                   style={{
-                    background: `url(https://data.pdiperjuangan.id/public/${e.image})`,
+                    background: `url(http://192.168.8.18/public/${e.image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

@@ -3,7 +3,7 @@ const { token } = require("./token");
 
 const config = async (page) => {
   const tk = await token();
-  return await fetch(`https://data.pdiperjuangan.id/api/web/config/${page}`, {
+  return await fetch(`http://192.168.8.18/api/web/config/${page}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -22,7 +22,7 @@ const config = async (page) => {
 
 const detailArticle = async (id, slug) => {
   const tk = await token();
-  return await fetch(`https://data.pdiperjuangan.id/api/blog/find/?id=${id}`, {
+  return await fetch(`http://192.168.8.18/api/blog/find/?id=${id}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -52,20 +52,17 @@ const detailArticle = async (id, slug) => {
 
 const detailMultimedia = async (id, slug) => {
   const tk = await token();
-  return await fetch(
-    `https://data.pdiperjuangan.id/api/multimedia/youtube-find`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-        Authorization: `Bearer ${tk}`,
-      },
-      body: JSON.stringify({
-        id: id,
-      }),
-    }
-  )
+  return await fetch(`http://192.168.8.18/api/multimedia/youtube-find`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+      Authorization: `Bearer ${tk}`,
+    },
+    body: JSON.stringify({
+      id: id,
+    }),
+  })
     .then((result) => result.json())
     .then((data) => {
       return data;
@@ -77,7 +74,7 @@ const detailMultimedia = async (id, slug) => {
 
 const gallery = async () => {
   const tk = await token();
-  return await fetch(`https://data.pdiperjuangan.id/api/gallery/data?page=1`, {
+  return await fetch(`http://192.168.8.18/api/gallery/data?page=1`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -101,7 +98,7 @@ const gallery = async () => {
 
 const quotes = async (id) => {
   const tk = await token();
-  return await fetch(`https://data.pdiperjuangan.id/api/quotes/find`, {
+  return await fetch(`http://192.168.8.18/api/quotes/find`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

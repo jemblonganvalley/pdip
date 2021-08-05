@@ -13,7 +13,7 @@ const bkbb = require("./controllers/bkbb_controller");
 const informasi = require("./controllers/informasiPublik_controller");
 const pemilu = require("./controllers/pemilu_controller");
 const article = require("./controllers/article_controller");
-const search  = require("./controllers/search_controller");
+const search = require("./controllers/search_controller");
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, "../build")));

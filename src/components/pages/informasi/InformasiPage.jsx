@@ -33,7 +33,7 @@ const InformasiPage = () => {
   const [configHome, setConfigHome] = useState([]);
 
   const getGallery = async () => {
-    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
+    const res = await fetch("http://192.168.8.18/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -46,7 +46,7 @@ const InformasiPage = () => {
     const data = await res.json();
 
     const resGallery = await fetch(
-      "https://data.pdiperjuangan.id/api/gallery/data?page=2",
+      "http://192.168.8.18/api/gallery/data?page=2",
       {
         method: "POST",
         headers: {
@@ -62,7 +62,7 @@ const InformasiPage = () => {
   };
 
   const getConfigHome = async () => {
-    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
+    const res = await fetch("http://192.168.8.18/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -75,7 +75,7 @@ const InformasiPage = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "https://data.pdiperjuangan.id/api/web/pages/informasi",
+      "http://192.168.8.18/api/web/pages/informasi",
       {
         method: "POST",
         headers: {
@@ -107,7 +107,7 @@ const InformasiPage = () => {
           {/* <div
             className="headInformasi"
             style={{
-              backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome[0].value.image})`,
+              backgroundImage: `url(http://192.168.8.18/public/${configHome[0].value.image})`,
             }}
           >
             <div className="textHeadInformasi">
@@ -144,7 +144,7 @@ const InformasiPage = () => {
                 <div
                   className="backgroundPK"
                   style={{
-                    backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome[2].value.image})`,
+                    backgroundImage: `url(http://192.168.8.18/public/${configHome[2].value.image})`,
                   }}
                 >
                   <h4 className="maklumat">{configHome[2].value.title}</h4>
@@ -158,13 +158,13 @@ const InformasiPage = () => {
             {/* divider */}
             <CardInformasi
               to1="detail-article/656/struktur"
-              image={`https://data.pdiperjuangan.id/public/${configHome[3].value[0].image}`}
+              image={`http://192.168.8.18/public/${configHome[3].value[0].image}`}
               to2="/article/231/visi-dan-misi-ppid"
-              image2={`https://data.pdiperjuangan.id/public/${configHome[3].value[1].image}`}
+              image2={`http://192.168.8.18/public/${configHome[3].value[1].image}`}
               to3="/detail-article/624/prosedur-pelayanan-ppid"
-              image3={`https://data.pdiperjuangan.id/public/${configHome[3].value[2].image}`}
+              image3={`http://192.168.8.18/public/${configHome[3].value[2].image}`}
               to4="/detail-article/623/regulasi-ppd"
-              image4={`https://data.pdiperjuangan.id/public/${configHome[3].value[3].image}`}
+              image4={`http://192.168.8.18/public/${configHome[3].value[3].image}`}
               text={`${configHome[3].value[0].title}`}
               text2={`${configHome[3].value[1].title}`}
               text3={`${configHome[3].value[2].title}`}
@@ -181,7 +181,7 @@ const InformasiPage = () => {
               <Link component={anchorLink} linkTo="detail-article/658/lhkpn">
                 <img
                   loading="lazy"
-                  src={`https://data.pdiperjuangan.id/public/${configHome[4].value[0].image}`}
+                  src={`http://192.168.8.18/public/${configHome[4].value[0].image}`}
                   alt=""
                   className="imageHarta"
                   style={{
@@ -201,7 +201,7 @@ const InformasiPage = () => {
               >
                 <img
                   loading="lazy"
-                  src={`https://data.pdiperjuangan.id/public/${configHome[4].value[1].image}`}
+                  src={`http://192.168.8.18/public/${configHome[4].value[1].image}`}
                   alt=""
                   className="imageHarta"
                   style={{
@@ -257,7 +257,7 @@ const InformasiPage = () => {
                 <div className="box-card-laporan">
                   <img
                     loading="lazy"
-                    src={`https://data.pdiperjuangan.id/public/${configHome[7].value[0].image}`}
+                    src={`http://192.168.8.18/public/${configHome[7].value[0].image}`}
                     alt=""
                     className="imageHarta"
                     style={{
@@ -277,7 +277,7 @@ const InformasiPage = () => {
                 <div className="box-card-laporan">
                   <img
                     loading="lazy"
-                    src={`https://data.pdiperjuangan.id/public/${configHome[7].value[1].image}`}
+                    src={`http://192.168.8.18/public/${configHome[7].value[1].image}`}
                     alt=""
                     className="imageHarta"
                     style={{

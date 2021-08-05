@@ -10,7 +10,7 @@ article.get("/article/:id/:slug", (req, res) => {
       meta_description: result.query.set.meta_description,
       meta_url: "https://pdiperjuangan.id/berita",
       meta_image:
-        "https://data.pdiperjuangan.id/public//uploads/page/10122020060023NeR.jpeg",
+        "http://192.168.8.18/public//uploads/page/10122020060023NeR.jpeg",
     });
   });
 });
@@ -23,7 +23,7 @@ article.get("/detail-article/:id/:slug", (req, res) => {
       meta_keyword: result.title,
       meta_description: result.description,
       meta_url: `https://pdiperjuangan.id/detail-article/${id}/${slug}`,
-      meta_image: `https://data.pdiperjuangan.id/public/${result.path}`,
+      meta_image: `http://192.168.8.18/public/${result.path}`,
     });
   });
 });
@@ -36,7 +36,7 @@ article.get("/detail-article/:id/ad/-art", (req, res) => {
       meta_keyword: result.title,
       meta_description: result.description,
       meta_url: `https://pdiperjuangan.id/detail-article/${id}/ad/-art`,
-      meta_image: `https://data.pdiperjuangan.id/public/${result.path}`,
+      meta_image: `http://192.168.8.18/public/${result.path}`,
     });
   });
 });
