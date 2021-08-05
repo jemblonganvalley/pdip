@@ -56,6 +56,6 @@ app.get("/test", (req, res) => {
     .catch((err) => console.log(err));
 });
 
-app.listen(8000, () => {
+app.listen(8000, "0.0.0.0", () => {
   console.log("listen port 8000");
 });
