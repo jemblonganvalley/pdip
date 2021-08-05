@@ -10,7 +10,7 @@ article.get("/article/:id/:slug", (req, res) => {
       meta_description: result.query.set.meta_description,
       meta_url: "https://pdiperjuangan.id/berita",
       meta_image:
-        "http://192.168.8.18/public//uploads/page/10122020060023NeR.jpeg",
+        "http://192.168.8.18/public/uploads/page/10122020060023NeR.jpeg",
     });
   });
 });
