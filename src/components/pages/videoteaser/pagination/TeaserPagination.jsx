@@ -112,7 +112,7 @@ const TeaserPagination = () => {
   const [configHome, setConfigHome] = useState([]);
 
   const getConfigHome = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -125,7 +125,7 @@ const TeaserPagination = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "http://192.168.8.18/api/web/pages/home",
+      "https://data.pdiperjuangan.id/api/web/pages/home",
       {
         method: "POST",
         headers: {

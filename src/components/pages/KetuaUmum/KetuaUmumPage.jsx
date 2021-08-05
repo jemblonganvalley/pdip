@@ -23,7 +23,7 @@ const KetuaUmumPage = () => {
   const [gallery, setGallery] = useState([]);
 
   const getConfigHome = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -36,7 +36,7 @@ const KetuaUmumPage = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "http://192.168.8.18/api/web/pages/ketua-umum",
+      "https://data.pdiperjuangan.id/api/web/pages/ketua-umum",
       {
         method: "POST",
         headers: {
@@ -55,7 +55,7 @@ const KetuaUmumPage = () => {
   };
 
   const getGallery = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -68,7 +68,7 @@ const KetuaUmumPage = () => {
     const data = await res.json();
 
     const resGallery = await fetch(
-      "http://192.168.8.18/api/gallery/data?page=2",
+      "https://data.pdiperjuangan.id/api/gallery/data?page=2",
       {
         method: "POST",
         headers: {
@@ -96,7 +96,7 @@ const KetuaUmumPage = () => {
           {/* <div
             className="headers-ketuaumum"
             style={{
-              background: `url(http://192.168.8.18/public/${configHome[0].value.image})`,
+              background: `url(https://data.pdiperjuangan.id/public/${configHome[0].value.image})`,
               objectFit: "cover",
               objectPosition: "center",
             }}
@@ -128,13 +128,13 @@ const KetuaUmumPage = () => {
               {/* 2 r-group-text-image" */}
               <CardInformasi
                 to1="/article/233/pidato-kongres-pdi-perjuangan"
-                image={`http://192.168.8.18/public/${configHome[2].value[0].image}`}
+                image={`https://data.pdiperjuangan.id/public/${configHome[2].value[0].image}`}
                 to2="/article/238/pidato-rakernas-pdi-perjuangan"
-                image2={`http://192.168.8.18/public/${configHome[2].value[1].image}`}
+                image2={`https://data.pdiperjuangan.id/public/${configHome[2].value[1].image}`}
                 to3="/article/239/pidato-rakornas-pdi-perjuangan"
-                image3={`http://192.168.8.18/public/${configHome[2].value[2].image}`}
+                image3={`https://data.pdiperjuangan.id/public/${configHome[2].value[2].image}`}
                 to4="/article/240/pidato-hut-pdi-perjuangan"
-                image4={`http://192.168.8.18/public/${configHome[2].value[3].image}`}
+                image4={`https://data.pdiperjuangan.id/public/${configHome[2].value[3].image}`}
                 text="pidato kongres"
                 text2="pidato rakernas"
                 text3="pidato rakornas"

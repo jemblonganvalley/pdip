@@ -23,7 +23,7 @@ const CarouselBeritaPage2 = ({ id, data }) => {
             <>
               <img
                 loading="lazy"
-                src={`http://192.168.8.18/public/${e.path}`}
+                src={`https://data.pdiperjuangan.id/public/${e.path}`}
                 alt={e.title}
                 key={i}
                 className={i === 1 ? "carousel-item active" : "carousel-item"}

@@ -38,7 +38,7 @@ function App() {
   let [hide, setHide] = useState(true);
   let [tkn, setTkn] = useState();
   const getToken = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

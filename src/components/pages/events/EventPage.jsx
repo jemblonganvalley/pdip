@@ -85,7 +85,7 @@ const EventPage = () => {
   const paginate = (pageNumber) => setCurrentPage2(pageNumber);
 
   async function getApiData() {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -97,30 +97,36 @@ const EventPage = () => {
     });
     const data = await res.json();
 
-    const resConfigAgenda = await fetch("http://192.168.8.18/api/event/data", {
-      method: "POST",
-      mode: "cors",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${data.token}`,
-      },
-    });
+    const resConfigAgenda = await fetch(
+      "https://data.pdiperjuangan.id/api/event/data",
+      {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+      }
+    );
     const dataAgenda = await resConfigAgenda.json();
     setDataAgenda(dataAgenda.query.data);
     // console.log(dataAgenda)
     setPag(dataAgenda.query);
 
-    const resConfigEvent = await fetch("http://192.168.8.18/api/event/find", {
-      method: "POST",
-      mode: "cors",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${data.token}`,
-      },
-      body: JSON.stringify({
-        id: 13,
-      }),
-    });
+    const resConfigEvent = await fetch(
+      "https://data.pdiperjuangan.id/api/event/find",
+      {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+        body: JSON.stringify({
+          id: 13,
+        }),
+      }
+    );
     const dataConfigTimeline = await resConfigEvent.json();
     setDataTimeline(dataConfigTimeline.query);
   }

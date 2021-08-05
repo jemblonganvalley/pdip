@@ -12,7 +12,7 @@ const Dpd = () => {
   const [configHome, setConfigHome] = useState();
 
   const getConfigHome = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -25,7 +25,7 @@ const Dpd = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "http://192.168.8.18/api/partai/dpd/find",
+      "https://data.pdiperjuangan.id/api/partai/dpd/find",
       {
         method: "POST",
         headers: {
@@ -92,7 +92,7 @@ const Dpd = () => {
               <div className="kolum1">
                 <img
                   loading="lazy"
-                  src={`http://192.168.8.18/public/${configHome.photo_one}`}
+                  src={`https://data.pdiperjuangan.id/public/${configHome.photo_one}`}
                   alt=""
                   style={{
                     objectFit: "cover",
@@ -152,7 +152,7 @@ const Dpd = () => {
                 <div
                   className="peta"
                   style={{
-                    backgroundImage: `url(http://192.168.8.18/public/${configHome.photo_two})`,
+                    backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome.photo_two})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

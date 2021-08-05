@@ -80,7 +80,7 @@ const Cards = ({
           className="imageCard"
           style={{
             backgroundImage: imageCard.includes("uploads")
-              ? `url(http://192.168.8.18/public/${imageCard})`
+              ? `url(https://data.pdiperjuangan.id/public/${imageCard})`
               : `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)`,
 
             textDecoration: "none",

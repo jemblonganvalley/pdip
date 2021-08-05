@@ -32,7 +32,7 @@ const WejanganBungKarno = () => {
 
   const refresher = useStoreState((state) => state.refresher);
   const getConfigHome = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -44,34 +44,40 @@ const WejanganBungKarno = () => {
     });
     const data = await res.json();
 
-    const resConfigHome = await fetch("http://192.168.8.18/api/quotes/data", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${data.token}`,
-      },
-      body: JSON.stringify({
-        order: {
-          key: "id",
-          value: "desc",
+    const resConfigHome = await fetch(
+      "https://data.pdiperjuangan.id/api/quotes/data",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
         },
-      }),
-    });
+        body: JSON.stringify({
+          order: {
+            key: "id",
+            value: "desc",
+          },
+        }),
+      }
+    );
 
     const dataConfigHome = await resConfigHome.json();
     setCardWejanganBk(dataConfigHome.query.data);
 
     // FETCH FIND CARD QUOTES
-    const resVcard = await fetch("http://192.168.8.18/api/quotes/find", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${data.token}`,
-      },
-      body: JSON.stringify({
-        id: firstTime ? dataConfigHome.query.data[0].id : id,
-      }),
-    });
+    const resVcard = await fetch(
+      "https://data.pdiperjuangan.id/api/quotes/find",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+        body: JSON.stringify({
+          id: firstTime ? dataConfigHome.query.data[0].id : id,
+        }),
+      }
+    );
 
     const dataVcard = await resVcard.json();
     setConfigHome(dataVcard.query);
@@ -106,7 +112,7 @@ const WejanganBungKarno = () => {
                   id={configHome.id}
                   displayIframe={"none"}
                   displayImage={"flex"}
-                  backgroundImage={`http://192.168.8.18/public/${configHome.path}`}
+                  backgroundImage={`https://data.pdiperjuangan.id/public/${configHome.path}`}
                   headline={configHome.title}
                   desc={configHome.description}
                   customBackgroundColor={"transparent"}
@@ -125,7 +131,7 @@ const WejanganBungKarno = () => {
                 id={3}
                 displayIframe={"none"}
                 displayImage={"flex"}
-                backgroundImage={`http://192.168.8.18/public/uploads/blog/040520210419594Q1.jpeg`}
+                backgroundImage={`https://data.pdiperjuangan.id/public/uploads/blog/040520210419594Q1.jpeg`}
                 headline={`......`}
                 desc={`....`}
                 customBackgroundColor={"transparent"}
@@ -160,7 +166,7 @@ const WejanganBungKarno = () => {
             {cardWejanganBkItem.map((e, i) => (
               <CardQuotes
                 page={`/bung-karno-bapak-bangsa/quotes/${e.id}`}
-                img={`http://192.168.8.18/public/${e.path}`}
+                img={`https://data.pdiperjuangan.id/public/${e.path}`}
                 icon1="fas fa-quote-right"
                 txt1={e.title}
                 icon2="fas fa-quote-right"

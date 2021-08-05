@@ -20,7 +20,7 @@ const Page2 = () => {
   const id = useParams("id");
 
   const getConfigHome = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -33,7 +33,7 @@ const Page2 = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "http://192.168.8.18/api/multimedia/youtube-find",
+      "https://data.pdiperjuangan.id/api/multimedia/youtube-find",
       {
         method: "POST",
         headers: {
@@ -50,7 +50,7 @@ const Page2 = () => {
     setConfigHome(dataConfigHome);
 
     const resManyCard = await fetch(
-      "http://192.168.8.18/api/multimedia/youtube-data",
+      "https://data.pdiperjuangan.id/api/multimedia/youtube-data",
       {
         method: "POST",
         headers: {

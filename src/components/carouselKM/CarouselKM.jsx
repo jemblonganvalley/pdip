@@ -55,7 +55,7 @@ const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
                       className="col-lg-6 banner"
                       style={{
                         backgroundImage: e.path.includes("uploads")
-                          ? `url(http://192.168.8.18/public/${e.path})`
+                          ? `url(https://data.pdiperjuangan.id/public/${e.path})`
                           : `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
                         backgroundSize: "cover",
                       }}

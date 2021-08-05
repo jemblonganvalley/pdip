@@ -10,7 +10,7 @@ bkbb.get("/bung-karno-bapak-bangsa", (req, res) => {
       meta_description: result.query.set.meta_description,
       meta_url: "https://pdiperjuangan.id/bung-karno-bapak-bangsa",
       meta_image:
-        "http://192.168.8.18/public/uploads/page/10122020060023NeR.jpeg",
+        "https://data.pdiperjuangan.id/public/uploads/page/10122020060023NeR.jpeg",
     });
   });
 });
@@ -23,7 +23,7 @@ bkbb.get("/bung-karno-bapak-bangsa/quotes/:id", (req, res) => {
       meta_keyword: result.title,
       meta_description: result.description,
       meta_url: `https://pdiperjuangan.id/bung-karno-bapak-bangsa/quotes/${id}`,
-      meta_image: `http://192.168.8.18/public/${result.path}`,
+      meta_image: `https://data.pdiperjuangan.id/public/${result.path}`,
     });
   });
 });

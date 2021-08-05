@@ -20,7 +20,7 @@ const CarouselDualKetuaumum = ({
         style={{
           height: "40vh",
           // border : '1px solid red',
-          backgroundImage: `url(http://192.168.8.18/public/${cat2.image})`,
+          backgroundImage: `url(https://data.pdiperjuangan.id/public/${cat2.image})`,
           position: "relative",
           backgroundSize: "cover",
         }}

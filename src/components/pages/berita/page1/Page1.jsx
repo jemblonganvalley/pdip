@@ -18,7 +18,7 @@ const Page1 = () => {
   const [detailPage, setDetailPage] = useState();
 
   const getDetailPage = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ const Page1 = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `http://192.168.8.18/api/blog/find/?id=${id}`,
+      `https://data.pdiperjuangan.id/api/blog/find/?id=${id}`,
       {
         method: "POST",
         headers: {
@@ -65,11 +65,11 @@ const Page1 = () => {
             <meta
               property="og:image"
               itemprop="image"
-              content={`http://192.168.8.18/public${detailPage.path}`}
+              content={`https://data.pdiperjuangan.id/public${detailPage.path}`}
             />
             <meta
               property="image"
-              content={`http://192.168.8.18/public${detailPage.path}`}
+              content={`https://data.pdiperjuangan.id/public${detailPage.path}`}
             />
 
             <meta property="og:type" content="article" />
@@ -191,7 +191,7 @@ const Page1 = () => {
                   <img
                     loading="lazy"
                     className="img-beritaPage1"
-                    src={`http://192.168.8.18/public/${detailPage.path}`}
+                    src={`https://data.pdiperjuangan.id/public/${detailPage.path}`}
                     alt={`${detailPage.path}`}
                     style={{
                       // height: "40vh",

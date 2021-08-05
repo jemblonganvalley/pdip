@@ -9,7 +9,7 @@ search.get("/search/:params", (req, res) => {
     meta_description: "portal resmi partai PDI Perjuangan",
     meta_url: "https://pdiperjuangan.id/search",
     meta_image:
-      "http://192.168.8.18/public/uploads/page/10122020060023NeR.jpeg",
+      "https://data.pdiperjuangan.id/public/uploads/page/10122020060023NeR.jpeg",
   });
 });
 

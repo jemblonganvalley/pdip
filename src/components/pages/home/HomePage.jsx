@@ -56,7 +56,7 @@ const HomePage = () => {
   };
 
   const getConfigHome = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -73,7 +73,7 @@ const HomePage = () => {
     }
 
     const resConfigHome = await fetch(
-      "http://192.168.8.18/api/web/pages/home",
+      "https://data.pdiperjuangan.id/api/web/pages/home",
       {
         method: "POST",
         headers: {
@@ -91,7 +91,7 @@ const HomePage = () => {
   };
 
   const getGallery = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -104,7 +104,7 @@ const HomePage = () => {
     const data = await res.json();
 
     const resGallery = await fetch(
-      "http://192.168.8.18/api/gallery/data?page=2",
+      "https://data.pdiperjuangan.id/api/gallery/data?page=2",
       {
         method: "POST",
         headers: {
@@ -213,7 +213,7 @@ const HomePage = () => {
                         <div className="itemImageCovid">
                           <img
                             loading="lazy"
-                            src={`http://192.168.8.18/public/${e.image}`}
+                            src={`https://data.pdiperjuangan.id/public/${e.image}`}
                             alt=""
                             className="imageCovid"
                           />

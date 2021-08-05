@@ -56,7 +56,7 @@ const MainSliderTablet = ({ value, cls }) => {
                   <div className="box-img-mainSlider-tablet">
                     <img
                       loading="lazy"
-                      src={`http://192.168.8.18/public/${e.image}`}
+                      src={`https://data.pdiperjuangan.id/public/${e.image}`}
                       alt={e.title}
                       className="img-home-mainSlider"
                     />

@@ -71,7 +71,7 @@ const Search = () => {
   };
 
   const getConfigHome = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -84,7 +84,7 @@ const Search = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `http://192.168.8.18/api/blog/search?page=${numPage}`,
+      `https://data.pdiperjuangan.id/api/blog/search?page=${numPage}`,
       {
         method: "POST",
         headers: {

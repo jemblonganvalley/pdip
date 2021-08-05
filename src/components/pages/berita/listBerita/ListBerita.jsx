@@ -14,7 +14,7 @@ const ListBerita = () => {
   let [berita, setBerita] = useState([]);
 
   const getDataBerita = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -26,17 +26,20 @@ const ListBerita = () => {
     });
     const data = await res.json();
 
-    const resBerita = await fetch("http://192.168.8.18/api/blog/data/?page=1", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${data.token}`,
-      },
-      body: JSON.stringify({
-        order: { key: "id", value: "desc" },
-        limit: 10,
-      }),
-    });
+    const resBerita = await fetch(
+      "https://data.pdiperjuangan.id/api/blog/data/?page=1",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+        body: JSON.stringify({
+          order: { key: "id", value: "desc" },
+          limit: 10,
+        }),
+      }
+    );
     const dataBerita = await resBerita.json();
     setBerita(dataBerita.query.data);
   };

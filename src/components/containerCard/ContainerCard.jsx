@@ -17,7 +17,7 @@ const ContainerCard = () => {
   const [configHome, setConfigHome] = useState([]);
   const [pag, setPag] = useState();
   const [defaultUrl, setDefaultUrl] = useState(
-    `http://192.168.8.18/api/blog/data?page=${numPage}`
+    `https://data.pdiperjuangan.id/api/blog/data?page=${numPage}`
   );
 
   // const AngkaPaginationEvent = ({itemEventPerPage, totalPosts, paginate }) => {
@@ -64,7 +64,7 @@ const ContainerCard = () => {
   // };
 
   const getConfigHome = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -77,7 +77,7 @@ const ContainerCard = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `http://192.168.8.18/api/blog/data?page=${numPage}`,
+      `https://data.pdiperjuangan.id/api/blog/data?page=${numPage}`,
       {
         method: "POST",
         headers: {

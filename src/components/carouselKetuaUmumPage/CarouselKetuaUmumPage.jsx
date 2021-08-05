@@ -24,7 +24,7 @@ const CarouselKetuaUmumPage = ({ data }) => {
                   <div
                     className="col1-container-1-carousel-ketuaUmumPage"
                     style={{
-                      backgroundImage: `url(http://192.168.8.18/public/${e.image})`,
+                      backgroundImage: `url(https://data.pdiperjuangan.id/public/${e.image})`,
                     }}
                   >
                     <div className="cont-img-col1">

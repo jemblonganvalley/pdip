@@ -14,7 +14,7 @@ const MultimediaAll = () => {
   const [numPage, setNumPage] = useState(1);
   const [pag, setPag] = useState();
   const [defaultUrl, setDefaultUrl] = useState(
-    `http://192.168.8.18/api/blog/data?page=${numPage}`
+    `https://data.pdiperjuangan.id/api/blog/data?page=${numPage}`
   );
 
   const AngkaPaginationEvent = ({ itemEventPerPage, totalPosts, paginate }) => {
@@ -61,7 +61,7 @@ const MultimediaAll = () => {
   };
 
   const getConfigHome = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -74,7 +74,7 @@ const MultimediaAll = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `http://192.168.8.18/api/multimedia/youtube-data?page=${numPage}`,
+      `https://data.pdiperjuangan.id/api/multimedia/youtube-data?page=${numPage}`,
       {
         method: "POST",
         headers: {

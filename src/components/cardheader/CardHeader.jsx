@@ -6,7 +6,7 @@ const CardHeader = ({ image, title }) => {
     <div
       className={`headers`}
       style={{
-        backgroundImage: `url(http://192.168.8.18/public/${image})`,
+        backgroundImage: `url(https://data.pdiperjuangan.id/public/${image})`,
       }}
     >
       <div className="backgrounds">

@@ -8,7 +8,7 @@ export const SideMenu = () => {
   const token = useStoreState((state) => state.token);
   const [menu, setMenu] = useState();
   useEffect(() => {
-    fetch("http://192.168.8.18/api/web/config/ketua-umum", {
+    fetch("https://data.pdiperjuangan.id/api/web/config/ketua-umum", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

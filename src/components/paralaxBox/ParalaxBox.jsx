@@ -8,7 +8,7 @@ const ParalaxBox = ({ image, title, link, paralax = false }) => {
       <div
         className="container_paralax"
         style={{
-          backgroundImage: `url(http://192.168.8.18/public/${image})`,
+          backgroundImage: `url(https://data.pdiperjuangan.id/public/${image})`,
           backgroundPosition: "center",
         }}
       >

@@ -66,7 +66,7 @@ const Gallery = () => {
   const { id } = useParams();
 
   const getConfigHome = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -79,7 +79,7 @@ const Gallery = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      `http://192.168.8.18/api/gallery/data?page=${numPage}`,
+      `https://data.pdiperjuangan.id/api/gallery/data?page=${numPage}`,
       {
         method: "POST",
         headers: {
@@ -98,7 +98,7 @@ const Gallery = () => {
     setConfigHome(dataConfigHome.query.data);
 
     const resManyCard = await fetch(
-      `http://192.168.8.18/api/gallery/album?page=${numPage}`,
+      `https://data.pdiperjuangan.id/api/gallery/album?page=${numPage}`,
       {
         method: "POST",
         headers: {
@@ -119,7 +119,7 @@ const Gallery = () => {
     // console.log(manyCard);
 
     const getAlbum = await fetch(
-      `http://192.168.8.18/api/gallery/album?page=${numPage}`,
+      `https://data.pdiperjuangan.id/api/gallery/album?page=${numPage}`,
       {
         method: "POST",
         headers: {

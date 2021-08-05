@@ -18,7 +18,7 @@ import { Helmet } from "react-helmet";
 const PartaiPage = ({ redirect }) => {
   const [config, setConfig] = useState([]);
   const getConfigHome = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ const PartaiPage = ({ redirect }) => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "http://192.168.8.18/api/web/pages/partai",
+      "https://data.pdiperjuangan.id/api/web/pages/partai",
       {
         method: "POST",
         headers: {
@@ -78,21 +78,21 @@ const PartaiPage = ({ redirect }) => {
             <meta
               property="og:image"
               itemProp="image"
-              content={`http://192.168.8.18/public${config[6].value.image}`}
+              content={`https://data.pdiperjuangan.id/public${config[6].value.image}`}
             />
             {/* <meta
               property="og:image:url"
-              content={`http://192.168.8.18/public${data.path}`}
+              content={`https://data.pdiperjuangan.id/public${data.path}`}
             /> */}
             <meta
               property="og:image:secure_url"
-              content={`http://192.168.8.18/public/${config[6].value.image}`}
+              content={`https://data.pdiperjuangan.id/public/${config[6].value.image}`}
             />
             <meta property="og:image:width" content="300" />
             <meta property="og:image:height" content="300" />
             <meta
               property="og:image:alt"
-              content={`http://192.168.8.18/public/${config[6].value.image}`}
+              content={`https://data.pdiperjuangan.id/public/${config[6].value.image}`}
             />
             <meta property="og:type" content="website" />
             <meta content="og:image:type" property="image/*" />
@@ -158,7 +158,7 @@ const PartaiPage = ({ redirect }) => {
                             <div className="box-mobileRow2">
                               <img
                                 loading="lazy"
-                                src={`http://192.168.8.18/public/${e.image}`}
+                                src={`https://data.pdiperjuangan.id/public/${e.image}`}
                                 alt=""
                                 className="imgMobilePartai"
                               />
@@ -234,7 +234,7 @@ const PartaiPage = ({ redirect }) => {
                 <div
                   className="photoPengurus"
                   style={{
-                    backgroundImage: `url(http://192.168.8.18/public/${config[6].value.image})`,
+                    backgroundImage: `url(https://data.pdiperjuangan.id/public/${config[6].value.image})`,
                     backgroundAttachment: "fixed",
                   }}
                 >

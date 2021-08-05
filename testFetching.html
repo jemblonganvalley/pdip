@@ -13,15 +13,18 @@
   <body>
     <script>
       const test = async () => {
-        const res = await fetch("http://192.168.8.18/api/web/config", {
-          method: "POST",
-          mode: "cors",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization:
-              "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAwOTMzODc0LCJleHAiOjE2MDEwMjAyNzQsIm5iZiI6MTYwMDkzMzg3NCwianRpIjoiaXlsbkE1TGt6SEZGcGFKOCIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.KxFv6Kb0iqE8ALCFT_eK-ly7-80Cyw2fENiHxti8Et8",
-          },
-        });
+        const res = await fetch(
+          "https://data.pdiperjuangan.id/api/web/config",
+          {
+            method: "POST",
+            mode: "cors",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization:
+                "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hdHVyLmJpYXIucHdcL2FwaVwvYXV0aFwvYXBwIiwiaWF0IjoxNjAwOTMzODc0LCJleHAiOjE2MDEwMjAyNzQsIm5iZiI6MTYwMDkzMzg3NCwianRpIjoiaXlsbkE1TGt6SEZGcGFKOCIsInN1YiI6MTQsInBydiI6IjhmZjYzMGEwMGNhNGEzZWFmNmYyNTRmNWFiZTVhYjFiZWVkMjcyNDkifQ.KxFv6Kb0iqE8ALCFT_eK-ly7-80Cyw2fENiHxti8Et8",
+            },
+          }
+        );
         const data = await res.json();
       };
 

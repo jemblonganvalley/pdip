@@ -21,7 +21,7 @@ const BeritaPage = () => {
   const [configHome, setConfigHome] = useState([]);
 
   const getConfigHome = async () => {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +34,7 @@ const BeritaPage = () => {
     const data = await res.json();
 
     const resConfigHome = await fetch(
-      "http://192.168.8.18/api/web/pages/berita",
+      "https://data.pdiperjuangan.id/api/web/pages/berita",
       {
         method: "POST",
         headers: {
@@ -76,21 +76,21 @@ const BeritaPage = () => {
             <meta
               property="og:image"
               itemProp="image"
-              content={`http://192.168.8.18/public${configHome[6].value.image}`}
+              content={`https://data.pdiperjuangan.id/public${configHome[6].value.image}`}
             />
             {/* <meta
               property="og:image:url"
-              content={`http://192.168.8.18/public${data.path}`}
+              content={`https://data.pdiperjuangan.id/public${data.path}`}
             /> */}
             <meta
               property="og:image:secure_url"
-              content={`http://192.168.8.18/public/${configHome[6].value.image}`}
+              content={`https://data.pdiperjuangan.id/public/${configHome[6].value.image}`}
             />
             <meta property="og:image:width" content="300" />
             <meta property="og:image:height" content="300" />
             <meta
               property="og:image:alt"
-              content={`http://192.168.8.18/public/${configHome[6].value.image}`}
+              content={`https://data.pdiperjuangan.id/public/${configHome[6].value.image}`}
             />
             <meta property="og:type" content="website" />
             <meta content="og:image:type" property="image/*" />
@@ -119,19 +119,23 @@ const BeritaPage = () => {
                 <CardInformasi
                   to1="/article/190/nasional"
                   image={
-                    `http://192.168.8.18/public` + configHome[2].value[0].image
+                    `https://data.pdiperjuangan.id/public` +
+                    configHome[2].value[0].image
                   }
                   to2="/article/191/daerah"
                   image2={
-                    `http://192.168.8.18/public` + configHome[2].value[1].image
+                    `https://data.pdiperjuangan.id/public` +
+                    configHome[2].value[1].image
                   }
                   to3="/gallery"
                   image3={
-                    `http://192.168.8.18/public` + configHome[2].value[2].image
+                    `https://data.pdiperjuangan.id/public` +
+                    configHome[2].value[2].image
                   }
                   to4="/article/192/nuansa"
                   image4={
-                    `http://192.168.8.18/public` + configHome[2].value[3].image
+                    `https://data.pdiperjuangan.id/public` +
+                    configHome[2].value[3].image
                   }
                   text={configHome[2].value[0].title}
                   text2={configHome[2].value[1].title}
@@ -184,7 +188,7 @@ const BeritaPage = () => {
             <div
               className="container-2-beritaPage"
               style={{
-                backgroundImage: `url(http://192.168.8.18/public/${configHome[6].value.image})`,
+                backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome[6].value.image})`,
                 backgroundAttachment: "fixed",
               }}
             >

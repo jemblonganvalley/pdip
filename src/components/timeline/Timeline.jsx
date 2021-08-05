@@ -8,7 +8,7 @@ const Timeline = ({ timeline }) => {
   const [dataTimeline, setDataTimeline] = useState([]);
 
   async function getApiData() {
-    const res = await fetch("http://192.168.8.18/api/auth/app", {
+    const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -20,27 +20,33 @@ const Timeline = ({ timeline }) => {
     });
     const data = await res.json();
 
-    const resConfigAgenda = await fetch("http://192.168.8.18/api/event/data", {
-      method: "POST",
-      mode: "cors",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const resConfigAgenda = await fetch(
+      "https://data.pdiperjuangan.id/api/event/data",
+      {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     const dataAgenda = await resConfigAgenda.json();
     setDataAgenda(dataAgenda.data);
 
-    const resConfigEvent = await fetch("http://192.168.8.18/api/event/find", {
-      method: "POST",
-      mode: "cors",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${data.token}`,
-      },
-      body: JSON.stringify({
-        id: 13,
-      }),
-    });
+    const resConfigEvent = await fetch(
+      "https://data.pdiperjuangan.id/api/event/find",
+      {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${data.token}`,
+        },
+        body: JSON.stringify({
+          id: 13,
+        }),
+      }
+    );
     const dataConfigTimeline = await resConfigEvent.json();
     setDataTimeline(dataConfigTimeline.query);
   }
@@ -80,7 +86,7 @@ const Timeline = ({ timeline }) => {
                   <div
                     className="imgContent"
                     style={{
-                      background: `url(http://192.168.8.18/public/${e.path})`,
+                      background: `url(https://data.pdiperjuangan.id/public/${e.path})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center center",
                     }}

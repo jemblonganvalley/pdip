@@ -1,7 +1,7 @@
 const fetch = require("isomorphic-unfetch");
 
 const token = async () => {
-  const result = await fetch("http://192.168.8.18/api/auth/app", {
+  const result = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
