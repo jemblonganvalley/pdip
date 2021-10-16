@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Timeline.scss";
 import parse from "html-react-parser";
+import { image_url } from "../../config/config";
 
 const Timeline = ({ timeline }) => {
   let [hover, setHover] = useState();
@@ -86,7 +87,7 @@ const Timeline = ({ timeline }) => {
                   <div
                     className="imgContent"
                     style={{
-                      background: `url(https://data.pdiperjuangan.id/public/${e.path})`,
+                      background: `url(${image_url + e.path})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center center",
                     }}

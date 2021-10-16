@@ -1,4 +1,5 @@
 import React from "react";
+import { image_url } from "../../config/config";
 
 import "../carouselKetuaUmumPage/CarouselKetuaUmumPage.scss";
 
@@ -24,7 +25,9 @@ const CarouselKetuaUmumPage = ({ data }) => {
                   <div
                     className="col1-container-1-carousel-ketuaUmumPage"
                     style={{
-                      backgroundImage: `url(https://data.pdiperjuangan.id/public/${e.image})`,
+                      backgroundImage: `url(${
+                        image_url + e?.image.replace("/page", "page")
+                      })`,
                     }}
                   >
                     <div className="cont-img-col1">

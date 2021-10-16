@@ -128,33 +128,6 @@ const BkbbWejangan = () => {
             {/* END Column1 */}
           </div>
           {/* END Container1 */}
-
-          {/* Container2 */}
-          {/* <div className="container-2-bkbbWejangan">
-            <div
-              className="CardBkbbWejangan"
-              onClick={() => {
-                setRefresher();
-              }}
-              style={{
-                display : 'flex',
-                justifyContent : 'space-between',
-                padding : '0 20% 0 20%'
-              }}
-            >
-              {manyCard.map((e, i) => (
-                <CardQuotes
-                  page={`/quotes/${e.id}`}
-                  img={`https://data.pdiperjuangan.id/public/${e.path}`}
-                  icon1="fas fa-quote-right"
-                  txt1={e.title}
-                  icon2="fas fa-quote-right"
-                  txt2={`Soekarno, ${e.quotes_date}`}
-                />
-              ))}
-            </div>
-          </div> */}
-          {/* END Container2 */}
         </div>
       ) : (
         <Wait />

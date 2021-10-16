@@ -17,6 +17,7 @@ import Wait from "../../wait/Wait";
 import MainSliderTablet from "../../slider/tablet/MainSliderTablet";
 import MainSliderMobile from "../../slider/mobile/MainSliderMobile";
 import Slidercom from "../../slidercom/Slidercom";
+import { image_url } from "../../../config/config";
 
 export const LighBox = ({ source }) => {
   return (
@@ -127,7 +128,7 @@ const HomePage = () => {
 
   return (
     <>
-      {configHome.length > 0 ? (
+      {configHome?.length > 0 ? (
         <div
           className="homepage"
           style={{
@@ -136,7 +137,7 @@ const HomePage = () => {
             alignItems: "center",
           }}
         >
-          {configHome.length > 0 && (
+          {configHome?.length > 0 && (
             <>
               {/* 0 r-carousel */}
               <Desktop>
@@ -196,7 +197,7 @@ const HomePage = () => {
           {/* LOGO ICON COVID DAN LAIN LAIN */}
           <div className="homePageTwo">
             <div className="customRow">
-              {configHome.length > 0 &&
+              {configHome?.length > 0 &&
                 configHome[1].value.map((e, i) => (
                   <div className="groupArticleUtama" key={i}>
                     <a
@@ -213,7 +214,7 @@ const HomePage = () => {
                         <div className="itemImageCovid">
                           <img
                             loading="lazy"
-                            src={`https://data.pdiperjuangan.id/public/${e.image}`}
+                            src={`${image_url}${e.image}`}
                             alt=""
                             className="imageCovid"
                           />

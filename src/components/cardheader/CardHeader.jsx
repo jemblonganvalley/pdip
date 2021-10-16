@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { image_url } from "../../config/config";
 import "./CardHeader.scss";
 
 const CardHeader = ({ image, title }) => {
@@ -6,7 +7,7 @@ const CardHeader = ({ image, title }) => {
     <div
       className={`headers`}
       style={{
-        backgroundImage: `url(https://data.pdiperjuangan.id/public/${image})`,
+        backgroundImage: `url(${image_url}${image})`,
       }}
     >
       <div className="backgrounds">

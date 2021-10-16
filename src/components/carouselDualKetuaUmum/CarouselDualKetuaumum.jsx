@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { image_url } from "../../config/config";
 import "./carouselDual.scss";
 
 const CarouselDualKetuaumum = ({
@@ -20,7 +21,7 @@ const CarouselDualKetuaumum = ({
         style={{
           height: "40vh",
           // border : '1px solid red',
-          backgroundImage: `url(https://data.pdiperjuangan.id/public/${cat2.image})`,
+          backgroundImage: `url(${image_url + cat2.image})`,
           position: "relative",
           backgroundSize: "cover",
         }}

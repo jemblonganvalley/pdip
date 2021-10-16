@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { image_url } from "../../config/config";
 import "./CarouselKM.scss";
 
 const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
@@ -54,8 +55,8 @@ const CarouselKM = ({ cat = 44, totalPage = 3, data = data }) => {
                     <div
                       className="col-lg-6 banner"
                       style={{
-                        backgroundImage: e.path.includes("uploads")
-                          ? `url(https://data.pdiperjuangan.id/public/${e.path})`
+                        backgroundImage: e.path.includes("blog")
+                          ? `url(${image_url + e.path})`
                           : `url(https://i.ytimg.com/vi/${e.path}/hqdefault.jpg)`,
                         backgroundSize: "cover",
                       }}

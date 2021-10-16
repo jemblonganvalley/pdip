@@ -10,6 +10,7 @@ import AngkaPaginationEvent from "../../../paginationevent/AngkaPaginationEvent"
 import Wait from "../../../wait/Wait";
 import CardQuotes from "../../../cardquotes/CardQuotes";
 import QuotesBkbb from "../../../quotesbkbb/QuotesBkbb";
+import { image_url } from "../../../../config/config";
 
 const WejanganBungKarno = () => {
   // Create Database Card Item
@@ -112,7 +113,7 @@ const WejanganBungKarno = () => {
                   id={configHome.id}
                   displayIframe={"none"}
                   displayImage={"flex"}
-                  backgroundImage={`https://data.pdiperjuangan.id/public/${configHome.path}`}
+                  backgroundImage={`${image_url + configHome.path}`}
                   headline={configHome.title}
                   desc={configHome.description}
                   customBackgroundColor={"transparent"}
@@ -131,7 +132,7 @@ const WejanganBungKarno = () => {
                 id={3}
                 displayIframe={"none"}
                 displayImage={"flex"}
-                backgroundImage={`https://data.pdiperjuangan.id/public/uploads/blog/040520210419594Q1.jpeg`}
+                backgroundImage={`${image_url}blog/040520210419594Q1.jpeg`}
                 headline={`......`}
                 desc={`....`}
                 customBackgroundColor={"transparent"}
@@ -166,7 +167,7 @@ const WejanganBungKarno = () => {
             {cardWejanganBkItem.map((e, i) => (
               <CardQuotes
                 page={`/bung-karno-bapak-bangsa/quotes/${e.id}`}
-                img={`https://data.pdiperjuangan.id/public/${e.path}`}
+                img={`${image_url + e.path}`}
                 icon1="fas fa-quote-right"
                 txt1={e.title}
                 icon2="fas fa-quote-right"

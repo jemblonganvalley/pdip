@@ -33,6 +33,7 @@ import MultimediaAll from "./components/pages/multimediaPage/multimediaAll/Multi
 import NewNavbar from "./components/newnavbar/NewNavbar";
 import DpdDpc from "./components/pages/dpddpc/DpdDpc";
 import NotFound from "./components/notFound/NotFound";
+import Maintenance from "./components/pages/home/Maintenance";
 
 function App() {
   let [hide, setHide] = useState(true);
@@ -236,6 +237,7 @@ function App() {
           </Route>
 
           <Route path="/" exact={true}>
+            {/* <Maintenance /> */}
             <HomePage />
           </Route>
 

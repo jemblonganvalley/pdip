@@ -10,6 +10,7 @@ import MainDivider from "../../divider/MainDivider";
 import CardInformasi from "../../cardInformasi/CardInformasi";
 import VMedia from "../../VMedia/VMedia";
 import CardHeader from "../../cardheader/CardHeader";
+import { image_url } from "../../../config/config";
 
 const MultimediaPage = () => {
   const [configHome, setConfigHome] = useState([]);
@@ -54,17 +55,6 @@ const MultimediaPage = () => {
     <>
       {configHome.length > 0 ? (
         <div className="wrapperMultimedia">
-          {/* <div
-            className="headerMedia"
-            style={{
-              background: `url(https://data.pdiperjuangan.id/public/${configHome[0].value.image})`,
-            }}
-          >
-            <div className="textBannerMedia">
-              <h2>{configHome[0].value.title}</h2>
-            </div>
-          </div> */}
-
           {/* Card Header */}
           <CardHeader
             image={configHome[0].value.image}
@@ -86,10 +76,10 @@ const MultimediaPage = () => {
 
           <div className="wrapperCardInfo">
             <CardInformasi
-              image={`https://data.pdiperjuangan.id/public/${configHome[2].value[0].image}`}
-              image2={`https://data.pdiperjuangan.id/public/${configHome[2].value[1].image}`}
-              image3={`https://data.pdiperjuangan.id/public/${configHome[2].value[2].image}`}
-              image4={`https://data.pdiperjuangan.id/public/${configHome[2].value[3].image}`}
+              image={`${image_url + configHome[2].value[0].image}`}
+              image2={`${image_url + configHome[2].value[1].image}`}
+              image3={`${image_url + configHome[2].value[2].image}`}
+              image4={`${image_url + configHome[2].value[3].image}`}
               text={`${configHome[2].value[0].title}`}
               text2={`${configHome[2].value[1].title}`}
               text3={`${configHome[2].value[2].title}`}
@@ -105,7 +95,7 @@ const MultimediaPage = () => {
           <div
             className="panggung"
             style={{
-              backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome[3].value.image})`,
+              backgroundImage: `url(${image_url + configHome[3].value.image})`,
               backgroundAttachment: "fixed",
             }}
           >

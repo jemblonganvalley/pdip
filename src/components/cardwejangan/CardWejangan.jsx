@@ -3,6 +3,7 @@ import React from "react";
 import "./CardWejangan.scss";
 import { Link } from "react-router-dom";
 import parse from "html-react-parser";
+import { image_url } from "../../config/config";
 
 const CardWejangan = ({ cardWejanganBkItem }) => {
   return (
@@ -22,7 +23,7 @@ const CardWejangan = ({ cardWejanganBkItem }) => {
             to={e.pageWejanganBk}
             className="imgWejangan"
             style={{
-              backgroundImage: `url(https://data.pdiperjuangan.id/public/${e.path})`,
+              backgroundImage: `url(${image_url}${e.path})`,
             }}
           >
             <i className="fas fa-quote-right"></i>

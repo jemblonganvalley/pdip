@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
+import { image_url } from "../../config/config";
 
 import "./CarouselBeritaPage2.scss";
 
@@ -23,7 +24,7 @@ const CarouselBeritaPage2 = ({ id, data }) => {
             <>
               <img
                 loading="lazy"
-                src={`https://data.pdiperjuangan.id/public/${e.path}`}
+                src={`${image_url}${e.path}`}
                 alt={e.title}
                 key={i}
                 className={i === 1 ? "carousel-item active" : "carousel-item"}

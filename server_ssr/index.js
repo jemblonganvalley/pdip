@@ -42,20 +42,6 @@ app.use(pemilu);
 app.use(article);
 app.use(search);
 
-app.get("/test", (req, res) => {
-  fetch("https://jsonplaceholder.typicode.com/users", {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  })
-    .then((result) => result.json())
-    .then((data) => {
-      res.status(200).json(data);
-    })
-    .catch((err) => console.log(err));
-});
-
 app.listen(8000, "0.0.0.0", () => {
   console.log("listen port 8000");
 });

@@ -14,6 +14,7 @@ import CardQuotes from "../../cardquotes/CardQuotes";
 import CardHeader from "../../cardheader/CardHeader";
 import VMedia from "../../VMedia/VMedia";
 import Wait from "../../wait/Wait";
+import { image_url } from "../../../config/config";
 
 export const LighBox = ({ source }) => {
   return (
@@ -108,7 +109,9 @@ const BkbbPage = () => {
               <div
                 className="box-lahirnyaPancasila "
                 style={{
-                  backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome[1].value.image})`,
+                  backgroundImage: `url(${
+                    image_url + configHome[1].value.image
+                  })`,
                 }}
               >
                 <div className="redBox mt-auto">
@@ -173,7 +176,7 @@ const BkbbPage = () => {
           <div
             className="bannerBkbb"
             style={{
-              background: `url(https://data.pdiperjuangan.id/public/${configHome[4].value.image})`,
+              background: `url(${image_url + configHome[4].value.image})`,
               backgroundAttachment: "fixed",
               backgroundSize: "cover",
             }}
@@ -214,7 +217,7 @@ const BkbbPage = () => {
               {configHome[5].value.map((e, i) => (
                 <CardQuotes
                   page={`/bung-karno-bapak-bangsa/quotes/${e.id}`}
-                  img={`https://data.pdiperjuangan.id/public/${e.path}`}
+                  img={`${image_url + e.path}`}
                   icon1="fas fa-quote-right"
                   txt1={e.title}
                   icon2="fas fa-quote-right"

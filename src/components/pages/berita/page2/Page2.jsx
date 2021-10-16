@@ -93,7 +93,7 @@ const Page2 = () => {
             {/* Column1 */}
             <div className="col1-container-1-beritaPage2">
               {/* JIKA VIDEO */}
-              {!configHome.path.includes("uploads") ? (
+              {!configHome.path.includes("blog") ? (
                 <VMedia
                   headline={configHome.title}
                   source={`https://www.youtube.com/embed/${configHome.path}`}

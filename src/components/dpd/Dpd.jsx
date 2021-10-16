@@ -6,6 +6,7 @@ import parse from "html-react-parser";
 import BreadCrumbs from "../breadcrumbs/BreadCrumbs";
 import MainDivider from "../divider/MainDivider";
 import Wait from "../wait/Wait";
+import { image_url } from "../../config/config";
 
 const Dpd = () => {
   const { id, nameProv } = useParams();
@@ -92,7 +93,7 @@ const Dpd = () => {
               <div className="kolum1">
                 <img
                   loading="lazy"
-                  src={`https://data.pdiperjuangan.id/public/${configHome.photo_one}`}
+                  src={`${image_url + configHome.photo_one}`}
                   alt=""
                   style={{
                     objectFit: "cover",
@@ -152,7 +153,7 @@ const Dpd = () => {
                 <div
                   className="peta"
                   style={{
-                    backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome.photo_two})`,
+                    backgroundImage: `url(${image_url + configHome.photo_two})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

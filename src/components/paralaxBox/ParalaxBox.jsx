@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { image_url } from "../../config/config";
 import "./paralaxBox.scss";
 
 const ParalaxBox = ({ image, title, link, paralax = false }) => {
@@ -8,7 +9,7 @@ const ParalaxBox = ({ image, title, link, paralax = false }) => {
       <div
         className="container_paralax"
         style={{
-          backgroundImage: `url(https://data.pdiperjuangan.id/public/${image})`,
+          backgroundImage: `url(${image_url + image})`,
           backgroundPosition: "center",
         }}
       >

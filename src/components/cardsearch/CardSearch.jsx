@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { image_url } from "../../config/config";
 import "./CardSearch.scss";
 
 const CardSearch = ({ cardSearchItem, id, path, title, paragrap, page }) => {
@@ -38,7 +39,7 @@ const CardSearch = ({ cardSearchItem, id, path, title, paragrap, page }) => {
       >
         <img
           loading="lazy"
-          src={`https://data.pdiperjuangan.id/public/${path}`}
+          src={`${image_url}${path}`}
           alt=""
           className="img-card"
         />

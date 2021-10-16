@@ -10,6 +10,7 @@ import CardInformasi from "../../cardInformasi/CardInformasi";
 import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
 import CardHeader from "../../cardheader/CardHeader";
 import Wait from "../../wait/Wait";
+import { image_url } from "../../../config/config";
 
 const anchorLink = (props) => {
   return (
@@ -103,19 +104,6 @@ const InformasiPage = () => {
       {configHome.length > 0 ? (
         // START INFORMASI
         <div className="wrapperInformasi">
-          {/* START HEADERS */}
-          {/* <div
-            className="headInformasi"
-            style={{
-              backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome[0].value.image})`,
-            }}
-          >
-            <div className="textHeadInformasi">
-              <h2>{configHome[0].value.title}</h2>
-            </div>
-          </div> */}
-          {/* END */}
-
           {/* Card Header */}
           <CardHeader
             image={configHome[0].value.image}
@@ -144,7 +132,9 @@ const InformasiPage = () => {
                 <div
                   className="backgroundPK"
                   style={{
-                    backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome[2].value.image})`,
+                    backgroundImage: `url(${
+                      image_url + configHome[2].value.image
+                    })`,
                   }}
                 >
                   <h4 className="maklumat">{configHome[2].value.title}</h4>
@@ -158,13 +148,13 @@ const InformasiPage = () => {
             {/* divider */}
             <CardInformasi
               to1="detail-article/656/struktur"
-              image={`https://data.pdiperjuangan.id/public/${configHome[3].value[0].image}`}
+              image={`${image_url + configHome[3].value[0].image}`}
               to2="/article/231/visi-dan-misi-ppid"
-              image2={`https://data.pdiperjuangan.id/public/${configHome[3].value[1].image}`}
+              image2={`${image_url + configHome[3].value[1].image}`}
               to3="/detail-article/624/prosedur-pelayanan-ppid"
-              image3={`https://data.pdiperjuangan.id/public/${configHome[3].value[2].image}`}
+              image3={`${image_url + configHome[3].value[2].image}`}
               to4="/detail-article/623/regulasi-ppd"
-              image4={`https://data.pdiperjuangan.id/public/${configHome[3].value[3].image}`}
+              image4={`${image_url + configHome[3].value[3].image}`}
               text={`${configHome[3].value[0].title}`}
               text2={`${configHome[3].value[1].title}`}
               text3={`${configHome[3].value[2].title}`}
@@ -181,7 +171,7 @@ const InformasiPage = () => {
               <Link component={anchorLink} linkTo="detail-article/658/lhkpn">
                 <img
                   loading="lazy"
-                  src={`https://data.pdiperjuangan.id/public/${configHome[4].value[0].image}`}
+                  src={`${image_url + configHome[4].value[0].image}`}
                   alt=""
                   className="imageHarta"
                   style={{
@@ -201,7 +191,7 @@ const InformasiPage = () => {
               >
                 <img
                   loading="lazy"
-                  src={`https://data.pdiperjuangan.id/public/${configHome[4].value[1].image}`}
+                  src={`${image_url + configHome[4].value[1].image}`}
                   alt=""
                   className="imageHarta"
                   style={{
@@ -257,7 +247,7 @@ const InformasiPage = () => {
                 <div className="box-card-laporan">
                   <img
                     loading="lazy"
-                    src={`https://data.pdiperjuangan.id/public/${configHome[7].value[0].image}`}
+                    src={`${image_url + configHome[7].value[0].image}`}
                     alt=""
                     className="imageHarta"
                     style={{
@@ -277,7 +267,7 @@ const InformasiPage = () => {
                 <div className="box-card-laporan">
                   <img
                     loading="lazy"
-                    src={`https://data.pdiperjuangan.id/public/${configHome[7].value[1].image}`}
+                    src={`${image_url + configHome[7].value[1].image}`}
                     alt=""
                     className="imageHarta"
                     style={{

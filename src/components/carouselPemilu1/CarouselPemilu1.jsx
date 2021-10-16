@@ -4,16 +4,13 @@ import "../carouselPemilu1/CarouselPemilu1.scss";
 import pemilu from "../../img/pemilu.jpeg";
 import { Link, NavLink } from "react-router-dom";
 import Wait from "../wait/Wait";
+import { image_url } from "../../config/config";
 
 const CarouselPemilu1 = ({ data }) => {
   const WrapperImage = ({ img, link }) => {
     return (
       <NavLink to={link}>
-        <img
-          loading="lazy"
-          src={`https://data.pdiperjuangan.id/public/${img}`}
-          className="img-1"
-        />
+        <img loading="lazy" src={`${image_url + img}`} className="img-1" />
       </NavLink>
     );
   };
@@ -49,7 +46,7 @@ const CarouselPemilu1 = ({ data }) => {
                   {/* <WrapperImage img={e.image} link={"/"} /> */}
                   <img
                     loading="lazy"
-                    src={`https://data.pdiperjuangan.id/public/${e.image}`}
+                    src={`${image_url + e.image}`}
                     className="img-1"
                     href={e.link}
                     onClick={() => {

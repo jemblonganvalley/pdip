@@ -12,6 +12,7 @@ import Carousel3PemiluPage from "../../carousel3PemiluPage/Carousel3PemiluPage";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import CardHeader from "../../cardheader/CardHeader";
 import ParalaxBox from "../../paralaxBox/ParalaxBox";
+import { image_url } from "../../../config/config";
 
 // Create Component
 const PemiluPage = () => {
@@ -54,19 +55,6 @@ const PemiluPage = () => {
     <>
       {configHome.length > 0 ? (
         <div className="wrapperPemiluPage">
-          {/* <div
-            className="headers-pemiluPage"
-            style={{
-              backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome[0].value.image})`,
-            }}
-          >
-            <div className="backgrounds">
-              <div className="textBackgroundBerita">
-                <h2>{configHome[0].value.title}</h2>
-              </div>
-            </div>
-          </div> */}
-
           {/* Card Header */}
           <CardHeader
             image={configHome[0].value.image}
@@ -110,33 +98,6 @@ const PemiluPage = () => {
             </div>
             {/* END Column1 */}
 
-            {/* Column2 */}
-            {/* <a className="col2-container-1-pemiluPage" href='/' > */}
-            {/* Row1 */}
-            {/* <div className="row1-col2-pemiluPage pemilihan">
-                <img loading="lazy"
-                  src={`https://data.pdiperjuangan.id/public/${configHome[4].value[0].image}`}
-                  className="col1-row1-pemiluPage"
-                />
-                <div className="col2-row1-pemiluPage">
-                  <h6 className="txt-title">{configHome[4].value[0].title}</h6>
-                </div>
-              </div> */}
-            {/* END Row1 */}
-
-            {/* Row2 */}
-            {/* <a className="row2-col2-pemiluPage pemilihan" href='https://www.pdipkreatif.com/home' target='_blank'>
-                  <img loading="lazy"
-                    src={`https://data.pdiperjuangan.id/public/${configHome[4].value[1].image}`}
-                    className="col1-row2-pemiluPage"
-                  />
-                  <div className="col2-row2-pemiluPage">
-                    <h6 className="txt-title">{configHome[4].value[1].title}</h6>
-                  </div>
-                </a> */}
-            {/* END Row2 */}
-            {/* </a> */}
-
             {/* CARD LAPORAN */}
             <div
               className="containerLaporan"
@@ -151,7 +112,7 @@ const PemiluPage = () => {
                 <div className="box-card-laporan">
                   <img
                     loading="lazy"
-                    src={`https://data.pdiperjuangan.id/public/${configHome[4].value[0].image}`}
+                    src={`${image_url + configHome[4].value[0].image}`}
                     alt=""
                     className="imageHarta"
                   />
@@ -170,7 +131,7 @@ const PemiluPage = () => {
                 <div className="box-card-laporan">
                   <img
                     loading="lazy"
-                    src={`https://data.pdiperjuangan.id/public/${configHome[4].value[1].image}`}
+                    src={`${image_url + configHome[4].value[1].image}`}
                     alt=""
                     className="imageHarta"
                   />

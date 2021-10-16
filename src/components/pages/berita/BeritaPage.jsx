@@ -15,6 +15,7 @@ import MainDivider from "../../divider/MainDivider";
 import CardHeader from "../../cardheader/CardHeader";
 import CarouselKetuaUmumPage from "../../carouselKetuaUmumPage/CarouselKetuaUmumPage";
 import { Helmet } from "react-helmet";
+import { image_url } from "../../../config/config";
 
 // Create Component
 const BeritaPage = () => {
@@ -84,13 +85,13 @@ const BeritaPage = () => {
             /> */}
             <meta
               property="og:image:secure_url"
-              content={`https://data.pdiperjuangan.id/public/${configHome[6].value.image}`}
+              content={`${image_url + configHome[6].value.image}`}
             />
             <meta property="og:image:width" content="300" />
             <meta property="og:image:height" content="300" />
             <meta
               property="og:image:alt"
-              content={`https://data.pdiperjuangan.id/public/${configHome[6].value.image}`}
+              content={`${image_url + configHome[6].value.image}`}
             />
             <meta property="og:type" content="website" />
             <meta content="og:image:type" property="image/*" />
@@ -188,7 +189,9 @@ const BeritaPage = () => {
             <div
               className="container-2-beritaPage"
               style={{
-                backgroundImage: `url(https://data.pdiperjuangan.id/public/${configHome[6].value.image})`,
+                backgroundImage: `url(${
+                  image_url + configHome[6]?.value?.image
+                })`,
                 backgroundAttachment: "fixed",
               }}
             >

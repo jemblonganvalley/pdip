@@ -10,7 +10,7 @@ pemilu.get("/pemilu", (req, res) => {
       meta_description: result.query.set.meta_description,
       meta_url: "https://pdiperjuangan.id/pemilu",
       meta_image:
-        "https://data.pdiperjuangan.id/public/uploads/page/10122020060023NeR.jpeg",
+        "https://data.pdiperjuangan.id/api/files/page/10122020060023NeR.jpeg",
     });
   });
 });

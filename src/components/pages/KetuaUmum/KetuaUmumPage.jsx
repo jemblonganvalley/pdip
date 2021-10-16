@@ -15,6 +15,7 @@ import CardHeader from "../../cardheader/CardHeader";
 import CarouselDualKetuaumum from "../../carouselDualKetuaUmum/CarouselDualKetuaumum";
 import Wait from "../../wait/Wait";
 import MainButton from "../../buttons/MainButton";
+import { image_url } from "../../../config/config";
 // END Import to CSS
 
 // Create Component
@@ -93,19 +94,6 @@ const KetuaUmumPage = () => {
     <>
       {configHome.length > 0 ? (
         <div className="wrapperKetuaUmum">
-          {/* <div
-            className="headers-ketuaumum"
-            style={{
-              background: `url(https://data.pdiperjuangan.id/public/${configHome[0].value.image})`,
-              objectFit: "cover",
-              objectPosition: "center",
-            }}
-          >
-            <div className="backgrounds">
-              <div className="textBackgroundBerita"></div>
-            </div>
-          </div> */}
-
           {/* Card Header */}
           <CardHeader
             // 0 r-banner-image
@@ -128,13 +116,13 @@ const KetuaUmumPage = () => {
               {/* 2 r-group-text-image" */}
               <CardInformasi
                 to1="/article/233/pidato-kongres-pdi-perjuangan"
-                image={`https://data.pdiperjuangan.id/public/${configHome[2].value[0].image}`}
+                image={`${image_url + configHome[2].value[0].image}`}
                 to2="/article/238/pidato-rakernas-pdi-perjuangan"
-                image2={`https://data.pdiperjuangan.id/public/${configHome[2].value[1].image}`}
+                image2={`${image_url + configHome[2].value[1].image}`}
                 to3="/article/239/pidato-rakornas-pdi-perjuangan"
-                image3={`https://data.pdiperjuangan.id/public/${configHome[2].value[2].image}`}
+                image3={`${image_url + configHome[2].value[2].image}`}
                 to4="/article/240/pidato-hut-pdi-perjuangan"
-                image4={`https://data.pdiperjuangan.id/public/${configHome[2].value[3].image}`}
+                image4={`${image_url + configHome[2].value[3].image}`}
                 text="pidato kongres"
                 text2="pidato rakernas"
                 text3="pidato rakornas"

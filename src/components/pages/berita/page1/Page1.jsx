@@ -9,6 +9,7 @@ import Helmet from "react-helmet";
 import BreadCrumbs from "../../../breadcrumbs/BreadCrumbs";
 import CardSocialMedia from "../../../cardsocialmedia/CardSocialMedia";
 import Wait from "../../../wait/Wait";
+import { image_url } from "../../../../config/config";
 
 const Page1 = () => {
   const refresher = useStoreState((state) => state.refresher);
@@ -145,7 +146,7 @@ const Page1 = () => {
                         imageUrl={detailPage.path}
                         title={detailPage.title}
                         url={
-                          detailPage.path.includes("uploads")
+                          detailPage.path.includes("blog")
                             ? `${webUrl}/detail-article/${id}/${slug}`
                             : `${webUrl}/video/${id}`
                         }
@@ -187,11 +188,11 @@ const Page1 = () => {
                 {/* END Section1 */}
 
                 {/* Section2 */}
-                {detailPage.path.includes("uploads") ? (
+                {detailPage.path.includes("blog") ? (
                   <img
                     loading="lazy"
                     className="img-beritaPage1"
-                    src={`https://data.pdiperjuangan.id/public/${detailPage.path}`}
+                    src={`${image_url + detailPage.path}`}
                     alt={`${detailPage.path}`}
                     style={{
                       // height: "40vh",
@@ -242,7 +243,7 @@ const Page1 = () => {
                       imageUrl={detailPage.path}
                       title={detailPage.title}
                       url={
-                        detailPage.path.includes("uploads")
+                        detailPage.path.includes("blog")
                           ? `https://article.pdiperjuangan.id/detail-article/${slug}/${id}`
                           : `https://pdiperjuangan.id/multimedia/${id}/${slug}`
                       }

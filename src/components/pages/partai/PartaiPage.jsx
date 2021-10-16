@@ -14,6 +14,7 @@ import CarouselKetuaUmumPage from "../../carouselKetuaUmumPage/CarouselKetuaUmum
 import Maps from "../../maps/Maps";
 import Wait from "../../wait/Wait";
 import { Helmet } from "react-helmet";
+import { image_url } from "../../../config/config";
 
 const PartaiPage = ({ redirect }) => {
   const [config, setConfig] = useState([]);
@@ -86,13 +87,13 @@ const PartaiPage = ({ redirect }) => {
             /> */}
             <meta
               property="og:image:secure_url"
-              content={`https://data.pdiperjuangan.id/public/${config[6].value.image}`}
+              content={`${image_url + config[6].value.image}`}
             />
             <meta property="og:image:width" content="300" />
             <meta property="og:image:height" content="300" />
             <meta
               property="og:image:alt"
-              content={`https://data.pdiperjuangan.id/public/${config[6].value.image}`}
+              content={`${image_url + config[6].value.image}`}
             />
             <meta property="og:type" content="website" />
             <meta content="og:image:type" property="image/*" />
@@ -158,7 +159,7 @@ const PartaiPage = ({ redirect }) => {
                             <div className="box-mobileRow2">
                               <img
                                 loading="lazy"
-                                src={`https://data.pdiperjuangan.id/public/${e.image}`}
+                                src={`${image_url + e.image}`}
                                 alt=""
                                 className="imgMobilePartai"
                               />
@@ -234,7 +235,9 @@ const PartaiPage = ({ redirect }) => {
                 <div
                   className="photoPengurus"
                   style={{
-                    backgroundImage: `url(https://data.pdiperjuangan.id/public/${config[6].value.image})`,
+                    backgroundImage: `url(${
+                      image_url + config[6].value.image
+                    })`,
                     backgroundAttachment: "fixed",
                   }}
                 >

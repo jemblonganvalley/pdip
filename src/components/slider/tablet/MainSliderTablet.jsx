@@ -5,6 +5,7 @@ import playstore from "../../../img/playstore.svg";
 import appstore from "../../../img/appstore.svg";
 import { Link } from "@material-ui/core";
 import parse from "html-react-parser";
+import { image_url } from "../../../config/config";
 
 const MainSliderTablet = ({ value, cls }) => {
   let slider = value;
@@ -56,7 +57,7 @@ const MainSliderTablet = ({ value, cls }) => {
                   <div className="box-img-mainSlider-tablet">
                     <img
                       loading="lazy"
-                      src={`https://data.pdiperjuangan.id/public/${e.image}`}
+                      src={`${image_url + e.image}`}
                       alt={e.title}
                       className="img-home-mainSlider"
                     />

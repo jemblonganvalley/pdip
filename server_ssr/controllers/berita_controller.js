@@ -10,7 +10,7 @@ berita.get("/berita", (req, res) => {
       meta_description: result.query.set.meta_description,
       meta_url: "https://pdiperjuangan.id/berita",
       meta_image:
-        "https://data.pdiperjuangan.id/public/uploads/page/10122020060023NeR.jpeg",
+        "https://data.pdiperjuangan.id/api/files/page/10122020060023NeR.jpeg",
     });
   });
 });
@@ -22,7 +22,10 @@ berita.get("/gallery", (req, res) => {
       meta_keyword: result.query.data[0].description,
       meta_description: result.query.data[0].description,
       meta_url: "https://pdiperjuangan.id/gallery",
-      meta_image: `https://data.pdiperjuangan.id/${result.query.data[0].path}`,
+      meta_image: `https://data.pdiperjuangan.id/api/files/${result.query.data[0].path.replace(
+        ".",
+        "_thumb30."
+      )}`,
     });
   });
 });
@@ -34,7 +37,10 @@ berita.get("/gallery/detail-gallery/:id/:slug", (req, res) => {
       meta_keyword: result.query.data[0].description,
       meta_description: result.query.data[0].description,
       meta_url: "https://pdiperjuangan.id/gallery",
-      meta_image: `https://data.pdiperjuangan.id/${result.query.data[0].path}`,
+      meta_image: `https://data.pdiperjuangan.id/api/files/${result.query.data[0].path.replace(
+        ".",
+        "_thumb30."
+      )}`,
     });
   });
 });

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./CarouselTataCara.scss";
 import parse from "html-react-parser";
+import { image_url } from "../../config/config";
 
 const CarouselTataCara = ({ data }) => {
   return (
@@ -24,11 +25,10 @@ const CarouselTataCara = ({ data }) => {
                 as="div"
                 to={e.link}
               >
-                {/* <img loading="lazy" src={`https://data.pdiperjuangan.id/public/${e.image}`} className="imageTC" /> */}
                 <div
                   className="imageTC"
                   style={{
-                    background: `url(https://data.pdiperjuangan.id/public/${e.image})`,
+                    background: `url(${image_url + e.image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

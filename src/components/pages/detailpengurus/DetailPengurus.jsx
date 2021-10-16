@@ -6,6 +6,7 @@ import "./DetailPengurus.scss";
 import MainDivider from "../../divider/MainDivider";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import Wait from "../../wait/Wait";
+import { image_url } from "../../../config/config";
 
 const DetailPengurus = () => {
   const { id, name, grade } = useParams();
@@ -89,9 +90,7 @@ const DetailPengurus = () => {
               <div className="kolum1">
                 <img
                   loading="lazy"
-                  src={
-                    `https://data.pdiperjuangan.id/public/` + configHome.photo
-                  }
+                  src={image_url + configHome.photo}
                   alt="photo pengurus"
                 />
                 <div className="textProfil">

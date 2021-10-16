@@ -42,7 +42,7 @@ const detailArticle = async (id, slug) => {
           .replace("</em>", "")
           .replace("<a>", "")
           .replace("</a>", "")
-          .replace(/<\/?[^>]+(>|$)/g, ""),
+          .replace(/<\/?[]+(>|$)/g, ""),
       };
     })
     .catch((err) => {

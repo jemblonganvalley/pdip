@@ -2,6 +2,7 @@ import React from "react";
 import "./MainCards.scss";
 import { Link, Redirect } from "react-router-dom";
 import { url, localUrl, localServerSide } from "../../config/main.json";
+import { image_url } from "../../config/config";
 
 const Cards = ({
   page,
@@ -79,8 +80,8 @@ const Cards = ({
           to={`${page}/${id}/${slug ? pageSLug() : null}`}
           className="imageCard"
           style={{
-            backgroundImage: imageCard.includes("uploads")
-              ? `url(https://data.pdiperjuangan.id/public/${imageCard})`
+            backgroundImage: imageCard.includes("blog")
+              ? `url(${image_url}${imageCard})`
               : `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)`,
 
             textDecoration: "none",

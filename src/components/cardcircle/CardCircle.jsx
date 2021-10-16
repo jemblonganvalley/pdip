@@ -1,6 +1,7 @@
 import React from "react";
 import "./CardCircle.scss";
 import { Link } from "react-router-dom";
+import { image_url } from "../../config/config";
 
 const CardCircle = ({ strukturCard, grade }) => {
   return (
@@ -26,7 +27,7 @@ const CardCircle = ({ strukturCard, grade }) => {
             <div
               className="imageCircle"
               style={{
-                background: `url(https://data.pdiperjuangan.id/public/${e.photo})`,
+                background: `url(${image_url}${e.photo})`,
                 backgroundSize: "cover",
               }}
             ></div>

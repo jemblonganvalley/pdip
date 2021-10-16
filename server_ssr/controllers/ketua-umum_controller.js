@@ -10,7 +10,7 @@ ketuaumum.get("/ketua-umum", (req, res) => {
       meta_description: result.query.set.meta_description,
       meta_url: "https://pdiperjuangan.id/ketua-umum",
       meta_image:
-        "https://data.pdiperjuangan.id/public/uploads/page/17122020053115yVr.jpeg",
+        "https://data.pdiperjuangan.id/api/files/page/17122020053115yVr.jpeg",
     });
   });
 });
