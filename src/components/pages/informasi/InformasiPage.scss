@@ -100,12 +100,12 @@ $responMax1440: 1440px;
   }
 }
 
-$res992 : 992px;
-$res1240 : 1350px;
+$res992: 992px;
+$res1240: 1350px;
 
 @mixin respon1240 {
   @media (min-width : #{$res992}) and (max-width : #{$res1240}) {
-      @content;
+    @content;
   }
 }
 
@@ -199,7 +199,6 @@ $res1240 : 1350px;
     @include respon950() {
       padding: 0 2% 5px 2%;
     }
-
 
     .divider-profil {
       display: flex;
@@ -448,7 +447,7 @@ $res1240 : 1350px;
     .ytIframe {
       width: 100%;
       // border: 1px solid #48ff00;
-      height: 60vh;
+      height: 400px;
       position: relative;
       // overflow: hidden;
 
@@ -465,6 +464,7 @@ $res1240 : 1350px;
       .iframeProfil {
         border: 0;
         height: 100%;
+        max-height: 380px;
         width: 100%;
         // border: 1px solid blue;
         top: 0;
@@ -499,7 +499,7 @@ $res1240 : 1350px;
     }
 
     @include respon950() {
-      padding:  0 10%;
+      padding: 0 10%;
     }
   }
   // END
@@ -731,7 +731,7 @@ $res1240 : 1350px;
     }
 
     @include respon950() {
-      padding:  0 2%;
+      padding: 0 2%;
     }
   }
   // end wrapper cardLaporan2
@@ -739,9 +739,10 @@ $res1240 : 1350px;
   // CARD LAPORAN
   .containerLaporan {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 0;
     // padding: 2rem;
 
     // min width 750px and max width 950px
@@ -762,7 +763,7 @@ $res1240 : 1350px;
     }
 
     .cardLaporanSatu {
-      margin-right: 20px;
+      // margin-right: 20px;
       justify-content: center;
       align-items: center;
 
@@ -776,7 +777,7 @@ $res1240 : 1350px;
     }
 
     .cardLaporan {
-      width: 50%;
+      width: 48%;
       display: flex;
       justify-content: center;
       align-items: center;

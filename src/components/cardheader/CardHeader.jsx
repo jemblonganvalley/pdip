@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { image_url } from "../../config/config";
+import { image_url, image_url_2 } from "../../config/config";
 import "./CardHeader.scss";
 
 const CardHeader = ({ image, title }) => {

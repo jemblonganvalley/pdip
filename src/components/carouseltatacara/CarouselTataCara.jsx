@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./CarouselTataCara.scss";
 import parse from "html-react-parser";
-import { image_url } from "../../config/config";
+import { image_url, image_url_2 } from "../../config/config";
+import { splitColor } from "gsap/all";
 
-const CarouselTataCara = ({ data }) => {
+const CarouselTataCara = ({ data, slash = false }) => {
   return (
     <>
       {/* SLIDER TATA CARA */}
@@ -28,16 +29,15 @@ const CarouselTataCara = ({ data }) => {
                 <div
                   className="imageTC"
                   style={{
-                    background: `url(${image_url + e.image})`,
-                    backgroundSize: "cover",
+                    background: `url(${
+                      image_url_2 + e?.image.replace("uploads", "")
+                    })`,
+                    backgroundSize: "contain",
                     backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
                   }}
                 >
-                  {/* <div className="container_text_carousel">
-
-                    <h4 >{e.title}</h4>
-                    <p className='textPTataCara'>{parse(e.paragraph)}</p>
-                  </div> */}
+                  {""}
                 </div>
 
                 {/* For Mobile */}

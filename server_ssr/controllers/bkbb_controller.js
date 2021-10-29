@@ -25,7 +25,7 @@ bkbb.get("/bung-karno-bapak-bangsa/quotes/:id", (req, res) => {
       meta_url: `https://pdiperjuangan.id/bung-karno-bapak-bangsa/quotes/${id}`,
       meta_image: `https://data.pdiperjuangan.id/api/files/${result.path.replace(
         ".",
-        "_thumb30."
+        "_thumb50."
       )}`,
     });
   });

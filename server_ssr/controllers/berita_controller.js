@@ -24,7 +24,7 @@ berita.get("/gallery", (req, res) => {
       meta_url: "https://pdiperjuangan.id/gallery",
       meta_image: `https://data.pdiperjuangan.id/api/files/${result.query.data[0].path.replace(
         ".",
-        "_thumb30."
+        "_thumb50."
       )}`,
     });
   });
@@ -39,7 +39,7 @@ berita.get("/gallery/detail-gallery/:id/:slug", (req, res) => {
       meta_url: "https://pdiperjuangan.id/gallery",
       meta_image: `https://data.pdiperjuangan.id/api/files/${result.query.data[0].path.replace(
         ".",
-        "_thumb30."
+        "_thumb50."
       )}`,
     });
   });

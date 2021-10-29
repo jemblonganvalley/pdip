@@ -2,7 +2,7 @@ import React from "react";
 
 import "../carouselPemilu2/CarouselPemilu2.scss";
 import pemilu2 from "../../img/pemilu2.jpg";
-import { image_url } from "../../config/config";
+import { image_url, image_url_2 } from "../../config/config";
 
 const CarouselPemilu2 = ({ data }) => {
   const redir = (args) => {
@@ -26,7 +26,7 @@ const CarouselPemilu2 = ({ data }) => {
               {/* Image2 */}
               <img
                 loading="lazy"
-                src={`${image_url + e.image}`}
+                src={`${image_url_2 + e.image}`}
                 className="img-2"
                 onClick={() => {
                   redir(`${e.link}`);

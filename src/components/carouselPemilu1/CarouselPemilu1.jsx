@@ -4,7 +4,7 @@ import "../carouselPemilu1/CarouselPemilu1.scss";
 import pemilu from "../../img/pemilu.jpeg";
 import { Link, NavLink } from "react-router-dom";
 import Wait from "../wait/Wait";
-import { image_url } from "../../config/config";
+import { image_url, image_url_2 } from "../../config/config";
 
 const CarouselPemilu1 = ({ data }) => {
   const WrapperImage = ({ img, link }) => {
@@ -46,7 +46,7 @@ const CarouselPemilu1 = ({ data }) => {
                   {/* <WrapperImage img={e.image} link={"/"} /> */}
                   <img
                     loading="lazy"
-                    src={`${image_url + e.image}`}
+                    src={`${image_url_2 + e.image}`}
                     className="img-1"
                     href={e.link}
                     onClick={() => {

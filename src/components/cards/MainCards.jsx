@@ -80,9 +80,10 @@ const Cards = ({
           to={`${page}/${id}/${slug ? pageSLug() : null}`}
           className="imageCard"
           style={{
-            backgroundImage: imageCard.includes("blog")
-              ? `url(${image_url}${imageCard})`
-              : `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)`,
+            backgroundImage:
+              imageCard.includes("blog") || imageCard.includes("gallery")
+                ? `url(${image_url}${imageCard})`
+                : `url(https://i.ytimg.com/vi/${imageCard}/hqdefault.jpg)`,
 
             textDecoration: "none",
             backgroundPosition: "center",

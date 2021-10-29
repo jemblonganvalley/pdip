@@ -12,7 +12,7 @@ import Carousel3PemiluPage from "../../carousel3PemiluPage/Carousel3PemiluPage";
 import BreadCrumbs from "../../breadcrumbs/BreadCrumbs";
 import CardHeader from "../../cardheader/CardHeader";
 import ParalaxBox from "../../paralaxBox/ParalaxBox";
-import { image_url } from "../../../config/config";
+import { image_url, image_url_2 } from "../../../config/config";
 
 // Create Component
 const PemiluPage = () => {
@@ -57,7 +57,7 @@ const PemiluPage = () => {
         <div className="wrapperPemiluPage">
           {/* Card Header */}
           <CardHeader
-            image={configHome[0].value.image}
+            image={configHome[0].value.image?.replace("/", "")}
             title={configHome[0].value.title}
           />
           {/* END Card Header */}
@@ -112,7 +112,7 @@ const PemiluPage = () => {
                 <div className="box-card-laporan">
                   <img
                     loading="lazy"
-                    src={`${image_url + configHome[4].value[0].image}`}
+                    src={`${image_url_2 + configHome[4].value[0].image}`}
                     alt=""
                     className="imageHarta"
                   />
@@ -131,7 +131,7 @@ const PemiluPage = () => {
                 <div className="box-card-laporan">
                   <img
                     loading="lazy"
-                    src={`${image_url + configHome[4].value[1].image}`}
+                    src={`${image_url_2 + configHome[4].value[1].image}`}
                     alt=""
                     className="imageHarta"
                   />

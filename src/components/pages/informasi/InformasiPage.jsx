@@ -10,7 +10,7 @@ import CardInformasi from "../../cardInformasi/CardInformasi";
 import CarouselTataCara from "../../carouseltatacara/CarouselTataCara";
 import CardHeader from "../../cardheader/CardHeader";
 import Wait from "../../wait/Wait";
-import { image_url } from "../../../config/config";
+import { image_url, image_url_2 } from "../../../config/config";
 
 const anchorLink = (props) => {
   return (
@@ -106,7 +106,7 @@ const InformasiPage = () => {
         <div className="wrapperInformasi">
           {/* Card Header */}
           <CardHeader
-            image={configHome[0].value.image}
+            image={configHome[0]?.value?.image?.replace("/", "")}
             title={configHome[0].value.title}
           />
           {/* END Card Header */}
@@ -133,7 +133,7 @@ const InformasiPage = () => {
                   className="backgroundPK"
                   style={{
                     backgroundImage: `url(${
-                      image_url + configHome[2].value.image
+                      image_url_2 + configHome[2].value.image
                     })`,
                   }}
                 >
@@ -148,13 +148,13 @@ const InformasiPage = () => {
             {/* divider */}
             <CardInformasi
               to1="detail-article/656/struktur"
-              image={`${image_url + configHome[3].value[0].image}`}
+              image={`${image_url_2 + configHome[3].value[0].image}`}
               to2="/article/231/visi-dan-misi-ppid"
-              image2={`${image_url + configHome[3].value[1].image}`}
+              image2={`${image_url_2 + configHome[3].value[1].image}`}
               to3="/detail-article/624/prosedur-pelayanan-ppid"
-              image3={`${image_url + configHome[3].value[2].image}`}
+              image3={`${image_url_2 + configHome[3].value[2].image}`}
               to4="/detail-article/623/regulasi-ppd"
-              image4={`${image_url + configHome[3].value[3].image}`}
+              image4={`${image_url_2 + configHome[3].value[3].image}`}
               text={`${configHome[3].value[0].title}`}
               text2={`${configHome[3].value[1].title}`}
               text3={`${configHome[3].value[2].title}`}
@@ -171,7 +171,7 @@ const InformasiPage = () => {
               <Link component={anchorLink} linkTo="detail-article/658/lhkpn">
                 <img
                   loading="lazy"
-                  src={`${image_url + configHome[4].value[0].image}`}
+                  src={`${image_url_2 + configHome[4].value[0].image}`}
                   alt=""
                   className="imageHarta"
                   style={{
@@ -191,7 +191,7 @@ const InformasiPage = () => {
               >
                 <img
                   loading="lazy"
-                  src={`${image_url + configHome[4].value[1].image}`}
+                  src={`${image_url_2 + configHome[4].value[1].image}`}
                   alt=""
                   className="imageHarta"
                   style={{
@@ -247,7 +247,7 @@ const InformasiPage = () => {
                 <div className="box-card-laporan">
                   <img
                     loading="lazy"
-                    src={`${image_url + configHome[7].value[0].image}`}
+                    src={`${image_url_2 + configHome[7].value[0].image}`}
                     alt=""
                     className="imageHarta"
                     style={{
@@ -267,7 +267,7 @@ const InformasiPage = () => {
                 <div className="box-card-laporan">
                   <img
                     loading="lazy"
-                    src={`${image_url + configHome[7].value[1].image}`}
+                    src={`${image_url_2 + configHome[7].value[1].image}`}
                     alt=""
                     className="imageHarta"
                     style={{

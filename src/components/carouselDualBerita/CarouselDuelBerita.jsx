@@ -1,7 +1,7 @@
 import { useStoreState } from "easy-peasy";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { image_url } from "../../config/config";
+import { image_url, image_url_2 } from "../../config/config";
 import "./carouselDualBerita.scss";
 
 export const CarouselDuelBerita = ({
@@ -107,7 +107,7 @@ export const CarouselDuelBerita = ({
 
               <img
                 loading="lazy"
-                src={`${image_url}${e.image}`}
+                src={`${image_url_2}${e.image}`}
                 className="d-block w-100 carouselDual1Image"
                 alt={e.title}
                 key={i}

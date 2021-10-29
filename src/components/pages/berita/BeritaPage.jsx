@@ -98,6 +98,7 @@ const BeritaPage = () => {
             <meta content="og:image:alt" property={configHome[6].value.title} />
             <meta property="og:locale" content="id_ID" />
           </Helmet>
+
           <div className="wrapperBerita">
             {/* INDEX 0 */}
             <CardHeader
@@ -119,25 +120,13 @@ const BeritaPage = () => {
                 {/* INDEX 2 */}
                 <CardInformasi
                   to1="/article/190/nasional"
-                  image={
-                    `https://data.pdiperjuangan.id/public` +
-                    configHome[2].value[0].image
-                  }
+                  image={image_url + configHome[2].value[0].image}
                   to2="/article/191/daerah"
-                  image2={
-                    `https://data.pdiperjuangan.id/public` +
-                    configHome[2].value[1].image
-                  }
+                  image2={image_url + configHome[2].value[1].image}
                   to3="/gallery"
-                  image3={
-                    `https://data.pdiperjuangan.id/public` +
-                    configHome[2].value[2].image
-                  }
+                  image3={image_url + configHome[2].value[2].image}
                   to4="/article/192/nuansa"
-                  image4={
-                    `https://data.pdiperjuangan.id/public` +
-                    configHome[2].value[3].image
-                  }
+                  image4={image_url + configHome[2].value[3].image}
                   text={configHome[2].value[0].title}
                   text2={configHome[2].value[1].title}
                   text3={configHome[2].value[2].title}

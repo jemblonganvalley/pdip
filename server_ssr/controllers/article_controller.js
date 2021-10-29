@@ -25,7 +25,7 @@ article.get("/detail-article/:id/:slug", (req, res) => {
       meta_url: `https://pdiperjuangan.id/detail-article/${id}/${slug}`,
       meta_image: `https://data.pdiperjuangan.id/api/files/${result.path.replace(
         ".",
-        "_thumb30."
+        "_thumb50."
       )}`,
     });
   });
@@ -41,7 +41,7 @@ article.get("/detail-article/:id/ad/-art", (req, res) => {
       meta_url: `https://pdiperjuangan.id/detail-article/${id}/ad/-art`,
       meta_image: `https://data.pdiperjuangan.id/api/files/${result.path.replace(
         ".",
-        "_thumb30."
+        "_thumb50."
       )}`,
     });
   });
