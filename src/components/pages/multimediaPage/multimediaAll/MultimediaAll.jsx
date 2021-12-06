@@ -133,7 +133,7 @@ const MultimediaAll = () => {
                         imageCard={e.path}
                         title={e.title}
                         slug={e.title}
-                        textSmall={e.author}
+                        author={e.author}
                         dateTime={e.created_at}
                         page={"/detail-multimedia"}
                         id={e.id}

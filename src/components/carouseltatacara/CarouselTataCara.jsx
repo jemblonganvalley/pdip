@@ -29,16 +29,11 @@ const CarouselTataCara = ({ data, slash = false }) => {
                 <div
                   className="imageTC"
                   style={{
-                    background: `url(${
-                      image_url_2 + e?.image.replace("uploads", "")
+                    backgroundImage: `url(${
+                      image_url + e?.image.replace("uploads", "")
                     })`,
-                    backgroundSize: "contain",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
                   }}
-                >
-                  {""}
-                </div>
+                ></div>
 
                 {/* For Mobile */}
                 {/* <div className="box-red-mobile-sliderTataCara">

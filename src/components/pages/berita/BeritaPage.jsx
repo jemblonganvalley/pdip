@@ -141,7 +141,7 @@ const BeritaPage = () => {
                     <Cards
                       id={e.id}
                       imageCard={e.path}
-                      textSmall={e.author}
+                      author={e.author}
                       title={e.title}
                       dateTime={e.created_at}
                       borderRadius="10px"
@@ -224,7 +224,7 @@ const BeritaPage = () => {
                     <Cards
                       id={e.id}
                       imageCard={e.path}
-                      textSmall={e.author}
+                      author={e.author}
                       title={e.title}
                       dateTime={e.created_at}
                       borderRadius="10px"
@@ -256,7 +256,7 @@ const BeritaPage = () => {
                     <Cards
                       id={e.id}
                       imageCard={e.path}
-                      textSmall={e.author}
+                      author={e.author}
                       title={e.title}
                       dateTime={e.created_at}
                       borderRadius="10px"

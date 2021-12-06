@@ -77,15 +77,14 @@ const MainSlider = ({ value, cls }) => {
             {/* Box Paragrap Iklan */}
             <div className="box-paragrap-info-iklan">
               <strong className="txt-info-iklan">
-                Segera hadir aplikasi MEDIA PINTAR PERJUANGAN untuk mendapatkan
-                pengetahuan,
+                Aplikasi MEDIA PINTAR PERJUANGAN untuk mendapatkan pengetahuan,
                 <br />
                 pengalaman dan informasi program serta kerja nyata PDI
                 Perjuangan.
               </strong>
 
               <div className="box-logo-info-iklan">
-                <Link href="">
+                <Link href="https://play.google.com/store/apps/details?id=com.mppapps">
                   <img
                     loading="lazy"
                     src={playstore}
@@ -94,7 +93,7 @@ const MainSlider = ({ value, cls }) => {
                   />
                 </Link>
 
-                <Link href="">
+                <Link href="https://apps.apple.com/id/app/media-pintar-perjuangan/id1590121621">
                   <img
                     loading="lazy"
                     src={appstore}

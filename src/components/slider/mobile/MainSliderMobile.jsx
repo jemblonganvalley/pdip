@@ -97,12 +97,11 @@ const MainSliderMobile = ({ value, cls }) => {
               textAlign: "center",
             }}
           >
-            Segera hadir aplikasi MEDIA PINTAR PERJUANGAN untuk mendapatkan
-            pengetahuan, pengalaman dan informasi program serta kerja nyata PDI
-            Perjuangan.
+            Aplikasi MEDIA PINTAR PERJUANGAN untuk mendapatkan pengetahuan,
+            pengalaman dan informasi program serta kerja nyata PDI Perjuangan.
           </p>
           <div className="storeMobile">
-            <Link href="">
+            <Link href="https://play.google.com/store/apps/details?id=com.mppapps">
               <img
                 loading="lazy"
                 src={playstore}
@@ -111,7 +110,7 @@ const MainSliderMobile = ({ value, cls }) => {
               />
             </Link>
 
-            <Link href="">
+            <Link href="https://apps.apple.com/id/app/media-pintar-perjuangan/id1590121621">
               <img
                 loading="lazy"
                 src={appstore}

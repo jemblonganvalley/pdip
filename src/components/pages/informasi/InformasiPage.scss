@@ -521,6 +521,7 @@ $res1240: 1350px;
         // border: 1px solid crimson;
         background: url(../../../img/illustrator2.png);
         background-size: cover;
+        background-repeat: no-repeat;
         background-position: bottom;
         position: relative;
         @include smallPhone() {

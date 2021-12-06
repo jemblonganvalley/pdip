@@ -190,7 +190,7 @@ const ListBerita = () => {
                 <Cards
                   id={e.id}
                   imageCard={e.path}
-                  textSmall={e.author}
+                  author={e.author}
                   title={e.title}
                   slug={e.title}
                   dateTime={e.created_at}

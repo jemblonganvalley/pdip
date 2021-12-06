@@ -1,240 +1,238 @@
-$smallPhoneSatu : 500px;
-$smallPhoneDua : 400px;
+$smallPhoneSatu: 500px;
+$smallPhoneDua: 400px;
 @mixin smallPhone {
-    @media (max-width : #{$smallPhoneSatu}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneSatu}) {
+    @content;
+  }
 }
 @mixin smallPhoneDua {
-    @media (max-width : #{$smallPhoneDua}) {
-        @content;
-    }
+  @media (max-width : #{$smallPhoneDua}) {
+    @content;
+  }
 }
 
 // Min widht 500 and Max width 750
-$respon750 : 750px;
+$respon750: 750px;
 $respon500: 500px;
 // END Min widht 500 and Max width 750
 
 // Min widht 500 and Max width 750
 @mixin respon750 {
-    @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
-        @content;
-    }
+  @media (min-width : #{$respon500}) and (max-width: #{$respon750}) {
+    @content;
+  }
 }
 // END Min widht 500 and Max width 750
 
 // Min widht 750 and Max width 950
-$responMin750 : 750px;
+$responMin750: 750px;
 $responMax950: 950px;
 // END Min widht 750 and Max width 950
 
 // Min width 750 and max width 950
-@mixin respon950{
-    @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}){
-        @content;
-    }
+@mixin respon950 {
+  @media (min-width: #{$responMin750}) and (max-width: #{$responMax950}) {
+    @content;
+  }
 }
 // END Min widht 750 and max width 950
 
-
-$secondary : #f3f3f3;
+$secondary: #f3f3f3;
 @import "../../utilities/variable/variables.scss";
 
 // CAROUSEL TATA CARA
 .sliderTataCara {
-    // padding: 0px;\
-    height: 100%;
-    width: 100%;
+  // padding: 0px;\
+  height: 100%;
+  width: 100%;
+  display: flex;
+  // height: 50vh;
+  margin-top: 0;
+  position: relative;
+  border: none;
+
+  #carouselTataCara {
     display: flex;
-    // height: 50vh;
-    margin-top: 0;
     position: relative;
+    height: 40vh;
+    width: 100%;
     border: none;
-    
-    #carouselTataCara{
-        display: flex;
-        position: relative;
-        height: 40vh;
+
+    @include smallPhone() {
+      height: 20vh;
+    }
+
+    .carousel-item-tatacara {
+      height: 40vh;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      border: none;
+      background-image: none;
+      position: relative;
+
+      @include respon950() {
+        flex-direction: column;
+        background-size: auto;
+        background-position: left;
+        height: 70vh;
+      }
+
+      @include respon750() {
+        flex-direction: column;
+        background-size: auto;
+        background-position: left;
+        height: 70vh;
+      }
+
+      @include smallPhone() {
+        flex-direction: column;
+        background-size: auto;
+        background-position: left;
+      }
+
+      .imageTC {
+        // width: 100%;
+        height: 100%;
         width: 100%;
-        border: none;
+        max-width: 100%;
+        display: flex;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @include respon950() {
+          height: 60%;
+        }
+
+        // min widht 500px and max width 750px
+        @include respon750() {
+          height: 60%;
+        }
+        // end min width 500px and max width 750px
 
         @include smallPhone() {
-            height: 20vh;
+          height: 50%;
         }
-    
-        .carousel-item-tatacara {
-            height: 40vh;
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-            border: none;
-            background-image: none;
-            position: relative;
+      }
 
-            @include respon950(){
-                flex-direction: column;
-                background-size: auto;
-                background-position: left;
-                height: 70vh;
-            }
-
-            @include respon750(){
-                flex-direction: column;
-                background-size: auto;
-                background-position: left;
-                height: 70vh;
-            }
-
-            @include smallPhone(){
-                flex-direction: column;
-                background-size: auto;
-                background-position: left;
-            }
-
-            .imageTC {
-                // width: 100%;
-                height: 100%;
-                width: 100%;
-                max-width: 100%;
-                display: flex;
-                background-position: center;
-
-                @include respon950(){
-                    height: 60%;
-                }
-
-                // min widht 500px and max width 750px
-                @include respon750(){
-                    height: 60%;
-                }
-                // end min width 500px and max width 750px
-
-                @include smallPhone(){
-                    height: 50%;
-                }
-            }
-
-            .container_text_carousel {
-                margin-left: auto;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                @include respon950() {
-                    display: none;
-                }
-                @include smallPhone() {
-                    display: none;
-                }
-
-                .textPTataCara {
-                    width: 50%;
-                }
-            }
-
-            // Box Red Paragrap For Mobile
-            .box-red-mobile-sliderTataCara{
-                display: none;
-
-                @include respon950(){
-                    display: flex;
-                    width: 100%;
-                    background-color: $colors;
-                    color: #fff;
-                    padding: 10px 20px;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                }
-
-                // min width 500px and max width 750px
-                @include respon750(){
-                    display: flex;
-                    width: 100%;
-                    background-color: $colors;
-                    color: #fff;
-                    padding: 10px 20px;
-                    justify-content: center;
-                    align-items: center;
-                }
-                // end min width 500px and max width 750px
-
-                @include smallPhone(){
-                    display: flex;
-                    width: 100%;
-                    background-color: $colors;
-                    color: #fff;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    padding: 0 10px;
-                }
-
-                .pCarousel-for-mobile{
-                    // min width 500px and max width 750px
-                    @include respon750(){
-                        text-align: center;
-                    }
-                    // end min width 500px and max width 750px
-
-                    @include smallPhone(){
-                        text-align: center;
-                    }
-                }
-            }
-            // END Box Red Paragrap For Mobile
-
-            .kunjungi {
-                color: black;
-                width: 10vw;
-                border-radius: 25px;
-                position: absolute;
-                left: 60%;
-                bottom: 20%;
-                color: #d80010;
-                border: 1px solid #d80010;
-                font-size: 7pt;
-                text-transform: uppercase;
-                transition: .3s;
-
-                &:hover {
-                    background: #d80010;
-                    color: #ffffff;
-
-                }
-            }
+      .container_text_carousel {
+        margin-left: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        @include respon950() {
+          display: none;
         }
+        @include smallPhone() {
+          display: none;
+        }
+
+        .textPTataCara {
+          width: 50%;
+        }
+      }
+
+      // Box Red Paragrap For Mobile
+      .box-red-mobile-sliderTataCara {
+        display: none;
+
+        @include respon950() {
+          display: flex;
+          width: 100%;
+          background-color: $colors;
+          color: #fff;
+          padding: 10px 20px;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        // min width 500px and max width 750px
+        @include respon750() {
+          display: flex;
+          width: 100%;
+          background-color: $colors;
+          color: #fff;
+          padding: 10px 20px;
+          justify-content: center;
+          align-items: center;
+        }
+        // end min width 500px and max width 750px
+
+        @include smallPhone() {
+          display: flex;
+          width: 100%;
+          background-color: $colors;
+          color: #fff;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 0 10px;
+        }
+
+        .pCarousel-for-mobile {
+          // min width 500px and max width 750px
+          @include respon750() {
+            text-align: center;
+          }
+          // end min width 500px and max width 750px
+
+          @include smallPhone() {
+            text-align: center;
+          }
+        }
+      }
+      // END Box Red Paragrap For Mobile
+
+      .kunjungi {
+        color: black;
+        width: 10vw;
+        border-radius: 25px;
+        position: absolute;
+        left: 60%;
+        bottom: 20%;
+        color: #d80010;
+        border: 1px solid #d80010;
+        font-size: 7pt;
+        text-transform: uppercase;
+        transition: 0.3s;
+
+        &:hover {
+          background: #d80010;
+          color: #ffffff;
+        }
+      }
     }
-    .btn-right-tata-cara {
-        background: url(../../img/right.png);
-        background-size: cover;
+  }
+  .btn-right-tata-cara {
+    background: url(../../img/right.png);
+    background-size: cover;
 
-        @include smallPhone(){
-            position: absolute;
-            right: 10px;
-        }
+    @include smallPhone() {
+      position: absolute;
+      right: 10px;
     }
-    .btn-left-tata-cara {
-        background: url(../../img/left.png);
-        background-size: cover;
+  }
+  .btn-left-tata-cara {
+    background: url(../../img/left.png);
+    background-size: cover;
 
-        @include smallPhone(){
-            position: absolute;
-            left: 10px;
-        }
+    @include smallPhone() {
+      position: absolute;
+      left: 10px;
     }
-    .btn-left-tata-cara,
-    .btn-right-tata-cara {
-        width: 40px;
-        height: 40px;
+  }
+  .btn-left-tata-cara,
+  .btn-right-tata-cara {
+    width: 40px;
+    height: 40px;
 
-        @include smallPhone(){
-            height: 25px;
-            width: 25px;
-            top: 75px;
-        }
+    @include smallPhone() {
+      height: 25px;
+      width: 25px;
+      top: 75px;
     }
-    
+  }
 }
 // END

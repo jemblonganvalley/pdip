@@ -107,7 +107,9 @@ export const CarouselDuelBerita = ({
 
               <img
                 loading="lazy"
-                src={`${image_url_2}${e.image}`}
+                src={`${e?.image.includes("/page") ? image_url_2 : image_url}${
+                  e.image
+                }`}
                 className="d-block w-100 carouselDual1Image"
                 alt={e.title}
                 key={i}
