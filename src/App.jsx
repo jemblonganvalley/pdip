@@ -38,6 +38,11 @@ import Maintenance from "./components/pages/home/Maintenance";
 function App() {
   let [hide, setHide] = useState(true);
   let [tkn, setTkn] = useState();
+
+  // maintenance mode set true if maintenance mode
+  const [maintenance,setMaintenance] = useState(false)
+
+
   const getToken = async () => {
     const res = await fetch("https://data.pdiperjuangan.id/api/auth/app", {
       method: "POST",
@@ -68,6 +73,11 @@ function App() {
       prevScrollpos = currentScrollPos;
     });
   }, []);
+
+  // jika maintenance
+  if(maintenance){
+    return <Maintenance />
+  }
 
   return (
     <Router>
@@ -140,18 +150,6 @@ function App() {
           <Route path="/search/:par">
             <Search />
           </Route>
-          {/* 
-          <Route path="/multimedia/wawancara">
-            <Wawancara />
-          </Route>
-
-          <Route path="/multimedia/teaser">
-            <VideoTeaser />
-          </Route>
-
-          <Route path="/multimedia/dokumentasi">
-            <VideoDokumen />
-          </Route> */}
 
           <Route path="/event">
             <EventPage />
@@ -220,10 +218,6 @@ function App() {
             <WejanganBungKarno />
           </Route>
 
-          {/* <Route path="/quotes/:id">
-            <BkbbWejangan />
-          </Route> */}
-
           <Route path="/bung-karno-bapak-bangsa">
             <BkbbPage />
           </Route>
@@ -237,7 +231,6 @@ function App() {
           </Route>
 
           <Route path="/" exact={true}>
-            {/* <Maintenance /> */}
             <HomePage />
           </Route>
 
@@ -246,6 +239,8 @@ function App() {
           </Route>
         </Switch>
       </div>
+
+      {/* JIKA MAINTENANCE TOlong hide code dibawah  */}
       <BgRed />
 
       <MainFooter />

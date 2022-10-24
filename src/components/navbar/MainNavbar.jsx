@@ -91,7 +91,6 @@ const MainNavbar = ({ token }) => {
               activeClassName="brand"
             >
               <img
-                loading="lazy"
                 src={logo}
                 alt=""
                 width="60"
@@ -161,7 +160,6 @@ const MainNavbar = ({ token }) => {
                     e.preventDefault();
                     setSearch(e.target.value);
                   }}
-                  type="text"
                 />
                 <Link
                   to={`/search/${search}`}
@@ -203,7 +201,6 @@ const MainNavbar = ({ token }) => {
                 alt=""
                 width="60"
                 className="d-inline-block align-center active"
-                loading="lazy"
               />
             </FakeNavLink>
             <button
@@ -265,7 +262,6 @@ const MainNavbar = ({ token }) => {
                   placeholder="Cari Artikel"
                   //
                   onChange={(e) => setSearch(e.target.value)}
-                  type="text"
                 />
                 <Link
                   to={`/search/${search}`}
@@ -307,7 +303,6 @@ const MainNavbar = ({ token }) => {
                 alt=""
                 width="60"
                 className="d-inline-block align-center active"
-                loading="lazy"
                 onClick={() => {
                   setCollapse1(false);
                 }}

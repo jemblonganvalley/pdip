@@ -7,7 +7,6 @@ const config = async (page) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Accept: "application/json",
       Authorization: `Bearer ${tk}`,
     },
   })
@@ -26,7 +25,6 @@ const detailArticle = async (id, slug) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Accept: "application/json",
       Authorization: `Bearer ${tk}`,
     },
   })
@@ -58,7 +56,6 @@ const detailMultimedia = async (id, slug) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Accept: "application/json",
         Authorization: `Bearer ${tk}`,
       },
       body: JSON.stringify({
@@ -81,7 +78,6 @@ const gallery = async () => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Accept: "application/json",
       Authorization: `Bearer ${tk}`,
     },
     body: JSON.stringify({
@@ -105,7 +101,6 @@ const quotes = async (id) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Accept: "application/json",
       Authorization: `Bearer ${tk}`,
     },
     body: JSON.stringify({
@@ -132,4 +127,58 @@ const quotes = async (id) => {
     });
 };
 
-module.exports = { config, detailArticle, detailMultimedia, gallery, quotes };
+const detailPengurus = async (id) => {
+  try {
+    const tk = await token();
+    const result = await fetch(
+      "https://data.pdiperjuangan.id/api/partai/pengurus/find",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          id: id,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${tk}`,
+        },
+      }
+    );
+    const data = await result.json();
+    return data;
+  } catch (error) {
+    return error;
+  }
+};
+
+const dpdFind = async (id) => {
+  try {
+    const tk = await token();
+    const result = await fetch(
+      "https://data.pdiperjuangan.id/api/partai/dpd/find",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${tk}`,
+        },
+        body: JSON.stringify({
+          id: id,
+        }),
+      }
+    );
+    const data = await result.json();
+    return data;
+  } catch (error) {
+    return error;
+  }
+};
+
+module.exports = {
+  config,
+  detailArticle,
+  detailMultimedia,
+  gallery,
+  quotes,
+  detailPengurus,
+  dpdFind,
+};
